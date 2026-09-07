@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0922",
+  "sample_id": "PHL1800_HL_0321",
+  "file_name": "PHL1800_HL_0321.png",
+  "batch_id": "B020",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "urban street intersection under elevated transit structure with signage and pedestrians",
+  "captions": {
+    "scene": [
+      "A multi-lane city street beneath a concrete elevated rail or transit viaduct, with traffic lights, overhead signs, and buildings lining both sides.",
+      "Green foliage from trees is visible between buildings and under the viaduct; autumnal yellow-green leaves suggest seasonal transition.",
+      "Multiple vehicles are stopped or moving in lanes; two pedestrians walk on the sidewalk near the foreground pole."
+    ],
+    "action": [
+      "Two pedestrians walk side by side on the sidewalk, facing forward, wearing winter coats and hats.",
+      "Traffic light for left-turn lane shows green arrow; other signals show red or amber.",
+      "Vehicles are queued at an intersection, some stationary, others in motion further down the street."
+    ],
+    "rationale": [
+      "The presence of bilingual (English/Chinese) signage and 'Historic Chinatown' banner suggests a culturally specific urban district, though exact location is not verifiable from image alone.",
+      "The elevated structure appears to carry rails or guideways, but no train or vehicle is visible on it; thus, its current operational status is uncertain.",
+      "The directional sign 'City Centre →' implies a central business district lies ahead, but no landmarks confirm this beyond the sign’s claim."
+    ],
+    "object": [
+      "A green rectangular street sign reads 'Union St.' with a bicycle symbol and 'St. 100' on a black background mounted above the intersection.",
+      "A green highway-style sign indicates 'TA WEST 99 NORTH City Centre →' with a white arrow pointing right.",
+      "A red vertical utility pole supports multiple signs, including a small green maple-leaf logo sign labeled 'EAST'.",
+      "A red banner with gold lettering reads 'HISTORIC CHINATOWN' and includes Chinese characters below it.",
+      "Two pedestrians stand near the base of the pole: one wears a dark coat and beanie, the other a brown coat and patterned hat; both appear to be walking eastward."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0922_P1",
+      "visual_anchors": [
+        "bilingual 'Historic Chinatown' banner",
+        "green 'City Centre →' directional sign",
+        "elevated transit structure"
+      ],
+      "symbolic_mapping": [
+        "the banner signifies cultural continuity amid urban development",
+        "the arrow signifies directed movement toward institutional centrality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The coexistence of heritage signage and functional infrastructure reflects how collective identity is spatially negotiated within modern mobility systems, where journeys are both physically guided and culturally framed.",
+      "alternative_interpretations": [
+        "The banner may simply serve tourism promotion without deeper sociopolitical intent; the arrow is purely navigational."
+      ],
+      "limitations": [
+        "No visible individuals interact with the banner, so its social function cannot be confirmed from behavior."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0922_P2",
+      "visual_anchors": [
+        "red utility pole with multiple signs",
+        "overhead wires",
+        "traffic signals"
+      ],
+      "symbolic_mapping": [
+        "the pole embodies layered governance through competing signage",
+        "wires represent invisible infrastructural dependencies"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The pole’s accumulation of regulatory, directional, and symbolic signage illustrates how authority is materially inscribed in public space, often without consensus, revealing tensions between municipal control and user autonomy.",
+      "alternative_interpretations": [
+        "The signs are standardized municipal installations with no intentional conflict—just functional overlap."
+      ],
+      "limitations": [
+        "No legible fine print or jurisdictional markings identify conflicting authorities."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0922_P3",
+      "visual_anchors": [
+        "two pedestrians walking together",
+        "empty sidewalk ahead",
+        "distant traffic flow"
+      ],
+      "symbolic_mapping": [
+        "shared movement contrasts with fragmented vehicular flow",
+        "proximity implies mutual recognition in anonymity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "In a regulated urban environment defined by signals and lanes, the unmarked act of walking side-by-side asserts a form of relational freedom that resists instrumentalization by infrastructure.",
+      "alternative_interpretations": [
+        "The pair may be unrelated strangers coincidentally aligned; no evidence confirms intentional companionship."
+      ],
+      "limitations": [
+        "Facial expressions and body orientation are indistinct; interaction cannot be verified."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:30:32.167297+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fa5c2d8b-7073-995e-99f5-cb15d2f0da43",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1001,
+        "total_tokens": 1810,
+        "completion_tokens_details": {
+          "text_tokens": 1001
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070330172721dce519b14489",
+      "usage": {
+        "completion_tokens": 859,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1978,
+        "prompt_tokens_details": {
+          "cached_tokens": 998
+        },
+        "total_tokens": 2837
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0075",
+  "sample_id": "PHL1800_HAIV_0290",
+  "file_name": "PHL1800_HAIV_0290.png",
+  "batch_id": "B004",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized nocturnal landscape with a winding path and moon",
+  "captions": {
+    "scene": [
+      "A purple-hued landscape with layered undulating hills under a large pale moon in the upper right.",
+      "A white serpentine path with black outlines winds diagonally from lower left to upper right across the hills.",
+      "A dark silhouetted tree with dense foliage stands on the left foreground hill."
+    ],
+    "action": [
+      "A translucent magenta ribbon-like form loops and curves over and alongside the white path, partially overlapping it.",
+      "The white path appears static but visually guides the eye upward toward the moon.",
+      "The moon emits a soft glow that illuminates the surrounding sky without casting visible shadows on the terrain."
+    ],
+    "rationale": [
+      "The path’s continuous S-curve suggests intentional design rather than natural formation, given its uniform width and sharp black outline.",
+      "The magenta ribbon lacks attachment points or motion blur, indicating it is a compositional element rather than a physically airborne object.",
+      "The absence of stars, clouds, or atmospheric haze implies a simplified or symbolic representation of night."
+    ],
+    "object": [
+      "A large circular moon with mottled light-green and off-white surface texture occupies the upper right quadrant.",
+      "A white path with thick black borders meanders across three visible purple hill layers.",
+      "A single tree with a black trunk and dark purple-black foliage sits on the lowest left hill.",
+      "A semi-transparent magenta ribbon forms loops and sinuous curves above and intersecting the white path.",
+      "The background consists of four horizontal bands of varying purple saturation, suggesting stylized terrain elevation."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0075_P1",
+      "visual_anchors": [
+        "winding white path",
+        "magenta ribbon intersecting path",
+        "moon at terminus"
+      ],
+      "symbolic_mapping": [
+        "path → journey",
+        "ribbon → internal thought or fate"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The path’s meandering course, intersected by an autonomous ribbon and leading toward the moon, visualizes a non-linear personal journey where external direction and internal impulse coexist.",
+      "alternative_interpretations": [
+        "The ribbon may simply be decorative ornamentation emphasizing path curvature, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or cultural markers confirm symbolic meaning; color choices are arbitrary in isolation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0075_P2",
+      "visual_anchors": [
+        "large moon",
+        "purple monochrome palette",
+        "isolated tree"
+      ],
+      "symbolic_mapping": [
+        "moon → constancy",
+        "tree → solitary existence"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The enduring moon presiding over a static, monochromatic scene with a lone tree evokes reflection on temporal continuity against individual transience.",
+      "alternative_interpretations": [
+        "The purple tones may reflect aesthetic preference rather than thematic intent; the tree could be purely compositional balance."
+      ],
+      "limitations": [
+        "No aging indicators on tree or path; time is implied only via celestial body, not measured change."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0075_P3",
+      "visual_anchors": [
+        "translucent magenta ribbon",
+        "white path with black edge",
+        "layered hills"
+      ],
+      "symbolic_mapping": [
+        "ribbon → unseen influence",
+        "black edge → boundary or constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The ribbon floats freely yet remains tethered to the path’s trajectory, while the path itself is rigidly bounded—suggesting freedom operating within structural limits.",
+      "alternative_interpretations": [
+        "The ribbon may represent wind or motion blur rendered stylistically, not conceptual duality."
+      ],
+      "limitations": [
+        "Translucency and curvature do not prove agency or intentionality; boundaries are graphic, not physical."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:56:11.740520+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6cda934d-6ef2-99dd-be58-e9d48b953b6a",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 875,
+        "total_tokens": 2408,
+        "completion_tokens_details": {
+          "text_tokens": 875
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015559ef262b7dd40a4e65",
+      "usage": {
+        "completion_tokens": 740,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2832,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3572
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

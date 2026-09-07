@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1088",
+  "sample_id": "PHL1800_MM_0106",
+  "file_name": "PHL1800_MM_0106.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men in a conference room during a formal presentation",
+  "captions": {
+    "scene": [
+      "A modern conference room with light wood table, red upholstered chairs, blue textured wall paneling, and recessed ceiling lighting.",
+      "A wooden podium with two gooseneck microphones stands near the center of the room; one man stands behind it, another sits at the table facing him.",
+      "The foreground shows the back of a seated man in a dark suit; a water bottle and paper are on the table before him."
+    ],
+    "action": [
+      "A man in a dark suit and tie stands upright behind a podium, left hand partially inserted into his trouser pocket, right arm relaxed at his side.",
+      "A second man sits at a long table, viewed from behind, holding a white object (possibly a cup or notepad) in his right hand.",
+      "A speech bubble originates from the standing man’s head region, containing legible text about software reliability commitment."
+    ],
+    "rationale": [
+      "The presence of microphones, podium, and formal attire suggests a structured presentation or briefing rather than casual conversation.",
+      "The speech bubble is positioned near the speaker’s head and points toward him, indicating attribution to him—though no mouth movement is visible.",
+      "The seated man’s posture and orientation indicate attention toward the speaker, but no facial expression or gesture confirms engagement level."
+    ],
+    "object": [
+      "A wooden podium with vertical grain pattern supports two black gooseneck microphones angled toward where a speaker would stand.",
+      "The standing man wears a navy suit, white shirt, diagonally striped blue-and-white tie, and has short dark hair with graying at temples.",
+      "The seated man wears a navy suit jacket over a white collared shirt and has short brown hair with receding hairline and visible beard stubble on neck.",
+      "Two red fabric-upholstered armchairs with high backs are positioned against the blue wall, unoccupied.",
+      "A clear plastic water bottle with silver cap rests on the table near the seated man’s left elbow."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1088_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "podium with microphones",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents declared intent",
+        "the podium signifies institutional authority"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes a moment where institutional authority publicly declares ethical responsibility for technical outcomes, framing reliability as a moral commitment rather than mere functionality.",
+      "alternative_interpretations": [
+        "It may simply depict routine corporate communication without deeper ethical framing—reliability being a standard marketing claim."
+      ],
+      "limitations": [
+        "No audience reaction or contextual documents are visible to confirm whether the statement is performative or substantive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1088_P2",
+      "visual_anchors": [
+        "seated man’s back view",
+        "standing man’s frontal pose",
+        "table separating them"
+      ],
+      "symbolic_mapping": [
+        "spatial separation reflects hierarchical distance",
+        "back-facing perspective denies agency to listener"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The asymmetry in visibility and positioning evokes the phenomenological tension between speaker-as-agent and listener-as-recipient, highlighting how social existence is mediated through institutional roles and spatial arrangement.",
+      "alternative_interpretations": [
+        "The seating arrangement may be purely functional (e.g., standard boardroom layout) with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "Only one listener is visible; group dynamics or consensus cannot be inferred."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1088_P3",
+      "visual_anchors": [
+        "blue textured wall",
+        "uniform lighting",
+        "clean lines of furniture"
+      ],
+      "symbolic_mapping": [
+        "neutral color palette suppresses individuality",
+        "controlled environment enforces procedural rationality"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "knowledge_truth"
+      ],
+      "interpretation": "The sterile, standardized environment visually reinforces the idea that truth claims about software reliability are produced within technocratic labor systems where aesthetic neutrality serves epistemic authority.",
+      "alternative_interpretations": [
+        "The decor reflects contemporary office design trends rather than ideological intent."
+      ],
+      "limitations": [
+        "Interior design choices lack explicit semiotic coding; interpretation depends on external cultural knowledge."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:48:50.817183+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-00dfd68e-eb35-9e0a-866d-c48f189b03a0",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 983,
+        "total_tokens": 2516,
+        "completion_tokens_details": {
+          "text_tokens": 983
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703484020bedf287b354bef",
+      "usage": {
+        "completion_tokens": 844,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2933,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3777
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

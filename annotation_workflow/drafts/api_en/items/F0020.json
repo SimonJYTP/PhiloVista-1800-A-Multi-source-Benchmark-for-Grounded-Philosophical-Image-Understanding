@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0020",
+  "sample_id": "PHL1800_HL_0403",
+  "file_name": "PHL1800_HL_0403.png",
+  "batch_id": "B003",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "an adult skier and a child skier standing on a snowy slope",
+  "captions": {
+    "scene": [
+      "A wide, open ski slope covered in snow with numerous skiers scattered across it, backed by densely forested mountains under overcast skies.",
+      "Evergreen trees heavily laden with snow line the upper slopes; ski lift infrastructure is visible mid-slope with green poles and yellow markers.",
+      "The foreground shows two skiers—adult and child—on parallel tracks, with other skiers at varying distances behind them, some stationary, some moving."
+    ],
+    "action": [
+      "The adult skier stands upright holding ski poles, facing slightly left, wearing a blue-and-black jacket and black pants, helmet and goggles visible.",
+      "The child skier stands with arms raised outward and upward, wearing a purple jacket, black pants, red ski boots, white helmet, and pink goggles.",
+      "Multiple background figures are skiing or standing; one group appears to be seated on snow near center, another pair walks uphill near a green pole."
+    ],
+    "rationale": [
+      "The adult’s posture and pole grip suggest readiness or pause rather than active descent, supported by lack of motion blur and static stance.",
+      "The child’s raised arms indicate a deliberate pose or expression of excitement, not balance correction, given symmetrical arm position and stable ski stance.",
+      "The presence of multiple skiers and infrastructure implies a managed ski area, though no signage confirms operation status or name."
+    ],
+    "object": [
+      "An adult wearing a dark helmet, reflective goggles, a blue-and-black insulated jacket, black ski pants, and black ski boots stands on skis with poles held vertically in both hands.",
+      "A child wearing a white helmet, pink-tinted goggles, a purple insulated jacket, black ski pants, bright red ski boots, and skis with visible bindings stands with both arms extended laterally upward.",
+      "Two green metal poles with yellow circular markers and small rectangular signs (text unreadable) stand upright in the snow near the adult skier.",
+      "At least 14 distinct human figures are visible across the slope: 2 in foreground, 3 near center-left, 2 near center-right, 1 seated, 1 crouching, and 5 more distant silhouettes.",
+      "Ski tracks crisscross the snow surface, including two parallel grooves directly beneath the foreground skiers, indicating recent movement."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0020_P1",
+      "visual_anchors": [
+        "child’s raised arms",
+        "adult’s upright stance with poles",
+        "shared ski equipment"
+      ],
+      "symbolic_mapping": [
+        "raised arms as gesture of openness or vulnerability",
+        "poles as tools mediating control and support"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of the child’s unguarded gesture and the adult’s prepared stance evokes the dialectic of dependence and autonomy within a shared path—each skier chooses their posture while bound by the same slope and gravity.",
+      "alternative_interpretations": [
+        "The child is simply posing for a photo; the adult is waiting for instruction or signal."
+      ],
+      "limitations": [
+        "No facial expressions are discernible due to goggles and distance; intent cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0020_P2",
+      "visual_anchors": [
+        "dense evergreen forest backdrop",
+        "overcast sky",
+        "uniform snow cover"
+      ],
+      "symbolic_mapping": [
+        "forest as enduring natural order",
+        "snow as leveling medium erasing distinctions"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The vast, static forest contrasts with the transient human activity on the slope, suggesting a philosophical tension between cyclical natural permanence and fleeting individual agency constrained by terrain and weather.",
+      "alternative_interpretations": [
+        "The scene is a routine recreational outing; the background is merely scenic context."
+      ],
+      "limitations": [
+        "No temporal markers (e.g., sun position, shadows) confirm duration or time of day beyond general daylight."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0020_P3",
+      "visual_anchors": [
+        "multiple skiers at varying distances",
+        "shared slope",
+        "no visible barriers between groups"
+      ],
+      "symbolic_mapping": [
+        "spatial proximity without interaction as emblem of coexistence",
+        "shared infrastructure implying collective access"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The dispersed yet overlapping presence of skiers on a common field illustrates a minimal social contract—individuals navigate shared space through implicit norms of spacing and direction, embodying responsibility without explicit regulation.",
+      "alternative_interpretations": [
+        "Skiers are simply spread out due to slope width and personal preference, with no intentional social signaling."
+      ],
+      "limitations": [
+        "No observable interactions (eye contact, gestures, collisions avoided) confirm normative behavior; spatial distribution could be coincidental."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:49:06.339835+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9005ff2f-dd57-958c-98f7-c7c3dd1f08b4",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 1096,
+        "total_tokens": 1825,
+        "completion_tokens_details": {
+          "text_tokens": 1096
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701485311a665bbcbc042ce",
+      "usage": {
+        "completion_tokens": 957,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1980,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2937
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

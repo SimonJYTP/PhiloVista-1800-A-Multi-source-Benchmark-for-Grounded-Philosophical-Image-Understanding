@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0587",
+  "sample_id": "PHL1800_HAIV_0147",
+  "file_name": "PHL1800_HAIV_0147.png",
+  "batch_id": "B014",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure from chest up, facing forward",
+  "captions": {
+    "scene": [
+      "A featureless humanoid figure with short dark hair, wearing a black shirt, against a plain white background.",
+      "An oval white plate with two concentric green rings rests centered on the figure's torso.",
+      "The figure has no facial features; ears and neck are minimally rendered with shading."
+    ],
+    "action": [
+      "The figure is stationary and upright, holding or presenting a plate at chest level.",
+      "The plate is positioned horizontally, parallel to the viewer’s plane, suggesting display or offering.",
+      "No motion blur, gesture, or interaction with external objects is visible."
+    ],
+    "rationale": [
+      "The absence of facial features suggests intentional abstraction rather than omission due to resolution.",
+      "The plate’s placement directly over the torso may indicate symbolic association, but visual evidence alone does not confirm intent.",
+      "The black shirt and white background create high contrast, emphasizing the plate and figure silhouette, though purpose remains unspecified."
+    ],
+    "object": [
+      "The figure has a smooth, matte-gray head with no eyes, nose, mouth, or eyebrows, bounded by a thin black outline.",
+      "Two symmetrical, simplified ear shapes protrude laterally from the head, shaded with light gray gradients.",
+      "The figure wears a solid black, short-sleeved garment covering shoulders and upper torso.",
+      "A white ceramic-style oval plate lies centered on the torso, featuring two parallel green lines near its rim.",
+      "A small multicolored square (cyan, green, red, yellow) appears in the bottom-right corner, likely an artifact or palette indicator."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0587_P1",
+      "visual_anchors": [
+        "featureless face",
+        "centered plate",
+        "black shirt"
+      ],
+      "symbolic_mapping": [
+        "the blank face maps to indeterminacy of identity",
+        "the plate maps to social role or expectation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image evokes the tension between individual anonymity and socially assigned function, where the empty face signifies unformed or suppressed selfhood while the plate represents a prescribed role imposed upon the body.",
+      "alternative_interpretations": [
+        "It may simply depict a generic placeholder avatar used in food-service or design mockups, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual context or cultural markers confirm symbolic reading; the plate could be literal tableware."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0587_P2",
+      "visual_anchors": [
+        "green-ringed plate",
+        "white background",
+        "uniform black garment"
+      ],
+      "symbolic_mapping": [
+        "green rings map to boundaries or norms",
+        "white void maps to neutrality or potential"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The constrained geometry of the plate—its fixed rings and central placement—suggests structured choice within rigid limits, where the figure embodies agency circumscribed by external form.",
+      "alternative_interpretations": [
+        "The green rings may be purely decorative, reflecting common dinnerware patterns without normative implication."
+      ],
+      "limitations": [
+        "Color symbolism (green = constraint) is culturally variable and unsupported by internal evidence."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0587_P3",
+      "visual_anchors": [
+        "lack of facial features",
+        "plate as focal object",
+        "isolated figure"
+      ],
+      "symbolic_mapping": [
+        "absence of face maps to epistemic opacity",
+        "plate as sole visible content maps to limited knowledge access"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The image visualizes the epistemological condition where truth or self-knowledge is mediated through external artifacts—the plate being the only knowable ‘content’ while the subject remains unknowable.",
+      "alternative_interpretations": [
+        "The figure is a neutral template for UI design, and the plate is a placeholder for user-uploaded content."
+      ],
+      "limitations": [
+        "No indication that the plate contains information or that the figure is meant to be unknowable; it may be stylistic minimalism."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:58:48.434570+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c0f39a0e-8345-90d4-b2d7-b22c56d304f1",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 932,
+        "total_tokens": 2465,
+        "completion_tokens_details": {
+          "text_tokens": 932
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070258365912e7fc1250408d",
+      "usage": {
+        "completion_tokens": 793,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2892,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3685
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

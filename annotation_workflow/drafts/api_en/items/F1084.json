@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1084",
+  "sample_id": "PHL1800_IRFL_0048",
+  "file_name": "PHL1800_IRFL_0048.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a line of twelve human figures arranged by apparent age from infancy to extreme old age, plus one skeletal figure",
+  "captions": {
+    "scene": [
+      "A horizontal procession of figures stands on a light-colored ground against a blue sky with sparse white clouds and two small stars.",
+      "The background includes distant green hills and a faint orange horizon glow beneath the cloud layer.",
+      "On the far right, a dark vertical void contains a skeletal figure holding a staff and a skull rests at its base."
+    ],
+    "action": [
+      "Several figures hold objects: a red hoop, a bow and arrow, a book, a bag, and a long staff; one figure raises a hand in a gesture.",
+      "All figures face generally leftward, with most heads turned toward the viewer or slightly forward.",
+      "Star-shaped white symbols appear on the chests of twelve figures and on the bodies of three infants."
+    ],
+    "rationale": [
+      "The linear arrangement and progressive aging suggest a chronological sequence, though no explicit timeline markers are present.",
+      "The repeated star symbols likely indicate a shared attribute or status, but their specific meaning is not visually defined.",
+      "The skeletal figure and skull imply mortality, yet no explicit cause of death or temporal marker confirms this interpretation."
+    ],
+    "object": [
+      "There are exactly twelve living human figures: five infants/toddlers crouching or sitting on the left, four children/adolescents standing, and three adult/elderly men on the right.",
+      "A red circular hoop lies on the ground near the third child from the left, partially encircling his legs.",
+      "The rightmost living figure is bald, bearded, wears glasses, and holds a long staff; beside him stands a skeletal figure with visible ribs, pelvis, and skull resting on the ground.",
+      "Each of the twelve living figures has a white star symbol painted or affixed to their torso or chest area—infants have smaller stars, and the skeletal figure lacks one.",
+      "The figure second from the left holds a thin brown stick; the fourth from left holds a yellow object resembling a doll or mask; the central shirtless man wears a pink cloth draped around his waist."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1084_P1",
+      "visual_anchors": [
+        "star symbols on all living figures",
+        "skeletal figure at far right",
+        "progressive aging sequence"
+      ],
+      "symbolic_mapping": [
+        "stars may denote inherent worth or shared essence across life stages",
+        "skeleton marks the endpoint of the sequence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes life as a unified continuum where each stage—from infant to elder—holds equal symbolic value (via the stars), culminating in inevitable corporeal dissolution (the skeleton), suggesting a philosophical stance that identity persists through change until mortality interrupts it.",
+      "alternative_interpretations": [
+        "It may depict a ritual procession or lineage portrait where stars signify clan membership or spiritual initiation, with the skeleton representing an ancestor rather than death itself."
+      ],
+      "limitations": [
+        "No textual labels confirm the stars' meaning; the skeleton’s posture and context do not definitively indicate death versus guardianship or wisdom."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1084_P2",
+      "visual_anchors": [
+        "central shirtless man in pink cloth",
+        "figures holding books, bags, staffs",
+        "infants without clothing or tools"
+      ],
+      "symbolic_mapping": [
+        "clothing and objects mark social roles or accumulated knowledge",
+        "nudity of infants signals pre-social state"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The distribution of attire and artifacts across ages implies that social identity and epistemic capacity emerge gradually: infants lack tools, children acquire simple implements, adults carry instruments of learning or authority, reflecting a view that knowledge and social being are constructed over time.",
+      "alternative_interpretations": [
+        "The objects may be ceremonial regalia rather than functional tools, indicating fixed roles within a mythological narrative rather than developmental progression."
+      ],
+      "limitations": [
+        "The book is closed and illegible; the bag’s contents are unseen; the staff’s function is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1084_P3",
+      "visual_anchors": [
+        "all figures aligned horizontally",
+        "shared star motif",
+        "uniform direction of gaze"
+      ],
+      "symbolic_mapping": [
+        "horizontal line represents collective continuity",
+        "shared stars indicate ontological unity despite physical difference"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "Despite stark differences in age, dress, and capability, the uniform star placement and alignment assert a fundamental sameness of being, implying ethical responsibility toward all life stages as equally valid expressions of a single existential condition.",
+      "alternative_interpretations": [
+        "The alignment could simply reflect compositional balance in a painting, with stars serving decorative or stylistic purposes unrelated to philosophy."
+      ],
+      "limitations": [
+        "No facial expressions or interactions confirm moral intent; the stars are identical in form but not proven to carry semantic weight."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The count of living figures is incorrect; there are twelve living figures, not thirteen. The description of the central shirtless man’s garment as a 'dhoti-like' cloth is an unsupported assumption about cultural context. The claim that 'each of the thirteen living figures has a white eight-pointed star' is inaccurate—infants have smaller star symbols, and the skeletal figure lacks one."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:48:52.434840+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e56051d2-eeab-94bc-a730-d046f10c64d2",
+      "usage": {
+        "prompt_tokens": 3059,
+        "completion_tokens": 1113,
+        "total_tokens": 4172,
+        "completion_tokens_details": {
+          "text_tokens": 1113
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034824863f955a7e2c4120",
+      "usage": {
+        "completion_tokens": 1150,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7731,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 8881
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

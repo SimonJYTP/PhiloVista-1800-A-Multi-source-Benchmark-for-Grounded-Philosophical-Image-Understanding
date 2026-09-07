@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0539",
+  "sample_id": "PHL1800_HL_0273",
+  "file_name": "PHL1800_HL_0273.png",
+  "batch_id": "B013",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person in military-style attire seated on a vintage motorcycle with sidecar, surrounded by onlookers",
+  "captions": {
+    "scene": [
+      "A cobblestone street beside a stone building with a wooden door and red shuttered wall; multiple people stand observing.",
+      "A vintage black motorcycle with attached sidecar, equipped with spare tire, leather straps, and metal storage boxes, parked on brick pavement.",
+      "A crowd of approximately 11 visible individuals of varying ages and attire, some holding phones or bags, clustered around the motorcycle."
+    ],
+    "action": [
+      "The central figure sits upright on the motorcycle, hands on handlebars, wearing goggles pushed up on helmet, facing forward.",
+      "Several onlookers hold smartphones and appear to be photographing or recording the scene.",
+      "One person in ornate costume (red and gold patterned robe, hat) stands near the doorway behind the motorcycle, partially obscured."
+    ],
+    "rationale": [
+      "The motorcycle’s design—including round headlamp, spoked wheels, sidecar with riveted metal panels, and external spare tire—suggests a mid-20th-century military model, though exact make/model is unreadable.",
+      "The central figure’s uniform (olive-green jacket with insignia patches, belt with pouches, helmet with goggles) resembles historical military gear, but no national insignia or rank is legible.",
+      "The presence of modern clothing (jeans, sneakers, hoodies) among observers alongside period-costumed figures implies a staged event rather than an authentic historical moment, though this cannot be confirmed solely from visual evidence."
+    ],
+    "object": [
+      "A black motorcycle with a single front wheel, drum brake, wire-spoke rim, and a round amber headlamp mounted on a fork brace.",
+      "A matching black sidecar attached to the motorcycle’s left side, featuring two latched metal storage compartments, a spare tire secured on top with leather straps, and a small rear wheel.",
+      "A person wearing an olive-green jacket with green shoulder patches, a dark helmet with aviator-style goggles resting on the forehead, and a webbed belt with pouches.",
+      "A stone wall composed of irregularly shaped light-gray blocks with visible mortar joints, adjacent to a dark wooden door with brass hardware and a red-painted vertical panel to its right.",
+      "A woman in white long-sleeve shirt and black pants standing on the right, holding a small black object (possibly phone), with glasses and short brown hair; her footwear consists of white slip-on shoes with black trim."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "commonsense_inference"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0539_P1",
+      "visual_anchors": [
+        "goggles pushed up on helmet",
+        "modern smartphones held by onlookers",
+        "vintage motorcycle"
+      ],
+      "symbolic_mapping": [
+        "goggles as mediation between past and present perception",
+        "smartphones as instruments of contemporary documentation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of historical reenactment gear with digital recording devices highlights how truth about the past is constructed through present-day observation and technological mediation.",
+      "alternative_interpretations": [
+        "This may simply be a public display at a heritage festival with no intended philosophical message."
+      ],
+      "limitations": [
+        "No textual labels or signage confirm intent; the symbolic mapping relies on assumed cultural associations."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0539_P2",
+      "visual_anchors": [
+        "crowd surrounding the motorcycle",
+        "varied clothing styles",
+        "central figure isolated by posture and attire"
+      ],
+      "symbolic_mapping": [
+        "the motorcycle as a focal point of collective attention",
+        "costume as a marker of temporary social role"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene illustrates how identity is performed and socially ratified: the costumed individual gains salience only through the gaze and framing of the surrounding group.",
+      "alternative_interpretations": [
+        "The crowd may be casually passing by, not actively engaging; attention could be incidental rather than constitutive."
+      ],
+      "limitations": [
+        "Facial expressions and body orientation are ambiguous; some individuals look away or downward."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0539_P3",
+      "visual_anchors": [
+        "spare tire strapped atop sidecar",
+        "leather straps and metal fasteners",
+        "hand on handlebar grip"
+      ],
+      "symbolic_mapping": [
+        "mechanical preparedness as metaphor for contingency planning",
+        "tactile control over machine as assertion of agency"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The visible readiness of the vehicle—spare tire, secure fittings—and the rider’s poised grip suggest a philosophy of deliberate preparedness and embodied decision-making in uncertain terrain.",
+      "alternative_interpretations": [
+        "These are standard features of vintage military vehicles and do not necessarily reflect intentional symbolism."
+      ],
+      "limitations": [
+        "No motion or destination is visible; the motorcycle is stationary, so 'journey' is inferred, not observed."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of onlookers (candidate states 14, actual count is 11 visible individuals)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:55:09.858605+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-47d703de-c6a9-915e-8e62-b62e3823ec88",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 1114,
+        "total_tokens": 1943,
+        "completion_tokens_details": {
+          "text_tokens": 1114
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025446c31f02c62f924267",
+      "usage": {
+        "completion_tokens": 993,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2114,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3107
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

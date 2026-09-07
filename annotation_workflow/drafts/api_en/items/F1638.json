@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1638",
+  "sample_id": "PHL1800_HL_0181",
+  "file_name": "PHL1800_HL_0181.png",
+  "batch_id": "B033",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one seated person",
+  "captions": {
+    "scene": [
+      "A person sits on a green metal bench beside a concrete wall with white horizontal siding above and two wall-mounted light fixtures to the right.",
+      "The ground is wooden planking adjacent to a concrete sidewalk; the wall shows stains, cracks, and small embedded bolts or fasteners.",
+      "A dark handbag rests on the bench beside the person, who wears black trousers, a gray jacket, and purple-and-pink patterned flat shoes."
+    ],
+    "action": [
+      "The person holds an open white booklet or document with both hands and looks down at it.",
+      "The person’s head is bowed forward, obscuring their face, and their posture is upright but relaxed on the bench.",
+      "The person’s left hand supports the lower edge of the booklet while the right hand appears to hold or turn a page near the top."
+    ],
+    "rationale": [
+      "The person is likely reading because their gaze direction, head tilt, and hand placement align with typical reading behavior; however, no eye movement or text legibility confirms this.",
+      "The booklet is held open and positioned for visual access, suggesting active engagement rather than passive holding; yet the content remains unreadable and intent is unverifiable.",
+      "The presence of a handbag on the bench implies temporary occupancy, but duration or purpose cannot be determined from static evidence alone."
+    ],
+    "object": [
+      "A green painted metal bench with slatted seat and backrest, mounted on two vertical legs anchored to the ground.",
+      "A person wearing a dark gray zippered jacket over a blue collared shirt, black trousers, and purple-and-pink plaid flat shoes.",
+      "A dark-colored handbag with visible metallic hardware resting on the bench to the person’s left side.",
+      "Two identical cylindrical wall-mounted light fixtures with frosted glass covers and dark metal frames, affixed vertically on the concrete wall.",
+      "An open white paper object with visible crease lines and slightly curled pages, held in both hands, with no legible text visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1638_P1",
+      "visual_anchors": [
+        "open white booklet",
+        "bowed head",
+        "concrete wall"
+      ],
+      "symbolic_mapping": [
+        "the booklet as a medium of external knowledge",
+        "the bowed head as withdrawal from shared space"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The act of solitary engagement with a text against an impersonal architectural backdrop evokes the tension between internal cognition and external reality—knowledge pursued in isolation amid indifferent surroundings.",
+      "alternative_interpretations": [
+        "The person may simply be reviewing instructions or a map, with no philosophical intent implied."
+      ],
+      "limitations": [
+        "No text is legible, so the nature of the booklet’s content is unknown and cannot confirm epistemic intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1638_P2",
+      "visual_anchors": [
+        "green bench",
+        "concrete wall with stains",
+        "wooden planking floor"
+      ],
+      "symbolic_mapping": [
+        "bench as a site of temporary rest",
+        "stained wall as evidence of time and exposure"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a functional, man-made seating object against weathered, decaying surfaces suggests impermanence: human activity occupies transient moments within enduring but deteriorating structures.",
+      "alternative_interpretations": [
+        "The stains may be incidental water marks or construction residue, not necessarily signs of aging."
+      ],
+      "limitations": [
+        "The age or cause of wall discoloration is not determinable from visual evidence alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1638_P3",
+      "visual_anchors": [
+        "person’s obscured face",
+        "jacket with visible collar",
+        "handbag placed beside them"
+      ],
+      "symbolic_mapping": [
+        "concealed identity through posture",
+        "personal belongings marking presence without identification"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The figure exists physically in public space yet remains socially anonymous—presence asserted through objects and posture rather than facial recognition, reflecting modern conditions of cohabitation without mutual acknowledgment.",
+      "alternative_interpretations": [
+        "The person may be shielding eyes from light or focusing intently, not deliberately concealing identity."
+      ],
+      "limitations": [
+        "Facial occlusion results from head angle, not confirmed intentional concealment."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:55:51.450150+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7c7ff831-39e5-9f28-b284-dffac5c84bc5",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 978,
+        "total_tokens": 1747,
+        "completion_tokens_details": {
+          "text_tokens": 978
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045539b40cbc4aa1cc461b",
+      "usage": {
+        "completion_tokens": 842,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1908,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2750
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

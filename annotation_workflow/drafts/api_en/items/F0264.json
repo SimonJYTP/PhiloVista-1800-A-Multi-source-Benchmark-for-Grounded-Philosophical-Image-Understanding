@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0264",
+  "sample_id": "PHL1800_HL_0184",
+  "file_name": "PHL1800_HL_0184.png",
+  "batch_id": "B007",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person walking on a sidewalk holding an umbrella and a yellow bag",
+  "captions": {
+    "scene": [
+      "A paved sidewalk with scattered fallen leaves, bordered by a black metal fence and dense green foliage above.",
+      "The ground is damp and speckled with debris; a concrete curb separates the walkway from a vegetated embankment.",
+      "A partial view of a building wall appears behind the fence, partially obscured by overhanging branches."
+    ],
+    "action": [
+      "The person walks leftward across the frame, mid-stride, with right foot forward and left foot trailing.",
+      "They hold a black umbrella aloft with their right hand, shielding themselves from above.",
+      "Their left arm carries a large bright-yellow bag with visible red text that is unreadable due to resolution and angle."
+    ],
+    "rationale": [
+      "The wet pavement and use of an umbrella suggest recent or ongoing precipitation, though no raindrops are visible in air.",
+      "The person’s posture and stride indicate forward locomotion rather than standing or turning.",
+      "The yellow bag appears to be a reusable shopping or tote bag based on its shape and handle placement, but its exact function cannot be confirmed."
+    ],
+    "object": [
+      "A person wearing a purple long-sleeved top, dark blue jeans, and red shoes with white soles is visible from the side.",
+      "A black umbrella with a visible red logo on its upper surface is held open above the person’s head.",
+      "A bright yellow bag with a black strap is carried in the person’s left hand; red lettering is present but illegible.",
+      "A black wrought-iron fence runs horizontally across the background, separating the sidewalk from a leafy green embankment.",
+      "Fallen brown leaves are scattered across the gray concrete sidewalk and adjacent dirt strip."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0264_P1",
+      "visual_anchors": [
+        "yellow bag with unreadable red text",
+        "black umbrella",
+        "person walking alone"
+      ],
+      "symbolic_mapping": [
+        "the bag as a marker of daily necessity",
+        "the umbrella as provisional shelter"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The solitary figure navigating a damp urban path with tools of practicality (umbrella, bag) embodies the everyday enactment of choice within constrained social routines—movement as both literal and existential journey.",
+      "alternative_interpretations": [
+        "This is simply a pedestrian commuting during light rain, with no deeper significance implied by the visual elements alone."
+      ],
+      "limitations": [
+        "No facial expression, destination, or interaction is visible; thus, attributing intentionality or existential weight relies on projection beyond evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0264_P2",
+      "visual_anchors": [
+        "wet pavement",
+        "fallen leaves",
+        "green foliage overhead"
+      ],
+      "symbolic_mapping": [
+        "damp ground as transient condition",
+        "leaves as cyclical change"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of decaying organic matter on the man-made path beneath enduring greenery suggests the tension between natural temporality and human-imposed order—a quiet meditation on impermanence within structured environments.",
+      "alternative_interpretations": [
+        "The scene reflects ordinary seasonal weather effects on an urban sidewalk, with no symbolic intent required."
+      ],
+      "limitations": [
+        "The foliage and leaves are generic; no specific species, season markers, or decay stage can be determined definitively."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0264_P3",
+      "visual_anchors": [
+        "black metal fence",
+        "person partially obscured by umbrella",
+        "asymmetrical framing"
+      ],
+      "symbolic_mapping": [
+        "fence as boundary",
+        "umbrella as partial concealment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The subject’s identity remains visually mediated—partially hidden by the umbrella, defined by functional attire and carried objects—highlighting how appearance in public space is shaped by both self-presentation and environmental constraints.",
+      "alternative_interpretations": [
+        "The umbrella naturally blocks part of the person’s upper body due to its size and position; no intentional concealment is evident."
+      ],
+      "limitations": [
+        "Only one side profile is visible; front-facing features, gender, age, or expression are not discernible."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:26:42.793602+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-82357fce-a527-9023-9b0d-7cdeca2f2900",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 976,
+        "total_tokens": 1765,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022619b00a52b949a74b15",
+      "usage": {
+        "completion_tokens": 836,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1931,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2767
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

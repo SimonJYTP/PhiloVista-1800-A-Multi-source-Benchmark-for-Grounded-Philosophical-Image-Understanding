@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0104",
+  "sample_id": "PHL1800_HAIV_0152",
+  "file_name": "PHL1800_HAIV_0152.png",
+  "batch_id": "B004",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two human figures in a restaurant setting with a large floating spherical object",
+  "captions": {
+    "scene": [
+      "A red-clothed table with a silver cloche sits between two figures against a warm-toned background.",
+      "Three red five-pointed stars float in the upper right quadrant of the image.",
+      "A large brown spherical object with facial features hangs above the scene, suspended by thin lines."
+    ],
+    "action": [
+      "The standing figure in chef attire gestures with an open right hand toward the seated figure.",
+      "The seated figure faces forward with a neutral expression and wears a white shirt with orange vest.",
+      "A speech bubble containing a red curved line and the numeral '1' appears near the seated figure’s head."
+    ],
+    "rationale": [
+      "The chef’s posture and hand orientation suggest communication directed at the seated figure, though no sound is visible.",
+      "The spherical object has two vertical black ovals and a downward-curving black arc, resembling a sad face; this is a visual configuration, not confirmed emotion.",
+      "The tag hanging from the sphere contains red text that is illegible due to stylization and resolution; it cannot be transcribed."
+    ],
+    "object": [
+      "A large brown sphere with two vertical black oval shapes and one downward-curving black line is positioned in the upper left portion of the image.",
+      "A white rectangular tag with red indecipherable markings hangs from the sphere via two thin black lines.",
+      "A standing figure wears a white double-breasted chef coat with red trim, a tall pleated white toque, and a black necktie or cravat.",
+      "A seated figure wears a white collared shirt, an orange sleeveless vest, and a black bowtie, with hands resting on the table.",
+      "A silver-domed cloche rests on a red tablecloth in front of the seated figure, with a small white cup beside it."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0104_P1",
+      "visual_anchors": [
+        "large brown sphere with facial features",
+        "three red stars",
+        "chef gesturing"
+      ],
+      "symbolic_mapping": [
+        "sphere as embodiment of judgment or evaluation",
+        "stars as external rating system"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image may depict institutional evaluation imposing symbolic weight upon labor, where the chef’s gesture signifies appeal or defense under an abstract authority represented by the sphere and stars.",
+      "alternative_interpretations": [
+        "It could be a literal depiction of a culinary review scenario with decorative elements, lacking symbolic intent."
+      ],
+      "limitations": [
+        "No legible text confirms evaluative context; facial features on the sphere are minimal and ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0104_P2",
+      "visual_anchors": [
+        "speech bubble with red curve and '1'",
+        "seated figure's passive posture",
+        "cloche covering unknown item"
+      ],
+      "symbolic_mapping": [
+        "speech bubble as constrained expression",
+        "cloche as withheld knowledge or potential"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The seated figure’s limited utterance (a single numeral and curve) alongside a concealed dish suggests epistemic limitation—truth or choice remains inaccessible until revelation occurs.",
+      "alternative_interpretations": [
+        "The speech bubble may simply indicate a menu number or order confirmation without deeper meaning."
+      ],
+      "limitations": [
+        "The symbol '1' and curve lack contextual anchors; their semantic role is unverified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0104_P3",
+      "visual_anchors": [
+        "chef’s exaggerated facial features",
+        "sphere’s simplified face",
+        "shared color palette of red/orange/brown"
+      ],
+      "symbolic_mapping": [
+        "stylized faces as reduction of identity to function",
+        "color harmony as systemic cohesion"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The flattening of human and object faces into schematic forms reflects how social roles (e.g., chef, diner) and artifacts (e.g., rating sphere) become standardized appearances within labor systems.",
+      "alternative_interpretations": [
+        "The style is purely artistic caricature with no sociological reference intended."
+      ],
+      "limitations": [
+        "Stylization alone does not prove intentional commentary on identity or labor."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:00:18.018425+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b9a58adf-9217-924c-92c4-77c1fbe13c96",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 965,
+        "total_tokens": 2498,
+        "completion_tokens_details": {
+          "text_tokens": 965
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015952a57d755f2e614d7d",
+      "usage": {
+        "completion_tokens": 825,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2919,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3744
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

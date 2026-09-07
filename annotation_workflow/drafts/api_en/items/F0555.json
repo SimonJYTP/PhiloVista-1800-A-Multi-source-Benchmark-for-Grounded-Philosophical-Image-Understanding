@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0555",
+  "sample_id": "PHL1800_HL_0497",
+  "file_name": "PHL1800_HL_0497.png",
+  "batch_id": "B013",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people in a bedroom: one reclining on a bed, one standing beside the bed holding a laptop",
+  "captions": {
+    "scene": [
+      "A brightly lit bedroom with white walls, two windows (one with blinds partially drawn), and a black leather headboard.",
+      "A wooden lap desk rests on the lap of a person lying supine on a bed covered with white linens and patterned pillows.",
+      "A small wooden side table holds a closed black laptop case, a bottle, and other small items near the bed."
+    ],
+    "action": [
+      "The standing person, wearing an orange t-shirt, leans forward and places or adjusts a black laptop on the lap desk.",
+      "The reclining person, wearing glasses and a white t-shirt, lies with arms extended toward the laptop, hands near its base.",
+      "The standing person’s left hand rests on the laptop lid while her right hand supports its edge; she looks down at the device."
+    ],
+    "rationale": [
+      "The presence of crutches leaning against the wall near the headboard suggests possible mobility limitation for the reclining person, though no injury is visible.",
+      "The lap desk and positioning imply assistance with device access, but no explicit care activity (e.g., feeding, dressing) is shown.",
+      "The orange shirt features a graphic print with green and yellow tones; the image content is not legible as text."
+    ],
+    "object": [
+      "A black laptop with a silver hinge and visible logo on the lid is being placed onto a light-colored wooden lap desk.",
+      "A pair of aluminum forearm crutches with gray handgrips stands upright against the wall to the left of the bed.",
+      "The reclining person wears dark-rimmed eyeglasses and a plain white short-sleeved t-shirt.",
+      "The standing person wears a short-sleeved orange t-shirt with a multicolored rectangular graphic, black pants, a silver watch on the left wrist, and a blue-and-white patterned bracelet on the right wrist.",
+      "A white pillow with a faint pink floral pattern lies behind the reclining person’s head, adjacent to a solid white pillow."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0555_P1",
+      "visual_anchors": [
+        "crutches against wall",
+        "lap desk supporting laptop",
+        "standing person’s hands guiding device"
+      ],
+      "symbolic_mapping": [
+        "crutches → physical constraint",
+        "lap desk → mediated autonomy"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The scene visualizes how technology and assistive tools mediate agency under bodily constraint, where the laptop becomes a conduit for participation despite immobility.",
+      "alternative_interpretations": [
+        "This may simply depict routine tech setup without symbolic intent—e.g., sharing media or remote work."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues confirm intentionality or emotional valence; the graphic on the shirt is unreadable and cannot be interpreted as textual meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0555_P2",
+      "visual_anchors": [
+        "two individuals in close proximity",
+        "shared focus on laptop",
+        "asymmetrical postures (reclining vs. standing)"
+      ],
+      "symbolic_mapping": [
+        "proximity without touch → relational support",
+        "asymmetry → interdependence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The spatial arrangement embodies a non-hierarchical form of social existence, where responsibility manifests as quiet facilitation rather than overt intervention.",
+      "alternative_interpretations": [
+        "The standing person could be a visitor, technician, or family member performing a neutral task; no gestures confirm care intent."
+      ],
+      "limitations": [
+        "No eye contact or physical contact is visible; posture alone does not confirm relational role or moral commitment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0555_P3",
+      "visual_anchors": [
+        "uncovered legs of reclining person",
+        "exposed torso of standing person",
+        "neutral room lighting"
+      ],
+      "symbolic_mapping": [
+        "bare skin in domestic space → vulnerability",
+        "casual attire → normalized intimacy"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The unguarded presentation of bodies in a functional setting underscores identity as enacted through everyday reliance—not performance—suggesting selfhood shaped by necessity and adaptation.",
+      "alternative_interpretations": [
+        "Clothing and posture reflect comfort and informality common in private homes, not necessarily philosophical stance."
+      ],
+      "limitations": [
+        "Garments are generic; no distinguishing marks, tattoos, or accessories reveal identity markers beyond age-apparent features."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:56:28.168752+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-af8199d8-6732-9870-ad97-92144f3a4bc9",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1033,
+        "total_tokens": 1842,
+        "completion_tokens_details": {
+          "text_tokens": 1033
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025609e60aac6ef6ee4132",
+      "usage": {
+        "completion_tokens": 894,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2013,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2907
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0708",
+  "sample_id": "PHL1800_IRFL_0014",
+  "file_name": "PHL1800_IRFL_0014.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four individuals wearing white 'VOLUNTEER' t-shirts assembling food packages at a table",
+  "captions": {
+    "scene": [
+      "Indoor setting with bright diffuse lighting, a wooden table, and multiple brown paper bags containing food items.",
+      "A group of four people in matching white t-shirts with blue text stand around a table filled with canned goods, bottled water, and produce.",
+      "Foreground shows a woman with curly hair holding a small cardboard box above an open paper bag containing a green apple."
+    ],
+    "action": [
+      "A woman in the foreground holds a small brown cardboard box over an open paper bag while her other hand rests near the bag’s rim.",
+      "Three other individuals stand behind her; two are partially visible with hands extended toward bags or items on the table.",
+      "One person in the background smiles toward the left side of the frame, with hands positioned near a paper bag."
+    ],
+    "rationale": [
+      "The repeated 'VOLUNTEER' text on shirts suggests organized collective activity rather than casual gathering.",
+      "Presence of standardized packaging (paper bags, identical cans) implies systematic distribution rather than personal meal prep.",
+      "Hand positions and item placement indicate active assembly, but no motion blur confirms only static poses are visible."
+    ],
+    "object": [
+      "A green apple is visible inside an open brown paper bag in the lower right foreground.",
+      "Two unopened cylindrical metal cans with silver lids sit on the table near the center-left.",
+      "A clear plastic water bottle with a red cap stands upright beside a paper bag on the left side of the table.",
+      "A small rectangular brown cardboard box is held between the thumb and fingers of the foreground woman’s right hand.",
+      "Four distinct individuals are present: one fully visible in foreground, three partially visible behind, each wearing a white short-sleeved t-shirt with blue uppercase text reading 'VOLUNTEER'."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0708_P1",
+      "visual_anchors": [
+        "white t-shirts with 'VOLUNTEER' text",
+        "coordinated hand placements near bags",
+        "identical canned goods"
+      ],
+      "symbolic_mapping": [
+        "uniform text signifies shared role assignment",
+        "repetition of containers suggests institutionalized care"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visual uniformity and synchronized task engagement reflect how social roles mediate ethical action—individuals become conduits of collective responsibility through shared signage and procedural repetition.",
+      "alternative_interpretations": [
+        "This may simply depict routine logistical work without symbolic intent, such as warehouse sorting under organizational branding."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues confirm internal motivation; the 'VOLUNTEER' text could be generic apparel rather than role declaration."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0708_P2",
+      "visual_anchors": [
+        "open paper bag with apple",
+        "unopened cans",
+        "hand holding small box"
+      ],
+      "symbolic_mapping": [
+        "apple as singular fresh item amid processed goods signals care for quality",
+        "small box as discrete unit within larger system denotes modular contribution"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of perishable produce and standardized canned goods, handled via modular packaging, illustrates how labor is segmented into discrete choices that collectively constitute a journey toward provision—each act a node in a distributed care network.",
+      "alternative_interpretations": [
+        "The apple may be incidental inventory; the box could be packaging waste rather than intentional contribution."
+      ],
+      "limitations": [
+        "No labels confirm contents of cans or box; freshness of apple cannot be verified visually beyond color and shape."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0708_P3",
+      "visual_anchors": [
+        "four individuals in proximity",
+        "shared t-shirt design",
+        "table as shared workspace"
+      ],
+      "symbolic_mapping": [
+        "physical closeness without direct contact implies structured co-presence",
+        "repetition of attire enforces visual cohesion despite diverse appearances"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Identity here is temporarily subsumed into appearance-based collectivity: the shirt overrides individual features, suggesting that social existence in this context is enacted through visible alignment rather than personal distinction.",
+      "alternative_interpretations": [
+        "Participants may be friends or family volunteering together; uniformity could stem from convenience rather than ideological erasure of self."
+      ],
+      "limitations": [
+        "Only partial faces are visible; hair texture and skin tone vary, but no facial features confirm identity suppression or voluntary adoption."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:39:16.338381+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2f175172-2c7b-953f-87c7-0d7bb452648b",
+      "usage": {
+        "prompt_tokens": 1181,
+        "completion_tokens": 1025,
+        "total_tokens": 2206,
+        "completion_tokens_details": {
+          "text_tokens": 1025
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 674,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013855bccd8cfd55954aea",
+      "usage": {
+        "completion_tokens": 886,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2499,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3385
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

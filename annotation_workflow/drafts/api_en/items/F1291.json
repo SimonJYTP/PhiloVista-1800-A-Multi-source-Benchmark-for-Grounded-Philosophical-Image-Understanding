@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1291",
+  "sample_id": "PHL1800_HL_0427",
+  "file_name": "PHL1800_HL_0427.png",
+  "batch_id": "B027",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two skiers on a snow-covered trail",
+  "captions": {
+    "scene": [
+      "A wide, flat expanse of snow with parallel ski tracks converging toward the horizon under a clear blue sky.",
+      "Bare deciduous trees line the left edge of the scene; a distant building with a plume of white smoke rises behind them.",
+      "Multiple sets of intersecting ski tracks crisscross the snowfield, indicating prior activity."
+    ],
+    "action": [
+      "The foreground skier propels forward using poles, body leaning slightly forward, legs in stride position.",
+      "A second skier farther down the trail moves along the same track, appearing smaller due to distance.",
+      "Both skiers are upright and actively engaged in cross-country skiing motion."
+    ],
+    "rationale": [
+      "The presence of two distinct human silhouettes with ski poles and parallel grooves suggests cross-country skiing rather than downhill or snowshoeing.",
+      "The uniformity of the snow surface and absence of steep gradients indicate flat or gently rolling terrain, consistent with Nordic skiing.",
+      "The smoke plume and building suggest proximity to infrastructure, but no signage or readable text confirms location or purpose."
+    ],
+    "object": [
+      "Two individuals wearing dark winter clothing are visible on skis, one near the lower-left third of the frame, the other approximately two-thirds up the central track.",
+      "Parallel grooves in the snow form a double-track lane extending from foreground to background, characteristic of groomed ski trails.",
+      "A cluster of leafless trees occupies the left midground, casting faint shadows on the snow.",
+      "A structure with a vertical smoke emission is visible on the horizon, right of center, partially obscured by haze.",
+      "The snow surface shows varied texture: smooth within tracks, disturbed and ridged elsewhere, with scattered footprints and crossing ski lines."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1291_P1",
+      "visual_anchors": [
+        "parallel ski tracks",
+        "distant skier",
+        "foreground skier"
+      ],
+      "symbolic_mapping": [
+        "the converging tracks symbolize divergent yet shared paths through time"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The image evokes the existential condition of journeying—individuals moving along defined paths that recede into an indistinct horizon, suggesting both agency and finitude.",
+      "alternative_interpretations": [
+        "This is simply a recreational winter activity captured at midday with standard trail grooming."
+      ],
+      "limitations": [
+        "No facial expressions, labels, or contextual markers confirm intentional symbolism; the interpretation relies on formal composition alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1291_P2",
+      "visual_anchors": [
+        "bare trees",
+        "smoke plume",
+        "empty snowfield"
+      ],
+      "symbolic_mapping": [
+        "the contrast between natural stillness and industrial emission reflects tension between nature and human intervention"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of dormant vegetation and anthropogenic smoke implies a quiet contest over environmental agency, where human labor leaves traces even in seemingly untouched spaces.",
+      "alternative_interpretations": [
+        "The smoke may originate from residential heating, not industry, and the trees are seasonally bare—not indicative of ecological distress."
+      ],
+      "limitations": [
+        "The source and scale of the smoke plume cannot be determined visually; its origin is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1291_P3",
+      "visual_anchors": [
+        "two skiers separated by distance",
+        "shared trail",
+        "no direct interaction"
+      ],
+      "symbolic_mapping": [
+        "spatial separation despite shared path illustrates social existence as simultaneous yet non-colliding trajectories"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The skiers inhabit the same structured environment yet remain physically isolated, illustrating how social coexistence often operates through parallelism rather than communion.",
+      "alternative_interpretations": [
+        "They may be part of the same group traveling at different paces, with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No evidence of communication, gaze direction, or group affiliation confirms relational intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:12:41.127634+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e7234813-ddc8-9fb5-89e8-c0e351f1a948",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 936,
+        "total_tokens": 1605,
+        "completion_tokens_details": {
+          "text_tokens": 936
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704122775fa433d815d4136",
+      "usage": {
+        "completion_tokens": 800,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1737,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2537
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

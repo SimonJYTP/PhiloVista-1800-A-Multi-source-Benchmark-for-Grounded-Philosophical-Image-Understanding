@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1722",
+  "sample_id": "PHL1800_MM_0001",
+  "file_name": "PHL1800_MM_0001.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals in a corridor with graffiti-covered wall and bookshelf",
+  "captions": {
+    "scene": [
+      "Indoor corridor with beige wall on left bearing red spray-painted text, white wall ahead, blue carpeted floor, and black bookshelf filled with books on right",
+      "Overhead fluorescent lighting illuminates the space; ceiling tiles and ventilation grilles visible",
+      "One person stands near wall holding aerosol can; second person walks away toward bookshelf carrying orange bag"
+    ],
+    "action": [
+      "Person on left holds silver-and-red aerosol can in both hands, facing wall with graffiti",
+      "Person on right walks forward with back to camera, wearing black hoodie and carrying large orange shoulder bag",
+      "Speech bubble above left person contains legible English text: 'I should scrub off the protest messages.'"
+    ],
+    "rationale": [
+      "The speech bubble suggests internal deliberation about removing graffiti, but no physical scrubbing action is visible",
+      "Graffiti appears freshly applied (dripping paint), yet no cleaning tools or residue are present",
+      "Bookshelf contents and corridor layout suggest institutional setting (e.g., library or school), but signage or logos confirming identity are absent"
+    ],
+    "object": [
+      "A black hooded sweatshirt worn by the left individual, with hood up and face partially obscured.",
+      "A silver aerosol can with red label and white nozzle held by the left individual.",
+      "Red spray-painted text on beige wall includes legible fragments: 'BAY', 'ORDER', 'DLADY', 'ANPRA'; lower section contains smaller, mostly illegible black text with drips.",
+      "A black bookshelf unit containing multiple rows of books with varied spine colors and widths; some spines show partial lettering but no fully legible titles.",
+      "An orange leather-like shoulder bag with visible strap and flap closure, carried by the right individual."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1722_P1",
+      "visual_anchors": [
+        "red graffiti text",
+        "speech bubble stating 'I should scrub off the protest messages'",
+        "aerosol can held ready"
+      ],
+      "symbolic_mapping": [
+        "graffiti as embodied dissent",
+        "speech bubble as moral hesitation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image stages a moment where authority (implied by the intent to erase) confronts expressive resistance (the graffiti), with the speaker’s internal conflict reflecting ethical tension between order and dissent.",
+      "alternative_interpretations": [
+        "The scene may depict routine maintenance rather than ideological confrontation; the speech bubble could be ironic or fictional."
+      ],
+      "limitations": [
+        "No visual confirmation that the speaker holds institutional authority or that the graffiti is politically motivated."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1722_P2",
+      "visual_anchors": [
+        "hooded figure facing wall",
+        "unseen face",
+        "orange bag on second person"
+      ],
+      "symbolic_mapping": [
+        "hood as concealment of identity",
+        "bag as marker of individuality amid uniformity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between concealed identity (hooded figure) and visible personal accessory (orange bag) highlights how social presence is negotiated through partial visibility and material signifiers.",
+      "alternative_interpretations": [
+        "Clothing choices may reflect comfort or weather, not symbolic intent; the bag color is incidental."
+      ],
+      "limitations": [
+        "No evidence that the hood was deliberately pulled up for concealment rather than habit or temperature."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1722_P3",
+      "visual_anchors": [
+        "bookshelf full of books",
+        "graffiti over wall surface",
+        "speech bubble about scrubbing"
+      ],
+      "symbolic_mapping": [
+        "books as codified knowledge",
+        "graffiti as ephemeral counter-knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of curated textual knowledge (books) and unsanctioned wall inscription evokes tension between institutional truth regimes and insurgent expression, mediated by the act of potential erasure.",
+      "alternative_interpretations": [
+        "The bookshelf and graffiti may coexist without thematic relation; the corridor may simply be a transit space."
+      ],
+      "limitations": [
+        "No legible book titles or coherent graffiti message confirm thematic opposition; context is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:46:24.977685+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-48cd9e45-47f7-9a20-a38d-b25b680e02b6",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 983,
+        "total_tokens": 2516,
+        "completion_tokens_details": {
+          "text_tokens": 983
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070145474c926d85ddae45ec",
+      "usage": {
+        "completion_tokens": 842,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2929,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3771
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1163",
+  "sample_id": "PHL1800_MM_0022",
+  "file_name": "PHL1800_MM_0022.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people standing on a stage beside a podium",
+  "captions": {
+    "scene": [
+      "A brightly lit stage with horizontal bands of purple, blue, and red light in the background",
+      "A modern podium with a blue illuminated panel displaying the word 'APLUN'",
+      "A dark-suited person holding a microphone stands to the left of a person in a black sequined dress"
+    ],
+    "action": [
+      "The person on the left holds a microphone near their mouth and smiles toward the right",
+      "The person on the right stands behind the podium, smiling broadly with mouth open",
+      "A speech bubble above the left person contains the text 'Please, you go ahead.'"
+    ],
+    "rationale": [
+      "The speech bubble suggests a verbal exchange is occurring, but only one utterance is visible; the other party’s response is not shown",
+      "The podium branding 'APLUN' appears stylized and possibly fictional or altered; no external verification is possible from image alone",
+      "The microphone has a label reading 'HEIMOR', which is legible but its meaning or affiliation cannot be determined from visual evidence"
+    ],
+    "object": [
+      "A man wearing a dark suit, white shirt, and dark tie holds a black microphone with a white rectangular label showing 'HEIMOR'.",
+      "A woman with long blonde hair wears a black V-neck sequined dress and stands behind a silver-and-blue podium.",
+      "The podium features a central blue backlit panel with the capitalized letters 'APLUN' in white sans-serif font.",
+      "A white oval speech bubble originates near the man’s head and contains the printed English sentence: 'Please, you go ahead.'",
+      "A small white circular dot appears above the woman’s head, visually detached from any object or annotation."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1163_P1",
+      "visual_anchors": [
+        "speech bubble with 'Please, you go ahead.'",
+        "podium with 'APLUN'",
+        "two individuals positioned asymmetrically at the podium"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble signifies deference or ceding of speaking authority",
+        "the podium as a locus of institutional or performative legitimacy"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image captures a moment where verbal deference is publicly enacted, suggesting negotiated authority within a structured communicative setting.",
+      "alternative_interpretations": [
+        "It may simply depict a scripted transition in a televised event, with no deeper social dynamics implied."
+      ],
+      "limitations": [
+        "No audio, context, or audience reaction is visible; the intent behind the phrase cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1163_P2",
+      "visual_anchors": [
+        "woman’s sequined dress",
+        "man’s formal suit",
+        "stage lighting"
+      ],
+      "symbolic_mapping": [
+        "attire as markers of role differentiation",
+        "lighting as theatrical framing of identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Dress and posture function as visual signifiers that construct and reinforce distinct social roles within a shared performance space.",
+      "alternative_interpretations": [
+        "The clothing choices may reflect standard event dress code rather than intentional symbolic contrast."
+      ],
+      "limitations": [
+        "Fabric texture and garment cut are visible, but cultural or personal significance of attire is not discernible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1163_P3",
+      "visual_anchors": [
+        "microphone held by one person",
+        "podium occupied by the other",
+        "speech bubble indicating turn-taking"
+      ],
+      "symbolic_mapping": [
+        "microphone as instrument of voice access",
+        "podium as threshold of authorized speech"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial and instrumental arrangement implies a constrained choice architecture where speaking rights are mediated through objects and positioning.",
+      "alternative_interpretations": [
+        "This may reflect routine stage direction rather than philosophical constraint."
+      ],
+      "limitations": [
+        "No indication of coercion, refusal, or alternative options is visible; the scene is static."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:57:16.151502+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3ebfbb72-c058-9b30-9c2d-78a321d5f19f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 922,
+        "total_tokens": 2455,
+        "completion_tokens_details": {
+          "text_tokens": 922
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703565660a175cb93fa4975",
+      "usage": {
+        "completion_tokens": 783,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2870,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3653
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0889",
+  "sample_id": "PHL1800_HL_0515",
+  "file_name": "PHL1800_HL_0515.png",
+  "batch_id": "B019",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a batter mid-swing at home plate with catcher, umpire, and on-deck batter visible",
+  "captions": {
+    "scene": [
+      "A sunlit baseball field with green grass, brown dirt infield, white chalk lines, and a blue advertising banner in the background.",
+      "Four individuals are positioned around home plate: a batter swinging, a catcher crouched behind, an umpire standing behind the catcher, and a second batter holding a bat in the foreground.",
+      "The background includes blurred spectators and a player in a white uniform standing near the dugout area."
+    ],
+    "action": [
+      "The batter in white uniform with number 5 is rotating his torso and extending his arms forward, making contact or just missing the ball with a wooden bat.",
+      "The catcher in gray and red gear is crouched low, glove extended toward the strike zone, head turned slightly toward the batter’s swing path.",
+      "The on-deck batter (number 24, name 'CABRERA' visible on back) holds a bat vertically, observing the play; his stance suggests readiness but no motion."
+    ],
+    "rationale": [
+      "The batter’s body orientation, bat angle, and foot lift suggest active swinging rather than static posing, supported by motion blur on the bat tip.",
+      "The catcher’s posture—knees bent, torso low, glove forward—is consistent with receiving a pitch, not reacting to a foul or wild throw.",
+      "The on-deck batter’s bat is held upright and stationary, and his gaze direction aligns with the action at home plate, indicating observation rather than preparation to enter."
+    ],
+    "object": [
+      "A wooden baseball bat with black barrel and light-colored handle is gripped by the batter and angled upward at approximately 45 degrees relative to the ground.",
+      "The batter wears a white jersey with black trim, black belt, white pants with black side stripe, black helmet, and black batting gloves; number 5 is partially visible on the back.",
+      "The catcher wears a black helmet with face mask, gray jersey with red accents, chest protector, shin guards, and a brown leather mitt extended toward the plate.",
+      "The umpire wears a black face mask, dark shirt, gray pants, and black shoes; only upper torso and head are visible behind the catcher.",
+      "The on-deck batter wears a white jersey with black lettering reading 'CABRERA' above number '24', a black helmet, and holds a second wooden bat vertically in front of him."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0889_P1",
+      "visual_anchors": [
+        "batter’s extended arms",
+        "bat mid-arc",
+        "dirt kicked up near feet"
+      ],
+      "symbolic_mapping": [
+        "the swing as a moment of decisive action",
+        "the arc as irreversible temporal passage"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The batter’s swing embodies a singular, irrevocable choice enacted within a fleeting instant—once initiated, the trajectory cannot be undone, mirroring how human decisions unfold in time with irreversible consequences.",
+      "alternative_interpretations": [
+        "This is simply a standard athletic motion captured mid-play, with no deeper meaning beyond sport mechanics."
+      ],
+      "limitations": [
+        "No facial expression or context confirms intentionality or reflection; the interpretation projects meaning onto biomechanics alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0889_P2",
+      "visual_anchors": [
+        "on-deck batter holding bat upright",
+        "name 'CABRERA' clearly legible",
+        "static posture amid dynamic action"
+      ],
+      "symbolic_mapping": [
+        "the named jersey as assertion of identity",
+        "waiting position as suspended agency"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visible name and number on the on-deck batter’s back function as a public declaration of self within a collective structure, where identity is both individually marked and socially contextualized through role and sequence.",
+      "alternative_interpretations": [
+        "The text is merely functional team identification required by league rules, not symbolic self-expression."
+      ],
+      "limitations": [
+        "The name could be generic or assigned; no evidence confirms personal significance or authorship."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0889_P3",
+      "visual_anchors": [
+        "catcher’s glove extended toward plate",
+        "umpire’s mask obscuring face",
+        "shared focus on strike zone"
+      ],
+      "symbolic_mapping": [
+        "the masked umpire as impartial observer",
+        "glove as instrument of judgment"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "knowledge_truth"
+      ],
+      "interpretation": "The alignment of catcher, umpire, and batter around the strike zone visualizes a microcosm of epistemic responsibility: truth (ball/strike) depends on coordinated perception, rule adherence, and the burden of judgment borne by the obscured authority figure.",
+      "alternative_interpretations": [
+        "This reflects standard positioning for safety and visibility, not philosophical roles."
+      ],
+      "limitations": [
+        "The umpire’s face is fully hidden; no gesture or posture confirms deliberation or moral weight."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:25:11.972301+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a21342bc-3548-968e-85b1-e1a10f37e70c",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 1133,
+        "total_tokens": 1862,
+        "completion_tokens_details": {
+          "text_tokens": 1133
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032452f176a9015311468c",
+      "usage": {
+        "completion_tokens": 992,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2019,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3011
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1599",
+  "sample_id": "PHL1800_MM_0036",
+  "file_name": "PHL1800_MM_0036.jpg",
+  "batch_id": "B033",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals in a classroom setting (one seated child, one standing adult)",
+  "captions": {
+    "scene": [
+      "A brightly lit classroom with wooden desks, red chairs, and a green chalkboard framed in wood.",
+      "A chalkboard displays handwritten mathematical expressions including fractions, variables, and arithmetic operations.",
+      "Two individuals are positioned facing each other across adjacent desks; one seated, one standing beside a desk."
+    ],
+    "action": [
+      "The standing adult faces the chalkboard with back to viewer, left hand resting on a desk holding paper.",
+      "The seated child looks upward toward the standing adult and chalkboard, head tilted slightly right.",
+      "A speech bubble originates near the standing adult’s head containing the text 'Do you need help?'."
+    ],
+    "rationale": [
+      "The presence of a chalkboard with math problems and student desks strongly suggests an educational context.",
+      "The speech bubble implies an interaction initiated by the standing adult, though the speaker’s mouth is not visible.",
+      "The mathematical notation on the board includes ambiguous or malformed symbols (e.g., '4 X /4/', '1 4×4 2/3'), indicating possible transcription error or stylized rendering rather than standard notation."
+    ],
+    "object": [
+      "A green chalkboard with a wooden frame contains white chalk writing: '(12÷13 4/-21.5)', a horizontal line, '4 X /4/', '+1 4×4 2/3', and '4 s-8'.",
+      "A seated child wears a blue short-sleeved shirt and sits on a red chair at a light-brown wooden desk.",
+      "A standing adult wears a red short-sleeved shirt and blue pants, positioned beside a desk with a white sheet of paper on its surface.",
+      "Three visible desks have light-brown tops and dark metal legs; two red chairs are fully visible, one partially visible.",
+      "A small stack of two books rests on the chalkboard ledge to the left of center."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1599_P1",
+      "visual_anchors": [
+        "speech bubble with 'Do you need help?'",
+        "seated child looking up",
+        "standing adult facing board"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents offering assistance as a social gesture",
+        "the upward gaze signifies receptivity or inquiry"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image visualizes epistemic vulnerability and intersubjective support: one learner acknowledges potential incomprehension and invites aid, embodying knowledge as co-constructed rather than solitary.",
+      "alternative_interpretations": [
+        "It may simply depict a routine classroom moment where a teacher checks on a student without deeper symbolic intent."
+      ],
+      "limitations": [
+        "The speech bubble lacks a visible speaker mouth or gesture confirming utterance; it could be a narrative overlay rather than diegetic dialogue."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1599_P2",
+      "visual_anchors": [
+        "chalkboard with malformed equations",
+        "child observing board",
+        "unresolved expression '4 s-8'"
+      ],
+      "symbolic_mapping": [
+        "illegible or inconsistent notation symbolizes the opacity of formal systems",
+        "student’s attention reflects engagement with uncertainty"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The scene evokes the philosophical tension between formal representation and comprehension: when symbols resist interpretation, learning becomes a journey defined by questioning rather than resolution.",
+      "alternative_interpretations": [
+        "The writing may be intentionally stylized for illustration, not meant to be legible or logically consistent."
+      ],
+      "limitations": [
+        "No evidence confirms whether the notation is erroneous, symbolic, or merely decorative; its meaning is undetermined."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1599_P3",
+      "visual_anchors": [
+        "two individuals in parallel posture orientation",
+        "shared focus on chalkboard",
+        "desks arranged in rows"
+      ],
+      "symbolic_mapping": [
+        "parallel positioning suggests equality in learning status",
+        "shared visual field implies common epistemic ground"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The spatial arrangement implies a moral dimension to pedagogy: proximity and shared attention create conditions where responsibility for mutual understanding emerges naturally from co-presence.",
+      "alternative_interpretations": [
+        "The arrangement reflects standard classroom seating norms, not intentional symbolism."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentionality behind positioning; symmetry may be coincidental."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The target subject incorrectly describes both individuals as 'children'; the standing figure appears to be an adult (e.g., teacher). The chalkboard text in the object caption contains transcription errors (e.g., '1/2=13 4/-21.5' should be '(12÷13 4/-21.5)' as per the image). The action caption misattributes the speech bubble to the seated child; the bubble originates near the standing child, suggesting they are the speaker."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:54:33.088646+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4698696a-51d5-9104-a7a1-eca452187241",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1006,
+        "total_tokens": 2539,
+        "completion_tokens_details": {
+          "text_tokens": 1006
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704541406ab6d20bf2549d7",
+      "usage": {
+        "completion_tokens": 1022,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2956,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3978
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

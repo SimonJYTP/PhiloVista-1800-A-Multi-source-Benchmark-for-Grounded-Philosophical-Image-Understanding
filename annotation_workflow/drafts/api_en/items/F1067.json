@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1067",
+  "sample_id": "PHL1800_HAIV_0190",
+  "file_name": "PHL1800_HAIV_0190.png",
+  "batch_id": "B023",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized building facade with barred windows and a padlock",
+  "captions": {
+    "scene": [
+      "A white-walled building with a gray roof and two vertical rectangular windows.",
+      "Horizontal and vertical black bars form a grid across the front of the building, intersecting both windows and the central space.",
+      "An orange padlock hangs in the center, overlapping the grid bars and positioned below the roofline."
+    ],
+    "action": [
+      "The padlock is closed, with its shackle engaged through the grid bars.",
+      "Smoke or vapor rises from the roof’s right edge, depicted as a wavy black line.",
+      "The left window pane appears slightly ajar, tilted outward at its lower right corner."
+    ],
+    "rationale": [
+      "The padlock’s placement suggests intentional restriction, but no mechanism (e.g., door, latch) is visible to confirm functional locking.",
+      "The smoke-like line implies emission, yet its source and nature (e.g., fire, steam) are indeterminate due to lack of context.",
+      "The tilted window pane indicates displacement, but whether it was opened, broken, or drawn by wind cannot be determined from static visual evidence."
+    ],
+    "object": [
+      "The building has a flat gray roof with a light gray border and a single wavy black line extending upward from its upper right corner.",
+      "Two identical rectangular windows are framed in dark gray, each divided into four panes by thin dark gray mullions.",
+      "A grid of five horizontal black bars and three vertical black bars overlays the facade, with the central vertical bar passing behind the padlock shackle.",
+      "An orange padlock with a silver-gray keyhole area contains a yellow-orange key-shaped insert; the shackle is arched and fully seated in the lock body.",
+      "The left window’s lower-right pane is rotated outward approximately 5–10 degrees relative to the frame, creating a visible gap."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1067_P1",
+      "visual_anchors": [
+        "orange padlock",
+        "grid of bars",
+        "ajar window pane"
+      ],
+      "symbolic_mapping": [
+        "padlock → enforced closure",
+        "ajar pane → partial breach of constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages tension between imposed restriction (bars and padlock) and emergent possibility (the displaced window), suggesting that constraint does not fully extinguish agency or change.",
+      "alternative_interpretations": [
+        "It may simply depict a secured building undergoing minor structural shift, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the ajar pane could be accidental or decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1067_P2",
+      "visual_anchors": [
+        "smoke-like line",
+        "closed padlock",
+        "static facade"
+      ],
+      "symbolic_mapping": [
+        "smoke → unseen activity",
+        "locked facade → surface stability"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The contrast between the sealed exterior and the rising plume implies that observable appearances may conceal internal processes, raising questions about epistemic access to reality.",
+      "alternative_interpretations": [
+        "The line may be purely ornamental, like a cartoonish cloud, with no referent to real-world emissions."
+      ],
+      "limitations": [
+        "The line lacks detail (e.g., color gradient, density) to distinguish smoke from decorative flourish."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1067_P3",
+      "visual_anchors": [
+        "grid bars",
+        "central padlock",
+        "symmetrical windows"
+      ],
+      "symbolic_mapping": [
+        "grid → systemic order",
+        "padlock → singular point of control"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "Authority is visualized as centralized (the padlock) within a broader structure of uniform containment (the grid), implying that power operates both diffusely and decisively at choke points.",
+      "alternative_interpretations": [
+        "The composition may reflect architectural convention or aesthetic balance rather than political metaphor."
+      ],
+      "limitations": [
+        "No figures, labels, or hierarchical indicators confirm intentional representation of power dynamics."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:46:15.895046+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0d38eec9-9cad-97f0-96ac-ab814aded78d",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 940,
+        "total_tokens": 2473,
+        "completion_tokens_details": {
+          "text_tokens": 940
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034602a38140c807cd4fc1",
+      "usage": {
+        "completion_tokens": 797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2889,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3686
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

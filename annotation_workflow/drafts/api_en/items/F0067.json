@@ -1,0 +1,156 @@
+{
+  "annotation_item_id": "F0067",
+  "sample_id": "PHL1800_HL_0453",
+  "file_name": "PHL1800_HL_0453.png",
+  "batch_id": "B004",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a parking meter kiosk on a street pole",
+  "captions": {
+    "scene": [
+      "An urban street with asphalt pavement, a silver hatchback parked left, and storefronts with awnings in the background.",
+      "A metal parking meter kiosk mounted on a white-painted pole stands in the foreground, partially obscuring the view of the street behind it.",
+      "Two people sit at a small round table under a blue-and-white striped awning; one wears a dark cap and light shirt, the other is partially visible."
+    ],
+    "action": [
+      "The parking meter display shows a countdown timer reading '0:12' and a green status bar above it.",
+      "The silver car is stationary with its rear facing the camera; its yellow license plate displays '8794' and unreadable Chinese characters.",
+      "Two individuals are seated on white plastic stools at a table, appearing to rest or converse; no motion is captured."
+    ],
+    "rationale": [
+      "The kiosk’s interface layout—numbered steps, icons for coin insertion, card use, and confirmation—suggests a multi-step payment process, though exact function is not fully legible.",
+      "The presence of a countdown timer and a colored progress bar implies active time-based service, likely parking duration tracking.",
+      "The partial visibility of the second person and obscured signage limit certainty about commercial activity or transactional context."
+    ],
+    "object": [
+      "A vertically oriented metallic parking meter kiosk with a rectangular LCD screen displaying a timer, icons, and a yellow-orange graphic near the bottom.",
+      "The kiosk is affixed to a white cylindrical pole marked with black numerals '794' near its base.",
+      "A silver hatchback vehicle occupies the left foreground, showing its rear bumper, taillight assembly, and a yellow license plate with black numerals '8794'.",
+      "Behind the kiosk, a storefront features a blue-and-white striped awning, glass doors, and a wall covered with handwritten notices or menus in Chinese script.",
+      "Two white plastic stools and a small round metal table are positioned under the awning; two seated individuals occupy them, one wearing a dark cap and light-colored shirt."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0067_P1",
+      "visual_anchors": [
+        "countdown timer '0:12'",
+        "yellow-orange graphic resembling a flame or warning",
+        "metal pole with worn paint"
+      ],
+      "symbolic_mapping": [
+        "the timer symbolizes finite, measurable duration against human perception of time"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The visible countdown embodies the quantification of temporal existence within institutional frameworks, where time becomes a consumable resource subject to regulation and expiration.",
+      "alternative_interpretations": [
+        "It is simply a functional display indicating remaining paid parking time, with no symbolic intent."
+      ],
+      "limitations": [
+        "No explicit textual or iconographic cues confirm intentional symbolism; the orange graphic may be a system status indicator, not a metaphor."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0067_P2",
+      "visual_anchors": [
+        "two seated people at a table",
+        "parking meter between viewer and street life",
+        "unreadable Chinese notices on wall"
+      ],
+      "symbolic_mapping": [
+        "the meter acts as a mediating artifact between individual agency and public infrastructure control"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The kiosk physically and semiotically intervenes in the shared urban space, illustrating how routine technologies structure social coexistence through imposed constraints and negotiated access.",
+      "alternative_interpretations": [
+        "The scene depicts ordinary daily commerce without ideological overtones; the meter is merely a utility device."
+      ],
+      "limitations": [
+        "No interaction with the meter is shown; the people’s attention and purpose remain visually undetermined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0067_P3",
+      "visual_anchors": [
+        "license plate with numerals '8794'",
+        "kiosk interface with numbered steps (1–4)",
+        "worn pole markings"
+      ],
+      "symbolic_mapping": [
+        "numeric identifiers impose order and traceability onto otherwise fluid urban movement"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "Numerical labeling across objects—the car plate, pole number, and procedural steps—reflects a systemic logic where identity is reduced to serializable data, enabling governance through standardization and automation.",
+      "alternative_interpretations": [
+        "These numbers serve purely administrative functions with no deeper representational role."
+      ],
+      "limitations": [
+        "The pole marking '794' may be maintenance-related rather than identification; step numbers are generic UI conventions."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:55:22.571470+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b6cafde1-ff2d-9312-8ad8-18e99d40cb93",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1049,
+        "total_tokens": 1858,
+        "completion_tokens_details": {
+          "text_tokens": 1049
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701550267e18e5511554eb2",
+      "usage": {
+        "completion_tokens": 903,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2016,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2919
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

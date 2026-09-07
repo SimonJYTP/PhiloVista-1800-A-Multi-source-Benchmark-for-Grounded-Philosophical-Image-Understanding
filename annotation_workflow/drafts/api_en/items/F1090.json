@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1090",
+  "sample_id": "PHL1800_IRFL_0319",
+  "file_name": "PHL1800_IRFL_0319.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a sleeping infant held by an adult",
+  "captions": {
+    "scene": [
+      "An indoor setting with soft lighting, featuring a patterned fabric armchair and a white pillow in the background.",
+      "A close-up view from over the shoulder of an adult looking toward a swaddled infant.",
+      "The infant rests on the adult’s lap or chest, partially wrapped in a light blue blanket."
+    ],
+    "action": [
+      "The infant’s eyes are closed and mouth slightly open, consistent with sleep.",
+      "The adult’s right hand cradles the infant’s head, fingers resting on the temple and crown.",
+      "The adult wears a pearl-like bracelet on the right wrist and a light-colored top with a scalloped neckline."
+    ],
+    "rationale": [
+      "The infant’s relaxed facial muscles and closed eyes suggest sleep rather than unconsciousness, though depth of state cannot be confirmed visually.",
+      "The adult’s posture and hand placement indicate intentional support, but intent (e.g., soothing, monitoring) is not directly observable.",
+      "The visible watermark 'gettyimages' and photographer name 'Thanasis Zovoilis' confirm the image is professionally captured, but do not specify context or authenticity of moment."
+    ],
+    "object": [
+      "The infant wears a long-sleeved onesie with pale yellow and white horizontal stripes and a green trim at the collar.",
+      "A light blue blanket is draped over the infant’s torso and arms, with one corner folded near the chin.",
+      "The adult’s right forearm shows a thin, beaded bracelet composed of small spherical beads.",
+      "The chair upholstery has a gray base with small red and green floral motifs spaced regularly.",
+      "The adult’s hair is dark, pulled back, and visible only as a silhouette from behind; no facial features are shown."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1090_P1",
+      "visual_anchors": [
+        "infant’s closed eyes",
+        "adult’s supporting hand",
+        "swaddling blanket"
+      ],
+      "symbolic_mapping": [
+        "closed eyes → vulnerability",
+        "hand cradling → care as embodied responsibility"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image grounds ethical responsibility in physical gesture: the adult’s hand actively sustains the infant’s safety, illustrating how moral duty manifests through proximate, tactile engagement rather than abstract principle.",
+      "alternative_interpretations": [
+        "This may simply depict routine caregiving without symbolic intent; the hand position could equally reflect comfort for the adult or habitual posture."
+      ],
+      "limitations": [
+        "No facial expressions or contextual cues confirm intentionality or emotional valence; the adult’s face is entirely occluded."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1090_P2",
+      "visual_anchors": [
+        "swaddled infant",
+        "soft-focus background",
+        "uniform lighting"
+      ],
+      "symbolic_mapping": [
+        "swaddling → containment of time",
+        "stillness → suspension of temporal flow"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The infant’s stillness within the wrap evokes a temporary suspension of linear time—birth marks a new temporal beginning, yet here the subject exists in a liminal, undifferentiated present, highlighting mortality’s contrast with nascent life.",
+      "alternative_interpretations": [
+        "Swaddling is a common practical technique to aid infant sleep; the visual calm may reflect physiological regulation, not philosophical temporality."
+      ],
+      "limitations": [
+        "No clocks, aging signs, or temporal markers are present; ‘suspension’ is inferred from stillness alone."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1090_P3",
+      "visual_anchors": [
+        "adult’s unseen face",
+        "infant’s exposed face",
+        "shared proximity"
+      ],
+      "symbolic_mapping": [
+        "occluded adult identity → relational primacy over individuality",
+        "shared space → emergence of social existence through dependency"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The composition privileges the infant’s visibility while rendering the caregiver anonymous, suggesting that social existence arises not from autonomous selfhood but from embedded care relationships where one subject’s presence enables another’s being-in-the-world.",
+      "alternative_interpretations": [
+        "The framing may result from photographic choice (e.g., shallow depth of field, over-the-shoulder shot) rather than conceptual emphasis on anonymity."
+      ],
+      "limitations": [
+        "Only one adult is visible; we cannot confirm whether others are present or whether this is a dyadic or group interaction."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:49:23.953108+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c0a7716d-f31a-91d1-a132-408098258291",
+      "usage": {
+        "prompt_tokens": 756,
+        "completion_tokens": 996,
+        "total_tokens": 1752,
+        "completion_tokens_details": {
+          "text_tokens": 996
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 249,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070349057696fb4531df4fb4",
+      "usage": {
+        "completion_tokens": 861,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1912,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2773
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

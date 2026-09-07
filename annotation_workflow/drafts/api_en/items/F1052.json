@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1052",
+  "sample_id": "PHL1800_HL_0589",
+  "file_name": "PHL1800_HL_0589.png",
+  "batch_id": "B022",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person standing on a beach flying a large kite",
+  "captions": {
+    "scene": [
+      "A black-and-white coastal scene with dune grass in the foreground, ocean waves breaking near shore, and an overcast sky.",
+      "The horizon line separates a textured sea surface from a cloud-filled sky; the beach occupies the lower third of the frame.",
+      "Sparse vegetation in the immediate foreground frames the lower edge of the image, partially obscuring the sand."
+    ],
+    "action": [
+      "A person stands upright on wet sand near the water’s edge, holding lines attached to a kite aloft.",
+      "A large C-kite with a star-like emblem and alternating dark and light panels is airborne, tilted diagonally against the sky.",
+      "Waves are actively breaking toward shore, producing white foam along the surf zone."
+    ],
+    "rationale": [
+      "The figure’s posture and taut lines suggest active control of the kite, though no motion blur confirms movement.",
+      "The kite’s orientation and apparent tension in its lines indicate it is inflated and generating lift, but wind speed cannot be measured visually.",
+      "The monochrome rendering eliminates color cues for time of day or weather severity; lighting appears diffuse, suggesting overcast conditions."
+    ],
+    "object": [
+      "A single human figure is visible as a dark silhouette near the shoreline, facing roughly leftward, with arms raised slightly holding control lines.",
+      "A leading-edge inflatable kite with a curved arc shape, segmented panels, and a central dark star-shaped graphic is suspended mid-air at approximately one-third height from the top.",
+      "The ocean surface shows multiple parallel wave crests approaching land, with white surf where they break on the shallow beach.",
+      "Tall, thin blades of dune grass occupy the bottom 10% of the image, out of focus, forming a natural frame.",
+      "The sky contains layered, soft-edged clouds with varying gray tones; no sun or clear blue patches are visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1052_P1",
+      "visual_anchors": [
+        "silhouetted person",
+        "tethered kite",
+        "horizon line"
+      ],
+      "symbolic_mapping": [
+        "the kite represents aspiration held in tension by constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes freedom as contingent upon constraint: the kite achieves flight only through lines held by the person, mirroring how agency often depends on external structures.",
+      "alternative_interpretations": [
+        "It may simply document recreational activity without symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual markers confirm intentional symbolism; the monochrome aesthetic may emphasize form over meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1052_P2",
+      "visual_anchors": [
+        "single figure",
+        "vast sky",
+        "empty beach"
+      ],
+      "symbolic_mapping": [
+        "isolation amid scale evokes existential presence"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The lone figure against an expansive, indifferent natural backdrop suggests the human condition as transient within deep time—presence marked by action, yet dwarfed by environment.",
+      "alternative_interpretations": [
+        "The composition may reflect standard landscape photography framing rather than philosophical commentary."
+      ],
+      "limitations": [
+        "The figure’s size relative to the scene is determined by perspective, not absolute scale; no aging or decay cues appear."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1052_P3",
+      "visual_anchors": [
+        "kite with star emblem",
+        "person holding lines",
+        "foam-laced shoreline"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "A literal description of a person standing on a beach flying a large kite is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a person standing on a beach flying a large kite as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:44:46.108701+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-93f18b99-01f7-9673-8b0e-9309a05c59c9",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 933,
+        "total_tokens": 1702,
+        "completion_tokens_details": {
+          "text_tokens": 933
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034433824f7bd7e42240c1",
+      "usage": {
+        "completion_tokens": 800,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1863,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2663
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1052.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

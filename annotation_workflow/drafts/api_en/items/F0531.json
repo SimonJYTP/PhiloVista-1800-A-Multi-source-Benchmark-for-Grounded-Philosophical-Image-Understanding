@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0531",
+  "sample_id": "PHL1800_MM_0035",
+  "file_name": "PHL1800_MM_0035.jpg",
+  "batch_id": "B013",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults in a gym setting",
+  "captions": {
+    "scene": [
+      "Indoor gym with red rubber flooring, black weight racks, and white walls.",
+      "A woman performs a barbell exercise on a black mat beside a squat rack loaded with black weight plates.",
+      "A man stands facing the woman, holding a small black object in his right hand, near a power rack with additional weight plates."
+    ],
+    "action": [
+      "The woman is in a partial squat position with hands gripping a barbell resting on a low rack; her torso is upright and knees bent.",
+      "The man stands upright with feet shoulder-width apart, left hand relaxed at his side, right hand holding a small black cylindrical object.",
+      "Both individuals face each other; the woman looks toward the man, the man looks toward the woman."
+    ],
+    "rationale": [
+      "The woman’s posture and grip suggest she is mid-exercise or preparing to lift, supported by the barbell’s placement on safety pins.",
+      "The man’s stance and proximity imply observation or instruction, though no direct physical interaction occurs.",
+      "The speech bubble contains legible text stating 'Looks like you've packed on some extra pounds lately!', indicating verbal commentary, but its source (speaker) is not visually confirmed."
+    ],
+    "object": [
+      "A black metal squat rack holds a barbell with two black weight plates marked '25 LB' on each side.",
+      "The woman wears a black sports bra, black capri leggings with a yellow logo on the left thigh, gray sneakers with yellow laces, and a silver wristband on her left wrist.",
+      "The man wears a gray short-sleeve athletic shirt with black shoulder panels, black shorts with a white 'BR' logo and gray stripe, and black sneakers with white soles.",
+      "A white oval speech bubble with black sans-serif text appears above and between the two individuals; the text is fully legible.",
+      "The floor consists of red textured rubber matting with a black rectangular mat under the woman’s feet."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0531_P1",
+      "visual_anchors": [
+        "speech bubble with comment about body size",
+        "woman’s muscular physique",
+        "man’s observational stance"
+      ],
+      "symbolic_mapping": [
+        "body measurement as social evaluation",
+        "gym equipment as instrument of self-definition"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image frames bodily change as a site of interpersonal judgment, where physical transformation becomes a discursive event mediated through gaze and language, reflecting how identity is negotiated in shared spaces.",
+      "alternative_interpretations": [
+        "This is a staged fitness photo with scripted dialogue, intended for social media engagement rather than documenting real interaction."
+      ],
+      "limitations": [
+        "The speech bubble is an artificial overlay; no lip movement or auditory cues confirm spoken words occurred."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0531_P2",
+      "visual_anchors": [
+        "barbell on safety pins",
+        "woman’s controlled squat form",
+        "man holding small black object"
+      ],
+      "symbolic_mapping": [
+        "safety pins as constraint enabling risk",
+        "held object as potential tool of intervention"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The presence of safety equipment and a poised observer suggests that agency in physical development is bounded by external structures—both mechanical and social—that condition permissible action and progress.",
+      "alternative_interpretations": [
+        "The man may be holding a phone or timer, indicating routine tracking rather than symbolic oversight."
+      ],
+      "limitations": [
+        "The small black object is indistinct; its function cannot be determined from visual evidence alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0531_P3",
+      "visual_anchors": [
+        "matching athletic attire",
+        "symmetrical positioning",
+        "shared focus direction"
+      ],
+      "symbolic_mapping": [
+        "parallel postures as alignment of purpose",
+        "gym as neutral ground for embodied discourse"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The scene embodies labor as disciplined repetition within technologized space, where human bodies interface with engineered tools to produce measurable outcomes, reinforcing collective norms of productivity and self-optimization.",
+      "alternative_interpretations": [
+        "This is a commercial photoshoot illustrating proper form, with actors posing rather than engaging in authentic training."
+      ],
+      "limitations": [
+        "No visible exertion signs (e.g., sweat, facial strain) confirm actual physical effort is occurring."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:54:34.047453+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-061181ac-f983-929b-aeaf-77cc835a6ac8",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1003,
+        "total_tokens": 2536,
+        "completion_tokens_details": {
+          "text_tokens": 1003
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070254170cac907335cb4474",
+      "usage": {
+        "completion_tokens": 862,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2957,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3819
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

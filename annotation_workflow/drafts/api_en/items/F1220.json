@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1220",
+  "sample_id": "PHL1800_HL_0437",
+  "file_name": "PHL1800_HL_0437.png",
+  "batch_id": "B026",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people crossing a street, one holding an umbrella and two bags, the other carrying a white bag",
+  "captions": {
+    "scene": [
+      "A wet urban street with painted white crosswalk stripes and visible tire marks",
+      "Background vehicles include a yellow taxi, a white van, and other indistinct cars",
+      "The image has a grainy texture, vignette border, and high-contrast color processing"
+    ],
+    "action": [
+      "The central figure is mid-stride across the crosswalk, left leg forward, right arm raised near head",
+      "The person holds a translucent plastic bag in the left hand and a black shoulder bag on the right side",
+      "Another pedestrian is visible in the background, carrying a white bag and walking parallel to the crosswalk"
+    ],
+    "rationale": [
+      "The figure’s posture—bent torso, raised arm, and forward stride—suggests motion against wind or rain, though precipitation is not directly visible",
+      "The presence of multiple vehicles and crosswalk markings indicates an active traffic intersection, but no traffic signals or signs are legible",
+      "The image’s distortion and low resolution prevent definitive identification of gender, age, or facial features; only silhouette and clothing are discernible"
+    ],
+    "object": [
+      "A person wearing a long dark coat, dark pants, and dark footwear is captured in motion across a marked crosswalk.",
+      "A translucent plastic bag containing indistinct contents is held in the person’s left hand.",
+      "A black soft-sided shoulder bag hangs from the person’s right shoulder and rests against their hip.",
+      "A yellow vehicle with rear taillights illuminated is parked or stopped behind the crosswalk, partially obscured by motion blur.",
+      "White painted stripes of a pedestrian crosswalk run diagonally across the asphalt surface, showing wear and dirt accumulation."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1220_P1",
+      "visual_anchors": [
+        "person mid-stride",
+        "crosswalk stripes",
+        "grainy image border"
+      ],
+      "symbolic_mapping": [
+        "crosswalk as threshold between zones",
+        "motion blur as temporal flux"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The fleeting moment of crossing—captured with motion blur and degraded fidelity—evokes the impermanence of human passage through structured social space, where each step is both chosen and constrained by infrastructure.",
+      "alternative_interpretations": [
+        "A routine commute interrupted by photographic artifact; the blur reflects camera shake rather than existential transience."
+      ],
+      "limitations": [
+        "No timestamp, signage, or contextual landmarks confirm intentional symbolism; the crosswalk may simply be functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1220_P2",
+      "visual_anchors": [
+        "dark coat obscuring form",
+        "translucent bag revealing partial contents",
+        "black shoulder bag fully opaque"
+      ],
+      "symbolic_mapping": [
+        "opacity vs. transparency as modes of visibility",
+        "carried objects as extensions of self"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between the see-through grocery bag and the sealed black bag suggests a tension between disclosed and concealed aspects of daily identity within public space, where appearance is mediated by what one carries.",
+      "alternative_interpretations": [
+        "The bags differ only in material and function—plastic for groceries, leather-like for personal items—with no symbolic intent."
+      ],
+      "limitations": [
+        "Bag contents are illegible; transparency is physical property, not necessarily intentional disclosure."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1220_P3",
+      "visual_anchors": [
+        "multiple pedestrians at varying distances",
+        "shared crosswalk use",
+        "background vehicles stationary or slow-moving"
+      ],
+      "symbolic_mapping": [
+        "parallel movement without interaction as emblem of urban anonymity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "Simultaneous yet non-interacting crossings illustrate the modern condition of co-presence without communion: individuals navigate shared space under regulatory constraints (crosswalk lines, traffic), enacting freedom within tightly bounded paths.",
+      "alternative_interpretations": [
+        "People are simply walking in the same direction at similar speeds; proximity does not imply social meaning."
+      ],
+      "limitations": [
+        "No eye contact, gestures, or spatial orientation confirms relational intent; grouping is inferred from position alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:05:20.266523+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cfaac132-a831-9a6f-9f4d-4488f08b1cef",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 963,
+        "total_tokens": 1872,
+        "completion_tokens_details": {
+          "text_tokens": 963
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 402,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070404356a0fe016400f441e",
+      "usage": {
+        "completion_tokens": 830,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2075,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2905
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

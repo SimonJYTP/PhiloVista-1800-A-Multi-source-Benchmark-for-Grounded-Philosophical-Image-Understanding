@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0186",
+  "sample_id": "PHL1800_HAIV_0187",
+  "file_name": "PHL1800_HAIV_0187.png",
+  "batch_id": "B006",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two human figures: a woman in profile holding a green bottle and a man standing to her right",
+  "captions": {
+    "scene": [
+      "A brightly lit, flat yellow background with two stylized human figures.",
+      "The woman occupies the left foreground; the man stands to her right in mid-ground.",
+      "The composition uses high-contrast color blocking with minimal shading or texture."
+    ],
+    "action": [
+      "The woman holds a green glass bottle with one hand near her chest, gaze directed rightward.",
+      "The man stands upright with arms hanging loosely at his sides, head tilted downward, eyes narrowed.",
+      "Both figures are static; no motion blur or dynamic posture indicates movement."
+    ],
+    "rationale": [
+      "The woman’s profile orientation and fixed gaze suggest attention toward the man or beyond him, though direction is ambiguous without context.",
+      "The man’s facial expression—furrowed brow, downturned mouth, narrowed eyes—indicates displeasure or distress, but exact emotion is not verifiable from visual cues alone.",
+      "The bottle’s prominence and the woman’s grip imply significance, yet its contents and purpose remain visually undetermined."
+    ],
+    "object": [
+      "A green rectangular glass bottle with a brown cork stopper and a narrow neck, held by the woman’s hand.",
+      "The woman has brown coiffed hair with an orange highlight on the crown, wears a light blue garment with white ruffled collar, and a small yellow earring.",
+      "The man has short black hair, pale skin with pinkish tones, a white long-sleeved turtleneck shirt, and black trousers.",
+      "The woman’s left hand shows a white bandage or cloth wrapped around the thumb and index finger.",
+      "The background is a uniform, saturated yellow with no gradients, patterns, or objects."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0186_P1",
+      "visual_anchors": [
+        "green bottle held centrally",
+        "woman’s focused gaze",
+        "man’s narrowed eyes"
+      ],
+      "symbolic_mapping": [
+        "bottle as potential agent of change or harm",
+        "gaze as directed intention"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of the woman’s deliberate hold on the bottle and the man’s passive, distressed stance may evoke ethical tension around agency and consequence, where one figure possesses a decisive object while the other endures its implication.",
+      "alternative_interpretations": [
+        "The scene could depict a theatrical still life or symbolic illustration unrelated to moral choice, such as a commercial advertisement for a product."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm intent; the bottle’s identity (medicinal, toxic, decorative) is visually indeterminate."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0186_P2",
+      "visual_anchors": [
+        "man’s stylized facial distortion",
+        "woman’s calm profile",
+        "shared yellow field"
+      ],
+      "symbolic_mapping": [
+        "facial exaggeration as alienation",
+        "uniform background as social void"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The contrast between the woman’s composed appearance and the man’s exaggerated, almost caricatured features may reflect fragmentation of social selfhood, where visibility and recognition diverge under shared conditions.",
+      "alternative_interpretations": [
+        "The distortion may be purely stylistic—a modernist or expressionist aesthetic choice—with no sociological reference intended."
+      ],
+      "limitations": [
+        "Facial features are rendered non-realistically; interpreting them as ‘distress’ rather than artistic convention lacks definitive support."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0186_P3",
+      "visual_anchors": [
+        "bandaged thumb",
+        "bottle held near torso",
+        "man’s lowered posture"
+      ],
+      "symbolic_mapping": [
+        "injury as vulnerability",
+        "proximity as implied threat or care"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The woman’s injured hand juxtaposed with her firm grasp of the bottle suggests constrained agency—she acts despite impairment—while the man’s submissiveness implies asymmetrical power, possibly enforced by unseen forces.",
+      "alternative_interpretations": [
+        "The bandage may simply indicate recent minor injury unrelated to the interaction; the pose may be staged for compositional balance."
+      ],
+      "limitations": [
+        "The bandage’s cause and relevance to the scene are not visually specified; no physical contact or gesture confirms power dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:15:13.306406+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-09e85adb-26d8-9f8f-be1f-18b56150ffb2",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1001,
+        "total_tokens": 2534,
+        "completion_tokens_details": {
+          "text_tokens": 1001
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702144348ca733d5f624dd5",
+      "usage": {
+        "completion_tokens": 859,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2962,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3821
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

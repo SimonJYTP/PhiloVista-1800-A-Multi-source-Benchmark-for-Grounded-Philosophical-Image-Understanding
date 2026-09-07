@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0159",
+  "sample_id": "PHL1800_IRFL_0397",
+  "file_name": "PHL1800_IRFL_0397.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a cluttered bedroom interior",
+  "captions": {
+    "scene": [
+      "A bedroom with an unmade bed covered in rumpled bedding and multiple pillows, adjacent to a floor densely packed with discarded items.",
+      "A wooden nightstand overloaded with cups, papers, electronics, and containers sits beside the bed; a rainbow flag hangs on the wall above.",
+      "The carpeted floor is obscured by a heterogeneous accumulation of trash, clothing, boxes, footwear, and food remnants including a dirty plate."
+    ],
+    "action": [
+      "Bedding is disheveled and partially slid off the mattress onto the floor.",
+      "Multiple plastic bags—red and black—are open or torn and contain or spill contents.",
+      "A white electronic device with visible buttons and vents lies amid debris near the bottom right corner."
+    ],
+    "rationale": [
+      "The presence of a used plate with food residue and open beverage containers suggests recent consumption occurred in the room.",
+      "The arrangement of items—e.g., shoes near the bed, scattered papers, and loose cables—implies prolonged lack of organization rather than a single acute event.",
+      "The rainbow flag is hung flat on the wall, indicating intentional display rather than accidental placement; however, its symbolic intent cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "A green-patterned fitted sheet covers a mattress that rests directly on a box spring without a bed frame.",
+      "A yellow-lidded disposable cup with green branding sits on the nightstand next to a white ceramic mug with brown stains.",
+      "A pair of brown leather boots lies on the floor near a cardboard box containing tangled white cables and a small black device.",
+      "A white rectangular electronic unit with a grid of colored buttons (red, blue, green, yellow) and ventilation slats is partially buried under plastic bags.",
+      "A white paper plate with orange-brown food residue and a crumpled napkin rests atop a pile of packaging near the lower right edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0159_P1",
+      "visual_anchors": [
+        "rainbow flag on wall",
+        "cluttered floor",
+        "unmade bed"
+      ],
+      "symbolic_mapping": [
+        "rainbow flag → public expression of identity",
+        "clutter → material overflow obscuring personal space"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a deliberate identity marker (rainbow flag) against overwhelming physical disorder may reflect tension between self-presentation and lived environment, suggesting identity assertion persists even amid spatial neglect.",
+      "alternative_interpretations": [
+        "The flag may simply be decorative; the clutter may result from temporary circumstances like moving or illness, not chronic neglect."
+      ],
+      "limitations": [
+        "No evidence confirms the occupant’s intent, identity, or temporal context of the scene."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0159_P2",
+      "visual_anchors": [
+        "dirty plate with food remnants",
+        "discarded cups",
+        "scattered papers"
+      ],
+      "symbolic_mapping": [
+        "used dishware → traces of daily life",
+        "papers → unfinished or abandoned tasks"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "Accumulated traces of routine activity—eating, writing, consuming—without cleanup imply time passing without resolution, evoking the phenomenological weight of deferred labor and the entropy of everyday existence.",
+      "alternative_interpretations": [
+        "The items may have been left temporarily during a busy period; the photo could capture a momentary state, not a sustained condition."
+      ],
+      "limitations": [
+        "Temporal duration of the mess is visually undetermined; no clocks, calendars, or date-stamped items are visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0159_P3",
+      "visual_anchors": [
+        "black plastic bag spilling contents",
+        "open cardboard boxes",
+        "tangled cables"
+      ],
+      "symbolic_mapping": [
+        "plastic bag → containment failure",
+        "cables → interconnected systems now inert"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The breakdown of containment (bags torn, boxes open) and disconnection (cables untethered, devices idle) visually mirrors a loss of agency over environment, where accumulated choices manifest as physical constraint rather than liberation.",
+      "alternative_interpretations": [
+        "Items may have been unpacked recently; the scene could reflect transition rather than stagnation."
+      ],
+      "limitations": [
+        "No evidence indicates whether items were recently added, removed, or untouched for days/weeks."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:11:45.255524+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9f8e1714-ea3a-9868-8541-4e58c2c820ce",
+      "usage": {
+        "prompt_tokens": 1049,
+        "completion_tokens": 1009,
+        "total_tokens": 2058,
+        "completion_tokens_details": {
+          "text_tokens": 1009
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 542,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021128dffd9e2b08654e08",
+      "usage": {
+        "completion_tokens": 870,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2311,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3181
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

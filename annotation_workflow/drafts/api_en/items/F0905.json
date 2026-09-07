@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0905",
+  "sample_id": "PHL1800_HL_0223",
+  "file_name": "PHL1800_HL_0223.png",
+  "batch_id": "B020",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a column of uniformed personnel marching in formation on a city street",
+  "captions": {
+    "scene": [
+      "A wide urban street flanked by classical and modern high-rise buildings with columns and large windows",
+      "Three American flags mounted on poles attached to a neoclassical building facade",
+      "A banner with a circular emblem and unreadable text hangs from a lamppost; another red sign with illegible text is visible"
+    ],
+    "action": [
+      "Uniformed individuals walk forward in tight, aligned rows, heads mostly facing forward or slightly downward",
+      "Multiple individuals wear peaked caps with gold insignia, dark jackets, white shirts, and black ties",
+      "Some personnel wear epaulets with gold stripes; one person wears glasses and another has a mustache"
+    ],
+    "rationale": [
+      "The synchronized posture and spacing suggest organized movement rather than casual walking",
+      "Uniform consistency across many individuals implies institutional affiliation, though the specific organization is not identifiable from visual evidence alone",
+      "The presence of multiple U.S. flags and formal attire suggests a ceremonial or official context, but no explicit event signage confirms this"
+    ],
+    "object": [
+      "At least 21 distinct individuals are visible in the column, including foreground figures with clear facial features and background figures as silhouettes or partial profiles",
+      "The nearest figure wears a black peaked cap with a golden eagle emblem, gold chinstrap, dark jacket, white shirt, black tie, and sunglasses; he has a mustache and visible wrinkles",
+      "A woman in the second row wears a similar cap, dark jacket, white shirt, black tie, and eyeglasses; her hair is short and dark",
+      "A man behind her wears a cap with identical eagle emblem, dark jacket, white shirt, black tie, and four gold stripes on each sleeve cuff",
+      "Buildings feature stone facades, tall columns, rectangular windows, and cornices; one building displays a vertical banner with a green circle and white center"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0905_P1",
+      "visual_anchors": [
+        "identical peaked caps with eagle emblems",
+        "uniform sleeve stripes",
+        "aligned marching formation"
+      ],
+      "symbolic_mapping": [
+        "standardized headwear → collective identity",
+        "sleeve stripes → hierarchical structure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual repetition of insignia and posture enacts a shared social role that subordinates individual appearance to institutional belonging.",
+      "alternative_interpretations": [
+        "This may simply reflect standard dress code for a parade or training exercise without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No visible badges, unit patches, or contextual signage confirm the institution or purpose."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0905_P2",
+      "visual_anchors": [
+        "American flags on building",
+        "neoclassical architecture",
+        "formal uniforms"
+      ],
+      "symbolic_mapping": [
+        "flags + columns → civic authority",
+        "uniformity → disciplined order"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of monumental architecture and regimented human movement evokes institutional power that both enables and constrains individual agency within public space.",
+      "alternative_interpretations": [
+        "The scene could be a routine procession with no intended commentary on power dynamics."
+      ],
+      "limitations": [
+        "No overt signs of coercion, resistance, or hierarchy beyond rank insignia; context is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0905_P3",
+      "visual_anchors": [
+        "multiple generations visible (e.g., older man with mustache, younger women)",
+        "shared forward gaze",
+        "tight spacing"
+      ],
+      "symbolic_mapping": [
+        "intergenerational presence → continuity of duty",
+        "forward motion → temporal progression"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The disciplined march across an enduring urban landscape visually links human labor and temporal passage, suggesting continuity amid transience.",
+      "alternative_interpretations": [
+        "The age variation may be coincidental; the march may be brief and unrelated to themes of time or legacy."
+      ],
+      "limitations": [
+        "No clocks, aging markers beyond facial features, or tools/technology are visible to ground labor or temporality claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:26:32.427983+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b8c69aed-6256-963f-865b-1f66a03acc83",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 963,
+        "total_tokens": 1732,
+        "completion_tokens_details": {
+          "text_tokens": 963
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032621933c93efdcb64cc4",
+      "usage": {
+        "completion_tokens": 819,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1893,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2712
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

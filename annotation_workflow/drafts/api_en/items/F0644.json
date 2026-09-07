@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0644",
+  "sample_id": "PHL1800_HL_0431",
+  "file_name": "PHL1800_HL_0431.png",
+  "batch_id": "B015",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man seated on a white scooter interacting with a robed figure",
+  "captions": {
+    "scene": [
+      "Wet pavement under overcast sky, with a red multi-story building featuring golden roof ornaments and prayer flags in the background",
+      "A group of people gathered near a covered entryway; one person holds a green-and-black checkered umbrella",
+      "Green shrubbery lines a walkway beside the red building; a flagpole with a blue-and-white flag is visible"
+    ],
+    "action": [
+      "A man in black leather jacket sits astride a white scooter with red cross markings, gesturing with his right hand toward a standing robed figure",
+      "A person in maroon monastic robes stands facing the scooter rider, hands clasped behind back",
+      "Two individuals crouch or sit on low concrete benches to the left, partially obscured by the umbrella holder"
+    ],
+    "rationale": [
+      "The wet ground and visible raindrops on surfaces indicate recent or ongoing rainfall",
+      "The architectural style and maroon robes suggest a Tibetan Buddhist context, but no definitive signage confirms this",
+      "The scooter’s license plate shows characters that appear non-Latin but are too blurred to transcribe reliably"
+    ],
+    "object": [
+      "A white scooter with a red St. George’s Cross emblem on its side panel and a rear license plate bearing indistinct dark characters on light background",
+      "A man wearing a black leather jacket, dark jeans, and white sneakers sits on the scooter with legs extended forward and right arm raised mid-gesture",
+      "A standing figure wears full-length maroon robes with gold trim at the cuffs and hem, and has a shaved head",
+      "A green-and-black checkered umbrella is held overhead by a person whose face is obscured and body partially cut off on the left edge",
+      "A second seated person in olive-green shirt and beige trousers leans forward with elbows on knees, facing away from camera"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0644_P1",
+      "visual_anchors": [
+        "maroon robes",
+        "scooter with red cross",
+        "wet pavement"
+      ],
+      "symbolic_mapping": [
+        "robes → institutional tradition",
+        "scooter → modern mobility"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of monastic attire and motorized transport visually stages a negotiation between enduring communal roles and individual movement through contemporary space.",
+      "alternative_interpretations": [
+        "This may simply depict routine interaction at a monastery entrance without symbolic intent"
+      ],
+      "limitations": [
+        "No facial expressions or dialogue are visible to confirm intentionality of the contrast"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0644_P2",
+      "visual_anchors": [
+        "checkered umbrella",
+        "crouching figures",
+        "standing robed figure"
+      ],
+      "symbolic_mapping": [
+        "umbrella → provisional shelter",
+        "crouching → marginal positioning"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The spatial arrangement—some sheltered, some exposed, some elevated—suggests layered social positioning where appearance (robes vs. casual wear) correlates with visibility and access within shared space.",
+      "alternative_interpretations": [
+        "People are merely waiting for rain to subside; posture reflects comfort, not status"
+      ],
+      "limitations": [
+        "No clear hierarchy or gaze direction confirms differential status"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0644_P3",
+      "visual_anchors": [
+        "wet reflective ground",
+        "overcast sky",
+        "static grouping of figures"
+      ],
+      "symbolic_mapping": [
+        "wet surface → temporal impermanence",
+        "stillness → suspended decision"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The rain-slicked ground mirrors fragmented figures and structures, evoking ephemerality; the scooter—a product of industrial labor—remains idle, underscoring a momentary pause amid cycles of motion and decay.",
+      "alternative_interpretations": [
+        "The scene is ordinary daily life; reflections are incidental optical effects"
+      ],
+      "limitations": [
+        "Reflections are distorted and partial; no explicit time markers like clocks or shadows confirm temporality"
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:04:10.858231+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e3058d9c-9d6f-9b97-bfe1-7772c599e1e6",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 948,
+        "total_tokens": 1717,
+        "completion_tokens_details": {
+          "text_tokens": 948
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030350f0eb8852a3414c98",
+      "usage": {
+        "completion_tokens": 796,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1870,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2666
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

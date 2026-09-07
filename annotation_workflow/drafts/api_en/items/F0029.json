@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0029",
+  "sample_id": "PHL1800_IRFL_0441",
+  "file_name": "PHL1800_IRFL_0441.jpg",
+  "batch_id": "B003",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a decorated horse-drawn wagon carrying multiple people",
+  "captions": {
+    "scene": [
+      "A black-and-white photograph showing a large ornate wagon with elaborate carvings and multiple circular panels, positioned on grassy ground.",
+      "The wagon features two visible large spoked wheels and a raised platform where several individuals are seated or standing.",
+      "The background is indistinct but appears open and flat, suggesting an outdoor setting with no visible buildings or trees."
+    ],
+    "action": [
+      "Five individuals are positioned on the upper deck of the wagon: some seated, one holding a large shield-like object, others leaning or observing outward.",
+      "One person near the front holds what appears to be a drum or tambourine; another figure wears a hat and faces forward.",
+      "No motion blur is present; all figures appear static in a posed arrangement."
+    ],
+    "rationale": [
+      "The number of visible heads and torsos suggests five distinct persons, with partial occlusion preventing exact count beyond minimum five.",
+      "The wagon’s decorative elements—including scrollwork, medallions, and symmetrical motifs—indicate intentional craftsmanship rather than utilitarian design.",
+      "The presence of musical instruments and formal attire implies a ceremonial or performance context, but this remains speculative without textual confirmation."
+    ],
+    "object": [
+      "The wagon has a two-tiered structure with a lower chassis supporting large wooden spoked wheels and an upper ornamental platform.",
+      "Three circular inset panels are visible on the side of the wagon body, each containing a central emblem or seal; no legible text is present.",
+      "A large dark oval shield with embossed patterns is held upright by a seated figure near the center of the upper deck.",
+      "The wagon’s side features continuous relief carving including acanthus leaves, rosettes, and possibly heraldic motifs, symmetrically arranged around the circular panels.",
+      "All visible individuals wear period-style clothing including hats, coats, and vests; none appear to be operating the vehicle, and no horses are visible in frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0029_P1",
+      "visual_anchors": [
+        "five individuals occupying a shared elevated platform",
+        "ornate decoration surrounding functional transport",
+        "circular emblems with no legible text"
+      ],
+      "symbolic_mapping": [
+        "the platform as a locus of collective visibility",
+        "decoration as assertion of cultural identity over utility"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image presents a moment where individual presence is subsumed within a collectively constructed spectacle, suggesting that social existence is mediated through shared symbolic forms rather than isolated agency.",
+      "alternative_interpretations": [
+        "This may simply depict a parade float or traveling troupe preparing for performance, with no deeper sociological intent."
+      ],
+      "limitations": [
+        "No facial expressions or interaction dynamics are discernible due to image resolution and pose rigidity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0029_P2",
+      "visual_anchors": [
+        "large spoked wheels",
+        "static posture of occupants",
+        "absence of visible motive force"
+      ],
+      "symbolic_mapping": [
+        "wheels as cyclical time markers",
+        "stillness amid ornamentation as resistance to temporal flow"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The ornate yet immobile wagon embodies a tension between the promise of movement (wheels) and enforced stasis (posed figures), evoking reflection on how cultural artifacts suspend or distort lived temporality.",
+      "alternative_interpretations": [
+        "The wagon is simply paused for a photograph; its stillness is logistical, not symbolic."
+      ],
+      "limitations": [
+        "The absence of horses or harnesses makes motion status ambiguous—could be hitched outside frame."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0029_P3",
+      "visual_anchors": [
+        "multiple figures arranged hierarchically on tiers",
+        "central figure holding shield",
+        "uniform direction of gaze toward viewer"
+      ],
+      "symbolic_mapping": [
+        "shield as emblem of collective defense or claim",
+        "tiered seating as implicit social stratification"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The composition visually enacts a hierarchy wherein symbolic authority (shield-bearer) occupies centrality while others flank or support, implying that power is staged through spatial arrangement and material display rather than action.",
+      "alternative_interpretations": [
+        "Seating reflects practical balance and visibility needs for a group photo, not intentional hierarchy."
+      ],
+      "limitations": [
+        "No clear indicators of rank (e.g., insignia, posture differences) beyond position alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Candidate incorrectly claims 'at least eight individuals'—visual count shows 5 distinct people; 'five circular inset panels' is inaccurate (3 visible panels); 'faintly legible text that reads \"WILLIAM\"' is unsupported (no text visible); 'all visible individuals wear period-style clothing' is speculative (clothing details are indistinct); 'no horses are visible in frame' is true but irrelevant to object count; philosophy interpretations include unsupported claims (e.g., 'collective visibility locus' without evidence of interaction) and misapplied concept IDs (e.g., 'labor_technology' for a static wagon)."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:50:18.054532+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-054ddece-8830-9515-84a1-8ae51c7ec37d",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 1049,
+        "total_tokens": 1630,
+        "completion_tokens_details": {
+          "text_tokens": 1049
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 74,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070149566668d4ad4eb24c76",
+      "usage": {
+        "completion_tokens": 1020,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1697,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2717
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

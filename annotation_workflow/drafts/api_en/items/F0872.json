@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0872",
+  "sample_id": "PHL1800_IRFL_0400",
+  "file_name": "PHL1800_IRFL_0400.jpg",
+  "batch_id": "B019",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single kitchen knife",
+  "captions": {
+    "scene": [
+      "A knife lies diagonally on a uniform pale yellow background.",
+      "The background is smooth and featureless, suggesting a studio or controlled setting.",
+      "Lighting is even with soft shadows beneath the blade and handle."
+    ],
+    "action": [
+      "The knife is stationary and resting flat on the surface.",
+      "The blade exhibits a visible hamon line separating a polished bevel from a darker, matte-finished upper steel.",
+      "A black ferrule separates the wooden handle from the tang of the blade."
+    ],
+    "rationale": [
+      "The presence of Japanese-style kanji characters on the blade suggests a specific regional manufacturing tradition, though the exact script is not fully legible.",
+      "The layered appearance of the steel (darker spine, bright bevel) indicates differential heat treatment, a common technique in traditional bladesmithing.",
+      "The wooden handle with black ferrule implies a handcrafted assembly rather than mass-produced plastic molding, but material composition cannot be confirmed visually."
+    ],
+    "object": [
+      "The knife has a straight, single-bevel edge tapering to a pointed tip, characteristic of a Japanese deba or gyuto style.",
+      "The handle is made of light-colored wood with visible grain, attached to the tang via a black metal or resin ferrule.",
+      "Two faint Japanese kanji characters are stamped near the heel of the blade; they are partially legible but not fully decipherable due to resolution and angle.",
+      "The blade shows a distinct transition zone (hamon) running parallel to the edge, indicating a hardened cutting edge and softer spine.",
+      "No sheath, stand, or other objects accompany the knife; it is isolated against a plain background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0872_P1",
+      "visual_anchors": [
+        "single-bevel edge",
+        "hamon line",
+        "wooden handle"
+      ],
+      "symbolic_mapping": [
+        "the hamon as boundary between function and form",
+        "the handle as human interface with tool"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The knife embodies the tension between crafted intention and material constraint: the deliberate hamon marks where human skill intervenes upon raw steel, mirroring how labor transforms nature through disciplined choice.",
+      "alternative_interpretations": [
+        "It is simply a functional tool photographed for product display, with no symbolic intent."
+      ],
+      "limitations": [
+        "No maker’s mark or context confirms intentional symbolism; visual features may be purely utilitarian."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0872_P2",
+      "visual_anchors": [
+        "isolated knife",
+        "uniform background",
+        "sharp tip"
+      ],
+      "symbolic_mapping": [
+        "isolation as focus on instrumentality",
+        "tip as directed potential"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The knife’s poised stillness evokes latent agency—the capacity to cut implies both liberation from obstruction and imposition of force, revealing how tools mediate freedom through constraint.",
+      "alternative_interpretations": [
+        "The isolation results from photographic staging to emphasize shape and finish, not philosophical meaning."
+      ],
+      "limitations": [
+        "No action or user is present; agency is projected onto an inanimate object."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0872_P3",
+      "visual_anchors": [
+        "faint kanji stamp",
+        "hand-finished blade surface",
+        "natural wood grain"
+      ],
+      "symbolic_mapping": [
+        "imperfect inscription as trace of maker",
+        "material continuity from tree to tool"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The barely legible characters and organic textures suggest identity embedded in impermanence: the knife carries traces of its origin and maker, yet will erode with use, reflecting how appearance encodes transient existence.",
+      "alternative_interpretations": [
+        "The stamp is a standard brand identifier; the wood grain is incidental to function."
+      ],
+      "limitations": [
+        "The text is unreadable, so attribution to a specific maker or intent is unsupported."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:24:23.236347+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5a6e3391-a38f-9a77-a0c1-4f0d737770af",
+      "usage": {
+        "prompt_tokens": 756,
+        "completion_tokens": 920,
+        "total_tokens": 1676,
+        "completion_tokens_details": {
+          "text_tokens": 920
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 249,
+          "text_tokens": 507,
+          "cached_tokens": 512
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070324139787e41eb3414b29",
+      "usage": {
+        "completion_tokens": 781,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1803,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2584
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "annotation_item_id": "F1013",
+  "sample_id": "PHL1800_HL_0593",
+  "file_name": "PHL1800_HL_0593.png",
+  "batch_id": "B022",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a multi-car passenger train stopped at a station platform",
+  "captions": {
+    "scene": [
+      "A train with white, red, blue, and yellow livery rests on parallel tracks beneath a blue overhead canopy, with high-rise buildings visible in the background.",
+      "Gravel ballast lies between steel rails; a concrete platform edge appears on the right, partially shaded.",
+      "Overhead catenary structures and support poles span above the train, indicating electrified rail infrastructure."
+    ],
+    "action": [
+      "The train is stationary, as evidenced by lack of motion blur and alignment with platform edge.",
+      "Windows reflect ambient light and surrounding structures; some interior silhouettes are faintly visible but indistinct.",
+      "Train cars are coupled in a continuous line, with visible couplers and buffer mechanisms between adjacent cars."
+    ],
+    "rationale": [
+      "The train’s position relative to the platform and absence of blur suggest it is not moving; however, no active braking or door status confirms intent to remain stopped.",
+      "The presence of multiple car types (e.g., white/red/blue vs. blue/yellow/gray) implies a mixed consist, but without signage or internal markings, functional roles cannot be confirmed.",
+      "The background buildings appear modern and dense, suggesting an urban setting, yet no street signs, station name, or geographic markers are legible to confirm location."
+    ],
+    "object": [
+      "The lead car displays 'KORAIL' in blue stylized lettering on its white side panel, with a horizontal red stripe above a blue stripe along the upper body.",
+      "The second car features a blue upper section, yellow roofline trim, gray lower band, and vertical window panels with dark-tinted glass.",
+      "A third car behind shows similar blue/yellow/gray livery with visible external handrails and a small rectangular access panel near the wheelset.",
+      "Steel rails run parallel with wooden sleepers embedded in crushed stone ballast; one rail has a slight reflective sheen from sunlight.",
+      "Overhead, a blue-painted gantry supports electrical wires and insulators; a small yellow box-like fixture hangs from one support arm."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1013_P1",
+      "visual_anchors": [
+        "KORAIL logo",
+        "multi-colored train livery",
+        "coupled train cars"
+      ],
+      "symbolic_mapping": [
+        "The standardized logo signifies institutional identity; the segmented livery reflects modular design and functional differentiation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The train embodies a constructed identity through branding and color-coding, where appearance serves both recognition and operational coordination—suggesting that identity in technological systems is externally imposed and functionally distributed across components.",
+      "alternative_interpretations": [
+        "The colors may simply follow national railway design standards without symbolic intent."
+      ],
+      "limitations": [
+        "No interior signage, passenger behavior, or maintenance logs are visible to confirm institutional purpose or user experience."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1013_P2",
+      "visual_anchors": [
+        "station platform edge",
+        "overhead canopy",
+        "parallel tracks"
+      ],
+      "symbolic_mapping": [
+        "The rigid geometry of rails and platform defines permissible movement paths, constraining freedom within engineered space"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The train’s immobility within precisely aligned infrastructure illustrates how physical constraints enable collective mobility: freedom here is not absence of limits but navigation within a shared, bounded system.",
+      "alternative_interpretations": [
+        "The scene merely depicts routine station operations with no intentional commentary on constraint."
+      ],
+      "limitations": [
+        "No passengers are clearly visible engaging with the space, so human agency cannot be directly observed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1013_P3",
+      "visual_anchors": [
+        "high-rise buildings in background",
+        "electrified overhead lines",
+        "modern train design"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "A literal description of a multi-car passenger train stopped at a station platform is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a multi-car passenger train stopped at a station platform as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:39:19.564696+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-775e1da6-ae8f-9ae0-b290-fb819ce77d89",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1021,
+        "total_tokens": 1790,
+        "completion_tokens_details": {
+          "text_tokens": 1021
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033845e291d64ffc154698",
+      "usage": {
+        "completion_tokens": 884,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1950,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2834
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1013.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0337",
+  "sample_id": "PHL1800_IRFL_0118",
+  "file_name": "PHL1800_IRFL_0118.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two stylized human figures",
+  "captions": {
+    "scene": [
+      "Two figures stand on a flat blue surface with a darker blue circular shadow beneath them.",
+      "The background is a uniform solid blue with no texture or gradient.",
+      "One figure has a megaphone-shaped head; the other has a normal head and is bent forward."
+    ],
+    "action": [
+      "The right figure points its right index finger toward the left figure’s chest.",
+      "White angular shapes radiate from the megaphone head toward the left figure, suggesting directed output.",
+      "The left figure leans forward with head bowed and arms hanging loosely at its sides."
+    ],
+    "rationale": [
+      "The megaphone head implies amplified vocal projection, but no sound waves or text are visible—only abstract white shapes.",
+      "The pointing gesture and forward lean suggest interpersonal confrontation, though intent cannot be confirmed visually.",
+      "Both figures wear identical red long-sleeve shirts and dark trousers, indicating possible role symmetry or intentional visual equivalence."
+    ],
+    "object": [
+      "The right figure has a conical white megaphone replacing its head, attached to a red torso and dark legs.",
+      "The left figure has a brown-haired head, red torso, dark pants, and black shoes, standing in a slumped posture.",
+      "Five white triangular or trapezoidal shapes emanate from the megaphone toward the left figure’s upper body.",
+      "A dark blue elliptical shadow lies beneath both figures, partially overlapping their feet.",
+      "The right figure’s left arm is bent at the elbow and held behind its back, while the right arm extends forward with an open hand and extended index finger."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0337_P1",
+      "visual_anchors": [
+        "megaphone-shaped head",
+        "pointing finger",
+        "radiating white shapes"
+      ],
+      "symbolic_mapping": [
+        "megaphone → amplified voice or authority",
+        "radiating shapes → force of communication"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes asymmetrical communicative power where one agent imposes discourse upon another through physicalized amplification and gesture, reflecting how social existence can be shaped by unequal expressive capacity.",
+      "alternative_interpretations": [
+        "It may depict a literal public address scenario where one person uses a megaphone to give instructions to another who is listening attentively."
+      ],
+      "limitations": [
+        "No facial expressions, labels, or contextual environment confirm intent or relationship; the megaphone head is metaphorical without textual reinforcement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0337_P2",
+      "visual_anchors": [
+        "identical red shirts",
+        "bent posture",
+        "shared shadow"
+      ],
+      "symbolic_mapping": [
+        "matching attire → shared identity or role",
+        "shared shadow → interdependence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Despite apparent dominance-submission dynamics, the identical clothing and shared ground shadow suggest that identity and social positioning are co-constituted rather than fixed, emphasizing relational construction over individual autonomy.",
+      "alternative_interpretations": [
+        "The matching outfits could simply indicate uniformity (e.g., employees) without symbolic meaning."
+      ],
+      "limitations": [
+        "Clothing color and cut alone do not prove intentional symbolism; uniformity may be aesthetic rather than conceptual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0337_P3",
+      "visual_anchors": [
+        "white angular shapes",
+        "forward lean",
+        "empty space between figures"
+      ],
+      "symbolic_mapping": [
+        "angular shapes → disruptive information",
+        "lean → receptivity or subjugation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The directed white forms represent externally imposed assertions that constrain the recipient’s epistemic freedom, illustrating how truth claims can function as instruments of constraint when delivered without reciprocity.",
+      "alternative_interpretations": [
+        "The shapes may merely indicate sound or wind, with no epistemic implication."
+      ],
+      "limitations": [
+        "The white shapes lack semantic content (e.g., words, symbols); their interpretation as ‘truth’ or ‘constraint’ relies on external framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:35:00.795577+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e1242fe6-6920-9e28-87b7-63f3d815befd",
+      "usage": {
+        "prompt_tokens": 794,
+        "completion_tokens": 939,
+        "total_tokens": 1733,
+        "completion_tokens_details": {
+          "text_tokens": 939
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 287,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023438de21986b6248467f",
+      "usage": {
+        "completion_tokens": 801,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1903,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2704
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

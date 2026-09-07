@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1125",
+  "sample_id": "PHL1800_HL_0430",
+  "file_name": "PHL1800_HL_0430.png",
+  "batch_id": "B024",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a yellow bus parked beside a blue-and-white arched gateway structure",
+  "captions": {
+    "scene": [
+      "A bright blue sky above a paved road with a yellow bus on the left and a decorative gateway on the right.",
+      "The gateway features classical columns, an archway, a clock face, and a cross atop its roofline.",
+      "A tiled sidewalk runs parallel to the road, with lampposts and flags visible near the gateway."
+    ],
+    "action": [
+      "The bus is stationary on the asphalt road, wheels aligned with lane markings.",
+      "The gateway stands fixed, with no visible motion or activity within its arch or upper balcony.",
+      "A driver figure is partially visible through the bus’s front windshield, seated upright."
+    ],
+    "rationale": [
+      "The bus appears parked because its wheels are perpendicular to the curb and no motion blur is present.",
+      "The gateway likely serves a ceremonial or entrance function due to its ornamental design and symmetrical layout.",
+      "The presence of a cross and clock suggests religious or institutional significance, though specific affiliation is not legible."
+    ],
+    "object": [
+      "A yellow coach-style bus with black-and-gold decorative stripes along its side, bearing unreadable text on its lower body and front grille.",
+      "A two-story gateway structure painted white with blue trim, featuring four Doric-style columns supporting an upper balcony with balustrade.",
+      "A circular clock face centered on the upper facade of the gateway, with indistinct hands and numerals.",
+      "A dark metal cross mounted at the apex of the gateway’s roofline, directly above the clock.",
+      "A paved road with white dashed lane markings and a concrete curb separating it from a light-colored square-tiled sidewalk."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1125_P1",
+      "visual_anchors": [
+        "cross atop gateway",
+        "clock face",
+        "arched entrance"
+      ],
+      "symbolic_mapping": [
+        "cross → transcendent order",
+        "arch → threshold between domains"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of the cross, clock, and arch evokes a moment of passage where temporal existence meets enduring belief—suggesting that entering this space entails a conscious transition toward meaning anchored beyond time.",
+      "alternative_interpretations": [
+        "The structure may simply be a decorative town entrance with symbolic elements added for aesthetic or civic identity, not theological intent."
+      ],
+      "limitations": [
+        "No inscriptions or liturgical objects confirm religious function; the cross could be cultural ornamentation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1125_P2",
+      "visual_anchors": [
+        "yellow bus",
+        "driver silhouette",
+        "road markings"
+      ],
+      "symbolic_mapping": [
+        "bus → collective movement",
+        "driver → agency within constraint"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The bus halted before the arch illustrates how individual agency (the driver) operates within socially constructed pathways (road lines, gate), reflecting how freedom is exercised only within pre-established frameworks of infrastructure and order.",
+      "alternative_interpretations": [
+        "The bus is merely waiting for passengers or traffic; no philosophical intent is implied by its position."
+      ],
+      "limitations": [
+        "No visible passenger interaction or signage indicates purposeful pause; the stop may be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1125_P3",
+      "visual_anchors": [
+        "blue-and-white color scheme",
+        "symmetrical columns",
+        "balcony railing"
+      ],
+      "symbolic_mapping": [
+        "symmetry → rational order",
+        "balcony → observation point over transit"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The ordered architecture overlooking the moving vehicle implies a locus of oversight where knowledge (via elevated vantage) structures the flow of bodies—a visual metaphor for institutional authority regulating mobility and visibility.",
+      "alternative_interpretations": [
+        "The balcony is purely decorative and non-functional; no evidence confirms surveillance or control use."
+      ],
+      "limitations": [
+        "No windows, cameras, or occupants are visible on the balcony to support oversight function."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:53:55.788043+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-46c4e4d5-f814-98fe-87cd-8bdaff64e6e4",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 923,
+        "total_tokens": 1692,
+        "completion_tokens_details": {
+          "text_tokens": 923
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070353416ffb1547d1504399",
+      "usage": {
+        "completion_tokens": 785,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1854,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2639
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

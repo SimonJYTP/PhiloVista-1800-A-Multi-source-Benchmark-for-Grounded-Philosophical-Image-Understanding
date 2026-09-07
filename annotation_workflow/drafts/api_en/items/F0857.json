@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0857",
+  "sample_id": "PHL1800_IRFL_0094",
+  "file_name": "PHL1800_IRFL_0094.jpg",
+  "batch_id": "B019",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a human figure and a lion within an arched stone doorway",
+  "captions": {
+    "scene": [
+      "A stone archway with vertical iron bars across its upper half, set in a rough-hewn stone wall.",
+      "The interior beyond the arch is dark, contrasting with the lighter foreground where two figures stand.",
+      "Bones lie scattered on the ground in front of the lion."
+    ],
+    "action": [
+      "A human figure in a long garment leans forward toward the lion’s head, one hand extended near its mouth.",
+      "The lion lies recumbent with its head raised, jaws slightly open, facing the human figure.",
+      "The human figure stands upright with one leg slightly advanced, body angled toward the lion."
+    ],
+    "rationale": [
+      "The human’s posture and proximity suggest intentional engagement rather than accidental proximity, though intent is not visually verifiable.",
+      "The presence of bones implies prior activity involving consumption or decay, but no active eating is depicted.",
+      "The barred arch suggests confinement, yet the lion occupies the threshold rather than being fully enclosed; spatial relationship is ambiguous."
+    ],
+    "object": [
+      "A human figure wearing a long-sleeved, knee-length garment with a dotted pattern on the lower portion and a solid upper portion.",
+      "A large feline with a full mane, visible teeth, and prominent eyes, lying on all fours with head elevated.",
+      "An arched stone doorway constructed of irregular blocks, with three vertical iron bars spanning its upper third.",
+      "Three distinct bone fragments lie on the ground in the foreground: one long shaft, one irregular fragment, and one smaller piece near the lion’s forepaw.",
+      "A small circular object, possibly a ring or latch, is affixed to the right side of the arch’s stonework."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0857_P1",
+      "visual_anchors": [
+        "human leaning toward lion",
+        "iron bars above arch",
+        "bones on ground"
+      ],
+      "symbolic_mapping": [
+        "bars → constraint",
+        "proximity despite danger → courage or recklessness"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The scene visualizes a moment where agency is exercised at the boundary of imposed limits, with the human choosing proximity to a potentially lethal force despite structural barriers overhead.",
+      "alternative_interpretations": [
+        "A staged theatrical tableau depicting a known fable or allegory, with symbolic props arranged for narrative clarity rather than realism."
+      ],
+      "limitations": [
+        "No facial expressions or motion lines confirm emotional state or direction of movement; posture alone cannot confirm intention."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0857_P2",
+      "visual_anchors": [
+        "lion recumbent but alert",
+        "human hand near lion’s mouth",
+        "scattered bones"
+      ],
+      "symbolic_mapping": [
+        "bones → past violence",
+        "stillness amid threat → suspended judgment"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of inert remains and poised interaction evokes the temporality of dominance—where power is neither fully enacted nor surrendered, but held in precarious equilibrium.",
+      "alternative_interpretations": [
+        "A zoological illustration showing feeding behavior interrupted by human intervention, with bones indicating recent meal."
+      ],
+      "limitations": [
+        "The lion’s exact gaze direction and muscle tension are indistinct due to line weight; whether it is passive or tensed cannot be determined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0857_P3",
+      "visual_anchors": [
+        "dotted-pattern garment",
+        "stone arch",
+        "lion’s mane"
+      ],
+      "symbolic_mapping": [
+        "patterned clothing → social role",
+        "mane → natural authority"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The contrast between culturally marked attire and unadorned animal form highlights how identity is signaled through appearance within structured environments, even when confronting non-human sovereignty.",
+      "alternative_interpretations": [
+        "A costume design sketch for a performance, where visual cues denote character type (e.g., scholar, fool, guardian) without narrative context."
+      ],
+      "limitations": [
+        "The garment’s pattern lacks sufficient resolution to confirm cultural or class signifiers; dots may be decorative rather than symbolic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:22:38.773837+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e1d6fee6-ba09-9fcb-9299-aaf3657d216c",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 956,
+        "total_tokens": 1535,
+        "completion_tokens_details": {
+          "text_tokens": 956
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703222180a6ad57df304b68",
+      "usage": {
+        "completion_tokens": 812,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1616,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2428
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

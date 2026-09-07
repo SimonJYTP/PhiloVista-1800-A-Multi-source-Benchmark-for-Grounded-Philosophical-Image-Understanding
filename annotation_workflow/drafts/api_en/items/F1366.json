@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1366",
+  "sample_id": "PHL1800_IRFL_0157",
+  "file_name": "PHL1800_IRFL_0157.jpg",
+  "batch_id": "B028",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one illustrated female-presenting person",
+  "captions": {
+    "scene": [
+      "A stylized figure stands against a textured red background with faint swirling patterns.",
+      "Multiple cyan question marks float around the figure’s head and left side.",
+      "The figure wears a light-gray collared shirt with black buttons and a dark skirt."
+    ],
+    "action": [
+      "The figure raises her right hand to the back of her head, elbow bent outward.",
+      "Her left hand rests on her hip, arm bent at the elbow.",
+      "Her eyebrows are furrowed and eyes wide open, mouth slightly downturned."
+    ],
+    "rationale": [
+      "The presence of floating question marks suggests uncertainty or inquiry, though their exact referent is not specified.",
+      "The hand-to-head gesture commonly signals puzzlement in visual conventions, but this is a cultural convention, not direct evidence of internal state.",
+      "The facial expression resembles stereotypical depictions of confusion, yet no universal mapping exists between facial features and mental states."
+    ],
+    "object": [
+      "The figure has shoulder-length brown hair parted on the left side.",
+      "Five cyan question marks are visible: three clustered to the right of the head, two to the lower left of the head.",
+      "The shirt has a pointed collar and five visible black circular buttons down the front placket.",
+      "The figure’s right ear is fully visible; the left ear is partially obscured by hair.",
+      "The background is uniformly red with subtle lighter-red ornamental swirls, no text or logos."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1366_P1",
+      "visual_anchors": [
+        "cyan question marks",
+        "furrowed brows",
+        "hand-to-head gesture"
+      ],
+      "symbolic_mapping": [
+        "question marks → epistemic uncertainty",
+        "gesture → cognitive effort"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image visually frames inquiry as embodied—physical posture and symbolic marks co-constitute the experience of seeking truth amid ambiguity.",
+      "alternative_interpretations": [
+        "It may simply depict a stock illustration of ‘being confused’ for instructional or UI purposes, without philosophical intent."
+      ],
+      "limitations": [
+        "No textual context confirms the intended meaning of the question marks; they could denote rhetorical, grammatical, or procedural queries."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1366_P2",
+      "visual_anchors": [
+        "single figure",
+        "isolated pose",
+        "no other persons or objects"
+      ],
+      "symbolic_mapping": [
+        "solitary stance → individual cognition",
+        "lack of interaction → internal deliberation"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The absence of others emphasizes the solitary nature of questioning, suggesting that existential or ethical reflection often occurs in isolation despite being socially embedded.",
+      "alternative_interpretations": [
+        "The figure may be part of a larger scene cropped out; isolation is not necessarily intentional."
+      ],
+      "limitations": [
+        "Only one figure is present, but this does not prove intentional solitude—it may reflect compositional economy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1366_P3",
+      "visual_anchors": [
+        "collared shirt",
+        "buttoned front",
+        "skirt"
+      ],
+      "symbolic_mapping": [
+        "formal attire → professional role",
+        "structured clothing → social expectation"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Attire functions as a visible marker of role, implying that identity is performed through appearance even during moments of doubt or uncertainty.",
+      "alternative_interpretations": [
+        "The clothing may be generic cartoon styling with no symbolic intent beyond gender coding."
+      ],
+      "limitations": [
+        "Clothing style is common in vector illustrations and lacks unique identifiers; symbolism is inferred, not explicit."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:24:15.999055+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6994a25e-0037-9cdf-82b8-c75abd4e722a",
+      "usage": {
+        "prompt_tokens": 869,
+        "completion_tokens": 840,
+        "total_tokens": 1709,
+        "completion_tokens_details": {
+          "text_tokens": 840
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 362,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042359b34d912a2e9b437f",
+      "usage": {
+        "completion_tokens": 704,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1901,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2605
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

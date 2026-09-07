@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0055",
+  "sample_id": "PHL1800_IRFL_0486",
+  "file_name": "PHL1800_IRFL_0486.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a rock formation with a dark cavity at its base",
+  "captions": {
+    "scene": [
+      "A sunlit, weathered limestone-like rock outcrop surrounded by dry grasses, shrubs, and scattered green foliage.",
+      "The foreground contains sparse, dry vegetation including leafless twigs and low green bushes; the background shows denser greenery partially obscuring the upper rock surface.",
+      "A small, unreadable informational plaque is visible in the lower-right corner, partially obscured by foliage."
+    ],
+    "action": [
+      "Sunlight illuminates the upper and left portions of the rock, casting shadows inside the cavity and on the right side of the formation.",
+      "Vegetation appears static with no motion blur or wind-distortion evident.",
+      "The cavity remains dark and unoccupied, with no visible movement or internal detail."
+    ],
+    "rationale": [
+      "The rock’s pitted, irregular surface suggests prolonged exposure to weathering agents such as wind and water erosion.",
+      "The presence of both green and desiccated vegetation indicates a mixed moisture regime, possibly seasonal or microclimatic.",
+      "The dark cavity lacks visible interior features, making it impossible to determine depth, contents, or function from this view alone."
+    ],
+    "object": [
+      "The rock formation is light gray to off-white, with numerous pits, fissures, and uneven protrusions across its surface.",
+      "A roughly arched, shadowed opening is centered near the base of the rock, approximately one-third the height of the visible rock face.",
+      "Dry, straw-colored grasses and leafless stems occupy the immediate foreground in front of the cavity.",
+      "Green shrubs with small leaves grow along the top edge and right flank of the rock, some branches extending over the cavity.",
+      "A rectangular metal or plastic plaque with indistinct text and a circular emblem is positioned in the lower-right corner, partially hidden by plants."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0055_P1",
+      "visual_anchors": [
+        "dark cavity",
+        "weathered rock surface",
+        "unreadable plaque"
+      ],
+      "symbolic_mapping": [
+        "the cavity symbolizes unknown potential or absence",
+        "the plaque represents incomplete knowledge transmission"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The contrast between the eroded, enduring rock and the obscure cavity evokes the tension between accumulated time and irrecoverable loss—what endures versus what vanishes beyond perception.",
+      "alternative_interpretations": [
+        "This may simply be a natural shelter formed by differential erosion, with no symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions are legible, and no human activity is visible to confirm intentional meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0055_P2",
+      "visual_anchors": [
+        "dry foreground vegetation",
+        "green shrubs above",
+        "cavity entrance"
+      ],
+      "symbolic_mapping": [
+        "the stratified vegetation layers suggest temporal succession",
+        "the cavity acts as a threshold between exposed and concealed realms"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The scene presents a literal threshold: the cavity invites passage yet remains impenetrable in the image, mirroring how physical environments can simultaneously offer possibility and impose limitation.",
+      "alternative_interpretations": [
+        "The cavity may be inaccessible due to collapse or debris, not design or metaphor."
+      ],
+      "limitations": [
+        "No evidence confirms intentional access or use of the cavity; its function is visually undetermined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0055_P3",
+      "visual_anchors": [
+        "rock texture",
+        "partial plaque",
+        "overhanging branches"
+      ],
+      "symbolic_mapping": [
+        "the rock’s fragmentation reflects identity as composite and unstable",
+        "the obscured plaque signifies contested or lost attribution"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The rock’s fragmented appearance—partially covered, partially exposed—mirrors how identity and social presence are constructed through partial visibility and contextual framing rather than intrinsic wholeness.",
+      "alternative_interpretations": [
+        "The rock is simply geologically fractured; the plaque is standard signage with no deeper implication."
+      ],
+      "limitations": [
+        "No human figures, names, or cultural markers appear to ground identity or social claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:53:50.136238+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1e0a91b9-26ea-961f-b33e-831f1415c96c",
+      "usage": {
+        "prompt_tokens": 839,
+        "completion_tokens": 960,
+        "total_tokens": 1799,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 332,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701532779357aeb77e64d51",
+      "usage": {
+        "completion_tokens": 822,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1975,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2797
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

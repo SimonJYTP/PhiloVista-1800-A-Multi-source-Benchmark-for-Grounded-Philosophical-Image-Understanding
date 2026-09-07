@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0888",
+  "sample_id": "PHL1800_MM_0063",
+  "file_name": "PHL1800_MM_0063.jpg",
+  "batch_id": "B019",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three people at a supermarket checkout counter",
+  "captions": {
+    "scene": [
+      "A brightly lit supermarket checkout area with refrigerated shelves stocked with packaged food items behind the counter.",
+      "Digital screens mounted above the counter display menu-like interfaces with icons and text, some of which is unreadable.",
+      "A white speech bubble containing English text appears near the central woman’s head, stating: 'My friend is on the register, so I'm going to check out first!'"
+    ],
+    "action": [
+      "A man in a denim jacket stands left of center holding a metal shopping basket containing yellow items.",
+      "A woman in a white blouse and blue jeans stands facing the cashier, smiling, with her right hand resting on the counter surface.",
+      "A female cashier in a white uniform and black strap stands behind the counter, smiling toward the woman."
+    ],
+    "rationale": [
+      "The speech bubble suggests the woman intends to proceed before the man; however, no physical movement or transaction is visible, so intent cannot be confirmed from action alone.",
+      "The digital screens show structured layouts resembling point-of-sale interfaces, but specific content is partially illegible due to resolution and angle.",
+      "The woman’s posture and gaze toward the cashier indicate engagement, yet no payment device, scanned item, or receipt is visible, so checkout status remains undetermined."
+    ],
+    "object": [
+      "A metal wire shopping basket with a handle is held by the man and contains at least two yellow cylindrical items.",
+      "The woman wears brown platform shoes with laces, cuffed blue skinny jeans, and a loose white short-sleeved blouse.",
+      "The cashier wears a white collared shirt with a small red logo on the left chest and a black strap over her right shoulder.",
+      "Two wall-mounted digital displays are positioned above the counter; the left screen shows rows of food images with labels, the right screen shows partial text including 'Mango beta' and other indecipherable characters.",
+      "The checkout counter has a stainless steel top, a recessed scanner slot, and illuminated horizontal panels beneath the surface."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0888_P1",
+      "visual_anchors": [
+        "speech bubble with English text",
+        "woman facing cashier",
+        "man holding basket"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents declared intention preceding action",
+        "spatial proximity without contact reflects social protocol"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a moment where verbal declaration mediates social sequencing—intention is voiced before physical enactment, highlighting how language structures shared temporal experience in routine public spaces.",
+      "alternative_interpretations": [
+        "The speech bubble may be added digitally and not part of the original scene; it could represent narrative framing rather than real-time communication."
+      ],
+      "limitations": [
+        "The speech bubble is visually present but its origin (in-world vs. overlay) is indeterminable from the image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0888_P2",
+      "visual_anchors": [
+        "cashier in uniform",
+        "digital screens",
+        "scanner slot"
+      ],
+      "symbolic_mapping": [
+        "uniform signifies institutional role",
+        "screens mediate human-machine transaction"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "power_conflict"
+      ],
+      "interpretation": "The cashier’s standardized attire and the embedded digital interface illustrate labor as both embodied service and technologically mediated control, where authority resides in system design as much as in the person.",
+      "alternative_interpretations": [
+        "The setup reflects standard retail efficiency; no evidence of tension or resistance is visible, so power dynamics remain neutral description."
+      ],
+      "limitations": [
+        "No facial expressions beyond smiling are discernible, and no interaction history is shown, limiting inference about relational power."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0888_P3",
+      "visual_anchors": [
+        "man holding basket",
+        "woman standing ahead",
+        "identical denim clothing on both individuals"
+      ],
+      "symbolic_mapping": [
+        "shared attire suggests affiliation or coordination",
+        "spatial ordering implies procedural hierarchy"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Shared sartorial choices (denim jackets and jeans) visually align the two customers, yet their differential positioning—one speaking, one waiting—reveals how identity is enacted through sequential participation in shared social scripts.",
+      "alternative_interpretations": [
+        "The matching clothing may be coincidental; no explicit indication of relationship exists beyond the speech bubble’s claim."
+      ],
+      "limitations": [
+        "Clothing similarity does not confirm relationship; the speech bubble’s claim is unverified by independent visual cues."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:25:12.066192+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a3567f62-5bd4-95af-b59c-ebc9ecbdd5d5",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1028,
+        "total_tokens": 2561,
+        "completion_tokens_details": {
+          "text_tokens": 1028
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070324440e75c7c6e7754ea2",
+      "usage": {
+        "completion_tokens": 888,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2983,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3871
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

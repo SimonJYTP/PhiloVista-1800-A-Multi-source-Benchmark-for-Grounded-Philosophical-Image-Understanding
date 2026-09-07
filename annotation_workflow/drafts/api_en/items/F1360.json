@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1360",
+  "sample_id": "PHL1800_HL_0345",
+  "file_name": "PHL1800_HL_0345.png",
+  "batch_id": "B028",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of five pedestrians crossing a multi-lane urban street",
+  "captions": {
+    "scene": [
+      "An overcast day in a dense city with mid-rise and high-rise buildings, traffic signals, lampposts, and a tall lattice tower visible in the background.",
+      "A wide asphalt street with multiple vehicle lanes, manhole covers, painted lane markings, and parked or stopped vehicles including SUVs, sedans, a bus, and pickup trucks.",
+      "Street furniture includes a black sign reading 'PARK' with a white arrow and green logo, traffic lights (one red), and pedestrian crosswalk markings."
+    ],
+    "action": [
+      "Five pedestrians walk together across the street from left to right, mid-crossing, with varied clothing and postures; one carries a red bag.",
+      "A red SUV is stopped at the crosswalk, facing the camera, with its front wheels aligned perpendicular to the curb.",
+      "A white pickup truck and a white sedan are parked or stopped on the right side of the road, while a blue pickup and a white bus are visible further back."
+    ],
+    "rationale": [
+      "The group appears coordinated in movement direction and spacing, suggesting intentional collective crossing rather than random convergence.",
+      "The red traffic light for the cross-street direction implies vehicles should yield to pedestrians, consistent with the stopped SUV.",
+      "The presence of multiple manhole covers and lane markings indicates this is a maintained urban thoroughfare, not a temporary or informal road."
+    ],
+    "object": [
+      "A black rectangular sign mounted on a pole displays the word 'PARK' in white uppercase letters, accompanied by a white left-pointing arrow and a green circular logo with indistinct white text.",
+      "A tall steel lattice transmission tower stands behind mid-rise buildings, partially obscured by trees and signage.",
+      "Four visible manhole covers are embedded in the asphalt surface: three near the center of the street and one closer to the right curb.",
+      "A white city bus with dark-tinted windows and a destination display (unreadable) is parked or moving slowly behind a white sedan.",
+      "Five pedestrians are clearly distinguishable: four males and one female, wearing shorts, t-shirts, caps, and sandals; one male holds a red plastic bag."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1360_P1",
+      "visual_anchors": [
+        "five pedestrians walking in unison across a marked crosswalk",
+        "red traffic light indicating stop for cross-street traffic",
+        "manhole covers embedded in the street surface"
+      ],
+      "symbolic_mapping": [
+        "the crosswalk as a negotiated zone of shared rights",
+        "the traffic signal as institutional enforcement of order"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where individual mobility is simultaneously enabled and regulated by infrastructural design and legal signaling, illustrating how social coexistence in urban space depends on tacit agreements enforced by physical and symbolic constraints.",
+      "alternative_interpretations": [
+        "This is simply routine pedestrian traffic at an intersection with no deeper significance beyond transportation logistics."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or dialogue are visible, so intentions or interpersonal dynamics cannot be confirmed."
+      ],
+      "sufficiency": "supported"
+    },
+    {
+      "candidate_id": "AI_F1360_P2",
+      "visual_anchors": [
+        "tall lattice tower rising above surrounding buildings",
+        "multiple vehicles halted or moving slowly",
+        "pedestrians mid-stride with varied attire"
+      ],
+      "symbolic_mapping": [
+        "the tower as a vertical assertion of technological reach against horizontal sprawl",
+        "the paused vehicles as suspended agency awaiting signal permission"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of engineered infrastructure (tower, roads, signals) with human transit suggests that modern journeys are mediated through layers of technology and regulation, where personal movement is both facilitated and segmented by external systems.",
+      "alternative_interpretations": [
+        "The tower is merely background utility infrastructure with no symbolic role; the scene reflects ordinary commuting without thematic intent."
+      ],
+      "limitations": [
+        "The function of the tower is not specified visually (e.g., power vs. communication), limiting definitive technological interpretation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1360_P3",
+      "visual_anchors": [
+        "green logo on 'PARK' sign (unreadable text)",
+        "unidentifiable faces of pedestrians",
+        "uniform asphalt surface with repeated manhole patterns"
+      ],
+      "symbolic_mapping": [
+        "anonymous figures traversing standardized civic space",
+        "repetitive infrastructure elements erasing individual trace"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visual anonymity of the pedestrians amid standardized urban fixtures underscores how identity in public space is often subsumed by functional roles—walker, driver, commuter—within a system that prioritizes flow over individual recognition.",
+      "alternative_interpretations": [
+        "The lack of identifiable features is due to distance and resolution, not conceptual erasure; people are simply walking."
+      ],
+      "limitations": [
+        "Distance and angle prevent verification of facial features or distinguishing marks; anonymity may be technical rather than intentional."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Candidate incorrectly states six pedestrians; image shows five. Candidate incorrectly describes a blue pickup as a blue sedan. Candidate incorrectly claims five manhole covers; image shows four."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:24:12.378478+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7a214769-36d9-9d38-8cc6-f37e7de31ce0",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1124,
+        "total_tokens": 1893,
+        "completion_tokens_details": {
+          "text_tokens": 1124
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042325a986edc4373a450d",
+      "usage": {
+        "completion_tokens": 1019,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2031,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3050
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

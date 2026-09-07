@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0451",
+  "sample_id": "PHL1800_HL_0553",
+  "file_name": "PHL1800_HL_0553.png",
+  "batch_id": "B011",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person sitting on a wooden bench",
+  "captions": {
+    "scene": [
+      "A green-painted wall with layered graffiti and torn posters above a concrete ledge, adjacent to reddish-brown dirt ground littered with leaves and trash.",
+      "A wooden bench and a small wooden stool sit on uneven dirt ground beside a partial view of a bicycle wheel and frame.",
+      "The lower wall section shows peeling paint, exposed concrete, and multiple overlapping layers of faded posters and spray-painted tags."
+    ],
+    "action": [
+      "The person is seated on the bench, leaning forward with head bowed toward an open newspaper held in both hands.",
+      "The person holds a clear plastic water bottle in their left hand while reading the newspaper.",
+      "The person wears a red hooded sweatshirt, light blue jeans, and dark shoes; their right foot rests on the ground, left foot on the bench's lower rung."
+    ],
+    "rationale": [
+      "The posture and gaze direction suggest focused reading, though facial expression is not visible to confirm attention level.",
+      "The presence of a newspaper and bottle implies a pause or break, but no explicit activity beyond holding and viewing is confirmed.",
+      "Graffiti and torn posters indicate prior human activity on the wall, but temporal sequence or authorship cannot be determined from the image alone."
+    ],
+    "object": [
+      "A wooden bench with two horizontal planks for seating and support legs, showing signs of weathering and dirt accumulation underneath.",
+      "A small four-legged wooden stool positioned to the right of the bench, slightly behind it, with visible grain and minor wear.",
+      "A black-framed bicycle with a visible front wheel, handlebar stem, and part of the fork, resting on the dirt ground near the bench.",
+      "A crumpled white plastic cup lies on the ground near the bench’s left leg, alongside scattered dry leaves and small debris.",
+      "The person’s right hand grips the upper edge of the newspaper, which displays columns of text and at least one grayscale image, though specific content is unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0451_P1",
+      "visual_anchors": [
+        "layered torn posters",
+        "graffiti overpainting",
+        "person reading newspaper"
+      ],
+      "symbolic_mapping": [
+        "overwritten posters suggest contested public meaning",
+        "newspaper as transient record amid decay"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image presents a tension between ephemeral communication (newspaper, posters) and enduring material decay, reflecting how shared knowledge and social presence are continually overwritten yet persist in fragmentary form.",
+      "alternative_interpretations": [
+        "This may simply depict a routine moment of rest in an urban environment without symbolic intent."
+      ],
+      "limitations": [
+        "No legible text confirms intended messages of posters or newspaper; all symbolic readings rely on visual layering alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0451_P2",
+      "visual_anchors": [
+        "person seated alone",
+        "dirt ground with litter",
+        "bicycle partially visible"
+      ],
+      "symbolic_mapping": [
+        "solitary figure amid disrepair suggests marginalization",
+        "bicycle as potential mobility constrained by setting"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The individual’s physical containment within a deteriorating public space—bounded by wall, bench, and debris—evokes questions about structural constraints on agency and the visibility of certain lives within shared environments.",
+      "alternative_interpretations": [
+        "The scene could reflect ordinary urban infrastructure use without implying constraint or exclusion."
+      ],
+      "limitations": [
+        "No evidence confirms the person’s socioeconomic status, intent, or relationship to the space; isolation is inferred from composition only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0451_P3",
+      "visual_anchors": [
+        "green wall with cracks",
+        "exposed concrete beneath plaster",
+        "person wearing hoodie with hood down"
+      ],
+      "symbolic_mapping": [
+        "cracked surface reveals underlying structure",
+        "hood down indicates openness or neutrality rather than withdrawal"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The visible stratification of surfaces—paint, plaster, concrete—mirrors how identity and time manifest through accumulated layers of change and erosion, where what appears stable is revealed as provisional upon closer inspection.",
+      "alternative_interpretations": [
+        "The wall’s condition may result from neglect or budget limits, not symbolic layering."
+      ],
+      "limitations": [
+        "Cracks and peeling are physical phenomena; assigning them temporal or existential meaning requires external interpretation beyond visual data."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:47:58.288339+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8f251869-13ef-9935-9c9c-5672c1aa1d51",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1025,
+        "total_tokens": 1834,
+        "completion_tokens_details": {
+          "text_tokens": 1025
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024742dec52de44e2a4be4",
+      "usage": {
+        "completion_tokens": 884,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2005,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2889
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

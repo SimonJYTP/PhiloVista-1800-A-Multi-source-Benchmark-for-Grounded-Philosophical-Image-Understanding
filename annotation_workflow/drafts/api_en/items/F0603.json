@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0603",
+  "sample_id": "PHL1800_HAIV_0340",
+  "file_name": "PHL1800_HAIV_0340.png",
+  "batch_id": "B014",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single robed figure holding a staff and an hourglass",
+  "captions": {
+    "scene": [
+      "A figure in a teal hooded cloak stands against a plain off-white background.",
+      "The figure holds a tall wooden staff with a forked top in the right hand and a large red hourglass in the left hand.",
+      "The figure's face is partially visible beneath the hood, showing one eye, nose, and mouth; the visible skin has dark markings."
+    ],
+    "action": [
+      "The figure grips a staff vertically with the right hand, fingers wrapped around its shaft.",
+      "The figure supports a red hourglass with the left hand, thumb and fingers contacting its upper bulb and frame.",
+      "The figure remains stationary, facing slightly leftward, with no motion blur or dynamic posture indicating movement."
+    ],
+    "rationale": [
+      "The hood obscures most of the head, suggesting intentional concealment or symbolic anonymity, though facial features are partially exposed.",
+      "The hourglass contains red sand that appears to be flowing from the upper to lower bulb, indicating active time passage.",
+      "The staff’s design—forked top and straight shaft—suggests ceremonial or symbolic use rather than utilitarian support, but no functional context is visible."
+    ],
+    "object": [
+      "The figure wears a voluminous teal cloak with deep folds and a high hood that casts shadow over the face.",
+      "A wooden staff with a light brown shaft and a Y-shaped metallic or carved top is held upright in the right hand.",
+      "A large hourglass with a red wooden frame and transparent glass bulbs contains red granular material, approximately half transferred to the lower bulb.",
+      "The visible portion of the figure’s face shows a human-like eye with dark markings above it, a straight nose, and closed lips.",
+      "The figure’s hands are bare, with visible fingers and fingernails, and show no gloves or adornments."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0603_P1",
+      "visual_anchors": [
+        "red hourglass",
+        "flowing red sand",
+        "hooded concealment"
+      ],
+      "symbolic_mapping": [
+        "hourglass → finite duration",
+        "red sand → urgency or lifeblood"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The hourglass with red sand visually enacts the irreversible passage of time, while the hooded figure’s partial obscurity suggests mortality as both universal and personally veiled.",
+      "alternative_interpretations": [
+        "The red hourglass may simply represent a timer for a ritual or game, with no deeper symbolism intended."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm symbolic intent; color choice (red) could be aesthetic rather than semantic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0603_P2",
+      "visual_anchors": [
+        "teal hooded cloak",
+        "partially revealed face",
+        "dark facial markings"
+      ],
+      "symbolic_mapping": [
+        "hood → concealment of identity",
+        "markings → signifier of status or transformation"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The tension between concealed and revealed facial features, combined with distinctive markings, visualizes identity as constructed through appearance and selective disclosure.",
+      "alternative_interpretations": [
+        "The markings may be scars or natural pigmentation, and the hood may serve only practical purposes like warmth or shade."
+      ],
+      "limitations": [
+        "Facial markings are stylized and lack detail to determine origin (e.g., tattoo, birthmark, paint)."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0603_P3",
+      "visual_anchors": [
+        "staff with forked top",
+        "hourglass held together",
+        "figure’s upright posture"
+      ],
+      "symbolic_mapping": [
+        "staff → authority or mediation",
+        "dual objects → balance of power and temporality"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "Holding both a symbol of authority (staff) and a symbol of limitation (hourglass) simultaneously suggests power constrained by time, implying inherent conflict in sustained control.",
+      "alternative_interpretations": [
+        "The figure may be a performer or character in a narrative scene where props are used without allegorical meaning."
+      ],
+      "limitations": [
+        "The staff’s forked top lacks inscriptions or heraldic elements that would confirm authoritative function."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:00:10.238484+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-74682453-6575-9c40-920c-11a67225fad9",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 958,
+        "total_tokens": 2491,
+        "completion_tokens_details": {
+          "text_tokens": 958
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702595379f5525859c44eaa",
+      "usage": {
+        "completion_tokens": 821,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2917,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3738
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

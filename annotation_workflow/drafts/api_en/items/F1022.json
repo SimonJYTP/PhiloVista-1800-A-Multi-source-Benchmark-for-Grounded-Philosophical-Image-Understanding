@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1022",
+  "sample_id": "PHL1800_IRFL_0240",
+  "file_name": "PHL1800_IRFL_0240.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a multi-story exterior staircase enclosed behind metal mesh panels",
+  "captions": {
+    "scene": [
+      "A vertical array of rectangular metal-mesh-covered windows reveals a white concrete staircase with black handrails and treads, viewed through a grid-like facade.",
+      "The staircase ascends diagonally across multiple floors, segmented by horizontal and vertical structural beams that divide the view into a grid of panes.",
+      "One pane contains a red circular no-smoking sign with a crossed-out cigarette icon; another lower pane shows a partially visible similar sign."
+    ],
+    "action": [
+      "The staircase is static and unoccupied; no human or animal figures are present in any visible section.",
+      "Light reflects off white stair surfaces and metallic frames, indicating ambient illumination but no direct motion.",
+      "Mesh panels remain fixed in place, showing no deformation, displacement, or interaction with external forces."
+    ],
+    "rationale": [
+      "The absence of movement or occupants suggests the staircase is not currently in use, though usage cannot be confirmed from still imagery alone.",
+      "The uniformity of mesh size and framing implies standardized industrial construction, but material composition (e.g., steel vs. aluminum) is indeterminate from visual cues.",
+      "The no-smoking signs indicate regulatory intent, yet their placement does not confirm enforcement status or jurisdictional authority."
+    ],
+    "object": [
+      "The structure consists of vertically aligned rectangular panels, each framed in light gray metal and filled with square-grid wire mesh of consistent aperture size.",
+      "White concrete stair treads and risers form a zigzag ascent visible through the mesh, intersected by black tubular handrails running parallel to the stairs.",
+      "A red-and-white no-smoking symbol appears centered in one middle-level panel; the cigarette icon and prohibition slash are clearly legible.",
+      "A second, partially cropped no-smoking symbol appears in the bottom-center panel, with only the red circle and part of the slash visible.",
+      "Vertical support columns separate columnar sections of the facade, creating three distinct vertical bands of windowed panels."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1022_P1",
+      "visual_anchors": [
+        "metal mesh grid",
+        "diagonal staircase",
+        "no-smoking sign"
+      ],
+      "symbolic_mapping": [
+        "mesh as physical constraint",
+        "staircase as potential path"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The mesh enforces separation between observer and access point, rendering the staircase visually present yet functionally inaccessible—evoking tension between perceived possibility and imposed limitation.",
+      "alternative_interpretations": [
+        "The mesh may serve purely functional safety purposes without symbolic intent, and the staircase is simply a utilitarian egress route."
+      ],
+      "limitations": [
+        "No signage indicates intended meaning; the observer’s position relative to the structure is unknown, affecting interpretation of access."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1022_P2",
+      "visual_anchors": [
+        "repeating grid pattern",
+        "identical panel divisions",
+        "uniform stair geometry"
+      ],
+      "symbolic_mapping": [
+        "grid as order",
+        "repetition as institutional rhythm"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The modular repetition of panels and standardized stair design reflects systems of organization that prioritize predictability over individual variation, suggesting architecture as an expression of collective regulation.",
+      "alternative_interpretations": [
+        "The repetition results from cost-efficient prefabrication and structural necessity, not ideological intent."
+      ],
+      "limitations": [
+        "No contextual information about building use, occupancy, or design intent is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1022_P3",
+      "visual_anchors": [
+        "diagonal ascent across vertical frames",
+        "interrupted continuity of stairs",
+        "fixed prohibitory sign"
+      ],
+      "symbolic_mapping": [
+        "ascent as temporal progression",
+        "interruption as enforced pause"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The staircase’s upward trajectory is visually fragmented by rigid frames and a prohibition sign, implying that progress is neither seamless nor autonomous but mediated by external rules and material boundaries.",
+      "alternative_interpretations": [
+        "The fragmentation is purely optical due to the viewing angle and panel layout, not conceptual."
+      ],
+      "limitations": [
+        "The image captures a single moment; temporal dynamics like usage frequency or decay are invisible."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:44:23.076826+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9ff322aa-5654-9a6a-831c-f0b3b37657bb",
+      "usage": {
+        "prompt_tokens": 2909,
+        "completion_tokens": 975,
+        "total_tokens": 3884,
+        "completion_tokens_details": {
+          "text_tokens": 975
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2402,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070344048013deaae7774769",
+      "usage": {
+        "completion_tokens": 836,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4688,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5524
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

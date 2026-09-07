@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0450",
+  "sample_id": "PHL1800_HL_0015",
+  "file_name": "PHL1800_HL_0015.png",
+  "batch_id": "B001",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "convex safety mirror mounted on a pole",
+  "captions": {
+    "scene": [
+      "A convex mirror reflects a green train stopped at a station platform against a partly cloudy sky.",
+      "The mirror is affixed to a black pole attached to a pale yellow wall with red graffiti on the lower left.",
+      "Overhead catenary wires and leafy tree branches appear in the mirror's reflection above the train."
+    ],
+    "action": [
+      "The train is stationary at the platform, with visible passengers inside one window.",
+      "The mirror captures a distorted wide-angle view of the scene behind the observer.",
+      "Red spray-painted graffiti marks the wall beneath the mirror but does not interact with it."
+    ],
+    "rationale": [
+      "The train’s alignment with the platform edge and lack of motion blur suggest it is stopped, though no brake lights or door status are visible.",
+      "The curvature of the mirror causes radial distortion, confirming it is convex; this is standard for traffic/safety mirrors.",
+      "The presence of overhead wires and train design indicate an electrified rail system, but the specific country or operator cannot be determined from visible evidence."
+    ],
+    "object": [
+      "A circular convex mirror with a black metal rim is mounted vertically on a black cylindrical pole.",
+      "The reflected image shows a green train with yellow horizontal stripes and multiple rectangular windows, including one showing a seated passenger.",
+      "The platform edge is marked by a white tactile paving strip adjacent to the train’s doors.",
+      "A pale yellow concrete wall forms the background, bearing red graffiti reading 'MOK' in stylized capital letters.",
+      "Above the mirror, bare and leafy branches of trees extend into the sky, partially reflected in the mirror’s upper portion."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0450_P1",
+      "visual_anchors": [
+        "convex mirror",
+        "distorted reflection",
+        "train at platform"
+      ],
+      "symbolic_mapping": [
+        "the mirror’s curvature maps to mediated perception",
+        "the train’s stillness maps to suspended temporality"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The convex mirror presents reality as inherently distorted and partial, suggesting that knowledge is always mediated and never direct; the train paused at the platform evokes a moment arrested in time, highlighting mortality’s constraint on movement and continuity.",
+      "alternative_interpretations": [
+        "It is simply a functional safety device capturing a routine transit scene without symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; distortion may be purely optical, not epistemological."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0450_P2",
+      "visual_anchors": [
+        "red graffiti",
+        "yellow wall",
+        "green train"
+      ],
+      "symbolic_mapping": [
+        "graffiti as unauthorized mark contrasts with institutional infrastructure",
+        "color juxtaposition signals tension between individual expression and system uniformity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The graffiti asserts an individual trace against the standardized backdrop of public transit infrastructure, embodying the persistent negotiation between personal agency and systemic constraint within shared social space.",
+      "alternative_interpretations": [
+        "The graffiti is incidental vandalism with no intended commentary on social structure."
+      ],
+      "limitations": [
+        "The graffiti’s content ('MOK') is ambiguous and lacks legible message; its authorship and intent are unseen."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0450_P3",
+      "visual_anchors": [
+        "passenger visible through window",
+        "mirror’s limited field",
+        "platform edge"
+      ],
+      "symbolic_mapping": [
+        "single visible person represents anonymity within collective transit",
+        "mirror frames only part of the scene, implying exclusion of context"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The lone visible passenger appears only as a silhouette within a constrained frame, illustrating how identity is reduced to appearance under surveillance-like observation, while the mirror’s boundary enforces relational incompleteness—what is seen is necessarily disconnected from the whole.",
+      "alternative_interpretations": [
+        "The passenger is merely coincidentally positioned where the mirror captures them; no thematic emphasis is intended."
+      ],
+      "limitations": [
+        "Only one person is clearly discernible; others may be present but obscured by reflections or angle."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:38:10.281899+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3f662ba0-ec1a-90b0-9ca1-46ad7bad1e50",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 953,
+        "total_tokens": 1762,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013751d249e5b4a4b34304",
+      "usage": {
+        "completion_tokens": 815,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1931,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2746
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

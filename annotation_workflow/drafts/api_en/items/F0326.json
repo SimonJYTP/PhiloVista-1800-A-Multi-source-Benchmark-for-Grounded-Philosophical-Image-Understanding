@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0326",
+  "sample_id": "PHL1800_MM_0084",
+  "file_name": "PHL1800_MM_0084.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man standing at the head of a conference table addressing seated individuals",
+  "captions": {
+    "scene": [
+      "An indoor meeting room with wood-paneled lower walls, beige upper walls, and two green chalkboards—one blank, one with handwritten text and pinned papers.",
+      "A large oval wooden conference table surrounded by at least six people in business attire; five are seated, one stands.",
+      "Overhead fluorescent lighting illuminates the room; ceiling tiles are visible."
+    ],
+    "action": [
+      "The standing man holds a small dark object in his right hand and gestures slightly with his left hand near his waist.",
+      "Three seated individuals (two women, one man) face the speaker, with hands resting on papers or devices on the table.",
+      "A speech bubble originates from the standing man’s head area containing legible English text: 'You must book all school events at my sister's event hall!'"
+    ],
+    "rationale": [
+      "The speech bubble is positioned near the standing man’s head and contains imperative language, suggesting he is the speaker; however, no mouth movement or audio evidence confirms vocalization.",
+      "The chalkboard text is partially legible but mostly illegible due to resolution and angle; some lines appear numbered, others contain fragmented phrases and small images/papers.",
+      "The presence of tablets, notepads, and pens suggests a formal meeting context, but the content of the meeting cannot be determined beyond the speech bubble’s claim."
+    ],
+    "object": [
+      "A man in a navy suit, white shirt, and blue striped tie stands upright beside the table, facing seated attendees.",
+      "A woman with shoulder-length dark hair wears a black blazer over a patterned blouse and sits with both hands on the table near a sheet of paper.",
+      "A man seated centrally wears a navy suit, light blue shirt, and blue patterned tie; his right hand rests on a black rectangular device resembling a tablet stand or phone holder.",
+      "A woman on the right wears a navy blazer, white shirt, and dark tie; she holds a pen over a notepad and looks toward the speaker.",
+      "A person in the foreground, seen from behind, wears a navy suit and writes on a notepad with a pen while a tablet lies beside it."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0326_P1",
+      "visual_anchors": [
+        "speech bubble with imperative command",
+        "formal business attire",
+        "chalkboard with pinned documents"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents an external directive imposed within a professional setting"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes a moment where institutional authority is contested or overridden by a personal, familial commercial interest, raising questions about legitimacy and coercion in organizational decision-making.",
+      "alternative_interpretations": [
+        "The scene may be a staged or satirical illustration rather than a real meeting, using exaggerated dialogue for comedic or critical effect."
+      ],
+      "limitations": [
+        "The speech bubble is the sole source of narrative content; no corroborating visual cues confirm the claim’s truth or context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0326_P2",
+      "visual_anchors": [
+        "chalkboard with illegible writing",
+        "seated listeners with notepads",
+        "standing speaker holding object"
+      ],
+      "symbolic_mapping": [
+        "illegible chalkboard text symbolizes obscured institutional knowledge or procedural opacity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between the clear, assertive speech bubble and the indecipherable background documentation suggests a tension between performative authority and substantive transparency in collective deliberation.",
+      "alternative_interpretations": [
+        "The chalkboard may simply contain routine meeting notes or schedules irrelevant to the immediate interaction."
+      ],
+      "limitations": [
+        "No portion of the chalkboard text is fully readable; its content cannot be verified or interpreted reliably."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0326_P3",
+      "visual_anchors": [
+        "multiple individuals in uniform professional dress",
+        "shared table surface",
+        "focused attention toward one speaker"
+      ],
+      "symbolic_mapping": [
+        "uniform attire signifies role-based identity subsuming individual expression"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visual homogeneity of dress and posture underscores how social roles constrain individual agency, especially when a private demand is delivered as a binding institutional rule.",
+      "alternative_interpretations": [
+        "The attire reflects standard professional norms for the setting and carries no deeper symbolic weight."
+      ],
+      "limitations": [
+        "Clothing style alone does not prove identity suppression; it may reflect convention or policy without ideological intent."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:33:01.297294+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7b3013a9-c5f1-936b-b3ef-f88d80f8a4f7",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1034,
+        "total_tokens": 2567,
+        "completion_tokens_details": {
+          "text_tokens": 1034
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702324821d0445136f4447b",
+      "usage": {
+        "completion_tokens": 898,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2990,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3888
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1698",
+  "sample_id": "PHL1800_HL_0061",
+  "file_name": "PHL1800_HL_0061.png",
+  "batch_id": "B035",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "six teddy bears wearing chainmail-like fabric suits, arranged on a black surface",
+  "captions": {
+    "scene": [
+      "Six teddy bears lie flat on a dark rectangular surface outdoors on grass, with a folding chair and a white tote bag in the background.",
+      "A yellow paper sign reading 'Christmas Teddy $50' rests among the bears; a red-and-white can sits on the chair armrest.",
+      "A brown leather bag and part of a person's leg in light-colored pants appear at left edge; sunlight casts shadows from upper right."
+    ],
+    "action": [
+      "The bears are stationary, positioned symmetrically in two rows of three, all facing upward.",
+      "One bear (bottom right) has its right paw slightly raised off the surface; others have paws flat or gently splayed.",
+      "No motion is visible; all objects are static under daylight illumination."
+    ],
+    "rationale": [
+      "The bears’ uniform chainmail-style covering suggests intentional dressing rather than accidental placement, though purpose is not confirmed.",
+      "The presence of a price sign implies commercial display, but no transaction or vendor activity is visible.",
+      "The outdoor grass setting and folding chair suggest a temporary setup like a market stall, yet no other stalls or customers are seen."
+    ],
+    "object": [
+      "Six teddy bears wear full-body silver-gray chainmail-patterned fabric suits covering torso, arms, and legs; all have tan plush fur, black button eyes, and stitched noses with jointed, poseable limbs.",
+      "A yellow sheet of paper lies centrally, bearing handwritten text: 'Christmas Teddy' above '$50', with a small white tape strip at top edge.",
+      "A white tote bag with red logo and black text (partially legible as 'Curtin...') rests on the chair seat behind the bears.",
+      "A red aluminum beverage can with white logo sits on the left armrest of the gray folding chair.",
+      "A brown leather bag and part of a person's leg in light-colored pants appear at the left edge of the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1698_P1",
+      "visual_anchors": [
+        "chainmail suits on teddy bears",
+        "price tag '$50'",
+        "uniform arrangement"
+      ],
+      "symbolic_mapping": [
+        "chainmail as armor symbolizing protection or artificial toughness imposed on innocence",
+        "pricing of plush toys evoking commodification of sentiment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The bears’ armored appearance juxtaposed with their soft nature interrogates how external adornment constructs identity and social role, especially when assigned monetary value.",
+      "alternative_interpretations": [
+        "This may simply be a craft vendor’s display using novelty costumes to attract buyers, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, movement, or context confirms intentional symbolism; the chainmail could be purely decorative fabric."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1698_P2",
+      "visual_anchors": [
+        "six identical bears in rows",
+        "handwritten 'Christmas Teddy'",
+        "outdoor grass setting"
+      ],
+      "symbolic_mapping": [
+        "repetition suggesting mass production or loss of individuality",
+        "seasonal labeling linking innocence to ritualized consumption"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The orderly replication of bears under a seasonal label reflects how cultural rituals standardize affective objects, turning unique emotional potential into interchangeable commodities.",
+      "alternative_interpretations": [
+        "The arrangement may reflect practical display logic—maximizing visibility—not philosophical commentary."
+      ],
+      "limitations": [
+        "The bears are not visibly identical in posture or suit coverage; minor variations exist (e.g., one bear’s uncovered legs)."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1698_P3",
+      "visual_anchors": [
+        "black surface contrasting with bears",
+        "sunlight casting sharp shadows",
+        "partial human leg at edge"
+      ],
+      "symbolic_mapping": [
+        "shadow as metaphor for unseen labor or contingency behind curated displays",
+        "edge-of-frame human presence implying observer or participant without agency shown"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The stark lighting and framing emphasize the bears as staged artifacts, hinting at constraints of presentation and the invisible labor that positions them for consumption.",
+      "alternative_interpretations": [
+        "Shadows result from natural sunlight angle; the leg is incidental, not symbolic."
+      ],
+      "limitations": [
+        "No tools, workshop signs, or explicit labor indicators appear; the human limb is only partially visible and unidentifiable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:03:18.355892+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0577e101-f05f-9748-be81-6029708f4c43",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1020,
+        "total_tokens": 1829,
+        "completion_tokens_details": {
+          "text_tokens": 1020
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070502472fe843fa84cb4ac2",
+      "usage": {
+        "completion_tokens": 881,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1992,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2873
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

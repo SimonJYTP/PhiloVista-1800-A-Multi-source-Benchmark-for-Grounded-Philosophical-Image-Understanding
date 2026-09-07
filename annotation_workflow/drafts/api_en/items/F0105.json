@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0105",
+  "sample_id": "PHL1800_HL_0398",
+  "file_name": "PHL1800_HL_0398.png",
+  "batch_id": "B004",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a child skiing in the foreground",
+  "captions": {
+    "scene": [
+      "Snow-covered ground with patches of exposed earth and rocks on a sloped hillside.",
+      "A small gray building with white trim, a door, and windows stands to the right rear.",
+      "A red-and-white striped barrier and a bicycle are visible behind the skier."
+    ],
+    "action": [
+      "The child stands upright on skis, holding ski poles with both hands, arms extended outward.",
+      "The child wears a helmet with a red eye-like graphic and goggles pushed up onto the helmet.",
+      "A second person in a red jacket and black pants stands further back on skis, facing forward."
+    ],
+    "rationale": [
+      "The child’s posture and pole grip suggest active skiing or preparation to ski, not falling or resting.",
+      "The presence of multiple skiers and infrastructure (building, barrier) indicates a managed ski area, though no signage confirms this.",
+      "The helmet graphic is stylized but not legible as text; it resembles an eye motif, but no words are readable."
+    ],
+    "object": [
+      "The child wears a gray ski jacket with blue sleeves and a red horizontal stripe across the chest, plus a circular white badge on the left chest.",
+      "The child’s black ski pants are cuffed over gray ski boots attached to white skis with red and black markings.",
+      "The child holds two ski poles: shafts are silver with blue grip sections and black wrist straps.",
+      "In the background, a person in a red jacket, black pants, and white helmet stands on skis with poles held vertically.",
+      "A gray utility-style building has a white door with a small red cross symbol and two multi-pane windows with white frames."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0105_P1",
+      "visual_anchors": [
+        "child’s helmet with stylized red eye",
+        "goggles pushed up",
+        "ski poles held symmetrically"
+      ],
+      "symbolic_mapping": [
+        "the eye motif may evoke vigilance or perception",
+        "symmetrical pole grip suggests balance amid motion"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The child’s poised stance and eye-adorned helmet visually frame skiing as an act of embodied inquiry—navigating terrain through sensory alertness and deliberate choice.",
+      "alternative_interpretations": [
+        "The helmet design is purely decorative; the pose reflects standard beginner instruction rather than philosophical intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the eye motif could be commercial branding."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0105_P2",
+      "visual_anchors": [
+        "two skiers at different distances",
+        "shared equipment type",
+        "parallel orientation"
+      ],
+      "symbolic_mapping": [
+        "spatial separation yet shared activity implies social coexistence without direct interaction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial arrangement of skiers—proximate yet independent—illustrates how individuals inhabit shared environments under implicit norms, balancing autonomy with collective context.",
+      "alternative_interpretations": [
+        "The second skier is simply waiting or observing; no evidence of social coordination exists."
+      ],
+      "limitations": [
+        "Only two figures are visible; their relationship (e.g., instructor-student, strangers) is undetermined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0105_P3",
+      "visual_anchors": [
+        "exposed rocky slope behind snow",
+        "man-made building adjacent to natural terrain",
+        "bicycle parked near barrier"
+      ],
+      "symbolic_mapping": [
+        "juxtaposition of engineered structures and raw landscape signals human intervention in nature"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "power_conflict"
+      ],
+      "interpretation": "The scene embodies the tension between human adaptation (ski infrastructure, clothing) and environmental resistance (uneven terrain, melting snow), reflecting ongoing negotiation between control and contingency.",
+      "alternative_interpretations": [
+        "The setting is a routine recreational site; no conflict or labor is visibly depicted."
+      ],
+      "limitations": [
+        "No active labor, machinery, or overt conflict is shown; interpretation relies on inferred context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:00:13.724752+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-035f6dbf-0e33-9964-846d-ee37ba985380",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 932,
+        "total_tokens": 1741,
+        "completion_tokens_details": {
+          "text_tokens": 932
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015957d54999b2693446ff",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1908,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2703
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

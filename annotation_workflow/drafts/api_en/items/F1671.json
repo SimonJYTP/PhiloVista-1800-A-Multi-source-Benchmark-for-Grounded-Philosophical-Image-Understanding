@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1671",
+  "sample_id": "PHL1800_HAIV_0236",
+  "file_name": "PHL1800_HAIV_0236.png",
+  "batch_id": "B034",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two figures at a podium surrounded by flames and an audience",
+  "captions": {
+    "scene": [
+      "A stylized indoor assembly with tiered seating filled with silhouetted figures facing a central podium.",
+      "Large orange and yellow flame shapes dominate the upper background behind the podium, with detached yellow flame-like fragments scattered in the black sky area above.",
+      "The audience consists of multiple rows of seated figures in varied solid-color clothing (blue, brown, black, gray), viewed from behind."
+    ],
+    "action": [
+      "One figure at the podium holds a long thin object (possibly a pointer or stick) raised diagonally upward.",
+      "The second figure at the podium appears to hold a rectangular dark object near their head, possibly a book or tablet.",
+      "Flame elements are depicted as static but dynamic in shape, with no visible motion lines; no smoke or heat distortion is shown."
+    ],
+    "rationale": [
+      "The presence of tiered seating and a central podium suggests a formal gathering such as a lecture, debate, or legislative session.",
+      "The flame motif is exaggerated and non-realistic, indicating symbolic or metaphorical intent rather than literal fire.",
+      "Figures lack facial features or distinguishing marks, implying generic representation rather than specific individuals."
+    ],
+    "object": [
+      "Two simplified human figures stand behind a brown rectangular podium with a light tan top surface.",
+      "Exactly 47 distinct audience figures are visible across 6 horizontal rows: row 1 (top) has 8, row 2 has 10, row 3 has 10, row 4 has 10, row 5 has 6, row 6 (bottom) has 4.",
+      "The flame backdrop consists of one large central yellow-orange burst with jagged edges, flanked by smaller red-orange lobes, all against a black upper background.",
+      "Ten detached yellow flame-shaped objects float in the black area above the main flame, varying slightly in orientation and size.",
+      "All audience figures are shown from the back, with round heads and torso shapes; no limbs, faces, or accessories are visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1671_P1",
+      "visual_anchors": [
+        "flame backdrop",
+        "podium with two figures",
+        "audience facing forward"
+      ],
+      "symbolic_mapping": [
+        "flames represent intensity of discourse or danger of ideas",
+        "podium signifies authority or platform for truth"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The image may depict the perilous exposure of truth-telling in a public forum, where speakers risk symbolic combustion amid institutional scrutiny.",
+      "alternative_interpretations": [
+        "It could simply illustrate a dramatic theatrical performance with pyrotechnic effects, devoid of deeper meaning."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; flames may be decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1671_P2",
+      "visual_anchors": [
+        "uniformly anonymous audience",
+        "tiered seating",
+        "central focus on podium"
+      ],
+      "symbolic_mapping": [
+        "audience anonymity reflects collective passivity",
+        "hierarchical seating implies social stratification"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The scene visualizes the tension between individual expression at the center and the constrained, homogenized social body observing it, suggesting structural limits on participatory agency.",
+      "alternative_interpretations": [
+        "The seating arrangement may merely reflect standard auditorium design without sociopolitical implication."
+      ],
+      "limitations": [
+        "Color variation among audience members contradicts strict uniformity; no gestures indicate passivity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1671_P3",
+      "visual_anchors": [
+        "figure holding raised stick",
+        "figure holding dark rectangle",
+        "flames surrounding both"
+      ],
+      "symbolic_mapping": [
+        "stick as instrument of direction or judgment",
+        "rectangle as text or law"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The dual figures may embody the ethical burden of wielding tools of interpretation (text) and enforcement (stick) under conditions of existential urgency symbolized by fire.",
+      "alternative_interpretations": [
+        "The objects may be mundane props—e.g., a pointer and notebook—in a routine presentation."
+      ],
+      "limitations": [
+        "Object identities are ambiguous; the stick could be a microphone stand or decorative element."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Audience count is incorrect; actual count is 47, not 48. The candidate incorrectly states 48 figures across 6 rows, but the bottom row has 4 figures, not 5, leading to a total of 47."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:59:53.560589+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-aa5ad266-9dab-9188-9303-7d24049f87a4",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 986,
+        "total_tokens": 2519,
+        "completion_tokens_details": {
+          "text_tokens": 986
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045933687e7e9cfca4495d",
+      "usage": {
+        "completion_tokens": 894,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2939,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3833
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0676",
+  "sample_id": "PHL1800_HL_0552",
+  "file_name": "PHL1800_HL_0552.png",
+  "batch_id": "B015",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person with shoulder-length brown hair wearing a white t-shirt and blue jeans, seated outdoors",
+  "captions": {
+    "scene": [
+      "A grassy outdoor area with dense green trees in the background and a paved path visible behind the subject.",
+      "Daylight illumination with soft shadows suggesting overcast or indirect sunlight.",
+      "A second person’s blond hair and partial shoulder appear at the left edge of the frame."
+    ],
+    "action": [
+      "The subject holds an orange plastic plate in their left hand and a fork in their right hand, poised above a piece of cake on the plate.",
+      "The subject’s head is tilted downward, eyes directed toward the food, mouth slightly open.",
+      "The subject’s right forearm rests across their lap; the left arm supports the plate at waist level."
+    ],
+    "rationale": [
+      "The subject appears to be eating because a fork is held near food on a plate and their gaze is fixed on it.",
+      "The setting is likely a park or backyard due to the lawn, trees, and distant vehicle silhouette.",
+      "The presence of another person is inferred from visible blond hair and shoulder at the left margin, though no further interaction is visible."
+    ],
+    "object": [
+      "The subject wears a white short-sleeved t-shirt with a red rectangular logo containing the partially legible text 'MOVIC' in white uppercase letters.",
+      "An orange circular plastic plate holds a dark-colored cake-like item with visible crumb texture and a small dollop of white topping.",
+      "A metal fork with four tines is held in the subject’s right hand, its tip inserted into the cake.",
+      "The subject’s left hand grips the rim of the orange plate; fingers are visible and relaxed.",
+      "Blue denim fabric covers the subject’s legs, consistent with jeans, with visible seam stitching near the knee."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0676_P1",
+      "visual_anchors": [
+        "orange plastic plate",
+        "fork inserted into cake",
+        "subject’s focused gaze"
+      ],
+      "symbolic_mapping": [
+        "the disposable plate symbolizes transience of consumption",
+        "the act of piercing food suggests agency in sustenance"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The moment captures a micro-decision within routine life—choosing to eat, using a transient object—highlighting how mundane acts embody temporal finitude and personal agency.",
+      "alternative_interpretations": [
+        "This is simply a person eating dessert outdoors; no symbolic meaning is required."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; interpretation relies on projecting meaning onto neutral objects."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0676_P2",
+      "visual_anchors": [
+        "white t-shirt with red logo",
+        "blond hair of adjacent person",
+        "shared outdoor space"
+      ],
+      "symbolic_mapping": [
+        "clothing as marker of group affiliation",
+        "proximity without direct contact indicating co-presence rather than interaction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visible branding and partial presence of another individual evoke questions about how identity is performed and perceived in shared public spaces, even in passive coexistence.",
+      "alternative_interpretations": [
+        "The shirt logo is incidental branding; the second person is merely out of frame and not part of a social dynamic."
+      ],
+      "limitations": [
+        "The logo text is only partially readable and may not denote affiliation; the second person’s role is undefined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0676_P3",
+      "visual_anchors": [
+        "subject’s downward gaze",
+        "hand holding fork mid-motion",
+        "unconsumed portion of cake"
+      ],
+      "symbolic_mapping": [
+        "gaze as attention directed toward immediate need",
+        "pause before ingestion as threshold between intention and action"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The suspended motion before eating reflects a moment where perception (seeing the food), intention (to eat), and physical capability converge—a phenomenological instant revealing embodied knowledge and constrained freedom within bodily limits.",
+      "alternative_interpretations": [
+        "The subject is simply pausing to chew or adjust grip; no epistemological significance is evident."
+      ],
+      "limitations": [
+        "No facial expression or context confirms introspection; the pause could be purely mechanical."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:07:15.778060+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-235eb16d-e23b-9f46-b549-b60c69670fae",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 966,
+        "total_tokens": 1775,
+        "completion_tokens_details": {
+          "text_tokens": 966
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030646fe0319d7ad564b6a",
+      "usage": {
+        "completion_tokens": 828,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1947,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2775
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

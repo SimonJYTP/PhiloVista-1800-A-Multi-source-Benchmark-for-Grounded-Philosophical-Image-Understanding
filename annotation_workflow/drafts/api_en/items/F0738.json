@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0738",
+  "sample_id": "PHL1800_HAIV_0105",
+  "file_name": "PHL1800_HAIV_0105.png",
+  "batch_id": "B016",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single man in profile holding a large book",
+  "captions": {
+    "scene": [
+      "A stylized illustration with a pale pink background and textured black-and-white line work with orange and red accents.",
+      "The man wears a light-colored suit jacket, white shirt, and dark tie; his hair is dark and coiffed with orange-yellow highlights.",
+      "The book he holds has a white spine with the word 'LAW' in bold black capital letters and orange-brown textured covers."
+    ],
+    "action": [
+      "The man grips the book with both hands, positioning it horizontally across his torso and face.",
+      "His mouth is open and appears to bite or press against the top edge of the book’s spine.",
+      "His eyes are closed or nearly closed, and his facial skin shows stippled red shading on cheeks and neck."
+    ],
+    "rationale": [
+      "The book’s visible label 'LAW' identifies its nominal subject; no other text is legible.",
+      "The man’s posture and contact with the book suggest physical engagement rather than passive holding.",
+      "The stippled red shading on skin may indicate exertion or emotion, but its specific cause is not visually determinable."
+    ],
+    "object": [
+      "A man with dark hair featuring orange-yellow highlights is depicted in right-facing profile.",
+      "He wears a light beige or off-white suit jacket over a white collared shirt and a dark tie.",
+      "He holds a thick rectangular book with orange-brown textured covers and a white spine bearing the capitalized word 'LAW'.",
+      "His left hand supports the bottom of the book while his right hand grips its side near the spine.",
+      "The book’s top edge contacts the man’s open mouth, with his lips and teeth appearing to press into or bite the spine."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0738_P1",
+      "visual_anchors": [
+        "book labeled 'LAW'",
+        "man biting the book",
+        "red stippling on face"
+      ],
+      "symbolic_mapping": [
+        "the book represents codified authority",
+        "biting suggests internalization or conflict with law"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image may depict the tension between individual agency and legal constraint, where the act of biting the law-book symbolizes either consumption of legal duty or resistance to its imposition.",
+      "alternative_interpretations": [
+        "It could be a literal depiction of a person struggling to read or carry an oversized legal volume, with exaggerated features for stylistic effect."
+      ],
+      "limitations": [
+        "No facial expression beyond closed eyes and open mouth is discernible; emotional intent cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0738_P2",
+      "visual_anchors": [
+        "stippled red skin tone",
+        "tight grip on book",
+        "profile orientation"
+      ],
+      "symbolic_mapping": [
+        "red shading signifies strain or passion",
+        "profile view emphasizes role over identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s partial obscuring by the book and the physical strain implied by red shading may reflect how social roles—here, legal professionalism—constrain or overwrite personal presence.",
+      "alternative_interpretations": [
+        "The red shading may simply be a stylistic choice for contrast or texture, unrelated to emotion or effort."
+      ],
+      "limitations": [
+        "The stippling technique is consistent across the image and may serve purely aesthetic purposes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0738_P3",
+      "visual_anchors": [
+        "bold 'LAW' text",
+        "book’s thickness",
+        "man’s formal attire"
+      ],
+      "symbolic_mapping": [
+        "thickness implies weight of legal knowledge",
+        "formal dress signals institutional affiliation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The image may critique the materiality of legal knowledge—its bulk and physical imposition—suggesting that truth in law is mediated through heavy, embodied structures rather than abstract ideals.",
+      "alternative_interpretations": [
+        "It may illustrate the labor of legal study or practice, emphasizing the physical burden of handling legal texts."
+      ],
+      "limitations": [
+        "No contextual cues (e.g., courtroom, library) confirm institutional setting or purpose."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:12:24.068938+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e21fff25-af9c-9755-8726-f739a0cceb07",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 951,
+        "total_tokens": 2484,
+        "completion_tokens_details": {
+          "text_tokens": 951
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703120627f4a1ae173d4112",
+      "usage": {
+        "completion_tokens": 814,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2910,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3724
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

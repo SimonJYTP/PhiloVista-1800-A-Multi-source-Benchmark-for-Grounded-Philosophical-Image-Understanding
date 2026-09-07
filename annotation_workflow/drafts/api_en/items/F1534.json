@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1534",
+  "sample_id": "PHL1800_IRFL_0460",
+  "file_name": "PHL1800_IRFL_0460.jpg",
+  "batch_id": "B031",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person's lower legs and feet wearing athletic shoes",
+  "captions": {
+    "scene": [
+      "sunlit paved path with scattered dry leaves and blurred green foliage in background",
+      "low-angle outdoor setting with strong backlighting creating lens flare and bokeh",
+      "asphalt surface with a white painted line partially under the left foot"
+    ],
+    "action": [
+      "right foot lifted off ground mid-stride, sole facing camera",
+      "left foot planted on pavement, heel slightly raised",
+      "legs positioned in forward motion consistent with walking or jogging"
+    ],
+    "rationale": [
+      "sole pattern and wear suggest repeated use on hard surfaces, but exact terrain type is indeterminate",
+      "backlighting implies time near sunrise or sunset, yet no clock or shadow length confirms this",
+      "shoe laces are tied, indicating preparation for activity, but intent (exercise, commute) is not visible"
+    ],
+    "object": [
+      "The right shoe has a black mesh upper, black laces, and a white midsole with a brownish-tan outsole featuring rectangular tread blocks and small circular indentations.",
+      "The left shoe is similarly constructed with black mesh upper and black laces, its white midsole visible at the toe and heel, and the sole contacting the asphalt.",
+      "Both shoes show minor dirt accumulation on the outsoles, especially along the tread edges.",
+      "The person’s calves are bare, showing skin tone and slight muscle definition; no tattoos, scars, or clothing below knee are visible.",
+      "A white painted line runs diagonally across the pavement beneath the left foot, partially obscured by the shoe."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1534_P1",
+      "visual_anchors": [
+        "lifted right foot",
+        "white painted line",
+        "worn tread pattern"
+      ],
+      "symbolic_mapping": [
+        "the lifted foot as momentary suspension before commitment to next step",
+        "the painted line as arbitrary boundary guiding movement"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a transient decision point where forward motion is neither fully initiated nor halted, embodying the philosophical tension between intention and execution in personal journeying.",
+      "alternative_interpretations": [
+        "a routine stride during daily exercise with no symbolic intent"
+      ],
+      "limitations": [
+        "no facial expression, direction, or destination visible to confirm deliberative state"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1534_P2",
+      "visual_anchors": [
+        "sun flare behind legs",
+        "blurred background trees",
+        "dirt on soles"
+      ],
+      "symbolic_mapping": [
+        "backlighting as temporal liminality",
+        "wear on soles as accumulated experience"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The interplay of light and worn footwear suggests the passage of time through embodied repetition—each step marking incremental erosion against an enduring natural backdrop.",
+      "alternative_interpretations": [
+        "mere photographic effect of low sun angle without temporal meaning"
+      ],
+      "limitations": [
+        "no calendar, aging cues, or explicit time markers present"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1534_P3",
+      "visual_anchors": [
+        "bare calves",
+        "standard athletic shoes",
+        "paved path"
+      ],
+      "symbolic_mapping": [
+        "uniformity of footwear as social conformity",
+        "exposed skin as vulnerability within structured environment"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The standardized athletic gear and regulated path reflect embedded social norms governing bodily movement, where individual agency operates within codified spatial and sartorial expectations.",
+      "alternative_interpretations": [
+        "practical attire for comfort and function, unrelated to social signaling"
+      ],
+      "limitations": [
+        "no other people, signage, or cultural markers to confirm normative context"
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:42:50.471713+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bebc3675-4860-9d07-87bf-5f795e934699",
+      "usage": {
+        "prompt_tokens": 1160,
+        "completion_tokens": 847,
+        "total_tokens": 2007,
+        "completion_tokens_details": {
+          "text_tokens": 847
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 653,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070442271d0bc2cabaab4fee",
+      "usage": {
+        "completion_tokens": 703,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2288,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2991
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

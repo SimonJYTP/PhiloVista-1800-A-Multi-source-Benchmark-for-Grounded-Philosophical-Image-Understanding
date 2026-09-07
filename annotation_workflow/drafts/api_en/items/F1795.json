@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1795",
+  "sample_id": "PHL1800_HL_0081",
+  "file_name": "PHL1800_HL_0081.png",
+  "batch_id": "B036",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person holding an orange umbrella behind a black metal fence",
+  "captions": {
+    "scene": [
+      "A black diamond-mesh fence with vertical bars dominates the foreground, partially obscuring a background scene.",
+      "Behind the fence, green foliage and indistinct structures are visible under diffuse daylight.",
+      "A low wooden picket barrier runs along the bottom edge of the frame, in front of the metal fence."
+    ],
+    "action": [
+      "A person in red upper clothing and patterned orange lower clothing stands holding an open orange umbrella.",
+      "A second person in dark blue clothing stands to the right, facing away, near a white cylindrical object on the ground.",
+      "A third figure in light green/blue is partially visible behind the central figure, crouched or seated near the fence base."
+    ],
+    "rationale": [
+      "The central figure’s posture and umbrella suggest rain or sun protection; however, no wet surfaces or shadows confirm weather conditions.",
+      "The fence’s opacity prevents full identification of individuals or activities beyond silhouette and color cues.",
+      "The presence of multiple figures implies shared space, but their spatial relationship (e.g., interaction) cannot be confirmed due to occlusion."
+    ],
+    "object": [
+      "A black metal fence with repeating diamond-shaped mesh and vertical support bars spans the entire image width.",
+      "An orange umbrella with a visible canopy and dark handle is held aloft by a person wearing red top and orange patterned pants.",
+      "A person in dark blue long-sleeved clothing stands upright beside a white cylindrical object resting on the ground.",
+      "A wooden picket barrier composed of evenly spaced vertical slats lies horizontally across the lower foreground.",
+      "A tree trunk with textured gray-brown bark occupies the far-left edge of the frame, partially cut off."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1795_P1",
+      "visual_anchors": [
+        "black metal fence",
+        "orange umbrella",
+        "wooden picket barrier"
+      ],
+      "symbolic_mapping": [
+        "fence as physical boundary",
+        "umbrella as individual shelter"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The layered barriers—natural (tree), constructed (picket), and institutional (metal fence)—frame human presence as mediated and segmented, suggesting existence defined through imposed limits rather than open access.",
+      "alternative_interpretations": [
+        "The scene may simply depict a public park during light rain, with standard safety fencing and casual pedestrian activity."
+      ],
+      "limitations": [
+        "No signage, labels, or contextual markers confirm institutional intent of the fence; it could be decorative or temporary."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1795_P2",
+      "visual_anchors": [
+        "person in red/orange attire",
+        "person in blue",
+        "third partially obscured figure"
+      ],
+      "symbolic_mapping": [
+        "color contrast as differentiation",
+        "occlusion as anonymity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Visible identity is reduced to color blocks and partial forms behind obstruction, implying that social recognition depends on visibility—and that constraint reshapes how identity is perceived and performed.",
+      "alternative_interpretations": [
+        "Clothing colors reflect personal preference or cultural norms unrelated to symbolic meaning; occlusion results from camera angle and fence placement alone."
+      ],
+      "limitations": [
+        "Facial features, gestures, and relative positions are indiscernible; no evidence supports intentional symbolism in attire."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1795_P3",
+      "visual_anchors": [
+        "orange umbrella",
+        "static posture of figures",
+        "diffuse lighting"
+      ],
+      "symbolic_mapping": [
+        "umbrella as momentary refuge",
+        "stillness as suspended action"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The stationary figures under a single umbrella evoke a pause in motion—a deliberate or forced interlude—highlighting how temporal experience is punctuated by constraints that suspend forward movement.",
+      "alternative_interpretations": [
+        "People are waiting for a signal, observing something off-frame, or simply standing still momentarily without philosophical implication."
+      ],
+      "limitations": [
+        "No clocks, directional cues, or sequential frames verify duration or intentionality of stillness."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:14:33.354479+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7335ad0f-166a-9709-a2f2-0d7a901636ca",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 940,
+        "total_tokens": 1709,
+        "completion_tokens_details": {
+          "text_tokens": 940
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907051405ad37e40065fa40b9",
+      "usage": {
+        "completion_tokens": 802,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1871,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2673
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

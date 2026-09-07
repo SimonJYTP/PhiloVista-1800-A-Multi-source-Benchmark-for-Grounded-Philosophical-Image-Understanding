@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0692",
+  "sample_id": "PHL1800_HL_0185",
+  "file_name": "PHL1800_HL_0185.png",
+  "batch_id": "B016",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of approximately 12 adolescents and young adults seated at tables in a library-like room eating pizza",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor space with fluorescent ceiling lights, large windows with green frames, and bookshelves lining the walls.",
+      "Wooden chairs with black metal legs are arranged around small square tables; some tables hold white paper plates with pizza slices and bottled drinks.",
+      "A computer monitor sits on a wheeled cart near the right wall; posters are visible on walls and shelves, including one with partially legible text."
+    ],
+    "action": [
+      "Multiple individuals are holding or eating pizza slices from paper plates; some look toward the camera while others converse or gaze downward.",
+      "A girl in a light blue shirt holds a slice with both hands and looks directly at the camera; a girl beside her smiles while holding a plate.",
+      "A person in a black shirt on the left foreground eats pizza while looking down; another person in a green sweater holds a plate and faces away from the camera."
+    ],
+    "rationale": [
+      "The presence of bookshelves, reading tables, and institutional lighting suggests a school library or media center rather than a cafeteria or restaurant.",
+      "The uniformity of paper plates, bottled water, and casual dress implies an organized group meal, possibly a school event or club gathering.",
+      "Some individuals appear to be posing for the photo (e.g., direct eye contact, smiling), but others are engaged in natural behavior, indicating mixed awareness of being photographed."
+    ],
+    "object": [
+      "There are approximately 12 visible people: 4 seated at the central table cluster, 3 at a table behind them, 2 at a far-left table, and 3 near the right wall by the computer cart.",
+      "Each of the central tables holds at least one white paper plate with one or more triangular pizza slices; one plate shows two slices, another shows three.",
+      "A clear plastic bottle with a blue cap and label sits on the foreground table next to a crumpled napkin and a half-eaten pizza slice.",
+      "The wooden chairs have curved backrests and black tubular metal legs; all chairs are unoccupied except where people sit.",
+      "On the right wall, a poster displays a figure with partially legible text; other posters contain images and illegible text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0692_P1",
+      "visual_anchors": [
+        "paper plates with pizza",
+        "bookshelves in background",
+        "students seated together"
+      ],
+      "symbolic_mapping": [
+        "shared food as communal ritual",
+        "books as repositories of knowledge"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of casual communal eating within a knowledge-rich environment evokes the idea that social existence is sustained not only by material sustenance but also by shared intellectual space.",
+      "alternative_interpretations": [
+        "This is simply a school lunch break with no symbolic intent; the setting is functional, not ideological."
+      ],
+      "limitations": [
+        "No visible interaction with books or explicit discussion of ideas prevents confirming intentional integration of knowledge and community."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0692_P2",
+      "visual_anchors": [
+        "multiple gazes toward camera",
+        "varied postures (leaning, upright, turned away)",
+        "uniform seating arrangement"
+      ],
+      "symbolic_mapping": [
+        "gaze direction as negotiation of presence",
+        "seating as implicit hierarchy or inclusion"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The differential engagement with the viewer—some meeting the lens, others disengaged—reflects how identity is performed situationally within collective settings, where appearance becomes a site of choice and constraint.",
+      "alternative_interpretations": [
+        "Variation in gaze is incidental, caused by timing of the snapshot and natural head movement during conversation."
+      ],
+      "limitations": [
+        "No facial expressions are clearly legible beyond basic orientation; emotional or intentional states cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0692_P3",
+      "visual_anchors": [
+        "computer cart with monitor",
+        "bookshelves full of bound volumes",
+        "paper plates vs. institutional furniture"
+      ],
+      "symbolic_mapping": [
+        "digital device as modern tool amid analog tradition",
+        "disposable plates as transient consumption"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The coexistence of enduring printed knowledge, ephemeral food containers, and contemporary digital infrastructure illustrates the layered temporality of human activity—where labor and technology mediate our fleeting presence against enduring cultural artifacts.",
+      "alternative_interpretations": [
+        "The objects are merely coincidental furnishings; the room serves dual purposes (study and dining) without deeper temporal commentary."
+      ],
+      "limitations": [
+        "The monitor is off and no one interacts with it; its symbolic role is inferred rather than demonstrated."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (14 vs. actual ~12 visible); 'Beta D' poster text is not clearly legible; some object descriptions lack visual confirmation (e.g., 'two slices' on a plate)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:08:34.538282+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7bdd86f4-3fa0-9a29-bd3f-d46ffe7567a8",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1094,
+        "total_tokens": 1903,
+        "completion_tokens_details": {
+          "text_tokens": 1094
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030804546d22342fa946ca",
+      "usage": {
+        "completion_tokens": 988,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2072,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3060
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

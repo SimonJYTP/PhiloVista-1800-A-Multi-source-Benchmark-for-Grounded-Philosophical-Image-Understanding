@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0873",
+  "sample_id": "PHL1800_HAIV_0199",
+  "file_name": "PHL1800_HAIV_0199.png",
+  "batch_id": "B019",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized cartoon character with fruit-shaped head",
+  "captions": {
+    "scene": [
+      "A white background with no environmental elements.",
+      "The character occupies the central visual field with no other figures or objects nearby.",
+      "The composition is frontal and tightly cropped around the upper torso and head."
+    ],
+    "action": [
+      "Eyes are tightly shut with thick black angular lines indicating squinting or distress.",
+      "Tears—blue, stylized droplets with small swirls—are visible on both cheeks.",
+      "Mouth is drawn as a simple downward curve, suggesting sadness or displeasure."
+    ],
+    "rationale": [
+      "The red scribble on the right side of the head may be decorative hair or a mark; its exact nature is ambiguous due to lack of context.",
+      "The green leaf and stem attached to the top-right of the head strongly suggest a fruit motif, but the specific fruit type cannot be confirmed solely from shape and color gradient.",
+      "The purple collar and maroon garment indicate clothing, yet no further details (e.g., buttons, seams) are present to determine garment type or cultural origin."
+    ],
+    "object": [
+      "The character has a round head composed of yellow-to-orange gradient fill, outlined in thick black line, resembling a citrus fruit.",
+      "Two black angular lines form closed eyes; a short diagonal line forms a nose; a curved black line forms a downturned mouth.",
+      "Blue tear-like shapes with spiral embellishments appear beneath each eye, each containing an unreadable small symbol or glyph.",
+      "A green leaf with a black outline and a short black stem protrudes from the upper right edge of the head.",
+      "A red scribble, possibly representing hair or decoration, sits atop the right side of the head near the leaf."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0873_P1",
+      "visual_anchors": [
+        "yellow-orange fruit-shaped head",
+        "green leaf and stem",
+        "red scribble"
+      ],
+      "symbolic_mapping": [
+        "fruit shape may evoke naturalness or artificiality",
+        "leaf suggests organic origin or growth"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The fusion of human facial features with a fruit form questions boundaries between natural identity and constructed appearance, implying social roles may be as externally imposed as fruit labeling.",
+      "alternative_interpretations": [
+        "It may simply be a whimsical design choice without symbolic intent, common in internet meme art."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; the fruit resemblance could be coincidental or purely aesthetic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0873_P2",
+      "visual_anchors": [
+        "downward-curved mouth",
+        "closed eyes",
+        "blue tear droplets"
+      ],
+      "symbolic_mapping": [
+        "tears as visible markers of emotional labor",
+        "facial expression as constrained affective display"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The stylized tears and rigid facial geometry suggest emotional expression is mediated or limited by external form—akin to how technology or social norms constrain authentic feeling.",
+      "alternative_interpretations": [
+        "The expression may reflect generic cartoon sadness without deeper commentary on constraint or labor."
+      ],
+      "limitations": [
+        "The tears contain unreadable glyphs, preventing confirmation of intended meaning or narrative context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0873_P3",
+      "visual_anchors": [
+        "purple collar",
+        "maroon garment",
+        "black outline defining body"
+      ],
+      "symbolic_mapping": [
+        "clothing as signifier of role or status",
+        "outline as boundary between self and world"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The minimal but deliberate attire implies assumed social position, raising questions about whether responsibility arises from appearance or internal conviction when outward form dominates perception.",
+      "alternative_interpretations": [
+        "The clothing may be arbitrary color choice with no semiotic function beyond visual contrast."
+      ],
+      "limitations": [
+        "No insignia, text, or cultural markers identify the garment’s significance; interpretation relies on general conventions of cartoon costume coding."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:23:52.442805+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8d4775bf-059e-9d86-8cd3-0775fd63344c",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 931,
+        "total_tokens": 2464,
+        "completion_tokens_details": {
+          "text_tokens": 931
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032326356bdff58298419c",
+      "usage": {
+        "completion_tokens": 792,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2891,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3683
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

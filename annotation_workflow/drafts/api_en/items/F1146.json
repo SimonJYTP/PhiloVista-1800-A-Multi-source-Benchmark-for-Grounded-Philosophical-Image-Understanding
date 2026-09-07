@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1146",
+  "sample_id": "PHL1800_IRFL_0188",
+  "file_name": "PHL1800_IRFL_0188.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single cartoon figure wearing a white judicial wig and holding objects",
+  "captions": {
+    "scene": [
+      "A stylized cartoon figure stands against a plain white background.",
+      "The figure wears a voluminous white powdered wig and dark formal robes with red trim.",
+      "Two brown objects—a book and a gavel-like item—are held by the figure."
+    ],
+    "action": [
+      "The figure raises a brown book above head level with the right hand, showing motion lines indicating upward movement.",
+      "The left hand grips a brown cylindrical object resembling a gavel or mallet resting against the torso.",
+      "The figure’s facial expression shows a slight frown with downturned mouth and narrowed eyes."
+    ],
+    "rationale": [
+      "The wig and robe suggest a legal or judicial role, though no official insignia is visible.",
+      "Motion lines near the book indicate it is being lifted or shaken, but direction and intent are ambiguous.",
+      "The facial expression conveys mild displeasure or concentration, but internal state cannot be confirmed from visual data alone."
+    ],
+    "object": [
+      "The figure wears a white, multi-layered, segmented wig with horizontal ridges covering the head and ears.",
+      "The figure holds a brown rectangular book with green spine and yellow pages; text on the cover is unreadable.",
+      "The figure holds a brown cylindrical object with a wider top and narrower handle, resembling a gavel or judge’s mallet.",
+      "The figure’s garment consists of a dark gray outer robe over a red inner vest or sash, with visible sleeve cuffs.",
+      "The figure has brown skin tone, black eyebrows, small black eyes, and a simple curved mouth line."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1146_P1",
+      "visual_anchors": [
+        "white wig",
+        "raised book",
+        "gavel-like object"
+      ],
+      "symbolic_mapping": [
+        "the wig symbolizes institutional authority",
+        "the raised book symbolizes citation of law or precedent"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of authoritative attire and the act of raising a book may represent the assertion of legal truth through institutional power.",
+      "alternative_interpretations": [
+        "The figure may simply be performing a theatrical gesture in a caricature, without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No textual content confirms the book’s identity or the figure’s role; symbolism is inferred from conventional associations only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1146_P2",
+      "visual_anchors": [
+        "frowning expression",
+        "motion lines on book",
+        "tight grip on gavel-like object"
+      ],
+      "symbolic_mapping": [
+        "the frown indicates resistance or judgment",
+        "motion lines imply active enforcement"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s tense posture and expressive face may reflect the moral weight of constraint—enforcing rules that limit individual freedom in service of collective order.",
+      "alternative_interpretations": [
+        "The expression could depict physical effort rather than ethical tension, such as struggling to lift a heavy book."
+      ],
+      "limitations": [
+        "Facial expressions in cartoons are stylized and not reliable indicators of internal ethical deliberation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1146_P3",
+      "visual_anchors": [
+        "layered wig",
+        "robes with red trim",
+        "book with green spine"
+      ],
+      "symbolic_mapping": [
+        "layered wig represents accumulated tradition",
+        "red trim signifies formal office or status"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The figure’s appearance constructs a socially recognized identity—the costume itself enables recognition as a judge, illustrating how social roles are performed through visible markers.",
+      "alternative_interpretations": [
+        "The outfit may be generic historical costume with no specific institutional reference, used for visual humor."
+      ],
+      "limitations": [
+        "No contextual setting or accompanying figures confirm the social function of the attire; interpretation relies on external cultural knowledge."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:55:16.766361+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-37ade079-7ab9-9a2d-8442-a96e9f871ebf",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 899,
+        "total_tokens": 1480,
+        "completion_tokens_details": {
+          "text_tokens": 899
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 74,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035502ffb8fee317b44405",
+      "usage": {
+        "completion_tokens": 761,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1527,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2288
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

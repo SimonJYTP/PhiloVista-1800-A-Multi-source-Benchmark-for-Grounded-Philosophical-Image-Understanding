@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0624",
+  "sample_id": "PHL1800_HL_0225",
+  "file_name": "PHL1800_HL_0225.png",
+  "batch_id": "B014",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three children on an indoor tennis court",
+  "captions": {
+    "scene": [
+      "An indoor tennis facility with blue playing surfaces, green outer courts, and beige curtains covering the far wall.",
+      "Numerous yellow tennis balls are scattered across the court surface, along with orange cones and small training equipment.",
+      "Overhead lighting casts bright spots on the ceiling and creates soft shadows on the floor."
+    ],
+    "action": [
+      "A child in the foreground stands facing away, holding a tennis racket with both hands behind their back.",
+      "A second child in striped clothing stands near the net, facing a third child who appears to be demonstrating or feeding balls.",
+      "The third child, wearing a dark shirt, holds a tennis ball in one hand and gestures with the other toward the second child."
+    ],
+    "rationale": [
+      "The presence of multiple tennis balls, rackets, cones, and a net strongly indicates a structured tennis training session rather than casual play.",
+      "The spatial arrangement—children positioned at different distances from the net and aligned with training aids—suggests instructor-led practice, though no adult is visible.",
+      "The child in the foreground is not actively engaged in hitting or receiving; their posture suggests observation or waiting, but no explicit signal of attention (e.g., head orientation) confirms this definitively."
+    ],
+    "object": [
+      "A child in the foreground wears a beige short-sleeved shirt with a red numeral '3' and black pants, holding a black-framed tennis racket behind their back.",
+      "A second child, mid-court near the net, wears a horizontally striped white-and-gray long-sleeve shirt and dark pants, standing upright with feet apart.",
+      "A third child, closer to the far net, wears a dark blue short-sleeve shirt and dark pants, holding a yellow tennis ball in their right hand and extending their left arm forward.",
+      "The court surface consists of a central blue area marked with white lines, bordered by green outer zones, and includes two nets with black posts.",
+      "A basket of yellow tennis balls sits on the court near the center line, alongside small orange cones and a low black training frame with vertical bars."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0624_P1",
+      "visual_anchors": [
+        "child holding racket behind back",
+        "scattered tennis balls",
+        "training cones"
+      ],
+      "symbolic_mapping": [
+        "racket held passively symbolizes deferred agency",
+        "scattered balls represent potential actions yet unexecuted"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The child’s static posture amid abundant tools for action evokes the tension between readiness and constraint—where possibility exists but initiation is withheld, reflecting a liminal stage in learning where choice is present but not yet exercised.",
+      "alternative_interpretations": [
+        "The child may simply be waiting for instruction; the scene is functionally logistical rather than symbolic."
+      ],
+      "limitations": [
+        "No facial expression or eye direction is visible to confirm internal state or intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0624_P2",
+      "visual_anchors": [
+        "three children at distinct positions",
+        "net dividing space",
+        "uniformly scattered balls"
+      ],
+      "symbolic_mapping": [
+        "spatial separation reflects differentiated roles",
+        "net as boundary between learner and guide"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The arrangement implies a relational pedagogy: one observes, one receives, one demonstrates—highlighting how identity and responsibility emerge through structured interaction rather than solitary action.",
+      "alternative_interpretations": [
+        "The positions may reflect random spacing due to limited court area, not intentional role assignment."
+      ],
+      "limitations": [
+        "No labels, uniforms, or verbal cues confirm assigned roles; all children appear similarly aged."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0624_P3",
+      "visual_anchors": [
+        "overhead lights casting bright pools",
+        "curtains obscuring background",
+        "repetitive yellow balls"
+      ],
+      "symbolic_mapping": [
+        "light pools isolate moments of focus",
+        "curtains erase external context"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The controlled illumination and enclosed setting compress temporal experience into discrete drills, suggesting knowledge acquisition as a series of isolated, repeatable instants—where truth is procedural and cumulative, not revelatory.",
+      "alternative_interpretations": [
+        "The lighting is standard for indoor sports venues and has no intended symbolic function."
+      ],
+      "limitations": [
+        "Lighting design is functional; no evidence of deliberate artistic or philosophical staging."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:02:15.171002+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ab0ef70a-d912-933c-8bca-910facb2d482",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1026,
+        "total_tokens": 1835,
+        "completion_tokens_details": {
+          "text_tokens": 1026
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030150b111b947366b471b",
+      "usage": {
+        "completion_tokens": 888,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2007,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2895
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0801",
+  "sample_id": "PHL1800_HL_0140",
+  "file_name": "PHL1800_HL_0140.png",
+  "batch_id": "B018",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person wearing a Guy Fawkes mask, black shirt, and yellow tie, centered in the foreground",
+  "captions": {
+    "scene": [
+      "An urban street at dusk or dawn with multi-story buildings lining the background",
+      "A white van with red emergency lights activated is visible in the mid-ground left",
+      "Multiple indistinct pedestrians are present in the background, some walking across a crosswalk"
+    ],
+    "action": [
+      "The foreground subject stands still, facing the camera directly",
+      "A person in dark clothing walks leftward on the sidewalk behind the subject",
+      "A group of three or more people moves rightward across the street behind the subject"
+    ],
+    "rationale": [
+      "The mask’s stylized features (mustache, goatee, raised eyebrows) suggest intentional costume or symbolic representation rather than accidental resemblance",
+      "The lighting gradient—brighter sky, dimmer street—indicates low-sun conditions, but exact time cannot be confirmed without clock or shadow analysis",
+      "The presence of emergency vehicle lights and multiple pedestrians suggests organized activity, though purpose remains visually undetermined"
+    ],
+    "object": [
+      "The subject wears a white plastic mask with black painted mustache, goatee, and arched eyebrows, covering the entire face.",
+      "The subject wears a dark long-sleeved collared shirt with visible black shoulder straps crossing over the chest.",
+      "A yellow necktie with a light blue grid pattern is knotted at the collar and hangs vertically down the torso.",
+      "In the background left, a white van displays two illuminated red lights on its roof and headlights turned on.",
+      "At least five other individuals are partially visible: one walking left on sidewalk, three crossing street rightward, and one blurred figure near center-right."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0801_P1",
+      "visual_anchors": [
+        "Guy Fawkes mask",
+        "black shirt",
+        "yellow tie"
+      ],
+      "symbolic_mapping": [
+        "mask obscures individual facial identity",
+        "tie introduces conventional professionalism amid anonymity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a symbolically charged mask with formal attire interrogates how social roles and personal identity coexist when visual self-presentation is deliberately mediated.",
+      "alternative_interpretations": [
+        "The outfit may simply reflect event-specific dress code (e.g., protest uniform) without philosophical intent."
+      ],
+      "limitations": [
+        "No textual context or behavioral cues confirm intentional symbolism; mask could be worn for theatrical, protective, or practical reasons."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0801_P2",
+      "visual_anchors": [
+        "emergency vehicle lights",
+        "crowded street",
+        "static foreground subject"
+      ],
+      "symbolic_mapping": [
+        "activated emergency lights imply institutional presence",
+        "subject’s stillness contrasts with surrounding motion"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The subject’s unmoving posture amid ambient movement and official signage (implied by vehicle lights) evokes tension between individual agency and systemic oversight.",
+      "alternative_interpretations": [
+        "The subject may be posing for a photograph while others happen to move in the background; no conflict is visually evident."
+      ],
+      "limitations": [
+        "Vehicle type and markings are indistinct; 'emergency' status relies on red lights alone, which may serve non-official functions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0801_P3",
+      "visual_anchors": [
+        "mask’s fixed expression",
+        "uniform lighting on face",
+        "lack of eye contact due to opaque eyeholes"
+      ],
+      "symbolic_mapping": [
+        "fixed expression denies emotional signaling",
+        "opaque eyeholes prevent reciprocity in gaze"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The mask enforces epistemic opacity: the viewer cannot verify intention, belief, or truthfulness, highlighting how appearance can obstruct intersubjective knowledge formation.",
+      "alternative_interpretations": [
+        "The mask is purely decorative; its design does not necessarily intend to block perception—it may simply replicate a known icon."
+      ],
+      "limitations": [
+        "The mask’s material and fit are not examined closely; minor gaps around eyes or mouth could permit partial visibility, though none is evident."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:17:59.797564+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6ce1ac2d-4ad8-9fd5-8546-d94b90b2001d",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 955,
+        "total_tokens": 1724,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031738ada68a15a18241ed",
+      "usage": {
+        "completion_tokens": 813,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1886,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2699
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

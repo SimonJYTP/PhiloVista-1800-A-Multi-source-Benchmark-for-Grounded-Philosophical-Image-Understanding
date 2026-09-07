@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0558",
+  "sample_id": "PHL1800_HL_0258",
+  "file_name": "PHL1800_HL_0258.png",
+  "batch_id": "B013",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a tennis player in mid-serve motion",
+  "captions": {
+    "scene": [
+      "An outdoor hard-court tennis match on a blue playing surface surrounded by green outer court area, with spectator seating and advertising banners visible.",
+      "The court is marked with white lines; the baseline and service line are clearly visible near the player.",
+      "Spectators sit behind a dark blue barrier bearing logos; one banner reads 'LEXUS' and another 'American Express'."
+    ],
+    "action": [
+      "The player has tossed a yellow tennis ball upward and is raising the racket overhead with the right arm extended, left arm out for balance.",
+      "The player’s body is airborne, knees bent, feet off the ground, indicating a jump serve motion.",
+      "A distinct shadow of the player is cast on the blue court surface directly beneath and slightly behind them."
+    ],
+    "rationale": [
+      "The raised racket and elevated ball suggest a serve rather than a return or volley, based on standard tennis biomechanics visible here.",
+      "The player’s posture—jumping, arms extended asymmetrically—is consistent with a modern power serve technique, though exact stroke type cannot be confirmed without follow-through.",
+      "The presence of spectators and branded barriers indicates a professional or organized tournament setting, but specific event identity is not visually verifiable."
+    ],
+    "object": [
+      "A male-presenting tennis player wears a light blue short-sleeved shirt, white shorts, white socks, and white athletic shoes.",
+      "A yellow tennis ball is suspended in mid-air approximately 1.5 meters above the court surface, aligned vertically with the player’s outstretched hand.",
+      "The player holds a tennis racket with a dark frame and white grip; the strings are taut and visible.",
+      "The blue playing surface shows minor scuff marks and wear, especially near the baseline, indicating prior play.",
+      "At least 20 spectators are visible in the background: a large crowd seated behind the left-side barrier, several behind the right-side barrier, and others near the top edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0558_P1",
+      "visual_anchors": [
+        "player airborne mid-serve",
+        "shadow cast sharply on court",
+        "ball suspended at apex"
+      ],
+      "symbolic_mapping": [
+        "the suspended ball as a moment of potential before irreversible action",
+        "the shadow as an ephemeral trace of presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The frozen instant of the serve embodies the philosophical tension between determinism and agency: the ball’s trajectory is already governed by physics once released, yet the player’s prior choice to serve defines the entire sequence.",
+      "alternative_interpretations": [
+        "This is simply a routine athletic motion captured at high shutter speed, with no deeper meaning intended or implied."
+      ],
+      "limitations": [
+        "No facial expression or contextual narrative is visible to confirm intentionality or internal state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0558_P2",
+      "visual_anchors": [
+        "LEXUS logo",
+        "American Express banner",
+        "spectator crowd"
+      ],
+      "symbolic_mapping": [
+        "corporate branding as infrastructure enabling individual performance",
+        "audience as constitutive of the event’s social reality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The athlete’s solitary act is embedded within a commercial and social framework where visibility and sponsorship mediate recognition—suggesting that individual achievement is inseparable from institutional scaffolding.",
+      "alternative_interpretations": [
+        "Logos are standard venue signage and do not imply endorsement or critique; they merely identify sponsors present at the event."
+      ],
+      "limitations": [
+        "No evidence of contractual relationships, revenue sharing, or labor conditions is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0558_P3",
+      "visual_anchors": [
+        "white boundary lines on blue court",
+        "player positioned precisely behind baseline",
+        "racket held in standardized grip"
+      ],
+      "symbolic_mapping": [
+        "lines as enforced constraints enabling fair play",
+        "standardized equipment as shared symbolic language across participants"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The rigid geometry of the court and uniformity of gear reflect how structured rules create the conditions for meaningful contest—freedom emerges not despite constraint, but through its precise definition.",
+      "alternative_interpretations": [
+        "These are functional design elements for sport safety and fairness, not philosophical statements."
+      ],
+      "limitations": [
+        "No textual rules or official signage defining the game’s ontology is visible."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for spectators is inaccurate; the image shows more than 14 spectators."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:56:51.376187+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cdf21a0d-a8b1-913a-b162-270af55ce69a",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 1011,
+        "total_tokens": 1680,
+        "completion_tokens_details": {
+          "text_tokens": 1011
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025632e8bf6d091d0a495e",
+      "usage": {
+        "completion_tokens": 972,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1816,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2788
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1317",
+  "sample_id": "PHL1800_HAIV_0489",
+  "file_name": "PHL1800_HAIV_0489.png",
+  "batch_id": "B027",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one illustrated human figure",
+  "captions": {
+    "scene": [
+      "A white background with two abstract rectangular devices flanking the figure’s head—one gray with black circles on the left, one multicolored with red and yellow circles on the right.",
+      "The figure’s head is balding with short dark hair at the sides and back; a circular emblem with a question mark is centered on the forehead.",
+      "Three small black question marks float above the head, and faint scribbled lines radiate outward from the emblem."
+    ],
+    "action": [
+      "The figure’s eyebrows are furrowed downward and inward, eyes are closed or narrowed into slits, and mouth is a straight horizontal line—indicating facial tension.",
+      "Red blush patches appear on both cheeks, symmetrically placed below the eyes.",
+      "The figure wears a light-colored collared shirt with visible lapels and a V-neck opening."
+    ],
+    "rationale": [
+      "The presence of multiple question marks and a central question-mark emblem suggests visual emphasis on uncertainty or inquiry.",
+      "The symmetrical blush and tight facial features may indicate physiological arousal, though the specific cause is not visually specified.",
+      "The abstract devices lack labels or interfaces, so their function cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "The figure has a single head with two ears, a nose, and a mouth, all outlined in thick black ink with minimal shading.",
+      "A circular emblem with a hand-drawn question mark occupies the center of the forehead; the emblem has a textured gray fill and a bold black border.",
+      "Two rectangular objects flank the head: the left one is gray with two black concentric circles resembling speakers or ports; the right one is off-white with a red circle above a yellow circle, both containing black centers.",
+      "Three small, irregularly shaped black question marks float above the head, unattached to any structure.",
+      "The figure’s hairline recedes at the temples, revealing a smooth scalp area where the emblem is placed."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1317_P1",
+      "visual_anchors": [
+        "central question-mark emblem",
+        "floating question marks",
+        "furrowed brows"
+      ],
+      "symbolic_mapping": [
+        "question mark → epistemic uncertainty",
+        "forehead placement → locus of cognition"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image visually frames inquiry as a bodily experience localized in the mind, suggesting knowledge-seeking is inseparable from affective tension.",
+      "alternative_interpretations": [
+        "It may simply depict confusion during device interaction, without philosophical intent."
+      ],
+      "limitations": [
+        "No textual context confirms symbolic intent; the question mark could be decorative or literal (e.g., UI prompt)."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1317_P2",
+      "visual_anchors": [
+        "blush patches",
+        "tight mouth",
+        "symmetrical facial expression"
+      ],
+      "symbolic_mapping": [
+        "blush → social exposure",
+        "closed eyes → withdrawal from external input"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The figure’s embodied reaction implies self-consciousness under perceived scrutiny, aligning with theories of social self as constituted through others’ gaze.",
+      "alternative_interpretations": [
+        "Blush could indicate physical exertion or temperature change, unrelated to social dynamics."
+      ],
+      "limitations": [
+        "Blush coloration is stylized and non-photorealistic; no observers are depicted to confirm social context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1317_P3",
+      "visual_anchors": [
+        "two flanking devices",
+        "emblem on forehead",
+        "lack of hands or interaction"
+      ],
+      "symbolic_mapping": [
+        "devices → external systems",
+        "emblem → internalized query"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The composition suggests cognitive labor mediated by technology, where the human subject becomes a node processing external inputs as internal doubt.",
+      "alternative_interpretations": [
+        "The devices may be irrelevant background elements; no wires, screens, or interfaces confirm functional relation."
+      ],
+      "limitations": [
+        "No visible connection (e.g., cables, glances, gestures) links the figure to the devices."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:17:23.276391+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-43032f42-5d3f-9bc8-ad42-6a13631a95f0",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 943,
+        "total_tokens": 2476,
+        "completion_tokens_details": {
+          "text_tokens": 943
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041654a66ed91f94f549ed",
+      "usage": {
+        "completion_tokens": 805,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2897,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3702
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

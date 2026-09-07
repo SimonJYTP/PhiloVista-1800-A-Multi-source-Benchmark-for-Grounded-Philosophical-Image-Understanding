@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1109",
+  "sample_id": "PHL1800_MM_0102",
+  "file_name": "PHL1800_MM_0102.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults in a professional office setting",
+  "captions": {
+    "scene": [
+      "A modern office interior with light wood desk, black leather chair, two computer monitors on a credenza, and blue-gray wall paneling.",
+      "The foreground features a seated woman at a desk and a standing man holding a document; background includes office furniture and neutral-toned walls.",
+      "Lighting appears even and artificial, typical of indoor office environments; no windows are visible."
+    ],
+    "action": [
+      "The woman sits upright, hands resting on papers on the desk, looking toward the man with a slight smile.",
+      "The man stands facing the woman, holding a printed document with both hands, wearing glasses and a light-blue shirt with dark tie.",
+      "A speech bubble originates near the man’s head containing legible text: 'I support your decision to maintain the sponsorship.'"
+    ],
+    "rationale": [
+      "The presence of formal attire, documents, and office furniture suggests a professional meeting context.",
+      "The speech bubble indicates verbal communication about sponsorship maintenance, though the speaker’s identity is not visually confirmed beyond proximity to the bubble.",
+      "The document held by the man contains dense text but is unreadable due to resolution; its content cannot be verified."
+    ],
+    "object": [
+      "A woman with shoulder-length brown hair wears a navy blazer with blue lapel trim over a white collared shirt and black top, seated in a black executive chair.",
+      "A man with styled brown hair, beard, and black-rimmed glasses wears a light-blue long-sleeve shirt, navy tie, and tan trousers, standing beside the desk.",
+      "A white paper document with multiple paragraphs and numbered sections is held by the man; specific text is illegible.",
+      "A closed dark-blue tablet or folio lies horizontally on the desk surface in front of the woman.",
+      "A stack of reddish-brown rectangular objects, possibly file folders or notebooks, rests on the right edge of the desk."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1109_P1",
+      "visual_anchors": [
+        "speech bubble with supportive statement",
+        "man holding document",
+        "woman seated attentively"
+      ],
+      "symbolic_mapping": [
+        "document as embodiment of institutional agreement",
+        "supportive utterance as performative endorsement"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes a moment where ethical responsibility is enacted through verbal affirmation of an institutional commitment, situating individual agency within social structures of sponsorship.",
+      "alternative_interpretations": [
+        "This may simply depict routine administrative approval without deeper moral significance."
+      ],
+      "limitations": [
+        "The actual content of the document and the nature of the sponsorship are not visible, limiting claims about ethical weight."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1109_P2",
+      "visual_anchors": [
+        "formal attire",
+        "desk arrangement",
+        "hierarchical positioning (standing vs. seated)"
+      ],
+      "symbolic_mapping": [
+        "seated posture as deliberative authority",
+        "standing posture as propositional submission"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "choice_journey"
+      ],
+      "interpretation": "The spatial and postural dynamics suggest a negotiation of power wherein choice is framed as collaborative yet asymmetrically positioned, reflecting institutional pathways rather than open-ended journeys.",
+      "alternative_interpretations": [
+        "The posture difference may reflect only momentary roles (e.g., presenter vs. reviewer) with no enduring hierarchy."
+      ],
+      "limitations": [
+        "No facial expressions convey intent definitively; gestures are minimal and non-confrontational."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1109_P3",
+      "visual_anchors": [
+        "unreadable document",
+        "speech bubble with clear text",
+        "lack of visible signatures or seals"
+      ],
+      "symbolic_mapping": [
+        "legible speech vs. illegible text as tension between discourse and documentation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The contrast between the clearly stated supportive claim and the indecipherable contractual text highlights how truth in organizational contexts may reside more in declared alignment than in verifiable content, constraining freedom through procedural opacity.",
+      "alternative_interpretations": [
+        "The document’s illegibility is purely technical (resolution), not intentional concealment."
+      ],
+      "limitations": [
+        "Image resolution prevents verification of whether text was intentionally blurred or merely out-of-focus."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:51:50.301094+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-74f6173f-71c2-9f84-8769-8a6c432989f5",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 974,
+        "total_tokens": 2507,
+        "completion_tokens_details": {
+          "text_tokens": 974
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703511776da3135d46f4268",
+      "usage": {
+        "completion_tokens": 835,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2923,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3758
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

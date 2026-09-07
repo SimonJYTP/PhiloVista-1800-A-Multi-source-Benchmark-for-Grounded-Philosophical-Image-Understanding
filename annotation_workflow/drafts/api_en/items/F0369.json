@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0369",
+  "sample_id": "PHL1800_IRFL_0086",
+  "file_name": "PHL1800_IRFL_0086.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a pair of human hands holding a white booklet with a graduation cap icon",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor desk surface with out-of-focus papers and a laptop keyboard in the background",
+      "Shallow depth of field isolates the booklet and hands in sharp focus against a blurred office-like setting",
+      "Natural or artificial light source from upper right creates soft highlights on the booklet’s edge and fingers"
+    ],
+    "action": [
+      "Two hands grip the left and right edges of a white booklet, holding it open at a slight angle toward the viewer",
+      "The booklet is held steady, with no visible motion blur, suggesting a paused or static moment",
+      "Fingers are positioned to support the booklet without obscuring the central icon or lower text block"
+    ],
+    "rationale": [
+      "The graduation cap icon suggests an academic or ceremonial context, but no diploma, certificate, or institution name is visible to confirm purpose",
+      "The presence of unreadable placeholder text implies the booklet may be a template or mock-up rather than a finalized document",
+      "Background elements (laptop, papers) indicate a work or study environment, yet no specific activity (e.g., signing, reading) is observable"
+    ],
+    "object": [
+      "A white rectangular booklet with rounded corners is held horizontally, its front cover displaying a solid dark purple graduation cap icon centered near the top third.",
+      "The graduation cap icon consists of a square mortarboard with a tassel hanging from its right corner and a circular base representing the headband.",
+      "Below the icon, multiple lines of small, dense, serif-style text are present but entirely illegible due to resolution and focus limitations.",
+      "The left hand grips the booklet’s left edge with thumb on front and index finger behind; the right hand supports the right edge with thumb on front and fingers behind.",
+      "The booklet’s spine is not visible, and its thickness appears minimal—consistent with a single folded sheet or thin pamphlet."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0369_P1",
+      "visual_anchors": [
+        "graduation cap icon",
+        "hands holding booklet",
+        "unreadable text block"
+      ],
+      "symbolic_mapping": [
+        "graduation cap → formal recognition of knowledge acquisition",
+        "held booklet → transitional object between learning and application"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The image frames knowledge as a bounded, portable artifact—held, not internalized—suggesting epistemic authority resides in institutional validation rather than personal understanding.",
+      "alternative_interpretations": [
+        "It may simply depict a person reviewing a draft document for a graduation-related event, with no philosophical intent."
+      ],
+      "limitations": [
+        "No textual content confirms the booklet’s function; the icon alone cannot establish epistemological claims."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0369_P2",
+      "visual_anchors": [
+        "two hands symmetrically supporting booklet",
+        "blurred background papers",
+        "clean white surface"
+      ],
+      "symbolic_mapping": [
+        "symmetrical grip → balance between effort and outcome",
+        "clarity of foreground vs. blur of background → focus on achievement over process"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The act of presenting the booklet—centered, unobscured, and physically supported—evokes a social contract where responsibility for credentialing is delegated to visible, tactile proof rather than lived experience.",
+      "alternative_interpretations": [
+        "The hands may merely be positioning the booklet for photography, with no symbolic intention."
+      ],
+      "limitations": [
+        "Hand posture is functional, not ritualistic; no gestures (e.g., offering, sealing) confirm normative meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0369_P3",
+      "visual_anchors": [
+        "dark purple cap icon on white field",
+        "unmarked booklet edges",
+        "absence of personal identifiers"
+      ],
+      "symbolic_mapping": [
+        "monochrome icon → abstraction of identity into role",
+        "blank margins → space for future inscription or erasure"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The reduction of academic attainment to a standardized symbol on a generic medium reflects how institutional appearance constrains individual identity to a repeatable, consumable form.",
+      "alternative_interpretations": [
+        "The design is minimalist for aesthetic or branding reasons, not ideological ones."
+      ],
+      "limitations": [
+        "Color choice (dark purple) is common in academic branding and does not uniquely signify constraint or standardization."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:39:58.031441+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e7a05b1c-1db7-9a66-826a-747bc34acc5f",
+      "usage": {
+        "prompt_tokens": 1129,
+        "completion_tokens": 1006,
+        "total_tokens": 2135,
+        "completion_tokens_details": {
+          "text_tokens": 1006
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 622,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023939996e2192da9145a3",
+      "usage": {
+        "completion_tokens": 865,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2421,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3286
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

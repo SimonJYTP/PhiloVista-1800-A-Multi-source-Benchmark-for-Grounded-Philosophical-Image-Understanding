@@ -1,0 +1,156 @@
+{
+  "annotation_item_id": "F0690",
+  "sample_id": "PHL1800_HL_0030",
+  "file_name": "PHL1800_HL_0030.png",
+  "batch_id": "B001",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person taking a mirror selfie with a cat visible in reflection",
+  "captions": {
+    "scene": [
+      "A wooden-paneled interior wall with three vertically aligned oval mirrors mounted on it.",
+      "The mirrors reflect a tiled floor, a doorway, and part of a kitchen counter with items.",
+      "A gray cat stands on the floor in the lower mirror's reflection, facing away from the camera."
+    ],
+    "action": [
+      "A person holds a dark rectangular object (likely a phone) up with both hands to capture a self-portrait in the top mirror.",
+      "The person wears a dark long-sleeved top, dark skirt or shorts, dark tights, and black-and-white sneakers.",
+      "The cat stands still on the floor, tail slightly raised, head turned toward the person or mirror."
+    ],
+    "rationale": [
+      "The person’s posture and hand position strongly suggest they are operating a device for self-photography; no other action fits the pose.",
+      "The cat appears attentive but not in motion; its stance is static, indicating observation rather than active movement.",
+      "The mirrors are arranged symmetrically with decorative metal spines between them, implying intentional design rather than accidental placement."
+    ],
+    "object": [
+      "Three oval-shaped mirrors are affixed vertically on a wood-paneled wall, each separated by a metallic radial ornament resembling a sunburst or fan motif.",
+      "The top mirror reflects the upper torso and head of a person holding a dark rectangular object near their face.",
+      "The middle mirror reflects the person’s lower torso and legs, showing dark tights and black-and-white low-top sneakers.",
+      "The bottom mirror reflects a gray domestic cat standing on a light-colored tiled floor, viewed from behind and slightly to the side.",
+      "The wall to the right of the mirrors consists of vertical tongue-and-groove wooden planks with visible knots and grain patterns."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0690_P1",
+      "visual_anchors": [
+        "three segmented mirrors",
+        "person holding phone to face",
+        "cat observing from below"
+      ],
+      "symbolic_mapping": [
+        "segmented reflection → fragmented self-perception",
+        "phone as mediating device → constructed identity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The tripartite mirror structure visually enacts a splintered self-image, where the act of photographing oneself through reflective surfaces underscores the mediated and discontinuous nature of personal appearance in contemporary visual culture.",
+      "alternative_interpretations": [
+        "The mirrors may simply be decorative furniture with no symbolic intent; the segmentation could reflect practical mounting constraints or aesthetic preference."
+      ],
+      "limitations": [
+        "No textual labels or explicit iconography confirm intentional symbolism; segmentation may be purely structural."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0690_P2",
+      "visual_anchors": [
+        "cat standing still on floor",
+        "person reflected above",
+        "shared space in reflection"
+      ],
+      "symbolic_mapping": [
+        "cat’s gaze direction → silent witness",
+        "shared frame → cohabitation without interaction"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The simultaneous presence of human and animal within a single reflective field—yet spatially separated and non-interacting—suggests a form of social existence defined by proximity without engagement, highlighting modern cohabitation as parallel rather than shared experience.",
+      "alternative_interpretations": [
+        "The cat is merely present in the room; its orientation may be coincidental and unrelated to the person’s activity."
+      ],
+      "limitations": [
+        "The cat’s attention cannot be confirmed; its head angle may indicate interest in something else entirely."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0690_P3",
+      "visual_anchors": [
+        "wooden wall with knots",
+        "tiled floor",
+        "metallic mirror mounts"
+      ],
+      "symbolic_mapping": [
+        "natural wood grain vs. manufactured tiles → tension between organic and constructed environments"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of raw, knotted wood (suggesting natural growth and irregularity) against uniform ceramic tiles (implying order and constraint) frames the human-cat scene within an environment that embodies the dialectic of freedom and imposed structure.",
+      "alternative_interpretations": [
+        "The materials reflect common interior finishes with no philosophical intent; wood and tile are standard building choices."
+      ],
+      "limitations": [
+        "No evidence links material choice to conceptual intent; this reading imposes external meaning onto neutral construction elements."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:38:54.708534+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-064d0762-f9cf-9ac6-9338-745bf37829e5",
+      "usage": {
+        "prompt_tokens": 870,
+        "completion_tokens": 986,
+        "total_tokens": 1856,
+        "completion_tokens_details": {
+          "text_tokens": 986
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 363,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070138362d7e1e44a54e4902",
+      "usage": {
+        "completion_tokens": 852,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2059,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2911
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

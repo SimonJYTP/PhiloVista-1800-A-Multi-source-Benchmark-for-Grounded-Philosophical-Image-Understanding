@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0732",
+  "sample_id": "PHL1800_HAIV_0529",
+  "file_name": "PHL1800_HAIV_0529.png",
+  "batch_id": "B016",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a semi-truck on a two-lane road",
+  "captions": {
+    "scene": [
+      "A stylized rural landscape with bright lime-green fields, dark green rounded trees, and a pale yellow sky.",
+      "A black asphalt road with white dashed centerline and solid edge lines recedes into the distance under a bright sun glare.",
+      "Multiple white roadside posts with unreadable rectangular signs are spaced along both sides of the road."
+    ],
+    "action": [
+      "The truck is positioned on the left lane, angled slightly toward the viewer, suggesting forward motion along the road.",
+      "The truck’s cab has a large black windshield and visible side mirrors; its trailer is blue with a white roof.",
+      "No other vehicles or moving figures are visible on the road or in the surrounding fields."
+    ],
+    "rationale": [
+      "The road’s perspective lines converge toward the upper right, indicating depth and directional travel away from the viewer.",
+      "The truck’s orientation and placement within the lane imply it is traveling rather than parked, though no motion blur is present.",
+      "The uniform color blocks and simplified forms suggest digital illustration rather than photographic realism, limiting inference about material properties."
+    ],
+    "object": [
+      "A semi-truck with a white cab front, black windshield, gray lower chassis, orange side marker lights, and a blue rectangular trailer with a white top surface.",
+      "A two-lane paved road with white dashed center markings and solid white edge lines, bordered by grassy verges.",
+      "At least nine distinct tree silhouettes with dark green canopies and thin trunks are distributed across the fields on both sides of the road.",
+      "Five white vertical posts with small rectangular signs are visible along the roadside; all sign text is illegible due to resolution and stylization.",
+      "A bright white circular area in the upper right corner suggests a sun or light source, casting no discernible shadows on objects."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0732_P1",
+      "visual_anchors": [
+        "road receding to horizon",
+        "single truck on empty road",
+        "sun glare at vanishing point"
+      ],
+      "symbolic_mapping": [
+        "the road as path",
+        "the truck as solitary agent"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The image evokes the philosophical motif of an individual undertaking a directed journey through an open yet bounded environment, where the path is clear but destination remains unseen.",
+      "alternative_interpretations": [
+        "It may simply depict a standard freight transport scene rendered in a graphic style, with no intentional symbolism."
+      ],
+      "limitations": [
+        "No textual labels or contextual markers confirm intentional metaphor; the road’s direction could be arbitrary in composition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0732_P2",
+      "visual_anchors": [
+        "uniform green fields",
+        "repetitive tree shapes",
+        "stylized flat colors"
+      ],
+      "symbolic_mapping": [
+        "homogenized landscape as constructed reality"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The simplified, non-naturalistic rendering questions the fidelity of perception, suggesting that observed reality may be a curated abstraction rather than direct representation.",
+      "alternative_interpretations": [
+        "The style reflects artistic medium constraints (e.g., vector graphics) rather than epistemological commentary."
+      ],
+      "limitations": [
+        "Stylization alone does not prove intent to critique truth; many illustrations use simplification for clarity or aesthetic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0732_P3",
+      "visual_anchors": [
+        "truck with enclosed trailer",
+        "no visible driver",
+        "isolated vehicle"
+      ],
+      "symbolic_mapping": [
+        "machine as autonomous actor",
+        "labor displaced from view"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The absence of a visible human operator alongside the functional vehicle highlights tensions between human labor and automated systems in modern logistics.",
+      "alternative_interpretations": [
+        "The driver is simply occluded by the cab design, a common convention in schematic illustrations."
+      ],
+      "limitations": [
+        "The cab’s black windshield prevents verification of interior occupancy; no windows or doors show open/closed status."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:11:50.392944+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7daebcd3-969e-94ad-b02a-9d9200af3d25",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 921,
+        "total_tokens": 2454,
+        "completion_tokens_details": {
+          "text_tokens": 921
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031139165cbfedbb4149b8",
+      "usage": {
+        "completion_tokens": 785,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2880,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3665
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

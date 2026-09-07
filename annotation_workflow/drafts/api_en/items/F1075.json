@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1075",
+  "sample_id": "PHL1800_IRFL_0168",
+  "file_name": "PHL1800_IRFL_0168.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young boy seated at a desk",
+  "captions": {
+    "scene": [
+      "A child sits at a dark wooden desk against a plain white background.",
+      "Two tall stacks of books flank the child—one on the left, one on the right—on the desk surface.",
+      "The child is seated on a red chair with a textured backrest."
+    ],
+    "action": [
+      "The boy holds a pen in his right hand and rests it near an open notebook.",
+      "His left arm is extended horizontally above the notebook, palm down, fingers slightly spread.",
+      "His gaze is directed downward toward the open notebook."
+    ],
+    "rationale": [
+      "The boy’s posture and pen placement suggest engagement with writing or drawing, though no marks are visible on the page.",
+      "The presence of many books implies a study or learning context, but their titles are unreadable and no curriculum is indicated.",
+      "The white background isolates the subject, indicating a studio setting; however, no explicit signage confirms purpose or location."
+    ],
+    "object": [
+      "The boy wears a long-sleeved shirt with horizontal blue and white stripes and a collar.",
+      "An open notebook lies flat on the desk, its pages blank or illegible from this angle.",
+      "A pen lies horizontally on the desk to the left of the notebook.",
+      "The left book stack consists of at least seven books of varying thicknesses and spine colors including blue, green, yellow, and gray.",
+      "The right book stack consists of at least eight books with spines in red, orange, green, beige, and black tones."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1075_P1",
+      "visual_anchors": [
+        "open blank notebook",
+        "pen poised above paper",
+        "boy’s focused gaze"
+      ],
+      "symbolic_mapping": [
+        "blank page as potential for knowledge creation",
+        "pen as instrument of agency"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The suspended moment before inscription embodies the philosophical tension between epistemic possibility and the act of committing thought to form—where truth remains unformed until choice intervenes.",
+      "alternative_interpretations": [
+        "The boy may be pausing due to fatigue, distraction, or awaiting instruction; the scene could depict routine homework rather than existential deliberation."
+      ],
+      "limitations": [
+        "No visible text, facial expression detail, or contextual cues confirm intentionality or reflection beyond physical posture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1075_P2",
+      "visual_anchors": [
+        "two symmetrical book stacks",
+        "isolated white background",
+        "child centered at desk"
+      ],
+      "symbolic_mapping": [
+        "book stacks as externalized knowledge structures",
+        "white void as absence of social context"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial framing suggests the individual’s confrontation with institutionalized knowledge systems, where freedom is bounded by the sheer volume and arrangement of prescribed material.",
+      "alternative_interpretations": [
+        "The stacks may simply reflect available resources for a task; symmetry could result from staging rather than symbolic intent."
+      ],
+      "limitations": [
+        "Stack composition and titles are unreadable; no labels indicate institutional origin or mandatory use."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1075_P3",
+      "visual_anchors": [
+        "boy’s left hand hovering over notebook",
+        "right hand holding pen",
+        "no visible writing"
+      ],
+      "symbolic_mapping": [
+        "hovering hand as hesitation",
+        "dual-hand positioning as internal division"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "identity_appearance"
+      ],
+      "interpretation": "The unresolved gesture—neither writing nor withdrawing—evokes the ethical weight of authorship: to inscribe is to assume responsibility for representation, and thus to shape identity through traceable action.",
+      "alternative_interpretations": [
+        "The pose may be momentary motor adjustment or preparation for turning a page; no evidence confirms moral deliberation."
+      ],
+      "limitations": [
+        "Hand position is static in a single frame; temporal continuity is absent, preventing confirmation of hesitation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:47:00.304786+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a145df17-e1fa-9ebd-bea5-27e7214f4df2",
+      "usage": {
+        "prompt_tokens": 756,
+        "completion_tokens": 915,
+        "total_tokens": 1671,
+        "completion_tokens_details": {
+          "text_tokens": 915
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 249,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034642aaf448f54583413a",
+      "usage": {
+        "completion_tokens": 773,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1808,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2581
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

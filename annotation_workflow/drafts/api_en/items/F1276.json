@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1276",
+  "sample_id": "PHL1800_HL_0371",
+  "file_name": "PHL1800_HL_0371.png",
+  "batch_id": "B027",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four people lying on a patterned bedspread",
+  "captions": {
+    "scene": [
+      "Black-and-white photograph of four individuals reclining on a floral-patterned bedspread.",
+      "Two adults and two children positioned closely together, viewed from above.",
+      "All subjects are supine or semi-supine; one adult wears a dark cap, another has visible tattoos near the collarbone."
+    ],
+    "action": [
+      "The adult on the left lies on their back with hands resting on their abdomen.",
+      "A toddler in the center lies on their back with legs raised and a pacifier in their mouth.",
+      "The adult on the right smiles broadly while lying on their back with arms extended outward."
+    ],
+    "rationale": [
+      "The presence of a pacifier and small stature indicates one subject is an infant or toddler.",
+      "Visible tattoos and clothing style suggest adult status for two subjects, though age cannot be precisely determined.",
+      "The arrangement suggests intentional posing rather than spontaneous rest, due to coordinated orientation and facial expressions."
+    ],
+    "object": [
+      "A person wearing a dark flat cap lies on their back with eyes open and hands placed on their torso.",
+      "A child with a white headband and pacifier lies supine with legs bent upward and arms crossed over the chest.",
+      "A second child with dark curly hair and a white top lies on their side facing the camera, smiling with teeth visible.",
+      "An adult with dark hair, visible neck tattoo, and lace-trimmed top lies supine with arms spread and head tilted slightly upward.",
+      "A white bedspread with repeating floral vine motifs covers the surface beneath all subjects."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "commonsense_inference"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1276_P1",
+      "visual_anchors": [
+        "pacifier in child's mouth",
+        "adult hands resting on abdomen",
+        "shared bedspread surface"
+      ],
+      "symbolic_mapping": [
+        "pacifier as symbol of dependency",
+        "shared surface as symbol of cohabitation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image visually articulates interdependence through proximal bodily arrangement and asymmetrical care cues—such as the pacifier—suggesting ethical responsibility embedded within everyday domestic spatiality.",
+      "alternative_interpretations": [
+        "This may simply document a family photo session without symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual metadata confirms intentional symbolism; expressions and poses could be staged for aesthetic effect alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1276_P2",
+      "visual_anchors": [
+        "black-and-white tonality",
+        "floral bedspread pattern",
+        "varied head orientations"
+      ],
+      "symbolic_mapping": [
+        "monochrome rendering as abstraction of time",
+        "repeating pattern as continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The monochromatic treatment flattens temporal specificity, inviting reflection on the fleeting nature of familial configurations against enduring domestic patterns—highlighting how identity is performed and perceived within constrained visual frames.",
+      "alternative_interpretations": [
+        "The black-and-white choice may reflect photographic preference or technical limitation rather than philosophical intent."
+      ],
+      "limitations": [
+        "Absence of clocks, calendars, or aging markers prevents direct inference about time; appearance cues are limited to clothing and posture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1276_P3",
+      "visual_anchors": [
+        "smiling adult on right",
+        "child’s open-eyed gaze",
+        "adult on left with neutral expression"
+      ],
+      "symbolic_mapping": [
+        "contrasting facial expressions as coexistence of affective states"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of expressive freedom (broad smile) and restrained neutrality (closed lips, direct gaze) within a shared physical space illustrates how social existence simultaneously enables and constrains individual affective expression.",
+      "alternative_interpretations": [
+        "Facial expressions may result from momentary reactions to the photographer rather than enduring psychological states."
+      ],
+      "limitations": [
+        "Only static facial features are visible; no motion or sequence confirms sustained emotional states or interaction dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:11:53.678422+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2af4c646-d289-97c3-8106-a35ee250aa01",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 922,
+        "total_tokens": 1691,
+        "completion_tokens_details": {
+          "text_tokens": 922
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041124786d87b4ddc747b7",
+      "usage": {
+        "completion_tokens": 785,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1853,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2638
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

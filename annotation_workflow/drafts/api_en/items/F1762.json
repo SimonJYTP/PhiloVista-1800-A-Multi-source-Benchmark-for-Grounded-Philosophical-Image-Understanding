@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1762",
+  "sample_id": "PHL1800_HL_0117",
+  "file_name": "PHL1800_HL_0117.png",
+  "batch_id": "B036",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one skier in motion on snow",
+  "captions": {
+    "scene": [
+      "Snow-covered slope with red safety netting and blurred evergreen trees in the background",
+      "Bright daylight with clear sky and strong shadows indicating direct sunlight",
+      "Ski track visible in snow, disturbed by the skier's turn"
+    ],
+    "action": [
+      "Skier leaning sharply left, knees bent, body low to the snow surface",
+      "Right ski edge engaged in snow, kicking up spray; left ski trailing slightly behind",
+      "Both poles held forward and angled downward, hands gripping pole straps"
+    ],
+    "rationale": [
+      "The skier’s posture and snow displacement suggest active carving rather than gliding straight",
+      "The presence of a branded racing suit and helmet implies competitive or training context, though no race markers are visible",
+      "Text on suit reads 'ROYAL NAVY' clearly; other text is partially obscured or unreadable due to angle and motion blur"
+    ],
+    "object": [
+      "The skier wears a blue, white, and red full-body racing suit with 'ROYAL NAVY' printed vertically in white capital letters on the thigh.",
+      "The skier wears black gloves with white accents, a black helmet with ventilation holes, and tinted ski goggles.",
+      "Two ski poles are visible: shafts are silver with yellow-green grip sections and black baskets near tips.",
+      "Red ski boots with black buckles and white detailing are attached to black skis with visible bindings.",
+      "A red mesh safety fence runs horizontally across the mid-background, partially obscuring coniferous trees."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1762_P1",
+      "visual_anchors": [
+        "skier’s low crouch",
+        "engaged ski edge",
+        "spray of displaced snow"
+      ],
+      "symbolic_mapping": [
+        "the controlled disruption of snow mirrors intentional intervention in natural flow"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The skier’s precise edge engagement amid dynamic motion embodies a moment of decisive navigation—where path is not given but actively carved through resistance.",
+      "alternative_interpretations": [
+        "This is simply a biomechanically efficient turn during alpine skiing, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentionality beyond physical execution."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1762_P2",
+      "visual_anchors": [
+        "'ROYAL NAVY' text on suit",
+        "uniform-like color scheme",
+        "helmet and gear standardization"
+      ],
+      "symbolic_mapping": [
+        "institutional branding on athletic attire signifies alignment of individual performance with collective identity"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The visible institutional marking situates the individual within a structured social framework, where personal exertion is publicly legible as service or representation.",
+      "alternative_interpretations": [
+        "The suit may be sponsorship apparel unrelated to military affiliation; 'ROYAL NAVY' could be a team name or historical reference."
+      ],
+      "limitations": [
+        "No insignia, rank, or official emblem confirms affiliation; text alone is ambiguous without corroborating context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1762_P3",
+      "visual_anchors": [
+        "sunlit snow surface",
+        "sharp shadow under skier",
+        "motion blur on poles and lower limbs"
+      ],
+      "symbolic_mapping": [
+        "high-contrast lighting and transient blur evoke the fleeting clarity of present action against temporal flux"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The crisp shadow and blurred motion capture a paradox: the skier is momentarily fixed in focus while bodily movement dissolves into temporal uncertainty—highlighting the ephemeral nature of peak performance.",
+      "alternative_interpretations": [
+        "Motion blur results from camera shutter speed choice, not philosophical commentary."
+      ],
+      "limitations": [
+        "Photographic technique (e.g., panning) fully explains blur; no evidence of deliberate aesthetic metaphor."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:09:54.406357+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-113b3185-ae63-9ff7-befc-a8e559621f4b",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 888,
+        "total_tokens": 1657,
+        "completion_tokens_details": {
+          "text_tokens": 888
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705093837a4fe7887d44c7f",
+      "usage": {
+        "completion_tokens": 753,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1816,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2569
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

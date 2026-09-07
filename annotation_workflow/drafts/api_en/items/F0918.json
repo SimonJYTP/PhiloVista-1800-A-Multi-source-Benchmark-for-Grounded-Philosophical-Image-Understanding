@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0918",
+  "sample_id": "PHL1800_IRFL_0335",
+  "file_name": "PHL1800_IRFL_0335.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a multi-story residential building with severe structural damage at its ground level",
+  "captions": {
+    "scene": [
+      "A street-level view of a white stucco building corner with collapsed garage doors and exposed wooden framing, surrounded by scattered bricks and debris.",
+      "Adjacent buildings with intact fire escapes and bay windows stand beside the damaged structure under a pale sky.",
+      "Yellow caution tape lies across the asphalt foreground, partially covering rubble including broken bricks, wood planks, and metal fragments."
+    ],
+    "action": [
+      "The building’s ground-floor facade has failed inward, revealing vertical wooden studs and horizontal bracing behind detached beige panels.",
+      "Several garage doors are bent, torn, or fully detached from their frames and lie on the pavement or lean against the structure.",
+      "Brick fragments and construction debris are strewn across the street and sidewalk in front of the building."
+    ],
+    "rationale": [
+      "The uniformity of damage across multiple adjacent units suggests a shared structural failure rather than isolated impact.",
+      "The presence of intact upper floors and windows implies the event was localized to the lower portion, possibly due to foundation or support loss.",
+      "The absence of visible flames, smoke, or active rescue personnel indicates the image captures a post-event static state, not an ongoing incident."
+    ],
+    "object": [
+      "The building features cream-colored stucco walls, ornamental plaster moldings above windows, and white-framed multi-pane windows with some intact blinds.",
+      "Metal fire escapes with grated platforms and ladders are affixed to the side facades of both the damaged and neighboring buildings.",
+      "Exposed interior framing consists of light-brown vertical wooden studs and darker diagonal cross-braces behind the collapsed exterior cladding.",
+      "Beige metal garage doors show buckling, tearing, and detachment; one door bears a small white rectangular sign with illegible text.",
+      "Scattered on the dark asphalt are numerous reddish-brown rectangular bricks, splintered wood pieces, and twisted metal strips."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0918_P1",
+      "visual_anchors": [
+        "exposed wooden studs",
+        "detached garage doors",
+        "intact upper windows"
+      ],
+      "symbolic_mapping": [
+        "exposed framing as vulnerability beneath surface order"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The contrast between the intact upper facade and the shattered base evokes the fragility of constructed stability—how systems appear enduring until foundational supports fail, revealing the precariousness inherent in built environments.",
+      "alternative_interpretations": [
+        "This is simply structural collapse due to seismic loading, with no symbolic intent."
+      ],
+      "limitations": [
+        "No signage, dates, or human activity confirm temporal or intentional meaning; interpretation relies solely on compositional contrast."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0918_P2",
+      "visual_anchors": [
+        "yellow caution tape",
+        "scattered bricks",
+        "empty street"
+      ],
+      "symbolic_mapping": [
+        "caution tape as boundary between normalcy and disruption"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The demarcated zone of ruin amid otherwise ordinary urban architecture highlights how collective life depends on invisible infrastructural trust—and how its sudden breach forces a renegotiation of shared space and accountability.",
+      "alternative_interpretations": [
+        "The tape is standard safety protocol after any property damage, not a symbolic gesture."
+      ],
+      "limitations": [
+        "The tape’s placement and wording are not legible; its purpose cannot be confirmed beyond physical containment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0918_P3",
+      "visual_anchors": [
+        "ornamental plaster details",
+        "uniform window patterns",
+        "symmetrical fire escapes"
+      ],
+      "symbolic_mapping": [
+        "architectural repetition as assertion of order against chaos"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The persistence of decorative motifs and rhythmic fenestration above the devastation suggests identity is maintained through surface continuity even when underlying substance is compromised—raising questions about whether appearance constitutes truth in built form.",
+      "alternative_interpretations": [
+        "These are standard period architectural features with no intended philosophical message."
+      ],
+      "limitations": [
+        "No evidence that the ornamentation was preserved intentionally; it may simply be less affected by the failure mechanism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:27:55.597717+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fe35ad3d-72f7-99c9-bfa4-302ca12347dd",
+      "usage": {
+        "prompt_tokens": 3010,
+        "completion_tokens": 961,
+        "total_tokens": 3971,
+        "completion_tokens_details": {
+          "text_tokens": 961
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2503,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032737eeec9d891b2a450e",
+      "usage": {
+        "completion_tokens": 826,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7631,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 8457
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

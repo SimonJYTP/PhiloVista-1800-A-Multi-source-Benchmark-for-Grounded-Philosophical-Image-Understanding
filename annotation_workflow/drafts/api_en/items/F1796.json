@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1796",
+  "sample_id": "PHL1800_HL_0201",
+  "file_name": "PHL1800_HL_0201.png",
+  "batch_id": "B036",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of approximately 13 people gathered outside a building",
+  "captions": {
+    "scene": [
+      "A black-and-white outdoor scene showing people standing on a paved area beside a stucco-walled building with wooden shutters and a window.",
+      "Low-growing shrubs and plants occupy the foreground, partially obscuring the lower legs of several individuals.",
+      "The building has at least two visible windows: one with open wooden shutters and another with closed curtains behind glass."
+    ],
+    "action": [
+      "Several individuals are facing toward the right side of the frame, appearing to observe or wait near the building’s entrance or window.",
+      "One person in a dark shirt holds a small object (possibly a camera or binoculars) near chest level with both hands.",
+      "A woman in a light blouse stands with arms crossed, looking toward the right; another woman in a dark jacket faces away from the camera."
+    ],
+    "rationale": [
+      "The grouping and orientation suggest a shared focus of attention toward the building’s right-side window or doorway, though no explicit interaction is visible.",
+      "Clothing styles—including collared shirts, ties, skirts, and jackets—indicate a semi-formal or everyday gathering from a mid-20th-century context, based on cut and fabric appearance.",
+      "The presence of varied postures (standing, slight leaning) implies a non-urgent, possibly social or observational event, but no activity like speaking, eating, or moving is confirmed."
+    ],
+    "object": [
+      "A white stucco building with two visible windows: one with open wooden shutters revealing a paneled interior, the other with sheer curtains behind glass and a closed shutter on its left side.",
+      "A metal bucket or container sits on the ground in the lower-left corner, partially obscured by foliage.",
+      "A person wearing a dark short-sleeved shirt and light trousers stands left-of-center, holding a small rectangular object with both hands.",
+      "A woman in a light-colored long-sleeve blouse and dark trousers stands with arms crossed, facing right, positioned centrally in the middle row.",
+      "At least 13 distinct individuals are visible: 3 on the far left (one partially cropped), 5 in the central cluster, and 5 grouped near the right-side window; all appear upright and stationary."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1796_P1",
+      "visual_anchors": [
+        "open wooden shutters",
+        "people oriented toward the window",
+        "stucco wall separating interior and exterior"
+      ],
+      "symbolic_mapping": [
+        "the open shutters represent potential access to knowledge or private space",
+        "the collective gaze suggests shared anticipation or witness"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The open shutters juxtaposed with the crowd’s fixed attention evoke the tension between accessible truth and communal witnessing—where observation itself becomes a form of participation in meaning-making.",
+      "alternative_interpretations": [
+        "The group may simply be waiting for an event (e.g., a speaker, a door opening) without symbolic intent."
+      ],
+      "limitations": [
+        "No visible text, signage, or expressive gestures confirm intentional symbolism; posture and gaze are ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1796_P2",
+      "visual_anchors": [
+        "woman holding a cane",
+        "varied clothing styles",
+        "dense clustering near building"
+      ],
+      "symbolic_mapping": [
+        "the cane signals embodied limitation within a collective setting",
+        "clothing diversity reflects individual identity amid group conformity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "Individual markers—such as the cane and differing attire—coexist with spatial constraint (crowding near a wall), illustrating how personal identity persists even when physical movement and social positioning are limited by environment.",
+      "alternative_interpretations": [
+        "The cane may be temporary support; clothing variation may reflect only regional or temporal norms, not identity assertion."
+      ],
+      "limitations": [
+        "No facial expressions or labels confirm identity claims or constraints; the cane’s purpose is visually indeterminate."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1796_P3",
+      "visual_anchors": [
+        "black-and-white medium",
+        "static poses",
+        "foreground vegetation partially obscuring figures"
+      ],
+      "symbolic_mapping": [
+        "monochrome rendering abstracts time into a fixed moment",
+        "vegetation as natural interruption of human arrangement"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The photographic medium freezes a transient assembly, while foreground plants—growing, unposed, and partially hiding legs—remind that human gatherings are temporally bounded and ecologically embedded, evoking mortality through impermanence and organic intrusion.",
+      "alternative_interpretations": [
+        "The vegetation is merely landscaping; the monochrome is technical, not aesthetic or philosophical."
+      ],
+      "limitations": [
+        "The image’s age and format are inferred from visual cues (grain, contrast), not stated; no clock or decay evidence confirms temporality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (14 vs. 13 visible); cane description is unsupported; some object details are inaccurate."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:20:03.256554+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-729d898a-afc3-9a6e-b412-d65aaf2e743e",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 1116,
+        "total_tokens": 1905,
+        "completion_tokens_details": {
+          "text_tokens": 1116
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705193449dd4d4bb7564e65",
+      "usage": {
+        "completion_tokens": 991,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2067,
+        "prompt_tokens_details": {
+          "cached_tokens": 4
+        },
+        "total_tokens": 3058
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

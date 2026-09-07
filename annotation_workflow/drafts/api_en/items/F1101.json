@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1101",
+  "sample_id": "PHL1800_IRFL_0119",
+  "file_name": "PHL1800_IRFL_0119.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person's arm and hand pouring money from a metal bucket into a toilet",
+  "captions": {
+    "scene": [
+      "A white ceramic toilet with its lid raised, positioned against a plain light-colored wall.",
+      "A galvanized metal bucket tilted downward, held by a human hand, with U.S. dollar bills spilling out.",
+      "U.S. currency in motion, mid-fall, entering the open bowl of the toilet."
+    ],
+    "action": [
+      "A hand grips the rim of a metal bucket, actively tilting it to release contents.",
+      "Multiple green paper banknotes are airborne, descending toward the toilet bowl.",
+      "The toilet bowl contains some already-deposited banknotes, partially submerged in water."
+    ],
+    "rationale": [
+      "The bucket’s tilt angle and stream of falling notes indicate intentional pouring rather than accidental spillage.",
+      "The presence of U.S. currency (green bills with visible numerals and design elements) suggests monetary value is being discarded.",
+      "The lack of any other context (e.g., labels, signage, or additional objects) prevents confirmation of intent beyond visual disposal."
+    ],
+    "object": [
+      "A standard two-piece white porcelain toilet with an open lid and seat, revealing the bowl interior containing water and banknotes.",
+      "A cylindrical galvanized steel bucket with visible rivets and horizontal seams, held at approximately 45 degrees.",
+      "A human right hand and forearm, skin-toned, gripping the upper rim of the bucket; no clothing or identifying features visible.",
+      "At least six distinct U.S. dollar bills—mostly $100 denominations identifiable by size, color, and partial numeral '100'—are captured in various stages of descent.",
+      "The background is a uniform off-white wall with no texture, decoration, or visible fixtures."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1101_P1",
+      "visual_anchors": [
+        "falling U.S. dollar bills",
+        "open toilet bowl",
+        "hand holding bucket"
+      ],
+      "symbolic_mapping": [
+        "money entering toilet → waste of value",
+        "toilet as receptacle for discard → societal rejection of utility"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The act visually enacts a deliberate relinquishment of economic value, raising questions about moral accountability in resource allocation and whether freedom includes the right to destroy one’s own property without social consequence.",
+      "alternative_interpretations": [
+        "A staged photograph illustrating financial loss due to fraud or error, not philosophical critique."
+      ],
+      "limitations": [
+        "No textual explanation or contextual setting confirms symbolic intent; the scene could be literal (e.g., evidence destruction)."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1101_P2",
+      "visual_anchors": [
+        "metal bucket",
+        "ceramic toilet",
+        "green paper currency"
+      ],
+      "symbolic_mapping": [
+        "bucket as container of labor/productivity",
+        "toilet as symbol of degradation or nullification"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of industrial container (bucket) and domestic sanitation fixture (toilet) with currency suggests a critique of how technological or systemic structures may channel productive output into meaningless or devalued outcomes under asymmetric power relations.",
+      "alternative_interpretations": [
+        "A practical demonstration of money disposal for security reasons (e.g., burning alternatives unavailable)."
+      ],
+      "limitations": [
+        "Material composition alone does not establish systemic critique; bucket and toilet are common household items without inherent political valence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1101_P3",
+      "visual_anchors": [
+        "mid-air banknotes",
+        "water surface in bowl",
+        "hand in motion"
+      ],
+      "symbolic_mapping": [
+        "currency in transit → impermanence of wealth",
+        "water as medium of dissolution → temporal erosion of value"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The suspended moment captures wealth in irreversible transition toward oblivion, evoking the finitude of material accumulation and the existential weight of choices that foreclose future possibilities.",
+      "alternative_interpretations": [
+        "A still from a commercial or instructional video showing improper handling of cash."
+      ],
+      "limitations": [
+        "No clock, aging cues, or narrative sequence confirms temporal themes; motion is frozen, not continuous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:50:45.903663+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f24123b6-1543-94ac-9a0a-64530d2785b8",
+      "usage": {
+        "prompt_tokens": 608,
+        "completion_tokens": 971,
+        "total_tokens": 1579,
+        "completion_tokens_details": {
+          "text_tokens": 971
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 101,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035027399df26de2d741f1",
+      "usage": {
+        "completion_tokens": 825,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1679,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2504
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0073",
+  "sample_id": "PHL1800_HL_0226",
+  "file_name": "PHL1800_HL_0226.png",
+  "batch_id": "B004",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a traffic officer directing buses at an urban intersection",
+  "captions": {
+    "scene": [
+      "A multi-lane city street lined with tall buildings, including a gray stone facade building with a Starbucks sign and a modern glass skyscraper in the distance.",
+      "Multiple white articulated buses are stopped or queued across the intersection under traffic signals; yellow lane markings and crosswalks are visible on asphalt.",
+      "Overhead utility wires cross the frame horizontally; trees with green foliage appear between buildings and along sidewalks."
+    ],
+    "action": [
+      "A person wearing a bright yellow reflective vest and dark pants stands in the roadway facing left, arms extended outward in a traffic-directing posture.",
+      "At least five white buses are aligned across the intersection, some with visible route numbers and destination signs; one bus displays 'M15' on its front sign.",
+      "One pedestrian is visible on the left sidewalk near the Starbucks entrance, and another pedestrian is visible on the right sidewalk near a storefront."
+    ],
+    "rationale": [
+      "The officer’s stance and vest suggest official traffic control duty, though no badge or insignia is legible to confirm authority.",
+      "The presence of multiple identical buses suggests a dedicated transit corridor or scheduled service, but exact route or schedule cannot be confirmed from visible signage alone.",
+      "The image shows motion blur on some vehicles and slight double exposure artifacts (e.g., vertical ghosting on buildings), indicating possible long exposure or camera movement during capture."
+    ],
+    "object": [
+      "A white articulated bus with blue stripe detailing and visible side windows is positioned in the left lane, displaying a front destination sign with unreadable text and a small red-and-white logo near the windshield.",
+      "A traffic signal pole with three vertically aligned yellow signal heads is mounted above the left bus; all lights appear unlit or indistinct.",
+      "A pedestrian crossing consists of white rectangular stripes painted across the road surface, intersected by double yellow dashed lines marking lane divisions.",
+      "A Starbucks Coffee sign is affixed to the lower-left building facade, with partially legible text 'STARBUCKS CO' and a green circular logo containing a white siren figure.",
+      "A tall modern skyscraper with a grid of windows and a tapered top rises behind older masonry buildings on the right side of the street, partially obscured by haze."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0073_P1",
+      "visual_anchors": [
+        "traffic officer in high-visibility vest",
+        "multiple identical buses halted in formation",
+        "overhead wires cutting across the visual field"
+      ],
+      "symbolic_mapping": [
+        "the officer embodies delegated authority within structured mobility systems",
+        "buses represent standardized collective movement constrained by infrastructure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The scene illustrates how individual agency is subsumed within institutional rhythms—human direction enforces order upon mass transit, revealing social existence as negotiated through imposed constraints and shared temporal coordination.",
+      "alternative_interpretations": [
+        "This is simply a routine traffic management moment with no deeper meaning; the officer is performing a job, buses are waiting for a light change."
+      ],
+      "limitations": [
+        "No facial expressions, uniforms, or signage confirm the officer’s affiliation or intent; symbolic mapping relies on cultural assumptions about vests and buses."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0073_P2",
+      "visual_anchors": [
+        "double-exposure ghosting on buildings",
+        "static buses vs. blurred background elements",
+        "yellow lane markings converging toward vanishing point"
+      ],
+      "symbolic_mapping": [
+        "ghosting suggests temporal layering or discontinuity",
+        "converging lines evoke linear progress despite stasis"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The visual instability—ghosted architecture juxtaposed with rigid bus alignment—evokes the tension between perceived continuity of urban life and the fragility of temporal experience, where journeys are prescribed yet time itself appears fractured.",
+      "alternative_interpretations": [
+        "The double exposure is a photographic artifact from camera shake or slow shutter speed, not intentional symbolism."
+      ],
+      "limitations": [
+        "Ghosting could result from technical error rather than deliberate composition; no clock or explicit time indicator is present."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0073_P3",
+      "visual_anchors": [
+        "pedestrians grouped near storefronts",
+        "officer centrally positioned but isolated in roadway",
+        "Starbucks sign as commercial marker"
+      ],
+      "symbolic_mapping": [
+        "commercial signage anchors identity to consumption",
+        "officer’s isolation highlights role-based anonymity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "Individual identity dissolves into functional appearance—the officer is recognizable only by vest and posture, while pedestrians blend into commercial backdrops—suggesting that modern labor and visibility are mediated through standardized visual codes rather than personal traits.",
+      "alternative_interpretations": [
+        "People wear typical urban attire; the vest is practical safety gear, not a symbol of erasure."
+      ],
+      "limitations": [
+        "Facial features and clothing details are too distant to assess individuality; interpretation assumes uniformity where variation may exist."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians: candidate claims 'two near Starbucks' and 'four near blue awning' but image shows one person near Starbucks and no group of four near a blue awning; only one pedestrian is clearly visible on the right sidewalk."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:56:17.284239+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-72934202-1b0b-99bd-91c7-60d32451a2d3",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1137,
+        "total_tokens": 1906,
+        "completion_tokens_details": {
+          "text_tokens": 1137
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015557801170d55b044401",
+      "usage": {
+        "completion_tokens": 1043,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2066,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3109
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

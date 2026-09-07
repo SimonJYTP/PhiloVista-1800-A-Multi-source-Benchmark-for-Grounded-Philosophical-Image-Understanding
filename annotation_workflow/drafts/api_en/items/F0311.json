@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0311",
+  "sample_id": "PHL1800_HAIV_0365",
+  "file_name": "PHL1800_HAIV_0365.png",
+  "batch_id": "B008",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single human figure depicted in profile",
+  "captions": {
+    "scene": [
+      "A figure stands against a light blue and white sky-like background with soft cloud textures.",
+      "Brown bare branches frame the figure on left and right, intersecting with green leafy vines.",
+      "The figure's upper torso is partially covered by overlapping green leaves forming a garment-like structure."
+    ],
+    "action": [
+      "The figure holds a brown branch vertically in their right hand, fingers wrapped around it.",
+      "The figure’s head is turned leftward in profile, eyes open and gazing upward-left.",
+      "Green vines appear to grow across the figure’s neck and chest, with one vine extending near the jawline."
+    ],
+    "rationale": [
+      "The figure’s posture and gaze suggest attention toward something outside the frame, though the target is not visible.",
+      "Leaf coverage on the torso resembles intentional draping rather than random overgrowth, but no tools or seams confirm design.",
+      "Red blush marks on the cheek are applied as pigment; whether they represent emotion, injury, or artistic stylization cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "The figure has brown hair gathered into a high bun with loose strands framing the face.",
+      "The right hand grips a forked brown branch with two distinct prongs at the top.",
+      "The left arm is partially obscured but appears raised, with a green-leaf-covered limb extending diagonally upward-right.",
+      "Multiple green leaf clusters with serrated edges overlay the shoulders and chest, connected by thin brown stems.",
+      "A small sprig with three green leaves emerges vertically from the figure’s left shoulder region."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0311_P1",
+      "visual_anchors": [
+        "green leaves covering torso",
+        "bare branches held and surrounding figure"
+      ],
+      "symbolic_mapping": [
+        "leaves as integration with nature",
+        "branches as tools or barriers"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of organic leaf-covering and rigid branch-holding suggests tension between self-definition through natural affiliation and external imposition or agency.",
+      "alternative_interpretations": [
+        "The figure may simply be wearing a costume made of plant materials, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression beyond neutral gaze and blush is discernible; emotional or ideological intent is not visually encoded."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0311_P2",
+      "visual_anchors": [
+        "red blush on cheek",
+        "exposed skin on neck and collarbone",
+        "vines crossing throat area"
+      ],
+      "symbolic_mapping": [
+        "blush as vulnerability",
+        "exposed skin as openness"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The partial concealment by foliage alongside visible skin and pigment may reflect negotiated visibility—balancing exposure with protection in a social context.",
+      "alternative_interpretations": [
+        "The red marks could be accidental pigment smudges from the artistic medium, unrelated to meaning."
+      ],
+      "limitations": [
+        "Blush location and intensity do not uniquely indicate shame, exertion, or ornamentation; multiple causes remain possible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0311_P3",
+      "visual_anchors": [
+        "figure holding branch upright",
+        "vines ascending neck toward jaw",
+        "profile orientation away from viewer"
+      ],
+      "symbolic_mapping": [
+        "upright branch as direction or choice",
+        "ascending vine as growth or intrusion"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The figure’s forward gaze and vertical branch imply movement along a path, while the creeping vine suggests inevitable entanglement or transformation over time.",
+      "alternative_interpretations": [
+        "The composition may reflect botanical illustration conventions rather than narrative symbolism."
+      ],
+      "limitations": [
+        "No temporal markers (e.g., aging, decay, seasonal change) are present to confirm a time-based reading."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:35:46.136780+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-18495c5a-0d82-9b8e-bd61-5f5408286579",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 894,
+        "total_tokens": 2427,
+        "completion_tokens_details": {
+          "text_tokens": 894
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023503f27e88433f374b75",
+      "usage": {
+        "completion_tokens": 757,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2855,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3612
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0079",
+  "sample_id": "PHL1800_HAIV_0027",
+  "file_name": "PHL1800_HAIV_0027.png",
+  "batch_id": "B001",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure standing beside a black tree silhouette",
+  "captions": {
+    "scene": [
+      "A light beige background with a stylized human figure on the left and a black tree with exposed roots on the right.",
+      "The ground is minimally rendered with two gray shadow patches beneath the figure and tree base.",
+      "A small cyan droplet appears near the tip of one root, touching the ground."
+    ],
+    "action": [
+      "The figure holds their right hand to their forehead while their left arm hangs loosely at their side.",
+      "The figure stands upright with legs slightly apart, wearing black pants and a teal shirt with rolled sleeves.",
+      "The black tree displays sprawling, wavy roots extending horizontally across the lower portion of the image."
+    ],
+    "rationale": [
+      "The hand-to-forehead gesture commonly signals distress or fatigue, though only posture is visible; facial expression is simplified and ambiguous.",
+      "The tree’s roots are fully exposed above ground level, suggesting either artistic abstraction or symbolic representation rather than botanical realism.",
+      "The cyan droplet at a root tip may indicate moisture or leakage, but its origin and nature cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "The human figure has short yellow hair, pink skin tone, and wears a teal collared shirt with white zipper line and rolled sleeves revealing white cuffs.",
+      "The figure’s black pants show a white seam line along the outer leg and a small white rectangular detail near the right hip pocket.",
+      "The tree is rendered entirely in solid black with no internal texture, featuring a trunk that splits into multiple sinuous branches and roots.",
+      "Roots extend leftward from the tree base in irregular, curving lines, some terminating near the figure’s feet.",
+      "A single cyan-colored teardrop-shaped object rests on the ground directly beneath the tip of one root, with no visible connection to other elements."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0079_P1",
+      "visual_anchors": [
+        "hand pressed to forehead",
+        "exposed black roots",
+        "cyan droplet at root tip"
+      ],
+      "symbolic_mapping": [
+        "exposed roots → foundational vulnerability",
+        "cyan droplet → trace of life or loss"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of a distressed figure and bare roots suggests contemplation of impermanence, where visible foundations (roots) and bodily gestures (hand to head) evoke awareness of temporal fragility and self-perception under strain.",
+      "alternative_interpretations": [
+        "The scene may simply depict a stylized character observing a decorative or abstract plant form, with no intended symbolism."
+      ],
+      "limitations": [
+        "No facial features or contextual signage confirm emotional state or narrative intent; gesture is generic and culturally variable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0079_P2",
+      "visual_anchors": [
+        "black tree silhouette",
+        "figure’s stance facing tree",
+        "minimal background"
+      ],
+      "symbolic_mapping": [
+        "black monochrome tree → absence or negation",
+        "figure’s proximity without contact → unresolved relation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The figure stands near but not engaged with the stark tree, implying a condition of constrained agency or alienation within a social or existential framework where presence does not entail connection.",
+      "alternative_interpretations": [
+        "The composition may reflect standard illustrative layout conventions—placing subject and symbol side-by-side for visual balance, not meaning."
+      ],
+      "limitations": [
+        "No interaction (e.g., touch, gaze direction beyond general orientation) confirms relational intent; spatial proximity alone is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0079_P3",
+      "visual_anchors": [
+        "rolled sleeves",
+        "white zipper line",
+        "clean lines and flat colors"
+      ],
+      "symbolic_mapping": [
+        "stylized clothing details → constructed identity",
+        "lack of environmental detail → interior focus"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The deliberate rendering of attire (zipper, cuffs) against an empty field emphasizes surface as a site of self-presentation, raising questions about how appearance mediates truth claims in the absence of contextual verification.",
+      "alternative_interpretations": [
+        "These details are standard illustration techniques for clarity and visual interest, not philosophical commentary."
+      ],
+      "limitations": [
+        "Clothing elements are generic and lack distinguishing marks; no contrast with other figures or settings prevents definitive attribution of symbolic intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:33:00.702488+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-29b7064b-46f8-9772-ac18-518187b5a978",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1001,
+        "total_tokens": 2534,
+        "completion_tokens_details": {
+          "text_tokens": 1001
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013231147bb355594e4c3d",
+      "usage": {
+        "completion_tokens": 862,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2954,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3816
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

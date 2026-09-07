@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F0262",
+  "sample_id": "PHL1800_HL_0058",
+  "file_name": "PHL1800_HL_0058.png",
+  "batch_id": "B007",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a white bus with decorative artwork passing a white clock tower",
+  "captions": {
+    "scene": [
+      "An overcast urban street with a large leafy tree on the left, a white multi-story clock tower in the center background, and low-rise buildings behind.",
+      "A white bus with blue and yellow trim and colorful side graphics occupies the foreground, partially obscuring the lower portion of the clock tower.",
+      "White painted road markings are visible on dark asphalt; a partial view of another vehicle appears to the far right."
+    ],
+    "action": [
+      "The bus is moving horizontally from left to right across the frame, as indicated by its orientation and position relative to lane markings.",
+      "Passengers are seated inside the bus, visible through open windows; at least six distinct heads or upper torsos are discernible.",
+      "The clock faces on the tower show time: the front-facing clock reads approximately 10:10; the side-facing clock is partially visible but unreadable due to angle and resolution."
+    ],
+    "rationale": [
+      "The bus’s alignment with road markings and lack of visible braking suggests motion rather than stopping.",
+      "The presence of multiple passengers inside implies the bus is in active service, not parked or abandoned.",
+      "The clock tower’s architectural features—ornamental gold-colored bands, two visible clock faces, and a tiled pyramidal roof—are consistent with civic timekeeping structures, though no signage confirms function."
+    ],
+    "object": [
+      "The bus has a white body with blue horizontal stripes near the base and a yellow stripe above them; it features large rectangular passenger windows along its side.",
+      "The side of the bus displays a stylized mural including a winged creature resembling a dragon or phoenix, rendered in blue, gray, and black with white highlights.",
+      "The clock tower is white, rectangular, and multi-tiered, topped with a brown-tiled pyramidal roof and a small finial; two circular clocks are mounted on adjacent faces, each framed in ornate gold-colored metalwork.",
+      "A large, mature tree with dense dark green foliage and thick, spreading branches extends over the left side of the scene, partially covering the background buildings.",
+      "Behind the bus and tower, a red sign with white lettering is partially visible on a building facade; the text is illegible due to distance and occlusion."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0262_P1",
+      "visual_anchors": [
+        "front clock face showing 10:10",
+        "bus in motion",
+        "passenger silhouettes"
+      ],
+      "symbolic_mapping": [
+        "the fixed clock contrasts with the moving bus, suggesting tension between measured time and lived temporality"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a static public clock marking an exact moment against a vehicle carrying anonymous individuals forward evokes the philosophical tension between objective chronology and subjective passage of life.",
+      "alternative_interpretations": [
+        "The clock may simply indicate local time for commuters; no symbolic intent is required."
+      ],
+      "limitations": [
+        "No evidence confirms the clock’s accuracy or cultural significance; the time reading could be coincidental or decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0262_P2",
+      "visual_anchors": [
+        "stylized dragon/phoenix mural on bus",
+        "ornamental gold bands on tower",
+        "uniform white paint on both structures"
+      ],
+      "symbolic_mapping": [
+        "decorative motifs on functional objects suggest identity constructed through appearance rather than utility"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Both the bus and tower employ ornamentation—mythic imagery and classical detailing—to assert presence and legitimacy, illustrating how collective identity is visually performed through surface aesthetics.",
+      "alternative_interpretations": [
+        "The decorations are purely aesthetic or commercial branding with no deeper meaning."
+      ],
+      "limitations": [
+        "The mural’s specific iconography is ambiguous; the dragon-like figure could be generic decoration rather than culturally coded symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0262_P3",
+      "visual_anchors": [
+        "multiple passengers visible inside bus",
+        "clock tower as civic landmark",
+        "shared street space"
+      ],
+      "symbolic_mapping": [
+        "coexistence of transient individuals and enduring infrastructure reflects social existence as layered and interdependent"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where anonymous individuals move collectively through a shared environment anchored by a permanent public structure, embodying the philosophical notion that social reality emerges from overlapping temporalities and spatial claims.",
+      "alternative_interpretations": [
+        "This is a routine traffic scene with no intentional commentary on social ontology."
+      ],
+      "limitations": [
+        "No facial expressions, interactions, or signage reveal social dynamics; the passengers are passive visual elements."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:26:38.074846+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3d830fc2-610a-9a54-8c12-97556d8392f5",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1050,
+        "total_tokens": 1859,
+        "completion_tokens_details": {
+          "text_tokens": 1050
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702262369fa04a0b19c4596",
+      "usage": {
+        "completion_tokens": 914,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2026,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2940
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

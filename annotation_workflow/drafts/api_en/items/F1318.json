@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1318",
+  "sample_id": "PHL1800_HAIV_0245",
+  "file_name": "PHL1800_HAIV_0245.png",
+  "batch_id": "B027",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single illustrated boy",
+  "captions": {
+    "scene": [
+      "A stylized background with alternating yellow and purple radial rays emanating from behind the subject.",
+      "Two trophies flank the boy: a golden one with a star on the left, and a light-blue one with a star on the right.",
+      "Three colored pencils (pink, teal, beige) float diagonally in the upper-right quadrant."
+    ],
+    "action": [
+      "The boy has closed eyes and a wide smile, indicating a joyful facial expression.",
+      "He wears a blue suit jacket over a white collared shirt and blue tie, with multiple medals pinned to his chest.",
+      "His hands are not visible; arms hang at his sides with cuffs showing."
+    ],
+    "rationale": [
+      "The presence of trophies, medals, and pencils suggests an academic or artistic achievement context, though no explicit event is shown.",
+      "The radial background implies emphasis or celebration, but the specific cause is not depicted.",
+      "The boy’s attire and accessories indicate formal recognition, yet no institution, ceremony, or audience is visible."
+    ],
+    "object": [
+      "The boy has short brown hair, rosy cheeks, and thick black eyebrows above closed eyes with upward-curving lashes.",
+      "A red ribbon with gold trim holds a large five-pointed gold star medal centered on his chest; a smaller yellow star with green floral motif is pinned to his left lapel.",
+      "A circular blue-and-white badge is affixed to his right lapel, featuring an indistinct internal pattern.",
+      "The golden trophy to the left has a star-shaped cutout on its front face and a single handle; the light-blue trophy to the right has a similar star cutout and two handles.",
+      "Three colored pencils—pink, teal, and beige—are arranged diagonally in the upper-right, with tips pointing down-left and erasers up-right."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1318_P1",
+      "visual_anchors": [
+        "gold star medal",
+        "blue badge",
+        "red ribbon"
+      ],
+      "symbolic_mapping": [
+        "star medal → recognition",
+        "ribbon → honor"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The layered insignia on the boy’s torso visually constructs a social identity conferred through external validation, suggesting that belonging and status are mediated by symbolic tokens rather than intrinsic qualities.",
+      "alternative_interpretations": [
+        "The objects may simply represent participation in a school award ceremony without deeper sociological implication."
+      ],
+      "limitations": [
+        "No text or contextual setting confirms the meaning of the badges; their design is generic and non-specific."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1318_P2",
+      "visual_anchors": [
+        "closed eyes",
+        "broad smile",
+        "rosy cheeks"
+      ],
+      "symbolic_mapping": [
+        "closed eyes → inner contentment",
+        "smile → fulfillment"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The boy’s facial expression emphasizes internal affect over outward performance, implying that identity can be anchored in subjective experience even when displayed within a public, ceremonial framework.",
+      "alternative_interpretations": [
+        "The expression may be a conventional cartoon trope for happiness, not intended as psychological depth."
+      ],
+      "limitations": [
+        "Cartoon stylization limits inference about genuine emotional state; expression is schematic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1318_P3",
+      "visual_anchors": [
+        "floating pencils",
+        "trophies",
+        "medals"
+      ],
+      "symbolic_mapping": [
+        "pencils → creative labor",
+        "trophies → outcome measurement"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of tools (pencils) and rewards (trophies/medals) frames intellectual or artistic work as a process whose value is retroactively assigned through institutional metrics, raising questions about instrumentalization of creativity.",
+      "alternative_interpretations": [
+        "Pencils and trophies may merely denote categories of achievement (e.g., art and academics) without commentary on labor systems."
+      ],
+      "limitations": [
+        "No depiction of the act of writing/drawing or judging process; only static symbols are present."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:17:11.722001+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c6f47484-54ea-9d5e-ae57-c3d1c7531fda",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 931,
+        "total_tokens": 2464,
+        "completion_tokens_details": {
+          "text_tokens": 931
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041655420d571425a544cd",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2887,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3682
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

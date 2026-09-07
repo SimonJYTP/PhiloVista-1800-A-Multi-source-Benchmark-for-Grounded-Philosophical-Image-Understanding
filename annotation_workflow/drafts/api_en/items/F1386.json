@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1386",
+  "sample_id": "PHL1800_HL_0510",
+  "file_name": "PHL1800_HL_0510.png",
+  "batch_id": "B029",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single beach umbrella with associated belongings on sand",
+  "captions": {
+    "scene": [
+      "A wide sandy beach under a clear cyan sky with gentle ocean waves in the background",
+      "An orange-and-white striped beach umbrella planted in the sand near scattered personal items",
+      "A dark vertical pole stands upright in the sand to the right, with a distant human figure visible near the waterline"
+    ],
+    "action": [
+      "The umbrella is stationary and fully open, casting a small shadow on the sand",
+      "A person is standing at the water’s edge, partially obscured by atmospheric haze",
+      "Clothing or fabric items lie crumpled on the sand beneath the umbrella"
+    ],
+    "rationale": [
+      "The umbrella’s open state suggests recent or intended use, though no occupant is present",
+      "The presence of belongings under the umbrella implies temporary human occupation of the spot",
+      "The distant figure’s posture and location suggest they are wading or standing in shallow water, but details are too indistinct for definitive classification"
+    ],
+    "object": [
+      "A striped beach umbrella with alternating orange and off-white panels is anchored in the sand.",
+      "Beneath the umbrella lies a blue-and-white patterned fabric item and a dark bundle, possibly clothing or a bag.",
+      "A tall, slender, dark-colored pole stands vertically in the sand approximately five meters to the right of the umbrella.",
+      "The ocean displays multiple parallel wave crests breaking gently near the shore, with white foam visible.",
+      "The sky is uniformly cyan with no visible clouds, and a faint horizontal haze line separates sky from sea."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1386_P1",
+      "visual_anchors": [
+        "open umbrella",
+        "abandoned belongings",
+        "distant solitary figure"
+      ],
+      "symbolic_mapping": [
+        "the empty shelter symbolizes provisional presence",
+        "the lone figure evokes spatial separation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of an occupied space (umbrella + belongings) and an unoccupied one (distant figure) reflects the transient nature of human presence and the inherent solitude within shared environments.",
+      "alternative_interpretations": [
+        "This may simply depict routine beach activity: one person resting under the umbrella while another walks toward the water."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or interaction cues confirm intention or relationship between figures."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1386_P2",
+      "visual_anchors": [
+        "vertical dark pole",
+        "uniform sand expanse",
+        "horizon line"
+      ],
+      "symbolic_mapping": [
+        "the pole acts as a marker of arbitrary division",
+        "the horizon enforces perceptual limit"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The stark vertical pole interrupts the otherwise continuous horizontal plane, suggesting imposed boundaries within perceived openness—highlighting how constructed markers shape experience of freedom and truth.",
+      "alternative_interpretations": [
+        "The pole is likely a functional object such as a signpost base or mooring stake, not symbolic."
+      ],
+      "limitations": [
+        "Material, purpose, and origin of the pole are visually undetermined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1386_P3",
+      "visual_anchors": [
+        "striped umbrella pattern",
+        "crumpled fabric",
+        "hazy figure"
+      ],
+      "symbolic_mapping": [
+        "patterned canopy as constructed identity",
+        "disorder of fabric as disrupted continuity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The deliberate patterning of the umbrella contrasts with the disarray of nearby items, implying a tension between curated self-presentation and the inevitable entropy of lived experience along a personal journey.",
+      "alternative_interpretations": [
+        "The fabric is casually placed; the pattern is purely decorative and carries no intentional meaning."
+      ],
+      "limitations": [
+        "No evidence confirms intentional arrangement or symbolic intent behind object placement."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:26:11.151595+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-31d96900-eb46-9d8e-938b-2e197324851a",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 889,
+        "total_tokens": 1658,
+        "completion_tokens_details": {
+          "text_tokens": 889
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042556d125ff012ea547fe",
+      "usage": {
+        "completion_tokens": 748,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1817,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2565
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

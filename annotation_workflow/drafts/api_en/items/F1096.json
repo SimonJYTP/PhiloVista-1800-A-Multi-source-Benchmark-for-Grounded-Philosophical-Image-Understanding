@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1096",
+  "sample_id": "PHL1800_MM_0068",
+  "file_name": "PHL1800_MM_0068.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals in a formal office setting",
+  "captions": {
+    "scene": [
+      "A brightly lit interior with neutral-toned walls, a wooden conference table, and two black office chairs.",
+      "The room contains no windows or decorative elements; lighting appears artificial and directional, casting soft shadows.",
+      "Two spiral-bound notepads and a small red object rest on the table surface."
+    ],
+    "action": [
+      "A standing man in a dark suit faces a seated woman in a blue suit, both oriented toward each other across the table.",
+      "The man’s mouth is closed but his facial expression suggests speech; a speech bubble originates near his head.",
+      "The woman holds a white handheld device in her right hand and rests her left hand on the table near a notepad."
+    ],
+    "rationale": [
+      "The speech bubble text implies an interpersonal conflict, though only one party’s utterance is shown; the other’s response is absent.",
+      "The formal attire and table setup suggest a professional context such as performance review or scheduling discussion.",
+      "The woman’s posture—seated, facing forward, holding a device—indicates attentiveness, but no visible emotional expression can be confirmed."
+    ],
+    "object": [
+      "A man with dark hair, wearing a navy suit, light blue shirt, diagonally striped blue tie, brown belt, and dark trousers stands beside the table.",
+      "A woman with brown hair tied in a ponytail wears a royal blue suit jacket over a light blue collared shirt and sits in a black ergonomic chair.",
+      "A rectangular wooden table with visible grain pattern supports two open spiral-bound notepads with lined pages and blue headers.",
+      "A white handheld electronic device, possibly a smartphone or tablet, is held in the woman’s right hand.",
+      "A small red rectangular object, likely a pen cap or marker, lies between the notepads on the table."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1096_P1",
+      "visual_anchors": [
+        "speech bubble with explicit statement",
+        "man standing vs woman seated",
+        "formal business attire"
+      ],
+      "symbolic_mapping": [
+        "standing position → authority or dominance",
+        "speech bubble → unilateral assertion of judgment"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes asymmetrical power dynamics where verbal assertion overrides procedural fairness, reflecting how social roles can legitimize subjective bias in institutional settings.",
+      "alternative_interpretations": [
+        "This may depict routine managerial feedback, with the speech bubble stylized for narrative emphasis rather than literal dialogue."
+      ],
+      "limitations": [
+        "No facial expression or body language from the woman confirms reception or resistance to the statement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1096_P2",
+      "visual_anchors": [
+        "two notepads on table",
+        "woman holding device",
+        "empty chair opposite man"
+      ],
+      "symbolic_mapping": [
+        "notepads → record-keeping or accountability",
+        "device → mediation of communication or distraction"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of analog documentation (notepads) and digital mediation (handheld device) raises questions about epistemic authority: whose version of events gets recorded, and how technology shapes perceived truth in labor contexts.",
+      "alternative_interpretations": [
+        "The objects are standard office tools with no symbolic intent; their presence reflects functional workspace organization."
+      ],
+      "limitations": [
+        "The content of the notepads is illegible and the device screen is blank or unreadable."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1096_P3",
+      "visual_anchors": [
+        "man’s direct gaze toward woman",
+        "woman’s back-facing orientation",
+        "uniform lighting without shadows indicating concealment"
+      ],
+      "symbolic_mapping": [
+        "back-facing view → obscured subjectivity",
+        "direct gaze → imposition of perspective"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visual framing privileges the speaker’s viewpoint while denying the listener visual agency, illustrating how identity is constructed through relational visibility—and how ethical responsibility may be evaded when one party remains unseen.",
+      "alternative_interpretations": [
+        "The rear view is a conventional compositional choice to focus attention on the speaker, not a deliberate erasure of the listener’s identity."
+      ],
+      "limitations": [
+        "The woman’s face is entirely occluded; no features confirm identity, emotion, or intent."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:50:00.510932+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-240c79ff-d8da-9441-9d52-247570b3be66",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 991,
+        "total_tokens": 2524,
+        "completion_tokens_details": {
+          "text_tokens": 991
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034945ffa72987c7904017",
+      "usage": {
+        "completion_tokens": 852,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2943,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3795
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

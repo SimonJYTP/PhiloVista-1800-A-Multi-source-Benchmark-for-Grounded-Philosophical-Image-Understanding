@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0207",
+  "sample_id": "PHL1800_HAIV_0434",
+  "file_name": "PHL1800_HAIV_0434.png",
+  "batch_id": "B006",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized teacup with a clock-tower illustration and steam forming a landmass silhouette, set against a Union Jack flag",
+  "captions": {
+    "scene": [
+      "A white ceramic teacup with saucer centered on a full-frame Union Jack background",
+      "A golden-brown silhouette resembling a geographic landmass rises vertically from the cup's rim as steam",
+      "Inside the cup, a brown-and-black clock tower with a white circular face is depicted; below it, fragmented gold text appears partially legible"
+    ],
+    "action": [
+      "Steam ascends from the cup’s rim in a continuous plume that terminates in a landmass-shaped silhouette",
+      "The clock tower stands upright within the cup interior, fixed relative to the cup’s geometry",
+      "The teacup rests statically on its saucer with no visible motion or spillage"
+    ],
+    "rationale": [
+      "The landmass shape in the steam plume resembles a known island geography, but without labels or scale, identification is uncertain",
+      "The fragmented gold text beneath the clock tower is visually present but largely illegible due to distortion and partial occlusion",
+      "The Union Jack fills the entire background uniformly, suggesting intentional symbolic framing rather than incidental setting"
+    ],
+    "object": [
+      "The teacup is off-white with a black rim and handle, and sits on a matching saucer with a black outer edge.",
+      "The clock tower inside the cup has a square base, vertical stripes, a white circular face without numerals, and a pointed spire topped with a small finial.",
+      "The steam plume originates at the cup’s rim, rises vertically, and expands into a solid tan silhouette with irregular coastlines and internal indentations.",
+      "The background consists of the UK national flag: a red cross overlaid with white-edged diagonal red saltires on a blue field, arranged symmetrically around the cup.",
+      "Below the clock tower, there are five disjointed gold-colored glyphs resembling letters or symbols, but none form a fully readable word."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0207_P1",
+      "visual_anchors": [
+        "steam forming a landmass",
+        "clock tower inside cup",
+        "Union Jack background"
+      ],
+      "symbolic_mapping": [
+        "steam → ephemeral national identity",
+        "cup → domestic ritual container"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image suggests national identity emerges from everyday domestic practice, yet remains fragile and transient like steam, shaped by historical symbols (clock tower) and collective frameworks (flag).",
+      "alternative_interpretations": [
+        "It may simply depict British tea culture with iconic landmarks, using visual puns without philosophical intent."
+      ],
+      "limitations": [
+        "No textual confirmation links the landmass to any specific nation; the mapping relies on resemblance alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0207_P2",
+      "visual_anchors": [
+        "clock tower with blank face",
+        "static cup",
+        "rising steam"
+      ],
+      "symbolic_mapping": [
+        "blank clock face → indeterminate time",
+        "rising steam → passage without measurement"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "Time is presented as unmarked and unquantified within a culturally bounded vessel, implying that temporal experience is shaped by context rather than objective measure, and that movement (steam) occurs without clear destination.",
+      "alternative_interpretations": [
+        "The blank face may be an artistic simplification for stylistic clarity, not a conceptual statement about time."
+      ],
+      "limitations": [
+        "The clock face lacks hands or numerals, but this could be due to minimalism rather than intentional abstraction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0207_P3",
+      "visual_anchors": [
+        "fragmented gold text",
+        "cup containing monument",
+        "flag as backdrop"
+      ],
+      "symbolic_mapping": [
+        "fragmented text → incomplete narrative",
+        "monument in cup → institutional memory domesticated"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "Institutional symbols are consumed and recontextualized within private ritual, while the fractured inscription hints at contested or unstable historical accounts embedded in national iconography.",
+      "alternative_interpretations": [
+        "The text fragments may be decorative flourishes with no semantic function, and the composition may be purely aesthetic."
+      ],
+      "limitations": [
+        "The text is unreadable; assigning meaning to fragmentation assumes intentionality not verifiable from image alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:21:53.906479+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0c298d92-c3f1-9f80-9301-94c545a1f3b2",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 996,
+        "total_tokens": 2529,
+        "completion_tokens_details": {
+          "text_tokens": 996
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070221414bf5627c504e4c50",
+      "usage": {
+        "completion_tokens": 855,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2954,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3809
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

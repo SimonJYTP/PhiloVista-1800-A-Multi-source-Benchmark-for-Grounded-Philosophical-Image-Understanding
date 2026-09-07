@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0999",
+  "sample_id": "PHL1800_HL_0442",
+  "file_name": "PHL1800_HL_0442.png",
+  "batch_id": "B021",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man and a woman standing on a crosswalk with two dogs, viewed from behind",
+  "captions": {
+    "scene": [
+      "Urban street intersection at sunset with strong backlighting casting orange glare and long shadows",
+      "Pedestrians waiting or crossing at a marked crosswalk; vehicles including a white bus and cars stopped or moving in background",
+      "Buildings with multi-story facades line the street; traffic signal pole and street signs are visible"
+    ],
+    "action": [
+      "The man wears a purple jersey with 'ANTHONY 7' printed on the back and stands beside a brown dog facing forward",
+      "The woman with blonde hair wears a light green tank top and denim shorts, standing beside a black dog that faces away from camera",
+      "Multiple pedestrians are mid-crossing or paused on the crosswalk; one person holds a black tote bag, another carries a child"
+    ],
+    "rationale": [
+      "The intense backlight suggests late afternoon or early evening, but exact time cannot be confirmed without clock or shadow angle measurement",
+      "The presence of two dogs on leashes implies intentional companionship or walking activity, though leash attachment is not fully visible",
+      "The bus number is not legible on its rear due to glare and resolution"
+    ],
+    "object": [
+      "A black ornate lamppost occupies the left foreground, partially obscuring a woman in dark clothing standing beside it.",
+      "A white transit bus is visible in the background; its side windows reflect ambient light.",
+      "Two dogs stand on the crosswalk: one black, medium-sized, facing away; one brown, medium-sized, standing alert beside the man.",
+      "A directional sign is mounted on a pole in the upper right quadrant, but text is not clearly legible due to glare.",
+      "At least seven distinct pedestrians are visible on or near the crosswalk, including children and adults in varied attire."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0999_P1",
+      "visual_anchors": [
+        "backlit silhouettes of people",
+        "crosswalk lines converging toward vanishing point",
+        "two dogs positioned symmetrically beside humans"
+      ],
+      "symbolic_mapping": [
+        "crosswalk as metaphor for shared temporal passage",
+        "silhouettes suggesting anonymity within collective movement"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image frames individuals as transient presences within a structured urban flow, where shared infrastructure (the crosswalk) mediates both physical and existential coexistence across fleeting moments.",
+      "alternative_interpretations": [
+        "A routine street scene capturing commuter behavior during golden hour, with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expressions or direct gaze are visible; all subjects face away, limiting inference about intention or emotion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0999_P2",
+      "visual_anchors": [
+        "man wearing jersey with name and number",
+        "woman holding no visible object",
+        "dogs present but unbranded"
+      ],
+      "symbolic_mapping": [
+        "jersey as marker of assigned identity versus anonymous pedestrian forms"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between the named, numbered garment and the indistinct figures around highlights how identity is selectively performed and recognized in public space through visual signifiers.",
+      "alternative_interpretations": [
+        "The jersey is casual sportswear with no symbolic intent; its visibility is incidental due to lighting and posture."
+      ],
+      "limitations": [
+        "The name 'ANTHONY' may refer to a player, brand, or personal choice—no contextual confirmation exists in the image."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0999_P3",
+      "visual_anchors": [
+        "sun flare overwhelming upper frame",
+        "pedestrians paused mid-stride",
+        "dogs standing still beside humans"
+      ],
+      "symbolic_mapping": [
+        "light saturation as erasure of detail, emphasizing presence over individuality"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The overwhelming light imposes a visual constraint that equalizes all figures into momentary silhouettes, suggesting that temporal finitude renders individual distinctions provisional within shared experience.",
+      "alternative_interpretations": [
+        "Glare is a photographic artifact of shooting into the sun, not an intentional aesthetic statement."
+      ],
+      "limitations": [
+        "The flare obscures background details, preventing verification of whether the pause is voluntary or enforced by traffic signals."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (at least nine vs. actual visible count); bus number '85' is not visible; 'ONE WAY' sign is partially obscured and not clearly legible; dogs' leash attachment is not confirmed; some action descriptions lack visual support."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:36:59.151667+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fecf5df2-b674-9cc5-a7bd-9962800693fe",
+      "usage": {
+        "prompt_tokens": 869,
+        "completion_tokens": 1023,
+        "total_tokens": 1892,
+        "completion_tokens_details": {
+          "text_tokens": 1023
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 362,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033648b09635a90e444e65",
+      "usage": {
+        "completion_tokens": 901,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2067,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2968
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

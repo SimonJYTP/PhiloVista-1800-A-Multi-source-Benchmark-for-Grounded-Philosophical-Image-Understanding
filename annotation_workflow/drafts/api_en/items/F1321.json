@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1321",
+  "sample_id": "PHL1800_IRFL_0345",
+  "file_name": "PHL1800_IRFL_0345.jpg",
+  "batch_id": "B027",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult human female",
+  "captions": {
+    "scene": [
+      "A studio portrait with a uniform dark gray background",
+      "Soft, directional lighting illuminates the subject’s face from front-left",
+      "No furniture, props, or environmental context visible"
+    ],
+    "action": [
+      "The subject gazes toward the camera with eyes open and lips slightly parted",
+      "Her right hand rests gently on her left shoulder/clavicle region",
+      "Hair is styled in a high, tight bun with loose strands framing the face"
+    ],
+    "rationale": [
+      "The even skin tone and absence of shadows suggest professional studio lighting rather than natural light",
+      "The precise makeup application (sharp lip line, defined brows) implies intentional styling, though intent cannot be confirmed",
+      "The neutral expression and direct gaze may indicate posing for a photograph, but no camera or photographer is visible"
+    ],
+    "object": [
+      "The subject has fair skin, blue irises, and light brown hair with golden highlights.",
+      "Her lips are coated in glossy, saturated red lipstick with a sharp upper-lip contour.",
+      "A high bun secures most hair at the back of the head; several fine strands fall near the temple and nape.",
+      "Her visible ear is unadorned and fully exposed; no jewelry is present on neck, ears, or hands.",
+      "The shoulders are bare, suggesting strapless attire or partial nudity, with no fabric visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1321_P1",
+      "visual_anchors": [
+        "red lipstick",
+        "high bun",
+        "bare shoulders"
+      ],
+      "symbolic_mapping": [
+        "red lipstick as deliberate self-presentation",
+        "bare shoulders as controlled exposure"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The image foregrounds appearance as a curated interface between self and observer, where cosmetic and stylistic choices constitute a visible claim to identity.",
+      "alternative_interpretations": [
+        "This is a commercial beauty photograph emphasizing product effect, not philosophical statement."
+      ],
+      "limitations": [
+        "No contextual cues confirm intentionality beyond visual presentation; styling could serve purely aesthetic or commercial goals."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1321_P2",
+      "visual_anchors": [
+        "direct gaze",
+        "neutral expression",
+        "symmetrical framing"
+      ],
+      "symbolic_mapping": [
+        "gaze as assertion of presence",
+        "framing as containment of subjectivity"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The subject’s centered, frontal orientation and sustained eye contact evoke the phenomenological condition of being seen—and thereby recognized—as a social agent within a shared visual field.",
+      "alternative_interpretations": [
+        "The pose is standard for portraiture and reflects convention rather than existential assertion."
+      ],
+      "limitations": [
+        "The absence of interaction partners or social setting prevents verification of social context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1321_P3",
+      "visual_anchors": [
+        "flawless skin texture",
+        "precise makeup edges",
+        "controlled lighting"
+      ],
+      "symbolic_mapping": [
+        "technical perfection as erasure of contingency"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The image suspends temporal decay through idealized representation: smooth skin and static composition resist signs of aging, evoking a desire to transcend bodily temporality.",
+      "alternative_interpretations": [
+        "This reflects contemporary beauty standards rather than metaphysical concern with mortality."
+      ],
+      "limitations": [
+        "No aging markers are present, but their absence does not prove intentional denial of time; it may simply reflect youth or retouching."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:17:40.705744+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2c389daf-c850-9199-abd7-56a9e935d1b2",
+      "usage": {
+        "prompt_tokens": 1470,
+        "completion_tokens": 815,
+        "total_tokens": 2285,
+        "completion_tokens_details": {
+          "text_tokens": 815
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 963,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070417046b09d89f89134fd0",
+      "usage": {
+        "completion_tokens": 672,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2688,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3360
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

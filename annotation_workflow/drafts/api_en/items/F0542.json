@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0542",
+  "sample_id": "PHL1800_IRFL_0112",
+  "file_name": "PHL1800_IRFL_0112.jpg",
+  "batch_id": "B013",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a white 3D humanoid figure and a round analog clock",
+  "captions": {
+    "scene": [
+      "A white stylized humanoid figure stands on a plain white background next to a silver-rimmed analog clock.",
+      "A red ribbon extends from the clock face, loops around the figure’s waist, and trails behind it.",
+      "The clock face shows numerals 1 through 12 in black; the hour hand points at 12 and the minute hand points at 12."
+    ],
+    "action": [
+      "The figure has both arms raised upward with clenched fists, one leg lifted forward in a running or leaping pose.",
+      "The red ribbon is taut between the clock and the figure’s midsection, suggesting motion or tension.",
+      "The figure’s posture indicates dynamic movement away from the clock, with feet not fully contacting the ground."
+    ],
+    "rationale": [
+      "The figure’s raised arms and lifted leg suggest celebratory or energetic motion rather than static posing.",
+      "The ribbon connects the figure to the clock, implying a relationship of constraint, connection, or passage.",
+      "The clock hands both point to 12, indicating either noon or midnight, but without context, the specific time of day cannot be determined."
+    ],
+    "object": [
+      "The clock has a circular silver-colored metallic rim and a white face with black Arabic numerals 1 through 12 evenly spaced around the perimeter.",
+      "Two black hands are present on the clock: a shorter hour hand and a longer minute hand, both aligned vertically pointing to the 12 position.",
+      "A smooth, glossy red ribbon originates near the 3 o’clock position on the clock rim, wraps around the figure’s torso, and extends diagonally toward the lower right corner.",
+      "The humanoid figure is featureless, white, and rendered in 3D with simplified limbs, no facial features, and no clothing.",
+      "The figure’s left foot is planted on the surface while the right foot is raised and bent at the knee, with the heel higher than the toe."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0542_P1",
+      "visual_anchors": [
+        "red ribbon connecting clock and figure",
+        "figure’s arms raised in triumph",
+        "clock showing 12:00"
+      ],
+      "symbolic_mapping": [
+        "ribbon → temporal constraint",
+        "raised arms → agency or liberation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure appears to break free from the binding of time, symbolizing human striving against temporal finitude.",
+      "alternative_interpretations": [
+        "The ribbon may represent continuity rather than constraint—e.g., a timeline being actively traversed."
+      ],
+      "limitations": [
+        "No explicit indication that the ribbon is restrictive; it could be decorative or supportive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0542_P2",
+      "visual_anchors": [
+        "featureless white figure",
+        "uniform color and form",
+        "no distinguishing marks"
+      ],
+      "symbolic_mapping": [
+        "lack of features → universal human subject",
+        "white form → neutrality or abstraction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The anonymous figure embodies a generic human agent, emphasizing shared experience over individual identity in relation to time.",
+      "alternative_interpretations": [
+        "The figure may simply be a default 3D model with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "Absence of features does not necessarily imply universality; it may reflect technical simplicity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0542_P3",
+      "visual_anchors": [
+        "clock hands at 12:00",
+        "figure mid-stride",
+        "ribbon taut"
+      ],
+      "symbolic_mapping": [
+        "12:00 → threshold moment",
+        "mid-stride → decision point or transition"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The image captures a liminal instant—simultaneously a beginning (midnight/noon) and an act of forward motion—highlighting choice within temporal boundaries.",
+      "alternative_interpretations": [
+        "The scene may depict a race start or finish line, with the clock as a timer rather than a metaphor."
+      ],
+      "limitations": [
+        "The clock lacks second hand or AM/PM indicator, so ‘threshold’ interpretation relies on cultural convention, not visual evidence."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:55:18.972069+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1276a169-3ad6-9878-9011-8c5e1d8ec770",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 983,
+        "total_tokens": 1562,
+        "completion_tokens_details": {
+          "text_tokens": 983
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025502c49b6891e3ae420b",
+      "usage": {
+        "completion_tokens": 832,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1630,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2462
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

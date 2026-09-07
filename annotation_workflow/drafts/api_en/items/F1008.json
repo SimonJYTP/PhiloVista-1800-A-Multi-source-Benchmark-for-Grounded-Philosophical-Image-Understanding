@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1008",
+  "sample_id": "PHL1800_HL_0477",
+  "file_name": "PHL1800_HL_0477.png",
+  "batch_id": "B022",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a seated person with dark dreadlocks wearing glasses, a striped shirt, and a patterned tie",
+  "captions": {
+    "scene": [
+      "An indoor office setting with beige filing cabinets, potted plants on top of one cabinet, and wooden shelves holding boxes and papers.",
+      "A closed wooden door is visible in the background behind the subject, with a dark object (likely a coat or bag) partially visible on a cabinet to the left of the door.",
+      "A cluttered desk surface in the foreground contains scattered papers, a stapler, pens, and a small black speaker-like object."
+    ],
+    "action": [
+      "The subject is seated upright, facing forward, with arms resting near the torso and hands not fully visible.",
+      "The subject’s mouth is closed in a neutral or slightly downturned expression; eyes are open and directed toward the camera.",
+      "The subject has dark hair styled in dreadlocks, with no hat present."
+    ],
+    "rationale": [
+      "The presence of filing cabinets, shelves with office supplies, and a desk strongly suggests an office environment, though no signage confirms this.",
+      "The subject’s posture and gaze suggest they are posing for or reacting to a photograph, but no explicit photographic equipment or motion is visible.",
+      "The dark object in the background appears as a silhouette on a cabinet; its identity (e.g., coat, bag) or full presence cannot be confirmed due to occlusion and low contrast, and it is not a person."
+    ],
+    "object": [
+      "A light blue and white vertically striped long-sleeve button-down shirt is worn by the subject, with collar fully fastened and top button closed.",
+      "A dark blue necktie with evenly spaced lighter blue circular patterns hangs centered over the shirt, knotted in a standard knot.",
+      "Black-framed eyeglasses with rectangular lenses rest on the subject’s face, with visible temple arms extending past the ears.",
+      "Two potted plants sit atop a beige metal filing cabinet: one with broad green leaves in a terracotta pot, the other in a woven basket with thin, spiky foliage.",
+      "A beige two-drawer filing cabinet stands to the subject’s left, with silver horizontal handles and a small white label affixed to the top drawer’s front."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1008_P1",
+      "visual_anchors": [
+        "striped shirt",
+        "patterned tie",
+        "dreadlocks"
+      ],
+      "symbolic_mapping": [
+        "the juxtaposition of formal attire (shirt/tie) with informal hair styling (dreadlocks) may reflect tension between institutional conformity and personal expression"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visual layering of professional dress codes with nonstandard hair reflects a negotiation of self-presentation within structured social roles, where appearance becomes a site of subtle resistance or hybrid identity.",
+      "alternative_interpretations": [
+        "The dreadlocks may simply be a personal hairstyle with no symbolic intent; the outfit could reflect ordinary workplace variation rather than deliberate statement."
+      ],
+      "limitations": [
+        "No textual labels, logos, or contextual markers confirm institutional affiliation or intentional styling choices."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1008_P2",
+      "visual_anchors": [
+        "cluttered desk",
+        "stacked boxes on shelves",
+        "dark object on cabinet"
+      ],
+      "symbolic_mapping": [
+        "accumulated physical objects and obscured presence evoke the persistence of labor and unseen contributors within bureaucratic systems"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The visible disorder of work materials and the marginal presence of a dark object imply that individual agency is embedded within collective, often invisible, labor processes—highlighting how meaning and value emerge from shared, unremarked infrastructure.",
+      "alternative_interpretations": [
+        "Clutter may indicate temporary disorganization rather than systemic condition; the dark object may be irrelevant to the scene’s meaning."
+      ],
+      "limitations": [
+        "The dark object’s role and relationship to the subject are indeterminate; no action or interaction is captured."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1008_P3",
+      "visual_anchors": [
+        "direct gaze toward camera",
+        "neutral facial expression",
+        "static seated posture"
+      ],
+      "symbolic_mapping": [
+        "the unsmiling, steady look into the lens may signify refusal of performative affect, asserting presence without concession to expected emotional display"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "By maintaining a composed, unembellished visage amid an environment of administrative artifacts, the subject embodies a quiet ethical stance: presence as testimony, where neutrality itself becomes a form of accountability to the act of being seen.",
+      "alternative_interpretations": [
+        "The expression may result from fatigue, distraction, or momentary pause—not philosophical intention."
+      ],
+      "limitations": [
+        "Facial expression is ambiguous; micro-expressions cannot be reliably interpreted from still image resolution."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The candidate incorrectly describes the subject as wearing a \"dark knitted hat\"; the subject has dark hair styled in dreadlocks, not a hat. The background silhouette is not a \"second figure\" but a dark object (likely a coat or bag) on a cabinet, not a person."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:38:25.436784+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4300b0ab-87de-9065-a7d4-5387d2b32cc8",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 1088,
+        "total_tokens": 1789,
+        "completion_tokens_details": {
+          "text_tokens": 1088
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070338047e1cdd33c1644e56",
+      "usage": {
+        "completion_tokens": 1020,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1906,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2926
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

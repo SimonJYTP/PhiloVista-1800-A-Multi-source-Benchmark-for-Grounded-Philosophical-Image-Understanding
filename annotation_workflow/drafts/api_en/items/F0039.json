@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0039",
+  "sample_id": "PHL1800_HL_0196",
+  "file_name": "PHL1800_HL_0196.png",
+  "batch_id": "B003",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a boy reading a book while seated on a rug beside a dog and another person",
+  "captions": {
+    "scene": [
+      "An indoor setting with a colorful world-map rug, bookshelves in the background, and furniture including a black stool and white table legs.",
+      "A child sits cross-legged on a blue-and-green rug, holding an open book; a brindle-coated dog lies on a plaid blanket nearby.",
+      "A second person with long brown hair is partially visible on the right, facing the dog and the boy."
+    ],
+    "action": [
+      "The boy holds an open book with both hands and looks down at its pages; his left hand rests on the right page.",
+      "The dog lies prone on a red-white-black plaid blanket, head raised, facing the boy, wearing a green collar and a black leash attached to a harness.",
+      "The second person leans forward slightly, with their back and right shoulder visible, oriented toward the dog and boy."
+    ],
+    "rationale": [
+      "The boy’s posture and gaze direction strongly suggest he is engaged in reading, though the text inside the book is unreadable.",
+      "The dog’s relaxed but alert posture—head up, eyes directed toward the boy—indicates attention rather than sleep or disinterest.",
+      "The presence of multiple people and a dog in close proximity on floor-level surfaces suggests a structured activity (e.g., reading session), but no signage or explicit context confirms this."
+    ],
+    "object": [
+      "A boy with short dark hair wears a gray hooded sweatshirt with a white rectangular name tag on the left chest and light-blue jeans; he wears a watch on his left wrist and white sneakers with black laces.",
+      "A medium-sized dog with brindle fur, cropped ears, and a wrinkled face lies on a red-white-black plaid blanket; it wears a green fabric collar and a black harness with a visible leash loop.",
+      "A second person with long brown hair wears a dark green shirt with white vertical stripes on the sleeve; only their right side and back are visible.",
+      "An open paperback book rests on the boy’s lap; its pages are white with printed text and possibly illustrations, but no words are legible.",
+      "A multicolored rug depicting continents in green and blue covers part of the floor; adjacent to it is a smaller green-and-blue patterned mat with fish motifs."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0039_P1",
+      "visual_anchors": [
+        "boy reading open book",
+        "dog attentively facing boy",
+        "plaid blanket under dog"
+      ],
+      "symbolic_mapping": [
+        "the book as a medium of transmitted knowledge",
+        "the dog’s gaze as nonverbal witness or participant"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The scene visually enacts a moment where knowledge transmission occurs not solely through human-to-human channels but includes a nonhuman observer, suggesting that truth or learning may be witnessed or co-constituted across species boundaries.",
+      "alternative_interpretations": [
+        "The dog is simply resting near the boy; its orientation is coincidental and not indicative of attention or participation."
+      ],
+      "limitations": [
+        "No evidence confirms the dog’s cognitive engagement; gaze direction alone does not prove comprehension or intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0039_P2",
+      "visual_anchors": [
+        "boy seated on floor rug",
+        "second person leaning in",
+        "shared spatial proximity on low surface"
+      ],
+      "symbolic_mapping": [
+        "floor-level seating as egalitarian positioning",
+        "shared rug as symbolic common ground"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The arrangement of bodies at floor level, without hierarchical furniture, visually emphasizes interdependence and shared presence, reflecting a social existence grounded in mutual accessibility rather than status differentiation.",
+      "alternative_interpretations": [
+        "Floor seating may result from practical constraints (e.g., limited chairs) rather than intentional egalitarian design."
+      ],
+      "limitations": [
+        "Only partial views of the second person and no facial expressions or gestures confirm intent or relational dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0039_P3",
+      "visual_anchors": [
+        "white name tag on boy’s hoodie",
+        "green collar on dog",
+        "leash attached to harness"
+      ],
+      "symbolic_mapping": [
+        "name tag as marker of assigned identity",
+        "collar and leash as markers of managed agency"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Visible identifiers—human name tag and animal collar—highlight how identity is externally inscribed and regulated through appearance, raising questions about autonomy versus categorization in social contexts.",
+      "alternative_interpretations": [
+        "The name tag may be blank or decorative; the collar and leash serve purely functional safety purposes with no symbolic intent."
+      ],
+      "limitations": [
+        "The text on the name tag is unreadable, so its content and purpose cannot be verified; the dog’s expression provides no insight into its subjective experience of the collar."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:51:48.052522+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b64de26c-dcaf-93a2-a714-1f75c6ba254e",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 1096,
+        "total_tokens": 1825,
+        "completion_tokens_details": {
+          "text_tokens": 1096
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015124ec71cd8c23594973",
+      "usage": {
+        "completion_tokens": 961,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1985,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2946
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

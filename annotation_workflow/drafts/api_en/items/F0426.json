@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0426",
+  "sample_id": "PHL1800_IRFL_0408",
+  "file_name": "PHL1800_IRFL_0408.jpg",
+  "batch_id": "B011",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person seated on a sofa",
+  "captions": {
+    "scene": [
+      "A bright interior space with a large window showing green foliage outside.",
+      "A dark gray fabric-covered sofa occupies the left and center foreground.",
+      "A small potted plant with thin leaves sits on a surface behind the sofa."
+    ],
+    "action": [
+      "The person is wrapped in a thick dark gray blanket that covers their torso, shoulders, and head partially.",
+      "The person’s head is tilted downward and to the right, with eyes directed toward their lap or lower field of view.",
+      "The person’s right hand appears partially visible beneath the blanket near their midsection."
+    ],
+    "rationale": [
+      "The blanket’s bulk and drape suggest it is soft and heavy, possibly fleece or plush material, based on visible texture and folds.",
+      "The person’s posture—leaning forward with head lowered—is consistent with focused attention on something below eye level, though the object of focus is not visible.",
+      "Natural light enters from the window, illuminating the right side of the scene more brightly than the left, indicating daytime."
+    ],
+    "object": [
+      "A dark gray blanket with deep folds and a soft-textured surface envelops the person from shoulders to lap.",
+      "The person has light brown hair pulled back, with strands visible near the temple and nape.",
+      "A dark upholstered sofa with a textured weave forms the seating surface and left armrest.",
+      "A white-framed window with a horizontal rail divides interior and exterior views; beyond it, blurred green trees are visible.",
+      "A small plant with slender, spiky green leaves sits in a light-colored pot on a shelf or table behind the sofa."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0426_P1",
+      "visual_anchors": [
+        "dark blanket enveloping the body",
+        "downcast gaze",
+        "window revealing exterior greenery"
+      ],
+      "symbolic_mapping": [
+        "blanket as enclosure representing withdrawal",
+        "window as threshold between inner and outer worlds"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The figure’s partial concealment by the blanket juxtaposed with the open window suggests a tension between self-imposed limitation and external possibility, evoking questions about voluntary isolation versus societal expectation of engagement.",
+      "alternative_interpretations": [
+        "The person may simply be resting or feeling cold, with no symbolic intent implied by the arrangement."
+      ],
+      "limitations": [
+        "No facial expression or contextual objects (e.g., device, book) confirm intentional withdrawal or contemplation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0426_P2",
+      "visual_anchors": [
+        "head lowered toward lap",
+        "absence of visible hands or tools",
+        "uniform lighting from window"
+      ],
+      "symbolic_mapping": [
+        "downward orientation as suspension of action",
+        "neutral lighting as absence of dramatic revelation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The stillness and lack of active engagement imply a moment suspended outside linear progression—neither advancing nor retreating—raising reflection on how choice is deferred or absorbed in quiet duration.",
+      "alternative_interpretations": [
+        "The person may be reading or using a device hidden under the blanket, making the pose functional rather than existential."
+      ],
+      "limitations": [
+        "The lap area is obscured; no evidence confirms absence of activity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0426_P3",
+      "visual_anchors": [
+        "single occupant on wide sofa",
+        "blanket merging with sofa color",
+        "background plant as sole decorative element"
+      ],
+      "symbolic_mapping": [
+        "monochrome palette as reduction of identity to minimal form",
+        "solitary presence amid domestic space as negotiation of self within structure"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visual erasure of distinguishing features through draping and muted tones invites consideration of how identity is mediated—or concealed—by material environments and habitual postures within private space.",
+      "alternative_interpretations": [
+        "The image captures a casual, unstyled moment; color harmony results from interior design choices, not conceptual framing."
+      ],
+      "limitations": [
+        "No clothing, accessories, or facial features are visible to assess identity markers or intentionality."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:45:59.661772+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1d47cfc0-8486-9856-b516-1ae3c8bed594",
+      "usage": {
+        "prompt_tokens": 901,
+        "completion_tokens": 951,
+        "total_tokens": 1852,
+        "completion_tokens_details": {
+          "text_tokens": 951
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 394,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024536efafd17010dd4fc4",
+      "usage": {
+        "completion_tokens": 811,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2053,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2864
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

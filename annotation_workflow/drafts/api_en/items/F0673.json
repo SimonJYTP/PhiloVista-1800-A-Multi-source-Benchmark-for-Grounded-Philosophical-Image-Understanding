@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0673",
+  "sample_id": "PHL1800_HL_0128",
+  "file_name": "PHL1800_HL_0128.png",
+  "batch_id": "B015",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person with face paint holding a mirror",
+  "captions": {
+    "scene": [
+      "Interior of a vehicle with padded beige seating and a window featuring a star-and-moon patterned decal",
+      "Dim ambient lighting with a focused light source illuminating the subject's face and mirror",
+      "A reflective surface (mirror) held in front of the subject, showing a cartoon character design"
+    ],
+    "action": [
+      "The person is smiling with visible teeth and looking toward their reflection in the mirror",
+      "The person holds a purple hand mirror decorated with Mickey Mouse and stars",
+      "Face paint is applied on the right side of the person’s face: blue swirls, pink accents, white dots, and a stylized eye motif"
+    ],
+    "rationale": [
+      "The mirror’s orientation and gaze direction suggest the person is observing their own face paint",
+      "The presence of decorative face paint and a themed mirror implies participation in a festive or performance-related activity",
+      "The star-patterned window decal and interior suggest a themed transport vehicle, though the exact type is not identifiable"
+    ],
+    "object": [
+      "The person has long, dark hair falling over both shoulders and wears a dark purple garment.",
+      "The hand mirror has a purple background, features a full-color depiction of Mickey Mouse in red shorts and yellow shoes, surrounded by yellow stars and a directional signpost with unreadable text.",
+      "Face paint includes a large blue spiral extending from the temple to the cheek, a pink teardrop shape near the outer eye, white glitter-like dots along the brow and cheekbone, and a stylized white eye with black pupil inside the pink shape.",
+      "The vehicle seat is upholstered in textured beige material with visible stitching and a black trim edge.",
+      "The window behind the subject shows a translucent film with repeating black star and crescent moon silhouettes; no external scenery is visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0673_P1",
+      "visual_anchors": [
+        "face paint asymmetry",
+        "mirror reflection",
+        "Mickey Mouse image"
+      ],
+      "symbolic_mapping": [
+        "asymmetrical face paint represents constructed identity",
+        "mirror signifies self-observation in performance"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The partial application of face paint—only one side—suggests identity as a curated, incomplete performance, where self-perception (via mirror) mediates between inner self and external persona.",
+      "alternative_interpretations": [
+        "The face paint may simply be unfinished due to time constraints or artistic choice, with no symbolic intent."
+      ],
+      "limitations": [
+        "Only one side of the face is painted; the unpainted side is fully visible, preventing confirmation of intentional asymmetry versus incompleteness."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0673_P2",
+      "visual_anchors": [
+        "star-patterned window decal",
+        "hand mirror with cartoon character",
+        "dim interior lighting"
+      ],
+      "symbolic_mapping": [
+        "stars evoke wonder or fantasy",
+        "cartoon character signals cultural iconography"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of commercial iconography (Mickey Mouse) with celestial motifs (stars) in a confined space reflects how social identity is negotiated through shared cultural symbols within bounded communal environments.",
+      "alternative_interpretations": [
+        "The decorations are purely aesthetic choices for event transport, with no deeper sociocultural reference intended."
+      ],
+      "limitations": [
+        "No contextual signage or group interaction confirms communal or ritual use of the space."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0673_P3",
+      "visual_anchors": [
+        "person smiling while viewing reflection",
+        "glitter dots on face",
+        "handheld mirror held close"
+      ],
+      "symbolic_mapping": [
+        "smile indicates engagement",
+        "mirror as tool of self-representation"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The act of inspecting painted features in a handheld mirror embodies a moment of epistemic negotiation—where appearance becomes provisional truth through deliberate observation and adjustment.",
+      "alternative_interpretations": [
+        "The person is merely checking for smudges or symmetry, without philosophical reflection."
+      ],
+      "limitations": [
+        "Facial expression cannot confirm internal cognition; smile may be habitual or situational."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:06:34.179012+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-168ebd32-7064-93eb-a343-02da90ff64fa",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 953,
+        "total_tokens": 1722,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030612177bb4ee7d924acf",
+      "usage": {
+        "completion_tokens": 815,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1885,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2700
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

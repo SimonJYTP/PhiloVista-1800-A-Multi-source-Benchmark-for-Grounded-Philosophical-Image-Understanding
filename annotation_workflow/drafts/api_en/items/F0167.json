@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0167",
+  "sample_id": "PHL1800_IRFL_0318",
+  "file_name": "PHL1800_IRFL_0318.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one woman",
+  "captions": {
+    "scene": [
+      "A brightly lit interior room with large multi-paned windows in the background, a white bookshelf to the right holding books and a white bust, and a laundry basket on the left.",
+      "A domestic workspace featuring an ironing board covered with a patterned cloth, a laptop open on a surface, and scattered clothing items.",
+      "The setting includes a blue plastic laundry basket containing colorful garments, a yellow hanger holding a purple shirt, and a steam iron held in the woman's right hand."
+    ],
+    "action": [
+      "The woman stands leaning slightly forward, her left hand resting on the keyboard of an open silver laptop.",
+      "Her right hand holds a light-blue and white electric steam iron above an ironing board, with the cord trailing downward.",
+      "She looks toward the laptop screen with her mouth slightly open and teeth visible, suggesting speech or reaction."
+    ],
+    "rationale": [
+      "The presence of both a laptop and ironing equipment suggests simultaneous engagement with digital and domestic tasks, though temporal overlap is not directly verifiable.",
+      "The woman’s posture and gaze direction indicate attention directed at the laptop, but no screen content is visible to confirm interaction type.",
+      "Clothing items are placed near the ironing board and in the basket, implying preparation for or completion of ironing; however, no garment is actively being ironed."
+    ],
+    "object": [
+      "A silver laptop with a visible keyboard and trackpad rests on a surface partially obscured by a blue laundry basket.",
+      "A light-blue and white electric steam iron with a metallic soleplate is held in the woman’s right hand, oriented vertically above the ironing board.",
+      "A blue plastic laundry basket contains folded and crumpled garments including red, pink, and patterned fabrics.",
+      "A yellow plastic hanger supports a lavender-colored collared shirt draped over the edge of the ironing board.",
+      "The woman wears a gray-and-white plaid long-sleeve button-up shirt with rolled sleeves and has brown hair tied back in a ponytail."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0167_P1",
+      "visual_anchors": [
+        "laptop",
+        "steam iron",
+        "ironing board"
+      ],
+      "symbolic_mapping": [
+        "laptop represents digital labor; iron represents domestic labor"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of digital device and manual appliance visually frames contemporary labor as fragmented across domains, where technology mediates but does not eliminate embodied routine work.",
+      "alternative_interpretations": [
+        "The scene may simply depict multitasking without symbolic intent—e.g., pausing ironing to check email."
+      ],
+      "limitations": [
+        "No screen content or task labels confirm the nature of laptop use; the iron is not in contact with fabric."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0167_P2",
+      "visual_anchors": [
+        "woman’s direct gaze toward laptop",
+        "open mouth",
+        "hand on keyboard"
+      ],
+      "symbolic_mapping": [
+        "gaze and posture suggest active communication or response, implying mediated social presence"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where physical presence coexists with digitally mediated interaction, raising questions about how social existence is sustained across proximate and remote registers simultaneously.",
+      "alternative_interpretations": [
+        "She may be reacting to an audio cue or video call, not necessarily engaging socially—could be solo entertainment or instruction."
+      ],
+      "limitations": [
+        "Facial expression is ambiguous; no visible interface elements (e.g., camera, chat window) confirm social context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0167_P3",
+      "visual_anchors": [
+        "plaid shirt",
+        "ponytail",
+        "visible earring"
+      ],
+      "symbolic_mapping": [
+        "attire and grooming reflect curated self-presentation amid domestic labor"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s appearance—neatly styled hair, coordinated shirt, and visible accessory—contrasts with the disarray of laundry, suggesting identity is actively maintained even within routine domestic contexts.",
+      "alternative_interpretations": [
+        "The clothing and hairstyle may reflect convenience rather than intentionality; no evidence of deliberate styling."
+      ],
+      "limitations": [
+        "No mirror, vanity, or grooming tools are visible; appearance could be incidental to activity."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:13:06.977134+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6a38b326-536c-9164-93c8-956ba51f8bdb",
+      "usage": {
+        "prompt_tokens": 824,
+        "completion_tokens": 990,
+        "total_tokens": 1814,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 317,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070212532618bf889f134e5d",
+      "usage": {
+        "completion_tokens": 845,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1975,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2820
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

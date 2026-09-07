@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0397",
+  "sample_id": "PHL1800_IRFL_0308",
+  "file_name": "PHL1800_IRFL_0308.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a human eye with surrounding skin and eyebrow",
+  "captions": {
+    "scene": [
+      "Extreme close-up of a human eye against a dark out-of-focus background",
+      "Skin texture, fine hairs, and eyelid creases are sharply resolved around the eye",
+      "A reflection of a window-like structure appears on the corneal surface"
+    ],
+    "action": [
+      "The eye is open and directed forward, with the pupil centered",
+      "Upper and lower eyelashes are visible and slightly separated from the lids",
+      "The iris displays concentric pigmentation rings with blue, teal, and yellow-orange hues"
+    ],
+    "rationale": [
+      "The reflection in the cornea suggests an indoor environment with a light source or window; however, only partial geometry is visible, so exact setting is uncertain",
+      "The presence of fine skin pores and minor blemishes indicates natural skin texture rather than digital manipulation, but lighting may enhance visibility",
+      "The eye’s orientation and lack of motion blur imply stillness during capture, though no temporal context confirms duration or intent"
+    ],
+    "object": [
+      "The iris is predominantly vibrant blue with a ring of yellow-orange pigment near the pupil and radial striations of teal and darker blue.",
+      "The sclera is white with visible fine blood vessels, especially near the medial canthus.",
+      "The upper eyelid shows a natural crease and a well-defined, moderately thick eyebrow above it.",
+      "The lower eyelid has sparse, short lashes and subtle textural ridges consistent with natural skin folds.",
+      "A specular highlight on the cornea reveals a rectangular bright shape with vertical and horizontal lines, resembling a window frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0397_P1",
+      "visual_anchors": [
+        "corneal reflection of a window",
+        "concentric iris pigmentation",
+        "visible blood vessels in sclera"
+      ],
+      "symbolic_mapping": [
+        "the window reflection as a portal to external reality",
+        "iris rings as layered perception"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The eye functions as both receptor and mirror: its internal structure (iris rings, vascular network) embodies biological identity, while the reflected window signifies the inseparability of perception from external context—truth is mediated through embodied sight.",
+      "alternative_interpretations": [
+        "The reflection is merely incidental ambient lighting; the image is a technical portrait emphasizing color contrast and macro detail without symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; reflection geometry is too fragmented to verify architectural meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0397_P2",
+      "visual_anchors": [
+        "fine skin pores",
+        "minor blemish near lower lid",
+        "natural lash distribution"
+      ],
+      "symbolic_mapping": [
+        "imperfections as markers of lived embodiment"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The visible micro-features—pores, slight discoloration, irregular lashes—resist idealized representation and affirm the subject’s material temporality, suggesting identity as contingent upon aging and exposure rather than fixed essence.",
+      "alternative_interpretations": [
+        "These features are standard anatomical variation captured under high-resolution lighting, not evidence of age or experience."
+      ],
+      "limitations": [
+        "No chronological markers (e.g., wrinkles, cataracts) confirm aging; lighting may exaggerate texture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0397_P3",
+      "visual_anchors": [
+        "pupil centered in iris",
+        "even illumination across ocular surface",
+        "lack of gaze deviation"
+      ],
+      "symbolic_mapping": [
+        "direct gaze as assertion of presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The eye’s frontal orientation and unbroken focus imply an act of witnessing or being witnessed—a minimal yet potent claim to social presence, where visibility entails both vulnerability and agency within shared space.",
+      "alternative_interpretations": [
+        "The subject was instructed to look at the camera; the pose is conventional for portraiture and carries no inherent social claim."
+      ],
+      "limitations": [
+        "No surrounding figures or environmental cues confirm interaction; gaze direction alone cannot establish social context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:43:39.883955+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-247b7045-26dd-92f3-b82d-fa21eaf9b2d3",
+      "usage": {
+        "prompt_tokens": 3010,
+        "completion_tokens": 945,
+        "total_tokens": 3955,
+        "completion_tokens_details": {
+          "text_tokens": 945
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2503,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070243022178f1c9bf7b403b",
+      "usage": {
+        "completion_tokens": 805,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7610,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 8415
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

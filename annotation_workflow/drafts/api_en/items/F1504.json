@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1504",
+  "sample_id": "PHL1800_HAIV_0231",
+  "file_name": "PHL1800_HAIV_0231.png",
+  "batch_id": "B031",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one seated adult woman with curly brown hair",
+  "captions": {
+    "scene": [
+      "A woman sits at a white table with three plates of food and an orange suitcase beside her.",
+      "The setting appears to be an indoor dining area with plain white background and no visible windows or decor.",
+      "A speech bubble containing illegible handwritten text floats near the woman's head."
+    ],
+    "action": [
+      "The woman rests both hands on her cheeks, elbows on the table, with a downturned mouth and furrowed brow.",
+      "Her eyes are open and directed forward; facial coloration includes pink blush on cheeks and nose.",
+      "Three plates hold distinct food items: one with a fried egg and small packet, one with a red-and-white packet, and one with mixed vegetables and fish."
+    ],
+    "rationale": [
+      "The woman’s posture and facial expression suggest distress or fatigue, though exact emotion is not verifiable from visual data alone.",
+      "The presence of a suitcase with handwritten text implies travel context, but destination or purpose cannot be confirmed.",
+      "The speech bubble contains indecipherable script; its content cannot be used to infer intent or dialogue."
+    ],
+    "object": [
+      "The woman wears a lavender coat with gold-trimmed cuffs and two visible buttons—one blue-centered, one brown-centered.",
+      "An orange hard-shell suitcase stands upright beside the chair, with a gray telescoping handle extended and black wheels partially visible.",
+      "Handwritten text on the suitcase reads 'Mum' above 'Mt', rendered in black ink with irregular stroke width.",
+      "One plate holds a sunny-side-up egg with a red yolk and a small rectangular packet with red and black markings.",
+      "Another plate contains a rectangular packet with red and white sections and a purple triangular logo; a third plate shows green leafy vegetables, orange carrot slices, pink fish fillet, and a yellow oval item."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1504_P1",
+      "visual_anchors": [
+        "orange suitcase with 'Mum Mt' inscription",
+        "three uneaten plates",
+        "woman’s hands framing face"
+      ],
+      "symbolic_mapping": [
+        "suitcase as marker of displaced identity",
+        "plates as unfulfilled obligations"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of personal luggage labeled with familial reference and untouched meals may reflect tension between social role (mother) and present existential dislocation.",
+      "alternative_interpretations": [
+        "The scene could simply depict delayed eating due to travel logistics, with no symbolic intent."
+      ],
+      "limitations": [
+        "No legible text confirms 'Mum Mt' refers to motherhood or location; handwriting is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1504_P2",
+      "visual_anchors": [
+        "speech bubble with unreadable script",
+        "furrowed brow",
+        "blush on cheeks"
+      ],
+      "symbolic_mapping": [
+        "illegible speech as failed communication",
+        "facial flush as embodied constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The unreadable utterance alongside constrained posture suggests epistemic limitation—what is felt cannot be articulated, revealing a gap between inner experience and communicable truth.",
+      "alternative_interpretations": [
+        "The speech bubble may represent internal thought rather than failed expression, and blush may indicate embarrassment unrelated to communication."
+      ],
+      "limitations": [
+        "Script is visually indecipherable; no contextual cues confirm it represents failed speech."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1504_P3",
+      "visual_anchors": [
+        "three distinct meals on separate plates",
+        "single diner",
+        "extended suitcase handle"
+      ],
+      "symbolic_mapping": [
+        "multiple meals as fragmented care",
+        "suitcase handle as suspended transition"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The arrangement of multiple prepared meals before one person may symbolize ethical weight of caretaking duties carried across transitions, where journey is paused but responsibility remains laid out.",
+      "alternative_interpretations": [
+        "The plates may belong to others who are temporarily absent, not symbolizing duty."
+      ],
+      "limitations": [
+        "No visual evidence confirms the meals are intended for others or represent obligation rather than variety or leftovers."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:40:02.882820+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cdb376a4-aab6-97e8-96d9-9ff6d195170f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 955,
+        "total_tokens": 2488,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704393587979e71d678405c",
+      "usage": {
+        "completion_tokens": 817,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2912,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3729
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

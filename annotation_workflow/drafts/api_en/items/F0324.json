@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0324",
+  "sample_id": "PHL1800_MM_0080",
+  "file_name": "PHL1800_MM_0080.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in a police uniform and a boy standing in a living room",
+  "captions": {
+    "scene": [
+      "An indoor domestic setting with a brown sofa, a blue cushion, a floor lamp, a potted plant, and sheer curtains over a window.",
+      "A beige shag carpet covers the floor; a small dark side table is visible to the right.",
+      "Natural light enters from the left, illuminating the scene; artificial light emanates from the lamp behind the boy."
+    ],
+    "action": [
+      "The woman stands upright beside the sofa, hands at her sides, facing slightly toward the boy.",
+      "The boy stands with arms crossed, looking up toward the woman’s face.",
+      "A speech bubble originates near the woman’s head and contains legible text directed toward the boy."
+    ],
+    "rationale": [
+      "The woman’s uniform (badge, patches, duty belt) indicates a formal law enforcement role, though no agency name is readable.",
+      "The boy’s posture (crossed arms, upward gaze) suggests attentiveness or resistance, but emotional state cannot be confirmed visually.",
+      "The speech bubble implies dialogue, but only one utterance is shown; no reciprocal speech is visible."
+    ],
+    "object": [
+      "The woman wears a navy-blue short-sleeved police-style uniform with gold buttons, epaulets, a badge on the left chest, and a utility belt with holsters and pouches.",
+      "The boy wears a light-blue short-sleeved polo shirt, dark-blue jeans, and dark sneakers with white soles.",
+      "A brown upholstered sofa with a single teal square pillow sits behind the subjects.",
+      "A floor lamp with a beige conical shade stands behind the boy, partially obscured by a large green leafy plant.",
+      "A speech bubble with black sans-serif text reads: 'You have to join the police force like I did!'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0324_P1",
+      "visual_anchors": [
+        "police uniform",
+        "speech bubble with directive",
+        "boy’s crossed arms"
+      ],
+      "symbolic_mapping": [
+        "uniform → institutional role",
+        "directive speech → intergenerational expectation"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes tension between inherited social roles and individual autonomy, where institutional identity is projected onto the next generation as a prescribed path.",
+      "alternative_interpretations": [
+        "This may simply depict a familial conversation without philosophical intent; the uniform could be costume, and the speech bubble fictional."
+      ],
+      "limitations": [
+        "No facial expressions are readable enough to confirm intent or emotion; the context of the dialogue is incomplete."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0324_P2",
+      "visual_anchors": [
+        "duty belt with equipment",
+        "boy’s casual attire",
+        "shared domestic space"
+      ],
+      "symbolic_mapping": [
+        "duty belt → structured labor",
+        "casual clothing → unformed status"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "Contrast in dress signifies divergent stages of social incorporation—professional identity versus pre-professional existence—within a shared private sphere.",
+      "alternative_interpretations": [
+        "The attire difference may reflect age-appropriate clothing norms rather than symbolic status distinction."
+      ],
+      "limitations": [
+        "The uniform’s specific insignia is not legible; no tools or technology beyond standard gear are visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0324_P3",
+      "visual_anchors": [
+        "speech bubble containing imperative",
+        "boy’s upward gaze",
+        "woman’s neutral stance"
+      ],
+      "symbolic_mapping": [
+        "imperative utterance → authority claim",
+        "upward gaze → hierarchical positioning"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The scene embodies a moment where moral responsibility is framed as obligation, raising questions about whether duty can be transmitted authoritatively across generations.",
+      "alternative_interpretations": [
+        "The line may be humorous or ironic within a fictional narrative, not a serious ethical proposition."
+      ],
+      "limitations": [
+        "The speaker’s tone, facial expression, and broader context are absent; the phrase alone does not establish ethical framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:32:47.385854+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a66558db-b992-9d01-a5ee-f21c10ab996f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 948,
+        "total_tokens": 2481,
+        "completion_tokens_details": {
+          "text_tokens": 948
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070232334fa940853a2841cd",
+      "usage": {
+        "completion_tokens": 808,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2904,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3712
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

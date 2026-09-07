@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1354",
+  "sample_id": "PHL1800_MM_0038",
+  "file_name": "PHL1800_MM_0038.jpg",
+  "batch_id": "B028",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two young women walking side by side in a shopping mall corridor",
+  "captions": {
+    "scene": [
+      "Indoor commercial space with polished tile flooring, recessed ceiling lighting, and storefronts including one with a red sign bearing partially legible white text (appears as 'Bfn' or similar)",
+      "Multiple pedestrians in background wearing winter clothing; at least eight other individuals are partially or fully visible",
+      "Wide corridor with alternating light wood and dark gray floor tiles forming a striped pattern"
+    ],
+    "action": [
+      "Woman on left walks forward facing slightly right, smiling, with right hand in jeans pocket and left arm relaxed",
+      "Woman on right walks away from camera, wearing brown shorts and bilateral knee-ankle-foot orthoses (KAFOs) with metallic hinges and black plastic shells",
+      "A speech bubble above the left woman’s head contains the legible text: 'Oh... That's so inspiring.'"
+    ],
+    "rationale": [
+      "The orthotic devices appear rigid, articulated, and symmetrically applied to both legs, suggesting medical or mobility support rather than fashion or costume",
+      "The speech bubble is positioned near the left woman’s head and points toward her, indicating attribution to her; however, no facial expression confirms intent or sincerity",
+      "The setting is a public indoor mall; clothing styles (denim jackets, cropped tops, jeans, shorts) suggest contemporary casual wear, but temporal context cannot be fixed precisely"
+    ],
+    "object": [
+      "The woman on the left wears a cropped white top, a blue denim jacket with silver buttons, dark blue skinny jeans with a black belt, and brown ankle boots.",
+      "The woman on the right has long straight brown hair, wears a matching blue denim jacket, brown shorts ending mid-thigh, and two identical knee-ankle-foot orthoses featuring silver-colored metal joints and black polymer shells.",
+      "A red leather handbag with gold-tone hardware is carried by a person partially visible on the far left edge of the frame.",
+      "A tan tote bag is held in the right hand of a person in a brown coat walking ahead and to the right of the target subjects.",
+      "Storefront signage includes a red rectangular sign with white stylized lettering; the characters are not fully legible but resemble 'Bfn' or 'Bf n'."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1354_P1",
+      "visual_anchors": [
+        "bilateral KAFO orthoses",
+        "speech bubble reading 'Oh... That's so inspiring.'",
+        "casual attire of both women"
+      ],
+      "symbolic_mapping": [
+        "orthoses → embodied constraint",
+        "speech bubble → external valuation of resilience"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image juxtaposes technological bodily augmentation with an observer’s verbal framing of inspiration, raising questions about whether agency resides in the wearer’s movement or in the spectator’s interpretation of that movement within social norms.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine mobility assistance in daily life, with the speech bubble reflecting polite social commentary rather than deep philosophical engagement."
+      ],
+      "limitations": [
+        "The speaker’s facial expression does not confirm sincerity or irony; the orthotic user’s posture and gait are neutral and do not indicate effort or ease."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1354_P2",
+      "visual_anchors": [
+        "denim jackets worn by both women",
+        "matching outerwear despite divergent lower-body presentation",
+        "public mall setting"
+      ],
+      "symbolic_mapping": [
+        "shared jacket style → surface-level conformity",
+        "divergent legwear → underlying difference in embodiment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Uniformity in upper-body dress contrasts with stark divergence in lower-body capability representation, suggesting identity is negotiated through both chosen appearance and involuntary physical conditions within shared social spaces.",
+      "alternative_interpretations": [
+        "The matching jackets may be coincidental or seasonal trend adherence, with no intended symbolic contrast."
+      ],
+      "limitations": [
+        "No evidence confirms intentional coordination of jackets; the women may not know each other."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1354_P3",
+      "visual_anchors": [
+        "striped floor pattern receding into depth",
+        "multiple pedestrians moving in varied directions",
+        "orthotic user walking forward without assistance"
+      ],
+      "symbolic_mapping": [
+        "floor stripes → linear progression",
+        "unassisted ambulation with orthoses → self-directed motion despite constraint"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "The act of walking—enabled by assistive technology yet performed autonomously—embodies a journey where labor (physical effort) and technology co-constitute agency, challenging binary distinctions between natural and artificial movement.",
+      "alternative_interpretations": [
+        "The orthoses may be therapeutic rather than enabling, and the walk could be part of rehabilitation rather than independent transit."
+      ],
+      "limitations": [
+        "No visible indicators of effort, fatigue, or device adjustment; gait kinematics cannot be assessed from static image."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:23:16.425968+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9ae9f37a-8489-9281-89f3-3ff7a2e77121",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1123,
+        "total_tokens": 2656,
+        "completion_tokens_details": {
+          "text_tokens": 1123
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070422446cfec6895bbe421c",
+      "usage": {
+        "completion_tokens": 981,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3072,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4053
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

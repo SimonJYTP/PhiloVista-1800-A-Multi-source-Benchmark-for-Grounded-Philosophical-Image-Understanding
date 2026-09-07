@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0101",
+  "sample_id": "PHL1800_HAIV_0119",
+  "file_name": "PHL1800_HAIV_0119.png",
+  "batch_id": "B004",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized human figure with obscured eyes",
+  "captions": {
+    "scene": [
+      "A painted figure framed within a wooden box-like structure against a striped blue background.",
+      "The background behind the figure consists of horizontal bands of red, orange, and yellow resembling a sunset or abstract gradient.",
+      "Two stacks of brown rectangular blocks flank the figure’s head; each stack supports a white cylindrical object."
+    ],
+    "action": [
+      "The figure’s eyes are fully covered by four red hearts and two white crosses arranged symmetrically around a central white flower-like shape.",
+      "The figure remains static with closed lips and no visible motion blur or gesture indicating movement.",
+      "No hands are visible in the image."
+    ],
+    "rationale": [
+      "The arrangement of hearts, crosses, and a flower over the eyes suggests intentional symbolic occlusion rather than accidental obstruction.",
+      "The presence of stacked blocks and cylindrical objects on both sides implies deliberate compositional balance, though their function is visually undefined.",
+      "The wooden frame surrounding the figure appears painted as part of the artwork, not a physical frame holding the image—evidenced by brushstroke continuity across edges."
+    ],
+    "object": [
+      "A human-like figure with black hair, tan skin, and simplified facial features including a nose, closed mouth, and visible ears is centrally positioned.",
+      "Four solid red hearts are placed in a diamond pattern over the eye region: one at top center, two flanking mid-height, and one at bottom center.",
+      "Two identical white cross-shaped symbols appear horizontally on either side of the central flower, aligned with the mid-eye level.",
+      "A small white multi-petaled flower with a gray center sits at the geometric center of the eye area, between the hearts and crosses.",
+      "The figure is enclosed by a thick, orange-brown painted border that mimics a wooden frame, with visible brushstrokes and slight irregularities in thickness."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0101_P1",
+      "visual_anchors": [
+        "four red hearts over eyes",
+        "two white crosses",
+        "central white flower"
+      ],
+      "symbolic_mapping": [
+        "hearts may denote love or emotion",
+        "crosses may denote belief or sacrifice"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "identity_appearance"
+      ],
+      "interpretation": "The occlusion of sight by emotionally and spiritually charged symbols suggests that perception is mediated through frameworks of love, faith, and beauty, implying identity is constructed via internal symbolic lenses rather than direct observation.",
+      "alternative_interpretations": [
+        "The composition may represent decorative iconography without philosophical intent—e.g., a folk-art motif for protection or blessing."
+      ],
+      "limitations": [
+        "No textual labels confirm intended symbolism; color and shape alone cannot definitively assign meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0101_P2",
+      "visual_anchors": [
+        "wooden frame enclosing figure",
+        "stacked blocks with white cylinders"
+      ],
+      "symbolic_mapping": [
+        "frame may signify containment or presentation",
+        "blocks may suggest structure or labor"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The figure is physically bounded by a painted frame and flanked by block-and-cylinder assemblies, evoking constraints imposed by external structures—possibly institutional or material—that shape embodied experience.",
+      "alternative_interpretations": [
+        "The blocks and cylinders could be purely aesthetic elements echoing architectural motifs, with no reference to labor or constraint."
+      ],
+      "limitations": [
+        "The blocks lack identifiable tools, markings, or functional context to confirm association with labor or technology."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0101_P3",
+      "visual_anchors": [
+        "symmetrical placement of symbols over eyes",
+        "absence of pupils or irises",
+        "uniform skin tone and minimal facial detail"
+      ],
+      "symbolic_mapping": [
+        "symmetry may imply balance or idealization",
+        "erasure of eyes may indicate loss of individual perspective"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "By replacing biological eyes with culturally resonant symbols, the image questions whether truth or social recognition arises from individual perception or from shared symbolic systems embedded in collective identity.",
+      "alternative_interpretations": [
+        "The design may follow stylistic conventions of naive or visionary art where anatomical accuracy is intentionally omitted for expressive effect, not conceptual critique."
+      ],
+      "limitations": [
+        "The absence of eyes does not prove erasure of perception—it may simply reflect artistic simplification common in stylized portraiture."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The action caption incorrectly claims the figure’s hands are raised to the sides of the face; no hands are visible in the image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:04:40.477184+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-099789af-19fd-95a6-8e62-07d6c5dc2e85",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1031,
+        "total_tokens": 2564,
+        "completion_tokens_details": {
+          "text_tokens": 1031
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020405ab78925ebec94e76",
+      "usage": {
+        "completion_tokens": 885,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2987,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3872
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

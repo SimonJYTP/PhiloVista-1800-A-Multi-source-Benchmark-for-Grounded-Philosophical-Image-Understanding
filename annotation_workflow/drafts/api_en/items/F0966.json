@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0966",
+  "sample_id": "PHL1800_IRFL_0476",
+  "file_name": "PHL1800_IRFL_0476.jpg",
+  "batch_id": "B021",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male walking on a paved path",
+  "captions": {
+    "scene": [
+      "A paved asphalt path curves gently left, bordered on the right by a wide expanse of mown green grass.",
+      "In the background, a line of deciduous trees with full foliage stands under a hazy, overcast sky.",
+      "The lighting is diffuse and even, suggesting daytime with no strong shadows or direct sunlight."
+    ],
+    "action": [
+      "The man walks forward along the path with his left foot mid-stride and right foot planted.",
+      "His arms hang loosely at his sides; his right hand is partially clenched, left hand relaxed.",
+      "His head is turned slightly toward the camera, eyes open and directed forward."
+    ],
+    "rationale": [
+      "The path’s curvature and consistent width suggest it is designed for pedestrian use rather than vehicular traffic, though no signage confirms this.",
+      "The man’s attire (short-sleeved shirt, jeans, casual shoes) is consistent with informal outdoor activity, but does not confirm purpose or destination.",
+      "The absence of other people or objects on the path implies solitude in the moment captured, though prior or subsequent presence cannot be determined."
+    ],
+    "object": [
+      "The man wears a short-sleeved button-up shirt with vertical blue and white stripes and a visible collar.",
+      "He wears dark blue denim jeans with visible seams and a slight fade on the thighs.",
+      "His footwear consists of dark low-top shoes with light-colored soles and no visible laces or branding.",
+      "The paved surface shows minor texture variation, including small embedded stones and faint tire marks near the edge.",
+      "The grass field exhibits uniform height and coloration, with no visible flowers, paths, or disturbances."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0966_P1",
+      "visual_anchors": [
+        "man walking alone on a curving path",
+        "unmarked asphalt surface",
+        "open grass field to the right"
+      ],
+      "symbolic_mapping": [
+        "the path as metaphor for life direction",
+        "the open field as possibility or uncertainty"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The solitary figure on an unmarked path evokes the existential condition of navigating life without external guidance, where movement itself constitutes agency amid structural constraints.",
+      "alternative_interpretations": [
+        "The scene may simply depict a routine walk in a rural park, with no symbolic intent."
+      ],
+      "limitations": [
+        "No directional signage, destination markers, or expressive gestures confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0966_P2",
+      "visual_anchors": [
+        "man’s neutral facial expression",
+        "casual clothing",
+        "lack of accessories or tools"
+      ],
+      "symbolic_mapping": [
+        "plain attire as erasure of social role",
+        "absence of distinguishing features as universal human condition"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The subject’s undifferentiated appearance—no insignia, no tools, no adornment—invites reflection on how identity is constructed through context rather than intrinsic traits.",
+      "alternative_interpretations": [
+        "The man’s appearance reflects ordinary daily dress, not deliberate aesthetic neutrality."
+      ],
+      "limitations": [
+        "Clothing style is culturally common and not uniquely minimal; facial expression is ambiguous and not clearly neutral."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0966_P3",
+      "visual_anchors": [
+        "diffuse lighting",
+        "hazy background trees",
+        "soft shadow cast by the man"
+      ],
+      "symbolic_mapping": [
+        "atmospheric haze as epistemic limitation",
+        "shadow as transient self-representation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The indistinct horizon and muted contrast suggest the limits of perception, where certainty recedes into ambiguity—a visual analogue to the provisional nature of empirical knowledge and the impermanence of embodied presence.",
+      "alternative_interpretations": [
+        "The haze results from atmospheric conditions like morning mist or humidity, not philosophical intent."
+      ],
+      "limitations": [
+        "Lighting and haze are natural phenomena with no textual or compositional cues indicating metaphorical use."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:31:55.737022+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-540c9073-e800-9aab-bdde-3bee0ad55ca8",
+      "usage": {
+        "prompt_tokens": 605,
+        "completion_tokens": 934,
+        "total_tokens": 1539,
+        "completion_tokens_details": {
+          "text_tokens": 934
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 98,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070331398029fc1ec4584e7a",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1649,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2444
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

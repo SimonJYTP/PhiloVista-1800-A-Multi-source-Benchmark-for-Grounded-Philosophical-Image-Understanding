@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0198",
+  "sample_id": "PHL1800_HL_0478",
+  "file_name": "PHL1800_HL_0478.png",
+  "batch_id": "B006",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "green parking meter kiosk",
+  "captions": {
+    "scene": [
+      "Urban street corner with brick building facade, large windows, and storefronts in background",
+      "Sunny daylight casting sharp shadows on asphalt pavement and sidewalk",
+      "Metal lamppost with ornate base stands adjacent to the parking meter"
+    ],
+    "action": [
+      "Two people stand near a store entrance in the background, one wearing green shirt, one wearing dark jacket",
+      "Parking meter displays '90 MINUTES' on orange sticker and has illuminated circular screen showing pricing information",
+      "Meter features coin slot, card reader, green button, red button, and receipt dispenser"
+    ],
+    "rationale": [
+      "The presence of a 'P' symbol and time limit label indicates this is a parking payment device, not a utility or transit kiosk",
+      "The visible coin slot and card reader suggest dual payment modes; however, exact transaction status is indeterminate",
+      "The unreadable text inside the circular display prevents confirmation of current rate or remaining time"
+    ],
+    "object": [
+      "The parking meter is olive-green metal with a curved canopy top and a blue circular 'P' sign affixed to its upper front.",
+      "An orange rectangular sticker on the right side reads '90 MINUTES' in white sans-serif font.",
+      "A circular transparent window reveals a printed fare chart with red and black text, some of which is illegible due to glare and resolution.",
+      "Below the window are four control elements: a black card slot, a green circular button, a red circular button, and a metallic coin return lever.",
+      "A small yellow warning label is affixed below the circular window, with black text that is too small to read clearly."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0198_P1",
+      "visual_anchors": [
+        "blue 'P' symbol",
+        "orange '90 MINUTES' sticker",
+        "coin/card payment interface"
+      ],
+      "symbolic_mapping": [
+        "'P' as institutional authority over public space",
+        "time limit as quantified access"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The meter embodies the codification of urban mobility into regulated, monetized intervals—where freedom to occupy space is contingent upon compliance with imposed temporal and financial constraints.",
+      "alternative_interpretations": [
+        "It is simply a functional device for collecting parking fees without deeper implication."
+      ],
+      "limitations": [
+        "No signage indicates enforcement policy, user demographics, or historical context, limiting claims about systemic power dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0198_P2",
+      "visual_anchors": [
+        "circular display with fare chart",
+        "green and red buttons",
+        "receipt slot"
+      ],
+      "symbolic_mapping": [
+        "display as mediated knowledge",
+        "buttons as binary choice points"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The interface presents a simplified epistemic frame—users must accept the displayed rates as authoritative truth, and their choices (pay/don’t pay, coin/card) initiate a constrained procedural journey governed by machine logic.",
+      "alternative_interpretations": [
+        "The display is merely informational; users may ignore or dispute it without consequence in this static image."
+      ],
+      "limitations": [
+        "The actual content of the display is partially obscured and unreadable, so assumptions about its epistemic role rely on typical design conventions, not direct evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0198_P3",
+      "visual_anchors": [
+        "ornate lamppost base",
+        "modern meter kiosk",
+        "brick building facade"
+      ],
+      "symbolic_mapping": [
+        "lamppost as legacy infrastructure",
+        "meter as contemporary control system"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of decorative civic hardware (lamppost) with automated transactional technology (meter) reflects a layered social existence where aesthetic continuity masks functional displacement of human oversight by algorithmic regulation.",
+      "alternative_interpretations": [
+        "The objects are coincidentally placed; no intentional contrast is evident in the composition."
+      ],
+      "limitations": [
+        "No evidence confirms the lamppost’s age or original purpose, nor whether the meter replaced a human attendant; thus the ‘displacement’ claim is speculative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:16:56.202248+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cb2bf8ae-0c75-9792-85b7-70734d5d1493",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 961,
+        "total_tokens": 1770,
+        "completion_tokens_details": {
+          "text_tokens": 961
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021646a45fb9c3c03542bd",
+      "usage": {
+        "completion_tokens": 816,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1935,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2751
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

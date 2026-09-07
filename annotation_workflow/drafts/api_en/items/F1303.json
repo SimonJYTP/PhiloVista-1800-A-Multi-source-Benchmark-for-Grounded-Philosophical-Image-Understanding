@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1303",
+  "sample_id": "PHL1800_HAIV_0307",
+  "file_name": "PHL1800_HAIV_0307.png",
+  "batch_id": "B027",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a winding road receding into the horizon",
+  "captions": {
+    "scene": [
+      "A two-lane asphalt road with a light-colored center stripe curves upward and vanishes into a bright white horizon under a pale yellow sky.",
+      "Greenish-yellow hills flank both sides of the road, each outlined with a dark blue-black border.",
+      "The road surface shows a gradient from dark gray at the foreground to lighter gray near the horizon, suggesting perspective."
+    ],
+    "action": [
+      "The road curves sharply upward and to the right, forming an S-shaped bend before disappearing.",
+      "No vehicles, pedestrians, or moving objects are present; the scene is static.",
+      "The road’s edges converge toward a vanishing point near the top-center of the image."
+    ],
+    "rationale": [
+      "The road’s curvature and diminishing width suggest linear perspective, though no explicit vanishing point is marked.",
+      "The absence of markings beyond the center stripe implies simplification rather than realism.",
+      "The color transition from yellow sky to white band may indicate atmospheric haze or stylization, but no physical source (e.g., sun) is visible."
+    ],
+    "object": [
+      "The road consists of two dark gray lanes separated by a beige center stripe, all bounded by thin dark blue-black outlines.",
+      "Each side of the road is bordered by a sloping hill rendered in olive-green to pale yellow gradient, edged with the same dark outline.",
+      "A horizontal white band separates the yellow sky from the landscape, positioned approximately one-third down from the top edge.",
+      "The road terminates visually at a sharp upward curl near the top-center, where its edges merge and vanish.",
+      "No text, signage, vegetation, structures, or figures appear anywhere in the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1303_P1",
+      "visual_anchors": [
+        "winding road",
+        "vanishing point",
+        "empty lanes"
+      ],
+      "symbolic_mapping": [
+        "the road’s curve maps to nonlinearity of experience",
+        "its disappearance maps to epistemic limits"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The road’s undulating path and abrupt termination evoke the philosophical idea that human journeys involve unpredictable turns and inherent limits to foresight or certainty.",
+      "alternative_interpretations": [
+        "It may simply be a stylized landscape illustration without symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the mapping relies on conventional visual metaphors."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1303_P2",
+      "visual_anchors": [
+        "dark outline around hills and road",
+        "uniform color fields",
+        "lack of texture"
+      ],
+      "symbolic_mapping": [
+        "the rigid borders map to conceptual boundaries",
+        "flat color fields map to abstraction over detail"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The stark delineation between road and terrain suggests a philosophical tension between defined identity (the road as self) and external constraints (the enclosing hills), where appearance is reduced to essential contours.",
+      "alternative_interpretations": [
+        "The outlines may serve only graphic clarity and not represent constraint or identity."
+      ],
+      "limitations": [
+        "The outlines could be purely stylistic; no figure or label identifies them as symbolic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1303_P3",
+      "visual_anchors": [
+        "white horizon band",
+        "road ascending into it",
+        "no destination visible"
+      ],
+      "symbolic_mapping": [
+        "the white void maps to unknowable future",
+        "ascent maps to striving without guarantee"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "faith_meaning"
+      ],
+      "interpretation": "The road’s ascent into an indeterminate white expanse reflects existential themes: temporal progression toward an undefined end, where meaning must be projected rather than discovered.",
+      "alternative_interpretations": [
+        "The white band may represent a cloud layer or artistic simplification of atmospheric perspective."
+      ],
+      "limitations": [
+        "The white region lacks features that would confirm it as ‘void’ or ‘afterlife’; interpretation depends on cultural associations."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:14:50.768361+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-966a2dc5-c284-93c1-8b1f-2d61993c0cd4",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 916,
+        "total_tokens": 2449,
+        "completion_tokens_details": {
+          "text_tokens": 916
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070414330d5cec2d9bf24ac9",
+      "usage": {
+        "completion_tokens": 777,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2872,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3649
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1467",
+  "sample_id": "PHL1800_HL_0513",
+  "file_name": "PHL1800_HL_0513.png",
+  "batch_id": "B030",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person engaged in kitesurfing",
+  "captions": {
+    "scene": [
+      "Open ocean with moderate wave activity under an overcast sky",
+      "A distant sailboat silhouette visible on the horizon",
+      "White water spray generated at the board's edge near the subject"
+    ],
+    "action": [
+      "The person leans backward while gripping a control bar connected to lines",
+      "The subject’s knees are bent and body is angled relative to the water surface",
+      "Water is displaced laterally from the board, indicating forward motion"
+    ],
+    "rationale": [
+      "The control bar and taut lines suggest active tension from a kite above, though the kite itself is not visible",
+      "The wetsuit top and patterned board shorts indicate preparedness for water sport activity, but exact gear type cannot be confirmed without labels",
+      "The facial expression appears engaged, but emotional state cannot be definitively determined from visible features alone"
+    ],
+    "object": [
+      "The person wears a black long-sleeved wetsuit top with visible harness straps around the waist and chest.",
+      "The person wears green-and-black patterned board shorts ending above the knee.",
+      "A blue surfboard or kiteboard is partially submerged, with its tail and edge visible beneath the spray.",
+      "Three thin lines extend upward from the control bar; their attachment points and termination are outside the frame.",
+      "A red safety leash connects the control bar to the person’s harness system."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1467_P1",
+      "visual_anchors": [
+        "tensioned lines extending out of frame",
+        "person leaning against force",
+        "harness securing torso"
+      ],
+      "symbolic_mapping": [
+        "lines represent external forces beyond immediate control",
+        "body posture embodies resistance and adaptation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The subject navigates a dynamic equilibrium between self-directed movement and external constraint, illustrating how agency emerges through responsive engagement rather than absolute autonomy.",
+      "alternative_interpretations": [
+        "This is simply a recreational activity requiring balance and equipment handling, with no deeper symbolic layer."
+      ],
+      "limitations": [
+        "The kite, the primary source of force, is not visible; thus the nature and magnitude of constraint are inferred, not observed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1467_P2",
+      "visual_anchors": [
+        "spray of water at board edge",
+        "horizon line separating sea and sky",
+        "distant sailboat"
+      ],
+      "symbolic_mapping": [
+        "water spray marks transient presence",
+        "horizon signifies boundary between known and unknown"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The fleeting splash captures a momentary imprint against an enduring seascape, evoking the tension between individual action and the vast, indifferent continuity of natural and social systems.",
+      "alternative_interpretations": [
+        "The spray is merely hydrodynamic effect of planing; the sailboat is incidental background, not symbolically relevant."
+      ],
+      "limitations": [
+        "No temporal sequence is shown; the ‘fleeting’ nature is assumed from static image physics, not direct evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1467_P3",
+      "visual_anchors": [
+        "harness straps crossing torso",
+        "gripped control bar",
+        "patterned shorts contrasting with black top"
+      ],
+      "symbolic_mapping": [
+        "harness as mediation between body and technology",
+        "clothing as negotiated identity in performance context"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s attire and equipment form a functional aesthetic ensemble where technological integration and self-presentation co-constitute the embodied experience of sport.",
+      "alternative_interpretations": [
+        "Clothing choices reflect practical considerations (sun protection, flexibility) and personal preference, not identity construction."
+      ],
+      "limitations": [
+        "No branding, logos, or explicit stylistic intent is legible; pattern interpretation is subjective."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:35:52.932781+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0a70b33c-f500-9c15-832e-1e3dbb96554c",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 896,
+        "total_tokens": 1665,
+        "completion_tokens_details": {
+          "text_tokens": 896
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043542d73c58b531a14d02",
+      "usage": {
+        "completion_tokens": 753,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1822,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2575
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

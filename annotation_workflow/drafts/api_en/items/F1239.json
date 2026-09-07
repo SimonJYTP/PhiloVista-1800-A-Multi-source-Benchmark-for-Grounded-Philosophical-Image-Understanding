@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1239",
+  "sample_id": "PHL1800_MM_0054",
+  "file_name": "PHL1800_MM_0054.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man seated and a woman walking away in an indoor public space",
+  "captions": {
+    "scene": [
+      "A modern interior with horizontal paneling, recessed lighting, and gray upholstered benches.",
+      "The floor is light-toned tile or linoleum; a retractable stanchion stands near the woman’s path.",
+      "A red hard-shell rolling suitcase rests beside the seated man."
+    ],
+    "action": [
+      "The man sits upright on a bench, facing right, with his left hand resting on his thigh and gaze directed toward the woman.",
+      "The woman walks forward away from the camera, holding a vertical stanchion pole with her right hand.",
+      "A speech bubble originates near the man’s head and contains legible text."
+    ],
+    "rationale": [
+      "The man’s orientation and line of sight suggest visual attention toward the woman, though intent cannot be confirmed.",
+      "The woman’s posture—upright torso, steady gait, and grip on the stanchion—indicates purposeful movement, not hesitation.",
+      "The speech bubble text is readable and attributed visually to the man, but its content reflects a statement, not verifiable internal thought."
+    ],
+    "object": [
+      "A man with short dark hair and facial stubble wears a navy suit, light blue shirt, dark tie, and black dress shoes.",
+      "A woman with long dark hair wears a form-fitting black long-sleeve top and black pants, paired with flat brown shoes.",
+      "A red hard-shell suitcase with extended telescopic handle and four spinner wheels stands on the floor beside the man.",
+      "A metallic retractable stanchion with circular base is held by the woman’s right hand.",
+      "A white oval speech bubble with black sans-serif text reads: 'That outfit looks confident.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1239_P1",
+      "visual_anchors": [
+        "woman’s black fitted outfit",
+        "man’s gaze direction",
+        "speech bubble text"
+      ],
+      "symbolic_mapping": [
+        "outfit → external presentation of self",
+        "gaze + comment → observation as judgment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image stages a moment where appearance becomes a site of social evaluation, suggesting identity is partially constituted through others’ perception of embodied presentation.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine travel behavior with no evaluative intent; the speech bubble could be ironic or fictional narrative device."
+      ],
+      "limitations": [
+        "No facial expression or body language from the woman confirms reception or reaction to the comment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1239_P2",
+      "visual_anchors": [
+        "retractable stanchion",
+        "seated man with luggage",
+        "walking woman"
+      ],
+      "symbolic_mapping": [
+        "stanchion → institutional boundary",
+        "luggage → transience"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "Movement through a regulated space—marked by stanchions and seating zones—frames individual motion as both enabled and delimited by infrastructure, evoking tension between autonomy and systemic guidance.",
+      "alternative_interpretations": [
+        "The stanchion may be unused or decorative; the woman may be retrieving it rather than navigating a queue."
+      ],
+      "limitations": [
+        "The stanchion’s function (queue control, barrier, support) is ambiguous without context of surrounding layout or signage."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1239_P3",
+      "visual_anchors": [
+        "speech bubble containing evaluative statement",
+        "man’s formal attire",
+        "woman’s back turned"
+      ],
+      "symbolic_mapping": [
+        "spoken assessment → epistemic claim about another",
+        "back-turned posture → asymmetry of address"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The unilateral declaration about confidence embedded in appearance raises questions about whether truth claims about others’ inner states can be grounded solely in observable externals, highlighting epistemic limits in social interaction.",
+      "alternative_interpretations": [
+        "The text may be non-diegetic narration or meme overlay, not part of the scene’s internal logic."
+      ],
+      "limitations": [
+        "The speech bubble is graphic overlay; its status as diegetic dialogue versus external commentary is visually indeterminate."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:06:47.967383+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4016e0ad-e809-9ab4-b83a-e899c9dcc567",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 967,
+        "total_tokens": 2500,
+        "completion_tokens_details": {
+          "text_tokens": 967
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040632f7a7d24e9ab74bab",
+      "usage": {
+        "completion_tokens": 822,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2914,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3736
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

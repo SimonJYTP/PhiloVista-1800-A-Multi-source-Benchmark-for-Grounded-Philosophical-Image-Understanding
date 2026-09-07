@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1019",
+  "sample_id": "PHL1800_IRFL_0097",
+  "file_name": "PHL1800_IRFL_0097.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "birds in flight near a broken chain against a sky",
+  "captions": {
+    "scene": [
+      "A warm-toned sky with orange, pink, and blue gradients and soft cloud textures",
+      "A horizontal segment of a metallic chain positioned in the lower right quadrant",
+      "Multiple bird silhouettes distributed across the upper and middle portions of the frame"
+    ],
+    "action": [
+      "Birds are captured mid-flight with wings extended or partially folded",
+      "The chain appears static and physically disconnected at its leftmost visible link",
+      "One large bird is centered-left with wings fully spread; smaller birds trail behind and to the right"
+    ],
+    "rationale": [
+      "The chain’s break suggests prior tension or separation, though no motion or cause is visible",
+      "Birds are oriented generally left-to-right, implying directional movement, but trajectory cannot be confirmed from a single frame",
+      "Color gradient suggests either sunrise or sunset lighting, but time of day is not definitively indicated by visual evidence alone"
+    ],
+    "object": [
+      "Seven distinct bird figures are visible: one large central bird, three medium-sized birds trailing it, and three smaller distant birds.",
+      "A rusted or weathered metal chain occupies the lower right, composed of six visible interlocked links ending abruptly on the left.",
+      "The sky background shows layered clouds with diffuse illumination, no sun disc or horizon line present.",
+      "The largest bird displays white underwing feathers and dark wingtips, consistent with gull morphology.",
+      "No text, logos, or readable inscriptions appear anywhere in the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1019_P1",
+      "visual_anchors": [
+        "broken chain",
+        "birds flying away from chain"
+      ],
+      "symbolic_mapping": [
+        "broken chain → constraint removal",
+        "flight direction → pursuit of autonomy"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a severed chain and birds moving away visually frames liberation as a spatial departure from imposed restriction.",
+      "alternative_interpretations": [
+        "The chain may be decorative or incidental, and birds simply fly across a scene with no intended symbolic relationship."
+      ],
+      "limitations": [
+        "No causal link between chain breakage and bird movement is shown; temporal sequence is absent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1019_P2",
+      "visual_anchors": [
+        "gradual sky color shift",
+        "bird formation",
+        "chain fragment"
+      ],
+      "symbolic_mapping": [
+        "color gradient → transition",
+        "fragmented chain → incompleteness"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The fading light and fragmented object evoke impermanence, suggesting that continuity is illusory and moments dissolve into discontinuous fragments.",
+      "alternative_interpretations": [
+        "The color gradient is standard atmospheric scattering at low solar angle; the chain is merely a foreground element without narrative intent."
+      ],
+      "limitations": [
+        "No explicit markers of decay, aging, or finality (e.g., falling debris, stillness) are present."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1019_P3",
+      "visual_anchors": [
+        "multiple birds in loose formation",
+        "single prominent bird leading",
+        "chain isolated below"
+      ],
+      "symbolic_mapping": [
+        "leader-follower arrangement → social hierarchy",
+        "spatial separation from chain → disengagement from structure"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The arrangement implies collective movement emerging from individual initiative, with structural constraints relegated to the periphery—suggesting agency within social context.",
+      "alternative_interpretations": [
+        "Birds are unrelated individuals coincidentally aligned; no leadership or group behavior can be inferred from static posture alone."
+      ],
+      "limitations": [
+        "No interaction (e.g., gaze alignment, proximity maintenance) confirms group cohesion or hierarchy."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:44:08.280462+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-144fc392-ffe3-9705-b2b7-7fe67d6877df",
+      "usage": {
+        "prompt_tokens": 845,
+        "completion_tokens": 854,
+        "total_tokens": 1699,
+        "completion_tokens_details": {
+          "text_tokens": 854
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 338,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703435860f6f774411046fc",
+      "usage": {
+        "completion_tokens": 716,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1884,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2600
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

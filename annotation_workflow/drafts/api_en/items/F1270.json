@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1270",
+  "sample_id": "PHL1800_IRFL_0081",
+  "file_name": "PHL1800_IRFL_0081.jpg",
+  "batch_id": "B027",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a partially open white drawer containing colorful file folders",
+  "captions": {
+    "scene": [
+      "A shallow-focus interior shot showing the interior of a white drawer pulled partially open.",
+      "Rows of vertically oriented file folders with multicolored tabs fill the drawer space.",
+      "The foreground and background are blurred, emphasizing the mid-depth plane of the folder tabs."
+    ],
+    "action": [
+      "The drawer is in a static partially open state; no motion is visible.",
+      "Folders are arranged upright in close proximity, suggesting organization or storage.",
+      "Light reflects off the top edges of some folder tabs, indicating ambient illumination from above or front-left."
+    ],
+    "rationale": [
+      "The uniform vertical alignment of folders implies intentional placement rather than random scattering.",
+      "The blur gradient suggests a narrow depth of field, typical of macro or close-up photography, but no camera is visible.",
+      "Colors on tabs vary (yellow, purple, blue, red), yet no labels are legible—text is present but unreadable due to resolution and focus."
+    ],
+    "object": [
+      "The drawer is constructed of smooth white material, likely plastic or painted metal, with a visible inner side wall and front lip.",
+      "At least fifteen distinct folder tabs are visible, each with a colored top edge and a white or light-colored body beneath.",
+      "Some tabs show slight curvature or wear at the top corners, indicating prior handling or insertion/removal.",
+      "The spacing between adjacent folders is minimal, with occasional small gaps where underlying layers are faintly visible.",
+      "No text on any folder tab is readable; characters, if present, are too blurred or out of focus to transcribe."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1270_P1",
+      "visual_anchors": [
+        "multicolored folder tabs",
+        "tight vertical arrangement",
+        "unreadable labels"
+      ],
+      "symbolic_mapping": [
+        "color variation maps to diversity of categories",
+        "unreadable labels map to obscured knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image evokes epistemic limitation: information exists in structured form, yet access to its content is blocked by physical obscurity, mirroring how truth may be organized yet inaccessible without proper decoding or perspective.",
+      "alternative_interpretations": [
+        "This is simply a routine office filing system photographed with shallow depth of field for aesthetic effect."
+      ],
+      "limitations": [
+        "No actual text is legible, so any claim about content or labeling is speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1270_P2",
+      "visual_anchors": [
+        "drawer partially open",
+        "folders tightly packed",
+        "uniform orientation"
+      ],
+      "symbolic_mapping": [
+        "partial opening maps to constrained access",
+        "tight packing maps to institutional constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The drawer’s partial openness amid densely packed folders visualizes regulated access—structure enables retrieval but only within prescribed limits, reflecting systemic constraints on individual agency within bureaucratic frameworks.",
+      "alternative_interpretations": [
+        "The drawer is simply not fully extended because it was recently accessed or will be closed shortly."
+      ],
+      "limitations": [
+        "No indication of who opened it, why, or whether closure is imminent; motion is absent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1270_P3",
+      "visual_anchors": [
+        "repetition of folder forms",
+        "color differentiation without legibility",
+        "shared container"
+      ],
+      "symbolic_mapping": [
+        "repetition maps to social categorization",
+        "shared drawer maps to collective infrastructure"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The uniformity of folder shape combined with differentiated colors within a shared container suggests how individuals or units are simultaneously standardized and individuated within social systems—identity emerges through contrast within common structure.",
+      "alternative_interpretations": [
+        "The colors are arbitrary manufacturer choices for visual sorting, not symbolic markers."
+      ],
+      "limitations": [
+        "Color assignment is not explained; no cultural or contextual cues confirm symbolic intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:10:17.063032+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fde70926-dc35-9e0c-a21b-72ef55db72ee",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 890,
+        "total_tokens": 1469,
+        "completion_tokens_details": {
+          "text_tokens": 890
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041000eca901d5782e4b87",
+      "usage": {
+        "completion_tokens": 755,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1546,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2301
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

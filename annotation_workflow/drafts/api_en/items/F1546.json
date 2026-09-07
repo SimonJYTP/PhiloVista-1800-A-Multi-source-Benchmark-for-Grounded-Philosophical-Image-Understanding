@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1546",
+  "sample_id": "PHL1800_IRFL_0417",
+  "file_name": "PHL1800_IRFL_0417.jpg",
+  "batch_id": "B032",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "volcanic terrain with solidified lava flows and distant mountain slopes",
+  "captions": {
+    "scene": [
+      "Foreground dominated by rough, dark, cracked basaltic rock with patches of orange-brown oxidation or mineral staining",
+      "Midground shows uneven fields of fragmented volcanic scoria and blocky lava deposits",
+      "Background features a sloping mountain partially obscured by low-lying white clouds under a pale blue sky"
+    ],
+    "action": [
+      "Lava appears fully solidified, with no visible flow, steam, or incandescence",
+      "Clouds are stationary or moving slowly across the upper mountain slope",
+      "No human, animal, or mechanical movement is observable in the frame"
+    ],
+    "rationale": [
+      "The texture and morphology of foreground rocks suggest cooling and contraction after extrusion, but timing cannot be determined from static image alone",
+      "Presence of green vegetation patches on mid-slope indicates some ecological recovery, yet no active growth processes are visible",
+      "Structures resembling ski lift towers appear faintly on the right slope, but their function and operational status are not verifiable from visual evidence"
+    ],
+    "object": [
+      "A large, irregularly shaped lava flow in the lower-left foreground exhibits ropey pāhoehoe-like surface textures and fissures.",
+      "Dark, angular scoria fragments form a loose accumulation behind the main flow, varying in size from fist-sized to boulder-scale.",
+      "A distinct band of yellow-green vegetation appears on the middle slope of the background mountain, contrasting with surrounding dark rock.",
+      "Thin white clouds envelop the summit and upper flanks of the background mountain, obscuring parts of its topography.",
+      "Faint vertical poles with horizontal crossbars are visible on the right mid-slope, spaced at regular intervals along a diagonal line."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1546_P1",
+      "visual_anchors": [
+        "cracked solidified lava surface",
+        "oxidation stains on rock",
+        "absence of motion"
+      ],
+      "symbolic_mapping": [
+        "frozen flow → arrested time",
+        "surface fractures → impermanence of form"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The stillness of cooled lava embodies the cessation of dynamic force, suggesting time’s irreversible passage through material stasis and decay.",
+      "alternative_interpretations": [
+        "This is simply geologically recent terrain awaiting further erosion; no symbolic meaning is required."
+      ],
+      "limitations": [
+        "No temporal markers (e.g., dated signage, known eruption records) confirm age or sequence of events."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1546_P2",
+      "visual_anchors": [
+        "fragmented scoria field",
+        "isolated green patch",
+        "cloud-obscured peak"
+      ],
+      "symbolic_mapping": [
+        "scattered debris → disintegration of unity",
+        "green island amid blackness → resilience amid desolation"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The contrast between barren rock and isolated vegetation highlights how identity emerges through differentiation against a homogenous backdrop, even when appearance is shaped by destructive forces.",
+      "alternative_interpretations": [
+        "The green patch is merely a zone of favorable moisture and soil chemistry, not symbolic of resistance."
+      ],
+      "limitations": [
+        "Color variation may stem from mineral composition rather than biological presence; no leaf or stem detail confirms flora."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1546_P3",
+      "visual_anchors": [
+        "linear arrangement of poles on slope",
+        "uneven terrain",
+        "lack of visible access paths"
+      ],
+      "symbolic_mapping": [
+        "infrastructure imposed on chaos → human attempt to impose order"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The faint engineered structures traversing unstable ground reflect labor’s persistent effort to extend control into volatile natural domains, despite minimal visible utility or maintenance.",
+      "alternative_interpretations": [
+        "The poles may be remnants of temporary survey equipment or natural tree stumps misidentified due to distance and resolution."
+      ],
+      "limitations": [
+        "Resolution too low to confirm artificial origin; no cables, platforms, or associated machinery visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:43:44.304157+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-651f196a-ffdc-9802-adba-037e0c4c4f90",
+      "usage": {
+        "prompt_tokens": 3003,
+        "completion_tokens": 928,
+        "total_tokens": 3931,
+        "completion_tokens_details": {
+          "text_tokens": 928
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2496,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044325cff0cbb7cf654949",
+      "usage": {
+        "completion_tokens": 783,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7533,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 8316
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

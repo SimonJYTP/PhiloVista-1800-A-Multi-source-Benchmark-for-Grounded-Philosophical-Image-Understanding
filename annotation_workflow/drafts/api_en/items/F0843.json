@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0843",
+  "sample_id": "PHL1800_HL_0279",
+  "file_name": "PHL1800_HL_0279.png",
+  "batch_id": "B019",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "utility worker in aerial lift performing overhead work",
+  "captions": {
+    "scene": [
+      "Overcast sky with dense cloud cover and visible rain streaks on the camera lens; multiple utility poles, overhead wires, and traffic signals dominate the midground.",
+      "Urban street intersection with wet pavement, a stop sign, a green street sign reading \"BAS\" (remainder obscured), and background buildings including a multi-story structure with orange trim.",
+      "Foreground includes a white utility truck with extended boom arm, a white pickup truck parked nearby, and scattered traffic cones."
+    ],
+    "action": [
+      "A person wearing a yellow hard hat and high-visibility vest sits inside a bucket attached to a telescoping boom, reaching toward a horizontal traffic signal mast arm.",
+      "The traffic signal displays green lights for two directions; the third signal head is angled away and its state is indiscernible.",
+      "Rain is visibly falling, evidenced by water droplets and streaks on the image surface and wet road surfaces."
+    ],
+    "rationale": [
+      "The worker’s posture and proximity to the signal mast suggest maintenance or inspection rather than installation, but no tools or equipment are clearly visible to confirm task type.",
+      "The presence of multiple utility poles and crossarms with insulators indicates a standard overhead distribution system, though voltage class cannot be determined from visual evidence alone.",
+      "The street sign reads only \"BAS\", making full identification impossible; no other signage provides unambiguous location context."
+    ],
+    "object": [
+      "A white utility truck with a hydraulic boom arm extended upward, supporting a bucket containing one person.",
+      "Three traffic signal heads mounted on a horizontal mast arm, two showing illuminated green lights, one partially occluded.",
+      "A green rectangular street sign with white uppercase letters \"BAS\" followed by an unreadable continuation due to angle and obstruction.",
+      "A white pickup truck parked parallel to the curb, rear facing camera, with visible tailgate and dual rear wheels.",
+      "Multiple black overhead power lines intersecting at various heights, supported by wooden utility poles with ceramic insulators and transformers."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0843_P1",
+      "visual_anchors": [
+        "worker in elevated bucket",
+        "overhead wires spanning public space",
+        "rain-streaked lens"
+      ],
+      "symbolic_mapping": [
+        "elevated labor as mediation between infrastructure and public safety",
+        "wet lens as filter distorting perception of routine civic maintenance"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image frames essential labor as both physically precarious and visually mediated—human effort sustains invisible systems that enable collective urban life, yet remains partially obscured by environmental and technical conditions.",
+      "alternative_interpretations": [
+        "A routine municipal repair operation captured during inclement weather, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, tool usage, or interaction with others is visible; symbolic mapping relies on contextual inference beyond direct evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0843_P2",
+      "visual_anchors": [
+        "green traffic lights active",
+        "worker positioned near signal housing",
+        "multiple intersecting wires"
+      ],
+      "symbolic_mapping": [
+        "green light as conditional permission dependent on unseen maintenance",
+        "wires as literal and metaphorical connections requiring constant upkeep"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "Movement through shared space is enabled only by anonymous responsibility: the green light signifies not just signal status but the deferred labor that preserves functional order amid systemic fragility.",
+      "alternative_interpretations": [
+        "Traffic signals operate normally while maintenance occurs; no causal link between worker’s presence and light state is visible."
+      ],
+      "limitations": [
+        "The signal’s operational status cannot be confirmed as causally linked to the worker’s activity; green may be part of normal cycle."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0843_P3",
+      "visual_anchors": [
+        "cloud-covered sky",
+        "wet pavement",
+        "utility pole with transformer"
+      ],
+      "symbolic_mapping": [
+        "overcast sky as indifferent backdrop to human intervention",
+        "transformer as silent converter of raw potential into usable form"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "Infrastructure endures across temporal scales—weather erodes visibility while machines persist—highlighting tension between transient human effort and enduring systems that outlive individual actors.",
+      "alternative_interpretations": [
+        "Standard weather conditions during outdoor work; no evidence of conflict or temporal reflection intended."
+      ],
+      "limitations": [
+        "No clocks, aging indicators, or explicit contrast between old/new infrastructure is present; temporal interpretation is extrapolative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:21:40.970315+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2801aba1-46c8-9aae-b38a-e12ec8db4a0c",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 1038,
+        "total_tokens": 1767,
+        "completion_tokens_details": {
+          "text_tokens": 1038
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070321232192d1ea268e4b08",
+      "usage": {
+        "completion_tokens": 891,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1924,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2815
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0546",
+  "sample_id": "PHL1800_HL_0587",
+  "file_name": "PHL1800_HL_0587.png",
+  "batch_id": "B013",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a hand holding a toothbrush over a sink",
+  "captions": {
+    "scene": [
+      "A white ceramic sink with a chrome faucet against off-white tiled wall",
+      "The sink basin shows minor water stains and a small dark mark near the drain",
+      "Tiling has visible grout lines and slight discoloration at joints"
+    ],
+    "action": [
+      "A right hand grips a blue-and-white toothbrush with toothpaste on its bristles",
+      "Toothpaste is extruded onto the bristles, forming a dollop with green streaks",
+      "The toothbrush is held horizontally above the sink, near the faucet handle"
+    ],
+    "rationale": [
+      "The presence of toothpaste on the brush suggests preparation for oral hygiene, though no brushing motion is visible",
+      "The hand’s grip and orientation imply imminent use, but the static pose leaves timing ambiguous",
+      "The faucet is in the off position (handle perpendicular to spout), indicating no active water flow"
+    ],
+    "object": [
+      "A human hand with visible thumb, index finger, and middle finger gripping a toothbrush.",
+      "The toothbrush has a white neck, blue rubberized grip section, and white bristles with green accents and white paste.",
+      "The faucet is chrome-plated with a cross-shaped handle and a blue circular insert at its center.",
+      "The sink is white ceramic with a single basin and a visible overflow hole near the rim.",
+      "The wall behind consists of square off-white tiles with grayish grout lines."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0546_P1",
+      "visual_anchors": [
+        "toothbrush with paste",
+        "hand poised above sink",
+        "chrome faucet"
+      ],
+      "symbolic_mapping": [
+        "the toothbrush as a tool of daily ritual",
+        "the poised hand as suspended agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "The image captures a moment of deliberate pause before routine action, reflecting how mundane technologies mediate personal agency within structured daily cycles.",
+      "alternative_interpretations": [
+        "A simple pre-brushing setup with no symbolic intent; merely functional staging."
+      ],
+      "limitations": [
+        "No facial expression, context beyond sink area, or temporal markers to confirm intentionality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0546_P2",
+      "visual_anchors": [
+        "white ceramic sink",
+        "tiled wall",
+        "minor stains on basin"
+      ],
+      "symbolic_mapping": [
+        "stains as traces of prior use",
+        "clean surface awaiting renewal"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The worn yet functional sink embodies the tension between decay and maintenance—each stain a residue of past moments, each cleaning an assertion of continuity and self-presentation.",
+      "alternative_interpretations": [
+        "Ordinary wear on bathroom fixtures with no deeper significance."
+      ],
+      "limitations": [
+        "Stain origin and age are visually indeterminate; could be soap scum, hard water, or accidental spill."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0546_P3",
+      "visual_anchors": [
+        "hand gripping toothbrush",
+        "blue grip section",
+        "cross-shaped faucet handle"
+      ],
+      "symbolic_mapping": [
+        "grip as control",
+        "cross handle as directional choice"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The hand’s firm hold on the toothbrush, juxtaposed with the fixed geometry of the faucet, visualizes the interplay between individual responsibility and environmental constraints in everyday moral practice.",
+      "alternative_interpretations": [
+        "Ergonomic design features (grip texture, handle shape) optimized for usability, not symbolism."
+      ],
+      "limitations": [
+        "No evidence of moral deliberation; the scene is neutral and non-narrative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:55:38.019069+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c0f40b3f-9530-9528-9448-0e8ed7ef0fb4",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 861,
+        "total_tokens": 1670,
+        "completion_tokens_details": {
+          "text_tokens": 861
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025526db0cc160642d425c",
+      "usage": {
+        "completion_tokens": 719,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1838,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2557
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

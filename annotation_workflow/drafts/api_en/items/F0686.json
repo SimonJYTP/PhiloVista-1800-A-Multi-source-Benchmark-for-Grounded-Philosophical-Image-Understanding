@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0686",
+  "sample_id": "PHL1800_IRFL_0007",
+  "file_name": "PHL1800_IRFL_0007.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a barred cell interior viewed through a metal gate",
+  "captions": {
+    "scene": [
+      "A dimly lit institutional cell with pale green walls, white ceiling fixtures, and concrete flooring visible behind vertical and horizontal metal bars.",
+      "Three identical metal-framed beds with wire mesh bases are aligned parallel to the back wall, each positioned beneath a small shelf or fixture.",
+      "A white ceramic toilet is mounted on the right-hand wall near the center bed; a second similar fixture appears partially visible on the left wall."
+    ],
+    "action": [
+      "No human or animal figures are present; all visible elements are stationary.",
+      "The bars show chipped paint and minor rust, indicating wear over time.",
+      "Light emanates from overhead fluorescent fixtures, casting uniform illumination without shadows suggesting movement."
+    ],
+    "rationale": [
+      "The absence of occupants suggests the cell is currently unoccupied, though this cannot be confirmed solely from visual evidence.",
+      "The uniformity of beds and fixtures implies standardized institutional design rather than individual customization.",
+      "The presence of multiple identical cells (implied by repeating structural elements beyond the central view) suggests a larger facility layout, but only one cell is fully visible."
+    ],
+    "object": [
+      "A white-painted steel gate with vertical bars spaced approximately 10 cm apart and horizontal crossbars at regular intervals blocks direct access to the cell interior.",
+      "Three metal-framed beds with grid-style wire mesh surfaces rest on low legs; none have mattresses or bedding.",
+      "A white porcelain toilet with a visible flush valve is mounted on the right wall, approximately 1.2 meters above floor level.",
+      "Two small rectangular wall-mounted shelves or recesses appear above the left and center beds, each holding no visible items.",
+      "The floor consists of large gray concrete tiles with visible grout lines; no rugs, mats, or debris are present."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0686_P1",
+      "visual_anchors": [
+        "vertical metal bars",
+        "bare wire-mesh beds",
+        "uniform green walls"
+      ],
+      "symbolic_mapping": [
+        "bars → physical restriction",
+        "bare beds → deprivation of comfort"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image embodies constraint as a spatial condition: the bars enforce separation while the absence of personal objects renders the space functionally neutral, foregrounding institutional control over individual autonomy.",
+      "alternative_interpretations": [
+        "It may simply depict standard correctional infrastructure without symbolic intent, emphasizing utility over meaning."
+      ],
+      "limitations": [
+        "No signage, labels, or contextual markers confirm institutional purpose; the scene could belong to a historical exhibit, film set, or decommissioned facility."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0686_P2",
+      "visual_anchors": [
+        "three identical beds",
+        "repeating wall fixtures",
+        "symmetrical layout"
+      ],
+      "symbolic_mapping": [
+        "repetition → erasure of individuality",
+        "symmetry → enforced order"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The standardized arrangement suggests a regime where social identity is subordinated to collective function—individual needs are abstracted into interchangeable units within a designed environment.",
+      "alternative_interpretations": [
+        "The repetition reflects cost-efficient construction practices rather than ideological intent."
+      ],
+      "limitations": [
+        "No personal effects or markings exist to confirm whether occupants were assigned or chose placement; thus, agency cannot be inferred."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0686_P3",
+      "visual_anchors": [
+        "overhead fluorescent lighting",
+        "chipped paint on bars",
+        "concrete floor"
+      ],
+      "symbolic_mapping": [
+        "harsh lighting → surveillance",
+        "wear on bars → duration of confinement"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The material degradation (chipped paint, scuffed concrete) combined with unchanging artificial light evokes temporal stasis—where time is measured not by natural cycles but by accumulated wear on fixed structures.",
+      "alternative_interpretations": [
+        "The wear may result from routine maintenance neglect rather than prolonged use."
+      ],
+      "limitations": [
+        "No clocks, calendars, or seasonal indicators are visible; temporal scale cannot be objectively determined."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:38:50.107210+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2a0d4a12-7f20-9eca-b1d6-0d16639f96fe",
+      "usage": {
+        "prompt_tokens": 877,
+        "completion_tokens": 935,
+        "total_tokens": 1812,
+        "completion_tokens_details": {
+          "text_tokens": 935
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 370,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013835a8bd3d57df454e58",
+      "usage": {
+        "completion_tokens": 799,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2007,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2806
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

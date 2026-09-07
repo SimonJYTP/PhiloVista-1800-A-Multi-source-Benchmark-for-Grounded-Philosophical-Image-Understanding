@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0823",
+  "sample_id": "PHL1800_HAIV_0215",
+  "file_name": "PHL1800_HAIV_0215.png",
+  "batch_id": "B018",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single human figure buried under a large pile of papers",
+  "captions": {
+    "scene": [
+      "A stylized cartoon figure lies prone beneath an oversized, irregular mound of light-blue sheets with black outlines.",
+      "The background is plain white, isolating the figure and paper pile as the sole visual elements.",
+      "Only the figure’s arms, hands, neck, and part of the face are visible below the paper mass."
+    ],
+    "action": [
+      "The figure’s arms are extended outward, palms down, suggesting support or strain.",
+      "The pile of papers rests directly on the figure’s torso and head, obscuring most of the body.",
+      "The figure appears motionless, with no indication of active movement or struggle."
+    ],
+    "rationale": [
+      "The figure’s posture—arms splayed and head partially visible—suggests being overwhelmed rather than voluntarily covered.",
+      "The uniform color and layered appearance of the papers imply they are documents or sheets, not random debris.",
+      "No facial expression is discernible due to occlusion and minimal detail; emotional state cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "The figure has light-skinned arms and hands with five fingers each, outlined in black.",
+      "A small portion of the figure’s face is visible: a curved mouth line, two red circular marks near the jawline (possibly earrings or clothing details), and no eyes or nose shown.",
+      "The pile consists of numerous overlapping rectangular sheets, mostly light blue with black contour lines, some showing white blank areas where layers separate.",
+      "The papers vary slightly in size and orientation but share consistent thickness and edge curvature, indicating folded or stacked documents.",
+      "No text is legible on any sheet; all inscriptions, if present, are obscured or absent."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0823_P1",
+      "visual_anchors": [
+        "arms extended outward",
+        "paper pile covering head and torso",
+        "red circular marks near jaw"
+      ],
+      "symbolic_mapping": [
+        "extended arms → resistance or burden-bearing",
+        "paper pile → institutional or bureaucratic weight"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually enacts the tension between individual agency (outstretched arms) and systemic overload (paper mass), suggesting labor under constraint where documentation itself becomes a physical imposition.",
+      "alternative_interpretations": [
+        "It may simply depict a humorous or exaggerated illustration of administrative backlog without philosophical intent."
+      ],
+      "limitations": [
+        "No textual content or contextual cues confirm intentional symbolism; the red marks could be decorative rather than symbolic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0823_P2",
+      "visual_anchors": [
+        "face partially visible",
+        "uniform paper layers",
+        "lack of facial features"
+      ],
+      "symbolic_mapping": [
+        "occluded face → loss of identity",
+        "repetitive sheets → homogenization of information"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The suppression of facial identity beneath standardized documents implies a critique of how systems reduce individuals to data points, where truth is mediated through impersonal records.",
+      "alternative_interpretations": [
+        "The face may be minimally drawn for stylistic simplicity, not to convey erasure."
+      ],
+      "limitations": [
+        "The absence of eyes/nose/mouth is consistent with the image’s minimalist cartoon style, not necessarily intentional anonymization."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0823_P3",
+      "visual_anchors": [
+        "figure lying prone",
+        "papers piled asymmetrically",
+        "hands flat on surface"
+      ],
+      "symbolic_mapping": [
+        "prone position → subjugation",
+        "asymmetrical pile → uneven distribution of burden"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The unequal weight distribution across the figure’s body visually mirrors social power imbalances, where certain groups bear disproportionate administrative or epistemic labor within collective structures.",
+      "alternative_interpretations": [
+        "The asymmetry may result from artistic composition choices rather than deliberate commentary on inequality."
+      ],
+      "limitations": [
+        "No demographic or contextual markers identify social groupings; the figure is generic and undifferentiated."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:19:42.200087+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3486deba-ade2-9cba-9656-ef5ae7d8483c",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 939,
+        "total_tokens": 2472,
+        "completion_tokens_details": {
+          "text_tokens": 939
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703193063c37e6ada2c49bd",
+      "usage": {
+        "completion_tokens": 799,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2898,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3697
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

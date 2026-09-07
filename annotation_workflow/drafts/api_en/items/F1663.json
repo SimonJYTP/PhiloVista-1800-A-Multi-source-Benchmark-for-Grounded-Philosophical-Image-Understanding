@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1663",
+  "sample_id": "PHL1800_HAIV_0546",
+  "file_name": "PHL1800_HAIV_0546.png",
+  "batch_id": "B034",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure with closed eyes",
+  "captions": {
+    "scene": [
+      "A figure emerges from a solid blue lower band against a pale green upper background.",
+      "Multiple oval and circular shapes in teal, green, and blue float above and on the figure's head and right cheek.",
+      "The figure has brown hair, simple black-line facial features, and pink blush on both cheeks."
+    ],
+    "action": [
+      "The figure’s eyes are closed with visible lashes; mouth is slightly parted in neutral position.",
+      "Teal-green ovals rest on the scalp and float upward, some overlapping hair.",
+      "Gray-blue irregular splotches adhere to the right cheek and jawline, extending onto the neck and hair."
+    ],
+    "rationale": [
+      "The floating ovals suggest buoyancy or detachment due to their placement above the head and consistent outline style.",
+      "The gray splotches on the face may indicate contact or adhesion, given their irregular edges and partial overlap with skin and hair.",
+      "The figure appears static rather than in motion, as no limbs are visible and posture shows no dynamic tension."
+    ],
+    "object": [
+      "The figure has two symmetrical ears outlined in black, each with a small dark dot inside.",
+      "Three small dark dots appear on the forehead: one central, two lateral—possibly decorative or symbolic marks.",
+      "Hair is rendered in solid brown with jagged lower edges, framing the face and partially covering the ears.",
+      "All floating ovals have thick dark blue outlines and internal gradients from teal to olive green.",
+      "The lower third of the image is a uniform medium blue band with a slightly uneven top edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1663_P1",
+      "visual_anchors": [
+        "floating teal ovals",
+        "closed eyes",
+        "gray splotches on cheek"
+      ],
+      "symbolic_mapping": [
+        "floating ovals → mental contents detached from self",
+        "closed eyes → inward focus or suspension of external perception"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The separation between the figure’s face and the floating ovals suggests a disjunction between embodied self and emergent thoughts or perceptions, raising questions about the reliability of internal representation versus sensory grounding.",
+      "alternative_interpretations": [
+        "The ovals may simply represent bubbles in water, with the figure submerged—making the image a literal depiction of submersion rather than metaphor."
+      ],
+      "limitations": [
+        "No textual labels confirm symbolic intent; color and shape choices are ambiguous without context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1663_P2",
+      "visual_anchors": [
+        "gray-blue splotches on right cheek",
+        "asymmetry of splotch distribution",
+        "clean left cheek"
+      ],
+      "symbolic_mapping": [
+        "asymmetric splotches → partial contamination or incomplete integration"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The unilateral presence of splotches implies a fractured or socially mediated self-image, where external influences adhere selectively, challenging notions of coherent personal identity.",
+      "alternative_interpretations": [
+        "The splotches could be paint smudges from an artistic process, indicating the figure is being created or altered rather than experiencing internal conflict."
+      ],
+      "limitations": [
+        "No indication of intentionality behind splotch placement; they may be purely decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1663_P3",
+      "visual_anchors": [
+        "uniform blue lower band",
+        "figure emerging from it",
+        "closed eyes"
+      ],
+      "symbolic_mapping": [
+        "blue band → boundary between states (e.g., conscious/unconscious)",
+        "emergence → transition without agency"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The figure’s emergence from the blue band while eyes remain closed evokes a liminal passage—neither fully submerged nor fully emerged—suggesting involuntary transition, such as birth, death, or awakening beyond volition.",
+      "alternative_interpretations": [
+        "The blue band is merely a background element with no narrative function; the figure is simply positioned against a two-tone backdrop."
+      ],
+      "limitations": [
+        "No directional cues (e.g., movement lines, perspective) confirm emergence; the figure may be static within a flat composition."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:58:59.241147+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-00503753-7c03-9fa9-a96a-e6a9f2991589",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 962,
+        "total_tokens": 2495,
+        "completion_tokens_details": {
+          "text_tokens": 962
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070458439a066ec5cc6b499a",
+      "usage": {
+        "completion_tokens": 825,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2919,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3744
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

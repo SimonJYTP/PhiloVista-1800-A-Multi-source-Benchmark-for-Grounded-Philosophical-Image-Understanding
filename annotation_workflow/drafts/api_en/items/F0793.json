@@ -1,0 +1,132 @@
+{
+  "annotation_item_id": "F0793",
+  "sample_id": "PHL1800_MM_0144",
+  "file_name": "PHL1800_MM_0144.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "ai_agent_direct_visual_reannotation_after_audit_non_independent",
+  "formal_gold": false,
+  "target_subject": "a smiling man standing behind a white duck in a decorated kitchen",
+  "captions": {
+    "scene": [
+      "A digitally rendered kitchen is decorated with a small Christmas tree and holiday ornaments.",
+      "A man in a red shirt and green festive apron stands behind a countertop beside a white duck.",
+      "A large speech bubble above the man contains explicit English text about sexual intent toward the bird."
+    ],
+    "action": [
+      "The man stands with his hands near his hips and smiles toward the viewer.",
+      "The duck stands upright on the countertop in front of the man's apron.",
+      "The speech bubble attributes an explicit statement about the duck to the man."
+    ],
+    "rationale": [
+      "The apron, food, and kitchen setting suggest a staged food-preparation scene, although no cooking action is visible.",
+      "The Christmas decorations establish a holiday theme around the otherwise incongruous placement of a live bird on the counter.",
+      "The explicit text supplies the scenario's disturbing intent, which cannot be inferred from the man's pose alone."
+    ],
+    "object": [
+      "A muscular dark-haired man wears a red polo shirt and a green apron decorated with a small Santa figure.",
+      "A white duck with an orange bill and orange feet stands on the kitchen counter.",
+      "A small decorated Christmas tree with a white star stands at the left side of the counter.",
+      "A shallow white dish holds a mound of white granular material near the duck.",
+      "A white speech bubble contains explicit black English text concerning sexual contact with the animal."
+    ]
+  },
+  "rationale_support": [
+    "commonsense_inference",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0793_P1",
+      "visual_anchors": [
+        "explicit speech bubble",
+        "live duck beside the man"
+      ],
+      "symbolic_mapping": [
+        "stated intent toward an animal → disregard for nonhuman agency"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The text-image combination raises an ethical question about power over a nonhuman being whose consent is impossible within the depicted scenario.",
+      "alternative_interpretations": [
+        "The image may be constructed as an intentionally offensive test case rather than a representation of an intended act."
+      ],
+      "limitations": [
+        "The ethical reading depends strongly on the speech-bubble text and not on visible physical conduct."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0793_P2",
+      "visual_anchors": [
+        "smiling frontal pose",
+        "festive kitchen decorations",
+        "explicit text"
+      ],
+      "symbolic_mapping": [
+        "cheerful appearance versus harmful statement → conflict between surface and meaning"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The contrast between a polished cheerful appearance and the explicit statement illustrates how outward presentation can conceal or normalize troubling content.",
+      "alternative_interpretations": [
+        "The visual contrast may be generated for shock or absurd humor rather than to characterize a real person."
+      ],
+      "limitations": [
+        "The subject is synthetic-looking, and the image provides no reliable evidence about a real identity or belief."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0793_P3",
+      "visual_anchors": [
+        "digitally rendered surfaces",
+        "speech bubble",
+        "holiday props"
+      ],
+      "symbolic_mapping": [
+        "assembled visual cues → manufactured moral scenario"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The obviously constructed scene shows how images and text can manufacture a moral proposition that viewers may mistake for evidence about an event.",
+      "alternative_interpretations": [
+        "It can also function only as a provocative meme whose content is not meant literally."
+      ],
+      "limitations": [
+        "Without provenance, the creator's aim and the degree of generative manipulation remain unknown."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "codex_visual_audit",
+    "verdict": "revised_by_audit_visual_inspection",
+    "issues": [
+      "Previous fallback annotation described a different image; all semantic annotation fields were replaced after direct inspection of the mapped image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:39:38.195026+00:00",
+    "generator": "zcode_ai_agent_manual_visual",
+    "reviewer": "none",
+    "image_input": "direct_local_view_by_ai_agent",
+    "audit_revision": {
+      "timestamp_utc": "2026-09-07T14:37:45.702430+00:00",
+      "reason_code": "cross_image_annotation_mismatch",
+      "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F0793.json",
+      "formal_gold": false
+    }
+  }
+}

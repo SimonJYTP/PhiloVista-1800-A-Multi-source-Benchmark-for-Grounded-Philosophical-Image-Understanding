@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0293",
+  "sample_id": "PHL1800_IRFL_0145",
+  "file_name": "PHL1800_IRFL_0145.jpg",
+  "batch_id": "B008",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two paper-cutout human figures and a pair of scissors",
+  "captions": {
+    "scene": [
+      "Two black paper silhouettes of standing human figures on a textured tan surface, illuminated from the upper left.",
+      "A metallic scissor blade is positioned horizontally across the midsection of the two figures, casting sharp shadows.",
+      "The scene is lit with warm, directional lighting that produces high-contrast shadows extending toward the lower right."
+    ],
+    "action": [
+      "The scissors are open, with one blade intersecting the space between the two figures’ torsos.",
+      "The left figure’s right arm extends toward the right figure’s left arm, suggesting contact or holding hands.",
+      "Both figures cast long, dark shadows onto the surface, indicating a strong light source outside the frame."
+    ],
+    "rationale": [
+      "The figures appear to be made of paper due to visible edge texture and slight warping consistent with cut cardboard or thick paper.",
+      "The scissors are not actively cutting; their position is static, so motion cannot be confirmed from the image alone.",
+      "The hand-holding gesture is inferred from proximity and limb orientation, but no actual physical connection is visible at the contact point."
+    ],
+    "object": [
+      "Two distinct paper-cutout human silhouettes stand upright on a flat tan surface, each with a head, torso, two arms, and two legs.",
+      "A pair of metal scissors lies diagonally across the scene, with one blade passing behind the left figure and in front of the right figure.",
+      "The scissors have a visible pivot screw near the lower right corner and polished reflective surfaces catching light.",
+      "The left figure’s right arm is raised and angled toward the right figure’s left arm, with fingertips nearly touching.",
+      "Shadows cast by the figures and scissors are sharply defined and elongated, indicating a single dominant light source."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0293_P1",
+      "visual_anchors": [
+        "scissors intersecting two figures",
+        "hand-holding posture",
+        "strong directional shadow"
+      ],
+      "symbolic_mapping": [
+        "scissors represent external intervention",
+        "hand-holding suggests relational continuity"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image visually stages a tension between relational unity (hand-holding) and external division (scissors), suggesting how social bonds may be subject to instrumental forces beyond individual control.",
+      "alternative_interpretations": [
+        "A literal craft setup showing paper figures being arranged for a diorama, with scissors placed as a compositional element."
+      ],
+      "limitations": [
+        "No textual labels or contextual markers confirm symbolic intent; the scissors may simply be part of the staging rather than an active metaphor."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0293_P2",
+      "visual_anchors": [
+        "two identical-style silhouettes",
+        "lack of facial or gender features",
+        "uniform black fill"
+      ],
+      "symbolic_mapping": [
+        "undifferentiated forms imply generic social roles",
+        "shared posture suggests mutual dependence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The absence of distinguishing features on the figures emphasizes their status as abstract social units, raising questions about how identity is constructed through relational positioning rather than intrinsic traits.",
+      "alternative_interpretations": [
+        "The figures are generic templates used in educational or therapeutic settings, where anonymity supports universal applicability."
+      ],
+      "limitations": [
+        "The uniformity could result from material constraints (e.g., single sheet of paper) rather than intentional abstraction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0293_P3",
+      "visual_anchors": [
+        "long shadows extending away from figures",
+        "light source outside frame",
+        "static composition"
+      ],
+      "symbolic_mapping": [
+        "shadows indicate presence of unseen influence",
+        "stillness implies suspended action"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The elongated shadows, cast by an off-frame light, evoke temporal passage and vulnerability—figures exist in a moment poised between connection and severance, constrained by forces they do not control.",
+      "alternative_interpretations": [
+        "The shadows are purely optical artifacts of studio lighting and carry no intended meaning."
+      ],
+      "limitations": [
+        "Shadow length depends on lighting geometry alone; no evidence confirms temporal or existential symbolism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:29:16.227733+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-45aeb0fe-8357-9f49-ba21-9ef023153337",
+      "usage": {
+        "prompt_tokens": 1245,
+        "completion_tokens": 965,
+        "total_tokens": 2210,
+        "completion_tokens_details": {
+          "text_tokens": 965
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 738,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702290208eb3b83465c46d4",
+      "usage": {
+        "completion_tokens": 826,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2516,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3342
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

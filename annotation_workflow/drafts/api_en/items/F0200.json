@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0200",
+  "sample_id": "PHL1800_IRFL_0072",
+  "file_name": "PHL1800_IRFL_0072.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person's hands interacting with a filing cabinet drawer",
+  "captions": {
+    "scene": [
+      "A light-blue metal filing cabinet with an open drawer revealing black hanging file folders and manila folders.",
+      "A neutral off-white wall serves as the background behind the cabinet and hands.",
+      "The lighting is even and diffused, casting soft shadows beneath the drawer and hands."
+    ],
+    "action": [
+      "The right hand grasps the edge of a manila folder tab while pulling it slightly forward from its hanging file slot.",
+      "The left hand rests on the inner left rail of the open drawer, stabilizing it.",
+      "The drawer is fully extended horizontally from the cabinet body, exposing its contents."
+    ],
+    "rationale": [
+      "The presence of hanging file folders and manila folders suggests an organizational context, though the specific content or purpose remains unspecified.",
+      "The person’s sleeves are long and grey, indicating formal or business-casual attire; however, no further identity or role can be determined.",
+      "The cabinet has a blank label holder and a metallic handle, but no legible text appears on any visible surface."
+    ],
+    "object": [
+      "A light-blue metal two-drawer vertical filing cabinet with a rectangular label holder on the upper drawer front and a horizontal chrome pull handle below it.",
+      "An open lower drawer contains a metal hanging file frame holding multiple black plastic hanging file folders with evenly spaced tabs.",
+      "Manila folders are inserted into the hanging files, their edges visible between the black tabs; some appear slightly bent or worn.",
+      "Two human hands are visible: the right hand has short trimmed nails and visible hair on the dorsal surface; the left hand shows similar features and rests on the drawer’s interior left guide rail.",
+      "The person wears a grey long-sleeved shirt with a stitched cuff and a small buttonhole near the wrist."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0200_P1",
+      "visual_anchors": [
+        "black hanging file folders",
+        "manila folders partially extracted",
+        "drawer fully extended"
+      ],
+      "symbolic_mapping": [
+        "hanging folders represent structured categories",
+        "extraction of a single folder signifies selection within constraint"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The act of selecting one folder among many within a rigidly ordered system visually embodies the tension between epistemic access (knowledge) and structural limitation (constraint).",
+      "alternative_interpretations": [
+        "This is simply routine office document retrieval with no symbolic intent."
+      ],
+      "limitations": [
+        "No labels, titles, or contextual signage confirm intentional symbolism; the scene may be purely functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0200_P2",
+      "visual_anchors": [
+        "hands manipulating physical documents",
+        "metal cabinet structure",
+        "uniform folder arrangement"
+      ],
+      "symbolic_mapping": [
+        "manual handling of paper reflects labor mediated by technology",
+        "cabinet as institutional infrastructure"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image captures labor as embodied interaction with standardized technological artifacts, where social order is maintained through repeated physical acts of filing and retrieval.",
+      "alternative_interpretations": [
+        "The hands belong to someone performing a mundane administrative task without broader implication."
+      ],
+      "limitations": [
+        "No visible indicators of workplace hierarchy, time period, or institutional affiliation limit generalization."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0200_P3",
+      "visual_anchors": [
+        "blank label holder",
+        "unmarked folder tabs",
+        "neutral background"
+      ],
+      "symbolic_mapping": [
+        "absence of text signifies undetermined meaning",
+        "uniformity implies potential for erasure or anonymity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The unmarked surfaces and identical folder forms suggest a space where identity is deferred or constructed only through action—here, the choice to extract one item initiates a trajectory without prior inscription.",
+      "alternative_interpretations": [
+        "The lack of labels is practical: the user knows the system internally, or labeling occurs later."
+      ],
+      "limitations": [
+        "Blankness may result from photographic framing rather than intentional omission; no evidence confirms semantic emptiness."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:17:13.870215+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ae72b507-1500-9208-99fe-f83f0f36dc36",
+      "usage": {
+        "prompt_tokens": 3029,
+        "completion_tokens": 940,
+        "total_tokens": 3969,
+        "completion_tokens_details": {
+          "text_tokens": 940
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2522,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702165218e311c2f6e44051",
+      "usage": {
+        "completion_tokens": 801,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 6896,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 7697
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

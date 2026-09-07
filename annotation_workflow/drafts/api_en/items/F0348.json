@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0348",
+  "sample_id": "PHL1800_IRFL_0224",
+  "file_name": "PHL1800_IRFL_0224.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult gorilla",
+  "captions": {
+    "scene": [
+      "A gorilla sits on a rough-hewn stone ledge against a textured stone wall.",
+      "Strong directional lighting casts sharp shadows across the gorilla and background stones.",
+      "The composition is monochromatic with high contrast between light and dark surfaces."
+    ],
+    "action": [
+      "The gorilla is seated in a crouched posture with both hands near its face, one index finger raised toward its mouth.",
+      "Its head is turned slightly leftward, eyes directed forward and downward.",
+      "The gorilla’s left foot rests flat on the ledge while the right foot is partially obscured but appears planted."
+    ],
+    "rationale": [
+      "The raised index finger and proximity to the mouth suggest a gesture commonly associated with contemplation or inhibition, though this is not verifiable from visual data alone.",
+      "The absence of other figures or objects implies isolation within the frame, but no evidence confirms intentional solitude.",
+      "The fur texture and musculature indicate maturity, yet precise age cannot be determined from visible features alone."
+    ],
+    "object": [
+      "The gorilla has dense, dark fur covering its body, with lighter shading on the chest and face due to lighting.",
+      "Its facial features include a prominent brow ridge, deep-set eyes, a broad nose, and closed lips.",
+      "The left hand is positioned with the index finger extended upward and touching or near the lower lip; the remaining fingers are curled inward.",
+      "The stone surface beneath the gorilla shows irregular edges, cracks, and granular texture consistent with natural rock.",
+      "Shadowing falls predominantly to the right side of the gorilla and behind it, indicating a light source from the upper left."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0348_P1",
+      "visual_anchors": [
+        "raised index finger near mouth",
+        "downcast gaze",
+        "solitary seated posture"
+      ],
+      "symbolic_mapping": [
+        "raised finger → restraint or deliberation",
+        "downcast gaze → introspection"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The gesture and posture evoke a moment suspended between impulse and reflection, suggesting the tension between instinctual action and cognitive inhibition—a visual metaphor for epistemic caution or self-imposed constraint.",
+      "alternative_interpretations": [
+        "The pose may simply reflect a habitual resting position or response to environmental stimuli such as wind or insects near the face."
+      ],
+      "limitations": [
+        "No facial expression beyond neutral musculature is discernible; emotional or cognitive states are not visually encoded."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0348_P2",
+      "visual_anchors": [
+        "dense fur texture",
+        "muscular arms",
+        "stone enclosure"
+      ],
+      "symbolic_mapping": [
+        "fur and musculature → embodied presence",
+        "stone enclosure → bounded existence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The contrast between organic form and inert stone highlights the materiality of being—how identity is inscribed through physicality within temporal limits, evoking finitude through stillness and texture.",
+      "alternative_interpretations": [
+        "The setting is likely artificial (e.g., zoo habitat), so the stone serves functional rather than symbolic purposes."
+      ],
+      "limitations": [
+        "The origin and purpose of the stone structure are unseen; symbolic reading assumes intentionality not confirmed by image content."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0348_P3",
+      "visual_anchors": [
+        "single figure",
+        "no interaction with others",
+        "fixed gaze direction"
+      ],
+      "symbolic_mapping": [
+        "isolation → existential singularity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The solitary figure, unengaged with any external agent, frames existence as an internal trajectory—where meaning arises not from relation but from the continuity of self-directed attention across time.",
+      "alternative_interpretations": [
+        "The gorilla may be awaiting food, observing off-frame activity, or reacting to keeper presence outside the frame."
+      ],
+      "limitations": [
+        "Absence of other subjects does not prove social disconnection; context beyond the frame is unknown."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:36:30.665432+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0f4dcc25-0bed-9761-bce7-d0edea4325f4",
+      "usage": {
+        "prompt_tokens": 1181,
+        "completion_tokens": 934,
+        "total_tokens": 2115,
+        "completion_tokens_details": {
+          "text_tokens": 934
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 674,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023620a8fdfa9726d2439a",
+      "usage": {
+        "completion_tokens": 797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2412,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3209
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

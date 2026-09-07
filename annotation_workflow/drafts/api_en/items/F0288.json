@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0288",
+  "sample_id": "PHL1800_HAIV_0041",
+  "file_name": "PHL1800_HAIV_0041.png",
+  "batch_id": "B008",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single seated elderly person wearing regalia",
+  "captions": {
+    "scene": [
+      "A person sits on an ornate wooden throne with red upholstered back and armrests.",
+      "The background is plain white, isolating the figure and throne.",
+      "The lighting appears even and diffuse, with no strong shadows indicating a specific light source."
+    ],
+    "action": [
+      "The person holds a golden scepter horizontally across their lap with both hands.",
+      "The person remains seated upright with arms resting on armrests and lap.",
+      "The person’s gaze is directed forward, eyes open and mouth closed in a neutral expression."
+    ],
+    "rationale": [
+      "The crown, scepter, and draped mantle suggest ceremonial or symbolic authority; however, no text confirms title or office.",
+      "The visible wrinkles, white hair, and facial structure indicate advanced age, but exact age cannot be determined.",
+      "The purple mantle with gold circular motifs and green lining resembles historical European royal vestments, yet no specific culture or era is verifiable from image alone."
+    ],
+    "object": [
+      "The person wears a gold crown with blue and red decorative elements and a central red jewel-like shape.",
+      "A deep blue robe covers the torso and legs, overlaid by a purple mantle edged in green and trimmed with orange-yellow bands and gold circular patches.",
+      "A small gold cross pendant hangs at the center of the chest on a thin chain.",
+      "The person wears large yellow disc-shaped earrings and multiple dark bracelets on the left wrist.",
+      "The scepter is gold-colored, cylindrical, with a flared end held in the right hand and a knobbed grip near the left hand."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0288_P1",
+      "visual_anchors": [
+        "gold crown",
+        "white hair",
+        "wrinkled face"
+      ],
+      "symbolic_mapping": [
+        "crown → institutional power",
+        "white hair and wrinkles → passage of time and bodily decay"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of enduring symbols of authority (crown, scepter) with visible signs of aging suggests tension between transient human life and persistent structures of power.",
+      "alternative_interpretations": [
+        "The depiction may simply follow conventional iconography for a monarch without philosophical intent."
+      ],
+      "limitations": [
+        "No textual context or narrative cues confirm intentional symbolism; visual elements could be stylistic rather than conceptual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0288_P2",
+      "visual_anchors": [
+        "purple mantle with gold circles",
+        "green lining",
+        "blue robe"
+      ],
+      "symbolic_mapping": [
+        "layered garments → social hierarchy",
+        "color contrast → distinction between roles or statuses"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The deliberate layering and color coding of attire visually constructs a socially recognized identity, implying that status is performed through appearance and material signifiers.",
+      "alternative_interpretations": [
+        "The clothing may reflect period costume conventions without commentary on identity construction."
+      ],
+      "limitations": [
+        "The image does not show interaction with others or context that would confirm social performance versus static representation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0288_P3",
+      "visual_anchors": [
+        "cross pendant",
+        "closed mouth",
+        "steady gaze"
+      ],
+      "symbolic_mapping": [
+        "cross → faith or moral framework",
+        "neutral expression → restraint or contemplation"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The presence of a Christian cross alongside a composed, non-expressive demeanor may imply a conception of leadership grounded in internalized moral duty rather than emotional display.",
+      "alternative_interpretations": [
+        "The cross could be purely decorative or inherited regalia with no personal significance."
+      ],
+      "limitations": [
+        "No facial expression or gesture indicates inner conviction; the cross is small and could be ornamental."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:28:53.984467+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0661e8fe-8ee6-98cc-acfe-8746a8fa62ab",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 884,
+        "total_tokens": 2417,
+        "completion_tokens_details": {
+          "text_tokens": 884
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702283194c523d5144843a5",
+      "usage": {
+        "completion_tokens": 746,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2845,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3591
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

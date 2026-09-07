@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0618",
+  "sample_id": "PHL1800_IRFL_0098",
+  "file_name": "PHL1800_IRFL_0098.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals at a digital piano with sheet music",
+  "captions": {
+    "scene": [
+      "An indoor setting with a black-and-white digital piano, open sheet music featuring illustrations and musical notation, and a red fabric surface to the left.",
+      "A child wearing a green polka-dot dress and a pink smartwatch sits at the piano; an adult’s arms and torso are visible from behind, holding a pink pencil over the music.",
+      "The piano keyboard is partially covered by hands: one child’s right hand rests on keys, while two adult hands hold the music and pencil."
+    ],
+    "action": [
+      "The child’s right hand is placed on the white keys of the piano, fingers extended but not actively pressing notes.",
+      "The adult holds a pink pencil poised above the sheet music, suggesting pointing or marking, while also supporting the music book.",
+      "Both individuals are oriented toward the sheet music and keyboard, indicating shared attention to the musical material."
+    ],
+    "rationale": [
+      "The adult’s posture and pencil use suggest instructional guidance, though no direct teaching gesture (e.g., finger placement) is visible.",
+      "The child wears a smartwatch, which may indicate modern context or timekeeping, but its function cannot be confirmed from appearance alone.",
+      "Sheet music contains legible staff notation and colorful illustrations, but specific text labels are too blurred to read reliably."
+    ],
+    "object": [
+      "A digital piano with standard black and white keys, visible from a slightly elevated rear angle.",
+      "An open music book resting on the piano’s music stand, displaying staves, clefs, notes, and cartoon-style drawings including a cat-like figure.",
+      "A pink plastic pencil held in the adult’s right hand, tip near the music page.",
+      "A child’s right wrist bears a pink-cased smartwatch with a dark rectangular screen and black strap.",
+      "The child wears a sleeveless green dress with large white polka dots; the adult wears a light-colored short-sleeved shirt."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0618_P1",
+      "visual_anchors": [
+        "pink pencil hovering over music",
+        "child’s hand on keys",
+        "illustrated sheet music"
+      ],
+      "symbolic_mapping": [
+        "pencil as mediator between instruction and practice",
+        "hand-on-key as tentative engagement with structure"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The scene embodies the transmission of structured knowledge through guided participation, where the pencil signifies deliberate scaffolding and the child’s hand represents the initiation of autonomous action within a codified system.",
+      "alternative_interpretations": [
+        "This may simply depict routine music practice without symbolic intent—just a lesson in progress."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues confirm intentionality or internal states; symbolism is inferred from object arrangement alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0618_P2",
+      "visual_anchors": [
+        "smartwatch on child’s wrist",
+        "digital piano",
+        "paper sheet music"
+      ],
+      "symbolic_mapping": [
+        "smartwatch as temporal marker contrasting analog music notation",
+        "digital instrument mediating acoustic tradition"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of digital timekeeping, electronic instrumentation, and printed notation reflects contemporary tension between technological mediation and embodied learning, where time is both measured and experienced through disciplined repetition.",
+      "alternative_interpretations": [
+        "The smartwatch could be purely decorative or for parental tracking, unrelated to philosophical themes."
+      ],
+      "limitations": [
+        "The watch screen is off and unreadable; its purpose is not visually verifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0618_P3",
+      "visual_anchors": [
+        "adult’s hands framing the music",
+        "child’s isolated hand on keys",
+        "shared focal plane"
+      ],
+      "symbolic_mapping": [
+        "adult hands as boundary-setting presence",
+        "shared visual field as co-constituted space of meaning"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial configuration suggests social existence as co-constructed through proximity and shared attention, where constraint (the fixed keyboard layout, guided pencil) enables rather than negates the child’s emerging agency.",
+      "alternative_interpretations": [
+        "This may reflect mere physical positioning for ergonomic instruction, not relational philosophy."
+      ],
+      "limitations": [
+        "No eye contact or reciprocal gestures confirm mutual awareness; the ‘shared focal plane’ is inferred from orientation only."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:01:28.374600+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1234fb81-da2c-9e06-8520-3603a807ef49",
+      "usage": {
+        "prompt_tokens": 1067,
+        "completion_tokens": 999,
+        "total_tokens": 2066,
+        "completion_tokens_details": {
+          "text_tokens": 999
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 560,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030108eceb191207f942f5",
+      "usage": {
+        "completion_tokens": 860,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2308,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3168
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

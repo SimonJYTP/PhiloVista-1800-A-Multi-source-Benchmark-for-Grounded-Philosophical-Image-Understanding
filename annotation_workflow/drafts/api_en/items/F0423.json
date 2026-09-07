@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0423",
+  "sample_id": "PHL1800_HAIV_0481",
+  "file_name": "PHL1800_HAIV_0481.png",
+  "batch_id": "B010",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single cartoon-style person seated at a desk",
+  "captions": {
+    "scene": [
+      "A bright yellow sun with radiating rays dominates the upper right against a blue sky and green ground.",
+      "Orange-yellow autumn leaves are scattered in the air and on the desk surface.",
+      "The background includes a branch with leaves in the upper left and a green hill-like shape beneath the sky."
+    ],
+    "action": [
+      "The person holds a red pen over a sheet of paper, with hand positioned as if writing or pausing mid-stroke.",
+      "The person’s mouth is open wide and eyes are large and round, suggesting surprise or alarm.",
+      "Three white abstract shapes resembling stylized letters or symbols float near the person’s head."
+    ],
+    "rationale": [
+      "The open mouth and enlarged eyes indicate a visible expression of shock or sudden realization, though exact cause is not shown.",
+      "The presence of multiple envelopes and stacked papers suggests administrative or clerical work, but no specific task is identifiable.",
+      "Floating leaf fragments and the sun imply an outdoor or window-view setting, yet the desk and indoor objects create ambiguity about actual location."
+    ],
+    "object": [
+      "A person with brown hair, wearing a yellow shirt with a red collar, sits at a brown wooden desk.",
+      "Two white envelopes stand upright on the desk, one partially behind the other, both with triangular flaps visible.",
+      "A stack of white papers lies to the right of the person, with top sheet showing faint black scribbles.",
+      "A red pen with a black tip rests in the person’s right hand, hovering above a blank white sheet.",
+      "A large yellow sun with jagged rays occupies the upper right quadrant; its center is a pale yellow circle with a thin white outline."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0423_P1",
+      "visual_anchors": [
+        "open mouth",
+        "enlarged eyes",
+        "floating abstract shapes"
+      ],
+      "symbolic_mapping": [
+        "open mouth → interruption of thought",
+        "floating shapes → intrusive ideas or external stimuli"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The figure’s startled expression amid symbolic interruptions may represent the destabilizing moment when received information challenges established belief, reflecting epistemic rupture.",
+      "alternative_interpretations": [
+        "The expression could simply depict fatigue-induced startle while working under bright sunlight."
+      ],
+      "limitations": [
+        "No readable text or contextual labels confirm the nature of the floating shapes or the cause of the reaction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0423_P2",
+      "visual_anchors": [
+        "stack of papers",
+        "envelopes",
+        "pen in hand"
+      ],
+      "symbolic_mapping": [
+        "paper stack → accumulated obligation",
+        "pen → agency under constraint"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of manual writing tools with overwhelming paperwork under natural light evokes tension between human labor and systemic demands, highlighting labor as mediated by material conditions.",
+      "alternative_interpretations": [
+        "The scene may depict routine office work without critical commentary."
+      ],
+      "limitations": [
+        "The image does not show digital devices or explicit institutional signage to confirm a bureaucratic context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0423_P3",
+      "visual_anchors": [
+        "falling leaves",
+        "bright sun",
+        "desk-bound figure"
+      ],
+      "symbolic_mapping": [
+        "falling leaves → passage of time",
+        "sun → external continuity"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The static, overwhelmed figure contrasted with dynamic natural elements suggests a philosophical tension between human stasis and temporal flux, where individual experience feels suspended amid inevitable change.",
+      "alternative_interpretations": [
+        "The leaves and sun may merely establish a seasonal aesthetic without temporal symbolism."
+      ],
+      "limitations": [
+        "No clocks, calendars, or aging indicators appear; seasonality is inferred solely from leaf color and shape."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:45:44.093962+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-93a5787d-e72f-9705-a195-310540bd4c95",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 879,
+        "total_tokens": 2412,
+        "completion_tokens_details": {
+          "text_tokens": 879
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024525d464d39dbcc0480a",
+      "usage": {
+        "completion_tokens": 743,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2838,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3581
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

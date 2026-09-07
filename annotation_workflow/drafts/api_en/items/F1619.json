@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1619",
+  "sample_id": "PHL1800_HL_0332",
+  "file_name": "PHL1800_HL_0332.png",
+  "batch_id": "B033",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red bus stopped at a traffic light in a multi-lane urban street",
+  "captions": {
+    "scene": [
+      "A sunlit city street lined with tall buildings, mature green trees, and multiple traffic signals showing red and green lights.",
+      "Vehicles including cars, SUVs, and a red bus occupy several lanes; pedestrians stand on the right sidewalk near a crosswalk.",
+      "Floral planters with red and yellow flowers appear in the lower-left foreground beside a no-turn sign."
+    ],
+    "action": [
+      "The red bus is stationary with its brake lights illuminated beneath a red traffic signal.",
+      "Multiple vehicles are queued behind the bus; some cars have brake lights on, others appear to be idling or moving slowly.",
+      "Pedestrians—four visible individuals—are standing or walking on the sidewalk to the right, some facing the street, one holding a white bag."
+    ],
+    "rationale": [
+      "The bus’s position directly under a red traffic light and its illuminated rear lights suggest it is stopped for the signal, though motion blur is absent and no wheel rotation is visible.",
+      "The presence of both red and green signals across different intersections implies staggered traffic control, not a system-wide stop, supporting localized stopping behavior.",
+      "The number of pedestrians (four) is countable: three clustered near a pole, one further right near a black vehicle; uncertainty remains about whether any are mid-stride versus fully stationary."
+    ],
+    "object": [
+      "A red rear-facing bus with visible taillights occupies the left lane.",
+      "A black SUV with a roof rack and visible rear license plate is in the center-right lane, positioned ahead of several other cars.",
+      "A white rectangular sign with a red circle and diagonal slash over a left-turn arrow is mounted on a pole in the lower-left foreground.",
+      "Three vertical traffic light assemblies are visible: leftmost shows red (top), amber (middle), green (bottom); middle shows amber (top), red (middle), green (bottom); rightmost shows green (top), red (middle), green (bottom).",
+      "Four distinct human figures are present on the right sidewalk: three grouped near a utility pole, one adjacent near a parked black car."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1619_P1",
+      "visual_anchors": [
+        "red traffic light",
+        "stationary bus",
+        "queued vehicles"
+      ],
+      "symbolic_mapping": [
+        "red light as enforced pause",
+        "queue as collective suspension of motion"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image embodies the tension between individual mobility and systemic regulation, where the red light enforces a shared constraint that temporarily suspends autonomous movement for collective order.",
+      "alternative_interpretations": [
+        "It simply depicts routine traffic flow during rush hour without symbolic intent."
+      ],
+      "limitations": [
+        "No signage or context confirms intentional symbolism; the red light is standard infrastructure, not a designed metaphor."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1619_P2",
+      "visual_anchors": [
+        "four pedestrians on sidewalk",
+        "varied postures",
+        "proximity to moving vehicles"
+      ],
+      "symbolic_mapping": [
+        "pedestrians as cohabiting agents in shared space",
+        "sidewalk as negotiated boundary"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The arrangement of pedestrians alongside vehicular traffic illustrates social existence as contingent on spatial negotiation—individuals occupy defined zones while sharing a public environment governed by implicit rules.",
+      "alternative_interpretations": [
+        "They are waiting to cross; their grouping reflects convenience, not philosophical positioning."
+      ],
+      "limitations": [
+        "Facial expressions and gaze directions are indistinct, preventing confirmation of mutual awareness or intentionality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1619_P3",
+      "visual_anchors": [
+        "floral planter with vibrant blooms",
+        "concrete sidewalk",
+        "steel traffic poles"
+      ],
+      "symbolic_mapping": [
+        "flowers as organic persistence amid urban rigidity",
+        "planters as curated nature within engineered space"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The deliberate placement of living flora against inert infrastructure reflects labor’s role in mediating technology and nature—human effort sustains aesthetic life within otherwise functional, mechanized environments.",
+      "alternative_interpretations": [
+        "The planter is municipal landscaping with no deeper meaning."
+      ],
+      "limitations": [
+        "No gardener, maintenance tools, or signage indicate intentional labor; the plants could be seasonal or automated."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (seven vs. actual visible individuals); traffic light color descriptions in object section are inaccurate; some object details (e.g., bus exhaust stacks) are not clearly visible."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:53:15.236250+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-691bbc2b-bec3-9aad-b225-11a139b0f03a",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1023,
+        "total_tokens": 1792,
+        "completion_tokens_details": {
+          "text_tokens": 1023
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045256acc8996b34704470",
+      "usage": {
+        "completion_tokens": 986,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1953,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2939
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

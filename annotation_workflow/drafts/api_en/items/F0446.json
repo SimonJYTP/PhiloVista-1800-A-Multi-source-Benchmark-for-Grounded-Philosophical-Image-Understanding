@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0446",
+  "sample_id": "PHL1800_MM_0025",
+  "file_name": "PHL1800_MM_0025.jpg",
+  "batch_id": "B011",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two seated individuals facing each other in a living room",
+  "captions": {
+    "scene": [
+      "A warmly lit interior with beige curtains, a shag rug, and two upholstered sofas arranged opposite each other.",
+      "A small black-and-white side table stands between the sofas; a pendant lamp hangs near a wooden wall panel on the right.",
+      "Natural light filters through sheer curtains behind the left individual, casting soft illumination across the floor and furniture."
+    ],
+    "action": [
+      "The left individual holds a black remote control with both hands and gazes toward the right individual.",
+      "The right individual gestures with an open right hand while looking at the left individual, mouth slightly open as if speaking.",
+      "A speech bubble originates from the left individual’s head area containing legible English text."
+    ],
+    "rationale": [
+      "The speech bubble is positioned near the left individual’s head and points toward them, indicating attribution to that person.",
+      "The remote control is held in a ready-to-press posture, suggesting intent to operate a television device.",
+      "The right individual’s open-palm gesture and orientation suggest active communication rather than passive listening."
+    ],
+    "object": [
+      "A boy wearing a navy blue short-sleeved t-shirt with a multicolored graphic and dark trousers sits on a grey fabric sofa holding a black remote control.",
+      "An adult man wearing a blue denim long-sleeved shirt, dark jeans, and brown lace-up shoes sits on a brown fabric sofa with his right hand raised and palm open.",
+      "A white oval speech bubble with black sans-serif text reads: 'I don't want to listen to you, I just want to watch TV.'",
+      "A beige high-pile carpet covers the floor between two sofas; the left sofa has a yellow pillow and a dark brown pillow.",
+      "A modern side table with a black metal frame and white top sits between the sofas, partially obscured by the right individual’s leg."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0446_P1",
+      "visual_anchors": [
+        "speech bubble text",
+        "remote control in hand",
+        "opposite seating arrangement"
+      ],
+      "symbolic_mapping": [
+        "remote control → instrument of selective attention",
+        "speech bubble → assertion of autonomy over shared space"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes a tension between individual agency and communal expectation, where the act of choosing media consumption becomes a symbolic refusal of interpersonal engagement.",
+      "alternative_interpretations": [
+        "A mundane domestic moment where one person is simply distracted and not yet engaged in conversation."
+      ],
+      "limitations": [
+        "The speech bubble is authorial overlay, not a verifiable utterance; no facial expression confirms emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0446_P2",
+      "visual_anchors": [
+        "open-palm gesture",
+        "direct eye contact",
+        "spatial separation by table"
+      ],
+      "symbolic_mapping": [
+        "open palm → offering or appeal",
+        "table as physical mediator → social boundary"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The spatial configuration and gesture imply a moral appeal for attention, framing dialogue as a duty within cohabitation, even when unreciprocated.",
+      "alternative_interpretations": [
+        "The gesture may be part of a casual explanation or joke, not necessarily a serious ethical claim."
+      ],
+      "limitations": [
+        "Gesture interpretation lacks contextual reinforcement (e.g., facial expression, body lean); cultural variation in hand signals is unverifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0446_P3",
+      "visual_anchors": [
+        "sheer curtains admitting diffuse light",
+        "static postures",
+        "lack of visible screen or TV"
+      ],
+      "symbolic_mapping": [
+        "absent TV screen → presence of absence",
+        "diffuse lighting → ambiguity of intention"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The absence of the television itself—despite the stated desire to watch it—invites reflection on whether the declared preference is literal or a metaphor for disengagement from present reality.",
+      "alternative_interpretations": [
+        "The TV is simply off-screen or out of frame; no symbolic meaning is intended."
+      ],
+      "limitations": [
+        "No TV is visible, so its absence cannot be confirmed as intentional omission rather than framing choice."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:47:45.369326+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0719b7b0-a338-9cce-8e51-65c4d0292ae1",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 976,
+        "total_tokens": 2509,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070247271748b9c0a3b745a7",
+      "usage": {
+        "completion_tokens": 836,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2929,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3765
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

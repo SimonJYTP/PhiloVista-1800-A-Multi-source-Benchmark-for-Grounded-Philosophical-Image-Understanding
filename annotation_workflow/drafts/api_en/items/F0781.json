@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0781",
+  "sample_id": "PHL1800_HL_0136",
+  "file_name": "PHL1800_HL_0136.png",
+  "batch_id": "B017",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person riding a bicycle while holding a blue umbrella",
+  "captions": {
+    "scene": [
+      "A tiled sidewalk with alternating yellow, blue, and white rectangular tiles runs diagonally across the frame.",
+      "Two cyclists are visible on a paved surface beside the tiled walkway; one is in the foreground, the other further back near a yellow wall.",
+      "Motorcycles appear in the background, partially blurred, suggesting motion along a parallel roadway."
+    ],
+    "action": [
+      "The foreground cyclist leans slightly forward while pedaling, gripping handlebars with both hands and holding a large blue umbrella overhead with the left hand.",
+      "A second cyclist behind and to the left rides a bicycle with a rear cargo rack and appears to be looking down or forward.",
+      "The foreground bicycle carries items in a front basket (including a red bottle) and a rear-mounted bag containing white plastic-wrapped objects."
+    ],
+    "rationale": [
+      "The umbrella is held aloft and angled such that its canopy covers the rider’s upper body, indicating active use for weather protection rather than decoration.",
+      "The rider’s posture—knees bent, torso inclined, feet on pedals—confirms active cycling rather than coasting or stopping.",
+      "The presence of multiple vehicles moving in the same general direction suggests shared traffic flow, though no explicit lane markings are visible."
+    ],
+    "object": [
+      "A blue umbrella with a black shaft is held above the foreground cyclist’s head, partially obscuring their face.",
+      "The foreground bicycle has a black frame, thin tires, a front wire basket containing a red plastic bottle and other indistinct items, and a rear rack holding a white plastic-wrapped bundle.",
+      "The cyclist wears a teal short-sleeved shirt, beige trousers, and white sneakers with black accents.",
+      "The sidewalk consists of square ceramic tiles arranged in parallel stripes: yellow, light blue, white, repeating diagonally from lower-left to upper-right.",
+      "A second cyclist wears a dark long-sleeved top and rides a bicycle with a rear rack and a small black bag attached; their face is partially visible and turned downward."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0781_P1",
+      "visual_anchors": [
+        "blue umbrella held aloft",
+        "tiled path with directional stripes",
+        "front basket carrying daily goods"
+      ],
+      "symbolic_mapping": [
+        "umbrella as provisional shelter against external conditions",
+        "striped path as structured yet transient route"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The rider navigates a predetermined urban pathway while actively constructing personal protection and utility—a microcosm of agency exercised within infrastructural constraints.",
+      "alternative_interpretations": [
+        "The scene simply depicts routine commuting under rain, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual signage or facial expression confirms intentional symbolism; interpretation relies on pattern projection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0781_P2",
+      "visual_anchors": [
+        "two cyclists moving in same direction",
+        "shared sidewalk space",
+        "absence of physical separation between riders"
+      ],
+      "symbolic_mapping": [
+        "proximity without interaction as emblem of coexistence",
+        "parallel motion as social simultaneity without connection"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Individuals occupy shared public space while maintaining functional independence, illustrating how modern urban life sustains collective presence through non-intersecting trajectories.",
+      "alternative_interpretations": [
+        "The riders are unrelated and coincidentally aligned; spatial proximity does not imply social meaning."
+      ],
+      "limitations": [
+        "No eye contact, gestures, or shared orientation confirm intentional social commentary."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0781_P3",
+      "visual_anchors": [
+        "white plastic-wrapped bundle on rear rack",
+        "red bottle in front basket",
+        "visible wear on tile grout lines"
+      ],
+      "symbolic_mapping": [
+        "packaged goods as mediated necessity",
+        "worn infrastructure as accumulated time"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "Everyday transport merges labor (carrying supplies) with temporal decay (weathered tiles), revealing how routine movement both defers and enacts entropy through persistent use.",
+      "alternative_interpretations": [
+        "The items are ordinary groceries; tile wear is incidental to foot traffic, not symbolic."
+      ],
+      "limitations": [
+        "Material condition of tiles and packaging cannot confirm intended metaphorical weight."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:16:28.743500+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d51398b5-a945-9834-a08e-20da58e3e6f1",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 991,
+        "total_tokens": 1660,
+        "completion_tokens_details": {
+          "text_tokens": 991
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031604fda99a8fb33f46ff",
+      "usage": {
+        "completion_tokens": 852,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1796,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2648
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

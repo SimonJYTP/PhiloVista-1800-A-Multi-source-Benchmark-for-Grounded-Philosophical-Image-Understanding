@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0537",
+  "sample_id": "PHL1800_MM_0065",
+  "file_name": "PHL1800_MM_0065.jpg",
+  "batch_id": "B013",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults in a modern office setting",
+  "captions": {
+    "scene": [
+      "A well-lit indoor workspace with gray countertops, white cabinets, and large monitors displaying charts.",
+      "Two individuals stand at a shared desk with laptops, notebooks, pens, and a coffee cup visible.",
+      "Background includes blurred office partitions and additional monitor screens showing data visualizations."
+    ],
+    "action": [
+      "The woman on the left holds a blue pen and writes in an open notebook while looking down.",
+      "The man on the right stands beside a black laptop, his right hand resting near the keyboard or touchpad.",
+      "Both individuals face each other across the desk, oriented toward the central workspace."
+    ],
+    "rationale": [
+      "The presence of notebooks, pens, and laptops suggests collaborative work or review; however, no direct interaction (e.g., pointing, speaking) is visible.",
+      "The speech bubble contains legible English text stating 'I should rely on my own research and not copy their data.', but its attribution to either person is visually ambiguous.",
+      "The monitors display bar and line charts with unreadable axis labels and titles; thus, the nature of the data cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "A woman with shoulder-length dark hair wears a dark blue speckled blazer over a light shirt and a blue lanyard with an indistinct badge.",
+      "A man with short brown hair, a beard, and black-rimmed glasses wears a light blue long-sleeve shirt, navy trousers, and a black belt.",
+      "A black laptop sits closed or partially open on the desk between the two individuals, with its screen facing away from the viewer.",
+      "A white notebook lies open in front of the woman, with her left hand holding pages and her right hand writing with a blue pen.",
+      "A large monitor behind the man displays multiple data visualizations including a blue area chart, green horizontal bars, and a line graph with peaks and troughs."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0537_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "woman writing in notebook",
+        "man standing beside laptop"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents internal ethical deliberation",
+        "notebook writing symbolizes original intellectual labor"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image visually stages a moment of epistemic integrity where the subject resolves not to appropriate others’ data, aligning with deontological ethics concerning intellectual honesty.",
+      "alternative_interpretations": [
+        "The speech bubble may be a generic stock-image overlay unrelated to the depicted individuals, serving only as thematic decoration."
+      ],
+      "limitations": [
+        "The speaker of the thought is not visually identified; the bubble floats without a tail pointing to either person."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0537_P2",
+      "visual_anchors": [
+        "dual-monitor setup",
+        "laptop",
+        "paper notebook"
+      ],
+      "symbolic_mapping": [
+        "coexistence of digital and analog tools reflects hybrid knowledge practices"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of handwritten notes and digital dashboards illustrates the ongoing negotiation between embodied cognition and algorithmic representation in knowledge production.",
+      "alternative_interpretations": [
+        "The objects simply reflect standard office equipment without symbolic intent; their arrangement is functional rather than conceptual."
+      ],
+      "limitations": [
+        "No visible interface interaction (e.g., typing, mouse movement) confirms active use of the monitors or laptop during the captured moment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0537_P3",
+      "visual_anchors": [
+        "shared desk space",
+        "proximity without physical contact",
+        "mutual orientation toward center"
+      ],
+      "symbolic_mapping": [
+        "spatial arrangement implies professional collaboration under normative constraints"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The spatial configuration embodies a socially mediated form of responsibility—individual accountability (via the thought) enacted within a shared institutional context.",
+      "alternative_interpretations": [
+        "The positioning may result from ergonomic or logistical constraints (e.g., limited desk space), not intentional social signaling."
+      ],
+      "limitations": [
+        "Facial expressions are neutral or downward-focused; no eye contact or gesture confirms relational dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:55:17.138296+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5033a324-d31d-93fc-958a-88c846a0c80e",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 972,
+        "total_tokens": 2505,
+        "completion_tokens_details": {
+          "text_tokens": 972
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025455df4b4ed56ace4d40",
+      "usage": {
+        "completion_tokens": 834,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2927,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3761
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

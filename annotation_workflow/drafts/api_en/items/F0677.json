@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0677",
+  "sample_id": "PHL1800_HAIV_0098",
+  "file_name": "PHL1800_HAIV_0098.png",
+  "batch_id": "B015",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human-like figure",
+  "captions": {
+    "scene": [
+      "A plain white background with no environmental context.",
+      "The figure occupies the central vertical space of the frame, shown from upper torso to top of head.",
+      "No other figures, objects, or spatial markers are present beyond the figure itself."
+    ],
+    "action": [
+      "Tears are depicted as teardrop shapes flowing downward from both eyes.",
+      "The mouth is drawn as a simple downward curve, indicating a frowning expression.",
+      "Multiple adhesive bandages are applied across the chest and left arm, some overlapping in an X-formation."
+    ],
+    "rationale": [
+      "The presence of tears and a downturned mouth suggests distress; however, facial features are minimal and symbolic, so emotional state is not objectively verifiable.",
+      "Bandages imply prior injury or treatment, but no wound, blood source, or application process is visible—only the bandages themselves.",
+      "The green collar and beige shirt are static clothing elements; no motion or interaction is evident, limiting inference about activity."
+    ],
+    "object": [
+      "The figure has a circular head outlined in thick black line, with two solid black circles for eyes and a curved black line for a mouth.",
+      "Two teardrops—one on each cheek—are rendered with gray outer outlines, tan inner fill, and small gray tips pointing downward.",
+      "A green collar encircles the neck, contrasting with the off-white torso garment.",
+      "Five beige adhesive bandages are visible: four forming an intersecting X over the chest (with red dots at intersections), one on the left upper arm, and partial fragments on the right arm and shoulder.",
+      "A translucent gray oval shape overlaps the figure’s right shoulder and upper arm, partially obscuring underlying lines and bandages."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0677_P1",
+      "visual_anchors": [
+        "teardrops",
+        "frowning mouth",
+        "bandaged chest"
+      ],
+      "symbolic_mapping": [
+        "teardrops map to vulnerability",
+        "bandages map to endurance through injury"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The figure embodies the temporality of suffering—visible wounds are treated yet remain marked, suggesting that harm persists even after intervention, aligning with existential exposure to decay and repair over time.",
+      "alternative_interpretations": [
+        "The image may simply depict a cartoon character recovering from minor injuries, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "No narrative context, dialogue, or temporal sequence is provided; all interpretation relies solely on static symbolic elements."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0677_P2",
+      "visual_anchors": [
+        "green collar",
+        "beige shirt",
+        "translucent gray oval"
+      ],
+      "symbolic_mapping": [
+        "collar as identity marker",
+        "gray oval as external imposition or erasure"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The layered visual elements suggest contested self-presentation: the deliberate collar asserts identity, while the opaque overlay disrupts bodily continuity, evoking constraints on autonomy or visibility imposed externally.",
+      "alternative_interpretations": [
+        "The gray oval could be a drafting artifact or accidental overlay with no intentional meaning."
+      ],
+      "limitations": [
+        "The gray shape lacks clear edges or integration with anatomy; its intent cannot be confirmed from visual evidence alone."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0677_P3",
+      "visual_anchors": [
+        "X-shaped bandage pattern",
+        "red dots at intersections",
+        "symmetrical tear placement"
+      ],
+      "symbolic_mapping": [
+        "X-pattern as sign of repair or marking",
+        "symmetry as ritual or balance"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The deliberate cross-bandaging implies active care or self-administered remedy, raising questions about moral duty toward oneself or others when injury is visible yet contained—a journey where choice manifests in how wounds are managed rather than avoided.",
+      "alternative_interpretations": [
+        "The X-shape may reflect common first-aid practice without symbolic intent, and red dots may merely indicate adhesive points."
+      ],
+      "limitations": [
+        "Red dots are small and lack texture or context; they could be decorative, functional, or accidental."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:07:15.611788+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-121b6075-84ec-94a1-a0e4-03185f8b2ff8",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 960,
+        "total_tokens": 2493,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030648c137162177f046ad",
+      "usage": {
+        "completion_tokens": 822,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2921,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3743
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

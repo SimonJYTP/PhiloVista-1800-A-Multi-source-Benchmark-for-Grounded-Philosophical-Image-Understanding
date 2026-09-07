@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1545",
+  "sample_id": "PHL1800_HAIV_0058",
+  "file_name": "PHL1800_HAIV_0058.png",
+  "batch_id": "B032",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized heart containing a clock face",
+  "captions": {
+    "scene": [
+      "A red, textured heart shape with black outlines dominates the composition, enclosing a circular clock face.",
+      "Black jagged lines radiate outward from the heart’s perimeter against a white background.",
+      "The clock face has bold black numerals and hands, with visible smudges and irregular ink application."
+    ],
+    "action": [
+      "The clock hands indicate approximately 7:00 (hour hand near 7, minute hand at 12).",
+      "The heart appears distressed or torn, with rough, uneven internal texture and fragmented edges.",
+      "Black strokes intersect and overlay both heart and clock, suggesting disruption or decay."
+    ],
+    "rationale": [
+      "The presence of numerals 1–12 and two hands strongly indicates a clock; however, the hour hand is thick and misshapen, reducing precision.",
+      "The heart’s form is identifiable by its bilateral symmetry and cleft top, but its interior texture resembles striated muscle or torn fabric, not smooth anatomy.",
+      "Radiating lines suggest energy or impact, but their irregularity prevents confirmation of directionality or source."
+    ],
+    "object": [
+      "A red heart-shaped figure with black contour lines encloses a white circular clock face.",
+      "The clock displays numerals 1 through 12 in black, with some digits (e.g., 5, 6, 9) partially obscured or distorted by ink smears.",
+      "Two black clock hands are present: a shorter, thicker hour hand pointing between 7 and 8, and a longer minute hand pointing vertically upward at 12.",
+      "A black cross-like mark overlays the center of the clock face, intersecting both hands and the central pivot point.",
+      "Multiple black jagged lines extend outward from the heart’s boundary, varying in length and angle, with no clear origin point."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1545_P1",
+      "visual_anchors": [
+        "clock face inside heart",
+        "radiating black lines",
+        "cross mark at clock center"
+      ],
+      "symbolic_mapping": [
+        "heart as locus of temporal experience",
+        "radiating lines as urgency or fragmentation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "faith_meaning"
+      ],
+      "interpretation": "The fusion of heart and clock suggests time as embodied, finite experience; the cross may signify sacrifice or existential weight within that temporality.",
+      "alternative_interpretations": [
+        "A decorative emblem combining common motifs without symbolic intent—e.g., tattoo-style graphic design."
+      ],
+      "limitations": [
+        "No legible text or contextual setting confirms intentional symbolism; cross could be accidental overlap or stylistic flourish."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1545_P2",
+      "visual_anchors": [
+        "distressed texture of heart",
+        "smudged numerals",
+        "irregular hand shapes"
+      ],
+      "symbolic_mapping": [
+        "degradation of form as metaphor for emotional or temporal erosion"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual deterioration of both heart and clock implies the fragility of selfhood under temporal pressure, where identity blurs as time progresses.",
+      "alternative_interpretations": [
+        "Artistic technique using rough brushwork to convey energy or motion, not decay."
+      ],
+      "limitations": [
+        "Texture could result from medium limitations (e.g., ink bleed on paper) rather than intended meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1545_P3",
+      "visual_anchors": [
+        "black cross over clock center",
+        "heart enclosing timepiece",
+        "jagged external lines"
+      ],
+      "symbolic_mapping": [
+        "cross as interruption or focal point of meaning within time"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "choice_journey"
+      ],
+      "interpretation": "The cross positioned at the clock’s axis may represent a decisive moral or spiritual pivot within the passage of time, framing choice as central to lived duration.",
+      "alternative_interpretations": [
+        "The cross is a coincidental artifact of overlapping strokes during rapid drawing, not a deliberate symbol."
+      ],
+      "limitations": [
+        "The cross lacks canonical orientation (e.g., no vertical dominance or base), weakening its identification as a religious symbol."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:43:57.269357+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-45010c59-4677-9b4a-8202-2541b15e956a",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 947,
+        "total_tokens": 2480,
+        "completion_tokens_details": {
+          "text_tokens": 947
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704432003c47f51db484206",
+      "usage": {
+        "completion_tokens": 806,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2899,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3705
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

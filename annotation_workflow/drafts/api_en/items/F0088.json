@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0088",
+  "sample_id": "PHL1800_IRFL_0280",
+  "file_name": "PHL1800_IRFL_0280.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults seated on a gray sofa",
+  "captions": {
+    "scene": [
+      "A plain white wall forms the background behind two individuals on a light gray upholstered sofa.",
+      "The lighting is even and diffuse, suggesting an indoor studio or controlled environment.",
+      "No furniture other than the sofa is visible; the composition is tightly framed around the two subjects."
+    ],
+    "action": [
+      "The man on the right has his mouth open wide, eyes narrowed, and right index finger extended toward the woman.",
+      "The woman on the left has both hands clasped over the back of her head, elbows raised, and her face is fully obscured by her hair and arms.",
+      "Both individuals are seated upright with torsos angled toward each other, maintaining proximity without physical contact."
+    ],
+    "rationale": [
+      "The man’s open mouth and finger-pointing gesture suggest vocalization and accusation, though no sound is observable.",
+      "The woman’s posture—hands over head, face hidden—is consistent with distress or avoidance, but internal state cannot be confirmed.",
+      "The absence of visible injury, broken objects, or third parties limits conclusions about severity or context of interaction."
+    ],
+    "object": [
+      "The man wears a beige long-sleeved henley shirt with three visible wooden buttons and a white undershirt collar exposed at the neckline.",
+      "The woman wears a light gray short-sleeved t-shirt and has shoulder-length blonde hair with darker roots showing at the part line.",
+      "A silver ring with a small stone is visible on the woman’s left ring finger.",
+      "The sofa has smooth, seamless upholstery with rounded armrests and no visible seams or patterns.",
+      "The man has short brown hair styled upward, light stubble on his jawline and upper lip, and visible forearm hair."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0088_P1",
+      "visual_anchors": [
+        "man's extended index finger",
+        "woman's concealed face",
+        "proximal seating without touch"
+      ],
+      "symbolic_mapping": [
+        "pointing finger → assertion of authority or blame",
+        "concealed face → withdrawal from social engagement"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes a moment where communicative asymmetry manifests as embodied power disparity: one subject enacts verbal dominance through gesture while the other physically retreats, illustrating how social existence can be suspended under coercive relational dynamics.",
+      "alternative_interpretations": [
+        "This may depict a rehearsed theatrical pose for stock photography, emphasizing dramatic tension without real interpersonal conflict."
+      ],
+      "limitations": [
+        "No facial expressions of the woman are visible, preventing confirmation of emotional response or intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0088_P2",
+      "visual_anchors": [
+        "woman’s hands gripping her own hair",
+        "man’s tensed forearm muscles",
+        "neutral background isolating figures"
+      ],
+      "symbolic_mapping": [
+        "self-directed hand placement → internalized distress",
+        "tensed musculature → physiological arousal"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The constrained bodily postures—self-contained enclosure versus outward projection—suggest a dialectic between autonomy and imposed relational roles, where identity appears mediated through involuntary somatic responses rather than chosen presentation.",
+      "alternative_interpretations": [
+        "The woman’s pose could indicate headache or fatigue unrelated to the man’s behavior; the man may be explaining something emphatically rather than accusing."
+      ],
+      "limitations": [
+        "No contextual cues (e.g., dialogue, setting markers) confirm the causal link between the two individuals’ actions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0088_P3",
+      "visual_anchors": [
+        "uniform white backdrop",
+        "symmetrical framing of two figures",
+        "absence of personal artifacts"
+      ],
+      "symbolic_mapping": [
+        "neutral background → removal of individualizing context",
+        "bilateral composition → binary opposition"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "By stripping environmental specificity, the image frames interpersonal conflict as a universal ethical scenario wherein responsibility is visually assigned through gesture and posture alone, raising questions about moral agency in unmediated human encounters.",
+      "alternative_interpretations": [
+        "The setup reflects standard commercial stock imagery conventions designed to evoke generic emotional themes for licensing, not philosophical inquiry."
+      ],
+      "limitations": [
+        "The deliberate staging undermines claims of spontaneous ethical enactment; the scene lacks temporal continuity or consequence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:57:55.189659+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-65dd77c0-8696-9531-aaf7-690a6584491c",
+      "usage": {
+        "prompt_tokens": 2364,
+        "completion_tokens": 993,
+        "total_tokens": 3357,
+        "completion_tokens_details": {
+          "text_tokens": 993
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1857,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701574255d5da12f78a48a2",
+      "usage": {
+        "completion_tokens": 855,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3983,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4838
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1505",
+  "sample_id": "PHL1800_IRFL_0022",
+  "file_name": "PHL1800_IRFL_0022.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one child",
+  "captions": {
+    "scene": [
+      "Outdoor setting with a bright blue sky and scattered white clouds in the background",
+      "Shallow depth of field blurs the background, emphasizing the foreground subject",
+      "Natural daylight illumination with soft shadows on the child's face and costume"
+    ],
+    "action": [
+      "Child extends right arm forward in a punching motion with a red boxing glove",
+      "Child wears a blue eye mask covering the upper face and a red cape draped over shoulders",
+      "Child’s left arm is bent and held near torso, also wearing a red boxing glove"
+    ],
+    "rationale": [
+      "The pose suggests imitation of a superhero or boxer; however, no explicit narrative context confirms intent",
+      "Curly hair partially obscures the mask’s strap and ear area, limiting full verification of mask attachment method",
+      "Costume elements (cape, mask, gloves) are clearly staged but do not confirm performance versus spontaneous play"
+    ],
+    "object": [
+      "The child has voluminous, light-blonde curly hair extending past the shoulders.",
+      "A solid blue fabric eye mask covers the eyes and bridge of the nose, with visible black elastic strap behind the head.",
+      "A red satin-like cape is fastened at the neck and flows down the back and over the arms.",
+      "Two glossy red boxing gloves are worn, each with black wrist straps and visible seam stitching.",
+      "Under the cape, the child wears a plain blue short-sleeved T-shirt."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1505_P1",
+      "visual_anchors": [
+        "blue eye mask",
+        "red cape",
+        "boxing gloves"
+      ],
+      "symbolic_mapping": [
+        "mask conceals identity while enabling role-play",
+        "gloves signify controlled force or defense"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The layered costume constructs a provisional identity where appearance mediates agency—visibility of the eyes through the mask permits selective disclosure while the gloves assert capability without actual violence.",
+      "alternative_interpretations": [
+        "The child is simply playing dress-up with available items, with no symbolic intention."
+      ],
+      "limitations": [
+        "No facial expression or contextual props confirm intentional symbolism; costume may be random assembly."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1505_P2",
+      "visual_anchors": [
+        "extended punching arm",
+        "focused gaze direction",
+        "static posture"
+      ],
+      "symbolic_mapping": [
+        "outstretched arm as gesture of assertion",
+        "forward gaze indicating directed attention"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The outstretched arm embodies a moment of enacted choice—physically committing to a stance—while the fixed costume simultaneously constrains possible roles, illustrating how freedom emerges within self-imposed limits.",
+      "alternative_interpretations": [
+        "The pose is a common photographic directive for 'superhero' shots, not an autonomous decision."
+      ],
+      "limitations": [
+        "The image captures a single frozen instant; prior or subsequent motion is unseen and unverifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1505_P3",
+      "visual_anchors": [
+        "curly hair escaping mask edges",
+        "asymmetrical glove fit",
+        "slight cape drape asymmetry"
+      ],
+      "symbolic_mapping": [
+        "imperfection in costume alignment reflects authenticity of lived experience"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The minor disarray—hair spilling from the mask, uneven glove positioning—underscores that identity formation is inherently embodied and imperfect, resisting idealized representation even in performative acts.",
+      "alternative_interpretations": [
+        "These are incidental artifacts of movement or costume size mismatch, not meaningful detail."
+      ],
+      "limitations": [
+        "No evidence confirms whether the disarray was intentional, accidental, or ignored by the subject."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:45:00.131335+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f840ec08-c904-943c-84f3-40d8f0d2c74f",
+      "usage": {
+        "prompt_tokens": 1389,
+        "completion_tokens": 872,
+        "total_tokens": 2261,
+        "completion_tokens_details": {
+          "text_tokens": 872
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 882,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014444a3c5dc96957843be",
+      "usage": {
+        "completion_tokens": 731,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2647,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3378
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

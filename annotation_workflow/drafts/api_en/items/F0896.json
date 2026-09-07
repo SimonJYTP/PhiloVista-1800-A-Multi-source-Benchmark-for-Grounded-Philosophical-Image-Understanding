@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0896",
+  "sample_id": "PHL1800_MM_0149",
+  "file_name": "PHL1800_MM_0149.jpg",
+  "batch_id": "B019",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two boys at a poolside with blue lockers",
+  "captions": {
+    "scene": [
+      "A tiled indoor or covered pool area with bright blue water, beige wall tiles, and a row of blue metal lockers.",
+      "A wooden bench with metal supports sits at the pool edge; a yellow towel rests on it beneath a seated boy.",
+      "To the right of the lockers, a vertical stack of colorful plastic bins (red, yellow, green, blue) is mounted on the wall."
+    ],
+    "action": [
+      "One boy stands barefoot in shallow water, holding an orange pump bottle with a visible label and cap.",
+      "The second boy sits shirtless on the bench, facing away from the camera, wearing dark blue swim trunks with a light blue waistband.",
+      "A speech bubble originates near the standing boy’s head and contains legible text: 'I shouldn't use someone else's sunblock without asking.'"
+    ],
+    "rationale": [
+      "The standing boy holds a sunblock bottle and the speech bubble explicitly references not using 'someone else's sunblock', suggesting he is considering or reflecting on using the bottle he holds.",
+      "The seated boy’s posture—back turned, hands clasped, no interaction with the bottle—indicates he is not currently engaged in the action, though he may be the owner of the bottle.",
+      "The presence of a speech bubble with moral phrasing implies internal deliberation rather than direct dialogue, but no mouth movement or gaze direction confirms this as internal thought versus spoken statement."
+    ],
+    "object": [
+      "The standing boy wears a white short-sleeved t-shirt and navy blue knee-length shorts, and is barefoot in water up to his ankles.",
+      "The orange bottle has a yellow pump dispenser and a blue-and-white label with unreadable text due to resolution limits.",
+      "The blue lockers are identical in size and design, each with a silver handle and horizontal ventilation slats near the top.",
+      "The bench consists of parallel wooden slats supported by two gray metal legs, one of which is partially submerged in the pool.",
+      "The stacked plastic bins include at least six distinct containers in red, yellow, green, and blue, arranged vertically with open tops and some containing indistinct contents."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0896_P1",
+      "visual_anchors": [
+        "speech bubble with moral statement",
+        "boy holding bottle",
+        "seated boy facing away"
+      ],
+      "symbolic_mapping": [
+        "bottle → shared resource",
+        "speech bubble → internal ethical check"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image visualizes the moment before action where personal agency confronts communal norms: the boy’s self-imposed restraint reflects an emergent sense of ethical responsibility toward others’ property and autonomy.",
+      "alternative_interpretations": [
+        "The scene may simply depict a routine pre-swim preparation step, with the speech bubble added for instructional or narrative effect unrelated to actual intent."
+      ],
+      "limitations": [
+        "The speech bubble is the sole indicator of internal state; no facial expression, gesture, or contextual cue confirms whether the statement is reflective, rehearsed, or externally prompted."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0896_P2",
+      "visual_anchors": [
+        "two boys separated by space and posture",
+        "lockers as private storage units",
+        "pool as shared public space"
+      ],
+      "symbolic_mapping": [
+        "lockers → boundaries of individual ownership",
+        "pool edge → liminal zone between private and collective domains"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement—standing boy in the shared water, seated boy on the boundary bench—materializes the tension between individual identity and social coexistence, where norms like asking permission mediate access to shared or adjacent resources.",
+      "alternative_interpretations": [
+        "The positioning may reflect only practical convenience (e.g., one drying off, one waiting), with no symbolic intent intended by the scene’s composition."
+      ],
+      "limitations": [
+        "No signage, labels, or behavioral cues confirm that the lockers are assigned or that the boys recognize them as private domains."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0896_P3",
+      "visual_anchors": [
+        "barefoot contact with water",
+        "shirtless torso exposed",
+        "towel placed under seated boy"
+      ],
+      "symbolic_mapping": [
+        "bare skin → vulnerability",
+        "towel as buffer → provisional protection"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "Bodily exposure (bare feet, uncovered torso) juxtaposed with self-imposed constraint (refraining from using another’s sunblock) illustrates how freedom in a regulated environment is exercised through voluntary limitation, not absence of rules.",
+      "alternative_interpretations": [
+        "The attire and posture are standard for pool use and carry no deeper meaning beyond functional suitability for swimming."
+      ],
+      "limitations": [
+        "The towel’s placement and the boys’ clothing are consistent with ordinary pool behavior; no deviation suggests intentional symbolism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:26:04.094846+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e9ef6ed3-55b8-952c-aa9d-1e09566e7b96",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1106,
+        "total_tokens": 2639,
+        "completion_tokens_details": {
+          "text_tokens": 1106
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070325424c0e7a4700324baf",
+      "usage": {
+        "completion_tokens": 970,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3062,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4032
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

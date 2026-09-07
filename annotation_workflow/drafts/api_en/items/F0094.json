@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0094",
+  "sample_id": "PHL1800_HL_0451",
+  "file_name": "PHL1800_HL_0451.png",
+  "batch_id": "B004",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "an adult African elephant standing in grassland near a safari vehicle",
+  "captions": {
+    "scene": [
+      "A savanna landscape with dry grass, scattered shrubs, and a tree-covered hill in the background under bright daylight.",
+      "The foreground shows part of a dark-framed open-top safari vehicle with visible interior elements including a side mirror and passenger seating.",
+      "The elephant occupies the midground, positioned slightly right of center, with its body oriented toward the right edge of the frame."
+    ],
+    "action": [
+      "The elephant is standing with all four feet on the ground, head lowered, trunk curled upward toward its mouth.",
+      "A person inside the vehicle is visible in the side-view mirror, facing forward and wearing a red-and-white striped sleeve.",
+      "Another person’s head and shoulder are partially visible on the left edge of the frame, seated inside the vehicle."
+    ],
+    "rationale": [
+      "The elephant’s skin texture, large ears, and body proportions indicate it is an African elephant; Asian elephants have smaller ears and different back contour.",
+      "The presence of a side-view mirror reflecting a human face confirms the vehicle is occupied and oriented toward the elephant.",
+      "The lighting and shadow direction suggest midday sun, but no clock or sky detail allows precise time inference."
+    ],
+    "object": [
+      "The elephant has deeply wrinkled gray skin, large flared ears with irregular margins, and a thick tail ending in a tuft of hair.",
+      "The vehicle features black vertical support bars, a rectangular side-view mirror with a silver casing, and a visible portion of a steering wheel on the left.",
+      "The side-view mirror reflects a man with dark skin, short hair, and a red-and-white striped shirt sleeve, looking toward the elephant.",
+      "The ground consists of mixed green and brown grasses with scattered dry twigs and small patches of bare soil.",
+      "In the background, dense green foliage covers a sloping hillside, with some leafless branches protruding near the top right."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0094_P1",
+      "visual_anchors": [
+        "elephant’s wrinkled skin",
+        "curled trunk near mouth",
+        "dry grass underfoot"
+      ],
+      "symbolic_mapping": [
+        "wrinkled skin → accumulated experience over time",
+        "trunk near mouth → self-sustenance or introspection"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The elephant’s aged skin and deliberate posture evoke the passage of time and the quiet continuity of existence amid environmental change.",
+      "alternative_interpretations": [
+        "The elephant is simply foraging or adjusting its trunk after drinking; no symbolic intent is present."
+      ],
+      "limitations": [
+        "No facial expression or eye direction is visible to confirm internal state or intentionality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0094_P2",
+      "visual_anchors": [
+        "safari vehicle frame",
+        "mirror reflection of human",
+        "elephant at close proximity"
+      ],
+      "symbolic_mapping": [
+        "vehicle barrier → mediated observation",
+        "mirror reflection → displaced self-awareness"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The framing through the vehicle and the mirrored human suggests knowledge acquisition as inherently relational and constrained by physical and perceptual boundaries.",
+      "alternative_interpretations": [
+        "The mirror merely captures incidental reflection; the vehicle is functional, not symbolic."
+      ],
+      "limitations": [
+        "The mirror shows only partial features; full context of observer’s attention is unseen."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0094_P3",
+      "visual_anchors": [
+        "elephant’s massive body",
+        "open savanna space",
+        "human observers contained within metal structure"
+      ],
+      "symbolic_mapping": [
+        "size disparity → asymmetry of power",
+        "open field vs. enclosed vehicle → freedom vs. constraint"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of the unconstrained elephant and the bounded human observers highlights tensions between natural autonomy and curated human engagement with wildlife.",
+      "alternative_interpretations": [
+        "The scene depicts routine wildlife tourism with no inherent conflict; proximity is managed and safe."
+      ],
+      "limitations": [
+        "No signs of distress, aggression, or coercion are visible in either species."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:03:29.309721+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f07d7b5f-6539-9ae0-9a82-42ef0e3eee62",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 961,
+        "total_tokens": 1730,
+        "completion_tokens_details": {
+          "text_tokens": 961
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070203145b4e1fcb77cf4c15",
+      "usage": {
+        "completion_tokens": 817,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1890,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2707
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0384",
+  "sample_id": "PHL1800_HL_0326",
+  "file_name": "PHL1800_HL_0326.png",
+  "batch_id": "B010",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a traffic signal assembly with illuminated red and green lights and two circular 'no right turn' signs",
+  "captions": {
+    "scene": [
+      "Urban street intersection with historic brick buildings, commercial signage including 'INTERNE', and a red double-decker bus partially visible on the left",
+      "Pedestrians crossing or waiting at a zebra crossing; orange traffic cones line part of the road edge",
+      "Reflections on a glass surface overlay the scene, showing a red traffic light above and distorted building facades"
+    ],
+    "action": [
+      "The top traffic light is illuminated red; the middle light is green; the bottom two circular signs show black right-turn arrows within red circles indicating prohibition",
+      "At least four pedestrians are visible: two walking across the crosswalk (one in teal jacket, one in grey), one standing near the curb holding a bag, and one further back near a pole",
+      "A white van is stopped or moving slowly behind orange cones near the left curb"
+    ],
+    "rationale": [
+      "The red light at the top suggests vehicles must stop; however, the green light below it may indicate permissive movement for another lane or mode—uncertainty arises because standard vertical signals do not simultaneously show red and green for the same direction",
+      "The presence of two identical 'no right turn' signs beneath the signal implies a specific restriction, possibly for all vehicles except buses as indicated by partial text 'Except buses &'",
+      "Reflections dominate the foreground, making precise spatial relationships ambiguous; some elements (e.g., pedestrian positions) may be displaced relative to the actual scene"
+    ],
+    "object": [
+      "A vertically stacked traffic signal housing contains three horizontally oriented lamp sections: top red lit, middle green lit, bottom unlit.",
+      "Two circular regulatory signs are mounted below the signal: each has a white background, red border, black right-turn arrow, and red diagonal bar crossing the arrow.",
+      "Partial text on a white plaque beneath the signs reads 'Except buses &' in black sans-serif font; the remainder is cut off or obscured.",
+      "A red double-decker bus appears on the far left, with only its rear portion and upper deck visible behind the signal structure.",
+      "Four distinct pedestrians are present: one in teal jacket walking rightward, one in grey hoodie walking leftward, one standing near the signal base holding a brown bag, and one farther back near a black pole wearing dark clothing."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0384_P1",
+      "visual_anchors": [
+        "red illuminated light",
+        "green illuminated light",
+        "two identical no-right-turn signs"
+      ],
+      "symbolic_mapping": [
+        "simultaneous red and green lights suggest conflicting directives",
+        "dual prohibitory signs emphasize constraint despite permissive signal"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The coexistence of permissive (green) and prohibitive (red + no-turn signs) signals embodies the tension between structural freedom and imposed limitation in urban navigation—movement is possible only along strictly defined paths.",
+      "alternative_interpretations": [
+        "This may simply reflect a multi-lane signal configuration where different lanes have different rules, not a philosophical paradox."
+      ],
+      "limitations": [
+        "No lane markings or vehicle positions confirm which direction each light governs; thus symbolic reading assumes unified interpretation across signals."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0384_P2",
+      "visual_anchors": [
+        "glass reflection overlaying real scene",
+        "distorted building facades in reflection",
+        "pedestrians partially obscured by reflections"
+      ],
+      "symbolic_mapping": [
+        "reflection as mediation of reality",
+        "layered visual information obscuring direct perception"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The image presents perception as inherently mediated: the viewer sees the street only through a reflective surface that superimposes altered versions of the same scene, questioning whether any observation captures unfiltered truth.",
+      "alternative_interpretations": [
+        "The reflection is incidental—a window pane photographed unintentionally—and does not carry intentional semiotic weight."
+      ],
+      "limitations": [
+        "The reflection’s origin (window, display screen, or polished metal) is unspecified; its intentionality as a compositional device is unverifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0384_P3",
+      "visual_anchors": [
+        "pedestrians crossing amid traffic controls",
+        "orange cones marking temporary boundary",
+        "signage for 'INTERNE' and other shops"
+      ],
+      "symbolic_mapping": [
+        "individuals navigating regulated public space",
+        "temporary infrastructure signaling transition or disruption"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "Daily movement through a city is enacted within layers of institutional regulation (traffic signals, signage) and provisional order (cones), illustrating how social existence is continuously negotiated against engineered constraints and transient conditions.",
+      "alternative_interpretations": [
+        "The scene is a routine street view with no deeper sociological implication—people walk, lights change, cones mark work zones."
+      ],
+      "limitations": [
+        "No evidence of ongoing construction, protest, or event explains the cones; their purpose remains visually ambiguous."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:42:12.045944+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-aae0e8b2-c20a-9930-a8cf-99fd03ada257",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 1136,
+        "total_tokens": 1837,
+        "completion_tokens_details": {
+          "text_tokens": 1136
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702415408c7a4a46e7148ae",
+      "usage": {
+        "completion_tokens": 993,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1953,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2946
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0715",
+  "sample_id": "PHL1800_HAIV_0082",
+  "file_name": "PHL1800_HAIV_0082.png",
+  "batch_id": "B016",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human face in close-up",
+  "captions": {
+    "scene": [
+      "Solid coral-orange background with no environmental details",
+      "Green hair framing the top and sides of the head",
+      "A red, cracked, brain-shaped object with a yellow five-pointed star embedded in the forehead region"
+    ],
+    "action": [
+      "Mouth wide open in an exaggerated scream or shout",
+      "Eyes looking upward and slightly outward, with visible blue irises",
+      "A rectangular object resembling a packaged food item (pink-red interior, white border) held horizontally inside the oral cavity"
+    ],
+    "rationale": [
+      "The forehead object’s shape, color, and star suggest symbolic reference to a national flag, but no text confirms this",
+      "The object in the mouth has printed patterns and edges consistent with commercial packaging, though specific branding is unreadable",
+      "Facial musculature is rendered with thick black outlines and simplified shading, indicating cartoon-style illustration rather than realism"
+    ],
+    "object": [
+      "The subject has light skin tone, brown eyebrows, and blue eyes with black pupils.",
+      "The hair is olive-green, short, and drawn with bold black contour lines.",
+      "A red, irregularly shaped mass with black crack-like lines sits atop the forehead, containing a centered yellow five-pointed star.",
+      "The open mouth reveals upper and lower rows of white teeth, pink gums, and a dark oral cavity interior.",
+      "Inside the mouth lies a rectangular object with a white outer rim, pink-red inner surface showing green and brown speckled patterns, and faint illegible markings."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0715_P1",
+      "visual_anchors": [
+        "red cracked brain with yellow star",
+        "open mouth holding packaged object",
+        "upward gaze"
+      ],
+      "symbolic_mapping": [
+        "forehead emblem → imposed ideology",
+        "packaged object in mouth → consumption of external meaning"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image may depict epistemic coercion: a subject simultaneously subjected to ideological imprinting (starred emblem) and forced ingestion of externally constructed content (packaged object), suggesting tension between imposed belief and internal assimilation.",
+      "alternative_interpretations": [
+        "It could be a literal depiction of eating a novelty food item while wearing a themed costume or prop."
+      ],
+      "limitations": [
+        "No readable text or contextual cues confirm symbolic intent; the star and packaging could be coincidental design elements."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0715_P2",
+      "visual_anchors": [
+        "exaggerated open mouth",
+        "upward-directed eyes",
+        "cracked red forehead object"
+      ],
+      "symbolic_mapping": [
+        "mouth agape → vocalization without articulation",
+        "cracks in emblem → fragmentation of identity source"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The figure appears caught between expression and constraint: the open mouth suggests desire to speak or assert self, yet the fractured emblem on the forehead implies a destabilized or externally defined identity, raising questions about authenticity in social performance.",
+      "alternative_interpretations": [
+        "This may simply represent a caricatured emotional outburst (e.g., shock or hunger) with decorative elements added for visual flair."
+      ],
+      "limitations": [
+        "Facial expression lacks micro-expressive detail (e.g., brow furrow, tear ducts) needed to distinguish distress from theatricality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0715_P3",
+      "visual_anchors": [
+        "green hair",
+        "blue irises",
+        "rectangular object with printed surface"
+      ],
+      "symbolic_mapping": [
+        "hair color ≠ natural → constructed appearance",
+        "printed object → mediated reality"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of artificial hair color, stylized ocular features, and a manufactured object held in the mouth suggests a critique of mediated selfhood—where identity is assembled from external signs and consumable symbols rather than intrinsic experience.",
+      "alternative_interpretations": [
+        "The image may be a humorous or surreal meme combining unrelated visual motifs without philosophical intent."
+      ],
+      "limitations": [
+        "No textual anchors or sequential narrative confirm intentional semiosis; all elements could be aesthetic choices without referential purpose."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:10:47.231952+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-43acb1f4-8ec3-9689-a3c8-a993ac141935",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 961,
+        "total_tokens": 2494,
+        "completion_tokens_details": {
+          "text_tokens": 961
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031029d8898b80fc954ea6",
+      "usage": {
+        "completion_tokens": 820,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2919,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3739
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

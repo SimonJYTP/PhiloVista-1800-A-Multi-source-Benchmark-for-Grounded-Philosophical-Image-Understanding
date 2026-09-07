@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0685",
+  "sample_id": "PHL1800_HAIV_0107",
+  "file_name": "PHL1800_HAIV_0107.png",
+  "batch_id": "B016",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "six silhouetted human figures with raised arms against a brick wall",
+  "captions": {
+    "scene": [
+      "A red-orange brick wall with white mortar lines serves as the background.",
+      "A black-framed analog clock with a pink face is mounted on the upper right portion of the wall.",
+      "Six dark silhouettes of standing human figures are aligned horizontally across the lower two-thirds of the image."
+    ],
+    "action": [
+      "All six figures have at least one arm raised upward, some with open hands, others with clenched fists or holding small objects.",
+      "The figures cast overlapping shadows onto the brick wall, indicating a light source from the front or slightly above.",
+      "One figure (third from left) holds a thin vertical object resembling a pen or stylus; another (far left) holds a small rounded object near head height."
+    ],
+    "rationale": [
+      "The uniform silhouette style and lack of facial or clothing detail suggest intentional abstraction rather than photographic realism.",
+      "The clock’s hands point to approximately 10:10, but the numerals are indistinct and unreadable due to stylization.",
+      "The overlapping forms and transparency effects imply layered visual composition, not necessarily physical proximity or interaction."
+    ],
+    "object": [
+      "The brick wall consists of rectangular bricks in varying shades of red and brown, laid in a standard running bond pattern with consistent white mortar joints.",
+      "The clock has a black octagonal frame, a pale pink circular face, black hour and minute hands, and tick marks instead of numerals; no text is legible on its face.",
+      "Six distinct human-shaped silhouettes are present: each shows a head, torso, and legs; all are uniformly dark with no internal features visible.",
+      "The leftmost figure holds a small, round, light-colored object near its head level; the third figure from left holds a slender vertical object extending above its hand.",
+      "The silhouettes partially obscure the brick pattern behind them, and their edges show slight translucency where they overlap, suggesting digital or painted layering."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0685_P1",
+      "visual_anchors": [
+        "six raised arms",
+        "brick wall",
+        "analog clock"
+      ],
+      "symbolic_mapping": [
+        "raised arms → collective action or appeal",
+        "clock → temporal constraint"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of synchronized gestural uplift against an unyielding brick wall and a fixed clock suggests tension between human agency and structural or temporal limits.",
+      "alternative_interpretations": [
+        "The scene may depict a staged performance or artistic installation with no intended symbolic meaning beyond formal composition."
+      ],
+      "limitations": [
+        "No facial expressions, context, or textual cues confirm intent; gestures are generic and could signify celebration, protest, or ritual equally."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0685_P2",
+      "visual_anchors": [
+        "uniform silhouettes",
+        "lack of individuating features",
+        "shared posture"
+      ],
+      "symbolic_mapping": [
+        "silhouettes → erasure of individual identity",
+        "collective raising of arms → shared purpose or coercion"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The reduction of figures to identical dark forms emphasizes the dissolution of personal distinction within a group dynamic, raising questions about autonomy versus conformity.",
+      "alternative_interpretations": [
+        "The uniformity may result from lighting conditions (strong backlight) rather than conceptual choice."
+      ],
+      "limitations": [
+        "Silhouette uniformity could be technical (e.g., shadow projection) rather than intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0685_P3",
+      "visual_anchors": [
+        "clock showing ~10:10",
+        "figures positioned below it",
+        "wall as backdrop"
+      ],
+      "symbolic_mapping": [
+        "clock position above figures → authority of time",
+        "wall as barrier → institutional or physical constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The clock looms over the figures while the wall grounds them, visually encoding a hierarchy where time and structure dominate embodied presence, evoking themes of imposed order.",
+      "alternative_interpretations": [
+        "The clock may simply be part of a room’s décor with no hierarchical implication; placement could be coincidental."
+      ],
+      "limitations": [
+        "No directional gaze, scale reference, or interaction confirms dominance; spatial arrangement alone is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:08:09.502984+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6144ff88-994d-9737-a535-429c3f38430b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 998,
+        "total_tokens": 2531,
+        "completion_tokens_details": {
+          "text_tokens": 998
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070307417fa0ad8ba9364fd5",
+      "usage": {
+        "completion_tokens": 855,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2952,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3807
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

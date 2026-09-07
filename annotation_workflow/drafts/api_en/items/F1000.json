@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1000",
+  "sample_id": "PHL1800_HL_0021",
+  "file_name": "PHL1800_HL_0021.png",
+  "batch_id": "B002",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man in a light blue short-sleeved shirt viewed from behind, standing in a sunlit urban plaza",
+  "captions": {
+    "scene": [
+      "A sun-drenched European-style street with yellow and gray facades, outdoor café seating under large umbrellas, and a pedestrian crossing signal showing green.",
+      "Strong diagonal shadow cast across the left side of the frame, contrasting with bright illumination on right-side buildings and pavement.",
+      "Multiple people present: one central man facing away, two figures to the right near a vehicle, and indistinct seated patrons under umbrellas."
+    ],
+    "action": [
+      "The central man stands still, facing toward the café area and traffic signal; his posture suggests observation or waiting.",
+      "A pedestrian signal displays an illuminated green walking figure, indicating permitted crossing.",
+      "Two individuals on the right appear to be interacting near a parked car; one wears white pants and a dark top, the other a light-colored shirt."
+    ],
+    "rationale": [
+      "The man’s orientation and proximity to the crosswalk suggest he may be preparing to cross, though no motion is visible.",
+      "The strong shadow implies late afternoon or early morning sunlight, but exact time cannot be confirmed without sky or clock evidence.",
+      "Text on a sign reads 'IL ... MEXICO' with partial letters before 'MEXICO'; full name is unreadable due to occlusion and resolution."
+    ],
+    "object": [
+      "A man with short graying hair wears a light blue collared short-sleeved shirt and dark trousers, viewed from the back, centered in the lower half of the image.",
+      "A vertical traffic signal pole displays a green walking figure icon above a black rectangular housing; the pole is partially in shadow.",
+      "Two large beige fabric umbrellas shade outdoor tables and chairs; beneath them, several blurred figures are seated.",
+      "A yellow-painted building with four evenly spaced rectangular windows and white trim occupies the upper right background.",
+      "A white vehicle is partially visible behind the umbrellas; its make, model, and full shape are obscured by shadows and foreground elements."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1000_P1",
+      "visual_anchors": [
+        "green walking figure signal",
+        "man standing still facing it",
+        "strong shadow dividing light and dark zones"
+      ],
+      "symbolic_mapping": [
+        "the signal represents permission to act; the man’s pause embodies deliberation before choice"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment suspended between constraint (the signal’s rule) and agency (the individual’s decision to move), illustrating how freedom is enacted within institutional boundaries.",
+      "alternative_interpretations": [
+        "The man may simply be waiting for companions or observing traffic; no intentional philosophical stance is evident."
+      ],
+      "limitations": [
+        "No facial expression or body motion confirms internal deliberation; the interpretation projects meaning onto static posture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1000_P2",
+      "visual_anchors": [
+        "diagonal shadow cutting across the scene",
+        "man illuminated on right side",
+        "unlit left foreground"
+      ],
+      "symbolic_mapping": [
+        "shadow as metaphor for unseen forces or temporal passage affecting visibility and presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The stark chiaroscuro divides the visible from the obscured, suggesting how social presence is contingent on illumination—both literal and metaphorical—and how individuals exist partially in light, partially in obscurity.",
+      "alternative_interpretations": [
+        "The shadow is merely a result of building geometry and sun angle, with no symbolic intent."
+      ],
+      "limitations": [
+        "No evidence that the shadow aligns intentionally with human figures beyond coincidence; lighting is natural, not staged."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1000_P3",
+      "visual_anchors": [
+        "man seen only from behind",
+        "indistinct figures under umbrellas",
+        "unreadable signage ('...MEXICO')"
+      ],
+      "symbolic_mapping": [
+        "anonymity of the central figure reflects the anonymity of urban public life"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "By denying frontal identity and rendering background figures indistinct, the image emphasizes the dissolution of individuality in public space, where appearance becomes generic and relational rather than unique.",
+      "alternative_interpretations": [
+        "The rear view is a compositional choice for depth and perspective, not a commentary on anonymity."
+      ],
+      "limitations": [
+        "The photographer’s framing—not the subjects’ intent—determines visibility; no evidence of deliberate erasure of identity."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:42:22.590482+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ee851f75-9d0a-9fdd-91a5-d290aed2b8d0",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 1027,
+        "total_tokens": 1696,
+        "completion_tokens_details": {
+          "text_tokens": 1027
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 512
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014158979a5a1eb12b46ed",
+      "usage": {
+        "completion_tokens": 892,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1826,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2718
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

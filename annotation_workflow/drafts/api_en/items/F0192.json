@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0192",
+  "sample_id": "PHL1800_HL_0352",
+  "file_name": "PHL1800_HL_0352.png",
+  "batch_id": "B006",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a white pickup truck converted into a passenger vehicle with people riding on and inside it",
+  "captions": {
+    "scene": [
+      "A paved road with vehicles, trees, and a metal fence in the background under daylight.",
+      "Smoke or exhaust rises near the rear of the truck, partially obscuring background foliage.",
+      "A yellow car and a motorbike are visible in the background traffic lane."
+    ],
+    "action": [
+      "One person stands on the rear bumper holding onto the roof frame while facing forward.",
+      "At least six passengers (including the standing person) are inside or on the truck: two on the rear platform and four or more in the enclosed cab area behind the driver’s seat.",
+      "A child walks on the sidewalk to the left carrying a blue bag."
+    ],
+    "rationale": [
+      "The truck’s open rear platform and side bars suggest it is used for public transport, though no signage confirms this.",
+      "The standing person’s posture and grip indicate active balancing rather than passive riding; however, intent (e.g., boarding, alighting) is not visible.",
+      "The presence of multiple passengers and external riders implies high occupancy, but exact capacity or regulation status is not discernible."
+    ],
+    "object": [
+      "The vehicle is a white single-cab pickup truck with a black metal canopy over the bed, modified to carry passengers.",
+      "A red license plate with partially legible characters 'H-10-18' is mounted on the rear right side of the truck.",
+      "The rear bumper has a metal step platform.",
+      "The driver wears a dark shirt and rests his left arm on the open window frame (plausible but not definitively confirmed).",
+      "A young girl in a patterned top and light pants walks away from the camera on the left sidewalk, holding a blue tote bag."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0192_P1",
+      "visual_anchors": [
+        "person standing on rear bumper",
+        "multiple passengers inside cab",
+        "metal step platform"
+      ],
+      "symbolic_mapping": [
+        "the precarious stance on the bumper maps to vulnerability amid collective mobility"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image embodies the tension between communal transit necessity and individual physical risk, where shared infrastructure enables movement yet imposes bodily exposure.",
+      "alternative_interpretations": [
+        "This is simply a common mode of informal transport in certain regions, with no deeper meaning intended by participants."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or contextual signage confirm intentional symbolism or subjective experience."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0192_P2",
+      "visual_anchors": [
+        "smoke rising near truck",
+        "green trees lining road",
+        "yellow car in distance"
+      ],
+      "symbolic_mapping": [
+        "smoke juxtaposed with greenery suggests environmental cost of mobility"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visible exhaust against lush vegetation highlights an ethical friction: human mobility enabled by technology produces observable environmental effects, implicating users and operators in ecological consequence.",
+      "alternative_interpretations": [
+        "The smoke may originate from a nearby source unrelated to the truck, such as a cooking fire or distant vehicle."
+      ],
+      "limitations": [
+        "Source of smoke is not definitively linked to the truck; direction and opacity prevent attribution."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0192_P3",
+      "visual_anchors": [
+        "child walking alone on sidewalk",
+        "truck carrying many adults",
+        "distance between them"
+      ],
+      "symbolic_mapping": [
+        "spatial separation between pedestrian and vehicle reflects divergent modes of agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The child’s solitary walk contrasts with the clustered riders, suggesting divergent paths of autonomy—where one moves by foot with visible independence, others rely on collective conveyance that subsumes individual motion into group rhythm.",
+      "alternative_interpretations": [
+        "The child is merely walking home and the truck is coincidentally passing; no thematic contrast is intended."
+      ],
+      "limitations": [
+        "No evidence confirms the child’s destination, relationship to the truck, or awareness of it."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect license plate text: 'H-10-E' should be 'H-10-18' (visible in image).",
+      "Inaccurate driver description: driver wears a dark shirt, not blue short-sleeved; left arm on window frame is plausible but not confirmed as 'resting'.",
+      "Missing person count: at least 6 people (2 on rear, 4+ inside) should be specified instead of 'at least four passengers'.",
+      "Redundant object description: 'metal step platform with two horizontal bars and a vertical support bar' is already covered by 'rear bumper has a metal step platform'.",
+      "Philosophy interpretation P2's smoke source is unsupported; 'labor_technology' and 'ethics_responsibility' are overreaching without clear link to truck."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:16:11.276378+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-956ca6c7-c9dd-9b9d-ad44-bd1afb6117f4",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 921,
+        "total_tokens": 1690,
+        "completion_tokens_details": {
+          "text_tokens": 921
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021543df6f06e3fc414496",
+      "usage": {
+        "completion_tokens": 960,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1854,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2814
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

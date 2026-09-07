@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0139",
+  "sample_id": "PHL1800_HL_0341",
+  "file_name": "PHL1800_HL_0341.png",
+  "batch_id": "B005",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a boy walking past a traffic signal pole in an indoor public space",
+  "captions": {
+    "scene": [
+      "An indoor concrete-floored corridor with painted white crosswalk lines and yellow lane markings on the floor",
+      "A large circular mural labeled 'WALNUT DEPOT' on the left wall, adjacent to a display panel with multiple small circular emblems",
+      "A black-and-white mural of a historic street scene with trolleys and buildings on the right wall, above which a red 'EXIT' sign is mounted"
+    ],
+    "action": [
+      "The boy is captured mid-stride, moving from right to left across the frame, with his left leg forward and right arm swinging",
+      "The traffic signal shows red illuminated on the left-facing unit and green illuminated on the right-facing unit; amber is off",
+      "The boy carries a dark shoulder bag slung over his right shoulder and holds its strap with his right hand"
+    ],
+    "rationale": [
+      "The boy’s motion blur and limb positioning indicate forward locomotion rather than standing or turning",
+      "The traffic signal’s illumination pattern suggests directional control for different traffic flows, though no vehicles are visible",
+      "The presence of crosswalk markings indoors implies simulated or educational context, but this cannot be confirmed solely from visual evidence"
+    ],
+    "object": [
+      "A yellow metal traffic signal assembly with two horizontally opposed signal heads mounted on a gray cylindrical pole base.",
+      "A boy wearing an orange short-sleeved shirt, camouflage-patterned shorts, black sneakers with white soles, and a dark shoulder bag.",
+      "A circular wall-mounted mural with the visible text 'WALNUT DEPOT' in uppercase letters around its perimeter, featuring a central illustration of a figure with books.",
+      "A rectangular wall display panel containing at least 18 small circular badges or emblems arranged in rows, some with discernible symbols like stars or shields.",
+      "A large monochrome mural depicting a street with overhead trolley wires, vintage vehicles including a trolley car and buses, and multi-story buildings."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0139_P1",
+      "visual_anchors": [
+        "traffic signal with red and green lights simultaneously lit",
+        "boy walking across marked crosswalk",
+        "indoor setting with simulated street elements"
+      ],
+      "symbolic_mapping": [
+        "red/green simultaneity may represent conflicting directives",
+        "crosswalk indoors may signify constructed norms"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of regulated signals and a pedestrian in a non-vehicular space evokes tension between prescribed paths and individual movement, suggesting that freedom is often exercised within artificially bounded systems.",
+      "alternative_interpretations": [
+        "This is a transportation museum exhibit designed to teach traffic rules, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual explanation is provided in the image to confirm interpretive intent; lighting and motion blur limit certainty about signal status."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0139_P2",
+      "visual_anchors": [
+        "'WALNUT DEPOT' mural",
+        "emblem display panel",
+        "historic street mural"
+      ],
+      "symbolic_mapping": [
+        "depot as node of transit and memory",
+        "emblems as markers of institutional identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The curated visual environment—combining institutional branding, historical imagery, and symbolic insignia—constructs a layered social identity where belonging is mediated through collective memory and spatial signage.",
+      "alternative_interpretations": [
+        "These are decorative elements in a transit station lobby, chosen for aesthetic or local history reasons without deeper semiotic design."
+      ],
+      "limitations": [
+        "The meaning of most emblems is unreadable; the phrase 'WALNUT DEPOT' alone does not establish institutional function or narrative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0139_P3",
+      "visual_anchors": [
+        "boy in motion blur",
+        "static murals and signs",
+        "concrete floor with painted lines"
+      ],
+      "symbolic_mapping": [
+        "motion blur as temporal passage",
+        "fixed infrastructure as enduring structure"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The transient figure against permanent architectural and pictorial elements underscores the human scale of time: individual movement is fleeting while built environments and recorded histories persist, reflecting labor’s imprint on technological spaces.",
+      "alternative_interpretations": [
+        "Motion blur results from camera shutter speed choice, not intentional symbolism; the scene is simply a snapshot of daily activity."
+      ],
+      "limitations": [
+        "No timestamp or aging indicators are present; the murals’ age is visually indeterminate."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:06:35.595823+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a9244315-9edd-987b-8d8e-5a06920a8bcf",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1048,
+        "total_tokens": 1857,
+        "completion_tokens_details": {
+          "text_tokens": 1048
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020619e4160d86025245b4",
+      "usage": {
+        "completion_tokens": 905,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2024,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2929
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

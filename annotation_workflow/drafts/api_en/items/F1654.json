@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1654",
+  "sample_id": "PHL1800_HL_0130",
+  "file_name": "PHL1800_HL_0130.png",
+  "batch_id": "B034",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in a floral sleeveless dress adjusting her hair while standing near vending machines",
+  "captions": {
+    "scene": [
+      "A crowded urban sidewalk with multiple people, bicycles, and commercial vending machines including Coca-Cola and Dr Pepper units.",
+      "A group of pedestrians gathered near storefronts under a covered walkway; one person holds a white polka-dot umbrella.",
+      "Outdoor daylight scene with visible signage, including partially legible Japanese characters on a striped awning and brand logos on vending machines."
+    ],
+    "action": [
+      "The central woman raises her right hand to her head, fingers touching her hair or scalp, while looking downward.",
+      "A child in a striped shirt stands beside a blue bucket held by another person in a yellow patterned top.",
+      "Several individuals stand or walk in proximity: one woman holds an umbrella over two others, another carries a woven bag, and a man in a light shirt stands behind the central woman."
+    ],
+    "rationale": [
+      "The central woman’s posture and hand placement suggest she is adjusting or steadying her hair, though facial expression cannot confirm intent.",
+      "The presence of multiple vending machines and a striped awning implies a commercial street setting, but exact location is unspecified.",
+      "At least eight distinct individuals are visible: (1) central woman, (2) child standing, (3) person holding bucket, (4) woman with umbrella, (5) person under umbrella (partially obscured), (6) man behind central woman, (7) woman in yellow top, (8) woman in striped shirt near left—though some figures are partially occluded, silhouettes and clothing distinguish them."
+    ],
+    "object": [
+      "A red Coca-Cola vending machine displays the white script logo and a vertical 'Coke' label beneath it.",
+      "A brown Dr Pepper vending machine features the circular red-and-white logo and the text 'Dr Pepper' in white script.",
+      "A white umbrella with black polka dots is held above two individuals on the left side of the frame.",
+      "A blue plastic bucket sits on the ground near the right edge, held by a person in a yellow patterned short-sleeve shirt.",
+      "A bicycle with chrome handlebars and a black seat is parked in the lower-left foreground, with a second bicycle partially visible behind it."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1654_P1",
+      "visual_anchors": [
+        "woman adjusting hair",
+        "polka-dot umbrella",
+        "Coca-Cola vending machine"
+      ],
+      "symbolic_mapping": [
+        "the act of self-adjustment amid public commerce may reflect negotiation between personal presentation and commercial environment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where individual bodily gesture intersects with branded public space, suggesting identity as continuously performed within socially saturated environments.",
+      "alternative_interpretations": [
+        "The woman may simply be shielding her eyes or reacting to wind; the scene is a routine street snapshot without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual narrative confirms intentional self-presentation; gesture could be purely functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1654_P2",
+      "visual_anchors": [
+        "crowded sidewalk",
+        "multiple overlapping figures",
+        "shared umbrella"
+      ],
+      "symbolic_mapping": [
+        "proximity without interaction suggests coexistence without communion, highlighting anonymity in dense urban life"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial density and lack of direct engagement among individuals illustrate how modern urban settings enable physical proximity while sustaining social distance, raising questions about collective belonging.",
+      "alternative_interpretations": [
+        "People are merely waiting or passing through; their arrangement reflects logistical necessity rather than existential condition."
+      ],
+      "limitations": [
+        "No eye contact or body language confirms disengagement; some figures may be conversing outside frame or inaudibly."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1654_P3",
+      "visual_anchors": [
+        "vending machines with corporate logos",
+        "bicycles parked haphazardly",
+        "striped awning with unreadable text"
+      ],
+      "symbolic_mapping": [
+        "commercial signage juxtaposed with informal human activity signals tension between standardized systems and embodied improvisation"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The coexistence of automated consumer interfaces and unscripted human movement evokes the philosophical tension between technological determinism and agential navigation in everyday life.",
+      "alternative_interpretations": [
+        "The scene depicts ordinary commerce and transit; branding is incidental background, not thematic focus."
+      ],
+      "limitations": [
+        "No evidence of user interaction with machines or deliberate framing against them; machines are passive backdrop elements."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (9 claimed, actual 8 visible); misdescription of child's action (crouching vs. standing); inaccurate object details (Dr Pepper machine color, bicycle count)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:57:58.651967+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-479919d2-8fb2-9546-83f4-f0ead10afed8",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1062,
+        "total_tokens": 1831,
+        "completion_tokens_details": {
+          "text_tokens": 1062
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704573956ce39d0a6cf41a8",
+      "usage": {
+        "completion_tokens": 952,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1992,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2944
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

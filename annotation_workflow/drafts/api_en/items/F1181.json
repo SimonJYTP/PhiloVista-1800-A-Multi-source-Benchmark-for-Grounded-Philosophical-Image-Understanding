@@ -1,0 +1,164 @@
+{
+  "annotation_item_id": "F1181",
+  "sample_id": "PHL1800_HAIV_0493",
+  "file_name": "PHL1800_HAIV_0493.png",
+  "batch_id": "B025",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "multiple vehicles at a road intersection",
+  "captions": {
+    "scene": [
+      "An overhead view of a Y-shaped road intersection with asphalt pavement, white lane markings, and concrete curbs.",
+      "The intersection is surrounded by tan-colored embankments on two sides and green vegetated areas with wooden posts on the other two sides.",
+      "Debris including small fragments and an orange cone-like object lies scattered on the road surface near the center of the intersection."
+    ],
+    "action": [
+      "A red car is positioned diagonally across the intersection, partially overlapping a white vehicle that lies on its side.",
+      "A purple car is angled against the curb on the upper right, with visible front-end damage and its hood raised.",
+      "A white car is upright but tilted toward the centerline, with its front bumper contacting the purple car’s rear."
+    ],
+    "rationale": [
+      "The presence of multiple vehicles in abnormal orientations and visible damage suggests recent collision events.",
+      "Scattered debris and displaced vehicles indicate dynamic disruption rather than static placement.",
+      "The absence of visible human figures or motion blur prevents confirmation of active movement or causation."
+    ],
+    "object": [
+      "There are five vehicles visible: two red cars, two white cars (one upright, one overturned), and one purple car.",
+      "White painted lane lines form a diverging Y pattern, with a solid white line separating opposing traffic directions.",
+      "Two wooden posts stand vertically on the left and right embankments, each adjacent to green foliage.",
+      "An orange traffic cone lies on its side near the intersection center, next to a small yellow triangular fragment.",
+      "The road surface shows localized dark smudges and irregularities consistent with tire skid marks or impact residue."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1181_P1",
+      "visual_anchors": [
+        "overturned white car",
+        "scattered debris",
+        "intersecting road lines"
+      ],
+      "symbolic_mapping": [
+        "the overturned car represents disrupted continuity",
+        "intersecting lines symbolize divergent paths converging"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The image visualizes the fragility of planned trajectories when multiple agents pursue intersecting courses, where a single moment of misalignment leads to irreversible divergence and collapse.",
+      "alternative_interpretations": [
+        "This is a stylized depiction of a traffic accident simulation for educational or gaming purposes, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual signage confirm intentional symbolism; all interpretation relies solely on spatial arrangement and object states."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1181_P2",
+      "visual_anchors": [
+        "purple car against curb",
+        "red car crossing lanes",
+        "white car tilted mid-intersection"
+      ],
+      "symbolic_mapping": [
+        "curb contact signifies boundary violation",
+        "lane-crossing indicates disregard for shared rules"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The scene illustrates how individual actions—such as ignoring lane discipline or failing to yield—produce collective harm, manifesting social interdependence through physical consequence.",
+      "alternative_interpretations": [
+        "The vehicles may be placed deliberately for artistic composition, not to convey moral lessons."
+      ],
+      "limitations": [
+        "No visible driver figures or behavioral cues prevent attribution of intent or responsibility to specific vehicles."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1181_P3",
+      "visual_anchors": [
+        "tan embankments framing the road",
+        "green vegetation beyond curbs",
+        "vehicles confined within paved area"
+      ],
+      "symbolic_mapping": [
+        "embankments represent external constraints",
+        "paved path denotes constructed order"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "Human-made infrastructure channels movement into narrow corridors, where technological artifacts (cars) become both instruments of mobility and agents of entrapment when systems fail.",
+      "alternative_interpretations": [
+        "The embankments are merely topographic features with no intended metaphorical role."
+      ],
+      "limitations": [
+        "The image lacks explicit indicators of human labor or design process; infrastructure appears as given, not constructed."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect vehicle count: candidate states six vehicles but image shows five (two red, two white, one purple).",
+      "Candidate describes a gray vehicle fragment near bottom center, but image shows a gray car (not fragment) at bottom left."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:59:05.704500+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-65b59f1c-66c6-9ea5-9e24-8cf95b83b9ca",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 936,
+        "total_tokens": 2469,
+        "completion_tokens_details": {
+          "text_tokens": 936
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070358540c84cf9eccfe4a99",
+      "usage": {
+        "completion_tokens": 836,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2892,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3728
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

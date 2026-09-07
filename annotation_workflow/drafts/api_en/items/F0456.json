@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0456",
+  "sample_id": "PHL1800_HL_0547",
+  "file_name": "PHL1800_HL_0547.png",
+  "batch_id": "B011",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a bald man in a white shirt and patterned tie cooking bananas in a pan",
+  "captions": {
+    "scene": [
+      "An indoor setting with bar shelving stocked with bottles, pendant lighting, and leather furniture in the background.",
+      "A cooking station with a portable gas burner, a metal frying pan, and stacked white ceramic plates on a dark surface.",
+      "Multiple people visible in the background: at least three individuals seated or standing near a bar counter."
+    ],
+    "action": [
+      "The man holds a white plate in his left hand while using his right hand to manipulate food in the pan with a utensil.",
+      "Sliced bananas are submerged in a yellowish liquid inside the pan, appearing to be fried or simmered.",
+      "The man is leaning forward over the pan, eyes directed downward toward the cooking food."
+    ],
+    "rationale": [
+      "The man’s posture and gaze suggest focused attention on the cooking process, though internal state cannot be confirmed.",
+      "The presence of multiple plates and a serving gesture implies preparation for plating or service, but no explicit serving occurs.",
+      "The background bar and seating suggest a restaurant or hospitality venue, but signage or branding is insufficient to confirm type or name."
+    ],
+    "object": [
+      "A stainless steel frying pan contains six visible banana slices immersed in a translucent yellow liquid, placed on a black portable gas burner.",
+      "The man wears a white long-sleeved collared shirt with a silver pen clipped to the left breast pocket and a multicolored tie with blue, red, and beige abstract patterns.",
+      "His left hand holds a white ceramic plate with a single banana slice resting near its rim; the plate shows faint residue from prior use.",
+      "Two additional identical white ceramic plates are stacked on the table to the right of the pan, one inverted atop the other.",
+      "In the background, a dark brown leather Chesterfield-style armchair sits beside a wooden side table with a small black object on it."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0456_P1",
+      "visual_anchors": [
+        "man’s focused gaze on pan",
+        "pen clipped to shirt pocket",
+        "stacked clean plates"
+      ],
+      "symbolic_mapping": [
+        "the pen signifies preparedness or professional role",
+        "stacked plates imply anticipation of reception"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image captures labor as embodied ritual: precise manual action within a structured service environment reflects how routine skill sustains social continuity through hospitality.",
+      "alternative_interpretations": [
+        "This is simply a chef preparing dessert in a restaurant kitchen without deeper implication."
+      ],
+      "limitations": [
+        "No facial expression or dialogue confirms intentionality or emotional valence; interpretation relies on assumed context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0456_P2",
+      "visual_anchors": [
+        "bald head and mustache",
+        "white shirt and tie",
+        "background patrons"
+      ],
+      "symbolic_mapping": [
+        "attire signals formal service role",
+        "proximity to patrons suggests mediated social interaction"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Appearance functions as occupational signifier: the man’s dress code positions him within a hierarchy of service, where identity is partially constituted by visible conformity to institutional norms.",
+      "alternative_interpretations": [
+        "He may be a guest demonstrating cooking, not a staff member; attire could be personal preference."
+      ],
+      "limitations": [
+        "No name tag, uniform insignia, or explicit role markers confirm employment status."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0456_P3",
+      "visual_anchors": [
+        "bananas cooking in liquid",
+        "single banana slice on plate",
+        "unoccupied plates awaiting use"
+      ],
+      "symbolic_mapping": [
+        "transformation of raw ingredient mirrors temporal passage",
+        "empty plates signify potentiality or deferred consumption"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The moment between preparation and presentation embodies suspended time: the banana’s transition from raw to cooked parallels human engagement with impermanence, where choice lies in timing the act of offering.",
+      "alternative_interpretations": [
+        "This is a standard food prep step with no symbolic intent; the empty plates are merely storage."
+      ],
+      "limitations": [
+        "No clock, calendar, or explicit temporal marker grounds the ‘suspended time’ claim visually."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:48:28.107613+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-10d44ebd-c779-9a5e-bfb3-cfd4072c1018",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 978,
+        "total_tokens": 1787,
+        "completion_tokens_details": {
+          "text_tokens": 978
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070248080169570df3d94a93",
+      "usage": {
+        "completion_tokens": 839,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1958,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2797
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

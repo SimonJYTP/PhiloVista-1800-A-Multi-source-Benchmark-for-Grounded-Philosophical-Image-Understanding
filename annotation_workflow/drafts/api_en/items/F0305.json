@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0305",
+  "sample_id": "PHL1800_HL_0503",
+  "file_name": "PHL1800_HL_0503.png",
+  "batch_id": "B008",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a light-brown and white bovine animal with horns standing on a sandy beach",
+  "captions": {
+    "scene": [
+      "A clear blue sky above a calm ocean with small breaking waves near the shore",
+      "Sandy beach foreground with visible footprints and a distinct shadow cast by the animal",
+      "A distant human figure partially submerged in water, centered horizontally behind the animal"
+    ],
+    "action": [
+      "The bovine stands upright facing the camera with head slightly tilted",
+      "Its ears are extended laterally and appear relaxed",
+      "The tail is raised and curved upward behind its body"
+    ],
+    "rationale": [
+      "The animal’s proximity to the camera and sharp focus suggest it is the primary subject rather than a background element",
+      "The presence of waves and wet sand indicates recent or ongoing tidal activity, though no direct motion is captured",
+      "The distant human figure is too small and indistinct to determine posture or activity beyond being in the water"
+    ],
+    "object": [
+      "The bovine has two short, curved horns pointing outward and slightly backward from the top of its head.",
+      "Its muzzle is dark brown and moist, with visible nostrils and fine hair around the edges.",
+      "The animal’s coat is predominantly pale cream on the torso and legs, with tan coloring on the head and neck.",
+      "Its left ear is fully visible, showing pink inner skin and fringed edges; the right ear is partially occluded by the head.",
+      "A long, thin tail with a dark tuft at the tip extends upward and backward from the rear."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0305_P1",
+      "visual_anchors": [
+        "bovine facing camera directly",
+        "sharp shadow on sand",
+        "empty horizon line"
+      ],
+      "symbolic_mapping": [
+        "direct gaze → confrontation with observer",
+        "shadow → embodiment of presence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The animal’s frontal orientation and unblinking gaze evoke a question of self-presentation versus imposed categorization, where its physical form—neither wild nor fully domesticated—resists simple classification.",
+      "alternative_interpretations": [
+        "It may simply be a curious animal pausing near the shore, with no intentional pose or symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expression details (e.g., eye dilation, mouth position) are resolvable to confirm intent or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0305_P2",
+      "visual_anchors": [
+        "single distant human in water",
+        "bovine dominating foreground",
+        "vast sea-sky boundary"
+      ],
+      "symbolic_mapping": [
+        "spatial separation → ontological distance",
+        "shared environment → coexistence without interaction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of the large animal in the immediate foreground and the tiny human far away suggests a reflection on scale and relational existence: beings occupy the same world yet remain isolated in their perceptual frames.",
+      "alternative_interpretations": [
+        "The human may be swimming or wading; the composition results from photographic framing rather than deliberate philosophical staging."
+      ],
+      "limitations": [
+        "The human’s activity and orientation are indiscernible due to distance and resolution."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0305_P3",
+      "visual_anchors": [
+        "wet sand meeting dry sand",
+        "breaking wave line",
+        "animal’s hooves partially embedded in sand"
+      ],
+      "symbolic_mapping": [
+        "tidal edge → liminality",
+        "hoof imprint → trace of passage"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The boundary between wet and dry sand, crossed by the animal’s stance, symbolizes a threshold moment—where movement leaves evidence but direction remains ambiguous—inviting reflection on how truth emerges only through observable traces, not intentions.",
+      "alternative_interpretations": [
+        "This is a natural coastal gradient with no intended metaphor; the animal merely stands where it chose to stop."
+      ],
+      "limitations": [
+        "No visible hoof prints ahead or behind confirm directionality or prior movement."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:30:30.625057+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-72ea26f8-67d6-9b61-bfb7-0b49f5d0f2a8",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 929,
+        "total_tokens": 1738,
+        "completion_tokens_details": {
+          "text_tokens": 929
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022959b9488e72e93f4187",
+      "usage": {
+        "completion_tokens": 787,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1906,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2693
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

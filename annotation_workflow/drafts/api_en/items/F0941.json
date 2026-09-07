@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0941",
+  "sample_id": "PHL1800_HL_0494",
+  "file_name": "PHL1800_HL_0494.png",
+  "batch_id": "B020",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person seated at a desk facing a computer monitor",
+  "captions": {
+    "scene": [
+      "An office interior with beige walls, a world map poster above the desk, and vertical blinds covering a window to the right.",
+      "A cluttered wooden desk holds a computer monitor, papers, a coffee mug, a telephone, and a filing cabinet to the left.",
+      "A calendar showing December 2004 hangs on the wall beside the map; the calendar image depicts two figures in winter clothing."
+    ],
+    "action": [
+      "The person is seated, wearing glasses and a white long-sleeve shirt, with hands positioned over a keyboard and mouse.",
+      "The computer monitor displays a blue-toned graphical interface with geometric shapes and a small human-like figure.",
+      "Papers are stacked haphazardly on the desk surface, and a yellow sticky note is affixed to the front of a drawer."
+    ],
+    "rationale": [
+      "The person’s posture and hand placement suggest active computer use, though no motion is captured.",
+      "The presence of a world map, calendar, and office equipment indicates a workspace setting, but the specific function (e.g., academic, corporate) is not determinable from visual evidence alone.",
+      "The calendar shows December 2004, fixing the image temporally to that month/year; however, whether the photo was taken then or later cannot be confirmed visually."
+    ],
+    "object": [
+      "A large world map poster labeled 'THE WORLD' hangs on the wall, featuring continents in beige and oceans in blue-green, with five inset globes along the bottom edge.",
+      "A desktop computer monitor displays a graphic with a light-blue background, dark-blue angular shapes, and a stylized humanoid figure in profile.",
+      "A black landline telephone with a keypad sits to the right of the monitor, next to a white disposable cup and a metallic travel mug.",
+      "A beige metal filing cabinet with two visible drawers and silver handles stands to the left of the desk.",
+      "Vertical blinds with alternating light gray and off-white slats cover a window on the right wall, with blue ambient light visible between slats."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0941_P1",
+      "visual_anchors": [
+        "world map labeled 'THE WORLD'",
+        "calendar showing December 2004",
+        "person facing screen"
+      ],
+      "symbolic_mapping": [
+        "the map represents global scope of knowledge or responsibility",
+        "the calendar anchors action to a finite temporal moment"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a universal cartographic representation with a dated personal artifact suggests the tension between enduring frameworks of understanding and the fleeting nature of individual experience.",
+      "alternative_interpretations": [
+        "The map and calendar may simply reflect functional office decor without symbolic intent."
+      ],
+      "limitations": [
+        "No textual content on the map beyond 'THE WORLD' is legible; symbolic meaning is inferred rather than stated."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0941_P2",
+      "visual_anchors": [
+        "cluttered desk with papers and sticky note",
+        "person typing at keyboard",
+        "computer screen displaying abstract graphics"
+      ],
+      "symbolic_mapping": [
+        "desk clutter signifies cognitive load or ongoing labor",
+        "abstract screen imagery reflects mediation of reality through technology"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The scene embodies the modern condition where intellectual labor is enacted through technological interfaces, with physical disorder mirroring the complexity of decision-making within constrained digital pathways.",
+      "alternative_interpretations": [
+        "The clutter may indicate temporary disorganization rather than systemic cognitive burden."
+      ],
+      "limitations": [
+        "The content of the papers and the purpose of the on-screen graphic are unreadable and thus indeterminate."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0941_P3",
+      "visual_anchors": [
+        "person viewed from behind",
+        "glasses worn",
+        "white shirt with visible collar and sleeve seam"
+      ],
+      "symbolic_mapping": [
+        "back-facing posture obscures identity, emphasizing role over individuality",
+        "glasses denote mediated perception"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The anonymized rear view foregrounds the subject as a functional agent within a system—defined by task and environment rather than personal traits—highlighting how social roles can eclipse individual presence.",
+      "alternative_interpretations": [
+        "The person may simply be focused on work; the angle is a natural consequence of seating position, not intentional obfuscation."
+      ],
+      "limitations": [
+        "No facial features or distinguishing marks are visible; identity cannot be assessed visually."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:29:30.399611+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-49cdf69a-3602-97e0-aad6-8c5a4a960ddc",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1034,
+        "total_tokens": 1843,
+        "completion_tokens_details": {
+          "text_tokens": 1034
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703291684662747b6fc4a78",
+      "usage": {
+        "completion_tokens": 890,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2008,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2898
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

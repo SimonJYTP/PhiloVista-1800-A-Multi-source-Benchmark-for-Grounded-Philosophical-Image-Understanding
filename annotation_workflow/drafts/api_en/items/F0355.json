@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0355",
+  "sample_id": "PHL1800_HAIV_0373",
+  "file_name": "PHL1800_HAIV_0373.png",
+  "batch_id": "B009",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red heart encircled by a metallic chain",
+  "captions": {
+    "scene": [
+      "A glossy red heart centered against a white background with faint blue-gray shadowing beneath it",
+      "A silver-toned chain forms a loose circular enclosure around the heart, with links overlapping and varying in orientation",
+      "A small green-yellow shape appears at the bottom edge of the heart, partially obscured by the chain"
+    ],
+    "action": [
+      "The chain is draped around the heart without visible tension or motion",
+      "One upper chain link shows a break or separation with jagged edges and a small detached fragment nearby",
+      "Highlights and shading on the heart suggest a smooth, reflective surface under directional lighting"
+    ],
+    "rationale": [
+      "The heart’s glossy finish and specular highlights indicate a non-matte material, likely intended to resemble plastic or polished ceramic",
+      "The broken link suggests prior or ongoing mechanical stress, though no force vector or motion is depicted",
+      "The green-yellow element at the base is only partially visible and its identity cannot be determined from visual evidence alone"
+    ],
+    "object": [
+      "The heart is rendered in vibrant magenta-red with two large white specular highlights on its upper lobes.",
+      "The chain consists of interlocking oval-shaped links with gray fill, black outlines, and white highlights indicating metallic reflectivity.",
+      "A single chain link near the top right exhibits a visible fracture with a detached shard floating adjacent to it.",
+      "The heart is fully enclosed laterally by the chain, but the chain does not form a sealed loop—gaps exist between links.",
+      "A small irregular green-yellow patch is visible beneath the lower tip of the heart, intersected by a chain link."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0355_P1",
+      "visual_anchors": [
+        "broken chain link",
+        "intact heart",
+        "encircling chain"
+      ],
+      "symbolic_mapping": [
+        "broken link → rupture in constraint",
+        "chain encircling heart → imposed limitation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The image may represent the tension between external restriction and internal resilience, where the heart remains whole despite partial chain failure.",
+      "alternative_interpretations": [
+        "It could depict a decorative motif with no symbolic intent—e.g., a stylized Valentine’s emblem with accidental damage."
+      ],
+      "limitations": [
+        "No textual context or authorial statement confirms symbolic intent; the break could be aesthetic rather than conceptual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0355_P2",
+      "visual_anchors": [
+        "glossy heart surface",
+        "metallic chain",
+        "green-yellow base element"
+      ],
+      "symbolic_mapping": [
+        "glossiness → artificiality or emotional surface",
+        "chain → institutional or social binding"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between the vivid, synthetic-looking heart and the industrial chain may question authenticity of emotion within socially enforced structures.",
+      "alternative_interpretations": [
+        "The green-yellow shape may be a stem or support base, implying the heart is an ornament or toy, not a metaphor."
+      ],
+      "limitations": [
+        "The green-yellow element is too truncated to identify definitively; its role remains ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0355_P3",
+      "visual_anchors": [
+        "chain gaps",
+        "heart fully visible",
+        "no attachment points shown"
+      ],
+      "symbolic_mapping": [
+        "gaps in chain → incomplete control",
+        "heart exposed → vulnerability or autonomy"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The incomplete enclosure suggests that constraint is porous, allowing agency or escape even when surrounded by limiting forces.",
+      "alternative_interpretations": [
+        "The gaps may result from artistic simplification or perspective distortion rather than intentional symbolism."
+      ],
+      "limitations": [
+        "No motion, direction, or narrative context confirms intentionality behind the gaps."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:41:32.188930+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fc099054-c446-9cac-98a2-d73f0465b1ec",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 887,
+        "total_tokens": 2420,
+        "completion_tokens_details": {
+          "text_tokens": 887
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070241166572d63a110c488e",
+      "usage": {
+        "completion_tokens": 746,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2845,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3591
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

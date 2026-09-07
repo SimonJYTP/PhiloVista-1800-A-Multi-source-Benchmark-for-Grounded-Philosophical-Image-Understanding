@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0797",
+  "sample_id": "PHL1800_MM_0027",
+  "file_name": "PHL1800_MM_0027.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman standing on stone steps facing a uniformed officer",
+  "captions": {
+    "scene": [
+      "A neoclassical building facade with fluted columns, dark double doors, and wide stone steps.",
+      "The setting appears to be an outdoor public institutional building entrance during daylight.",
+      "Two individuals occupy the central stairs: one woman facing forward, one officer viewed from behind."
+    ],
+    "action": [
+      "The woman holds a blue-and-white cylindrical can in her right hand and stands upright on the steps.",
+      "The officer stands several steps below, facing the woman, with hands at his sides and belt equipment visible.",
+      "A speech bubble originates near the woman’s head containing legible text."
+    ],
+    "rationale": [
+      "The woman’s posture and gaze suggest engagement with the officer, but no physical contact or motion is visible.",
+      "The speech bubble implies intended speech or thought, yet only its textual content is observable—not vocalization or facial expression confirming intent.",
+      "The officer’s stance is neutral and stationary; no gesture, weapon draw, or movement is evident."
+    ],
+    "object": [
+      "The woman wears a black blazer over a white V-neck top, black trousers, and white sneakers.",
+      "The officer wears a dark navy short-sleeved uniform shirt with a patch on the left sleeve and a duty belt with holsters and pouches.",
+      "A blue-and-white aluminum beverage can is held in the woman’s right hand, oriented vertically.",
+      "The stone steps are light beige, broad, and evenly spaced, with visible horizontal joints.",
+      "The speech bubble is white with black sans-serif text reading: 'I will create my art and protest here.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0797_P1",
+      "visual_anchors": [
+        "speech bubble with declarative statement",
+        "woman holding can",
+        "officer facing her"
+      ],
+      "symbolic_mapping": [
+        "the can as a potential symbolic prop",
+        "the steps as a site of public assertion"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image frames a moment where individual expression (declared via text) confronts institutional presence, evoking tensions between civic liberty and spatial control.",
+      "alternative_interpretations": [
+        "The scene may depict a staged performance or advertisement, where the text functions as narrative framing rather than real protest."
+      ],
+      "limitations": [
+        "The can’s identity and purpose are visually ambiguous; it could be functional, symbolic, or irrelevant."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0797_P2",
+      "visual_anchors": [
+        "woman’s formal attire",
+        "officer’s uniform",
+        "architectural columns"
+      ],
+      "symbolic_mapping": [
+        "columns as symbols of authority or law",
+        "attire contrast indicating role differentiation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual juxtaposition of professional civilian dress against state uniform within a monumental architectural context highlights socially constructed roles and their embodied presentation.",
+      "alternative_interpretations": [
+        "The individuals may be co-participants in a coordinated event, not adversaries; the uniform may denote service rather than enforcement."
+      ],
+      "limitations": [
+        "No insignia or badge details are legible to confirm jurisdiction or rank, limiting definitive role assignment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0797_P3",
+      "visual_anchors": [
+        "speech bubble text",
+        "static postures",
+        "empty surrounding steps"
+      ],
+      "symbolic_mapping": [
+        "the declaration as performative utterance preceding action",
+        "emptiness suggesting isolation or focus"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The declared intention to create art and protest—without visible action yet occurring—emphasizes the ethical weight of verbal commitment as a threshold act in moral agency.",
+      "alternative_interpretations": [
+        "The text may be added digitally post-capture and not reflect actual speech, making the ‘intention’ purely compositional."
+      ],
+      "limitations": [
+        "The speech bubble is a graphic overlay; its origin (character’s thought vs. external narration) cannot be determined from visuals alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:17:20.385318+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5aa417c0-9ea3-9731-b7b4-9d8b07591bf3",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 929,
+        "total_tokens": 2462,
+        "completion_tokens_details": {
+          "text_tokens": 929
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703170500b0d229c09543f0",
+      "usage": {
+        "completion_tokens": 790,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2884,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3674
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

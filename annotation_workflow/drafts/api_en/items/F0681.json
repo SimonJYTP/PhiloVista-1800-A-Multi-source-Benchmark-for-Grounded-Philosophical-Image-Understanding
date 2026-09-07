@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0681",
+  "sample_id": "PHL1800_HL_0369",
+  "file_name": "PHL1800_HL_0369.png",
+  "batch_id": "B015",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a green vintage bus with passengers and driver",
+  "captions": {
+    "scene": [
+      "A paved two-lane road lined with leafless deciduous trees under a clear blue sky",
+      "A brick wall and ivy-covered tree trunk on the left side of the road",
+      "A residential building partially visible behind trees on the right"
+    ],
+    "action": [
+      "The bus is moving forward on the road, indicated by slight motion blur on wheels and background",
+      "Multiple passengers are seated inside, looking out windows or forward; some heads are turned toward the camera",
+      "The driver is seated at the wheel, hands visible on steering column, facing forward"
+    ],
+    "rationale": [
+      "The bus appears to be in service due to visible route sign, passengers, and driver position",
+      "The season is likely late autumn or winter because all deciduous trees are bare",
+      "The vehicle’s design suggests mid-20th century manufacture, but exact era cannot be confirmed without external knowledge"
+    ],
+    "object": [
+      "The bus is painted dark green with silver horizontal stripes along the lower body and white trim around windows.",
+      "A destination sign above the windshield reads 'SPARSHOLT' and '7', with smaller unreadable text below.",
+      "A side advertisement banner displays 'PRALL LTD' in red uppercase letters on white background, with additional illegible text.",
+      "There are 11 visible passenger heads through the side windows: 3 in front row, 4 in middle row, 4 in rear row; one passenger wears a light-colored hat.",
+      "The front license plate reads 'WCO 104' in black characters on white background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0681_P1",
+      "visual_anchors": [
+        "bare trees",
+        "vintage bus",
+        "passengers looking outward"
+      ],
+      "symbolic_mapping": [
+        "bare trees → temporal passage",
+        "bus route sign → directed movement through time"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The image evokes the inevitability of seasonal cycles and human transit through finite time, where the bus’s fixed route contrasts with passengers’ varied gazes—suggesting individual awareness within shared temporality.",
+      "alternative_interpretations": [
+        "It simply documents a routine public transport moment on a crisp day, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; interpretation relies on viewer projection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0681_P2",
+      "visual_anchors": [
+        "driver at wheel",
+        "passengers seated in rows",
+        "uniform bus livery"
+      ],
+      "symbolic_mapping": [
+        "driver’s focused posture → responsibility for collective safety",
+        "row seating → structured social coexistence"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The driver’s visible control and passengers’ passive occupancy illustrate a microcosm of ethical duty and interdependent social order, where individual action sustains communal mobility.",
+      "alternative_interpretations": [
+        "This is a standard operational scene; roles are functional, not moral or existential."
+      ],
+      "limitations": [
+        "No facial expressions or gestures indicate internal states; responsibility is inferred from role, not behavior."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0681_P3",
+      "visual_anchors": [
+        "'PRALL LTD' advertisement",
+        "vintage bus model",
+        "unidentified passengers"
+      ],
+      "symbolic_mapping": [
+        "corporate branding on public vehicle → embedded commercial identity",
+        "anonymity of riders → collective yet unmarked existence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The bus merges corporate identity with public utility, while passengers remain visually undifferentiated—highlighting how appearance (livery, signage) mediates social recognition more than individual presence.",
+      "alternative_interpretations": [
+        "The ad is incidental; passengers are simply riding, not symbolizing anonymity."
+      ],
+      "limitations": [
+        "The advertisement content is partial and unreadable beyond the company name; deeper branding intent is unseen."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:07:36.754666+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1b8a22c6-1271-9d1d-be77-1347160d0ef5",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 925,
+        "total_tokens": 1694,
+        "completion_tokens_details": {
+          "text_tokens": 925
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070307140f68d722969c4cdc",
+      "usage": {
+        "completion_tokens": 779,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1852,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2631
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

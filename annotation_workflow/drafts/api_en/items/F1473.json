@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1473",
+  "sample_id": "PHL1800_HAIV_0423",
+  "file_name": "PHL1800_HAIV_0423.png",
+  "batch_id": "B030",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person viewed from behind standing in a desert facing a large spherical object",
+  "captions": {
+    "scene": [
+      "A vast, flat desert with rippled sand under a muted beige sky and distant low hills.",
+      "A massive, textured purple-gray sphere rests on the sand, casting a circular shadow.",
+      "The horizon is unbroken except for faint silhouettes of low landforms."
+    ],
+    "action": [
+      "The person stands motionless, facing the sphere, with arms at their sides.",
+      "The sphere remains stationary on the sand surface.",
+      "Light casts a sharp, elongated shadow of the person toward the lower right."
+    ],
+    "rationale": [
+      "The person’s posture suggests observation rather than movement, but no motion blur or sequential frames confirm stillness.",
+      "The sphere’s placement and lack of visible support imply it is resting on the ground, though no contact deformation is clearly visible.",
+      "The uniform texture of the sand and absence of tracks near the person suggest recent stillness, but footprints may be absent due to wind or image resolution."
+    ],
+    "object": [
+      "The person wears a light-colored short-sleeved shirt, dark trousers, and dark footwear; their hair is dark and tied upward with a small blue-green accessory.",
+      "The sphere is roughly hemispherical above ground, with a rough, cracked, mottled surface in shades of violet, gray, and black, resembling stone or crystalline material.",
+      "The sand exhibits fine, parallel ripple patterns across the entire visible surface, consistent with wind-formed dunes or dry lakebeds.",
+      "A distinct circular depression surrounds the base of the sphere, slightly darker than surrounding sand, suggesting settling or displacement.",
+      "The sky is gradient from pale yellow near the horizon to darker beige overhead, with no visible clouds, sun, or stars."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1473_P1",
+      "visual_anchors": [
+        "person standing alone",
+        "massive immovable sphere",
+        "vast empty desert"
+      ],
+      "symbolic_mapping": [
+        "the sphere as an insurmountable obstacle",
+        "the desert as existential void"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The solitary figure confronting an immense, inert object in an open expanse evokes the philosophical tension between human agency and external constraints—where the journey is defined not by movement but by the stance taken before the unmoving.",
+      "alternative_interpretations": [
+        "This may depict a geological survey or artistic installation, with the sphere being a natural boulder or sculptural element in a controlled environment."
+      ],
+      "limitations": [
+        "No textual labels, scale markers, or contextual artifacts confirm symbolic intent; the sphere’s material and origin are visually ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1473_P2",
+      "visual_anchors": [
+        "person viewed from behind",
+        "no facial features visible",
+        "uniform clothing"
+      ],
+      "symbolic_mapping": [
+        "anonymity of the observer as universal subject"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The deliberate occlusion of the person’s face and identity emphasizes the role of the observer as a generic placeholder, raising questions about whether selfhood is constituted through relation to external objects rather than intrinsic traits.",
+      "alternative_interpretations": [
+        "The back view may simply result from compositional choice for dramatic perspective, not intentional abstraction of identity."
+      ],
+      "limitations": [
+        "Clothing style and posture do not definitively indicate anonymity; they could reflect cultural norms or practical attire."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1473_P3",
+      "visual_anchors": [
+        "sphere’s cracked surface",
+        "circular shadow",
+        "rippled sand"
+      ],
+      "symbolic_mapping": [
+        "surface fissures as fragility of perception",
+        "shadow as epistemic limit"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The sphere’s complex texture and the precise shadow it casts suggest a tension between apparent solidity and underlying instability, mirroring philosophical concerns about the reliability of sensory evidence and the impermanence masked by static appearance.",
+      "alternative_interpretations": [
+        "The texture may be natural weathering of rock; the shadow follows standard optical projection and does not imply metaphorical meaning."
+      ],
+      "limitations": [
+        "No visual cues (e.g., erosion patterns, biological traces) confirm temporal decay or cognitive uncertainty; interpretation relies on aesthetic analogy."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:36:48.897496+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-da6c73ac-e07d-9174-997d-357d9ef98f22",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 991,
+        "total_tokens": 2524,
+        "completion_tokens_details": {
+          "text_tokens": 991
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070436240a2d0c6ef2c64694",
+      "usage": {
+        "completion_tokens": 854,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2948,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3802
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

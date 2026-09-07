@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0870",
+  "sample_id": "PHL1800_HL_0002",
+  "file_name": "PHL1800_HL_0002.png",
+  "batch_id": "B001",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person wearing a light blue t-shirt, black pants, glasses, and a white cap, holding a round analog clock",
+  "captions": {
+    "scene": [
+      "A narrow indoor room with white-painted brick walls, concrete floor, and visible electrical wiring along the wall.",
+      "Shelves mounted on the wall hold books, bottles, speakers, and other small items; a sink with a dish rack sits to the right.",
+      "A wooden chair stands near the center, and a table in the foreground holds scattered printed photographs and papers."
+    ],
+    "action": [
+      "The person stands upright facing the camera, holding a large round clock with both hands at chest level.",
+      "The clock face shows numerals 1–12 and two hands indicating approximately 4:25.",
+      "The person’s mouth is slightly open and eyes are directed toward the camera."
+    ],
+    "rationale": [
+      "The presence of shelves, a sink, and a door suggests a functional utility or workshop space rather than a living area.",
+      "The clock is held prominently and centrally, suggesting intentional display rather than incidental possession.",
+      "Multiple photographs on the table and posters on walls indicate this space may be used for creative or archival work, though no explicit activity is occurring."
+    ],
+    "object": [
+      "A round analog wall clock with a yellowish face, black numerals, and black hour/minute hands is held by the person.",
+      "A white ceramic sink with a metal faucet and a green-and-white patterned dish drying rack inside it is mounted on the right wall.",
+      "A wooden chair with a woven seat and four legs stands behind the person, partially obscured.",
+      "A white shelf above the sink holds multiple small bottles, a black speaker, and stacked books including one with visible blue spine text 'THE ART OF...' (remainder unreadable).",
+      "A framed poster on the left wall shows a figure in dark clothing with red hair and a red headband; text below is illegible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0870_P1",
+      "visual_anchors": [
+        "person holding a large analog clock",
+        "scattered photographs on table",
+        "exposed wiring on wall"
+      ],
+      "symbolic_mapping": [
+        "clock as representation of measured time",
+        "photographs as fragments of recorded past"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of a precise timepiece with fragmented visual records suggests an inquiry into how human perception organizes temporality through artifacts, questioning whether time is linear or reconstructed.",
+      "alternative_interpretations": [
+        "The scene may simply reflect a workspace where timekeeping and image editing occur concurrently, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels confirm thematic intent; the clock’s design is generic and not uniquely symbolic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0870_P2",
+      "visual_anchors": [
+        "white cap worn backward",
+        "glasses",
+        "light blue t-shirt with yellow graphic"
+      ],
+      "symbolic_mapping": [
+        "cap orientation as nonconformity",
+        "clothing as curated self-presentation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The subject’s attire and posture in a cluttered, semi-public space evoke tension between individual expression and environmental constraint, highlighting identity as performed within material contexts.",
+      "alternative_interpretations": [
+        "The clothing choices may reflect comfort or practicality rather than deliberate identity signaling."
+      ],
+      "limitations": [
+        "No facial expression or gesture confirms intentionality behind appearance choices."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0870_P3",
+      "visual_anchors": [
+        "exposed electrical outlets and wires",
+        "improvised shelving",
+        "unpainted doorway revealing raw brick"
+      ],
+      "symbolic_mapping": [
+        "exposed infrastructure as visible labor",
+        "unfinished surfaces as resistance to polish"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visible infrastructure and makeshift organization imply labor that remains unmediated by aesthetic finish, suggesting autonomy derived from functional pragmatism rather than institutional conformity.",
+      "alternative_interpretations": [
+        "The space may be temporarily occupied or under renovation, with no ideological stance implied."
+      ],
+      "limitations": [
+        "No tools, work-in-progress items, or signage confirm active labor or philosophical stance."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:39:55.926399+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f478f7ef-4ac9-9597-92f8-3b48dbdfec07",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 969,
+        "total_tokens": 1698,
+        "completion_tokens_details": {
+          "text_tokens": 969
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013928d8012fe629804722",
+      "usage": {
+        "completion_tokens": 828,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1852,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2680
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

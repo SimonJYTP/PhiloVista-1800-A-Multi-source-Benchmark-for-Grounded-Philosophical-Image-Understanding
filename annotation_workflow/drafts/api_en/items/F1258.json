@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1258",
+  "sample_id": "PHL1800_MM_0150",
+  "file_name": "PHL1800_MM_0150.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two boys standing at a food stall counter",
+  "captions": {
+    "scene": [
+      "A brightly colored yellow and red food stall with stainless steel surfaces stands on a brick-paved outdoor area under daylight.",
+      "Background includes blurred festival-style tents, colorful decorations, and other indistinct figures seated or walking.",
+      "Two cups labeled 'Milkshake' sit atop the stall’s roof; one has a pink straw, the other a blue straw."
+    ],
+    "action": [
+      "The boy in the white shirt holds a white-and-blue cup with a straw in his right hand and faces the stall interior.",
+      "The boy in the pink shirt stands with hands at his sides, facing the stall interior, slightly turned toward the other boy.",
+      "A speech bubble originates from the white-shirted boy’s head region and contains legible text: 'I just burped loudly after finishing my milkshake!'"
+    ],
+    "rationale": [
+      "The speech bubble is positioned near the white-shirted boy’s head and points to him, suggesting attribution—but no facial expression confirms speaker identity.",
+      "The cup held by the white-shirted boy matches the milkshake cups on the roof in size and color scheme, supporting possible consumption.",
+      "The phrase 'after finishing my milkshake' implies prior consumption, but no empty cup or visible residue confirms completion."
+    ],
+    "object": [
+      "The food stall has vertical yellow paneling on its lower front, a stainless steel countertop, and a transparent service window with hanging orange-red paper lanterns inside.",
+      "A plate of golden-brown fried items sits on the counter beside a small clear cup containing an orange liquid.",
+      "The boy in white wears red shorts with a white side stripe, red-and-white sneakers with striped socks, and a plain short-sleeve t-shirt.",
+      "The boy in pink wears cuffed blue denim capris, black-and-white sneakers, and a solid pink short-sleeve t-shirt.",
+      "Two stools are visible left of the stall: one yellow with red legs, one red with red legs; both have circular seats and four straight legs."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1258_P1",
+      "visual_anchors": [
+        "speech bubble with explicit statement",
+        "two boys facing same direction",
+        "public setting with onlookers implied"
+      ],
+      "symbolic_mapping": [
+        "spoken utterance as social disclosure",
+        "shared space as arena for embodied reaction"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The act of vocalizing a bodily function in public—especially to a peer—highlights how self-presentation is negotiated through spontaneous, unscripted moments within shared social space.",
+      "alternative_interpretations": [
+        "It may simply depict a humorous cartoon trope without deeper intent."
+      ],
+      "limitations": [
+        "No facial expressions or audience reactions are visible to confirm social reception or intentionality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1258_P2",
+      "visual_anchors": [
+        "milkshake cups on roof",
+        "boy holding matching cup",
+        "speech bubble referencing completion"
+      ],
+      "symbolic_mapping": [
+        "consumption as temporal marker",
+        "burp as involuntary sequel to action"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The sequence implied—drinking, finishing, then burping—frames bodily processes as linear, irreversible events that punctuate lived time, even in trivial contexts.",
+      "alternative_interpretations": [
+        "The text may be purely comedic and not meant to evoke temporality."
+      ],
+      "limitations": [
+        "The burp is described but not visually depicted; timing is inferred solely from text."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1258_P3",
+      "visual_anchors": [
+        "stall with branded cups",
+        "uniform snack presentation",
+        "children as consumers"
+      ],
+      "symbolic_mapping": [
+        "standardized food as cultural script",
+        "childhood interaction with commercial environment"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The children’s attire and positioning relative to a branded food vendor suggest identity formation occurs partly through participation in consumer rituals, where appearance (clothing, posture) aligns with expected roles.",
+      "alternative_interpretations": [
+        "Clothing and setting may reflect generic illustration conventions rather than symbolic intent."
+      ],
+      "limitations": [
+        "Branding on cups is partially illegible; no logos or names are fully readable to confirm commercial identity."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:08:50.739031+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e9b962c5-6437-9ba2-a633-cb8bab461290",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 978,
+        "total_tokens": 2511,
+        "completion_tokens_details": {
+          "text_tokens": 978
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040835c3147c5399844c62",
+      "usage": {
+        "completion_tokens": 842,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2930,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3772
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

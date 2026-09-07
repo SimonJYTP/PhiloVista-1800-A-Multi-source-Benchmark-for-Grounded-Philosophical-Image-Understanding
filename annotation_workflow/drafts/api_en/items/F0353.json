@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0353",
+  "sample_id": "PHL1800_HL_0445",
+  "file_name": "PHL1800_HL_0445.png",
+  "batch_id": "B009",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red double-decker bus with route number 24 heading to Trafalgar Square",
+  "captions": {
+    "scene": [
+      "A busy urban street intersection with classical stone buildings on the left, green trees on the right, and multiple red double-decker buses.",
+      "Pedestrians wait at a curb near traffic lights; some carry bags or wear sunglasses; others stand in small groups.",
+      "The foreground features a red double-decker bus with visible license plate LTZ 1035 and destination display reading 'Trafalgar Square 24'."
+    ],
+    "action": [
+      "The front bus is stationary or moving slowly, with its driver visible through the windshield.",
+      "A group of approximately 8 pedestrians stands on the sidewalk near the bus’s front-left corner, facing various directions.",
+      "A second red double-decker bus is partially visible behind and to the right of the main bus, also appearing stopped or slow-moving."
+    ],
+    "rationale": [
+      "The bus’s position relative to crosswalk markings and nearby pedestrians suggests it is either waiting for a signal or boarding/alighting passengers.",
+      "The presence of multiple buses and dense pedestrian clustering implies a high-traffic public transport hub, though the exact location is not confirmed by visible signage beyond the destination display.",
+      "The side advertisement on the bus is partially legible, showing text like 'NEW YORKER' and 'PARKER', which provides limited insight into local commercial content."
+    ],
+    "object": [
+      "The primary bus is a modern red double-decker with black lower front paneling, circular headlights, and a digital destination sign showing 'Trafalgar Square 24'.",
+      "The bus bears UK registration plate LTZ 1035 and has a blue wheelchair accessibility symbol on the front door.",
+      "A second red double-decker bus appears behind the first, with partial text 'COACH' visible on its rear lower panel.",
+      "At least 8 distinct individuals are visible on the sidewalk to the left of the bus, including one person wearing a white shirt and dark trousers holding a phone, and another in a striped shirt carrying a black backpack.",
+      "Traffic signals, lampposts, and a black CCTV camera housing are mounted on poles near the curb."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0353_P1",
+      "visual_anchors": [
+        "digital destination sign reading 'Trafalgar Square 24'",
+        "pedestrians waiting at curb",
+        "bus driver visible behind wheel"
+      ],
+      "symbolic_mapping": [
+        "destination display as fixed point in temporal flow",
+        "waiting crowd as suspended agency"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The bus’s designated destination imposes a linear temporality on otherwise dispersed individuals, momentarily aligning their trajectories into a shared, scheduled passage—highlighting how public infrastructure mediates collective presence across time.",
+      "alternative_interpretations": [
+        "This is simply routine transit operation with no deeper meaning; the destination sign only indicates route logistics."
+      ],
+      "limitations": [
+        "No facial expressions or body language confirm intentional suspension or awareness of temporality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0353_P2",
+      "visual_anchors": [
+        "red color of both buses",
+        "uniform livery",
+        "identical vehicle model"
+      ],
+      "symbolic_mapping": [
+        "standardized design as erasure of individual variation",
+        "repetition as institutional continuity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The identical red buses manifest institutional uniformity that subordinates vehicle individuality to systemic function, suggesting how standardized appearance enforces compliance within public mobility regimes.",
+      "alternative_interpretations": [
+        "Red is the traditional London bus color; repetition reflects fleet efficiency, not ideological control."
+      ],
+      "limitations": [
+        "No visible branding or authority insignia confirms intent to suppress identity; color may be regulatory or historical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0353_P3",
+      "visual_anchors": [
+        "driver visible through windshield",
+        "pedestrians looking in different directions",
+        "no direct eye contact between driver and crowd"
+      ],
+      "symbolic_mapping": [
+        "driver as mediated agent of movement",
+        "crowd as fragmented subjects without shared focus"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "The driver operates within a technological frame that separates labor from passenger experience, rendering journey choice illusory for riders who await direction rather than co-determine path—exposing the asymmetry between operational control and passenger agency.",
+      "alternative_interpretations": [
+        "People naturally look in varied directions while waiting; absence of eye contact is statistically expected and not meaningful."
+      ],
+      "limitations": [
+        "Driver’s gaze and intent are not discernible; passengers’ attention directions do not prove lack of shared purpose."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (candidate states 'approximately 12' but image shows fewer distinct individuals); 'green van' is not visible; 'unreadable portion of side advertisement' is inaccurate as the ad is partially legible; 'driver holding steering wheel' is not visually confirmed."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:37:03.151905+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ce699d52-1696-9c63-a9e9-d0214fe1ee2c",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1093,
+        "total_tokens": 1862,
+        "completion_tokens_details": {
+          "text_tokens": 1093
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702363663891ee36a0f4a73",
+      "usage": {
+        "completion_tokens": 1069,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2016,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3085
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

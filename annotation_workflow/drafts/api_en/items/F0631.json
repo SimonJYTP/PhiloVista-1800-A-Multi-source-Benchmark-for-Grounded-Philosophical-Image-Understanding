@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0631",
+  "sample_id": "PHL1800_IRFL_0424",
+  "file_name": "PHL1800_IRFL_0424.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a Go board with stones, bowls, and a digital timer",
+  "captions": {
+    "scene": [
+      "A wooden Go board with black and white stones arranged in an ongoing game, placed on a polished wooden table.",
+      "Two wooden bowls containing spare black and white Go stones sit beside the board; one bowl holds white stones, the other black stones.",
+      "A black digital timer with two displays is positioned to the left of the board, partially visible."
+    ],
+    "action": [
+      "The Go board displays a mid-game configuration with clustered and scattered stones forming territories and groups.",
+      "No human hands or players are visible; the game appears paused or unattended at this moment.",
+      "Stones are placed on intersections of the grid, consistent with standard Go rules for placement."
+    ],
+    "rationale": [
+      "The presence of both black and white stones in non-initial positions suggests the game has progressed beyond opening moves.",
+      "The digital timer’s dual displays imply time control is being used, though its exact settings are unreadable.",
+      "The arrangement of stones shows local fights and potential life-and-death situations, but no move is actively being made."
+    ],
+    "object": [
+      "The Go board is a light-colored wooden square with a 19×19 grid of thin black lines and nine marked star points (hoshi).",
+      "Black stones are glossy and uniformly sized; white stones are matte and similarly sized, both resting on line intersections.",
+      "One wooden bowl contains white stones and sits upper-left of the board; another wooden bowl contains black stones and sits lower-left.",
+      "The digital timer has a rectangular black casing, two LCD screens, and several small buttons; text on the screens is illegible.",
+      "The surface beneath the board is a reddish-brown polished wood with visible grain and reflection."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0631_P1",
+      "visual_anchors": [
+        "black and white stones alternating on a grid",
+        "empty intersections surrounded by stones",
+        "digital timer beside the board"
+      ],
+      "symbolic_mapping": [
+        "black/white duality represents oppositional yet interdependent forces",
+        "empty space (moyo) signifies potentiality awaiting realization"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The board embodies the tension between determinism and agency: each stone placement fixes part of the future while leaving open vast regions of possibility, mirroring how knowledge emerges through constrained choices.",
+      "alternative_interpretations": [
+        "It is simply a snapshot of a recreational board game with no deeper meaning."
+      ],
+      "limitations": [
+        "No player is visible, so intent, strategy, or emotional context cannot be confirmed from the image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0631_P2",
+      "visual_anchors": [
+        "stones forming enclosed territories",
+        "sparse stones near edges",
+        "two bowls holding reserve stones"
+      ],
+      "symbolic_mapping": [
+        "enclosed areas represent claims of ownership or control",
+        "reserve stones symbolize latent capacity or unexercised options"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "Territorial enclosures illustrate how power manifests through spatial demarcation, while the untouched reserve stones suggest freedom remains bounded by the rules and current state of play.",
+      "alternative_interpretations": [
+        "The pattern reflects standard tactical development in Go, not symbolic conflict."
+      ],
+      "limitations": [
+        "The specific territorial balance and who controls which area cannot be fully assessed without knowing the full board state or player perspective."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0631_P3",
+      "visual_anchors": [
+        "grid of uniform intersections",
+        "stones placed only on intersections",
+        "timer indicating measured duration"
+      ],
+      "symbolic_mapping": [
+        "the fixed grid represents a structured reality within which action occurs",
+        "time measurement underscores finitude as a condition for decision-making"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The rigid grid and finite clock jointly evoke the human condition: existence unfolds within immutable structures, and meaning arises through choices made under temporal constraint.",
+      "alternative_interpretations": [
+        "The timer may be off or unused; the grid is merely functional for gameplay."
+      ],
+      "limitations": [
+        "The timer’s status (running, stopped, set) is visually indeterminate, weakening the time-finitude inference."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:02:44.278679+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a01f5567-16b9-977f-9557-0fbd3482a25e",
+      "usage": {
+        "prompt_tokens": 605,
+        "completion_tokens": 971,
+        "total_tokens": 1576,
+        "completion_tokens_details": {
+          "text_tokens": 971
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 98,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030232d5b78c7cc8b54de8",
+      "usage": {
+        "completion_tokens": 830,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1698,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2528
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

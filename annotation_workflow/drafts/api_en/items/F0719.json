@@ -1,0 +1,167 @@
+{
+  "annotation_item_id": "F0719",
+  "sample_id": "PHL1800_HL_0434",
+  "file_name": "PHL1800_HL_0434.png",
+  "batch_id": "B016",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "pedestrians crossing a wet city street under umbrellas",
+  "captions": {
+    "scene": [
+      "A multi-lane urban intersection with tall commercial buildings, signage, and traffic infrastructure under overcast, rainy conditions.",
+      "A zebra crossing with white stripes on dark wet asphalt, flanked by sidewalks and vehicle lanes; raindrops are visible on surfaces.",
+      "Numerous pedestrians holding umbrellas of varied colors (white, black, yellow, red, striped) occupy the crosswalk and adjacent sidewalks."
+    ],
+    "action": [
+      "At least 15 distinct pedestrians are walking across or near the crosswalk; some move forward, others pause or turn.",
+      "Several individuals carry shopping bags, briefcases, or backpacks while navigating the wet pavement.",
+      "Vehicles—including cars, vans, and bicycles—are present in adjacent lanes, some stopped, some moving slowly."
+    ],
+    "rationale": [
+      "The presence of multiple open umbrellas and reflective wet ground strongly indicates active rainfall at the time of capture.",
+      "Pedestrian density and directional flow suggest this is a busy urban crossing, though exact time cannot be confirmed from lighting alone.",
+      "Signage includes Japanese characters and brand logos, indicating a location in Japan, but no specific city can be verified solely from visible text."
+    ],
+    "object": [
+      "A white-striped pedestrian crosswalk spans the foreground, its surface glistening with water and showing partial footprints and tire marks.",
+      "A traffic signal pole with a pedestrian countdown timer and a green walk symbol is mounted on the left sidewalk corner.",
+      "A large storefront window displays colorful posters with abstract patterns and Japanese text, partially legible as 'KANSAI' and 'ART'.",
+      "A yellow taxi cab with red roof markings is stopped in the right lane, positioned behind a red compact car with a white roof.",
+      "A person in the lower center holds a multicolored striped umbrella (red, white, yellow) and wears a beige coat, black boots, and carries a patterned handbag."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0719_P1",
+      "visual_anchors": [
+        "crowded crosswalk",
+        "diverse umbrella colors",
+        "shared wet pavement"
+      ],
+      "symbolic_mapping": [
+        "umbrellas as temporary personal shelters amid collective exposure",
+        "wet pavement as a shared environmental condition"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes social existence as simultaneously individual and interdependent: each person occupies a private canopy yet moves within a shared, constrained public space governed by traffic signals and weather.",
+      "alternative_interpretations": [
+        "It may simply document routine urban commuting without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or direct interactions are visible to confirm intentional social dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0719_P2",
+      "visual_anchors": [
+        "rain-slicked street",
+        "reflections on asphalt",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "wet surface as a metaphor for transient conditions",
+        "diffuse light as erasure of sharp boundaries"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The pervasive dampness and muted tones evoke impermanence—each step displaces water, leaving fleeting traces, suggesting that perception and truth here are fluid and context-dependent.",
+      "alternative_interpretations": [
+        "The visual effect results from meteorological conditions and photographic processing, not philosophical design."
+      ],
+      "limitations": [
+        "Reflections are distorted and incomplete; no explicit temporal markers (e.g., clocks, aging signs) appear."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0719_P3",
+      "visual_anchors": [
+        "multiple pedestrians with similar posture direction",
+        "uniform crosswalk stripes",
+        "repetitive building facades"
+      ],
+      "symbolic_mapping": [
+        "parallel movement as enactment of social rhythm",
+        "stripes as imposed order on organic motion"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "Walking across the crosswalk becomes a ritualized journey where individual choice is channeled through infrastructural design, revealing how technology (road markings, signals) structures daily labor and mobility.",
+      "alternative_interpretations": [
+        "People are merely obeying traffic rules for safety, with no deeper systemic commentary intended."
+      ],
+      "limitations": [
+        "Intent behind infrastructure layout is not visible; only its physical form is present."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (at least 21 distinct pedestrians described, but visual count shows fewer distinct individuals; some may be grouped incorrectly).",
+      "Inaccurate object details (e.g., 'SOGO'/'MITSUKOSHI' signage not visible; 'KANSAI'/'ART' text not clearly legible).",
+      "Overly specific color claims (e.g., 'multicolored striped umbrella' with red/white/green/yellow may not match visual details).",
+      "Unverified causal claims (e.g., 'high-traffic crossing during daytime hours' lacks explicit time indicators).",
+      "Philosophy interpretations include unsupported symbolic mappings (e.g., 'wet pavement as equalizing surface' without clear visual basis)."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:10:45.147162+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2933f2b0-95bb-9735-898c-71285487139b",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1012,
+        "total_tokens": 1781,
+        "completion_tokens_details": {
+          "text_tokens": 1012
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703102196c38afdf87e4f0c",
+      "usage": {
+        "completion_tokens": 996,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1942,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2938
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

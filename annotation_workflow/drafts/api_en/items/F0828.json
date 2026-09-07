@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0828",
+  "sample_id": "PHL1800_HL_0330",
+  "file_name": "PHL1800_HL_0330.png",
+  "batch_id": "B018",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two seated passengers in a dimly lit train carriage",
+  "captions": {
+    "scene": [
+      "Interior of a passenger train with overhead luggage racks and large windows showing overcast daylight outside.",
+      "Seats arranged in pairs facing forward, with headrests and fold-down tray tables visible in silhouette.",
+      "Strong backlighting from windows creates high-contrast silhouettes; interior is predominantly dark."
+    ],
+    "action": [
+      "One passenger holds a light-colored rectangular object (likely a phone) to their ear with the right hand.",
+      "The second passenger sits upright, hands near lap or lower torso, appearing still.",
+      "Both passengers remain seated with legs extended forward, feet resting on floor or footrests."
+    ],
+    "rationale": [
+      "The rectangular object held to the ear strongly suggests a phone call, though the object’s identity cannot be confirmed without clearer detail.",
+      "The posture and lack of motion imply passive travel rather than active engagement with surroundings.",
+      "Window brightness indicates daytime travel, but cloud cover prevents precise time-of-day determination."
+    ],
+    "object": [
+      "Two human figures are visible as dark silhouettes against bright window panes; one has a discernible head profile and raised arm, the other shows only upper torso and head outline.",
+      "A pair of adjacent train seats with padded headrests, metallic armrests, and folded tray tables are visible in mid-ground.",
+      "Overhead storage compartments run along the ceiling, partially illuminated by ambient light from windows.",
+      "A white shoe with dark lacing appears at the bottom left, belonging to the leftmost passenger.",
+      "The window frames are rectangular with rounded corners and show uniform diffuse white light outside, indicating overcast sky."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0828_P1",
+      "visual_anchors": [
+        "silhouetted figures",
+        "backlit windows",
+        "separated seating"
+      ],
+      "symbolic_mapping": [
+        "silhouette → obscured individuality",
+        "light barrier → separation between inner/outer worlds"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image evokes the condition of co-presence without connection: individuals share physical space yet remain visually and possibly socially isolated, highlighting how modern transit environments mediate social existence through anonymity and spatial constraint.",
+      "alternative_interpretations": [
+        "This may simply depict routine commuting with no intended symbolic meaning; the darkness could result from camera exposure settings rather than deliberate composition."
+      ],
+      "limitations": [
+        "No facial features, clothing details, or behavioral cues confirm intent or emotional state; interpretation relies on formal arrangement alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0828_P2",
+      "visual_anchors": [
+        "uniform window light",
+        "static postures",
+        "repetitive seat design"
+      ],
+      "symbolic_mapping": [
+        "repetitive seats → temporal continuity",
+        "unvarying light → suspended duration"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The unchanging exterior light and fixed passenger positions suggest a liminal temporal state—neither arrival nor departure—inviting reflection on journey as metaphor for life’s passage through undifferentiated intervals.",
+      "alternative_interpretations": [
+        "The scene may reflect a brief moment during a short trip where external conditions happen to be uniformly overcast, with no philosophical implication intended."
+      ],
+      "limitations": [
+        "No clocks, maps, or destination indicators exist to ground temporal interpretation; ‘suspended time’ is inferred solely from lighting and posture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0828_P3",
+      "visual_anchors": [
+        "tray tables folded down",
+        "armrests separating seats",
+        "overhead racks"
+      ],
+      "symbolic_mapping": [
+        "physical partitions → institutional regulation of proximity",
+        "designed infrastructure → embedded constraints on freedom"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The engineered layout of the carriage—fixed seating, mandatory separations, standardized fixtures—materializes structural constraints that shape individual movement and interaction, illustrating how technology mediates freedom not through overt control but through ambient design.",
+      "alternative_interpretations": [
+        "These are standard ergonomic features for safety and comfort, not symbolic of constraint; their presence reflects regulatory norms rather than ideological intent."
+      ],
+      "limitations": [
+        "No signage, branding, or user interaction with objects confirms design intent; interpretation assumes purpose beyond utility."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:20:11.279083+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-47273e2e-c392-99c7-9100-4189b3f88d94",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 983,
+        "total_tokens": 1752,
+        "completion_tokens_details": {
+          "text_tokens": 983
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031951df5347a7236747bf",
+      "usage": {
+        "completion_tokens": 844,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1917,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2761
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

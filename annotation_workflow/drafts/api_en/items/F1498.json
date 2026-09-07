@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1498",
+  "sample_id": "PHL1800_HAIV_0348",
+  "file_name": "PHL1800_HAIV_0348.png",
+  "batch_id": "B031",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person riding a horse",
+  "captions": {
+    "scene": [
+      "A grayscale sketch-style scene with a pale lavender-to-white gradient background.",
+      "Black fragmented particles trail upward and rightward from the upper-right quadrant.",
+      "The lower half of the image is predominantly white, suggesting an undefined ground plane."
+    ],
+    "action": [
+      "The person sits upright on the horse’s back, facing left in profile.",
+      "The horse stands still or moves minimally, head lowered slightly, ears forward.",
+      "The person holds a large red heart-shaped object against their chest with both hands."
+    ],
+    "rationale": [
+      "The heart is rendered in saturated red with white highlights, contrasting sharply with monochrome figures, indicating intentional emphasis.",
+      "The person’s hair is tied in a high ponytail with strands extending backward, consistent with motion or wind, though no explicit motion blur exists.",
+      "The fragmented black shapes lack clear form; they may represent debris, ink splatter, or symbolic disintegration, but their nature is visually ambiguous."
+    ],
+    "object": [
+      "The person has yellow-tinted skin, dark hair in a high ponytail, and wears a textured gray garment with visible folds and shading.",
+      "The horse is rendered in grayscale with expressive line work, showing a bridle, mane, and muscular torso; its eyes are dark and open.",
+      "A large, glossy red heart occupies the central-left visual field, partially obscuring the person’s torso; it features two white specular highlights.",
+      "The background transitions smoothly from light lavender at the top to white near the bottom, with no horizon line or terrain details.",
+      "Approximately 15–20 irregular black fragments appear in the upper-right quadrant, varying in size and orientation, with no connecting lines or context."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1498_P1",
+      "visual_anchors": [
+        "red heart held against chest",
+        "grayscale figure",
+        "fragmented black particles"
+      ],
+      "symbolic_mapping": [
+        "the heart symbolizes emotional core or vulnerability",
+        "fragments suggest dissolution or loss"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a vividly colored heart against a desaturated figure amid dispersing fragments may reflect the persistence of meaning or love amid entropy or temporal decay.",
+      "alternative_interpretations": [
+        "The heart could be a literal prop or costume element in a stylized illustration, with fragments representing artistic brushwork rather than symbolism."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm symbolic intent; color contrast alone does not establish meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1498_P2",
+      "visual_anchors": [
+        "person riding horse",
+        "profile orientation",
+        "lack of ground detail"
+      ],
+      "symbolic_mapping": [
+        "horse as vehicle of journey",
+        "profile gaze toward empty space as anticipation"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The rider’s forward gaze and mounted posture, combined with an undefined destination, evoke a state of deliberate movement without external constraint or guidance.",
+      "alternative_interpretations": [
+        "The composition may simply follow conventional equestrian portraiture conventions, with minimal background for stylistic focus."
+      ],
+      "limitations": [
+        "No visible reins, saddle details, or directional cues confirm intentionality of travel; the horse’s stance is neutral."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1498_P3",
+      "visual_anchors": [
+        "yellow-tinted skin",
+        "monochrome clothing and horse",
+        "heart as sole chromatic element"
+      ],
+      "symbolic_mapping": [
+        "selective color highlighting interiority versus exterior neutrality"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The selective use of color isolates the heart and skin tone from the grayscale environment, possibly commenting on how inner identity or affect remains distinct from socially constructed appearances.",
+      "alternative_interpretations": [
+        "Color choice may be aesthetic—e.g., limited palette for visual impact—without sociological intent."
+      ],
+      "limitations": [
+        "Skin tone is uniformly yellow without texture or shading variation; this may be stylistic rather than representational."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:39:31.108413+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6542de84-4fdd-9155-81b0-e5b6d82221db",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 940,
+        "total_tokens": 2473,
+        "completion_tokens_details": {
+          "text_tokens": 940
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043904c2c964404851401a",
+      "usage": {
+        "completion_tokens": 800,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2894,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3694
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0609",
+  "sample_id": "PHL1800_HAIV_0276",
+  "file_name": "PHL1800_HAIV_0276.png",
+  "batch_id": "B014",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one illustrated human figure",
+  "captions": {
+    "scene": [
+      "Close-up of a person’s head and upper torso against a plain white background.",
+      "Stylized cartoon rendering with bold black outlines and flat color fills.",
+      "Dynamic lines around the head suggest motion or exhalation."
+    ],
+    "action": [
+      "Mouth open wide in an aggressive or strained expression, teeth visible.",
+      "Eyes narrowed with thick angular eyebrows angled downward, indicating intensity.",
+      "A thin gray blade-like object is inserted horizontally into the mouth from the right side."
+    ],
+    "rationale": [
+      "The facial features (furrowed brows, flared nostrils, red cheeks) suggest physiological arousal, but the exact emotional state cannot be determined solely from visual cues.",
+      "The gray object entering the mouth appears rigid and straight; its identity as a tool, weapon, or symbolic element is ambiguous without context.",
+      "Motion lines near the ears and cheeks imply air movement, possibly exhalation or wind, but direction and source are not visually specified."
+    ],
+    "object": [
+      "The figure has short brown hair with two white circular highlights on the top of the head.",
+      "The figure wears a thick orange scarf wrapped multiple times around the neck over a beige jacket with vertical seam lines.",
+      "The ears are large and symmetrically placed, each with a small black dot representing the ear canal.",
+      "The nose is depicted as a simple vertical black line with a small horizontal stroke at the base.",
+      "Two pink blush patches appear on the cheeks, and a single black dot is present on the left cheek near the corner of the mouth."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0609_P1",
+      "visual_anchors": [
+        "open mouth with inserted gray blade",
+        "furrowed brows",
+        "red flushed cheeks"
+      ],
+      "symbolic_mapping": [
+        "the blade entering the mouth may represent external imposition on speech or agency"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image may depict a moment of coerced expression or suppression, where bodily autonomy is contested by an external force symbolized by the blade.",
+      "alternative_interpretations": [
+        "It could simply illustrate a comedic or exaggerated reaction to cold weather, with the 'blade' being a stylized representation of wind or breath."
+      ],
+      "limitations": [
+        "No textual labels or contextual environment confirm symbolic intent; the blade lacks identifying features."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0609_P2",
+      "visual_anchors": [
+        "thick orange scarf",
+        "motion lines around head",
+        "flushed cheeks"
+      ],
+      "symbolic_mapping": [
+        "the scarf as insulation against external pressure, the motion lines as social or environmental turbulence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s bundled attire and reactive expression may reflect the tension between individual resilience and societal or environmental pressures that demand conformity or endurance.",
+      "alternative_interpretations": [
+        "The scarf and motion lines may merely indicate cold weather, with no sociopolitical connotation intended."
+      ],
+      "limitations": [
+        "Clothing and motion lines are generic; no cultural or situational markers establish social meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0609_P3",
+      "visual_anchors": [
+        "symmetrical facial features",
+        "bold black outlines",
+        "flat color fields"
+      ],
+      "symbolic_mapping": [
+        "stylization emphasizes universality over individuality, suggesting a generic human condition"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The simplified, de-individualized rendering points to a philosophical concern with how appearance mediates perception of inner states—here, intensity is conveyed through caricature rather than realism.",
+      "alternative_interpretations": [
+        "The style is standard for cartoon illustration and carries no deeper meaning beyond aesthetic convention."
+      ],
+      "limitations": [
+        "Artistic style alone does not entail philosophical intent; absence of narrative context weakens symbolic claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:00:42.555438+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-532e0302-082f-9be9-8712-794c58db97cc",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 892,
+        "total_tokens": 2425,
+        "completion_tokens_details": {
+          "text_tokens": 892
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070300205b54dcb973054ccd",
+      "usage": {
+        "completion_tokens": 757,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2853,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3610
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

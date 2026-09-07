@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0276",
+  "sample_id": "PHL1800_HL_0202",
+  "file_name": "PHL1800_HL_0202.png",
+  "batch_id": "B008",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one seated woman",
+  "captions": {
+    "scene": [
+      "A woman sits on stone steps beside a large inscribed monument base in an urban plaza.",
+      "A vintage-style suitcase rests on the step to the woman's left; behind her, a multi-story building with windows and a tree are visible.",
+      "The image is monochrome with moderate contrast, suggesting film photography or post-processing."
+    ],
+    "action": [
+      "The woman holds open a folded paper document (possibly a newspaper or pamphlet) with both hands and looks down at it.",
+      "Her right hand appears to hold a small object near the paper, possibly a pen or cigarette, though its identity is indistinct.",
+      "She is seated with legs crossed at the ankles, wearing dark shoes, light-colored stockings, and a dark knee-length dress or suit."
+    ],
+    "rationale": [
+      "The inscription on the monument includes legible phrases such as 'IN MEMORY OF HIS FATHER PETER DONAHUE', indicating a commemorative function.",
+      "The suitcase’s placement and closed state suggest temporary presence rather than permanent occupation of the space.",
+      "The woman’s posture and gaze direction strongly indicate focused reading, but the content of the paper cannot be verified visually."
+    ],
+    "object": [
+      "A woman with dark hair styled short, wearing round-framed eyeglasses, a dark long-sleeved garment, light-colored hosiery, and dark heeled shoes.",
+      "A rectangular hard-shell suitcase with a top handle and visible latches, positioned upright on the lower step to the woman’s left.",
+      "A multi-tiered stone monument base with engraved text, including the clearly readable words 'IN MEMORY OF HIS FATHER PETER DONAHUE'.",
+      "A background building with multiple evenly spaced rectangular windows and vertical pilasters, partially obscured by foliage.",
+      "A small leafy tree or shrub growing between the monument and the building, with branches extending upward."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0276_P1",
+      "visual_anchors": [
+        "engraved memorial text",
+        "woman reading alone",
+        "suitcase beside her"
+      ],
+      "symbolic_mapping": [
+        "monumental inscription → collective memory",
+        "solitary reading → individual engagement with history"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a public memorial and a private act of reading evokes reflection on how personal time intersects with societal remembrance—individuals absorb inherited narratives while situated within structures of commemoration.",
+      "alternative_interpretations": [
+        "The woman may simply be waiting for transportation or an appointment, with the monument serving only as convenient seating."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intent; the paper’s content is unreadable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0276_P2",
+      "visual_anchors": [
+        "stone monument base",
+        "urban architecture",
+        "woman’s formal attire"
+      ],
+      "symbolic_mapping": [
+        "monument → institutional permanence",
+        "woman’s transient posture → human temporality"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The rigid geometry of the monument contrasts with the woman’s relaxed yet constrained posture, suggesting tension between enduring civic forms and the fleeting autonomy of individual moments within them.",
+      "alternative_interpretations": [
+        "The scene reflects routine urban life where people use available surfaces for rest, without symbolic intent."
+      ],
+      "limitations": [
+        "Attire style alone does not confirm era or social role; no motion or interaction implies constraint."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0276_P3",
+      "visual_anchors": [
+        "folded paper held open",
+        "gaze directed downward",
+        "absence of other readers"
+      ],
+      "symbolic_mapping": [
+        "paper → mediated knowledge",
+        "focused attention → pursuit of truth"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The act of reading in public space—especially before a memorial—suggests an epistemic practice: seeking verifiable information or meaning amid symbols of authority and legacy.",
+      "alternative_interpretations": [
+        "The paper could be a map, ticket, or advertisement; reading need not imply intellectual inquiry."
+      ],
+      "limitations": [
+        "Paper content is illegible; no book title, headline, or diagram is visible to confirm knowledge-seeking."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:28:00.106202+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f317af8c-674e-9d9f-a38e-f76dc249d3ed",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 972,
+        "total_tokens": 1701,
+        "completion_tokens_details": {
+          "text_tokens": 972
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070227478c0301395bb8491d",
+      "usage": {
+        "completion_tokens": 834,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1861,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2695
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0953",
+  "sample_id": "PHL1800_HL_0412",
+  "file_name": "PHL1800_HL_0412.png",
+  "batch_id": "B021",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a Gothic-style stone church at the end of a street",
+  "captions": {
+    "scene": [
+      "A two-lane asphalt road recedes toward a large stone church with pointed arches, twin towers, and a central rose window under an overcast sky.",
+      "Parked cars line both sides of the street; palm trees and deciduous trees flank the road near low-rise buildings with brick and concrete facades.",
+      "Streetlights, traffic signs, and a white dashed centerline are visible on the road surface; a small signpost stands near the church entrance."
+    ],
+    "action": [
+      "Three vehicles are parked on the left side of the road: a white hatchback, a silver sedan, and a white sedan further back.",
+      "Two vehicles are parked on the right side: a white sedan and a silver SUV partially visible in the foreground.",
+      "No human figures are visible near the right sidewalk or elsewhere in the image."
+    ],
+    "rationale": [
+      "The church’s architectural features—pointed arches, buttresses, and tracery—indicate Gothic Revival design, though exact period cannot be confirmed from image alone.",
+      "The lighting suggests twilight or early morning due to the soft, diffuse illumination and lack of strong shadows, but no clock or sun position confirms time.",
+      "The presence of multiple parked cars implies routine urban activity, yet no motion blur or active interaction is visible."
+    ],
+    "object": [
+      "A white hatchback with a rear license plate is parked parallel to the curb on the left side of the street, facing away from the camera.",
+      "A tall metal streetlight with a single lamp head extends over the left lane, positioned near a white fence and red-roofed building.",
+      "The church facade includes a large arched stained-glass window above a double-door entrance, flanked by two smaller turrets topped with crosses.",
+      "A red-and-white rectangular sign mounted on a pole is visible on the right sidewalk; its text is unreadable due to resolution and distance.",
+      "Palm trees stand on both sides of the street: one near the left sidewalk, one near the right sidewalk, and another further right near a building."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0953_P1",
+      "visual_anchors": [
+        "central church facade",
+        "symmetrical palm trees",
+        "empty road centerline"
+      ],
+      "symbolic_mapping": [
+        "the road’s vanishing point toward the church suggests directed aspiration",
+        "symmetry evokes order amid urban fragmentation"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "choice_journey"
+      ],
+      "interpretation": "The composition frames the church as a terminus of linear progression, inviting reflection on whether meaning is found through directed pursuit or through the structure that awaits at journey’s end.",
+      "alternative_interpretations": [
+        "The scene may simply reflect municipal street planning with a landmark at the intersection, not intentional symbolism."
+      ],
+      "limitations": [
+        "No inscriptions, liturgical objects, or congregants confirm religious function; architecture alone does not prove intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0953_P2",
+      "visual_anchors": [
+        "parked cars on both sides",
+        "static human figures",
+        "uniform pavement markings"
+      ],
+      "symbolic_mapping": [
+        "vehicles as suspended agency",
+        "stillness contrasting implied mobility"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The orderly arrangement of immobilized vehicles and passive figures underscores how social infrastructure simultaneously enables and constrains individual presence within shared space.",
+      "alternative_interpretations": [
+        "Cars are parked normally; people are waiting or conversing—no evidence of coercion or systemic constraint."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or contextual signage indicate constraint or social tension."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0953_P3",
+      "visual_anchors": [
+        "overcast sky",
+        "diffuse lighting",
+        "absence of shadows"
+      ],
+      "symbolic_mapping": [
+        "light without direction mirrors epistemic ambiguity",
+        "monochrome tonality suggests suspension of judgment"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The flat illumination erases temporal markers and visual hierarchy, prompting contemplation on whether truth emerges only when light reveals distinction—or whether neutrality itself constitutes a form of knowledge.",
+      "alternative_interpretations": [
+        "The lighting is meteorologically ordinary for dawn/dusk and carries no philosophical weight."
+      ],
+      "limitations": [
+        "No clocks, hourglasses, or decay indicators appear; time is inferred only from lighting, which is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "action caption claims 'at least three human figures' near right sidewalk, but no people are visible in the image; object caption describes 'two palm trees symmetrically on either side of the church’s front approach', but palm trees are not symmetrically placed (one is on the right, another further right, and one on the left)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:31:06.030110+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ca1eff0e-7261-97c2-9234-85a14eb866d6",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1027,
+        "total_tokens": 1796,
+        "completion_tokens_details": {
+          "text_tokens": 1027
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033043431e840e278f46d1",
+      "usage": {
+        "completion_tokens": 944,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1961,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2905
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

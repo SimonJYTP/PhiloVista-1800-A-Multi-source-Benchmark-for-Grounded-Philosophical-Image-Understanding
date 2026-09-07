@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0600",
+  "sample_id": "PHL1800_HAIV_0223",
+  "file_name": "PHL1800_HAIV_0223.png",
+  "batch_id": "B014",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals climbing red ladders against large cylindrical tanks",
+  "captions": {
+    "scene": [
+      "Two red A-frame ladders lean against two adjacent gray cylindrical tanks with horizontal red bands.",
+      "The ground is light yellow with a brownish shadow cast beneath the right tank and ladder.",
+      "The background is plain white with no additional environmental details."
+    ],
+    "action": [
+      "One individual, wearing a yellow hard hat, light pink shirt, and yellow pants, ascends the left ladder while reaching toward the tank's upper rim.",
+      "A second individual, wearing a brown cap, yellow shirt, and olive-green pants, climbs the right ladder, gripping rungs with both hands and looking upward.",
+      "Both ladders are positioned at an angle and appear stable; no motion blur is present."
+    ],
+    "rationale": [
+      "The presence of hard hats suggests industrial or maintenance activity, though no explicit signage confirms this.",
+      "The identical tank design and parallel ladder placement imply intentional symmetry, but the image does not confirm functional purpose.",
+      "The figures’ postures indicate upward movement, yet absence of motion lines means static depiction cannot confirm ongoing motion."
+    ],
+    "object": [
+      "Two red metal ladders with visible rivets and cross-bracing are propped against two gray cylindrical tanks.",
+      "Each tank features three evenly spaced horizontal red bands and a smooth reflective surface suggesting metallic construction.",
+      "The upper tank rim shows a slight overhang and a small circular opening or fitting on the left tank’s top edge.",
+      "The individual on the left wears a yellow hard hat, short-sleeved light pink shirt, yellow trousers, and dark shoes.",
+      "The individual on the right has brown hair, wears a solid yellow short-sleeved shirt, olive-green trousers, and dark shoes, with both hands gripping ladder rungs."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0600_P1",
+      "visual_anchors": [
+        "two ladders leaning toward same height",
+        "identical tank structure",
+        "climbers at different vertical positions"
+      ],
+      "symbolic_mapping": [
+        "parallel ladders → divergent paths toward shared goal",
+        "tanks → fixed institutional structures"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image visually enacts a tension between collective orientation (shared destination) and individual progression (unequal ascent), suggesting that social existence is structured by common frameworks within which personal journeys unfold asymmetrically.",
+      "alternative_interpretations": [
+        "This may simply depict routine industrial access without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, labels, or contextual signage prevent confirmation of intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0600_P2",
+      "visual_anchors": [
+        "red ladder rungs as discrete steps",
+        "climber mid-ascent with hands on rungs",
+        "shadow indicating overhead light source"
+      ],
+      "symbolic_mapping": [
+        "rungs → incremental stages of effort",
+        "shadow → temporal passage or consequence"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The act of climbing framed by rigid, man-made ladders against massive tanks evokes labor as mediated through technology, where time is marked not by clocks but by bodily position relative to fixed infrastructure—implying mortality as measured in effort against enduring systems.",
+      "alternative_interpretations": [
+        "The shadow may merely result from lighting conditions, not symbolic temporality."
+      ],
+      "limitations": [
+        "Shadow shape and direction do not uniquely indicate temporal meaning; could be purely optical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0600_P3",
+      "visual_anchors": [
+        "helmet worn by upper climber",
+        "lower climber without head protection"
+      ],
+      "symbolic_mapping": [
+        "helmet → imposed safety norm",
+        "absence of helmet → structural vulnerability"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "Differential use of protective gear suggests hierarchical responsibility: the upper figure engages directly with system integrity, implying ethical duty, while the lower figure’s exposure reflects structural vulnerability—a visual metaphor for uneven distribution of risk and authority.",
+      "alternative_interpretations": [
+        "Gear difference may reflect role specialization rather than hierarchy (e.g., inspector vs. assistant)."
+      ],
+      "limitations": [
+        "No visible insignia, badges, or task differentiation confirms role assignment."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (two individuals described as one with a yellow helmet, but there are two distinct people with different headwear); inaccurate color of left individual's shirt (lavender/purple described as yellow helmet, but helmet is yellow and shirt is light pink/purple); unsupported claim of tool-holding (no tool visible, only hands near tank); inaccurate description of right individual's hair (brown hair described as brown hair, but hair is brown, not a different color); incorrect action description (ascends left ladder while holding a tool-like object, but no tool is visible)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:00:00.474563+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1058392b-e088-95df-a38f-788034c0fd52",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 999,
+        "total_tokens": 2532,
+        "completion_tokens_details": {
+          "text_tokens": 999
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702593856f611b407a649e2",
+      "usage": {
+        "completion_tokens": 956,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2958,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3914
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

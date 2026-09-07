@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0623",
+  "sample_id": "PHL1800_IRFL_0340",
+  "file_name": "PHL1800_IRFL_0340.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a snow-laden coniferous shrub in the foreground",
+  "captions": {
+    "scene": [
+      "A snow-covered landscape at twilight with a gradient sky from deep blue to orange near the horizon",
+      "Multiple coniferous trees stand in the midground, some illuminated by low-angle warm light",
+      "The ground is uniformly blanketed in undisturbed snow, with subtle color reflections from the sky"
+    ],
+    "action": [
+      "Snow rests heavily on the branches of the foreground shrub, forming thick, irregular caps",
+      "Sunlight illuminates the upper portions of distant trees while the foreground remains in cooler shadow",
+      "No motion is visible; all elements appear static and still"
+    ],
+    "rationale": [
+      "The lighting suggests either sunrise or sunset due to the low angle and warm-to-cool gradient in the sky",
+      "The snow accumulation appears recent and undisturbed, indicating no recent wind or activity",
+      "The shrub’s compact, multi-branched form suggests it is a young or stunted conifer rather than a mature tree"
+    ],
+    "object": [
+      "The foreground shrub has dense, upward-branching needles partially obscured by thick layers of snow.",
+      "Each branch tip supports a distinct snow cap that overhangs the needle clusters like a frozen drip.",
+      "In the background, several taller conifers display reddish-orange highlights on their crowns against a blue sky.",
+      "The snow surface shows faint horizontal striations and subtle pink-blue color shifts consistent with ambient light reflection.",
+      "No human, animal, or artificial structures are visible anywhere in the frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0623_P1",
+      "visual_anchors": [
+        "snow-capped branch tips",
+        "undisturbed snow surface",
+        "gradient twilight sky"
+      ],
+      "symbolic_mapping": [
+        "snow caps as transient forms",
+        "stillness as suspension of change"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The image evokes impermanence through the delicate, temporary snow formations poised to melt, set against the cyclical transition of day to night.",
+      "alternative_interpretations": [
+        "A purely meteorological depiction of post-snowfall calm under low-angle illumination"
+      ],
+      "limitations": [
+        "No explicit temporal markers confirm duration or decay; snow could be hours or days old"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0623_P2",
+      "visual_anchors": [
+        "foreground shrub heavily burdened by snow",
+        "background trees standing upright",
+        "uneven snow load distribution"
+      ],
+      "symbolic_mapping": [
+        "weight of snow as external pressure",
+        "resilience of structure under load"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The shrub’s bent but unbroken posture under snow illustrates constraint as a physical condition that shapes form without eliminating agency.",
+      "alternative_interpretations": [
+        "Mechanical response of flexible plant tissue to gravitational loading"
+      ],
+      "limitations": [
+        "No evidence of strain failure or recovery; deformation may be elastic or plastic"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0623_P3",
+      "visual_anchors": [
+        "uniform snow cover",
+        "isolated shrub as focal point",
+        "lack of tracks or disturbances"
+      ],
+      "symbolic_mapping": [
+        "blanket of snow as erasure of prior traces",
+        "solitary subject as self-contained entity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The shrub’s identity is temporarily redefined by its snow-covered appearance, suggesting that external conditions can override intrinsic form in perception.",
+      "alternative_interpretations": [
+        "Optical effect of high-contrast lighting emphasizing texture over species identification"
+      ],
+      "limitations": [
+        "Species and original shape are partially hidden; appearance is incomplete evidence of identity"
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:02:09.305209+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b1c2a5a9-733e-9606-8c16-90fa09c9ef44",
+      "usage": {
+        "prompt_tokens": 1041,
+        "completion_tokens": 849,
+        "total_tokens": 1890,
+        "completion_tokens_details": {
+          "text_tokens": 849
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 534,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030147d154cbfebaaf4908",
+      "usage": {
+        "completion_tokens": 704,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2101,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2805
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

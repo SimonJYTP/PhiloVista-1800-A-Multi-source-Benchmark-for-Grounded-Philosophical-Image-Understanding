@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1012",
+  "sample_id": "PHL1800_MM_0126",
+  "file_name": "PHL1800_MM_0126.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men in a formal office setting",
+  "captions": {
+    "scene": [
+      "A sunlit office with large multi-paned windows, wooden furniture including a desk, bookshelf, and rolling chair, and framed wall art.",
+      "The room contains stacked paper documents on the desk, binders on shelves, a potted plant, and a small decorative object on a side cabinet.",
+      "Warm lighting casts distinct shadows on the carpeted floor, suggesting a daytime interior scene."
+    ],
+    "action": [
+      "An older man with gray hair and glasses sits in a wooden office chair, hands resting on the desk near stacks of paper.",
+      "A younger man stands facing the seated man, holding a brown envelope sealed with a blue wax-like emblem.",
+      "A speech bubble originates from the standing man’s head area, containing legible English text: 'I am staying here to learn everything from my uncle.'"
+    ],
+    "rationale": [
+      "The seated man’s posture and position behind the desk suggest a role of authority or seniority relative to the standing man.",
+      "The envelope is held prominently but not opened; its presence implies pending communication or transfer, though content is unseen.",
+      "The speech bubble text explicitly identifies a familial relationship (uncle/nephew) and intent to learn, but no visual cue confirms kinship beyond the stated claim."
+    ],
+    "object": [
+      "A wooden executive-style chair with black casters and padded dark upholstery supports the seated man.",
+      "A rectangular brown paper envelope with a circular blue seal is held in the standing man’s right hand.",
+      "A large window with white mullions fills the background, transmitting bright diffuse light into the room.",
+      "A wooden bookshelf to the right holds vertically arranged binders (blue and white spines), books, and a green potted plant in a red pot.",
+      "The seated man wears a navy pinstripe suit, white shirt, patterned purple tie, and brown dress shoes; the standing man wears a navy suit, white shirt, red-and-white striped tie, and brown dress shoes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1012_P1",
+      "visual_anchors": [
+        "speech bubble text",
+        "standing man holding envelope",
+        "seated man at desk"
+      ],
+      "symbolic_mapping": [
+        "envelope as vessel of inherited knowledge",
+        "desk as locus of institutional authority"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The image frames learning as a deliberate act of proximity and submission to an elder’s domain, where knowledge transmission is mediated by symbolic objects (envelope) and spatial hierarchy (standing vs. seated).",
+      "alternative_interpretations": [
+        "This may simply depict a business meeting where one party is introducing himself and his purpose, with the envelope containing a contract or letter."
+      ],
+      "limitations": [
+        "The familial claim rests solely on the speech bubble; no visual markers (e.g., resemblance, shared items) confirm uncle-nephew relation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1012_P2",
+      "visual_anchors": [
+        "stacks of paper on desk",
+        "bookshelf with binders",
+        "man seated behind desk"
+      ],
+      "symbolic_mapping": [
+        "paper stacks as accumulated experience",
+        "bookshelf as codified tradition"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "Knowledge is portrayed as material labor—physically stacked, organized, and guarded—suggesting that truth resides not in abstraction but in curated archives and disciplined stewardship.",
+      "alternative_interpretations": [
+        "The papers and binders are routine office supplies; their quantity reflects workload, not philosophical weight."
+      ],
+      "limitations": [
+        "No labels or visible content on papers or binders indicate subject matter or significance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1012_P3",
+      "visual_anchors": [
+        "younger man standing",
+        "older man seated",
+        "sunlight from window"
+      ],
+      "symbolic_mapping": [
+        "standing posture as deference",
+        "light source behind elder as symbolic illumination"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The younger man’s declared choice to stay implies a voluntary entry into a power structure, where journey toward competence requires accepting hierarchical positioning under guidance.",
+      "alternative_interpretations": [
+        "The standing posture may reflect temporary arrival or protocol (e.g., awaiting permission to sit), not enduring subordination."
+      ],
+      "limitations": [
+        "Body language alone cannot confirm intent; posture may be momentary rather than symbolic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:39:21.893810+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a9214e5e-0227-9912-ac7d-1b5fa6b209ac",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1011,
+        "total_tokens": 2544,
+        "completion_tokens_details": {
+          "text_tokens": 1011
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070339114c3e2dc0be56486a",
+      "usage": {
+        "completion_tokens": 871,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2962,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3833
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

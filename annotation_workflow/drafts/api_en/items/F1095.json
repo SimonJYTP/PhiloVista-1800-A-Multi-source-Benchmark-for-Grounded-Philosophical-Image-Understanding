@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1095",
+  "sample_id": "PHL1800_IRFL_0325",
+  "file_name": "PHL1800_IRFL_0325.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a dark blue two-door sports car in motion on a paved track",
+  "captions": {
+    "scene": [
+      "A wide asphalt track with white edge lines, bordered by a brown dirt strip and a green field under overcast skies.",
+      "A distant treeline of bare deciduous trees appears hazy behind the field, suggesting low visibility or mist.",
+      "The background shows uniform horizontal blur consistent with high-speed lateral motion relative to the camera."
+    ],
+    "action": [
+      "The car is moving forward at high speed, indicated by pronounced motion blur on the road surface and background.",
+      "The front wheels are turned slightly left, suggesting active steering during travel.",
+      "The driver’s seat is occupied by a single visible person wearing a light-colored top; no other occupants are visible."
+    ],
+    "rationale": [
+      "Motion blur on the track surface confirms the car is in motion rather than static; however, exact speed cannot be determined from visual evidence alone.",
+      "The presence of only one occupant is inferred from the visible torso and head silhouette inside the cabin; no second occupant is discernible.",
+      "The car’s aerodynamic features (e.g., front splitter, side intakes) suggest performance intent, but functional capability is not directly observable."
+    ],
+    "object": [
+      "The car has a glossy deep blue finish with silver multi-spoke wheels and black carbon-fiber-like trim on the front splitter and side vents.",
+      "A small white stylized 'H' logo is centered on the hood, above the front air intake.",
+      "The windshield is steeply raked, and the side windows are narrow with black frames; the rear window is integrated into the roofline.",
+      "The side profile includes large sculpted air intakes behind the front wheels and a sharply defined character line running along the lower door panel.",
+      "The side mirrors are compact, black, and mounted on slender stalks extending from the A-pillars."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1095_P1",
+      "visual_anchors": [
+        "motion blur on road",
+        "single occupant visible",
+        "isolated track setting"
+      ],
+      "symbolic_mapping": [
+        "motion blur → transience of present moment",
+        "solitary driver → individual agency amid engineered environment"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The image evokes the tension between human volition and temporal flux: the driver chooses direction while the blurred ground signifies irreversible passage.",
+      "alternative_interpretations": [
+        "It may simply depict a vehicle test run under controlled conditions, with no intentional symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms the driver’s intent or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1095_P2",
+      "visual_anchors": [
+        "glossy blue paint",
+        "precise body lines",
+        "minimalist interior glimpsed through glass"
+      ],
+      "symbolic_mapping": [
+        "surface perfection → curated identity",
+        "enclosed cabin → separation from external world"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The car’s polished exterior and sealed cockpit reflect a constructed self-image that both asserts distinction and enforces isolation—a paradox of modern identity formation.",
+      "alternative_interpretations": [
+        "The design prioritizes aerodynamics and weight reduction; aesthetic choices follow engineering constraints, not symbolic intent."
+      ],
+      "limitations": [
+        "Interior details are partially obscured; material finishes cannot confirm intentional semiotic use."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1095_P3",
+      "visual_anchors": [
+        "front splitter",
+        "side air intakes",
+        "low ground clearance"
+      ],
+      "symbolic_mapping": [
+        "aerodynamic elements → submission to physical laws",
+        "precision engineering → human mastery over nature"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "power_conflict"
+      ],
+      "interpretation": "The vehicle embodies a dialectic: its form submits to fluid dynamics and friction, yet its existence manifests human will to dominate speed and resistance.",
+      "alternative_interpretations": [
+        "These features serve purely functional roles in cooling, downforce, and stability; no ideological stance is encoded."
+      ],
+      "limitations": [
+        "No visible branding, slogans, or user interaction reveals designer intent or cultural framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:50:00.325506+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ffd77e14-8cb4-9a47-9682-f234d625f62f",
+      "usage": {
+        "prompt_tokens": 2988,
+        "completion_tokens": 948,
+        "total_tokens": 3936,
+        "completion_tokens_details": {
+          "text_tokens": 948
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2481,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034944647f0002f5de4519",
+      "usage": {
+        "completion_tokens": 809,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 6717,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 7526
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

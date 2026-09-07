@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F0859",
+  "sample_id": "PHL1800_HAIV_0093",
+  "file_name": "PHL1800_HAIV_0093.png",
+  "batch_id": "B019",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single bald human figure with one visible eye",
+  "captions": {
+    "scene": [
+      "A stylized figure against a uniform lime-green background.",
+      "A brown circular flower head on a green stem with two dark green leaves, held in the figure’s right hand.",
+      "A yellow star-shaped flower with a white center and green stem emerging from the top of the figure’s head."
+    ],
+    "action": [
+      "The figure holds a brown flower upright in an open right hand, palm facing forward.",
+      "A small dark object with red-orange highlights rests in the palm beneath the flower stem.",
+      "The figure remains static with no motion lines or posture indicating movement."
+    ],
+    "rationale": [
+      "The single visible eye is centered horizontally on the face, suggesting intentional asymmetry rather than occlusion by hair or angle.",
+      "The flower growing from the head implies deliberate symbolic placement, not accidental overlap, due to clean outlines and consistent stem direction.",
+      "The presence of multiple earrings (two per ear) and the stylized rendering suggest artistic intent rather than photographic realism."
+    ],
+    "object": [
+      "The figure has a bald, smooth scalp with black outline defining its contour and a single large eye with black pupil and white sclera positioned centrally on the face.",
+      "The figure wears a black short-sleeved garment with a rounded neckline and has two black hoop-style earrings in each earlobe.",
+      "The right hand is depicted with five fingers spread, palm upward, holding a green-stemmed plant with two dark green leaves and a solid brown circular bloom.",
+      "A second plant emerges vertically from the crown of the head: it has a green stem, eight pointed yellow petals, and a white circular center.",
+      "A small irregularly shaped dark object with red-orange internal markings lies in the palm, partially under the base of the brown flower’s stem."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0859_P1",
+      "visual_anchors": [
+        "single central eye",
+        "bald head",
+        "open palm holding flower"
+      ],
+      "symbolic_mapping": [
+        "the singular eye may represent focused perception or incomplete awareness"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The monocular gaze combined with the act of presenting a flower suggests a tension between limited perception and the offering of meaning or beauty.",
+      "alternative_interpretations": [
+        "The eye placement could be purely aesthetic, following surreal or cartoon conventions without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; the eye’s centrality alone does not prove epistemic meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0859_P2",
+      "visual_anchors": [
+        "flower growing from head",
+        "hand holding another flower",
+        "dark object in palm"
+      ],
+      "symbolic_mapping": [
+        "growth from the head signifies internally generated ideas or identity formation"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of self-generated flora (head) and externally held flora (hand), alongside a mysterious object in the palm, evokes questions about how identity is both internally cultivated and externally presented or burdened.",
+      "alternative_interpretations": [
+        "The head-flower may simply indicate whimsy or fantasy, common in illustrative styles, with no identity-related implication."
+      ],
+      "limitations": [
+        "The dark object in the palm lacks identifiable features, preventing confirmation of whether it represents a burden, gift, or neutral element."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0859_P3",
+      "visual_anchors": [
+        "two distinct flowers",
+        "one held, one emergent",
+        "green background"
+      ],
+      "symbolic_mapping": [
+        "dual floral motifs may reflect duality of care—nurturing external life versus internal growth"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "Holding one flower while another grows autonomously from the self visualizes ethical responsibility as split between active stewardship and passive emergence, raising questions about obligation toward what we cultivate versus what arises within us.",
+      "alternative_interpretations": [
+        "The composition may reflect botanical interest or decorative symmetry rather than moral reasoning."
+      ],
+      "limitations": [
+        "No gestures of care (e.g., watering, tending) are shown; the flowers are static and unchanging, weakening causal claims about responsibility."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:22:54.574136+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e8069d4c-8b61-9454-80af-ecb0aad19d0b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 954,
+        "total_tokens": 2487,
+        "completion_tokens_details": {
+          "text_tokens": 954
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032230b8f86aefa1344265",
+      "usage": {
+        "completion_tokens": 821,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2914,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3735
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

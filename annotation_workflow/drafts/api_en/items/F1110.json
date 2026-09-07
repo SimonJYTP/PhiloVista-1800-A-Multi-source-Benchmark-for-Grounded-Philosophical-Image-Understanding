@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1110",
+  "sample_id": "PHL1800_HAIV_0103",
+  "file_name": "PHL1800_HAIV_0103.png",
+  "batch_id": "B024",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red heart-shaped figure with facial features inside a black wire birdcage",
+  "captions": {
+    "scene": [
+      "A black wire birdcage with a domed top and vertical/horizontal bars, set against a light blue and white textured background resembling sky or clouds.",
+      "A red heart-shaped figure with closed eyes, pink inner eyelids, and a downturned mouth sits inside the cage on a gray base.",
+      "A thin red curved line extends from the top-left of the cage outward, unattached to any visible object."
+    ],
+    "action": [
+      "The heart figure remains stationary within the cage, showing no motion blur or limb articulation.",
+      "The cage bars intersect the heart figure’s body, partially obscuring its form.",
+      "The red line appears suspended in space above and left of the cage, with no visible anchor point."
+    ],
+    "rationale": [
+      "The heart figure’s closed eyes and downward mouth suggest a passive or subdued state, though facial expression alone does not confirm emotion.",
+      "The cage fully encloses the heart figure, indicating physical containment; however, the cage door is not visibly latched or sealed.",
+      "The red line’s origin and purpose are indeterminate due to lack of connection to other elements; it may be decorative, symbolic, or incomplete."
+    ],
+    "object": [
+      "The birdcage is constructed of black wire with evenly spaced vertical bars and three horizontal rings reinforcing its cylindrical body and dome.",
+      "The heart figure has two circular pink areas representing closed eyelids, each with a thin black curved line for lashes, and a simple black curved line forming a frown.",
+      "The base beneath the heart figure is a solid gray shape with subtle shading, suggesting volume but no texture or material detail.",
+      "The background consists of irregular patches of light blue and white with brushstroke-like edges, implying painted or digital texture.",
+      "The red line is a single continuous stroke, slightly thickened at one end near the cage rim, tapering toward the free end."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1110_P1",
+      "visual_anchors": [
+        "red heart figure",
+        "black wire cage",
+        "closed eyes"
+      ],
+      "symbolic_mapping": [
+        "heart → emotional core",
+        "cage → restriction"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages constraint upon an affective entity, where the cage physically intersects the heart, suggesting that emotional experience is bounded by external structures.",
+      "alternative_interpretations": [
+        "The scene may depict a decorative illustration with no intended symbolism, using conventional motifs without philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual markers confirm intentional symbolism; the heart’s expression could be stylistic rather than representational."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1110_P2",
+      "visual_anchors": [
+        "red line extending from cage",
+        "unattached end",
+        "cage structure"
+      ],
+      "symbolic_mapping": [
+        "red line → tether or potential escape route"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The dangling red line, disconnected yet originating near the cage, visually implies a latent possibility of departure or connection, framing choice as present but unrealized.",
+      "alternative_interpretations": [
+        "The red line may be an accidental artifact of drawing, such as a stray stroke or compositional flourish unrelated to meaning."
+      ],
+      "limitations": [
+        "The line lacks attachment points or directional cues (e.g., arrowheads), making functional interpretation speculative."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1110_P3",
+      "visual_anchors": [
+        "gray base under heart",
+        "heart seated upright",
+        "cage floor open to base"
+      ],
+      "symbolic_mapping": [
+        "gray base → ground or foundation",
+        "heart seated → endurance despite confinement"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The heart rests on a shared substrate within the cage, suggesting that even constrained subjects occupy a common social or material plane, implying coexistence within imposed limits.",
+      "alternative_interpretations": [
+        "The gray shape is merely a shadow or platform for visual balance, not a symbolic ground."
+      ],
+      "limitations": [
+        "The base shows no interaction with the heart beyond contact; no shared texture, pattern, or labeling supports social interpretation."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:51:46.277111+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6cddc842-532f-9e37-bd63-e1b4e21f4daf",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 960,
+        "total_tokens": 2493,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035130fdaefbb725284ba4",
+      "usage": {
+        "completion_tokens": 820,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2909,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3729
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

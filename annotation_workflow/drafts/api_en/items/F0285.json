@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0285",
+  "sample_id": "PHL1800_HL_0249",
+  "file_name": "PHL1800_HL_0249.png",
+  "batch_id": "B008",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two women playing tennis on a blue hardcourt",
+  "captions": {
+    "scene": [
+      "An outdoor tennis court with blue playing surface and red outer lanes, enclosed by a black chain-link fence.",
+      "Bare deciduous trees and residential houses visible beyond the fence under an overcast sky.",
+      "A streetlamp and scattered tennis balls lie near the fence line behind the players."
+    ],
+    "action": [
+      "The foreground woman holds a tennis racket in her right hand, body angled forward, left foot slightly raised, suggesting she is preparing to hit or has just hit the ball.",
+      "The background woman stands upright holding a racket with both hands, facing the net, appearing ready to receive or having just completed a stroke.",
+      "Both wear matching white short-sleeved shirts and blue skirts; their footwear is white athletic shoes."
+    ],
+    "rationale": [
+      "The foreground player’s posture—bent knees, forward lean, and racket position—indicates active engagement in a rally rather than static waiting.",
+      "The presence of multiple tennis balls near the fence suggests ongoing practice or match play, not a posed scene.",
+      "The identical attire implies team affiliation or coordinated practice, though no logo or text is fully legible to confirm affiliation."
+    ],
+    "object": [
+      "A black chain-link fence runs horizontally across the mid-background, separating the court from residential structures.",
+      "Two women are visible: one in the foreground closer to the camera, the other approximately 3 meters behind her near the baseline.",
+      "Each woman holds a tennis racket; the foreground racket has a light-colored frame and dark strings, the background racket appears similar but less distinct.",
+      "The court surface consists of a blue inner rectangle bordered by red lanes, with white boundary lines clearly painted.",
+      "A small yellow tennis ball rests on the ground near the fence, and another is partially visible near the background player’s feet."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0285_P1",
+      "visual_anchors": [
+        "matching white shirts and blue skirts",
+        "identical athletic attire",
+        "shared court space"
+      ],
+      "symbolic_mapping": [
+        "uniformity in dress suggests collective identity within a shared activity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The synchronized appearance of the two players visually enacts a temporary social contract—individuals subsuming personal distinction into a shared role defined by sport, illustrating how identity can be co-constructed through participation in structured communal practice.",
+      "alternative_interpretations": [
+        "They may simply be wearing standard school or club uniforms without intentional symbolic meaning."
+      ],
+      "limitations": [
+        "No readable logos or insignia confirm institutional affiliation; attire could be coincidental or mandated by external rules rather than chosen for symbolic effect."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0285_P2",
+      "visual_anchors": [
+        "overcast sky",
+        "bare trees",
+        "wet-looking court surface"
+      ],
+      "symbolic_mapping": [
+        "seasonal barrenness juxtaposed with human activity signals persistence amid transience"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The leafless trees and gray light evoke seasonal decay, yet the players’ motion asserts continuity of action—a visual metaphor for human agency persisting despite inevitable cycles of decline and renewal.",
+      "alternative_interpretations": [
+        "The weather is merely incidental; the court may be damp from recent rain, not symbolically significant."
+      ],
+      "limitations": [
+        "No direct evidence of recent weather change; surface sheen could stem from cleaning or dew, not necessarily rain."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0285_P3",
+      "visual_anchors": [
+        "black fence enclosing the court",
+        "players positioned inside the bounded area",
+        "houses visible outside the fence"
+      ],
+      "symbolic_mapping": [
+        "the fence demarcates a zone of regulated activity separate from domestic life"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The fence physically enforces a boundary between recreational discipline and everyday surroundings, embodying how social spaces are deliberately constrained to enable focused interaction—freedom within structure, not absence of limits.",
+      "alternative_interpretations": [
+        "The fence serves only safety and property separation, with no philosophical intent."
+      ],
+      "limitations": [
+        "Fence height and construction suggest standard sports facility design, not symbolic architecture; no signage or ornamentation reinforces interpretive reading."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:28:36.672244+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-899000d8-10a7-9e37-bdfc-c5973a4a6260",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 980,
+        "total_tokens": 1789,
+        "completion_tokens_details": {
+          "text_tokens": 980
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022822841c87c12aa04612",
+      "usage": {
+        "completion_tokens": 844,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1960,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2804
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

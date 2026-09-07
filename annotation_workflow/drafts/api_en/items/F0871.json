@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0871",
+  "sample_id": "PHL1800_MM_0072",
+  "file_name": "PHL1800_MM_0072.jpg",
+  "batch_id": "B019",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two male-presenting figures in a classroom-like setting",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor space with tiered wooden desks and light-colored walls, resembling a lecture hall or examination room.",
+      "A tall stack of white paper documents rests on a desk between the two figures.",
+      "One figure stands holding a small white card; the other sits facing him with open papers on the desk before him."
+    ],
+    "action": [
+      "The standing figure holds a rectangular white card with both hands, head tilted downward toward it.",
+      "The seated figure looks upward toward the standing figure, hands resting near open documents.",
+      "A speech bubble originates from the standing figure’s head region containing legible text."
+    ],
+    "rationale": [
+      "The speech bubble text suggests an evaluative interaction, but its content is presented as dialogue rather than objective fact; visual evidence alone does not confirm intent or truth value.",
+      "The formal attire (suits, tie, pocket square) and document stacks imply an institutional context such as academia or assessment, though no logos or signage confirm this.",
+      "The posture and gaze direction indicate a one-way communicative act, yet no facial expression of the seated figure is visible to verify reception or emotional response."
+    ],
+    "object": [
+      "The standing figure wears a dark gray suit jacket, light blue collared shirt, red diagonally striped tie, and a light blue pocket square; his sleeves show dark cuffs with light trim.",
+      "The seated figure wears a navy blue suit jacket over a white collared shirt; only his back, side profile, and right hand are visible.",
+      "A stack of approximately 30–40 uniformly sized white sheets lies on the desk between them, slightly askew.",
+      "An open booklet or folder with white pages and a yellow inner edge lies flat on the desk in front of the seated figure.",
+      "A white oval speech bubble with black sans-serif text reads: 'I'm giving you a bad grade because I don't like you.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0871_P1",
+      "visual_anchors": [
+        "speech bubble text",
+        "standing figure holding card",
+        "stack of papers"
+      ],
+      "symbolic_mapping": [
+        "the card symbolizes official judgment",
+        "paper stack represents accumulated labor or evidence"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The image stages a critique of arbitrary authority where evaluation is divorced from merit, highlighting how institutional power can be weaponized through subjective bias.",
+      "alternative_interpretations": [
+        "It may depict a satirical or fictional scenario intended for humor, not a real ethical violation."
+      ],
+      "limitations": [
+        "No visual evidence confirms whether the speaker holds legitimate grading authority or whether the statement reflects actual policy or personal opinion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0871_P2",
+      "visual_anchors": [
+        "seated figure's obscured face",
+        "standing figure's downward gaze",
+        "asymmetrical positioning"
+      ],
+      "symbolic_mapping": [
+        "occluded face signifies epistemic exclusion",
+        "vertical hierarchy implies unequal access to justification"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The seated figure’s lack of visible reaction and the unilateral delivery of judgment evoke questions about whose knowledge counts in evaluative systems and how social recognition is withheld.",
+      "alternative_interpretations": [
+        "The seated figure may simply be listening attentively; occlusion of face is a stylistic choice, not necessarily symbolic erasure."
+      ],
+      "limitations": [
+        "Facial features and micro-expressions of the seated figure are entirely absent, preventing confirmation of cognitive or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0871_P3",
+      "visual_anchors": [
+        "formal attire",
+        "uniform paper stack",
+        "classroom-style desks"
+      ],
+      "symbolic_mapping": [
+        "suit signals role conformity",
+        "repetitive documents suggest bureaucratic ritual"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The uniformity of dress and paperwork underscores how identity in institutional settings becomes performative and subsumed under procedural expectations, reducing individuals to functionaries of evaluation.",
+      "alternative_interpretations": [
+        "Attire and documents reflect standard professional norms without deeper commentary on identity or labor."
+      ],
+      "limitations": [
+        "No distinguishing insignia, name tags, or contextual markers identify specific institutions or roles beyond generic formality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:23:34.259452+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-255c017c-b4ff-9ecf-ab7b-8dcf4730871d",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 990,
+        "total_tokens": 2523,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032321024cb104cc114e56",
+      "usage": {
+        "completion_tokens": 848,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2942,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3790
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

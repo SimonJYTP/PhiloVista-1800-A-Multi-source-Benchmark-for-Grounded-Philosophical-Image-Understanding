@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0544",
+  "sample_id": "PHL1800_IRFL_0392",
+  "file_name": "PHL1800_IRFL_0392.jpg",
+  "batch_id": "B013",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a bowl of cooked fruit pieces in syrup",
+  "captions": {
+    "scene": [
+      "A white-rimmed pink ceramic bowl rests on a coarse woven burlap surface atop a dark wooden table.",
+      "The background shows blurred horizontal wood grain and a textured fabric mat beneath the bowl.",
+      "A small square logo with text and icons appears in the upper right corner of the frame."
+    ],
+    "action": [
+      "Fruit pieces are submerged in a translucent amber-colored liquid, showing meniscus curvature at the liquid–fruit interface.",
+      "Light reflects off the glossy surface of the fruit and liquid, indicating a still, non-turbulent state.",
+      "The fruit pieces exhibit cut surfaces with visible internal texture and slight browning along edges."
+    ],
+    "rationale": [
+      "The fruit pieces appear uniformly cooked due to consistent coloration and soft sheen, though exact cooking method is not visible.",
+      "The bowl’s interior is pink while rim is white, suggesting a two-tone glaze; this is directly observable but material composition is not.",
+      "The logo contains legible text 'Manila Spoon' and small icons (e.g., leaf, spoon, spices), but some icon details are too small to identify precisely."
+    ],
+    "object": [
+      "The bowl has a smooth ceramic interior with a pale pink glaze and a contrasting white outer rim and lip.",
+      "Seven irregularly shaped fruit pieces, likely banana or plantain, float partially submerged in a viscous amber syrup.",
+      "Each fruit piece displays a golden-yellow hue with darker browned areas near cut edges and occasional minor fissures.",
+      "The liquid surface forms convex menisci around each fruit piece, indicating surface tension and wettability.",
+      "A square watermark overlay in the top-right quadrant contains stylized text 'Manila Spoon', a spoon icon, a leaf icon, and three small indistinct spice-like graphics."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0544_P1",
+      "visual_anchors": [
+        "amber syrup",
+        "uniformly cooked fruit pieces",
+        "burlap mat"
+      ],
+      "symbolic_mapping": [
+        "syrup as preservation of transient sweetness",
+        "burlap as humble substrate for refinement"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The prepared fruit embodies a deliberate suspension of decay—cooking and syruping extend edibility, reflecting human intervention against natural entropy.",
+      "alternative_interpretations": [
+        "It is simply a dessert dish presented for aesthetic food photography."
+      ],
+      "limitations": [
+        "No temporal sequence is shown; the image captures only a static endpoint without evidence of preparation or consumption."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0544_P2",
+      "visual_anchors": [
+        "pink-and-white bowl",
+        "woven burlap",
+        "logo overlay"
+      ],
+      "symbolic_mapping": [
+        "bowl’s dual-color design as boundary between domestic and public presentation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The careful staging—contrasting textures, branded watermark, and centered composition—suggests curated self-presentation, where food becomes a medium for asserting cultural or personal identity.",
+      "alternative_interpretations": [
+        "The arrangement follows standard food styling conventions for clarity and appeal, not symbolic intent."
+      ],
+      "limitations": [
+        "The logo’s content is minimal and generic; no explicit cultural markers beyond ‘Manila’ are visually confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0544_P3",
+      "visual_anchors": [
+        "meniscus around fruit",
+        "glossy reflections",
+        "still liquid surface"
+      ],
+      "symbolic_mapping": [
+        "surface tension as metaphor for fragile equilibrium in daily sustenance"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The static, contained liquid and suspended fruit evoke a moment of pause—a constrained yet chosen state where nourishment is preserved but not yet consumed, mirroring deliberative stasis before action.",
+      "alternative_interpretations": [
+        "These are optical effects of lighting and viscosity, with no intentional philosophical framing."
+      ],
+      "limitations": [
+        "No human agent or decision point is depicted; the ‘pause’ is inferred from absence of motion, not positive evidence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:55:15.438164+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d26e24f6-47e8-91b8-935c-b5b9c8cf3ab1",
+      "usage": {
+        "prompt_tokens": 1049,
+        "completion_tokens": 947,
+        "total_tokens": 1996,
+        "completion_tokens_details": {
+          "text_tokens": 947
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 542,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702550615bbe1fdba604ff5",
+      "usage": {
+        "completion_tokens": 810,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2249,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3059
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

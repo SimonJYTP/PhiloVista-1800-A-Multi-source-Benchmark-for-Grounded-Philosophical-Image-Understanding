@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0642",
+  "sample_id": "PHL1800_HAIV_0106",
+  "file_name": "PHL1800_HAIV_0106.png",
+  "batch_id": "B015",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult human figure standing centrally",
+  "captions": {
+    "scene": [
+      "A stylized interior scene with towering stacks of paper documents on both sides of the figure, under an orange-hued background.",
+      "The floor is depicted as a blue liquid surface with floating circular objects and scattered papers, partially submerging the figure's feet.",
+      "Black-and-white sketch-style document piles contain occasional white rectangular labels with illegible markings."
+    ],
+    "action": [
+      "The figure stands upright with arms at sides, mouth open in an oval shape, eyes wide and asymmetrical.",
+      "The figure’s left hand holds a small dark object; right hand hangs loosely near the thigh.",
+      "Papers and circular objects float on the blue surface around the figure’s lower legs and feet."
+    ],
+    "rationale": [
+      "The figure’s exaggerated facial features suggest expressive intent rather than neutral posture, though exact emotion is not determinable from visual evidence alone.",
+      "The presence of labeled but unreadable tags on documents implies categorization or archival context, but specific content cannot be confirmed.",
+      "The blue liquid floor with floating items indicates a non-realistic or metaphorical setting; physical buoyancy or material identity of floating objects is visually ambiguous."
+    ],
+    "object": [
+      "The central figure wears a long-sleeved purple shirt with a visible collar and front placket, dark trousers, and dark shoes.",
+      "Two large vertical stacks of layered paper documents flank the figure, rendered in black ink with white highlights and irregular edges.",
+      "Three circular dark objects float on the blue surface: one near left foot, one near right foot, and one farther right with a central hole resembling a ring or washer.",
+      "A white rectangular label with indecipherable black line-drawing (possibly schematic) is affixed to the right document stack near mid-height.",
+      "The background behind the figure consists of solid orange pigment with sparse black linear marks suggesting branches or cracks."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0642_P1",
+      "visual_anchors": [
+        "towering document stacks",
+        "floating papers",
+        "blue liquid floor"
+      ],
+      "symbolic_mapping": [
+        "document stacks → accumulation of information or obligation",
+        "liquid floor → instability of foundations"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure is immersed in an overwhelming archive where knowledge appears both abundant and destabilizing, suggesting epistemic constraint rather than liberation.",
+      "alternative_interpretations": [
+        "The scene may depict a literal flooded office space with water damage and displaced files, without symbolic intent."
+      ],
+      "limitations": [
+        "No legible text confirms thematic labeling; all symbolic readings rely on visual analogy alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0642_P2",
+      "visual_anchors": [
+        "asymmetrical eyes",
+        "open mouth",
+        "static posture"
+      ],
+      "symbolic_mapping": [
+        "distorted facial features → fragmentation of self-representation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The figure’s disfigured visage amid bureaucratic clutter reflects a crisis of coherent identity under institutional pressure.",
+      "alternative_interpretations": [
+        "The facial distortion may result from artistic style (e.g., expressionist caricature) rather than intentional commentary on identity."
+      ],
+      "limitations": [
+        "Facial features are stylized; no baseline 'normal' face is shown for comparison."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0642_P3",
+      "visual_anchors": [
+        "circular floating objects",
+        "submerged feet",
+        "stacked papers"
+      ],
+      "symbolic_mapping": [
+        "floating rings → cyclical tasks or unresolved loops",
+        "submersion → partial engulfment by labor"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "Repetitive administrative labor manifests as physical immersion and temporal looping, implying entrapment within cycles that erode agency over time.",
+      "alternative_interpretations": [
+        "The rings could be discarded industrial parts (e.g., gaskets), and the liquid could be spilled ink or cleaning fluid—non-symbolic debris."
+      ],
+      "limitations": [
+        "Material identity of rings is indeterminate; no motion or sequence confirms cyclicity."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:03:50.300706+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d7ca9e5d-7548-91c4-ba84-2b1b557464a4",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 945,
+        "total_tokens": 2478,
+        "completion_tokens_details": {
+          "text_tokens": 945
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030335d05fbec4ef434c57",
+      "usage": {
+        "completion_tokens": 806,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2902,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3708
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

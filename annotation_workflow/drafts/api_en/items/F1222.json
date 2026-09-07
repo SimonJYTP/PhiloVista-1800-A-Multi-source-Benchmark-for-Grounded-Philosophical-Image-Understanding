@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1222",
+  "sample_id": "PHL1800_IRFL_0057",
+  "file_name": "PHL1800_IRFL_0057.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two cartoon figures engaged in a tug-of-war over a central object",
+  "captions": {
+    "scene": [
+      "Two stylized human-like figures on opposite sides of a central object, within an oval lavender background.",
+      "The figure on the left wears blue pants and a light blue shirt; the figure on the right wears green shirt and orange pants.",
+      "Both figures grip a shared object with both hands and lean backward, legs braced."
+    ],
+    "action": [
+      "Both figures exert force in opposing directions on a shared object resembling a handle or lever.",
+      "The left figure’s facial expression shows furrowed brows and open mouth; the right figure’s mouth is open and eyes narrowed.",
+      "Feet are planted on an implied ground plane, with one foot of each figure partially overlapping the other’s."
+    ],
+    "rationale": [
+      "The opposing postures and shared grip suggest competitive tension rather than cooperative handling.",
+      "The exaggerated facial features indicate emotional intensity, though specific emotion cannot be confirmed from visuals alone.",
+      "The central object appears to be a single unit being pulled apart, but its exact function is indeterminate due to stylization."
+    ],
+    "object": [
+      "A brown, curved, handle-like object is held by both figures, with visible grips near its ends.",
+      "The left figure has reddish-brown hair, a light blue long-sleeved shirt, purple-blue trousers, and dark gray shoes.",
+      "The right figure has blond spiky hair, a green short-sleeved shirt, orange trousers, and dark gray shoes.",
+      "Each figure’s arms are extended forward, hands wrapped around the object, elbows bent outward.",
+      "The background is a solid pale lavender oval enclosing the scene, with no additional environmental elements."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1222_P1",
+      "visual_anchors": [
+        "two figures pulling opposite ends of one object",
+        "shared grip on central object",
+        "bodies angled away from each other"
+      ],
+      "symbolic_mapping": [
+        "the object represents a contested resource",
+        "the posture signifies irreconcilable positions"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image visually encodes a zero-sum struggle where mutual engagement presupposes antagonism, reflecting how social existence can manifest as oppositional positioning over shared referents.",
+      "alternative_interpretations": [
+        "It may depict collaborative effort requiring counterbalance, such as two people jointly operating a manual tool."
+      ],
+      "limitations": [
+        "No labels, context, or outcome shown; the object’s identity and purpose remain ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1222_P2",
+      "visual_anchors": [
+        "exaggerated facial expressions",
+        "tensed limbs",
+        "asymmetrical body lean"
+      ],
+      "symbolic_mapping": [
+        "facial distortion signals internal strain under external pressure"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The physical strain depicted suggests that exercising agency (pulling) simultaneously imposes constraint (being pulled back), illustrating how freedom and responsibility are co-constituted through resistance.",
+      "alternative_interpretations": [
+        "The expressions could be comedic exaggeration without moral or existential import."
+      ],
+      "limitations": [
+        "Cartoon style permits multiple affective readings; no textual or situational cues fix meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1222_P3",
+      "visual_anchors": [
+        "identical hand placement on same object",
+        "mirrored postural symmetry",
+        "lack of distinguishing accessories"
+      ],
+      "symbolic_mapping": [
+        "symmetry implies equivalence of claim or capacity",
+        "shared object denies unilateral ownership"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual parity between figures—despite color differences—highlights how identity is performed through relational opposition, where self-definition emerges only in contest with another’s equally valid stance.",
+      "alternative_interpretations": [
+        "The figures may represent different roles (e.g., worker vs. manager) rather than symmetric agents."
+      ],
+      "limitations": [
+        "Color differentiation (blue/green, purple/orange) introduces asymmetry not accounted for in pure symmetry claims."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:04:55.325604+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-eff3bd0c-61f4-9560-8820-07afb5ceda53",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 938,
+        "total_tokens": 1517,
+        "completion_tokens_details": {
+          "text_tokens": 938
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070404462e4b17d49c6a4216",
+      "usage": {
+        "completion_tokens": 800,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1558,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2358
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

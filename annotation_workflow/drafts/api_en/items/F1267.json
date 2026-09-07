@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1267",
+  "sample_id": "PHL1800_IRFL_0030",
+  "file_name": "PHL1800_IRFL_0030.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one smiling child holding a paper",
+  "captions": {
+    "scene": [
+      "A brightly lit classroom with large windows, whiteboard, and colorful wall decorations",
+      "A round table with scattered objects and red floral items in the background",
+      "A decorative scalloped border with multicolored polka dots runs along the bottom of the whiteboard"
+    ],
+    "action": [
+      "The child holds a printed paper titled 'Spelling Test' with both hands at chest level",
+      "The child displays an open-mouthed smile showing upper teeth",
+      "The child looks directly toward the camera with eyes wide and focused"
+    ],
+    "rationale": [
+      "The paper is labeled 'Spelling Test', suggesting an educational context; however, no grading or completion status is visible",
+      "Handwriting on the paper includes numbered lines with words, but most entries are illegible due to resolution and angle",
+      "The child’s attire (plaid button-up shirt) and setting imply a formal school environment, though no explicit institutional signage confirms this"
+    ],
+    "object": [
+      "The child has short curly dark hair, brown skin, and wears a blue-and-white checkered collared shirt with white buttons.",
+      "The paper held by the child is white, landscape-oriented, and contains handwritten entries under numbers 1 through 9, with fields for 'Name' and 'Date'.",
+      "The 'Name' field shows the handwritten word 'Bel'; the 'Date' field shows '18 October' with some smudging.",
+      "The whiteboard behind the child is mostly blank except for faint marks, small colored magnets, and a purple rectangular label near the top right.",
+      "A blue pom-pom hangs from the ceiling near the left window, and a blurred red object sits on a table in the background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1267_P1",
+      "visual_anchors": [
+        "child holding spelling test",
+        "handwritten name 'Bel'",
+        "numbered answer lines"
+      ],
+      "symbolic_mapping": [
+        "the act of presenting work symbolizes early engagement with normative standards"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where personal expression (handwritten name) intersects with institutional assessment (spelling test), reflecting how knowledge is socially constructed and validated through standardized formats.",
+      "alternative_interpretations": [
+        "It is simply a student proudly showing completed classwork without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No visible feedback, score, or teacher presence prevents confirmation of evaluation or social validation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1267_P2",
+      "visual_anchors": [
+        "smiling face",
+        "direct gaze",
+        "held paper"
+      ],
+      "symbolic_mapping": [
+        "the smile and eye contact may signify agency in self-presentation within structured environments"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The child’s deliberate pose—holding the paper forward while smiling—suggests an emergent sense of identity formation through performance of competence, aligning with theories of self as enacted through social tasks.",
+      "alternative_interpretations": [
+        "The expression may be prompted by the photographer rather than self-initiated presentation."
+      ],
+      "limitations": [
+        "Facial expression cannot be definitively linked to internal motivation or intentionality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1267_P3",
+      "visual_anchors": [
+        "whiteboard",
+        "decorative border",
+        "classroom tables"
+      ],
+      "symbolic_mapping": [
+        "structured learning space embodies constraints that enable disciplined inquiry"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The ordered environment—whiteboard, numbered test, patterned decor—illustrates how constraint (e.g., curriculum structure) facilitates the pursuit of truth through repeatable, measurable practice.",
+      "alternative_interpretations": [
+        "The decor and layout are merely functional and aesthetic choices with no philosophical implication."
+      ],
+      "limitations": [
+        "No visible pedagogical materials or instructional text confirm intentional design for epistemic goals."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:43:06.207253+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4dff649e-c3ec-94ef-a7ac-d9897b76bcbc",
+      "usage": {
+        "prompt_tokens": 1160,
+        "completion_tokens": 915,
+        "total_tokens": 2075,
+        "completion_tokens_details": {
+          "text_tokens": 915
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 653,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014244f54604f33f544a6a",
+      "usage": {
+        "completion_tokens": 777,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2360,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3137
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

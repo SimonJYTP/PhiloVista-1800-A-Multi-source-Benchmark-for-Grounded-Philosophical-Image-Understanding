@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0199",
+  "sample_id": "PHL1800_IRFL_0249",
+  "file_name": "PHL1800_IRFL_0249.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a wooden articulated mannequin being manipulated by a human hand via strings",
+  "captions": {
+    "scene": [
+      "A dark background with dramatic red and blue lighting illuminating a wooden mannequin and a human hand above it.",
+      "The mannequin is suspended mid-air, held aloft by thin white strings attached to its limbs and head.",
+      "The human hand grips the strings between fingers, with visible rubber bands around three fingers."
+    ],
+    "action": [
+      "The human hand actively holds and tensions multiple strings connected to the mannequin’s joints.",
+      "The mannequin’s arms are raised symmetrically, elbows bent, suggesting a posed or controlled posture.",
+      "Lighting casts colored highlights on both the hand and mannequin, indicating directional illumination from at least two sources."
+    ],
+    "rationale": [
+      "The presence of strings attached to limb joints implies intentional manipulation rather than static display.",
+      "The positioning of the hand above the mannequin and string tension suggests active control, though no motion is captured.",
+      "Rubber bands on the fingers may serve functional or aesthetic purposes; their exact role cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "A wooden articulated mannequin with a smooth head, cylindrical torso, and segmented limbs joined by metal fasteners.",
+      "A human right hand with visible fingernails, skin texture, and three white rubber bands encircling the index, middle, and ring fingers.",
+      "Four thin white strings extend downward from the hand: two attach to the mannequin’s upper arms near the shoulder joints, one to the left forearm, and one to the right forearm.",
+      "The mannequin’s left arm is raised with elbow flexed and hand pointing upward; the right arm mirrors this pose.",
+      "The lighting creates distinct red highlights on the left side of the hand and mannequin and blue highlights on the right side, against a black backdrop."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0199_P1",
+      "visual_anchors": [
+        "strings attached to mannequin limbs",
+        "hand gripping strings",
+        "mannequin’s fixed pose"
+      ],
+      "symbolic_mapping": [
+        "strings → external constraints",
+        "hand → controlling agent"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The image visually enacts the philosophical tension between autonomy and external determination, where the mannequin’s immobile posture under string tension embodies constrained agency.",
+      "alternative_interpretations": [
+        "It may simply depict a studio photography setup using puppetry props for artistic lighting composition."
+      ],
+      "limitations": [
+        "No facial expression or internal mechanism is visible, so intent or experience of the mannequin cannot be inferred."
+      ],
+      "sufficiency": "supported"
+    },
+    {
+      "candidate_id": "AI_F0199_P2",
+      "visual_anchors": [
+        "wooden mannequin with jointed limbs",
+        "lack of facial features",
+        "symmetrical arm positioning"
+      ],
+      "symbolic_mapping": [
+        "featureless head → generic identity",
+        "articulated joints → constructed self"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The mannequin’s absence of individuating traits and its dependence on external manipulation suggest a critique of socially constructed identity shaped by external forces.",
+      "alternative_interpretations": [
+        "The mannequin is a standard art model used for drawing, with pose chosen for anatomical demonstration."
+      ],
+      "limitations": [
+        "The object is inanimate; any attribution of social or existential properties requires projection beyond visual data."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0199_P3",
+      "visual_anchors": [
+        "red and blue dual lighting",
+        "black background",
+        "contrast between organic hand and wooden figure"
+      ],
+      "symbolic_mapping": [
+        "dichromatic light → binary oppositions",
+        "hand vs. mannequin → creator vs. creation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The stark lighting dichotomy and material contrast evoke epistemological questions about the nature of representation—whether the manipulated figure reveals truth or merely reflects the manipulator’s design.",
+      "alternative_interpretations": [
+        "The lighting is a deliberate aesthetic choice to enhance visual drama and depth in product or conceptual photography."
+      ],
+      "limitations": [
+        "Color scheme could be purely technical (e.g., gel filters) without symbolic intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:17:02.391372+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-857f7ba2-38bf-9d4b-b9ca-55cbec966eff",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 973,
+        "total_tokens": 1882,
+        "completion_tokens_details": {
+          "text_tokens": 973
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 402,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021649ee71280cbdba4827",
+      "usage": {
+        "completion_tokens": 833,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2083,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2916
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

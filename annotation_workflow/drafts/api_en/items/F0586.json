@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0586",
+  "sample_id": "PHL1800_HAIV_0275",
+  "file_name": "PHL1800_HAIV_0275.png",
+  "batch_id": "B014",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one illustrated person holding a heart-shaped object",
+  "captions": {
+    "scene": [
+      "A figure with black bobbed hair and a purple garment is centered against a plain white background.",
+      "The figure holds a large heart-shaped object directly in front of the torso, obscuring the lower face and chest area.",
+      "The illustration uses thick black outlines, flat color fills, and minimal shading, consistent with graphic or cartoon-style rendering."
+    ],
+    "action": [
+      "The figure’s hands are positioned on either side of the heart-shaped object, gripping it firmly near its edges.",
+      "The figure’s eyes are half-lidded with small black pupils; one eye has a teardrop-shaped mark beneath it.",
+      "The mouth is a simple downward curve, indicating a neutral-to-sad facial expression."
+    ],
+    "rationale": [
+      "The heart-shaped object appears textured and discolored, suggesting decay or contamination rather than romantic symbolism, based on visible green splotches and granular surface.",
+      "The figure’s posture and facial features suggest emotional distress, but this is inferred from visual cues only—no explicit narrative context is present.",
+      "The absence of background elements or additional figures isolates the subject, emphasizing the relationship between the figure and the held object."
+    ],
+    "object": [
+      "The figure has short black hair with three triangular spikes at the forehead, cut straight across below the ears.",
+      "The heart-shaped object is grayish-green with irregular dark green patches and a speckled, slightly reflective texture, outlined in black.",
+      "The figure wears a purple garment with visible shoulder seams and sleeve cuffs, rendered in solid lavender with black contour lines.",
+      "The figure’s skin tone is off-white/cream, with no shading except for subtle tonal variation near the jawline and neck.",
+      "Both hands are shown with simplified fingers: four per hand, no nails or detailed joints, placed symmetrically on the heart’s sides."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0586_P1",
+      "visual_anchors": [
+        "green splotches on heart",
+        "teardrop mark under eye",
+        "downward mouth curve"
+      ],
+      "symbolic_mapping": [
+        "discolored heart → corrupted affection or damaged care",
+        "teardrop mark → sorrow without active tears"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "faith_meaning"
+      ],
+      "interpretation": "The image may represent the burden of sustaining care despite its deterioration, questioning whether moral duty persists when emotional substance decays.",
+      "alternative_interpretations": [
+        "The heart could be literal food (e.g., moldy bread) held by a person in mild disappointment, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm symbolic intent; color and texture alone do not definitively indicate decay versus artistic style."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0586_P2",
+      "visual_anchors": [
+        "heart shape held centrally",
+        "figure’s gaze directed forward",
+        "uniform background"
+      ],
+      "symbolic_mapping": [
+        "central placement of heart → focal value or identity core",
+        "forward gaze → confrontation or presentation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Holding a visibly compromised heart before the viewer may interrogate how self-presentation is shaped by internal states that are imperfect or damaged.",
+      "alternative_interpretations": [
+        "The composition follows standard portrait conventions where an object is held for identification (e.g., a badge or token), not necessarily symbolic."
+      ],
+      "limitations": [
+        "The figure’s expression is ambiguous—could indicate fatigue, boredom, or neutrality rather than identity crisis."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0586_P3",
+      "visual_anchors": [
+        "black outline dominance",
+        "flat color fields",
+        "lack of depth cues"
+      ],
+      "symbolic_mapping": [
+        "stylized minimalism → reduction of complex emotion to essential form"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The stark simplification may reflect epistemic limitation: what is presented as ‘truth’ (the heart) is visibly flawed, yet offered unaltered, suggesting constrained access to authentic emotional reality.",
+      "alternative_interpretations": [
+        "The style is purely aesthetic—a deliberate choice for clarity or print efficiency—not a philosophical statement."
+      ],
+      "limitations": [
+        "Artistic medium conventions (e.g., ink-and-color illustration) explain visual simplicity without invoking epistemology."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:58:50.051386+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5232353b-9ae4-9747-8f71-43f2c5af537f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 990,
+        "total_tokens": 2523,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070258379b30f8e23e8741f3",
+      "usage": {
+        "completion_tokens": 852,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2950,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3802
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

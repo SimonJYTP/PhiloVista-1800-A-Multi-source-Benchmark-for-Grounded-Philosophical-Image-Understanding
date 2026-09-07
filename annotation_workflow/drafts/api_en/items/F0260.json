@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0260",
+  "sample_id": "PHL1800_HL_0491",
+  "file_name": "PHL1800_HL_0491.png",
+  "batch_id": "B007",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man in a green t-shirt seated at a desk using a laptop",
+  "captions": {
+    "scene": [
+      "An open-plan office or shared workspace with light-colored walls, framed artwork, and multiple desks.",
+      "A cluttered desk surface with a black laptop bearing stickers, books, papers, and electronic devices.",
+      "Three people present: one seated foreground left, one walking midground right, one seated background right."
+    ],
+    "action": [
+      "The foreground man looks down at his laptop screen with focused attention.",
+      "A second person walks from left to right across the midground, partially blurred due to motion.",
+      "A third person sits at a rear desk, facing forward, with hands near their face or chest."
+    ],
+    "rationale": [
+      "The foreground man’s posture and gaze direction indicate engagement with the laptop; no other activity is visible for him.",
+      "Motion blur on the walking person confirms movement rather than static pose, though direction is inferred from body orientation.",
+      "The background person’s seated position and proximity to a monitor suggest work-related activity, but facial expression and exact hand position are indistinct."
+    ],
+    "object": [
+      "A black laptop on the foreground desk displays two visible stickers: one red oval with white text 'VOTE' (partially legible), and one blue oval with white text 'Ubuntu' and a circular logo.",
+      "A white box labeled '100' in red font sits atop a black book near the center of the desk.",
+      "A tall white tower fan stands upright behind the foreground man’s chair.",
+      "A desktop computer setup includes a white CRT monitor, a black tower case, and a silver CPU fan unit on the rear desk.",
+      "Two framed pictures hang on the back wall: one large abstract map-like image on the left, and two smaller black-and-white portraits on the right."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0260_P1",
+      "visual_anchors": [
+        "Ubuntu sticker on laptop",
+        "VOTE sticker",
+        "cluttered collaborative workspace"
+      ],
+      "symbolic_mapping": [
+        "Ubuntu sticker evokes communal ethics",
+        "VOTE sticker signals civic participation"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of open-source ethos and democratic participation within a shared labor space suggests a lived philosophy where collective responsibility and social embeddedness shape daily practice.",
+      "alternative_interpretations": [
+        "The stickers may simply reflect personal preferences or software usage without ideological intent."
+      ],
+      "limitations": [
+        "Sticker text is partially obscured and context of ownership is unknown; no verbal or behavioral confirmation of intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0260_P2",
+      "visual_anchors": [
+        "motion-blurred walking figure",
+        "static seated figures",
+        "tower fan in background"
+      ],
+      "symbolic_mapping": [
+        "motion blur as temporal passage",
+        "stationary work as endurance"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The contrast between transient movement and sustained focus visualizes the tension between fleeting presence and enduring labor, where technology mediates both continuity and disruption.",
+      "alternative_interpretations": [
+        "The blur is merely photographic artifact from normal walking speed, not symbolic of time."
+      ],
+      "limitations": [
+        "No clocks, aging signs, or explicit temporal markers; motion blur alone does not confirm philosophical meaning."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0260_P3",
+      "visual_anchors": [
+        "multiple desks with individual setups",
+        "shared floor space",
+        "person looking away from others"
+      ],
+      "symbolic_mapping": [
+        "proximity without interaction implies mediated coexistence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "Physical proximity without direct engagement illustrates a modern condition of social existence defined by simultaneous autonomy and constraint—individual work zones within a common environment enforce both freedom and implicit norms.",
+      "alternative_interpretations": [
+        "People may be temporarily occupied and will interact shortly; spatial arrangement reflects practical ergonomics, not ideology."
+      ],
+      "limitations": [
+        "No eye contact, conversation, or gesture data confirms relational dynamics; layout could be purely functional."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:25:54.349698+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-512794f4-9dc5-900d-a6f0-da179fc34b7e",
+      "usage": {
+        "prompt_tokens": 685,
+        "completion_tokens": 935,
+        "total_tokens": 1620,
+        "completion_tokens_details": {
+          "text_tokens": 935
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 178,
+          "text_tokens": 507,
+          "cached_tokens": 512
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022541ed5f815475ae4d38",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1755,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2550
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

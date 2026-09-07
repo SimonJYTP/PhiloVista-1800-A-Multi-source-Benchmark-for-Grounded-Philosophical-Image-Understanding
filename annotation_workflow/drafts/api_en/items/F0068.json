@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0068",
+  "sample_id": "PHL1800_HL_0596",
+  "file_name": "PHL1800_HL_0596.png",
+  "batch_id": "B004",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person in a yellow hooded jacket holding a snowboard and giving a thumbs-up",
+  "captions": {
+    "scene": [
+      "Snow-covered ground under a clear blue sky with frost-laden coniferous trees in the background",
+      "A red ski lift chair or structure partially visible on the left side of the frame",
+      "Multiple snowboards lying on the snow, including one with blue-and-white stripes held upright"
+    ],
+    "action": [
+      "The central person raises their right hand in a thumbs-up gesture while wearing black gloves",
+      "The central person stands upright on snow, holding a blue-and-white striped snowboard vertically against their left side",
+      "A second person is seated on the snow to the lower right, partially visible, wearing dark winter clothing"
+    ],
+    "rationale": [
+      "The person’s posture and raised hand suggest intentional posing rather than spontaneous motion, supported by direct gaze toward camera direction",
+      "The presence of multiple snowboards and ski equipment implies a recreational snow sport setting, though no active riding is visible",
+      "The facial area is obscured by a black face covering and goggles, preventing identification of expression or identity"
+    ],
+    "object": [
+      "A person wears a mustard-yellow hooded winter jacket with fur trim on the hood, brown insulated pants, black boots, black gloves, and a black face mask with reflective ski goggles.",
+      "A backpack with dark straps and a visible side pocket is worn over the person’s shoulders.",
+      "A snowboard with diagonal blue and white stripes is held vertically in the person’s left hand; its base faces outward and shows no visible bindings attached at this angle.",
+      "A second snowboard lies horizontally on the snow in the foreground, featuring a black base with a white logo that includes a stylized 'A' and unreadable text beneath it.",
+      "A red metal structure, possibly part of a ski lift chair or safety barrier, leans diagonally in the mid-left background, with two blue ski poles planted nearby."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0068_P1",
+      "visual_anchors": [
+        "thumbs-up gesture",
+        "obscured face",
+        "snowboard held like a shield"
+      ],
+      "symbolic_mapping": [
+        "thumbs-up as performative affirmation",
+        "face covering as concealment of individuality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image stages a moment where social recognition (thumbs-up) coexists with visual anonymity (mask/goggles), suggesting identity is negotiated through gesture rather than facial expression in public recreational spaces.",
+      "alternative_interpretations": [
+        "The pose may simply reflect standard photo etiquette at a ski resort without symbolic intent."
+      ],
+      "limitations": [
+        "No textual context confirms intended meaning; gesture could be incidental or directed at someone off-camera."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0068_P2",
+      "visual_anchors": [
+        "frost-covered trees",
+        "clear blue sky",
+        "undisturbed snow patches"
+      ],
+      "symbolic_mapping": [
+        "frozen branches as arrested motion",
+        "contrast between stillness and human activity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of static, ice-encrusted nature against a dynamic human pose evokes tension between natural stasis and human assertion of agency within environmental limits.",
+      "alternative_interpretations": [
+        "The scene is a routine winter day with no deliberate contrast intended."
+      ],
+      "limitations": [
+        "No evidence of temporal progression; stillness may be coincidental rather than symbolic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0068_P3",
+      "visual_anchors": [
+        "multiple snowboards on snow",
+        "person standing beside seated figure",
+        "shared equipment layout"
+      ],
+      "symbolic_mapping": [
+        "equipment as shared cultural artifact",
+        "spatial proximity without interaction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "Proximity without engagement among individuals with similar gear suggests a form of collective solitude—participation in a shared practice without direct relational exchange, reflecting modern communal leisure patterns.",
+      "alternative_interpretations": [
+        "The seated person may be adjusting gear or resting; spatial arrangement is functional, not philosophical."
+      ],
+      "limitations": [
+        "Only partial view of second person; no eye contact or interaction is visible to confirm relational dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:55:26.912845+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c05ca117-15fd-996c-9cc3-2b0bffde98b5",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 966,
+        "total_tokens": 1775,
+        "completion_tokens_details": {
+          "text_tokens": 966
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015503b9f5b04b973b4a32",
+      "usage": {
+        "completion_tokens": 825,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1944,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2769
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

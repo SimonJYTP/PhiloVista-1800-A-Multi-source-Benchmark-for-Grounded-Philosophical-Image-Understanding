@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0282",
+  "sample_id": "PHL1800_IRFL_0204",
+  "file_name": "PHL1800_IRFL_0204.jpg",
+  "batch_id": "B008",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person behind vertical metal bars",
+  "captions": {
+    "scene": [
+      "Rusty vertical metal bars dominate the foreground, with a blurred greenish-yellow background showing faint indistinct markings.",
+      "The setting appears enclosed and dimly lit, with visible corrosion and wear on the bars.",
+      "A person wearing a dark, frayed garment is partially visible behind the bars, head bowed."
+    ],
+    "action": [
+      "Both hands are gripping adjacent bars tightly, fingers curled around them with visible knuckles and tension in the skin.",
+      "The person's head is lowered, obscuring the face; only the crown of dark hair is visible.",
+      "The garment sleeves show frayed edges near the wrists, suggesting wear or distress."
+    ],
+    "rationale": [
+      "The grip on the bars suggests physical contact and possible exertion, though intent (e.g., pulling, holding, pressing) cannot be confirmed from static image alone.",
+      "The obscured face prevents determination of expression or gaze direction; only posture is observable.",
+      "Background markings are too blurred to identify as text, symbols, or graffiti—thus their nature remains undetermined."
+    ],
+    "object": [
+      "Ten vertical metal bars are visible across the frame, varying in rust intensity and surface texture; some show flaking paint or corrosion streaks.",
+      "Two clenched fists grasp bars at approximately chest height, with visible fingernails, skin creases, and slight discoloration on knuckles.",
+      "Dark hair covers the top of the head, parted slightly down the middle, with no facial features visible.",
+      "A dark-colored garment with frayed cuffs and worn fabric is present on both arms, extending below the hands.",
+      "The background is out-of-focus with diffuse greenish-yellow tones and faint light-blue curved shapes that lack definable form."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0282_P1",
+      "visual_anchors": [
+        "rusty vertical bars",
+        "clenched fists gripping bars",
+        "obscured face"
+      ],
+      "symbolic_mapping": [
+        "bars → physical constraint",
+        "gripping → active engagement with limitation"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually enacts the tension between embodied agency (gripping) and imposed restriction (bars), grounding the abstract notion of constraint not as passive suffering but as an ongoing physical negotiation.",
+      "alternative_interpretations": [
+        "The pose may simply reflect fatigue or rest against a barrier, without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism; interpretation relies on conventional associations rather than direct evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0282_P2",
+      "visual_anchors": [
+        "frayed garment cuffs",
+        "worn texture of bars",
+        "uneven rust patterns"
+      ],
+      "symbolic_mapping": [
+        "material decay → temporal passage",
+        "wear on clothing and bars → shared endurance"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The co-occurrence of bodily wear (frayed fabric) and environmental decay (rust) suggests a shared temporality where human and object undergo parallel degradation, evoking mortality through material evidence rather than explicit representation.",
+      "alternative_interpretations": [
+        "The fraying and rust may result from recent exposure to moisture or neglect, not long-term aging."
+      ],
+      "limitations": [
+        "Age of the garment and bars cannot be determined from visual cues alone; decay could be rapid or superficial."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0282_P3",
+      "visual_anchors": [
+        "two hands symmetrically positioned",
+        "head centered behind bars",
+        "uniform bar spacing"
+      ],
+      "symbolic_mapping": [
+        "symmetry of hands → duality of action/passivity",
+        "central framing → subject as focal point despite occlusion"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The composition centers a partially hidden individual whose presence is asserted through gesture (gripping) rather than visibility, reflecting how social existence can be mediated through constrained interaction rather than full recognition.",
+      "alternative_interpretations": [
+        "The symmetry may be coincidental due to posture, not deliberate compositional emphasis."
+      ],
+      "limitations": [
+        "No indication of observers, dialogue, or social context exists in the frame; 'social' aspect is inferred from human presence alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:28:41.178128+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c68c783b-1de6-9b54-a580-7f84441baa87",
+      "usage": {
+        "prompt_tokens": 3010,
+        "completion_tokens": 959,
+        "total_tokens": 3969,
+        "completion_tokens_details": {
+          "text_tokens": 959
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2503,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022820462ad80061754781",
+      "usage": {
+        "completion_tokens": 824,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4957,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5781
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

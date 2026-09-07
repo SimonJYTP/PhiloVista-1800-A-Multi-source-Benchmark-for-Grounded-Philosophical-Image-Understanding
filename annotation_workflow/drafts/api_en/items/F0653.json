@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0653",
+  "sample_id": "PHL1800_HL_0333",
+  "file_name": "PHL1800_HL_0333.png",
+  "batch_id": "B015",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a black Toyota sedan parked beside a teal lamppost with an orange road work sign",
+  "captions": {
+    "scene": [
+      "A sunny urban street lined with palm trees, multi-story residential buildings in beige and reddish tones, and parked cars.",
+      "An orange diamond-shaped 'ROAD WORK AHEAD' sign mounted on a decorative teal lamppost with two glass globes.",
+      "A black Toyota sedan occupies the foreground right, partially obscuring the base of the lamppost; other vehicles are visible across the street."
+    ],
+    "action": [
+      "The black sedan is stationary, parked parallel to the curb with its rear facing the viewer.",
+      "No pedestrians or moving vehicles are visible in the frame; all cars appear parked or stopped.",
+      "The lamppost stands upright, supporting both the warning sign and two unlit lamp globes."
+    ],
+    "rationale": [
+      "The presence of multiple palm trees and low-rise buildings suggests a warm-climate city environment, though exact location cannot be confirmed.",
+      "The 'ROAD WORK AHEAD' sign indicates planned construction activity nearby, but no active work zone or workers are visible in the image.",
+      "The car’s license plate is present but unreadable due to resolution and angle; therefore, vehicle registration details cannot be verified."
+    ],
+    "object": [
+      "A black four-door sedan with a visible Toyota emblem and rear spoiler is parked on the right side of the street.",
+      "A teal-colored ornamental lamppost features two spherical frosted-glass lamps and supports an orange diamond-shaped traffic sign.",
+      "The orange sign displays the words 'ROAD WORK AHEAD' in black uppercase letters; below it, a smaller white rectangular sign reads 'PARKING' with illegible additional text.",
+      "At least six vehicles are visible: a silver sedan, a gray sedan, a white sedan, a white SUV, a black sedan (foreground), and part of a white vehicle on far right.",
+      "Tall palm trees with green fronds stand between the street and buildings; at least seven distinct trunks are visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0653_P1",
+      "visual_anchors": [
+        "orange 'ROAD WORK AHEAD' sign",
+        "stationary black sedan",
+        "empty sidewalk"
+      ],
+      "symbolic_mapping": [
+        "the sign signals impending change while the car remains still",
+        "the absence of workers contrasts with the warning"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment of suspended agency: the sign announces future disruption, yet the immediate environment remains static, evoking tension between anticipated change and present inertia.",
+      "alternative_interpretations": [
+        "It may simply depict routine urban infrastructure signage with no deeper implication—just a standard traffic warning in a quiet street scene."
+      ],
+      "limitations": [
+        "No human actors or explicit temporal markers confirm intentionality or narrative progression."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0653_P2",
+      "visual_anchors": [
+        "teal lamppost with dual globes",
+        "palm trees aligned along street",
+        "uniform building facades"
+      ],
+      "symbolic_mapping": [
+        "repetition of vertical forms suggests order and control",
+        "ornamental design contrasts with utilitarian function"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The curated aesthetic of public infrastructure—the stylized lamppost, manicured palms, and uniform architecture—reflects institutional ordering of space, subtly asserting normative control over lived experience.",
+      "alternative_interpretations": [
+        "The lamppost and trees are standard municipal features chosen for durability and climate suitability, not symbolic intent."
+      ],
+      "limitations": [
+        "No signage or markings indicate deliberate ideological messaging; design choices could be purely functional or budget-driven."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0653_P3",
+      "visual_anchors": [
+        "unreadable license plate",
+        "partial view of white SUV",
+        "background construction scaffolding"
+      ],
+      "symbolic_mapping": [
+        "obscured identification parallels anonymity in urban life",
+        "scaffolding implies incomplete or transitional states"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The partial visibility and occlusion of vehicles and structures evoke impermanence and fragmented identity—what is seen is provisional, subject to revision or erasure by time and development.",
+      "alternative_interpretations": [
+        "The obscured plate is due to camera angle and resolution, not intentional concealment; scaffolding is routine maintenance."
+      ],
+      "limitations": [
+        "No evidence confirms intentional symbolism; occlusions are typical photographic artifacts in street scenes."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:04:58.680569+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dfe37d66-db0f-92dc-9cd7-9e7d3fd8057c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1024,
+        "total_tokens": 1833,
+        "completion_tokens_details": {
+          "text_tokens": 1024
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030437a9e2b0a765bf4cd4",
+      "usage": {
+        "completion_tokens": 886,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2005,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2891
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1497",
+  "sample_id": "PHL1800_IRFL_0027",
+  "file_name": "PHL1800_IRFL_0027.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young girl holding a medal",
+  "captions": {
+    "scene": [
+      "An outdoor urban setting with a modern building featuring concrete panels and large windows in the background",
+      "A shallow depth of field blurs the background, emphasizing the foreground subject",
+      "Natural daylight illuminates the scene, casting soft shadows on the subject’s face and clothing"
+    ],
+    "action": [
+      "The girl holds a circular medal with one hand, positioning it near her chest and slightly angled toward the camera",
+      "Her mouth is open in a smile showing upper teeth, and her eyes are directed toward the camera",
+      "She wears an orange top with visible blue and red ribbon straps around her neck, suggesting the medal is worn"
+    ],
+    "rationale": [
+      "The medal’s design includes a stylized running figure, indicating possible athletic achievement; however, no event name or date is legible",
+      "The ribbon colors (blue, red, yellow/orange) resemble national flag combinations, but no flag is visible to confirm affiliation",
+      "The girl’s hair is light-colored and partially tied back, with strands loose near her face—consistent with casual or post-activity appearance, but activity type is not directly observable"
+    ],
+    "object": [
+      "The medal is circular, metallic with a bronze-like finish, and features a raised silhouette of a runner mid-stride on a track.",
+      "The medal hangs from a multi-colored ribbon composed of horizontal bands: blue at the top, red in the middle, and yellow/orange at the bottom.",
+      "The girl has fair skin, light brown or blonde hair pulled into a low ponytail with loose strands framing her face.",
+      "She wears an orange short-sleeved garment with a visible collar edge and a small dark tag or seam detail near the neckline.",
+      "The background building has rectangular concrete panels, vertical white window frames, and a blue-and-white sign fragment above the left shoulder, though text is unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1497_P1",
+      "visual_anchors": [
+        "runner silhouette on medal",
+        "girl’s direct gaze",
+        "multi-colored ribbon"
+      ],
+      "symbolic_mapping": [
+        "the runner symbolizes effort and progression",
+        "the gaze suggests acknowledgment of recognition"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where individual effort (embodied by the runner) becomes socially validated through external recognition (the medal and gaze), reflecting how personal journeys gain meaning through communal witness.",
+      "alternative_interpretations": [
+        "It may simply document a routine school sports day award without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No textual context confirms the medal’s origin, purpose, or cultural significance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1497_P2",
+      "visual_anchors": [
+        "smile with visible teeth",
+        "unblinking eye contact",
+        "slight head tilt"
+      ],
+      "symbolic_mapping": [
+        "the smile conveys immediate affective response",
+        "eye contact establishes presence and agency"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The subject’s presentation—facial expression, posture, and display of the medal—constructs a temporary public identity shaped by achievement, illustrating how appearance mediates social recognition and self-perception.",
+      "alternative_interpretations": [
+        "The expression could be a posed reaction to the photographer rather than an authentic emotional state."
+      ],
+      "limitations": [
+        "Facial expressions cannot be definitively linked to internal states; only outward behavior is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1497_P3",
+      "visual_anchors": [
+        "bronze-toned medal surface",
+        "worn ribbon with color bands",
+        "out-of-focus architectural background"
+      ],
+      "symbolic_mapping": [
+        "materiality of the medal signifies durability of accomplishment",
+        "background anonymity contrasts with foreground specificity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The tangible medal endures beyond the fleeting moment of performance, suggesting how human achievements are preserved as artifacts against temporal erosion, while truth of the event resides in the witnessed object rather than narrative.",
+      "alternative_interpretations": [
+        "The medal may be a participation token with no enduring significance beyond the event."
+      ],
+      "limitations": [
+        "The medal’s material composition and inscription details are not resolvable; its value is inferred from form alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:44:45.488767+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1db34b6b-843a-93fe-bcb3-4c2504b571e8",
+      "usage": {
+        "prompt_tokens": 740,
+        "completion_tokens": 980,
+        "total_tokens": 1720,
+        "completion_tokens_details": {
+          "text_tokens": 980
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 233,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070144316efe6c0c6db74500",
+      "usage": {
+        "completion_tokens": 839,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1848,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2687
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

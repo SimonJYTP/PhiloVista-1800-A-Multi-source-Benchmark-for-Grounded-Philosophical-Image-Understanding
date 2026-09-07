@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0078",
+  "sample_id": "PHL1800_IRFL_0304",
+  "file_name": "PHL1800_IRFL_0304.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single red tulip surrounded by numerous yellow tulips",
+  "captions": {
+    "scene": [
+      "A dense field of blooming tulips under bright daylight, with green stems and leaves visible beneath the flowers.",
+      "The composition is dominated by yellow tulips in various stages of bloom, tightly packed across the frame.",
+      "One red tulip stands out centrally-right in the midground, contrasting sharply with the surrounding yellow blooms."
+    ],
+    "action": [
+      "Tulips are stationary, fully open or partially closed, indicating a static floral display at peak bloom.",
+      "Stems hold upright flower heads; no motion blur or wind distortion is visible.",
+      "Light casts soft shadows between adjacent blooms, suggesting direct illumination from above or slightly to one side."
+    ],
+    "rationale": [
+      "The red tulip’s distinct hue suggests intentional cultivation or natural mutation rather than accidental coloration, though no labeling confirms this.",
+      "The uniform orientation and density imply a managed garden setting rather than wild growth, but no borders, paths, or structures confirm this.",
+      "All visible tulips appear healthy and undamaged, yet no evidence rules out recent human intervention such as pruning or watering."
+    ],
+    "object": [
+      "There are approximately 80–100 visible tulip blooms, predominantly yellow with one red bloom clearly identifiable in the midground.",
+      "Each tulip has six petal-like segments forming a cup shape, with greenish-yellow bases on many yellow flowers.",
+      "Stems are slender, green, and vertically oriented, supporting individual flower heads without branching.",
+      "Leaves are long, narrow, lanceolate, and dark green, emerging from lower portions of stems and interspersed among blooms.",
+      "The red tulip exhibits saturated crimson-red petals with no visible blemishes, positioned slightly higher than neighboring yellow tulips."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0078_P1",
+      "visual_anchors": [
+        "single red tulip",
+        "uniform yellow field",
+        "tight spatial proximity"
+      ],
+      "symbolic_mapping": [
+        "red tulip → individuality within conformity",
+        "yellow field → collective norm"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The red tulip visually embodies the tension between singular identity and social assimilation, where visibility arises not from separation but from contrast within proximity.",
+      "alternative_interpretations": [
+        "It may simply reflect horticultural variety—e.g., a different cultivar planted intentionally for aesthetic effect—without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels, signage, or contextual markers confirm intentional symbolism; color variation could be genetic or environmental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0078_P2",
+      "visual_anchors": [
+        "dense arrangement of blooms",
+        "lack of visible soil or background",
+        "uniform lighting"
+      ],
+      "symbolic_mapping": [
+        "repetition of form → cyclical time",
+        "singular red bloom → momentary rupture in continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The field evokes temporal continuity through repetition, while the red tulip marks a punctuated deviation—a visual metaphor for a decisive moment interrupting routine progression.",
+      "alternative_interpretations": [
+        "The image may be a cropped section of a larger planting, where density results from spacing requirements rather than symbolic design."
+      ],
+      "limitations": [
+        "No visible decay, wilting, or seasonal indicators (e.g., fallen petals) support a mortality reading; all blooms appear fresh."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0078_P3",
+      "visual_anchors": [
+        "no human figures",
+        "no tools or infrastructure",
+        "naturalistic floral arrangement"
+      ],
+      "symbolic_mapping": [
+        "absence of agency → passive existence",
+        "color contrast → inherent difference without action"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The red tulip exists without exertion or choice—it is simply *there*, highlighting how difference can emerge without volition, raising questions about responsibility for visibility in constrained systems.",
+      "alternative_interpretations": [
+        "The scene is purely botanical; any attribution of agency or ethics projects human frameworks onto non-sentient objects."
+      ],
+      "limitations": [
+        "Flowers lack nervous systems or behavioral cues; assigning ethical weight requires external interpretation beyond visual data."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:56:55.635792+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2d7776f0-1b77-9ecd-aa33-316792491b8e",
+      "usage": {
+        "prompt_tokens": 959,
+        "completion_tokens": 972,
+        "total_tokens": 1931,
+        "completion_tokens_details": {
+          "text_tokens": 972
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 452,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015641a8966a8cf86944ca",
+      "usage": {
+        "completion_tokens": 830,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2132,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2962
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

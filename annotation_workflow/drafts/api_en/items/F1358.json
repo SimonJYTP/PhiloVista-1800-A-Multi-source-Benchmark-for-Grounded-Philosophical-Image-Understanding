@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1358",
+  "sample_id": "PHL1800_HAIV_0070",
+  "file_name": "PHL1800_HAIV_0070.png",
+  "batch_id": "B028",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure",
+  "captions": {
+    "scene": [
+      "A dark blue background with a large black-and-white analog clock at the top center, above a yellow ground plane.",
+      "Yellow and green paper currency notes and gold-colored rectangular blocks are scattered in mid-air and on the ground.",
+      "The figure stands inside a red bucket-like container on the yellow surface, surrounded by stacks of yellow bars and dollar-sign symbols."
+    ],
+    "action": [
+      "The figure raises its right arm upward toward falling money and blocks.",
+      "The figure’s left leg is lifted and bent backward, suggesting motion or imbalance.",
+      "The figure is positioned inside a red container that appears to be open at the top and has a handle-like curve on its side."
+    ],
+    "rationale": [
+      "The clock’s hands indicate a time near 10:10, but no explicit temporal narrative is depicted; timing may be symbolic rather than literal.",
+      "The figure’s posture suggests reaching or striving, yet no facial expression or intent can be confirmed due to silhouette rendering.",
+      "Currency notes contain illegible markings; some show faint colored patterns but no readable text or denomination."
+    ],
+    "object": [
+      "A black silhouette of a human figure wearing a green long-sleeved top and black pants, standing inside a red cylindrical container with a black rim and curved handle.",
+      "An analog wall clock with a white face, black numerals (partially visible), black hour and minute hands, and a black casing, positioned above the scene.",
+      "Multiple green and yellow banknote-shaped objects with circular or rectangular green patches, some showing indistinct printed patterns.",
+      "Several yellow rectangular blocks, some stacked in pairs with a blue horizontal stripe across the middle, suspended in air or resting on the ground.",
+      "Two large yellow dollar-sign symbols ($) embedded in the yellow ground plane, one on the left and one on the lower right."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1358_P1",
+      "visual_anchors": [
+        "clock at top",
+        "figure reaching upward",
+        "falling money"
+      ],
+      "symbolic_mapping": [
+        "clock → finite time",
+        "reaching hand → aspiration"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The image visualizes the tension between limited time and the pursuit of material gain, framing aspiration as an act occurring under temporal constraint.",
+      "alternative_interpretations": [
+        "It may depict a literal lottery or windfall event without philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels confirm symbolic intent; color and shape choices could be purely aesthetic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1358_P2",
+      "visual_anchors": [
+        "figure inside red bucket",
+        "surrounding stacks of yellow bars",
+        "dollar signs"
+      ],
+      "symbolic_mapping": [
+        "bucket → containment or limitation",
+        "stacks → accumulation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The figure’s confinement within a container amid wealth suggests a paradox where abundance coexists with structural restriction, possibly critiquing economic systems that bind individuals despite apparent opportunity.",
+      "alternative_interpretations": [
+        "The bucket may simply be a platform for elevation, not confinement."
+      ],
+      "limitations": [
+        "The bucket’s function is ambiguous—it lacks doors, lids, or restraints; its interpretation as confinement relies on contextual inference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1358_P3",
+      "visual_anchors": [
+        "silhouette figure",
+        "uniform green top",
+        "no distinguishing features"
+      ],
+      "symbolic_mapping": [
+        "silhouette → anonymity",
+        "uniform color → generic identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The depersonalized figure amid economic symbols reflects how social roles—particularly those tied to labor or consumption—are often represented abstractly, erasing individuality in favor of functional archetypes.",
+      "alternative_interpretations": [
+        "The style is minimalist illustration convention, not intentional anonymization."
+      ],
+      "limitations": [
+        "Stylization alone does not prove intent to represent social abstraction; many illustrations use silhouettes for clarity or simplicity."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:23:31.015756+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d9168994-4830-96e8-acbf-7b8ed172d6be",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 935,
+        "total_tokens": 2468,
+        "completion_tokens_details": {
+          "text_tokens": 935
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704231936d9070ee4fb474f",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2888,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3683
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1465",
+  "sample_id": "PHL1800_HL_0399",
+  "file_name": "PHL1800_HL_0399.png",
+  "batch_id": "B030",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "pedestrians crossing a zebra crossing in an urban commercial street",
+  "captions": {
+    "scene": [
+      "A busy street intersection with multi-story commercial buildings, signage in Japanese, overhead train tracks, and traffic signals.",
+      "A curved digital billboard displays indistinct imagery above storefronts including 'コクミンドラッグ' (Kokumin Drug) and other retail signs.",
+      "An elevated railway structure runs parallel to the street; a blue-and-white train is visible on the upper right track."
+    ],
+    "action": [
+      "At least 15 pedestrians are mid-crossing on a wide zebra crossing; most walk forward, one man in a light shirt and tie walks toward the camera.",
+      "A man in a dark suit walks diagonally across the crossing carrying a black briefcase.",
+      "Several individuals carry shopping bags or backpacks; one person wears a white cap and holds a white bag."
+    ],
+    "rationale": [
+      "The presence of multiple Japanese-language signs and a train elevated above the street suggests a dense urban setting in Japan, though no explicit location markers confirm this.",
+      "The pedestrian flow direction and spacing indicate regulated crossing behavior, likely synchronized with traffic light phases, but the current signal state for pedestrians is not fully visible.",
+      "The variety of attire—business suits, casual wear, backpacks—implies mixed purposes (commuting, shopping, transit), yet individual intent cannot be determined from appearance alone."
+    ],
+    "object": [
+      "A white-striped zebra crossing occupies the foreground, spanning the full width of the road surface.",
+      "A red circular 'no entry' sign with white horizontal bar is mounted on a pole near the right sidewalk, partially obscured by a pedestrian.",
+      "A green pedestrian signal light is illuminated on a vertical pole at left edge of crossing.",
+      "A large curved digital screen displays a blurred image of people and vehicles above a storefront awning.",
+      "Overhead electrical wires and metal support structures for the railway run across the upper portion of the frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1465_P1",
+      "visual_anchors": [
+        "zebra crossing stripes",
+        "multiple pedestrians moving in parallel",
+        "overhead train tracks"
+      ],
+      "symbolic_mapping": [
+        "stripes as imposed order on movement",
+        "parallel paths as coexistence under shared infrastructure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The crossing enacts a negotiated public rhythm: individuals move autonomously yet within fixed spatial rules, embodying social existence as both enabled and constrained by shared infrastructure.",
+      "alternative_interpretations": [
+        "It is simply a functional traffic control measure with no symbolic weight."
+      ],
+      "limitations": [
+        "No facial expressions or directional intent are discernible; thus agency and awareness remain unverified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1465_P2",
+      "visual_anchors": [
+        "man in light shirt and tie walking toward camera",
+        "digital billboard showing indistinct imagery",
+        "crowd of diverse pedestrians"
+      ],
+      "symbolic_mapping": [
+        "forward-facing figure as focal point amid anonymity",
+        "billboard imagery mirroring real crowd"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The central figure’s clarity contrasts with the blurred billboard and surrounding crowd, suggesting identity as momentarily stabilized against flux—yet truth remains mediated through layered visual surfaces.",
+      "alternative_interpretations": [
+        "The man is merely positioned centrally due to perspective; no intentional contrast exists."
+      ],
+      "limitations": [
+        "The billboard content is unreadable and low-resolution; its relation to the scene is speculative."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1465_P3",
+      "visual_anchors": [
+        "elevated train",
+        "pedestrians below",
+        "commercial signage overhead"
+      ],
+      "symbolic_mapping": [
+        "vertical stratification of transport, commerce, and daily life",
+        "layered temporalities (train speed vs. walking pace)"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The stacked layers—railway above, walking humans below, signs advertising consumption—materialize time as differential velocity: technology accelerates while embodied labor proceeds at biological pace, evoking mortality through contrast in scale and tempo.",
+      "alternative_interpretations": [
+        "This is a standard urban layout with no intended temporal commentary."
+      ],
+      "limitations": [
+        "No clocks, aging indicators, or explicit labor activity are visible; tempo inference relies on assumed norms."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (at least 14 vs. actual ~15-20 visible); inaccurate object details (red circular 'stop' sign is actually a red circular 'no entry' sign with white horizontal bar); missing visual anchors for philosophy interpretations (e.g., 'man in suit walking toward camera' is not a central figure, 'digital billboard showing indistinct figures' is a curved screen with unclear content)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:36:02.701859+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6e2242c5-c311-9b8e-93ca-405aa63be9a2",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 996,
+        "total_tokens": 1765,
+        "completion_tokens_details": {
+          "text_tokens": 996
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043541a8ff14130a3346fb",
+      "usage": {
+        "completion_tokens": 942,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1925,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2867
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

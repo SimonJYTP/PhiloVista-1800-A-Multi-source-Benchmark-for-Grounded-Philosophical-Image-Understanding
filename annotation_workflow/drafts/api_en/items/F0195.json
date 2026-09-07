@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0195",
+  "sample_id": "PHL1800_HAIV_0056",
+  "file_name": "PHL1800_HAIV_0056.png",
+  "batch_id": "B006",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person with long dark hair, wearing a light-colored top, positioned behind vertical black bars",
+  "captions": {
+    "scene": [
+      "A reddish-brown brick wall with five rectangular windows emitting pale greenish-yellow light",
+      "Black vertical bars intersecting the scene, some bent or distorted, forming a cage-like foreground",
+      "A teal-colored metal latch or hinge attached to one of the bars on the upper right"
+    ],
+    "action": [
+      "The person stands still, facing forward, with head upright and eyes open",
+      "The bars partially obscure the person’s face and torso, creating visual fragmentation",
+      "One bar crosses diagonally over the person’s left shoulder and neck area"
+    ],
+    "rationale": [
+      "The presence of bars and a brick wall suggests confinement or separation, though no door or lock is visible",
+      "The person’s posture appears neutral; no facial expression can be definitively read due to stylization and occlusion",
+      "The lighting from windows is uniform and diffuse, indicating interior illumination rather than direct sunlight"
+    ],
+    "object": [
+      "The person has long, straight dark hair parted near the center, extending past the shoulders.",
+      "The person wears a white or off-white long-sleeved top with a simple round neckline and subtle shading suggesting folds.",
+      "Five windows are visible: two on the left column, two on the right column, and one centered above the person’s head; all have dark frames and emit similar luminance.",
+      "Vertical black bars dominate the foreground; at least seven full-length bars are visible, with additional diagonal and curved segments intersecting them.",
+      "A metallic-looking latch with a looped end is affixed to a horizontal bar segment near the upper-right window; its surface shows highlights suggesting reflective material."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0195_P1",
+      "visual_anchors": [
+        "vertical black bars",
+        "brick wall",
+        "person centered behind bars"
+      ],
+      "symbolic_mapping": [
+        "bars → physical constraint",
+        "brick wall → institutional or structural boundary"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually articulates the tension between embodied presence and imposed limitation, where the subject remains visible yet partitioned by rigid structures.",
+      "alternative_interpretations": [
+        "The bars may represent architectural elements of a balcony or fire escape rather than confinement, especially given the open window panes and lack of locking mechanism."
+      ],
+      "limitations": [
+        "No door, lock, or signage confirms intent of imprisonment; bars could be decorative or functional safety features."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0195_P2",
+      "visual_anchors": [
+        "person’s neutral gaze",
+        "symmetrical framing",
+        "uniform window lighting"
+      ],
+      "symbolic_mapping": [
+        "steady gaze → observation or witness",
+        "symmetry → balance amid disruption"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The figure’s centered placement and direct orientation suggest a claim to visibility within a structured social environment, where architecture mediates relational positioning.",
+      "alternative_interpretations": [
+        "The composition may reflect an artistic choice for visual rhythm rather than sociological commentary; symmetry could be purely aesthetic."
+      ],
+      "limitations": [
+        "Facial features are stylized and lack micro-expressions; gaze direction cannot confirm engagement with viewer or environment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0195_P3",
+      "visual_anchors": [
+        "bent bar segment",
+        "latch detail",
+        "uneven bar spacing"
+      ],
+      "symbolic_mapping": [
+        "distorted bar → fragility of imposed order",
+        "latch → potential for release or control"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The irregularity of the bars—especially the bent segment and isolated latch—implies instability in systems of control, hinting at latent agency or resistance within constraint.",
+      "alternative_interpretations": [
+        "Bar distortions may result from perspective, artistic distortion, or wear-and-tear without symbolic intent."
+      ],
+      "limitations": [
+        "No motion, interaction, or context confirms intentional subversion; the latch is not shown engaged or disengaged."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:16:21.373912+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fa9ab9d7-73c1-963c-ba58-e9cd6d937500",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 922,
+        "total_tokens": 2455,
+        "completion_tokens_details": {
+          "text_tokens": 922
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021557fdaf58a043784dd4",
+      "usage": {
+        "completion_tokens": 784,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2880,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3664
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

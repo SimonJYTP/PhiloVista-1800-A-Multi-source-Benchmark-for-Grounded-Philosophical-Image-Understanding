@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1415",
+  "sample_id": "PHL1800_IRFL_0225",
+  "file_name": "PHL1800_IRFL_0225.jpg",
+  "batch_id": "B029",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a diverse group of approximately 20 adults in professional and casual attire, including medical personnel",
+  "captions": {
+    "scene": [
+      "A tightly packed group portrait with multiple rows of people against a neutral light background.",
+      "Front-row individuals include three women in scrubs or clinical coats and one man in a suit with a stethoscope.",
+      "Mid- and back-row figures wear varied clothing: construction vest, hard hat, business suits, casual shirts, and nursing uniforms."
+    ],
+    "action": [
+      "All visible individuals are standing still and facing the camera with neutral to smiling facial expressions.",
+      "One woman in blue cardigan holds a tablet; another in yellow top holds a clipboard; a man behind the central woman holds a rolled document.",
+      "Multiple individuals wear stethoscopes around their necks or over shoulders, indicating clinical roles."
+    ],
+    "rationale": [
+      "The presence of scrubs, stethoscopes, and a construction vest suggests occupational diversity, though specific roles cannot be confirmed without text.",
+      "The uniform forward gaze and posed stance indicate a staged group photograph rather than candid activity.",
+      "Facial expressions appear positive but cannot be reliably interpreted as genuine emotion due to photographic context."
+    ],
+    "object": [
+      "A woman in green scrubs and matching cap stands centrally in the front row, hands clasped, smiling directly at the camera.",
+      "A man in a dark suit, striped tie, and white shirt stands behind her, wearing a stethoscope and holding a rolled document.",
+      "A woman on the far right wears a white lab coat over a blue top, with a stethoscope draped around her neck and hands clasped in front.",
+      "A woman in a blue cardigan over a white blouse holds a tablet horizontally in both hands.",
+      "A person in an orange high-visibility vest and white hard hat is visible in the second row, left side, partially obscured."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1415_P1",
+      "visual_anchors": [
+        "stethoscopes on multiple individuals",
+        "green and blue scrubs",
+        "clipped clipboard held by woman in yellow"
+      ],
+      "symbolic_mapping": [
+        "stethoscopes → embodied care responsibility",
+        "scrubs → role-based identity markers"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "identity_appearance"
+      ],
+      "interpretation": "The repeated visual motif of clinical tools and attire suggests a collective enactment of ethical duty through visible professional identity.",
+      "alternative_interpretations": [
+        "These are simply occupational costumes for a stock photograph, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "No textual labels confirm professions; attire alone does not prove actual roles or responsibilities."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1415_P2",
+      "visual_anchors": [
+        "crowded multi-row composition",
+        "varied age and ethnicity",
+        "uniform frontal orientation"
+      ],
+      "symbolic_mapping": [
+        "density of bodies → social interdependence",
+        "shared gaze direction → collective attention"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The tightly arranged, heterogeneous group facing a common point evokes the philosophical notion that individual existence is constituted through shared social positioning and mutual recognition.",
+      "alternative_interpretations": [
+        "This is a standard group photo setup optimized for visual balance and inclusivity marketing."
+      ],
+      "limitations": [
+        "The arrangement appears deliberately staged; natural social dynamics are not observable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1415_P3",
+      "visual_anchors": [
+        "woman holding tablet",
+        "man holding rolled document",
+        "clipboard in hand"
+      ],
+      "symbolic_mapping": [
+        "digital tablet → mediation of knowledge",
+        "paper documents → traditional record-keeping"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The coexistence of digital and analog information tools within the same frame reflects a transitional epistemic landscape where truth claims are negotiated across technological modalities.",
+      "alternative_interpretations": [
+        "These objects are generic props chosen to suggest professionalism without implying specific workflows."
+      ],
+      "limitations": [
+        "Screen content on the tablet is unreadable; paper text is illegible; tool function is unverified."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (22 vs actual ~20); some object descriptions lack precision (e.g., 'silver tablet' should be 'tablet' as color is not clearly visible); 'man in center holds papers' is inaccurate (the man behind the central woman holds a rolled document, not loose papers)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:29:50.070738+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-13f9ffe9-ef53-9b02-a124-46682dbeddd8",
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 931,
+        "total_tokens": 1865,
+        "completion_tokens_details": {
+          "text_tokens": 931
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 427,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070429320070efd23d69440d",
+      "usage": {
+        "completion_tokens": 858,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2066,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2924
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

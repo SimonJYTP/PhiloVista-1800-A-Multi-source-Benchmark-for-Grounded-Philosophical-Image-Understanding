@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0915",
+  "sample_id": "PHL1800_MM_0077",
+  "file_name": "PHL1800_MM_0077.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two children in a kitchen",
+  "captions": {
+    "scene": [
+      "A brightly lit kitchen with wooden cabinets, a double sink under a multi-pane window, and tiled flooring.",
+      "Natural light enters through the window, illuminating yellow bowls on the counter and green plants on a shelf and windowsill.",
+      "Two straw brooms lie on the floor near the children; one is upright in the girl’s hand, the other lies horizontally."
+    ],
+    "action": [
+      "A girl with brown hair in a ponytail stands facing a boy, extending her right hand toward him while holding a broom in her left hand.",
+      "The boy, viewed from behind, faces the girl and stands still with his hands at his sides.",
+      "A speech bubble above the girl contains legible text: 'I can't take the allowance; he did the work.'"
+    ],
+    "rationale": [
+      "The girl’s outstretched hand and posture suggest an offer or refusal gesture, consistent with the speech bubble’s content.",
+      "The presence of two brooms and the girl holding one implies recent or ongoing cleaning activity, supporting the claim about 'the work'.",
+      "The boy’s orientation toward the girl and lack of visible tools or motion indicate he is the recipient of the statement, though his role in the work is not visually confirmed."
+    ],
+    "object": [
+      "The girl wears a red plaid long-sleeve shirt, blue striped shorts, red socks, and gray sneakers with red laces.",
+      "The boy wears a solid blue long-sleeve collared shirt and dark trousers with a visible back pocket button.",
+      "A white dishwasher is installed beneath the counter between two cabinet sections.",
+      "Three yellow ceramic bowls are stacked on the countertop to the left of the sink.",
+      "A potted green herb plant sits on a wooden shelf above the left side of the sink."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0915_P1",
+      "visual_anchors": [
+        "girl’s outstretched hand",
+        "speech bubble text",
+        "broom in girl’s hand"
+      ],
+      "symbolic_mapping": [
+        "outstretched hand → gesture of moral refusal",
+        "broom → symbol of labor performed"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image visualizes a moment where recognition of labor is tied to ethical distribution—refusing reward when another performed the task reflects internalized fairness.",
+      "alternative_interpretations": [
+        "The girl may be negotiating or deflecting responsibility rather than expressing principled ethics."
+      ],
+      "limitations": [
+        "The boy’s expression and body language are unseen, so intent and reception remain ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0915_P2",
+      "visual_anchors": [
+        "two brooms on floor",
+        "sunlit window",
+        "children’s clothing"
+      ],
+      "symbolic_mapping": [
+        "dual brooms → shared or contested labor",
+        "sunlight through window → temporal framing of domestic routine"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "Manual cleaning tools (brooms) juxtaposed with modern kitchen appliances highlight continuity of embodied labor despite technological advancement in domestic spaces.",
+      "alternative_interpretations": [
+        "The brooms may simply be props for a staged scene with no commentary on labor systems."
+      ],
+      "limitations": [
+        "No appliances are actively in use; the brooms’ placement could be decorative or incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0915_P3",
+      "visual_anchors": [
+        "girl’s direct gaze toward boy",
+        "boy’s back turned",
+        "speech bubble positioned above girl"
+      ],
+      "symbolic_mapping": [
+        "gaze direction → assertion of agency",
+        "back view → passive reception or withheld response"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The asymmetry in visibility—girl seen frontally, boy only from behind—mirrors social dynamics where moral claims are voiced by those visibly present, while others remain partially obscured in relational exchange.",
+      "alternative_interpretations": [
+        "The composition follows standard narrative illustration conventions, not intentional social commentary."
+      ],
+      "limitations": [
+        "Camera angle alone determines visibility; no evidence confirms intentional symbolic framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:27:42.478236+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-62879d2b-20bb-90d9-943f-56dbba4804d3",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 935,
+        "total_tokens": 2468,
+        "completion_tokens_details": {
+          "text_tokens": 935
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703272036a1f1a98a594df9",
+      "usage": {
+        "completion_tokens": 797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2887,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3684
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1182",
+  "sample_id": "PHL1800_IRFL_0370",
+  "file_name": "PHL1800_IRFL_0370.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large stone castle complex on a forested hill",
+  "captions": {
+    "scene": [
+      "A multi-towered stone castle with dark slate roofs sits atop a steep, densely wooded hill under an overcast sky.",
+      "Rolling green fields and scattered trees extend into the distance beyond the hill, with a body of water visible in the far background.",
+      "The castle features numerous arched windows, crenellated parapets, and at least four prominent towers of varying height and design."
+    ],
+    "action": [
+      "The castle stands static, fully constructed, with no visible motion or activity occurring on its surfaces or grounds.",
+      "Vegetation grows thickly around the base and along the slopes of the hill supporting the structure.",
+      "Clouds are present in the sky but show no discernible movement; lighting is diffuse and even."
+    ],
+    "rationale": [
+      "The uniformity of window spacing and symmetry of facades suggests intentional architectural planning rather than organic growth.",
+      "The absence of smoke, flags, or human figures implies no active use or occupation is visibly occurring at the moment captured.",
+      "The presence of weathering on stonework and moss on lower walls indicates prolonged exposure to the elements, though exact age cannot be determined."
+    ],
+    "object": [
+      "The central building has a rectangular main block with two tall conical-roofed towers flanking its front facade and a third taller spired tower rising behind it.",
+      "A separate cylindrical tower with a conical roof and narrow vertical slits stands isolated to the right of the main complex, connected by a low wall.",
+      "Multiple smaller turrets with pointed roofs are integrated along the perimeter walls, some featuring decorative finials.",
+      "The hillside beneath the castle is covered in dense deciduous trees with green foliage, partially obscuring the foundation and lower walls.",
+      "A watermark reading 'RK Photography' appears in red and white text at the bottom center of the image, partially overlaid on the trees."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1182_P1",
+      "visual_anchors": [
+        "tall central spire",
+        "symmetrical window rows",
+        "uniform stone masonry"
+      ],
+      "symbolic_mapping": [
+        "the spire points upward toward sky, suggesting aspiration",
+        "repetition of windows implies order and control"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "knowledge_truth"
+      ],
+      "interpretation": "The castle’s vertical dominance and geometric regularity visually encode authority and rational design, implying a worldview where power is legitimized through structural coherence and elevated perspective.",
+      "alternative_interpretations": [
+        "It may simply reflect available construction techniques and defensive requirements of its era, with no symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions, heraldry, or contextual signage confirm intended symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1182_P2",
+      "visual_anchors": [
+        "weathered stone surfaces",
+        "moss-covered lower walls",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "erosion marks time’s passage on enduring forms"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The contrast between the castle’s imposing permanence and visible decay suggests a meditation on endurance versus entropy—monuments persist yet yield gradually to natural forces.",
+      "alternative_interpretations": [
+        "The discoloration may result from recent rain or local humidity, not long-term aging."
+      ],
+      "limitations": [
+        "No clear evidence of historical layering or repair history is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1182_P3",
+      "visual_anchors": [
+        "dense surrounding forest",
+        "isolated hilltop placement",
+        "no visible access roads or gates in frame"
+      ],
+      "symbolic_mapping": [
+        "separation from landscape implies withdrawal or exclusivity"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The castle’s physical separation from the open terrain below evokes tension between autonomy and isolation—its elevation grants oversight but also enforces detachment from communal life.",
+      "alternative_interpretations": [
+        "Topography dictated placement for defense; accessibility may exist outside the frame."
+      ],
+      "limitations": [
+        "The image crops the base of the hill, so ground-level connections are unseen."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:03:38.685260+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-de79549c-fadf-9ec3-a555-a2217f9fffe4",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 942,
+        "total_tokens": 1851,
+        "completion_tokens_details": {
+          "text_tokens": 942
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 402,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040322065b7013e0f44b44",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2050,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2857
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

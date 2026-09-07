@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0763",
+  "sample_id": "PHL1800_IRFL_0043",
+  "file_name": "PHL1800_IRFL_0043.jpg",
+  "batch_id": "B017",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure",
+  "captions": {
+    "scene": [
+      "A gray background with a central figure surrounded by five thought clouds containing colored arrows and scattered question marks.",
+      "The figure stands on a speckled gray ground surface, with small particles visible at the base of its feet.",
+      "Five white cloud-shaped thought bubbles float around the figure’s head, each containing a solid-colored arrow pointing in a different direction."
+    ],
+    "action": [
+      "The figure holds its right index finger to its temple while its left hand grips its right forearm, forming a loop around its upper body.",
+      "The figure’s head is tilted slightly upward and to the right, with dark hair depicted as a spiky shape.",
+      "Multiple gray question mark symbols are dispersed among the thought clouds and near the figure’s head."
+    ],
+    "rationale": [
+      "The presence of multiple directional arrows in thought clouds suggests consideration of divergent options, though no explicit decision is shown.",
+      "The posture—hand to temple and arms crossed in a loop—indicates cognitive engagement, but the exact mental state (e.g., confusion vs. deliberation) is not visually specified.",
+      "Question marks appear near the figure but are not attached to any specific thought cloud, leaving their referent ambiguous."
+    ],
+    "object": [
+      "The figure wears a white short-sleeved shirt, dark blue pants, and white shoes with red soles and black laces.",
+      "Five thought clouds contain: a blue upward arrow (lower left), a purple right-upward arrow (upper left), a yellow downward arrow (top center), a green rightward arrow (upper right), and a red leftward arrow (lower right).",
+      "The figure’s right hand has four visible fingers and a thumb, with the index finger extended toward the temple; the left hand grasps the right forearm.",
+      "Gray question marks appear in at least four locations: two near the left-side thought clouds, one near the top-center cloud, and one near the right-side clouds.",
+      "The figure’s legs are straight and parallel, standing on a textured gray surface that appears granular or dusty."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0763_P1",
+      "visual_anchors": [
+        "five colored arrows in thought clouds",
+        "scattered question marks",
+        "figure’s hand-to-temple gesture"
+      ],
+      "symbolic_mapping": [
+        "arrows → possible paths",
+        "question marks → uncertainty"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The image visualizes the existential condition of being confronted with multiple mutually exclusive directions, where cognition (hand-to-temple) mediates between uncertainty (question marks) and potential action (arrows).",
+      "alternative_interpretations": [
+        "It may simply depict a person overwhelmed by too many options in a routine decision-making scenario, without philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or narrative context confirm abstract meaning; arrows lack semantic content beyond direction and color."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0763_P2",
+      "visual_anchors": [
+        "figure’s arms forming a closed loop around torso",
+        "static stance on granular ground",
+        "absence of external agents"
+      ],
+      "symbolic_mapping": [
+        "closed arm loop → self-containment",
+        "granular ground → instability or transition"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s self-enfolding posture amid external stimuli suggests an internal negotiation of self-definition under pressure of external possibilities, emphasizing appearance as constructed through deliberation.",
+      "alternative_interpretations": [
+        "The loop may represent physical discomfort or fatigue rather than symbolic self-referentiality."
+      ],
+      "limitations": [
+        "The arm configuration could be ergonomic rather than intentional symbolism; no facial expression confirms introspection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0763_P3",
+      "visual_anchors": [
+        "multiple divergent arrows",
+        "no arrow selected or highlighted",
+        "equal visual weight given to all directions"
+      ],
+      "symbolic_mapping": [
+        "equal arrow prominence → parity of options",
+        "lack of resolution → suspended agency"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image illustrates freedom as burden: the subject possesses full optionality (five distinct paths) yet remains immobilized, revealing constraint not from external force but from the weight of unbounded choice.",
+      "alternative_interpretations": [
+        "The figure may be pausing momentarily before choosing, with no implication of paralysis."
+      ],
+      "limitations": [
+        "Temporal progression is absent; stillness does not prove inability to act."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:14:36.539364+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5cb81214-e26f-9442-8d7a-27c4a10ca373",
+      "usage": {
+        "prompt_tokens": 2549,
+        "completion_tokens": 1016,
+        "total_tokens": 3565,
+        "completion_tokens_details": {
+          "text_tokens": 1016
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2042,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031424b3f159fc6a4c4e3f",
+      "usage": {
+        "completion_tokens": 880,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4296,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5176
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

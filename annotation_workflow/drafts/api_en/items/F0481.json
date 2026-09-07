@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0481",
+  "sample_id": "PHL1800_HL_0458",
+  "file_name": "PHL1800_HL_0458.png",
+  "batch_id": "B012",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "workers assembling aircraft inside a large hangar",
+  "captions": {
+    "scene": [
+      "A high-ceilinged wooden-framed hangar with translucent roof panels and white-paneled walls, containing multiple aircraft under construction.",
+      "At least 15 individuals are distributed across the floor, engaged in various manual tasks around airframes, engines, and tools.",
+      "Two nearly complete biplanes dominate the right side; one has its engine exposed and cowling removed, the other is partially covered with fabric."
+    ],
+    "action": [
+      "A man on a ladder adjusts or inspects the upper wing of a biplane while another stands beside him holding a tool.",
+      "Two men at left work on a fuselage section mounted on a low platform, using hand tools and measuring devices.",
+      "A man in the foreground holds a long rod or lever horizontally, aiming it toward a component on a workbench."
+    ],
+    "rationale": [
+      "The presence of multiple incomplete aircraft with exposed frames, fabric coverings, and detached components indicates active assembly rather than storage or display.",
+      "Uniform-like attire (dark trousers, light shirts, some caps) and coordinated group positioning suggest organized labor, though no insignia or logos are legible.",
+      "The open roof structure with visible trusses and hanging fixtures implies an industrial workshop built for large-scale fabrication, not a museum or exhibition space."
+    ],
+    "object": [
+      "A biplane on the right features an inline engine with visible cylinders, a two-spar upper wing, and a tail skid instead of wheels.",
+      "A second biplane behind it shows a fabric-covered fuselage, interplane struts, and ailerons attached to the upper wing only.",
+      "A metal gantry crane hangs from the ceiling near center-left, with a hook and chain suspended above a work area.",
+      "Wooden sawhorses and metal workbenches hold disassembled parts including propeller hubs, wing ribs, and control cables.",
+      "Stacked wooden crates sit on the floor near the rear wall, adjacent to a cylindrical container."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0481_P1",
+      "visual_anchors": [
+        "multiple workers clustered around single airframe sections",
+        "shared tools and synchronized postures",
+        "absence of individual signage or branding"
+      ],
+      "symbolic_mapping": [
+        "collective labor as embodiment of social existence",
+        "standardized tasks reflecting institutional coordination"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The image visualizes labor as inherently relational—individuals are defined by their functional roles within a shared technical project, suggesting identity emerges through cooperative material production rather than solitary authorship.",
+      "alternative_interpretations": [
+        "This may simply reflect standard workshop practice of the era, with no deeper sociological intent."
+      ],
+      "limitations": [
+        "No facial expressions, names, or documentation confirm intentional symbolism; grouping could be logistical necessity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0481_P2",
+      "visual_anchors": [
+        "exposed wooden wing spars",
+        "hand-filing of metal fittings",
+        "ladder-based access to upper surfaces"
+      ],
+      "symbolic_mapping": [
+        "manual precision contrasting with machine scale",
+        "human scale embedded within structural framework"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of human hands against massive timber-and-wire airframes underscores technology as a path forged incrementally through embodied skill, where each adjustment represents a deliberate step in constructing flight.",
+      "alternative_interpretations": [
+        "These are routine manufacturing steps; the ‘journey’ metaphor imposes narrative not present in the static scene."
+      ],
+      "limitations": [
+        "No motion or sequence is captured; the image freezes a moment without indicating progression or decision points."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0481_P3",
+      "visual_anchors": [
+        "translucent roof allowing diffuse daylight",
+        "shadow patterns cast by trusses and wings",
+        "uniform lighting across workspace"
+      ],
+      "symbolic_mapping": [
+        "light as condition for visibility and thus knowledge",
+        "structural transparency enabling oversight"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The illuminated interior—where every component is visible under even light—suggests a regime of transparency where truth resides in observable detail, yet the rigid framing of beams and assigned stations simultaneously enforces spatial and procedural constraints on action.",
+      "alternative_interpretations": [
+        "The lighting is purely functional for daytime work; shadows are incidental, not symbolic."
+      ],
+      "limitations": [
+        "No evidence that lighting was deliberately arranged for epistemic purposes; roof design likely prioritized cost and ventilation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (at least 18 vs. actual ~15); misdescription of biplane engine (radial vs. inline); inaccurate object details (fuel tank vs. wooden crates); unsupported action claims (three men jointly working on a fuselage section); philosophy interpretations include speculative symbolic mappings not grounded in visual evidence."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:50:15.437016+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b8e971ee-b9a7-98aa-a66c-3984c0f2331b",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 1040,
+        "total_tokens": 1829,
+        "completion_tokens_details": {
+          "text_tokens": 1040
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024954aa48d3dd72304c2e",
+      "usage": {
+        "completion_tokens": 962,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1995,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2957
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1373",
+  "sample_id": "PHL1800_IRFL_0028",
+  "file_name": "PHL1800_IRFL_0028.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one young child with dark curly hair wearing white headphones and a white long-sleeve top",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor kitchen or home office setting with white brick wall, wooden countertop, and blurred background appliances.",
+      "A laptop sits open on a light wood table beside two notebooks, a pen, and a white cup.",
+      "Soft natural lighting illuminates the scene from the right, casting gentle shadows."
+    ],
+    "action": [
+      "The child holds a pen in the right hand and writes or draws in an open notebook.",
+      "The child’s gaze is directed downward toward the notebook, with head tilted slightly forward.",
+      "The child wears over-ear white headphones positioned on the head, covering both ears."
+    ],
+    "rationale": [
+      "The presence of a laptop, notebooks, and pen suggests engagement in a structured learning or writing activity, though the specific task is not confirmed.",
+      "The child’s posture and focused gaze indicate sustained attention to the notebook, but internal mental state cannot be verified.",
+      "The environment appears domestic and organized, yet no signage or labels confirm it is a school, home, or institution."
+    ],
+    "object": [
+      "A silver laptop with its screen illuminated is open on the table, angled toward the child; the screen content is indistinct and unreadable.",
+      "Two white-bound notebooks lie flat on the table: one open with visible lined pages, the other closed beside it.",
+      "A pen with a translucent barrel is held in the child’s right hand, tip contacting paper.",
+      "A white ceramic cup stands upright on the left side of the table, near the edge.",
+      "White over-ear headphones rest on the child’s head, with visible earcups and a thin headband."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1373_P1",
+      "visual_anchors": [
+        "open notebook",
+        "laptop screen",
+        "child’s downward gaze"
+      ],
+      "symbolic_mapping": [
+        "notebook as medium for externalizing thought",
+        "laptop as interface to mediated knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of handwritten note-taking and digital interface reflects a hybrid epistemic practice where truth is constructed through both embodied inscription and technologically mediated access.",
+      "alternative_interpretations": [
+        "The child is simply completing a homework assignment using standard tools without philosophical intent."
+      ],
+      "limitations": [
+        "No legible text or symbolic markings appear in the notebook or on screen to confirm intentional epistemic framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1373_P2",
+      "visual_anchors": [
+        "white headphones",
+        "child’s isolation at table",
+        "absence of others"
+      ],
+      "symbolic_mapping": [
+        "headphones as boundary device enabling selective attention"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The use of headphones in a shared domestic space illustrates how technological artifacts mediate personal autonomy—enabling focus while simultaneously imposing sensory constraints.",
+      "alternative_interpretations": [
+        "The headphones may be for audio instruction or entertainment, not necessarily for filtering environment."
+      ],
+      "limitations": [
+        "Headphone function (e.g., active noise cancellation, playback) is not visually verifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1373_P3",
+      "visual_anchors": [
+        "child’s hand holding pen",
+        "lined notebook",
+        "structured posture"
+      ],
+      "symbolic_mapping": [
+        "pen-and-paper as deliberate, irreversible act versus digital editability"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The act of writing by hand in a linear notebook embodies a non-reversible commitment to a path of thought, symbolizing a microcosm of life’s sequential decision-making under constraint.",
+      "alternative_interpretations": [
+        "The child may be tracing or copying, not generating original content, undermining the ‘commitment’ reading."
+      ],
+      "limitations": [
+        "The content being written is illegible; thus, intentionality of choice cannot be confirmed."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:43:40.331118+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d9acfcb5-3de7-92f4-b53e-654a5957f3e4",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 899,
+        "total_tokens": 1516,
+        "completion_tokens_details": {
+          "text_tokens": 899
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 110,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014331e939d7d612f84776",
+      "usage": {
+        "completion_tokens": 764,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1622,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2386
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F0308",
+  "sample_id": "PHL1800_HL_0319",
+  "file_name": "PHL1800_HL_0319.png",
+  "batch_id": "B008",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a white, red, and yellow Five Star bus with number 5143",
+  "captions": {
+    "scene": [
+      "A multi-lane paved road under a partly cloudy sky with overhead power lines.",
+      "Three vehicles are visible in a traffic queue: a white van, the Five Star bus, and part of another white bus labeled 'LUZON TRA'.",
+      "A Ford sign is mounted on a pole behind the bus; sidewalk curb and asphalt texture are visible in the foreground."
+    ],
+    "action": [
+      "The Five Star bus is stationary or moving slowly with its front door open and driver seated inside.",
+      "A man wearing a light-colored shirt is visible in the driver’s seat, facing forward, with his right arm resting near the steering wheel.",
+      "Passengers are seated inside the bus, visible through tinted side windows; at least five distinct head silhouettes can be counted."
+    ],
+    "rationale": [
+      "The bus appears to be in traffic because it is aligned with other vehicles and no motion blur is present; however, absence of motion blur alone does not confirm stillness.",
+      "The open door and driver’s posture suggest readiness for boarding/alighting, but no person is seen entering or exiting, so active passenger movement cannot be confirmed.",
+      "The text 'ORDINARY FARE' above the windshield is legible, indicating service class, but fare amount or payment method is not visible."
+    ],
+    "object": [
+      "The bus has a white body with a red horizontal stripe bordered above and below by thin yellow stripes, and a red front bumper with yellow trim.",
+      "The bus displays 'FIVE STAR' in large red capital letters on its side, with a circular logo containing the numeral '5' adjacent to it.",
+      "The vehicle identification number '5143' is printed in red on the front lower-right panel, beneath the headlight assembly.",
+      "The front windshield has a small amber turn signal indicator illuminated on the left side (driver’s side).",
+      "The bus features a modern low-floor design with a single wide entry door, black-tinted windows, and silver hubcaps on black tires."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0308_P1",
+      "visual_anchors": [
+        "open bus door",
+        "seated driver",
+        "passenger silhouettes"
+      ],
+      "symbolic_mapping": [
+        "the open door as threshold between private transit and public space"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The open door and contained passengers evoke the tension between individual mobility and collective infrastructure—each passenger exists simultaneously as a discrete person and as part of a shared transit system.",
+      "alternative_interpretations": [
+        "The door is simply open for ventilation or routine stop; no symbolic meaning intended."
+      ],
+      "limitations": [
+        "No facial expressions or interactions are visible to confirm social dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0308_P2",
+      "visual_anchors": [
+        "'ORDINARY FARE' sign",
+        "bus number 5143",
+        "Ford sign in background"
+      ],
+      "symbolic_mapping": [
+        "standardized numbering and signage as markers of institutional order"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The uniform labeling and corporate branding reflect embedded hierarchies of transport governance, where standardized identifiers assert control over movement and access.",
+      "alternative_interpretations": [
+        "These are purely functional identifiers for operational clarity, with no political intent."
+      ],
+      "limitations": [
+        "No signage indicates ownership, regulation, or pricing policy beyond 'ORDINARY FARE'."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0308_P3",
+      "visual_anchors": [
+        "timestamp overlay '05/29/2013 07:28 am'",
+        "sunlit sky",
+        "static composition"
+      ],
+      "symbolic_mapping": [
+        "fixed timestamp anchoring transient motion to a singular moment"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The captured instant—a bus paused mid-journey under morning light—materializes the paradox of temporal passage: movement implied yet suspended, echoing how human transit both defies and submits to time’s linear constraint.",
+      "alternative_interpretations": [
+        "The timestamp is a camera artifact with no philosophical relevance."
+      ],
+      "limitations": [
+        "The timestamp is digitally overlaid and not part of the original scene; its presence may be post-capture."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:30:37.996233+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bb42f0da-c548-909c-8fe7-bd059196e164",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 987,
+        "total_tokens": 1796,
+        "completion_tokens_details": {
+          "text_tokens": 987
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702301888bc0224ae234226",
+      "usage": {
+        "completion_tokens": 841,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1953,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2794
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

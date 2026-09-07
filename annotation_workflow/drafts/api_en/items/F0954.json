@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0954",
+  "sample_id": "PHL1800_HL_0056",
+  "file_name": "PHL1800_HL_0056.png",
+  "batch_id": "B021",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "an older person with white hair, viewed from behind, seated on a bicycle",
+  "captions": {
+    "scene": [
+      "A sunlit urban street intersection with painted crosswalk markings and a traffic signal pole in the foreground.",
+      "A large colorful mural covers the upper portion of a building facade behind the traffic light; lower facade shows signage including partially legible words 'SØLDBAKKEN' and 'BILARDHAR'.",
+      "Bicycles are parked against a wall to the right; buildings with multiple windows line the background under a clear blue sky."
+    ],
+    "action": [
+      "The person is stationary on a bicycle, facing forward toward the intersection, with hands likely on handlebars (partially obscured).",
+      "A red traffic light is illuminated above the person, indicating stop for their direction of travel.",
+      "A multicolored bag (yellow, blue, red) with black straps rests on the rear rack of the bicycle."
+    ],
+    "rationale": [
+      "The person’s posture and orientation suggest waiting at a controlled intersection, consistent with the red light status.",
+      "The presence of crosswalk lines and a traffic signal implies regulated vehicular/pedestrian flow, supporting the inference of lawful stopping behavior.",
+      "The visible bag placement on the bike rack indicates active use of the bicycle for transport or errands, though its contents and purpose are not discernible."
+    ],
+    "object": [
+      "The person wears a gray textured jacket with a visible collar and has short white hair; no facial features are visible.",
+      "A vertical metal traffic signal pole stands to the right of the person, supporting a three-lamp signal head showing only the top red lamp lit.",
+      "A rectangular white paper notice is affixed to the signal pole below the traffic light, with illegible text due to resolution and angle.",
+      "The bicycle has a rear cargo rack holding a large fabric bag with distinct yellow, blue, and red panels and black webbing straps.",
+      "In the background, two bicycles are parked side-by-side against a wall beneath a window; one has a dark frame, the other a lighter frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0954_P1",
+      "visual_anchors": [
+        "red traffic light",
+        "person waiting on bicycle",
+        "crosswalk lines"
+      ],
+      "symbolic_mapping": [
+        "red light as enforced pause",
+        "bicycle as modest mobility"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where individual movement is temporarily suspended by institutional regulation, illustrating how freedom is structurally conditioned by shared constraints in public space.",
+      "alternative_interpretations": [
+        "A routine commuter pausing briefly before proceeding; no symbolic intent implied."
+      ],
+      "limitations": [
+        "No evidence of the person’s awareness, intention, or emotional response to the stop."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0954_P2",
+      "visual_anchors": [
+        "white hair",
+        "gray jacket",
+        "back view"
+      ],
+      "symbolic_mapping": [
+        "back-facing figure as anonymity",
+        "age markers as temporal passage"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The anonymous rear view of an aging individual in a transient urban moment evokes the universality of embodied temporality—being present yet unmarked, part of a collective rhythm without individual identification.",
+      "alternative_interpretations": [
+        "A candid snapshot of daily life with no deliberate aesthetic or existential framing."
+      ],
+      "limitations": [
+        "Hair color and clothing do not confirm age definitively; back view prevents verification of identity or expression."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0954_P3",
+      "visual_anchors": [
+        "multicolored bag on bike rack",
+        "mural with abstract colors",
+        "traffic infrastructure"
+      ],
+      "symbolic_mapping": [
+        "bag as personal burden or utility",
+        "mural as imposed cultural layer"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of functional transport (bicycle + bag) against decorative urban infrastructure suggests a tension between pragmatic daily labor and the aestheticized environment that frames it—highlighting how routine journeys occur within designed systems beyond individual control.",
+      "alternative_interpretations": [
+        "The bag is simply luggage; the mural is background decoration with no thematic relevance."
+      ],
+      "limitations": [
+        "Bag contents and purpose are invisible; mural meaning is indeterminate without context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:30:55.968449+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-692cf38b-0b82-9198-a6b7-ce37b105955c",
+      "usage": {
+        "prompt_tokens": 685,
+        "completion_tokens": 989,
+        "total_tokens": 1674,
+        "completion_tokens_details": {
+          "text_tokens": 989
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 178,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033044c3a7ddbe17af41be",
+      "usage": {
+        "completion_tokens": 848,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1809,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2657
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

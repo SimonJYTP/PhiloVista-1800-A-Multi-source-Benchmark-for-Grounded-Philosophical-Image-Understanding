@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0152",
+  "sample_id": "PHL1800_HAIV_0358",
+  "file_name": "PHL1800_HAIV_0358.png",
+  "batch_id": "B005",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two stylized human-like figures",
+  "captions": {
+    "scene": [
+      "A large figure with a massively open mouth dominates the left side against a pale green background.",
+      "A smaller figure stands to the right, holding a microphone-like object and facing the large figure.",
+      "The large figure’s tongue is bright magenta and extends toward the smaller figure’s face."
+    ],
+    "action": [
+      "The large figure’s mouth is wide open, revealing upper and lower rows of white teeth and a protruding tongue.",
+      "The smaller figure holds a vertical staff topped with a sphere and appears to be recoiling or reacting to the tongue’s proximity.",
+      "Small black specks and lines emanate from the smaller figure’s head, suggesting impact or disruption."
+    ],
+    "rationale": [
+      "The size disparity and orientation suggest a power imbalance between the figures, though no explicit hierarchy markers are present.",
+      "The magenta tongue’s extension toward the smaller figure implies directed interaction, but intent cannot be confirmed visually.",
+      "The stippled shading on both figures indicates a consistent artistic technique rather than material texture or lighting condition."
+    ],
+    "object": [
+      "The large figure has a single visible eye rendered as a black oval with a white highlight, and a stippled gray face with black hair outline.",
+      "The large figure’s tongue is uniformly magenta with a smooth curved edge and no texture, contrasting with the stippled monochrome rendering elsewhere.",
+      "The smaller figure wears a black long-sleeved garment with white cuffs and a white collar, and has a stylized face with darkened eye sockets and a visible nose.",
+      "The microphone-like object consists of a cylindrical shaft with horizontal bands and a smooth spherical top, held in the smaller figure’s right hand.",
+      "Both figures have hands drawn with five fingers each; the large figure’s left hand is open and extended downward, while the right is partially obscured."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0152_P1",
+      "visual_anchors": [
+        "massive open mouth",
+        "magenta tongue extending toward smaller figure",
+        "smaller figure recoiling"
+      ],
+      "symbolic_mapping": [
+        "open mouth → overwhelming expression or imposition",
+        "tongue proximity → forced communication or violation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes an asymmetrical communicative act where one agent imposes presence upon another, evoking tensions between expressive autonomy and coercive influence.",
+      "alternative_interpretations": [
+        "It may depict a surreal performance scene, such as a caricatured singing act or theatrical exaggeration, without political or ethical connotation."
+      ],
+      "limitations": [
+        "No textual labels or contextual props confirm intent; the magenta color is arbitrary and not semantically anchored."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0152_P2",
+      "visual_anchors": [
+        "stippled monochrome rendering of faces",
+        "uniform magenta tongue",
+        "black-and-white contrast with single color accent"
+      ],
+      "symbolic_mapping": [
+        "monochrome bodies → normalized identity",
+        "singular color tongue → disruptive external force or voice"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The selective use of color isolates the tongue as an alien element within otherwise uniform figures, suggesting how external speech or judgment can rupture perceived self-coherence in social contexts.",
+      "alternative_interpretations": [
+        "The magenta may simply be an aesthetic choice for visual emphasis, unrelated to symbolism."
+      ],
+      "limitations": [
+        "Color usage lacks accompanying legend or repetition to confirm symbolic function."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0152_P3",
+      "visual_anchors": [
+        "smaller figure holding microphone-like object",
+        "specks near its head",
+        "large figure’s mouth dominating frame"
+      ],
+      "symbolic_mapping": [
+        "microphone → attempted articulation",
+        "specks → fragmentation of speech or self under pressure"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The smaller figure’s attempt to speak (via microphone) is physically disrupted by the larger figure’s intrusion, raising questions about epistemic authority and the ethical burden of listening versus overpowering.",
+      "alternative_interpretations": [
+        "The specks could represent saliva or stage effects, and the microphone may be purely decorative."
+      ],
+      "limitations": [
+        "No audible or textual output is shown; the object’s function is inferred from shape alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:10:54.434467+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cd9d111f-136d-91d1-823b-e98248446774",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 985,
+        "total_tokens": 2518,
+        "completion_tokens_details": {
+          "text_tokens": 985
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070210213586c7f0c1494cb0",
+      "usage": {
+        "completion_tokens": 847,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2946,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3793
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

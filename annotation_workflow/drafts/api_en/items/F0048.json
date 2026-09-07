@@ -1,0 +1,167 @@
+{
+  "annotation_item_id": "F0048",
+  "sample_id": "PHL1800_HL_0537",
+  "file_name": "PHL1800_HL_0537.png",
+  "batch_id": "B003",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person standing outdoors",
+  "captions": {
+    "scene": [
+      "A wooded area with bare deciduous trees and some green shrubs in the background.",
+      "Diffuse overcast lighting illuminates the scene without strong shadows.",
+      "A thick tree trunk appears to the right of the subject, partially framing the composition."
+    ],
+    "action": [
+      "The person tilts their head upward and gazes toward the upper left of the frame.",
+      "Their mouth is slightly open, with lips parted and lower jaw relaxed.",
+      "Their right hand rests on their hip, elbow bent outward, while the left arm is not fully visible."
+    ],
+    "rationale": [
+      "The upward gaze and open mouth suggest attention toward something above or outside the frame, though the object of attention is not visible.",
+      "The striped shirt, necktie, and dark coat appear coordinated, indicating intentional attire rather than random layering.",
+      "The hat is a flat cap with visible texture and stitching; its fit and wear pattern imply regular use, but no brand or text is legible."
+    ],
+    "object": [
+      "The person wears a gray textured flat cap with a slight crease along the crown and a small button at the front center.",
+      "They wear a blue-and-white vertically striped collared shirt with a loosely knotted dark tie featuring diagonal white stripes.",
+      "A black coat with notched lapels is worn over the shirt, unbuttoned, revealing the shirt and tie.",
+      "Their hair is short, light brown or reddish, cut above the ears, with bangs swept to the side.",
+      "The background consists of out-of-focus tree trunks, branches, and foliage, with no discernible path, signage, or built structures."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0048_P1",
+      "visual_anchors": [
+        "upward gaze",
+        "open mouth",
+        "bare trees"
+      ],
+      "symbolic_mapping": [
+        "upward gaze → aspiration or questioning",
+        "bare trees → transience or waiting"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The subject’s upward orientation amid leafless trees evokes a moment suspended between reflection and decision, where mortality frames the urgency of choice.",
+      "alternative_interpretations": [
+        "The pose may simply reflect adjusting to wind or sunlight, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression beyond gaze and mouth position is discernible; emotional valence is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0048_P2",
+      "visual_anchors": [
+        "striped shirt",
+        "dark coat",
+        "flat cap"
+      ],
+      "symbolic_mapping": [
+        "layered formal-casual attire → negotiated identity",
+        "cap as signifier of subcultural affiliation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of structured clothing elements signals an identity actively constructed through appearance, situated within social expectations yet resisting full assimilation.",
+      "alternative_interpretations": [
+        "The outfit may be practical for cool weather, with no deliberate semiotic function."
+      ],
+      "limitations": [
+        "Clothing style alone cannot confirm affiliation or intent; cultural context is absent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0048_P3",
+      "visual_anchors": [
+        "hand on hip",
+        "unbuttoned coat",
+        "asymmetrical framing"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "freedom_constraint",
+        "ethics_responsibility"
+      ],
+      "interpretation": "A literal description of one person standing outdoors is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use one person standing outdoors as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:57:29.962779+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8a08faef-7734-9c17-933e-31991750ccc3",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 885,
+        "total_tokens": 1654,
+        "completion_tokens_details": {
+          "text_tokens": 885
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015701a7b93d95dfbe414f",
+      "usage": {
+        "completion_tokens": 747,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1820,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2567
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F0048.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

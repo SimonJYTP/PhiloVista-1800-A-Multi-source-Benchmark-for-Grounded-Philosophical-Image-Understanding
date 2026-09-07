@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1616",
+  "sample_id": "PHL1800_HL_0490",
+  "file_name": "PHL1800_HL_0490.png",
+  "batch_id": "B033",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a cyclist riding toward the camera in a paved plaza",
+  "captions": {
+    "scene": [
+      "A cobblestone plaza framed by two large stone arches, one bearing a large clock face.",
+      "A white bus parked on the left, with several parked motorcycles and scooters aligned along the right building facade.",
+      "Multi-story buildings with shuttered windows, balconies with wrought-iron railings, and visible signage including a 'P' parking symbol."
+    ],
+    "action": [
+      "A person wearing a cap and patterned jacket rides a bicycle directly toward the viewer, both hands on handlebars.",
+      "A group of approximately seven people stands near the right-side building entrance; some appear to be conversing or waiting.",
+      "Motorcycles are stationary, arranged in a row parallel to the building wall."
+    ],
+    "rationale": [
+      "The cyclist’s forward motion is indicated by posture, wheel orientation, and perspective convergence toward the camera.",
+      "The presence of multiple parked vehicles and pedestrians suggests this is a public urban space during daytime activity.",
+      "The clock face shows hands pointing near 10:10, but without knowing if it is AM/PM or functional, time inference remains uncertain."
+    ],
+    "object": [
+      "A large circular clock with Roman numerals and black hands is embedded in the upper left arch; the hands indicate approximately 10:10.",
+      "A white coach-style bus with dark-tinted windows is parked on the left side of the frame, partially under the left arch.",
+      "At least eight motorcycles and scooters are parked in a line against the right building wall, varying in size and orientation.",
+      "A rectangular blue sign with a white 'P' symbol is mounted on the building wall near the center-right, indicating parking.",
+      "A person on a bicycle wears a dark cap, a horizontally striped jacket, gloves, and dark pants; the bicycle has straight handlebars and visible front wheel spokes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1616_P1",
+      "visual_anchors": [
+        "clock face with Roman numerals",
+        "cyclist moving forward",
+        "archway framing"
+      ],
+      "symbolic_mapping": [
+        "the arch as threshold between past and present",
+        "the clock as marker of irreversible passage"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The cyclist traverses a literal and symbolic threshold beneath a timepiece, evoking the human condition of moving through finite time toward an unknown horizon.",
+      "alternative_interpretations": [
+        "It is simply a commuter passing through a historic city square during routine daily traffic."
+      ],
+      "limitations": [
+        "No inscription confirms the clock’s function or era; the cyclist’s destination and intent are unseen."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1616_P2",
+      "visual_anchors": [
+        "group of people clustered near doorway",
+        "parked motorcycles",
+        "bus at rest"
+      ],
+      "symbolic_mapping": [
+        "stationary vehicles as suspended agency",
+        "gathering as emergent social node"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "Static transport and gathered figures highlight the tension between individual mobility and collective stasis, suggesting social existence as negotiated within infrastructural constraints.",
+      "alternative_interpretations": [
+        "People are waiting for a bus or meeting friends; vehicles are parked legally in a designated zone."
+      ],
+      "limitations": [
+        "Facial expressions and gestures are indistinct; no signage specifies purpose of gathering."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1616_P3",
+      "visual_anchors": [
+        "striped jacket of cyclist",
+        "wrought-iron balcony",
+        "stone arch texture"
+      ],
+      "symbolic_mapping": [
+        "patterned clothing as assertion of identity amid uniform architecture",
+        "architectural permanence vs. transient human motion"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The cyclist’s distinct attire contrasts with the monolithic stone environment, underscoring how personal appearance functions as a site of resistance or self-definition within built systems shaped by labor and technology.",
+      "alternative_interpretations": [
+        "The jacket is merely practical attire for weather; the architecture reflects local building norms, not ideological imposition."
+      ],
+      "limitations": [
+        "Fabric pattern could be coincidental; no evidence links jacket design to intentional statement."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:52:37.276000+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4524a497-9357-96c7-aaca-ceccc6bc9cb3",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 968,
+        "total_tokens": 1669,
+        "completion_tokens_details": {
+          "text_tokens": 968
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704521194c08a49ecc54c5d",
+      "usage": {
+        "completion_tokens": 825,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1801,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2626
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

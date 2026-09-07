@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0691",
+  "sample_id": "PHL1800_IRFL_0078",
+  "file_name": "PHL1800_IRFL_0078.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male",
+  "captions": {
+    "scene": [
+      "A brightly lit interior kitchen or dining area with white cabinetry, a stainless steel range hood, and decorative white candlesticks on a table.",
+      "A table covered with a blue-and-white striped cloth holds a laptop, a smartphone, and ornamental objects including candlesticks and a glass decanter.",
+      "Natural light enters from a window on the left; background includes a wall-mounted sign with unreadable text."
+    ],
+    "action": [
+      "The man leans forward toward an open laptop, mouth wide open as if shouting or exclaiming loudly.",
+      "Both hands are raised with fingers splayed, palms facing outward, positioned near the laptop screen.",
+      "His facial expression shows furrowed brows, wide eyes, and an open mouth, indicating intense vocalization or reaction."
+    ],
+    "rationale": [
+      "The man’s posture and hand position suggest he is reacting to content on the laptop screen, though the screen itself is not visible.",
+      "The presence of a smartphone beside the laptop implies possible multitasking or recent use, but no interaction with it is observed.",
+      "The unreadable sign in the background prevents confirmation of location type (e.g., commercial vs. residential), limiting contextual inference."
+    ],
+    "object": [
+      "A silver laptop with a black keyboard and trackpad is open on the table, angled toward the man.",
+      "A black smartphone lies face-up on the table between the man’s arms and the laptop.",
+      "Three white cylindrical candles sit on turned-wood white candlesticks arranged behind the laptop.",
+      "The man wears a royal blue short-sleeved polo shirt with a two-button placket and visible collar.",
+      "A woven basket rests on a lower shelf beneath white upper cabinets in the background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0691_P1",
+      "visual_anchors": [
+        "open laptop",
+        "man’s raised hands",
+        "shouted mouth"
+      ],
+      "symbolic_mapping": [
+        "laptop screen as mediated reality",
+        "gestures as embodied resistance"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The image captures a moment where mediated information triggers visceral bodily protest, suggesting tension between received digital knowledge and embodied human agency.",
+      "alternative_interpretations": [
+        "The man may be enthusiastically greeting someone on a video call, with gestures and expression misread as anger due to framing and lighting."
+      ],
+      "limitations": [
+        "The laptop screen is not visible, so the stimulus for the reaction cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0691_P2",
+      "visual_anchors": [
+        "blue polo shirt",
+        "candlesticks",
+        "striped tablecloth"
+      ],
+      "symbolic_mapping": [
+        "casual attire juxtaposed with formal decor suggests blurred domestic/professional boundaries"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The coexistence of domestic ornamentation and digital work tools reflects the collapse of spatial distinctions in contemporary life, where social identity is performed across hybrid environments.",
+      "alternative_interpretations": [
+        "The setting is simply a home kitchen used for remote work, with no symbolic intent—decor reflects personal taste rather than conceptual commentary."
+      ],
+      "limitations": [
+        "No explicit markers confirm intentional juxtaposition; decor may be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0691_P3",
+      "visual_anchors": [
+        "furrowed brow",
+        "wide-open mouth",
+        "forward lean"
+      ],
+      "symbolic_mapping": [
+        "facial contortion as rupture of normative composure"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The subject’s unguarded expression challenges the expectation of controlled self-presentation in digitally mediated spaces, revealing identity as unstable under technological pressure.",
+      "alternative_interpretations": [
+        "The expression is theatrical or staged for a photo, not spontaneous—thus not evidencing genuine identity disruption."
+      ],
+      "limitations": [
+        "Without context, it is impossible to determine whether the expression is authentic, performative, or edited."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:08:11.446229+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7cc9b15d-d242-9a06-96a3-6a6d768fdc9b",
+      "usage": {
+        "prompt_tokens": 1307,
+        "completion_tokens": 914,
+        "total_tokens": 2221,
+        "completion_tokens_details": {
+          "text_tokens": 914
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 800,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070308005f89e7d682424b86",
+      "usage": {
+        "completion_tokens": 777,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2533,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3310
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

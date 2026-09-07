@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0482",
+  "sample_id": "PHL1800_HL_0062",
+  "file_name": "PHL1800_HL_0062.png",
+  "batch_id": "B012",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a white ox pulling a two-wheeled cart loaded with green beans, accompanied by a man in a striped hooded garment",
+  "captions": {
+    "scene": [
+      "A narrow urban street lined with multi-story buildings, shops with signage, and parked vehicles; the road surface is unpaved and littered with debris.",
+      "Multiple pedestrians walk along both sides of the street; some carry bags or bundles, and several women in colorful attire are visible on the left sidewalk.",
+      "A large tree with thick branches overhangs the right side of the street, partially shading a vendor stall and a parked bicycle cart."
+    ],
+    "action": [
+      "The ox stands still, wearing a harness and cloth covering its back; its front hooves are on the ground, not raised.",
+      "A man seated on the right-hand cart holds green beans in both hands, wearing a striped hooded garment and looking toward the camera.",
+      "Several people in the background stand near stalls or walk away from the camera; one woman in red walks leftward holding a plastic bag, another in white stands near a fruit display."
+    ],
+    "rationale": [
+      "The ox’s harness and attached cart indicate it is being used for transport or labor, not grazing or resting.",
+      "The presence of multiple vendors, carts, and pedestrians suggests this is a functioning market street during daytime hours.",
+      "The visible litter, uneven ground, and mixed vehicle types (bicycle cart, auto-rickshaw, car) imply infrastructure coexistence rather than uniform modernization."
+    ],
+    "object": [
+      "A white ox with large curved horns, dark eyes, and a black muzzle wears a brown cloth saddle and red-and-white rope harness attached to a wooden cart frame.",
+      "A two-wheeled wooden cart with metal-rimmed wheels carries a large pile of fresh green beans on a flat wooden platform; the cart is positioned to the right of the ox.",
+      "A man wearing a black-and-white striped hooded garment, dark trousers, and sandals sits on the bean-laden cart, holding green beans in both hands.",
+      "Several women walk on the left sidewalk: one in a red top and patterned skirt, one in orange pants and a blue shawl, one in a white top and pink skirt; all carry items.",
+      "A parked auto-rickshaw is visible behind the group of women; its rear section is partially obscured by pedestrians."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0482_P1",
+      "visual_anchors": [
+        "ox pulling cart",
+        "man holding beans",
+        "littered street surface"
+      ],
+      "symbolic_mapping": [
+        "the ox as embodied labor",
+        "green beans as perishable sustenance"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image presents labor not as abstract economic input but as physically embedded action—animal muscle, human hands, and immediate material exchange—highlighting how social existence depends on continuous, embodied work amid infrastructural imperfection.",
+      "alternative_interpretations": [
+        "This is simply a routine market scene with no deeper meaning; the ox is just a draft animal, the man a vendor doing his job."
+      ],
+      "limitations": [
+        "No visible facial expressions or interactions confirm intentionality or emotional valence; symbolic mapping relies on external cultural associations."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0482_P2",
+      "visual_anchors": [
+        "striped hooded garment",
+        "crowded street",
+        "multiple pedestrians"
+      ],
+      "symbolic_mapping": [
+        "hooded figure as anonymous participant in collective rhythm",
+        "shared public space as site of coexistence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The hooded man’s partial concealment contrasts with the visible diversity of others, suggesting identity is both performed through appearance and dissolved in the anonymity of shared public life—where individuality emerges only in relation to collective movement.",
+      "alternative_interpretations": [
+        "The garment is merely practical clothing for sun or dust protection; no intentional concealment is evident."
+      ],
+      "limitations": [
+        "The hood does not fully obscure the face; visibility of eyes and posture undermines strong anonymity claims."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0482_P3",
+      "visual_anchors": [
+        "green beans piled high",
+        "unpaved road with stains",
+        "ox hoof near spilled white powder"
+      ],
+      "symbolic_mapping": [
+        "fresh produce as transient value",
+        "ground as record of use and neglect"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The perishable beans and stained earth register time’s passage through decay and residue, while the ox’s tethered motion embodies constraint—not just physical but systemic—revealing how freedom is negotiated within material limits that accumulate unnoticed.",
+      "alternative_interpretations": [
+        "The white powder is spilled grain or chalk; the stains are incidental, not symbolic traces."
+      ],
+      "limitations": [
+        "The nature of the white powder and stains is visually ambiguous; no timestamp or sequence confirms decay or accumulation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of women in the object list (described as three walking together, but the image shows multiple separate women, not a single group of three); the silver car is not clearly visible and may be hallucinated; the ox’s action is misdescribed (hooves are not raised, it is standing still); the man’s action is misdescribed (he is not sorting beans, just sitting with them)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:51:16.771152+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c35e03da-6061-9170-8c71-cb3b2112d2b0",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1130,
+        "total_tokens": 1899,
+        "completion_tokens_details": {
+          "text_tokens": 1130
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025045d27155ece86a4d9c",
+      "usage": {
+        "completion_tokens": 1144,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2041,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3185
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

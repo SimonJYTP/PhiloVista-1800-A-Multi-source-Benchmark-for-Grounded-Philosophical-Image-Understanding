@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0850",
+  "sample_id": "PHL1800_HAIV_0472",
+  "file_name": "PHL1800_HAIV_0472.png",
+  "batch_id": "B019",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "an open yellow booklet with a star emblem and a cloud in the background",
+  "captions": {
+    "scene": [
+      "A gradient blue sky background with a light-blue cloud on the left",
+      "A yellow open booklet angled diagonally in the foreground",
+      "A thin yellow curved line arcs above the booklet, resembling a ribbon or halo"
+    ],
+    "action": [
+      "The booklet is open, revealing an inner page with a star emblem",
+      "The star emblem rests within a circular frame on the lower page",
+      "No motion is depicted; all elements are static"
+    ],
+    "rationale": [
+      "The booklet’s open state suggests intentional display rather than accidental placement",
+      "The star inside a circle may indicate a badge or award, but no text confirms this",
+      "The curved yellow line lacks attachment points, making its function ambiguous"
+    ],
+    "object": [
+      "The booklet has two visible pages: an upper page with a horizontal rectangular indentation and a lower page displaying a five-pointed star.",
+      "The star is golden-yellow with brown shading on its left side, centered within a double-ringed circular border of light blue and white.",
+      "The cloud is stylized, composed of five rounded lobes, uniformly light blue with no internal texture.",
+      "The background transitions smoothly from medium blue at the bottom to lighter blue at the top.",
+      "The yellow curved line extends from the upper right edge of the booklet’s back cover and loops upward without connecting to any other object."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0850_P1",
+      "visual_anchors": [
+        "open booklet",
+        "star emblem",
+        "circular frame"
+      ],
+      "symbolic_mapping": [
+        "the star within a circle suggests a singular achievement enclosed by structure or recognition"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The open booklet with a central star may represent the revelation of a truth or milestone achieved through a deliberate path, where the circle signifies bounded validation.",
+      "alternative_interpretations": [
+        "It could be a decorative graphic element with no symbolic intent, such as a logo placeholder."
+      ],
+      "limitations": [
+        "No textual labels confirm the star’s meaning; its symbolism is not fixed by visual evidence alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0850_P2",
+      "visual_anchors": [
+        "cloud",
+        "booklet",
+        "yellow arc"
+      ],
+      "symbolic_mapping": [
+        "the cloud as ephemeral backdrop contrasts with the solid booklet, suggesting transience versus permanence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a transient cloud and a stable, open booklet implies tension between fleeting experience and enduring record—perhaps reflecting how meaning is preserved against temporal flux.",
+      "alternative_interpretations": [
+        "The cloud and arc may simply serve compositional balance, with no intended contrast."
+      ],
+      "limitations": [
+        "The cloud’s form is generic and non-narrative; no motion or decay is shown to support mortality interpretation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0850_P3",
+      "visual_anchors": [
+        "booklet’s indentation",
+        "star’s shading",
+        "curved yellow line"
+      ],
+      "symbolic_mapping": [
+        "the indentation resembles a slot for insertion, hinting at receptivity or potential integration"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The booklet’s empty indentation paired with the displayed star may symbolize identity as both constructed (the star) and contingent upon external validation (the slot), situated within a social field suggested by the floating arc.",
+      "alternative_interpretations": [
+        "The indentation is purely decorative, mimicking a real-world booklet feature without functional implication."
+      ],
+      "limitations": [
+        "No object is inserted into the indentation, so its purpose remains visually undetermined."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:22:01.811946+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e9d2f59f-185a-9933-a774-505338a585eb",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 867,
+        "total_tokens": 2400,
+        "completion_tokens_details": {
+          "text_tokens": 867
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032149197503d1d3c8412b",
+      "usage": {
+        "completion_tokens": 723,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2819,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3542
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

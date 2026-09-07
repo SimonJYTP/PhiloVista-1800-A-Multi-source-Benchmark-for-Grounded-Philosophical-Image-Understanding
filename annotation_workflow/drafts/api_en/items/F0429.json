@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0429",
+  "sample_id": "PHL1800_IRFL_0076",
+  "file_name": "PHL1800_IRFL_0076.jpg",
+  "batch_id": "B011",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a hand wearing a blue glove holding an orange envelope",
+  "captions": {
+    "scene": [
+      "A white textured curtain with vertical folds forms the background.",
+      "A gloved hand emerges from a gap between two curtain panels.",
+      "An orange envelope is held diagonally across the central visual field."
+    ],
+    "action": [
+      "The blue-gloved hand grips the envelope along its right edge and lower corner.",
+      "The envelope remains sealed, with a visible metal clasp on its flap.",
+      "The hand and envelope are partially obscured by the curtain on the right side."
+    ],
+    "rationale": [
+      "The glove’s smooth, shiny surface suggests synthetic material, but exact composition cannot be confirmed visually.",
+      "The curtain’s texture resembles crushed velvet or damask, yet fabric type is not definitively identifiable.",
+      "The envelope appears unopened due to the intact clasp, though internal contents are unseen and unknowable."
+    ],
+    "object": [
+      "A bright blue, form-fitting glove covers a human hand, showing defined finger contours and slight creasing at joints.",
+      "An orange paper envelope with a rectangular flap secured by a silver-colored metal clasp is held at approximately 45 degrees.",
+      "The curtain is off-white with a mottled, irregular texture and soft vertical draping lines.",
+      "The hand emerges from a narrow vertical opening between two adjacent curtain sections.",
+      "A black rectangular banner in the upper right corner contains white text reading 'Published 2018' preceded by a stylized 'T' logo."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0429_P1",
+      "visual_anchors": [
+        "blue glove",
+        "sealed envelope",
+        "curtain gap"
+      ],
+      "symbolic_mapping": [
+        "glove as concealment of identity",
+        "envelope as withheld information"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image evokes epistemic opacity: the glove anonymizes the agent while the sealed envelope signifies inaccessible truth, both mediated through a partial reveal behind a veil.",
+      "alternative_interpretations": [
+        "A staged studio photograph illustrating document delivery or theatrical prop handling."
+      ],
+      "limitations": [
+        "No textual content inside the envelope is visible; its symbolic weight depends entirely on external assumptions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0429_P2",
+      "visual_anchors": [
+        "curtain gap",
+        "hand emerging",
+        "envelope held forward"
+      ],
+      "symbolic_mapping": [
+        "curtain as boundary between private and public",
+        "gesture as offering or intrusion"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The act of extending an object through a constrained aperture reflects negotiated social access—simultaneously enabling transmission and enforcing limitation.",
+      "alternative_interpretations": [
+        "A literal depiction of someone passing mail through a partially opened curtain in a domestic setting."
+      ],
+      "limitations": [
+        "The curtain’s function (decorative, functional, theatrical) is unspecified; its role as symbolic barrier is inferred."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0429_P3",
+      "visual_anchors": [
+        "metal clasp",
+        "unbroken seal",
+        "gloved hand"
+      ],
+      "symbolic_mapping": [
+        "clasp as institutional control",
+        "glove as procedural detachment"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The combination of standardized glove and mechanical seal suggests bureaucratic mediation where moral agency is displaced onto protocol rather than person.",
+      "alternative_interpretations": [
+        "A forensic or archival handling procedure where contamination prevention necessitates gloves and sealed envelopes."
+      ],
+      "limitations": [
+        "No institutional context (e.g., logos, uniforms, settings) confirms bureaucratic intent; the interpretation relies on conventional associations."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:45:59.021633+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ccc47ae1-e09f-990a-9e2e-d10565130674",
+      "usage": {
+        "prompt_tokens": 1909,
+        "completion_tokens": 850,
+        "total_tokens": 2759,
+        "completion_tokens_details": {
+          "text_tokens": 850
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1402,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070245442bfb576b741d4bd3",
+      "usage": {
+        "completion_tokens": 709,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3259,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3968
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

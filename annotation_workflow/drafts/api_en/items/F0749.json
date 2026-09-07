@@ -1,0 +1,164 @@
+{
+  "annotation_item_id": "F0749",
+  "sample_id": "PHL1800_HL_0315",
+  "file_name": "PHL1800_HL_0315.png",
+  "batch_id": "B017",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a police motorcyclist in high-visibility uniform riding a marked motorcycle while waving",
+  "captions": {
+    "scene": [
+      "A street lined with brick buildings, green hedges, and trees, with spectators gathered on the sidewalk and road edge.",
+      "Multiple emergency vehicles including two marked police cars and a bus are present behind the motorcyclist.",
+      "A crowd of adults and at least one child stands near the curb, some holding cameras or phones."
+    ],
+    "action": [
+      "The motorcyclist raises their gloved left hand in a wave while riding forward.",
+      "A woman in a grey jacket walks across the road toward the right side of the frame, carrying a brown shoulder bag.",
+      "A person in the foreground holds a camera up to eye level, aiming toward the procession."
+    ],
+    "rationale": [
+      "The motorcyclist’s posture, open palm, and orientation suggest intentional gesturing rather than incidental motion.",
+      "The presence of multiple marked police vehicles and a bus with destination text implies an organized public event, not routine patrol.",
+      "The crowd’s attention is uniformly directed toward the vehicles, indicating they are observing a passing procession."
+    ],
+    "object": [
+      "A white and yellow BMW police motorcycle with blue emergency lights activated, bearing the number '20' on its side fairing and 'POLICE' lettering on the front fairing.",
+      "A blue hatchback car with UK-style license plate 'BD10 NZR' parked behind the police cars.",
+      "A silver police car with yellow-and-blue Battenburg markings and license plate 'YD12 ZSU' positioned mid-frame.",
+      "A white bus with partially visible destination sign reading 'BUS SERVICE 212'.",
+      "A pedestrian wearing a bright yellow high-visibility jacket, white helmet with black visor, and dark trousers riding the motorcycle."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0749_P1",
+      "visual_anchors": [
+        "motorcyclist waving",
+        "crowd watching",
+        "police vehicles in formation"
+      ],
+      "symbolic_mapping": [
+        "the wave as a gesture of public engagement",
+        "the line of vehicles as institutional continuity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image captures a moment where authority (police) performs visibility and approachability amid structured control, reflecting how social existence is negotiated through ritualized public presence.",
+      "alternative_interpretations": [
+        "It may simply depict a ceremonial escort for a local parade with no deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or verbal context confirm intent; the wave could be routine protocol rather than personal engagement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0749_P2",
+      "visual_anchors": [
+        "high-visibility uniform",
+        "Battenburg markings",
+        "crowd holding cameras"
+      ],
+      "symbolic_mapping": [
+        "uniform as identity marker",
+        "cameras as instruments of witnessing"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The visual codification of authority through standardized appearance invites scrutiny—observers record not just an event but the very representation of legitimacy, raising questions about how truth is constructed through mediated perception.",
+      "alternative_interpretations": [
+        "Cameras are used for personal souvenir capture, not epistemic documentation."
+      ],
+      "limitations": [
+        "The cameras’ orientation and usage cannot be confirmed beyond holding position; no screens or images are visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0749_P3",
+      "visual_anchors": [
+        "motorcycle in motion",
+        "static crowd",
+        "bus in background"
+      ],
+      "symbolic_mapping": [
+        "motion as temporal passage",
+        "crowd as collective pause"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The fleeting passage of the motorcyclist against the stationary gaze of onlookers evokes the tension between individual trajectory and communal stasis—a metaphor for how journeys unfold within shared moments that quickly recede into memory.",
+      "alternative_interpretations": [
+        "The motorcyclist is merely moving at traffic speed; the crowd is waiting for the next vehicle, not contemplating time."
+      ],
+      "limitations": [
+        "No clocks, shadows, or sequential frames verify temporal emphasis; stillness may reflect traffic delay rather than reflection."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The object caption incorrectly describes a pedestrian as 'seated on the motorcycle'—the motorcyclist is the rider, not a separate pedestrian; correct to 'A pedestrian wearing a bright yellow high-visibility jacket, white helmet with black visor, and dark trousers riding the motorcycle.'",
+      "The object caption for the bus incorrectly states 'red rear lights illuminated'—the bus's rear lights are not visible in the image; remove this detail."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:13:36.860416+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-740cd7f6-1ffa-96ee-9d93-cc45125d1cc4",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 963,
+        "total_tokens": 1692,
+        "completion_tokens_details": {
+          "text_tokens": 963
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031314f916beb28b0241f4",
+      "usage": {
+        "completion_tokens": 990,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1824,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2814
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

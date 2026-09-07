@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0028",
+  "sample_id": "PHL1800_MM_0113",
+  "file_name": "PHL1800_MM_0113.jpg",
+  "batch_id": "B003",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two male swimmers standing in a pool lane",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor swimming pool with blue water, black lane dividers, and visible pool deck edge in the upper left.",
+      "Two swimmers occupy adjacent lanes; one stands upright in shallow water, the other partially submerged with water splashing around his legs.",
+      "Both wear national-themed swim caps and competition swimsuits; medals hang around their necks."
+    ],
+    "action": [
+      "The left swimmer raises both arms overhead, holding a gold medal and a blue ribbon or cap in his hands.",
+      "The right swimmer stands facing left, smiling, with fists loosely clenched and water dripping from his body.",
+      "A speech bubble originates near the right swimmer’s head containing legible English text: 'Yes! Congratulations on defeating my teammate!'"
+    ],
+    "rationale": [
+      "The left swimmer’s raised medal and posture suggest a victory celebration, supported by his upward gaze and open smile.",
+      "The right swimmer’s orientation toward the left swimmer and facial expression indicate engagement in a shared moment, though his exact role (winner/loser) is ambiguous without context.",
+      "The speech bubble text implies a third-party relationship (a teammate not present), but no visual evidence confirms the existence of that third person or the outcome described."
+    ],
+    "object": [
+      "The left swimmer wears a red-and-blue full-body swimsuit with two yellow five-pointed stars on the chest and an Adidas logo on the left thigh.",
+      "The left swimmer wears a dark blue swim cap with a white star and red stripe pattern resembling part of a national flag.",
+      "The right swimmer wears a navy-blue tank-style top with white markings and red briefs; his cap displays red, white, and blue stripes with white stars, evoking a U.S. flag motif.",
+      "A circular gold-colored medal hangs on a white ribbon around the left swimmer’s neck; a similar medal is visible on the right swimmer’s neck on a blue ribbon.",
+      "Black floating lane dividers run horizontally across the image, separating the swimmers’ positions in the pool."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0028_P1",
+      "visual_anchors": [
+        "gold medal held aloft",
+        "speech bubble with congratulatory text",
+        "two swimmers in adjacent lanes"
+      ],
+      "symbolic_mapping": [
+        "raised medal → public recognition",
+        "congratulatory speech to absent teammate → relational loyalty despite competition"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image stages a tension between individual triumph and collective identity: the victor’s gesture is framed not as solitary glory but as an event embedded in a network of team obligations and rivalries.",
+      "alternative_interpretations": [
+        "The scene may depict staged performance or satire, given the unnatural positioning and speech bubble—a common convention in edited or illustrative imagery rather than documentary photography."
+      ],
+      "limitations": [
+        "The speech bubble is superimposed and not part of the original photographic record; its content cannot be verified as spoken or intended by the subjects."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0028_P2",
+      "visual_anchors": [
+        "national-themed swim caps",
+        "color-blocked swimsuits with insignia",
+        "medals as standardized symbols"
+      ],
+      "symbolic_mapping": [
+        "cap patterns → symbolic allegiance",
+        "uniform design → institutional belonging"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Appearance functions as a carrier of assigned social roles: the swimmers’ attire visually encodes nationality and team membership before any action occurs, suggesting identity is externally conferred and performative.",
+      "alternative_interpretations": [
+        "The caps and suits may simply reflect standard competition gear mandated by governing bodies, with no intentional symbolic meaning beyond compliance."
+      ],
+      "limitations": [
+        "No official logos or country names are legible; flag motifs are generic and could represent multiple nations or be stylized abstractions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0028_P3",
+      "visual_anchors": [
+        "water splashing around right swimmer’s legs",
+        "static pose of left swimmer",
+        "shared pool space"
+      ],
+      "symbolic_mapping": [
+        "splashing water → transient physical state",
+        "stillness vs motion → contrasting temporal presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of still celebration and dynamic residual motion underscores the fleeting nature of athletic achievement—victory is captured in a frozen instant while the body continues its inevitable return to equilibrium.",
+      "alternative_interpretations": [
+        "The splash is incidental, caused by the swimmer stepping forward after finishing; it carries no philosophical weight beyond physics."
+      ],
+      "limitations": [
+        "No clock, timer, or sequence of frames is visible; temporal interpretation relies on inference from a single static image."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:50:54.665140+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bea0ca03-581d-9725-99c2-306473402778",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1084,
+        "total_tokens": 2617,
+        "completion_tokens_details": {
+          "text_tokens": 1084
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701503404524cc5ca834b20",
+      "usage": {
+        "completion_tokens": 945,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3036,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3981
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

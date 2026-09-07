@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1142",
+  "sample_id": "PHL1800_MM_0014",
+  "file_name": "PHL1800_MM_0014.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men standing near a painted wall",
+  "captions": {
+    "scene": [
+      "An outdoor setting with a concrete wall covered in colorful mural art, grass at its base, and a dilapidated industrial building in the background.",
+      "The ground is unpaved dirt with patches of green grass growing along the wall’s foundation.",
+      "Two men stand on the dirt path; one holds two spray paint cans while facing the mural, the other stands slightly behind and to the left, observing."
+    ],
+    "action": [
+      "The man in the grey hoodie holds two aerosol cans (one red/blue label, one silver/green label) in both hands, oriented toward the mural as if preparing to spray.",
+      "A speech bubble originates from the man holding the cans, containing the legible text: 'I would repaint this wall to its original color.'",
+      "The second man stands still, facing forward with arms relaxed at his sides, looking toward the mural or the first man."
+    ],
+    "rationale": [
+      "The presence of spray cans and the speech bubble suggest intent to alter the mural, though no actual spraying occurs in the frame.",
+      "The mural depicts a stylized female face with geometric color blocks; its condition appears intact, not visibly damaged or faded.",
+      "The phrase 'original color' implies prior knowledge of the wall’s state before painting, but no visual evidence confirms what that state was."
+    ],
+    "object": [
+      "The wall consists of rectangular concrete panels with visible seams and some chipped paint near the top right corner.",
+      "The mural features a large portrait with blue, orange, yellow, pink, and black sections; the face has defined eyes, nose, lips, and hair rendered in flat colors.",
+      "The man in the grey hoodie wears dark jeans, black sneakers, and holds two cylindrical metal spray cans, one with a red and blue label, the other with green and silver labeling.",
+      "The second man wears a beige short-sleeve shirt with a zipper detail, dark pants, and blue sneakers; his hair is short with a light-colored dyed top section.",
+      "A white oval speech bubble with black outline and black sans-serif text is positioned above the first man’s head, pointing to him via a small circular tail."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1142_P1",
+      "visual_anchors": [
+        "speech bubble stating 'I would repaint this wall to its original color'",
+        "intact colorful mural",
+        "two spray cans held ready"
+      ],
+      "symbolic_mapping": [
+        "the mural represents a changed state; the desire to restore implies value placed on prior conditions"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The image stages a tension between preservation and erasure, where the speaker’s stated intention to undo artistic intervention reflects a philosophical stance on authenticity versus transformation in public space.",
+      "alternative_interpretations": [
+        "The speech bubble may be ironic or rhetorical, not indicating real intent—possibly a commentary on gentrification or aesthetic policing rather than literal restoration."
+      ],
+      "limitations": [
+        "No visual evidence confirms whether the wall ever had a uniform 'original color' or whether the speaker has authority to act."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1142_P2",
+      "visual_anchors": [
+        "man holding spray cans",
+        "mural depicting a human face",
+        "second observer standing passively"
+      ],
+      "symbolic_mapping": [
+        "the act of holding tools without action signifies deliberation; the face in the mural invites recognition or judgment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The scene captures a moment of suspended agency where one individual contemplates altering a shared visual environment, raising questions about collective ownership and moral responsibility toward communal expression.",
+      "alternative_interpretations": [
+        "This may simply depict a casual conversation or photo shoot, with the speech bubble added digitally for narrative effect, lacking real-world consequence."
+      ],
+      "limitations": [
+        "The observer’s posture and gaze do not confirm engagement or endorsement of the stated plan; their role remains visually ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1142_P3",
+      "visual_anchors": [
+        "dilapidated building in background",
+        "grass growing through cracked ground",
+        "vibrant mural on weathered wall"
+      ],
+      "symbolic_mapping": [
+        "decay and renewal coexist spatially; the mural overlays neglect, suggesting art as resistance or reclamation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of structural decay and vivid artistic intervention evokes the impermanence of material forms and the constrained freedom to redefine meaning within deteriorating environments.",
+      "alternative_interpretations": [
+        "The setting may be a curated urban art site, where decay is aestheticized and not indicative of abandonment; the mural could be commissioned, not subversive."
+      ],
+      "limitations": [
+        "No signage, tools, or activity confirms whether the site is abandoned, repurposed, or actively maintained."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:54:49.835807+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4d5f8ffc-64f0-9284-aa4b-12d8f0649757",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1104,
+        "total_tokens": 2637,
+        "completion_tokens_details": {
+          "text_tokens": 1104
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070354331001907c335f4cb6",
+      "usage": {
+        "completion_tokens": 970,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3055,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4025
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

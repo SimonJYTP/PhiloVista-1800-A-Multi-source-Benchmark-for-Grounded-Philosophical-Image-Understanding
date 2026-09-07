@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0990",
+  "sample_id": "PHL1800_HL_0208",
+  "file_name": "PHL1800_HL_0208.png",
+  "batch_id": "B021",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "taxidermied giraffe in a museum diorama",
+  "captions": {
+    "scene": [
+      "Indoor museum exhibit with glass barriers separating visitors from mounted animal specimens",
+      "Well-lit display area featuring large mammals including a giraffe, zebra, and hippopotamus",
+      "Visitors visible behind transparent panels observing the exhibits"
+    ],
+    "action": [
+      "Giraffe specimen is positioned with neck lowered toward ground, front legs extended forward",
+      "Zebra specimen stands beside giraffe, head lowered as if grazing",
+      "Human visitors stand or move behind glass, some pushing strollers"
+    ],
+    "rationale": [
+      "The giraffe’s posture suggests a feeding pose, consistent with natural behavior, though it is static",
+      "Glass partitions and lighting indicate a curated exhibition space rather than a live habitat",
+      "Multiple human figures are present but no interaction with specimens occurs; their presence confirms observational context"
+    ],
+    "object": [
+      "A taxidermied giraffe occupies the central-right foreground, with patterned coat of brown patches on cream background and extended forelimbs.",
+      "A taxidermied zebra with black-and-white striped pelage stands to the right of the giraffe, head bent downward.",
+      "A partial view of a large dark-skinned mammal, likely a hippopotamus, appears on the far left edge of the frame.",
+      "Transparent glass panels run vertically across the midground, separating the exhibit floor from visitor walkway.",
+      "At least six human figures are visible behind the glass: two adults with a stroller, one adult in blue jacket, one adult in dark hooded garment, and two others partially obscured."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0990_P1",
+      "visual_anchors": [
+        "giraffe’s lowered neck",
+        "glass barrier",
+        "static postures of all animals"
+      ],
+      "symbolic_mapping": [
+        "glass barrier represents separation between observer and observed",
+        "static poses evoke suspended time"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The fixed postures of the specimens juxtaposed with living observers highlight the tension between biological impermanence and institutional preservation—death rendered legible through display.",
+      "alternative_interpretations": [
+        "This is simply a standard natural history exhibit designed for education, with no intentional philosophical framing."
+      ],
+      "limitations": [
+        "No labels, signage, or contextual text is legible to confirm curatorial intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0990_P2",
+      "visual_anchors": [
+        "multiple visitors behind glass",
+        "stroller with child",
+        "uniform lighting"
+      ],
+      "symbolic_mapping": [
+        "visitors as collective witnesses",
+        "child’s presence signals intergenerational transmission of knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The arrangement positions knowledge as mediated through institutional curation, where truth about nature is conveyed not directly but via constructed scenes witnessed socially.",
+      "alternative_interpretations": [
+        "Visitors are casually browsing; the stroller indicates convenience, not symbolic transmission."
+      ],
+      "limitations": [
+        "Facial expressions and attention direction of visitors are indistinct; intent cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0990_P3",
+      "visual_anchors": [
+        "giraffe’s extended limbs",
+        "zebra’s grazing pose",
+        "hippopotamus silhouette"
+      ],
+      "symbolic_mapping": [
+        "species cohabitation in display mimics ecological relation",
+        "absence of motion implies frozen relationality"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The diorama constructs identity through appearance alone—species defined by pattern, posture, and proximity—revealing how taxonomy relies on visible traits divorced from lived interaction.",
+      "alternative_interpretations": [
+        "Animals are grouped by habitat type for educational clarity, not conceptual commentary."
+      ],
+      "limitations": [
+        "No habitat backdrop or ecological indicators (e.g., vegetation, terrain) are clearly visible to confirm intended ecological grouping."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:34:49.189415+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2d207c35-d05b-9393-99c5-917dfde7b845",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 904,
+        "total_tokens": 1673,
+        "completion_tokens_details": {
+          "text_tokens": 904
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070334303ae93d79d3bc47ce",
+      "usage": {
+        "completion_tokens": 763,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1836,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2599
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

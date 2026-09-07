@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0396",
+  "sample_id": "PHL1800_IRFL_0293",
+  "file_name": "PHL1800_IRFL_0293.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 23,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of approximately 12 people engaged in beach cleanup",
+  "captions": {
+    "scene": [
+      "A sandy beach with sparse green vegetation on the dune slope, gentle waves breaking near shore under an overcast sky.",
+      "Multiple orange buckets and scattered debris—including driftwood, coconut husks, and plastic fragments—lie on the sand near participants.",
+      "People are distributed along a ~30-meter stretch of shoreline, some near the water’s edge, others closer to the vegetated dune base."
+    ],
+    "action": [
+      "At least seven individuals are bent or crouched, actively picking up items from the sand using gloved hands or buckets.",
+      "One person in the foreground wears a grey shirt, black cap, white gloves, and holds an orange bucket labeled partially '...CLEAN UP' (text partially legible).",
+      "Several participants wear matching grey t-shirts with a dark square logo on the back; one person wears an orange sleeveless top and kneels beside a bucket."
+    ],
+    "rationale": [
+      "The presence of identical orange buckets and coordinated attire suggests organized activity rather than casual recreation.",
+      "Debris is concentrated near the high-tide line and among vegetation, consistent with post-wave deposition, though no wave action is captured mid-event.",
+      "No visible signage, vehicles, or equipment beyond hand tools implies manual labor without mechanized support; however, exact organizational affiliation is not verifiable."
+    ],
+    "object": [
+      "A man in the foreground wears a black baseball cap, grey short-sleeve shirt with a faint graphic, dark shorts, white gloves, and holds an orange bucket with red-and-white text that includes 'CLEAN UP' but is otherwise unreadable.",
+      "Three coconuts with fibrous husks lie on the sand near the foreground person’s feet, alongside broken driftwood and small plastic fragments.",
+      "A woman in a grey tank top and black shorts kneels beside an orange bucket; no visible numeral '10' is present.",
+      "Two individuals in matching grey t-shirts (not hooded) stand upright near the center, observing or pausing; no backpack is visible.",
+      "The ocean displays white-crested waves rolling toward shore; the waterline is irregular with foam patches, indicating moderate surf."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0396_P1",
+      "visual_anchors": [
+        "orange buckets",
+        "matching grey shirts",
+        "scattered debris"
+      ],
+      "symbolic_mapping": [
+        "coordinated attire symbolizes collective agency",
+        "debris represents human impact externalized onto nature"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies ethics of care through embodied labor: individuals physically re-engage with consequences of consumption by removing waste, enacting responsibility not as abstract principle but as tactile, communal repair.",
+      "alternative_interpretations": [
+        "This may simply be a scheduled volunteer event for public relations or educational outreach, with no deeper moral intent."
+      ],
+      "limitations": [
+        "No facial expressions, speech, or contextual signage confirm internal motivation; actions could be incentivized or mandated."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0396_P2",
+      "visual_anchors": [
+        "coconuts and driftwood",
+        "overcast sky",
+        "uninterrupted shoreline"
+      ],
+      "symbolic_mapping": [
+        "natural detritus juxtaposed with plastic signifies temporal layering of ecological change"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The accumulation of organic remains (coconuts, wood) alongside synthetic waste visualizes deep time intersecting with anthropogenic temporality—human labor intervenes in this stratigraphy, asserting control over decay’s narrative.",
+      "alternative_interpretations": [
+        "Coconuts and driftwood are common beach features; their presence does not necessarily imply ecological commentary."
+      ],
+      "limitations": [
+        "No dating evidence confirms whether debris is recent or long-accumulated; natural vs. artificial distinction relies on viewer knowledge."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0396_P3",
+      "visual_anchors": [
+        "people spaced along shoreline",
+        "shared task focus",
+        "absence of hierarchy markers"
+      ],
+      "symbolic_mapping": [
+        "distributed positioning reflects non-hierarchical cooperation",
+        "shared tool (buckets) enables equal participation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The spatial arrangement—individuals working parallel yet independently within a shared goal—illustrates social existence as enacted through synchronized but non-identical action, where belonging emerges from mutual orientation rather than uniformity.",
+      "alternative_interpretations": [
+        "Spacing may reflect practical need to cover ground efficiently, not philosophical stance on equality."
+      ],
+      "limitations": [
+        "No interaction gestures (e.g., eye contact, talking) confirm relational intent; posture alone cannot verify consensus."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (14 vs. actual ~12); misdescription of clothing (e.g., 'hooded shirts' instead of 't-shirts'); inaccurate object details (e.g., 'white numeral 10' on bucket not visible); unsupported claims about 'matching grey hooded shirts' and 'black backpack'."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:43:21.110406+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a87e7cf1-c401-9e15-8cbc-3c98120d11c8",
+      "usage": {
+        "prompt_tokens": 949,
+        "completion_tokens": 1083,
+        "total_tokens": 2032,
+        "completion_tokens_details": {
+          "text_tokens": 1083
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 442,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070242593afc7124e72442ce",
+      "usage": {
+        "completion_tokens": 1087,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2243,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3330
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

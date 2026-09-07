@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1364",
+  "sample_id": "PHL1800_MM_0100",
+  "file_name": "PHL1800_MM_0100.jpg",
+  "batch_id": "B028",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two seated individuals at a table in a library setting",
+  "captions": {
+    "scene": [
+      "Two people sit opposite each other at a wooden table with green chairs, in front of dark green bookshelves filled with uniformly bound books.",
+      "Natural light enters from the right side, illuminating the right person’s profile and casting shadows across the table surface.",
+      "The background consists of three visible shelves packed with books arranged by color bands (yellow, red, blue, green, brown)."
+    ],
+    "action": [
+      "The left individual holds an open binder or folder with both hands and looks toward the right individual.",
+      "The right individual holds a smaller open booklet or document with both hands and faces the left individual.",
+      "A speech bubble originates near the left individual’s head, containing legible English text."
+    ],
+    "rationale": [
+      "The presence of bookshelves, binders, and formal seating suggests an academic or institutional context, though no signage confirms this.",
+      "The speech bubble implies spoken communication, but only the written text is visible; vocalization is not observable.",
+      "The clothing (polo shirt vs. blazer) may indicate differing roles, but no insignia, badges, or labels confirm status or affiliation."
+    ],
+    "object": [
+      "A man with short gray hair and black-rimmed glasses wears a blue short-sleeved polo shirt and sits on a green chair holding a thick open binder.",
+      "A second person with short brown hair wears a blue long-sleeved blazer over a light collared shirt and holds a small open booklet.",
+      "On the table lies a stack of white papers, a closed white notebook with a smartphone resting on top, and a dark blue tablet or case behind the left person’s binder.",
+      "The bookshelves contain rows of hardcover books with spines in consistent colors—no titles are legible.",
+      "A white oval speech bubble with black sans-serif text reads: 'You don't need to worry about paying for the printouts.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1364_P1",
+      "visual_anchors": [
+        "speech bubble with reassurance",
+        "stack of printed papers",
+        "bookshelves"
+      ],
+      "symbolic_mapping": [
+        "printouts as materialized knowledge",
+        "reassurance as removal of economic barrier to access"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image frames knowledge access as ethically mediated through material support, where the removal of cost (printouts) symbolizes a responsibility to enable equitable engagement with information.",
+      "alternative_interpretations": [
+        "This may simply depict routine administrative assistance in a library or office without philosophical intent."
+      ],
+      "limitations": [
+        "No visible institutional branding or policy documents confirm ethical framing; the speech content alone does not establish systemic intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1364_P2",
+      "visual_anchors": [
+        "two individuals facing each other",
+        "shared table space",
+        "mutual gaze direction"
+      ],
+      "symbolic_mapping": [
+        "face-to-face positioning as reciprocity",
+        "table as neutral ground for exchange"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The symmetrical seating and direct orientation suggest a moment of intersubjective recognition, where social existence is enacted through shared attention and implied dialogue rather than action.",
+      "alternative_interpretations": [
+        "The posture could reflect standard consultation protocol (e.g., advisor–student) with no deeper relational symbolism."
+      ],
+      "limitations": [
+        "Facial expressions are partially obscured; eye contact cannot be confirmed due to angle and glasses glare."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1364_P3",
+      "visual_anchors": [
+        "color-coded book spines",
+        "uniform binding",
+        "ordered shelves"
+      ],
+      "symbolic_mapping": [
+        "color grouping as epistemic categorization",
+        "order as control over knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The visual organization of knowledge via color and alignment implies a system of classification that may reflect underlying power structures determining what is deemed orderly, accessible, or legitimate.",
+      "alternative_interpretations": [
+        "Color arrangement may be purely aesthetic or logistical (e.g., Dewey Decimal sections), with no intentional symbolic hierarchy."
+      ],
+      "limitations": [
+        "No labels or numerical indicators confirm classification system; color order could be coincidental or decorative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:24:21.621897+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-db7d998d-00a8-9488-b166-1c2e94aaeedc",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 985,
+        "total_tokens": 2518,
+        "completion_tokens_details": {
+          "text_tokens": 985
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070423541d42ba5fbd974471",
+      "usage": {
+        "completion_tokens": 844,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2934,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3778
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

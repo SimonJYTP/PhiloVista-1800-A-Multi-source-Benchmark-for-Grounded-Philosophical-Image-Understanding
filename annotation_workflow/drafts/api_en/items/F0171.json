@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0171",
+  "sample_id": "PHL1800_IRFL_0107",
+  "file_name": "PHL1800_IRFL_0107.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a painted lion head",
+  "captions": {
+    "scene": [
+      "A close-up portrait of a lion with richly textured fur in warm orange, gold, and brown tones",
+      "The lion occupies nearly the entire frame, with mane flowing outward from the central face",
+      "A black circular logo with a white stylized 'S' is positioned in the lower-left corner"
+    ],
+    "action": [
+      "The lion’s eyes are open and directed forward, with visible pupils and irises",
+      "Whiskers extend horizontally from both sides of the muzzle",
+      "The mouth is closed; no teeth or tongue are visible"
+    ],
+    "rationale": [
+      "The lion’s gaze appears fixed due to symmetrical eye placement and lack of motion blur",
+      "The texture and brushwork suggest a painting rather than a photograph, though medium is not definitively identifiable",
+      "The presence of a logo implies this image may be cover art or promotional material, but its function cannot be confirmed from visual evidence alone"
+    ],
+    "object": [
+      "The lion has two bright blue-green irises with dark pupils centered in each eye.",
+      "The mane consists of layered, wavy strands of hair rendered in gradients from golden-yellow to deep reddish-brown.",
+      "White-tipped whiskers emerge from both upper lip regions, extending outward and slightly downward.",
+      "A patch of white fur is visible on the chin beneath the lower lip.",
+      "A solid black circle containing a white stylized 'S' symbol is located in the bottom-left quadrant."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0171_P1",
+      "visual_anchors": [
+        "blue-green eyes",
+        "symmetrical frontal gaze",
+        "mane radiating outward"
+      ],
+      "symbolic_mapping": [
+        "intense gaze → scrutiny or awareness",
+        "radiant mane → authority or presence"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The lion’s direct gaze and luminous eyes evoke a figure embodying vigilance and epistemic authority—suggesting truth as something observed and held, not merely spoken.",
+      "alternative_interpretations": [
+        "The eyes may simply reflect artistic color choice without symbolic intent; the image could be decorative animal portraiture."
+      ],
+      "limitations": [
+        "No textual context confirms intentional symbolism; color choices could be aesthetic rather than allegorical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0171_P2",
+      "visual_anchors": [
+        "dense layered mane",
+        "closed mouth",
+        "still facial expression"
+      ],
+      "symbolic_mapping": [
+        "mane density → accumulated experience or burden",
+        "silence → restraint or contemplation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The lion’s composed stillness amid voluminous fur suggests identity shaped by time—appearance as sedimented history, where external form bears traces of duration without explicit narrative.",
+      "alternative_interpretations": [
+        "The mane’s volume may result from stylistic exaggeration common in illustration, not conceptual layering."
+      ],
+      "limitations": [
+        "No aging markers (e.g., scars, graying) are present to confirm temporal accumulation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0171_P3",
+      "visual_anchors": [
+        "black circular logo with white 'S'",
+        "lion centered against indistinct background"
+      ],
+      "symbolic_mapping": [
+        "logo placement → framing device or institutional signifier"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The imposed logo interrupts the naturalistic portrayal, implying the lion exists within a constructed social frame—its sovereignty visually mediated by external branding, raising questions about autonomy under representation.",
+      "alternative_interpretations": [
+        "The logo may be a watermark or distributor mark with no philosophical implication."
+      ],
+      "limitations": [
+        "The logo’s origin and purpose are visually undetermined; it may be purely functional."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:13:05.302009+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7340c199-adb0-95dd-a206-5df34e772fab",
+      "usage": {
+        "prompt_tokens": 1389,
+        "completion_tokens": 874,
+        "total_tokens": 2263,
+        "completion_tokens_details": {
+          "text_tokens": 874
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 882,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070212524db793f3d5cb4d55",
+      "usage": {
+        "completion_tokens": 736,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2655,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3391
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

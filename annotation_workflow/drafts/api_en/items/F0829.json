@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0829",
+  "sample_id": "PHL1800_HL_0139",
+  "file_name": "PHL1800_HL_0139.png",
+  "batch_id": "B018",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a cyclist riding across an intersection during emergency response activity",
+  "captions": {
+    "scene": [
+      "A street intersection at dusk with multi-story residential buildings, a fire truck, a police car, and several pedestrians and vehicles.",
+      "The lighting suggests late afternoon or early evening; shadows are long and the sky is pale blue with faint clouds.",
+      "A yellowish building dominates the background, featuring a metal fire escape with one person standing on it."
+    ],
+    "action": [
+      "A person in dark clothing rides a bicycle across the crosswalk, moving left to right relative to the camera.",
+      "Three individuals in firefighter gear stand near a motorcycle and a police vehicle, appearing to coordinate or assess the situation.",
+      "One person stands on the second-floor fire escape of the beige building, observing the street below."
+    ],
+    "rationale": [
+      "The presence of a fire truck, police car, and uniformed personnel indicates an active emergency response, though no fire or smoke is visible.",
+      "The cyclist’s motion is inferred from body posture, wheel orientation, and position relative to painted road markings.",
+      "The person on the fire escape is likely observing due to proximity and stance, but their intent or role cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "A white police sedan with blue-and-red emergency lights activated is parked diagonally across the intersection, partially blocking traffic.",
+      "A red-and-white fire engine is parked on the right side of the street, with its front facing the camera and headlights on.",
+      "Five distinct individuals are visible: one cyclist, three firefighters (two wearing helmets), and one person on the fire escape.",
+      "A black SUV is parked on the left curb, and a silver sedan is visible behind it; both appear stationary.",
+      "Two manhole covers are embedded in the asphalt road surface, one near the bottom center and another near the lower right edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0829_P1",
+      "visual_anchors": [
+        "cyclist crossing while emergency responders gather",
+        "fire escape observer watching from above",
+        "painted crosswalk lines intersecting traffic flow"
+      ],
+      "symbolic_mapping": [
+        "the crosswalk as a site of negotiated passage",
+        "the elevated observer as detached witness"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where individual mobility (the cyclist) coexists with institutional response (firefighters, police), suggesting tension between personal autonomy and collective safety protocols within urban space.",
+      "alternative_interpretations": [
+        "This may simply depict routine traffic flow during a minor incident, with no deeper symbolic meaning intended."
+      ],
+      "limitations": [
+        "No signage, dialogue, or explicit context confirms intent or outcome; all interpretation rests on spatial arrangement alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0829_P2",
+      "visual_anchors": [
+        "person standing alone on fire escape",
+        "dimming ambient light",
+        "static vehicles surrounding active figures"
+      ],
+      "symbolic_mapping": [
+        "twilight as temporal threshold",
+        "elevated position as liminal perspective"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The lone figure on the fire escape, silhouetted against fading light, evokes a contemplative pause amid unfolding events—suggesting awareness of transience and the weight of observation without intervention.",
+      "alternative_interpretations": [
+        "The person may be waiting for instructions, checking for hazards, or merely pausing; their stillness does not necessarily imply reflection."
+      ],
+      "limitations": [
+        "Facial expression, gaze direction, and body language are indistinct due to distance and lighting, preventing confirmation of introspection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0829_P3",
+      "visual_anchors": [
+        "three firefighters grouped near motorcycle",
+        "police car positioned to block lane",
+        "uniforms and equipment clearly visible"
+      ],
+      "symbolic_mapping": [
+        "standardized gear as embodiment of institutional role",
+        "spatial coordination as enacted duty"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "labor_technology"
+      ],
+      "interpretation": "The visible deployment of personnel and vehicles illustrates how responsibility is materialized through organized labor and technological tools, grounding abstract ethical obligations in concrete, embodied action.",
+      "alternative_interpretations": [
+        "This could reflect standard procedure for any call, regardless of severity, and thus may not signify exceptional moral engagement."
+      ],
+      "limitations": [
+        "No visible injury, damage, or communication confirms the nature or urgency of the incident; the scene could be preparatory rather than responsive."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:20:13.513037+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d04f03d2-4aae-9cb8-ac3b-fe3e0fc7b5dc",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1017,
+        "total_tokens": 1826,
+        "completion_tokens_details": {
+          "text_tokens": 1017
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031956dacc7a5b91f14f74",
+      "usage": {
+        "completion_tokens": 878,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1997,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2875
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

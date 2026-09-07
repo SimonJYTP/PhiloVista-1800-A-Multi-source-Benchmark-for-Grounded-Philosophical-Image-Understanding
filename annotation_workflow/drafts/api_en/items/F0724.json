@@ -1,0 +1,164 @@
+{
+  "annotation_item_id": "F0724",
+  "sample_id": "PHL1800_HAIV_0467",
+  "file_name": "PHL1800_HAIV_0467.png",
+  "batch_id": "B016",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized human face with surrounding animal heads and an isolated eye symbol",
+  "captions": {
+    "scene": [
+      "A central human face with black hair and blue eyes is framed by an irregular orange shape containing multiple animal heads and one isolated eye.",
+      "The background is white; the orange shape forms a halo-like field around the upper portion of the face and extends downward on both sides.",
+      "Animal heads include bovine, canine, feline, avian, and rodent-like forms, rendered in black, gray, brown, and white with minimal detail."
+    ],
+    "action": [
+      "The human figure is static, with eyes open and gaze directed forward; no motion is depicted.",
+      "Multiple animal heads are arranged radially around the top and sides of the human head, appearing suspended or floating without support.",
+      "One large stylized eye appears separately in the upper right quadrant, outside the orange field but within the overall composition."
+    ],
+    "rationale": [
+      "The orange shape likely functions as a compositional frame due to its consistent enclosure of most animal figures and partial overlap with the human hairline.",
+      "The animals are not interacting physically; their placement suggests symbolic or decorative intent rather than narrative action.",
+      "The presence of multiple species and a detached eye may imply thematic layering, though no explicit narrative or textual cue confirms this."
+    ],
+    "object": [
+      "The human face has pale skin, sharply defined black eyebrows, black hair with straight bangs, and two eyes with blue irises, brown pupils, and thick black outlines.",
+      "There are exactly ten distinct animal heads: one black cow with horns, one gray deer-like head with antlers, one brown rodent-like head, one black bird in flight (upper left), one black cat-like head with green eyes, one gray dog-like head, one small black canine head (right), one black quadrupedal animal (lower left), one black pig-like head (lower right), and one black mouse-like head (right).",
+      "One additional isolated eye appears in the upper right: black outline, blue iris, purple pupil, white sclera, and a black teardrop-shaped surround.",
+      "The orange shape has uneven, brushstroke-like edges and partially overlaps the human hair and forehead but does not cover the eyes or nose.",
+      "All figures are rendered in flat color fields with bold black outlines and minimal shading; no texture or depth cues are present."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0724_P1",
+      "visual_anchors": [
+        "blue eyes with brown pupils",
+        "surrounding animal heads",
+        "isolated stylized eye"
+      ],
+      "symbolic_mapping": [
+        "the central eyes represent subjective perception",
+        "the surrounding animals represent external influences or instincts"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The image may depict the tension between individual perception (central eyes) and the multiplicity of external or internal forces (animal heads) that shape identity and truth claims.",
+      "alternative_interpretations": [
+        "It could be a decorative motif combining zoological elements with portraiture, without philosophical intent."
+      ],
+      "limitations": [
+        "No text or contextual markers confirm symbolic intent; animal types are generic and non-specific."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0724_P2",
+      "visual_anchors": [
+        "orange halo-like shape",
+        "black hair framing face",
+        "floating animal heads"
+      ],
+      "symbolic_mapping": [
+        "the orange field signifies a mental or psychic space",
+        "animals signify fragmented aspects of self or society"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The composition suggests a self emerging amid competing social or psychological identities, where appearance (hair, face) anchors a core while surrounding figures denote relational or internal multiplicities.",
+      "alternative_interpretations": [
+        "The arrangement may follow aesthetic principles of balance and contrast rather than conceptual symbolism."
+      ],
+      "limitations": [
+        "The animals lack distinguishing features that would tie them to specific social roles or archetypes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0724_P3",
+      "visual_anchors": [
+        "isolated eye symbol",
+        "multiple animal heads",
+        "human face with direct gaze"
+      ],
+      "symbolic_mapping": [
+        "the detached eye represents surveillance or objective observation",
+        "the clustered animals indicate embeddedness in nature or community"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of a surveilling eye and encircling animals may evoke constraints on autonomy—where observation (the eye) and biological/social pressures (animals) jointly delimit the subject’s agency.",
+      "alternative_interpretations": [
+        "The eye could simply be a stylistic flourish echoing the human eyes, not implying surveillance."
+      ],
+      "limitations": [
+        "The eye lacks contextual cues (e.g., camera, weapon, authority insignia) to confirm surveillance meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of animal heads: candidate lists nine but image contains ten distinct animal heads (including the isolated eye as a separate symbol, not an animal head).",
+      "Candidate misclassifies the isolated eye as an animal head; it is a separate symbolic element."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:11:15.742421+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-aadf189b-5c17-97aa-b3ac-400abc7e9c6b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1071,
+        "total_tokens": 2604,
+        "completion_tokens_details": {
+          "text_tokens": 1071
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031054db2071196a214a2b",
+      "usage": {
+        "completion_tokens": 1082,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3032,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4114
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

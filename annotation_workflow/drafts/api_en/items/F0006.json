@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0006",
+  "sample_id": "PHL1800_HL_0567",
+  "file_name": "PHL1800_HL_0567.png",
+  "batch_id": "B003",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single baseball player mid-swing",
+  "captions": {
+    "scene": [
+      "A dirt baseball field with white chalk lines, a grassy embankment in the background, and distant road signs under an overcast sky.",
+      "The background includes a sloped green hill, a concrete retaining wall, and two vertical rectangular signs with unreadable text.",
+      "A white baseball is visible in mid-air near home plate, slightly blurred, indicating motion."
+    ],
+    "action": [
+      "The player is rotating their torso and extending arms forward while gripping a red bat, making contact or just past contact with the ball.",
+      "The player’s left leg is planted firmly on the ground while the right leg is lifted and trailing behind, consistent with follow-through mechanics.",
+      "The player wears a dark helmet, batting gloves, and full uniform; their gaze is directed toward the point of contact."
+    ],
+    "rationale": [
+      "The bat’s orientation and body posture suggest a swing rather than a bunt or check-swing, though exact timing relative to ball contact is ambiguous due to motion blur.",
+      "The presence of chalk lines, a batter’s box outline, and a baseball in flight strongly indicates a formal baseball game context, not practice or casual play.",
+      "The player’s uniform (navy top, white pants, black socks) matches standard youth or amateur baseball attire, but league affiliation cannot be confirmed from visible insignia alone."
+    ],
+    "object": [
+      "A red aluminum baseball bat is held horizontally across the player’s torso, with both hands gripping it near the handle end.",
+      "A white baseball is airborne approximately 1.5 meters from the batter’s front foot, positioned slightly above ground level and to the right of the bat’s barrel.",
+      "The player wears a navy blue jersey with white trim and a partially visible logo on the chest, white baseball pants with a black stripe down each side, and black knee-high socks.",
+      "A black batting helmet with a brim covers the player’s head; the face is partially obscured by shadow and helmet angle.",
+      "Two vertical rectangular signs stand in the background on metal posts; their text is pixelated and unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0006_P1",
+      "visual_anchors": [
+        "player’s focused gaze",
+        "bat mid-rotation",
+        "ball in motion"
+      ],
+      "symbolic_mapping": [
+        "the instant of contact as a threshold between intention and consequence"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The suspended moment captures agency in action: the player’s deliberate swing embodies a decisive choice whose outcome—success or failure—is already unfolding beyond control.",
+      "alternative_interpretations": [
+        "This is simply a biomechanical snapshot of a sports motion, with no intentional symbolism."
+      ],
+      "limitations": [
+        "No facial expression or contextual narrative confirms internal deliberation; the 'choice' is inferred from posture alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0006_P2",
+      "visual_anchors": [
+        "dirt field surface",
+        "chalk boundary lines",
+        "uniform consistency"
+      ],
+      "symbolic_mapping": [
+        "the defined playing area as a microcosm of socially constructed order"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The marked field and standardized attire reflect shared rules and roles that enable collective activity, illustrating how social existence emerges through agreed-upon constraints and participation.",
+      "alternative_interpretations": [
+        "The lines are merely functional for gameplay and do not imply broader social meaning."
+      ],
+      "limitations": [
+        "No spectators, teammates, or opponents are visible to confirm collective engagement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0006_P3",
+      "visual_anchors": [
+        "motion-blurred ball",
+        "static background",
+        "player’s dynamic pose"
+      ],
+      "symbolic_mapping": [
+        "temporal asymmetry between fleeting action and enduring setting"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The sharply captured body against a blurred ball highlights the transience of human effort within a stable environment, evoking the tension between ephemeral action and persistent context.",
+      "alternative_interpretations": [
+        "Motion blur results from camera shutter speed, not philosophical intent."
+      ],
+      "limitations": [
+        "The background is not perfectly static (e.g., slight wind movement in grass is undetectable), and blur may be technical rather than symbolic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:47:20.628706+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4a5d8d46-c102-9396-a282-d972e03a49a6",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 969,
+        "total_tokens": 1738,
+        "completion_tokens_details": {
+          "text_tokens": 969
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070147065b5e746a6aed4d9a",
+      "usage": {
+        "completion_tokens": 837,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1900,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2737
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

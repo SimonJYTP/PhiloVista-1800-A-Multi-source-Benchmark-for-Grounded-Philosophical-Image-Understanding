@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1678",
+  "sample_id": "PHL1800_MM_0103",
+  "file_name": "PHL1800_MM_0103.jpg",
+  "batch_id": "B034",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "man speaking at a wooden podium in a formal assembly room",
+  "captions": {
+    "scene": [
+      "A large indoor room with beige vertical drapes, recessed ceiling lighting, and three flags (U.S. flag on left, two dark blue flags with indistinct emblems) flanking the speaker.",
+      "Rows of dark wooden chairs occupied by adults facing the podium; aisle runs centrally toward the speaker.",
+      "The speaker stands behind a polished wooden podium with a microphone and a laptop; audience members are mostly seated, some standing in rear rows."
+    ],
+    "action": [
+      "The man at the podium has mouth open and hands resting on the podium, suggesting he is mid-speech.",
+      "Multiple audience members are looking toward the speaker; several heads are turned slightly, indicating attention or reaction.",
+      "One person in the front row (left side) is standing while others remain seated, possibly preparing to speak or having just risen."
+    ],
+    "rationale": [
+      "The presence of flags, formal attire, and structured seating suggests an official or governmental proceeding, though no signage confirms this.",
+      "The speech bubble text is legible and attributed visually to the speaker via a tail pointing to his head, indicating it is part of the image’s composition, not external annotation.",
+      "Facial expressions are largely indistinct due to resolution and distance; emotional states cannot be reliably determined from visible features."
+    ],
+    "object": [
+      "A man wearing a dark suit, white shirt, and red patterned tie stands behind a rectangular wooden podium with a silver microphone and a gray laptop on its surface.",
+      "Three flags are mounted on poles: leftmost is the U.S. flag (stars and stripes visible), center and right are dark blue with small white emblems that are unreadable.",
+      "At least 32 individuals are visible: 1 speaker, 15+ in foreground/midground rows (mostly backs of heads), and 16+ in background rows (some partially obscured).",
+      "The room floor is covered with a beige-and-brown patterned carpet; ceiling has four rectangular light panels framed in wood trim.",
+      "A white oval speech bubble with black sans-serif text reads: 'The neighboring town is truly better than ours!' and has a small circular tail connecting to the speaker’s head."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1678_P1",
+      "visual_anchors": [
+        "speech bubble text",
+        "speaker at podium",
+        "audience facing speaker"
+      ],
+      "symbolic_mapping": [
+        "public utterance of comparative judgment maps to social evaluation",
+        "podium as locus of authority enabling normative claims"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The act of publicly declaring another community superior functions as a rhetorical inversion of competitive civic identity, exposing how collective self-worth is constructed through contrast and concession.",
+      "alternative_interpretations": [
+        "The speech bubble may be satirical or fictional, inserted post-production to critique political rhetoric rather than document actual speech."
+      ],
+      "limitations": [
+        "No contextual signage, logos, or official insignia confirm the setting is governmental; the speech bubble could be digitally added."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1678_P2",
+      "visual_anchors": [
+        "rows of seated listeners",
+        "uniform direction of gaze",
+        "formal dress code"
+      ],
+      "symbolic_mapping": [
+        "shared orientation toward speaker signifies consensual attention structure",
+        "spatial hierarchy (elevated speaker, tiered seating) reflects institutional order"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The disciplined arrangement of bodies—facing forward, seated in aligned rows—materializes a temporary social contract where individual autonomy is suspended in favor of collective witness, revealing how public discourse presupposes constrained participation.",
+      "alternative_interpretations": [
+        "The audience may be attendees at a non-binding community meeting where attendance is voluntary and posture does not imply agreement."
+      ],
+      "limitations": [
+        "Posture and gaze do not prove consent or engagement; some individuals appear distracted or neutral."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1678_P3",
+      "visual_anchors": [
+        "unreadable emblems on two blue flags",
+        "U.S. flag clearly visible",
+        "speech bubble content referencing towns"
+      ],
+      "symbolic_mapping": [
+        "partial visibility of local symbols versus full national symbol highlights tension between local and national identity",
+        "comparative claim about towns implies embedded territorial ethics"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The juxtaposition of a nationally recognized symbol with locally ambiguous ones, combined with a self-deprecating civic claim, stages a moment where identity is performed through admission of inferiority—a paradoxical ethical gesture that questions the moral weight of communal pride.",
+      "alternative_interpretations": [
+        "The blue flags may represent state or municipal entities; their unreadability is incidental, not symbolic."
+      ],
+      "limitations": [
+        "Flag emblems are too blurry to identify; any symbolic reading depends on assumed intent rather than visible detail."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:01:05.883316+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bded680e-35a3-9a43-9ea5-2e59e88234a6",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1117,
+        "total_tokens": 2650,
+        "completion_tokens_details": {
+          "text_tokens": 1117
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705002976c6638b2ae44540",
+      "usage": {
+        "completion_tokens": 976,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3065,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4041
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

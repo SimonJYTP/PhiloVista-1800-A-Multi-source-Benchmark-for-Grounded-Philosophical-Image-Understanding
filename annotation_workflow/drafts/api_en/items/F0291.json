@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0291",
+  "sample_id": "PHL1800_IRFL_0003",
+  "file_name": "PHL1800_IRFL_0003.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two boys crouching on a debris-littered shore",
+  "captions": {
+    "scene": [
+      "A muddy, shallow shoreline covered with scattered plastic waste, organic matter, and indistinct refuse under diffuse daylight.",
+      "A blurred brick or stone wall forms the background behind the waterline; the water appears murky and gently agitated.",
+      "The foreground shows wet sand mixed with detritus including bottle caps, torn plastic sheets, and unidentifiable fragments."
+    ],
+    "action": [
+      "The boy on the right crouches with knees drawn up, head tilted downward, eyes focused on an object near his hands.",
+      "The boy on the left leans forward, also looking down toward the same area, with one arm extended toward a small metallic container.",
+      "Both boys remain stationary in a low squatting posture, with no visible motion blur indicating movement."
+    ],
+    "rationale": [
+      "The presence of numerous plastic items and organic debris suggests long-term accumulation rather than recent deposition, though timing cannot be confirmed.",
+      "The boys’ shared gaze direction and proximity imply coordinated attention to a specific object or activity, but intent is not visually verifiable.",
+      "Clothing appears worn and lightly soiled, consistent with outdoor activity in a contaminated environment, yet material composition and origin are indeterminate."
+    ],
+    "object": [
+      "A translucent plastic bottle with a yellow cap rests upright on the ground near the right boy’s knee, its label unreadable.",
+      "A small cylindrical metal can with dark vertical ridges sits between the boys’ hands, partially obscured by fingers.",
+      "Scattered across the ground are multiple pieces of multicolored plastic film, some crumpled, some flat, none bearing legible text.",
+      "The boy on the left wears light-colored patterned pants with faint floral motifs; the pattern is partially obscured by dirt and folds.",
+      "The boy on the right wears a short-sleeved gray t-shirt with visible seam stitching at the shoulder and sleeve hem."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0291_P1",
+      "visual_anchors": [
+        "two boys crouching side by side",
+        "shared downward gaze",
+        "debris-covered ground"
+      ],
+      "symbolic_mapping": [
+        "proximity amid contamination → interdependence in adverse conditions"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The image grounds a phenomenological moment where human co-presence persists despite environmental degradation, suggesting social existence as irreducible even in marginal settings.",
+      "alternative_interpretations": [
+        "The boys may simply be engaged in routine scavenging or play without symbolic significance."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm mutual awareness or emotional valence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0291_P2",
+      "visual_anchors": [
+        "muddy shore littered with plastic",
+        "static postures",
+        "absence of adult figures"
+      ],
+      "symbolic_mapping": [
+        "accumulated waste → temporal layering of neglect"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The stratified debris functions as a visual archive of discarded time, while the boys’ stillness contrasts with entropy, evoking mortality not as event but as ambient condition.",
+      "alternative_interpretations": [
+        "The scene may reflect seasonal flooding or tidal deposition rather than chronic neglect."
+      ],
+      "limitations": [
+        "Temporal scale of debris accumulation cannot be determined from static image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0291_P3",
+      "visual_anchors": [
+        "boy holding metal can",
+        "bottle with yellow cap nearby",
+        "hands positioned near objects"
+      ],
+      "symbolic_mapping": [
+        "manipulation of found objects → agency within constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The boys’ engagement with discarded artifacts illustrates constrained freedom: action is possible only within the narrow affordances offered by the immediate material environment.",
+      "alternative_interpretations": [
+        "The objects may be irrelevant to their activity; they could be resting or observing without interaction."
+      ],
+      "limitations": [
+        "Contact between hands and objects is ambiguous—fingers do not clearly grasp or manipulate."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:37:33.148333+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bb8c05d1-1c08-97e1-9448-36aa3154ab26",
+      "usage": {
+        "prompt_tokens": 1053,
+        "completion_tokens": 921,
+        "total_tokens": 1974,
+        "completion_tokens_details": {
+          "text_tokens": 921
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 546,
+          "text_tokens": 507,
+          "cached_tokens": 896
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070137141ad96b65c3994cef",
+      "usage": {
+        "completion_tokens": 789,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2210,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2999
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

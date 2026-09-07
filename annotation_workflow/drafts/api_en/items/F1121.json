@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1121",
+  "sample_id": "PHL1800_HL_0188",
+  "file_name": "PHL1800_HL_0188.png",
+  "batch_id": "B024",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman seated in a train carriage",
+  "captions": {
+    "scene": [
+      "A train interior with blue patterned seats, a small fold-down table, and large windows showing blurred outdoor scenery.",
+      "The carriage features padded headrests, overhead luggage racks, and a visible emergency exit sign near the window.",
+      "Adjacent seating includes a partially visible person wearing dark trousers and another seat with a black bag and red trim."
+    ],
+    "action": [
+      "The woman holds an open booklet or pamphlet in her right hand and looks down at it.",
+      "Her left hand rests on her lap; she wears a silver bracelet and a ring on her left ring finger.",
+      "She is seated upright with legs crossed, wearing black leggings and a black long-sleeved top."
+    ],
+    "rationale": [
+      "The presence of a fold-down table, window framing, and seat design strongly suggests a passenger train environment.",
+      "The woman’s gaze direction and hand position indicate active engagement with the booklet, though the content is unreadable.",
+      "The emergency exit sign and window view imply motion or potential for travel, but no direct evidence confirms the train is moving."
+    ],
+    "object": [
+      "A white plastic bottle with a multicolored label sits on the table next to a closed white-covered book.",
+      "The woman wears a black top with a V-neckline revealing a dark inner garment and a thin necklace.",
+      "A black backpack rests on the seat beside her, partially under her arm.",
+      "The seat upholstery is teal-blue with small white dots and has adjustable armrests with grey plastic components.",
+      "A purple cylindrical neck pillow is placed behind the headrest of the adjacent empty seat."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1121_P1",
+      "visual_anchors": [
+        "open booklet in hand",
+        "woman’s focused gaze",
+        "closed book on table"
+      ],
+      "symbolic_mapping": [
+        "the open booklet as immediate engagement with knowledge",
+        "the closed book as latent potential for learning"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of actively consulted and untouched texts visually frames knowledge as both enacted and deferred—a tension between present inquiry and stored possibility.",
+      "alternative_interpretations": [
+        "The items are simply personal belongings arranged for convenience during travel, with no symbolic intent."
+      ],
+      "limitations": [
+        "No legible text appears on either book or booklet, preventing confirmation of content or purpose."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1121_P2",
+      "visual_anchors": [
+        "emergency exit sign",
+        "window showing passing landscape",
+        "seatbelt-like strap across lap"
+      ],
+      "symbolic_mapping": [
+        "the exit sign as a reminder of contingency",
+        "the window view as transient passage"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The visible markers of safety infrastructure and fleeting external scenery evoke the impermanence of the present moment within a structured, finite journey—suggesting temporal awareness embedded in routine transit.",
+      "alternative_interpretations": [
+        "These are standard transport safety features and incidental background elements with no existential implication."
+      ],
+      "limitations": [
+        "The landscape outside is blurred and indistinct; motion cannot be confirmed from still image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1121_P3",
+      "visual_anchors": [
+        "woman alone in multi-seat row",
+        "adjacent occupied seat with only legs visible",
+        "personal items occupying shared space"
+      ],
+      "symbolic_mapping": [
+        "proximity without interaction as modern coexistence",
+        "shared infrastructure enabling parallel solitude"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The arrangement illustrates a form of mediated sociality: individuals occupy common space while maintaining personal boundaries, reflecting contemporary modes of collective presence without direct engagement.",
+      "alternative_interpretations": [
+        "The scene reflects ordinary seating allocation on public transport, not a deliberate commentary on social relations."
+      ],
+      "limitations": [
+        "Only partial views of other passengers exist; their posture, attention, or intent are not observable."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:52:51.603390+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-574d63b2-c9d9-92d1-a24f-dc401bc88ba0",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 895,
+        "total_tokens": 1704,
+        "completion_tokens_details": {
+          "text_tokens": 895
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035241f41a947399374ab9",
+      "usage": {
+        "completion_tokens": 760,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1872,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2632
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0253",
+  "sample_id": "PHL1800_HAIV_0011",
+  "file_name": "PHL1800_HAIV_0011.png",
+  "batch_id": "B001",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure in a suit",
+  "captions": {
+    "scene": [
+      "A high-angle view of a large, three-dimensional maze composed of gray walls with white top edges and black shadows, set on a tan ground plane.",
+      "The maze features irregular, non-repeating corridors and dead ends, with varying wall heights and perspective distortion suggesting depth.",
+      "The figure stands at the entrance of a wide corridor leading into the maze, viewed from behind, with no other figures visible."
+    ],
+    "action": [
+      "The figure stands motionless, facing forward toward the maze entrance.",
+      "No limb movement or posture change is visible; the figure appears static.",
+      "The figure’s orientation aligns with the central corridor, suggesting potential forward motion but no actual motion is depicted."
+    ],
+    "rationale": [
+      "The figure’s placement at the maze threshold implies an impending decision point, though no action is occurring.",
+      "The maze’s complexity and scale relative to the figure suggest navigational challenge, inferred from spatial proportion and layout.",
+      "The absence of other figures or markings limits conclusions about social context or prior path selection."
+    ],
+    "object": [
+      "The figure wears a blue suit jacket, light brown trousers, and has a featureless white oval head with no facial details.",
+      "The maze walls are rendered in shades of gray with strong black outlines and white highlights along the top edges, creating a graphic, stylized appearance.",
+      "The ground surface is uniformly tan with no texture, cracks, or markings.",
+      "Shadowing beneath the maze walls is consistently black and sharp, indicating a single overhead light source in the rendering.",
+      "No text, signage, doors, or openings are visible within the maze structure itself."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0253_P1",
+      "visual_anchors": [
+        "single figure at maze entrance",
+        "featureless white head",
+        "symmetric corridor opening"
+      ],
+      "symbolic_mapping": [
+        "featureless head → anonymity or universal subject",
+        "maze entrance → threshold of choice"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The image visualizes the existential condition of confronting an open yet complex future: the anonymous figure stands before diverging paths, embodying the universal experience of decision-making without predetermined identity or guidance.",
+      "alternative_interpretations": [
+        "It may simply depict a puzzle-solving scenario in a stylized illustration, with no philosophical intent."
+      ],
+      "limitations": [
+        "The figure’s lack of expression or context prevents confirmation of internal deliberation or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0253_P2",
+      "visual_anchors": [
+        "high walls casting deep shadows",
+        "narrow passages receding into darkness",
+        "figure small relative to structure"
+      ],
+      "symbolic_mapping": [
+        "imposing walls → systemic constraints",
+        "shadows → unknown consequences"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The spatial domination of the maze over the individual suggests structural limitation: freedom is visually circumscribed by architecture, implying that agency operates within externally imposed boundaries.",
+      "alternative_interpretations": [
+        "The shadows and scale may be purely aesthetic choices for dramatic contrast, not symbolic of oppression."
+      ],
+      "limitations": [
+        "No explicit indicators (e.g., bars, guards, labels) confirm intentional representation of power dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0253_P3",
+      "visual_anchors": [
+        "uniform tan ground",
+        "no footprints or traces",
+        "clean, unmarked surfaces"
+      ],
+      "symbolic_mapping": [
+        "untouched ground → epistemic blank slate",
+        "lack of prior marks → absence of recorded knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The pristine, traceless environment implies a pre-knowledge state: the figure enters a domain where truth is not given but must be constructed through navigation, reflecting epistemological uncertainty.",
+      "alternative_interpretations": [
+        "The clean ground may reflect artistic minimalism rather than conceptual emptiness."
+      ],
+      "limitations": [
+        "Absence of evidence (e.g., maps, tools, other agents) does not prove epistemic isolation; it may be stylistic omission."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:37:34.937783+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-30e5371b-4cae-92ca-9cc4-818b2aa9f61a",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 946,
+        "total_tokens": 2479,
+        "completion_tokens_details": {
+          "text_tokens": 946
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070137160cc9e38ead40417d",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2903,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3710
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

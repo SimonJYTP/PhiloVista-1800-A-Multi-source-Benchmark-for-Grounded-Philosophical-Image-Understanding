@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0811",
+  "sample_id": "PHL1800_HL_0150",
+  "file_name": "PHL1800_HL_0150.png",
+  "batch_id": "B018",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "five visible individuals holding protest signs and umbrellas in an outdoor gathering",
+  "captions": {
+    "scene": [
+      "Overcast sky above a group of people holding black umbrellas and large white banners with Cyrillic text.",
+      "A green statue on a pedestal is visible in the background behind the crowd.",
+      "A blue folder with no visible text is held by the central figure."
+    ],
+    "action": [
+      "A man in a grey suit and embroidered cap holds a black umbrella and grips a blue folder against his chest.",
+      "A man to the left wears a beige jacket and holds a white banner with red Cyrillic text; he also holds a black umbrella.",
+      "Two other individuals stand under umbrellas behind the main banner, one wearing glasses and a scarf, the other partially obscured by the right edge of the banner."
+    ],
+    "rationale": [
+      "The presence of multiple umbrellas and overcast lighting suggests precipitation or imminent rain.",
+      "The Cyrillic script on banners indicates the event occurs in a region where Cyrillic is used, but exact location cannot be determined from image alone.",
+      "The formal attire (cap with embroidery, suit, medals) combined with protest signage implies organized civic or veteran-related demonstration, though identity remains unspecified."
+    ],
+    "object": [
+      "A white banner with bold red Cyrillic text reading 'ЛЕЧЕТЬ ДОСТРОЯТ БЕЗ ТЕБЯ А ТЫ Р. ГАЙНУТДИН РАЗРУШИТЕЛЬ МЕЧЕТЕЙ — УХОДИ' is held by the leftmost person.",
+      "A second white banner with large black Cyrillic letters 'БЕЗ ПР...' and 'НЕТ Б...' is held horizontally across the foreground; remaining text is cut off.",
+      "A man in the center wears a dark embroidered cap, grey suit jacket, white shirt, and a ribbon with colored stripes (green, white, red) pinned to his lapel.",
+      "A green statue of a standing figure on a stone plinth is visible behind the central man’s left shoulder.",
+      "At least five distinct individuals are visible: left man in beige jacket, central man in suit, woman in scarf and glasses, a fourth person mostly hidden behind the right edge of the banner, and a fifth person partially visible behind the woman."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0811_P1",
+      "visual_anchors": [
+        "red banner with accusatory text",
+        "man in embroidered cap holding folder",
+        "medal ribbon on lapel"
+      ],
+      "symbolic_mapping": [
+        "accusatory banner → public censure",
+        "medal ribbon → institutional legitimacy claim"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of official insignia (medal ribbon, formal cap) with direct public denunciation suggests a contest over legitimate authority within a shared social framework.",
+      "alternative_interpretations": [
+        "The scene may reflect internal disagreement within a specific community rather than a broader societal conflict."
+      ],
+      "limitations": [
+        "No context confirms whether the accused individual is present or represented; the banner’s target is textual only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0811_P2",
+      "visual_anchors": [
+        "umbrellas shielding participants",
+        "overcast sky",
+        "crowded proximity under shared cover"
+      ],
+      "symbolic_mapping": [
+        "shared umbrellas → collective endurance",
+        "weather as external pressure"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "Physical sheltering under umbrellas amid adverse weather visually mirrors the negotiation of constrained expression—protest persists despite environmental and possibly institutional pressures.",
+      "alternative_interpretations": [
+        "Umbrellas may simply serve practical function without symbolic intent; no evidence confirms intentional metaphor."
+      ],
+      "limitations": [
+        "No facial expressions or body language confirm emotional or ideological stance; shelter could be purely utilitarian."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0811_P3",
+      "visual_anchors": [
+        "Cyrillic text on banners",
+        "statue in background",
+        "uniformed appearance of central figure"
+      ],
+      "symbolic_mapping": [
+        "public signage → claim to truth",
+        "statue → historical continuity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The act of displaying contested claims in public space—against a backdrop of monumental statuary—enacts a struggle over whose narrative qualifies as legitimate knowledge within a shared cultural memory.",
+      "alternative_interpretations": [
+        "Banners may communicate internal organizational messaging rather than public truth-claims; statue may be incidental background."
+      ],
+      "limitations": [
+        "The statue’s identity and significance are unreadable; its relevance to the protest is speculative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (four vs. five visible individuals); inaccurate description of the woman’s position (sitting vs. standing); mischaracterization of the blue folder (unreadable text vs. solid color); missing details about the fifth person’s partial visibility; overstatement of the statue’s color (green patinated vs. green)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:19:01.044417+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-31529774-9f0b-95d3-b9e7-735302a5c483",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1041,
+        "total_tokens": 1810,
+        "completion_tokens_details": {
+          "text_tokens": 1041
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703183334f7d02689ad4624",
+      "usage": {
+        "completion_tokens": 1064,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1972,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3036
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

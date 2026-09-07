@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1429",
+  "sample_id": "PHL1800_HL_0509",
+  "file_name": "PHL1800_HL_0509.png",
+  "batch_id": "B029",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a croissant sandwich on a white plate, with a person and beverages in the background",
+  "captions": {
+    "scene": [
+      "An indoor dining setting with ornate wallpaper, dark wood furniture, and ambient lighting.",
+      "A white ceramic plate holds a large croissant sandwich; beside it are a glass of amber liquid, a Coca-Cola can, and a metal sauce boat.",
+      "A person wearing a black top sits behind the table, resting their chin on their hand, with a green curly straw in their mouth."
+    ],
+    "action": [
+      "The person is holding a green curly straw between their lips while looking toward the camera.",
+      "The croissant sandwich remains intact on the plate, showing layers of lettuce, tomato, meat patty, and cheese.",
+      "A second green curly straw stands upright in a tall glass containing an amber-colored beverage."
+    ],
+    "rationale": [
+      "The presence of a branded Coca-Cola can and a matching green straw suggests coordinated beverage service, though no explicit branding links the glass to the can.",
+      "The sandwich appears uneaten, indicated by its structural integrity and lack of bite marks or displacement of ingredients.",
+      "The person’s posture—chin on hand, direct gaze—implies engagement with the viewer or photographer, but intent or emotion cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "A golden-brown croissant is split horizontally and filled with a beef patty, melted cheese, green leafy lettuce, and two red tomato slices, served on a plain white ceramic plate.",
+      "A red aluminum Coca-Cola can with white Spencerian script logo is placed to the right of the plate, partially obscuring the person’s torso.",
+      "A clear tall glass contains an amber-colored liquid (possibly beer or iced tea) and holds a green plastic curly straw that extends vertically above the rim.",
+      "A small polished stainless steel sauce boat with a handle rests on the left side of the plate, containing a dark viscous liquid and a small spoon inside.",
+      "A silver fork lies on a red napkin to the far right edge of the frame, partially cut off by the image boundary."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1429_P1",
+      "visual_anchors": [
+        "Coca-Cola can",
+        "green curly straws",
+        "uniformly presented sandwich"
+      ],
+      "symbolic_mapping": [
+        "Branded can and matching straws suggest standardized consumption rituals"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The repetition of manufactured elements—the branded can, identical straws, and precisely assembled sandwich—evokes the constructed nature of everyday social rituals, where identity and belonging are mediated through commercial symbols.",
+      "alternative_interpretations": [
+        "This may simply reflect standard restaurant service without symbolic intent."
+      ],
+      "limitations": [
+        "No textual context confirms intentional symbolism; branding could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1429_P2",
+      "visual_anchors": [
+        "person resting chin on hand",
+        "direct gaze",
+        "uneaten sandwich"
+      ],
+      "symbolic_mapping": [
+        "Paused consumption juxtaposed with attentive posture implies suspended action"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The moment captured—food prepared but untouched, gaze fixed—suggests a threshold of decision, embodying the philosophical tension between intention and execution in human agency.",
+      "alternative_interpretations": [
+        "The person may be waiting for someone else to begin eating, or pausing for a photograph."
+      ],
+      "limitations": [
+        "No temporal sequence is visible; stillness does not prove deliberation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1429_P3",
+      "visual_anchors": [
+        "ornate wallpaper",
+        "dark wood furniture",
+        "modern fast-food item"
+      ],
+      "symbolic_mapping": [
+        "Historical decor contrasts with contemporary mass-produced food"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of aged decorative motifs with a transient, disposable meal underscores the impermanence of consumption against enduring cultural artifacts, reflecting on temporal layers of human experience.",
+      "alternative_interpretations": [
+        "The setting may be a themed café where decor and menu are intentionally mismatched for aesthetic effect."
+      ],
+      "limitations": [
+        "Wallpaper pattern is not dated definitively; 'ornate' does not confirm historical age."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:31:08.176616+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2cd7d520-fbee-9518-9e47-ec9fea6959e0",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 958,
+        "total_tokens": 1767,
+        "completion_tokens_details": {
+          "text_tokens": 958
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043050a0cdc440137e4bce",
+      "usage": {
+        "completion_tokens": 826,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1935,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2761
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

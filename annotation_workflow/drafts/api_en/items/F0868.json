@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0868",
+  "sample_id": "PHL1800_MM_0117",
+  "file_name": "PHL1800_MM_0117.jpg",
+  "batch_id": "B019",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man standing at a wooden podium with a speech bubble above his head, and a seated woman to his right",
+  "captions": {
+    "scene": [
+      "An indoor formal setting with golden drapery, large windows, and a Canadian flag visible on the left.",
+      "A wooden podium with a microphone is centered in the foreground; behind it sit two individuals in dark formal attire.",
+      "Three additional people are partially visible in the background: one man directly behind the podium, one woman to the far right, and another figure obscured."
+    ],
+    "action": [
+      "The man at the podium has his mouth open mid-speech and his right hand resting on the podium’s surface.",
+      "The seated woman rests her chin on her right fist, elbow on the table, and gazes forward with a neutral expression.",
+      "A speech bubble containing English text floats above the man’s head, connected by a small circle to his temple region."
+    ],
+    "rationale": [
+      "The presence of a national flag, formal dress, and podium suggests an official or governmental context, though no institutional signage confirms this.",
+      "The speech bubble is clearly superimposed and not part of the original scene; its content is legible but its origin (e.g., editorial addition) cannot be determined from visual evidence alone.",
+      "The seated woman’s posture and gaze indicate attentiveness, but no facial muscle configuration confirms emotion or intent beyond observable orientation."
+    ],
+    "object": [
+      "A red-and-white Canadian flag with a central maple leaf is positioned vertically on the left edge of the frame.",
+      "The man wears a dark navy suit, white collared shirt, patterned red tie, and a small pin on his left lapel.",
+      "The podium is made of polished wood with visible grain, rectangular in shape, and supports a black gooseneck microphone.",
+      "The seated woman wears glasses, a dark blazer, a green top underneath, and multiple bracelets on her right wrist.",
+      "The speech bubble contains the legible English text: 'I will never endorse Canadian-made vehicles as an ex-senator!'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0868_P1",
+      "visual_anchors": [
+        "speech bubble with declarative statement",
+        "man at podium",
+        "Canadian flag"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents a public assertion of identity or stance",
+        "the flag anchors the claim to a national context"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image stages a moment where personal declaration intersects with national symbolism, suggesting that social roles (e.g., 'ex-senator') become performative through public utterance within institutional settings.",
+      "alternative_interpretations": [
+        "The speech bubble may be digitally added satire, making the scene a commentary rather than a record of actual speech."
+      ],
+      "limitations": [
+        "No verification exists that the speaker uttered the text; the bubble could be post-production overlay."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0868_P2",
+      "visual_anchors": [
+        "woman’s attentive pose",
+        "man speaking",
+        "shared formal space"
+      ],
+      "symbolic_mapping": [
+        "her stillness contrasts with his vocal action, implying witness or judgment"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "knowledge_truth"
+      ],
+      "interpretation": "The spatial arrangement—speaker elevated at podium, listener seated below—visually encodes asymmetrical epistemic authority, where truth claims are delivered while others observe without immediate response.",
+      "alternative_interpretations": [
+        "The woman may simply be listening passively; no gesture confirms evaluation or dissent."
+      ],
+      "limitations": [
+        "Facial expression is neutral and non-diagnostic; no eye contact or micro-expression confirms cognitive engagement."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0868_P3",
+      "visual_anchors": [
+        "wooden podium",
+        "microphone",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "the podium functions as a platform for sanctioned discourse",
+        "the microphone mediates voice into institutional record"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "Technological mediation (microphone) and material infrastructure (podium) enable constrained expression: speech is permitted only within prescribed forms, reflecting how freedom operates within institutional scaffolding.",
+      "alternative_interpretations": [
+        "The objects are standard equipment for any formal address and carry no inherent ideological weight."
+      ],
+      "limitations": [
+        "No branding, modification, or unusual placement of the microphone or podium indicates intentional symbolic use."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:23:30.878956+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-890f4bce-4a94-9e60-a0eb-3ec4d7a7ac12",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1007,
+        "total_tokens": 2540,
+        "completion_tokens_details": {
+          "text_tokens": 1007
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070323171eb9ad8d276243a8",
+      "usage": {
+        "completion_tokens": 868,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2963,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3831
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

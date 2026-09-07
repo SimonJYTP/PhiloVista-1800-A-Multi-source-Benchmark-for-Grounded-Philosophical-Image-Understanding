@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0839",
+  "sample_id": "PHL1800_MM_0020",
+  "file_name": "PHL1800_MM_0020.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man standing at the front of a lecture hall addressing seated attendees",
+  "captions": {
+    "scene": [
+      "A modern indoor lecture hall with tiered red upholstered seating, wooden paneling, and recessed ceiling lighting.",
+      "A large projection screen displays faint, mostly illegible text; two bullet points are partially visible but unreadable.",
+      "Five individuals are visible: one standing presenter and four seated audience members, viewed from behind or in profile."
+    ],
+    "action": [
+      "The presenter gestures with his right hand extended outward and left hand raised near chest level, mouth slightly open as if speaking.",
+      "One seated attendee (center) has a speech bubble containing the legible English sentence: 'We should listen quietly and respectfully.'",
+      "All visible audience members face forward toward the presenter and screen, maintaining upright postures."
+    ],
+    "rationale": [
+      "The presence of a projection screen, tiered seating, and formal attire suggests an academic or professional presentation setting.",
+      "The speech bubble is attached to the central seated person via a small circle, indicating attribution to that individual within the image’s visual logic.",
+      "The text on the screen is too blurred to transcribe reliably; only layout features (title line, two bullet points) are discernible."
+    ],
+    "object": [
+      "The presenter wears a blue long-sleeved button-down shirt, dark trousers, a brown belt, and a wristwatch on his left wrist.",
+      "The speech bubble is oval-shaped with a black outline and contains exactly the phrase 'We should listen quietly and respectfully.' in black sans-serif font.",
+      "Four audience members are visible: two in dark suits (left foreground and far left), one in a black short-sleeved shirt (center), and one in a dark long-sleeved shirt (right).",
+      "Red chairs have high backs and are arranged in rows with wooden desks attached; some desks hold white papers or notebooks.",
+      "Ceiling fixtures include three circular recessed lights and one rectangular light housing above the screen."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0839_P1",
+      "visual_anchors": [
+        "speech bubble with 'We should listen quietly and respectfully'",
+        "presenter gesturing while speaking",
+        "audience facing forward"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents normative expectation of conduct in discourse"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The image frames listening as an ethical duty within a structured social setting, where respectful attention is visually codified as a shared norm.",
+      "alternative_interpretations": [
+        "The speech bubble may be a graphic overlay added post-capture, not part of the original scene; it could reflect editorial commentary rather than participant speech."
+      ],
+      "limitations": [
+        "No facial expressions or body language confirm the speaker’s intent or audience reception; the bubble’s origin is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0839_P2",
+      "visual_anchors": [
+        "projection screen with indistinct text",
+        "audience focused on presenter",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "unreadable content on screen symbolizes the provisional nature of transmitted knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The illegibility of the projected material juxtaposed with attentive listeners underscores the dependence of knowledge transmission on interpretive frameworks rather than raw data.",
+      "alternative_interpretations": [
+        "The screen may simply be out of focus due to camera depth-of-field, not intentional obfuscation; the content could be fully legible in reality."
+      ],
+      "limitations": [
+        "No evidence confirms whether the screen content is intentionally blurred or merely defocused; no textual content can be verified."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0839_P3",
+      "visual_anchors": [
+        "presenter’s open gesture",
+        "seated audience in uniform orientation",
+        "spatial hierarchy (elevated presenter, lower seats)"
+      ],
+      "symbolic_mapping": [
+        "physical positioning reflects institutional authority and epistemic asymmetry"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement enacts a power dynamic where knowledge flows unidirectionally from a designated authority, reinforcing social roles through architecture and posture.",
+      "alternative_interpretations": [
+        "The seating may be standard for auditorium design without intended symbolic meaning; the presenter’s gesture could indicate inclusivity rather than dominance."
+      ],
+      "limitations": [
+        "No signage, logos, or contextual markers identify institutional affiliation or purpose; hierarchy is inferred solely from posture and elevation."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:20:59.787789+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a54f35bb-f687-9a9d-95a2-f96fbbe7cca3",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1025,
+        "total_tokens": 2558,
+        "completion_tokens_details": {
+          "text_tokens": 1025
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032049f46e0d2f598446cf",
+      "usage": {
+        "completion_tokens": 885,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2974,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3859
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

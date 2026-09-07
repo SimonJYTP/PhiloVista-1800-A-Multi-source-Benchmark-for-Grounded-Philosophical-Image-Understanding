@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0030",
+  "sample_id": "PHL1800_IRFL_0450",
+  "file_name": "PHL1800_IRFL_0450.jpg",
+  "batch_id": "B003",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a weathered metal trail sign mounted on a post",
+  "captions": {
+    "scene": [
+      "A forest setting with charred or darkened tree trunks in shallow focus behind the sign",
+      "Diffuse natural lighting suggesting daytime with possible canopy cover or haze",
+      "Ground covered in dry, brown organic debris and ash-like material"
+    ],
+    "action": [
+      "The sign is stationary and upright on its post",
+      "Surface corrosion and peeling paint indicate prolonged exposure to environmental elements",
+      "A yellow arrow and pictogram remain partially legible despite degradation"
+    ],
+    "rationale": [
+      "The sign’s rust and flaking suggest extended outdoor exposure, though exact duration is unverifiable",
+      "The background trees appear fire-affected due to blackened bark and lack of foliage, but no active flame or smoke is visible",
+      "The pictogram depicts a human figure walking; however, no actual person is present in the frame"
+    ],
+    "object": [
+      "The sign is rectangular with rounded corners, made of metal, and shows extensive reddish-brown corrosion.",
+      "A yellow-painted pictogram of a walking human figure is centered within a recessed square border.",
+      "A solid yellow right-pointing arrow is painted below the pictogram, also showing wear and fading.",
+      "The sign is affixed to a wooden post via two visible metal fasteners near the top and bottom edges.",
+      "No readable text appears on the sign; any lettering is obscured by corrosion or absent."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0030_P1",
+      "visual_anchors": [
+        "corroded metal surface",
+        "faded walking figure",
+        "right-pointing arrow"
+      ],
+      "symbolic_mapping": [
+        "the arrow indicates directionality amid decay",
+        "the figure persists as a trace despite erosion"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The sign embodies a directive persisting through decay—suggesting that guidance or purpose may endure even as material form deteriorates, framing journey as both intentional and subject to entropy.",
+      "alternative_interpretations": [
+        "It is simply a damaged trail marker awaiting replacement, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual context confirms intended meaning; corrosion obscures original design intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0030_P2",
+      "visual_anchors": [
+        "charred tree trunks",
+        "absence of foliage",
+        "sign standing alone"
+      ],
+      "symbolic_mapping": [
+        "the sign remains functional despite surrounding devastation",
+        "its isolation emphasizes continuity amid loss"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The sign’s continued presence in a desolate environment evokes tension between imposed structure (trail system) and natural erasure, questioning whether constraints persist meaningfully after their supporting context vanishes.",
+      "alternative_interpretations": [
+        "The scene reflects recent wildfire aftermath; the sign is incidental infrastructure unaffected by fire intensity."
+      ],
+      "limitations": [
+        "No evidence confirms fire origin or timeline; trees could be naturally dead or shaded."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0030_P3",
+      "visual_anchors": [
+        "peeling paint revealing underlying metal",
+        "yellow pigment retained selectively",
+        "border still intact despite surface loss"
+      ],
+      "symbolic_mapping": [
+        "layered degradation reveals prior states",
+        "core symbols resist full obliteration"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The partial survival of iconography amid material decay suggests that certain forms of communicated meaning resist total erasure, implying truth or identity may persist in fragmentary, resilient traces.",
+      "alternative_interpretations": [
+        "Paint adhesion varied due to manufacturing defects or uneven weathering—not intentional semiotic resilience."
+      ],
+      "limitations": [
+        "No control over original paint composition or exposure history; retention patterns may be accidental."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:50:10.161824+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-93ffe132-9024-9dcd-8fd2-82bea768d70a",
+      "usage": {
+        "prompt_tokens": 605,
+        "completion_tokens": 870,
+        "total_tokens": 1475,
+        "completion_tokens_details": {
+          "text_tokens": 870
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 98,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701495378e964578b224a84",
+      "usage": {
+        "completion_tokens": 728,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1596,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2324
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

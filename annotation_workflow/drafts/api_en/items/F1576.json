@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1576",
+  "sample_id": "PHL1800_HL_0366",
+  "file_name": "PHL1800_HL_0366.png",
+  "batch_id": "B032",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three children in green shirts handling sheep inside a livestock pen",
+  "captions": {
+    "scene": [
+      "An indoor agricultural exhibition hall with wooden trusses, green metal railings, and straw-covered flooring.",
+      "Spectators sit on elevated benches behind the pen; some wear yellow shirts or hold papers.",
+      "Multiple sheep—including white, black, and brown individuals—are contained within a green metal-fenced pen."
+    ],
+    "action": [
+      "A child in a green shirt kneels beside a white sheep, holding its head and neck.",
+      "Another child in green stands beside a second white sheep, gripping its fleece near the shoulder.",
+      "A third child in green crouches while guiding a third white sheep by its head and back."
+    ],
+    "rationale": [
+      "The children wear matching green shirts, suggesting organized participation rather than casual attendance.",
+      "Sheep are positioned facing forward or sideways with handlers maintaining close physical contact, indicating active presentation or judging preparation.",
+      "The presence of uniform attire implies a structured event such as a 4-H or FFA competition, though the exact nature is not confirmed by visible signage."
+    ],
+    "object": [
+      "Three children wearing identical short-sleeved green shirts are actively handling three white sheep and one black sheep inside a pen.",
+      "One child on the far left holds a white sheep’s head with both hands while standing; the sheep faces right.",
+      "A kneeling child in the center-right grips a white sheep’s neck and back with both hands; the sheep stands upright with head turned slightly left.",
+      "A second kneeling child to her left holds another white sheep’s head and upper back; the sheep faces forward with ears alert.",
+      "A third child, partially obscured behind the central kneeling child, appears to assist with the same sheep or stand nearby; only torso and arm are visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1576_P1",
+      "visual_anchors": [
+        "green shirts",
+        "children guiding sheep by hand",
+        "straw-covered floor"
+      ],
+      "symbolic_mapping": [
+        "uniformed participation signifies role assignment",
+        "physical guidance of animals reflects stewardship"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies a pedagogical enactment of responsibility: children learn care through direct, embodied interaction with livestock, situating ethical duty within communal practice.",
+      "alternative_interpretations": [
+        "This may simply document routine animal handling at a fair without deeper intent."
+      ],
+      "limitations": [
+        "No explicit textual explanation confirms educational or moral framing; numbers on shirts could denote registration only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1576_P2",
+      "visual_anchors": [
+        "sheep lined up facing forward",
+        "handlers maintaining consistent posture",
+        "spectators observing from raised benches"
+      ],
+      "symbolic_mapping": [
+        "alignment of bodies suggests order",
+        "observation implies evaluation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene visualizes a microcosm of social hierarchy: handlers present animals for scrutiny, where appearance (cleanliness, posture) becomes a site of identity performance under institutional gaze.",
+      "alternative_interpretations": [
+        "Handlers may merely be positioning animals for ease of movement, not performance."
+      ],
+      "limitations": [
+        "Facial expressions and spectator engagement are indistinct; no visible judging apparatus confirms evaluation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1576_P3",
+      "visual_anchors": [
+        "wooden roof trusses",
+        "straw bedding",
+        "metal railings"
+      ],
+      "symbolic_mapping": [
+        "enclosure defines boundary between participant and observer",
+        "straw as temporary ground contrasts with permanent structure"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The pen physically constrains both animals and children within a ritualized space, framing their actions as a bounded journey—where choice exists within prescribed roles and spatial limits.",
+      "alternative_interpretations": [
+        "The enclosure serves purely functional safety purposes with no symbolic intent."
+      ],
+      "limitations": [
+        "No signage or ritual markers confirm intentional symbolism; architecture may be standard for livestock venues."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of children (four vs. three visible); inaccurate description of sheep colors (black-and-brown vs. black); unsupported claim of numbered tags on children; misrepresentation of a child’s obscured status; inaccurate action details for sheep handling."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:47:19.723174+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-34738d2a-72d1-9063-a86d-c2bf29adc437",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 955,
+        "total_tokens": 1764,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044706996611e2c3d54347",
+      "usage": {
+        "completion_tokens": 924,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1930,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2854
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0664",
+  "sample_id": "PHL1800_HL_0480",
+  "file_name": "PHL1800_HL_0480.png",
+  "batch_id": "B015",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a blue dump truck and a yellow backhoe loader parked on a residential street with traffic cones",
+  "captions": {
+    "scene": [
+      "A sunny day on a paved residential street lined with leafless deciduous trees, evergreens, and houses with brick and siding facades.",
+      "Multiple orange traffic cones are placed in a line across the road, partially enclosing the construction vehicles.",
+      "Overhead utility wires cross the upper portion of the frame against a clear blue sky."
+    ],
+    "action": [
+      "The yellow backhoe loader is positioned with its bucket raised and tilted toward the bed of the blue dump truck, suggesting material transfer or loading.",
+      "The dump truck’s cab door is closed and no person is visible inside; the vehicle appears stationary with wheels on pavement.",
+      "A person wearing an orange safety vest is seated in the operator’s seat of the backhoe loader, hands near controls, facing forward."
+    ],
+    "rationale": [
+      "The alignment of the backhoe’s bucket over the truck bed implies coordinated operation, though no motion blur confirms active movement.",
+      "The presence of traffic cones suggests temporary road closure or work zone designation, but no signage or workers actively directing traffic are visible.",
+      "The absence of visible exhaust, tire marks, or displaced debris makes it uncertain whether the equipment recently operated or is currently idling."
+    ],
+    "object": [
+      "A light-blue cab-over-engine dump truck with a white front grille, chrome side mirrors, and a visible license plate reading 'PAU-485' (partially legible).",
+      "A yellow John Deere backhoe loader with black tires, a glass-enclosed cab, and a hydraulic arm ending in a metal bucket positioned above the truck bed.",
+      "Five orange traffic cones with white reflective bands are arranged on the asphalt surface: two near the backhoe’s front wheel, one near its rear wheel, one near the truck’s front wheel, and one near its rear wheel.",
+      "A person wearing an orange high-visibility vest and dark clothing sits in the backhoe’s cab, with head and shoulders visible through the windshield.",
+      "A white house with red brick lower walls and a gray roof is visible behind the truck; another dark-colored box truck is partially visible on the far left edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0664_P1",
+      "visual_anchors": [
+        "orange traffic cones",
+        "parked construction vehicles",
+        "residential street"
+      ],
+      "symbolic_mapping": [
+        "cones as markers of temporary order",
+        "machines as extensions of human labor"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The scene embodies the tension between infrastructural intervention and everyday life: the cones impose spatial constraint to enable collective labor, revealing how technological tools mediate human agency within regulated public space.",
+      "alternative_interpretations": [
+        "This is simply routine municipal maintenance with no deeper significance beyond logistical coordination."
+      ],
+      "limitations": [
+        "No signage, worker interaction, or temporal context confirms intent or duration of the work zone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0664_P2",
+      "visual_anchors": [
+        "person in orange vest",
+        "closed cab door",
+        "static machinery"
+      ],
+      "symbolic_mapping": [
+        "vest as signifier of role",
+        "stillness as suspended action"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The operator’s visible presence yet immobile posture reflects the modern condition where identity is partially defined by occupational attire and location, while action remains deferred—suggesting a moment of pause within a larger trajectory of purposeful work.",
+      "alternative_interpretations": [
+        "The person may be waiting for instructions or taking a break; the stillness is mundane, not symbolic."
+      ],
+      "limitations": [
+        "Facial features and exact posture are obscured; no evidence of internal state or decision-making process."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0664_P3",
+      "visual_anchors": [
+        "bare tree branches",
+        "clear sky",
+        "utility wires"
+      ],
+      "symbolic_mapping": [
+        "bare branches as cyclical vulnerability",
+        "wires as invisible infrastructure binding community"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of dormant natural elements and persistent human-made systems evokes the continuity of social existence despite seasonal decay—infrastructure endures even when nature retreats, underscoring communal reliance on maintained order.",
+      "alternative_interpretations": [
+        "The trees are bare because it is early spring; the wires are ordinary utilities with no symbolic weight."
+      ],
+      "limitations": [
+        "Season cannot be definitively confirmed from foliage alone; no explicit cultural or ritual context is present."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:05:42.700723+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-536d5a22-10c3-9e9d-b9b0-dec3a283b6e1",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1047,
+        "total_tokens": 1856,
+        "completion_tokens_details": {
+          "text_tokens": 1047
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070305306577bdf631d14839",
+      "usage": {
+        "completion_tokens": 907,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2026,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2933
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0844",
+  "sample_id": "PHL1800_MM_0008",
+  "file_name": "PHL1800_MM_0008.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults standing face-to-face in an interior space",
+  "captions": {
+    "scene": [
+      "A warmly lit room with beige curtains, a floor lamp, and a tan upholstered sofa with patterned pillows.",
+      "Natural light enters from large windows behind the subjects, creating soft backlighting and highlights on hair and fabric.",
+      "A small round side table with a metallic rim is partially visible near the man’s left hand."
+    ],
+    "action": [
+      "The man, viewed from behind, holds a black wide-brimmed hat to his head with his right hand, appearing to adjust or don it.",
+      "The woman faces the man, holding a matching black hat in both hands at waist level, with her gaze directed toward him.",
+      "A speech bubble originates near the woman’s head and contains legible text: 'You can't wear that hat, I haven't approved it yet!'"
+    ],
+    "rationale": [
+      "The woman’s posture and direct gaze suggest engagement in a verbal exchange, supported by the presence of the speech bubble.",
+      "The identical style of the two hats implies they are a set or coordinated items, though no explicit ownership or prior use is shown.",
+      "The man’s partial profile shows facial hair and a suit jacket; however, his expression and intent cannot be determined due to occlusion."
+    ],
+    "object": [
+      "The man wears a dark pinstriped suit jacket over a white collared shirt and a black wide-brimmed hat with a decorative band.",
+      "The woman wears a beige long-sleeved V-neck sweater with a small button at the neckline and medium-wash blue denim jeans with a visible metal button and zipper fly.",
+      "The woman holds a black felt hat with a wide brim and indented crown, identical in style to the one the man wears.",
+      "A beige sofa with at least three cushions—two plain and one textured—is positioned behind the subjects.",
+      "A white-shaded floor lamp with a slender base stands between the sofa and the window curtain."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0844_P1",
+      "visual_anchors": [
+        "woman holding hat",
+        "man wearing hat",
+        "speech bubble text"
+      ],
+      "symbolic_mapping": [
+        "hat as signifier of social conformity",
+        "approval as gatekeeping of appearance"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image stages a moment where personal presentation is subject to interpersonal authorization, suggesting identity is not fully self-determined but negotiated within relational frameworks.",
+      "alternative_interpretations": [
+        "This may depict a lighthearted fashion consultation or role-play rather than a serious assertion of control."
+      ],
+      "limitations": [
+        "No facial expressions or body language beyond posture confirm emotional tone or power dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0844_P2",
+      "visual_anchors": [
+        "matching hats",
+        "formal attire vs. casual attire",
+        "interior domestic setting"
+      ],
+      "symbolic_mapping": [
+        "attire contrast as symbolic of role differentiation",
+        "shared object implying shared context or ritual"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of formal and casual dress while handling identical objects suggests a negotiation of roles or transitions within a shared social space, possibly marking a threshold moment in relational alignment.",
+      "alternative_interpretations": [
+        "The clothing difference may simply reflect individual preference without symbolic intent."
+      ],
+      "limitations": [
+        "No contextual markers (e.g., event signage, accessories) confirm ritual or transition status."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0844_P3",
+      "visual_anchors": [
+        "speech bubble containing imperative statement",
+        "woman’s neutral expression",
+        "man’s obscured face"
+      ],
+      "symbolic_mapping": [
+        "verbal prohibition as exercise of normative authority",
+        "hat as contested symbol of autonomy"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The utterance functions as a performative constraint, illustrating how freedom of expression (here, sartorial) can be circumscribed by interpersonal authority, even in absence of overt coercion.",
+      "alternative_interpretations": [
+        "The line may be humorous or ironic, undermining any real constraint and instead signaling intimacy or playfulness."
+      ],
+      "limitations": [
+        "Tone and intent are undecidable from visual cues alone; text lacks prosodic or contextual framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:39:56.170544+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fc270811-feb2-9bb7-bda2-95d0489e0e72",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 983,
+        "total_tokens": 2516,
+        "completion_tokens_details": {
+          "text_tokens": 983
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013911b63ae164f69f4024",
+      "usage": {
+        "completion_tokens": 844,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2936,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3780
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

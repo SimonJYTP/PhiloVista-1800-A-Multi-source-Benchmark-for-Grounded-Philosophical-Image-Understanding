@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0008",
+  "sample_id": "PHL1800_HL_0505",
+  "file_name": "PHL1800_HL_0505.png",
+  "batch_id": "B003",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man standing beside a microwave oven in a kitchen",
+  "captions": {
+    "scene": [
+      "A kitchen interior with wooden cabinetry, a white microwave on a countertop, and a refrigerator with papers attached to its door.",
+      "A window with white trim and visible green foliage outside is behind the man, partially framed by wood molding.",
+      "The ceiling has a recessed circular light fixture; walls are painted white with wood trim at the top."
+    ],
+    "action": [
+      "The man raises his right hand with an open palm near the top of the microwave.",
+      "His left arm rests on the back of a dark wooden chair with a black cushioned top.",
+      "He faces the camera with mouth slightly open, wearing glasses and a brown short-sleeved button-up shirt."
+    ],
+    "rationale": [
+      "The man’s posture and hand position suggest he may be gesturing toward or explaining something about the microwave, though intent is not directly observable.",
+      "The presence of papers on the refrigerator indicates routine domestic use, but specific content is unreadable and thus purpose cannot be confirmed.",
+      "The lighting appears artificial (recessed ceiling light) combined with natural daylight from the window, but exact time of day is indeterminate."
+    ],
+    "object": [
+      "A white microwave oven with a dark glass door, vent slits on its left side, and a control panel with buttons and a small digital display on its right side.",
+      "A man with graying hair, wearing rectangular-framed eyeglasses, a brown short-sleeved collared shirt, and light-colored trousers with a belt.",
+      "A dark wooden chair with a black padded top, positioned to the man’s left and partially obscuring the refrigerator.",
+      "A stainless-steel refrigerator with a freezer drawer at bottom and multiple papers, magnets, and notes affixed to its front surface; text on papers is illegible.",
+      "Wooden upper cabinets with vertical grain pattern and metal handles, mounted above the microwave and extending across the wall."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0008_P1",
+      "visual_anchors": [
+        "microwave oven",
+        "man’s raised hand",
+        "refrigerator with notes"
+      ],
+      "symbolic_mapping": [
+        "the microwave as a proxy for domestic technology mediating daily life",
+        "the raised hand as gesture of explanation or appeal to shared understanding"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where human agency interfaces with household technology, suggesting how routine tools become sites of communication, instruction, or negotiation within domestic social space.",
+      "alternative_interpretations": [
+        "It may simply depict a casual pose during a kitchen activity, with no symbolic intent."
+      ],
+      "limitations": [
+        "No legible text or facial expression confirms communicative intent; gesture could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0008_P2",
+      "visual_anchors": [
+        "man’s glasses",
+        "visible aging features",
+        "kitchen setting"
+      ],
+      "symbolic_mapping": [
+        "glasses as mediation between perception and reality",
+        "kitchen as locus of embodied routine"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The man’s appearance and environment evoke reflection on lived experience—how sensory tools like glasses extend cognition, while domestic routines mark the passage of time and bodily change.",
+      "alternative_interpretations": [
+        "Glasses are functional wear; aging features are neutral biological facts without philosophical implication."
+      ],
+      "limitations": [
+        "No explicit temporal markers (e.g., clocks, calendars) confirm reflection on mortality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0008_P3",
+      "visual_anchors": [
+        "open palm gesture",
+        "proximity to appliance",
+        "chair as boundary object"
+      ],
+      "symbolic_mapping": [
+        "gesture as nonverbal claim to authority or ownership",
+        "chair separating subject from background objects"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "The man’s positioning and gesture may signify assertion of control or identity within a domestic domain, where objects like appliances and furniture delineate zones of influence and self-presentation.",
+      "alternative_interpretations": [
+        "The gesture is purely ergonomic—reaching for a cabinet or adjusting stance—without symbolic weight."
+      ],
+      "limitations": [
+        "No opposing figure or tension is visible; power dynamics cannot be inferred from a single person’s pose."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:47:58.905004+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1440ae15-683d-9f0a-b56c-ee614a8731f4",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 986,
+        "total_tokens": 1795,
+        "completion_tokens_details": {
+          "text_tokens": 986
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014734a5324a80ef9c493f",
+      "usage": {
+        "completion_tokens": 847,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1962,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2809
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

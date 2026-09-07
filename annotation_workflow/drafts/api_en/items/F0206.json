@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0206",
+  "sample_id": "PHL1800_IRFL_0483",
+  "file_name": "PHL1800_IRFL_0483.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male person",
+  "captions": {
+    "scene": [
+      "A studio-style portrait with a textured olive-green backdrop",
+      "Even frontal lighting illuminates the subject’s face and upper torso",
+      "The subject is centered in a medium close-up framing"
+    ],
+    "action": [
+      "The subject maintains direct eye contact with the camera",
+      "His mouth is closed and lips are neutral, not smiling or frowning",
+      "His head is upright and shoulders are squared forward"
+    ],
+    "rationale": [
+      "The formal attire and controlled lighting suggest a professional photoshoot setting",
+      "The lack of motion blur indicates the subject remained still during exposure",
+      "The visible watermark implies publication context, though its origin is not visually verifiable"
+    ],
+    "object": [
+      "The person wears a dark navy and black plaid suit jacket with notched lapels.",
+      "He wears a white dress shirt with thin vertical maroon stripes and a standard collar.",
+      "A solid dark teal necktie is knotted in a four-in-hand style and lies centered on the shirt.",
+      "A pocket square with a subtle geometric pattern is partially visible in the left breast pocket.",
+      "His hair is short, dark brown, neatly combed back, and shows no visible graying."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0206_P1",
+      "visual_anchors": [
+        "neutral facial expression",
+        "direct gaze",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "direct gaze may symbolize presence or claim to being seen"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The composition emphasizes the subject’s visibility and social positioning through deliberate presentation and unbroken eye contact, evoking questions about how identity is asserted within institutional or public frames.",
+      "alternative_interpretations": [
+        "This is a standard editorial portrait intended for magazine publication, with no symbolic intent beyond professional representation."
+      ],
+      "limitations": [
+        "No contextual text or narrative cues confirm intentional symbolism; expression remains ambiguous and culturally variable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0206_P2",
+      "visual_anchors": [
+        "striped shirt",
+        "plaid jacket",
+        "pocket square"
+      ],
+      "symbolic_mapping": [
+        "layered patterns may reflect constructed identity through sartorial codes"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of multiple textile patterns—stripes, plaid, and geometric pocket square—suggests a curated self-presentation where appearance functions as a semiotic system encoding social role and intentionality.",
+      "alternative_interpretations": [
+        "The clothing choices reflect contemporary menswear conventions without deeper meaning; patterns are common and commercially standard."
+      ],
+      "limitations": [
+        "Pattern combinations are widespread in fashion and do not uniquely indicate conceptual intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0206_P3",
+      "visual_anchors": [
+        "even lighting",
+        "static pose",
+        "uniform background"
+      ],
+      "symbolic_mapping": [
+        "controlled environment may evoke constraint or discipline"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The absence of environmental variation and the subject’s immobile posture within a uniformly lit frame may imply a tension between individual presence and external framing forces, such as media or institutional expectations.",
+      "alternative_interpretations": [
+        "Studio portraiture inherently uses controlled environments to isolate the subject; this does not imply constraint but rather technical convention."
+      ],
+      "limitations": [
+        "Lighting and backdrop are standard photographic tools; no visual indicator confirms metaphorical intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:17:39.822702+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f1f3941c-b7da-981d-b133-bab8d2ff2233",
+      "usage": {
+        "prompt_tokens": 908,
+        "completion_tokens": 792,
+        "total_tokens": 1700,
+        "completion_tokens_details": {
+          "text_tokens": 792
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 401,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070217255d3a3a05e9764291",
+      "usage": {
+        "completion_tokens": 657,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1907,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2564
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

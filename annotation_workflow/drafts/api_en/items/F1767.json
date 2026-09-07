@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1767",
+  "sample_id": "PHL1800_HL_0162",
+  "file_name": "PHL1800_HL_0162.png",
+  "batch_id": "B036",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red and black Husqvarna motorcycle in the foreground with its right-side mirror reflecting a stop sign and building",
+  "captions": {
+    "scene": [
+      "Urban street scene with metal barriers, traffic signals, vehicles, and a motorcyclist in the background.",
+      "Overcast daylight conditions; wet pavement suggests recent rain.",
+      "A red octagonal stop sign is visible in the motorcycle's side mirror reflection."
+    ],
+    "action": [
+      "A motorcyclist wearing a helmet rides away from the camera on the road.",
+      "A dark sedan moves parallel to the motorcycle in the adjacent lane.",
+      "The motorcycle is stationary, positioned behind a metal barrier."
+    ],
+    "rationale": [
+      "The motorcycle’s handlebar grip and brake lever are relaxed and not engaged, suggesting it is not actively being ridden.",
+      "Reflections in the mirror show a static building and stop sign without motion blur, consistent with the motorcycle being still.",
+      "A motorcyclist and a dark sedan appear in motion relative to the fixed foreground motorcycle, indicating differential movement."
+    ],
+    "object": [
+      "The motorcycle has a red fuel tank with 'Husqvarna' printed in white sans-serif font and a white 'H' logo on the black side panel.",
+      "The right-side convex mirror reflects an upside-down red octagonal sign with white reversed text reading 'STOP', which is 'STOP' inverted.",
+      "A black metal barrier with diagonal cross-bracing separates the motorcycle from the roadway.",
+      "A traffic light is visible above the road, but no green light is illuminated behind the motorcycle’s handlebars.",
+      "In the background, one rider on a motorcycle wears a dark helmet and jacket; another rider appears further left near a pole."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1767_P1",
+      "visual_anchors": [
+        "inverted STOP sign in mirror",
+        "convex mirror distortion",
+        "foreground motorcycle stationary while background moves"
+      ],
+      "symbolic_mapping": [
+        "mirror inversion as reversal of expected order",
+        "distortion as mediation of reality"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The inverted stop sign in the mirror suggests that perceived directives may be fundamentally altered by the medium of perception, questioning whether truth is accessible only through mediated, distorted frames.",
+      "alternative_interpretations": [
+        "The inversion is purely optical due to mirror geometry and carries no symbolic meaning beyond physics."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; inversion is mechanically inevitable for convex mirrors."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1767_P2",
+      "visual_anchors": [
+        "metal barrier separating motorcycle from road",
+        "stationary motorcycle",
+        "moving traffic beyond barrier"
+      ],
+      "symbolic_mapping": [
+        "barrier as enforced separation",
+        "stillness amid motion as imposed constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The physical barrier enforces a spatial division between the observer (motorcycle) and the flow of public life, illustrating how social structures materialize as literal constraints on individual agency.",
+      "alternative_interpretations": [
+        "The barrier is a temporary traffic control measure with no sociopolitical intent."
+      ],
+      "limitations": [
+        "The barrier’s purpose (e.g., construction, event management) is not specified; its function is inferred from placement alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1767_P3",
+      "visual_anchors": [
+        "one rider on a motorcycle",
+        "another rider further left",
+        "single motorcycle foregrounded"
+      ],
+      "symbolic_mapping": [
+        "shared vehicle as interdependence",
+        "foreground isolation vs. collective movement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The paired riders contrast with the solitary foreground motorcycle, highlighting how identity is shaped relationally—through shared motion and mutual visibility—while appearance (e.g., helmeted anonymity) obscures individual distinction.",
+      "alternative_interpretations": [
+        "Riders share a vehicle for practical reasons (e.g., transport efficiency), not symbolic ones."
+      ],
+      "limitations": [
+        "Facial features and expressions are fully obscured; no evidence of interaction beyond proximity."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Candidate incorrectly claims two motorcyclists on one motorcycle; image shows one motorcyclist on a motorcycle and another separate rider. Candidate misdescribes the mirror text as 'POT' instead of 'STOP' (inverted). Candidate overstates pedestrian count (no pedestrians visible). Candidate misidentifies a green traffic light as visible behind handlebars (no green light is visible). Candidate incorrectly states two riders on one motorcycle in the background."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:11:04.994518+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-35657346-873c-999d-9190-87b6ba0b450f",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 918,
+        "total_tokens": 1687,
+        "completion_tokens_details": {
+          "text_tokens": 918
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907051049c9df5a1836c3440c",
+      "usage": {
+        "completion_tokens": 878,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1849,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2727
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0563",
+  "sample_id": "PHL1800_MM_0057",
+  "file_name": "PHL1800_MM_0057.jpg",
+  "batch_id": "B013",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men in a courtroom setting",
+  "captions": {
+    "scene": [
+      "A man in judicial robes sits behind a polished wooden bench with horizontal paneling.",
+      "A second man in a dark suit stands facing the robed man, viewed from behind and slightly to the right.",
+      "The background is a plain beige wall above a wooden wainscoting panel."
+    ],
+    "action": [
+      "The robed man sits upright with hands resting on the bench surface.",
+      "The suited man stands with his back mostly to the viewer, head turned toward the robed man.",
+      "A speech/thought bubble originates near the robed man’s head and contains legible text."
+    ],
+    "rationale": [
+      "The presence of judicial robes and a raised wooden bench strongly suggests a courtroom context.",
+      "The thought bubble implies internal cognition attributed to the robed figure, though no facial expression confirms intent.",
+      "The suit and posture of the standing man indicate formal engagement, but his role (lawyer, litigant, witness) is not visually determinable."
+    ],
+    "object": [
+      "A man wearing a black judicial robe over a white collared shirt and red patterned tie sits at a wooden bench.",
+      "A second man wears a dark navy suit jacket, white shirt collar visible, and has short brown hair and light stubble on his neck.",
+      "A white oval thought/speech bubble with black sans-serif text floats above and to the right of the robed man’s head.",
+      "The text inside the bubble reads: 'I’ll take my friend's case and help him!' and is fully legible.",
+      "The wooden bench features three horizontal molded panels and a flat top surface where two thin black rectangular objects rest."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0563_P1",
+      "visual_anchors": [
+        "judicial robe",
+        "thought bubble with declarative statement",
+        "standing man facing judge"
+      ],
+      "symbolic_mapping": [
+        "robe → institutional authority",
+        "thought bubble → subjective commitment overriding neutrality"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes tension between impartial judicial duty and personal moral obligation, where the figure of authority internally resolves to act based on friendship rather than procedural neutrality.",
+      "alternative_interpretations": [
+        "The thought bubble may be satirical or fictional, indicating a cartoonish breach of decorum rather than a genuine ethical dilemma."
+      ],
+      "limitations": [
+        "No facial expression or body language confirms the robed man’s emotional state or sincerity; the bubble is an added graphic element, not a natural part of the scene."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0563_P2",
+      "visual_anchors": [
+        "back-facing suited man",
+        "robed man’s direct gaze",
+        "empty space between them"
+      ],
+      "symbolic_mapping": [
+        "back-facing figure → anonymity of the individual before power",
+        "gaze → scrutiny or judgment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial arrangement emphasizes asymmetry in social positioning: one figure is defined by role and visibility, the other by obscurity and submission to institutional gaze.",
+      "alternative_interpretations": [
+        "The standing man may simply be delivering an argument; the back view is a compositional choice for perspective, not symbolic erasure."
+      ],
+      "limitations": [
+        "Only one side of the standing man is visible; his identity, status, and agency cannot be determined from appearance alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0563_P3",
+      "visual_anchors": [
+        "legible text declaring intent to help a friend",
+        "formal courtroom setting",
+        "static postures"
+      ],
+      "symbolic_mapping": [
+        "'help him' → relational duty",
+        "courtroom → domain of impersonal rules"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The declared intention to assist a friend within a formal legal space frames choice as a rupture in expected objectivity, suggesting moral agency emerges precisely at the point of institutional contradiction.",
+      "alternative_interpretations": [
+        "The text may be ironic commentary on nepotism or bias, not a sincere declaration—its tone cannot be verified visually."
+      ],
+      "limitations": [
+        "The text is superimposed and stylized; its authorship and intended tone are external to the visual evidence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:56:57.194385+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-936f8ef1-032e-9d0f-bd17-f011278e681e",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 976,
+        "total_tokens": 2509,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070256470f26ef7da19a402c",
+      "usage": {
+        "completion_tokens": 838,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2933,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3771
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

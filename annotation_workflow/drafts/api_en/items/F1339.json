@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1339",
+  "sample_id": "PHL1800_HAIV_0298",
+  "file_name": "PHL1800_HAIV_0298.png",
+  "batch_id": "B028",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized cartoon face",
+  "captions": {
+    "scene": [
+      "Close-up of a face with red hair, pink skin, and large eyes against a white background.",
+      "Five teardrop-shaped droplets are visible on the face: two below the eyes, one centered below the nose, and two near the lower cheeks.",
+      "The eyes contain black pupils, white sclera, red lower irises, and small red teardrop shapes inside the irises."
+    ],
+    "action": [
+      "Red liquid is depicted inside each eye, shaped like a teardrop, suggesting bleeding or weeping blood.",
+      "A white X-shaped line crosses the lower part of the right eye’s red iris region.",
+      "Multiple teardrops are shown in mid-fall or adhered to the face, with internal lines indicating volume or reflection."
+    ],
+    "rationale": [
+      "The presence of red within the eyes and teardrops suggests intentional visual symbolism rather than realistic anatomy.",
+      "The X-mark on the right eye may indicate injury, cancellation, or emphasis, but its exact meaning is not determinable from visual evidence alone.",
+      "The facial expression cannot be fully determined due to absence of mouth or eyebrows; only eyes and tears are visible."
+    ],
+    "object": [
+      "The subject has short, spiky red hair with black outlines and no visible scalp texture.",
+      "Each eye consists of a black circular pupil, white scleral area, and a red lower crescent-shaped region containing a smaller red teardrop shape.",
+      "Five teardrops are drawn on the face: two symmetrically placed below the eyes, one centrally located below the nasal bridge, and two on the lower cheek areas, each with a black outline and an internal vertical line.",
+      "A thin white X-shaped line intersects the red portion of the right eye, crossing diagonally from upper-left to lower-right and upper-right to lower-left.",
+      "The face is rendered in flat pink tones with bold black outlines and no shading or texture gradients."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1339_P1",
+      "visual_anchors": [
+        "red teardrops inside eyes",
+        "white X on right eye",
+        "five external teardrops"
+      ],
+      "symbolic_mapping": [
+        "red teardrops map to suffering that is internalized yet visible",
+        "X-mark maps to negation or violation of integrity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The image may represent moral injury where responsibility is imposed externally (X) while pain remains internal (blood-tears), reflecting conflict between duty and self-preservation.",
+      "alternative_interpretations": [
+        "It could simply be a stylistic depiction of intense emotion in anime/manga art without philosophical intent."
+      ],
+      "limitations": [
+        "No textual context or narrative frame confirms symbolic intent; the X could be decorative or accidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1339_P2",
+      "visual_anchors": [
+        "spiky red hair",
+        "large expressive eyes",
+        "teardrops with internal lines"
+      ],
+      "symbolic_mapping": [
+        "spiky hair maps to emotional volatility",
+        "teardrop internal lines map to layered affect"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The exaggerated features emphasize how appearance mediates social perception of distress, suggesting identity is partially constructed through visible emotional signals.",
+      "alternative_interpretations": [
+        "These are standard conventions in cartoon illustration for conveying sadness, not necessarily commentary on identity."
+      ],
+      "limitations": [
+        "No interaction with others or environment is shown, so social existence cannot be confirmed visually."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1339_P3",
+      "visual_anchors": [
+        "black pupils",
+        "red lower iris regions",
+        "white sclera"
+      ],
+      "symbolic_mapping": [
+        "contrast between black and red maps to duality of perception—reason vs. passion"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The bifurcated eye design may symbolize fractured truth-seeking: the black pupil as rational observation, the red region as embodied, affective knowing—implying a journey where choice requires integrating both.",
+      "alternative_interpretations": [
+        "The color division may reflect character design aesthetics (e.g., anime trope) without epistemological intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm epistemic framing; color use may be purely aesthetic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:19:52.854185+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-36fc1869-1090-9d80-be37-f1d6430d8f2e",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 999,
+        "total_tokens": 2532,
+        "completion_tokens_details": {
+          "text_tokens": 999
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041936a02a80eae34a4a07",
+      "usage": {
+        "completion_tokens": 862,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2956,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3818
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0177",
+  "sample_id": "PHL1800_IRFL_0148",
+  "file_name": "PHL1800_IRFL_0148.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a circular clock face surrounded by twelve stylized human figures",
+  "captions": {
+    "scene": [
+      "A black-and-white line drawing of an analog clock with numerals 1 through 12, centered on a white background.",
+      "Twelve identical stick-figure humans are positioned radially around the clock’s perimeter, each oriented outward.",
+      "The clock has three hands: hour, minute, and second, all pointing to specific positions."
+    ],
+    "action": [
+      "The hour hand points between 2 and 3, closer to 2; the minute hand points at 6; the second hand points near 11.",
+      "Each figure is depicted in a running or striding pose, with arms and legs extended asymmetrically.",
+      "No figure is touching the clock; all are separated by small gaps, maintaining radial symmetry."
+    ],
+    "rationale": [
+      "The uniformity of figure posture suggests intentional repetition rather than random placement.",
+      "The clock hands indicate a specific time (approximately 2:30:55), but no contextual cues confirm whether this time is symbolic or literal.",
+      "The absence of facial features or clothing details prevents identification of age, gender, or role; only motion and position are visible."
+    ],
+    "object": [
+      "The clock face is circular with bold black Arabic numerals from 1 to 12 evenly spaced along its circumference.",
+      "Three hands emanate from the center: a short thick hour hand, a longer thin minute hand, and a thin red second hand.",
+      "Twelve human silhouettes are arranged one per hour mark, each shown mid-stride with one leg forward and opposite arm forward.",
+      "All figures are identical in shape and size, rendered in solid black with no internal detail or shading.",
+      "The second hand is colored red, distinguishing it visually from the black hour and minute hands."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0177_P1",
+      "visual_anchors": [
+        "twelve identical running figures",
+        "clock with moving hands",
+        "radial symmetry"
+      ],
+      "symbolic_mapping": [
+        "figures → recurring cycles of human activity",
+        "clock → irreversible temporal progression"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes the collective human condition as bound to cyclical labor or motion within finite time, where individual identity dissolves into uniform action under temporal constraint.",
+      "alternative_interpretations": [
+        "It may simply depict a decorative clock design emphasizing motion, with no intended symbolism."
+      ],
+      "limitations": [
+        "No textual labels or cultural markers confirm symbolic intent; figures lack distinguishing traits that would support a specific sociopolitical reading."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0177_P2",
+      "visual_anchors": [
+        "red second hand",
+        "figures positioned at each hour",
+        "uniform stride"
+      ],
+      "symbolic_mapping": [
+        "red second hand → urgency or mortality marker",
+        "identical figures → loss of individual agency in routine"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The red second hand highlights the fleeting nature of decision points, while the indistinguishable runners suggest constrained choice—each figure follows the same path dictated by time’s structure.",
+      "alternative_interpretations": [
+        "The red hand may only serve functional contrast for readability, not symbolic emphasis."
+      ],
+      "limitations": [
+        "Color use is minimal and monochromatic except for red; no evidence confirms red denotes urgency versus mere differentiation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0177_P3",
+      "visual_anchors": [
+        "clock as central hub",
+        "figures radiating outward",
+        "no interaction among figures"
+      ],
+      "symbolic_mapping": [
+        "central clock → organizing principle of society",
+        "isolated figures → fragmented social existence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The arrangement implies individuals act simultaneously yet separately under a shared temporal framework, raising questions about collective responsibility when actions are synchronized but uncoordinated.",
+      "alternative_interpretations": [
+        "The layout could reflect standard clock aesthetics where figures replace traditional tick marks, with no ethical implication."
+      ],
+      "limitations": [
+        "Figures do not face inward or outward consistently; orientation varies slightly, weakening the claim of deliberate isolation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:13:50.602745+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-72de12e7-b489-97e9-a7fb-4005dd9b5765",
+      "usage": {
+        "prompt_tokens": 573,
+        "completion_tokens": 955,
+        "total_tokens": 1528,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 66,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021338fc62aaa974194976",
+      "usage": {
+        "completion_tokens": 812,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1604,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2416
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

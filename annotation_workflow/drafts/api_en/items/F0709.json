@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0709",
+  "sample_id": "PHL1800_IRFL_0230",
+  "file_name": "PHL1800_IRFL_0230.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "man in light gray suit seated on bus",
+  "captions": {
+    "scene": [
+      "Interior of a vehicle with large multi-pane windows and metal framing, likely a bus or train.",
+      "Daylight illuminates the interior; outside view is overexposed and indistinct.",
+      "Three additional individuals are visible in the background, out of focus, seated behind the main subject."
+    ],
+    "action": [
+      "The man gazes forward with eyes open, lips closed, head upright and facing camera direction.",
+      "His torso remains still; no limb motion is visible.",
+      "Other passengers remain seated and stationary within the frame."
+    ],
+    "rationale": [
+      "The window structure and seat upholstery suggest public transit rather than private vehicle.",
+      "The shallow depth of field indicates use of a wide aperture lens, common in cinematic photography.",
+      "The man’s attire (suit, tie, collared shirt) implies formal or professional context, though purpose is not visually verifiable."
+    ],
+    "object": [
+      "A man with short brown hair, fair skin, and visible facial stubble sits facing forward.",
+      "He wears a light gray single-breasted suit jacket over a white collared shirt and a dark patterned necktie.",
+      "The seat in front of him has dark blue textured fabric with a subtle floral or damask-like embossing.",
+      "Behind him, three blurred figures are present: one woman with dark hair, one man wearing a dark cap, and a third partially obscured person.",
+      "The window consists of vertical metal mullions dividing rectangular glass panes, with reflections faintly visible on the glass surface."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0709_P1",
+      "visual_anchors": [
+        "man’s direct gaze",
+        "bus interior confinement",
+        "out-of-focus background passengers"
+      ],
+      "symbolic_mapping": [
+        "fixed gaze as confrontation with observer",
+        "bus as shared yet anonymous social space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image frames an individual suspended between private interiority and public anonymity, where appearance becomes the sole medium of social recognition amid collective transit.",
+      "alternative_interpretations": [
+        "A routine commute captured mid-journey with no symbolic intent; the composition reflects standard cinematographic framing for character introduction."
+      ],
+      "limitations": [
+        "No facial expression beyond neutrality is discernible; emotional or cognitive state cannot be confirmed from visual data alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0709_P2",
+      "visual_anchors": [
+        "large windows with overexposed exterior",
+        "man’s static posture",
+        "uniform lighting"
+      ],
+      "symbolic_mapping": [
+        "overexposed outside as unknowable future",
+        "stillness as temporal suspension"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The figure occupies a liminal moment—neither arriving nor departing—where the passage of time is visually flattened by uniform illumination and lack of motion, evoking existential pause.",
+      "alternative_interpretations": [
+        "The overexposure results from technical exposure settings for interior lighting, not intentional symbolism; the man is simply waiting."
+      ],
+      "limitations": [
+        "The exterior is entirely illegible; no landmarks, weather, or time-of-day cues exist to support temporal metaphors."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0709_P3",
+      "visual_anchors": [
+        "formal attire in casual transit setting",
+        "seat texture detail",
+        "metal window grid"
+      ],
+      "symbolic_mapping": [
+        "suit as imposed role",
+        "grid as structural constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of formal dress against utilitarian transport infrastructure suggests institutional expectation encroaching upon personal mobility, highlighting how labor norms permeate even transient spaces.",
+      "alternative_interpretations": [
+        "The man may be traveling to or from a formal event; attire is contextually appropriate and not inherently incongruous."
+      ],
+      "limitations": [
+        "No signage, logos, or occupational identifiers confirm labor context; attire could serve ceremonial or personal preference functions."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:09:48.461962+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3ce2e644-9084-90c2-a3c6-f4a24e45b6e2",
+      "usage": {
+        "prompt_tokens": 1155,
+        "completion_tokens": 917,
+        "total_tokens": 2072,
+        "completion_tokens_details": {
+          "text_tokens": 917
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 648,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030939ac4f2859a13343da",
+      "usage": {
+        "completion_tokens": 772,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2364,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3136
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

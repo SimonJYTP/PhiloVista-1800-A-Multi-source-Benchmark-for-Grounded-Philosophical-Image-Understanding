@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0157",
+  "sample_id": "PHL1800_MM_0043",
+  "file_name": "PHL1800_MM_0043.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two seated individuals at a café table",
+  "captions": {
+    "scene": [
+      "Interior of a sunlit café with large windows showing blurred street buildings and vehicles",
+      "Wooden round table with three ceramic cups (yellow, white, yellow) and saucers",
+      "Red upholstered booth seating and matching chairs visible in background"
+    ],
+    "action": [
+      "Male-presenting individual in green hoodie smiles while facing the female-presenting individual",
+      "Female-presenting individual drinks from a yellow cup held by a metallic segmented robotic arm",
+      "Speech bubble above male-presenting individual contains the text 'Haha! Look at her arm!'"
+    ],
+    "rationale": [
+      "The robotic arm is visibly attached to the female-presenting individual’s right shoulder and elbow region, indicating integration rather than external holding",
+      "The speech bubble text explicitly references the arm, confirming visual attention is directed toward it",
+      "No visible tattoos, scars, or clothing disruptions suggest the arm is not concealed; however, whether it replaces or augments a biological limb cannot be determined from image alone"
+    ],
+    "object": [
+      "A male-presenting person with brown hair wears a dark green hooded sweatshirt and blue trousers, seated on a red chair with gold trim.",
+      "A female-presenting person with long brown hair wears a light gray zippered jacket and holds a yellow ceramic cup with a white rim using a silver-and-black articulated prosthetic arm.",
+      "Three ceramic cups rest on the table: one yellow cup held by the prosthetic arm, one yellow cup on a brown saucer, and one white cup on a white saucer.",
+      "A white oval speech bubble with black sans-serif text reads 'Haha! Look at her arm!' and originates from near the male-presenting person’s head.",
+      "The table surface shows wood grain texture and reflects ambient light; no food items are present."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0157_P1",
+      "visual_anchors": [
+        "robotic arm",
+        "speech bubble referencing the arm",
+        "casual café setting"
+      ],
+      "symbolic_mapping": [
+        "robotic arm → technological embodiment",
+        "casual interaction → normalization of augmentation"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The image frames human-technology integration as mundane social practice, suggesting identity is increasingly co-constituted with prosthetic extensions rather than bounded by biology.",
+      "alternative_interpretations": [
+        "The scene may simply depict a character design choice in an animated or illustrated narrative, with no intended philosophical commentary."
+      ],
+      "limitations": [
+        "The image provides no information about agency, consent, origin, or functionality of the arm, limiting claims about embodiment or identity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0157_P2",
+      "visual_anchors": [
+        "smiling expression",
+        "shared table",
+        "mutual gaze direction"
+      ],
+      "symbolic_mapping": [
+        "shared coffee ritual → social cohesion",
+        "laughter directed at difference → potential objectification"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "Laughter focused on bodily difference within a shared social space raises questions about ethical responsibility in everyday interactions—whether inclusion or othering is enacted through seemingly benign observation.",
+      "alternative_interpretations": [
+        "The laughter may express genuine amusement at a shared joke unrelated to the arm, with the speech bubble being misread due to framing."
+      ],
+      "limitations": [
+        "Facial expressions are stylized; intent behind the smile and laugh cannot be verified visually."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0157_P3",
+      "visual_anchors": [
+        "sunlit interior",
+        "out-of-focus street view",
+        "static seated posture"
+      ],
+      "symbolic_mapping": [
+        "café as liminal space → suspension of normative expectations",
+        "blurred exterior → detachment from broader societal structures"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The café setting functions as a constrained yet liberating zone where technological difference is momentarily unproblematic, implying that freedom may emerge not from absence of constraint but from recontextualization within chosen social micro-environments.",
+      "alternative_interpretations": [
+        "The lighting and background blur are standard artistic techniques for focus and depth, not symbolic choices."
+      ],
+      "limitations": [
+        "No evidence confirms intentional symbolism; environmental details could be generic set dressing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:11:12.560521+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-28c9256d-647c-9a49-8b4c-3d2df0f8b050",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 981,
+        "total_tokens": 2514,
+        "completion_tokens_details": {
+          "text_tokens": 981
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070210542992c63b04b94f8b",
+      "usage": {
+        "completion_tokens": 839,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2934,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3773
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

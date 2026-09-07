@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0315",
+  "sample_id": "PHL1800_HAIV_0449",
+  "file_name": "PHL1800_HAIV_0449.png",
+  "batch_id": "B008",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized police officer figure",
+  "captions": {
+    "scene": [
+      "A light blue wall with a dark blue door featuring four rectangular glass panes and a green doorknob, framed by a black doorframe.",
+      "A white sign with black text is mounted on the wall to the left of the door.",
+      "The floor is brown with a tan baseboard; the officer stands on the floor facing the door."
+    ],
+    "action": [
+      "The officer extends their right arm toward the door, hand open near the upper portion of the doorframe.",
+      "The officer’s left hand grips the green doorknob in a turning or pulling posture.",
+      "The officer wears a dark blue uniform with a peaked cap, badge patch, and black trousers."
+    ],
+    "rationale": [
+      "The officer’s posture suggests an attempt to open or interact with the door, but no motion blur or door displacement confirms actual movement.",
+      "Text on the sign appears distorted and partially illegible; it cannot be reliably transcribed beyond visible letter fragments.",
+      "The image uses simplified cartoon rendering, so facial features, gender, and ethnicity are not visually specified."
+    ],
+    "object": [
+      "A stylized human figure wearing a dark blue peaked cap, short-sleeved shirt with a circular green-and-black badge patch on the left sleeve, and black trousers.",
+      "A dark blue door with four identical rectangular glass panes arranged in a 2x2 grid, each pane showing a gradient blue reflection.",
+      "A round green doorknob positioned on the lower-left quadrant of the door’s visible surface.",
+      "A white rectangular sign with black text reading 'Clod', 'Waevee', and 'asnt' in three lines; characters are irregular and possibly corrupted.",
+      "A black vertical doorframe with a stepped profile on the right side, suggesting a recessed jamb or decorative molding."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0315_P1",
+      "visual_anchors": [
+        "distorted sign text",
+        "uniformed figure",
+        "closed door"
+      ],
+      "symbolic_mapping": [
+        "illegible signage → obscured communication",
+        "uniform → institutional role"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The illegibility of the sign juxtaposed with the officer’s formal posture evokes tension between institutional authority and epistemic uncertainty—truth is present but inaccessible.",
+      "alternative_interpretations": [
+        "The text may be intentionally nonsensical for stylistic or humorous effect, unrelated to philosophical meaning."
+      ],
+      "limitations": [
+        "No legible words confirm intentional semantic distortion; the text could be accidental artifact."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0315_P2",
+      "visual_anchors": [
+        "officer gripping doorknob",
+        "door fully closed",
+        "hand raised near frame"
+      ],
+      "symbolic_mapping": [
+        "gripping knob → attempted agency",
+        "closed door → barrier"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The figure’s dual-hand engagement with the door—simultaneously grasping and reaching—suggests a moment suspended between decision and action, embodying constraint within potential choice.",
+      "alternative_interpretations": [
+        "The pose may simply depict standard door-opening procedure without symbolic intent."
+      ],
+      "limitations": [
+        "No visual indication of hesitation, resistance, or emotional state; posture is generic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0315_P3",
+      "visual_anchors": [
+        "single officer figure",
+        "no other people",
+        "isolated interaction"
+      ],
+      "symbolic_mapping": [
+        "solitary agent → individual responsibility",
+        "uniform → role-defined identity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "identity_appearance"
+      ],
+      "interpretation": "The lone officer’s engagement with the door foregrounds the ethical weight carried by individuals acting within institutional roles, where appearance (uniform) mediates moral accountability.",
+      "alternative_interpretations": [
+        "The scene may depict routine duty without ethical dimension; isolation could reflect compositional simplicity."
+      ],
+      "limitations": [
+        "No contextual cues (e.g., emergency, signage content, environment) confirm ethical stakes."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:31:14.137295+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-890a4455-01bb-95c8-90bd-0fef2be74069",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 933,
+        "total_tokens": 2466,
+        "completion_tokens_details": {
+          "text_tokens": 933
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023100a39be9d7c1874dfd",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2894,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3689
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0053",
+  "sample_id": "PHL1800_IRFL_0388",
+  "file_name": "PHL1800_IRFL_0388.jpg",
+  "batch_id": "B003",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male",
+  "captions": {
+    "scene": [
+      "White background with no visible environment or context",
+      "Studio-style lighting producing soft shadows and high contrast",
+      "Tight framing focused on upper torso and head of the subject"
+    ],
+    "action": [
+      "Man holding a flip phone in right hand, oriented vertically toward his face",
+      "Mouth wide open in an apparent vocal emission; facial muscles tensed",
+      "Eyebrows lowered and eyes narrowed, gaze directed at the phone screen"
+    ],
+    "rationale": [
+      "The open mouth and facial tension suggest vocalization, but sound is not observable; this is inferred from posture alone",
+      "The phone is held close to the face, consistent with active use, though screen status (on/off) is indiscernible",
+      "Hair is spiked upward and disheveled, indicating recent movement or styling, but cause cannot be determined from image alone"
+    ],
+    "object": [
+      "The man wears a dark pinstriped suit jacket over a light blue collared shirt.",
+      "He wears a diagonally striped tie with gold, navy, and white bands.",
+      "His right hand grips a black clamshell-style flip phone with a silver hinge and small external display panel.",
+      "The phone’s external screen shows a rectangular shape with a lighter central area, but no legible text or icons are visible.",
+      "His hair is short, light brown, and styled upward in multiple stiff spikes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0053_P1",
+      "visual_anchors": [
+        "spiked hair",
+        "open mouth",
+        "phone held near face"
+      ],
+      "symbolic_mapping": [
+        "spiked hair → resistance to conformity",
+        "phone proximity → mediation of self-expression"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image may reflect tension between individual expression (disheveled hair, intense gesture) and technological mediation (phone as conduit), suggesting identity formation under social-technological pressure.",
+      "alternative_interpretations": [
+        "This could simply be a staged stock photo illustrating frustration with a malfunctioning device, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "No contextual cues confirm intent, audience, or narrative; symbolic mapping relies on cultural associations not present in the image itself."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0053_P2",
+      "visual_anchors": [
+        "pinstripe suit",
+        "striped tie",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "suit → institutional role",
+        "tie → adherence to convention"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The formal dress juxtaposed with uncontrolled vocal outburst may symbolize conflict between professional constraint and emergent agency in technologically mediated labor contexts.",
+      "alternative_interpretations": [
+        "The attire may merely indicate a generic business setting without implying institutional critique."
+      ],
+      "limitations": [
+        "Attire alone does not establish occupational role or systemic context; no documents, logos, or environment confirm institutional affiliation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0053_P3",
+      "visual_anchors": [
+        "white background",
+        "isolated figure",
+        "direct gaze toward device"
+      ],
+      "symbolic_mapping": [
+        "isolation → atomization",
+        "device focus → displacement of human interaction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The stark isolation against a blank field, combined with fixation on the phone, may evoke modern alienation—where connectivity paradoxically enforces solitude and constrains embodied presence.",
+      "alternative_interpretations": [
+        "The white background is likely a studio backdrop for commercial photography and carries no inherent symbolic weight."
+      ],
+      "limitations": [
+        "Background is neutral and standard for product/stock imagery; absence of other figures does not prove intentional commentary on social isolation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:53:29.618078+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fb4623ef-6cfc-9045-be2b-34d0c31dbe05",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 870,
+        "total_tokens": 1679,
+        "completion_tokens_details": {
+          "text_tokens": 870
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070153136b77a565423048f3",
+      "usage": {
+        "completion_tokens": 728,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1847,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2575
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

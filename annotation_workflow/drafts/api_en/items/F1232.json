@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1232",
+  "sample_id": "PHL1800_IRFL_0390",
+  "file_name": "PHL1800_IRFL_0390.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single red apple",
+  "captions": {
+    "scene": [
+      "A red apple centered against a plain white background with a soft gray shadow beneath it.",
+      "The apple is isolated with no other objects, surfaces, or environmental context visible.",
+      "Lighting creates a glossy highlight on the upper-left surface of the apple and a subtle gradient across its skin."
+    ],
+    "action": [
+      "The apple is stationary and upright, resting on an implied surface.",
+      "A short brown stem protrudes vertically from the calyx at the top center of the apple.",
+      "Tiny pale speckles are distributed across the apple’s red skin, consistent with natural lenticels."
+    ],
+    "rationale": [
+      "The apple’s symmetry and smooth curvature suggest it is whole and uncut; however, no cross-section is visible to confirm internal integrity.",
+      "The shadow beneath implies contact with a surface, but the surface itself is not visible, so support method is uncertain.",
+      "The glossiness and uniform color suggest freshness, but without temporal reference, ripeness cannot be objectively verified."
+    ],
+    "object": [
+      "The apple has a classic rounded heart-like shape with a slight indentation at the top where the stem emerges.",
+      "Its skin is predominantly deep red with scattered small, light-colored lenticels and a smooth, reflective texture.",
+      "A short, dry, brown woody stem extends approximately 5 mm upward from the apex.",
+      "A soft, diffuse shadow extends downward and slightly rightward beneath the apple, indicating a light source from the upper left.",
+      "No blemishes, bruises, or bite marks are visible on the visible surface of the apple."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1232_P1",
+      "visual_anchors": [
+        "smooth unblemished red skin",
+        "central stem",
+        "isolated presentation"
+      ],
+      "symbolic_mapping": [
+        "the intact surface may symbolize purity or wholeness",
+        "the stem as a vestigial connection to origin"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The apple’s pristine appearance evokes questions about surface versus essence—how identity is perceived through external appearance alone, while the stem hints at an origin now severed, suggesting impermanence.",
+      "alternative_interpretations": [
+        "It is simply a product photograph emphasizing visual appeal for commercial purposes."
+      ],
+      "limitations": [
+        "No internal structure or decay is visible, so claims about mortality rely on external analogy rather than direct evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1232_P2",
+      "visual_anchors": [
+        "uniform red coloration",
+        "glossy reflection",
+        "lack of context"
+      ],
+      "symbolic_mapping": [
+        "the monochrome saturation may represent singular focus or reductionism"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The apple’s isolation and visual clarity invite epistemological scrutiny: what can be known from appearance alone, and how does the absence of context constrain interpretation?",
+      "alternative_interpretations": [
+        "The image uses studio lighting and clipping path to maximize product visibility, not to provoke philosophical inquiry."
+      ],
+      "limitations": [
+        "No textual or situational cues exist to confirm intentional abstraction; the minimalism could be purely aesthetic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1232_P3",
+      "visual_anchors": [
+        "symmetrical form",
+        "central stem",
+        "shadow grounding"
+      ],
+      "symbolic_mapping": [
+        "the balance between vertical stem and horizontal shadow suggests tension between aspiration and constraint"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The apple stands poised between ascent (stem) and grounding (shadow), metaphorically reflecting the human condition of navigating autonomy within physical and social limits.",
+      "alternative_interpretations": [
+        "The shadow is a standard photographic artifact to simulate placement on a surface; no symbolic intent is required."
+      ],
+      "limitations": [
+        "The shadow’s shape and direction follow optical physics, not narrative design; symbolic reading imposes meaning beyond visual data."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:06:17.648259+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ac854a31-2fb1-9ebc-96ad-ff1d05936438",
+      "usage": {
+        "prompt_tokens": 3017,
+        "completion_tokens": 903,
+        "total_tokens": 3920,
+        "completion_tokens_details": {
+          "text_tokens": 903
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2510,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040545ed280fda5c464144",
+      "usage": {
+        "completion_tokens": 767,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7250,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 8017
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

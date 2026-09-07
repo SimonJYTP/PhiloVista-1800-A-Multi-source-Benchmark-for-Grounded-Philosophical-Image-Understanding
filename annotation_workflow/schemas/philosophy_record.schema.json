@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://philovista-1800.local/schemas/philosophy_record.schema.json",
+  "title": "PhiloVista-1800 philosophy sidecar record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sample_id", "file_name", "interpretations"],
+  "properties": {
+    "sample_id": {"type": "string", "minLength": 1},
+    "file_name": {"type": "string", "minLength": 1},
+    "interpretations": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"$ref": "#/$defs/interpretation"}
+    }
+  },
+  "$defs": {
+    "nonEmptyText": {"type": "string", "minLength": 1},
+    "textArray": {"type": "array", "items": {"$ref": "#/$defs/nonEmptyText"}},
+    "interpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "annotation_id",
+        "annotator_id",
+        "method",
+        "visual_anchors",
+        "symbolic_mapping",
+        "concept_ids",
+        "interpretation",
+        "evidence_links",
+        "alternative_interpretations",
+        "limitations",
+        "sufficiency",
+        "text_dependency",
+        "cultural_context_required",
+        "reviewer_scores",
+        "adjudication"
+      ],
+      "properties": {
+        "annotation_id": {"type": "string", "minLength": 1},
+        "annotator_id": {"type": "string", "minLength": 1},
+        "method": {"enum": ["human_independent", "human_reannotation"]},
+        "visual_anchors": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonEmptyText"}},
+        "symbolic_mapping": {"$ref": "#/$defs/textArray"},
+        "concept_ids": {"$ref": "#/$defs/textArray"},
+        "interpretation": {"$ref": "#/$defs/nonEmptyText"},
+        "evidence_links": {"$ref": "#/$defs/textArray"},
+        "alternative_interpretations": {"$ref": "#/$defs/textArray"},
+        "limitations": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonEmptyText"}},
+        "sufficiency": {"enum": ["supported", "plausible", "insufficient", "not_applicable"]},
+        "text_dependency": {"enum": ["none", "low", "medium", "high"]},
+        "cultural_context_required": {"type": "boolean"},
+        "reviewer_scores": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"$ref": "#/$defs/review"}
+        },
+        "adjudication": {
+          "oneOf": [
+            {"type": "null"},
+            {"type": "object"}
+          ]
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rating_id",
+        "rater_id",
+        "visual_support_1_5",
+        "concept_fit_1_5",
+        "coherence_1_5",
+        "overinterpretation_risk_1_5",
+        "verdict"
+      ],
+      "properties": {
+        "rating_id": {"type": "string", "minLength": 1},
+        "rater_id": {"type": "string", "minLength": 1},
+        "visual_support_1_5": {"type": "integer", "minimum": 1, "maximum": 5},
+        "concept_fit_1_5": {"type": "integer", "minimum": 1, "maximum": 5},
+        "coherence_1_5": {"type": "integer", "minimum": 1, "maximum": 5},
+        "overinterpretation_risk_1_5": {"type": "integer", "minimum": 1, "maximum": 5},
+        "verdict": {"enum": ["accept", "revise", "reject"]},
+        "reason": {"type": "string"}
+      }
+    }
+  }
+}

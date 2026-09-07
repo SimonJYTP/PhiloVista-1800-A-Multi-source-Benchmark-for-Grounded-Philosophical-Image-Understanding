@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1336",
+  "sample_id": "PHL1800_IRFL_0394",
+  "file_name": "PHL1800_IRFL_0394.jpg",
+  "batch_id": "B028",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a sunlit valley enclosed by steep forested slopes",
+  "captions": {
+    "scene": [
+      "A deep, V-shaped valley with densely vegetated walls and a flat bottom containing patchwork agricultural fields.",
+      "Sunlight streams from the upper left, illuminating parts of the valley floor and right slope while casting long shadows across the left slope.",
+      "The valley floor shows irregularly shaped green plots interspersed with trees and a few small structures."
+    ],
+    "action": [
+      "Sunlight is actively illuminating portions of the landscape, creating strong contrast between lit and shadowed areas.",
+      "Vegetation appears static; no motion blur or wind-disturbed foliage is visible.",
+      "Fields on the valley floor are arranged in a pattern suggesting human cultivation, though no active farming is observed."
+    ],
+    "rationale": [
+      "The sharp shadow boundary suggests low-angle sunlight, likely near sunrise or sunset, but exact time cannot be confirmed without sky context.",
+      "The regularity of field shapes implies intentional land use, yet no tools, workers, or machinery are visible to confirm ongoing activity.",
+      "The absence of visible roads or large infrastructure suggests limited access, but this is inferred from lack of evidence rather than direct observation."
+    ],
+    "object": [
+      "The left valley wall is heavily shadowed and covered in continuous dense green vegetation with no visible breaks or clearings.",
+      "The right valley wall is brightly lit, revealing textured layers of forest canopy with varying shades of green and subtle topographic ridges.",
+      "The valley floor contains approximately 20–30 distinct rectangular or irregular green plots, some appearing flooded or reflective, consistent with wetland agriculture.",
+      "At least four small light-colored structures—likely buildings—are scattered across the valley floor, each surrounded by trees and fields.",
+      "No humans, animals, vehicles, or moving objects are visible anywhere in the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1336_P1",
+      "visual_anchors": [
+        "sunlit right slope",
+        "shadowed left slope",
+        "sharp light-shadow boundary"
+      ],
+      "symbolic_mapping": [
+        "light-shadow boundary as metaphor for epistemic limits"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The stark division between illuminated and obscured terrain visually embodies the idea that perception is inherently partial: what lies in shadow remains knowable only indirectly, if at all.",
+      "alternative_interpretations": [
+        "This is simply a consequence of solar angle and topography, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or cultural markers confirm intentional symbolism; lighting could result purely from natural geometry."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1336_P2",
+      "visual_anchors": [
+        "patchwork fields",
+        "isolated structures",
+        "dense surrounding forest"
+      ],
+      "symbolic_mapping": [
+        "fields as deliberate human intervention within wild nature"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The cultivated plots represent sustained human labor shaping environment under constraint—bounded by steep slopes and ecological limits—suggesting freedom exercised within material necessity.",
+      "alternative_interpretations": [
+        "The patterns may reflect traditional land tenure or hydrological adaptation, not philosophical stance."
+      ],
+      "limitations": [
+        "No tools, people, or signs of maintenance confirm labor; fields could be fallow or naturally formed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1336_P3",
+      "visual_anchors": [
+        "unbroken forest canopy on slopes",
+        "no visible paths or edges",
+        "uniform green texture"
+      ],
+      "symbolic_mapping": [
+        "continuous forest as symbol of enduring nonhuman agency"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The vast, undisturbed forest covering the slopes evokes deep time and nonhuman continuity, contrasting with the transient human-scale plots below, prompting reflection on social existence as fleeting within geological persistence.",
+      "alternative_interpretations": [
+        "The forest may be secondary growth after disturbance; uniformity does not prove age or stability."
+      ],
+      "limitations": [
+        "Tree species, age, and succession stage are indiscernible; visual uniformity does not guarantee ecological continuity."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:19:13.858471+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f80bd7e8-0ed2-99ae-9f64-06e3fefa8929",
+      "usage": {
+        "prompt_tokens": 2637,
+        "completion_tokens": 929,
+        "total_tokens": 3566,
+        "completion_tokens_details": {
+          "text_tokens": 929
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2130,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070418591cf29e7d261c4c37",
+      "usage": {
+        "completion_tokens": 792,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4264,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5056
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0467",
+  "sample_id": "PHL1800_HL_0530",
+  "file_name": "PHL1800_HL_0530.png",
+  "batch_id": "B011",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person with long dark hair and glasses holding a small brown teddy bear",
+  "captions": {
+    "scene": [
+      "A kitchen interior with white tiled walls, a window with sheer curtains, and a shelf holding cups and jars.",
+      "A stainless steel sink area with a bottle of dish soap labeled 'DUX', scissors hanging on a hook, and a faucet.",
+      "A towel rack with a green-and-white checkered cloth hanging beside a white bowl with a brown rim on a counter."
+    ],
+    "action": [
+      "The person holds the teddy bear with both hands, fingers interlaced around its torso and limbs.",
+      "The person gazes directly at the camera with a neutral to slightly smiling facial expression.",
+      "The teddy bear is positioned upright in front of the person’s chest, partially obscuring their torso."
+    ],
+    "rationale": [
+      "The presence of a sink, dish soap, and kitchenware suggests a domestic kitchen setting; however, no cooking activity is visible.",
+      "The person’s hands fully enclose the bear, indicating intentional holding rather than incidental contact; the bear’s posture implies it is being presented or supported.",
+      "The text on the person’s shirt is partially visible but largely unreadable due to blurring and occlusion by the bear and hands."
+    ],
+    "object": [
+      "The person wears rectangular-framed eyeglasses with thin metal rims and a white short-sleeved T-shirt with black printed text that includes fragments such as 'TO' and 'RA'.",
+      "The teddy bear is small, made of light brown plush fabric, with dark button eyes, stitched nose/mouth, and visible seam lines on its limbs and torso.",
+      "A clear plastic bottle with a blue label reading 'DUX' and a red cap sits on the counter left of the sink; the label also shows a stylized wave or splash graphic.",
+      "A pair of black-handled scissors hangs from a metal hook mounted on the tiled wall above the sink.",
+      "A white ceramic bowl with a thick brown rim rests on the counter to the right, containing an indistinct white substance near its edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0467_P1",
+      "visual_anchors": [
+        "person holding teddy bear",
+        "gaze directed at viewer",
+        "kitchen background"
+      ],
+      "symbolic_mapping": [
+        "the bear as a proxy for care or vulnerability",
+        "direct gaze as assertion of presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The act of presenting a soft, non-threatening object while maintaining direct eye contact may reflect a negotiation of self-presentation within a mundane domestic space—balancing intimacy and visibility.",
+      "alternative_interpretations": [
+        "The person is simply posing with a cherished toy for a casual photograph; no symbolic intent is required."
+      ],
+      "limitations": [
+        "No verbal context or facial micro-expressions confirm intentionality behind the pose or gaze."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0467_P2",
+      "visual_anchors": [
+        "teddy bear’s worn texture",
+        "visible seams and stitching",
+        "person’s hands cradling bear"
+      ],
+      "symbolic_mapping": [
+        "material wear as evidence of continued use",
+        "hands enclosing object as gesture of protection"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visibly aged plush bear, held carefully, evokes continuity across time and implies a sustained ethical commitment to preserving meaning through objects.",
+      "alternative_interpretations": [
+        "The bear appears used because it is a frequently handled child’s toy; wear is incidental, not symbolic."
+      ],
+      "limitations": [
+        "Age of the bear cannot be objectively determined from texture alone; wear could result from manufacturing or lighting."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0467_P3",
+      "visual_anchors": [
+        "checkered towel",
+        "tiled wall",
+        "shelf with uniform cups"
+      ],
+      "symbolic_mapping": [
+        "repetition of patterned elements as order",
+        "domestic tools as infrastructure of daily life"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The orderly kitchen environment juxtaposed with the intimate, unstructured gesture of holding a toy suggests tension between structured domestic labor and moments of personal autonomy.",
+      "alternative_interpretations": [
+        "The scene reflects routine household organization; no tension is visually encoded."
+      ],
+      "limitations": [
+        "No action of labor or constraint is depicted—only static background elements are present."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:49:23.746269+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c372d742-025a-951b-bec4-46a134e25f1c",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 1006,
+        "total_tokens": 1707,
+        "completion_tokens_details": {
+          "text_tokens": 1006
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024906fb1af0258f30466e",
+      "usage": {
+        "completion_tokens": 867,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1829,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2696
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

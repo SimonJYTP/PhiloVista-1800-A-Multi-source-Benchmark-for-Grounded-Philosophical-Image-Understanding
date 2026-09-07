@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0385",
+  "sample_id": "PHL1800_IRFL_0453",
+  "file_name": "PHL1800_IRFL_0453.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single owl depicted in four quadrants",
+  "captions": {
+    "scene": [
+      "A shallow-focus natural background of muted brown and green tones with indistinct vegetation.",
+      "Each quadrant shows the same owl against a uniformly blurred backdrop, suggesting identical environmental conditions across frames.",
+      "No artificial structures, human presence, or other animals are visible in any quadrant."
+    ],
+    "action": [
+      "The owl rotates its head progressively from left-facing (top-left) to frontal (bottom-left) to right-facing (bottom-right), with intermediate tilt (top-right).",
+      "The owl’s eyes remain wide open and fixed forward in all four images, indicating sustained visual attention.",
+      "Feathers show no motion blur; posture is static except for neck articulation."
+    ],
+    "rationale": [
+      "Head orientation changes systematically across quadrants, implying sequential capture rather than independent subjects.",
+      "Identical plumage pattern, facial disc markings, and eye color across all four panels support a single individual.",
+      "Minor differences in lighting and focus suggest slight temporal separation but no evidence of multiple individuals."
+    ],
+    "object": [
+      "The owl has mottled brown, black, and white plumage with horizontal barring on the chest and vertical streaking on the head.",
+      "Its facial disc is rounded with a pale rim and dark concentric feather lines; two bright yellow irises with black pupils are centered symmetrically.",
+      "A small, dark, hooked beak is visible beneath the facial disc, partially obscured by feathers in some views.",
+      "The owl’s neck is elongated and flexible, enabling extreme rotation without body movement, as shown by consistent shoulder position across frames.",
+      "Fine feather texture is resolved sharply on the head and upper breast, while background elements remain uniformly out of focus."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0385_P1",
+      "visual_anchors": [
+        "fixed yellow eyes",
+        "rotating head",
+        "symmetrical facial disc"
+      ],
+      "symbolic_mapping": [
+        "fixed gaze → epistemic vigilance",
+        "head rotation → perspectival multiplicity"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The owl’s unblinking stare across shifting orientations embodies the pursuit of truth through persistent observation from multiple angles, resisting singular perspective.",
+      "alternative_interpretations": [
+        "The sequence may simply document natural head mobility for scanning surroundings, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the interpretation projects meaning onto biological behavior."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0385_P2",
+      "visual_anchors": [
+        "identical plumage across quadrants",
+        "consistent eye color",
+        "unbroken feather pattern"
+      ],
+      "symbolic_mapping": [
+        "visual continuity → persistence of identity despite positional change"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Despite dramatic shifts in orientation, the owl’s invariant features assert a stable identity beneath mutable appearance, questioning whether selfhood resides in form or continuity of traits.",
+      "alternative_interpretations": [
+        "The images are technical repetitions of one subject; variation is mechanical, not conceptual."
+      ],
+      "limitations": [
+        "The subject is non-sentient and cannot express identity; the mapping relies on anthropomorphic projection."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0385_P3",
+      "visual_anchors": [
+        "shallow depth of field",
+        "isolated subject",
+        "uniform background"
+      ],
+      "symbolic_mapping": [
+        "isolation within frame → existential solitude",
+        "focus on eyes → consciousness as focal point"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The deliberate isolation of the owl against an undifferentiated field highlights the tension between individual perception and absence of social context, evoking questions about being-in-the-world without relation.",
+      "alternative_interpretations": [
+        "Shallow depth of field is a standard photographic technique to emphasize subject, not a philosophical statement."
+      ],
+      "limitations": [
+        "Background uniformity results from optical choice, not ontological assertion; no social cues are present to ground the claim."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:42:04.306537+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3baccd0f-783b-9b17-918d-8c5644b2d9d3",
+      "usage": {
+        "prompt_tokens": 2669,
+        "completion_tokens": 904,
+        "total_tokens": 3573,
+        "completion_tokens_details": {
+          "text_tokens": 904
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070241520f23d98aefab4b39",
+      "usage": {
+        "completion_tokens": 770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4281,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5051
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

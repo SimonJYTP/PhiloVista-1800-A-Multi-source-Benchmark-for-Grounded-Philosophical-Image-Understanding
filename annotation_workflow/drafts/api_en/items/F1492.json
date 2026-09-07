@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1492",
+  "sample_id": "PHL1800_HL_0177",
+  "file_name": "PHL1800_HL_0177.png",
+  "batch_id": "B031",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young child seated at a table writing",
+  "captions": {
+    "scene": [
+      "A child sits on a red plastic chair at a wooden table with graph paper, scissors, pink craft sticks, and a colorful workbook.",
+      "The floor is tiled in light gray square tiles; the table surface shows scattered school supplies and partial printed materials.",
+      "The child’s hair is styled with a pink hair clip; she wears a light blue sleeveless top."
+    ],
+    "action": [
+      "The child holds an orange pencil in her right hand and rests her left hand on open graph paper with handwritten numerals.",
+      "Her head is tilted downward, eyes focused on the paper where columns of numbers (e.g., '3', '33', '333') are visible.",
+      "Her fingers are splayed on the paper near the written digits, suggesting active engagement with the task."
+    ],
+    "rationale": [
+      "The presence of graph paper, repeated digit sequences, and a pencil strongly suggests a numeracy exercise rather than free drawing.",
+      "The child’s posture and gaze direction indicate sustained attention to the written content, though internal state cannot be confirmed.",
+      "The arrangement of tools (scissors, craft sticks, workbook) implies a multi-activity learning environment, but no single activity is definitively dominant."
+    ],
+    "object": [
+      "A red perforated plastic chair supports the child from behind and to the left.",
+      "An open notebook with blue grid lines contains handwritten vertical columns of the digit '3' repeated one to four times per line.",
+      "A pair of teal-handled scissors lies on a purple-and-yellow workbook featuring large uppercase letters (e.g., 'H', 'Z', 'W', 'S', 'L', 'C', 'E').",
+      "An orange hexagonal pencil is held in the child’s right hand, tip pointing toward the paper.",
+      "A bundle of bright pink flat craft sticks rests upright on the table near the top-right corner."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1492_P1",
+      "visual_anchors": [
+        "handwritten columns of '3'",
+        "graph paper grid",
+        "pencil in motion"
+      ],
+      "symbolic_mapping": [
+        "repetition of numeral as practice of order",
+        "grid as imposed structure for cognition"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The disciplined repetition within a rigid grid may reflect early epistemic formation—where truth is constructed through constrained practice rather than discovery.",
+      "alternative_interpretations": [
+        "The child is simply copying numbers as instructed, with no symbolic intent."
+      ],
+      "limitations": [
+        "No visible facial expression or verbal context confirms intentionality behind the repetition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1492_P2",
+      "visual_anchors": [
+        "pink hair clip",
+        "light blue top",
+        "red chair"
+      ],
+      "symbolic_mapping": [
+        "color coordination as subtle self-expression",
+        "seating as positional belonging"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The deliberate adornment (hair clip) amid functional learning tools hints at emergent identity assertion within socially structured environments.",
+      "alternative_interpretations": [
+        "The hair clip is purely functional or chosen by another person without symbolic intent."
+      ],
+      "limitations": [
+        "The clip’s placement and color could be incidental; no agency is visually verifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1492_P3",
+      "visual_anchors": [
+        "open workbook with alphabet letters",
+        "scissors",
+        "craft sticks"
+      ],
+      "symbolic_mapping": [
+        "multiplicity of tools as fragmented pedagogy",
+        "simultaneous literacy and numeracy tasks as cognitive compartmentalization"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of disparate learning media suggests institutionalized labor on developing cognition, where the child navigates prescribed pathways rather than self-directed exploration.",
+      "alternative_interpretations": [
+        "The items are simply part of a standard classroom kit, not symbolically arranged."
+      ],
+      "limitations": [
+        "No evidence confirms whether the arrangement was intentional or random; temporal sequence is absent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:38:57.372309+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dd6e33b6-7828-9131-9768-38c5f5890d38",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 938,
+        "total_tokens": 1747,
+        "completion_tokens_details": {
+          "text_tokens": 938
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070438277054421630bb4474",
+      "usage": {
+        "completion_tokens": 793,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1907,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2700
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

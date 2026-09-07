@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0614",
+  "sample_id": "PHL1800_HAIV_0367",
+  "file_name": "PHL1800_HAIV_0367.png",
+  "batch_id": "B014",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized skull-and-crossed-swords emblem overlaid on a large pink heart with additional symbolic elements",
+  "captions": {
+    "scene": [
+      "A glossy pink heart dominates the background, with a small red heart pierced by a black shaft at its apex.",
+      "A white human skull is centered over two crossed swords with golden hilts and silver blades.",
+      "A yellow, multi-limbed, spiky figure resembling a virus or starburst appears in the upper-left quadrant of the heart."
+    ],
+    "action": [
+      "Two swords are crossed behind the skull, forming an X-shape with blades pointing upward and outward.",
+      "Two blank white ribbons extend horizontally from the sword hilts, each curling at the ends.",
+      "The yellow spiky figure is static, positioned above and to the left of the skull, with no motion lines or interaction indicated."
+    ],
+    "rationale": [
+      "The skull and crossed swords suggest a pirate or mortality motif, but the heart context modifies this meaning; evidence is visual composition only.",
+      "The yellow figure’s morphology resembles common depictions of pathogens, yet no labeling confirms this; identification relies on resemblance alone.",
+      "Ribbons are present but contain no legible text; their blankness prevents semantic interpretation beyond structural role."
+    ],
+    "object": [
+      "A large pink heart with glossy highlights occupies the entire background and frames all other elements.",
+      "A white skull with black eye sockets, nasal cavity, and visible upper teeth is centrally placed over the heart.",
+      "Two swords cross behind the skull: each has a golden hilt with ornamental guard, a silver blade, and a black grip with yellow pommel.",
+      "A small red heart sits atop the pink heart, impaled vertically by a thin black shaft extending downward toward the skull.",
+      "A yellow, radially symmetrical figure with eight limb-like protrusions ending in brownish rounded tips resides in the upper-left portion of the pink heart."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0614_P1",
+      "visual_anchors": [
+        "skull",
+        "pink heart",
+        "crossed swords"
+      ],
+      "symbolic_mapping": [
+        "skull → mortality",
+        "heart → love or life"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of the skull (mortality) within the heart (life/love) suggests that death is inseparable from lived experience, implying mortality as constitutive of social existence rather than its negation.",
+      "alternative_interpretations": [
+        "This may be a decorative tattoo design without philosophical intent, combining popular motifs for aesthetic contrast."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm intentional philosophical framing; composition alone is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0614_P2",
+      "visual_anchors": [
+        "yellow spiky figure",
+        "impaled red heart",
+        "crossed swords"
+      ],
+      "symbolic_mapping": [
+        "spiky figure → external threat",
+        "impaled heart → vulnerability"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The impaled heart and looming spiky figure, countered by defensive crossed swords, visualize a state of constrained freedom under persistent external conflict or threat.",
+      "alternative_interpretations": [
+        "The spiky figure could represent a non-biological symbol such as a sun, star, or abstract energy, altering the threat interpretation entirely."
+      ],
+      "limitations": [
+        "The spiky figure lacks definitive iconographic markers (e.g., spikes labeled as virions), making threat attribution speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0614_P3",
+      "visual_anchors": [
+        "blank ribbons",
+        "symmetrical composition",
+        "central skull"
+      ],
+      "symbolic_mapping": [
+        "blank ribbons → unspoken message",
+        "symmetry → balance or duality"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The empty ribbons flanking the skull imply that identity or truth remains unarticulated or withheld, while the symmetry enforces a formal equilibrium between opposing forces—suggesting appearance masks unresolved epistemic gaps.",
+      "alternative_interpretations": [
+        "Ribbons may simply serve decorative framing, with no intended semiotic function beyond visual balance."
+      ],
+      "limitations": [
+        "Absence of text or gesture prevents confirmation of intentional silence or withholding; blankness is neutral."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:01:22.048163+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f56acbdd-6a15-904c-bd42-e78056f0f447",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 986,
+        "total_tokens": 2519,
+        "completion_tokens_details": {
+          "text_tokens": 986
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703005958888a9ca4cb485c",
+      "usage": {
+        "completion_tokens": 842,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2947,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3789
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

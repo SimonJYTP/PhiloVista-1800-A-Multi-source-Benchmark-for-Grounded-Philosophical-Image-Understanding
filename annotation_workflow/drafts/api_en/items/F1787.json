@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1787",
+  "sample_id": "PHL1800_HL_0109",
+  "file_name": "PHL1800_HL_0109.png",
+  "batch_id": "B036",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person wearing a purple cap and batting gear swinging a bat inside a netted cage",
+  "captions": {
+    "scene": [
+      "A black netted batting cage with green grass visible beyond it",
+      "Two white signs with red text mounted on the netting to the right",
+      "A blurred background showing a chain-link fence and distant field elements"
+    ],
+    "action": [
+      "The person is mid-swing, holding a dark-colored bat with both hands",
+      "The person’s torso is rotated leftward, arms extended forward in follow-through motion",
+      "The person wears white batting gloves and a black protective vest over a purple shirt"
+    ],
+    "rationale": [
+      "The posture and bat position indicate a swing rather than a stance or pause, though exact phase (contact vs. follow-through) is ambiguous due to motion blur",
+      "The presence of signs specifying 'STADIUM CAGE' and 'No Spikes' suggests this is a regulated practice facility, not a casual setup",
+      "At least two other individuals are partially visible behind the netting, but their actions and identities are indiscernible due to occlusion and blur"
+    ],
+    "object": [
+      "A black mesh net encloses the foreground and middle ground, with visible knots and tension lines.",
+      "A wooden or composite baseball bat with a dark barrel and lighter handle is gripped by the subject.",
+      "A white rectangular sign reads 'STADIUM CAGE' in bold red uppercase letters.",
+      "A second white sign below it reads 'No Spikes', 'In Batting Cage', and 'Turf Shoes Only' in red uppercase text.",
+      "The subject wears a purple baseball cap with a white logo patch on the front, a black chest protector, and grey pants with a dark belt."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1787_P1",
+      "visual_anchors": [
+        "netted enclosure",
+        "sign restricting footwear",
+        "subject mid-swing"
+      ],
+      "symbolic_mapping": [
+        "the net represents imposed boundaries for safety and regulation",
+        "the sign enforces conformity to collective norms"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies the dialectic between individual agency—expressed in the dynamic swing—and institutional constraint—manifested in the net and signage—highlighting how structured environments shape permissible action.",
+      "alternative_interpretations": [
+        "It is simply a routine practice session with standard safety protocols; no deeper meaning is intended or required."
+      ],
+      "limitations": [
+        "No facial expression or contextual narrative confirms intentional symbolism; the signs are functional, not rhetorical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1787_P2",
+      "visual_anchors": [
+        "bat held in motion",
+        "protective vest",
+        "turf-only rule"
+      ],
+      "symbolic_mapping": [
+        "the bat as instrument of effort",
+        "the vest as mediation of risk"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The scene reflects embodied labor where technology (bat, vest, turf) mediates human exertion, and responsibility is distributed across individual performance and collective safety rules.",
+      "alternative_interpretations": [
+        "The vest and shoes are standard equipment; their presence does not imply ethical deliberation."
+      ],
+      "limitations": [
+        "The image shows no explicit decision-making process or moral dilemma—only compliance with visible rules."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1787_P3",
+      "visual_anchors": [
+        "multiple figures partially visible behind net",
+        "foreground subject isolated by focus",
+        "signs addressing group behavior"
+      ],
+      "symbolic_mapping": [
+        "the net separates performer from observers",
+        "the signage addresses an implied collective"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Identity here is performative and context-dependent: the batter assumes a role defined by gear and action, while social existence is regulated through shared spatial rules that govern who may enter and how they appear (e.g., shoe type).",
+      "alternative_interpretations": [
+        "The background figures are incidental; the photo focuses on one player practicing, with no emphasis on group dynamics."
+      ],
+      "limitations": [
+        "Only one figure is clearly depicted performing; others are too obscured to confirm participation or observation roles."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:14:22.233524+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cdd7c795-ec85-9190-9707-fcc9f68dc03f",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 957,
+        "total_tokens": 1726,
+        "completion_tokens_details": {
+          "text_tokens": 957
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907051344854ef2ba65604bef",
+      "usage": {
+        "completion_tokens": 815,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1882,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2697
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

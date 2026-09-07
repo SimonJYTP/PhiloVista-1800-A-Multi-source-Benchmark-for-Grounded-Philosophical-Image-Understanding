@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0227",
+  "sample_id": "PHL1800_IRFL_0147",
+  "file_name": "PHL1800_IRFL_0147.jpg",
+  "batch_id": "B007",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a human hand separating an egg yolk from its white",
+  "captions": {
+    "scene": [
+      "A light-colored countertop with three clear glass bowls arranged in a triangular layout.",
+      "One bowl contains three intact yellow egg yolks; another holds translucent egg white; a third larger bowl in the background contains more egg white.",
+      "The lighting is even and diffuse, suggesting indoor illumination without strong shadows."
+    ],
+    "action": [
+      "A right hand holds a whole egg yolk between thumb and fingers while egg white drips downward.",
+      "Egg white streams from the hand into a lower glass bowl, forming visible thin liquid strands.",
+      "Three additional yolks rest undisturbed in a separate bowl to the left."
+    ],
+    "rationale": [
+      "The hand’s grip and dripping liquid indicate active separation of yolk from white, not accidental spillage.",
+      "The presence of multiple separated yolks suggests repetition of the same action, though only one is captured mid-process.",
+      "The absence of shell fragments or tools implies manual separation, but no tool use can be confirmed solely from visible evidence."
+    ],
+    "object": [
+      "A human right hand with visible skin texture, short fingernails, and slight moisture on the palm and fingers.",
+      "A single intact, spherical, bright-yellow egg yolk held in the hand, with no visible cracks or deformations.",
+      "Three additional intact yellow egg yolks resting in a small transparent glass bowl.",
+      "Translucent viscous liquid (egg white) flowing in at least four distinct streams from the hand into a second glass bowl.",
+      "Three clear glass bowls of varying sizes: one small containing yolks, one medium receiving white, and one large partially visible in the background containing more white."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0227_P1",
+      "visual_anchors": [
+        "hand holding yolk",
+        "dripping egg white",
+        "separate bowls"
+      ],
+      "symbolic_mapping": [
+        "the hand as agent of division",
+        "separation of components as metaphor for analysis"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The act of isolating the yolk from the white visually enacts epistemic separation—distilling essence from context—mirroring how knowledge often requires isolating core truths from surrounding contingencies.",
+      "alternative_interpretations": [
+        "This is simply a standard culinary technique with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the image may depict routine food preparation only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0227_P2",
+      "visual_anchors": [
+        "multiple yolks in one bowl",
+        "single yolk in hand",
+        "flowing white"
+      ],
+      "symbolic_mapping": [
+        "repetition of action as labor",
+        "fluidity of white versus solidity of yolk"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The repeated accumulation of yolks alongside the continuous extraction of white reflects embodied labor where precision and repetition produce differentiated outputs, highlighting the human body as a primary technology in food processing.",
+      "alternative_interpretations": [
+        "The arrangement merely reflects efficiency in recipe preparation, not commentary on labor."
+      ],
+      "limitations": [
+        "No tools, time markers, or fatigue indicators are visible to confirm labor intensity or duration."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0227_P3",
+      "visual_anchors": [
+        "intact yolk held delicately",
+        "white draining away",
+        "bowl boundaries"
+      ],
+      "symbolic_mapping": [
+        "yolk as bounded self",
+        "white as relational overflow"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The yolk, preserved whole while its surrounding substance flows outward, evokes the tension between a stable core identity and the permeable, expressive surface that interacts with the world.",
+      "alternative_interpretations": [
+        "The yolk remains intact because it is physically cohesive, not because of symbolic intent."
+      ],
+      "limitations": [
+        "No facial features, clothing, or social context link the yolk to personal identity; the mapping is purely analogical."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:20:34.334357+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-246e3bc0-04b2-9e88-87d9-9b0c3d341437",
+      "usage": {
+        "prompt_tokens": 813,
+        "completion_tokens": 915,
+        "total_tokens": 1728,
+        "completion_tokens_details": {
+          "text_tokens": 915
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 306,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070220178bb55749a88b4b64",
+      "usage": {
+        "completion_tokens": 779,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1881,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2660
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

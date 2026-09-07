@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0637",
+  "sample_id": "PHL1800_HAIV_0227",
+  "file_name": "PHL1800_HAIV_0227.png",
+  "batch_id": "B015",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single cartoon man standing beside a tree",
+  "captions": {
+    "scene": [
+      "A stylized outdoor setting with a large brown tree trunk, green grass at the base, and a light blue sky with scattered green leaves in motion.",
+      "The tree has horizontal striations, irregular bark texture, and a hollow oval-shaped opening near its center.",
+      "A red 'X' mark is superimposed on a transparent checkerboard background, placed over the lower-middle portion of the tree trunk."
+    ],
+    "action": [
+      "The man has his mouth wide open, showing red interior and teeth, suggesting vocalization or shock.",
+      "His right hand is raised with palm forward, fingers spread, in a gesture that may indicate stopping, warning, or surprise.",
+      "His left hand rests on his thigh, fingers slightly curled, while his body leans slightly backward."
+    ],
+    "rationale": [
+      "The man’s exaggerated facial expression and open mouth likely indicate shouting or alarm, though the exact intent is not verifiable from visuals alone.",
+      "The red 'X' appears digitally overlaid rather than painted on the tree, given its sharp edges, uniform color, and transparent background grid.",
+      "Leaves are depicted mid-air with motion lines, implying wind or disturbance, but no direct cause (e.g., shaking, gust) is visible."
+    ],
+    "object": [
+      "The man has spiky brown hair, a prominent nose, wide eyes with black pupils, and wears a long-sleeved brown shirt with faint illegible markings on the chest and light blue pants.",
+      "The tree trunk is vertically oriented, textured with dark brown outlines and tan-to-brown gradients, featuring a smooth-edged oval cavity and several horizontal grooves.",
+      "Five green leaves are visible in flight: one to the far left, two near the top right branch, one near the upper right corner, and one near the man’s head.",
+      "A red 'X' symbol occupies a rectangular region with a checkerboard transparency pattern, positioned over the tree trunk below the cavity and above the base.",
+      "The ground consists of a solid green band representing grass, with a thin yellow strip beneath it suggesting soil or light reflection."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0637_P1",
+      "visual_anchors": [
+        "man’s open mouth",
+        "raised hand",
+        "tree cavity"
+      ],
+      "symbolic_mapping": [
+        "open mouth → expression of protest or testimony",
+        "tree cavity → absence or void requiring attention"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "knowledge_truth"
+      ],
+      "interpretation": "The figure’s urgent gesture and vocal posture toward the marked tree suggest a moment of bearing witness to harm or error, implicating moral accountability for observable damage.",
+      "alternative_interpretations": [
+        "The man may simply be startled by a falling branch or sudden noise, with the 'X' being an unrelated digital annotation."
+      ],
+      "limitations": [
+        "No textual context confirms intent; the 'X' lacks integration into the scene’s diegetic logic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0637_P2",
+      "visual_anchors": [
+        "red 'X' on transparent background",
+        "tree trunk with cavity",
+        "floating leaves"
+      ],
+      "symbolic_mapping": [
+        "red 'X' → prohibition or cancellation",
+        "floating leaves → transience or disruption"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a static, wounded tree and dynamic airborne leaves evokes impermanence, while the imposed 'X' signals external constraint on natural continuity.",
+      "alternative_interpretations": [
+        "The 'X' could be a user-added markup indicating deletion in an editing interface, unrelated to narrative meaning."
+      ],
+      "limitations": [
+        "The transparency grid confirms digital overlay, weakening claims about in-scene symbolism."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0637_P3",
+      "visual_anchors": [
+        "man’s distorted facial features",
+        "spiky hair",
+        "brown shirt with unreadable marks"
+      ],
+      "symbolic_mapping": [
+        "exaggerated features → caricature of emotional extremity",
+        "illegible shirt text → obscured identity or message"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The stylized, non-realistic rendering emphasizes how appearance mediates social perception—his expressive form invites interpretation as a role (e.g., protester, victim) rather than an individual.",
+      "alternative_interpretations": [
+        "The style is generic cartoon convention, not intentional commentary on identity."
+      ],
+      "limitations": [
+        "No dialogue, labels, or cultural markers specify social role; exaggeration serves comedic or dramatic effect broadly."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:03:24.007780+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4220c6dc-1d83-92a2-bbbc-89b485c83325",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1036,
+        "total_tokens": 2569,
+        "completion_tokens_details": {
+          "text_tokens": 1036
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030312de741f89896144c6",
+      "usage": {
+        "completion_tokens": 898,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2997,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3895
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

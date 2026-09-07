@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1482",
+  "sample_id": "PHL1800_HL_0308",
+  "file_name": "PHL1800_HL_0308.png",
+  "batch_id": "B030",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a skier in motion on snow, with two observers standing nearby",
+  "captions": {
+    "scene": [
+      "Snow-covered ground with sparse evergreen trees in the background and falling snowflakes visible in air",
+      "A green Olympic rings sculpture mounted on poles behind a black-and-white striped flag",
+      "A blue banner with partial white lettering (appears to read 'S...g') and a small white sign on a stand near the observers"
+    ],
+    "action": [
+      "The skier leans forward, poles extended backward, left ski lifted slightly off snow while right ski remains in contact",
+      "One observer holds a clipboard and looks toward the skier; the other observer stands with hands clasped, facing the skier",
+      "Snow is actively falling, evidenced by blurred white specks across the image plane"
+    ],
+    "rationale": [
+      "The skier’s posture and equipment indicate cross-country skiing rather than downhill, due to parallel skis, pole use, and lack of steep slope",
+      "The presence of Olympic rings suggests an official or competitive event, though no explicit event name is readable",
+      "The observers’ stationary stance and focused gaze imply they are officials or timers, but their exact role cannot be confirmed from visual evidence alone"
+    ],
+    "object": [
+      "The skier wears a red knit hat, dark jacket with white bib bearing the number '22', black pants, and white ski boots attached to yellow-tipped skis.",
+      "A black-and-white vertically striped flag is planted upright in snow, partially obscuring the Olympic rings behind it.",
+      "The observer on the right wears a black winter coat, dark pants, and a black beanie; holds a light-colored rectangular object resembling a clipboard.",
+      "The observer on the left wears a red hooded jacket, dark pants, and gloves; holds a small dark object in both hands near waist level.",
+      "Two thin metal poles support the blue banner; one pole has a small white box attached near its base."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1482_P1",
+      "visual_anchors": [
+        "skier mid-stride",
+        "Olympic rings sculpture",
+        "falling snow"
+      ],
+      "symbolic_mapping": [
+        "the skier’s forward motion maps to perseverance",
+        "Olympic rings map to universal aspiration"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The skier’s solitary effort against environmental resistance embodies the existential choice to persist within socially constructed frameworks of competition and recognition.",
+      "alternative_interpretations": [
+        "This is simply a moment during a timed race, with no deeper meaning implied by the visual elements alone."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intent or internal state; symbolic mapping relies on external cultural associations not present in the image."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1482_P2",
+      "visual_anchors": [
+        "observer holding clipboard",
+        "blue banner with partial text",
+        "flag with stripes"
+      ],
+      "symbolic_mapping": [
+        "clipboard represents record-keeping as truth-claiming",
+        "banner fragments suggest incomplete public communication"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of official documentation tools and obscured signage reflects tensions between institutional authority and the instability of publicly accessible knowledge.",
+      "alternative_interpretations": [
+        "The clipboard is merely for timing; the banner is standard event branding—no conflict or epistemic tension is visually evident."
+      ],
+      "limitations": [
+        "The text on the banner is unreadable; the clipboard’s content is invisible, so claims about truth or power rest on assumption."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1482_P3",
+      "visual_anchors": [
+        "red hat on skier",
+        "red hood on observer",
+        "white snow background"
+      ],
+      "symbolic_mapping": [
+        "color contrast emphasizes individuality amid uniform environment",
+        "snow as neutral field enabling differentiated action"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The deliberate use of red attire against monochrome snow highlights how identity is performed through appearance even under environmental constraints that limit movement options.",
+      "alternative_interpretations": [
+        "Red clothing was chosen for visibility or team affiliation, not symbolic identity construction."
+      ],
+      "limitations": [
+        "No evidence confirms intentional color symbolism; red may serve functional safety purposes."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:37:31.437919+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4a32ec8c-bd4c-98e2-8d07-b31d742b3549",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 975,
+        "total_tokens": 1784,
+        "completion_tokens_details": {
+          "text_tokens": 975
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043717558ead4e6beb426b",
+      "usage": {
+        "completion_tokens": 833,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1948,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2781
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

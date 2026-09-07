@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0652",
+  "sample_id": "PHL1800_HL_0564",
+  "file_name": "PHL1800_HL_0564.png",
+  "batch_id": "B015",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four men gathered around a glass patio table with a chocolate cake",
+  "captions": {
+    "scene": [
+      "Outdoor patio setting with wooden fence, grass, and mesh-backed chairs",
+      "Glass-top table holding a frosted chocolate cake, beer bottles, mugs, and yellow plastic straws",
+      "One man wears a pink party hat; another wears a white hoodie with visible text 'CANAL' and 'EST. 186'"
+    ],
+    "action": [
+      "Man in black T-shirt holds a knife over the cake while gesturing with his left hand",
+      "Man in plaid shirt leans forward, observing the cake and knife closely",
+      "Man in white hoodie smiles and looks toward the cake area"
+    ],
+    "rationale": [
+      "The man with the knife appears to be preparing to cut the cake, inferred from knife position and hand gesture near cake surface",
+      "The presence of a party hat and multiple beverages suggests a celebratory gathering, though no explicit event signage is visible",
+      "The man standing in background holds a mug but is partially obscured; his role or engagement level cannot be determined from visible posture alone"
+    ],
+    "object": [
+      "A round chocolate-frosted cake sits on a clear plastic cake stand at the center of the table.",
+      "A stainless steel knife with black handle rests blade-down on the cake’s surface.",
+      "Three glass beer bottles are on the table: one labeled 'Corona Extra', one with green label reading 'IPA', and one with partial 'Corona' branding.",
+      "A clear glass mug with a handle contains a dark liquid and has a yellow straw inserted.",
+      "Two yellow plastic drinking straws lie horizontally on the table surface near the front edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0652_P1",
+      "visual_anchors": [
+        "pink party hat",
+        "knife poised above cake",
+        "group gaze directed at cake"
+      ],
+      "symbolic_mapping": [
+        "party hat as marker of temporary social role",
+        "knife as instrument of shared division"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The act of cutting the cake under collective attention embodies a ritualized moment where individual agency (the cutter) intersects with communal expectation, reflecting how social existence is enacted through shared symbolic gestures.",
+      "alternative_interpretations": [
+        "It is simply a practical step in serving dessert at a casual gathering."
+      ],
+      "limitations": [
+        "No verbal exchange or facial expressions beyond basic orientation are visible to confirm intent or emotional valence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0652_P2",
+      "visual_anchors": [
+        "white hoodie with 'CANAL EST. 186'",
+        "man in black shirt wearing party hat",
+        "multiple beverage containers"
+      ],
+      "symbolic_mapping": [
+        "textual branding as identity marker",
+        "costume element as voluntary self-presentation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Visible clothing text and adornment (hat) function as semiotic tools through which individuals negotiate appearance within a group context, illustrating that identity is not fixed but performed relationally.",
+      "alternative_interpretations": [
+        "The hoodie and hat are just casual attire chosen without symbolic intent."
+      ],
+      "limitations": [
+        "The full text on the hoodie is incomplete ('CANAL', 'EST. 186', 'Dep...' unreadable), limiting definitive identification of reference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0652_P3",
+      "visual_anchors": [
+        "glass table surface reflecting surroundings",
+        "transparent mugs and bottles",
+        "cake as central opaque object"
+      ],
+      "symbolic_mapping": [
+        "transparency vs opacity as metaphor for visibility/invisibility in social settings"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The contrast between transparent vessels and the solid, opaque cake may symbolize the tension between what is knowable (visible, accessible) and what remains concealed or undivided—suggesting epistemic limits within shared experience.",
+      "alternative_interpretations": [
+        "The materials reflect common consumer product choices with no intended symbolism."
+      ],
+      "limitations": [
+        "No evidence confirms intentional arrangement for symbolic effect; reflections are incidental optical phenomena."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:04:47.102256+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0dd8268d-c6c6-98fb-962b-c5c664b182c3",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 945,
+        "total_tokens": 1714,
+        "completion_tokens_details": {
+          "text_tokens": 945
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030431eea4cb037efe4dbd",
+      "usage": {
+        "completion_tokens": 801,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1872,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2673
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

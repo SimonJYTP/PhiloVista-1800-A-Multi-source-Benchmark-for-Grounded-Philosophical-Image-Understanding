@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1247",
+  "sample_id": "PHL1800_IRFL_0110",
+  "file_name": "PHL1800_IRFL_0110.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a wooden gavel resting on its sound block atop a polished wooden surface, with two books in the background",
+  "captions": {
+    "scene": [
+      "A close-up of a wooden gavel and sound block placed on a varnished wooden table with visible grain.",
+      "Two bound books lie horizontally behind the gavel: one with a red cover and gold spine, the other with a dark green or black cover and ornate gold embossing.",
+      "The background is softly blurred, emphasizing the gavel and foreground surface."
+    ],
+    "action": [
+      "The gavel is stationary, positioned upright on its circular sound block.",
+      "No motion is evident; all objects are at rest.",
+      "Light reflects off the polished wood surfaces, indicating illumination from an external source."
+    ],
+    "rationale": [
+      "The gavel’s placement suggests ceremonial or procedural use, though no active use is depicted.",
+      "The books appear to be legal or scholarly due to their binding style, but specific content cannot be confirmed.",
+      "The shallow depth of field isolates the gavel as the focal point, implying intentional composition."
+    ],
+    "object": [
+      "A wooden gavel with a cylindrical head, a tapered handle, and a brass-colored metallic band around the head is centered on a matching wooden sound block.",
+      "The sound block is circular, tiered, and made of polished wood with concentric rings visible on its top surface.",
+      "Behind the gavel, a book with a red cloth cover and gold-embossed spine lies partially obscured.",
+      "A second book with a dark green or black leather-like cover features intricate gold tooling along its spine and edges, though the text is unreadable.",
+      "The surface beneath all objects is a glossy, warm-toned wood with swirling grain patterns and specular highlights."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1247_P1",
+      "visual_anchors": [
+        "gavel on sound block",
+        "ornate bound books",
+        "polished wooden surface"
+      ],
+      "symbolic_mapping": [
+        "gavel → authority",
+        "bound books → codified knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of instrument (gavel) and repository (books) visually frames law as the enactment of codified truth through institutional power.",
+      "alternative_interpretations": [
+        "This may simply depict staged props for a stock photograph, with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No legible text or contextual setting confirms the books’ subject matter or the gavel’s jurisdictional scope."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1247_P2",
+      "visual_anchors": [
+        "gavel handle extending leftward",
+        "circular sound block",
+        "symmetrical composition"
+      ],
+      "symbolic_mapping": [
+        "circular block → continuity",
+        "horizontal handle → directionality of action"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The static gavel poised above the block evokes a suspended moment before decisive action, symbolizing the threshold between deliberation and irreversible consequence.",
+      "alternative_interpretations": [
+        "The handle extends out of frame due to framing constraints, not symbolic intent."
+      ],
+      "limitations": [
+        "No temporal indicators (e.g., hourglass, clock) or explicit narrative cues support a mortality reading."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1247_P3",
+      "visual_anchors": [
+        "gold embossing on book spines",
+        "brass band on gavel",
+        "warm lighting"
+      ],
+      "symbolic_mapping": [
+        "metallic accents → enduring value",
+        "polished wood → tradition"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The material choices—wood, metal, leather—suggest inherited systems where ethical responsibility is materially embedded within social institutions.",
+      "alternative_interpretations": [
+        "The materials reflect common aesthetic conventions for formal imagery rather than philosophical intent."
+      ],
+      "limitations": [
+        "The absence of human presence or interaction prevents confirmation of social enactment."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:07:34.195579+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b044af73-56ac-9a2b-b71c-ec648808cb55",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 910,
+        "total_tokens": 1489,
+        "completion_tokens_details": {
+          "text_tokens": 910
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070407180ed302c75ce44597",
+      "usage": {
+        "completion_tokens": 772,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1566,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2338
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

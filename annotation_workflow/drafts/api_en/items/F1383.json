@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1383",
+  "sample_id": "PHL1800_IRFL_0274",
+  "file_name": "PHL1800_IRFL_0274.jpg",
+  "batch_id": "B029",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young Black woman standing and addressing a seated person in a courtroom-like setting",
+  "captions": {
+    "scene": [
+      "A formal room with wood-paneled walls, raised benches for observers, and a judge’s bench area visible in the background.",
+      "Multiple people are seated in tiered wooden benches facing forward; one adult woman sits at a separate table on the right side of the frame.",
+      "The foreground features two individuals at adjacent tables: one standing and gesturing, the other seated with back to camera."
+    ],
+    "action": [
+      "The standing woman holds papers in her left hand and extends her right arm toward the seated person while looking at them.",
+      "The seated person faces away from the camera, with both hands resting on the table near an open notebook.",
+      "Observers in the background are oriented toward the front, some looking toward the standing woman, others slightly diverted."
+    ],
+    "rationale": [
+      "The wood paneling, elevated spectator seating, and presence of a lectern-like microphone suggest a formal institutional setting such as a mock trial or courtroom.",
+      "The standing woman’s posture, extended arm, and paper-holding indicate she is delivering a statement or argument rather than casual conversation.",
+      "The seated person’s orientation and proximity to documents imply they are playing a role requiring attention, possibly a witness, defendant, or judge—but this role is not visually confirmed."
+    ],
+    "object": [
+      "A young Black woman with long braided hair, wearing a light gray zip-up hoodie with black stripes on the sleeves and dark pants, stands holding white papers in her left hand.",
+      "A second person with long dark braids, wearing a black top, sits at a wooden table with a white notebook open before them and a pen resting on it.",
+      "A wooden railing separates the spectator seating area from the central floor space where the two main subjects are positioned.",
+      "A microphone on a thin stand is placed on the table in front of the seated person.",
+      "At least eleven individuals are visible: one standing, one seated in foreground, nine seated in background rows (including one adult woman at a separate table on the far right)."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1383_P1",
+      "visual_anchors": [
+        "standing woman extending arm",
+        "papers held in left hand",
+        "microphone on table"
+      ],
+      "symbolic_mapping": [
+        "the act of speaking with documentation symbolizes the pursuit of knowledge_truth through structured discourse"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image captures a moment where articulation, evidence, and formal address converge—suggesting that truth is treated as something constructed through procedural presentation rather than spontaneously revealed.",
+      "alternative_interpretations": [
+        "This may simply depict a school-based mock trial exercise with no deeper epistemic intent."
+      ],
+      "limitations": [
+        "No text on the papers or spoken words is visible; thus, the content of the speech and its relation to truth cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1383_P2",
+      "visual_anchors": [
+        "wood-paneled institutional setting",
+        "tiered spectator seating",
+        "separation by railing"
+      ],
+      "symbolic_mapping": [
+        "spatial hierarchy and physical barriers reflect embedded power_conflict structures within legal or educational institutions"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The architecture enforces roles and distances—spectators observe but do not intervene, the speaker must approach the seated figure across a threshold—highlighting how spatial design mediates authority and contestation.",
+      "alternative_interpretations": [
+        "The layout may merely follow standard courtroom design conventions without intentional symbolic reinforcement."
+      ],
+      "limitations": [
+        "The function of the room is inferred; it could be a classroom or auditorium adapted temporarily."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1383_P3",
+      "visual_anchors": [
+        "standing woman’s focused gaze",
+        "seated person’s turned-back posture",
+        "shared table surface with notebook"
+      ],
+      "symbolic_mapping": [
+        "mutual orientation and shared material space evoke social_existence as co-constituted through dialogue and witness"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The interaction implies recognition: one person asserts presence through speech and gesture, the other receives it bodily—even without eye contact—affirming that identity and legitimacy emerge in relational contexts.",
+      "alternative_interpretations": [
+        "The seated person may be ignoring or disengaging; their posture does not confirm active reception."
+      ],
+      "limitations": [
+        "Facial expressions and head orientation of the seated person are fully obscured, preventing confirmation of engagement."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:26:05.674831+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6a05504b-dc9b-9bf0-84ee-97eab90e3bbc",
+      "usage": {
+        "prompt_tokens": 737,
+        "completion_tokens": 1019,
+        "total_tokens": 1756,
+        "completion_tokens_details": {
+          "text_tokens": 1019
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 230,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070425505defa13df5334389",
+      "usage": {
+        "completion_tokens": 886,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1899,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2785
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

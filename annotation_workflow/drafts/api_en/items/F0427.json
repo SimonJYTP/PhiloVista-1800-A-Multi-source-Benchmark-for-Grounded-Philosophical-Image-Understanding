@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0427",
+  "sample_id": "PHL1800_IRFL_0063",
+  "file_name": "PHL1800_IRFL_0063.jpg",
+  "batch_id": "B011",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two stylized human figures standing back-to-back",
+  "captions": {
+    "scene": [
+      "Two figures in business-style attire stand side by side against a flat gray background with faint vertical panel lines.",
+      "A white cloud-shaped speech bubble with a lightning-bolt tail is positioned centrally between the two figures.",
+      "The floor and wall are rendered in monochromatic shades of gray, suggesting an interior setting without specific architectural features."
+    ],
+    "action": [
+      "Both figures stand with arms crossed over their chests.",
+      "Both figures face away from each other, oriented in opposite directions.",
+      "A speech bubble appears between them but contains no legible text."
+    ],
+    "rationale": [
+      "The opposing orientation and crossed arms suggest non-engagement or tension, though no facial expressions or motion are visible to confirm intent.",
+      "The speech bubble’s placement implies communication or thought directed between or about the figures, but its blank content prevents confirmation of message or speaker.",
+      "The uniform color blocking and lack of environmental detail limit contextual inference about setting or relationship."
+    ],
+    "object": [
+      "The left figure has dark skin, short black hair, and wears a dark gray suit with a white collar.",
+      "The right figure has light brown skin, shoulder-length brown hair, and wears a blue suit with a white collar.",
+      "Both figures have identical posture: upright torso, arms crossed, head in profile view.",
+      "A single white speech bubble with a pointed tail is centered horizontally between the figures and floats above waist level.",
+      "No text is present inside the speech bubble; it is visually empty."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0427_P1",
+      "visual_anchors": [
+        "back-to-back stance",
+        "crossed arms",
+        "empty speech bubble"
+      ],
+      "symbolic_mapping": [
+        "back-to-back stance → separation or divergence",
+        "empty speech bubble → unexpressed or failed communication"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes a rupture in social coexistence where potential dialogue remains unrealized, reflecting how structural or interpersonal power imbalances may manifest as mutual withdrawal rather than overt confrontation.",
+      "alternative_interpretations": [
+        "This may simply depict two individuals waiting silently in a hallway, with the speech bubble serving as generic decorative iconography unrelated to interaction."
+      ],
+      "limitations": [
+        "Absence of facial features, gestures beyond arm crossing, or environmental cues prevents verification of emotional state or relational history."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0427_P2",
+      "visual_anchors": [
+        "identical posture",
+        "symmetrical composition",
+        "neutral background"
+      ],
+      "symbolic_mapping": [
+        "symmetry → formal equality",
+        "neutral background → abstraction from context"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "By rendering both figures with equal visual weight and minimal distinguishing traits beyond hair and skin tone, the image foregrounds appearance as a site of ethical responsibility—how we perceive and respond to difference without recourse to narrative or justification.",
+      "alternative_interpretations": [
+        "The symmetry may be purely aesthetic, intended to balance the composition rather than convey philosophical meaning."
+      ],
+      "limitations": [
+        "Skin tone and hair color are stylized flat colors, not realistic depictions; thus, ‘difference’ is schematic, not documentary."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0427_P3",
+      "visual_anchors": [
+        "speech bubble with lightning tail",
+        "figures facing away",
+        "no visible mouth or vocal apparatus"
+      ],
+      "symbolic_mapping": [
+        "lightning tail → abruptness or intensity",
+        "facing away → refusal or disconnection"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image suggests that truth or knowledge may be constrained not by absence of expression (the bubble exists) but by the spatial and postural refusal to receive or acknowledge it—highlighting freedom as contingent on mutual orientation, not merely speech.",
+      "alternative_interpretations": [
+        "The lightning tail may indicate a standard comic-style ‘idea’ or ‘realization’, unrelated to conflict; the figures could be coincidentally positioned, not intentionally opposed."
+      ],
+      "limitations": [
+        "The speech bubble lacks internal content, so its semantic valence (e.g., anger, insight, warning) is indeterminate."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:45:56.984215+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c2bda77a-9bf1-9221-9f40-346fb4c651c9",
+      "usage": {
+        "prompt_tokens": 1389,
+        "completion_tokens": 965,
+        "total_tokens": 2354,
+        "completion_tokens_details": {
+          "text_tokens": 965
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 882,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024541ea7b4498b59f4836",
+      "usage": {
+        "completion_tokens": 827,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2751,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3578
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

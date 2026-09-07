@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1445",
+  "sample_id": "PHL1800_HL_0161",
+  "file_name": "PHL1800_HL_0161.png",
+  "batch_id": "B030",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "surfers and wave in foreground with high-rise buildings in background",
+  "captions": {
+    "scene": [
+      "A turquoise ocean wave breaking near shore under a clear blue sky with scattered white clouds",
+      "A dense cluster of modern high-rise buildings, mostly rectangular, with balconies and glass facades, lining the coast",
+      "Palm trees visible at the base of the buildings, partially obscuring lower floors"
+    ],
+    "action": [
+      "At least five individuals are in or near the water: one on a light-blue surfboard lying prone, one standing in deeper water, one crouching on a board, and two others partially submerged or seated nearby",
+      "A white foamy wave is cresting and collapsing leftward across the frame",
+      "A thin vertical line extends from upper right toward center sky, possibly a kite line or cable, with no attached object visible"
+    ],
+    "rationale": [
+      "The presence of multiple surfboards and body postures consistent with surfing suggests recreational wave riding rather than swimming or wading alone",
+      "Building density and architectural uniformity imply an urban coastal setting, though specific city cannot be confirmed from visual evidence alone",
+      "The thin line in the sky lacks a visible anchor point or payload, making its function indeterminate without further context"
+    ],
+    "object": [
+      "One person lies prone on a light-blue surfboard with arms extended forward, positioned on the face of the breaking wave.",
+      "One individual stands upright in deeper water to the left of the wave’s peak, shirtless and facing toward the shore.",
+      "A third person crouches on a dark-colored board near the wave’s lip, knees bent and torso leaning forward.",
+      "Two additional figures are visible behind the main wave: one seated on a board with legs extended, another partially submerged with only head and shoulders above water.",
+      "A total of five distinct human figures are discernible in the water zone; no animals or vehicles are visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1445_P1",
+      "visual_anchors": [
+        "breaking wave",
+        "surfer on board",
+        "city skyline"
+      ],
+      "symbolic_mapping": [
+        "wave as transient force",
+        "surfer as agent navigating instability"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The surfer actively positions themselves within a powerful, ephemeral natural event while a static urban backdrop looms—suggesting tension between individual agency amid constraint and the pursuit of momentary autonomy.",
+      "alternative_interpretations": [
+        "This is simply a recreational beach scene with no intended symbolic meaning; the composition reflects typical coastal tourism photography."
+      ],
+      "limitations": [
+        "No textual labels, signage, or cultural markers confirm intentional symbolism; interpretation relies on conventional metaphorical associations."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1445_P2",
+      "visual_anchors": [
+        "five people distributed across wave zone",
+        "shared activity space",
+        "no visible interaction"
+      ],
+      "symbolic_mapping": [
+        "proximity without engagement as social coexistence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Individuals occupy the same physical environment yet remain spatially separated and non-interactive, illustrating how modern social existence can involve simultaneous presence without relational depth.",
+      "alternative_interpretations": [
+        "People are spaced for safety and optimal wave access—a practical arrangement unrelated to social theory."
+      ],
+      "limitations": [
+        "Facial expressions, gestures, and orientation are indistinct; absence of interaction cannot be confirmed as intentional disengagement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1445_P3",
+      "visual_anchors": [
+        "vertical line in sky",
+        "unattached end",
+        "clear visibility of line against blue sky"
+      ],
+      "symbolic_mapping": [
+        "incomplete connection as unresolved intention"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "A taut line suspended without visible origin or destination evokes epistemic uncertainty—what it connects, supports, or signifies remains unknown, mirroring limits of perceptual knowledge.",
+      "alternative_interpretations": [
+        "The line is a functional part of a kiteboarding setup, with the kite outside frame; its purpose is mundane and fully explainable."
+      ],
+      "limitations": [
+        "Only the line segment is visible; no kite, handle, or rider is shown, preventing definitive identification."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people in action and object captions; action description of 'two standing in waist-deep water' is inaccurate as individuals are in deeper water; object caption's 'two additional figures' misrepresents the count and positions of people behind the wave."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:33:13.061113+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-49d275a7-06e3-9845-92c2-5274a48fee9d",
+      "usage": {
+        "prompt_tokens": 870,
+        "completion_tokens": 975,
+        "total_tokens": 1845,
+        "completion_tokens_details": {
+          "text_tokens": 975
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 363,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704325646f8fd18733f4af0",
+      "usage": {
+        "completion_tokens": 971,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2042,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3013
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

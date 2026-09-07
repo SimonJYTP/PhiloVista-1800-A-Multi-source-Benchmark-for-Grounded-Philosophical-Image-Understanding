@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1517",
+  "sample_id": "PHL1800_HL_0160",
+  "file_name": "PHL1800_HL_0160.png",
+  "batch_id": "B031",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults standing beside a bronze horse-head sculpture",
+  "captions": {
+    "scene": [
+      "A paved outdoor plaza with adobe-style buildings, a street clock on a green pole, and parked cars in the background.",
+      "A large bronze sculpture of a horse’s head with bridle details dominates the foreground, mounted on a wooden support.",
+      "Two adults stand to the right of the sculpture; one holds paper bags and wears sunglasses and light clothing, the other wears a short-sleeve shirt, belt pouch, and sunglasses."
+    ],
+    "action": [
+      "The two adults are standing still, facing the camera, with relaxed postures and slight smiles.",
+      "The woman holds two brown paper bags, one in each hand, at her sides.",
+      "The man has his left hand in his pocket and his right arm hanging naturally."
+    ],
+    "rationale": [
+      "The sculpture is likely a public art installation because it is large, permanently mounted, and placed in an open pedestrian area near buildings and a street clock.",
+      "The individuals appear to be tourists or visitors due to their casual attire, paper bags suggesting recent purchases, and posed stance for a photograph.",
+      "The lighting and shadows suggest daytime under clear skies, though exact time cannot be confirmed from the clock face due to partial occlusion and low resolution."
+    ],
+    "object": [
+      "A tall green lamppost-style clock with a gold-rimmed circular face showing Roman numerals and black hands, positioned left of center.",
+      "A silver sedan parked behind the sculpture, partially visible with four doors and standard wheels.",
+      "A bronze horse-head sculpture with detailed musculature, a bridle with buckles, and a slightly open mouth, resting on two wooden planks.",
+      "A woman wearing white short-sleeve top, light-colored pants, dark sunglasses, and carrying two brown paper bags.",
+      "A man wearing olive-green short-sleeve button-up shirt, light pants, dark belt with attached black pouch, sunglasses, and holding one brown paper bag in his left hand."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1517_P1",
+      "visual_anchors": [
+        "bronze horse-head sculpture",
+        "street clock",
+        "two adults posing"
+      ],
+      "symbolic_mapping": [
+        "the horse head as enduring form versus transient human presence",
+        "the clock as marker of linear time against static art"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of the monumental, unchanging bronze horse head with the fleeting human figures and the ticking clock evokes reflection on how cultural artifacts outlast individual lives, framing human social existence within temporal finitude.",
+      "alternative_interpretations": [
+        "This may simply be a tourist photo opportunity with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No inscriptions or contextual signage confirm intentional symbolism; the interpretation relies on visual contrast alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1517_P2",
+      "visual_anchors": [
+        "woman holding paper bags",
+        "man with belt pouch",
+        "casual attire"
+      ],
+      "symbolic_mapping": [
+        "paper bags as markers of consumption and daily routine",
+        "belt pouch as practical adaptation to environment"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The visible tools of daily life—bags, pouch, sunglasses—highlight how identity is performed through functional accessories, suggesting that appearance is inseparable from embodied labor and environmental adaptation.",
+      "alternative_interpretations": [
+        "The items are incidental; they reflect ordinary travel behavior rather than identity construction."
+      ],
+      "limitations": [
+        "No evidence of intent to display or emphasize these objects; their significance is inferred from common usage patterns."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1517_P3",
+      "visual_anchors": [
+        "adobe building facade",
+        "sculpture placement",
+        "pedestrian pavement"
+      ],
+      "symbolic_mapping": [
+        "architecture and sculpture as curated cultural space",
+        "shared public ground enabling co-presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The shared public space—defined by architecture, art, and infrastructure—enables voluntary co-location and mutual recognition, illustrating how social existence emerges within bounded yet accessible environments that simultaneously enable and constrain interaction.",
+      "alternative_interpretations": [
+        "The setting is merely a functional urban plaza without deeper sociospatial intention."
+      ],
+      "limitations": [
+        "No signage, plaques, or behavioral cues indicate designed social function beyond utility."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:40:56.177969+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3271b0ea-d133-9a13-b5c7-7404497ccf21",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1000,
+        "total_tokens": 1769,
+        "completion_tokens_details": {
+          "text_tokens": 1000
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044045cc255047058442da",
+      "usage": {
+        "completion_tokens": 861,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1930,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2791
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

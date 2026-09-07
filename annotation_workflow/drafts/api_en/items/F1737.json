@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1737",
+  "sample_id": "PHL1800_IRFL_0434",
+  "file_name": "PHL1800_IRFL_0434.jpg",
+  "batch_id": "B035",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single-tiered cake decorated with piped pink frosting roses",
+  "captions": {
+    "scene": [
+      "A white ceramic cake stand rests on a light wood-grain surface against a softly lit, vertically paneled white background.",
+      "To the right of the cake, a white paper gift bag with gold flecks and white rope handles is partially visible, containing pink tissue paper.",
+      "The lighting is diffuse and even, producing soft shadows and highlighting the texture of the frosting."
+    ],
+    "action": [
+      "The cake remains stationary on the cake stand.",
+      "Frosting roses are arranged in tight, overlapping rows covering the entire visible surface of the cake.",
+      "The gift bag stands upright beside the cake, its contents slightly spilling over the top rim."
+    ],
+    "rationale": [
+      "The uniformity and symmetry of the rose pattern suggest deliberate, skilled piping rather than accidental formation.",
+      "The presence of a gift bag implies the cake may be intended for gifting, though no explicit labeling confirms this.",
+      "The absence of utensils, candles, or serving marks indicates the cake has not been cut or served."
+    ],
+    "object": [
+      "The cake consists of a single cylindrical tier fully covered in smooth, pale pink buttercream frosting shaped into rosettes.",
+      "Each rosette displays concentric ridges and a central spiral, consistent with a star-tipped piping technique.",
+      "The white cake stand has a fluted circular plate, a slender stem, and a round footed base.",
+      "The gift bag features scattered gold leaf-like specks and two white twisted-paper rope handles with gold-colored metal aglets.",
+      "The background wall shows evenly spaced vertical grooves, suggesting beadboard paneling."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1737_P1",
+      "visual_anchors": [
+        "identical piped roses",
+        "uniform color"
+      ],
+      "symbolic_mapping": [
+        "repetition of form suggests crafted order"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The cake’s identical roses embody a tension between individuality and conformity: each rose appears unique in subtle variation yet adheres to a rigid template, reflecting how social roles shape personal appearance within collective expectations.",
+      "alternative_interpretations": [
+        "It is simply a decorative confection designed for aesthetic appeal and celebration, with no intentional symbolic meaning."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; visual similarity alone does not prove conceptual intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1737_P2",
+      "visual_anchors": [
+        "untouched cake",
+        "gift bag",
+        "soft lighting"
+      ],
+      "symbolic_mapping": [
+        "unconsumed state signifies potential",
+        "gift context implies anticipation"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The pristine, unsliced cake suspended in stillness represents a moment of deferred action—where choice is imminent but not yet enacted—highlighting the philosophical weight of the interval before irreversible change (e.g., consumption, decay).",
+      "alternative_interpretations": [
+        "The cake is staged for photography and has not yet been presented to guests; its intact state is practical, not symbolic."
+      ],
+      "limitations": [
+        "The image captures only a static moment; no temporal progression or human interaction is shown to ground the ‘deferred action’ claim."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1737_P3",
+      "visual_anchors": [
+        "handcrafted frosting roses",
+        "ceramic stand",
+        "paper bag with gold flecks"
+      ],
+      "symbolic_mapping": [
+        "artisanal labor embedded in decoration",
+        "material contrast between edible and disposable"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The meticulous frosting work foregrounds embodied skill and time-intensive labor, raising questions about the ethical valuation of craft in contexts where beauty is transient and consumption inevitable.",
+      "alternative_interpretations": [
+        "The decoration follows standard bakery practices; the labor involved is routine and not highlighted as exceptional."
+      ],
+      "limitations": [
+        "No visible maker, tools, or process evidence confirms the degree of labor or intentionality behind the decoration."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:06:59.008204+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d169fa6a-909c-908e-be59-f41a5cdf0b7f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 951,
+        "total_tokens": 2484,
+        "completion_tokens_details": {
+          "text_tokens": 951
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050640346b30a844274bae",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2905,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3700
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

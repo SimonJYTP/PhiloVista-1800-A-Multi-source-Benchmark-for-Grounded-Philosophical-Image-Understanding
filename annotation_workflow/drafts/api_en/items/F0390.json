@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0390",
+  "sample_id": "PHL1800_HL_0272",
+  "file_name": "PHL1800_HL_0272.png",
+  "batch_id": "B010",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of six individuals, including four adults in navy camouflage uniforms and two children in civilian clothing, engaged in an outdoor ball game",
+  "captions": {
+    "scene": [
+      "An outdoor paved courtyard bordered by a white building with windows, green mesh fencing, trees, and shrubs under daylight.",
+      "A soccer ball is airborne near the center-top of the frame, above a group of people.",
+      "Two children stand in the foreground with backs to the camera; four adults in uniform are distributed across midground and background."
+    ],
+    "action": [
+      "One adult in camouflage is mid-air, legs extended horizontally, torso twisted, appearing to kick or intercept the ball.",
+      "Another adult in uniform stands with arms slightly raised, watching the airborne ball.",
+      "A child in a Spider-Man shirt faces the action, arms relaxed at sides; another child in a dark polo shirt also faces the scene."
+    ],
+    "rationale": [
+      "The airborne ball and body postures suggest active play rather than static posing, though no contact is visible.",
+      "Uniforms appear identical (navy digital camouflage with caps), indicating affiliation, but no insignia or rank is legible.",
+      "The child in the Spider-Man shirt wears a graphic with partially readable text: 'SPIDER-MAN' is visible; other words are obscured or too small to transcribe reliably."
+    ],
+    "object": [
+      "A black-and-white patterned soccer ball is suspended in mid-air approximately 1.5 meters above ground level.",
+      "Four adults wear matching navy blue digital camouflage uniforms with short-sleeved shirts, trousers, and peaked caps; one cap has a visible badge, others are indistinct.",
+      "One child wears a navy blue short-sleeved polo shirt with white trim on collar and sleeve cuffs.",
+      "Another child wears a multicolored T-shirt featuring a red-and-blue Spider-Man graphic with yellow text reading 'SPIDER-MAN' and other unreadable words.",
+      "A metal-framed portable goal or barrier stands behind the group near the building wall, partially obscured by figures."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0390_P1",
+      "visual_anchors": [
+        "child in Spider-Man shirt",
+        "adult mid-air kicking",
+        "uniformed group surrounding play"
+      ],
+      "symbolic_mapping": [
+        "superhero imagery juxtaposed with institutional uniform suggests tension between individual aspiration and collective discipline"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The co-presence of a child’s pop-culture hero costume and standardized military attire visualizes how identity is negotiated across generational and institutional boundaries within shared space.",
+      "alternative_interpretations": [
+        "This may simply reflect casual recreational interaction without symbolic intent—children wearing licensed apparel while adults supervise or join informal games."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues are visible; symbolic reading depends on external cultural associations not present in the image itself."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0390_P2",
+      "visual_anchors": [
+        "airborne soccer ball",
+        "mid-air adult",
+        "static observers"
+      ],
+      "symbolic_mapping": [
+        "the suspended ball represents a moment of indeterminacy where outcome hinges on embodied choice"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The frozen trajectory of the ball and the divergent postures—dynamic action versus watchful stillness—evoke the philosophical notion that meaning arises in the interval between decision and consequence.",
+      "alternative_interpretations": [
+        "The photo captures a high-speed motion blur artifact; the ball is not truly suspended but captured at peak ascent during normal play."
+      ],
+      "limitations": [
+        "Photographic exposure time determines apparent suspension; no temporal duration is measurable from a single frame."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0390_P3",
+      "visual_anchors": [
+        "six individuals in shared space",
+        "no clear hierarchy in positioning",
+        "mixed attire"
+      ],
+      "symbolic_mapping": [
+        "spatial proximity without formal structure implies emergent social order outside institutional roles"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The arrangement—uniformed adults not in formation, children unsegregated—suggests a temporary suspension of prescribed roles, illustrating how social existence can be reconstituted through voluntary, embodied interaction.",
+      "alternative_interpretations": [
+        "This could be a supervised training exercise where children are permitted to observe or participate informally, maintaining underlying authority structures."
+      ],
+      "limitations": [
+        "Absence of signage, commands, or explicit interaction prevents confirmation of whether roles are suspended or merely relaxed."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: image shows 6 individuals (4 adults in uniform, 2 children), not 7; one adult in background is partially obscured but visible, not missing."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:42:34.470667+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1c4f133d-8b98-9164-8e0b-1f7035e6bc1c",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1024,
+        "total_tokens": 1793,
+        "completion_tokens_details": {
+          "text_tokens": 1024
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070242192f6e666558e8450d",
+      "usage": {
+        "completion_tokens": 927,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1958,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2885
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

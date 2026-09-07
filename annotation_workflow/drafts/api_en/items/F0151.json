@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0151",
+  "sample_id": "PHL1800_IRFL_0166",
+  "file_name": "PHL1800_IRFL_0166.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of people marching on a paved street, led by four individuals in the foreground",
+  "captions": {
+    "scene": [
+      "A daytime outdoor urban street scene with buildings, parked cars, and trees lining the road.",
+      "A large crowd occupies the street, extending into the background; some individuals hold flags and signs.",
+      "Four individuals walk side-by-side in the foreground: two in dark formal vests and trousers, one in a black uniform with insignia, and one in a black tactical-style uniform."
+    ],
+    "action": [
+      "Multiple people are walking forward along the street in the same direction.",
+      "At least one person in the background raises a green, red, and black flag overhead.",
+      "A person in the mid-ground holds a yellow sign with partially visible text including 'HONOR' and 'JUSTICE'."
+    ],
+    "rationale": [
+      "The presence of coordinated attire (vests, uniforms) and synchronized movement suggests organized participation rather than random pedestrian traffic.",
+      "The raised flag and visible signage indicate expressive intent, though specific messaging cannot be confirmed from legible text alone.",
+      "The density and alignment of figures imply a procession or demonstration, but no explicit markers (e.g., banners, logos) confirm its official nature."
+    ],
+    "object": [
+      "Two men in the foreground wear black vests over white collared shirts and black trousers; each has a circular badge pinned to the left lapel.",
+      "A bald man in a black long-sleeved jacket walks beside them, also wearing a circular badge on his left chest.",
+      "A fourth man in the foreground wears a black short-sleeved uniform shirt with epaulets, a peaked cap, and a badge on the left chest.",
+      "A woman in a pink top and black shorts walks behind the lead group, holding a yellow sign with red and black lettering; the words 'HONOR' and 'JUSTICE' are readable, other text is illegible.",
+      "A green, red, and black tricolor flag is held aloft in the background crowd; its orientation and folds suggest it is being waved or carried upright."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0151_P1",
+      "visual_anchors": [
+        "circular badges on multiple foreground figures",
+        "coordinated vest-and-shirt attire",
+        "uniformed personnel flanking central figures"
+      ],
+      "symbolic_mapping": [
+        "badges as markers of affiliation or role",
+        "uniformity as visual assertion of collective identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The repeated use of badges and standardized dress among leaders visually constructs a shared social role, suggesting that identity is enacted through visible markers within a collective action context.",
+      "alternative_interpretations": [
+        "The badges may simply denote event registration or volunteer status without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No text on the badges is legible, so their specific meaning cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0151_P2",
+      "visual_anchors": [
+        "raised tricolor flag",
+        "crowd moving as one body",
+        "foreground figures walking ahead of others"
+      ],
+      "symbolic_mapping": [
+        "flag as representation of a shared cause",
+        "spatial hierarchy (leaders ahead) as enactment of guidance"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial arrangement—leaders in front, crowd following, and a symbolic flag elevated—materializes a temporary power structure where collective movement asserts agency against perceived constraints.",
+      "alternative_interpretations": [
+        "The formation may reflect logistical necessity (e.g., route navigation) rather than intentional hierarchy."
+      ],
+      "limitations": [
+        "No visible opposition or restriction is present; constraint is inferred solely from the act of marching."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0151_P3",
+      "visual_anchors": [
+        "yellow sign with 'HONOR' and 'JUSTICE'",
+        "diverse clothing styles across participants",
+        "open street environment"
+      ],
+      "symbolic_mapping": [
+        "textual invocation of moral ideals",
+        "heterogeneous appearance reinforcing pluralistic participation"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The explicit appeal to 'HONOR' and 'JUSTICE' on a public sign, combined with visibly diverse participants, frames ethical responsibility as a shared social practice enacted through embodied presence.",
+      "alternative_interpretations": [
+        "The sign may be decorative or generic, not necessarily tied to the group’s purpose."
+      ],
+      "limitations": [
+        "Only partial text is readable; full message and intent remain unknown."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:10:54.378241+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-64e27969-a25e-98b1-ad31-94a9af157d7c",
+      "usage": {
+        "prompt_tokens": 605,
+        "completion_tokens": 1025,
+        "total_tokens": 1630,
+        "completion_tokens_details": {
+          "text_tokens": 1025
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 98,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021015502d222fddcb41ac",
+      "usage": {
+        "completion_tokens": 886,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1753,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2639
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

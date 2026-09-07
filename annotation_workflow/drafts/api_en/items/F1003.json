@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1003",
+  "sample_id": "PHL1800_HL_0092",
+  "file_name": "PHL1800_HL_0092.png",
+  "batch_id": "B021",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a toddler and a sheep separated by a wooden-and-metal fence",
+  "captions": {
+    "scene": [
+      "An outdoor pen with wooden planks, metal grid fencing, and straw on the ground under daylight.",
+      "A background structure with windows and roof visible beyond the fence, suggesting a farm or petting zoo setting.",
+      "The foreground shows a low wooden barrier topped with horizontal metal bars, separating the child from the animal."
+    ],
+    "action": [
+      "The toddler stands upright, leaning forward with right hand gripping a metal bar of the fence.",
+      "The sheep lies recumbent on straw, head raised, facing left, with eyes open and ears relaxed.",
+      "The toddler’s mouth is slightly open and gaze directed toward the camera; the sheep’s gaze is not toward the child."
+    ],
+    "rationale": [
+      "The toddler’s posture and hand placement suggest active engagement with the barrier rather than passive observation.",
+      "The sheep’s recumbent position and lack of alert ear orientation indicate it is not reacting to the child’s proximity.",
+      "The fence’s construction—wooden base with metal grid above—implies intentional separation for safety or containment."
+    ],
+    "object": [
+      "A toddler wearing a green short-sleeved shirt, blue patterned pants with cartoon figures, and a red sun hat with multicolored animal prints and chin strap.",
+      "A woolly sheep with light beige fleece, dark eyes, and a partially visible muzzle lying on straw inside a fenced enclosure.",
+      "A horizontal wooden beam forms the lower boundary of the enclosure, with vertical wooden posts supporting a metal grid fence above it.",
+      "The metal grid consists of evenly spaced horizontal and vertical wires forming rectangular openings, some bent near the toddler’s hand.",
+      "Straw and small debris are scattered on the ground inside the pen, visible through gaps in the fence."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1003_P1",
+      "visual_anchors": [
+        "toddler’s hand gripping the metal bar",
+        "sheep lying calmly behind the barrier"
+      ],
+      "symbolic_mapping": [
+        "the fence as a material manifestation of constraint",
+        "the child’s reach as an expression of desire across boundaries"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image embodies the tension between embodied curiosity and imposed physical limits, where the child’s gesture toward the animal highlights a natural impulse toward connection that is structurally mediated by enclosure.",
+      "alternative_interpretations": [
+        "This is simply a routine moment at a petting zoo where safety protocols are followed without deeper implication."
+      ],
+      "limitations": [
+        "No facial expression or body language confirms the child’s intent or emotional state; the sheep’s calmness may be habitual rather than contextual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1003_P2",
+      "visual_anchors": [
+        "red patterned sun hat with animal motifs",
+        "sheep’s natural wool texture",
+        "child’s cartoon-patterned pants"
+      ],
+      "symbolic_mapping": [
+        "anthropomorphic representation of animals on clothing contrasts with the real animal’s presence",
+        "fabric patterns mediate human perception of nature"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Clothing functions as a symbolic layer that frames the child’s relationship to the animal world—decorating the self with stylized fauna while encountering the unadorned biological reality behind a barrier.",
+      "alternative_interpretations": [
+        "The clothing choices reflect practical sun protection and common children’s apparel design, with no intended semiotic contrast."
+      ],
+      "limitations": [
+        "The specific animal motifs on the hat and pants are partially obscured and not fully legible; their exact species cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1003_P3",
+      "visual_anchors": [
+        "wooden posts and metal grid forming a rigid division",
+        "child and sheep positioned parallel but separated",
+        "shared plane of focus despite physical distance"
+      ],
+      "symbolic_mapping": [
+        "the fence as a social artifact encoding care and control simultaneously",
+        "proximity without contact as a form of regulated coexistence"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The arrangement visualizes how social structures enable interaction while preserving distinction—here, the fence permits observation and learning without risk, modeling a managed form of interspecies belonging.",
+      "alternative_interpretations": [
+        "The fence is purely functional infrastructure with no social meaning beyond safety compliance."
+      ],
+      "limitations": [
+        "No signage, labels, or human supervision is visible to confirm institutional intent or normative framing."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:37:32.286421+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-47079aa6-4a1e-91d8-af8c-ac65f792347e",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 997,
+        "total_tokens": 1806,
+        "completion_tokens_details": {
+          "text_tokens": 997
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070337178b3f27bbfb15453a",
+      "usage": {
+        "completion_tokens": 863,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1974,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2837
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

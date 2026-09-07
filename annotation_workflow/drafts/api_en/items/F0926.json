@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0926",
+  "sample_id": "PHL1800_IRFL_0457",
+  "file_name": "PHL1800_IRFL_0457.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of sailboats racing on open water under clear skies",
+  "captions": {
+    "scene": [
+      "Multiple sailboats with large spinnakers and mainsails are on blue water under a cloudless sky.",
+      "The water surface shows whitecaps and spray, indicating wind and motion.",
+      "At least five distinct sailboats are visible, each with crew members aboard."
+    ],
+    "action": [
+      "A white sailboat in the foreground leans sharply to starboard, its spinnaker fully extended but angled, suggesting a maneuver or wind shift.",
+      "Crew members on multiple boats are actively handling lines and adjusting positions; one person on the foreground boat extends an arm outward.",
+      "Sailboats in the background maintain upright postures with full spinnakers deployed, indicating steady sailing conditions."
+    ],
+    "rationale": [
+      "The tilted hull and angled spinnaker of the foreground boat imply dynamic interaction with wind forces, though exact cause (e.g., gybe, lull) is not visually confirmed.",
+      "Visible crew postures—leaning, reaching, seated—suggest coordinated activity typical of competitive sailing, but specific roles or intentions cannot be determined from posture alone.",
+      "Number of boats and sail configurations indicate a regatta setting, yet no race markers, flags, or official signage are visible to confirm event type."
+    ],
+    "object": [
+      "The foreground sailboat has a white hull, a black mainsail with partial white markings, and a fully extended light-blue spinnaker; it carries at least three people, two wearing yellow life vests.",
+      "A sailboat to the left displays a turquoise spinnaker with '36' in dark numerals and a white mainsail with no visible text; two people are visible aboard.",
+      "A sailboat behind and right of center shows a white spinnaker with black horizontal stripes and 'e8' printed in black; at least three crew members are present.",
+      "A fourth sailboat farther back has a red-and-white striped spinnaker with no visible text; two figures can be discerned on deck.",
+      "A fifth sailboat is partially visible behind the leftmost boat, showing a blue-and-white striped spinnaker and a white mainsail with no visible text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0926_P1",
+      "visual_anchors": [
+        "collapsed spinnaker on foreground boat",
+        "crew members leaning against heeling hull",
+        "multiple boats navigating same waters"
+      ],
+      "symbolic_mapping": [
+        "tilted hull as metaphor for instability amid collective motion"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The foreground boat’s precarious lean amid coordinated fleet movement visualizes the tension between individual agency and systemic constraints within shared environments.",
+      "alternative_interpretations": [
+        "The tilt may simply reflect a routine sail adjustment during a race, with no deeper implication."
+      ],
+      "limitations": [
+        "No facial expressions, verbal cues, or contextual signage confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0926_P2",
+      "visual_anchors": [
+        "multiple spinnakers with alphanumeric identifiers",
+        "uniform crew attire (life vests)",
+        "identical hull color (white) across boats"
+      ],
+      "symbolic_mapping": [
+        "standardized vessel design and markings suggest institutionalized competition"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The repetition of form—white hulls, numbered sails, grouped crews—reflects how social structures manifest through standardized participation, where distinction arises only through measurable performance.",
+      "alternative_interpretations": [
+        "Boats share design due to class rules in sailing competitions, not philosophical intent."
+      ],
+      "limitations": [
+        "Class rules are inferred; no rulebook or signage confirms standardization motive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0926_P3",
+      "visual_anchors": [
+        "sunlight glinting on water surface",
+        "sharp horizon line separating sea and sky",
+        "sails fully extended against clear backdrop"
+      ],
+      "symbolic_mapping": [
+        "horizon as boundary between known and unknown domains"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The unbroken horizon and transient light reflections evoke impermanence and the limits of perception: what is seen is momentary, bounded, and subject to shifting conditions beyond control.",
+      "alternative_interpretations": [
+        "The scene is a standard daytime sailing photograph with no intended metaphysical reference."
+      ],
+      "limitations": [
+        "No temporal markers (e.g., sundial, clock, aging signs) support mortality interpretation directly."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people on the foreground sailboat (candidate states four, but only three are visible); inaccurate text on the left sailboat's spinnaker ('36' is correct, but '3C' is not visible on the spinnaker); unsupported claim that the foreground boat's spinnaker is 'collapsed and trailing' (it is fully extended but angled); inaccurate text on the right sailboat's spinnaker ('e8' is correct, but the candidate misdescribes the spinnaker as 'white with black vertical stripes' when it is white with black horizontal stripes); incorrect count of people on the left sailboat (candidate states three, but only two are clearly visible); inaccurate text on the fourth sailboat's spinnaker ('48' is not visible, only red-and-white stripes are clear); unsupported claim that the fifth sailboat has 'unreadable text' (no text is visible on its mainsail)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:28:33.314904+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6f43c01a-93cf-9aa3-8f3e-b9e06de9deb4",
+      "usage": {
+        "prompt_tokens": 781,
+        "completion_tokens": 1025,
+        "total_tokens": 1806,
+        "completion_tokens_details": {
+          "text_tokens": 1025
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 274,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070328125a6fa059799e4256",
+      "usage": {
+        "completion_tokens": 1158,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1974,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3132
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

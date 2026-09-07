@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1131",
+  "sample_id": "PHL1800_HAIV_0008",
+  "file_name": "PHL1800_HAIV_0008.png",
+  "batch_id": "B002",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized human figure wearing a black mask with teal trim and holding two pocket watches",
+  "captions": {
+    "scene": [
+      "A dark blue background with faint cyan geometric lines suggesting architectural elements",
+      "Two ornate pocket watches are positioned in the upper right and lower right quadrants",
+      "The figure occupies the central-left portion of the frame, shown in profile facing right"
+    ],
+    "action": [
+      "The figure holds a large pocket watch near the lower right corner with its right hand",
+      "The figure’s left eye is wide open and directed toward the lower watch; the right eye is partially visible and smaller",
+      "A second pocket watch floats in the upper right, unheld and slightly tilted"
+    ],
+    "rationale": [
+      "The figure’s gaze aligns with the lower watch, suggesting visual attention to it",
+      "The mask covers the upper face but leaves eyes and ear exposed, indicating intentional concealment of identity",
+      "Numerals on both watches appear distorted or reversed, implying intentional stylization rather than functional timekeeping"
+    ],
+    "object": [
+      "The figure has black hair, a black mask with concentric teal and black rings around the eyes, and light beige skin tone.",
+      "The lower pocket watch has an orange-to-red gradient rim, a white face with black numerals (some mirrored or rotated), and a blue inner ring.",
+      "The upper pocket watch has an orange rim, a white face with black numerals that are visibly reversed and irregularly spaced, and a small orange crown at the top.",
+      "The figure’s right hand grips the lower watch’s ring; the thumb and index finger are visible, with the ring rendered as a simple orange oval.",
+      "The background includes a partial cyan rectangle on the left edge and curved cyan lines near the top left corner."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1131_P1",
+      "visual_anchors": [
+        "distorted numerals on both watches",
+        "mask covering facial features",
+        "figure’s focused gaze"
+      ],
+      "symbolic_mapping": [
+        "distorted time markings → subjective or unreliable temporality",
+        "mask → constructed or concealed identity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The image suggests that perception of time and self are mediated through artificial constructs—masks and manipulated clocks—that obscure objective reality.",
+      "alternative_interpretations": [
+        "The distortion may reflect artistic license or digital rendering artifacts rather than symbolic intent."
+      ],
+      "limitations": [
+        "No legible text confirms intentional symbolism; all mappings rely on visual analogy alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1131_P2",
+      "visual_anchors": [
+        "two watches held/positioned asymmetrically",
+        "figure’s unilateral gaze",
+        "dark background with minimal context"
+      ],
+      "symbolic_mapping": [
+        "dual watches → competing temporal frameworks",
+        "asymmetry → imbalance in control or awareness"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The figure appears caught between two temporal regimes—one actively held, one floating—implying tension between agency over time and external imposition.",
+      "alternative_interpretations": [
+        "The composition may simply follow graphic design conventions for visual balance and focal hierarchy."
+      ],
+      "limitations": [
+        "No explicit indicators of conflict (e.g., tension in posture, opposing forces) are present."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1131_P3",
+      "visual_anchors": [
+        "teal-and-black eye mask",
+        "exposed ear and partial mouth line",
+        "lack of body below neck"
+      ],
+      "symbolic_mapping": [
+        "selective occlusion → partial revelation of self",
+        "isolated sensory organs → emphasis on perception over action"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The figure embodies epistemic limitation: only certain faculties (vision, hearing) are presented, implying knowledge is fragmented and socially mediated through partial appearances.",
+      "alternative_interpretations": [
+        "The stylization reflects cartoon or iconographic conventions where full bodies are omitted for focus on expression."
+      ],
+      "limitations": [
+        "The absence of a full body does not confirm intentional omission for philosophical effect."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:42:06.820608+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e3d96a06-6382-97af-a955-a9cd73cf44fa",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 931,
+        "total_tokens": 2464,
+        "completion_tokens_details": {
+          "text_tokens": 931
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014155276186106a834568",
+      "usage": {
+        "completion_tokens": 788,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2880,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3668
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

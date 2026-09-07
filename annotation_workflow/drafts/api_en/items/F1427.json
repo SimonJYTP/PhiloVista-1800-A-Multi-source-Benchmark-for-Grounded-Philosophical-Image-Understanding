@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1427",
+  "sample_id": "PHL1800_IRFL_0090",
+  "file_name": "PHL1800_IRFL_0090.jpg",
+  "batch_id": "B029",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a yellow-skinned animated male figure holding a birdcage",
+  "captions": {
+    "scene": [
+      "An interior room with lavender walls, a teal cabinet, and a potted plant on top of the cabinet.",
+      "A small green-leafed plant in a terracotta pot sits on a dark teal surface to the left.",
+      "The background is plain lavender with no windows, doors, or other furniture visible."
+    ],
+    "action": [
+      "The figure holds a wire birdcage with both hands, positioning it near his face.",
+      "A small green bird with yellow beak and feet stands inside the cage on a wooden perch.",
+      "The figure’s mouth is open and his eyes are wide, suggesting vocalization or surprise."
+    ],
+    "rationale": [
+      "The figure’s posture and hand placement indicate active engagement with the cage rather than passive holding.",
+      "The bird’s upright stance and orientation toward the figure suggest awareness of proximity, though intent cannot be confirmed.",
+      "The absence of visible cage door mechanisms or openings makes it uncertain whether the cage is currently open or closed."
+    ],
+    "object": [
+      "The figure has yellow skin, two large round eyes, a prominent nose, and spiky yellow hair; he wears a white short-sleeved shirt and blue pants.",
+      "The birdcage is made of thin gray metal wires, has a domed top with a loop handle, and contains a horizontal wooden perch and a small green bird.",
+      "The bird has green plumage, a yellow beak, yellow legs and feet, and black eyes; it stands facing rightward within the cage.",
+      "A potted plant with multiple green leaves and a brown stem sits in a reddish-brown ceramic pot atop a teal cabinet.",
+      "The cabinet is rectangular, teal-colored, and appears to have a flat top surface supporting the pot."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1427_P1",
+      "visual_anchors": [
+        "birdcage",
+        "figure’s open mouth",
+        "bird’s fixed position"
+      ],
+      "symbolic_mapping": [
+        "the cage represents physical constraint",
+        "the figure’s expression suggests attempted communication across constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages a tension between containment and expression: the caged bird remains stationary while the figure gestures vocally, implying a philosophical inquiry into whether constraint negates voice or merely alters its mode.",
+      "alternative_interpretations": [
+        "The figure may simply be showing the bird to someone off-screen, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm symbolic intent; the scene could be purely functional or comedic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1427_P2",
+      "visual_anchors": [
+        "single bird",
+        "single human figure",
+        "empty surrounding space"
+      ],
+      "symbolic_mapping": [
+        "isolation of figures suggests relational scarcity",
+        "shared focus implies mutual dependence"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The sparse composition—only two animate entities in an otherwise empty room—invites reflection on how social meaning arises from minimal interaction, highlighting existence as co-constituted through attention and proximity.",
+      "alternative_interpretations": [
+        "The emptiness reflects typical cartoon set design economy, not intentional thematic minimalism."
+      ],
+      "limitations": [
+        "Background simplicity may result from artistic simplification rather than conceptual choice."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1427_P3",
+      "visual_anchors": [
+        "figure’s wide eyes",
+        "bird’s alert posture",
+        "cage as transparent barrier"
+      ],
+      "symbolic_mapping": [
+        "mutual gaze across barrier signifies recognition",
+        "transparency of cage suggests illusion of openness"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The visual reciprocity—the figure and bird oriented toward each other through a transparent enclosure—suggests that truth may be perceived yet structurally mediated, where observation does not guarantee access or shared understanding.",
+      "alternative_interpretations": [
+        "The bird is simply looking outward; the figure’s gaze is directed at the cage, not necessarily at the bird."
+      ],
+      "limitations": [
+        "Eye direction is stylized and ambiguous due to cartoon rendering; precise gaze alignment cannot be verified."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:31:12.352880+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-40106234-61b9-9de7-a3df-1684c77682cb",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 947,
+        "total_tokens": 1526,
+        "completion_tokens_details": {
+          "text_tokens": 947
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704303616409492d3c2488c",
+      "usage": {
+        "completion_tokens": 812,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1596,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2408
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

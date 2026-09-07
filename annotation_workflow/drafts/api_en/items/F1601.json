@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1601",
+  "sample_id": "PHL1800_IRFL_0271",
+  "file_name": "PHL1800_IRFL_0271.jpg",
+  "batch_id": "B033",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two boys in white judo gis engaged in a ground grappling position",
+  "captions": {
+    "scene": [
+      "Indoor martial arts dojo with gray mat flooring and red boundary line visible in background",
+      "Blurred background shows multiple other individuals wearing white gis, suggesting a group training session",
+      "Foreground features two boys on the mat; one is on top applying a hold, the other lies supine"
+    ],
+    "action": [
+      "The upper boy has both arms wrapped around the lower boy’s torso and neck area, maintaining control",
+      "The lower boy’s mouth is open wide, eyes directed upward, left arm extended outward, right fist clenched near hip",
+      "The upper boy’s gaze is fixed downward toward the lower boy’s head and shoulder region"
+    ],
+    "rationale": [
+      "The upper boy’s posture and arm placement suggest a controlled grappling technique rather than accidental contact",
+      "The lower boy’s facial expression and open mouth may indicate exertion or vocalization, but cannot confirm pain, joy, or speech",
+      "The presence of multiple blurred figures in white gis supports that this is a structured martial arts environment, though specific discipline is not verifiable from attire alone"
+    ],
+    "object": [
+      "Two boys wear white woven cotton judo gis with visible stitching and belt loops; the lower boy’s gi sleeve bears a small rectangular logo with red and black elements, partially legible as 'P' followed by indistinct characters.",
+      "The lower boy lies supine on a smooth gray mat with a red stripe running horizontally across the background floor.",
+      "The upper boy straddles the lower boy’s torso, knees positioned on either side of the lower boy’s hips, body leaning forward.",
+      "The lower boy’s left hand rests palm-down on the mat near his own chest; his right hand forms a closed fist near his right hip.",
+      "Both boys have short hair: the upper boy’s hair is medium-length with bangs covering part of his forehead; the lower boy’s hair is shorter and lighter-colored."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1601_P1",
+      "visual_anchors": [
+        "upper boy’s arms encircling lower boy’s neck/torso",
+        "lower boy’s open mouth and upward gaze",
+        "shared white gi uniform"
+      ],
+      "symbolic_mapping": [
+        "physical constraint as metaphor for social regulation",
+        "asymmetrical positioning reflecting hierarchical roles"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes how structured social interaction—here, martial training—embeds power dynamics within cooperative frameworks, where constraint enables learning and mutual recognition.",
+      "alternative_interpretations": [
+        "This is simply a routine drill in a children’s judo class with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions beyond mouth openness are clearly readable; emotional valence is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1601_P2",
+      "visual_anchors": [
+        "identical white gis",
+        "shared mat space",
+        "proximity without injury"
+      ],
+      "symbolic_mapping": [
+        "uniformity signaling shared identity",
+        "bodily proximity indicating trust in regulated conflict"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Uniform appearance and consensual physical engagement suggest identity formation through participation in shared practice, where selfhood emerges relationally rather than individually.",
+      "alternative_interpretations": [
+        "The gis are standard issue for safety and hygiene, not symbolic attire."
+      ],
+      "limitations": [
+        "The gis’ branding is partially obscured; we cannot confirm if they are identical beyond color and cut."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1601_P3",
+      "visual_anchors": [
+        "lower boy’s clenched right fist",
+        "upper boy’s focused downward gaze",
+        "static ground position"
+      ],
+      "symbolic_mapping": [
+        "fist as unresolved agency amid submission",
+        "gaze as directed attention shaping momentary reality"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "Within imposed physical limits, the lower boy’s clenched fist signifies retained volition—a micro-resistance that affirms autonomy even under constraint, echoing existential notions of freedom in limitation.",
+      "alternative_interpretations": [
+        "The fist is a natural tension response during grappling, not intentional symbolism."
+      ],
+      "limitations": [
+        "Hand posture could result from muscle engagement during hold escape attempts, not deliberate gesture."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:50:12.991337+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-663cd5c3-4204-9580-80e1-f743491133b0",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 992,
+        "total_tokens": 1821,
+        "completion_tokens_details": {
+          "text_tokens": 992
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070449532f191c8487d04134",
+      "usage": {
+        "completion_tokens": 850,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1988,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2838
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

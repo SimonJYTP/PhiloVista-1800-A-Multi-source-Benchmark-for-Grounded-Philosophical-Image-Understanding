@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0822",
+  "sample_id": "PHL1800_IRFL_0232",
+  "file_name": "PHL1800_IRFL_0232.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person seated at a desk",
+  "captions": {
+    "scene": [
+      "A person sits in a blue office chair at a dark gray desk with a laptop and a blue mug.",
+      "The background consists of a pale lavender floor and a light blue irregular cloud-like shape behind the subject.",
+      "The person wears a yellow long-sleeve top, dark pants, and blue shoes; their head rests on the desk near the laptop."
+    ],
+    "action": [
+      "The person’s torso is bent forward with their head lowered onto the desk surface.",
+      "Their right arm hangs loosely beside the chair; left arm is not fully visible but appears relaxed.",
+      "The laptop screen is open and illuminated with a blue glow; the mug sits to the left of the laptop."
+    ],
+    "rationale": [
+      "The posture suggests physical fatigue or rest, but no facial expression or context confirms emotional state.",
+      "The presence of a laptop and mug implies a work or study setting, though the activity is not ongoing.",
+      "The stylized background lacks environmental detail, limiting inference about location or time."
+    ],
+    "object": [
+      "A blue wheeled office chair supports the seated person.",
+      "A dark gray rectangular desk holds an open laptop and a cylindrical blue mug.",
+      "The laptop has a silver-colored body and a glowing blue screen; its lid is angled upward.",
+      "The person has dark hair, wears a yellow long-sleeve shirt, dark trousers, and solid blue slip-on shoes.",
+      "No text is legible on the laptop screen, mug, or clothing; any markings are unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0822_P1",
+      "visual_anchors": [
+        "person resting head on desk",
+        "open laptop",
+        "blue mug"
+      ],
+      "symbolic_mapping": [
+        "laptop as tool of labor",
+        "posture as embodiment of exhaustion"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually frames labor as physically encroaching on bodily autonomy, where the instrument of work (laptop) remains active while the worker collapses into passive repose.",
+      "alternative_interpretations": [
+        "The scene may simply depict a brief pause during routine desk work, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial features or contextual signage confirm intentionality or systemic critique."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0822_P2",
+      "visual_anchors": [
+        "blue chair with wheels",
+        "desk edge aligned with body",
+        "uniform color palette"
+      ],
+      "symbolic_mapping": [
+        "wheeled chair as mobility within constraint",
+        "monochromatic scheme as institutional neutrality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The standardized furniture and muted colors suggest an environment that normalizes individual strain within collective structures, implying social existence mediated by institutional design.",
+      "alternative_interpretations": [
+        "The color choices may reflect aesthetic preference rather than commentary on social systems."
+      ],
+      "limitations": [
+        "Absence of other people or signage prevents verification of institutional context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0822_P3",
+      "visual_anchors": [
+        "head lowered toward desk",
+        "unseen face",
+        "closed eyes implied by posture"
+      ],
+      "symbolic_mapping": [
+        "invisibility of face as erasure of identity",
+        "desk as boundary between self and task"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "By obscuring the face and centering the body in submission to the desk, the image questions whether identity persists when appearance is subsumed by functional role.",
+      "alternative_interpretations": [
+        "The posture may merely indicate momentary drowsiness without identity-related implications."
+      ],
+      "limitations": [
+        "The illustration style does not specify whether the face is intentionally hidden or incidentally obscured."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:19:31.762917+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ef36c579-2ce5-949b-9404-8a2081590dd7",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 870,
+        "total_tokens": 1449,
+        "completion_tokens_details": {
+          "text_tokens": 870
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703191994d00f01de364168",
+      "usage": {
+        "completion_tokens": 731,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1529,
+        "prompt_tokens_details": {
+          "cached_tokens": 4
+        },
+        "total_tokens": 2260
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

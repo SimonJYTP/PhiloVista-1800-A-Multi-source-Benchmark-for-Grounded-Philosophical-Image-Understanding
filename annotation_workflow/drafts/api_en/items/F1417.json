@@ -1,0 +1,165 @@
+{
+  "annotation_item_id": "F1417",
+  "sample_id": "PHL1800_IRFL_0487",
+  "file_name": "PHL1800_IRFL_0487.jpg",
+  "batch_id": "B029",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a narrow rocky gorge with a flowing stream",
+  "captions": {
+    "scene": [
+      "Steep, vertically fractured rock walls flank a shallow watercourse.",
+      "Sunlight illuminates the upper canyon opening while lower sections remain in shadow.",
+      "A mix of rounded cobbles and angular boulders lines the streambed and banks."
+    ],
+    "action": [
+      "Water flows downstream with visible motion blur indicating sustained movement.",
+      "Sediment is suspended in the water, creating a milky translucency near the surface.",
+      "Rocks remain stationary, partially submerged or exposed above the waterline."
+    ],
+    "rationale": [
+      "The smooth, streaked appearance of water suggests a long-exposure photographic technique was used.",
+      "Vertical striations on rock faces imply prolonged erosion by water or weathering agents.",
+      "Absence of vegetation on most rock surfaces indicates limited soil retention or recent exposure."
+    ],
+    "object": [
+      "The streambed consists of gravel, pebbles, and several large dark boulders partially embedded in sediment.",
+      "The left wall displays layered, bluish-gray metamorphic or sedimentary rock with visible foliation.",
+      "The right wall features coarser, darker, less stratified rock with minor green patches of lichen or moss.",
+      "A natural arch or overhang appears in the mid-distance where opposing walls nearly converge overhead.",
+      "The water surface shows white turbulence around obstacles and smoother flow in wider sections."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1417_P1",
+      "visual_anchors": [
+        "long-exposure water blur",
+        "vertical rock striations",
+        "narrow passage between walls"
+      ],
+      "symbolic_mapping": [
+        "water blur → passage of time",
+        "rock striations → accumulation of change"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The contrast between fluid, transient water and enduring, striated rock evokes the tension between impermanence and persistence in natural systems.",
+      "alternative_interpretations": [
+        "This is simply a geological formation shaped by hydrological processes without symbolic intent."
+      ],
+      "limitations": [
+        "No human presence or cultural markers confirm intentional symbolism; interpretation relies on viewer projection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1417_P2",
+      "visual_anchors": [
+        "converging canyon walls",
+        "restricted visibility ahead",
+        "single path forward"
+      ],
+      "symbolic_mapping": [
+        "narrow gorge → constrained choice",
+        "unseen exit → uncertainty of outcome"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The forced linear progression through a narrowing channel visually mirrors the experience of a determined path with limited alternatives and obscured destination.",
+      "alternative_interpretations": [
+        "The geometry results from differential erosion and tectonic history, not narrative design."
+      ],
+      "limitations": [
+        "The path does not visibly terminate or branch; the ‘journey’ is inferred from perspective, not structure."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1417_P3",
+      "visual_anchors": [
+        "boulders resisting flow",
+        "water diverting around obstacles",
+        "uneven bedload distribution"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "A literal description of a narrow rocky gorge with a flowing stream is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a narrow rocky gorge with a flowing stream as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:30:03.273847+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-915126de-797d-9d77-8b08-bc751cacf971",
+      "usage": {
+        "prompt_tokens": 1434,
+        "completion_tokens": 832,
+        "total_tokens": 2266,
+        "completion_tokens_details": {
+          "text_tokens": 832
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 927,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704294240c6061ad0a84513",
+      "usage": {
+        "completion_tokens": 691,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2659,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3350
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1417.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

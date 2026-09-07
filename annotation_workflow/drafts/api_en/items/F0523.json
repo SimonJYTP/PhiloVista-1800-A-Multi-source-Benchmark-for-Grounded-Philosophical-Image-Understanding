@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0523",
+  "sample_id": "PHL1800_HL_0247",
+  "file_name": "PHL1800_HL_0247.png",
+  "batch_id": "B012",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person standing on a tennis court behind a chain-link fence",
+  "captions": {
+    "scene": [
+      "A chain-link fence with rusted intersections and a vertical metal post occupies the foreground.",
+      "A blurred figure in blue top and white shorts stands on a light-colored hard tennis court surface.",
+      "The background shows indistinct dark shapes suggesting trees or structures beyond the court."
+    ],
+    "action": [
+      "The person is upright, knees slightly bent, holding an object (likely a tennis racket) in front of their torso.",
+      "The figure appears stationary or in minimal motion, with no visible swing or foot movement.",
+      "The image is captured through a fence, causing partial occlusion and reduced focus on the subject."
+    ],
+    "rationale": [
+      "The subject’s posture suggests readiness for play, but no ball or active stroke is visible; motion cannot be confirmed.",
+      "The blurriness prevents definitive identification of clothing details or facial features; only color blocks are discernible.",
+      "The fence dominates the visual field, implying intentional framing or obstruction rather than accidental capture."
+    ],
+    "object": [
+      "A galvanized steel post with horizontal wire ties secures the left edge of the chain-link fence.",
+      "The fence consists of interwoven diamond-shaped metal wires with brownish corrosion at junction points.",
+      "The person wears a short-sleeved blue upper garment and white lower garments ending above the knee.",
+      "White footwear is visible on both feet, consistent with athletic shoes, though laces and branding are indiscernible.",
+      "A light-gray or off-white court surface shows faint linear markings partially obscured by the fence pattern."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0523_P1",
+      "visual_anchors": [
+        "chain-link fence",
+        "blurred figure",
+        "occluded view"
+      ],
+      "symbolic_mapping": [
+        "fence as barrier to direct perception",
+        "blurring as epistemic limitation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image embodies the tension between observation and access: the viewer sees only a mediated, distorted representation of action, suggesting that truth is always filtered through structural constraints.",
+      "alternative_interpretations": [
+        "This is simply a candid sports photograph taken from behind a fence, with no intended symbolism."
+      ],
+      "limitations": [
+        "No textual labels, signage, or contextual markers confirm intentional metaphor; blur may result from camera settings rather than conceptual choice."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0523_P2",
+      "visual_anchors": [
+        "single figure",
+        "isolated stance",
+        "fence enclosure"
+      ],
+      "symbolic_mapping": [
+        "solitary player within bounded space as emblem of individual agency under structure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The lone figure positioned within a defined court yet visually confined by the fence reflects how social roles are enacted within institutional boundaries, where autonomy exists only within prescribed limits.",
+      "alternative_interpretations": [
+        "The person is waiting for a serve or opponent; isolation is situational, not existential."
+      ],
+      "limitations": [
+        "Only one person is visible, but others may be present outside frame; isolation is not verifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0523_P3",
+      "visual_anchors": [
+        "rust on fence wires",
+        "faded court lines",
+        "soft focus"
+      ],
+      "symbolic_mapping": [
+        "material decay as marker of time’s passage",
+        "focus loss as metaphor for memory attenuation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The corroded fence and indistinct subject evoke impermanence: physical structures degrade, and human presence becomes increasingly ambiguous over time, questioning the stability of identity through appearance alone.",
+      "alternative_interpretations": [
+        "Rust and blur are artifacts of weather exposure and photographic technique, not symbolic intent."
+      ],
+      "limitations": [
+        "No temporal sequence is shown; decay level cannot be dated or compared to original state."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:53:57.062415+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-27023007-baaa-9bcc-805d-9bf45e55f9a3",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 900,
+        "total_tokens": 1569,
+        "completion_tokens_details": {
+          "text_tokens": 900
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070253389351ed2579e247ad",
+      "usage": {
+        "completion_tokens": 763,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1706,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2469
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

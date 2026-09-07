@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0023",
+  "sample_id": "PHL1800_HAIV_0057",
+  "file_name": "PHL1800_HAIV_0057.png",
+  "batch_id": "B003",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized bird-like figure within a red heart",
+  "captions": {
+    "scene": [
+      "A monochrome landscape with rolling hills, sparse coniferous trees, and a tree stump in the foreground.",
+      "The background consists of sketchy, hatched mountain ridges under a plain white sky.",
+      "A large solid red heart dominates the center, superimposed over the landscape."
+    ],
+    "action": [
+      "The bird-like figure is stationary, facing right, with its head turned slightly upward.",
+      "The figure appears to be partially embedded within or emerging from the red heart shape.",
+      "No motion lines or dynamic posture indicate movement; the scene is static."
+    ],
+    "rationale": [
+      "The heart’s placement suggests symbolic framing rather than physical containment, given its flat color and lack of depth cues.",
+      "The figure’s green garment and white head contrast sharply with the monochrome surroundings, indicating intentional visual emphasis.",
+      "The absence of facial features or clear species markers makes precise identification of the figure uncertain."
+    ],
+    "object": [
+      "A large red heart with a black outline occupies the central visual field.",
+      "Inside the heart, a white-headed figure with a green collar and green torso is depicted in profile.",
+      "The figure has a pointed beak-like protrusion and a dark eye spot, suggesting avian morphology.",
+      "Multiple thin black vertical lines represent bare coniferous trees scattered across the terrain.",
+      "A cut tree stump with visible root structure appears in the lower-right foreground."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0023_P1",
+      "visual_anchors": [
+        "red heart",
+        "bird-like figure",
+        "monochrome landscape"
+      ],
+      "symbolic_mapping": [
+        "heart → emotional core",
+        "figure within heart → internal identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "faith_meaning"
+      ],
+      "interpretation": "The figure enclosed within the heart may represent an inner self defined by emotion or belief, set against a stark external world that lacks color or vitality.",
+      "alternative_interpretations": [
+        "The heart could be a literal shield or container, and the figure a guardian or occupant, with no symbolic intent intended."
+      ],
+      "limitations": [
+        "No textual labels or contextual markers confirm symbolic intent; color use is limited to the heart and figure, leaving interpretation open."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0023_P2",
+      "visual_anchors": [
+        "tree stump",
+        "bare trees",
+        "hatched hills"
+      ],
+      "symbolic_mapping": [
+        "stump → loss or interruption",
+        "repetitive barren forms → existential repetition"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The desolate, sketched terrain surrounding the vivid heart suggests a constrained environment where mortality or temporal passage is implied through absence and repetition.",
+      "alternative_interpretations": [
+        "The landscape may simply reflect a minimalist artistic style without thematic intent, emphasizing line over narrative."
+      ],
+      "limitations": [
+        "The drawing technique (hatching, minimal shading) does not inherently denote decay or constraint; it may be stylistic economy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0023_P3",
+      "visual_anchors": [
+        "green garment",
+        "white head",
+        "black outline of heart"
+      ],
+      "symbolic_mapping": [
+        "green → life or hope",
+        "contrast between colored figure and grayscale world → distinction between inner and outer reality"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The figure’s distinct coloring amid a monochrome setting may signify a conscious choice to maintain individuality or meaning within a socially indifferent or uniform environment.",
+      "alternative_interpretations": [
+        "Color was applied selectively for compositional balance, not symbolism—e.g., red and green create visual harmony against black-and-white."
+      ],
+      "limitations": [
+        "Only three colors are used (red, green, black/white), and their distribution follows graphic design principles that do not necessitate philosophical reading."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:49:26.078606+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-46ddc20d-b551-9752-8212-a897dc590e35",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 888,
+        "total_tokens": 2421,
+        "completion_tokens_details": {
+          "text_tokens": 888
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014914b307ec6381f8452c",
+      "usage": {
+        "completion_tokens": 750,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2845,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3595
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

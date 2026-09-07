@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0422",
+  "sample_id": "PHL1800_HL_0429",
+  "file_name": "PHL1800_HL_0429.png",
+  "batch_id": "B010",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "pedestrians and vehicles on a multi-lane urban street",
+  "captions": {
+    "scene": [
+      "A daytime street view with bare trees, traffic signals, and commercial signage including a red Coca-Cola sign.",
+      "Sidewalk with concrete slabs and metal grates in the foreground; road surface shows tire marks and faded lane markings.",
+      "Two pedestrians walking side by side on the left sidewalk near a utility pole and a red signpost."
+    ],
+    "action": [
+      "Three vehicles are moving away from the camera: a dark SUV, a silver sedan, and a green station wagon.",
+      "A blue van is parked or stopped on the right shoulder near a yellow traffic sign.",
+      "Two pedestrians walk forward along the sidewalk, one wearing light-colored clothing and the other darker attire."
+    ],
+    "rationale": [
+      "The presence of multiple traffic lights and directional signs suggests regulated vehicular flow, though no vehicle is actively turning or stopping at a signal.",
+      "The absence of leaf cover on trees and clear shadows indicate daytime in a cooler season, but exact season cannot be confirmed without temperature data.",
+      "The Coca-Cola sign is legible, but other signage (e.g., on buildings or poles) contains unreadable text due to distance or resolution."
+    ],
+    "object": [
+      "A red rectangular Coca-Cola sign with white script logo is mounted on a pole on the left side of the street.",
+      "Four visible vehicles include: a dark SUV ahead in the left lane, a silver sedan behind it, a green station wagon in the right lane, and a blue van parked on the far right curb.",
+      "Two pedestrians walk together on the left sidewalk; both appear upright and in motion, with one carrying a bag over the shoulder.",
+      "Three yellow traffic signals hang above the intersection, all showing amber lights; one is partially obscured by a utility pole.",
+      "A yellow diamond-shaped warning sign with black symbols is mounted on a pole near the right curb, but its specific symbol is indistinct."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0422_P1",
+      "visual_anchors": [
+        "two pedestrians walking side by side",
+        "faded crosswalk lines",
+        "utility pole casting long shadow"
+      ],
+      "symbolic_mapping": [
+        "parallel movement suggests shared trajectory without explicit interaction",
+        "faded lines imply erasure of formal guidance"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The paired pedestrians move along a path where formal demarcations (crosswalk) have worn away, suggesting social coexistence that persists despite institutional fading—presence without prescription.",
+      "alternative_interpretations": [
+        "They are simply walking together toward a destination; no symbolic meaning is required."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or dialogue are visible to confirm intent or relationship."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0422_P2",
+      "visual_anchors": [
+        "amber traffic lights",
+        "vehicles in motion",
+        "empty pedestrian crossing zone"
+      ],
+      "symbolic_mapping": [
+        "amber as liminal state between stop and go",
+        "vehicles proceeding while crossing is unoccupied"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "Amber lights suspend decision-making in a moment where motion continues unchecked and human crossing is absent—highlighting how temporal thresholds govern action yet remain indifferent to individual presence.",
+      "alternative_interpretations": [
+        "The lights are timed for traffic flow; pedestrians are simply not present at this instant."
+      ],
+      "limitations": [
+        "No clock or timestamp confirms the duration of the amber phase or pedestrian waiting behavior."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0422_P3",
+      "visual_anchors": [
+        "Coca-Cola sign",
+        "bare trees",
+        "concrete sidewalk with metal grate"
+      ],
+      "symbolic_mapping": [
+        "commercial branding embedded in public infrastructure",
+        "natural cycles juxtaposed with manufactured permanence"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The branded sign anchors identity in consumption amid seasonal decay and utilitarian surfaces, revealing how appearance is curated through corporate symbols even in mundane transit spaces.",
+      "alternative_interpretations": [
+        "It is a standard advertisement placed for visibility; no deeper identity construction is evident."
+      ],
+      "limitations": [
+        "The sign’s placement and context do not reveal viewer reception or personal identification with the brand."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:45:22.766204+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-70e928dc-b6a6-967e-a21e-1e5e5ff2ee80",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 974,
+        "total_tokens": 1675,
+        "completion_tokens_details": {
+          "text_tokens": 974
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024503e2e3f5ff56b8420e",
+      "usage": {
+        "completion_tokens": 835,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1814,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2649
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

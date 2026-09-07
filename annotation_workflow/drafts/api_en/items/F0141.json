@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0141",
+  "sample_id": "PHL1800_HL_0189",
+  "file_name": "PHL1800_HL_0189.png",
+  "batch_id": "B005",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person reclining on a bed reading a book, with a plush toy beside them",
+  "captions": {
+    "scene": [
+      "A person lies on a bed with a light wood headboard against a bright green wall.",
+      "A large blue-and-teal plush toy resembling Stitch from Disney's Lilo & Stitch rests on pink patterned bedding to the left of the person.",
+      "Purple pillows with white star patterns are visible behind the person’s head."
+    ],
+    "action": [
+      "The person holds an open paperback book with both hands and gazes at its pages.",
+      "The plush toy lies supine with limbs extended upward and outward, paws facing the ceiling.",
+      "The person wears a black short-sleeved shirt, dark jeans, and a yellow wristband on the left wrist."
+    ],
+    "rationale": [
+      "The person is likely reading because their eyes are directed toward the book’s open pages and their posture is stable and focused.",
+      "The plush toy appears intentionally placed rather than casually dropped, given its symmetrical pose and proximity to the person.",
+      "The book cover displays legible text including 'CHARLAINE HARRIS' and 'LIVING DEAD IN DALLAS', indicating it is a published novel; other text is partially obscured or too small to read reliably."
+    ],
+    "object": [
+      "A plush toy with blue head and limbs, teal torso, black eyes, and stitched facial features lies on pink floral-patterned bedding.",
+      "A paperback book is held open, showing a black background cover with white and red text; the author name 'CHARLAINE HARRIS' is clearly visible in red uppercase letters.",
+      "The person has short dark hair, visible eyebrows, and a neutral facial expression while looking down at the book.",
+      "A purple pillow with white five-pointed stars and a faint crescent moon design rests behind the person’s head.",
+      "The headboard consists of horizontal light-colored wooden slats with visible grain and seams between planks."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0141_P1",
+      "visual_anchors": [
+        "open book with visible author name",
+        "person’s focused gaze",
+        "plush toy positioned near reader"
+      ],
+      "symbolic_mapping": [
+        "the book as a vessel for narrative immersion",
+        "the plush toy as a marker of comfort or childhood continuity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of adult literary engagement (a supernatural fiction novel) with a childlike comfort object suggests a layered identity where intellectual pursuit coexists with affective continuity across life stages.",
+      "alternative_interpretations": [
+        "The plush toy may simply be decorative or left over from prior use, with no symbolic intent."
+      ],
+      "limitations": [
+        "No evidence confirms the person’s age, relationship to the toy, or emotional state; interpretation relies on assumed cultural associations."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0141_P2",
+      "visual_anchors": [
+        "green wall",
+        "purple star-patterned pillow",
+        "pink floral bedding"
+      ],
+      "symbolic_mapping": [
+        "color contrast between wall and bedding as visual tension",
+        "stars as motifs of aspiration or night-time reflection"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "faith_meaning"
+      ],
+      "interpretation": "The vivid, contrasting color scheme—artificial green wall against soft domestic textiles—may reflect a space deliberately curated for personal meaning, where aesthetic choice functions as a form of self-expression within physical constraints.",
+      "alternative_interpretations": [
+        "Colors may result from practical availability or interior design trends without deeper intent."
+      ],
+      "limitations": [
+        "Color symbolism is culturally variable and not directly indicated by the image."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0141_P3",
+      "visual_anchors": [
+        "book title 'LIVING DEAD IN DALLAS'",
+        "person’s relaxed posture",
+        "stillness of scene"
+      ],
+      "symbolic_mapping": [
+        "narrative about undead existence as metaphor for suspended time",
+        "reclined reading as temporary withdrawal from external demands"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "Engagement with a story centered on non-human longevity amid a quiet, static domestic moment evokes contemplation of temporal experience—how narrative allows temporary suspension of linear time and reorientation toward imagined journeys.",
+      "alternative_interpretations": [
+        "The reader may be casually enjoying genre fiction without philosophical reflection."
+      ],
+      "limitations": [
+        "The reader’s internal experience is invisible; only external behavior is observable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:07:20.092366+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-42513010-d12a-996e-9a46-e210d09cecb3",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1001,
+        "total_tokens": 1770,
+        "completion_tokens_details": {
+          "text_tokens": 1001
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020702fdc595a7051a419f",
+      "usage": {
+        "completion_tokens": 864,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1936,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2800
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

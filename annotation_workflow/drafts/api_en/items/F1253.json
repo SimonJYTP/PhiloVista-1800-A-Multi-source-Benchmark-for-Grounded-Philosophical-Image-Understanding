@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1253",
+  "sample_id": "PHL1800_HL_0213",
+  "file_name": "PHL1800_HL_0213.png",
+  "batch_id": "B026",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a teal-colored decorative bench with cutout backrest and a white bird sculpture",
+  "captions": {
+    "scene": [
+      "An indoor public space with multicolored carpeting (green, blue, purple squares), bookshelves, and service desks.",
+      "A brightly lit library interior featuring a central artistic bench, display stands, and a person browsing shelves.",
+      "The foreground contains a stylized bench; background includes signage, a potted plant on a desk, and wooden furniture."
+    ],
+    "action": [
+      "A person with short dark hair, wearing a black long-sleeve top and dark pants, stands facing away near bookshelves.",
+      "A white sculpted bird with spread wings and orange feet rests on the bench seat, holding a yellow-topped object in its beak.",
+      "Books are arranged upright on multiple shelving units; some display signs or posters on easels."
+    ],
+    "rationale": [
+      "The bench’s design—cutout trees, city skyline, and bird—suggests intentional thematic decoration rather than standard furniture.",
+      "The presence of labeled sections (e.g., 'PICTURE BOOKS', 'LANGUAGE') and organized shelving indicates a library setting.",
+      "The bird sculpture’s pose and held object imply symbolic or narrative intent, though the object’s identity is indistinct."
+    ],
+    "object": [
+      "The bench is painted teal, has a flat seat with reflective surface, and a backrest composed of laser-cut or die-cut silhouettes of bare trees, buildings, and abstract shapes.",
+      "A white three-dimensional bird sculpture sits on the right side of the bench seat, with outstretched wings, textured feather details, and orange-colored feet.",
+      "The bird holds a small cylindrical object with a yellow cap or top in its open beak; the object’s label or contents are unreadable.",
+      "Behind the bench, a freestanding sign displays a colorful illustration with text that is too blurry to read.",
+      "To the left, a wooden chair with light-colored upholstery and metal legs stands beside a low table with books and a yellow-framed poster."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1253_P1",
+      "visual_anchors": [
+        "cutout bare trees on bench backrest",
+        "white bird sculpture with open wings",
+        "multicolored tiled floor"
+      ],
+      "symbolic_mapping": [
+        "bare trees may represent cycles of growth and dormancy",
+        "bird with open wings may signify aspiration or transition"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of dormant trees and a poised bird suggests a contemplation of temporal passage and the potential for movement amid stillness.",
+      "alternative_interpretations": [
+        "The design may simply reflect local ecological motifs or children’s storytelling themes without philosophical intent."
+      ],
+      "limitations": [
+        "No textual explanation accompanies the bench; symbolism is inferred solely from form and placement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1253_P2",
+      "visual_anchors": [
+        "person browsing books",
+        "organized shelves",
+        "informational signage"
+      ],
+      "symbolic_mapping": [
+        "book access as mediated by institutional structure",
+        "individual engagement within curated knowledge space"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The scene embodies the tension between individual inquiry and institutional framing of knowledge, where the viewer is both participant and observed.",
+      "alternative_interpretations": [
+        "This is a routine library activity with no implied critique—people browse books in a functional public space."
+      ],
+      "limitations": [
+        "The person’s posture and focus do not reveal intent or awareness of surrounding symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1253_P3",
+      "visual_anchors": [
+        "teal bench with reflective seat",
+        "bird holding yellow-topped object",
+        "color-blocked carpet"
+      ],
+      "symbolic_mapping": [
+        "reflective surface mirrors surroundings, suggesting self-awareness",
+        "yellow-topped object may evoke illumination or inquiry"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The bench invites reflection—not only literal via its glossy surface but also metaphorical—on how identity is shaped within constrained, designed environments.",
+      "alternative_interpretations": [
+        "The reflective seat is a practical finish choice; the yellow object is likely a decorative prop with no deeper meaning."
+      ],
+      "limitations": [
+        "Reflections on the seat are distorted and partial; no clear image of observer or environment is discernible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:08:15.532738+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8d6df376-cce0-9c00-95cf-8cfc20a28e3a",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 996,
+        "total_tokens": 1805,
+        "completion_tokens_details": {
+          "text_tokens": 996
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070408040e6219510ae14490",
+      "usage": {
+        "completion_tokens": 858,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1973,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2831
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

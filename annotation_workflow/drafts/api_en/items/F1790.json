@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1790",
+  "sample_id": "PHL1800_HAIV_0460",
+  "file_name": "PHL1800_HAIV_0460.png",
+  "batch_id": "B036",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one cartoon male figure",
+  "captions": {
+    "scene": [
+      "A cartoon man in an orange striped shirt sits at a dark table against a light lavender background with red radiating lines above his head.",
+      "Two stylized green-and-black banknotes float in the air to the right of the man’s head, one curved upward and one angled downward.",
+      "A blank white rectangular paper lies on the table in front of the man’s outstretched right hand."
+    ],
+    "action": [
+      "The man’s mouth is wide open, eyes are large and round, and eyebrows are raised, indicating an expression of shock or alarm.",
+      "His left arm is raised with fingers splayed; his right arm extends forward toward the paper on the table.",
+      "Red pointed shapes radiate outward from the top of his head, suggesting sudden mental stimulation or surprise."
+    ],
+    "rationale": [
+      "The open mouth and wide eyes are conventional visual cues for surprise or alarm in cartoon illustration.",
+      "Floating banknotes near a startled figure may indicate unexpected financial change, though no causal link is visually confirmed.",
+      "The blank paper on the table lacks text or markings, so its purpose cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "The figure has a balding head with dark hair on the sides and back, a prominent nose, and large circular eyes with black pupils.",
+      "He wears a short-sleeved orange shirt with horizontal black stripes and a black collar trim.",
+      "Two green banknotes with black abstract patterns and small unreadable rectangular markings float to his right.",
+      "A white rectangular sheet of paper rests flat on the dark tabletop in front of him.",
+      "Seven red triangular spikes with black tips emanate radially from the crown of his head against a pale background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1790_P1",
+      "visual_anchors": [
+        "open mouth",
+        "radiating red spikes",
+        "floating banknotes"
+      ],
+      "symbolic_mapping": [
+        "radiating spikes → sudden realization",
+        "floating money → external disruption"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image may depict a moment where acquired knowledge (spikes) collides with material contingency (money), revealing constraints on autonomy.",
+      "alternative_interpretations": [
+        "It could simply illustrate a comedic reaction to receiving unexpected cash, with no philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm symbolic intent; interpretation relies on convention rather than explicit evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1790_P2",
+      "visual_anchors": [
+        "blank paper",
+        "outstretched hand",
+        "shocked expression"
+      ],
+      "symbolic_mapping": [
+        "blank paper → undetermined choice",
+        "hand gesture → attempted agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The figure confronts an undefined decision (blank paper) while his appearance (striped shirt, balding head) remains fixed, suggesting tension between self-presentation and emergent choice.",
+      "alternative_interpretations": [
+        "The paper may be a receipt or bill he just received, and his gesture is reflexive, not deliberative."
+      ],
+      "limitations": [
+        "The paper contains no visible text or symbols; its semantic role is indeterminate."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1790_P3",
+      "visual_anchors": [
+        "two floating banknotes",
+        "man’s gaze direction",
+        "table surface"
+      ],
+      "symbolic_mapping": [
+        "banknotes → external value systems",
+        "table → social contract boundary"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "Money appears unanchored in space while the figure reacts at a threshold (table edge), possibly symbolizing dislocation from communal norms when faced with unearned or ambiguous value.",
+      "alternative_interpretations": [
+        "The notes are simply animated for visual effect in a financial-themed cartoon, without moral implication."
+      ],
+      "limitations": [
+        "No interpersonal figures, institutions, or normative symbols (e.g., scales, contracts) are present to ground ethical claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:14:28.490198+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0b7fe1c0-9e06-9ffd-b41b-a73a392d6a80",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 927,
+        "total_tokens": 2460,
+        "completion_tokens_details": {
+          "text_tokens": 927
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070513482fab0503ee37443c",
+      "usage": {
+        "completion_tokens": 789,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2884,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3673
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

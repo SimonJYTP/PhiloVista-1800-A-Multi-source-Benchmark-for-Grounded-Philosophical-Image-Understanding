@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0792",
+  "sample_id": "PHL1800_IRFL_0070",
+  "file_name": "PHL1800_IRFL_0070.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male wearing an orange jumpsuit behind metal bars",
+  "captions": {
+    "scene": [
+      "A concrete-walled interior with horizontal and vertical gray metal bars forming a grid in the foreground",
+      "The background consists of light beige cinderblock walls with visible mortar lines",
+      "Lighting appears diffuse and even, casting soft shadows behind the bars and on the subject’s face"
+    ],
+    "action": [
+      "The man grips two vertical bars with both hands, fingers wrapped around them",
+      "His head and upper torso are positioned between bars, facing forward toward the camera",
+      "His eyes are open and directed straight ahead; his mouth is closed with lips slightly parted"
+    ],
+    "rationale": [
+      "The orange garment resembles a standard institutional uniform due to its color, cut, and lack of external branding or decoration",
+      "The presence of thick welded metal bars suggests confinement, though the exact function (e.g., cell, holding area) cannot be confirmed from visual evidence alone",
+      "The watermark 'stockunlimited' partially overlays the image but does not alter the physical scene; its legibility is reduced by opacity and bar occlusion"
+    ],
+    "object": [
+      "The subject has dark curly hair, a short beard and mustache, and brown eyes.",
+      "He wears a long-sleeved orange jumpsuit with a collar, front placket, and visible chest pocket on the left side.",
+      "The metal bars are painted gray, show minor surface wear and chipped paint, and are joined by welded horizontal crossbars.",
+      "His right hand rests on a horizontal bar with fingers extended downward; his left hand grasps a vertical bar with thumb on the near side.",
+      "The wall behind him is constructed of rectangular concrete blocks laid in running bond, with visible grout lines."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0792_P1",
+      "visual_anchors": [
+        "orange jumpsuit",
+        "metal bars",
+        "direct gaze through bars"
+      ],
+      "symbolic_mapping": [
+        "bars → physical constraint",
+        "orange uniform → institutional categorization"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image visually stages a tension between embodied presence and imposed limitation: the subject’s direct gaze asserts subjective continuity while the bars and uniform signify externally enforced status and spatial restriction.",
+      "alternative_interpretations": [
+        "This may depict a staged stock photograph using costume and set design rather than actual incarceration."
+      ],
+      "limitations": [
+        "No contextual signage, documentation, or temporal markers confirm real-world setting or legal status."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0792_P2",
+      "visual_anchors": [
+        "hands gripping bars",
+        "unchanged facial expression",
+        "symmetrical framing"
+      ],
+      "symbolic_mapping": [
+        "gripping bars → active engagement with boundary",
+        "neutral expression → withheld affect"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The subject’s posture—holding the bars without strain or resistance—suggests a stabilized relationship with constraint, where identity is negotiated not through defiance but through sustained proximity to the structure that defines his current condition.",
+      "alternative_interpretations": [
+        "The pose may be directed for photographic composition, emphasizing symmetry and visual tension rather than expressing internal state."
+      ],
+      "limitations": [
+        "Facial musculature and micro-expressions are insufficiently resolved to infer intentionality or emotional valence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0792_P3",
+      "visual_anchors": [
+        "cinderblock wall",
+        "uniform texture",
+        "bar weld joints"
+      ],
+      "symbolic_mapping": [
+        "repetitive wall pattern → institutional time",
+        "welded joints → irreversible assembly"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The material regularity of the environment—the uniform blocks, consistent bar spacing, and fixed joints—evokes a temporality governed by repetition and immutability, contrasting with the singular, unrepeatable presence of the individual framed within it.",
+      "alternative_interpretations": [
+        "These elements may simply reflect standard construction practices for secure facilities, with no intended symbolic resonance."
+      ],
+      "limitations": [
+        "No clocks, calendars, or aging indicators are present to substantiate temporal interpretation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:16:54.689748+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-30bb93c4-d55f-9bca-8492-b2e2b508b181",
+      "usage": {
+        "prompt_tokens": 1616,
+        "completion_tokens": 949,
+        "total_tokens": 2565,
+        "completion_tokens_details": {
+          "text_tokens": 949
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1109,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703164110a30ae699a049c2",
+      "usage": {
+        "completion_tokens": 808,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2960,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3768
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

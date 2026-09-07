@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1150",
+  "sample_id": "PHL1800_HAIV_0239",
+  "file_name": "PHL1800_HAIV_0239.png",
+  "batch_id": "B024",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one stylized human figure",
+  "captions": {
+    "scene": [
+      "A figure stands in a doorway with bright yellow-orange radial light beams emanating from behind them.",
+      "The background consists of dark red on the left, a glowing yellow-orange center, and dark blue on the right.",
+      "A vertical brown door frame with an orange rectangular detail is visible on the right edge."
+    ],
+    "action": [
+      "The figure wears a light-blue towel wrapped around their head in a turban style.",
+      "The figure holds a folded blue towel across their chest, partially covering the torso.",
+      "Two curved black lines above the towel suggest rising steam or heat."
+    ],
+    "rationale": [
+      "The radiant backlighting and towel suggest a post-bath or sauna context, though no water or enclosure is visible.",
+      "The smile and upright posture indicate a calm or positive state, but facial expression alone cannot confirm internal emotion.",
+      "The steam-like lines imply warmth, yet no source (e.g., bath, sauna) is depicted; the interpretation relies on conventional iconography."
+    ],
+    "object": [
+      "The figure has two dark blue circular eyes and a simple black curved line for a mouth.",
+      "The figure’s skin tone is rendered as a gradient from beige to light brown, with no visible hair except the towel wrap.",
+      "The figure’s shoulders are bare and symmetrically outlined, with no arms visible below the towel.",
+      "The blue towel held at chest level has three distinct folds indicated by black contour lines.",
+      "The doorway frame includes a small orange rectangle near its upper portion, possibly a handle or latch."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1150_P1",
+      "visual_anchors": [
+        "radiant backlighting",
+        "towel-wrapped head",
+        "smiling face"
+      ],
+      "symbolic_mapping": [
+        "radiant light → purity or renewal",
+        "towel wrap → ritual preparation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "faith_meaning"
+      ],
+      "interpretation": "The figure’s emergence from luminous light while wrapped in a towel may symbolize a moment of self-renewal or ritual purification, where appearance is temporarily simplified to convey inner clarity.",
+      "alternative_interpretations": [
+        "It could simply depict a person exiting a bathroom after showering, with lighting exaggerated for stylistic effect."
+      ],
+      "limitations": [
+        "No textual labels or cultural markers confirm ritual intent; the light could be purely decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1150_P2",
+      "visual_anchors": [
+        "steam lines",
+        "bare shoulders",
+        "doorway framing"
+      ],
+      "symbolic_mapping": [
+        "steam → transience of bodily states",
+        "doorway → threshold between private and public"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The transient steam above the figure’s chest, combined with the doorway boundary, evokes the fleeting nature of embodied experience and the constraint of physical thresholds that structure daily life.",
+      "alternative_interpretations": [
+        "The lines may merely indicate warmth from a recent bath, with no temporal or existential implication."
+      ],
+      "limitations": [
+        "Steam is minimally detailed and could be ornamental; no clock, aging sign, or explicit barrier is shown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1150_P3",
+      "visual_anchors": [
+        "symmetrical composition",
+        "neutral expression",
+        "uniform color palette"
+      ],
+      "symbolic_mapping": [
+        "symmetry → idealized self",
+        "blue tones → calm rationality"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The figure’s balanced form and unadorned presentation suggest an epistemic ideal—clarity achieved through stripping away complexity—while the doorway implies re-entry into social space, raising questions about authenticity in communal contexts.",
+      "alternative_interpretations": [
+        "The symmetry and colors may reflect artistic simplicity rather than philosophical intent."
+      ],
+      "limitations": [
+        "No gaze direction, interaction, or contextual cues confirm social re-entry or epistemic claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:55:58.474144+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-aae7b10d-d4b5-9f3d-b441-682e3d0b4395",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 906,
+        "total_tokens": 2439,
+        "completion_tokens_details": {
+          "text_tokens": 906
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035539570d52391dcf439a",
+      "usage": {
+        "completion_tokens": 768,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2863,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3631
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

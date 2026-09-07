@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1627",
+  "sample_id": "PHL1800_IRFL_0292",
+  "file_name": "PHL1800_IRFL_0292.jpg",
+  "batch_id": "B033",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals standing on a beach",
+  "captions": {
+    "scene": [
+      "A sandy beach with blurred background cliffs and possible vegetation",
+      "Natural daylight illumination with no visible artificial light sources",
+      "Shallow depth of field focusing on the two foreground figures"
+    ],
+    "action": [
+      "The person on the left stands with arms crossed, head upright, and gaze directed slightly downward and rightward",
+      "The person on the right wears a hooded sweatshirt with hood up and covers their face with both hands",
+      "Wind visibly displaces strands of the left person’s hair toward the right"
+    ],
+    "rationale": [
+      "The left person’s posture and facial orientation suggest attention toward the right person, though direct eye contact is not confirmed",
+      "The right person’s hand placement over the face may indicate distress or concealment, but alternative explanations such as shielding eyes from wind or sun are possible",
+      "The spatial proximity and opposing postures imply interaction, yet no physical contact or shared object confirms engagement"
+    ],
+    "object": [
+      "The left individual wears a light gray zip-up hoodie with white inner collar lining and has long brown hair partially blown by wind.",
+      "The right individual wears a dark gray zip-up hoodie with the hood pulled up over short brown hair and has both hands pressed against the face, obscuring eyes and nose.",
+      "Both individuals stand on pale sand; no footwear is visible on either.",
+      "A blurred horizontal shape resembling a low structure or vehicle appears in the mid-background behind the left person.",
+      "No text, logos, or readable inscriptions appear on clothing or in the environment."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1627_P1",
+      "visual_anchors": [
+        "hood pulled up",
+        "face covered by hands",
+        "arms crossed"
+      ],
+      "symbolic_mapping": [
+        "hood and hand covering → concealment or withdrawal",
+        "crossed arms → guarded stance"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages a tension between visibility and withdrawal, where one figure enacts self-concealment while the other maintains a closed but outward-facing posture, suggesting a rupture in social reciprocity.",
+      "alternative_interpretations": [
+        "The figures may simply be reacting to environmental conditions—wind and sun—without interpersonal significance."
+      ],
+      "limitations": [
+        "Facial expressions are partially or fully obscured, preventing confirmation of emotional states or intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1627_P2",
+      "visual_anchors": [
+        "wind-displaced hair",
+        "static posture of left figure",
+        "dynamic motion of hair only"
+      ],
+      "symbolic_mapping": [
+        "wind-induced motion vs. bodily stillness → external force vs. internal resistance"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The asymmetry between involuntary movement (hair) and voluntary stasis (bodies) evokes a philosophical contrast between external determinism and embodied agency.",
+      "alternative_interpretations": [
+        "Hair movement is a neutral physical effect of ambient wind, unrelated to human intention or conflict."
+      ],
+      "limitations": [
+        "Only one person’s hair shows motion; the second person’s hair is hidden under the hood, so comparative motion cannot be assessed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1627_P3",
+      "visual_anchors": [
+        "identical hoodie style but different colors",
+        "no shared gaze",
+        "parallel standing orientation"
+      ],
+      "symbolic_mapping": [
+        "similar attire but divergent postures → surface similarity masking relational divergence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visual pairing of near-identical garments with non-interacting postures underscores how appearance can simulate connection while physical distance and gesture reveal disjunction in shared presence.",
+      "alternative_interpretations": [
+        "The clothing similarity is coincidental; the individuals may be strangers who happened to wear comparable apparel."
+      ],
+      "limitations": [
+        "Garment brand, size, and fit details are indistinct due to focus and resolution, limiting claims about intentional matching."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:55:09.991691+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d0e9df68-13a7-9f9e-ab3b-4863df10d1a8",
+      "usage": {
+        "prompt_tokens": 1041,
+        "completion_tokens": 913,
+        "total_tokens": 1954,
+        "completion_tokens_details": {
+          "text_tokens": 913
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 534,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045438d08a432edf4440c1",
+      "usage": {
+        "completion_tokens": 774,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2168,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2942
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

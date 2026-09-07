@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1210",
+  "sample_id": "PHL1800_HL_0153",
+  "file_name": "PHL1800_HL_0153.png",
+  "batch_id": "B025",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one male tennis player in motion on a clay court",
+  "captions": {
+    "scene": [
+      "A red clay tennis court with a green advertising backdrop featuring partial logos and text including 'BAS', 'RFM', 'FIAT', 'CERCLE ENTREPRISES', and 'BNP PAR'",
+      "Flower boxes with orange and pink blooms sit atop a white fence behind the green backdrop",
+      "A beige tarp lies crumpled at the base of the backdrop, partially covering the court edge"
+    ],
+    "action": [
+      "The player holds a red-and-black tennis racket in his right hand, arm extended forward near waist height",
+      "A yellow tennis ball is suspended in mid-air just below the player’s torso, aligned with his left hip",
+      "His left arm is extended horizontally backward for balance, and his knees are bent in a dynamic stance"
+    ],
+    "rationale": [
+      "The player’s posture and racket position suggest he is executing a forehand stroke, though the ball has not yet contacted the strings",
+      "The visible sweat on his forehead and focused gaze indicate physical exertion and concentration during play",
+      "The presence of sponsor logos and professional court setup implies an organized match or tournament setting, though no opponent or audience is visible"
+    ],
+    "object": [
+      "The player wears a black short-sleeved shirt with light blue diagonal stripes across the chest and shoulders, and a small circular logo on the left chest.",
+      "He wears black athletic shorts with a white logo on the lower left leg and black sneakers with white laces and blue accents.",
+      "His socks are white with a dark horizontal band near the top and a small colored emblem near the ankle.",
+      "The tennis racket has a red frame, black throat, and white grip tape; the head is oriented vertically with strings facing forward.",
+      "The tennis ball is standard yellow felt with visible seam lines and appears to be in free flight, not touching any surface or person."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1210_P1",
+      "visual_anchors": [
+        "player’s extended left arm",
+        "mid-air tennis ball",
+        "bent-knee stance"
+      ],
+      "symbolic_mapping": [
+        "the suspended ball represents a moment of indeterminacy before action resolves"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a liminal instant where potential action hangs unresolved—mirroring existential choice as a temporally bounded threshold between intention and consequence.",
+      "alternative_interpretations": [
+        "It simply shows a standard forehand preparation phase in tennis training"
+      ],
+      "limitations": [
+        "No facial expression detail confirms internal deliberation; posture may reflect biomechanical necessity rather than philosophical intent"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1210_P2",
+      "visual_anchors": [
+        "green sponsor backdrop",
+        "visible corporate logos",
+        "player’s uniform branding"
+      ],
+      "symbolic_mapping": [
+        "commercial signage frames the athlete, suggesting identity is mediated through institutional sponsorship"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s physical presence is visually embedded within layers of corporate signification, raising questions about whether selfhood emerges from individual agency or external attribution.",
+      "alternative_interpretations": [
+        "Logos are standard event infrastructure and do not imply identity construction"
+      ],
+      "limitations": [
+        "No textual claim links the logos to the player’s personal identity; placement is functional, not symbolic by default"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1210_P3",
+      "visual_anchors": [
+        "clay court surface",
+        "tarp at backdrop base",
+        "flower boxes above fence"
+      ],
+      "symbolic_mapping": [
+        "the layered environment—natural (flowers), artificial (tarp), commercial (backdrop)—reflects contested boundaries of human-made order versus organic contingency"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The player operates within a tightly bounded, curated space where even decorative elements are controlled, evoking tension between embodied freedom and institutional constraint.",
+      "alternative_interpretations": [
+        "These are routine site preparations for a tennis event with no deeper implication"
+      ],
+      "limitations": [
+        "No evidence of restriction or resistance; the scene appears normative and unproblematic"
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:03:35.258675+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-46b1fcf3-1e6c-9eee-aa2e-cd7de4b4eeb9",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 939,
+        "total_tokens": 1708,
+        "completion_tokens_details": {
+          "text_tokens": 939
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040323e0c7aa0523ed4a25",
+      "usage": {
+        "completion_tokens": 799,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1861,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2660
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

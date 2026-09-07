@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0281",
+  "sample_id": "PHL1800_HAIV_0168",
+  "file_name": "PHL1800_HAIV_0168.png",
+  "batch_id": "B008",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one man in a black suit and red tie surrounded by papers",
+  "captions": {
+    "scene": [
+      "A man emerges from a swirling mass of white papers floating on light-blue water-like surface.",
+      "Papers are densely packed around the man’s torso and head, some held by multiple hands.",
+      "Multiple disembodied hands grip or reach toward papers; no other full human figures are visible."
+    ],
+    "action": [
+      "The man’s arms are raised upward with open palms, elbows bent outward.",
+      "His mouth is wide open in an oval shape; eyes are large, round, and white with small black pupils.",
+      "Papers are in motion: some fluttering, some crumpled, some held aloft by hands."
+    ],
+    "rationale": [
+      "The man’s posture and facial expression suggest alarm or overwhelm, though internal state is not directly observable.",
+      "The presence of many hands holding papers implies external pressure or delegation, but source of hands is unseen.",
+      "The water-like surface beneath suggests submersion or instability, yet its nature (liquid, metaphorical ground) is ambiguous."
+    ],
+    "object": [
+      "The man wears a black long-sleeved suit jacket, white collared shirt, and solid red necktie.",
+      "At least twelve distinct hands appear among the papers, each with five fingers and light skin tone; none attached to visible torsos.",
+      "All papers are white rectangles with faint horizontal lines; no legible text is present—some contain unreadable scribbles.",
+      "The background is plain white with no horizon line, buildings, or natural features.",
+      "The lower portion shows wavy black lines over pale blue wash, resembling ripples or shallow liquid."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0281_P1",
+      "visual_anchors": [
+        "man’s open mouth",
+        "raised arms",
+        "surrounding papers"
+      ],
+      "symbolic_mapping": [
+        "papers → overwhelming information",
+        "open mouth → inability to speak or process"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes epistemic overload where the subject is physically constrained by the sheer volume of documented knowledge, limiting agency and speech.",
+      "alternative_interpretations": [
+        "A literal depiction of office paperwork flooding a desk, with exaggerated cartoon physics for comedic effect."
+      ],
+      "limitations": [
+        "No textual content confirms the papers represent knowledge rather than administrative forms."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0281_P2",
+      "visual_anchors": [
+        "multiple disembodied hands",
+        "papers held aloft",
+        "man at center"
+      ],
+      "symbolic_mapping": [
+        "hands → external demands",
+        "central figure → individual subject to social pressure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The central figure embodies the modern individual whose autonomy is fragmented by competing social expectations manifested as anonymous hands imposing tasks.",
+      "alternative_interpretations": [
+        "Illustration of collaborative document handling where assistants surround a lead worker."
+      ],
+      "limitations": [
+        "Hands lack identifying features (e.g., uniforms, tools), preventing confirmation of intent or hierarchy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0281_P3",
+      "visual_anchors": [
+        "water-like surface",
+        "submerged lower body",
+        "floating papers"
+      ],
+      "symbolic_mapping": [
+        "surface → unstable foundation",
+        "submersion → loss of control"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The figure is caught in a temporal deluge where bureaucratic labor accumulates faster than it can be processed, evoking finitude against infinite task generation.",
+      "alternative_interpretations": [
+        "Stylized representation of a paper jam in a printer, with the man as the machine’s operator stuck inside."
+      ],
+      "limitations": [
+        "The surface lacks definitive liquid properties (e.g., reflections, meniscus); could be abstract ground."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:28:32.630377+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ff00d846-382e-9f19-aee0-d8327a214f04",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 887,
+        "total_tokens": 2420,
+        "completion_tokens_details": {
+          "text_tokens": 887
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070228184440c22b4c354690",
+      "usage": {
+        "completion_tokens": 748,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2847,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3595
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

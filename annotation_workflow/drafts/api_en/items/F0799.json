@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0799",
+  "sample_id": "PHL1800_MM_0082",
+  "file_name": "PHL1800_MM_0082.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a standing adult male figure and a seated child figure in a classroom setting",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor classroom with wooden desks, blue chairs, a whiteboard, and a green chalkboard visible on the wall.",
+      "The room contains at least three student desks arranged in rows; two are occupied by figures, one is empty with papers on it.",
+      "Natural or artificial light illuminates the scene uniformly; no windows are visible, but the whiteboard reflects strong ambient light."
+    ],
+    "action": [
+      "The adult male figure stands beside a desk, left hand resting on its surface, right arm extended with index finger pointing toward the seated child.",
+      "The seated child faces forward, back to viewer, arms resting on the desk, posture upright and still.",
+      "A speech bubble originates near the adult’s head, containing legible English text: 'You must change to a more appropriate outfit!'"
+    ],
+    "rationale": [
+      "The adult’s stern facial expression (furrowed brows, narrowed eyes, downturned mouth) and pointing gesture suggest reprimand or directive issuance.",
+      "The child’s clothing—a color-blocked orange-and-yellow short-sleeve shirt with a blue collar—is visibly distinct from typical formal school attire, possibly motivating the adult’s statement.",
+      "The presence of a speech bubble with imperative phrasing indicates a verbal interaction is occurring, though no sound or lip movement is visible."
+    ],
+    "object": [
+      "The adult male wears a dark grey suit jacket over a beige vest, white collared shirt, red diagonally striped tie, and brown trousers.",
+      "The child wears a short-sleeved shirt with vertical orange and yellow panels and a blue trim at the neckline.",
+      "Three wooden desks with metal legs are visible; the frontmost has a blue folder and white paper on its surface.",
+      "A green chalkboard with a silver frame is mounted on the right wall, partially obscured by the child’s head.",
+      "A large white rectangular board (likely a whiteboard) occupies the back wall behind the adult, fully illuminated and blank."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0799_P1",
+      "visual_anchors": [
+        "pointing finger",
+        "speech bubble with imperative text",
+        "child’s colorful shirt"
+      ],
+      "symbolic_mapping": [
+        "the pointing finger symbolizes authority enforcing normative standards",
+        "the shirt represents individual expression under scrutiny"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes tension between institutional regulation of appearance and individual self-presentation, where bodily adornment becomes a site of contested authority.",
+      "alternative_interpretations": [
+        "This may simply depict a routine dress-code enforcement moment without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No cultural or institutional context is provided; the meaning of 'appropriate outfit' is undefined visually."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0799_P2",
+      "visual_anchors": [
+        "adult’s stern expression",
+        "child’s passive posture",
+        "classroom setting"
+      ],
+      "symbolic_mapping": [
+        "the adult embodies institutional power",
+        "the child embodies subordinated subjectivity"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The scene illustrates how social existence is mediated through hierarchical relationships in educational spaces, where compliance is demanded via non-physical coercion.",
+      "alternative_interpretations": [
+        "The adult could be offering constructive feedback rather than exercising dominance."
+      ],
+      "limitations": [
+        "Facial expressions are stylized and cartoonish; emotional valence cannot be objectively confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0799_P3",
+      "visual_anchors": [
+        "speech bubble text",
+        "contrast between formal adult attire and casual child attire",
+        "empty desk with papers"
+      ],
+      "symbolic_mapping": [
+        "the text enacts linguistic control over bodily autonomy",
+        "the empty desk suggests potential exclusion or consequence"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The imperative statement frames personal appearance as a moral obligation within a structured environment, implying that freedom of dress is constrained by collective norms and assigned responsibility.",
+      "alternative_interpretations": [
+        "The statement may reflect safety or hygiene policy rather than ethical judgment."
+      ],
+      "limitations": [
+        "The specific reason for the demand is not stated; 'appropriate' is undefined and culturally relative."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:17:45.529397+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3e6a69f4-1d35-9108-b6c4-f4941d5daedd",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 973,
+        "total_tokens": 2506,
+        "completion_tokens_details": {
+          "text_tokens": 973
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031720f093ad7faf9641af",
+      "usage": {
+        "completion_tokens": 834,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2929,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3763
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

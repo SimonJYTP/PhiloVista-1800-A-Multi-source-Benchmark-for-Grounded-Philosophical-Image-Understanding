@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1630",
+  "sample_id": "PHL1800_MM_0115",
+  "file_name": "PHL1800_MM_0115.jpg",
+  "batch_id": "B033",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people standing in front of a bakery display case",
+  "captions": {
+    "scene": [
+      "A brightly lit bakery interior with wooden paneling, glass display cases filled with pastries, and a red suitcase on the tiled floor.",
+      "A green-framed doorway opens to an outdoor scene with blurred figures and daylight.",
+      "A yellow sign above the counter reads 'Bakery' in red script, next to a circular logo containing unreadable text."
+    ],
+    "action": [
+      "A woman with long brown hair, wearing a white shirt, red apron-style skirt, blue leggings, and brown shoes, stands facing a man with her left hand resting on a red rolling suitcase handle.",
+      "A man with styled brown hair, wearing a white collared shirt with red trim, dark blue trousers, and brown shoes, stands facing the woman with hands at his sides.",
+      "A speech bubble originates from the woman’s head area and contains the legible English sentence: 'I will leave my family's bakery to join a popular bakery chain.'"
+    ],
+    "rationale": [
+      "The presence of a suitcase suggests preparation for travel or relocation, consistent with the stated intent to leave.",
+      "The uniform-like attire of both individuals implies employment at the bakery, though no name tags or explicit job indicators are visible.",
+      "The speech bubble is positioned near the woman’s head, but no mouth movement or facial expression confirms she is speaking; it may represent internal thought or narrative exposition."
+    ],
+    "object": [
+      "A red hard-shell rolling suitcase with black wheels and a telescoping silver handle stands upright between the two people.",
+      "The bakery display case contains multiple shelves holding assorted baked goods including layered cakes, round pastries with icing, rectangular loaves, and stacked sandwich-style items.",
+      "A printed menu board on the left side of the counter shows images of baked goods and some illegible text beneath them.",
+      "A hanging pendant lamp with a frosted conical shade illuminates the right side of the display case.",
+      "The floor consists of light beige square tiles arranged in a grid pattern with visible grout lines."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1630_P1",
+      "visual_anchors": [
+        "red suitcase",
+        "speech bubble stating departure",
+        "family bakery sign"
+      ],
+      "symbolic_mapping": [
+        "suitcase → transition",
+        "speech bubble → declaration of agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image frames a moment where individual choice intersects with inherited social role, as the speaker explicitly renounces familial continuity in favor of institutional affiliation.",
+      "alternative_interpretations": [
+        "The scene may depict a fictional narrative setup rather than a real-life decision, given the stylized illustration and speech-bubble format."
+      ],
+      "limitations": [
+        "No visual evidence confirms whether the bakery is actually owned by the woman’s family or whether the chain is real; the claim rests solely on the text."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1630_P2",
+      "visual_anchors": [
+        "uniformed man",
+        "woman in apron-style skirt",
+        "identical color scheme (red/white/blue)"
+      ],
+      "symbolic_mapping": [
+        "matching attire → shared labor identity",
+        "spatial proximity → relational tension or alignment"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "Uniformity in dress across staff suggests standardized labor presentation, where appearance functions as part of occupational identity rather than personal expression.",
+      "alternative_interpretations": [
+        "The clothing may be casual workwear without formal uniform policy; red accents could reflect brand colors rather than enforced dress code."
+      ],
+      "limitations": [
+        "No badges, logos beyond the sign, or name tags confirm institutional standardization; similarity could be coincidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1630_P3",
+      "visual_anchors": [
+        "glass display case",
+        "abundance of pastries",
+        "open doorway to outside"
+      ],
+      "symbolic_mapping": [
+        "display case → boundary between labor and consumption",
+        "doorway → threshold of change"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The physical containment of goods behind glass contrasts with the open exit, visually staging the ethical tension between duty to a local enterprise and the lure of broader opportunity.",
+      "alternative_interpretations": [
+        "The doorway simply provides natural lighting and access; the display case is standard retail infrastructure with no symbolic intent."
+      ],
+      "limitations": [
+        "No visual cues indicate moral conflict—facial expressions are neutral or obscured, and no gestures imply distress or resolve."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:55:47.537789+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-96af318d-9f57-94b3-8259-08b637a0c207",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1026,
+        "total_tokens": 2559,
+        "completion_tokens_details": {
+          "text_tokens": 1026
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704552499a683a0f47046dd",
+      "usage": {
+        "completion_tokens": 886,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2977,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3863
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

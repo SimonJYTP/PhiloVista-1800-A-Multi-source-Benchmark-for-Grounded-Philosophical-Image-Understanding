@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0720",
+  "sample_id": "PHL1800_IRFL_0316",
+  "file_name": "PHL1800_IRFL_0316.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one human face, front-facing, cropped from forehead to upper lip",
+  "captions": {
+    "scene": [
+      "Neutral gray background with even studio lighting",
+      "Close-up portrait with shallow depth of field blurring peripheral features",
+      "Visible watermark overlay across the nasal bridge and eyes"
+    ],
+    "action": [
+      "Eyes are open and directed forward, pupils centered and dilated moderately",
+      "Eyelids are fully retracted, revealing full iris and sclera",
+      "Facial skin is static with no visible muscle contraction or expression change"
+    ],
+    "rationale": [
+      "Symmetrical eye positioning and direct gaze suggest intentional posing rather than spontaneous observation",
+      "Presence of fine freckles and natural skin texture indicates minimal digital retouching",
+      "Watermark placement implies commercial stock photography context, though original intent is unverifiable"
+    ],
+    "object": [
+      "The subject has light olive-toned skin with scattered ephelides (freckles) on the nose and cheeks.",
+      "Both irises are heterochromatic: greenish-gray peripherally with a darker central ring and black pupil.",
+      "Upper eyelashes are long, dark, and evenly spaced; lower lashes are shorter and sparser.",
+      "Eyebrows are well-groomed, arched, and filled with brown pigment, showing individual hair strands.",
+      "The nasal bridge is straight and narrow, with visible pores and slight sebum sheen on the surface."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0720_P1",
+      "visual_anchors": [
+        "heterochromatic irises",
+        "symmetrical facial features",
+        "visible freckles"
+      ],
+      "symbolic_mapping": [
+        "irises as windows to uniqueness",
+        "freckles as markers of biological contingency"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The visible heterogeneity within a single face—distinct iris patterns and random pigmentation—challenges monolithic notions of identity, suggesting selfhood emerges from irreducible physical particularities rather than idealized uniformity.",
+      "alternative_interpretations": [
+        "This may simply reflect natural human variation without symbolic intent; the image could be a standard beauty-stock photo emphasizing clarity and symmetry."
+      ],
+      "limitations": [
+        "No contextual metadata confirms authorial intent; symbolic mapping relies on external cultural associations not present in the image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0720_P2",
+      "visual_anchors": [
+        "direct gaze",
+        "unblinking eyes",
+        "neutral expression"
+      ],
+      "symbolic_mapping": [
+        "gaze as epistemic claim",
+        "stillness as epistemological suspension"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The sustained, unflinching gaze without expressive modulation presents a phenomenological threshold: the viewer confronts an object that resists interpretation, evoking questions about whether truth resides in observation or in the observed’s capacity to be known.",
+      "alternative_interpretations": [
+        "The subject may be holding still for a photographic exposure; the neutrality reflects technical requirement, not philosophical stance."
+      ],
+      "limitations": [
+        "Eye direction alone cannot confirm intentionality of gaze; absence of context prevents distinguishing posed stillness from involuntary fixation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0720_P3",
+      "visual_anchors": [
+        "watermark overlay",
+        "studio lighting",
+        "skin texture fidelity"
+      ],
+      "symbolic_mapping": [
+        "watermark as institutional mediation",
+        "texture as resistance to idealization"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The coexistence of high-fidelity skin detail (freckles, pores) with commercial watermarking embodies tension between authentic bodily presence and commodified representation—where visibility is granted only under proprietary constraint.",
+      "alternative_interpretations": [
+        "The watermark is a standard legal notice; its presence does not imply critique but routine copyright protection."
+      ],
+      "limitations": [
+        "The watermark’s content is partially obscured and unreadable; its semantic role cannot be confirmed from visual evidence alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:10:33.288910+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-577540a1-ea8e-9409-b407-30d2acea313b",
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 907,
+        "total_tokens": 1841,
+        "completion_tokens_details": {
+          "text_tokens": 907
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 427,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031023ec1dcfa3a2054319",
+      "usage": {
+        "completion_tokens": 764,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2043,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2807
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

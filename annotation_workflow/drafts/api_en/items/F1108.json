@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1108",
+  "sample_id": "PHL1800_IRFL_0445",
+  "file_name": "PHL1800_IRFL_0445.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single honeybee on a white flower",
+  "captions": {
+    "scene": [
+      "A close-up of an insect on a white-petaled flower with yellow center against a blurred green background",
+      "The flower has multiple narrow white petals and a dense yellow disc floret cluster",
+      "The background consists of out-of-focus green foliage with no discernible structures"
+    ],
+    "action": [
+      "The bee’s head is lowered into the flower’s central disc, mouthparts engaged with the florets",
+      "One hind leg is visibly loaded with a large, spherical, orange-yellow pollen pellet",
+      "The bee’s wings are partially spread and translucent, resting above its abdomen"
+    ],
+    "rationale": [
+      "The bee’s posture and mouthpart position suggest nectar or pollen collection, though exact behavior cannot be confirmed without motion",
+      "The orange pellet on the hind tibia is consistent with a corbicula (pollen basket) load, but its composition is not chemically verifiable from image alone",
+      "The flower appears to be in full bloom based on petal openness and disc development, yet stage cannot be precisely determined without comparative context"
+    ],
+    "object": [
+      "The bee has a fuzzy thorax covered in light-brown and grey setae, with a segmented abdomen showing alternating amber and dark brown bands.",
+      "Its compound eyes are large, black, and ovoid; antennae are slender, segmented, and extend forward from the head.",
+      "The forelegs are bent and positioned near the mouthparts; midlegs are partially visible and hold the bee onto the flower.",
+      "The hind leg carries a smooth, rounded, opaque orange-yellow mass attached to the tibia, distinct from the leg’s cuticle.",
+      "The flower possesses five or more elongated white petals radiating from a compact yellow central disc composed of many small florets."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1108_P1",
+      "visual_anchors": [
+        "orange pollen pellet on hind leg",
+        "bee’s focused orientation toward flower center",
+        "dense floral disc"
+      ],
+      "symbolic_mapping": [
+        "pollen pellet as embodied labor",
+        "orientation as directed purpose"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The bee’s physical burden and precise positioning evoke the philosophical notion of labor as both material exertion and intentional navigation within ecological constraints.",
+      "alternative_interpretations": [
+        "The pellet may simply be incidental debris or glandular secretion rather than collected pollen."
+      ],
+      "limitations": [
+        "No evidence confirms intentionality or symbolic meaning; the pellet’s origin and function are inferred from morphology alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1108_P2",
+      "visual_anchors": [
+        "fuzzy thoracic hair",
+        "translucent wings",
+        "segmented abdomen"
+      ],
+      "symbolic_mapping": [
+        "hair as boundary between internal/external",
+        "wings as potential for transition"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The bee’s textured surface and delicate wings visually articulate the tension between bodily identity—defined by observable traits—and constrained mobility imposed by physical form and environment.",
+      "alternative_interpretations": [
+        "The hair and wing structure are purely functional adaptations with no expressive intent."
+      ],
+      "limitations": [
+        "No facial features or gaze direction exist to support attribution of self-awareness or identity negotiation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1108_P3",
+      "visual_anchors": [
+        "blurred green background",
+        "sharp focus on bee and flower",
+        "petal symmetry"
+      ],
+      "symbolic_mapping": [
+        "depth-of-field isolation as epistemic framing",
+        "symmetry as order amid flux"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The selective focus isolates a transient biological interaction, suggesting how perception constructs truth by foregrounding specific moments while obscuring surrounding continuity—highlighting the fragility of lived instances against temporal flow.",
+      "alternative_interpretations": [
+        "The blur results from optical properties of the lens, not conceptual emphasis."
+      ],
+      "limitations": [
+        "Depth-of-field is a technical artifact; assigning epistemic meaning requires external assumptions beyond visual data."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:51:45.938960+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-330e5eb6-5af2-9112-9939-d72d3fc9b1c2",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 939,
+        "total_tokens": 1518,
+        "completion_tokens_details": {
+          "text_tokens": 939
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703511193ca0bb12667445b",
+      "usage": {
+        "completion_tokens": 797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1601,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2398
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

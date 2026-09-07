@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0912",
+  "sample_id": "PHL1800_IRFL_0174",
+  "file_name": "PHL1800_IRFL_0174.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in a blue denim shirt in the foreground",
+  "captions": {
+    "scene": [
+      "An indoor office-like setting with blurred background figures and shelves holding white binders.",
+      "A shallow depth-of-field composition emphasizing the foreground woman while rendering two other people out of focus behind her.",
+      "Neutral lighting illuminates the scene; no windows or artificial light sources are directly visible."
+    ],
+    "action": [
+      "The foreground woman rests her right hand against her forehead, eyes closed, head tilted downward.",
+      "A man in the mid-background leans forward with mouth open and right fist near his chin, appearing to speak or laugh.",
+      "A second person behind the man has their right hand covering their mouth, head slightly turned toward the man."
+    ],
+    "rationale": [
+      "The woman’s posture and facial orientation suggest distress or fatigue, though exact emotion is not verifiable from visual cues alone.",
+      "The blurred background figures appear engaged in interaction, but their specific activity cannot be confirmed due to motion blur and lack of focus.",
+      "The presence of binders and a laptop implies a work or study context, but no signage or labels confirm function."
+    ],
+    "object": [
+      "The foreground woman wears a light-blue button-up denim shirt with visible stitching and collar details.",
+      "A silver-colored laptop edge is visible in the lower-left corner, partially cut off by the frame.",
+      "Two out-of-focus individuals sit behind the woman: one male-presenting with short dark hair, one with longer dark hair and a brown top.",
+      "White vertical shelving units hold uniformly sized white binders in the background, arranged in rows.",
+      "The woman’s long brown hair falls over her right shoulder and partially obscures her ear."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0912_P1",
+      "visual_anchors": [
+        "woman’s hand on forehead",
+        "closed eyes",
+        "downward gaze"
+      ],
+      "symbolic_mapping": [
+        "hand-on-forehead gesture maps to cognitive overload",
+        "closed eyes map to withdrawal from external stimuli"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The foreground subject’s physical withdrawal may reflect epistemic strain—where the accumulation of information or social input exceeds processing capacity, prompting embodied retreat.",
+      "alternative_interpretations": [
+        "She may be resting momentarily after prolonged screen use, with no philosophical implication."
+      ],
+      "limitations": [
+        "No facial expression detail (e.g., brow furrow, lip position) is resolvable due to angle and soft focus."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0912_P2",
+      "visual_anchors": [
+        "two blurred figures interacting",
+        "foreground woman isolated in focus",
+        "shared workspace layout"
+      ],
+      "symbolic_mapping": [
+        "spatial separation between focused and blurred figures maps to social marginalization",
+        "shared desk space maps to enforced proximity despite disconnection"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The compositional hierarchy—sharp foreground subject versus indistinct background actors—visually enacts the phenomenological tension between individual experience and collective presence, questioning whether co-location guarantees shared reality.",
+      "alternative_interpretations": [
+        "The blur results purely from photographic technique (shallow depth of field), not intentional symbolic framing."
+      ],
+      "limitations": [
+        "No eye contact, gestures, or spatial boundaries (e.g., partitions) confirm relational dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0912_P3",
+      "visual_anchors": [
+        "denim shirt texture",
+        "laptop edge",
+        "white binders"
+      ],
+      "symbolic_mapping": [
+        "denim as everyday materiality contrasts with abstract labor",
+        "binders as containers of codified knowledge"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of casual attire, digital tool, and archival objects suggests the modern worker’s identity is constituted through simultaneous embodiment, mediation, and documentation—where selfhood emerges at the intersection of dress, device, and dossier.",
+      "alternative_interpretations": [
+        "These items are generic office props with no intended semiotic weight."
+      ],
+      "limitations": [
+        "Brand, model, or labeling on laptop/binders is unreadable; material provenance unknown."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:27:31.716726+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3abe02e3-60f6-90be-9047-54bd9b31f071",
+      "usage": {
+        "prompt_tokens": 785,
+        "completion_tokens": 950,
+        "total_tokens": 1735,
+        "completion_tokens_details": {
+          "text_tokens": 950
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 278,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032702774bb70619954d86",
+      "usage": {
+        "completion_tokens": 811,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1890,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2701
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

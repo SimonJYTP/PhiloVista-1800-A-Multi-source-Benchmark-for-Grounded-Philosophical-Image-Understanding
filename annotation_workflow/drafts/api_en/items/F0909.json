@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0909",
+  "sample_id": "PHL1800_HAIV_0265",
+  "file_name": "PHL1800_HAIV_0265.png",
+  "batch_id": "B020",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one man in a blue shirt holding a red-handled object while a large blue book-like object descends toward him",
+  "captions": {
+    "scene": [
+      "A cartoon-style illustration with a light beige background and dynamic motion lines indicating impact or force.",
+      "A large blue rectangular object with gray edges and a spherical gray top is positioned above the man’s head, partially obscuring it.",
+      "Blue ribbons or streamers are torn and flying away from the descending object and near the man’s hands."
+    ],
+    "action": [
+      "The man grips a red cylindrical handle with both hands, arms extended forward and slightly upward.",
+      "The man’s head is tilted back and eyes are wide open, looking upward toward the descending blue object.",
+      "Blue fragments and motion lines suggest the blue object is striking or shattering upon contact with the red handle."
+    ],
+    "rationale": [
+      "The man’s posture and gaze direction indicate he is reacting to an overhead threat or impact.",
+      "The presence of motion lines and torn ribbons implies rapid movement and physical interaction between objects.",
+      "The red handle appears to be inserted into or resisting the blue object, but no clear point of connection is visible; the exact nature of contact is ambiguous."
+    ],
+    "object": [
+      "The man wears a light blue long-sleeved shirt with rolled cuffs, brown trousers, and a brown belt with a metallic buckle.",
+      "The descending object is predominantly blue with a gray spine-like edge, a gray spherical top, and trailing blue ribbons, resembling a stylized oversized book or shield.",
+      "The red-handled object has a black band near its upper end and is held firmly by both of the man’s hands.",
+      "Several small blue torn strips and one translucent white shard are scattered in the lower right quadrant of the image.",
+      "The man has short brown hair, a visible left ear with a small earring, and facial stubble on his chin and upper lip."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0909_P1",
+      "visual_anchors": [
+        "large blue book-like object",
+        "man gripping red handle",
+        "motion lines indicating impact"
+      ],
+      "symbolic_mapping": [
+        "the book-like object represents accumulated knowledge or institutional authority",
+        "the red handle symbolizes individual agency or resistance"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes the tension between institutional knowledge (the descending book) and individual effort to withstand or redirect it (the man’s grip), suggesting a struggle over epistemic authority.",
+      "alternative_interpretations": [
+        "It may depict a literal physical accident, such as a falling sign or tool, with no symbolic intent."
+      ],
+      "limitations": [
+        "No text or contextual markers confirm symbolic intent; the book-like shape is stylized and not definitively a book."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0909_P2",
+      "visual_anchors": [
+        "man’s upward gaze",
+        "wide eyes",
+        "torn blue ribbons"
+      ],
+      "symbolic_mapping": [
+        "upward gaze indicates anticipation or confrontation with overwhelming force",
+        "torn ribbons signify disruption of order or continuity"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The man’s focused attention and physical engagement suggest a moment of decisive action amid constraint, where freedom is enacted through resistance rather than escape.",
+      "alternative_interpretations": [
+        "The expression could reflect surprise or pain rather than resolve; the scene may be comedic or absurd rather than existential."
+      ],
+      "limitations": [
+        "Facial expression lacks nuance due to cartoon style; emotional state cannot be objectively verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0909_P3",
+      "visual_anchors": [
+        "blue shirt matching the descending object’s color",
+        "shared blue palette across subject and threat"
+      ],
+      "symbolic_mapping": [
+        "color continuity suggests identification or entanglement between the man and the force acting upon him"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The shared blue hue implies the man is complicit in or shaped by the very system threatening him, raising questions about self-definition within oppressive structures.",
+      "alternative_interpretations": [
+        "The color match may be purely aesthetic or coincidental, intended for visual harmony rather than thematic linkage."
+      ],
+      "limitations": [
+        "Color similarity alone does not establish conceptual linkage without corroborating symbols or narrative context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:26:51.038656+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6e119063-0701-9765-91df-c611893a70cf",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 984,
+        "total_tokens": 2517,
+        "completion_tokens_details": {
+          "text_tokens": 984
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703264070f25ec961314951",
+      "usage": {
+        "completion_tokens": 848,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2945,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3793
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

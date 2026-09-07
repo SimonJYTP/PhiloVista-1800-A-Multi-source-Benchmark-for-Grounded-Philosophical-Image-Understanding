@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0191",
+  "sample_id": "PHL1800_MM_0118",
+  "file_name": "PHL1800_MM_0118.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two baseball players standing on a pitcher's mound",
+  "captions": {
+    "scene": [
+      "A sunlit baseball field with green mown grass, brown dirt mound, and a dark green outfield wall.",
+      "Two players in contrasting uniforms stand facing each other on the pitcher’s mound.",
+      "A speech bubble containing English text is positioned above the left player’s head."
+    ],
+    "action": [
+      "The left player holds a baseball in his left hand and stands upright with a neutral facial expression.",
+      "The right player stands with his back mostly to the viewer, holding a leather glove in his left hand.",
+      "Both players are stationary; no motion blur or dynamic posture is visible."
+    ],
+    "rationale": [
+      "The speech bubble text suggests verbal interaction, but only the text is visible—not lip movement or auditory evidence.",
+      "Uniform numbers (16 and 29) and names (partially legible as 'TULLIS') indicate team affiliation, but no league or venue is identifiable.",
+      "Dirt stains on the left player’s pants suggest recent play, but the exact activity causing them is not shown."
+    ],
+    "object": [
+      "The left player wears a navy blue jersey with white trim, number 16 in white, and a helmet with a visible 'A' logo.",
+      "The right player wears a white jersey with blue sleeves, number 29 in blue, and the name 'TULLIS' in blue capital letters across the upper back.",
+      "Both wear white baseball pants with a thin dark stripe down each side; the left player’s pants have prominent brown dirt stains on both knees.",
+      "The left player wears black cleats and navy blue socks with a white logo; the right player wears blue cleats and matching blue socks.",
+      "A white oval speech bubble with black sans-serif text reads: 'Consoling my teammates for giving their best.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0191_P1",
+      "visual_anchors": [
+        "speech bubble text",
+        "dirt-stained pants",
+        "two players facing"
+      ],
+      "symbolic_mapping": [
+        "dirt stains → effort expended",
+        "speech bubble → expressed intent"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The image frames consolation as a formalized role within team dynamics, where acknowledging effort—even without success—is ethically required and socially constitutive of group cohesion.",
+      "alternative_interpretations": [
+        "The speech bubble may be added post-hoc and not reflect actual dialogue; the scene could simply depict routine pre- or post-play positioning."
+      ],
+      "limitations": [
+        "No facial expressions or body language confirm emotional intent; the text is external annotation, not diegetic speech."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0191_P2",
+      "visual_anchors": [
+        "numbered jerseys",
+        "distinct uniform colors",
+        "shared field space"
+      ],
+      "symbolic_mapping": [
+        "uniform differentiation → team identity boundaries",
+        "shared mound → temporary shared purpose"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Identity is visually negotiated through attire and spatial proximity: the players’ appearance signals belonging to separate teams yet coexist in a shared ritual space, highlighting how social existence depends on both distinction and participation.",
+      "alternative_interpretations": [
+        "The uniforms may represent minor-league or practice squads with overlapping rosters; color contrast does not necessarily imply opposition."
+      ],
+      "limitations": [
+        "Team logos are partially obscured; no scoreboard or context confirms competitive status."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0191_P3",
+      "visual_anchors": [
+        "stationary posture",
+        "clean vs. stained pants",
+        "glove held at rest"
+      ],
+      "symbolic_mapping": [
+        "stillness → suspended action",
+        "stain asymmetry → uneven experience"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The moment captures a pause between exertion and outcome, where physical traces (dirt) mark passage of effort, evoking the finitude of athletic performance and the non-reversible nature of choices made in pursuit of excellence.",
+      "alternative_interpretations": [
+        "The players may be waiting for a coach’s signal; stillness need not imply reflection or existential weight."
+      ],
+      "limitations": [
+        "No clock, scoreboard, or sequence implies temporal progression; stillness is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:16:54.592295+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3bb3dd98-ff41-91cd-93e6-db6ffb6b37fe",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 976,
+        "total_tokens": 2509,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702162970e448d0a14e480b",
+      "usage": {
+        "completion_tokens": 833,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2929,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3762
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

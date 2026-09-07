@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1376",
+  "sample_id": "PHL1800_IRFL_0134",
+  "file_name": "PHL1800_IRFL_0134.jpg",
+  "batch_id": "B029",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a human hand holding a red marker next to a handwritten list",
+  "captions": {
+    "scene": [
+      "A white background with black handwritten text 'Priorities' underlined in red, and three numbered red circles vertically aligned to the left.",
+      "A right hand grips a red marker, its tip touching the red underline beneath the word 'Priorities'.",
+      "The composition is minimalist, with no other objects or environmental context visible."
+    ],
+    "action": [
+      "The hand holds the marker in a writing grip, with fingers curled around the barrel and thumb opposing the index finger.",
+      "The marker tip contacts the underline, suggesting either completion of the line or a pause during writing.",
+      "The hand is stationary relative to the surface, with no motion blur indicating movement."
+    ],
+    "rationale": [
+      "The presence of numbered circles suggests an ordered list, but only numbers 1–3 are visible; higher numbers may exist outside frame.",
+      "The word 'Priorities' is legible and centered above the list, implying intentional structuring of content.",
+      "The red underline and red numbering create visual cohesion, but no explicit hierarchy beyond sequence is shown."
+    ],
+    "object": [
+      "The word 'Priorities' is written in black cursive-style script across the top portion of the image.",
+      "A solid red horizontal line underlines the word 'Priorities', drawn with a marker whose tip is in contact with the line.",
+      "Three red circular outlines contain the numerals '1', '2', and '3' respectively, arranged vertically on the left side.",
+      "A human right hand, with visible fingernails and skin texture, grasps a red marker with the index finger extended along its length.",
+      "The background is uniformly white and featureless, providing high contrast for all foreground elements."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1376_P1",
+      "visual_anchors": [
+        "hand holding marker",
+        "numbered circles 1–3",
+        "word 'Priorities'"
+      ],
+      "symbolic_mapping": [
+        "numbered list → structured decision-making",
+        "underline → emphasis or commitment"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The act of numbering priorities visually enacts a deliberate selection process, grounding abstract choice in sequential inscription—a materialization of deliberative agency.",
+      "alternative_interpretations": [
+        "A generic template for task listing, with no philosophical intent; merely functional note-taking."
+      ],
+      "limitations": [
+        "No content is listed under the numbers, so the nature of the priorities remains unspecified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1376_P2",
+      "visual_anchors": [
+        "red underline",
+        "hand in contact with line",
+        "white background"
+      ],
+      "symbolic_mapping": [
+        "red color → urgency or importance",
+        "hand-line contact → active affirmation"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The hand’s physical connection to the underline suggests personal endorsement of the prioritized framework, implying moral weight through embodied commitment.",
+      "alternative_interpretations": [
+        "The red line is purely aesthetic or functional (e.g., separating header from list), with no ethical implication."
+      ],
+      "limitations": [
+        "Color symbolism is culturally variable and not explicitly defined in the image."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1376_P3",
+      "visual_anchors": [
+        "empty space below numbers",
+        "unfilled list items",
+        "static hand position"
+      ],
+      "symbolic_mapping": [
+        "blank space → potentiality",
+        "static pose → suspended action"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The unfilled list entries juxtaposed with the labeled 'Priorities' evoke the tension between defined structure and open possibility—constraint as a precondition for meaningful freedom.",
+      "alternative_interpretations": [
+        "The image captures a moment before writing begins; the blank space is simply incomplete work, not symbolic."
+      ],
+      "limitations": [
+        "No indication that the blank space is intentional rather than incidental or cropped."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:29:25.052109+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c3dd945d-ae31-9ac5-836f-b30279dfd330",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 894,
+        "total_tokens": 1623,
+        "completion_tokens_details": {
+          "text_tokens": 894
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070429135c7b9938e0874c88",
+      "usage": {
+        "completion_tokens": 759,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1779,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2538
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

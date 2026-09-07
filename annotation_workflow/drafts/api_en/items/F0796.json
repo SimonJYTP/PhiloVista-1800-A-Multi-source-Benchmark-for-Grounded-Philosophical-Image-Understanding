@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0796",
+  "sample_id": "PHL1800_IRFL_0295",
+  "file_name": "PHL1800_IRFL_0295.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one young Black man wearing glasses and a red long-sleeve shirt",
+  "captions": {
+    "scene": [
+      "A wooden table with open books, notebooks, and a closed book in a library setting with tall wooden bookshelves in the background.",
+      "The background features out-of-focus shelves filled with uniformly bound books, suggesting an academic or institutional library.",
+      "Warm ambient lighting illuminates the subject and foreground objects; no windows or artificial light sources are visible."
+    ],
+    "action": [
+      "The man is seated at the table with both hands resting on an open textbook, fingers slightly curled over the pages.",
+      "He is smiling broadly with teeth visible and looking directly toward the camera.",
+      "His right hand holds a green-capped pen poised above the open book."
+    ],
+    "rationale": [
+      "The presence of multiple open and closed books, notebooks, and a pen suggests engagement in study or reading activity.",
+      "The subject’s direct gaze and smile indicate awareness of being photographed, though intent or emotion cannot be confirmed.",
+      "The uniform binding and arrangement of books in the background imply a curated collection, likely institutional, but specific function (e.g., university vs. public library) is not verifiable."
+    ],
+    "object": [
+      "A red long-sleeve crewneck shirt worn by the subject, with visible ribbed cuffs and no logos or text.",
+      "Round-framed eyeglasses with dark rims and clear lenses, worn on the subject’s face.",
+      "An open hardcover textbook with white pages, multicolored sticky tabs inserted near the spine, and no legible text on visible pages.",
+      "A spiral-bound notebook with a light blue zipper pouch lying closed to the left of the subject’s hands.",
+      "A dark-covered book with indistinct white text on its spine, placed horizontally on the table in the lower-left foreground."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0796_P1",
+      "visual_anchors": [
+        "open textbook with sticky tabs",
+        "subject’s direct gaze",
+        "wooden bookshelves"
+      ],
+      "symbolic_mapping": [
+        "open book as accessible knowledge",
+        "direct gaze as assertion of presence"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The image frames knowledge as materially present and actively engaged, while the subject’s visibility asserts individual participation within a collective repository of texts—suggesting epistemic agency within institutional structures.",
+      "alternative_interpretations": [
+        "This may simply depict a posed portrait in a study environment without symbolic intent."
+      ],
+      "limitations": [
+        "No legible text confirms the book’s content or purpose; the subject’s expression is static and cannot verify internal states."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0796_P2",
+      "visual_anchors": [
+        "red shirt",
+        "glasses",
+        "pen held over book"
+      ],
+      "symbolic_mapping": [
+        "red garment as visual emphasis on subject",
+        "pen as instrument of inscription or correction"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The deliberate visual contrast between the vibrant red shirt and muted background highlights the subject’s individuated appearance amid standardized surroundings, implying identity formation through situated scholarly practice.",
+      "alternative_interpretations": [
+        "The red shirt may be casual attire with no intentional semiotic function."
+      ],
+      "limitations": [
+        "Clothing color alone does not establish intentionality; no contextual markers confirm identity construction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0796_P3",
+      "visual_anchors": [
+        "wooden table",
+        "bookshelves",
+        "hand resting on open pages"
+      ],
+      "symbolic_mapping": [
+        "table as shared surface of labor",
+        "bookshelves as accumulated tradition"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The physical act of studying at a wooden table—surrounded by generations of bound texts—evokes the continuity of human intellectual labor across time, where each reader momentarily bridges past and present through embodied engagement.",
+      "alternative_interpretations": [
+        "The scene may reflect routine academic work without temporal or existential connotation."
+      ],
+      "limitations": [
+        "No dates, inscriptions, or aging signs on books or furniture confirm historical layering; the moment is frozen and non-narrative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:17:23.809878+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ffc9339c-4b36-9ec8-aea3-5190aef1be79",
+      "usage": {
+        "prompt_tokens": 2154,
+        "completion_tokens": 953,
+        "total_tokens": 3107,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1647,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070316561890a744dc254ed9",
+      "usage": {
+        "completion_tokens": 814,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3702,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4516
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

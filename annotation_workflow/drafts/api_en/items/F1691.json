@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1691",
+  "sample_id": "PHL1800_MM_0105",
+  "file_name": "PHL1800_MM_0105.jpg",
+  "batch_id": "B034",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two seated individuals in a studio setting",
+  "captions": {
+    "scene": [
+      "A studio set with purple carpeting, black leather swivel chairs, and a curved blue-and-purple backdrop screen.",
+      "A small round table with a wood-grain base and black top sits between the two individuals; a clear glass object rests on it.",
+      "The lighting is bright and even, typical of a television interview environment."
+    ],
+    "action": [
+      "The person on the left sits with legs crossed, hands clasped, smiling toward the right person.",
+      "The person on the right holds a handheld microphone near their mouth and looks toward the left person with a slight smile.",
+      "A speech bubble originates from the left person’s head area containing legible English text; a smaller empty thought bubble appears near the right person’s head."
+    ],
+    "rationale": [
+      "The presence of microphones, studio furniture, and backdrop suggests a formal interview or talk-show context.",
+      "The speech bubble implies the left person is speaking or has just spoken; the empty bubble near the right person may indicate listening or internal reflection, though its meaning is ambiguous without further context.",
+      "Clothing (black velvet suit, navy suit with tie) and posture suggest professional presentation, but no specific role can be confirmed solely from appearance."
+    ],
+    "object": [
+      "The person on the left wears a black velvet blazer with lapels, black trousers, and black heeled ankle boots; hair is long, straight, and highlighted with lighter streaks.",
+      "The person on the right wears a navy blue suit jacket with a white pocket square, a white collared shirt, a patterned dark tie, navy trousers, and polished brown dress shoes; a wristwatch is visible on the left wrist.",
+      "A silver-based black leather swivel chair supports each individual; both chairs have circular chrome footplates.",
+      "A cylindrical wooden table with a black rimmed top holds a transparent glass object resembling a water glass or ashtray.",
+      "A large curved screen behind them displays a gradient of blue tones with a faint horizontal division line; no logos or readable text appear on the screen."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1691_P1",
+      "visual_anchors": [
+        "speech bubble with English text",
+        "empty thought bubble",
+        "microphone held by right person"
+      ],
+      "symbolic_mapping": [
+        "speech bubble → public articulation",
+        "empty thought bubble → unspoken interiority"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of voiced expression and silent cognition highlights how identity is performed publicly while inner experience remains partially concealed, reflecting tensions in social existence.",
+      "alternative_interpretations": [
+        "The bubbles may be purely decorative or comedic elements added post-production, not indicating actual mental states."
+      ],
+      "limitations": [
+        "The empty bubble lacks textual content or directional cues, making any attribution of internal thought speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1691_P2",
+      "visual_anchors": [
+        "formal attire of both individuals",
+        "symmetrical seating arrangement",
+        "studio lighting"
+      ],
+      "symbolic_mapping": [
+        "matching professional dress → adherence to social scripts",
+        "balanced composition → constructed equilibrium"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The carefully staged symmetry and uniform professionalism suggest a ritualized social interaction where power is mediated through decorum rather than overt hierarchy.",
+      "alternative_interpretations": [
+        "The arrangement may simply reflect standard TV production conventions for visual balance, not intentional symbolism."
+      ],
+      "limitations": [
+        "No gestures, facial expressions beyond smiles, or asymmetries are present to confirm power dynamics or resistance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1691_P3",
+      "visual_anchors": [
+        "purple carpet",
+        "blue backdrop",
+        "black clothing"
+      ],
+      "symbolic_mapping": [
+        "color contrast between vibrant background and dark foreground → separation of spectacle from substance"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The stark chromatic division between the vivid set and the monochrome attire may symbolize how individual identity is constrained within institutional frames that prioritize visual spectacle over personal nuance.",
+      "alternative_interpretations": [
+        "Color choices likely follow broadcast design guidelines for contrast and readability, not philosophical intent."
+      ],
+      "limitations": [
+        "No evidence confirms intentional color symbolism; hue selection could be technical rather than expressive."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:06:19.941347+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9150ba54-fe5c-9587-87f6-f2781d22df98",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 985,
+        "total_tokens": 2518,
+        "completion_tokens_details": {
+          "text_tokens": 985
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050602ca83366608fb494e",
+      "usage": {
+        "completion_tokens": 848,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2936,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3784
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

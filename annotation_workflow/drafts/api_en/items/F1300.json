@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1300",
+  "sample_id": "PHL1800_HAIV_0442",
+  "file_name": "PHL1800_HAIV_0442.png",
+  "batch_id": "B027",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one cartoon male figure",
+  "captions": {
+    "scene": [
+      "A white background with scattered debris fragments and motion lines indicating rapid movement.",
+      "An open book or document is airborne above and behind the figure, angled as if thrown or dropped.",
+      "The figure wears a white long-sleeved garment and brown shoes; no environment beyond the figure and flying objects is depicted."
+    ],
+    "action": [
+      "The figure is in a forward-leaning running pose with left leg extended backward and right leg bent forward.",
+      "Both fists are clenched and raised: left fist high near head level, right fist extended forward at chest height.",
+      "Mouth is wide open with visible upper teeth and tongue, suggesting vocalization or exertion."
+    ],
+    "rationale": [
+      "The presence of motion lines and airborne debris suggests rapid locomotion rather than static posture.",
+      "The facial expression—furrowed brow, narrowed eyes, open mouth—aligns with exertion or emotional intensity, though exact emotion is not determinable from visual cues alone.",
+      "The garment resembles a lab coat or formal shirt but lacks identifying insignia; classification as 'professional attire' is unsupported without further evidence."
+    ],
+    "object": [
+      "The figure has short orange hair, a prominent nose, and visible ears; skin tone is light pink with black outlines.",
+      "A white long-sleeved garment with gray shading on sleeves and torso, featuring loose fit and no visible buttons or logos.",
+      "Brown shoes with black soles; left shoe fully visible, right shoe partially obscured by motion blur lines.",
+      "Three small irregular gray-brown fragments float near the left arm and torso, consistent with shattered material.",
+      "An open beige-colored book or document with two visible pages and a dark spine is airborne above the figure’s head."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1300_P1",
+      "visual_anchors": [
+        "clenched fists",
+        "open mouth",
+        "forward-running posture"
+      ],
+      "symbolic_mapping": [
+        "clenched fists → resistance or determination",
+        "running posture → pursuit or escape"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "choice_journey"
+      ],
+      "interpretation": "The figure embodies an active agent engaged in urgent physical effort, possibly representing the exertion required to navigate conflict or make consequential choices under pressure.",
+      "alternative_interpretations": [
+        "The image may simply depict a comedic or exaggerated reaction to frustration, such as a student fleeing an exam or a scientist reacting to a failed experiment."
+      ],
+      "limitations": [
+        "No contextual setting or narrative cues confirm intent; symbolic mapping relies on conventional cartoon tropes rather than explicit visual semiotics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1300_P2",
+      "visual_anchors": [
+        "airborne book",
+        "motion lines",
+        "debris fragments"
+      ],
+      "symbolic_mapping": [
+        "flying book → disrupted knowledge",
+        "debris → fragmentation of order"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The scattering of textual material amid chaotic motion suggests a rupture in structured knowledge or the destabilization of truth claims under forceful action.",
+      "alternative_interpretations": [
+        "The book may have been accidentally knocked over during rapid movement, with debris representing incidental breakage rather than symbolic collapse."
+      ],
+      "limitations": [
+        "The book’s content is unreadable and its orientation ambiguous; no text confirms it represents ‘knowledge’ versus generic paper object."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1300_P3",
+      "visual_anchors": [
+        "white garment",
+        "isolated figure",
+        "absence of other persons or landmarks"
+      ],
+      "symbolic_mapping": [
+        "white garment → neutrality or institutional role",
+        "isolation → individual agency"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The solitary figure in undifferentiated attire highlights the tension between social role (implied by clothing) and individual expression (conveyed through dynamic gesture and expression).",
+      "alternative_interpretations": [
+        "The garment may be casual wear; its whiteness could reflect lighting or artistic choice rather than symbolic neutrality."
+      ],
+      "limitations": [
+        "Garment lacks distinguishing features (e.g., badges, cuts, stains); identity cannot be inferred from appearance alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:14:34.686327+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ec6295c9-f3a2-9583-8b55-4f656b190aaa",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 949,
+        "total_tokens": 2482,
+        "completion_tokens_details": {
+          "text_tokens": 949
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704142259354ddbfece4a70",
+      "usage": {
+        "completion_tokens": 811,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2906,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3717
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

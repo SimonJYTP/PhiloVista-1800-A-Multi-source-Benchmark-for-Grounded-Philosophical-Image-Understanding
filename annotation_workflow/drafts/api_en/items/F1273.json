@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1273",
+  "sample_id": "PHL1800_HL_0590",
+  "file_name": "PHL1800_HL_0590.png",
+  "batch_id": "B027",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult skier in motion on snow",
+  "captions": {
+    "scene": [
+      "Uniform white snow surface with faint parallel ski tracks visible behind the skier",
+      "Overcast or diffuse lighting with no visible shadows or sky features",
+      "No trees, buildings, signage, or other environmental markers present"
+    ],
+    "action": [
+      "Skier leans leftward with knees flexed and torso angled into a turn",
+      "Both ski poles are held outward and slightly behind the body, tips touching snow",
+      "Skis are edged and parallel, carving a shallow arc in the snow surface"
+    ],
+    "rationale": [
+      "The skier’s posture and pole placement suggest active turning rather than straight gliding",
+      "Red-and-white ski suit with black accents appears purpose-built for alpine skiing, though brand logos are unreadable",
+      "Headwear (gray beanie) and gloves indicate cold ambient conditions, but exact temperature is not measurable"
+    ],
+    "object": [
+      "The skier wears a red jacket with white diagonal shoulder stripes and black side panels, plus matching red pants with white side stripes.",
+      "A gray knit beanie covers the skier’s head; facial features are visible but no identifying marks are discernible.",
+      "Black gloves with visible stitching grip black ski poles that have small circular baskets near the tips.",
+      "Ski boots are dark with blue and yellow accents; bindings connect to black skis with white graphics near the tails.",
+      "Snow surface shows fine granular texture and faint linear grooves consistent with prior ski passage."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1273_P1",
+      "visual_anchors": [
+        "skier’s bent knees",
+        "angled torso",
+        "parallel ski edges"
+      ],
+      "symbolic_mapping": [
+        "bent posture as embodied response to external forces"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The skier’s controlled lean embodies the dialectic of freedom within constraint: movement is possible only through precise adaptation to gravity, slope, and friction.",
+      "alternative_interpretations": [
+        "This is simply biomechanical efficiency for turning, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual cues confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1273_P2",
+      "visual_anchors": [
+        "uniform white snow field",
+        "absence of landmarks",
+        "single figure centered"
+      ],
+      "symbolic_mapping": [
+        "empty expanse as metaphor for undetermined future"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The isolated figure on an unmarked slope evokes the existential condition of choosing a path without external guidance—each turn redefines direction amid blank continuity.",
+      "alternative_interpretations": [
+        "The scene is a standard ski slope with grooming; the lack of features reflects photographic framing, not philosophical emptiness."
+      ],
+      "limitations": [
+        "The snow may contain subtle terrain features outside frame; absence of evidence is not evidence of absence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1273_P3",
+      "visual_anchors": [
+        "red-and-white ski suit",
+        "black gloves and poles",
+        "gray beanie"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "A literal description of one adult skier in motion on snow is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use one adult skier in motion on snow as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:11:00.750968+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9e1b6b54-c244-9761-9e44-d61c87a6ada3",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 841,
+        "total_tokens": 1670,
+        "completion_tokens_details": {
+          "text_tokens": 841
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041038a78a36d464944199",
+      "usage": {
+        "completion_tokens": 706,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1861,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2567
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1273.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

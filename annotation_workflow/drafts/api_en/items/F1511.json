@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1511",
+  "sample_id": "PHL1800_HL_0397",
+  "file_name": "PHL1800_HL_0397.png",
+  "batch_id": "B031",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male and two young girls posing with a taxidermied bear",
+  "captions": {
+    "scene": [
+      "A wooded outdoor setting with ferns, tree trunks, and moss-covered stone structures",
+      "A mounted brown bear positioned on a stone platform to the left of the group",
+      "Three people standing closely together in front of foliage, with one girl holding a paper plate"
+    ],
+    "action": [
+      "The adult male places his right hand on the bear’s back while holding a small round object in his left hand",
+      "The girl in the striped hoodie faces away from the camera, her hair in pigtails with antler-like headbands",
+      "The girl in the purple jacket looks toward the camera, wearing a white headband with antlers and holding a paper plate"
+    ],
+    "rationale": [
+      "The bear is likely taxidermied due to its fixed posture, glossy eyes, and placement on a display platform",
+      "The antler headbands suggest a themed activity or costume, possibly related to wildlife or seasonal celebration",
+      "The adult’s smile and relaxed posture indicate a posed photograph rather than spontaneous interaction"
+    ],
+    "object": [
+      "A brown bear with dark fur, upright ears, and a slightly open mouth is mounted on a stone base.",
+      "An adult male wears glasses, a blue floral short-sleeve shirt, olive shorts, and white socks with dark shoes.",
+      "A girl in a multicolored striped hooded jacket has two braids adorned with light-colored antler-shaped headbands.",
+      "A second girl wears a purple zip-up jacket with pink and blue butterfly motifs, blue jeans, and a white antler headband.",
+      "A red-handled tool or device hangs from the man’s belt loop, partially visible behind his right thigh."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1511_P1",
+      "visual_anchors": [
+        "taxidermied bear",
+        "antler headbands",
+        "paper plate held by child"
+      ],
+      "symbolic_mapping": [
+        "the bear as a symbol of nature preserved for human observation",
+        "antlers as playful appropriation of animal identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene reflects how humans construct social meaning through staged encounters with nature, where animals become props in rituals of identity formation and shared experience.",
+      "alternative_interpretations": [
+        "This is a casual family photo at a zoo or nature exhibit, with no symbolic intent beyond commemoration."
+      ],
+      "limitations": [
+        "No textual signage confirms the location or purpose; the bear’s status (real vs. replica) is inferred but not definitively proven."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1511_P2",
+      "visual_anchors": [
+        "man’s hand on bear",
+        "child’s direct gaze",
+        "mossy stone platform"
+      ],
+      "symbolic_mapping": [
+        "touch as mediation between human and nonhuman",
+        "gaze as assertion of presence within constructed space"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The physical contact with the immobilized bear juxtaposed with the child’s unmediated gaze raises questions about ethical responsibility in representing wild life and the constraints placed on both animals and children in curated environments.",
+      "alternative_interpretations": [
+        "The man is simply steadying himself or pointing out features of the exhibit; the child is merely looking at the photographer."
+      ],
+      "limitations": [
+        "Intent behind the touch cannot be verified; the child’s expression is neutral and open to multiple readings."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1511_P3",
+      "visual_anchors": [
+        "floral shirt",
+        "antler accessories",
+        "fern fronds in foreground"
+      ],
+      "symbolic_mapping": [
+        "floral pattern as cultural overlay on natural forms",
+        "ferns as persistent organic matter contrasting with static display"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The coexistence of living plants, a preserved animal, and human adornment suggests layered temporalities—growth, death, and re-presentation—inviting reflection on how truth about nature is mediated through cultural artifacts and selective preservation.",
+      "alternative_interpretations": [
+        "These are incidental background and clothing elements with no intended thematic resonance."
+      ],
+      "limitations": [
+        "No explicit labeling or context confirms intentional symbolism; the ferns may simply be part of the habitat design."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:40:26.848194+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2d17670b-9c7b-9a84-8c39-52ee3d27a60f",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 984,
+        "total_tokens": 1773,
+        "completion_tokens_details": {
+          "text_tokens": 984
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070440106707dfe891004ead",
+      "usage": {
+        "completion_tokens": 837,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1935,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2772
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

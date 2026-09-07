@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1390",
+  "sample_id": "PHL1800_HL_0199",
+  "file_name": "PHL1800_HL_0199.png",
+  "batch_id": "B029",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a yellow school bus in motion on a highway",
+  "captions": {
+    "scene": [
+      "Overcast sky above a multi-lane highway bordered by dense green trees and a metal guardrail.",
+      "The rear and right side of a yellow school bus dominate the frame, with foliage visible behind and beside it.",
+      "A paved road surface with white lane markings extends forward beneath the bus."
+    ],
+    "action": [
+      "The bus is traveling forward on a highway, as indicated by its orientation and wheel position relative to the road.",
+      "At least two occupants are visible through the rear windows: one seated near the center and another near the right-side window.",
+      "The bus’s brake lights are not illuminated; tail lights appear off or dim, suggesting non-braking motion."
+    ],
+    "rationale": [
+      "The bus’s position across lanes and slight angle suggests it is actively moving rather than parked.",
+      "The presence of multiple visible windows with interior reflections and silhouettes supports that the bus is occupied.",
+      "The text 'KEEP BACK 100 FT.' and 'UNLAWFUL TO PASS WHEN RED LIGHTS ARE FLASHING' implies regulatory context but does not confirm current activation of flashing lights—evidence for active warning signals is absent."
+    ],
+    "object": [
+      "The bus is painted bright yellow with black trim along the lower body and roofline, consistent with U.S. school bus standards.",
+      "The rear displays 'SCHOOL BUS' in large black capital letters above 'EMERGENCY DOOR', with four red circular lights at the top corners and two amber circular lights below them.",
+      "A white rectangular sign on the lower rear reads 'KEEP BACK 100 FT.' in black uppercase letters.",
+      "A black rectangular sign with white text states 'UNLAWFUL TO PASS WHEN RED LIGHTS ARE FLASHING', partially obscured by reflection.",
+      "Two license plates are mounted: a white plate with black characters '15430' (left) and a yellow plate with black characters '011617' (right); both include small logos reading 'BLUE BIRD'."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1390_P1",
+      "visual_anchors": [
+        "'KEEP BACK 100 FT.' sign",
+        "red emergency lights",
+        "school bus designation"
+      ],
+      "symbolic_mapping": [
+        "the mandated distance symbolizes institutionalized caution",
+        "the emergency door signifies contingency planning within routine"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The bus embodies a structured compromise between collective safety and individual mobility, where regulatory signage enforces ethical responsibility through spatial constraint.",
+      "alternative_interpretations": [
+        "It is simply a vehicle complying with traffic law, with no deeper meaning intended by its design or use."
+      ],
+      "limitations": [
+        "No driver or passenger expressions are visible; intent or awareness cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1390_P2",
+      "visual_anchors": [
+        "row of windows showing interior silhouettes",
+        "uniform yellow color",
+        "standardized shape"
+      ],
+      "symbolic_mapping": [
+        "repetition of windows reflects uniformity of institutional experience",
+        "shared enclosure suggests temporary communal existence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The bus functions as a mobile social container where individual identities are temporarily subsumed into a collective role defined by appearance and function.",
+      "alternative_interpretations": [
+        "The windows merely show passengers; no evidence of identity suppression or social ritual exists."
+      ],
+      "limitations": [
+        "Only partial views of occupants are visible; their roles or self-perception are not observable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1390_P3",
+      "visual_anchors": [
+        "overcast sky",
+        "motion blur on wheels",
+        "guardrail receding into distance"
+      ],
+      "symbolic_mapping": [
+        "cloud cover evokes indeterminacy of destination",
+        "forward motion without visible endpoint suggests journey without guaranteed arrival"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The bus traverses an open road under ambiguous skies, visually echoing the human condition of moving through time with prescribed direction but uncertain culmination.",
+      "alternative_interpretations": [
+        "This is a routine commute; weather and motion are incidental, not symbolic."
+      ],
+      "limitations": [
+        "No clock, calendar, or explicit temporal markers are present; ‘journey’ is inferred from motion alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:26:41.828428+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-488edbbc-425c-9596-85dd-16b6366bf73a",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 997,
+        "total_tokens": 1806,
+        "completion_tokens_details": {
+          "text_tokens": 997
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042630a8ac966434184b2f",
+      "usage": {
+        "completion_tokens": 848,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1963,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2811
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0852",
+  "sample_id": "PHL1800_HL_0492",
+  "file_name": "PHL1800_HL_0492.png",
+  "batch_id": "B019",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two construction workers at a street worksite",
+  "captions": {
+    "scene": [
+      "An urban street with exposed brick and steel-framed building under renovation in the background.",
+      "A yellow crane boom extends horizontally across the frame above a dirt excavation area cordoned with yellow tape.",
+      "Paved asphalt road surface with scattered debris, an orange traffic cone, and a stop sign on a pole."
+    ],
+    "action": [
+      "One worker stands upright holding a red octagonal stop sign mounted on an orange pole.",
+      "Another worker kneels on one knee beside the excavation, facing away, wearing dark clothing and a cap.",
+      "Both individuals wear high-visibility vests or outerwear appropriate for construction zones."
+    ],
+    "rationale": [
+      "The presence of a stop sign held by a worker suggests temporary traffic control, though no vehicles are visible to confirm active regulation.",
+      "The kneeling posture and proximity to the trench imply inspection or manual work, but no tools or materials are clearly in hand.",
+      "The crane boom is stationary and not actively lifting; its operational status cannot be determined from the image alone."
+    ],
+    "object": [
+      "A red octagonal stop sign with white uppercase letters 'STOP' and faint illegible handwritten markings below.",
+      "An orange metal pole supporting the stop sign, held vertically by the standing worker’s right hand.",
+      "A yellow articulated crane boom with black hydraulic components extending leftward across the upper mid-frame.",
+      "A bright lime-green safety vest worn over a grey hooded sweatshirt by the standing worker.",
+      "An orange traffic cone with two reflective white bands positioned on the right edge of the paved surface."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0852_P1",
+      "visual_anchors": [
+        "stop sign held by worker",
+        "yellow caution tape",
+        "crane boom spanning space"
+      ],
+      "symbolic_mapping": [
+        "the stop sign as enforced pause amid transformation",
+        "the crane as extension of human agency into built environment"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures labor as both constraint and enablement: the worker enforces a halt (freedom constrained) while machinery enables structural change (technology as labor’s extension).",
+      "alternative_interpretations": [
+        "This is simply routine traffic management during infrastructure repair, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, signage context, or activity timeline is visible to confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0852_P2",
+      "visual_anchors": [
+        "kneeling worker",
+        "standing worker",
+        "exposed foundation wall"
+      ],
+      "symbolic_mapping": [
+        "kneeling posture as humility before material reality",
+        "dual postures representing complementary roles in collective effort"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The juxtaposition of standing and kneeling figures evokes shared responsibility within social labor—each position necessary, neither dominant, reflecting interdependence in maintaining public infrastructure.",
+      "alternative_interpretations": [
+        "The kneeling worker may simply be adjusting equipment or resting; posture need not signify hierarchy or ethics."
+      ],
+      "limitations": [
+        "Body orientation and head position prevent confirmation of gaze direction or interaction intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0852_P3",
+      "visual_anchors": [
+        "unfinished brick facade",
+        "steel scaffolding",
+        "dirt excavation"
+      ],
+      "symbolic_mapping": [
+        "construction site as liminal space between destruction and creation",
+        "temporary barriers as markers of transition"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The site embodies temporal flux: the old structure decays while new form is nascent, mirroring human passage through phases where choice (e.g., to rebuild) defines journey amid impermanence.",
+      "alternative_interpretations": [
+        "This is a standard urban renewal project with no metaphysical implication; the ‘unfinished’ state is merely chronological stage."
+      ],
+      "limitations": [
+        "No dates, signage, or before/after evidence confirms narrative of decay or rebirth."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:22:19.229718+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-66b02a0b-994d-95a6-acd0-e2ed5d5bb988",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 918,
+        "total_tokens": 1687,
+        "completion_tokens_details": {
+          "text_tokens": 918
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032200aca930c84e524883",
+      "usage": {
+        "completion_tokens": 778,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1851,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2629
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

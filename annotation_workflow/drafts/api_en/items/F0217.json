@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0217",
+  "sample_id": "PHL1800_HAIV_0004",
+  "file_name": "PHL1800_HAIV_0004.png",
+  "batch_id": "B001",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person holding a hand mirror",
+  "captions": {
+    "scene": [
+      "A light-skinned person with short brown hair wearing a lavender long-sleeve shirt with dark blue trim stands against a plain white background.",
+      "The person holds a circular hand mirror with a green frame and light blue inner rim in their right hand, positioned near their face.",
+      "The mirror reflects the person’s face, which appears slightly more distressed than the visible face."
+    ],
+    "action": [
+      "The person gazes toward the mirror while holding it steady with their right hand.",
+      "The visible facial expression shows furrowed brows, downturned mouth, and mild blush on cheeks; eyes are open and directed toward the mirror.",
+      "The reflected face shows deeper furrows, a more pronounced frown, and wider eyes, suggesting altered expression or perspective."
+    ],
+    "rationale": [
+      "The difference between the visible face and the reflected face may indicate a shift in self-perception or lighting angle, but cannot be confirmed without additional context.",
+      "The mirror is held close to the face, implying intentional observation rather than incidental reflection.",
+      "No external objects or environment beyond the subject and mirror are present, limiting contextual inference about setting or purpose."
+    ],
+    "object": [
+      "The person has short brown hair with three dark brown horizontal lines indicating strands or parting on the forehead.",
+      "The shirt is lavender with dark blue piping along the collar, sleeve cuffs, and side seams.",
+      "The hand mirror has a circular reflective surface bordered by a light blue ring and an outer olive-green frame with a short handle.",
+      "The person’s right hand grips the mirror handle; fingers are partially curled around it, thumb visible on the left side of the handle.",
+      "Both the visible face and reflected face show two brown circular eyes, a small triangular nose, and pink oval cheek blushes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0217_P1",
+      "visual_anchors": [
+        "mirror reflection",
+        "differing facial expressions",
+        "hand-held positioning"
+      ],
+      "symbolic_mapping": [
+        "mirror reflection → self-perception",
+        "expression divergence → internal vs. external appearance"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The image visually stages a tension between how one presents externally and how one perceives oneself internally, using the mirror as a literal and symbolic interface for identity construction.",
+      "alternative_interpretations": [
+        "The reflection may simply result from optical distortion, different viewing angle, or artistic stylization—not necessarily psychological disparity."
+      ],
+      "limitations": [
+        "The illustration style permits expressive exaggeration; no objective measure confirms emotional state or intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0217_P2",
+      "visual_anchors": [
+        "single figure",
+        "isolated white background",
+        "direct gaze at reflection"
+      ],
+      "symbolic_mapping": [
+        "isolation → introspection",
+        "gaze fixation → self-examination"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The act of scrutinizing one’s reflected image evokes epistemological inquiry—how reliably can one know oneself when perception is mediated by a reflective surface?",
+      "alternative_interpretations": [
+        "The scene may depict routine grooming or checking appearance, with no philosophical intent implied by the visual alone."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm epistemic intent; the action is visually generic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0217_P3",
+      "visual_anchors": [
+        "blush on cheeks",
+        "furrowed brows",
+        "asymmetry between face and reflection"
+      ],
+      "symbolic_mapping": [
+        "blush → vulnerability",
+        "brow furrows → concern or judgment"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The subtle signs of affective response suggest awareness of social evaluation, where self-image is shaped by anticipated or internalized norms of acceptable appearance.",
+      "alternative_interpretations": [
+        "Blush and brow furrows could indicate physical discomfort (e.g., warmth, fatigue) rather than social anxiety."
+      ],
+      "limitations": [
+        "Facial features are stylized and lack micro-expressive detail needed to distinguish social from physiological causes."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:35:54.386938+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1fdfbd59-51f6-9a50-a2bf-1857a183e0a9",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 930,
+        "total_tokens": 2463,
+        "completion_tokens_details": {
+          "text_tokens": 930
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070135355b4ac1f367ce4470",
+      "usage": {
+        "completion_tokens": 796,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2888,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3684
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

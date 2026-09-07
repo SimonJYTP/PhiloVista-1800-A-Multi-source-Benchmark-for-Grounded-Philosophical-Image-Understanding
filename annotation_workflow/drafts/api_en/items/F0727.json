@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0727",
+  "sample_id": "PHL1800_IRFL_0372",
+  "file_name": "PHL1800_IRFL_0372.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person wearing a crown, sash, and ornate garment",
+  "captions": {
+    "scene": [
+      "A dark backdrop with partial white lettering including 'UNIVERS' and 'FOX'",
+      "Indoor setting with controlled lighting highlighting the subject's right side",
+      "Shallow depth of field blurring background elements"
+    ],
+    "action": [
+      "The person is smiling with visible upper teeth and lips parted",
+      "Head turned approximately 30 degrees to the viewer's left, eyes looking in same direction",
+      "Body oriented forward with shoulders squared relative to camera plane"
+    ],
+    "rationale": [
+      "The sash displays 'MISS' in bold uppercase letters, suggesting participation in a pageant-style event",
+      "The crown is heavily embellished with clear and amber-colored stones, indicating formal ceremonial use",
+      "The garment features metallic fringe and high-neck sequined collar, consistent with stage costume design"
+    ],
+    "object": [
+      "A silver-and-gold tiara with floral motifs and central amber-colored stone rests on short-cropped black hair.",
+      "A white satin sash with black embroidered text reading 'MISS' (remainder obscured) crosses the torso diagonally.",
+      "A high-necked garment made of silver sequins transitions into gold metallic fringe covering the chest and shoulders.",
+      "Starburst-shaped earrings with black centers and radiating clear stones are worn on both ears.",
+      "The person’s right ear is fully visible; left ear is partially occluded by hair and crown."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0727_P1",
+      "visual_anchors": [
+        "crown",
+        "sash with 'MISS'",
+        "high-neck sequined collar"
+      ],
+      "symbolic_mapping": [
+        "crown as marker of conferred status",
+        "sash as public designation of role"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visible regalia constructs a temporary social identity through external symbols, illustrating how appearance mediates recognition within institutional frameworks.",
+      "alternative_interpretations": [
+        "The attire may simply reflect costume requirements for a televised performance without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No context confirms whether the title is earned, assigned, or theatrical; the meaning of 'MISS' is incomplete."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0727_P2",
+      "visual_anchors": [
+        "short-cropped hair",
+        "ornate earrings",
+        "asymmetrical lighting"
+      ],
+      "symbolic_mapping": [
+        "hair style as deliberate self-presentation",
+        "lighting emphasizing facial expression over full figure"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of traditional pageant iconography with nonconventional grooming suggests an assertion of individual agency within prescribed roles, framing identity as negotiated rather than inherited.",
+      "alternative_interpretations": [
+        "Hair length may be practical for wearing the crown or dictated by event guidelines, not expressive choice."
+      ],
+      "limitations": [
+        "No evidence confirms intentionality behind hairstyle; it could be mandated or incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0727_P3",
+      "visual_anchors": [
+        "metallic fringe garment",
+        "sequined collar",
+        "blurred corporate logos in background"
+      ],
+      "symbolic_mapping": [
+        "garment materiality reflecting spectacle economy",
+        "background branding linking individual to commercial infrastructure"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The subject’s adorned form exists within a mediated visual field dominated by corporate signage, revealing how individual representation is embedded in and shaped by institutional power structures.",
+      "alternative_interpretations": [
+        "Background logos are generic event backdrops with no intended commentary on power dynamics."
+      ],
+      "limitations": [
+        "Logos are partially cropped and unreadable beyond fragments; their relevance to the subject is inferential."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:11:31.787203+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-958bb941-15c2-9bfc-b278-43f289001fe0",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 858,
+        "total_tokens": 1687,
+        "completion_tokens_details": {
+          "text_tokens": 858
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070311066b0a5f0572af44fb",
+      "usage": {
+        "completion_tokens": 718,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1858,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2576
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

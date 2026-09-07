@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0462",
+  "sample_id": "PHL1800_HAIV_0091",
+  "file_name": "PHL1800_HAIV_0091.png",
+  "batch_id": "B011",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human head and upper torso",
+  "captions": {
+    "scene": [
+      "A matte blue-gray head with an open top, set against a plain light-gray background.",
+      "Colorful glossy spheres in red, orange, yellow, green, blue, and purple form two arcing streams around the head.",
+      "An open brown box floats in the upper left quadrant, oriented diagonally with its interior visible."
+    ],
+    "action": [
+      "Spheres are visibly exiting the open top of the head and following curved trajectories outward.",
+      "Some spheres are inside the head cavity, densely packed near the opening.",
+      "Two small figurine-like objects—one resembling a cartoonish character and one indistinct—are interspersed among the spheres along the arcs."
+    ],
+    "rationale": [
+      "The head’s open top and sphere outflow suggest a container-like function, though no internal mechanism is visible.",
+      "The arcs of spheres imply directed motion, but no velocity vectors or motion blur confirm actual movement.",
+      "The presence of figurines among spheres may indicate narrative elements, but their identity and role are visually ambiguous."
+    ],
+    "object": [
+      "The head is featureless except for ears, nose, and mouth indentations; eyes are absent.",
+      "Numerous colored spheres are visible across both arcs and inside the head, varying in size but all spherical and glossy (exact count not verifiable).",
+      "The brown box has sharp edges, uniform color, and no markings or text; its interior is dark brown and empty.",
+      "Two non-spherical objects appear among the spheres: one on the left arc resembles a cartoonish character with orange and white patterning, and one near the top center is a small beige humanoid figure; a third tiny multicolored object near the right arc is indistinct.",
+      "The torso extends from the neck to mid-chest, smooth and untextured, matching the head’s material and color."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0462_P1",
+      "visual_anchors": [
+        "open-top head",
+        "outflowing colored spheres",
+        "empty brown box"
+      ],
+      "symbolic_mapping": [
+        "spheres → discrete units of thought or information",
+        "open head → permeability of cognition"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image visualizes knowledge as externally sourced, discrete entities entering and exiting a receptive cognitive vessel, with the empty box suggesting origin or depletion.",
+      "alternative_interpretations": [
+        "It may depict a toy dispenser releasing colorful marbles, with the head serving as a decorative base."
+      ],
+      "limitations": [
+        "No labels, arrows, or contextual cues confirm intentionality of symbolic mapping."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0462_P2",
+      "visual_anchors": [
+        "featureless face",
+        "uniform matte texture",
+        "symmetrical ear placement"
+      ],
+      "symbolic_mapping": [
+        "absence of eyes/mouth → depersonalization",
+        "monochrome surface → erasure of individual identity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s lack of distinguishing facial features emphasizes appearance as a blank template, potentially critiquing reduction of identity to external inputs (the spheres).",
+      "alternative_interpretations": [
+        "The head is a generic 3D model lacking detailed sculpting, not an intentional aesthetic choice."
+      ],
+      "limitations": [
+        "The absence of features could result from stylistic simplification rather than conceptual intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0462_P3",
+      "visual_anchors": [
+        "two symmetric arcs of spheres",
+        "figurines embedded in arcs",
+        "head as central node"
+      ],
+      "symbolic_mapping": [
+        "arcs → divergent pathways of influence",
+        "figurines → agents or narratives within flow"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The dual arcs suggest bifurcating trajectories emerging from a central consciousness, where embedded figures represent pivotal choices or encountered stories shaping the journey.",
+      "alternative_interpretations": [
+        "The arcs are purely decorative symmetry, and the figurines are random ornaments placed for visual interest."
+      ],
+      "limitations": [
+        "No directional indicators (e.g., arrows) or sequential ordering confirm narrative progression."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of figurine-like objects (candidate states three, but image shows two distinct figurines and one indistinct object, totaling three but with ambiguous classification); \"exactly 73 colored spheres\" is an unsupported precise count (visual estimation is unreliable for exact numbers); \"fish-like\" description of the left figurine is speculative (no clear fish features visible)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:48:56.036765+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-29b87be5-0014-9c00-86e0-607d58443353",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 941,
+        "total_tokens": 2474,
+        "completion_tokens_details": {
+          "text_tokens": 941
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702484119395208a2164e19",
+      "usage": {
+        "completion_tokens": 886,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2901,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3787
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

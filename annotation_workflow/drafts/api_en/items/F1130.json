@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1130",
+  "sample_id": "PHL1800_HAIV_0016",
+  "file_name": "PHL1800_HAIV_0016.png",
+  "batch_id": "B002",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human-like figure wearing a spiked crown and holding a torch and flag",
+  "captions": {
+    "scene": [
+      "A white background with a green-shirted figure, a blue-and-yellow spiked crown, a raised torch, and a waving American flag.",
+      "The figure occupies the central-lower portion of the frame; the flag appears in the upper-right quadrant.",
+      "Bold black outlines define all shapes; colors are flat and saturated with no shading or gradient."
+    ],
+    "action": [
+      "The figure raises its right arm high, gripping a torch with a yellow flame and blue handle.",
+      "The figure extends its left arm outward horizontally, holding a pole with an American flag attached.",
+      "The figure’s eyes are closed lines and mouth is open in a smile, suggesting a static expression rather than motion."
+    ],
+    "rationale": [
+      "The crown’s spikes and torch strongly resemble iconic elements of the Statue of Liberty, though the figure wears a t-shirt instead of robes.",
+      "The flag displays red and white stripes and a blue canton with yellow dots, consistent with a simplified U.S. flag depiction.",
+      "The figure’s skin is uniformly yellow and lacks anatomical detail, indicating stylization rather than realism."
+    ],
+    "object": [
+      "The figure has a yellow face and neck, a green short-sleeved shirt with black outline, and yellow arms outlined in black.",
+      "The crown consists of seven sharp blue spikes radiating from a yellow band, each spike outlined in black.",
+      "The torch has a yellow flame atop a blue cylindrical shaft with black detailing and a blue base held by the figure’s right hand.",
+      "The American flag shows seven visible red stripes, six white stripes, and a blue rectangle containing multiple yellow dots arranged irregularly.",
+      "The figure’s left hand is partially visible at the end of the extended arm, grasping a thin black pole that supports the flag."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1130_P1",
+      "visual_anchors": [
+        "spiked blue crown",
+        "raised torch",
+        "American flag"
+      ],
+      "symbolic_mapping": [
+        "torch → illumination/knowledge",
+        "flag → national identity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The figure embodies a fusion of enlightenment and civic belonging, where the act of holding light and nation simultaneously asserts that truth and social membership are co-constitutive.",
+      "alternative_interpretations": [
+        "This may simply be a cartoonish patriotic illustration without philosophical intent, using familiar symbols for decorative or celebratory effect."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm intentional symbolism; the green shirt contradicts traditional iconography, weakening symbolic coherence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1130_P2",
+      "visual_anchors": [
+        "closed eyes",
+        "open smiling mouth",
+        "outstretched arms"
+      ],
+      "symbolic_mapping": [
+        "closed eyes → inward focus or trust",
+        "outstretched arms → openness or offering"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s serene expression amid active gesture suggests freedom as an internal state expressed through outward posture, where appearance (yellow skin, green shirt) diverges from expected iconography to assert self-defined identity.",
+      "alternative_interpretations": [
+        "The facial features may reflect generic cartoon conventions for happiness rather than deliberate philosophical expression."
+      ],
+      "limitations": [
+        "Facial features are minimal and conventional; no evidence confirms intentional contrast between inner state and outer action."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1130_P3",
+      "visual_anchors": [
+        "uniform yellow skin",
+        "green shirt",
+        "black outlines"
+      ],
+      "symbolic_mapping": [
+        "flat color fields → abstraction of individuality",
+        "bold outlines → boundary definition"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The reduction of the figure to schematic color blocks and lines emphasizes existence as a constructed social role rather than biological fact, implying that identity emerges through chosen visual markers and public performance.",
+      "alternative_interpretations": [
+        "The color choices may stem from artistic constraints (e.g., limited palette for printing) rather than conceptual design."
+      ],
+      "limitations": [
+        "No variation in hue, texture, or shading prevents confirmation of intentional abstraction versus technical limitation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:42:21.069984+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-be8c8a56-abfb-961d-81c9-54374a31cf60",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 961,
+        "total_tokens": 2494,
+        "completion_tokens_details": {
+          "text_tokens": 961
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070141565f3238db8ffd4860",
+      "usage": {
+        "completion_tokens": 817,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2915,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3732
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

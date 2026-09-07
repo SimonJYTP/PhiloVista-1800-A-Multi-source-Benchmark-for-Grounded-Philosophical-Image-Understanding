@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1165",
+  "sample_id": "PHL1800_IRFL_0442",
+  "file_name": "PHL1800_IRFL_0442.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a hiker with visible lower-limb wear and foot injuries",
+  "captions": {
+    "scene": [
+      "Close-up of lower legs showing numerous linear abrasions and dried blood on skin, wearing blue hiking shoes and white socks with brown stains.",
+      "Wide-angle view of a forested trail with sparse leafless shrubs, green moss patches, and distant rolling hills under overcast sky.",
+      "Extreme close-up of bare feet with thick calluses, blisters covered by beige adhesive patches, and dirt-encrusted soles."
+    ],
+    "action": [
+      "A person is bent forward at the waist, using two trekking poles for support while standing on an uneven dirt path.",
+      "The hiker’s legs display multiple superficial lacerations consistent with repeated contact with vegetation or terrain.",
+      "Feet show signs of prolonged weight-bearing stress: hyperkeratotic plaques, blister dressings, and discoloration from friction and moisture."
+    ],
+    "rationale": [
+      "The presence of trekking poles, backpack, and trail setting strongly suggests long-distance hiking rather than casual walking.",
+      "The pattern and distribution of leg abrasions align with brushing against thorny or rough vegetation during uphill/downhill travel.",
+      "Callus formation and blister treatment indicate repetitive mechanical loading over extended duration; however, exact mileage or time elapsed cannot be determined."
+    ],
+    "object": [
+      "A pair of blue low-cut hiking shoes with black laces and visible mud residue on soles and uppers.",
+      "White ankle socks with brownish-red staining near the heel and toe areas, partially rolled down.",
+      "Two trekking poles with black shafts and orange wrist straps, held vertically in both hands by the hiker.",
+      "A red-and-black external-frame backpack with visible compression straps and side pockets, worn by the hiker.",
+      "Bare human feet with five toes each, exhibiting bilateral plantar hyperkeratosis, two circular adhesive bandages on right sole, and one on left forefoot."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1165_P1",
+      "visual_anchors": [
+        "bare feet with adhesive bandages",
+        "multiple leg abrasions",
+        "trekking poles held firmly"
+      ],
+      "symbolic_mapping": [
+        "callused soles → endurance through suffering",
+        "poles as extensions of limbs → reliance on tools to sustain motion"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The image embodies the existential condition of persistent forward movement despite bodily degradation—each step reaffirms agency amid inevitable decay.",
+      "alternative_interpretations": [
+        "This is simply documentation of physical injury during outdoor recreation, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism; interpretation relies on post-hoc projection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1165_P2",
+      "visual_anchors": [
+        "dirt-stained socks",
+        "moss-covered ground",
+        "layered forest backdrop"
+      ],
+      "symbolic_mapping": [
+        "soil on fabric → immersion in natural cycles",
+        "vertical stratification of terrain → hierarchical passage through stages"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The hiker’s appearance—stained, wounded, yet equipped—reflects a self-fashioned identity forged through constraint: freedom defined not by absence of limits but by navigation within them.",
+      "alternative_interpretations": [
+        "The stains and injuries are incidental byproducts of functional activity, not identity markers."
+      ],
+      "limitations": [
+        "Clothing and gear are generic; no unique identifiers confirm intentional self-representation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1165_P3",
+      "visual_anchors": [
+        "blisters covered by bandages",
+        "uneven trail surface",
+        "distant mountain ridge"
+      ],
+      "symbolic_mapping": [
+        "bandaged wounds → provisional repair amid ongoing strain",
+        "ridge line as horizon → unresolved destination"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "knowledge_truth"
+      ],
+      "interpretation": "The act of continuing despite visible harm implies a tacit ethical commitment—to the journey, to preparedness, to truth-telling about bodily limits—where knowledge emerges only through sustained exposure to resistance.",
+      "alternative_interpretations": [
+        "The hiker may be unaware of the severity of injuries or simply prioritizing completion over care."
+      ],
+      "limitations": [
+        "No visible decision-making process or verbal justification is present; motivation remains unobservable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:57:45.684988+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a9685b2d-33ff-92f9-bea8-39f271c8fa0f",
+      "usage": {
+        "prompt_tokens": 889,
+        "completion_tokens": 992,
+        "total_tokens": 1881,
+        "completion_tokens_details": {
+          "text_tokens": 992
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 382,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035717d2fd1385b57e401e",
+      "usage": {
+        "completion_tokens": 853,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2039,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2892
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

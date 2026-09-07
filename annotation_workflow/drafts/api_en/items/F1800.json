@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1800",
+  "sample_id": "PHL1800_HAIV_0018",
+  "file_name": "PHL1800_HAIV_0018.png",
+  "batch_id": "B002",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single human profile silhouette with a flaming hand adjacent to it",
+  "captions": {
+    "scene": [
+      "A high-contrast composition against a black background featuring a stylized human head in profile and a luminous yellow-red hand-shaped flame.",
+      "The image uses thermal-like color grading with bright yellows at the core of the flame and face, transitioning to deep reds at edges and hair.",
+      "No environmental context is visible; the scene is isolated and abstracted, emphasizing form and luminosity."
+    ],
+    "action": [
+      "The mouth is open wide in an apparent shout or scream, with visible upper and lower teeth and tongue outline.",
+      "The hand is raised vertically, palm facing forward, fully engulfed in flame-like texture with irregular, jagged edges.",
+      "The figure’s eyes are closed or reduced to narrow slits, and the ear is clearly outlined in yellow against red fill."
+    ],
+    "rationale": [
+      "The flame shape strongly resembles a human hand due to its five-digit-like protrusions and overall contour, though no fingers are individually defined.",
+      "The facial expression suggests vocal exertion, inferred from the open mouth and tension in the jawline, but no sound or airflow is visible.",
+      "The color gradient from yellow to red may indicate heat intensity, but without calibration or reference, this remains speculative."
+    ],
+    "object": [
+      "The silhouette shows one human head in right-facing profile with spiky hair rendered in textured red-orange tones.",
+      "A luminous yellow structure with red-black borders occupies the left side, shaped like a hand with five upward extensions resembling fingers.",
+      "The face includes a nose, closed eye slit, open mouth revealing teeth and tongue outline, and a clearly delineated ear cavity.",
+      "The entire figure and flame are set against a uniform black background with no additional objects or textures.",
+      "The image exhibits heavy stylization: edges are rough and grainy, colors are saturated and non-photorealistic, and forms are simplified."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1800_P1",
+      "visual_anchors": [
+        "open mouth",
+        "flaming hand",
+        "profile silhouette"
+      ],
+      "symbolic_mapping": [
+        "flaming hand → uncontrolled expression",
+        "open mouth → assertion of voice"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes internal conflict where expressive agency (voice) confronts self-destructive force (fire-hand), suggesting power dynamics within the self.",
+      "alternative_interpretations": [
+        "It may depict a literal act of pyrokinesis or a symbolic representation of anger without philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; interpretation relies on conventional iconography alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1800_P2",
+      "visual_anchors": [
+        "yellow-to-red gradient",
+        "black void background",
+        "silhouette isolation"
+      ],
+      "symbolic_mapping": [
+        "gradient → intensity scale",
+        "void → existential absence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The fading luminosity from face to hair edge evokes transience, while the lack of distinguishing features reduces identity to a generic, burning outline—questioning stable selfhood.",
+      "alternative_interpretations": [
+        "The gradient may simply reflect artistic lighting choice rather than symbolic decay."
+      ],
+      "limitations": [
+        "Color transitions could be aesthetic rather than representational; no temporal markers exist."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1800_P3",
+      "visual_anchors": [
+        "hand-flame adjacency",
+        "mouth oriented toward flame",
+        "shared color palette"
+      ],
+      "symbolic_mapping": [
+        "proximity of mouth and flame → speech as combustion",
+        "shared hue → unity of expression and consequence"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "knowledge_truth"
+      ],
+      "interpretation": "Speech directed at or emerging from fire implies that utterance carries inherent risk or transformative force, raising questions about responsibility in communication.",
+      "alternative_interpretations": [
+        "The composition may be purely formal, emphasizing symmetry and contrast without moral implication."
+      ],
+      "limitations": [
+        "No directional airflow, smoke, or interaction effects prove causal linkage between mouth and flame."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:46:38.301749+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a1596838-359b-924f-84cb-f7007a814b4a",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 946,
+        "total_tokens": 2479,
+        "completion_tokens_details": {
+          "text_tokens": 946
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701462150af1fae76e24f04",
+      "usage": {
+        "completion_tokens": 808,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2900,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3708
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0785",
+  "sample_id": "PHL1800_HL_0486",
+  "file_name": "PHL1800_HL_0486.png",
+  "batch_id": "B017",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one seated adult person wearing a black hat and dark clothing",
+  "captions": {
+    "scene": [
+      "A grassy outdoor area with bare deciduous trees and a large textured tree trunk to the left",
+      "Sunlight casts distinct shadows on the ground, indicating a clear day with low sun angle",
+      "A plastic container of red strawberries and a plastic water bottle rest on the grass near the person"
+    ],
+    "action": [
+      "The person is seated cross-legged on the grass, leaning against the tree trunk",
+      "The person holds an open laptop on their lap, screen facing upward and covered in colorful stickers",
+      "The person’s gaze is directed toward the camera, with mouth slightly open"
+    ],
+    "rationale": [
+      "The presence of bare branches and long shadows suggests late autumn or early spring, but season cannot be confirmed solely from foliage state",
+      "The laptop is visibly open and resting on the lap, implying active or recent use; however, no screen content is visible to confirm operation",
+      "The person wears a fedora-style hat and layered dark clothing, which may indicate personal style or weather adaptation, but intent or identity is not visually determinable"
+    ],
+    "object": [
+      "A silver laptop with a dense arrangement of multicolored stickers on its lid, including partially legible text such as 'IKEA', 'LOVE', and other indecipherable fragments",
+      "A transparent plastic bottle with blue cap and label reading 'VIO' in white uppercase letters",
+      "A clear plastic clamshell container holding approximately ten red strawberries with green calyxes",
+      "A black wide-brimmed hat worn by the person, with visible crease lines and slight wear",
+      "Dark denim jeans with visible seam stitching and scuffed black lace-up boots"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0785_P1",
+      "visual_anchors": [
+        "sticker-covered laptop lid",
+        "bare trees",
+        "strawberries in plastic container"
+      ],
+      "symbolic_mapping": [
+        "laptop stickers represent fragmented self-expression in digital culture",
+        "bare trees evoke cyclical impermanence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of personalized digital artifact (sticker-laden laptop) against natural cycles (bare trees) suggests tension between constructed identity and biological temporality.",
+      "alternative_interpretations": [
+        "The scene may simply depict a casual outdoor work or leisure break without symbolic intent."
+      ],
+      "limitations": [
+        "Sticker text is mostly illegible; no contextual signage confirms intended symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0785_P2",
+      "visual_anchors": [
+        "person seated alone against tree",
+        "open laptop",
+        "unopened water bottle and fruit nearby"
+      ],
+      "symbolic_mapping": [
+        "solitary posture amid nature signals withdrawal from social flux",
+        "laptop as mediator between individual and external world"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The individual’s physical isolation in a public park while engaged with a personal device reflects modern ambivalence toward social presence—simultaneously choosing solitude and maintaining digital connectivity.",
+      "alternative_interpretations": [
+        "The person may be waiting for someone, taking a lunch break, or simply enjoying quiet time without philosophical implication."
+      ],
+      "limitations": [
+        "No facial expression or body language definitively indicates intentionality regarding social withdrawal."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0785_P3",
+      "visual_anchors": [
+        "laptop with visible brand sticker 'IKEA'",
+        "strawberries in disposable packaging",
+        "worn boots and hat"
+      ],
+      "symbolic_mapping": [
+        "mass-produced consumer items contrast with organic produce",
+        "personal adornment (hat) coexists with utilitarian tech"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The coexistence of branded technology, commodified food, and individual attire illustrates how contemporary agency is exercised within constrained material ecosystems—choices are real but bounded by available artifacts.",
+      "alternative_interpretations": [
+        "These objects may reflect convenience, budget, or habit rather than deliberate philosophical positioning."
+      ],
+      "limitations": [
+        "Brand visibility does not prove conscious consumption critique; packaging could be standard local retail issue."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:16:22.134004+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f8ffb6db-d925-9ca9-9da0-5b0223ea8872",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 949,
+        "total_tokens": 1758,
+        "completion_tokens_details": {
+          "text_tokens": 949
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031604dafba9d94947433b",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1926,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2733
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

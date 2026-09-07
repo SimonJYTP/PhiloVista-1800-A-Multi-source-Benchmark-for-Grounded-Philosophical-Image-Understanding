@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0274",
+  "sample_id": "PHL1800_HL_0447",
+  "file_name": "PHL1800_HL_0447.png",
+  "batch_id": "B008",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of approximately six people gathered at night near a metal railing, some with bicycles and one holding a large inflatable object",
+  "captions": {
+    "scene": [
+      "Nighttime urban street scene illuminated by overhead streetlights, with multi-story buildings in the background and a dark foreground ground surface.",
+      "A metal railing runs horizontally across the midground; yellow caution tape is draped over it on the right side.",
+      "Multiple bicycles are parked or held near the railing; one person stands beside a bicycle on the far right wearing a helmet and a sleeveless top with visible text."
+    ],
+    "action": [
+      "One person holds a large cylindrical inflatable object (blue and white, resembling a soda can) above their head.",
+      "Two individuals appear to be embracing or closely interacting near the center of the group.",
+      "A person on the far right raises both hands toward their head while standing beside a bicycle."
+    ],
+    "rationale": [
+      "The presence of helmets, bicycles, and casual attire suggests participation in a cycling-related gathering, though no motion is captured.",
+      "The yellow tape and railing imply a temporary boundary or controlled access area, but no signage confirms its purpose.",
+      "The lighting creates strong shadows and silhouettes, limiting facial detail and precise identification of expressions or interactions."
+    ],
+    "object": [
+      "A large inflatable cylinder with blue and white coloring and partial white lettering (unreadable) is held aloft by one person.",
+      "At least four bicycles are visible: two in the left-midground leaning against the railing, one being straddled near center, and one on the far right with a rider standing beside it.",
+      "A black trash receptacle stands on the sidewalk near the railing’s left end.",
+      "A utility pole with attached wires appears on the far left edge of the frame.",
+      "The person on the far right wears a white sleeveless shirt with dark text reading 'VIVA' followed by an unreadable word or symbol."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0274_P1",
+      "visual_anchors": [
+        "yellow caution tape draped over railing",
+        "people clustered behind barrier",
+        "bicycles positioned as if paused"
+      ],
+      "symbolic_mapping": [
+        "caution tape as physical manifestation of imposed constraint",
+        "group proximity despite barrier suggesting negotiated freedom"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where collective presence persists within externally demarcated limits, illustrating how social agency may operate not by rejecting boundaries but by inhabiting them collectively.",
+      "alternative_interpretations": [
+        "The tape may simply mark a temporary construction zone with no symbolic intent; the group is just waiting for an event to begin."
+      ],
+      "limitations": [
+        "No signage or context confirms the tape’s intended meaning; its placement could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0274_P2",
+      "visual_anchors": [
+        "multiple helmets worn",
+        "bicycles as primary transport objects",
+        "nighttime setting with artificial light"
+      ],
+      "symbolic_mapping": [
+        "helmets as markers of preparedness and shared risk",
+        "bicycles as tools enabling mobility outside motorized infrastructure"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The ensemble of human bodies, protective gear, and non-motorized vehicles reflects a mode of embodied labor or leisure that resists automation, foregrounding human-powered agency amid urban infrastructure.",
+      "alternative_interpretations": [
+        "Helmets and bikes indicate recreational activity only; no labor is evident."
+      ],
+      "limitations": [
+        "No visible tools, uniforms, or work-related actions confirm labor; helmets may be for safety in any cycling context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0274_P3",
+      "visual_anchors": [
+        "person holding oversized inflatable can",
+        "crowd orientation toward center",
+        "illuminated background buildings contrasting with dark foreground"
+      ],
+      "symbolic_mapping": [
+        "inflatable object as parody or amplification of consumer iconography",
+        "group focus suggesting shared attention or ritual"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The gathering coalesces around a deliberately exaggerated commercial symbol, revealing how social existence can be enacted through shared irony or reappropriation of mass-media imagery in public space.",
+      "alternative_interpretations": [
+        "The object is merely a prop for a photo or celebration with no critical intent."
+      ],
+      "limitations": [
+        "The text on the inflatable is unreadable; intent cannot be confirmed from form alone."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:27:57.699860+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-320223eb-005b-90e5-8ab3-46f3725e0c40",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 996,
+        "total_tokens": 1765,
+        "completion_tokens_details": {
+          "text_tokens": 996
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022745dd8407bb241d4732",
+      "usage": {
+        "completion_tokens": 860,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1930,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2790
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

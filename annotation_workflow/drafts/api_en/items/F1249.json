@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1249",
+  "sample_id": "PHL1800_IRFL_0191",
+  "file_name": "PHL1800_IRFL_0191.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four visible human figures in a courtroom-like setting",
+  "captions": {
+    "scene": [
+      "Wood-paneled room with an elevated bench, American flag on left wall, and two tables in foreground",
+      "A figure in black robe sits behind a wooden bench; another in light blue uniform stands to the left of the bench",
+      "Two figures face the bench: one in dark jacket (back view, left foreground), one in gray jacket (back view, right foreground)"
+    ],
+    "action": [
+      "The robed figure is seated with hands near stacked documents on the bench",
+      "The uniformed figure stands upright with hands at sides, facing forward",
+      "The two foreground figures are stationary, backs toward camera, oriented toward the bench"
+    ],
+    "rationale": [
+      "The presence of a raised bench, flag, and formal attire suggests a legal proceeding context, though no signage confirms this",
+      "The uniformed figure’s posture and attire resemble standard law enforcement or court officer dress, but insignia are indistinct",
+      "The image resolution is low and motion-blurred, limiting certainty about facial features, exact clothing details, or document content"
+    ],
+    "object": [
+      "An American flag hangs vertically on the left wall, partially visible with red and white stripes and blue field",
+      "A wooden bench with herringbone grain pattern occupies the center background, supporting stacked dark-bound books or files",
+      "A bald figure wearing a black robe sits behind the bench, with visible neck and upper torso",
+      "A mustachioed figure in light blue short-sleeved shirt, dark tie, and dark trousers stands left of the bench",
+      "Two foreground figures wear jackets (dark and gray) and face away from the camera toward the bench; neither face is visible"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1249_P1",
+      "visual_anchors": [
+        "robed figure seated at elevated bench",
+        "uniformed figure standing at attention",
+        "two figures facing bench from lower level"
+      ],
+      "symbolic_mapping": [
+        "elevated bench → institutional authority",
+        "standing posture → subordination or duty"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The spatial hierarchy—raised bench, standing officer, seated observers—visually enacts a structure of delegated authority and social positioning within a formal institution.",
+      "alternative_interpretations": [
+        "This may be a staged reenactment or theatrical set rather than an actual legal proceeding."
+      ],
+      "limitations": [
+        "No visible emblems, signage, or procedural actions confirm institutional function; staging cannot be ruled out."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1249_P2",
+      "visual_anchors": [
+        "back-facing foreground figures",
+        "uniformed figure with mustache",
+        "bald robed figure"
+      ],
+      "symbolic_mapping": [
+        "anonymous backs → obscured individual agency",
+        "distinctive facial hair vs. baldness → contrast in visibility/identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visual emphasis on backs and partial faces highlights how identity is mediated through appearance and position rather than direct recognition, suggesting constraints on self-presentation within formal settings.",
+      "alternative_interpretations": [
+        "The back views may simply reflect camera angle choice, not intentional symbolism."
+      ],
+      "limitations": [
+        "No facial expressions or gestures are visible to confirm intent behind posture or orientation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1249_P3",
+      "visual_anchors": [
+        "stacked documents on bench",
+        "wood-paneled walls",
+        "static postures of all figures"
+      ],
+      "symbolic_mapping": [
+        "documents → codified knowledge",
+        "stillness → suspension of action or judgment"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The frozen tableau—unmoving figures, orderly documents, enduring wood—evokes a moment suspended between decision and consequence, where truth is held in abeyance by institutional form.",
+      "alternative_interpretations": [
+        "The stillness may result from video frame capture rather than deliberate compositional choice."
+      ],
+      "limitations": [
+        "Temporal context is absent; the image is a single frame with no motion evidence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:08:02.962765+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c1f6116a-b40e-9946-b6e1-04ff71033172",
+      "usage": {
+        "prompt_tokens": 674,
+        "completion_tokens": 941,
+        "total_tokens": 1615,
+        "completion_tokens_details": {
+          "text_tokens": 941
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 167,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070407437f748bb19e724529",
+      "usage": {
+        "completion_tokens": 800,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1746,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2546
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

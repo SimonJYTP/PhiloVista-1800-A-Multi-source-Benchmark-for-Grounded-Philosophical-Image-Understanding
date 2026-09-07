@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0773",
+  "sample_id": "PHL1800_HL_0307",
+  "file_name": "PHL1800_HL_0307.png",
+  "batch_id": "B017",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two cross-country skiers in racing bibs, foreground and midground",
+  "captions": {
+    "scene": [
+      "Snow-covered ground with scattered evergreen trees and bare deciduous shrubs in the background",
+      "A group of spectators and participants standing or moving on snow near a ski trail",
+      "Multiple pairs of skis and poles visible on snow; some individuals wear winter sport attire"
+    ],
+    "action": [
+      "The foreground skier (bib 350) leans forward, poles planted, left ski lifted mid-stride",
+      "The midground skier glides forward with poles held low, body upright",
+      "Several background figures stand still or walk slowly; one person holds a camera"
+    ],
+    "rationale": [
+      "Foreground skier’s posture and pole placement suggest active propulsion, not static pose",
+      "Midground skier’s parallel ski orientation and arm position indicate forward motion rather than stopping",
+      "Presence of multiple bib numbers and race-style gear implies organized event, though no finish line or signage confirms it"
+    ],
+    "object": [
+      "The foreground skier wears a blue long-sleeve top with white bib reading '350' and 'METHOW VALLEY', gray pants, black gloves, and dark goggles.",
+      "The midground skier wears a black-and-purple full-body suit with white bib (number unreadable), green headband, and black gloves.",
+      "At least 15 distinct individuals are visible: 2 racers, 10+ spectators/participants in varied winter clothing, and 3 partially obscured figures near left edge.",
+      "Two sets of yellow-tipped skis are clearly visible under the racers; additional skis lie on snow behind them.",
+      "A red rectangular object lies on snow near center-left, possibly a marker or discarded item; its function is unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0773_P1",
+      "visual_anchors": [
+        "bib 350",
+        "bib 1",
+        "parallel ski tracks"
+      ],
+      "symbolic_mapping": [
+        "numbered bibs represent assigned roles within collective structure",
+        "parallel tracks suggest shared path despite individual distinction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The numbered bibs and synchronized motion evoke how individual identity is both asserted and constrained within institutional frameworks—each racer is uniquely identified yet moves within a standardized course and ruleset.",
+      "alternative_interpretations": [
+        "The bibs simply denote registration numbers for timing and organization, with no deeper social implication."
+      ],
+      "limitations": [
+        "No visible signage, logos, or official markers confirm institutional context beyond visual resemblance to racing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0773_P2",
+      "visual_anchors": [
+        "foreground skier’s strained expression",
+        "midground skier’s focused gaze",
+        "snow-covered terrain"
+      ],
+      "symbolic_mapping": [
+        "physical exertion against resistance mirrors existential effort",
+        "unbroken snow ahead suggests open future"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The skiers’ forward momentum across an undifferentiated snowy expanse reflects the human condition of navigating time: each stride is a deliberate choice within finite endurance, where the horizon remains undefined but movement persists.",
+      "alternative_interpretations": [
+        "The expressions reflect momentary physical fatigue during sport, not philosophical contemplation."
+      ],
+      "limitations": [
+        "Facial expressions are partially obscured by goggles and distance; emotional state cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0773_P3",
+      "visual_anchors": [
+        "spectators clustered at edge",
+        "racers isolated on trail",
+        "shared snow surface"
+      ],
+      "symbolic_mapping": [
+        "spectators as witnesses construct meaning through observation",
+        "shared medium (snow) enables both competition and communion"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The separation between active participants and observers highlights how truth in embodied practice emerges only through participation, while the uniform snow surface simultaneously imposes constraint (friction, terrain) and enables freedom (movement, direction).",
+      "alternative_interpretations": [
+        "Spectators are merely waiting their turn or watching friends; no epistemic hierarchy is intended."
+      ],
+      "limitations": [
+        "No eye contact, gestures, or interaction between racers and spectators is visible to confirm witnessing dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of background individuals (14 vs. actual ~15+); midground skier bib number misstated (1 vs. actual unreadable); red object description lacks clarity on visibility; philosophy interpretations include unsupported claims about institutional context and existential effort."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:15:45.070828+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0ca049dc-5d95-975b-b63a-59d0d2c445df",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 981,
+        "total_tokens": 1750,
+        "completion_tokens_details": {
+          "text_tokens": 981
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070315180e2abf0393194efb",
+      "usage": {
+        "completion_tokens": 966,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1905,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2871
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

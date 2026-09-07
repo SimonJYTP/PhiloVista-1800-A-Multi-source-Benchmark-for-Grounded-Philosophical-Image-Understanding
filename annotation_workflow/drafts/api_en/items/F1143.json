@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1143",
+  "sample_id": "PHL1800_HL_0084",
+  "file_name": "PHL1800_HL_0084.png",
+  "batch_id": "B024",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a human hand holding a remote control",
+  "captions": {
+    "scene": [
+      "A close-up of a hand resting on a thick, textured gray knitted blanket with soft ambient lighting.",
+      "The background is a plain, warm-toned wall; a small red object appears partially visible on the right edge.",
+      "The composition is shallow-focused, emphasizing the hand and remote while blurring surrounding elements."
+    ],
+    "action": [
+      "The hand grips a silver remote control with thumb positioned over buttons and fingers curled beneath.",
+      "The remote is held at an angle, tilted upward and slightly away from the viewer.",
+      "The person appears to be seated or reclining, as indicated by the draped blanket and relaxed hand posture."
+    ],
+    "rationale": [
+      "The remote’s orientation and thumb placement suggest imminent or recent button interaction, though no button is visibly depressed.",
+      "The blanket’s heavy knit texture and coverage imply a domestic, restful setting, but no furniture or room features confirm this.",
+      "The red object on the right is only partially visible and lacks defining features, so its identity cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "A silver-colored plastic remote control with a rectangular body, rounded edges, and multiple black buttons arranged in rows; some colored buttons (red, green, yellow, blue) are visible near the bottom right.",
+      "A human right hand with light skin tone, short neatly trimmed fingernails, and visible knuckles and finger joints gripping the remote.",
+      "A thick, chunky-knit woolen blanket in muted gray, featuring prominent cable and ribbed patterns, draped over the lap or torso area.",
+      "A dark sleeve, likely black fabric, covering the forearm and wrist, ending just below the hand’s base.",
+      "A white-on-black numerical indicator '5 / 50' centered at the bottom edge of the image frame, appearing as an overlay rather than part of the scene."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1143_P1",
+      "visual_anchors": [
+        "hand gripping remote",
+        "knitted blanket",
+        "overlay text '5 / 50'"
+      ],
+      "symbolic_mapping": [
+        "the remote as mediator of agency",
+        "the blanket as symbol of comfort or enclosure"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The act of holding a remote—simultaneously enabling selection and requiring physical engagement—embodies the tension between autonomous choice and technological constraint within routine domestic life.",
+      "alternative_interpretations": [
+        "This is simply a candid moment of leisure without symbolic intent; the remote is a tool, not a metaphor."
+      ],
+      "limitations": [
+        "No facial expression, environment context, or behavioral sequence is visible to confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1143_P2",
+      "visual_anchors": [
+        "gray knitted blanket",
+        "hand partially obscured by fabric",
+        "soft focus background"
+      ],
+      "symbolic_mapping": [
+        "blanket as veil between self and world",
+        "hand emerging as sole point of active interface"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The partial concealment of the body by the blanket, with only the hand exposed and functional, suggests a mediated social presence where identity is expressed solely through instrumental action rather than full embodiment.",
+      "alternative_interpretations": [
+        "The blanket is merely functional warmth; the hand is visible because it is actively using the remote, not for symbolic reasons."
+      ],
+      "limitations": [
+        "The image does not show whether the person is alone, interacting, or observed, so claims about social presence rely on inference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1143_P3",
+      "visual_anchors": [
+        "overlay '5 / 50'",
+        "remote control",
+        "static hand position"
+      ],
+      "symbolic_mapping": [
+        "numerical overlay as external framing of experience",
+        "remote as conduit for curated content"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The superimposed '5 / 50' imposes an artificial progression onto a still moment, evoking how digital interfaces structure perception of time and knowledge as segmented, quantifiable units rather than continuous experience.",
+      "alternative_interpretations": [
+        "The '5 / 50' is a file index or slide counter unrelated to the depicted scene and carries no philosophical weight."
+      ],
+      "limitations": [
+        "The origin and purpose of the overlay text are unknown; it may be post-production metadata with no intended meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:55:03.240920+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a95dc6f0-de72-9262-804a-42fd866b8b9a",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1011,
+        "total_tokens": 1820,
+        "completion_tokens_details": {
+          "text_tokens": 1011
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070354481b5c445034624e47",
+      "usage": {
+        "completion_tokens": 869,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1983,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2852
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

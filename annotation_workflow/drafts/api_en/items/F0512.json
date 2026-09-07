@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0512",
+  "sample_id": "PHL1800_HAIV_0520",
+  "file_name": "PHL1800_HAIV_0520.png",
+  "batch_id": "B012",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a leopard-headed humanoid runner in the foreground",
+  "captions": {
+    "scene": [
+      "A bright yellow track with black lane lines under a pale blue sky, populated by numerous stylized runners.",
+      "A dense crowd of indistinct figures in the background, rendered with loose brushwork and overlapping forms.",
+      "The foreground features exaggerated anatomical proportions and distorted facial features on the lead runner."
+    ],
+    "action": [
+      "The leopard-headed figure is mid-stride with left leg forward, right arm bent, mouth open wide showing teeth and tongue.",
+      "Multiple other runners are depicted in various running postures, some with arms raised or legs extended.",
+      "One runner behind the lead figure wears an orange suit with white stripe and gray shoes; another wears red top and white shorts."
+    ],
+    "rationale": [
+      "The leopard head with spots and open mouth suggests a non-human or hybrid entity rather than a human in costume, due to integrated skin texture and lack of visible mask seams.",
+      "The text 'VKOLI' on the bib appears intentionally distorted or stylized, not standard typography, indicating possible artistic manipulation rather than real event branding.",
+      "The background figures lack individual detail and merge into a mass, suggesting symbolic representation rather than realistic depiction of spectators or competitors."
+    ],
+    "object": [
+      "The lead figure has a spotted feline head with large white eyes, exposed teeth, and a protruding orange tongue, attached to a muscular human torso and limbs.",
+      "The lead figure wears a white sleeveless athletic top with a rectangular bib displaying the characters 'VKOLI' in black uppercase letters.",
+      "The lead figure’s lower body is covered in leopard-spot patterned skin extending from the waist to the calves, with gray running shoes on both feet.",
+      "At least 12 distinct runner silhouettes are visible behind the lead figure, varying in color (red, orange, gray, brown) and posture, though many overlap and blur together.",
+      "Black parallel lines on the yellow ground indicate running lanes, with one vertical black line near the lead runner’s right foot suggesting a starting or finishing marker."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0512_P1",
+      "visual_anchors": [
+        "leopard-spotted skin covering human form",
+        "open mouth revealing teeth and tongue",
+        "bib with distorted text 'VKOLI'"
+      ],
+      "symbolic_mapping": [
+        "hybrid anatomy → blurring of natural/artificial boundaries",
+        "distorted text → instability of identity markers"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image interrogates the constructed nature of identity through bodily hybridity and unstable signage, suggesting selfhood as a contested performance rather than fixed essence.",
+      "alternative_interpretations": [
+        "It may simply depict a fantasy race scene with animal-headed athletes, without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No contextual cues confirm intentional symbolism; distortion could be stylistic rather than conceptual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0512_P2",
+      "visual_anchors": [
+        "crowd of indistinct runners merging into background",
+        "uniform yellow field",
+        "repetitive motion lines"
+      ],
+      "symbolic_mapping": [
+        "mass of blurred figures → erasure of individuality in collective action"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The homogenized swarm of runners against a monochrome field visualizes the tension between communal participation and loss of personal agency within structured competition.",
+      "alternative_interpretations": [
+        "The background may reflect painterly technique emphasizing motion rather than social commentary."
+      ],
+      "limitations": [
+        "Figure count and detail are too low to confirm intentional depersonalization; could be aesthetic economy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0512_P3",
+      "visual_anchors": [
+        "exaggerated stride with lifted heel",
+        "forward lean of torso",
+        "black lane lines receding into distance"
+      ],
+      "symbolic_mapping": [
+        "dynamic forward motion → irreversible temporal progression"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The relentless forward momentum across marked lanes evokes the inevitability of time’s passage and the constrained pathways available within life’s race.",
+      "alternative_interpretations": [
+        "This is a literal depiction of a sprint with emphasis on speed and posture, not metaphor."
+      ],
+      "limitations": [
+        "No explicit temporal indicators (e.g., clocks, aging) are present; motion alone does not necessitate temporal philosophy."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:53:01.456792+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-32f62fe6-1f64-93c0-a218-54c1ec182245",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1002,
+        "total_tokens": 2535,
+        "completion_tokens_details": {
+          "text_tokens": 1002
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025244ff8647d7c5484b13",
+      "usage": {
+        "completion_tokens": 865,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2962,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3827
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

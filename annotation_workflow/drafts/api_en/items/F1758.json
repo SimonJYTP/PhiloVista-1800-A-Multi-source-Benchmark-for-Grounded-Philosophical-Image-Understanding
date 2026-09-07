@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1758",
+  "sample_id": "PHL1800_HL_0383",
+  "file_name": "PHL1800_HL_0383.png",
+  "batch_id": "B036",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young girl in a floral dress standing beside a woman holding a pink phone",
+  "captions": {
+    "scene": [
+      "A crowded outdoor paved area with multiple adults and children, including a small monkey on a leash in the lower-left foreground.",
+      "A group of people gathered around a street performer or attraction; some are observing, one is photographing with a smartphone.",
+      "A mix of casual summer clothing: plaid shorts, floral dresses, tank tops, sandals, and handbags; a manhole cover is visible on the ground."
+    ],
+    "action": [
+      "The woman in sunglasses holds a pink smartphone horizontally, aiming it toward the left side of the frame, likely recording or photographing.",
+      "The young girl in the red-and-yellow floral dress stands upright, looking toward the left with a neutral expression, her hands at her sides.",
+      "A small monkey wearing a blue vest holds a stick or rod vertically while being held by a leash attached to its collar."
+    ],
+    "rationale": [
+      "The woman’s posture, grip on the phone, and gaze direction suggest she is actively capturing visual content rather than merely holding the device.",
+      "The girl’s fixed gaze and lack of motion imply attentiveness to something outside the frame, possibly the monkey or a performance.",
+      "The monkey’s vest and leash indicate human management, but whether it is part of a performance or pet walk cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "A young girl with dark curly hair wears a sleeveless red dress with yellow and green floral patterns and white-strapped sandals.",
+      "A woman with long dark hair, sunglasses, and a white tank top holds a black quilted handbag with gold hardware and a pink smartphone.",
+      "A small brown monkey wears a light-blue patterned vest and holds a thin wooden stick vertically in its right hand.",
+      "A man in the background wears a black t-shirt under a red open jacket, gray-and-white plaid shorts, and black sneakers with green accents.",
+      "A child in a green shirt and blue shorts stands partially visible on the far left, holding a thin stick that extends toward the monkey."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1758_P1",
+      "visual_anchors": [
+        "monkey in vest",
+        "leash",
+        "child holding stick"
+      ],
+      "symbolic_mapping": [
+        "the monkey’s attire and restraint symbolize commodification of nonhuman life for human entertainment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image captures a moment where interspecies relations are mediated through human control and presentation, raising questions about agency and spectacle in public space.",
+      "alternative_interpretations": [
+        "The monkey may simply be a companion animal in an urban setting, with no performative intent implied by the visual evidence alone."
+      ],
+      "limitations": [
+        "No signage, audience behavior, or explicit performance cues confirm entertainment context; vest and leash could serve practical purposes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1758_P2",
+      "visual_anchors": [
+        "woman photographing with phone",
+        "girl watching intently",
+        "crowded background"
+      ],
+      "symbolic_mapping": [
+        "the act of recording transforms lived experience into mediated representation, altering presence and attention"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The simultaneous witnessing and documentation reflect a modern tension between embodied participation and archival capture—where seeing becomes saving, and immediacy yields to potential future recall.",
+      "alternative_interpretations": [
+        "The woman may be texting or checking messages; her orientation does not definitively prove active recording."
+      ],
+      "limitations": [
+        "Phone screen is not visible; orientation alone cannot confirm recording versus other usage."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1758_P3",
+      "visual_anchors": [
+        "floral dress",
+        "sunglasses",
+        "handbag"
+      ],
+      "symbolic_mapping": [
+        "clothing choices signal individual positioning within a shared public milieu without verbal communication"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Attire functions as nonverbal semiosis in a transient social aggregation—each outfit asserts a provisional identity amid collective anonymity, illustrating how appearance sustains coexistence without consensus.",
+      "alternative_interpretations": [
+        "Clothing reflects weather and convenience only; no intentional signaling is evident."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or interactions confirm intentional identity projection; style may be incidental."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:09:16.687000+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fad467a9-a718-9cd3-878f-ec0e52cb25da",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1000,
+        "total_tokens": 1769,
+        "completion_tokens_details": {
+          "text_tokens": 1000
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070508575eb8e04679534b49",
+      "usage": {
+        "completion_tokens": 855,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1921,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2776
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

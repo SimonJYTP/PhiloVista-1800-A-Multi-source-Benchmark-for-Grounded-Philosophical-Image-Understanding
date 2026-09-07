@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0335",
+  "sample_id": "PHL1800_IRFL_0330",
+  "file_name": "PHL1800_IRFL_0330.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male",
+  "captions": {
+    "scene": [
+      "A plain light-gray studio background with even lighting",
+      "No furniture, decor, or environmental context visible",
+      "The subject occupies the central vertical space of the frame"
+    ],
+    "action": [
+      "The man forms a circular hand gesture near his mouth with both hands",
+      "His mouth is open wide and teeth are visible, lips pulled back",
+      "His eyes are narrowed and directed toward the camera"
+    ],
+    "rationale": [
+      "The hand gesture resembles shouting through a megaphone, but no sound source is visible",
+      "Facial expression suggests high arousal, though exact emotion cannot be determined from visual alone",
+      "Clothing is monochromatic black; no branding or distinguishing marks are discernible"
+    ],
+    "object": [
+      "The man has short, wavy brown hair and light facial stubble.",
+      "He wears a black long-sleeved mock-neck shirt with no visible logos or patterns.",
+      "He wears black trousers that appear smooth and non-reflective.",
+      "His hands are positioned in front of his face, fingers interlaced loosely to form an oval aperture.",
+      "A semi-transparent watermark reading 'Colourbox' is overlaid across the torso region."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0335_P1",
+      "visual_anchors": [
+        "open mouth",
+        "hand-formed aperture",
+        "direct gaze"
+      ],
+      "symbolic_mapping": [
+        "the hand aperture symbolizes mediated communication",
+        "the open mouth represents unfiltered expression"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The gesture and expression together evoke the tension between raw utterance and socially filtered speech, questioning whether authenticity requires amplification or distortion.",
+      "alternative_interpretations": [
+        "The pose may simply replicate a stock photo convention for 'excitement' or 'announcement' without deeper intent."
+      ],
+      "limitations": [
+        "No linguistic content or contextual cues confirm communicative intent; the gesture could be purely performative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0335_P2",
+      "visual_anchors": [
+        "monochrome black attire",
+        "neutral background",
+        "isolated figure"
+      ],
+      "symbolic_mapping": [
+        "uniform color suggests erasure of individual markers",
+        "isolation emphasizes self as sole referent"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The absence of distinguishing features alongside the expressive gesture highlights how identity is performed rather than inherent—appearance becomes a site of deliberate construction under constraint.",
+      "alternative_interpretations": [
+        "Black clothing was likely chosen for aesthetic contrast against the gray backdrop, not symbolic reasons."
+      ],
+      "limitations": [
+        "Clothing choice could be dictated by studio direction rather than personal statement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0335_P3",
+      "visual_anchors": [
+        "watermark overlay",
+        "studio lighting",
+        "posed stance"
+      ],
+      "symbolic_mapping": [
+        "watermark asserts ownership over the image",
+        "posed stance signals awareness of being observed"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The subject’s animated performance occurs within a framework of commercial image production, revealing how self-presentation is shaped by external control and commodification.",
+      "alternative_interpretations": [
+        "The watermark is incidental metadata and does not affect the subject’s intended expression."
+      ],
+      "limitations": [
+        "The watermark is a post-production addition and not part of the original scene captured."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:34:31.549300+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8928cbb3-17da-9298-91a1-7dec2bfb23c1",
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 791,
+        "total_tokens": 1725,
+        "completion_tokens_details": {
+          "text_tokens": 791
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 427,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023419dedaf9bab21340c2",
+      "usage": {
+        "completion_tokens": 649,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1928,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2577
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

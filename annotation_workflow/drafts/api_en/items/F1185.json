@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1185",
+  "sample_id": "PHL1800_HAIV_0459",
+  "file_name": "PHL1800_HAIV_0459.png",
+  "batch_id": "B025",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a desktop computer system with monitor, base unit, and mouse",
+  "captions": {
+    "scene": [
+      "A stylized illustration of a computer setup on a pale yellow surface against a light blue background with vertical darker blue stripes.",
+      "The computer rests partially on a white cloth draped over the surface, with a blue-and-gray wired mouse extending to the left.",
+      "The monitor displays an abstract blue gradient with a small white rectangle in the upper-right quadrant."
+    ],
+    "action": [
+      "The monitor is powered on, showing a graphical display with no discernible text or interface elements.",
+      "A black cable connects the base unit to the mouse, indicating a physical link between components.",
+      "The base unit features four illuminated indicator lights: three blue and one green, arranged horizontally on its front panel."
+    ],
+    "rationale": [
+      "The presence of illuminated indicators suggests the base unit is active or in standby mode, though exact state cannot be confirmed without labels.",
+      "The white rectangle on screen may be a placeholder or UI element, but its function is indeterminate due to lack of context or legible text.",
+      "The cloth beneath the computer implies intentional placement or protection, yet its purpose (e.g., cleaning, decoration, insulation) is not visually verifiable."
+    ],
+    "object": [
+      "The monitor has a thick brown bezel, a circular logo centered below the screen, and a small red dot near the top-right corner of the display area.",
+      "The base unit is gray, rectangular, and contains two black circular ports or buttons on the left side of its front face, plus four square indicator lights to their right.",
+      "The mouse is blue on top with a gray underside and a black cord extending from its rear.",
+      "A white cloth with soft folds lies under and around the base unit, partially covering the surface.",
+      "The screen shows layered blue shapes resembling waves or curves, with a blank white rectangle overlapping the upper-right portion of the blue field."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1185_P1",
+      "visual_anchors": [
+        "blue abstract screen",
+        "white rectangle overlay",
+        "circular logo"
+      ],
+      "symbolic_mapping": [
+        "the white rectangle as a void or placeholder for meaning",
+        "the blue gradient as undifferentiated potential"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The blank rectangle imposed on an otherwise coherent visual field suggests epistemic incompleteness—truth as contingent upon what is deliberately omitted or unrendered.",
+      "alternative_interpretations": [
+        "It is a generic GUI mockup with a placeholder window, common in software design illustrations."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; the rectangle could be purely decorative or technical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1185_P2",
+      "visual_anchors": [
+        "wired mouse",
+        "cable connecting to base unit",
+        "physical cloth beneath"
+      ],
+      "symbolic_mapping": [
+        "the wire as material constraint on agency",
+        "the cloth as mediation between machine and environment"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visible tethering of input device to processing unit, combined with the protective cloth, evokes the entanglement of human labor with technological infrastructure—freedom bounded by physical dependency.",
+      "alternative_interpretations": [
+        "The setup reflects standard ergonomic or aesthetic arrangement, with no symbolic intent."
+      ],
+      "limitations": [
+        "No human operator is present; the interpretation assumes intentionality not evident in the image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1185_P3",
+      "visual_anchors": [
+        "four indicator lights (three blue, one green)",
+        "uniform front panel",
+        "symmetrical layout"
+      ],
+      "symbolic_mapping": [
+        "green light as singularity amid uniformity",
+        "lights as markers of internal state inaccessible externally"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The asymmetry of the green light among blue ones may signify a deviation or exception within a system of conformity, hinting at latent conflict or individuality within structured social or technical order.",
+      "alternative_interpretations": [
+        "The lights indicate standard hardware status (e.g., power, disk activity, network), with color coding following industry conventions."
+      ],
+      "limitations": [
+        "Colors are not labeled; green could denote normal operation rather than anomaly."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:59:25.949952+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1a58da25-5a31-9d50-a1f1-439ed315a17a",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 983,
+        "total_tokens": 2516,
+        "completion_tokens_details": {
+          "text_tokens": 983
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035914357857e641694588",
+      "usage": {
+        "completion_tokens": 844,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2939,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3783
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

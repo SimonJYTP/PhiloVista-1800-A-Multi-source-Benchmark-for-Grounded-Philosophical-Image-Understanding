@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0098",
+  "sample_id": "PHL1800_HL_0459",
+  "file_name": "PHL1800_HL_0459.png",
+  "batch_id": "B004",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young child seated in an orange construction vehicle cab",
+  "captions": {
+    "scene": [
+      "An orange open-cab construction vehicle interior with a black seat and steering wheel, viewed from a front-left angle.",
+      "Outside the cab, green trees and a white truck are visible through transparent windows under an overcast sky.",
+      "The vehicle’s interior includes metal framing, control panels with unreadable labels, and a yellow hard hat on the child’s head."
+    ],
+    "action": [
+      "The child sits upright on a black upholstered seat with feet resting on foot pedals or a platform.",
+      "The child’s right arm is extended forward with an open hand; the left arm is bent at the elbow near the torso.",
+      "The child gazes toward the right side of the frame, with a slightly open mouth and eyes focused outside the cab."
+    ],
+    "rationale": [
+      "The child wears a yellow hard hat, suggesting simulated occupational role-play rather than actual operation.",
+      "The vehicle appears stationary: no motion blur, no operator visible, and the child’s posture lacks operational tension.",
+      "The child’s clothing (striped button-down shirt, jeans, sneakers) is casual, inconsistent with standard worksite PPE beyond the hat."
+    ],
+    "object": [
+      "A child with light skin and short brown hair wears a bright yellow hard hat that sits loosely on the head.",
+      "The child wears a light blue and white vertically striped long-sleeve button-down shirt with a collar and visible buttons.",
+      "The child wears faded blue denim jeans with a small embroidered patch on the right knee depicting a cartoon figure.",
+      "The child wears multicolored athletic shoes with gray uppers, yellow laces, black soles, and orange tread accents.",
+      "The vehicle cab has orange-painted steel framing, a black multi-spoke steering wheel, and a black padded seat with visible stitching."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0098_P1",
+      "visual_anchors": [
+        "yellow hard hat",
+        "child’s extended hand",
+        "orange cab structure"
+      ],
+      "symbolic_mapping": [
+        "hard hat as proxy for adult authority",
+        "extended hand as gesture of tentative agency"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of protective gear worn playfully against the child’s untrained posture evokes the formation of identity through imitation—where appearance precedes competence and choice emerges within constrained environments.",
+      "alternative_interpretations": [
+        "The scene simply documents a child exploring machinery during a public demonstration or family outing."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intent; the hard hat may be decorative rather than symbolic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0098_P2",
+      "visual_anchors": [
+        "black steering wheel",
+        "foot pedals",
+        "child’s seated position"
+      ],
+      "symbolic_mapping": [
+        "steering wheel as locus of control",
+        "pedals as interface between body and machine"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The child occupies a space designed for labor-intensive operation, yet remains physically incapable of controlling the machine—highlighting how technology mediates freedom through access, training, and embodied capability.",
+      "alternative_interpretations": [
+        "The pedals and wheel are non-functional props for photo opportunities at a construction-themed event."
+      ],
+      "limitations": [
+        "It is not visible whether pedals or steering wheel are connected to functional mechanisms."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0098_P3",
+      "visual_anchors": [
+        "transparent cab windows",
+        "visible trees and truck outside",
+        "child’s gaze direction"
+      ],
+      "symbolic_mapping": [
+        "window as boundary between imagined role and external reality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The child’s outward gaze through the window suggests awareness of a world beyond the simulated role, implying that social existence involves navigating between internal projection and external observation—a nascent grasp of truth as relational rather than absolute.",
+      "alternative_interpretations": [
+        "The child is looking at something visually interesting outside, such as movement or color, with no cognitive layer implied."
+      ],
+      "limitations": [
+        "Gaze direction alone cannot confirm cognitive processing or intentionality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:59:09.625414+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cfd09bcc-c40c-9052-807f-8092568aae42",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 940,
+        "total_tokens": 1641,
+        "completion_tokens_details": {
+          "text_tokens": 940
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015850aa3e8be8d2c74cf8",
+      "usage": {
+        "completion_tokens": 813,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1763,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2576
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

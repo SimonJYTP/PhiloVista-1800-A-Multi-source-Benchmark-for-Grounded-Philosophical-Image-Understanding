@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1020",
+  "sample_id": "PHL1800_HL_0075",
+  "file_name": "PHL1800_HL_0075.png",
+  "batch_id": "B022",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "an adult male and a toddler seated together on a dark sofa",
+  "captions": {
+    "scene": [
+      "A dimly lit indoor living room with a striped rug, a dark sectional sofa, and a child-sized striped armchair.",
+      "A white plastic step stool with blue patterned top sits beside the sofa near the adult's bare foot.",
+      "A crumpled white cloth rests on the backrest of the sofa behind the adult."
+    ],
+    "action": [
+      "The adult holds a white Nintendo Wii remote in his right hand while supporting the toddler with his left arm.",
+      "The toddler stands barefoot on the rug, facing forward, with both hands resting on the remote held by the adult.",
+      "Both individuals gaze toward the right side of the frame, outside the visible area."
+    ],
+    "rationale": [
+      "The adult’s posture and hand placement suggest he is guiding or sharing control of the controller with the toddler.",
+      "The toddler’s upright stance and proximity to the controller indicate active participation rather than passive observation.",
+      "The absence of visible screens or other players leaves the nature of the activity (e.g., gaming, demonstration) uncertain."
+    ],
+    "object": [
+      "A white short-sleeved t-shirt worn by the adult, with visible seam lines and slight wrinkling at the sleeve hem.",
+      "A white sleeveless onesie worn by the toddler, featuring a rounded neckline and no visible logos or patterns.",
+      "A white Nintendo Wii remote with black buttons and a wrist strap, held horizontally across the toddler’s midsection.",
+      "A child-sized upholstered armchair with navy-and-white horizontal stripes and orange piping along seams.",
+      "A rectangular rug with alternating wide beige and narrow dark brown vertical stripes, partially under the sofa and chair."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1020_P1",
+      "visual_anchors": [
+        "adult’s hand over toddler’s hands on controller",
+        "shared grip on remote",
+        "toddler’s focused gaze"
+      ],
+      "symbolic_mapping": [
+        "shared grip → intergenerational transmission of skill or culture"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The overlapping hands on the controller visually enact a moment of mediated social continuity—where knowledge or practice is transferred not through speech but through embodied co-action.",
+      "alternative_interpretations": [
+        "This may simply be a practical arrangement to prevent the toddler from dropping the controller."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues confirm intent or emotional valence; the interaction could be routine or incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1020_P2",
+      "visual_anchors": [
+        "bare feet on rug",
+        "casual clothing",
+        "unmade cloth on sofa"
+      ],
+      "symbolic_mapping": [
+        "domestic informality → suspension of formal roles"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The relaxed attire and unstructured setting suggest a temporary dissolution of socially prescribed identities—parent and child engage as co-participants rather than in fixed hierarchical roles.",
+      "alternative_interpretations": [
+        "The scene reflects ordinary household clutter and comfort, not intentional role subversion."
+      ],
+      "limitations": [
+        "Clothing and setting are common in many households and do not uniquely signal identity negotiation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1020_P3",
+      "visual_anchors": [
+        "toddler standing unsupported",
+        "adult seated with bent knee",
+        "step stool nearby but unused"
+      ],
+      "symbolic_mapping": [
+        "proximity without intervention → allowance of emergent agency"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The toddler’s autonomous stance, enabled yet not directed by the adult, visualizes a minimal constraint environment where freedom emerges through proximity rather than instruction.",
+      "alternative_interpretations": [
+        "The toddler is simply too young to sit independently and is being held up for stability."
+      ],
+      "limitations": [
+        "The adult’s arm supports the toddler’s torso, indicating physical assistance rather than pure non-interference."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:44:18.709993+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8963971e-a96f-9a4e-8049-243a09e3a7ca",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 898,
+        "total_tokens": 1707,
+        "completion_tokens_details": {
+          "text_tokens": 898
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070344027f315dbb2cea4c06",
+      "usage": {
+        "completion_tokens": 760,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1867,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2627
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

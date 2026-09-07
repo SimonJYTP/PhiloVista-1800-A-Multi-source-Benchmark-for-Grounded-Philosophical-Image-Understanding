@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0577",
+  "sample_id": "PHL1800_HL_0028",
+  "file_name": "PHL1800_HL_0028.png",
+  "batch_id": "B001",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four men mounted on horses in formal military attire",
+  "captions": {
+    "scene": [
+      "An open grassy field under overcast or diffuse lighting with a flat horizon line",
+      "Four riders aligned horizontally across the frame, moving from left to right",
+      "Background is uniformly light and featureless, suggesting distance or fog"
+    ],
+    "action": [
+      "All four horses are captured mid-stride with at least one foreleg lifted off the ground",
+      "Each rider holds reins and maintains an upright seated posture",
+      "The riders wear peaked caps and dark uniforms with visible medals and insignia"
+    ],
+    "rationale": [
+      "The uniformity of pose and equipment suggests coordinated movement rather than random motion",
+      "The presence of multiple medals and standardized headgear implies formal military affiliation",
+      "Horse gait appears synchronized but exact timing cannot be confirmed due to static image"
+    ],
+    "object": [
+      "Four adult human males are visible, each seated astride a horse; no other humans appear.",
+      "Four horses are present: three are predominantly white or light gray with dark markings, one is dappled gray with darker patches.",
+      "Each rider wears a dark double-breasted tunic with epaulets, a peaked cap, and multiple circular medals on the left chest.",
+      "All horses wear leather bridles with metal bits and breastplates; some have crupper straps and saddlecloths.",
+      "The ground surface is short-cut grass with no visible paths, rocks, or structures."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0577_P1",
+      "visual_anchors": [
+        "peaked caps",
+        "medals on left chest",
+        "identical posture"
+      ],
+      "symbolic_mapping": [
+        "uniform elements signify institutional belonging",
+        "medals denote sanctioned recognition"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual repetition of attire and posture underscores how identity is constructed and maintained through collective symbols and disciplined embodiment within hierarchical structures.",
+      "alternative_interpretations": [
+        "This may simply document a ceremonial parade without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intended meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0577_P2",
+      "visual_anchors": [
+        "horses in motion",
+        "lifted hooves",
+        "frozen instant"
+      ],
+      "symbolic_mapping": [
+        "mid-stride capture represents suspended action",
+        "simultaneity implies coordination"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The photograph freezes a transient moment of collective forward motion, highlighting the tension between temporal passage and the illusion of control inherent in disciplined movement.",
+      "alternative_interpretations": [
+        "It could be a posed studio shot with artificial motion staging."
+      ],
+      "limitations": [
+        "Still image cannot verify actual velocity or directionality beyond apparent gait."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0577_P3",
+      "visual_anchors": [
+        "leather harnesses",
+        "metal fittings",
+        "reins held firmly"
+      ],
+      "symbolic_mapping": [
+        "equipment mediates human-animal interaction",
+        "control apparatus visible on both rider and horse"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visible constraints—reins, girths, bits—materialize the dialectic of control and cooperation, where authority is enacted through physical infrastructure rather than overt force.",
+      "alternative_interpretations": [
+        "Harnesses are standard equestrian gear with no implied coercion."
+      ],
+      "limitations": [
+        "No signs of resistance or distress in horses; posture may be trained compliance."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:38:46.506213+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d62dd74f-42a7-9b5a-b295-9acc38cc4b0c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 820,
+        "total_tokens": 1629,
+        "completion_tokens_details": {
+          "text_tokens": 820
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070138268045f6ee862f4b70",
+      "usage": {
+        "completion_tokens": 679,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1818,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2497
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

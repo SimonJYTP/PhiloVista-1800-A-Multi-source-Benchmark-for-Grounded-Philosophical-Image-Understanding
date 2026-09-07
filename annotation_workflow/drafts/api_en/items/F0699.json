@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0699",
+  "sample_id": "PHL1800_HL_0236",
+  "file_name": "PHL1800_HL_0236.png",
+  "batch_id": "B016",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one uniformed officer standing on cobblestones",
+  "captions": {
+    "scene": [
+      "A tall stone clock tower with a visible clock face stands behind a low hedge and metal fence under a clear blue sky with sparse white clouds.",
+      "A large ornate stone building with multiple gables, chimneys, and rows of windows extends horizontally behind the clock tower.",
+      "The foreground consists of dark grey cobblestone pavement with distinct shadows cast by the officer and surrounding structures."
+    ],
+    "action": [
+      "The officer stands upright with feet slightly apart, hands at sides, facing forward toward the camera.",
+      "The officer wears a high-visibility yellow jacket with reflective stripes and a dark peaked cap with a badge.",
+      "The officer’s gaze is directed straight ahead; mouth is closed and expression neutral."
+    ],
+    "rationale": [
+      "The officer’s attire—including the checkered band on the jacket hem and cap design—suggests formal duty wear consistent with UK police uniforms, though no explicit insignia is legible.",
+      "The clock face shows approximately 10:10, but the exact time cannot be confirmed due to resolution and angle; thus temporal inference is weak.",
+      "The background architecture strongly resembles the Palace of Westminster, but without readable signage or official markers, location identification remains circumstantial."
+    ],
+    "object": [
+      "A person wearing black trousers, black shoes, a black inner coat, and a fluorescent yellow outer jacket with horizontal silver reflective bands and a blue-and-white checkered stripe at the hem.",
+      "A dark peaked cap with a metallic badge centered on the front, worn squarely on the head.",
+      "A tall stone clock tower with one visible clock face, with Roman numerals and black hands; the face shows hour hand near X and minute hand near II.",
+      "A row of young leafy trees planted in evenly spaced intervals behind a black metal railing.",
+      "A multi-story sandstone building with Gothic Revival features including pointed finials, mullioned windows, and decorative parapets."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0699_P1",
+      "visual_anchors": [
+        "clock tower with visible hands",
+        "officer standing still",
+        "clear sky"
+      ],
+      "symbolic_mapping": [
+        "the fixed position of the officer contrasts with the passage indicated by the clock"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a static human figure against a timepiece evokes the tension between individual presence and the inexorable flow of chronological time, highlighting how social roles anchor individuals within temporal frameworks.",
+      "alternative_interpretations": [
+        "The officer is simply posing for a photograph; no symbolic intent is required."
+      ],
+      "limitations": [
+        "No facial expression or gesture confirms intentional symbolism; posture may be standard protocol."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0699_P2",
+      "visual_anchors": [
+        "high-visibility jacket",
+        "peaked cap",
+        "checkered band"
+      ],
+      "symbolic_mapping": [
+        "standardized uniform elements signal institutional authority and collective identity over individuality"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The uniform’s visual codification—especially the reflective stripes and heraldic band—materializes the abstraction of state authority, where appearance enacts power through immediate recognition and implied constraint.",
+      "alternative_interpretations": [
+        "The jacket serves purely functional safety purposes in an urban environment."
+      ],
+      "limitations": [
+        "No interaction with others or enforcement activity is visible; authority is inferred solely from attire."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0699_P3",
+      "visual_anchors": [
+        "cobblestone pavement",
+        "shadow cast by officer",
+        "symmetrical architecture"
+      ],
+      "symbolic_mapping": [
+        "the shadow grounds the figure in physical space while the architecture suggests enduring order"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The officer’s shadow falls sharply on the irregular cobblestones, visually tethering the individual to a structured civic environment—suggesting that personal agency exists only within socially constructed spatial and institutional boundaries.",
+      "alternative_interpretations": [
+        "Shadows are natural optical effects under bright sunlight; no deeper meaning is present."
+      ],
+      "limitations": [
+        "Shadow direction and length depend on sun position, not intentional composition; interpretation relies on post-hoc framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:09:13.689125+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d56b3870-aac6-94a2-a1a4-01fdab553e4d",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 981,
+        "total_tokens": 1750,
+        "completion_tokens_details": {
+          "text_tokens": 981
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070308541ac1fbd8107d4055",
+      "usage": {
+        "completion_tokens": 836,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1908,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2744
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0059",
+  "sample_id": "PHL1800_MM_0004",
+  "file_name": "PHL1800_MM_0004.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a barefoot boy standing in sand near a pile of stones, surrounded by six resting donkeys",
+  "captions": {
+    "scene": [
+      "A sunlit sandy enclosure bordered by low earthen walls and green foliage in the background.",
+      "Six donkeys lie recumbent on the sand, distributed around the boy; all have upright ears and dark manes.",
+      "A conical pile of smooth, grayish-brown stones sits on the sand directly in front of the boy’s feet."
+    ],
+    "action": [
+      "The boy stands upright with eyes closed, arms relaxed at his sides, bare feet planted on sand.",
+      "All six donkeys are lying down with heads raised or lowered, none in motion; at least four gaze toward the boy or camera.",
+      "A speech bubble originates from the boy’s head containing legible text: 'I shouldn't disturb them while they rest.'"
+    ],
+    "rationale": [
+      "The boy’s closed eyes and still posture suggest intentional stillness rather than sleep or distraction, though intent cannot be confirmed visually.",
+      "The donkeys’ recumbent postures and lack of alert movement indicate rest, but whether they are sleeping or merely resting is not verifiable from appearance alone.",
+      "The speech bubble implies internal reflection, but its content is presented as visual text—not observable behavior—so attribution to mental state remains speculative."
+    ],
+    "object": [
+      "The boy wears a light gray short-sleeved t-shirt and olive-green cargo shorts with visible side pockets; he is barefoot.",
+      "Five donkeys are fully visible with distinct heads and bodies; one additional donkey body appears partially behind another on the far left, totaling six identifiable individuals.",
+      "The stone pile consists of approximately 50–70 rounded pebbles and small cobbles, arranged in a loose conical mound about 30 cm tall.",
+      "The sand surface shows scattered small stones, faint footprints, and minor depressions consistent with recent presence but no active movement.",
+      "The background features a low earthen wall topped with irregular edges, beyond which dense green trees and shrubs form a continuous vegetative band."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0059_P1",
+      "visual_anchors": [
+        "boy’s closed eyes",
+        "speech bubble text",
+        "donkeys at rest"
+      ],
+      "symbolic_mapping": [
+        "closed eyes → inward attention",
+        "speech bubble → expressed moral restraint"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image frames a moment where perceived moral duty (not disturbing rest) manifests through bodily stillness and verbalized intention, suggesting ethics as embodied restraint.",
+      "alternative_interpretations": [
+        "The boy may simply be posing for a photograph; the speech bubble could be added post-capture and not reflect actual thought."
+      ],
+      "limitations": [
+        "No facial expression confirms introspection; the speech bubble is graphic overlay, not observable utterance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0059_P2",
+      "visual_anchors": [
+        "pile of stones",
+        "boy standing before it",
+        "donkeys surrounding"
+      ],
+      "symbolic_mapping": [
+        "stone pile → accumulated effort or time",
+        "spatial centrality → focal point of contemplation"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The static stone mound juxtaposed with living, resting animals evokes transience versus endurance, where human presence mediates between ephemeral life and inert permanence.",
+      "alternative_interpretations": [
+        "The stones may be incidental debris or part of a game; no evidence confirms symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions, arrangement pattern, or ritual context confirms symbolic meaning of the stones."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0059_P3",
+      "visual_anchors": [
+        "six donkeys lying in shared space",
+        "boy positioned centrally but separate",
+        "uniform sandy ground"
+      ],
+      "symbolic_mapping": [
+        "shared resting space → coexistence",
+        "physical separation without barrier → non-intrusive proximity"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The scene visualizes interspecies social existence defined by mutual non-interference, where proximity does not require interaction nor hierarchy.",
+      "alternative_interpretations": [
+        "The donkeys may be confined; their grouping reflects management, not voluntary cohabitation."
+      ],
+      "limitations": [
+        "No visible barriers or signage confirm whether the enclosure is natural or artificial; animal agency is unobservable."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:30:16.344835+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fc467813-fd75-9005-844a-87f63cf91e05",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 994,
+        "total_tokens": 2527,
+        "completion_tokens_details": {
+          "text_tokens": 994
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070130010f23fef9c4e14a68",
+      "usage": {
+        "completion_tokens": 855,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2944,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3799
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

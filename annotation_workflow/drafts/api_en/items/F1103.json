@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1103",
+  "sample_id": "PHL1800_HL_0580",
+  "file_name": "PHL1800_HL_0580.png",
+  "batch_id": "B023",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person in a black wetsuit carrying or riding a surfboard",
+  "captions": {
+    "scene": [
+      "A snowy landscape with scattered rocks, a red triangular sign on a pole, and a person walking away from the camera.",
+      "An open ocean under a clear sky with moderate wave activity and white foam.",
+      "Two side-by-side panels: left shows snow-covered ground; right shows water surface with breaking waves."
+    ],
+    "action": [
+      "The person walks across snow while holding a white surfboard under their left arm, leash trailing behind.",
+      "The person rides a surfboard on a breaking wave, crouched low with arms extended for balance.",
+      "The person’s posture shifts from upright walking to dynamic crouching, indicating transition from land to water activity."
+    ],
+    "rationale": [
+      "The presence of snow and a surfboard together suggests preparation for cold-water surfing, though no water is visible in the left panel.",
+      "The identical wetsuit and surfboard design across both panels strongly indicate the same individual is depicted in two sequential or contrasting contexts.",
+      "The red triangular sign is standard for warning or yield in many regions, but its specific meaning cannot be confirmed without readable text or context."
+    ],
+    "object": [
+      "A person wearing a full-body black wetsuit with no visible logos or markings walks on snow-covered ground.",
+      "A white surfboard with a dark rail and a blue coiled leash attached is held under the person’s left arm in the left panel.",
+      "In the right panel, the same white surfboard is underfoot as the person surfs a wave with visible spray and curling lip.",
+      "A red inverted triangle sign mounted on a thin metal pole stands in the snow behind the person in the left panel; no text is legible on it.",
+      "The ocean surface shows multiple wave crests with white foam, and the horizon line is straight and unbroken."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1103_P1",
+      "visual_anchors": [
+        "snow-covered ground",
+        "ocean wave",
+        "identical wetsuit and board across panels"
+      ],
+      "symbolic_mapping": [
+        "snow and sea represent opposing elemental domains",
+        "the wetsuit mediates between human body and hostile environments"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The diptych visually enacts a journey of deliberate transition across environmental boundaries, where the subject chooses constraint (wetsuit) to enable freedom (surfing), embodying agency within natural limits.",
+      "alternative_interpretations": [
+        "It may simply document logistical preparation for a surf session in a cold climate, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional juxtaposition; the panels could be unrelated shots edited together."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1103_P2",
+      "visual_anchors": [
+        "person walking away from camera",
+        "crouched surfing posture",
+        "leash trailing in snow"
+      ],
+      "symbolic_mapping": [
+        "back-facing figure implies anonymity or universality",
+        "leash as tether between human and tool/environment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The subject’s obscured face and uniform wetsuit minimize individual identity, foregrounding role-based existence—surfer—as a socially recognized position enacted through gear and motion.",
+      "alternative_interpretations": [
+        "The back view is merely a consequence of the photographer’s angle during departure, not a statement on identity."
+      ],
+      "limitations": [
+        "Facial features are fully occluded; no distinguishing marks confirm intentional depersonalization."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1103_P3",
+      "visual_anchors": [
+        "breaking wave with spray",
+        "static snowfield",
+        "triangular sign"
+      ],
+      "symbolic_mapping": [
+        "wave embodies flux and impermanence",
+        "snowfield represents stillness and accumulation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The contrast between frozen terrain and dynamic water evokes temporal tension: the snow signifies accumulated past, the wave the fleeting present, suggesting knowledge is provisional when grounded in transient phenomena.",
+      "alternative_interpretations": [
+        "The scenes are geographically proximate (e.g., coastal winter), not metaphysical opposites; the wave is just a wave."
+      ],
+      "limitations": [
+        "No timestamps, seasonal indicators beyond snow, or explicit decay/growth processes are visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:51:04.743482+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-86403022-63fd-968c-bf84-fe7026d786dc",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 996,
+        "total_tokens": 1765,
+        "completion_tokens_details": {
+          "text_tokens": 996
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035044dc8ba5c92e6242c0",
+      "usage": {
+        "completion_tokens": 858,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1927,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2785
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

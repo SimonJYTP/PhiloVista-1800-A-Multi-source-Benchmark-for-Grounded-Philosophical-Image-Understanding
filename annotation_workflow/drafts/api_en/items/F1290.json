@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1290",
+  "sample_id": "PHL1800_IRFL_0206",
+  "file_name": "PHL1800_IRFL_0206.jpg",
+  "batch_id": "B027",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult human male",
+  "captions": {
+    "scene": [
+      "Black-and-white close-up of lower face and hand against a dark, out-of-focus background",
+      "High-contrast monochrome composition with shallow depth of field isolating the subject",
+      "Neutral-toned backdrop with no discernible objects or environmental cues"
+    ],
+    "action": [
+      "Right hand positioned with fingers covering the mouth and lower nose area",
+      "Lower lip partially visible beneath the thumb and index finger",
+      "Facial hair (stubble) present on chin and upper lip region"
+    ],
+    "rationale": [
+      "The hand placement suggests intentional concealment or restraint, though intent is not verifiable from image alone",
+      "Monochrome rendering emphasizes texture and tonal contrast rather than color information",
+      "Absence of contextual elements prevents identification of setting or activity beyond the immediate gesture"
+    ],
+    "object": [
+      "The subject has short, dark facial stubble concentrated on the chin, jawline, and upper lip.",
+      "The right hand shows visible knuckles, fingernails, and skin creases; the thumb rests over the lower lip while index and middle fingers cover the mouth and nostril base.",
+      "The nose appears broad with a rounded tip and visible alar contour under lighting.",
+      "The subject’s skin exhibits fine pores and minor textural variation, especially near the mouth and hand.",
+      "The background is uniformly dark and blurred, with no identifiable shapes, patterns, or surfaces."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1290_P1",
+      "visual_anchors": [
+        "hand covering mouth",
+        "stubble texture",
+        "monochrome tonality"
+      ],
+      "symbolic_mapping": [
+        "hand over mouth → suppression of speech",
+        "stubble → incomplete grooming → liminal state"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The gesture and framing evoke tension between public presentation and private withholding, suggesting identity as performative and contingent upon what is concealed.",
+      "alternative_interpretations": [
+        "A routine moment of contemplation or physical habit, such as suppressing a cough or adjusting facial position for comfort."
+      ],
+      "limitations": [
+        "No linguistic or behavioral context confirms communicative intent; the gesture may be purely physiological."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1290_P2",
+      "visual_anchors": [
+        "high-contrast lighting",
+        "shallow depth of field",
+        "isolated facial fragment"
+      ],
+      "symbolic_mapping": [
+        "fragmented face → partial self-revelation",
+        "dark background → unknown context"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The selective visibility—only lower face and hand shown—mirrors epistemic limitation: truth is accessible only in fragments, constrained by perspective and omission.",
+      "alternative_interpretations": [
+        "Technical photographic choice emphasizing form and texture, unrelated to epistemology."
+      ],
+      "limitations": [
+        "Composition could result from framing preference rather than conceptual intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1290_P3",
+      "visual_anchors": [
+        "thumb pressing lip",
+        "visible skin folds on hand",
+        "asymmetrical shadowing"
+      ],
+      "symbolic_mapping": [
+        "physical pressure on mouth → embodied restraint",
+        "shadow gradient → ambiguity of boundary"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The tactile contact between hand and mouth visualizes moral hesitation—a moment where action (speech) is suspended by internal deliberation, embodying responsibility as bodily pause.",
+      "alternative_interpretations": [
+        "The hand position results from resting posture or unconscious gesture during stillness."
+      ],
+      "limitations": [
+        "No facial expression above the hand is visible to confirm deliberation or emotional valence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:17:11.822742+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5be7657c-3995-97ca-b0f2-768d78ee5289",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 849,
+        "total_tokens": 1518,
+        "completion_tokens_details": {
+          "text_tokens": 849
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070416479b1cf4ced19b4911",
+      "usage": {
+        "completion_tokens": 708,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1648,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2356
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

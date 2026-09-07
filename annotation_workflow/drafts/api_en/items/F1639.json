@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1639",
+  "sample_id": "PHL1800_IRFL_0367",
+  "file_name": "PHL1800_IRFL_0367.jpg",
+  "batch_id": "B033",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a rusted steam locomotive and attached railcars abandoned on a flat, arid surface",
+  "captions": {
+    "scene": [
+      "A desolate, open landscape with light-colored loose ground under a partly cloudy blue sky.",
+      "The locomotive rests on degraded or absent rails amid scattered debris and small stones.",
+      "No vegetation, structures, or human figures are visible in the frame."
+    ],
+    "action": [
+      "The locomotive is stationary, with no motion blur or signs of recent operation.",
+      "Rust has extensively covered metal surfaces, indicating prolonged exposure to weather.",
+      "The front smokebox door is missing, exposing the interior firebox tube bundle."
+    ],
+    "rationale": [
+      "The absence of wheels on intact tracks suggests the train is no longer functional or mobile.",
+      "The uniform reddish-brown corrosion pattern implies long-term static exposure rather than recent damage.",
+      "The open smokebox and missing components suggest deliberate stripping or natural decay over time, though causation is not visually verifiable."
+    ],
+    "object": [
+      "The locomotive features a cylindrical boiler, a tall chimney stack, and a cab with an open roof structure.",
+      "Multiple driving wheels with visible spokes and connecting rods remain attached to the underframe.",
+      "A second railcar is partially visible behind the locomotive, sharing the same rusted condition.",
+      "The front buffer beam is present but heavily corroded, with remnants of coupling hardware.",
+      "The ground consists of fine-grained, pale sediment with scattered dark fragments and minor depressions."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1639_P1",
+      "visual_anchors": [
+        "exposed firebox interior",
+        "missing smokebox door",
+        "uniform rust layer"
+      ],
+      "symbolic_mapping": [
+        "the hollow front signifies absence of purpose",
+        "rust as irreversible transformation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The locomotive’s decay embodies the impermanence of human-made systems: once vital for transport and industry, it now stands as inert matter, its function erased by time and neglect.",
+      "alternative_interpretations": [
+        "It may simply be scrap metal awaiting salvage, with no symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions, dates, or contextual signage confirm origin or intended meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1639_P2",
+      "visual_anchors": [
+        "flat horizon",
+        "isolated train",
+        "empty sky"
+      ],
+      "symbolic_mapping": [
+        "vast emptiness as metaphor for abandonment",
+        "static object against dynamic sky suggesting stasis versus change"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The train’s immobilization in an unbounded space evokes tension between technological ambition and physical constraint—its design for movement now contradicted by its fixed ruin.",
+      "alternative_interpretations": [
+        "The scene may reflect practical railway decommissioning in remote terrain, not philosophical contrast."
+      ],
+      "limitations": [
+        "No evidence of intentional placement or artistic framing; composition could be accidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1639_P3",
+      "visual_anchors": [
+        "corroded metal surfaces",
+        "deteriorated wheels",
+        "absent cabin windows"
+      ],
+      "symbolic_mapping": [
+        "erosion of form as loss of identity",
+        "mechanical parts losing coherence as metaphor for fragmented memory"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "As the locomotive’s original appearance dissolves under oxidation, its visual identity erodes—raising questions about how material traces sustain or obscure historical truth.",
+      "alternative_interpretations": [
+        "Rust is a chemical process with no semantic content; the image records only physical degradation."
+      ],
+      "limitations": [
+        "No legible markings or documentation exist in the image to anchor claims about identity or truth."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:56:20.287762+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-75e1e393-7f2e-947c-8b17-ebc5962c4d30",
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 873,
+        "total_tokens": 1638,
+        "completion_tokens_details": {
+          "text_tokens": 873
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 258,
+          "text_tokens": 507,
+          "cached_tokens": 512
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045601db1da88d16a44b86",
+      "usage": {
+        "completion_tokens": 734,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1782,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2516
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

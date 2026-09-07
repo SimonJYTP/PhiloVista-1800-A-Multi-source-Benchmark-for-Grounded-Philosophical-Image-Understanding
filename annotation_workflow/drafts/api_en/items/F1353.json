@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F1353",
+  "sample_id": "PHL1800_HL_0007",
+  "file_name": "PHL1800_HL_0007.png",
+  "batch_id": "B002",
+  "position_in_batch": 23,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man in white traditional attire standing on unpaved ground near a roadside market",
+  "captions": {
+    "scene": [
+      "A dusty, unpaved roadside area with scattered debris, small stalls under tarps, and vehicles including buses, cars, rickshaws, and carts.",
+      "Two large overhead billboards dominate the midground: one rusted and partially legible with 'TOLET' and phone numbers, the other dark brown with Arabic script and three phone numbers.",
+      "A busy street scene with multiple pedestrians, some grouped under umbrellas, others walking or standing; background includes low-rise commercial buildings and utility poles."
+    ],
+    "action": [
+      "The man in white stands still, holding a small object (possibly a phone or paper) in his right hand, facing slightly left of camera.",
+      "Several people are walking across the road or standing near vehicles; one person pushes a two-wheeled cart loaded with goods.",
+      "A blue auto-rickshaw is parked beside a green-and-white van; a yellow car is stopped near a group of men."
+    ],
+    "rationale": [
+      "The man’s posture and lack of motion relative to surrounding activity suggest he is momentarily stationary rather than transiting.",
+      "The presence of multiple phone numbers on both billboards implies commercial advertising, though specific services are not fully legible.",
+      "The ground surface is uneven dirt with embedded bricks and litter, indicating minimal infrastructure maintenance."
+    ],
+    "object": [
+      "A rusted metal billboard displays the word 'TOLET' in blue capital letters, followed by two phone numbers: '0333-5213006' and '051-29-3359', with partial Urdu text above.",
+      "A second billboard is dark brown with white Arabic script reading 'کاچری' (Kachri) and 'شیشان' (Shishan), plus three phone numbers: '03218503555', '03005135735', and a third partially obscured number.",
+      "A white bus with green trim and red logo is parked behind a green-and-white van; a blue auto-rickshaw sits adjacent to a yellow sedan.",
+      "At least 15 distinct individuals are visible: 1 man in foreground, 4 near left umbrella, 3 near center bus, 2 near right cart, 1 pushing cart, 1 seated on curb, and 4 more scattered in background groups.",
+      "Scattered objects on ground include plastic bottles, cardboard pieces, a broken brick structure, and loose papers near the foreground man’s feet."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1353_P1",
+      "visual_anchors": [
+        "man in white standing alone amid traffic",
+        "scattered trash near his feet",
+        "overhead billboards with commercial text"
+      ],
+      "symbolic_mapping": [
+        "the solitary figure amid chaos symbolizes individual persistence",
+        "billboards as markers of commodified space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image evokes tension between individual presence and overwhelming commercialized public space, where personal agency is visually dwarfed by infrastructural and advertising dominance.",
+      "alternative_interpretations": [
+        "It may simply document daily transit logistics at a transport hub without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or interaction is visible to confirm intentionality or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1353_P2",
+      "visual_anchors": [
+        "unpaved ground with embedded bricks",
+        "multiple pedestrians moving in different directions",
+        "hand-pushed cart alongside motor vehicles"
+      ],
+      "symbolic_mapping": [
+        "uneven terrain as metaphor for social stratification",
+        "coexistence of manual and motorized transport as layered labor"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of human-powered carts and motor vehicles on degraded infrastructure reflects contested progress, where technological advancement does not uniformly replace or uplift embodied labor.",
+      "alternative_interpretations": [
+        "This is a typical urban roadside scene in a developing economy, with no deliberate commentary intended."
+      ],
+      "limitations": [
+        "Vehicle ownership status and worker roles are not discernible from appearance alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1353_P3",
+      "visual_anchors": [
+        "two billboards with phone numbers",
+        "crowd under umbrellas",
+        "man holding small object"
+      ],
+      "symbolic_mapping": [
+        "phone numbers as invitations to connection amid physical disarray",
+        "umbrellas as temporary shelters against environmental exposure"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "Public signage promises access and service (via contact), yet the environment—dusty, fragmented, unregulated—suggests that promised connectivity remains abstract, constrained by material conditions.",
+      "alternative_interpretations": [
+        "Billboards serve purely functional advertising purposes; the scene lacks intentional philosophical framing."
+      ],
+      "limitations": [
+        "The content of the advertised services is unreadable beyond phone numbers, limiting inference about truth claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (24 vs actual ~15-20 visible individuals); text on billboards misreads 'TOLET' as 'TOLET' (correct is 'TOLET' but candidate's description is accurate, but phone numbers are misread: first billboard has '0333-5213006' and '051-29-3359' (correct), second billboard has '03218503555' and '03005135735' (correct) but candidate's object description of billboards is accurate; however, the main issue is the inflated people count."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:43:48.295355+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-91ed8843-4868-97f5-834c-3b29cbad7206",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1128,
+        "total_tokens": 1897,
+        "completion_tokens_details": {
+          "text_tokens": 1128
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014323504960fcfba34e35",
+      "usage": {
+        "completion_tokens": 1094,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2035,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3129
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

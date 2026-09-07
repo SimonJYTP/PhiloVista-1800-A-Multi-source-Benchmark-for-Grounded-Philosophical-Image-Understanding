@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0060",
+  "sample_id": "PHL1800_IRFL_0161",
+  "file_name": "PHL1800_IRFL_0161.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person with long blonde hair sitting in a white bathtub outdoors",
+  "captions": {
+    "scene": [
+      "A white freestanding bathtub is placed on a rocky, uneven surface overlooking a layered mountainous landscape under a dusky sky.",
+      "The background consists of rolling hills covered in sparse vegetation, with distant ridgelines silhouetted against a pale horizon.",
+      "The tub sits near the edge of a natural escarpment; no built structures or pathways are visible nearby."
+    ],
+    "action": [
+      "The person holds a clear glass containing a pale yellow liquid in their right hand, arm raised slightly.",
+      "The person’s back faces the viewer; their head is tilted upward, and hair hangs down over shoulders.",
+      "Water is present in the tub, reaching approximately mid-back level on the person."
+    ],
+    "rationale": [
+      "The tub appears to be positioned deliberately for scenic viewing, given its orientation toward the vista and lack of plumbing fixtures.",
+      "The lighting suggests late afternoon or early evening due to soft ambient illumination and muted color saturation.",
+      "The absence of visible clothing on the person’s upper back and shoulders implies partial or full immersion, though exact coverage is indeterminate."
+    ],
+    "object": [
+      "A white rectangular bathtub with rounded corners and two chrome faucet handles mounted on its rear rim is situated on bare earth and rock.",
+      "A person with long, straight, light-blonde hair is seated inside the tub, viewed from behind, with shoulders and upper back exposed above waterline.",
+      "A transparent stemmed glass held in the person’s right hand contains a liquid that appears translucent and pale yellow, possibly wine or juice.",
+      "The terrain surrounding the tub consists of dry soil, scattered small rocks, and low shrubs; no artificial surfaces are visible.",
+      "In the distance, multiple elevation layers of mountains show varying shades of brown, green, and gray under diffuse sky lighting."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0060_P1",
+      "visual_anchors": [
+        "person alone in tub",
+        "vast mountain backdrop",
+        "glass held aloft"
+      ],
+      "symbolic_mapping": [
+        "tub as isolated vessel",
+        "mountains as enduring time"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a transient human moment—bathing with drink—in a fixed, ancient landscape evokes reflection on finite existence against geological permanence.",
+      "alternative_interpretations": [
+        "This may simply depict recreational outdoor bathing without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms introspection or philosophical engagement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0060_P2",
+      "visual_anchors": [
+        "bare shoulders",
+        "back turned to camera",
+        "no visible clothing"
+      ],
+      "symbolic_mapping": [
+        "exposure as vulnerability",
+        "turning away as refusal of gaze"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The subject’s obscured identity and physical exposure suggest a tension between self-presentation and withdrawal from social observation.",
+      "alternative_interpretations": [
+        "The posture may result solely from ergonomic comfort or photographic framing choice."
+      ],
+      "limitations": [
+        "Only posterior view is visible; front-facing features and intent remain unknown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0060_P3",
+      "visual_anchors": [
+        "tub placed on natural ground",
+        "no drainage or plumbing",
+        "remote setting"
+      ],
+      "symbolic_mapping": [
+        "artificial container in wild space",
+        "displacement of domestic ritual"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The deliberate placement of a domestic object in an untamed environment signals an intentional rupture of routine, embodying agency through spatial recontextualization.",
+      "alternative_interpretations": [
+        "The tub may have been installed for commercial photography or tourism infrastructure not visible in frame."
+      ],
+      "limitations": [
+        "No evidence of transport method, installation effort, or duration of use is present."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:54:13.006303+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1a0b1f9d-025e-90f1-9d93-453feae74406",
+      "usage": {
+        "prompt_tokens": 573,
+        "completion_tokens": 901,
+        "total_tokens": 1474,
+        "completion_tokens_details": {
+          "text_tokens": 901
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 66,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015354127e2652c48c4350",
+      "usage": {
+        "completion_tokens": 763,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1555,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2318
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

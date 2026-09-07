@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1522",
+  "sample_id": "PHL1800_HL_0035",
+  "file_name": "PHL1800_HL_0035.png",
+  "batch_id": "B031",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "astronomical clock with surrounding sculptural figures",
+  "captions": {
+    "scene": [
+      "A large ornate astronomical clock mounted on a stone facade with multiple sculptural figures above and beside it",
+      "Two rectangular windows flank a central statue; each window contains at least one visible human-like figure",
+      "A skeletal figure holding an hourglass stands to the right of the clock face"
+    ],
+    "action": [
+      "The clock hands indicate approximately 10:10, with a separate inner dial showing a different time or celestial position",
+      "Figures in the left window appear static, with one holding a golden object; figures in the right window are partially obscured but present",
+      "The central seated figure holds an open book and gazes upward, while the skeleton holds an hourglass upright"
+    ],
+    "rationale": [
+      "The presence of Roman numerals, zodiac symbols, and multiple concentric dials suggests an astronomical function rather than a simple timepiece",
+      "The skeleton holding an hourglass is a conventional memento mori motif, implying thematic reference to mortality",
+      "The unreadable text on the outer ring (e.g., 'APRILIS', 'MAY') appears to be Latin month names, supporting calendrical functionality"
+    ],
+    "object": [
+      "The clock face has three concentric rings: outer ring with Roman numerals I–XII and Latin month abbreviations, middle ring with zodiac symbols and Arabic numerals 1–24, inner ring with astrological glyphs and a sun pointer.",
+      "Above the clock, a seated stone figure holds an open book and looks upward; flanking this figure are two recessed windows each containing at least one human-like sculpted figure.",
+      "To the right of the clock, a standing skeletal figure holds an hourglass in its left hand and a scroll or tablet in its right hand.",
+      "Below the central statue, two small animal-like sculptures (possibly lions or dogs) rest on the ledge.",
+      "A golden rooster or bird sculpture sits atop a niche directly above the central statue."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1522_P1",
+      "visual_anchors": [
+        "skeletal figure",
+        "hourglass",
+        "clock face with sun pointer"
+      ],
+      "symbolic_mapping": [
+        "skeleton and hourglass map to transience of life",
+        "sun pointer on zodiac ring maps to cyclical inevitability"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of mechanical timekeeping with the skeletal memento mori visually enacts the philosophical tension between measured duration and finite existence.",
+      "alternative_interpretations": [
+        "The skeleton may represent a specific allegorical figure (e.g., Chronos or Death) in a civic or religious tableau, not necessarily a universal philosophical statement."
+      ],
+      "limitations": [
+        "No inscriptions confirm intended meaning; the skeleton’s pose and attributes are generic across European medieval iconography."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1522_P2",
+      "visual_anchors": [
+        "central seated figure with open book",
+        "flanking window figures",
+        "Latin month labels"
+      ],
+      "symbolic_mapping": [
+        "open book maps to recorded knowledge",
+        "window figures map to witnesses or authorities"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The arrangement implies that truth is mediated through authoritative figures and textual tradition, with time serving as the framework within which knowledge is validated.",
+      "alternative_interpretations": [
+        "The figures may simply represent saints or patrons associated with the building, without epistemological intent."
+      ],
+      "limitations": [
+        "The book’s content is invisible; facial expressions and gestures are stylized and non-indicative of cognitive states."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1522_P3",
+      "visual_anchors": [
+        "multiple dials with overlapping systems",
+        "zodiac ring",
+        "animal sculptures below"
+      ],
+      "symbolic_mapping": [
+        "layered dials map to hierarchical order of cosmos",
+        "animals map to earthly realm beneath celestial mechanics"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The stratified design reflects a pre-modern cosmology where human society is positioned within a fixed, multi-layered order governed by celestial cycles and symbolic guardianship.",
+      "alternative_interpretations": [
+        "The layout follows standard astronomical clock conventions for displaying sidereal, solar, and calendar time—functional, not sociological."
+      ],
+      "limitations": [
+        "No human figures are shown engaging with the clock; social roles are inferred solely from iconographic convention."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:41:34.850152+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b30771e3-855c-9b99-92eb-7a84bac90fa2",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1007,
+        "total_tokens": 1816,
+        "completion_tokens_details": {
+          "text_tokens": 1007
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044112c73773233fd54929",
+      "usage": {
+        "completion_tokens": 866,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1978,
+        "prompt_tokens_details": {
+          "cached_tokens": 2
+        },
+        "total_tokens": 2844
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

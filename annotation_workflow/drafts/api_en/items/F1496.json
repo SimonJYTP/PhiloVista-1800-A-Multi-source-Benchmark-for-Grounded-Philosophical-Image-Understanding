@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1496",
+  "sample_id": "PHL1800_IRFL_0092",
+  "file_name": "PHL1800_IRFL_0092.jpg",
+  "batch_id": "B031",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a yellow-skinned animated male figure and a green parrot in a cage",
+  "captions": {
+    "scene": [
+      "A purple wall with a blue leafy branch decoration on the left and a metal birdcage mounted on it.",
+      "The interior of a room with a dark blue object (possibly furniture) visible at lower left.",
+      "A close-up view focused on the upper torso and head of the male figure and the adjacent birdcage."
+    ],
+    "action": [
+      "The male figure extends his right hand toward the birdcage, fingers slightly spread, palm facing upward.",
+      "The male figure’s mouth is open with visible teeth and tongue, eyes narrowed into slits, brows furrowed downward.",
+      "The green parrot perches upright on a wooden dowel inside the cage, facing forward, beak closed."
+    ],
+    "rationale": [
+      "The figure’s facial expression suggests displeasure or irritation, inferred from brow furrowing and narrowed eyes.",
+      "The hand position indicates an intent to interact with the cage or its occupant, though no contact is made.",
+      "The parrot remains stationary and alert, with no visible motion blur or posture change."
+    ],
+    "object": [
+      "The male figure has yellow skin, three strands of hair on top of his head, wears a white collared shirt, and exhibits exaggerated cartoon facial features including large nose and prominent chin.",
+      "The birdcage is constructed of vertical purple-gray metal bars with horizontal crossbars, contains a light brown wooden perch, and has a gray base tray holding two brown rectangular objects.",
+      "The parrot is predominantly bright green with a yellow crown, orange beak, black eye with white highlight, and visible wing feather detail.",
+      "A blue decorative element resembling leaves on a stem appears on the upper left wall, partially cut off by frame edge.",
+      "The background wall is uniformly lavender-purple with no texture or pattern visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1496_P1",
+      "visual_anchors": [
+        "caged parrot",
+        "extended hand",
+        "furrowed brow"
+      ],
+      "symbolic_mapping": [
+        "cage → constraint",
+        "hand gesture → attempted agency"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of the confined bird and the frustrated gesture of the human visually articulates tension between imposed limitation and desire for intervention or control.",
+      "alternative_interpretations": [
+        "The scene may simply depict a moment of pet care or annoyance without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual narrative confirm intentional symbolism; the image is a static frame from animation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1496_P2",
+      "visual_anchors": [
+        "male figure’s exaggerated expression",
+        "parrot’s stillness",
+        "cage bars"
+      ],
+      "symbolic_mapping": [
+        "facial distortion → emotional intensity",
+        "stillness → passive observation"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The visual asymmetry—active human expression versus passive avian presence within enclosure—suggests an imbalance of agency where one party exerts emotional force while the other remains contained and unresponsive.",
+      "alternative_interpretations": [
+        "The parrot may be calm or indifferent; the human’s expression could reflect confusion rather than dominance."
+      ],
+      "limitations": [
+        "Facial expressions in stylized animation are not reliable indicators of real psychological states."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1496_P3",
+      "visual_anchors": [
+        "single parrot in cage",
+        "isolated human figure",
+        "empty space around them"
+      ],
+      "symbolic_mapping": [
+        "isolation of figures → separation",
+        "shared frame → relational context"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement—two sentient beings in proximity yet physically separated by bars—invites reflection on coexistence defined by boundaries rather than connection.",
+      "alternative_interpretations": [
+        "This may be a routine domestic scene with no deeper social commentary intended."
+      ],
+      "limitations": [
+        "Absence of additional characters or environmental cues prevents confirmation of social dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:38:57.782447+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4411e1e9-d87e-9157-9b7f-2c48f6681663",
+      "usage": {
+        "prompt_tokens": 1389,
+        "completion_tokens": 919,
+        "total_tokens": 2308,
+        "completion_tokens_details": {
+          "text_tokens": 919
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 882,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070438427129e98152ac41f2",
+      "usage": {
+        "completion_tokens": 784,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2701,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3485
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

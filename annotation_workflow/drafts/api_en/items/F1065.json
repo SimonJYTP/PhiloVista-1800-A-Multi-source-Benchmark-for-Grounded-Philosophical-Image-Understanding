@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1065",
+  "sample_id": "PHL1800_HL_0355",
+  "file_name": "PHL1800_HL_0355.png",
+  "batch_id": "B023",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two elephants walking leftward in the foreground, with a third elephant partially visible on the right",
+  "captions": {
+    "scene": [
+      "Dusty ground under bright daylight with leafy green trees overhead and a Pepsi-branded canopy in the background",
+      "A yellow-and-black auto-rickshaw parked near a brick wall behind the elephants",
+      "A fenced enclosure with indistinct figures and structures to the far left"
+    ],
+    "action": [
+      "The foremost elephant walks forward with its trunk lowered and slightly curled",
+      "A second elephant follows closely behind, partially obscured, with its trunk raised toward its mouth",
+      "A third elephant’s hindquarters and tail are visible on the right edge, moving away from the viewer"
+    ],
+    "rationale": [
+      "The elephants’ leg positions and body orientation suggest forward locomotion rather than standing still",
+      "The presence of commercial signage and a vehicle implies an urban or semi-urban setting, not wilderness",
+      "The partial visibility of the third elephant prevents confirmation of its full posture or direction"
+    ],
+    "object": [
+      "The foremost elephant has gray wrinkled skin, small ears, and four visible legs in mid-stride.",
+      "A blue banner with white 'PEPSI' lettering and a red-and-white circular logo is mounted above the scene; additional text is present but largely unreadable.",
+      "A yellow auto-rickshaw with black trim and open side panels is parked beside a low brick wall.",
+      "At least two human figures are faintly visible behind the elephants near the brick wall, one wearing light-colored clothing.",
+      "The ground is unpaved, light brown, and scattered with small debris and shadows cast by overhead foliage."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1065_P1",
+      "visual_anchors": [
+        "Pepsi banner",
+        "elephants walking in constrained space",
+        "auto-rickshaw"
+      ],
+      "symbolic_mapping": [
+        "commercial branding juxtaposed with non-human animals suggests commodification"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The image presents a tension between corporate presence and embodied animal labor, where branded infrastructure frames nonhuman movement as part of a managed environment.",
+      "alternative_interpretations": [
+        "This may simply depict routine animal handling in a local market or tourist area without symbolic intent."
+      ],
+      "limitations": [
+        "No visible harnesses, tools, or direct human interaction with the elephants prevent confirming labor or control."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1065_P2",
+      "visual_anchors": [
+        "dusty ground",
+        "overhead foliage casting dappled light",
+        "elephant skin texture"
+      ],
+      "symbolic_mapping": [
+        "ephemeral shadows and transient dust evoke impermanence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The interplay of fleeting shadow patterns on the elephants’ bodies and the dusty terrain underscores the temporality of physical presence amid environmental constraints.",
+      "alternative_interpretations": [
+        "The lighting is merely natural daylight filtered through trees, with no intended temporal symbolism."
+      ],
+      "limitations": [
+        "No clocks, aging signs, or explicit decay indicators are present to confirm mortality themes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1065_P3",
+      "visual_anchors": [
+        "three elephants in proximity",
+        "partial occlusion of second and third elephants",
+        "shared direction of motion"
+      ],
+      "symbolic_mapping": [
+        "collective movement without visible coordination implies social cohesion or imposed alignment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The grouping of elephants—partially hidden yet aligned in motion—suggests a collective identity shaped by spatial proximity and shared trajectory, regardless of individual distinction.",
+      "alternative_interpretations": [
+        "The elephants may be unrelated individuals coincidentally moving in the same direction due to handler guidance."
+      ],
+      "limitations": [
+        "No visible social signals (e.g., touch, vocalization cues, eye contact) confirm intentional group behavior."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:50:22.954892+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5f9d0a44-73d8-9120-8d93-d6aef3ae0835",
+      "usage": {
+        "prompt_tokens": 737,
+        "completion_tokens": 899,
+        "total_tokens": 1636,
+        "completion_tokens_details": {
+          "text_tokens": 899
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 230,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035000676e9b8313a5495b",
+      "usage": {
+        "completion_tokens": 760,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1775,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2535
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

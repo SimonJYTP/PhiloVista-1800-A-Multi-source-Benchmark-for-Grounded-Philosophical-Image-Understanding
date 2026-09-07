@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0146",
+  "sample_id": "PHL1800_HAIV_0294",
+  "file_name": "PHL1800_HAIV_0294.png",
+  "batch_id": "B005",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two human silhouettes and a broken heart symbol",
+  "captions": {
+    "scene": [
+      "A large red heart split vertically with a jagged white fissure, centered above a white path dividing two gray ground areas.",
+      "A female silhouette with a ponytail walks left on the left gray area; a male silhouette walks right on the right gray area.",
+      "The background is a smooth gradient from pale yellow at the top to light gray near the horizon line."
+    ],
+    "action": [
+      "The female silhouette is depicted mid-stride, moving leftward, with her right foot forward and left foot trailing.",
+      "The male silhouette is depicted mid-stride, moving rightward, with his left foot forward and right foot trailing.",
+      "The heart remains static but visually fractured, with its two halves separated by a zigzag gap revealing white beneath."
+    ],
+    "rationale": [
+      "The opposing directions of the silhouettes suggest separation rather than convergence, based on limb positioning and orientation.",
+      "The heart’s fracture aligns vertically with the white path below, implying structural division rather than accidental damage.",
+      "No facial features, clothing details, or contextual objects (e.g., signs, buildings) are present, limiting identification beyond basic form."
+    ],
+    "object": [
+      "A red heart with black outline is split into two symmetrical halves along a vertical zigzag line, exposing white interior material.",
+      "A black female silhouette wears a knee-length dress and has hair tied in a high ponytail extending downward.",
+      "A black male silhouette has short hair, arms bent at elbows, and legs in walking posture with one leg extended forward.",
+      "A white narrow path runs vertically from the base of the heart down through the center of the image, separating two identical gray rectangular ground planes.",
+      "The upper background consists of a uniform color gradient transitioning from pale yellow at the top edge to light gray at the horizon line."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0146_P1",
+      "visual_anchors": [
+        "split heart",
+        "dividing white path",
+        "opposing silhouettes"
+      ],
+      "symbolic_mapping": [
+        "the path represents a structural boundary between individuals",
+        "the heart fracture signifies irreversibility of separation"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes a moment where individual paths diverge irrevocably, suggesting that social bonds may be undone not by violence but by quiet, parallel movement away from a shared center.",
+      "alternative_interpretations": [
+        "The figures may simply be walking past each other on intersecting paths without emotional significance; the heart could be decorative rather than symbolic."
+      ],
+      "limitations": [
+        "No textual labels or facial expressions confirm emotional intent or narrative context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0146_P2",
+      "visual_anchors": [
+        "black silhouettes",
+        "lack of distinguishing features",
+        "uniform shading"
+      ],
+      "symbolic_mapping": [
+        "silhouettes represent generic human roles rather than specific persons"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "By reducing individuals to featureless outlines, the image emphasizes how relational identity—here defined through proximity to a shared symbol—can dissolve when spatial alignment is lost.",
+      "alternative_interpretations": [
+        "The silhouettes may be stylized for aesthetic simplicity rather than philosophical abstraction."
+      ],
+      "limitations": [
+        "Absence of gender-confirming markers beyond hairstyle and dress shape introduces ambiguity in role assignment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0146_P3",
+      "visual_anchors": [
+        "jagged fracture line",
+        "white space within the break",
+        "symmetrical halves"
+      ],
+      "symbolic_mapping": [
+        "the irregular crack implies non-linear rupture",
+        "white interior suggests hidden continuity despite surface division"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The broken heart does not collapse but holds its form, indicating that constraint may persist even after apparent liberation—freedom here coexists with structural remnant.",
+      "alternative_interpretations": [
+        "The white interior may simply be background showing through a physical tear, not intentional symbolism."
+      ],
+      "limitations": [
+        "The white area lacks texture or detail to confirm intentional meaning versus incidental exposure."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:08:41.234314+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-040030fa-71b7-9132-bbbf-42805e8873df",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 953,
+        "total_tokens": 2486,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070208273139a0ac7fe2469d",
+      "usage": {
+        "completion_tokens": 815,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2913,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3728
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

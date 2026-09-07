@@ -1,0 +1,131 @@
+{
+  "annotation_item_id": "F1670",
+  "sample_id": "PHL1800_HL_0003",
+  "file_name": "PHL1800_HL_0003.png",
+  "batch_id": "B002",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "ai_agent_direct_visual_reannotation_after_audit_non_independent",
+  "formal_gold": false,
+  "target_subject": "four women seated together on a couch during an informal indoor gathering",
+  "captions": {
+    "scene": [
+      "Four women sit closely on a patterned couch in a warmly lit living room.",
+      "Their bathrobe, hair towel, sleepwear, and casual poses suggest an informal at-home gathering.",
+      "A framed landscape painting, plants, and a stained-glass lamp decorate the room behind them."
+    ],
+    "action": [
+      "The woman at the left reclines with her head tilted back while holding a bottle.",
+      "The woman in the red robe holds a cigarette near her mouth while the center woman looks at an open laptop.",
+      "The woman at the right lifts the hem of her pink polka-dot garment while holding a cigarette in her other hand."
+    ],
+    "rationale": [
+      "The relaxed clothing and shared couch suggest a private social gathering rather than a formal event.",
+      "The laptop gives the center of the group a shared point of attention, although not everyone is looking at it.",
+      "The bottle, cigarettes, and theatrical poses may indicate staged humor, but the participants' exact intentions are unknown."
+    ],
+    "object": [
+      "Four adult women occupy a brown patterned couch across the width of the image.",
+      "The second woman wears a red robe and has a white towel wrapped around her hair.",
+      "A gray Dell laptop is open on the lap of the dark-haired woman at the center.",
+      "The woman at the right wears a pink polka-dot dress with dark lace trim and a matching hair accessory.",
+      "A framed landscape painting hangs above the couch between a leafy plant and a stained-glass floor lamp."
+    ]
+  },
+  "rationale_support": [
+    "commonsense_inference",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1670_P1",
+      "visual_anchors": [
+        "four women sharing a couch",
+        "different postures and activities"
+      ],
+      "symbolic_mapping": [
+        "shared couch → coexistence without identical attention"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The group embodies social togetherness without uniform behavior, suggesting that participation in a community does not require identical attention or self-presentation.",
+      "alternative_interpretations": [
+        "The different poses may be arranged for a photograph rather than expressing distinct forms of participation."
+      ],
+      "limitations": [
+        "The image does not reveal the relationships among the women or whether the gathering is spontaneous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1670_P2",
+      "visual_anchors": [
+        "open laptop at the center",
+        "people looking in different directions"
+      ],
+      "symbolic_mapping": [
+        "screen → partial focus within face-to-face company"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The centrally placed laptop can be read as technology organizing a shared space while also dividing the group's attention.",
+      "alternative_interpretations": [
+        "The laptop may be part of a shared activity and therefore increase rather than reduce social connection."
+      ],
+      "limitations": [
+        "Only one instant is visible, so the device's role in the gathering cannot be determined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1670_P3",
+      "visual_anchors": [
+        "bathrobe and sleepwear",
+        "cigarettes and bottle",
+        "posed gestures"
+      ],
+      "symbolic_mapping": [
+        "domestic clothing → relaxed public self-presentation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The casual dress and exaggerated poses permit a reading of private space as allowing forms of self-presentation that public settings might constrain.",
+      "alternative_interpretations": [
+        "The scene may be staged entertainment whose clothing and gestures were selected by a photographer."
+      ],
+      "limitations": [
+        "The image alone cannot establish whether anyone feels free, constrained, or authentic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "codex_visual_audit",
+    "verdict": "revised_by_audit_visual_inspection",
+    "issues": [
+      "Previous fallback annotation described a different image; all semantic annotation fields were replaced after direct inspection of the mapped image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:39:38.191037+00:00",
+    "generator": "zcode_ai_agent_manual_visual",
+    "reviewer": "none",
+    "image_input": "direct_local_view_by_ai_agent",
+    "audit_revision": {
+      "timestamp_utc": "2026-09-07T14:37:45.702430+00:00",
+      "reason_code": "cross_image_annotation_mismatch",
+      "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1670.json",
+      "formal_gold": false
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0958",
+  "sample_id": "PHL1800_HL_0375",
+  "file_name": "PHL1800_HL_0375.png",
+  "batch_id": "B021",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of eleven people seated at two adjacent wooden tables in an indoor dining setting",
+  "captions": {
+    "scene": [
+      "An indoor restaurant or beer hall with corrugated metal walls, hanging blue-and-white checkered banners, and framed posters on the wall.",
+      "Multiple wooden tables with chairs; some tables hold plates, glasses, cutlery, and condiment containers; background shows additional patrons and staff.",
+      "Front table holds seven visible individuals (four women, three men) facing the camera; a second table behind them holds four more people (two men, two women), partially obscured."
+    ],
+    "action": [
+      "Seven individuals at the front table are looking toward the camera; most have neutral to smiling facial expressions and relaxed postures.",
+      "One man on the far left has arms crossed; one woman in the center rests her chin on her hand; another woman in the foreground clasps hands on the table.",
+      "Background figures appear engaged in conversation or eating; no visible staff holding trays."
+    ],
+    "rationale": [
+      "The arrangement of tables, presence of food remnants, drinkware, and casual attire suggests a social meal gathering rather than a formal event.",
+      "The consistent direction of gaze toward the camera implies awareness of being photographed, though no camera is visible.",
+      "The number of people (eleven total) and their spatial grouping suggest they belong to one or two related parties, but no explicit interaction (e.g., shared dishes, touching) confirms unity."
+    ],
+    "object": [
+      "A man wearing black-rimmed glasses and a black graphic t-shirt sits on the far left with arms crossed and a watch on his left wrist.",
+      "A woman with long dark hair, wearing a black top with pink and white stripes, sits beside him with her right elbow on the table and hand supporting her chin.",
+      "A white ceramic plate with a fork and leftover food sits in front of the woman in the foreground, who wears a yellow patterned blouse and a silver wristwatch.",
+      "Three clear drinking glasses with straws and liquid sit on the front table; one contains a red beverage, another appears empty or water-filled, and the third has a dark liquid.",
+      "A framed poster on the back wall displays an image of a beer mug and pretzel, with decorative elements including a small flag and ribbon."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0958_P1",
+      "visual_anchors": [
+        "blue-and-white checkered banners",
+        "corrugated metal wall",
+        "framed beer-mug poster"
+      ],
+      "symbolic_mapping": [
+        "checkered banners evoke regional cultural identity; metal wall suggests industrial or utilitarian space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of folk-style decoration against functional architecture reflects how collective identity is performed within everyday institutional spaces.",
+      "alternative_interpretations": [
+        "The banners may simply indicate a themed restaurant without deeper cultural reference."
+      ],
+      "limitations": [
+        "No legible text confirms regional origin or intended symbolism of the banners."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0958_P2",
+      "visual_anchors": [
+        "eleven individuals grouped across two tables",
+        "varied gaze directions",
+        "shared tableware placement"
+      ],
+      "symbolic_mapping": [
+        "proximity without physical contact suggests mediated sociality; eye contact with camera signals performative presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The scene captures a moment where individual presence is asserted through posture and gaze within a collectively constructed social frame, highlighting the tension between autonomy and belonging.",
+      "alternative_interpretations": [
+        "This is merely a candid group photo with no intentional staging or philosophical implication."
+      ],
+      "limitations": [
+        "No evidence of prior or subsequent actions prevents confirmation of intentionality in positioning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0958_P3",
+      "visual_anchors": [
+        "empty plate with fork",
+        "half-consumed drinks",
+        "unused napkin holder"
+      ],
+      "symbolic_mapping": [
+        "residual traces of consumption mark temporal passage; stillness of objects contrasts with human animation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The lingering artifacts of a meal—partially emptied vessels and abandoned utensils—serve as material witnesses to transient experience, underscoring the epistemic gap between what was and what remains visible.",
+      "alternative_interpretations": [
+        "These are ordinary leftovers with no symbolic intent; the scene is purely documentary."
+      ],
+      "limitations": [
+        "No timestamps, labels, or contextual markers confirm the sequence or duration of the meal."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (9 vs 11 visible); inaccurate object descriptions (e.g., 'green liquid' not visible, 'rectangular sign' misdescribed); unsupported claims about 'shared dishes' and 'performative presence' without visual evidence."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:31:18.350794+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-faf9d34f-d6a4-9a48-987b-4ab8ec410a80",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1036,
+        "total_tokens": 1805,
+        "completion_tokens_details": {
+          "text_tokens": 1036
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033057c2bbadf9a70e44fb",
+      "usage": {
+        "completion_tokens": 1030,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1965,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2995
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

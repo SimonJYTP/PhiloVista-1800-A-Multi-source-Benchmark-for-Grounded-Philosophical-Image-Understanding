@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1006",
+  "sample_id": "PHL1800_HL_0296",
+  "file_name": "PHL1800_HL_0296.png",
+  "batch_id": "B022",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a baseball team of 15 individuals posing formally outdoors",
+  "captions": {
+    "scene": [
+      "A black-and-white outdoor group photograph taken on grass with leafless trees in the background",
+      "Three rows of people: two standing behind a wooden bench, and one seated on the bench",
+      "The setting appears to be a park or field during daylight, with natural lighting and shadows"
+    ],
+    "action": [
+      "All individuals are stationary and facing the camera, most with neutral or slight smiles",
+      "Several players hold baseball gloves; one holds a bat vertically between his legs",
+      "One standing man wears a light-colored long-sleeve shirt and dark trousers, not a uniform"
+    ],
+    "rationale": [
+      "The uniformity of caps and jerseys suggests an organized team, but the presence of non-uniformed individuals implies possible coaching or administrative roles",
+      "The bench and posed arrangement indicate a formal team portrait rather than a candid moment",
+      "The unreadable text on some jerseys prevents confirmation of team name beyond partial 'PROCTOR' visibility"
+    ],
+    "object": [
+      "Fifteen distinct individuals are visible: nine seated on a wooden bench and six standing behind it",
+      "All seated individuals wear matching baseball uniforms with 'PROCTOR' printed across the chest and a 'P' logo on caps",
+      "One standing individual wears a white long-sleeve shirt and dark trousers, without a cap or uniform",
+      "Two standing individuals wear light-colored button-up shirts and caps with 'P' logos, but no visible jersey text",
+      "A wooden bench with slats and metal supports is positioned horizontally across the lower third of the image"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1006_P1",
+      "visual_anchors": [
+        "identical 'PROCTOR' lettering on jerseys",
+        "matching caps with 'P' logo",
+        "uniform posture and gaze toward camera"
+      ],
+      "symbolic_mapping": [
+        "uniformity as collective identity",
+        "shared insignia as symbolic belonging"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The repeated visual markers enforce a shared social role that subsumes individual distinction, illustrating how group membership is materially constructed through dress and alignment.",
+      "alternative_interpretations": [
+        "This may simply reflect standard team apparel requirements without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or gestures convey internal states; interpretation relies solely on external conformity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1006_P2",
+      "visual_anchors": [
+        "black-and-white photographic medium",
+        "static poses",
+        "absence of motion blur"
+      ],
+      "symbolic_mapping": [
+        "photographic stillness as preservation of a transient moment",
+        "group composition as frozen temporality"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The photograph arrests a collective instant, turning ephemeral youth and teamwork into a durable artifact—highlighting how human endeavors seek permanence against temporal flux.",
+      "alternative_interpretations": [
+        "The image is a routine documentation practice for sports teams, not necessarily intended as memorial."
+      ],
+      "limitations": [
+        "The era of the photo is inferred from clothing and monochrome format but not explicitly dated."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1006_P3",
+      "visual_anchors": [
+        "one non-uniformed man standing centrally behind the bench",
+        "his hands clasped in front",
+        "distinct attire relative to others"
+      ],
+      "symbolic_mapping": [
+        "visual differentiation as implied authority or outsider status",
+        "spatial positioning as hierarchical cue"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The divergent dress and central rear placement suggest a structuring role—possibly leadership—that depends on visual contrast to reinforce relational hierarchy within the group.",
+      "alternative_interpretations": [
+        "He may be a guest, photographer’s assistant, or unrelated bystander accidentally included."
+      ],
+      "limitations": [
+        "No insignia, title, or gesture confirms his role; spatial proximity alone is weak evidence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:38:27.949303+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9b168c10-8fc9-9294-b91b-36bf1bdfa185",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 906,
+        "total_tokens": 1715,
+        "completion_tokens_details": {
+          "text_tokens": 906
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033758918f6dfe22df4d41",
+      "usage": {
+        "completion_tokens": 763,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1902,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2665
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

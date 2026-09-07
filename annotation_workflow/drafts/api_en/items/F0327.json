@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0327",
+  "sample_id": "PHL1800_HAIV_0391",
+  "file_name": "PHL1800_HAIV_0391.png",
+  "batch_id": "B009",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized skeletal figure with a ghostly shroud holding a heart-shaped object",
+  "captions": {
+    "scene": [
+      "A white-and-lavender ghostly figure with a skull head is centered against a plain white background.",
+      "The figure’s form includes flowing drapery-like lines suggesting motion or ethereality.",
+      "A bright red, multi-layered heart shape is held centrally in front of the figure’s torso."
+    ],
+    "action": [
+      "The figure’s left hand grips the heart-shaped object from below and behind.",
+      "The figure’s right hand extends forward, fingers splayed, partially obscuring the heart’s right side.",
+      "The skull face is oriented forward, with empty eye sockets and nasal cavity visible."
+    ],
+    "rationale": [
+      "The layered red heart suggests intentional design rather than accidental overlap, due to consistent concentric outlines.",
+      "The figure’s posture—arms extended toward viewer—implies presentation or offering, though no explicit gesture like bowing or smiling is present.",
+      "The absence of legs or feet and the tapered lower shroud indicate the figure is not standing on a surface but floating or suspended."
+    ],
+    "object": [
+      "The skull has two black triangular eye sockets and a black inverted triangle nasal cavity, all outlined in thick black stroke.",
+      "The heart consists of four concentric layers: innermost deep red, then lighter red, orange-yellow, and outermost white with red outline.",
+      "The figure’s left hand shows five distinct fingers with gray shading and black outlines; nails are not detailed.",
+      "The shroud is rendered in gradients of white to pale lavender with bold black contour lines defining its folds and edges.",
+      "A small black curved line near the heart’s upper right edge resembles a stem or leaf attachment point."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0327_P1",
+      "visual_anchors": [
+        "skull head",
+        "ghostly shroud",
+        "held heart"
+      ],
+      "symbolic_mapping": [
+        "skull → mortality",
+        "heart → emotional core"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "faith_meaning"
+      ],
+      "interpretation": "The juxtaposition of a death symbol (skull) with an enduring emotional token (heart) within an incorporeal form suggests a meditation on love persisting beyond physical dissolution.",
+      "alternative_interpretations": [
+        "This may simply be a decorative emblem for a game or brand, using common gothic-romantic motifs without philosophical intent."
+      ],
+      "limitations": [
+        "No textual context or narrative cues confirm intentional symbolism; visual elements are generic and widely reused."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0327_P2",
+      "visual_anchors": [
+        "two hands framing the heart",
+        "symmetrical grip",
+        "central placement"
+      ],
+      "symbolic_mapping": [
+        "dual hands → duality of giving/receiving",
+        "centering → focus or priority"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The bilateral handling of the heart implies agency in offering or protecting emotion, reflecting how social bonds require active, balanced participation.",
+      "alternative_interpretations": [
+        "The hands may merely serve compositional balance, with no intended meaning about reciprocity or choice."
+      ],
+      "limitations": [
+        "Hand positions lack directional motion or facial expression to confirm intentionality of action."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0327_P3",
+      "visual_anchors": [
+        "translucent shroud",
+        "lack of lower body",
+        "floating appearance"
+      ],
+      "symbolic_mapping": [
+        "absence of grounding → detachment from material world"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s immaterial form, unanchored to any surface, evokes liberation from bodily constraints, yet the fixed skull identity suggests persistent selfhood despite transformation.",
+      "alternative_interpretations": [
+        "The missing lower body is likely stylistic simplification for iconography, not symbolic erasure."
+      ],
+      "limitations": [
+        "No contrast with grounded figures or explicit chains/doors exists to verify freedom or constraint themes."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:33:20.718296+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8dc746f6-3047-9b43-937a-57e5d4fce437",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 917,
+        "total_tokens": 2450,
+        "completion_tokens_details": {
+          "text_tokens": 917
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023305bc49f32ca25e47bf",
+      "usage": {
+        "completion_tokens": 772,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2876,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3648
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

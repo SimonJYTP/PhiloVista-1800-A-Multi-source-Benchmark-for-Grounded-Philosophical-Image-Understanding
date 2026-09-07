@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1129",
+  "sample_id": "PHL1800_IRFL_0411",
+  "file_name": "PHL1800_IRFL_0411.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male with dark skin tone and short black hair",
+  "captions": {
+    "scene": [
+      "A shallow-depth-of-field background with blurred human figures and indistinct color patches (blue, green, white)",
+      "Foreground subject centered in a medium close-up framing against an out-of-focus crowd-like setting",
+      "Indoor or outdoor event environment suggested by ambient lighting and presence of multiple people"
+    ],
+    "action": [
+      "Subject maintains direct eye contact with the camera lens",
+      "Subject exhibits a closed-mouth smile with slight lip elevation and visible nasolabial folds",
+      "Subject’s head is oriented forward with minimal tilt; shoulders appear squared relative to frame"
+    ],
+    "rationale": [
+      "The subject’s gaze direction and facial expression suggest engagement with a photographer, though intent cannot be confirmed",
+      "Blurred background elements imply motion or depth separation, but specific activity remains undetermined",
+      "Clothing appears formal (dark jacket over dark shirt), yet context for attire is not visually verifiable"
+    ],
+    "object": [
+      "The subject has short, tightly curled black hair cut evenly around the scalp with no visible parting.",
+      "The subject displays a mustache and goatee-style beard, both trimmed short and uniformly dark in color.",
+      "The subject wears a dark navy or black textured jacket with a visible lapel and collar seam.",
+      "The subject’s left ear is fully visible, showing natural helix and antihelix contours without adornment.",
+      "The subject’s eyebrows are thick, arched slightly, and aligned horizontally above the eyes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1129_P1",
+      "visual_anchors": [
+        "direct gaze",
+        "closed-mouth smile",
+        "symmetrical facial features"
+      ],
+      "symbolic_mapping": [
+        "direct gaze → claim to presence",
+        "smile → negotiated social affect"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s frontal orientation and controlled expression may reflect a performative negotiation of self within a public visual field, where visibility entails both assertion and constraint.",
+      "alternative_interpretations": [
+        "The expression could simply indicate momentary pleasantness without intentional signaling."
+      ],
+      "limitations": [
+        "No contextual cues confirm whether the subject is aware of being photographed or how they intend to be perceived."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1129_P2",
+      "visual_anchors": [
+        "short uniform hair",
+        "trimmed facial hair",
+        "structured jacket"
+      ],
+      "symbolic_mapping": [
+        "grooming precision → self-regulation",
+        "attire formality → role adherence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The deliberate presentation of appearance—hair, beard, clothing—suggests an embodied ethic of responsibility toward external perception, where bodily presentation functions as a moral gesture.",
+      "alternative_interpretations": [
+        "Grooming and attire may reflect routine habit or ambient dress code rather than ethical deliberation."
+      ],
+      "limitations": [
+        "No evidence links grooming choices to internal values or conscious intention."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1129_P3",
+      "visual_anchors": [
+        "shallow depth of field",
+        "blurred background figures",
+        "subject in sharp focus"
+      ],
+      "symbolic_mapping": [
+        "focus isolation → individuation",
+        "background anonymity → collective backdrop"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The photographic emphasis on one figure amid indistinct others visually enacts a philosophical tension between individual singularity and social embeddedness, where focus becomes a metaphor for existential selection.",
+      "alternative_interpretations": [
+        "Depth of field is a technical photographic choice unrelated to meaning-making."
+      ],
+      "limitations": [
+        "The blurring results from optical properties, not intentional symbolic design."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:53:29.634486+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-79cb5adb-e128-9fab-a0e2-153ba61cc27e",
+      "usage": {
+        "prompt_tokens": 803,
+        "completion_tokens": 860,
+        "total_tokens": 1663,
+        "completion_tokens_details": {
+          "text_tokens": 860
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 296,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035313fb06b5de163b4c77",
+      "usage": {
+        "completion_tokens": 719,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1827,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2546
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

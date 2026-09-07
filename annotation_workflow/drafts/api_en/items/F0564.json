@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0564",
+  "sample_id": "PHL1800_HL_0054",
+  "file_name": "PHL1800_HL_0054.png",
+  "batch_id": "B013",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two pedestrians walking past a street clock and storefront",
+  "captions": {
+    "scene": [
+      "A brick building with large glass windows reflecting trees and sky, adjacent to a paved sidewalk.",
+      "A black ornate street clock with four visible clock faces mounted on a pole near a wooden bench.",
+      "Yellow lettering reading \"NATIONAL GYM TANIA\" appears on two upper panels of the clock structure; lower window reflections show partial reversed text including \"J.L. FAB\"."
+    ],
+    "action": [
+      "A man in a red t-shirt and jeans walks leftward, viewed from behind, with his right arm swinging forward.",
+      "A woman in a black top and denim shorts walks leftward beside him, barefoot, her left arm bent at the elbow.",
+      "The clock hands indicate approximately 10:10 on the front-facing dial; all dials appear synchronized."
+    ],
+    "rationale": [
+      "The pair walk in the same direction and proximity, suggesting coordinated movement rather than coincidence.",
+      "The clock’s multiple faces and vertical orientation imply it is designed for visibility from multiple street angles.",
+      "The reversed yellow text in the window suggests interior signage viewed through reflective glass, not external signage."
+    ],
+    "object": [
+      "A black cast-iron street clock stands on a square base with fluted column, topped by a spherical finial and four clock faces enclosed in glass panels.",
+      "Two people are visible: one male with short dark hair wearing a red short-sleeved shirt and blue jeans; one female with long brown hair wearing a black sleeveless top and light-blue denim shorts.",
+      "A light-brown wooden slat bench with black metal legs sits against the building wall, unoccupied.",
+      "The building facade combines reddish-orange brickwork with beige stone trim around window openings and a corner pilaster.",
+      "Tree branches with green leaves extend into the upper-left frame, partially obscuring the building and casting shadows on the brick."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0564_P1",
+      "visual_anchors": [
+        "four-faced street clock",
+        "pedestrians in motion",
+        "reflected signage"
+      ],
+      "symbolic_mapping": [
+        "the clock’s multiplicity of faces symbolizes shared yet fragmented temporal experience"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The clock’s simultaneous display of time to multiple directions mirrors how individuals inhabit a common temporal framework while moving through distinct personal trajectories, underscoring the tension between collective chronology and individual passage.",
+      "alternative_interpretations": [
+        "The clock may simply serve utilitarian civic function without symbolic intent; its design follows standard municipal ornamentation conventions."
+      ],
+      "limitations": [
+        "No explicit textual or iconographic cues confirm intentional symbolism; the interpretation relies on structural analogy rather than authorial evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0564_P2",
+      "visual_anchors": [
+        "barefoot woman",
+        "man in casual attire",
+        "urban sidewalk"
+      ],
+      "symbolic_mapping": [
+        "barefootness contrasts with built environment, evoking vulnerability or deliberate rejection of convention"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The woman’s bare feet on paved ground juxtapose bodily autonomy against infrastructural rigidity, raising questions about self-presentation and the constraints imposed by public space norms.",
+      "alternative_interpretations": [
+        "She may be temporarily barefoot due to comfort, weather, or recent activity (e.g., removing shoes indoors), with no expressive intent."
+      ],
+      "limitations": [
+        "Footwear status is observable but motive is not; barefootness alone does not establish philosophical stance."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0564_P3",
+      "visual_anchors": [
+        "reversed yellow text in window",
+        "clock face showing 10:10",
+        "shared walking direction"
+      ],
+      "symbolic_mapping": [
+        "reflection distorts legibility, paralleling how social meaning is mediated and altered through perception"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The unreadable reversed signage—visible only as distorted fragments—suggests that public information is often accessible only indirectly, requiring interpretation and risking misreading, thus problematizing consensus reality in shared spaces.",
+      "alternative_interpretations": [
+        "The reflection is incidental optics; the text is ordinary commercial signage with no epistemic implication."
+      ],
+      "limitations": [
+        "The text content is not fully legible; its semantic role cannot be verified from image alone."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:57:00.741898+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-937c0dd1-864d-98f2-8aa7-570c3e2940b4",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1004,
+        "total_tokens": 1773,
+        "completion_tokens_details": {
+          "text_tokens": 1004
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025649add80985b0cb4246",
+      "usage": {
+        "completion_tokens": 865,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1935,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2800
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0596",
+  "sample_id": "PHL1800_IRFL_0220",
+  "file_name": "PHL1800_IRFL_0220.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a gray tombstone with engraved text",
+  "captions": {
+    "scene": [
+      "A dark gray, arched-top tombstone stands upright in bright green grass against a pure white background.",
+      "The tombstone shows visible surface cracks near the top and right edge.",
+      "The grass at the base is dense, sharply defined, and uniformly vibrant green."
+    ],
+    "action": [
+      "The tombstone remains stationary and vertically oriented.",
+      "Grass blades are static with no motion blur or displacement.",
+      "Lighting produces soft shadows on the tombstone’s left side and beneath the grass line."
+    ],
+    "rationale": [
+      "The tombstone’s material appears stone-like due to texture, color, and crack patterns; however, it could be synthetic—insufficient evidence confirms natural stone.",
+      "The white background isolates the subject, suggesting studio or digital composition; real-world context is absent.",
+      "The inscription 'R.I.P.' is legible and centered, but no other text or symbols are present—no further identification is possible."
+    ],
+    "object": [
+      "The tombstone is rectangular with a rounded top edge and measures approximately twice as tall as its width.",
+      "The letters 'R.I.P.' are deeply engraved in uppercase serif font, with periods after each letter, positioned in the upper half of the tombstone face.",
+      "Two fine linear cracks originate near the top-left and top-right corners of the tombstone and extend downward less than one-tenth of its height.",
+      "The grass forms a continuous horizontal band across the bottom third of the image, with individual blades varying in length and orientation.",
+      "No human figures, animals, tools, or additional objects appear in the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0596_P1",
+      "visual_anchors": [
+        "engraved 'R.I.P.' text",
+        "cracked stone surface",
+        "isolated white background"
+      ],
+      "symbolic_mapping": [
+        "'R.I.P.' maps to finality of life",
+        "cracks map to impermanence or decay"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The tombstone embodies the inevitability and physical dissolution associated with mortality, emphasized by the stark abbreviation and visible degradation.",
+      "alternative_interpretations": [
+        "It may function as a generic Halloween prop or graphic design element without philosophical intent."
+      ],
+      "limitations": [
+        "No contextual cues (e.g., cemetery, weathering, surrounding markers) confirm intended meaning beyond visual convention."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0596_P2",
+      "visual_anchors": [
+        "uniform green grass",
+        "clean white background",
+        "symmetrical tombstone placement"
+      ],
+      "symbolic_mapping": [
+        "grass contrasts with stone to signify life persisting amid death"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of vibrant grass against inert stone suggests cyclical renewal, where biological continuity persists despite individual cessation.",
+      "alternative_interpretations": [
+        "The grass may be digitally rendered for aesthetic balance rather than symbolic contrast."
+      ],
+      "limitations": [
+        "The grass lacks roots, soil, or ecological context; its symbolic role is not visually enforced."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0596_P3",
+      "visual_anchors": [
+        "absence of name or dates",
+        "generic form",
+        "centered composition"
+      ],
+      "symbolic_mapping": [
+        "anonymity of the marker reflects universal human finitude"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "By omitting personal identifiers, the tombstone abstracts death into a shared condition, foregrounding collective vulnerability over individual legacy.",
+      "alternative_interpretations": [
+        "The omission may result from design constraints or intended reuse as a stock image template."
+      ],
+      "limitations": [
+        "No evidence confirms intentional abstraction versus practical simplification."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:59:38.144250+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-454321fd-1f63-9389-841c-38d973faa265",
+      "usage": {
+        "prompt_tokens": 1169,
+        "completion_tokens": 870,
+        "total_tokens": 2039,
+        "completion_tokens_details": {
+          "text_tokens": 870
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 662,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070259248400f042b7424c59",
+      "usage": {
+        "completion_tokens": 732,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2340,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3072
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

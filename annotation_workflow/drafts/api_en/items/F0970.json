@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0970",
+  "sample_id": "PHL1800_HL_0500",
+  "file_name": "PHL1800_HL_0500.png",
+  "batch_id": "B021",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a blue train arriving at a station platform with several people waiting",
+  "captions": {
+    "scene": [
+      "An outdoor railway station with a covered platform supported by blue pillars, a metal footbridge overhead, and green vegetation in the background.",
+      "Two parallel tracks run through gravel ballast; one track holds a blue diesel train with red trim approaching the platform.",
+      "Colorful triangular pennant flags hang from the roof of the platform shelter; a chain-link fence separates the tracks from adjacent land."
+    ],
+    "action": [
+      "A blue train is moving forward on the right-hand track toward the platform, its headlights visible and front coupler exposed.",
+      "Three individuals stand on the platform: one facing away wearing a white t-shirt and jeans, one in a white shirt holding a bicycle, and one in a green shirt partially obscured.",
+      "A fourth person’s arm and hand holding a cardboard box are visible at the far right edge of the frame."
+    ],
+    "rationale": [
+      "The train’s position relative to the platform edge and its orientation suggest it is arriving rather than departing, though motion blur is absent so speed is indeterminate.",
+      "The presence of a bicycle and standing posture of people implies waiting behavior, but no tickets, schedules, or boarding actions are visible.",
+      "The footbridge connects two sides of the station, indicating a functional crossing, yet no one is currently using it—this may reflect timing rather than disuse."
+    ],
+    "object": [
+      "A blue locomotive with white roof, black undercarriage, two circular headlights, and rectangular windows with dark panes occupies the right track.",
+      "A white-framed metal footbridge with vertical railings spans above the tracks, supported by steel columns and connected to staircases on both sides.",
+      "A chain-link fence with white posts runs parallel to the left track, separating the railway from grassy ground and trees beyond.",
+      "A white bicycle with black tires and handlebars stands upright beside a man in a white shirt on the platform.",
+      "Triangular pennant flags in red, yellow, blue, and green hang in rows beneath the platform roof eaves."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0970_P1",
+      "visual_anchors": [
+        "blue train approaching platform",
+        "people standing still",
+        "empty footbridge"
+      ],
+      "symbolic_mapping": [
+        "train as embodiment of scheduled time",
+        "stillness as anticipation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The suspended moment before boarding evokes the philosophical tension between linear temporal progression (the train’s inevitable arrival) and human agency (the choice to step aboard or remain), highlighting how infrastructure frames existential decisions.",
+      "alternative_interpretations": [
+        "This is simply a routine transit scene with no symbolic intent; the train is late or early, and people wait per schedule."
+      ],
+      "limitations": [
+        "No facial expressions, signage, or contextual documents confirm intentionality or symbolic meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0970_P2",
+      "visual_anchors": [
+        "chain-link fence",
+        "separate tracks",
+        "platform barrier"
+      ],
+      "symbolic_mapping": [
+        "fence as physical demarcation of access",
+        "tracks as divergent paths"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The spatial division enforced by fencing and track layout visually enacts constraints on movement, suggesting how social structures materialize as physical boundaries that shape collective coexistence and individual mobility.",
+      "alternative_interpretations": [
+        "The fence is purely for safety compliance and has no sociopolitical connotation."
+      ],
+      "limitations": [
+        "The fence’s purpose is not labeled; it could be for trespass prevention rather than social control."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0970_P3",
+      "visual_anchors": [
+        "colorful pennant flags",
+        "blue structural pillars",
+        "uniform train livery"
+      ],
+      "symbolic_mapping": [
+        "flags as transient decoration",
+        "blue as institutional color"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of festive, ephemeral flags against the rigid, utilitarian design of the train and station reflects how identity and celebration are layered onto systems of labor and technology, revealing culture’s ornamentation of infrastructure.",
+      "alternative_interpretations": [
+        "Flags are standard station decoration for a local festival; no deeper meaning is intended."
+      ],
+      "limitations": [
+        "Flag colors and arrangement do not specify cultural or event context; interpretation relies on external assumptions."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:32:42.838758+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-19a09791-f4ab-9835-bc16-2abdd4d8513a",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1009,
+        "total_tokens": 1818,
+        "completion_tokens_details": {
+          "text_tokens": 1009
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033214830ce58840f54be5",
+      "usage": {
+        "completion_tokens": 864,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1989,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2853
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

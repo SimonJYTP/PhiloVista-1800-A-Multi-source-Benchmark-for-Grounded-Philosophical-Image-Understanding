@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1139",
+  "sample_id": "PHL1800_IRFL_0376",
+  "file_name": "PHL1800_IRFL_0376.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person wearing a blue shirt and dark pants, partially visible in a doorway",
+  "captions": {
+    "scene": [
+      "A severely cluttered interior room with walls showing peeling paint and discoloration.",
+      "Piles of assorted refuse—including plastic bags, cardboard boxes, fabric, and unidentifiable debris—cover the floor and extend into adjacent spaces.",
+      "A doorway leads to a brighter adjacent room; on the right wall hangs a framed artwork with pink and green hues and a circular decorative plate above it."
+    ],
+    "action": [
+      "The person stands upright in the doorway, facing away from the camera, with one arm slightly raised near their torso.",
+      "Debris remains static; no motion blur or displacement indicates ongoing movement.",
+      "A black trash bag rests atop the pile near the center-right, partially collapsed but not torn."
+    ],
+    "rationale": [
+      "The person’s posture suggests they are observing or navigating the space, though intent cannot be confirmed from posture alone.",
+      "Wall damage and accumulation of waste imply prolonged neglect, but duration is not visually measurable.",
+      "The presence of framed art and a decorative plate indicates prior intentional decoration, though current condition obscures original function."
+    ],
+    "object": [
+      "A round analog wall clock with a dark frame hangs on the left wall, its face partially obscured by shadow and debris.",
+      "A rectangular vent grille is mounted high on the back wall, centered above the doorway.",
+      "A white door on the right side is ajar, with dark splatters and smudges concentrated near its lower half and handle area.",
+      "A red-rimmed circular object, possibly a tray or lid, lies horizontally amid the debris near the right wall.",
+      "A brown wooden cabinet or dresser lies on its side among the left-side debris, with drawers open and contents spilled."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1139_P1",
+      "visual_anchors": [
+        "peeling wall paint",
+        "framed artwork with vibrant colors",
+        "debris covering floor"
+      ],
+      "symbolic_mapping": [
+        "vibrant artwork amid decay symbolizes persistence of aesthetic intention despite material collapse"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of deliberate artistic display against systemic disintegration evokes the fragility of constructed identity when temporal decay overwhelms maintenance.",
+      "alternative_interpretations": [
+        "The artwork may simply be leftover from prior occupancy and not intentionally displayed amid current disorder."
+      ],
+      "limitations": [
+        "No evidence confirms whether the artwork was hung recently, preserved intentionally, or abandoned accidentally."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1139_P2",
+      "visual_anchors": [
+        "person standing in doorway",
+        "clutter blocking floor access",
+        "open door revealing light"
+      ],
+      "symbolic_mapping": [
+        "doorway as threshold between order and chaos",
+        "light beyond suggesting possibility of exit or intervention"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure positioned at the liminal space between overwhelming accumulation and illuminated passage reflects the phenomenological tension between constrained agency and potential transition.",
+      "alternative_interpretations": [
+        "The person may be retrieving an item or waiting, with no symbolic intent implied by their stance."
+      ],
+      "limitations": [
+        "Only partial body visibility prevents confirmation of gaze direction, orientation, or purposeful positioning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1139_P3",
+      "visual_anchors": [
+        "black trash bag",
+        "scattered plastic wrappers",
+        "cardboard boxes"
+      ],
+      "symbolic_mapping": [
+        "disposal containers coexisting with unsorted waste signals incomplete enactment of responsibility"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The presence of functional disposal tools amidst unmanaged accumulation illustrates the gap between normative obligation and lived practice, questioning collective accountability in shared environments.",
+      "alternative_interpretations": [
+        "The trash bag may have been placed recently for removal and not yet collected, indicating active cleanup rather than neglect."
+      ],
+      "limitations": [
+        "No timestamp or sequence evidence confirms whether the bag was added before or after the surrounding mess formed."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:54:39.105598+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3f1e0fc9-92b9-9242-8247-06c55e75cae1",
+      "usage": {
+        "prompt_tokens": 794,
+        "completion_tokens": 926,
+        "total_tokens": 1720,
+        "completion_tokens_details": {
+          "text_tokens": 926
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 287,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035413aa33b9cdbbcc418c",
+      "usage": {
+        "completion_tokens": 790,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1869,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2659
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

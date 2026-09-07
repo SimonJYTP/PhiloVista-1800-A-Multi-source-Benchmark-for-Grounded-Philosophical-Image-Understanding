@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0504",
+  "sample_id": "PHL1800_IRFL_0054",
+  "file_name": "PHL1800_IRFL_0054.jpg",
+  "batch_id": "B012",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two children interacting with a vintage computer system",
+  "captions": {
+    "scene": [
+      "A cluttered desk with books, binders, and a CRT monitor displaying a colorful pixelated graphic.",
+      "Two children seated at a white table; one wears a red sweater with white polka dots, the other a light-colored shirt with dark trim.",
+      "A black keyboard with multicolored function keys sits in front of the monitor, connected by visible cables."
+    ],
+    "action": [
+      "The child in the foreground holds a black joystick-like controller with yellow buttons near their face.",
+      "The child behind leans forward, eyes directed toward the monitor screen.",
+      "Both children are oriented toward the computer, suggesting shared attention to the display."
+    ],
+    "rationale": [
+      "The monitor shows a pixel-art scene with green ground, blue sky, and vertical colored blocks—consistent with early 8-bit graphics—but no readable text or game title is visible.",
+      "The keyboard layout includes distinct green, blue, and red keys, indicating a non-standard design typical of 1980s home computers, though the model cannot be identified from visible features alone.",
+      "The presence of stacked binders and paper documents suggests an educational or domestic setting, but the specific context (e.g., school, home library) is not determinable from visual evidence."
+    ],
+    "object": [
+      "A black CRT monitor displays a low-resolution color image composed of blocky shapes in green, blue, red, yellow, and brown; no legible text appears on screen.",
+      "A black keyboard with raised rectangular keys, including four large green keys, two blue keys, and two red keys arranged in rows above the main QWERTY section.",
+      "A black handheld controller with two yellow square buttons and a central black grip, held by the foreground child.",
+      "A beige cylindrical object with a white cord rests atop the monitor’s casing; its function is visually indeterminate.",
+      "A stack of vertically oriented books and binders behind the monitor includes spines in green, yellow, red, and white, some with visible labels that are unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0504_P1",
+      "visual_anchors": [
+        "pixelated monitor display",
+        "multicolored keyboard keys",
+        "child holding controller"
+      ],
+      "symbolic_mapping": [
+        "the pixel grid as representation of mediated perception",
+        "color-coded keys as codified agency"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The interface embodies a threshold where human intention is translated into machine action through constrained symbolic inputs, reflecting how knowledge is constructed via technological mediation.",
+      "alternative_interpretations": [
+        "This is simply a recreational activity involving early gaming hardware, with no deeper implication."
+      ],
+      "limitations": [
+        "No visible user interface labels or instructional text confirm intended purpose or meaning of the displayed graphics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0504_P2",
+      "visual_anchors": [
+        "two children sharing focus on one screen",
+        "proximity without physical contact",
+        "shared orientation toward device"
+      ],
+      "symbolic_mapping": [
+        "co-attention as emergent social coordination",
+        "device as focal point for joint engagement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The arrangement illustrates how shared technological artifacts can scaffold intersubjective experience, forming a temporary social field defined by mutual orientation rather than verbal exchange.",
+      "alternative_interpretations": [
+        "The children may be independently observing, with no intentional collaboration evident."
+      ],
+      "limitations": [
+        "Facial expressions and body language are partially obscured; intent to collaborate cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0504_P3",
+      "visual_anchors": [
+        "cluttered background of books and binders",
+        "vintage computer hardware",
+        "unidentifiable screen content"
+      ],
+      "symbolic_mapping": [
+        "physical media stacks as repositories of stored knowledge",
+        "obsolete hardware as temporal marker"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of analog storage (books) and early digital interface evokes the fragility of epistemic continuity across technological generations, where appearance of tools shapes perceived legitimacy of knowledge.",
+      "alternative_interpretations": [
+        "The background items are incidental storage; no thematic relationship to the computer is visually established."
+      ],
+      "limitations": [
+        "Book titles and binder contents are illegible, preventing confirmation of thematic linkage."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:52:22.519310+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f900f53b-51c8-9584-9264-79f70de0dfe0",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 993,
+        "total_tokens": 1762,
+        "completion_tokens_details": {
+          "text_tokens": 993
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025203cc4f9ee0a1ed4292",
+      "usage": {
+        "completion_tokens": 852,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1925,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2777
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

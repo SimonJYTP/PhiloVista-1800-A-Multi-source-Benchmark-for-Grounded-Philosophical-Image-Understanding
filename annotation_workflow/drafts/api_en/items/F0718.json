@@ -1,0 +1,169 @@
+{
+  "annotation_item_id": "F0718",
+  "sample_id": "PHL1800_IRFL_0272",
+  "file_name": "PHL1800_IRFL_0272.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_deepseek_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one armed soldier in motion",
+  "captions": {
+    "scene": [
+      "rain-slicked urban street at night with blurred vehicle lights and military vehicles in background",
+      "intense rainfall visible as streaks and droplets illuminated by ambient light sources",
+      "multiple armored vehicles with bright orange glowing panels or lights in mid-background"
+    ],
+    "action": [
+      "soldier running forward with rifle held diagonally across torso",
+      "soldier's right arm and torso area emitting a strong orange glow",
+      "vehicle turrets and headlights active; one vehicle shows bright orange illumination and blur"
+    ],
+    "rationale": [
+      "orange glow on soldier likely from an external source due to directional lighting, but could also be a stylized effect; precise origin cannot be determined from the image",
+      "background vehicles appear in motion or at least visually blurred; exact speed is uncertain",
+      "rain intensity inferred from density of visible droplets and reflective wet surfaces, though exact precipitation rate is unmeasurable"
+    ],
+    "object": [
+      "The soldier wears a dark tactical uniform with knee pads, gloves, and a vest holding pouches and equipment.",
+      "The soldier carries a scoped assault rifle slung diagonally across the chest, with left hand gripping the foregrip and right hand near the pistol grip.",
+      "A large tracked armored vehicle occupies the right mid-ground, featuring a turret and bright orange glowing areas near its front and body.",
+      "Multiple out-of-focus light sources—yellow, white, and red—appear as bokeh circles in the background, consistent with vehicle headlights and taillights.",
+      "Water droplets are suspended and falling across the entire frame, reflecting light and creating streaks against darker areas."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0718_P1",
+      "visual_anchors": [
+        "orange glow on soldier's torso",
+        "wet reflective pavement",
+        "blurred background lights"
+      ],
+      "symbolic_mapping": [
+        "glow as transient illumination amid chaos",
+        "reflection as unstable perception"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The fleeting luminosity on the soldier's body against the rain-blurred city suggests impermanence and the fragility of clarity in crisis—truth emerges only momentarily before dissolving into obscurity.",
+      "alternative_interpretations": [
+        "The glow may simply be a weapon discharge or vehicle explosion reflected on wet gear, with no symbolic intent."
+      ],
+      "limitations": [
+        "No readable text or explicit iconography confirms intentional symbolism; glow could be purely aesthetic lighting."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0718_P2",
+      "visual_anchors": [
+        "soldier running alone",
+        "multiple armored vehicles behind",
+        "no other visible personnel"
+      ],
+      "symbolic_mapping": [
+        "solitary figure amid machinery as individual agency under systemic force"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "choice_journey"
+      ],
+      "interpretation": "The lone runner advancing while heavy machinery looms behind embodies the tension between personal volition and overwhelming institutional power—movement forward signifies choice even when constrained.",
+      "alternative_interpretations": [
+        "The composition may reflect standard action-game cinematography emphasizing hero focus, not philosophical statement."
+      ],
+      "limitations": [
+        "Only one human figure is clearly visible; absence of others may result from framing rather than narrative intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0718_P3",
+      "visual_anchors": [
+        "rain obscuring background",
+        "reflections distorting light sources",
+        "bright orange glowing panels on vehicle"
+      ],
+      "symbolic_mapping": [
+        "distorted reflections as mediated reality",
+        "fragmented light as incomplete information"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "Visual distortion through rain and reflection implies that perception is always filtered and partial; social reality is constructed from fragmented, luminous signals rather than direct access.",
+      "alternative_interpretations": [
+        "Optical effects are standard cinematic techniques to convey atmosphere, not epistemological commentary."
+      ],
+      "limitations": [
+        "The orange areas on the vehicle are indistinct and not readable as specific imagery; their symbolic role is uncertain."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "deepseek-v4-flash-vision-exp",
+    "verdict": "revise",
+    "issues": [
+      "Candidate incorrectly claims visible muzzle flash near the right armored vehicle; actually bright orange glow and blur dominate, with no clear muzzle flash identifiable.",
+      "Candidate invents two illuminated rectangular panels showing indistinct imagery on the tank; the visible bright orange blocks are not clearly readable as such panels.",
+      "Candidate overstates the glow as possibly from fire or energy effect; the image alone does not establish the source or material.",
+      "Candidate's first rationale claims the orange glow likely originates from an external source, but the glow visually appears contiguous with the soldier's body; external source is only a plausible inference.",
+      "In philosophy interpretations, the claim that the glowing panels show fragmented images is not supported; they are indistinct bright orange shapes."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:30:43.072871+00:00",
+    "generator": "qwen",
+    "reviewer": "deepseek",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ed722498-5511-97ba-a0ad-2e243f9d62f6",
+      "usage": {
+        "prompt_tokens": 1508,
+        "completion_tokens": 913,
+        "total_tokens": 2421,
+        "completion_tokens_details": {
+          "text_tokens": 913
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 952,
+          "text_tokens": 556,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash-vision-exp",
+      "request_id": "a19d4b3a-4658-4c4a-859c-fd4afd9acd8f",
+      "usage": {
+        "prompt_tokens": 1971,
+        "completion_tokens": 1972,
+        "total_tokens": 3943,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 987
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1971
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

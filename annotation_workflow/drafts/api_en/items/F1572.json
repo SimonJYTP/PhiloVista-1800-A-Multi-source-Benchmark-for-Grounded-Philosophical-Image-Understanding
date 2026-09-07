@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1572",
+  "sample_id": "PHL1800_IRFL_0355",
+  "file_name": "PHL1800_IRFL_0355.jpg",
+  "batch_id": "B032",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one boy",
+  "captions": {
+    "scene": [
+      "A boy stands against a plain white background with no visible environment details.",
+      "The lighting is even and bright, suggesting studio conditions with no shadows or ambient context.",
+      "Watermark patterns (e.g., '123RF' and camera icons) are overlaid across the image but do not form part of the scene content."
+    ],
+    "action": [
+      "The boy holds a blue soccer ball in his left arm, cradling it against his torso.",
+      "He holds an orange basketball in his right hand, gripping it near the handle of a green tennis racket that rests vertically on the ball.",
+      "He smiles with teeth visible, eyes open and directed toward the camera, and wears a backpack with visible gray straps over both shoulders."
+    ],
+    "rationale": [
+      "The presence of multiple sports equipment suggests engagement with physical activity, though no motion is captured.",
+      "The striped shirt and backpack imply a possible school-related context, but no school identifiers are visible.",
+      "The white background isolates the subject, indicating intentional staging rather than candid capture; however, purpose remains unspecified."
+    ],
+    "object": [
+      "The boy has short dark brown hair, light skin tone, and wears a short-sleeved t-shirt with horizontal stripes in pink, white, red, green, and light blue.",
+      "A blue soccer ball with black pentagonal panels is held in the boy’s left arm; its surface shows slight texture and minor scuff marks.",
+      "An orange basketball with black seam lines is held in the boy’s right hand; its surface appears standard for composite leather material.",
+      "A green-framed tennis racket with white stringing and a black grip is positioned upright, resting on the basketball and held by the boy’s right hand near the throat of the racket.",
+      "Gray backpack straps are visible over both shoulders, with black plastic buckles on the left strap; the main body of the backpack is not visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1572_P1",
+      "visual_anchors": [
+        "striped shirt",
+        "backpack straps",
+        "multiple sports balls"
+      ],
+      "symbolic_mapping": [
+        "striped pattern may evoke multiplicity of roles",
+        "backpack suggests preparedness or transition"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of academic gear (backpack) and recreational tools (sports equipment) visually frames the subject within overlapping social expectations and personal agency in navigating developmental stages.",
+      "alternative_interpretations": [
+        "The items may simply be props arranged for commercial stock photography without intended symbolic meaning."
+      ],
+      "limitations": [
+        "No contextual signage, facial expression beyond smiling, or behavioral sequence confirms intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1572_P2",
+      "visual_anchors": [
+        "smiling face",
+        "direct gaze",
+        "held objects"
+      ],
+      "symbolic_mapping": [
+        "gaze toward viewer implies address or invitation",
+        "holding diverse objects suggests capacity for varied engagement"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The boy’s appearance—curated clothing, clean equipment, posed stance—constructs an identity shaped by external presentation norms, while the choice to hold multiple items simultaneously hints at constrained freedom within prescribed activity categories.",
+      "alternative_interpretations": [
+        "The pose reflects standard modeling direction for stock imagery, not philosophical intent."
+      ],
+      "limitations": [
+        "Facial expression is static and non-narrative; no evidence of internal deliberation or constraint is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1572_P3",
+      "visual_anchors": [
+        "white background",
+        "isolated figure",
+        "uniform lighting"
+      ],
+      "symbolic_mapping": [
+        "void background removes temporal or spatial anchoring",
+        "singular focus emphasizes individual as unit of analysis"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The decontextualized presentation abstracts the boy from time-bound reality, inviting reflection on the transient nature of childhood roles and the relational construction of self through objects and attire.",
+      "alternative_interpretations": [
+        "The white background is a technical convention for product or portrait photography, not a metaphysical statement."
+      ],
+      "limitations": [
+        "No aging markers, temporal indicators, or relational dynamics (e.g., others, clocks, decay) are present to ground mortality or relation claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:47:08.095084+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e2db9bd1-302c-9045-b8ab-fe2a0cac011b",
+      "usage": {
+        "prompt_tokens": 1616,
+        "completion_tokens": 985,
+        "total_tokens": 2601,
+        "completion_tokens_details": {
+          "text_tokens": 985
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1109,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044635fd7ac83dbfbb43ff",
+      "usage": {
+        "completion_tokens": 845,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2995,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3840
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

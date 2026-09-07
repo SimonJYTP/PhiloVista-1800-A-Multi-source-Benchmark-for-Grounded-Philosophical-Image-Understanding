@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0381",
+  "sample_id": "PHL1800_HL_0239",
+  "file_name": "PHL1800_HL_0239.png",
+  "batch_id": "B010",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people on a tennis court",
+  "captions": {
+    "scene": [
+      "A green hard-surface tennis court with white boundary lines and a black net in the foreground.",
+      "A brick wall covered partially by ivy behind the court, with a metal pole and green fence posts visible.",
+      "The background includes a vertical utility pole with attached fixtures and a horizontal wire or cable near the top."
+    ],
+    "action": [
+      "The person in the foreground holds a tennis racket with both hands in a ready stance, knees bent, facing the net.",
+      "The person in the background is airborne with right arm extended upward, appearing to strike or follow through on a serve.",
+      "A yellow tennis ball is visible mid-air above the serving person’s racket hand, slightly blurred."
+    ],
+    "rationale": [
+      "The foreground person’s posture and racket grip suggest anticipation of a return shot, but no ball is near them; this is inferred from body orientation and equipment position.",
+      "The background person’s elevated feet and arm extension indicate motion consistent with a tennis serve, though foot contact with ground cannot be confirmed due to motion blur.",
+      "The ball’s position relative to the raised hand suggests it was recently tossed or struck, but its trajectory direction is ambiguous without additional frames."
+    ],
+    "object": [
+      "The foreground person wears a sleeveless white top, bright pink skirt, white socks, and white athletic shoes with blue accents.",
+      "The background person wears a dark blue short-sleeved t-shirt with indistinct white text, dark pants, and white shoes with red trim.",
+      "A black tennis net with white tape along the top spans horizontally across the lower third of the image.",
+      "A yellow tennis ball appears as a small blurred oval above the background person’s right hand.",
+      "A gray cylindrical pole stands vertically behind the background person, with a horizontal metallic fixture attached near its midpoint."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0381_P1",
+      "visual_anchors": [
+        "foreground person in ready stance",
+        "background person mid-serve",
+        "net dividing the court"
+      ],
+      "symbolic_mapping": [
+        "the net as a boundary between action and reaction",
+        "the ready stance as preparedness for contingent response"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where one agent initiates action while another awaits, illustrating how freedom to act is inherently coupled with constraint imposed by the opponent’s potential response.",
+      "alternative_interpretations": [
+        "This is simply a standard doubles or singles tennis exchange with no deeper meaning beyond sport mechanics."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolic framing; the interpretation relies on post-hoc projection onto neutral athletic behavior."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0381_P2",
+      "visual_anchors": [
+        "motion-blurred ball",
+        "airborne server",
+        "static foreground player"
+      ],
+      "symbolic_mapping": [
+        "the blurred ball as transient presence",
+        "the grounded player as continuity amid flux"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The fleeting visibility of the ball contrasts with the sustained bodily presence of the players, evoking the tension between ephemeral events and enduring social roles within shared activity.",
+      "alternative_interpretations": [
+        "Motion blur results from camera shutter speed and subject movement, not philosophical intent."
+      ],
+      "limitations": [
+        "Temporal duration is not measurable from a single frame; ‘ephemeral’ vs ‘enduring’ is interpretive, not directly observable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0381_P3",
+      "visual_anchors": [
+        "distinct clothing colors (pink/white vs blue/dark)",
+        "asymmetrical positioning (near/far)",
+        "shared equipment (rackets, net)"
+      ],
+      "symbolic_mapping": [
+        "color contrast as differentiation within cooperation",
+        "spatial separation as interdependence despite distance"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Differences in appearance and spatial placement coexist with shared participation in a rule-bound activity, suggesting identity is both individuated and constituted through relational practice.",
+      "alternative_interpretations": [
+        "Clothing choices reflect personal preference or team affiliation, not conceptual statements about identity."
+      ],
+      "limitations": [
+        "No labels, logos, or explicit markers confirm intentional identity signaling; color differences may be coincidental."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:41:50.670106+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4e4d1ca1-96f5-90b5-a0fe-8b3db5a88fdd",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 979,
+        "total_tokens": 1648,
+        "completion_tokens_details": {
+          "text_tokens": 979
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702413420f79c5f1fe84622",
+      "usage": {
+        "completion_tokens": 841,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1775,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2616
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

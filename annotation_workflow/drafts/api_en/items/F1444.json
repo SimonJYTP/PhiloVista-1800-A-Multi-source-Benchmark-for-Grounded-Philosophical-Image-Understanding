@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1444",
+  "sample_id": "PHL1800_HL_0542",
+  "file_name": "PHL1800_HL_0542.png",
+  "batch_id": "B030",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four jockeys riding racehorses in motion on a grass track",
+  "captions": {
+    "scene": [
+      "A blurred green grass track with a white rail and indistinct background structures under overcast daylight",
+      "Horizontal motion blur dominates the image, indicating high-speed lateral movement across the frame",
+      "Four horses and riders occupy the central horizontal band, with a fifth rider partially visible on the far right"
+    ],
+    "action": [
+      "All visible horses are in full gallop, with at least two front legs off the ground per horse",
+      "Jockeys lean forward in racing posture, gripping reins and holding body low over the horse's withers",
+      "The horse bearing number 7 has its left foreleg extended forward and right hindleg trailing, consistent with mid-stride gallop"
+    ],
+    "rationale": [
+      "Motion blur direction and uniformity suggest the camera panned horizontally to follow the subjects",
+      "Horse limb positions and jockey postures align with standard thoroughbred racing biomechanics",
+      "Number 7 saddle cloth is legible; other numbers or markings are obscured by blur or angle"
+    ],
+    "object": [
+      "A brown horse with a yellow helmeted jockey wears a light blue and yellow silks and is positioned leftmost among clearly resolved horses.",
+      "A second brown horse carries a jockey in white and blue star-patterned silks, leaning sharply forward, with a visible blue saddle cloth marked '7' and partial text 'NGINES'.",
+      "A third horse, darker brown, is ridden by a jockey in light blue and white striped silks with a dark blue helmet; its head is turned slightly inward toward the second horse.",
+      "A fourth horse, gray-dappled, appears on the far right with a jockey wearing a pink and yellow helmet and white silks; only its rear half and rider’s upper torso are visible.",
+      "A fifth rider’s shoulder and helmet (white with purple stripe) appear behind the fourth horse, suggesting a tightly packed field."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1444_P1",
+      "visual_anchors": [
+        "motion blur",
+        "forward-leaning jockeys",
+        "numbered saddle cloths"
+      ],
+      "symbolic_mapping": [
+        "motion blur → transient nature of competitive moments",
+        "numbered identifiers → reduction of individuality to function"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies the tension between fleeting embodied effort and institutional categorization: the blur signifies impermanence of action, while numbered silks enforce roles within a structured contest.",
+      "alternative_interpretations": [
+        "It is simply a technical photograph capturing speed using panning technique, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; blur may be purely photographic artifact."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1444_P2",
+      "visual_anchors": [
+        "tight grouping of horses",
+        "shared direction",
+        "identical gallop phase"
+      ],
+      "symbolic_mapping": [
+        "simultaneous stride → collective momentum",
+        "proximity without contact → constrained autonomy"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "Riders move together under shared constraints—track boundaries, race rules, physical limits—illustrating how agency operates within tightly bounded pathways rather than open terrain.",
+      "alternative_interpretations": [
+        "Horses are merely clustered due to race positioning; no philosophical intent is evident."
+      ],
+      "limitations": [
+        "No evidence of deliberate spacing or deviation; proximity could reflect random race dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1444_P3",
+      "visual_anchors": [
+        "jockey helmets with distinct colors",
+        "saddle cloth number 7",
+        "uniform posture across riders"
+      ],
+      "symbolic_mapping": [
+        "color-coded helmets → visible differentiation within conformity",
+        "repeated posture → disciplined submission to form"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "Individual identity is signaled through minimal visual markers (helmet color), while ethical responsibility manifests as synchronized bodily discipline—each rider upholds role expectations through precise physical compliance.",
+      "alternative_interpretations": [
+        "Colors denote team or owner affiliation; posture is biomechanically optimal, not ethically chosen."
+      ],
+      "limitations": [
+        "Helmet colors may serve practical identification only; no gesture or gaze indicates moral reflection."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:32:56.516619+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-49d0e1b0-af4a-9492-a1c0-d73c5f7f75ae",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 993,
+        "total_tokens": 1782,
+        "completion_tokens_details": {
+          "text_tokens": 993
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070432425b6350a0836a4bcb",
+      "usage": {
+        "completion_tokens": 852,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1944,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2796
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

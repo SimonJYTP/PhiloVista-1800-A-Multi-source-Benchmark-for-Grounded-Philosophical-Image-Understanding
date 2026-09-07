@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0787",
+  "sample_id": "PHL1800_HL_0151",
+  "file_name": "PHL1800_HL_0151.png",
+  "batch_id": "B017",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a multi-story building with a clock tower and arched windows",
+  "captions": {
+    "scene": [
+      "A light-colored building under a clear blue sky with a palm tree to the left",
+      "The building features a central clock tower, green metal railings, and large arched windows with segmented glass panes",
+      "A sign with Chinese characters and English text 'CENTRAL PIER' is mounted above the arch"
+    ],
+    "action": [
+      "The clock hands indicate approximately 10:10 on both visible clock faces",
+      "Two people are standing on a balcony to the left, partially obscured by foliage",
+      "A streetlight pole stands in front of the building, casting no visible shadow"
+    ],
+    "rationale": [
+      "The building’s architectural style suggests a public or transport-related function due to signage and scale",
+      "The presence of bilingual signage (Chinese and English) implies a location where both languages are officially used",
+      "The palm tree and bright lighting suggest a warm or tropical climate, though this is not definitively confirmed by visual evidence alone"
+    ],
+    "object": [
+      "The building has a cream-colored facade with white rectangular panels and decorative cornices.",
+      "A dome-topped clock tower rises above the roofline, featuring two visible clock faces with black Roman numerals and hands.",
+      "A large arched window with dark framing and multiple small panes occupies the central lower portion of the facade.",
+      "Green translucent roofing covers a ground-level walkway or entrance area in front of the arch.",
+      "A blue sign below the arch displays Chinese characters followed by '(SHIU PONG ICE (GROCERY))' in English."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0787_P1",
+      "visual_anchors": [
+        "clock tower with two visible faces",
+        "Roman numerals",
+        "symmetrical placement"
+      ],
+      "symbolic_mapping": [
+        "dual clock faces may represent simultaneity of perspectives",
+        "Roman numerals evoke historical continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The dual-facing clocks visually assert shared temporal experience across directions, suggesting time as a socially coordinated construct rather than a private flow.",
+      "alternative_interpretations": [
+        "The clocks simply serve functional navigation for people approaching from different sides."
+      ],
+      "limitations": [
+        "No indication of whether the clocks are synchronized or functional; only appearance is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0787_P2",
+      "visual_anchors": [
+        "large arched window",
+        "segmented glass panes",
+        "green metal framework"
+      ],
+      "symbolic_mapping": [
+        "arch as threshold between interior and exterior",
+        "grid of panes as fragmentation of unified view"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The arched window frames visibility while its grid imposes structure, symbolizing how identity is both revealed and constrained by institutional architecture.",
+      "alternative_interpretations": [
+        "The window design is purely practical for ventilation and structural support."
+      ],
+      "limitations": [
+        "No interior view is visible; interpretation relies on external form alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0787_P3",
+      "visual_anchors": [
+        "bilingual signage",
+        "Chinese characters above English text",
+        "public building context"
+      ],
+      "symbolic_mapping": [
+        "layered language as coexistence of cultural registers",
+        "hierarchical text placement indicating official primacy"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The stacked bilingual signage reflects negotiated social reality where meaning is contingent on linguistic access, raising questions about whose knowledge is authorized in public space.",
+      "alternative_interpretations": [
+        "The signage follows standard local regulatory requirements for multilingual public notices."
+      ],
+      "limitations": [
+        "The exact hierarchy (e.g., font size, color contrast) cannot be fully assessed from distance; relative prominence is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:17:01.640625+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4b333074-52a4-9a35-b596-4f98058ff023",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 876,
+        "total_tokens": 1685,
+        "completion_tokens_details": {
+          "text_tokens": 876
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031649dffbdf295bc34dc2",
+      "usage": {
+        "completion_tokens": 732,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1851,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2583
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1555",
+  "sample_id": "PHL1800_IRFL_0364",
+  "file_name": "PHL1800_IRFL_0364.jpg",
+  "batch_id": "B032",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a glass jar containing pale yellow liquid with a metal straw, surrounded by citrus fruits and a cloth napkin",
+  "captions": {
+    "scene": [
+      "A bright cyan-blue surface holds a mason jar, cut and whole citrus fruits, and a folded peach-colored fabric napkin.",
+      "Sliced lemons and limes lie in the upper left quadrant; one lemon is halved crosswise, revealing pulp and seeds; another lime is cut open, exposing its interior segments.",
+      "A whole green lime sits adjacent to the halved lemon, near the jar’s left side."
+    ],
+    "action": [
+      "The metal straw is inserted into the liquid in the jar, angled toward the upper right.",
+      "The liquid in the jar is still, with no visible bubbles, ripples, or motion blur.",
+      "The citrus fruits are stationary, with some cut surfaces facing upward and others partially obscured."
+    ],
+    "rationale": [
+      "The liquid’s pale yellow hue and proximity to citrus suggest it may be citrus juice, but no label or context confirms composition.",
+      "The presence of both lemons and limes implies possible mixture, yet no mixing tool or motion evidence exists.",
+      "The napkin’s placement suggests intentional staging, but its function (e.g., wiping, decoration) cannot be determined from visual data alone."
+    ],
+    "object": [
+      "A clear glass mason jar with vertical ribbing contains a translucent pale yellow liquid filled to approximately three-quarters height.",
+      "A slender metallic straw, appearing gold-toned, extends diagonally from the jar’s rim into the liquid.",
+      "A lemon half, cut transversely, displays eight visible segments, a central pith, and scattered dark seeds.",
+      "A whole uncut lime with textured green rind rests beside the lemon half, casting a soft shadow.",
+      "A folded peach-colored textile napkin with visible weave texture lies in the lower-left foreground, partially overlapping the blue surface."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1555_P1",
+      "visual_anchors": [
+        "halved lemon revealing internal segments",
+        "whole lime intact beside it",
+        "jar containing processed liquid"
+      ],
+      "symbolic_mapping": [
+        "exposed fruit interior → vulnerability",
+        "intact fruit → potentiality"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of cut and whole citrus evokes the irreversible transition from potential to actualized state—once sliced, the fruit cannot return to wholeness, mirroring temporal irreversibility in human experience.",
+      "alternative_interpretations": [
+        "This is a standard food photography setup emphasizing freshness and ingredient preparation for a beverage."
+      ],
+      "limitations": [
+        "No temporal sequence is shown; the image captures only a static moment, so inferred process is speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1555_P2",
+      "visual_anchors": [
+        "metal straw inserted into jar",
+        "citrus fruits arranged around jar",
+        "napkin placed deliberately"
+      ],
+      "symbolic_mapping": [
+        "straw as conduit → mediation between nature and consumption",
+        "arrangement as curated order → human imposition of structure"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The scene reflects mediated engagement with natural materials: the straw enables extraction, the cuts enable use, and the arrangement signals shared cultural practice—highlighting how technology and social ritual shape our relationship to sustenance.",
+      "alternative_interpretations": [
+        "The objects are simply arranged for aesthetic appeal in product or recipe photography."
+      ],
+      "limitations": [
+        "No human presence or interaction is visible; all agency is inferred from object placement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1555_P3",
+      "visual_anchors": [
+        "uniform cyan background",
+        "high-contrast lighting",
+        "absence of imperfections on fruit surfaces"
+      ],
+      "symbolic_mapping": [
+        "monochromatic backdrop → abstraction from context",
+        "clean cuts → idealization"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The stylized presentation isolates the objects from ecological or temporal context, suggesting a constructed truth where appearance replaces lived reality—raising questions about how representation shapes perceived authenticity.",
+      "alternative_interpretations": [
+        "The background color and lighting are standard studio choices to enhance color vibrancy and reduce distraction."
+      ],
+      "limitations": [
+        "The background’s material and origin are not visible; its ‘uniformity’ could result from lighting rather than intentional abstraction."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:49:30.759410+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1633112f-171c-905a-8532-da848d1c410a",
+      "usage": {
+        "prompt_tokens": 1284,
+        "completion_tokens": 996,
+        "total_tokens": 2280,
+        "completion_tokens_details": {
+          "text_tokens": 996
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 777,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070448383315caf6defb47c2",
+      "usage": {
+        "completion_tokens": 857,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2625,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3482
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

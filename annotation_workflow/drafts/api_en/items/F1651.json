@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1651",
+  "sample_id": "PHL1800_HL_0522",
+  "file_name": "PHL1800_HL_0522.png",
+  "batch_id": "B034",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a food display tray with multiple prepared flatbreads and vegetable dishes",
+  "captions": {
+    "scene": [
+      "A glass-fronted food display case containing a large black metal tray holding four distinct rectangular food items, with wooden paneling in the background.",
+      "The tray holds a pepperoni-and-cheese flatbread, a yellow-vegetable-topped flatbread, a green-leaf-and-cheese flatbread, and a mixed roasted vegetable dish.",
+      "To the right of the main tray, additional plated items include grilled vegetables and corn on the cob, partially visible behind a person's hands."
+    ],
+    "action": [
+      "A person’s hands are using metal tongs to lift or adjust a small flatbread topped with basil and white crumbles.",
+      "The food items remain stationary on the tray, showing no motion blur or displacement.",
+      "The lighting creates reflections on the glass surface, indicating an indoor setting with overhead illumination."
+    ],
+    "rationale": [
+      "The presence of tongs and hand positioning suggests active serving or plating rather than passive display alone.",
+      "The uniform rectangular shapes and toppings indicate intentional preparation and portioning, likely for service.",
+      "No text is legible in the image; any labeling or signage is either absent or unreadable due to angle/resolution."
+    ],
+    "object": [
+      "A rectangular flatbread topped with tomato sauce, circular pepperoni slices, and crumbled white cheese sits on the left side of the tray.",
+      "A second rectangular flatbread is covered with overlapping thin slices of yellow squash or zucchini, sprinkled with dark green herbs and black pepper.",
+      "A third smaller flatbread features a white base (possibly ricotta or mozzarella), fresh green basil leaves, and scattered white crumbles.",
+      "A fourth section contains a mix of sautéed or roasted vegetables including red bell peppers, green zucchini, onions, and possibly eggplant, arranged loosely.",
+      "Metal tongs with black handles are held by a person whose torso and arms are partially visible above the tray, wearing a dark shirt and a wristband."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1651_P1",
+      "visual_anchors": [
+        "pepperoni flatbread",
+        "herb-sprinkled squash flatbread",
+        "tongs in hand"
+      ],
+      "symbolic_mapping": [
+        "prepared food as embodiment of care",
+        "tool-mediated service as enactment of responsibility"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "labor_technology"
+      ],
+      "interpretation": "The deliberate arrangement and active handling of food reflect a moral commitment to nourishment and hospitality, where labor (tongs, preparation) becomes an ethical gesture toward others.",
+      "alternative_interpretations": [
+        "This is simply commercial food presentation with no symbolic intent beyond visual appeal and efficiency."
+      ],
+      "limitations": [
+        "No facial expressions, verbal context, or institutional signage confirm intentionality or moral framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1651_P2",
+      "visual_anchors": [
+        "glass display barrier",
+        "reflections on surface",
+        "multiple identical portions"
+      ],
+      "symbolic_mapping": [
+        "transparency as mediated access",
+        "repetition as standardization of experience"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The glass barrier separates provider from consumer while enabling visibility, symbolizing modern social relations where connection is permitted yet physically constrained, and choice is offered within fixed options.",
+      "alternative_interpretations": [
+        "The glass is purely functional for hygiene and temperature control, not symbolic."
+      ],
+      "limitations": [
+        "The reflection obscures whether anyone is observing the display, weakening claims about social interaction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1651_P3",
+      "visual_anchors": [
+        "layered toppings on flatbreads",
+        "contrasting colors and textures",
+        "uniform rectangular forms"
+      ],
+      "symbolic_mapping": [
+        "layering as accumulation of meaning",
+        "geometry as imposition of order on organic material"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The visible composition—structured layers over a base—suggests identity as curated appearance, where truth is not inherent but assembled through selection and presentation of components.",
+      "alternative_interpretations": [
+        "These are standard culinary techniques aimed at flavor and texture, not semiotic construction."
+      ],
+      "limitations": [
+        "No labels, menus, or cultural markers confirm interpretive framing of identity or epistemology."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:57:47.804494+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-abd45cd8-91da-917d-bc0e-a10eef43f18d",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 987,
+        "total_tokens": 1796,
+        "completion_tokens_details": {
+          "text_tokens": 987
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045726992ec1066baf43ea",
+      "usage": {
+        "completion_tokens": 847,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1962,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2809
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

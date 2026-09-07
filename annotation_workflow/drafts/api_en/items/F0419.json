@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0419",
+  "sample_id": "PHL1800_HL_0073",
+  "file_name": "PHL1800_HL_0073.png",
+  "batch_id": "B010",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large-scale architectural model of a clock tower on a black plinth",
+  "captions": {
+    "scene": [
+      "An outdoor paved plaza with grey stone tiles, overcast sky, and multiple red double-decker buses in the background",
+      "A yellow telephone booth replica stands adjacent to the clock tower model",
+      "Several pedestrians walk or stand near the model; one woman in a light coat holds a dark bag and looks toward the camera"
+    ],
+    "action": [
+      "A woman walks leftward while holding a dark handbag",
+      "A group of at least five people walks rightward past the yellow booth",
+      "Two individuals stand near the base of the clock tower model, partially obscured"
+    ],
+    "rationale": [
+      "The clock tower model is centrally positioned and elevated on a plinth, suggesting it is the intended focal point",
+      "Red double-decker buses and a spire-topped building in the background indicate a London-like urban setting, though not explicitly confirmed",
+      "The presence of multiple identical buses and a recognizable phone booth supports the inference of a tourist-oriented public display"
+    ],
+    "object": [
+      "The clock tower model has two visible clock faces with Roman numerals, both showing approximately 10:10, and features ornate stonework detailing and arched windows.",
+      "A bright yellow telephone booth replica stands to the right of the tower model, bearing the word 'TELEPHONE' in blue capital letters above its door.",
+      "A red double-decker bus on the left displays an advertisement with three human figures and the word 'hybrid' in white lowercase letters on its lower side panel.",
+      "A second red double-decker bus behind the yellow booth shows partial text reading 'SPIDER-T...' in white uppercase letters on its rear.",
+      "A woman wearing a light-colored coat, dark pants, and brown shoes carries a brown shoulder bag."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "commonsense_inference"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0419_P1",
+      "visual_anchors": [
+        "two clock faces showing identical time",
+        "model placed on black plinth",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "clock faces → standardized temporal order",
+        "plinth → institutional framing of time"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The replicated, static clocks on a monumental model evoke the social construction of time—uniform, imposed, and detached from lived duration—highlighting how collective life is synchronized by artificial measures rather than natural cycles.",
+      "alternative_interpretations": [
+        "It may simply be a decorative tourist installation without symbolic intent."
+      ],
+      "limitations": [
+        "No visible inscriptions confirm intentional symbolism; the clocks could be non-functional props."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0419_P2",
+      "visual_anchors": [
+        "woman holding bag",
+        "group walking past",
+        "buses in motion"
+      ],
+      "symbolic_mapping": [
+        "pedestrians moving independently yet within shared space → coexistence without interaction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Individuals navigate a shared public sphere while maintaining distinct trajectories and appearances, illustrating how social existence emerges through proximity without consensus or mutual recognition.",
+      "alternative_interpretations": [
+        "People are merely transiting a busy square; no deeper pattern is evident."
+      ],
+      "limitations": [
+        "Facial expressions and gaze directions are indistinct; intent to avoid interaction cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0419_P3",
+      "visual_anchors": [
+        "yellow telephone booth replica",
+        "clock tower model",
+        "red buses with ads"
+      ],
+      "symbolic_mapping": [
+        "replicas of iconic objects → commodified heritage",
+        "ads on buses → commercial overlay on cultural symbols"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of nostalgic replicas with commercial advertising suggests that historical symbols are repurposed as aesthetic infrastructure for tourism and consumption, constraining their meaning to marketable forms.",
+      "alternative_interpretations": [
+        "These are standard city fixtures; their arrangement reflects logistics, not ideology."
+      ],
+      "limitations": [
+        "No branding or explicit commercial messaging ties the model directly to profit motives."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The candidate incorrectly states the clock tower model has four clock faces (only two are visible); the woman is not holding a folded umbrella; the group walking past the yellow booth is miscounted as at least seven (fewer are visible); the second bus's text is misread as 'SPIDER-M...' (it is 'SPIDER-T...' or similar); the woman's coat color is misdescribed as beige (it appears light-colored but not definitively beige)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:45:26.566451+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-44bde8a5-14a8-9a00-8150-306346b69cb9",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 960,
+        "total_tokens": 1769,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024505f776ac9ce5b64692",
+      "usage": {
+        "completion_tokens": 979,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1932,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2911
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

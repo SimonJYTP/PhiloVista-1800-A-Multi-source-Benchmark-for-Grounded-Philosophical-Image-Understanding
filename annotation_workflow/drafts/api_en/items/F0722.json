@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0722",
+  "sample_id": "PHL1800_IRFL_0282",
+  "file_name": "PHL1800_IRFL_0282.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "an elderly woman and a young man walking together on a street",
+  "captions": {
+    "scene": [
+      "A paved street lined with brick buildings, some with visible windows and external staircases.",
+      "Green foliage partially covers a wall in the background; a parked vehicle is partially visible behind the subjects.",
+      "Natural daylight illuminates the scene; shadows suggest overhead or slightly angled sunlight."
+    ],
+    "action": [
+      "The woman places her right hand on the man’s left forearm while looking up at him.",
+      "The man holds a woven basket containing bread and wrapped items in his left hand and looks down toward the woman.",
+      "Both individuals are upright and appear to be mid-stride, moving forward along the street."
+    ],
+    "rationale": [
+      "The woman’s hand placement suggests physical support or guidance, but no explicit assistance (e.g., cane, wheelchair) is visible.",
+      "The basket contents resemble groceries, yet no store signage or transaction evidence confirms purchase context.",
+      "Their mutual gaze indicates interaction, but facial expressions alone cannot confirm emotional valence without cultural or contextual knowledge."
+    ],
+    "object": [
+      "The woman wears a beige coat over a blue patterned scarf and dark trousers; her hair is short and gray-white.",
+      "The man wears a multicolored knit sweater (blue, purple, red tones), dark jeans, and carries a light-brown wicker basket.",
+      "The basket contains at least one long loaf of bread and two wrapped items with white and yellow packaging.",
+      "A black metal railing runs diagonally behind the woman, attached to a brick building facade.",
+      "The pavement surface is gray concrete with faint linear wear marks and scattered small debris."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0722_P1",
+      "visual_anchors": [
+        "woman’s hand on man’s forearm",
+        "man holding basket",
+        "shared forward motion"
+      ],
+      "symbolic_mapping": [
+        "physical contact as intergenerational continuity",
+        "basket as material sustenance shared across ages"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "time_mortality"
+      ],
+      "interpretation": "The image visually enacts a moment where care and provision traverse generational lines, suggesting that social existence is sustained through embodied, routine acts across temporal spans.",
+      "alternative_interpretations": [
+        "They may be unrelated individuals coincidentally walking side by side, with the hand contact being incidental or habitual rather than intentional support."
+      ],
+      "limitations": [
+        "No facial micro-expressions or contextual signage confirm intent or relationship; posture alone cannot distinguish guidance from casual touch."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0722_P2",
+      "visual_anchors": [
+        "woven basket",
+        "bread visible inside",
+        "casual attire"
+      ],
+      "symbolic_mapping": [
+        "basket as vessel of daily labor",
+        "bread as symbol of necessity and reciprocity"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The basket—handwoven and carrying staple food—grounds ethics in everyday labor: responsibility manifests not through grand gestures but through reliable, tangible provisioning.",
+      "alternative_interpretations": [
+        "The basket could be for personal consumption only, with no implication of sharing or duty; its presence may reflect convenience rather than moral commitment."
+      ],
+      "limitations": [
+        "The origin, purpose, and intended recipients of the basket contents are unseen; no transfer or offering occurs in frame."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0722_P3",
+      "visual_anchors": [
+        "woman’s upward gaze",
+        "man’s downward gaze",
+        "parallel stride direction"
+      ],
+      "symbolic_mapping": [
+        "gaze alignment as mutual recognition",
+        "shared path as co-constituted journey"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "Their aligned movement and reciprocal attention suggest identity is not fixed but negotiated in motion—appearance (age, clothing) frames but does not determine the relational space they jointly occupy.",
+      "alternative_interpretations": [
+        "The gazes may simply reflect conversational turn-taking with no deeper significance; their parallel walk could be circumstantial rather than chosen."
+      ],
+      "limitations": [
+        "Eye direction does not prove mutual awareness; head orientation can be influenced by ambient noise or peripheral stimuli."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:10:54.850747+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f3c672ac-0c88-9b18-9007-772b2500947c",
+      "usage": {
+        "prompt_tokens": 756,
+        "completion_tokens": 946,
+        "total_tokens": 1702,
+        "completion_tokens_details": {
+          "text_tokens": 946
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 249,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703103904258e01be1d449d",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1865,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2672
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

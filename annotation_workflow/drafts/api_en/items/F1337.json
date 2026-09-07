@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1337",
+  "sample_id": "PHL1800_IRFL_0073",
+  "file_name": "PHL1800_IRFL_0073.jpg",
+  "batch_id": "B028",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man and a woman seated on a light-colored sofa",
+  "captions": {
+    "scene": [
+      "Two adults sit opposite each other on a cream-colored sofa in a brightly lit interior space.",
+      "A white shelf with indistinct blue and white objects is visible in the background behind the subjects.",
+      "The setting appears to be a domestic living room with neutral-toned walls and soft ambient lighting."
+    ],
+    "action": [
+      "The woman holds a black mug in both hands and gazes toward the man.",
+      "The man rests his left forearm on the back of the sofa, holding a black mug in his right hand, and looks at the woman.",
+      "Both individuals maintain upright postures with torsos oriented toward one another."
+    ],
+    "rationale": [
+      "The mutual gaze and proximal seating suggest interpersonal engagement, though the nature (e.g., conversational, confrontational) is not determinable from visual cues alone.",
+      "The presence of mugs implies beverage consumption, but the contents, temperature, or timing (e.g., morning vs. evening) cannot be confirmed.",
+      "Clothing style (sleeveless top for woman, short-sleeved polo for man) indicates casual attire, yet cultural or temporal context remains unspecified."
+    ],
+    "object": [
+      "The woman has dark hair pulled into a high ponytail and wears a sleeveless gray-and-purple top with thin straps.",
+      "The man has short brown hair, a light stubble beard, and wears a navy blue short-sleeved collared shirt.",
+      "Two identical matte black ceramic mugs are held by each person; no logos or text are legible on them.",
+      "The sofa is upholstered in a smooth, light beige fabric with visible seam lines separating cushion sections.",
+      "A white horizontal shelf unit is mounted on the wall behind them, containing at least three out-of-focus items: one blue spherical object, one white rectangular object, and one partially visible blue cylindrical object."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1337_P1",
+      "visual_anchors": [
+        "mutual gaze",
+        "shared mugs",
+        "symmetrical seating"
+      ],
+      "symbolic_mapping": [
+        "shared mugs → shared experience",
+        "mutual gaze → intersubjective recognition"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The image visually enacts a moment of co-presence where two individuals sustain attention toward one another, grounding social existence in reciprocal perception rather than solitary cognition.",
+      "alternative_interpretations": [
+        "This may simply depict a routine coffee break with no intentional symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expressions are fully discernible; micro-expressions that would clarify affective tone are occluded or out of focus."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1337_P2",
+      "visual_anchors": [
+        "neutral background",
+        "identical mugs",
+        "unadorned clothing"
+      ],
+      "symbolic_mapping": [
+        "uniformity of mugs → equality of status",
+        "minimal decor → suspension of external identity markers"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "By stripping away distinctive adornment and situating subjects against a generic backdrop, the image foregrounds relational identity over individual appearance, suggesting identity as constituted through interaction rather than fixed traits.",
+      "alternative_interpretations": [
+        "The minimalism may reflect interior design preference rather than philosophical intent."
+      ],
+      "limitations": [
+        "The background contains faint objects whose purpose or symbolism is unreadable; their presence undermines full neutrality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1337_P3",
+      "visual_anchors": [
+        "static postures",
+        "held mugs",
+        "lack of motion blur"
+      ],
+      "symbolic_mapping": [
+        "stillness → suspended decision",
+        "mugs as vessels → potential for exchange or withholding"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The frozen tableau captures a liminal interval before action—where choice is present but unexercised—emphasizing that journey begins not in movement but in the charged stillness of deliberation.",
+      "alternative_interpretations": [
+        "The subjects may be pausing naturally between sentences during conversation, not engaged in existential reflection."
+      ],
+      "limitations": [
+        "No temporal context (e.g., preceding or following events) is visible; stillness could equally indicate relaxation or fatigue."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:24:15.519134+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1e741dc0-3cc4-9354-9f7f-4ef4215444f9",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 970,
+        "total_tokens": 1549,
+        "completion_tokens_details": {
+          "text_tokens": 970
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042336bfb0652a86714f11",
+      "usage": {
+        "completion_tokens": 833,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1630,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2463
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

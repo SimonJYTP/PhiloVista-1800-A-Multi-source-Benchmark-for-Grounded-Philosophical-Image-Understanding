@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1431",
+  "sample_id": "PHL1800_MM_0070",
+  "file_name": "PHL1800_MM_0070.jpg",
+  "batch_id": "B030",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults in formal attire exchanging a document in a hallway",
+  "captions": {
+    "scene": [
+      "A narrow indoor hallway with warm-toned wooden doors and trim, illuminated by soft overhead lighting.",
+      "The background shows a closed wooden door directly behind the subjects and another partially visible door to the left.",
+      "The floor is light-colored wood or laminate; walls are off-white with minimal decoration."
+    ],
+    "action": [
+      "A woman with dark hair in a ponytail extends a tan envelope toward a man using both hands.",
+      "A man in a dark suit holds the same envelope with both hands, facing the woman in profile.",
+      "A speech bubble originates near the woman’s head containing legible English text."
+    ],
+    "rationale": [
+      "The speech bubble suggests the woman is expressing a preference regarding apartment repainting, though this is textual evidence only.",
+      "Both individuals maintain upright postures and direct eye contact, indicating an engaged interaction.",
+      "The envelope appears unsealed and plain, implying it may contain a request, offer, or written communication rather than money or official documents."
+    ],
+    "object": [
+      "A woman wears a navy blue blazer over a white collared shirt and matching trousers, with long dark hair tied in a low ponytail.",
+      "A man wears a black suit jacket over a light blue collared shirt with a patterned tie, and has short brown hair and light facial stubble.",
+      "A rectangular tan paper envelope is held jointly between the two individuals, oriented horizontally.",
+      "A black-outlined speech bubble with a small tail pointing toward the woman contains the legible text: 'I'm willing to give a little extra to have my apartment repainted first!'.",
+      "Two wooden doors with vertical grain patterns and metallic handles are visible—one fully closed behind the pair, one partially open on the left wall."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1431_P1",
+      "visual_anchors": [
+        "speech bubble with conditional offer",
+        "envelope exchange",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "envelope as proxy for negotiation",
+        "conditional phrasing as expression of agency"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The image visualizes a moment where individual preference (repainting priority) is asserted within a structured social transaction, reflecting how moral responsibility for shared spaces can be negotiated through voluntary concessions.",
+      "alternative_interpretations": [
+        "This may simply depict a routine landlord-tenant discussion about maintenance scheduling without deeper ethical implications."
+      ],
+      "limitations": [
+        "The speech bubble is the sole source for the stated preference; no visual cues confirm the nature of the relationship or context beyond attire and setting."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1431_P2",
+      "visual_anchors": [
+        "man and woman facing each other",
+        "shared grip on envelope",
+        "neutral hallway setting"
+      ],
+      "symbolic_mapping": [
+        "hallway as liminal space between private and public domains",
+        "mutual holding as symbolic reciprocity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The symmetrical positioning and shared handling of the envelope suggest a temporary equilibrium in social power, where identity is enacted through role-based dress and ritualized exchange rather than overt hierarchy.",
+      "alternative_interpretations": [
+        "The posture could reflect standard professional courtesy rather than intentional symbolism of balance or tension."
+      ],
+      "limitations": [
+        "No facial expressions or body language beyond orientation and hand placement are discernible to confirm intent or emotional valence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1431_P3",
+      "visual_anchors": [
+        "plain envelope",
+        "unadorned hallway",
+        "text stating willingness to pay extra"
+      ],
+      "symbolic_mapping": [
+        "envelope as container of latent value",
+        "conditional offer as temporal deferral of action"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The conditional statement implies a trade-off between immediate comfort (repainting) and deferred resolution, illustrating how perceived constraints shape temporal agency—even minor choices become sites of existential negotiation when resources are bounded.",
+      "alternative_interpretations": [
+        "The phrase may be a literal logistical request with no philosophical dimension, merely prioritizing work order."
+      ],
+      "limitations": [
+        "The phrase references 'apartment repainting' but no visual evidence confirms housing type, ownership, or urgency; the abstraction relies entirely on the text."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:31:16.657502+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ad98725b-7d14-9a42-845f-5fed2b22d4b3",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 987,
+        "total_tokens": 2520,
+        "completion_tokens_details": {
+          "text_tokens": 987
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070431056ef6677a3797418f",
+      "usage": {
+        "completion_tokens": 849,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2938,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3787
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

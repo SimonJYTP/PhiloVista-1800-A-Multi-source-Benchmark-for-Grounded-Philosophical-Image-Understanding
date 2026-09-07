@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0109",
+  "sample_id": "PHL1800_HAIV_0534",
+  "file_name": "PHL1800_HAIV_0534.png",
+  "batch_id": "B004",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red heart-shaped object interacting with a blue tool and orange tubing",
+  "captions": {
+    "scene": [
+      "A stylized red heart occupies the upper-left quadrant, partially overlapping a light-blue elongated tool with three vertical red protrusions on its right end.",
+      "An orange coiled tube lies in the lower-right quadrant, forming loops and curves against a white background with black outlines and shading.",
+      "Black motion lines appear near the tool’s tip and near the heart’s edge, suggesting dynamic interaction or impact."
+    ],
+    "action": [
+      "The blue tool is inserted into or pressing against the red heart, with visible indentation and black motion marks indicating contact force.",
+      "Three red vertical elements extend from the tool’s right side, aligned parallel and spaced evenly, appearing fixed to the tool.",
+      "The orange tube rests passively on the surface, unconnected to the heart or tool, with no visible movement or attachment."
+    ],
+    "rationale": [
+      "The indentation on the heart and motion lines suggest physical contact between heart and tool, though the exact nature (cutting, piercing, clamping) is ambiguous due to stylization.",
+      "The red vertical elements are attached to the tool and do not touch the heart; their function is visually undetermined—possibly decorative, structural, or functional—but no mechanism is shown.",
+      "The orange tube is spatially separate and lacks any visual linkage (e.g., connectors, fluid flow, shadows indicating proximity), so any functional relationship is unsupported by evidence."
+    ],
+    "object": [
+      "The red heart is rendered with thick black outlines, internal shading gradients, and a textured dark-red interior region near the tool interface.",
+      "The blue tool has a rectangular head with a narrow neck extending rightward, terminating in three upright red bars that taper slightly toward the top.",
+      "The orange tube is a single continuous line with bold black outlines, forming two large loops and one smaller loop, with subtle gray shading inside the curves.",
+      "Black motion lines—short diagonal strokes—are placed near the tool-heart junction and near the tool’s red bars, implying directional force or vibration.",
+      "No text is legible in the image; any markings on the tool’s head are abstract scribbles without discernible characters."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0109_P1",
+      "visual_anchors": [
+        "red heart",
+        "blue tool inserting into heart",
+        "black motion lines"
+      ],
+      "symbolic_mapping": [
+        "heart as vulnerable core",
+        "tool as external intervention"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image may represent coercive external control over an inner self, where the tool’s intrusion into the heart signifies imposition of constraint or authority upon autonomy.",
+      "alternative_interpretations": [
+        "It could depict a medical procedure like catheter insertion, with the heart as anatomical and the tool as instrument—purely clinical, not symbolic."
+      ],
+      "limitations": [
+        "Stylization obscures whether the tool is damaging, healing, or neutral; no contextual cues confirm intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0109_P2",
+      "visual_anchors": [
+        "orange coiled tube",
+        "spatial separation from heart/tool",
+        "lack of connection points"
+      ],
+      "symbolic_mapping": [
+        "tube as potential path or conduit left unused"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The isolated orange tube may symbolize an available but unchosen pathway or unresolved relational thread, emphasizing absence of integration despite proximity.",
+      "alternative_interpretations": [
+        "The tube is merely background decoration or a compositional element balancing visual weight, with no intended meaning."
+      ],
+      "limitations": [
+        "No directional indicators, endpoints, or interaction cues prevent confirmation of purpose or narrative role."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0109_P3",
+      "visual_anchors": [
+        "three red vertical bars on tool",
+        "uniform spacing",
+        "rigid alignment"
+      ],
+      "symbolic_mapping": [
+        "bars as institutional rules or rigid structures"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The standardized red bars may evoke codified norms applied uniformly to the individual (heart), raising questions about responsibility under systemic frameworks.",
+      "alternative_interpretations": [
+        "The bars are purely aesthetic—echoing stitching, rivets, or industrial design—and carry no normative implication."
+      ],
+      "limitations": [
+        "No labels, context, or variation in bar appearance prevents linking them definitively to social constructs."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:01:12.453094+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ec0d6ded-25de-94c0-8389-9a30f4b1f74e",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1007,
+        "total_tokens": 2540,
+        "completion_tokens_details": {
+          "text_tokens": 1007
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070200508a4215528953434e",
+      "usage": {
+        "completion_tokens": 870,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2963,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3833
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

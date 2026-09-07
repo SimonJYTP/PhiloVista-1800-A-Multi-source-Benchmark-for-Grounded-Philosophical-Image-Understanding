@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0721",
+  "sample_id": "PHL1800_IRFL_0208",
+  "file_name": "PHL1800_IRFL_0208.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person wearing over-ear headphones, seated and facing a laptop screen",
+  "captions": {
+    "scene": [
+      "A dimly lit indoor setting with out-of-focus warm bokeh lights in the background",
+      "A person seated on a dark upholstered surface, possibly a sofa, with a laptop open before them",
+      "A purple bowl containing a textured substance rests on the person's lap or a low surface near their hands"
+    ],
+    "action": [
+      "The person is holding a small object near their mouth with their right hand, consistent with eating",
+      "Their left hand rests near the bowl or laptop keyboard area",
+      "Their head is tilted slightly forward and eyes are directed toward the laptop screen"
+    ],
+    "rationale": [
+      "The presence of headphones and focused gaze suggests engagement with audiovisual content, though the specific content is not visible",
+      "The bowl and hand-to-mouth motion indicate consumption of food, but the exact food type cannot be determined from texture alone",
+      "The lighting pattern implies an evening or low-ambient-light environment, yet no clock or time indicator is present"
+    ],
+    "object": [
+      "The person wears light-gray short-sleeved clothing and white over-ear headphones with visible earcups and headband.",
+      "A black laptop is open in front of the person, its screen emitting light that illuminates their face; the screen content is not legible.",
+      "A deep-purple ceramic or plastic bowl with a rough, granular interior surface sits on the person’s lap or adjacent surface.",
+      "The background contains blurred circular light sources (bokeh), suggesting distant illuminated objects or string lights.",
+      "The person’s facial expression includes visible teeth and upward lip curvature, indicating a smile; no text is visible on their clothing or surroundings."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0721_P1",
+      "visual_anchors": [
+        "laptop screen glow on face",
+        "over-ear headphones",
+        "hand-to-mouth motion"
+      ],
+      "symbolic_mapping": [
+        "screen glow as mediation of experience",
+        "headphones as selective sensory enclosure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image depicts a subject simultaneously embedded in digital mediation and embodied consumption, raising questions about whether technological interfaces expand or narrow the scope of lived presence.",
+      "alternative_interpretations": [
+        "This is a routine leisure activity—watching media while snacking—with no intended symbolic depth."
+      ],
+      "limitations": [
+        "No interface content, branding, or contextual signage is visible to confirm intentional mediation or isolation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0721_P2",
+      "visual_anchors": [
+        "purple bowl with granular contents",
+        "smile",
+        "dim ambient lighting"
+      ],
+      "symbolic_mapping": [
+        "bowl as vessel of sustenance amid artificial light",
+        "smile as transient affective state"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of immediate sensory pleasure (eating, smiling) against low-light enclosure evokes the phenomenological tension between fleeting moments of joy and the inexorable passage of time in private experience.",
+      "alternative_interpretations": [
+        "The lighting is simply ambient room lighting for comfort during screen use; the smile reflects momentary amusement, not existential reflection."
+      ],
+      "limitations": [
+        "Facial expression cannot be definitively linked to temporal awareness; lighting could be functional rather than atmospheric."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0721_P3",
+      "visual_anchors": [
+        "single occupant",
+        "focused gaze",
+        "isolated illumination"
+      ],
+      "symbolic_mapping": [
+        "laptop as sole light source symbolizing informational centrality",
+        "solitary posture as enacted autonomy"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The subject’s appearance is partially defined by technological accessories and screen-reflected light, suggesting identity formation occurs through interaction with tools that both enable and frame self-presentation.",
+      "alternative_interpretations": [
+        "The person is casually dressed and using common consumer electronics; no identity performance is evident."
+      ],
+      "limitations": [
+        "Clothing and accessories are generic; no distinguishing marks, logos, or expressive gestures confirm identity construction."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:10:52.426314+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-45512834-dbfb-97f9-a2cc-6f45d17eb1bc",
+      "usage": {
+        "prompt_tokens": 575,
+        "completion_tokens": 943,
+        "total_tokens": 1518,
+        "completion_tokens_details": {
+          "text_tokens": 943
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 68,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031036988bdb0989cd4895",
+      "usage": {
+        "completion_tokens": 801,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1595,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2396
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

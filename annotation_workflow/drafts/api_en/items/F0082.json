@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0082",
+  "sample_id": "PHL1800_HAIV_0514",
+  "file_name": "PHL1800_HAIV_0514.png",
+  "batch_id": "B004",
+  "position_in_batch": 23,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a boy riding a bicycle",
+  "captions": {
+    "scene": [
+      "A bright blue sky with a white cloud and stylized wind streaks.",
+      "Green coniferous trees with red and purple flags attached to them.",
+      "A yellow ground surface with a gray curb line."
+    ],
+    "action": [
+      "The boy grips the handlebars of a blue bicycle with both hands.",
+      "A ghostly gray-and-white figure with an open mouth appears behind the boy’s head, partially overlapping his hair.",
+      "White ribbon-like streaks flow horizontally across the image, suggesting rapid motion or wind."
+    ],
+    "rationale": [
+      "The boy’s forward-leaning posture and wind streaks imply motion, though no background parallax confirms speed.",
+      "The ghostly figure is rendered in monochrome with exaggerated features, indicating stylization rather than realism.",
+      "The flower near the right tree has a red flag on its stem, but no text is legible on the flag."
+    ],
+    "object": [
+      "The boy wears an orange short-sleeved shirt, green shorts, and orange shoes with blue socks.",
+      "The bicycle has a blue frame, purple handlebars, black tires with yellow rims, and visible spokes.",
+      "A yellow five-petaled flower with a blue center floats mid-air near the right tree.",
+      "A white four-petaled flower with a purple center rests on the ground near the right tree.",
+      "The ghostly figure has long black hair, a white face with black outlines, and one hand raised near its mouth."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0082_P1",
+      "visual_anchors": [
+        "ghostly figure behind boy",
+        "wind streaks",
+        "boy’s focused expression"
+      ],
+      "symbolic_mapping": [
+        "ghostly figure → internal anxiety",
+        "wind streaks → passage of time or external pressure"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of the moving boy and the looming spectral figure suggests a journey constrained by unseen forces—perhaps mortality or psychological burden—that accompany forward motion without being physically present.",
+      "alternative_interpretations": [
+        "The figure may represent a playful cartoon trope of a 'scare' or surprise, common in children’s illustrations, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "No textual labels or narrative context confirm symbolic intent; the figure could be decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0082_P2",
+      "visual_anchors": [
+        "bicycle",
+        "yellow path",
+        "red flag on tree"
+      ],
+      "symbolic_mapping": [
+        "bicycle → agency",
+        "path → life course"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The boy’s solitary ride along a marked path toward a flagged point reflects the individual’s navigation of socially defined milestones, where personal movement occurs within externally signaled frameworks.",
+      "alternative_interpretations": [
+        "The flag is merely a decorative element in a landscape, like a trail marker in a park, with no symbolic role."
+      ],
+      "limitations": [
+        "The flag’s design lacks identifying insignia; its purpose is visually ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0082_P3",
+      "visual_anchors": [
+        "floating flowers",
+        "wind streaks",
+        "boy’s flushed cheeks"
+      ],
+      "symbolic_mapping": [
+        "floating flowers → transient beauty",
+        "flushed cheeks → exertion or emotion"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The disjunction between the boy’s embodied effort (flushed skin, grip) and the weightless, detached flowers implies a tension between lived experience and idealized perception—how appearance (of ease or beauty) masks underlying reality.",
+      "alternative_interpretations": [
+        "The flowers are simply part of a whimsical, non-realist background design with no intended contrast."
+      ],
+      "limitations": [
+        "No facial expression beyond mild concern is discernible; emotional state is not definitively shown."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:58:13.499756+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6117af42-ae50-920e-a9b1-93d6661c8641",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 905,
+        "total_tokens": 2438,
+        "completion_tokens_details": {
+          "text_tokens": 905
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701571849b43cf533204f91",
+      "usage": {
+        "completion_tokens": 760,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2859,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3619
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

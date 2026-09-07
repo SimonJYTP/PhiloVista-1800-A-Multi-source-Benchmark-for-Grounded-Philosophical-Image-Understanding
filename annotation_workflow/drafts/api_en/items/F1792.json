@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1792",
+  "sample_id": "PHL1800_HL_0521",
+  "file_name": "PHL1800_HL_0521.png",
+  "batch_id": "B036",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person in a wetsuit and a black dog on a beach",
+  "captions": {
+    "scene": [
+      "Overcast sky above a calm ocean with gentle waves breaking near the shore.",
+      "Wet sand in the foreground reflecting muted light, with footprints scattered across it.",
+      "A wide, open beach with no visible structures, vegetation, or other people."
+    ],
+    "action": [
+      "The person walks leftward along the shoreline carrying a surfboard under their right arm.",
+      "The dog walks rightward across the sand, head lowered toward the ground.",
+      "Both subjects are in motion, captured mid-stride, with legs partially lifted."
+    ],
+    "rationale": [
+      "The person’s full-body wetsuit and surfboard strongly suggest preparation for or return from surfing, though no water entry is visible.",
+      "The dog’s posture—head down, tail slightly raised—indicates sniffing or tracking, but no specific object of attention is visible.",
+      "The lighting is diffuse and uniform, implying overcast conditions; however, exact time of day cannot be determined from shadows alone."
+    ],
+    "object": [
+      "A human figure wearing a dark, full-length wetsuit with a hood, holding a white surfboard vertically by its rails.",
+      "A medium-to-large black dog with short fur, four legs visible, tail extended horizontally behind, and head angled downward.",
+      "The surfboard has a visible leash attached to its tail end, trailing behind the person’s left hand.",
+      "The beach surface shows damp, compacted sand with irregular footprints and small debris scattered sparsely.",
+      "The ocean horizon is straight and unbroken, with small whitecaps indicating mild wave activity."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1792_P1",
+      "visual_anchors": [
+        "person in full wetsuit",
+        "surfboard held at side",
+        "dog walking independently"
+      ],
+      "symbolic_mapping": [
+        "wetsuit as boundary between self and environment",
+        "surfboard as tool mediating engagement with nature"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image presents a moment of deliberate movement toward an uncertain horizon, where the wetsuit signifies self-imposed constraint enabling freedom in the sea, while the dog’s unguided path contrasts with the person’s purposeful direction—suggesting divergent modes of existence within shared space.",
+      "alternative_interpretations": [
+        "A routine post-surf walk with a pet, with no symbolic intent implied by the subjects’ behavior."
+      ],
+      "limitations": [
+        "No facial expressions, gaze direction, or interaction between subjects is visible to confirm intentionality or relationship."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1792_P2",
+      "visual_anchors": [
+        "overcast sky",
+        "wet reflective sand",
+        "absence of other humans"
+      ],
+      "symbolic_mapping": [
+        "gray sky as temporal neutrality",
+        "reflection on sand as fleeting self-image"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The monochromatic palette and lack of distinct shadows compress temporal markers, evoking impermanence; the person’s obscured face and uniform attire dissolve individual identity into a generic silhouette, reinforcing the transient nature of presence against an indifferent natural backdrop.",
+      "alternative_interpretations": [
+        "Standard weather conditions at a remote beach during off-peak hours, not symbolically charged."
+      ],
+      "limitations": [
+        "Color fidelity is ambiguous due to image grain and lighting; true grayscale vs. desaturated color cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1792_P3",
+      "visual_anchors": [
+        "dog sniffing ground",
+        "person walking parallel but separate",
+        "shared shoreline path"
+      ],
+      "symbolic_mapping": [
+        "parallel trajectories without contact as coexistence without communion"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The spatial proximity yet behavioral separation of human and dog illustrates a form of non-interdependent cohabitation—where responsibility may be implied by the leash’s presence, yet ethical engagement remains visually undemonstrated, raising questions about care in absence of direct interaction.",
+      "alternative_interpretations": [
+        "The dog is simply exploring while the person walks ahead; leash attachment implies routine supervision, not philosophical tension."
+      ],
+      "limitations": [
+        "The leash is attached to the surfboard, not visibly connected to the dog, so responsibility cannot be confirmed from visual evidence alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:18:38.268067+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-54ef53fa-8f21-926d-90a4-dbf4b2f8cfdc",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 992,
+        "total_tokens": 1801,
+        "completion_tokens_details": {
+          "text_tokens": 992
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907051825b285536d1d52438f",
+      "usage": {
+        "completion_tokens": 854,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1968,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2822
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

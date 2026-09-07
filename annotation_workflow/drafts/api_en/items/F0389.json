@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0389",
+  "sample_id": "PHL1800_IRFL_0104",
+  "file_name": "PHL1800_IRFL_0104.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults in business attire engaged in a tug-of-war over a document",
+  "captions": {
+    "scene": [
+      "A white background isolates two formally dressed individuals in mid-action.",
+      "The composition is centered on a contested paper document held between the two figures.",
+      "Both individuals wear dark suits, white collared shirts, and display open-mouthed expressions."
+    ],
+    "action": [
+      "The man on the left pulls the document toward himself with both hands while leaning backward.",
+      "The woman on the right pulls the document toward herself with both hands while leaning forward.",
+      "Both individuals have mouths wide open, consistent with vocalization or exertion."
+    ],
+    "rationale": [
+      "The opposing body postures and shared grip on the document indicate a physical contest over possession.",
+      "The visible bar chart on the document suggests it contains quantitative data, though specific values are unreadable.",
+      "The absence of any third party or environmental context prevents confirmation of workplace setting or intent."
+    ],
+    "object": [
+      "A man with short light-colored hair wears a black suit jacket, white shirt, light blue tie, and dark trousers; his belt buckle is visible.",
+      "A woman with long dark hair tied in a ponytail wears a black suit jacket, white shirt, black skirt, and a purple hair tie.",
+      "A white rectangular document is held taut between them, displaying three vertical bars: red, blue, and red (left to right), with faint horizontal grid lines above.",
+      "The man’s left hand grips the top-left corner of the document; his right hand grips the lower-left edge.",
+      "The woman’s left hand grips the top-right corner; her right hand grips the lower-right edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0389_P1",
+      "visual_anchors": [
+        "two people pulling a single document",
+        "opposing lean directions",
+        "shared grip on paper"
+      ],
+      "symbolic_mapping": [
+        "the document represents contested knowledge or authority"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image visualizes epistemic struggle where control over information constitutes a site of power negotiation.",
+      "alternative_interpretations": [
+        "a staged stock photo illustrating disagreement without actual conflict"
+      ],
+      "limitations": [
+        "no textual content confirms the document’s subject or stakes"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0389_P2",
+      "visual_anchors": [
+        "identical formal attire",
+        "symmetrical opposition",
+        "neutral background"
+      ],
+      "symbolic_mapping": [
+        "uniform dress implies institutional roles; tension reflects systemic friction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "Within institutional frameworks, individuals embody competing responsibilities, manifesting as embodied conflict over shared artifacts.",
+      "alternative_interpretations": [
+        "performative gesture for photographic effect, not reflective of real duty"
+      ],
+      "limitations": [
+        "attire alone cannot confirm institutional affiliation or role obligations"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0389_P3",
+      "visual_anchors": [
+        "open mouths",
+        "tensed arms",
+        "document as focal point"
+      ],
+      "symbolic_mapping": [
+        "physical strain mirrors communicative breakdown or unresolved discourse"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The act of simultaneous pulling signifies constrained agency: each participant exerts will yet remains bound to the shared object, limiting autonomous action.",
+      "alternative_interpretations": [
+        "exaggerated facial expressions for visual impact, not indicative of real constraint"
+      ],
+      "limitations": [
+        "facial expressions are stylized and may not reflect genuine psychological states"
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:42:24.560791+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-71f65653-41f0-9dbf-90ff-eeeb1a2fad29",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 821,
+        "total_tokens": 1490,
+        "completion_tokens_details": {
+          "text_tokens": 821
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070242087d705bdfdc684a92",
+      "usage": {
+        "completion_tokens": 680,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1618,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2298
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

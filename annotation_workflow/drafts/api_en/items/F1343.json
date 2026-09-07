@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1343",
+  "sample_id": "PHL1800_MM_0002",
+  "file_name": "PHL1800_MM_0002.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two boys in a school hallway",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor hallway with yellow walls, beige carpet, and multiple closed doors on both sides.",
+      "Bulletin boards with pinned papers line the right wall; one paper shows a green leaf illustration.",
+      "A blue door is visible at the far end of the hallway, centered in the background."
+    ],
+    "action": [
+      "One boy walks away from the camera toward the blue door, wearing a brown backpack and dark jeans.",
+      "Another boy sits in a black manual wheelchair, holding an open green-covered book and looking down at it.",
+      "A speech bubble originates near the walking boy’s head, containing the text: 'Oh... I hope he's doing alright.'"
+    ],
+    "rationale": [
+      "The walking boy’s posture and direction suggest movement away from the seated boy, supported by his lifted left foot and forward lean.",
+      "The seated boy’s hands hold the book open and his gaze is directed downward toward its pages, indicating reading behavior.",
+      "The speech bubble is positioned near the walking boy but contains no speaker identifier; attribution to him is plausible but not visually confirmed."
+    ],
+    "object": [
+      "The boy walking wears a navy long-sleeve shirt, faded blue jeans, black-and-white sneakers, and a tan backpack with black zippers and straps.",
+      "The boy in the wheelchair wears a light gray polo with navy collar and cuffs, navy trousers, black shoes, white socks, and a black backpack resting on his shoulders.",
+      "The wheelchair has large spoked rear wheels with handrims, two small front casters, black frame tubing, and footrests supporting the boy’s feet.",
+      "The green book has a hardcover, white pages, and is held open with both hands; no title or text on pages is legible.",
+      "The hallway ceiling includes recessed fluorescent light fixtures casting even illumination; shadows fall beneath both figures."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1343_P1",
+      "visual_anchors": [
+        "speech bubble with 'Oh... I hope he's doing alright.'",
+        "boy in wheelchair reading",
+        "boy walking away"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents unspoken concern",
+        "the wheelchair symbolizes physical constraint"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image evokes the tension between social awareness and physical separation: one subject acknowledges another’s condition through internal reflection while spatially distancing himself, illustrating how care can coexist with disengagement.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine hallway movement with coincidental proximity—no intentional narrative or emotional exchange is visually required."
+      ],
+      "limitations": [
+        "The speech bubble lacks a visual speaker indicator; its attribution is inferred, not proven."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1343_P2",
+      "visual_anchors": [
+        "open book held by seated boy",
+        "focused gaze downward",
+        "static posture in wheelchair"
+      ],
+      "symbolic_mapping": [
+        "reading as active engagement despite immobility"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The seated boy’s absorption in reading suggests agency through intellectual pursuit, countering assumptions of passivity imposed by mobility aids—highlighting knowledge as a domain of autonomous choice.",
+      "alternative_interpretations": [
+        "He may be waiting, resting, or avoiding interaction; the book could be a prop rather than an object of study."
+      ],
+      "limitations": [
+        "No page content is readable, so the nature of the reading material is unknown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1343_P3",
+      "visual_anchors": [
+        "two boys in same hallway",
+        "different modes of locomotion",
+        "shared environment"
+      ],
+      "symbolic_mapping": [
+        "hallway as shared social space",
+        "divergent paths as metaphor for life trajectories"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of walking and wheeled mobility within a common institutional setting underscores how identity is shaped by appearance and function in social contexts, where visibility and movement define relational positioning.",
+      "alternative_interpretations": [
+        "This is a neutral depiction of daily school life with no symbolic intent—both individuals are simply present in a corridor."
+      ],
+      "limitations": [
+        "No facial expressions, labels, or contextual signage confirm intended symbolism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:43:34.186367+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8905ae80-e89d-94b4-ac08-98f2f754a0bb",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 982,
+        "total_tokens": 2515,
+        "completion_tokens_details": {
+          "text_tokens": 982
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014317e207315fa47045d7",
+      "usage": {
+        "completion_tokens": 844,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2931,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3775
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

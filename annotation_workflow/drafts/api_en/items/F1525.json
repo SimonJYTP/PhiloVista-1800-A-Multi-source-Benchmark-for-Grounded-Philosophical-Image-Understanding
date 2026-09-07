@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1525",
+  "sample_id": "PHL1800_IRFL_0459",
+  "file_name": "PHL1800_IRFL_0459.jpg",
+  "batch_id": "B031",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a horse's open mouth and teeth",
+  "captions": {
+    "scene": [
+      "A grassy field with a wooden post-and-rail fence in the midground",
+      "Leafless deciduous trees and evergreen foliage under a partly cloudy sky",
+      "A dirt path running parallel to the fence on the right side"
+    ],
+    "action": [
+      "The horse’s lips are retracted, exposing upper and lower incisors and premolars",
+      "The upper incisors show visible wear and discoloration, especially at the gumline",
+      "The tongue is partially visible behind the lower teeth, pressed against the inner lip"
+    ],
+    "rationale": [
+      "The visible dental wear suggests the horse is mature, though exact age cannot be determined from this view alone",
+      "The outdoor setting with fencing implies a managed pasture or paddock, but no signage confirms ownership or purpose",
+      "The mouth is held open without visible tension in surrounding musculature, suggesting a non-aggressive state, though intent is not observable"
+    ],
+    "object": [
+      "The horse has a brown coat with a white blaze extending from forehead to muzzle.",
+      "The upper lip is dark gray-black with coarse hair; the lower lip is pale pink with sparse white hairs.",
+      "Eight upper incisors are visible: four central pairs, with yellow-brown staining near the gingival margin and irregular wear facets.",
+      "Six lower incisors are visible, aligned horizontally, with similar staining and wear patterns as the upper set.",
+      "The gums appear pink and moist, with no visible lesions or swelling in the exposed oral mucosa."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1525_P1",
+      "visual_anchors": [
+        "worn incisors",
+        "retracted lips",
+        "exposed gums"
+      ],
+      "symbolic_mapping": [
+        "dental wear maps to accumulated experience over time"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The visible wear on the horse’s teeth embodies the irreversible passage of time—each facet and stain a record of repeated action, suggesting mortality as inscribed in biological form.",
+      "alternative_interpretations": [
+        "This is simply a routine dental inspection or flehmen response, with no symbolic intent"
+      ],
+      "limitations": [
+        "No temporal sequence is shown; wear could result from diet or genetics rather than age alone"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1525_P2",
+      "visual_anchors": [
+        "dark upper lip",
+        "pale lower lip",
+        "white facial blaze"
+      ],
+      "symbolic_mapping": [
+        "contrast between pigmented and unpigmented skin highlights surface differentiation without hierarchy"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of pigmented and depigmented facial regions underscores how identity is materially constituted through visible markers that are neither chosen nor fixed, yet persistently read by observers.",
+      "alternative_interpretations": [
+        "These are natural coat markings with no semiotic function"
+      ],
+      "limitations": [
+        "No observer is present in frame; interpretation assumes external gaze"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1525_P3",
+      "visual_anchors": [
+        "open mouth",
+        "exposed teeth",
+        "fence in background"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "A literal description of a horse's open mouth and teeth is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a horse's open mouth and teeth as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:41:36.104740+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3b333312-36fe-92d2-bba6-18d3a6328422",
+      "usage": {
+        "prompt_tokens": 984,
+        "completion_tokens": 849,
+        "total_tokens": 1833,
+        "completion_tokens_details": {
+          "text_tokens": 849
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 477,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070441182e7bde6304cf4110",
+      "usage": {
+        "completion_tokens": 707,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2034,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2741
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1525.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

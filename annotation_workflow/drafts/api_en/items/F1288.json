@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1288",
+  "sample_id": "PHL1800_IRFL_0036",
+  "file_name": "PHL1800_IRFL_0036.jpg",
+  "batch_id": "B027",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three children outdoors with an adult partially visible",
+  "captions": {
+    "scene": [
+      "Grassy field under daylight with scattered coniferous and deciduous trees in the background",
+      "Outdoor educational or observational activity involving at least four individuals",
+      "Blue clipboard held by a child in foreground, with other children positioned closely around"
+    ],
+    "action": [
+      "Child in striped shirt extends right arm forward, pointing toward the adult's hand or object held by adult",
+      "Child in blue vest looks downward toward the adult’s hand or object, mouth slightly open",
+      "Child on far right has mouth open and eyes directed toward the adult’s hand or object"
+    ],
+    "rationale": [
+      "The pointing gesture and shared gaze direction suggest coordinated attention toward a specific focal point held or indicated by the adult",
+      "The presence of a clipboard implies documentation or data collection, consistent with structured observation",
+      "The partial visibility of the adult’s torso and hand limits certainty about the nature of the object being presented"
+    ],
+    "object": [
+      "A child wearing a red-and-white striped long-sleeve shirt and holding a blue clipboard with a metal clip and pen attached holds it in left hand.",
+      "A second child wears a blue puffer vest over a dark long-sleeve shirt and stands to the left of the first child, facing slightly downward.",
+      "A third child with light brown hair appears on the far right edge, partially cropped, with mouth open and eyes directed leftward.",
+      "An adult figure is visible only from the left side: a plaid-patterned sleeve (green, beige, black), white shirt cuff, and a hand extended palm-down near the children’s faces.",
+      "The blue clipboard contains no legible text; any writing is unreadable due to angle and resolution."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1288_P1",
+      "visual_anchors": [
+        "child pointing",
+        "clipboard",
+        "shared gaze"
+      ],
+      "symbolic_mapping": [
+        "pointing as epistemic direction",
+        "clipboard as record of observed reality"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The act of pointing combined with documentation suggests a communal effort to establish shared empirical grounding, reflecting the philosophical pursuit of truth through collective observation.",
+      "alternative_interpretations": [
+        "The children may simply be following instructions in a routine outdoor lesson without epistemic intent."
+      ],
+      "limitations": [
+        "No visible text or explicit labeling confirms the purpose of the clipboard or the content of the adult’s gesture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1288_P2",
+      "visual_anchors": [
+        "child in striped shirt extending arm",
+        "adult’s hand in proximity",
+        "children’s focused orientation"
+      ],
+      "symbolic_mapping": [
+        "extended arm as agency",
+        "proximity to adult as dependency"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement—children oriented toward the adult’s hand—visually enacts relational dependence in learning, illustrating how social existence is constituted through guided attention and shared reference frames.",
+      "alternative_interpretations": [
+        "This may reflect momentary curiosity rather than a sustained social structure."
+      ],
+      "limitations": [
+        "Only a single instant is captured; longitudinal interaction patterns are unseen."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1288_P3",
+      "visual_anchors": [
+        "child with shaved head",
+        "distinct clothing patterns",
+        "varied postures"
+      ],
+      "symbolic_mapping": [
+        "visible bodily difference as marker of individuality within group context"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Divergent appearances among the children—hair length, garment style—serve as visual tokens of individuation amid collective activity, highlighting how identity is perceptually negotiated through appearance in social settings.",
+      "alternative_interpretations": [
+        "Clothing and hairstyle may reflect practical choices (e.g., weather, comfort) rather than identity expression."
+      ],
+      "limitations": [
+        "No facial expressions or naming cues confirm intentional self-presentation."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:17:05.457513+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-48437f7d-04e4-994a-be33-bdfc8ddc67f4",
+      "usage": {
+        "prompt_tokens": 859,
+        "completion_tokens": 895,
+        "total_tokens": 1754,
+        "completion_tokens_details": {
+          "text_tokens": 895
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 352,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041639fc89c5d1627c4e8b",
+      "usage": {
+        "completion_tokens": 758,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1942,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2700
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

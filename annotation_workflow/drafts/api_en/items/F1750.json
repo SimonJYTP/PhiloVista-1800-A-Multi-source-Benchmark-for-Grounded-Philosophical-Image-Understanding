@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1750",
+  "sample_id": "PHL1800_HL_0418",
+  "file_name": "PHL1800_HL_0418.png",
+  "batch_id": "B036",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stone clock tower with arched gateway and weather vane",
+  "captions": {
+    "scene": [
+      "A stone clock tower rises above a brick-and-stone building with a tiled roof under an overcast sky.",
+      "Green trees frame the upper portion of the structure, partially obscuring the background.",
+      "An arched gateway opens to a dark interior where a white vehicle and one person are visible."
+    ],
+    "action": [
+      "A person stands motionless inside the gateway, facing away from the viewer.",
+      "The clock face shows hands pointing near 10:10; numerals appear Roman but some are indistinct.",
+      "The weather vane atop the dome is stationary, aligned with wind direction unknown."
+    ],
+    "rationale": [
+      "The clock’s hands suggest a specific time, but without verification against a known reference, the exact time cannot be confirmed.",
+      "The person’s posture and position imply waiting or observation, but no movement or interaction is visible.",
+      "The building’s materials (stone, brick, slate tiles) indicate traditional construction, though era cannot be determined from image alone."
+    ],
+    "object": [
+      "The clock tower features a domed roof topped by a metal weather vane with directional arms and a rooster finial.",
+      "The clock face is circular, aged, with faded Roman numerals and two ornate metal hands; the numeral at 12 is clearly 'XII', others vary in legibility.",
+      "Below the clock, a small arched window with six panes sits above a large stone archway forming a passageway.",
+      "The archway reveals a white vehicle with black wheels parked inside, and a single human figure wearing dark clothing standing beside it.",
+      "The building’s facade combines red brick on the sides with light-colored ashlar stone around the arch and tower base."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1750_P1",
+      "visual_anchors": [
+        "clock face with Roman numerals",
+        "weather vane atop dome",
+        "arched gateway leading inward"
+      ],
+      "symbolic_mapping": [
+        "clock as marker of linear time",
+        "gateway as threshold between exterior and interior realms"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of the enduring stone architecture with the transient indication of time on the clock evokes reflection on human impermanence against built permanence, while the archway invites contemplation of passage and decision.",
+      "alternative_interpretations": [
+        "The scene may simply depict a functional entrance to a stable or estate yard, with no symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions, plaques, or contextual signage confirm intended symbolism; all interpretation relies on conventional associations."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1750_P2",
+      "visual_anchors": [
+        "single person standing still inside dark archway",
+        "white vehicle partially visible",
+        "symmetrical stone framing"
+      ],
+      "symbolic_mapping": [
+        "figure as isolated observer",
+        "arch as frame for human scale within institutional structure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The lone figure positioned centrally yet obscured by shadow within the formal architecture suggests tension between individual presence and institutional anonymity, raising questions about visibility and role within structured environments.",
+      "alternative_interpretations": [
+        "The person may be a worker pausing momentarily; their stillness reflects routine rather than existential condition."
+      ],
+      "limitations": [
+        "Facial features, clothing details, and posture are insufficient to determine status, intent, or identity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1750_P3",
+      "visual_anchors": [
+        "weather vane with cardinal indicators",
+        "dome beneath open belfry openings",
+        "overcast sky filling upper frame"
+      ],
+      "symbolic_mapping": [
+        "weather vane as instrument of orientation amid uncertainty",
+        "open belfry as conduit for sound across space"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The weather vane points definitively while the sky remains uniformly gray, suggesting that instruments of direction exist even when environmental cues are ambiguous—highlighting the gap between measurement and perception in navigating reality.",
+      "alternative_interpretations": [
+        "The vane is purely functional; the sky is merely cloudy with no epistemological implication."
+      ],
+      "limitations": [
+        "Directional markings on the vane are not legible; no wind movement is visible to confirm function or alignment."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:12:25.950227+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-044edf45-8d49-990b-9eb8-8b451000f175",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 998,
+        "total_tokens": 1767,
+        "completion_tokens_details": {
+          "text_tokens": 998
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705121414d79b854d8b4676",
+      "usage": {
+        "completion_tokens": 857,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1926,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2783
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0204",
+  "sample_id": "PHL1800_IRFL_0017",
+  "file_name": "PHL1800_IRFL_0017.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adult men walking side by side on a paved sidewalk",
+  "captions": {
+    "scene": [
+      "A black-and-white outdoor urban scene with bare trees, a cobblestone street, and a multi-story building in the background.",
+      "The sidewalk is light-toned and appears smooth; the street surface is irregularly patterned with dark stones.",
+      "Two men occupy the foreground, with blurred background elements suggesting motion or shallow depth of field."
+    ],
+    "action": [
+      "Both men are mid-stride, moving leftward relative to the camera’s perspective.",
+      "The man on the right holds a folded coat over his left forearm while his right hand is partially visible near his waist.",
+      "The man on the left has both arms at his sides, with his right hand slightly forward and fingers relaxed."
+    ],
+    "rationale": [
+      "The men appear to be walking together due to their parallel orientation, similar pace, and proximity (shoulder-to-shoulder distance).",
+      "Their attire—long overcoats, fedora-style hats, and formal trousers—suggests cold weather or formal occasion, though temperature cannot be confirmed visually.",
+      "The background architecture and street paving style indicate an early-to-mid 20th-century European city setting, but this relies on stylistic inference rather than direct evidence."
+    ],
+    "object": [
+      "The man on the left wears a dark long overcoat, a dark fedora with a wide brim, a light-colored collared shirt, and a dark tie; his facial hair includes a mustache and sideburns.",
+      "The man on the right wears a dark suit jacket, a lighter vest or shirt underneath, a dark fedora with a narrower brim, and carries a dark folded coat draped over his left forearm.",
+      "Both men wear dark trousers and dark shoes; the right man’s shoes show slight shine, indicating leather or polished material.",
+      "A leafless tree trunk stands vertically behind the right man, with additional blurred vertical trunks further back.",
+      "The building in the background has multiple evenly spaced rectangular windows across at least two visible stories, with no legible signage or text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0204_P1",
+      "visual_anchors": [
+        "two men walking in close proximity",
+        "identical direction of motion",
+        "shared sidewalk space"
+      ],
+      "symbolic_mapping": [
+        "proximity as co-presence in shared social space"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment of non-verbal coordination between individuals, illustrating how social existence is enacted through synchronized movement and spatial negotiation rather than explicit interaction.",
+      "alternative_interpretations": [
+        "They may simply be strangers coincidentally walking at the same pace without awareness of each other."
+      ],
+      "limitations": [
+        "No facial expressions, eye contact, or gestures confirm intentionality of proximity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0204_P2",
+      "visual_anchors": [
+        "bare trees",
+        "monochrome tonality",
+        "motion blur in background"
+      ],
+      "symbolic_mapping": [
+        "absence of foliage and grayscale rendering evoke transience"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The stark seasonal barrenness combined with photographic medium suggests impermanence—the figures are captured mid-motion, implying that this configuration exists only fleetingly before dissolution.",
+      "alternative_interpretations": [
+        "The image may have been taken in winter for practical reasons unrelated to symbolism."
+      ],
+      "limitations": [
+        "Season cannot be definitively established from tree silhouette alone without leaf detail."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0204_P3",
+      "visual_anchors": [
+        "fedora hats",
+        "overcoats",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "clothing as external signifier of role or status"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Appearance functions as a public interface: the consistent sartorial choices signal adherence to a shared normative code, where identity is partially constructed and communicated through visible conformity.",
+      "alternative_interpretations": [
+        "The clothing may reflect only functional needs (e.g., warmth) without symbolic intent."
+      ],
+      "limitations": [
+        "No contextual markers confirm whether attire was chosen for symbolic or utilitarian reasons."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:35:15.835552+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bc49adbd-2a50-98ee-9d5c-3eb060e0d416",
+      "usage": {
+        "prompt_tokens": 649,
+        "completion_tokens": 954,
+        "total_tokens": 1603,
+        "completion_tokens_details": {
+          "text_tokens": 954
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 142,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070134546ddbec5fdff04bfa",
+      "usage": {
+        "completion_tokens": 821,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1716,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2537
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0420",
+  "sample_id": "PHL1800_IRFL_0132",
+  "file_name": "PHL1800_IRFL_0132.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man in a pinstripe suit manipulating two smaller figures with strings",
+  "captions": {
+    "scene": [
+      "A large central figure in formal attire dominates the foreground against a blurred city skyline.",
+      "Two smaller human figures, one in a light suit and one in a dark suit, are suspended mid-air below the central figure.",
+      "The background shows indistinct high-rise buildings under a hazy sky."
+    ],
+    "action": [
+      "The central figure holds thin strings attached to the limbs of the two smaller figures, mimicking puppeteering.",
+      "The smaller figure on the left is posed mid-stride with arms extended, as if walking or resisting.",
+      "The smaller figure on the right stands upright with one arm raised, holding a small object resembling a briefcase."
+    ],
+    "rationale": [
+      "The strings connect the central figure’s hands to the wrists and ankles of the smaller figures, indicating intentional control.",
+      "The scale disparity between the central figure and the smaller ones suggests visual metaphor rather than literal physical interaction.",
+      "The absence of visible support for the smaller figures implies they are suspended solely by the strings, though the mechanism is not fully shown."
+    ],
+    "object": [
+      "The central figure wears a black pinstripe suit, white shirt, red bow tie, and a red pocket square; his face is cropped out above the mouth.",
+      "The left smaller figure wears a light gray suit, white shirt, and dark tie, with both feet off the ground and strings attached to wrists and ankles.",
+      "The right smaller figure wears a black suit, white shirt, red tie, and holds a black rectangular object in the left hand; strings attach to both wrists and right ankle.",
+      "Thin translucent strings extend from the central figure’s fingertips to the limbs of the two smaller figures.",
+      "The background contains at least five discernible vertical building silhouettes with no readable signage or text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0420_P1",
+      "visual_anchors": [
+        "strings connecting hands to limbs",
+        "disproportionate scale",
+        "formal business attire"
+      ],
+      "symbolic_mapping": [
+        "strings → external control",
+        "scale disparity → power asymmetry"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually enacts a critique of hierarchical control in corporate or institutional settings, where individuals are maneuvered like puppets by unseen or dominant agents.",
+      "alternative_interpretations": [
+        "It may depict a theatrical performance or advertisement using exaggerated staging without political intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intent; the metaphor relies entirely on compositional cues."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0420_P2",
+      "visual_anchors": [
+        "red bow tie",
+        "pocket square",
+        "symmetrical hand positioning"
+      ],
+      "symbolic_mapping": [
+        "red accessories → authority or danger",
+        "symmetry → deliberate orchestration"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The central figure’s curated appearance and precise gestures suggest identity as performance, where social roles are enacted through stylized costume and controlled movement.",
+      "alternative_interpretations": [
+        "The attire may simply reflect conventional formal dress without symbolic emphasis."
+      ],
+      "limitations": [
+        "Color symbolism is culturally variable and not explicitly labeled; red could denote festivity rather than dominance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0420_P3",
+      "visual_anchors": [
+        "two smaller figures in motion poses",
+        "lack of ground contact",
+        "city skyline backdrop"
+      ],
+      "symbolic_mapping": [
+        "suspension → precarious agency",
+        "skyline → systemic environment"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "The suspended figures represent workers navigating constrained career paths within urban economic structures, their movements directed by forces beyond individual volition.",
+      "alternative_interpretations": [
+        "The scene could be a literal depiction of a stage illusion or digital composite with no sociological reference."
+      ],
+      "limitations": [
+        "No tools, machines, or explicit labor indicators are present; the ‘labor’ reading depends on inferred context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:45:56.214135+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bac05e78-dc03-96ca-8e0f-963e9638dc48",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 936,
+        "total_tokens": 1515,
+        "completion_tokens_details": {
+          "text_tokens": 936
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 384
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024527462e6c6b3143401d",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1592,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2387
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

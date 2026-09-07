@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1170",
+  "sample_id": "PHL1800_HL_0175",
+  "file_name": "PHL1800_HL_0175.png",
+  "batch_id": "B025",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three adults gathered around laptops at a table in an indoor setting with bookshelves and cabinets",
+  "captions": {
+    "scene": [
+      "An indoor room with red double doors, wooden cabinets, and a bookshelf filled with books visible in the background.",
+      "A light-colored table holds at least four open laptops, tangled cables, two computer mice, and a black cylindrical object (possibly a microphone or speaker).",
+      "Three adults are positioned around the table: one seated facing away, one seated facing left, and one standing leaning forward over a laptop."
+    ],
+    "action": [
+      "The standing woman in a teal long-sleeve shirt leans toward a laptop screen, her right hand near the keyboard or touchpad, eyes focused on the display.",
+      "The seated woman in a white top with gold embroidery looks toward the standing woman’s laptop, mouth slightly open, expression attentive.",
+      "The man in the foreground, seen from behind with curly hair and glasses, faces a laptop screen; his posture suggests engagement with the device."
+    ],
+    "rationale": [
+      "The presence of multiple laptops, cables, and a shared focus suggests collaborative work or instruction rather than individual leisure use.",
+      "The standing person’s posture and proximity to the screen indicate active involvement—possibly guiding or troubleshooting—though no verbal interaction is visible.",
+      "The background includes labeled shelves and institutional-style furniture, implying a library, classroom, or community learning center, but the exact function cannot be confirmed without readable signage."
+    ],
+    "object": [
+      "A black Dell laptop on the right displays a windowed interface with blue header bars and unreadable text fields.",
+      "A second laptop in front of the man shows a bright white document or webpage with faint horizontal lines; its brand is not visible.",
+      "A third laptop, partially obscured, has a yellow sticky note affixed to its upper bezel.",
+      "Two computer mice sit on the table: one black optical mouse near the center, and one gray/black mouse near the right laptop.",
+      "A pink paper sign hangs on the red door; its text is illegible due to resolution and angle."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1170_P1",
+      "visual_anchors": [
+        "three people oriented toward shared screens",
+        "tangled cables connecting devices",
+        "bookshelf in background"
+      ],
+      "symbolic_mapping": [
+        "screens as mediators of shared attention",
+        "cables as material traces of interdependence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The arrangement visualizes knowledge as co-constructed through mediated interaction, where physical proximity and technological infrastructure jointly sustain collective inquiry.",
+      "alternative_interpretations": [
+        "This may simply depict routine technical support in a public computing space, with no intentional symbolic layer."
+      ],
+      "limitations": [
+        "No legible text confirms purpose; facial expressions are ambiguous and do not verify intent or consensus."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1170_P2",
+      "visual_anchors": [
+        "standing woman leaning over seated peers",
+        "differential postures (standing vs. seated)",
+        "shared focal point on one screen"
+      ],
+      "symbolic_mapping": [
+        "vertical positioning suggesting guidance or authority",
+        "shared gaze indicating alignment of attention"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The spatial hierarchy implies a temporary asymmetry in epistemic authority, where expertise is enacted through bodily orientation and control of the interface, reflecting labor embedded in digital assistance.",
+      "alternative_interpretations": [
+        "The standing posture could result from ergonomic preference or transient need to view the screen, not hierarchical intent."
+      ],
+      "limitations": [
+        "No gestures, speech cues, or role indicators confirm power dynamics; posture alone is underdetermined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1170_P3",
+      "visual_anchors": [
+        "bookshelf full of bound volumes",
+        "multiple laptops displaying interfaces",
+        "paper sign on door"
+      ],
+      "symbolic_mapping": [
+        "books as analog repositories",
+        "laptops as dynamic access points"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of print and digital media frames truth-seeking as a hybrid journey—where navigation between formats constitutes an embodied choice within structured environments.",
+      "alternative_interpretations": [
+        "The bookshelf and laptops coexist functionally (e.g., a library with public computers) without symbolic intent."
+      ],
+      "limitations": [
+        "Titles on books are unreadable; no user interaction with books is visible, weakening the contrast claim."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:58:20.952797+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-204e7aff-adf4-910c-8644-c908e7d52e8a",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1012,
+        "total_tokens": 1821,
+        "completion_tokens_details": {
+          "text_tokens": 1012
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035804a3f6b98250d8404f",
+      "usage": {
+        "completion_tokens": 867,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1982,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2849
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

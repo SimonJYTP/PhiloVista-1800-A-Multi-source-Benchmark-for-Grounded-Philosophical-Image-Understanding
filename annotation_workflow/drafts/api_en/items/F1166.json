@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1166",
+  "sample_id": "PHL1800_IRFL_0361",
+  "file_name": "PHL1800_IRFL_0361.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a white rectangular platter of assorted cut fruits",
+  "captions": {
+    "scene": [
+      "A white rectangular ceramic platter rests on a light-colored wooden surface with visible grain and plank seams.",
+      "Fruit pieces are arranged in loose clusters by type across the platter, with no overlapping layers or garnishes.",
+      "Natural lighting illuminates the scene uniformly, casting soft shadows beneath fruit pieces and along the platter edges."
+    ],
+    "action": [
+      "Green grapes remain attached in a single intact cluster near the top-left quadrant.",
+      "Watermelon is cut into triangular wedges with rind partially intact, positioned along the left edge.",
+      "Strawberries appear whole with green calyxes, placed individually among other fruits without slicing."
+    ],
+    "rationale": [
+      "The arrangement suggests deliberate placement rather than random scattering, based on grouping by fruit type and consistent orientation of slices.",
+      "The presence of both whole berries and uniformly cut melon cubes implies preparation occurred shortly before photographing, given lack of browning or wilting.",
+      "The absence of utensils, plates, or hands indicates the image captures a static display rather than an ongoing activity."
+    ],
+    "object": [
+      "Six triangular watermelon wedges with red flesh, black seeds, and green rind occupy the left side of the platter.",
+      "One cluster of approximately twenty green grapes with intact stems lies near the upper center.",
+      "Eight orange segments, peeled and fanned slightly, rest at the top-right corner adjacent to strawberries.",
+      "Twelve blueberries form a dense group in the upper right, directly below the orange segments.",
+      "Seven kiwi slices, each showing green flesh with black seeds and a thin brown skin rim, are aligned vertically on the far right."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1166_P1",
+      "visual_anchors": [
+        "watermelon wedges with rind intact",
+        "uniformly cubed cantaloupe",
+        "whole strawberries with calyxes"
+      ],
+      "symbolic_mapping": [
+        "intact rind vs. exposed flesh signifies boundary between external protection and internal vulnerability"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The coexistence of peeled and unpeeled fruit forms visual tension between revealed substance and preserved exterior, evoking questions about how identity is mediated through appearance versus inner reality.",
+      "alternative_interpretations": [
+        "This may simply reflect practical food preparation choices—some fruits are easier to eat with rind removed while others retain structural integrity when whole."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; the arrangement could be purely aesthetic or functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1166_P2",
+      "visual_anchors": [
+        "clustered grapes still attached to stem",
+        "separated blueberry group",
+        "individual strawberries spaced apart"
+      ],
+      "symbolic_mapping": [
+        "connected grapes represent communal continuity; isolated berries suggest individual autonomy"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial distribution of fruit types mirrors social configurations—some entities remain bound in natural units while others exist as discrete individuals, prompting reflection on belonging and separation in collective life.",
+      "alternative_interpretations": [
+        "Fruit grouping likely follows culinary logic: grapes stay clustered for ease of serving, while berries are separated to prevent crushing."
+      ],
+      "limitations": [
+        "No human figures or social indicators are present; any social analogy is projected onto inert objects."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1166_P3",
+      "visual_anchors": [
+        "cantaloupe cut into identical cubes",
+        "apple slices with uniform curvature",
+        "kiwi slices with radial symmetry"
+      ],
+      "symbolic_mapping": [
+        "geometric regularity contrasts with organic irregularity of strawberries and raspberries"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The imposition of geometric order on naturally irregular produce reflects humanity’s drive to categorize and systematize sensory experience, revealing how truth claims often depend on framing and measurement conventions.",
+      "alternative_interpretations": [
+        "Uniform cutting improves presentation and bite-sized consumption; symmetry is a standard food styling technique."
+      ],
+      "limitations": [
+        "The image contains no explicit epistemic markers (e.g., scales, labels, instruments); interpretation relies on extrapolation from form alone."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:57:38.385819+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d4a5d2fb-9edf-9b75-b3b6-85670f9c7844",
+      "usage": {
+        "prompt_tokens": 908,
+        "completion_tokens": 952,
+        "total_tokens": 1860,
+        "completion_tokens_details": {
+          "text_tokens": 952
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 401,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070357239b3e1e5a1d90495c",
+      "usage": {
+        "completion_tokens": 820,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2042,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2862
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

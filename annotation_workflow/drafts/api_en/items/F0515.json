@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0515",
+  "sample_id": "PHL1800_HAIV_0452",
+  "file_name": "PHL1800_HAIV_0452.png",
+  "batch_id": "B012",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "laptop displaying a battery icon",
+  "captions": {
+    "scene": [
+      "A silver laptop with black keyboard and bezel, open against a white background.",
+      "The laptop screen is uniformly red with a centered white battery icon.",
+      "The battery icon contains two vertical red bars on left and right, and a black lightning bolt in the center."
+    ],
+    "action": [
+      "The laptop screen displays a static graphic of a battery with charging symbol.",
+      "No physical movement or user interaction is visible in the image.",
+      "The battery icon shows partial charge (two bars) and active charging (lightning bolt)."
+    ],
+    "rationale": [
+      "The red screen background may indicate low battery warning, but color coding is not universally standardized and no text confirms this.",
+      "The lightning bolt inside the battery suggests charging is occurring, though no power cable or external context is shown.",
+      "The symmetry of the two red bars implies equal charge distribution, but without scale markers, exact level cannot be determined."
+    ],
+    "object": [
+      "The laptop has a silver chassis, black keyboard keys, and a black screen bezel.",
+      "The screen displays a solid red background with no gradients or textures.",
+      "A white rectangular battery outline with rounded corners and black border is centered on the screen.",
+      "Inside the battery outline, there are two identical vertical red bars, one on each side of a central black lightning bolt.",
+      "The lightning bolt is stylized, sharp-edged, and oriented diagonally from upper-left to lower-right within the battery interior."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0515_P1",
+      "visual_anchors": [
+        "red screen background",
+        "battery icon",
+        "lightning bolt"
+      ],
+      "symbolic_mapping": [
+        "red as urgency or depletion",
+        "lightning bolt as external energy input"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The image evokes the finite temporality of technological devices, where energy depletion signals impending cessation unless replenished—an allegory for mortal limits and dependence on external sustenance.",
+      "alternative_interpretations": [
+        "It is a generic UI indicator showing battery status during charging, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm symbolic meaning; color and iconography are culturally variable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0515_P2",
+      "visual_anchors": [
+        "symmetrical red bars",
+        "central lightning bolt",
+        "enclosed battery shape"
+      ],
+      "symbolic_mapping": [
+        "symmetry as balance",
+        "enclosure as constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The bounded battery with internal division suggests a constrained choice space: energy is available only within fixed limits, and renewal requires external intervention, reflecting how agency operates within systemic boundaries.",
+      "alternative_interpretations": [
+        "The layout follows standard battery UI conventions for visual clarity and does not encode philosophical structure."
+      ],
+      "limitations": [
+        "The symmetry may be purely aesthetic; no evidence confirms intentional metaphorical design."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0515_P3",
+      "visual_anchors": [
+        "black lightning bolt",
+        "white battery interior",
+        "red background"
+      ],
+      "symbolic_mapping": [
+        "contrast between black/white/red as oppositional forces"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The stark contrast between the aggressive black lightning and the passive white battery interior on a dominant red field visualizes the tension between external power imposition and internal capacity—raising questions about responsibility in systems where energy (power) is externally supplied and controlled.",
+      "alternative_interpretations": [
+        "The colors follow common UI design principles for visibility and contrast, not ideological messaging."
+      ],
+      "limitations": [
+        "Color semantics are not fixed; red could signify alert, brand identity, or default theme rather than conflict."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:53:20.243845+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a90f93ef-eab6-963f-a628-e1a6d8049dea",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 881,
+        "total_tokens": 2414,
+        "completion_tokens_details": {
+          "text_tokens": 881
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702530192177b4c641541c9",
+      "usage": {
+        "completion_tokens": 742,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2840,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3582
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

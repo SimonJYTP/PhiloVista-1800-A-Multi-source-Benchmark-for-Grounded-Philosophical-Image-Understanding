@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1037",
+  "sample_id": "PHL1800_HL_0436",
+  "file_name": "PHL1800_HL_0436.png",
+  "batch_id": "B022",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person skiing on a snow-covered forest trail",
+  "captions": {
+    "scene": [
+      "A sunlit coniferous forest with deep snow covering the ground and trail.",
+      "Tall evergreen trees line both sides of a narrow, groomed ski track.",
+      "Shadows from trees fall across the snow, indicating low-angle sunlight."
+    ],
+    "action": [
+      "The person is standing upright on skis, holding two poles, with one pole planted in the snow.",
+      "Their arms are raised slightly, hands gripping poles, suggesting active balance or motion initiation.",
+      "Skis are parallel and aligned with the trail, leaving visible tracks behind."
+    ],
+    "rationale": [
+      "The presence of parallel ski tracks and pole placement suggests recent forward movement, though the subject is currently stationary.",
+      "Sunlight illuminates the left side of the subject and trees, implying the sun is positioned to the left and low in the sky.",
+      "The absence of other people or equipment in the immediate frame indicates solitary activity, but this cannot be confirmed beyond the visible area."
+    ],
+    "object": [
+      "A person wearing a black long-sleeved top, black pants, and red gloves stands on white skis.",
+      "Two ski poles are held—one planted vertically in the snow near the right foot, the other held aloft in the left hand.",
+      "The snow surface shows two parallel grooves consistent with classic cross-country skiing technique.",
+      "A large conifer trunk occupies the left foreground, partially obscuring the trail edge.",
+      "Sparse bare branches and small evergreen shrubs appear among the snow near the trail margins."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1037_P1",
+      "visual_anchors": [
+        "parallel ski tracks",
+        "single figure on trail",
+        "sunlit path ahead"
+      ],
+      "symbolic_mapping": [
+        "ski tracks represent a chosen path",
+        "solitary figure evokes individual agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the tension between self-determined direction (the deliberate ski track) and environmental constraint (the narrow forest corridor), framing journey as both chosen and bounded.",
+      "alternative_interpretations": [
+        "It may simply document recreational activity without symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the interpretation relies on projection onto neutral visual elements."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1037_P2",
+      "visual_anchors": [
+        "strong shadows",
+        "low-angle light",
+        "person mid-stride posture"
+      ],
+      "symbolic_mapping": [
+        "shadows elongate time perception",
+        "mid-motion pause suggests reflection"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The elongated shadows and suspended posture evoke a moment where temporal passage is made visible—highlighting how embodied experience grounds abstract awareness of time’s flow.",
+      "alternative_interpretations": [
+        "Shadows result from natural lighting conditions and do not imply temporal reflection."
+      ],
+      "limitations": [
+        "Posture is ambiguous: it could indicate rest, adjustment, or preparation rather than contemplation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1037_P3",
+      "visual_anchors": [
+        "red gloves against black attire",
+        "contrast with white snow",
+        "isolated figure"
+      ],
+      "symbolic_mapping": [
+        "color contrast emphasizes human presence",
+        "isolation underscores individuation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The stark visual contrast between the figure’s attire and surroundings foregrounds appearance as a marker of identity amid natural uniformity, raising questions about how selfhood is asserted in non-social space.",
+      "alternative_interpretations": [
+        "Color choice reflects practical winter gear selection, not identity signaling."
+      ],
+      "limitations": [
+        "Garment colors may be functional (e.g., visibility, warmth); no evidence confirms expressive intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:42:24.671992+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9067de9d-b54c-91a9-a736-c2d1b21afc79",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 874,
+        "total_tokens": 1643,
+        "completion_tokens_details": {
+          "text_tokens": 874
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034213e67c03de240d4e2a",
+      "usage": {
+        "completion_tokens": 736,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1805,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2541
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1683",
+  "sample_id": "PHL1800_IRFL_0231",
+  "file_name": "PHL1800_IRFL_0231.jpg",
+  "batch_id": "B034",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults, one man and one woman, positioned closely together",
+  "captions": {
+    "scene": [
+      "Indoor setting with neutral-toned walls and a dark textured backdrop on the right",
+      "Soft, directional lighting illuminates the subjects from the front-left, casting subtle shadows",
+      "Shallow depth of field blurs background elements including a doorway or panel behind the man"
+    ],
+    "action": [
+      "The woman rests her left arm over the man’s shoulders while holding a black whip in her right hand",
+      "The man stands facing forward with his black shirt unbuttoned to the mid-torso, revealing bare chest",
+      "The woman tilts her head toward the man’s neck, eyes closed, lips parted with red lipstick visible"
+    ],
+    "rationale": [
+      "The whip’s presence suggests staged or performative intent rather than functional use, given its relaxed grip and positioning",
+      "The man’s direct gaze and neutral expression contrast with the woman’s closed eyes and proximity, indicating possible role differentiation",
+      "Clothing style (open shirt, lace bralette) and pose imply intentional composition, though specific context remains undetermined"
+    ],
+    "object": [
+      "A man with short dark hair, light skin, and visible facial stubble wears an unbuttoned black long-sleeve shirt.",
+      "A woman with wavy brown shoulder-length hair, light skin, and bright red lipstick wears a white lace bralette.",
+      "The woman holds a black leather whip with a braided handle and a thin lash, resting it against the man’s upper back/shoulder.",
+      "The man’s shirt has visible buttons down the placket; the top three are undone, exposing his sternum and upper abdomen.",
+      "The woman’s left hand rests on the man’s right shoulder, fingers slightly curled, nails painted red."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1683_P1",
+      "visual_anchors": [
+        "black whip held by woman",
+        "man’s open shirt",
+        "woman’s closed eyes"
+      ],
+      "symbolic_mapping": [
+        "whip → instrument of controlled authority",
+        "open shirt → vulnerability or exposure"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image stages a visual dialectic between enacted dominance and voluntary exposure, where power is not exercised but displayed, suggesting constraint as aesthetic performance rather than coercion.",
+      "alternative_interpretations": [
+        "A fashion or editorial photoshoot using fetish-adjacent props for stylistic contrast without thematic intent."
+      ],
+      "limitations": [
+        "No verbal or contextual cues confirm whether the whip is symbolic, decorative, or functional; its meaning hinges entirely on assumed conventions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1683_P2",
+      "visual_anchors": [
+        "woman’s red lipstick",
+        "man’s direct gaze",
+        "proximity without contact beyond shoulder"
+      ],
+      "symbolic_mapping": [
+        "lipstick → deliberate self-presentation",
+        "gaze asymmetry → divergent engagement with viewer"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The divergence in visual engagement—her inward focus versus his outward address—highlights how identity is negotiated through appearance and relational positioning within shared space.",
+      "alternative_interpretations": [
+        "Standard portrait posing where one subject looks at camera and the other adopts a ‘dreamy’ expression for compositional balance."
+      ],
+      "limitations": [
+        "Facial expressions cannot definitively indicate internal states; the man’s neutrality may be posed rather than reflective."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1683_P3",
+      "visual_anchors": [
+        "lace bralette",
+        "unbuttoned shirt",
+        "shared frame with shallow depth of field"
+      ],
+      "symbolic_mapping": [
+        "lace → crafted intimacy",
+        "shallow depth → isolation from external context"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The deliberate framing isolates the pair from environment, emphasizing relational choice as a bounded domain where appearance and gesture constitute the sole medium of connection.",
+      "alternative_interpretations": [
+        "Technical photographic choice to emphasize subjects, unrelated to philosophical themes."
+      ],
+      "limitations": [
+        "Absence of narrative context prevents confirmation that the relation depicted is chosen rather than assigned or staged."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:01:14.097106+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3adfa33b-aecf-9ad4-b447-51e864b7d001",
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 949,
+        "total_tokens": 1883,
+        "completion_tokens_details": {
+          "text_tokens": 949
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 427,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705004245a685f25477471a",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2082,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2889
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

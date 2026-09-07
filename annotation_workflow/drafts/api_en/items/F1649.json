@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F1649",
+  "sample_id": "PHL1800_IRFL_0199",
+  "file_name": "PHL1800_IRFL_0199.jpg",
+  "batch_id": "B034",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single tree split vertically into two contrasting halves",
+  "captions": {
+    "scene": [
+      "Left half: deep blue night sky with a large full moon, scattered stars, and silhouetted birds flying toward the moon.",
+      "Right half: warm orange-yellow sunset sky with a bright sun near the horizon, scattered stars, and silhouetted birds flying toward the sun.",
+      "Foreground: dark silhouette of grassy terrain spanning the entire bottom edge, beneath the tree."
+    ],
+    "action": [
+      "Birds are in flight on both sides of the image, oriented toward the luminous celestial body on their respective side.",
+      "The left half of the tree is bare with no foliage; the right half has dense leafy canopy.",
+      "The sky transitions sharply along the vertical midline of the tree, dividing night and day."
+    ],
+    "rationale": [
+      "The stark vertical division suggests intentional compositional contrast rather than natural atmospheric gradient, given the abrupt color shift at the trunk.",
+      "Birds appear to be moving directionally toward the moon or sun, but their exact trajectory cannot be confirmed from static image alone.",
+      "The presence of stars in both hemispheres is visually inconsistent with typical daytime conditions, indicating stylized or symbolic representation."
+    ],
+    "object": [
+      "A single tree stands centrally, its trunk bisected vertically such that the left side shows bare branches and the right side shows full foliage.",
+      "Exactly 15 bird silhouettes are visible: 8 on the left side flying toward the moon, and 7 on the right side flying toward the sun.",
+      "A large, detailed full moon occupies the upper-left quadrant, showing visible craters and maria as surface texture.",
+      "A bright, overexposed sun dominates the upper-right quadrant, casting radial glow and obscuring fine detail.",
+      "The ground is uniformly black silhouette with irregular grass-tuft outlines along the lower edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1649_P1",
+      "visual_anchors": [
+        "left bare tree half",
+        "right leafy tree half",
+        "vertical division line"
+      ],
+      "symbolic_mapping": [
+        "bareness maps to absence or loss",
+        "foliage maps to presence or vitality"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The tree embodies duality of existence across temporal phases—decay and renewal—as a visual metaphor for cyclical passage and irreversible transition.",
+      "alternative_interpretations": [
+        "A simple artistic diptych illustrating dawn/dusk without symbolic intent, using symmetry for aesthetic balance."
+      ],
+      "limitations": [
+        "No textual labels or contextual markers confirm intended symbolism; visual contrast alone does not necessitate philosophical meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1649_P2",
+      "visual_anchors": [
+        "birds flying toward moon",
+        "birds flying toward sun",
+        "dual sky"
+      ],
+      "symbolic_mapping": [
+        "directional flight maps to pursuit of ideals",
+        "celestial bodies map to opposing goals"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The birds’ divergent paths toward mutually exclusive light sources suggest agency within bounded conditions—freedom to choose, yet constraint by physical impossibility of reaching both.",
+      "alternative_interpretations": [
+        "Bird migration patterns coinciding with crepuscular lighting, rendered symmetrically for visual effect."
+      ],
+      "limitations": [
+        "Bird species, behavior, and flight purpose are indiscernible; directionality may be coincidental composition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1649_P3",
+      "visual_anchors": [
+        "stars visible in both day and night skies",
+        "sharp vertical seam at tree trunk"
+      ],
+      "symbolic_mapping": [
+        "anomalous stars map to persistent truth across states",
+        "seam maps to constructed boundary"
+      ],
+      "concept_ids": [
+        "other_abstract_relation"
+      ],
+      "interpretation": "The impossible coexistence of stars in daylight challenges perceptual realism, implying that apparent identity (day/night) is contingent on framing, while underlying constants (stars) persist beyond surface appearance.",
+      "alternative_interpretations": [
+        "Digital composite error or deliberate surrealism without epistemological intent."
+      ],
+      "limitations": [
+        "Stylization alone does not prove epistemic commentary; stars may be decorative elements without referential function."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for birds is incorrect; candidate states 14 birds (7 left, 7 right) but visual count shows 15 birds (8 left, 7 right).",
+      "Philosophy interpretation P3 uses unsupported concept 'knowledge_truth' for stars in both skies; better fit is 'other_abstract_relation' as it describes an abstract visual anomaly without direct epistemic claim."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:57:22.236482+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ea8bb33f-08bd-9229-9f27-7aff99533e36",
+      "usage": {
+        "prompt_tokens": 1041,
+        "completion_tokens": 965,
+        "total_tokens": 2006,
+        "completion_tokens_details": {
+          "text_tokens": 965
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 534,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045703bf8e4ee35d9b4ea5",
+      "usage": {
+        "completion_tokens": 970,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2220,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3190
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0058",
+  "sample_id": "PHL1800_HL_0013",
+  "file_name": "PHL1800_HL_0013.png",
+  "batch_id": "B001",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a child holding a multicolored umbrella, viewed from behind",
+  "captions": {
+    "scene": [
+      "A wet paved path flanked by tall dry grasses under overcast skies",
+      "A white lighthouse structure with a red-roofed building in the background",
+      "Three figures walking away from the camera along the path, two holding umbrellas"
+    ],
+    "action": [
+      "The child walks forward on the wet path wearing yellow-and-red rain boots and a blue jacket",
+      "An adult in a plaid shirt and dark pants walks ahead of the child, holding a pink umbrella",
+      "A third figure in a white hooded garment walks beside or slightly ahead of the plaid-shirt figure"
+    ],
+    "rationale": [
+      "The child’s posture and foot placement indicate forward motion along the path",
+      "The presence of multiple umbrellas and wet ground strongly suggests ongoing or recent rainfall",
+      "The blurred background and depth of field imply the child is the nearest subject, but exact distances are indeterminate"
+    ],
+    "object": [
+      "The child holds a large open umbrella with alternating panels of red, green, yellow, and blue.",
+      "The child wears a light-blue hooded jacket, grey trousers, and bright yellow rain boots with red accents.",
+      "The path surface is dark and reflective, indicating it is wet.",
+      "Tall beige and brown grasses line both sides of the path, some with seed heads visible.",
+      "In the background, a white tower-like structure with a lantern room sits atop a white building with a reddish-brown gabled roof."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0058_P1",
+      "visual_anchors": [
+        "child holding colorful umbrella",
+        "wet path",
+        "adults ahead"
+      ],
+      "symbolic_mapping": [
+        "colorful umbrella as provisional shelter against environmental uncertainty"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The child’s forward movement under a vividly segmented canopy suggests an embodied negotiation between protection and exposure—a journey where constraint (rain, path boundaries) coexists with agency (umbrella choice, direction).",
+      "alternative_interpretations": [
+        "A routine family walk in inclement weather, with no symbolic intent beyond practical rain protection."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentionality; color symbolism is culturally variable and not textually anchored."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0058_P2",
+      "visual_anchors": [
+        "multiple umbrellas",
+        "figures walking in sequence",
+        "blurred background"
+      ],
+      "symbolic_mapping": [
+        "umbrellas as markers of individual or group identity within shared space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The spatial arrangement—distinct figures each with their own umbrella—evokes the phenomenological tension between communal presence and individuated experience, where appearance (umbrella color, clothing) mediates social recognition without direct interaction.",
+      "alternative_interpretations": [
+        "Practical grouping for weather protection; the spacing may reflect physical comfort rather than social dynamics."
+      ],
+      "limitations": [
+        "No eye contact, orientation, or proximity data confirms relational intent; umbrella colors could be coincidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0058_P3",
+      "visual_anchors": [
+        "overcast sky",
+        "wet reflective path",
+        "lighthouse in distance"
+      ],
+      "symbolic_mapping": [
+        "lighthouse as distant reference point amid obscured visibility"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The obscured horizon and damp surface foreground epistemic limitation—the path is known only stepwise, while the lighthouse remains a fixed but indistinct signifier, evoking the human condition of navigating toward truths that remain partially veiled.",
+      "alternative_interpretations": [
+        "A coastal trail with standard navigational infrastructure; the lighthouse serves functional maritime purpose, not symbolic one."
+      ],
+      "limitations": [
+        "The lighthouse is out of focus and lacks contextual signage; its role cannot be confirmed as symbolic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:29:38.826622+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-41067d72-9359-9324-b147-8e1dbe3cc0ec",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 910,
+        "total_tokens": 1679,
+        "completion_tokens_details": {
+          "text_tokens": 910
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701291793daec07a52d440e",
+      "usage": {
+        "completion_tokens": 770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1837,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2607
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

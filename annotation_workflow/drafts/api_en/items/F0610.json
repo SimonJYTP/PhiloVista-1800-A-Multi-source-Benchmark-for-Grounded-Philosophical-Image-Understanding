@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0610",
+  "sample_id": "PHL1800_IRFL_0468",
+  "file_name": "PHL1800_IRFL_0468.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a gray textured blanket with white shaggy trim draped over a brown sofa",
+  "captions": {
+    "scene": [
+      "A modern interior scene featuring a brown leather-like sofa on a light beige carpet, with a window and sheer curtain visible in the background.",
+      "Natural light illuminates the room from the right side, casting soft shadows beneath the sofa and blanket.",
+      "The floor is covered by a high-pile, off-white rug partially visible beneath the sofa legs."
+    ],
+    "action": [
+      "The blanket is draped loosely over the sofa back and seat, with folds and creases indicating recent placement or adjustment.",
+      "The white shaggy trim hangs over the armrest and cascades toward the floor, showing gravitational sagging.",
+      "No human or animal figures are present; all elements are static."
+    ],
+    "rationale": [
+      "The blanket’s texture suggests a synthetic plush material due to uniform pile height and sheen under lighting.",
+      "The sofa appears upholstered in smooth, non-porous material resembling leather, inferred from reflections and seam definition.",
+      "The absence of visible wear or distortion on the blanket implies it is new or lightly used, though this cannot be confirmed visually."
+    ],
+    "object": [
+      "The blanket has a gray body with a distinct vertical ribbed texture and a thick white shaggy border approximately 5–7 cm wide.",
+      "The sofa is two-seater sized, with two visible back cushions and one seat cushion, all in matching tan-brown upholstery.",
+      "Two black cylindrical metal legs support the sofa, positioned near the front corners and partially embedded in the rug.",
+      "A sheer white curtain hangs behind the sofa, partially obscuring a window frame that appears white or light-colored.",
+      "The rug beneath the sofa is uniformly off-white with dense, short pile and no discernible pattern."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0610_P1",
+      "visual_anchors": [
+        "gray ribbed blanket texture",
+        "white shaggy trim",
+        "contrast between smooth sofa and plush fabric"
+      ],
+      "symbolic_mapping": [
+        "ribbed texture → structured routine",
+        "shaggy trim → comfort or excess"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of orderly ribbing and unruly fluff may reflect tensions between social conformity and personal comfort in self-presentation.",
+      "alternative_interpretations": [
+        "The trim simply serves as decorative edging for aesthetic contrast, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; visual contrast alone is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0610_P2",
+      "visual_anchors": [
+        "blanket draped asymmetrically",
+        "gravity-induced sagging of trim",
+        "unoccupied sofa"
+      ],
+      "symbolic_mapping": [
+        "asymmetry → impermanence",
+        "empty seating → absence or anticipation"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The unoccupied, casually draped blanket evokes transience—objects left mid-use suggest a pause in human presence, hinting at time’s passage and inevitable return to stillness.",
+      "alternative_interpretations": [
+        "The arrangement is staged for product photography and reflects deliberate composition, not temporal meaning."
+      ],
+      "limitations": [
+        "No clocks, decay, or aging signs are visible; stillness does not inherently imply mortality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0610_P3",
+      "visual_anchors": [
+        "sofa as shared surface",
+        "blanket covering part of seating area",
+        "no occupants present"
+      ],
+      "symbolic_mapping": [
+        "shared furniture → social contract",
+        "partial coverage → incomplete inclusion"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The blanket’s partial occupation of communal space may symbolize conditional belonging—comfort offered but not fully claimed, reflecting negotiated social presence.",
+      "alternative_interpretations": [
+        "The blanket is placed for visual balance in a commercial photo, with no sociological implication."
+      ],
+      "limitations": [
+        "Absence of people prevents verification of social dynamics; spatial occupancy alone is interpretively thin."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:00:42.305626+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-11798c5c-45d1-9420-bc61-3207f24341ec",
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 916,
+        "total_tokens": 1681,
+        "completion_tokens_details": {
+          "text_tokens": 916
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 258,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703002238c470ef38414611",
+      "usage": {
+        "completion_tokens": 781,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1830,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2611
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

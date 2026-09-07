@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1230",
+  "sample_id": "PHL1800_HL_0212",
+  "file_name": "PHL1800_HL_0212.png",
+  "batch_id": "B026",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young girl seated at a table using a green laptop-like device",
+  "captions": {
+    "scene": [
+      "An outdoor concrete-paved area with grass in the background, under ambient daylight with a blue color cast.",
+      "A wooden table holds multiple objects: a disposable cup with wave-and-bird graphics, papers, a pen, a yellow circular object labeled partially 'POLICE', and a green portable keyboard device.",
+      "Three adults stand around the table; one adult on the right holds two flat rectangular objects (possibly cards or phones), another adult on the left is partially visible wearing a light blue shirt and dark pants."
+    ],
+    "action": [
+      "The girl, wearing a striped short-sleeve shirt, places both hands on the green keyboard of the device and looks down at it.",
+      "An adult to the right holds two thin rectangular items horizontally, fingers gripping edges, with thumbs near centers.",
+      "A person’s arm and hand (right foreground) rests near the yellow circular object, fingers slightly curled but not actively manipulating anything."
+    ],
+    "rationale": [
+      "The girl’s posture and gaze suggest focused interaction with the device, though her exact intent or emotional state is not visually determinable.",
+      "The presence of multiple adults surrounding the table implies supervision or facilitation, but their specific roles cannot be confirmed from visual evidence alone.",
+      "The text on the yellow circular object appears to include 'POLICE' and possibly 'PACK & SHOOT', but parts are occluded or blurred; full reading is insufficient."
+    ],
+    "object": [
+      "A white disposable cup with blue wave-and-bird graphics sits upright on the table, containing a white lid and an unseen interior content.",
+      "A green plastic device with a foldable stand and integrated QWERTY keyboard is open on the table, with the girl’s hands resting on its keys.",
+      "A yellow circular plastic ring with black printed text, partially legible as 'POLICE' and 'PACK & SHOOT', lies flat on a cardboard box lid.",
+      "A silver-colored ballpoint pen lies horizontally on the table, near a sheet of white paper with faint markings.",
+      "A black laptop lid or screen cover is partially visible in the lower-left foreground, angled upward and closed."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1230_P1",
+      "visual_anchors": [
+        "green keyboard device",
+        "girl’s hands on keys",
+        "adults standing nearby"
+      ],
+      "symbolic_mapping": [
+        "the device as mediation between individual action and external guidance"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where technological interface becomes a site of negotiated agency—child engagement mediated by adult proximity—highlighting how tools shape participation within social frameworks.",
+      "alternative_interpretations": [
+        "This may simply depict a casual educational demonstration without deeper social implication."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues confirm intentionality or power dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1230_P2",
+      "visual_anchors": [
+        "yellow 'POLICE' ring",
+        "cardboard box",
+        "disposable cup"
+      ],
+      "symbolic_mapping": [
+        "the juxtaposition of institutional signage and everyday disposables suggests normalization of authority in routine settings"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "The co-location of a toy-like police-themed object with mundane items like a cup and paper hints at the subtle embedding of institutional symbols into childhood environments, raising questions about early identity formation under normalized authority.",
+      "alternative_interpretations": [
+        "The ring could be part of a game or craft kit with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "The full text and context of the ring are unreadable; its purpose is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1230_P3",
+      "visual_anchors": [
+        "girl’s downward gaze",
+        "paper with writing",
+        "pen beside it"
+      ],
+      "symbolic_mapping": [
+        "the act of writing or preparing to write as a threshold between thought and externalization"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The stillness before inscription—the poised pen, the blank or partial page, the focused attention—evokes epistemological tension: knowledge remains potential until committed to medium, reflecting the fragility of truth-making in embodied practice.",
+      "alternative_interpretations": [
+        "The paper may be unrelated to the girl’s activity and merely placed on the table."
+      ],
+      "limitations": [
+        "The content of the paper is illegible; no writing is in progress."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:05:50.093668+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6a6440bc-894e-930f-844d-d91be17380dd",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1024,
+        "total_tokens": 1833,
+        "completion_tokens_details": {
+          "text_tokens": 1024
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040537ab7e114904e94668",
+      "usage": {
+        "completion_tokens": 888,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2000,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2888
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

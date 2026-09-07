@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1692",
+  "sample_id": "PHL1800_IRFL_0440",
+  "file_name": "PHL1800_IRFL_0440.jpg",
+  "batch_id": "B034",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a muscular man standing between a yellow car and a blue motorcycle",
+  "captions": {
+    "scene": [
+      "Urban street with multi-story buildings, palm trees, and a green highway sign reading 'EXIT 50'",
+      "A white and red helicopter hovering above the street near a traffic light pole",
+      "Paved road surface with visible lane markings and a sidewalk curb"
+    ],
+    "action": [
+      "The man stands with hands on hips, facing forward, wearing sunglasses, an orange tank top, denim shorts, and white sneakers",
+      "The yellow classic muscle car is parked with its front angled toward the viewer, hood slightly raised",
+      "The blue sport motorcycle is parked upright beside the man, front wheel turned slightly left"
+    ],
+    "rationale": [
+      "The man’s pose and attire suggest staged presentation rather than spontaneous activity, but no motion is visible",
+      "The helicopter appears stationary in mid-air, yet rotor blur is absent, making hover status uncertain",
+      "The highway sign text is partially legible as 'EXIT 50', but smaller characters below are unreadable"
+    ],
+    "object": [
+      "A yellow two-door classic American muscle car with chrome grille, round headlights, and white-wall tires is positioned on the left side of the frame.",
+      "A bright blue sport motorcycle with black accents, disc brakes, and spoked wheels is parked to the right of the man.",
+      "A man with short blond hair, sunglasses, orange sleeveless shirt, blue denim shorts, and white athletic shoes stands centrally with arms akimbo.",
+      "A white-and-red helicopter with visible cockpit windows and landing skids hovers above the street behind the man.",
+      "A green overhead highway sign displays 'EXIT 50' in white uppercase letters; additional text beneath is too small to read."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1692_P1",
+      "visual_anchors": [
+        "man’s posed stance",
+        "yellow car",
+        "blue motorcycle"
+      ],
+      "symbolic_mapping": [
+        "the trio of man, car, and bike may represent curated self-presentation through owned objects"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The deliberate arrangement of the man flanked by high-status vehicles suggests identity construction through material symbols, where appearance mediates social perception.",
+      "alternative_interpretations": [
+        "This is a video game character selection screen or promotional render with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expression or interaction is visible; all interpretation relies on static composition alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1692_P2",
+      "visual_anchors": [
+        "hovering helicopter",
+        "urban architecture",
+        "highway exit sign"
+      ],
+      "symbolic_mapping": [
+        "the juxtaposition of airborne vehicle and ground infrastructure evokes tension between mobility and fixed systems"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The helicopter suspended above rigid city structures visually embodies the philosophical tension between individual freedom (flight) and societal constraints (zoned streets, exits, buildings).",
+      "alternative_interpretations": [
+        "The helicopter is simply part of a simulated environment with no thematic intent."
+      ],
+      "limitations": [
+        "No motion or narrative context confirms intentional symbolism; placement could be random."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1692_P3",
+      "visual_anchors": [
+        "man’s sunglasses",
+        "unreadable sign text",
+        "lack of other pedestrians"
+      ],
+      "symbolic_mapping": [
+        "occluded vision and partial information evoke epistemic limits in urban experience"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "Sunglasses obscure the man’s gaze while the sign’s lower text remains illegible, jointly illustrating how perception and available information are inherently incomplete in constructed environments.",
+      "alternative_interpretations": [
+        "Sunglasses are standard attire; sign text is small due to distance, not design intent."
+      ],
+      "limitations": [
+        "No evidence that the unreadable text was meant to be unreadable—it may simply be resolution-limited."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:01:51.145582+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1280e81a-36f0-908c-aa36-00b267184c7a",
+      "usage": {
+        "prompt_tokens": 674,
+        "completion_tokens": 896,
+        "total_tokens": 1570,
+        "completion_tokens_details": {
+          "text_tokens": 896
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 167,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050136d1704f37f79145ce",
+      "usage": {
+        "completion_tokens": 757,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1695,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2452
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

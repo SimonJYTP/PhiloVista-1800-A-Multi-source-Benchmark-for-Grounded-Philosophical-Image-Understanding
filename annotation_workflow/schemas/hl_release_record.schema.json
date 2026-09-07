@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://philovista-1800.local/schemas/hl_release_record.schema.json",
+  "title": "PhiloVista-1800 HL-compatible release record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["file_name", "captions", "confidence", "purity", "diversity"],
+  "properties": {
+    "file_name": {"type": "string", "minLength": 1},
+    "captions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene", "action", "rationale", "object"],
+      "properties": {
+        "scene": {"$ref": "#/$defs/threeTexts"},
+        "action": {"$ref": "#/$defs/threeTexts"},
+        "rationale": {"$ref": "#/$defs/threeTexts"},
+        "object": {"$ref": "#/$defs/fiveTexts"}
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene", "action", "rationale"],
+      "properties": {
+        "scene": {"$ref": "#/$defs/threeConfidence"},
+        "action": {"$ref": "#/$defs/threeConfidence"},
+        "rationale": {"$ref": "#/$defs/threeConfidence"}
+      }
+    },
+    "purity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene", "action", "rationale"],
+      "properties": {
+        "scene": {"$ref": "#/$defs/threeNumbers"},
+        "action": {"$ref": "#/$defs/threeNumbers"},
+        "rationale": {"$ref": "#/$defs/threeNumbers"}
+      }
+    },
+    "diversity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene", "action", "rationale"],
+      "properties": {
+        "scene": {"type": "number"},
+        "action": {"type": "number"},
+        "rationale": {"type": "number"}
+      }
+    }
+  },
+  "$defs": {
+    "captionText": {
+      "type": "string",
+      "minLength": 1,
+      "not": {"pattern": "；"}
+    },
+    "threeTexts": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"$ref": "#/$defs/captionText"}
+    },
+    "fiveTexts": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {"$ref": "#/$defs/captionText"}
+    },
+    "threeConfidence": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"type": "number", "minimum": 1, "maximum": 5}
+    },
+    "threeNumbers": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"type": "number"}
+    }
+  }
+}

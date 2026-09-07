@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1403",
+  "sample_id": "PHL1800_IRFL_0431",
+  "file_name": "PHL1800_IRFL_0431.jpg",
+  "batch_id": "B029",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a cartoon-style tree stump",
+  "captions": {
+    "scene": [
+      "A single tree stump centered on a plain white background.",
+      "The stump features a flat, cut top surface with visible concentric growth rings and radial cracks.",
+      "Multiple root-like protrusions extend outward from the base of the stump in irregular, pointed shapes."
+    ],
+    "action": [
+      "The stump is stationary with no motion indicators.",
+      "A wedge-shaped section is missing from the upper left edge of the top surface, exposing lighter inner wood.",
+      "Dark outlines define all edges and internal grain patterns, suggesting stylized illustration rather than photographic realism."
+    ],
+    "rationale": [
+      "The presence of concentric rings and radial lines on the top surface indicates a cross-section of a woody stem, consistent with a cut tree trunk.",
+      "The wedge-shaped void and exposed lighter interior suggest a portion was removed by cutting or breaking, though the mechanism is not depicted.",
+      "The stylized texture and uniform shading imply intentional artistic rendering; however, whether it represents a real object or purely symbolic form cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "The stump has a cylindrical main body with vertically oriented wavy grain lines rendered in dark brown over medium brown fill.",
+      "The top surface displays light tan coloration with darker brown concentric circles and intersecting radial lines forming a starburst pattern near the center.",
+      "Five distinct root-like extensions radiate from the lower perimeter, each tapering to a point and shaded with contour lines to suggest volume.",
+      "A triangular notch is cut into the upper left rim of the stump, revealing a pale beige inner face with vertical striations.",
+      "All elements are outlined in thick black strokes, and no background elements or additional objects are present."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1403_P1",
+      "visual_anchors": [
+        "concentric growth rings",
+        "wedge-shaped missing section",
+        "root-like protrusions"
+      ],
+      "symbolic_mapping": [
+        "growth rings → passage of time",
+        "missing wedge → irreversible change"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The stump embodies temporal finitude: its rings record elapsed years, while the missing segment signifies an irrevocable termination of growth, evoking mortality as a natural endpoint of duration.",
+      "alternative_interpretations": [
+        "It may simply represent a logging residue without symbolic intent, emphasizing utility or resource extraction."
+      ],
+      "limitations": [
+        "No explicit markers (e.g., inscriptions, context) confirm intentional symbolism; the interpretation relies on conventional associations rather than image-specific cues."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1403_P2",
+      "visual_anchors": [
+        "radial cracks on top surface",
+        "uneven root extensions",
+        "thick black outlines"
+      ],
+      "symbolic_mapping": [
+        "radial cracks → fragmentation of unity",
+        "asymmetrical roots → divergent paths"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The fractured top and irregular roots suggest branching possibilities after a decisive cut—each root direction symbolizing a divergent life path chosen or imposed following a pivotal rupture.",
+      "alternative_interpretations": [
+        "The asymmetry may reflect natural variation in root development post-felling, not metaphorical choice."
+      ],
+      "limitations": [
+        "The illustration style does not distinguish between intentional design and biological realism; no directional cues indicate agency or decision-making."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1403_P3",
+      "visual_anchors": [
+        "exposed inner wood at notch",
+        "contrast between outer bark texture and inner smoothness",
+        "uniform shading across surfaces"
+      ],
+      "symbolic_mapping": [
+        "exposed interior → hidden nature revealed",
+        "bark vs. inner contrast → surface vs. essence"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The notch reveals a lighter, smoother interior beneath the rugged outer grain, suggesting that identity may be layered, with appearance masking a different underlying substance once external conditions are altered.",
+      "alternative_interpretations": [
+        "The color difference likely reflects standard wood anatomy (sapwood vs. heartwood) and illustrative convention, not conceptual duality."
+      ],
+      "limitations": [
+        "The inner wood’s appearance follows typical botanical illustration norms; no facial features, labels, or anthropomorphic cues support identity-based reading."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:28:21.409664+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-147380a9-b7c6-9f10-87d0-c2abd7fd1e62",
+      "usage": {
+        "prompt_tokens": 1862,
+        "completion_tokens": 960,
+        "total_tokens": 2822,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1355,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042753ebeee7429b784e5f",
+      "usage": {
+        "completion_tokens": 825,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3294,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4119
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

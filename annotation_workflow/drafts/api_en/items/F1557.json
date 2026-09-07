@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1557",
+  "sample_id": "PHL1800_HL_0514",
+  "file_name": "PHL1800_HL_0514.png",
+  "batch_id": "B032",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a child eating a sandwich",
+  "captions": {
+    "scene": [
+      "An indoor setting with metal-framed chairs, wooden tables, and horizontal blinds covering a window in the background.",
+      "A white table surface occupies the lower-left foreground; part of a crumb or food remnant is visible on it.",
+      "The lighting is uneven, with strong highlights on the child’s face and sandwich, suggesting a nearby light source or flash."
+    ],
+    "action": [
+      "The child holds a large sandwich with both hands and brings it to their mouth, lips contacting the bread.",
+      "The child’s eyes are closed or nearly closed during the bite.",
+      "The child’s right hand grips the sandwich near its front edge while the left supports the rear portion."
+    ],
+    "rationale": [
+      "The sandwich appears substantial relative to the child’s hands, suggesting it is oversized for a single serving—though exact size cannot be confirmed without scale reference.",
+      "The child’s facial expression (closed eyes, mouth open around bread) indicates active ingestion, but emotional state (e.g., enjoyment) is not visually verifiable.",
+      "Background elements (chairs, blinds, table edges) suggest a public or institutional dining space, but no signage or distinctive features confirm this definitively."
+    ],
+    "object": [
+      "The child has short, dark brown hair and wears a dark blue or black short-sleeved shirt.",
+      "The sandwich consists of a long, golden-brown crusty roll filled with red sauce and visible meat or filling.",
+      "The child’s fingers are wrapped around the sandwich, with thumb and index finger clearly gripping opposite sides.",
+      "A metal chair with a curved backrest and tubular frame is visible behind the child’s left shoulder.",
+      "Horizontal slats of a window blind appear in the upper-right background, partially illuminated by ambient light."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1557_P1",
+      "visual_anchors": [
+        "child’s closed eyes",
+        "sandwich held firmly",
+        "uneven lighting"
+      ],
+      "symbolic_mapping": [
+        "closed eyes may symbolize immersion in immediate sensory experience",
+        "firm grip may represent agency in consumption"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The act of eating, captured mid-bite with eyes shut, evokes a momentary withdrawal from social context into embodied presence—highlighting how routine acts can become sites of existential focus.",
+      "alternative_interpretations": [
+        "This is simply a candid photo of a child eating lunch; no deeper meaning is required."
+      ],
+      "limitations": [
+        "No facial expression beyond eye closure is discernible; emotional or cognitive states are not observable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1557_P2",
+      "visual_anchors": [
+        "oversized sandwich",
+        "child’s small hands",
+        "table edge in foreground"
+      ],
+      "symbolic_mapping": [
+        "disproportion between food and eater suggests excess or challenge",
+        "foreground table edge frames the action as contained within a domestic or institutional routine"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The sandwich’s scale relative to the child’s hands subtly registers tension between autonomy and imposed structure—perhaps reflecting how nourishment is mediated through standardized portions and environments.",
+      "alternative_interpretations": [
+        "The sandwich is merely large; the child may eat such portions regularly, with no constraint implied."
+      ],
+      "limitations": [
+        "No evidence of coercion, scheduling, or institutional rules is visible; size judgment lacks objective reference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1557_P3",
+      "visual_anchors": [
+        "strong highlight on sandwich and face",
+        "shadowed background",
+        "crumb on table"
+      ],
+      "symbolic_mapping": [
+        "light isolates the act of consumption from surroundings",
+        "crumb signifies transience and incompleteness"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The fleeting moment—illuminated, partial, and leaving residue—suggests the impermanence of bodily acts and the fragility of self-presentation in everyday life.",
+      "alternative_interpretations": [
+        "The lighting is due to camera flash; the crumb is incidental debris with no symbolic weight."
+      ],
+      "limitations": [
+        "Lighting could be technical artifact rather than intentional emphasis; crumbs are common and non-exclusive to this scene."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:44:31.822823+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-35474207-7131-9d70-a4a9-c7963bf09297",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 976,
+        "total_tokens": 1677,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044419e3cf7601767f4790",
+      "usage": {
+        "completion_tokens": 837,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1795,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2632
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

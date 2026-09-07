@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1449",
+  "sample_id": "PHL1800_HL_0040",
+  "file_name": "PHL1800_HL_0040.png",
+  "batch_id": "B030",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person lying on a bed covered by a black garment with white text 'CSC' visible",
+  "captions": {
+    "scene": [
+      "A dimly lit, cluttered shared living space with dark flooring, multiple seating areas, and large windows showing darkness outside.",
+      "A laptop screen emits light near a person seated at a small table; nearby are scattered clothes, pillows, and furniture including two blue armchairs and a black sofa.",
+      "A coffee table holds books, a bottle, and remote controls; a TV sits on a low cabinet beside a guitar leaning against the wall."
+    ],
+    "action": [
+      "One person is reclining on a blue futon-like seat, partially covered by a colorful blanket and pink pillow.",
+      "Another person sits facing a laptop on a small wooden table, wearing a red-and-black shirt with white lettering (partially obscured).",
+      "A third person lies supine on a pink-sheeted bed, mostly covered by a black garment bearing white text 'CSC', with one hand visible near their head."
+    ],
+    "rationale": [
+      "The presence of multiple sleeping or resting zones (bed, futon, sofa) suggests a multi-occupant dwelling where rest occurs in varied configurations.",
+      "The arrangement of electronics (laptop, TV), personal items (clothes, pillows), and instruments (guitar) implies habitual use rather than temporary setup.",
+      "The lighting—primarily from screens and ambient sources—indicates evening or night hours, though no clock or external light confirms time definitively."
+    ],
+    "object": [
+      "A black sofa with red, yellow, and white pillows is positioned against the back wall beneath a large window.",
+      "Two identical blue upholstered armchairs with light wood frames sit side-by-side near the center of the room.",
+      "A rectangular wooden coffee table holds a paperback book, a clear plastic bottle, a remote control, and a small white box.",
+      "A black flat-screen television rests on a low wooden cabinet; to its left, a small potted plant sits on the same surface.",
+      "A black garment draped over a person on a bed displays white uppercase letters 'CSC' on its lower right portion."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1449_P1",
+      "visual_anchors": [
+        "black garment with 'CSC' text",
+        "person lying still under it",
+        "pink bedding contrasting with dark cover"
+      ],
+      "symbolic_mapping": [
+        "the garment as a marker of affiliation or role",
+        "the covered body as withdrawal or concealment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The partial concealment of the individual beneath a branded garment may reflect how social roles or group affiliations mediate visibility and self-presentation in shared domestic spaces.",
+      "alternative_interpretations": [
+        "The garment could simply be a blanket or oversized clothing item used for warmth, with the text incidental."
+      ],
+      "limitations": [
+        "No context confirms whether 'CSC' denotes an organization, course, or personal identifier; the person’s posture does not confirm intent to hide."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1449_P2",
+      "visual_anchors": [
+        "multiple resting zones occupied simultaneously",
+        "cluttered but functional layout",
+        "dark window indicating absence of daylight"
+      ],
+      "symbolic_mapping": [
+        "spatial overlap as coexistence without synchronization",
+        "shared space as negotiated territory"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The simultaneous occupation of distinct rest areas within one room illustrates how individuals inhabit constrained environments through spatial negotiation rather than unified activity.",
+      "alternative_interpretations": [
+        "People may simply be tired at the same time; the layout reflects convenience, not philosophical stance."
+      ],
+      "limitations": [
+        "No evidence of interaction or conflict; occupancy could be coincidental rather than intentional cohabitation strategy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1449_P3",
+      "visual_anchors": [
+        "laptop screen glowing in darkness",
+        "TV powered off",
+        "guitar leaning unused against wall"
+      ],
+      "symbolic_mapping": [
+        "screen light as active engagement",
+        "idle instruments as deferred expression"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "The dominance of digital interface light over physical tools suggests a moment where technological mediation displaces embodied practice, reflecting contemporary shifts in how agency and creation are enacted.",
+      "alternative_interpretations": [
+        "The guitar may be stored temporarily; the TV may be off due to preference, not symbolic rejection."
+      ],
+      "limitations": [
+        "No indication the guitar was recently used or abandoned; the TV’s state is neutral without power indicator visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:33:55.268085+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a0788aab-f434-99d3-9509-d66c455879c9",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1043,
+        "total_tokens": 1852,
+        "completion_tokens_details": {
+          "text_tokens": 1043
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070433412571f24a754a4783",
+      "usage": {
+        "completion_tokens": 904,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2019,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2923
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

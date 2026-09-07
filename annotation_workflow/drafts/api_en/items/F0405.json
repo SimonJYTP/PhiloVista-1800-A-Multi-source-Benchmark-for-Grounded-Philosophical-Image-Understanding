@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0405",
+  "sample_id": "PHL1800_HL_0385",
+  "file_name": "PHL1800_HL_0385.png",
+  "batch_id": "B010",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "people gathered in a public park with classical-style architecture and horse-drawn transport",
+  "captions": {
+    "scene": [
+      "A wide paved walkway lined with leafless trees, rows of ornate metal-and-wood benches, and a large colonnaded structure in the background.",
+      "Multiple groups of people seated and standing on the walkway; some wear formal dark coats and hats, others wear lighter dresses or shawls.",
+      "Horse-drawn carriages and mounted riders are visible near the colonnaded building, with additional figures clustered near its archways."
+    ],
+    "action": [
+      "A man in a dark coat and top hat stands holding a cane, facing left, with his body oriented toward the viewer.",
+      "Two women sit side-by-side on a bench in the foreground, one wearing a light-colored hat and veil, the other in dark attire; both face away from the camera toward the colonnade.",
+      "A group of at least four individuals sits on a long bench to the left, with one person leaning forward."
+    ],
+    "rationale": [
+      "The presence of multiple benches arranged linearly along the path suggests intentional design for public rest and observation, not spontaneous gathering.",
+      "The uniformity of architectural style (columns, entablature, symmetrical arches) implies a planned civic or ceremonial space rather than organic urban development.",
+      "The mix of pedestrian, equestrian, and carriage traffic indicates concurrent use of multiple mobility modes typical of late 19th-century urban parks."
+    ],
+    "object": [
+      "There are at least 10 clearly distinguishable human figures in the left half of the image: 6 seated on the first bench row, 2 standing near them, and 2 more further back near the tree trunks.",
+      "In the central-right area, there are 4 mounted riders visible: 2 on dark horses near the colonnade entrance, 1 on a light horse slightly ahead, and 1 more partially obscured behind them.",
+      "At least 2 horse-drawn vehicles are present: one two-wheeled carriage near center-left and one larger carriage near the right colonnade arch.",
+      "The colonnaded structure features 8 visible fluted columns supporting a continuous entablature, with three arched openings aligned horizontally.",
+      "A woman in the middle ground holds a white parasol over one seated individual; the parasol’s ribs and fabric edge are discernible despite slight motion blur."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "commonsense_inference"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0405_P1",
+      "visual_anchors": [
+        "man standing alone with cane",
+        "rows of identical benches",
+        "colonnaded architecture"
+      ],
+      "symbolic_mapping": [
+        "the solitary figure contrasts with communal seating",
+        "repetition of benches suggests standardized social participation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image stages a tension between individual presence and institutionalized public life, where identity is performed through posture and dress against a backdrop of civic order.",
+      "alternative_interpretations": [
+        "It may simply document routine leisure activity without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentional contrast; the man may be waiting or observing casually."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0405_P2",
+      "visual_anchors": [
+        "leafless trees",
+        "overcast sky",
+        "monochrome tonality"
+      ],
+      "symbolic_mapping": [
+        "bare branches evoke cyclical absence",
+        "uniform grayscale suppresses temporal specificity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The absence of foliage and lack of color coding imply a suspended temporality—neither spring nor summer—suggesting reflection on transience within structured public space.",
+      "alternative_interpretations": [
+        "The season may be winter or early spring, and monochrome reflects photographic technology, not philosophical intent."
+      ],
+      "limitations": [
+        "Photographic medium inherently lacks color; seasonal inference relies on tree state alone, which could be due to species or disease."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0405_P3",
+      "visual_anchors": [
+        "multiple horse-drawn carriages",
+        "mounted police or guards",
+        "pedestrians in varied attire"
+      ],
+      "symbolic_mapping": [
+        "coexistence of elite transport and walking public signals stratified access",
+        "uniformed riders imply regulated movement"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The layered mobility infrastructure reveals embedded hierarchies: animal-powered conveyance serves both authority and privilege, while foot traffic occupies the designated pedestrian zone under surveillance.",
+      "alternative_interpretations": [
+        "All users may belong to the same social class; mounted figures could be ceremonial, not authoritative."
+      ],
+      "limitations": [
+        "Uniform details (e.g., insignia, cut of coat) are indistinct; no clear markers of rank or function are legible."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for human figures in left half is inaccurate; no umbrella is visible in the image; parasol description is incorrect; mounted riders count is overstated; horse-drawn vehicles count is overstated."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:44:01.022388+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-feaf1c1c-dd51-9049-81ca-74ee91c548bf",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 1106,
+        "total_tokens": 1855,
+        "completion_tokens_details": {
+          "text_tokens": 1106
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070243452a1045944ea94365",
+      "usage": {
+        "completion_tokens": 1073,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2014,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3087
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

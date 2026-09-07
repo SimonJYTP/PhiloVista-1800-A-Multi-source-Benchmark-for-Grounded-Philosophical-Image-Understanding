@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0164",
+  "sample_id": "PHL1800_IRFL_0175",
+  "file_name": "PHL1800_IRFL_0175.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two cartoon male figures in business attire",
+  "captions": {
+    "scene": [
+      "Two stylized 3D-rendered male characters stand against a plain light-gray background.",
+      "A broken incandescent lightbulb lies on the ground between the two figures.",
+      "One figure holds a black briefcase; the other holds a blank white sheet of paper."
+    ],
+    "action": [
+      "The left figure has wide eyes, an open mouth showing teeth, and leans backward with arms extended toward the paper.",
+      "The right figure extends his right arm forward, offering the paper, while his left hand rests on his hip and he displays a wide grin with uneven teeth.",
+      "Both figures wear formal clothing: white shirts, black ties, and outer garments (gray suit jacket and red vest respectively)."
+    ],
+    "rationale": [
+      "The left figure’s facial expression and posture suggest alarm or distress, based on exaggerated cartoon features like enlarged pupils and open mouth.",
+      "The right figure’s gesture of extending a blank paper and confident stance may indicate presentation or imposition, though no text is visible to confirm intent.",
+      "The presence of a broken lightbulb on the floor implies prior action or accident, but its causal relationship to the figures’ interaction is not visually specified."
+    ],
+    "object": [
+      "The left figure has brown hair styled upward, a gray suit jacket over a white shirt and black tie, gray trousers, black shoes, and carries a black briefcase in his left hand.",
+      "The right figure has dark gray hair styled in a high swoop, a red sleeveless vest over a white shirt and black tie, red trousers, black shoes, and holds a blank white rectangular sheet in his right hand.",
+      "A shattered incandescent lightbulb lies horizontally on the ground between the figures, with visible glass fragments and a metallic screw base.",
+      "The white sheet held by the right figure is featureless and contains no legible text or markings.",
+      "Both figures have large round white eyes with small black pupils and pink noses; their mouths are open, revealing upper and lower teeth."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0164_P1",
+      "visual_anchors": [
+        "broken lightbulb",
+        "blank paper",
+        "distressed expression"
+      ],
+      "symbolic_mapping": [
+        "broken lightbulb → failed idea or insight",
+        "blank paper → unfulfilled obligation or imposed task"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The scene may depict the tension between the collapse of an idea (lightbulb) and the imposition of an empty directive (paper), raising questions about epistemic accountability when truth is absent or obscured.",
+      "alternative_interpretations": [
+        "It could simply represent a comedic workplace mishap with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual content or contextual setting confirms symbolic meaning; all interpretation relies on conventional metaphor without visual reinforcement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0164_P2",
+      "visual_anchors": [
+        "right figure’s dominant posture",
+        "left figure’s recoil",
+        "shared formal attire"
+      ],
+      "symbolic_mapping": [
+        "gestural asymmetry → power imbalance",
+        "identical tie/shirt → institutional conformity"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The contrast in body language within a shared professional dress code suggests a critique of hierarchical enforcement within social structures, where authority is asserted through gesture rather than dialogue.",
+      "alternative_interpretations": [
+        "The pose difference may reflect momentary surprise versus confidence, not systemic power dynamics."
+      ],
+      "limitations": [
+        "No badges, insignia, or environmental cues identify roles or institutions; posture alone cannot definitively establish hierarchy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0164_P3",
+      "visual_anchors": [
+        "blank paper",
+        "open mouths",
+        "lack of readable text"
+      ],
+      "symbolic_mapping": [
+        "absence of writing → void of justification",
+        "mutual gaze direction → unresolved communication"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image evokes the paradox of compelled speech or action without grounding in verifiable truth, illustrating how constraint manifests when meaning is withheld or erased.",
+      "alternative_interpretations": [
+        "The blank paper may be a placeholder awaiting content, not a symbol of absence."
+      ],
+      "limitations": [
+        "The paper’s blankness is literal but not inherently meaningful; interpretation requires assuming intentional omission rather than production stage incompleteness."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:12:18.962653+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-82661c22-c94c-9125-a0ce-9b9ddc847d6a",
+      "usage": {
+        "prompt_tokens": 2549,
+        "completion_tokens": 1005,
+        "total_tokens": 3554,
+        "completion_tokens_details": {
+          "text_tokens": 1005
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2042,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021148b01ca87be9d042e2",
+      "usage": {
+        "completion_tokens": 865,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4284,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5149
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

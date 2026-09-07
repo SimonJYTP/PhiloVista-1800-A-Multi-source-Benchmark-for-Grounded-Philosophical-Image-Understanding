@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1120",
+  "sample_id": "PHL1800_HL_0107",
+  "file_name": "PHL1800_HL_0107.png",
+  "batch_id": "B024",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a herd of elephants and one human figure in a river",
+  "captions": {
+    "scene": [
+      "A wide, shallow river with muddy banks, bordered by green grass, palm trees, and a forested hill in the background under overcast skies.",
+      "Elephants occupy most of the riverbed and near-shore areas; some stand in water up to their bellies, others wade or stand on exposed sandbars.",
+      "A single human figure wearing a green shirt is visible on the far right bank, partially obscured by rocks and vegetation."
+    ],
+    "action": [
+      "Multiple elephants are standing still or moving slowly through the water; at least two appear to be drinking with trunks lowered toward the surface.",
+      "One juvenile elephant (smaller size, shorter trunk) stands isolated on the left side of the river, facing upstream.",
+      "The human figure appears stationary, observing or attending to the elephants, with no clear motion indicated."
+    ],
+    "rationale": [
+      "The presence of multiple adult and juvenile elephants suggests a social group, but no direct interaction (e.g., touching, coordinated movement) is visibly confirmed.",
+      "The river’s shallow depth is inferred from elephants’ leg submersion levels and exposed sandbars, though exact depth cannot be measured from image alone.",
+      "The human’s role is ambiguous: proximity and posture suggest involvement, but no tools, gestures, or directional cues confirm caretaking, guiding, or other specific activity."
+    ],
+    "object": [
+      "There are approximately 30 distinct elephant bodies or heads visible: 12 in the left/middle cluster, 10 in the central-right group, and 8 near the far right bank including juveniles.",
+      "The river contains scattered dark rocks and small rapids where water flows over submerged stones, creating white ripples.",
+      "Palm trees with fan-shaped fronds line the upper bank; at least 13 individual palms are distinguishable against the green slope.",
+      "The human figure wears a short-sleeved green shirt and dark trousers; only torso and head are visible above rocks.",
+      "Two elephants on the far right stand on a dry rock outcrop, with water lapping at their feet, indicating variable riverbed elevation."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1120_P1",
+      "visual_anchors": [
+        "elephants grouped across varying depths",
+        "human figure at edge of frame",
+        "exposed sandbar separating clusters"
+      ],
+      "symbolic_mapping": [
+        "the sandbar as a liminal zone between species",
+        "grouping as non-verbal consensus"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial arrangement—elephants occupying the river while a solitary human remains on the periphery—suggests a coexistence defined by mutual non-interference, where boundaries (physical and behavioral) sustain peaceful proximity without integration.",
+      "alternative_interpretations": [
+        "This may simply reflect routine bathing behavior with a handler maintaining distance for safety, not philosophical positioning."
+      ],
+      "limitations": [
+        "No facial expressions, vocalizations, or prior context confirm intentionality behind spacing or gaze direction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1120_P2",
+      "visual_anchors": [
+        "juvenile elephant standing apart on left",
+        "adults clustered centrally",
+        "water level reaching mid-leg on most"
+      ],
+      "symbolic_mapping": [
+        "isolation of young as vulnerability",
+        "shared immersion as collective endurance"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The lone juvenile’s separation amid a larger group evokes the precariousness of early existence, while the uniform wetness of all bodies dissolves individual markings, hinting at identity subsumed by shared condition.",
+      "alternative_interpretations": [
+        "The juvenile may be temporarily separated due to feeding or play, not existential isolation."
+      ],
+      "limitations": [
+        "Size-based age estimation is approximate; no behavioral cues confirm distress or independence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1120_P3",
+      "visual_anchors": [
+        "overcast sky",
+        "dense foliage behind river",
+        "elephants partially submerged"
+      ],
+      "symbolic_mapping": [
+        "water as medium of continuity",
+        "forest as unchanging backdrop"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The elephants’ movement through the river—neither rushing nor halting—embodies a non-teleological progression, where truth resides not in destination but in the sustained act of traversing an environment that both supports and constrains.",
+      "alternative_interpretations": [
+        "This is a static snapshot of routine hydration; no evidence of forward motion or decision-making is visible."
+      ],
+      "limitations": [
+        "Temporal sequence is absent; still image cannot verify directionality or intent behind positioning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of elephants (24 vs actual ~30+); human figure description lacks clarity on visibility; philosophy interpretations include unsupported symbolic mappings and concept IDs."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:52:56.249539+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d6a260b3-8eb8-96be-8a2e-886a92a0d29b",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1059,
+        "total_tokens": 1868,
+        "completion_tokens_details": {
+          "text_tokens": 1059
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035235600256ff92a94a9b",
+      "usage": {
+        "completion_tokens": 949,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2031,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2980
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

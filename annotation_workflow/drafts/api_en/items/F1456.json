@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1456",
+  "sample_id": "PHL1800_HL_0207",
+  "file_name": "PHL1800_HL_0207.png",
+  "batch_id": "B030",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two yellow school buses on an urban street",
+  "captions": {
+    "scene": [
+      "An overcast day on a paved city street with brick buildings, leafless trees, and utility wires overhead.",
+      "Two yellow school buses occupy adjacent lanes; the nearer bus is larger and closer to the camera, the farther one is smaller in perspective.",
+      "Two pedestrians stand on the sidewalk to the right of the foreground bus, near the front bumper."
+    ],
+    "action": [
+      "The foreground bus is stationary or moving slowly, with its front wheels turned slightly left and headlights illuminated.",
+      "The background bus is positioned behind and to the left of the foreground bus, also appearing stationary or moving slowly.",
+      "Two pedestrians are standing on the curb beside the foreground bus; no bags or backpacks are visible."
+    ],
+    "rationale": [
+      "The buses’ orientation and lack of motion blur suggest low speed or temporary stoppage, though no brake lights are clearly visible.",
+      "The presence of pedestrians near the bus’s front door implies possible boarding or alighting, but no person is visibly entering or exiting.",
+      "The unreadable text on the side of the foreground bus prevents confirmation of district or route, limiting inference about purpose."
+    ],
+    "object": [
+      "The foreground bus is a yellow Type C school bus with black trim, number '34' on the front grille, and 'SCHOOL BUS' in black capital letters above the windshield.",
+      "The foreground bus has amber turn signals lit, a side-view mirror mounted on the driver’s door, and a visible license plate (text not clearly legible).",
+      "The background bus is also yellow, with a similar design, and displays 'SCHOOL BUS' above its windshield; its side text is not legible.",
+      "Two distinct pedestrians are visible on the right sidewalk: one wearing a pink jacket and dark pants, one in a black coat and light pants.",
+      "A cracked asphalt road surface shows white painted lane markings and a rectangular manhole cover near the bottom left corner."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1456_P1",
+      "visual_anchors": [
+        "yellow school bus labeled 'SCHOOL BUS'",
+        "pedestrians waiting near open door",
+        "urban street with aging infrastructure"
+      ],
+      "symbolic_mapping": [
+        "the standardized bus as institutional routine",
+        "waiting figures as suspended agency"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a moment of collective pause within a structured system—students and adults poised between movement and stillness, embodying the tension between societal expectation and individual trajectory.",
+      "alternative_interpretations": [
+        "This is simply a routine school transport scene with no deeper meaning; the buses are functional vehicles and the people are waiting for transport."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or contextual signage confirm intent or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1456_P2",
+      "visual_anchors": [
+        "overcast sky",
+        "bare tree branches",
+        "worn pavement with cracks"
+      ],
+      "symbolic_mapping": [
+        "dull lighting as temporal neutrality",
+        "cracks as accumulated wear"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The degraded street surface and muted atmosphere evoke the quiet persistence of infrastructure through time, where human labor sustains systems that outlive their immediate users.",
+      "alternative_interpretations": [
+        "The weather and road condition are incidental; the focus is on transportation logistics, not decay or endurance."
+      ],
+      "limitations": [
+        "No timestamps, repair records, or maintenance activity are visible to verify age or usage history."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1456_P3",
+      "visual_anchors": [
+        "bus number '34'",
+        "uniform yellow color scheme",
+        "standardized design across both buses"
+      ],
+      "symbolic_mapping": [
+        "numerical identifier as deindividualization",
+        "color as regulatory conformity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visual uniformity of the buses—identical paint, labeling, and form—suggests a system that prioritizes function over individual distinction, raising questions about how identity is subsumed under institutional responsibility.",
+      "alternative_interpretations": [
+        "Standardization ensures safety and recognition; the uniform appearance is practical, not philosophical."
+      ],
+      "limitations": [
+        "No interior views, driver faces, or student interactions are shown to assess personal identity or ethical dynamics."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The candidate incorrectly states 'four distinct pedestrians' when only two are clearly visible; the background bus's side text is not 'illegible due to distance and angle' but simply not legible in the image; the foreground bus's license plate is not 'TT-871-SF' (the plate is visible but the text is not clearly readable as that specific sequence); the action claim 'some holding bags or wearing backpacks' is unsupported as no bags/backpacks are visible on the pedestrians."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:34:40.921253+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-66b67330-c741-959e-a4f3-4b51b22d597d",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1032,
+        "total_tokens": 1801,
+        "completion_tokens_details": {
+          "text_tokens": 1032
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070434202e7503e3bf894ea3",
+      "usage": {
+        "completion_tokens": 1047,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1959,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3006
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0215",
+  "sample_id": "PHL1800_HL_0250",
+  "file_name": "PHL1800_HL_0250.png",
+  "batch_id": "B007",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person in a red-and-green elf-style costume standing on a sidewalk next to a parking meter and tree",
+  "captions": {
+    "scene": [
+      "A sunlit urban sidewalk with bare deciduous trees, a metal parking meter, and brick/commercial buildings in the background.",
+      "A storefront with large windows and partial signage reading 'P...' visible behind the subject; another sign with red circular logo is partially visible.",
+      "The ground is paved concrete; shadows indicate bright daylight from upper left."
+    ],
+    "action": [
+      "The person extends their gloved right hand toward the parking meter, fingers near its coin slot or display.",
+      "The person holds a small woven red basket with a handle in their left hand, positioned at waist level.",
+      "The person wears a brown knit hat under a red pointed hood and looks downward toward the meter."
+    ],
+    "rationale": [
+      "The posture and hand placement suggest interaction with the parking meter, though no insertion or removal is captured.",
+      "The costume’s red hood, green leaf-like shoulder accents, and layered tunic strongly resemble a stylized elf or holiday figure, not standard streetwear.",
+      "The presence of a basket and costume in a public sidewalk setting implies possible solicitation or performance, but no explicit transaction or signage confirms intent."
+    ],
+    "object": [
+      "A dark gray metal parking meter is mounted on a pole adjacent to a tree trunk with rough, vertically fissured bark.",
+      "The person wears black fingerless gloves, a light blue puffy jacket beneath a red tunic with jagged green hem trim, and a green leaf-shaped shoulder piece.",
+      "A red woven basket with a matching red handle hangs from the person’s left forearm; its interior appears empty or indistinct.",
+      "The person’s headgear consists of a brown ribbed knit beanie topped by a long red fabric hood that drapes over the shoulders.",
+      "In the background, a white sign with red lettering includes a circular red logo and the visible letters 'P' and possibly 'a', but full text is unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0215_P1",
+      "visual_anchors": [
+        "red hooded costume",
+        "parking meter",
+        "woven basket"
+      ],
+      "symbolic_mapping": [
+        "costume as constructed identity",
+        "meter as institutional constraint"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of festive costume and municipal infrastructure highlights how personal expression negotiates with regulatory environments in public space.",
+      "alternative_interpretations": [
+        "The person may simply be dressed for a seasonal event or job, with no deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0215_P2",
+      "visual_anchors": [
+        "bare tree",
+        "sunlit shadow",
+        "static pose"
+      ],
+      "symbolic_mapping": [
+        "bare branches as temporal passage",
+        "shadow as ephemeral presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The figure’s momentary stillness against seasonal bareness evokes transience—individual presence marked only by fleeting visual traces in an indifferent urban rhythm.",
+      "alternative_interpretations": [
+        "The bare tree reflects winter seasonality, not philosophical commentary; the pose is functional (e.g., inserting coins)."
+      ],
+      "limitations": [
+        "No clock, calendar, or aging indicators confirm temporal reflection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0215_P3",
+      "visual_anchors": [
+        "basket held but not extended",
+        "hand near meter but not inserting",
+        "costume without audience"
+      ],
+      "symbolic_mapping": [
+        "readiness without action",
+        "role without validation"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The suspended gesture suggests agency poised between decision and execution, revealing how social roles require both internal commitment and external recognition to become meaningful.",
+      "alternative_interpretations": [
+        "The person is simply waiting for change or checking meter status; no hesitation is evident."
+      ],
+      "limitations": [
+        "Single-frame capture cannot confirm intentionality of suspension or delay."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:18:49.706031+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cba65378-ff73-968c-92cc-e65a6f33a9ce",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 935,
+        "total_tokens": 1724,
+        "completion_tokens_details": {
+          "text_tokens": 935
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021840a8c12f1c17af42d9",
+      "usage": {
+        "completion_tokens": 796,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1891,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2687
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

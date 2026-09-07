@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0366",
+  "sample_id": "PHL1800_HL_0206",
+  "file_name": "PHL1800_HL_0206.png",
+  "batch_id": "B009",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a yellow school bus reflected in a convex side-view mirror",
+  "captions": {
+    "scene": [
+      "A convex side-view mirror attached to a red vehicle frames a street scene with autumn leaves on pavement and trees with sparse foliage.",
+      "The reflection shows a yellow school bus parked or stopped near a sidewalk lined with trees and a metal fence.",
+      "In the background of the reflection, other vehicles and two pedestrians are visible on a city street under daylight."
+    ],
+    "action": [
+      "The school bus is stationary, with its front facing the mirror and headlights off.",
+      "Two pedestrians stand together on the sidewalk near a black metal fence; one appears to be holding an object near their torso.",
+      "Fallen yellow leaves are scattered across the pavement and partially cover the curb and road edge."
+    ],
+    "rationale": [
+      "The bus’s position relative to the curb and lack of motion blur suggest it is not moving at the moment of capture.",
+      "The convex distortion and sharp focus on the mirror’s surface indicate the photograph was taken from inside or adjacent to the red vehicle, emphasizing reflection over direct view.",
+      "The presence of fallen leaves and bare branches implies late autumn, though exact season cannot be confirmed without knowing local climate."
+    ],
+    "object": [
+      "The side-view mirror has a black housing and a convex reflective surface showing a distorted wide-angle image.",
+      "The school bus is yellow with a black hood, red warning lights on top, and a visible partial license plate reading '8901' on its front right side.",
+      "The red vehicle to which the mirror is attached occupies the left foreground, out of focus, with a vertical window frame visible.",
+      "Two pedestrians appear in the reflection: one wearing dark clothing and jeans, the other in darker attire; both are upright and facing roughly forward.",
+      "A black metal fence runs parallel to the sidewalk behind the pedestrians, with vertical bars and horizontal supports clearly visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0366_P1",
+      "visual_anchors": [
+        "convex mirror distortion",
+        "school bus front",
+        "fallen leaves"
+      ],
+      "symbolic_mapping": [
+        "mirror distortion → mediated perception",
+        "school bus → institutional routine"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The convex mirror refracts reality into a compressed, warped field—suggesting that knowledge is always filtered through technological and perspectival constraints, while the bus embodies a socially embedded structure that moves within but remains distinct from individual experience.",
+      "alternative_interpretations": [
+        "The image simply documents a common urban traffic scene captured via a car’s side mirror, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "No textual labels confirm institutional intent; the bus could be repurposed or non-operational."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0366_P2",
+      "visual_anchors": [
+        "two pedestrians standing together",
+        "metal fence",
+        "sidewalk boundary"
+      ],
+      "symbolic_mapping": [
+        "fence → social demarcation",
+        "paired figures → relational presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The pedestrians’ proximity amid rigid infrastructure evokes the tension between collective belonging and imposed spatial limits—existence as simultaneously shared and constrained by built environments.",
+      "alternative_interpretations": [
+        "The pair may be waiting for transport or conversing casually; their positioning lacks deliberate symbolic staging."
+      ],
+      "limitations": [
+        "Facial expressions and gestures are indiscernible; intent cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0366_P3",
+      "visual_anchors": [
+        "yellow leaves on pavement",
+        "bare tree branches",
+        "bus headlights off"
+      ],
+      "symbolic_mapping": [
+        "fallen leaves → temporal passage",
+        "inactive bus → suspended action"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The stillness of the bus amid seasonal decay visualizes a pause in cyclical movement—highlighting how human journeys intersect with natural temporality, where choice is momentarily deferred by external conditions.",
+      "alternative_interpretations": [
+        "The bus is merely parked during routine operations; leaf fall is seasonal background, not thematic emphasis."
+      ],
+      "limitations": [
+        "No clock, calendar, or explicit temporal markers exist; season inferred only from foliage state."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:39:14.900425+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6b4a83dd-cb6e-9c6b-b4ae-a37d02de36ac",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 964,
+        "total_tokens": 1733,
+        "completion_tokens_details": {
+          "text_tokens": 964
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023900888ea71011d34ed9",
+      "usage": {
+        "completion_tokens": 823,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1896,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2719
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

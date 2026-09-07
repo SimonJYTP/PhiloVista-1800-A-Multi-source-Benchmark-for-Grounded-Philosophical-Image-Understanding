@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1018",
+  "sample_id": "PHL1800_HAIV_0080",
+  "file_name": "PHL1800_HAIV_0080.png",
+  "batch_id": "B022",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure",
+  "captions": {
+    "scene": [
+      "A white background with two vertical bands of wavy blue and light-blue layers outlined in black, flanking a central figure.",
+      "The figure stands on a thick black horizontal line at the bottom edge of the image.",
+      "Two yellow lightning-bolt shapes appear: one above the raised fist, one between the figure's legs."
+    ],
+    "action": [
+      "The figure raises its right arm vertically with a clenched fist.",
+      "The figure places its left hand on its hip, elbow bent outward.",
+      "The figure stands upright with legs apart in a stable stance."
+    ],
+    "rationale": [
+      "The raised fist and posture suggest assertive or celebratory action, though no facial features confirm intent.",
+      "The lightning bolts may indicate energy or impact, but their placement (above head and between legs) does not confirm directionality or causation.",
+      "The wavy blue bands resemble fluid motion or sound waves, but without labels or context, their nature remains ambiguous."
+    ],
+    "object": [
+      "The figure has a featureless oval head with no eyes, nose, mouth, or hair.",
+      "The torso is a light-blue shirt with short sleeves and a rounded neckline, outlined in black.",
+      "The pants are medium-blue with a black waistband and black outlines, tapering toward the feet.",
+      "A yellow zigzag lightning bolt appears directly above the raised right fist, pointing downward.",
+      "A second yellow zigzag lightning bolt appears vertically centered between the figure’s legs, pointing upward."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1018_P1",
+      "visual_anchors": [
+        "raised fist",
+        "lightning bolt above fist",
+        "symmetrical blue wave bands"
+      ],
+      "symbolic_mapping": [
+        "raised fist → assertion of agency",
+        "lightning bolt → sudden power or revelation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s posture and lightning motifs evoke a moment of decisive self-assertion against surrounding forces, suggesting tension between individual will and external pressures.",
+      "alternative_interpretations": [
+        "The image could represent a weather-related icon, such as a storm warning symbol, where the figure is a generic indicator rather than an agent."
+      ],
+      "limitations": [
+        "No facial expression or contextual setting prevents confirmation of intentional agency or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1018_P2",
+      "visual_anchors": [
+        "featureless head",
+        "uniform color blocks",
+        "black outlines"
+      ],
+      "symbolic_mapping": [
+        "absence of facial features → universal or anonymous subject"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The omission of distinguishing features positions the figure as a generic representative of humanity, emphasizing shared embodiment over individual identity within a structured environment.",
+      "alternative_interpretations": [
+        "The minimalism may reflect stylistic constraints of a logo or interface icon rather than philosophical intent."
+      ],
+      "limitations": [
+        "Stylization alone does not prove intentional abstraction of identity; it may simply be aesthetic simplification."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1018_P3",
+      "visual_anchors": [
+        "lightning between legs",
+        "vertical stance",
+        "horizontal ground line"
+      ],
+      "symbolic_mapping": [
+        "ground line → boundary or threshold",
+        "lightning between legs → internal energy or rupture"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The figure straddles a threshold with internal energy manifesting below, suggesting a pivotal moment where embodied action intersects with transformative potential or inevitable change.",
+      "alternative_interpretations": [
+        "The lower lightning bolt may be a design artifact—e.g., part of a symmetrical motif—rather than a deliberate symbolic element."
+      ],
+      "limitations": [
+        "The symmetry of the blue bands and placement of lightning bolts could be purely compositional, not semantically loaded."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:39:29.213809+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-500c16d9-b805-9b13-8c88-a0416f4d0f3a",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 885,
+        "total_tokens": 2418,
+        "completion_tokens_details": {
+          "text_tokens": 885
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070339139c4ae06467c14c16",
+      "usage": {
+        "completion_tokens": 748,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2842,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3590
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

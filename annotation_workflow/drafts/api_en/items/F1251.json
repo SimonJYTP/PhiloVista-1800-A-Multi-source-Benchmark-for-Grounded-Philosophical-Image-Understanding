@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1251",
+  "sample_id": "PHL1800_HL_0155",
+  "file_name": "PHL1800_HL_0155.png",
+  "batch_id": "B026",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a dog viewed from behind, observing through a window",
+  "captions": {
+    "scene": [
+      "A blue-framed six-pane window looks out onto a grassy yard with scattered wooden structures and trees in the background.",
+      "Outside, three people are visible near a pile of leaning wooden planks; one sits on a low structure, another stands nearby, and a third is partially obscured.",
+      "Inside, a dark rectangular case rests on the windowsill, and the back of a shaggy-coated dog occupies the lower right foreground."
+    ],
+    "action": [
+      "The dog remains stationary, head oriented toward the window, ears slightly raised.",
+      "One person outside sits upright on a low wooden object, facing leftward; another stands beside a stack of planks, hands near waist level.",
+      "A vehicle is parked in the distant background, partially visible behind trees."
+    ],
+    "rationale": [
+      "The dog’s posture suggests attention toward the exterior scene, though no eye direction is visible; this is inferred from head orientation only.",
+      "The number of people is three: one seated (clearly visible), one standing (visible torso and head), and a third whose head and shoulders appear behind the standing person—no fourth figure is discernible.",
+      "The case on the sill appears closed and undisturbed; no motion or interaction with it is evident."
+    ],
+    "object": [
+      "The window has a painted blue wooden frame dividing it into six equal rectangular panes, with visible dirt or smudges on the glass surfaces.",
+      "A black rectangular hard-shell case with a top-mounted handle sits on the interior windowsill, directly below the lower-left two panes.",
+      "Three individuals are present outside: one seated on a low wooden platform, one standing beside stacked planks, and one partially hidden behind the standing person.",
+      "A metal fire pit or grill, square-shaped and open-topped, rests on the ground near the center of the yard view.",
+      "The dog has medium-length, coarse fur with shades of gray and brown, and its tail is not visible; only its head, neck, and upper back are in frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1251_P1",
+      "visual_anchors": [
+        "dog’s back facing viewer",
+        "window pane division",
+        "unseen exterior world"
+      ],
+      "symbolic_mapping": [
+        "the window as a boundary between interior subjectivity and exterior reality"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The dog’s fixed gaze through the segmented window evokes epistemological limits: perception is mediated, fragmented, and constrained by physical barriers, suggesting knowledge is always partial and framed.",
+      "alternative_interpretations": [
+        "The dog may simply be resting while occasionally glancing outside; no cognitive engagement is provable."
+      ],
+      "limitations": [
+        "No eye contact or facial expression confirms intentionality or awareness of the barrier."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1251_P2",
+      "visual_anchors": [
+        "three people grouped near wooden debris",
+        "static case on sill",
+        "dog’s stillness"
+      ],
+      "symbolic_mapping": [
+        "shared space without interaction as emblem of coexistence without communion"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The simultaneous presence of multiple beings—inside and out—without observable communication illustrates social existence as proximity without connection, highlighting the contingency of shared meaning.",
+      "alternative_interpretations": [
+        "The people may be conversing or collaborating; their postures do not definitively indicate isolation."
+      ],
+      "limitations": [
+        "Body language is partially occluded; gestures or orientation toward each other cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1251_P3",
+      "visual_anchors": [
+        "fire pit on bare ground",
+        "stacked planks",
+        "distant car"
+      ],
+      "symbolic_mapping": [
+        "tools and remnants as traces of labor suspended in time"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The abandoned fire pit and leaning planks constitute material residues of human activity, implying labor interrupted or concluded—a quiet testament to temporality and the impermanence of purposeful action.",
+      "alternative_interpretations": [
+        "The objects may be actively in use; the fire pit could be cooling, not abandoned."
+      ],
+      "limitations": [
+        "No smoke, ash, or tool marks confirm recent use or abandonment."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:08:02.768560+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-00c7511a-a5aa-9726-a218-c9e2c48c4bbd",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 988,
+        "total_tokens": 1757,
+        "completion_tokens_details": {
+          "text_tokens": 988
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040753994d62b464e14ee3",
+      "usage": {
+        "completion_tokens": 852,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1918,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2770
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

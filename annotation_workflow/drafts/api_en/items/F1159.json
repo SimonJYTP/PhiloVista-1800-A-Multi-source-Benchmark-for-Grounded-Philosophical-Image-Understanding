@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1159",
+  "sample_id": "PHL1800_IRFL_0278",
+  "file_name": "PHL1800_IRFL_0278.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in the foreground with a man out of focus in the background",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor setting with a plain light-colored wall and no visible furniture or decor.",
+      "Shallow depth of field isolates the woman sharply while rendering the man behind her blurred.",
+      "The composition places the woman on the right two-thirds of the frame, angled slightly away from the camera."
+    ],
+    "action": [
+      "The woman presses her right hand against her forehead and eye area, fingers spread across her brow and temple.",
+      "Her eyes are closed or nearly closed; her head is tilted downward and to her left.",
+      "The man in the background gestures with his right hand raised, palm open and fingers extended, while facing toward the woman."
+    ],
+    "rationale": [
+      "The woman’s hand placement and facial orientation suggest physical discomfort or emotional strain, though the specific cause is not visible.",
+      "The man’s gesture and orientation indicate he is engaged in interaction with the woman, but his expression and intent cannot be determined due to blur.",
+      "The lighting and neutral background imply a controlled or staged environment, possibly photographic, rather than an incidental candid scene."
+    ],
+    "object": [
+      "The woman wears a gray long-sleeved cardigan over a white V-neck top, with dark hair pulled back into a bun.",
+      "The man wears a light gray V-neck shirt and has short dark hair; his facial features are indistinct due to defocus.",
+      "The woman’s right hand contacts her face near the inner canthus of her right eye and the glabella region.",
+      "The man’s right arm is raised to approximately shoulder height, with forearm roughly vertical and hand open.",
+      "No text, logos, or readable inscriptions appear anywhere in the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1159_P1",
+      "visual_anchors": [
+        "woman’s hand covering eye",
+        "man’s gesturing hand",
+        "shallow depth of field"
+      ],
+      "symbolic_mapping": [
+        "hand over eye as occlusion of perception",
+        "gesturing hand as attempted communication"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The visual separation between the woman’s inward gesture and the man’s outward gesture may reflect epistemic asymmetry—where one subject withdraws from shared reality while another attempts to re-establish it.",
+      "alternative_interpretations": [
+        "The pose could simply represent fatigue or headache, with the man offering assistance or explanation, without symbolic intent."
+      ],
+      "limitations": [
+        "The blur prevents verification of the man’s expression or gaze direction, making any attribution of communicative intent speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1159_P2",
+      "visual_anchors": [
+        "woman’s downward head tilt",
+        "closed eyes",
+        "neutral background"
+      ],
+      "symbolic_mapping": [
+        "downward orientation as withdrawal from social field",
+        "plain backdrop as absence of contextual grounding"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The woman’s posture within an undifferentiated space may evoke the tension between internal self-perception and external social expectation, where appearance becomes a site of constraint rather than expression.",
+      "alternative_interpretations": [
+        "She may be momentarily resting or shielding her eyes from bright light; the background may simply be a studio wall with no symbolic function."
+      ],
+      "limitations": [
+        "No clothing, accessories, or environmental cues confirm identity-related stressors or intentional staging for thematic effect."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1159_P3",
+      "visual_anchors": [
+        "man’s out-of-focus presence",
+        "woman’s sharp focus",
+        "shared spatial proximity"
+      ],
+      "symbolic_mapping": [
+        "focus differential as hierarchy of attention",
+        "proximity without engagement as relational dissonance"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The selective focus constructs a visual hierarchy wherein the woman’s subjective experience dominates the frame, potentially signifying how power in interpersonal dynamics manifests through attentional allocation rather than overt action.",
+      "alternative_interpretations": [
+        "The focus choice may be purely aesthetic or technical (e.g., portrait convention), unrelated to power dynamics."
+      ],
+      "limitations": [
+        "Photographic technique alone does not establish intentionality regarding power or conflict; no verbal or behavioral evidence confirms interaction type."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:57:00.432105+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-35986b99-87ca-9c01-8540-bf9bb56eb636",
+      "usage": {
+        "prompt_tokens": 1019,
+        "completion_tokens": 972,
+        "total_tokens": 1991,
+        "completion_tokens_details": {
+          "text_tokens": 972
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 512,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035635c8b8889a017e4e30",
+      "usage": {
+        "completion_tokens": 834,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2204,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3038
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

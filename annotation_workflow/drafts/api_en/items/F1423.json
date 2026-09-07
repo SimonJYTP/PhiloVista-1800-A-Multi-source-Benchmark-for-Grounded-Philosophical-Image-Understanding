@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1423",
+  "sample_id": "PHL1800_HL_0571",
+  "file_name": "PHL1800_HL_0571.png",
+  "batch_id": "B029",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one surfer on a surfboard",
+  "captions": {
+    "scene": [
+      "A turquoise ocean wave curling and breaking with white spray against a sunlit sea surface",
+      "Foamy whitewater in the foreground extending toward the lower edge of the frame",
+      "Clear daylight illumination with visible highlights on water and wetsuit"
+    ],
+    "action": [
+      "The surfer crouches low on the board, leaning into a turn on the wave face",
+      "The surfer’s left arm extends outward for balance while the right arm is bent near the torso",
+      "The surfboard cuts through the wave, generating a trailing spray plume behind the tail"
+    ],
+    "rationale": [
+      "The surfer’s posture and board angle suggest directional control rather than passive riding",
+      "The presence of a defined wave face and spray indicates active wave engagement, not flat-water paddling",
+      "The wetsuit covers most of the body, implying immersion in cool or temperate water; however, exact water temperature is not measurable from image alone"
+    ],
+    "object": [
+      "A person wearing a two-tone wetsuit—light gray on upper torso and arms, dark blue on legs and lower torso—is positioned mid-wave.",
+      "The surfboard is white with a visible rail and tail fin, angled sharply across the wave face.",
+      "The wave exhibits a translucent green barrel section to the left of the surfer and white foaming crest to the right.",
+      "The surfer’s bare feet are planted on the board deck, with toes gripping near the tail area.",
+      "A watermark reading 'Pabolinho © Photography' appears in script font in the upper-left quadrant."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1423_P1",
+      "visual_anchors": [
+        "surfer leaning into turn",
+        "wave curling overhead",
+        "spray trailing behind board"
+      ],
+      "symbolic_mapping": [
+        "the surfer’s lean maps to responsive adaptation to dynamic forces"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The surfer embodies a moment of negotiated freedom: movement is enabled by the wave’s energy yet strictly bounded by its shape and timing, illustrating how agency emerges within constraint.",
+      "alternative_interpretations": [
+        "This is simply a skilled athlete executing a standard maneuver under favorable conditions."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional philosophical stance; interpretation relies solely on posture and environment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1423_P2",
+      "visual_anchors": [
+        "translucent green wave barrel",
+        "sunlit water surface",
+        "foam-covered foreground"
+      ],
+      "symbolic_mapping": [
+        "the fleeting clarity of the barrel maps to transient epistemic access"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The brief window of visibility inside the wave’s barrel—clear yet impermanent—suggests truth as a momentary, embodied perception that dissolves as the wave collapses, aligning with phenomenological views of knowledge as situated and temporal.",
+      "alternative_interpretations": [
+        "The green hue results from light refraction in shallow coastal water, not symbolic intent."
+      ],
+      "limitations": [
+        "Color and transparency are physical optical effects; assigning epistemic meaning requires external framing not present in the image."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1423_P3",
+      "visual_anchors": [
+        "wetsuit covering body",
+        "bare feet on board",
+        "water splashing around limbs"
+      ],
+      "symbolic_mapping": [
+        "partial bodily exposure maps to mediated presence in natural systems"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The surfer’s appearance—partially concealed by gear yet physically exposed to elemental force—reflects a hybrid identity shaped by both technological mediation and direct environmental encounter, questioning fixed boundaries between self and world.",
+      "alternative_interpretations": [
+        "The wetsuit is functional attire for thermal protection; no identity statement is visually encoded."
+      ],
+      "limitations": [
+        "Clothing function is evident, but any claim about identity construction depends on cultural assumptions beyond visual data."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:30:29.897164+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0ce0c878-48e8-95c8-a096-7a675618a29f",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 925,
+        "total_tokens": 1714,
+        "completion_tokens_details": {
+          "text_tokens": 925
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070430187df59e8b580e4683",
+      "usage": {
+        "completion_tokens": 788,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1876,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2664
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

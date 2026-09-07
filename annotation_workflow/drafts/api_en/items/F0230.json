@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0230",
+  "sample_id": "PHL1800_HL_0082",
+  "file_name": "PHL1800_HL_0082.png",
+  "batch_id": "B007",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of people holding protest signs in a parking lot",
+  "captions": {
+    "scene": [
+      "A sunny outdoor parking lot with multiple cars, trees, streetlights, and a white bus in the background.",
+      "People are gathered around vehicles; some stand near open car doors or trunks, others walk or hold signs.",
+      "Yellow and blue signs with text about 'Prop 8' are visible; green shrubbery borders the right side."
+    ],
+    "action": [
+      "Two women in the foreground hold yellow signs reading 'Prop 8 Parental Rights' and 'Prop 8 = Religious Freedom'.",
+      "A man in a white shirt walks past a silver sedan while looking down at his hands.",
+      "A cluster of people stands near a silver SUV with its rear hatch open; one person appears to be interacting with another."
+    ],
+    "rationale": [
+      "The presence of multiple identical or related signs suggests coordinated advocacy rather than random assembly.",
+      "The signs reference 'Prop 8', indicating the gathering is tied to a specific ballot measure, though the image alone does not confirm jurisdiction or date.",
+      "Some individuals wear matching or similar attire (e.g., white shirts), possibly indicating organizational affiliation, but no logos or uniforms are clearly visible."
+    ],
+    "object": [
+      "A silver four-door sedan is parked diagonally across two spaces, with a woman holding a yellow sign standing beside its driver-side door.",
+      "A yellow sign held by a woman reads 'Prop 8 Parental Rights' in black sans-serif font; below it, a smaller blue sign says 'Yes on 8' with a logo.",
+      "Another yellow sign held by a second woman reads 'Prop 8 = Religious Freedom' in black sans-serif font, with a small 'Yes on 8' logo beneath.",
+      "A white bus with dark windows and indistinct markings is parked behind the crowd, partially obscured by foliage and people.",
+      "At least 15 distinct individuals are visible: 8 in the left/middle cluster near the SUV, 4 near the sedan, 2 walking or standing on the right, and 1 near the bus background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0230_P1",
+      "visual_anchors": [
+        "yellow sign reading 'Prop 8 Parental Rights'",
+        "woman holding sign with focused gaze",
+        "crowd gathered around vehicles"
+      ],
+      "symbolic_mapping": [
+        "sign text maps to contested social norms",
+        "physical proximity of bodies signals collective claim-making"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes a moment where individual expression (holding signs) converges into a shared public stance, embodying how freedom is negotiated through constraint—legal, spatial, and discursive—as participants assert rights within a bounded civic space.",
+      "alternative_interpretations": [
+        "This may simply be logistical activity before or after a rally, with signs serving as identification rather than argument."
+      ],
+      "limitations": [
+        "No facial expressions or speech are visible; intent cannot be confirmed from posture or sign alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0230_P2",
+      "visual_anchors": [
+        "man in white shirt walking away while looking at hands",
+        "clustered people facing inward"
+      ],
+      "symbolic_mapping": [
+        "withdrawal gesture contrasts with collective engagement"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The divergent motion of the walking man against the static group highlights the tension between individual agency and collective alignment, suggesting that participation in sociopolitical conflict involves continual micro-choices about engagement or disengagement.",
+      "alternative_interpretations": [
+        "The man may be retrieving an item or checking a phone; his movement need not signify ideological distance."
+      ],
+      "limitations": [
+        "Body orientation and gaze direction are ambiguous without facial cues or context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0230_P3",
+      "visual_anchors": [
+        "multiple signs using '=' symbol",
+        "identical 'Yes on 8' logos",
+        "uniform color scheme (yellow/blue)"
+      ],
+      "symbolic_mapping": [
+        "equation format reduces complex policy to binary assertion",
+        "repetition reinforces normative framing"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visual rhetoric of equivalence ('Prop 8 = Religious Freedom') reflects an epistemic strategy where truth claims are asserted through symbolic substitution, shifting responsibility from deliberative justification to affective alignment with a simplified moral equation.",
+      "alternative_interpretations": [
+        "The '=' may merely denote association for slogan brevity, not logical equivalence."
+      ],
+      "limitations": [
+        "The full textual context of the signs is incomplete; surrounding words or footnotes are not visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (at least 27 distinct individuals) not visually verifiable; some actions (e.g., 'handing something to another') lack clear visual support; 'open SUV trunk' is not visible in the image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:22:46.007991+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c32b0aea-4ede-9729-8bbd-a650d868e883",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1071,
+        "total_tokens": 1880,
+        "completion_tokens_details": {
+          "text_tokens": 1071
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022217fc22e56f025d4dfa",
+      "usage": {
+        "completion_tokens": 967,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2049,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3016
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

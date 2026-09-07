@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0150",
+  "sample_id": "PHL1800_MM_0143",
+  "file_name": "PHL1800_MM_0143.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people in athletic attire inside a gym",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor gym with large windows showing blurred outdoor greenery, black rubber flooring, and weight-training equipment including a barbell rack and a seated leg extension machine.",
+      "The background includes vertical window panes dividing the exterior view, and a red-and-black piece of equipment partially visible on the right edge.",
+      "Both individuals wear dark blue tank tops and black shorts; one sits on a black leg extension machine, the other stands beside it."
+    ],
+    "action": [
+      "The seated person holds a black smartphone with both hands and looks down at its screen; their feet rest on the footpad of the leg extension machine.",
+      "The standing person holds a black tablet horizontally with both hands and looks down at its screen; their knees are slightly bent and they stand with feet shoulder-width apart.",
+      "A speech bubble originates near the seated person’s head and contains the legible text: 'This workout app has great fitness tips.'"
+    ],
+    "rationale": [
+      "The presence of gym equipment and athletic clothing strongly suggests a fitness context, though no active exercise is occurring.",
+      "Both individuals are engaged with digital devices rather than performing physical activity, indicating device use is the primary observed behavior.",
+      "The speech bubble text is legible and directly references a workout app, but the specific app interface or content is not visible on either screen."
+    ],
+    "object": [
+      "A black seated leg extension machine with padded seat, backrest, and adjustable footpad, bearing faint white lettering 'Pro' on the vertical support post.",
+      "A black smartphone held by the seated person, oriented vertically, with a dark screen showing no discernible interface elements.",
+      "A black tablet held by the standing person, oriented horizontally, with a dark screen showing no discernible interface elements.",
+      "The seated person wears pink-and-white sneakers with white laces and light-colored socks; the standing person wears gray-and-black sneakers with blue ankle socks.",
+      "A barbell with black weight plates and silver collars rests on a vertical rack to the far left, partially cropped out of frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0150_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "two people using devices simultaneously",
+        "gym setting"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents mediated knowledge transmission",
+        "device use in a physical space symbolizes displacement of embodied practice"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The image stages a tension between embodied physical training and digitally mediated instruction, suggesting that knowledge about fitness is increasingly externalized into apps rather than internalized through practice.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine pre-workout preparation, where users consult guidance before beginning exercise."
+      ],
+      "limitations": [
+        "No screen content is visible, so the nature of the 'fitness tips' cannot be verified; the speech bubble may be fictional or illustrative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0150_P2",
+      "visual_anchors": [
+        "matching athletic outfits",
+        "proximity without interaction",
+        "shared focus on devices"
+      ],
+      "symbolic_mapping": [
+        "uniform attire implies social conformity",
+        "parallel device use reflects fragmented attention despite shared space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual symmetry of dress and posture contrasts with the lack of interpersonal engagement, highlighting how technology mediates social presence even in communal physical environments.",
+      "alternative_interpretations": [
+        "The people may be waiting for equipment or coordinating via devices, making their parallel focus functional rather than alienating."
+      ],
+      "limitations": [
+        "Facial expressions and body orientation toward each other are ambiguous; no eye contact or gesture confirms disconnection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0150_P3",
+      "visual_anchors": [
+        "leg extension machine unused",
+        "devices held actively",
+        "bright natural lighting"
+      ],
+      "symbolic_mapping": [
+        "idle machine signifies deferred action",
+        "light from windows contrasts with dark screens, suggesting illumination vs. absorption"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The suspended moment—equipment ready but inactive while attention is fixed on screens—evokes a modern condition where choice is abundant (apps, routines) yet constrained by digital absorption, delaying embodied agency.",
+      "alternative_interpretations": [
+        "This may be a staged promotional image where the machine is intentionally unused to emphasize the app’s role in planning rather than execution."
+      ],
+      "limitations": [
+        "Temporal context is missing; the image captures only one instant, so 'deferred action' is inferred, not observed."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:10:24.319293+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-30472c1f-0ba8-936d-b633-ce6e63f615f1",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1046,
+        "total_tokens": 2579,
+        "completion_tokens_details": {
+          "text_tokens": 1046
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021011dfa65fdcaf4a4e08",
+      "usage": {
+        "completion_tokens": 905,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3001,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3906
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

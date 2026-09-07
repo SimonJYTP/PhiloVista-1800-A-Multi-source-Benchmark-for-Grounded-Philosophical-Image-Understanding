@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1133",
+  "sample_id": "PHL1800_IRFL_0008",
+  "file_name": "PHL1800_IRFL_0008.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young green plant sprouting from dark ground near a tree trunk",
+  "captions": {
+    "scene": [
+      "A shallow-focus outdoor scene with a small plant in sharp focus against a blurred background of grayish ground and a large textured tree trunk on the right.",
+      "The ground appears damp and uneven, with scattered debris including a white irregular object and brown leaf fragments.",
+      "Cool-toned lighting casts muted shadows; no direct sunlight is visible on the plant or surrounding surfaces."
+    ],
+    "action": [
+      "The plant stands upright with multiple leaves unfurled at varying heights along its stem.",
+      "One leaf near the base shows yellowing and minor damage; other leaves appear intact and turgid.",
+      "The tree trunk occupies the right third of the frame, stationary and out of focus, suggesting proximity to the plant."
+    ],
+    "rationale": [
+      "The plant’s vertical orientation and leaf arrangement suggest active growth rather than decay, though no motion is captured.",
+      "The blurred background implies a shallow depth of field was used, emphasizing the plant over surroundings.",
+      "The presence of both healthy and damaged foliage indicates exposure to environmental stressors, but causality cannot be confirmed."
+    ],
+    "object": [
+      "A single slender green stem rises approximately 15 cm from the ground, bearing seven visible leaves of varying size and orientation.",
+      "The largest leaf, near the top, is ovate with a smooth margin and a slight upward curl at the tip.",
+      "The tree trunk to the right has rough, mottled bark with irregular pits and ridges, occupying roughly 30% of the image width.",
+      "A white, irregularly shaped object lies horizontally in the mid-ground, partially obscured by blur and positioned behind the plant.",
+      "Two small brown fragments resembling dried leaf tissue rest on the ground near the plant’s base, one directly adjacent to the stem."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1133_P1",
+      "visual_anchors": [
+        "young plant emerging from dark soil",
+        "damaged lower leaf",
+        "proximity to large mature trunk"
+      ],
+      "symbolic_mapping": [
+        "the plant represents nascent existence confronting constraint",
+        "the damaged leaf signifies vulnerability amid growth"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of fragile new life beside an imposing, inert structure evokes tension between emergence and limitation—growth persists despite proximity to overwhelming scale and potential obstruction.",
+      "alternative_interpretations": [
+        "The scene may simply document opportunistic germination in a disturbed microhabitat, with no intentional symbolic contrast."
+      ],
+      "limitations": [
+        "No evidence confirms intentional framing for metaphor; the trunk may be coincidentally nearby rather than symbolically dominant."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1133_P2",
+      "visual_anchors": [
+        "sharp focus on plant",
+        "blurred background",
+        "cool color grading"
+      ],
+      "symbolic_mapping": [
+        "selective focus mirrors epistemic prioritization of the immediate over the indistinct",
+        "monochromatic tone suggests abstraction from empirical detail"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The photographic emphasis on the plant amid visual ambiguity reflects how perception isolates salient entities while marginalizing context—a visual analogue to how identity is constructed through selective attention rather than holistic presence.",
+      "alternative_interpretations": [
+        "The shallow depth of field is a technical choice for aesthetic emphasis, not a commentary on cognition or identity."
+      ],
+      "limitations": [
+        "The background blur does not specify what is omitted; it could be irrelevant terrain rather than meaningful context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1133_P3",
+      "visual_anchors": [
+        "single stem with asymmetrical leaf arrangement",
+        "no visible roots or support structure",
+        "ground surface appears compacted"
+      ],
+      "symbolic_mapping": [
+        "asymmetry signals non-idealized development",
+        "lack of visible support underscores autonomy in precarious conditions"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The plant’s unaided verticality in constrained substrate suggests a minimal yet deliberate trajectory—implying that even non-sentient growth embodies a form of situated agency where persistence constitutes an implicit ethical stance toward continuity.",
+      "alternative_interpretations": [
+        "Plant morphology follows genetic and environmental determinants; no agency or ethics are visually encoded."
+      ],
+      "limitations": [
+        "No behavioral or intentional cues exist; attributing choice or responsibility requires external frameworks not present in the image."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:42:46.073264+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-222fc8a0-47ab-99f2-b90d-42824477f8ec",
+      "usage": {
+        "prompt_tokens": 3005,
+        "completion_tokens": 1005,
+        "total_tokens": 4010,
+        "completion_tokens_details": {
+          "text_tokens": 1005
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2498,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070142114350ff565e8443e9",
+      "usage": {
+        "completion_tokens": 864,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7624,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 8488
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

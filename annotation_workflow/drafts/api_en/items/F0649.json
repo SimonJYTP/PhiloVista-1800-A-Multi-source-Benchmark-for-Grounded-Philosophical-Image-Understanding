@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0649",
+  "sample_id": "PHL1800_IRFL_0201",
+  "file_name": "PHL1800_IRFL_0201.jpg",
+  "batch_id": "B015",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a mounted dinosaur skeleton exhibit",
+  "captions": {
+    "scene": [
+      "A large fossil skeleton displayed indoors against a painted backdrop depicting prehistoric vegetation and other dinosaurs.",
+      "The exhibit is illuminated by overhead lighting, casting soft shadows on the skeleton and background wall.",
+      "Vertical structural elements and a light-colored column appear on the left side of the frame."
+    ],
+    "action": [
+      "The skeleton stands in a static, upright pose supported by metal rods and mounts.",
+      "The neck extends forward and upward with the skull raised, mouth open.",
+      "Ribs and vertebrae are articulated in a continuous arc along the torso and tail."
+    ],
+    "rationale": [
+      "The presence of support rods and clean mounting suggests this is a curated museum display rather than an excavation site.",
+      "The painted background includes stylized trees and partial silhouettes of other dinosaurs, indicating intentional scene construction.",
+      "No visible motion blur or dynamic posture implies the skeleton is fixed and immobile."
+    ],
+    "object": [
+      "The skeleton consists of numerous brownish fossilized bones including a long cervical series, dorsal vertebrae, ribs, pelvic girdle, and limb elements.",
+      "Metal support rods are attached to the underside of the vertebral column and hind limbs, anchoring the structure to the floor and to vertical posts.",
+      "The skull has an elongated snout, visible teeth, and large orbital openings; it is positioned above the horizontal plane of the body.",
+      "A painted mural behind the skeleton shows green foliage, reddish spines resembling Stegosaurus plates, and partial outlines of other dinosaur forms.",
+      "On the far left, a fragment of another fossilized bone or skeletal element is partially visible at ground level."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0649_P1",
+      "visual_anchors": [
+        "articulated fossil vertebrae",
+        "metal support rods",
+        "painted prehistoric backdrop"
+      ],
+      "symbolic_mapping": [
+        "vertebrae as continuity across deep time",
+        "support rods as human intervention preserving memory"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The skeleton embodies fragmented yet reconstructed temporality: its bones testify to extinction, while the scaffolding signifies epistemic labor required to reassemble lost worlds.",
+      "alternative_interpretations": [
+        "It is simply a paleontological specimen prepared for public education without symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions or labels are legible to confirm curatorial framing or intended meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0649_P2",
+      "visual_anchors": [
+        "open jaw of the skull",
+        "forward-extended neck",
+        "static pose"
+      ],
+      "symbolic_mapping": [
+        "open mouth as silenced voice",
+        "rigid posture as frozen agency"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The fossil’s appearance—fixed in posture, stripped of flesh and behavior—invites reflection on how identity is constrained when reduced to skeletal form and institutional display.",
+      "alternative_interpretations": [
+        "The pose mimics inferred life posture based on biomechanical analysis, not symbolic constraint."
+      ],
+      "limitations": [
+        "The original musculature, skin, and behavior are absent; only inference from bone shape remains."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0649_P3",
+      "visual_anchors": [
+        "multiple dinosaur silhouettes in background",
+        "single central skeleton",
+        "shared exhibition space"
+      ],
+      "symbolic_mapping": [
+        "background figures as erased others",
+        "central mount as dominant narrative"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The composition privileges one specimen visually while relegating others to decorative context, suggesting how institutional curation can enact hierarchies among extinct beings.",
+      "alternative_interpretations": [
+        "The background is purely illustrative and does not imply narrative hierarchy."
+      ],
+      "limitations": [
+        "Only partial views of background figures exist; their scale, species, and placement relative to the main skeleton are ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:04:19.528247+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-828c65a7-9bcd-9286-af06-8e4fe39ed4bf",
+      "usage": {
+        "prompt_tokens": 740,
+        "completion_tokens": 903,
+        "total_tokens": 1643,
+        "completion_tokens_details": {
+          "text_tokens": 903
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 233,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070304106a73f42ae2c340e9",
+      "usage": {
+        "completion_tokens": 765,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1805,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2570
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

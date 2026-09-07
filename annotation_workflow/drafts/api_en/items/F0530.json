@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0530",
+  "sample_id": "PHL1800_HL_0381",
+  "file_name": "PHL1800_HL_0381.png",
+  "batch_id": "B012",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large crowd of pedestrians waiting at a street intersection",
+  "captions": {
+    "scene": [
+      "A wide urban crosswalk in front of a multi-story building with reflective glass panels and large digital billboards.",
+      "To the right, a white grid-facade office building stands adjacent to the billboard structure; traffic signals and signage are mounted on poles.",
+      "The sky is overcast; lighting is diffuse and even, casting minimal shadows across the asphalt and crowd."
+    ],
+    "action": [
+      "Approximately 120–130 individuals stand densely packed behind the white stop line, facing forward, mostly stationary.",
+      "No umbrellas are visible among the crowd.",
+      "No clear visual evidence of individuals holding up mobile phones or cameras toward the intersection or billboards."
+    ],
+    "rationale": [
+      "The uniform orientation and alignment of the crowd suggest they are waiting for a pedestrian signal change, though the signal status is not fully legible.",
+      "Billboard content includes stylized portraits and text such as 'VOICE' and 'Shibuya station', indicating a commercial/public space context, but exact branding is partially occluded or low-resolution.",
+      "The presence of multiple billboards implies coordinated advertising, yet no single brand dominates visually due to fragmentation and partial visibility."
+    ],
+    "object": [
+      "A black asphalt road surface features two parallel white painted lines marking a pedestrian crossing zone.",
+      "A vertical pole supports three traffic lights (two red circular lenses visible) and a blue circular sign with a white arrow pointing left.",
+      "A large billboard displays two women holding small purple devices; one device shows a camera icon, the other a screen with indistinct content.",
+      "Below that, a second billboard shows two men’s faces above the word 'VOICE' in bold sans-serif type, flanked by Japanese characters on vertical banners.",
+      "A vehicle is partially visible behind the crowd on the far right, parked or moving slowly near the curb (color and type indistinct)."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0530_P1",
+      "visual_anchors": [
+        "crowd aligned at crosswalk",
+        "billboards showing human faces",
+        "mobile phones raised toward scene"
+      ],
+      "symbolic_mapping": [
+        "raised phones → mediation of experience",
+        "billboard faces → constructed public personas"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image captures a moment where collective physical presence intersects with mediated representation: individuals simultaneously occupy shared public space while engaging with curated images of identity, suggesting tension between embodied co-presence and digitally filtered selfhood.",
+      "alternative_interpretations": [
+        "This may simply depict routine pedestrian behavior at a busy transit hub, with billboards serving only commercial function and phones used for navigation or casual photography."
+      ],
+      "limitations": [
+        "No facial expressions or individual postures are discernible at this resolution; thus, intent or emotional state cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0530_P2",
+      "visual_anchors": [
+        "dense crowd halted at line",
+        "uniform directionality",
+        "absence of movement"
+      ],
+      "symbolic_mapping": [
+        "static crowd → suspension of agency",
+        "crosswalk boundary → institutional constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The enforced stillness of the crowd at the marked threshold visualizes how infrastructural design regulates individual motion, turning autonomous passage into synchronized compliance—highlighting freedom as contingent upon engineered permission.",
+      "alternative_interpretations": [
+        "The crowd may be pausing voluntarily for a photo opportunity or event, not due to traffic control; the line could be decorative rather than regulatory."
+      ],
+      "limitations": [
+        "The traffic signal’s current state (red/green) is ambiguous; the crowd’s stillness might reflect anticipation rather than prohibition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0530_P3",
+      "visual_anchors": [
+        "multiple overlapping advertisements",
+        "Japanese text banners",
+        "reflective building facade"
+      ],
+      "symbolic_mapping": [
+        "reflection + ads → layered perception",
+        "textual fragments → incomplete meaning"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The fragmented, partially obscured signage and mirrored surfaces imply that public knowledge is assembled from disjointed inputs, where truth emerges not from coherence but from accumulation of partial, commercially framed signals.",
+      "alternative_interpretations": [
+        "The visual clutter reflects typical urban density and commercial saturation, with no deeper epistemic implication—readers may simply ignore or skim the text."
+      ],
+      "limitations": [
+        "Most Japanese text is unreadable due to resolution and angle; therefore, claims about semantic fragmentation rely on inference from layout, not content."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of umbrellas (none visible, not 4); inaccurate object description of the van (not green, partially obscured); unsupported claim of phones/cameras being held up (no clear visual evidence)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:54:25.784718+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7362e835-f6fa-98fe-9e80-1c2fd3f3e5a1",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1052,
+        "total_tokens": 1821,
+        "completion_tokens_details": {
+          "text_tokens": 1052
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025402a871954571cb459b",
+      "usage": {
+        "completion_tokens": 941,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1982,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2923
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

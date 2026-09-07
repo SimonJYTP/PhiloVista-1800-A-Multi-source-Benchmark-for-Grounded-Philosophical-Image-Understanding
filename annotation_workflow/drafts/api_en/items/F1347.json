@@ -1,0 +1,131 @@
+{
+  "annotation_item_id": "F1347",
+  "sample_id": "PHL1800_HL_0328",
+  "file_name": "PHL1800_HL_0328.png",
+  "batch_id": "B028",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "ai_agent_direct_visual_reannotation_after_audit_non_independent",
+  "formal_gold": false,
+  "target_subject": "a seated passenger beside a bus window overlooking congested city traffic",
+  "captions": {
+    "scene": [
+      "The photograph is taken from inside a bus or similar public vehicle looking through a large side window.",
+      "Cars and minibuses queue between tall buildings on a bright urban street.",
+      "A passenger's head and the back of a fabric-covered seat occupy the left foreground."
+    ],
+    "action": [
+      "The passenger leans forward with their head close to the seat back or window frame.",
+      "Multiple vehicles wait or move slowly in dense traffic outside.",
+      "The camera looks past the resting passenger toward the road and high-rise buildings."
+    ],
+    "rationale": [
+      "The closely spaced vehicles and limited gaps indicate congestion or slow traffic.",
+      "The passenger's lowered head may indicate resting or looking downward, but the exact activity is unclear.",
+      "The elevated viewpoint, interior seat, and window frame support the interpretation that the image was taken from public transport."
+    ],
+    "object": [
+      "A person's dark hair and partially hidden face appear above a pink patterned seat in the left foreground.",
+      "A thick vertical window frame divides the vehicle interior from the street view.",
+      "Several white vans, minibuses, and passenger cars fill multiple lanes below.",
+      "Tall residential and commercial buildings rise closely along both sides of the road.",
+      "Visible signs include a Shell logo and a high building sign reading 'CARITAS.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1347_P1",
+      "visual_anchors": [
+        "passenger separated by a window",
+        "dense traffic outside"
+      ],
+      "symbolic_mapping": [
+        "window → separation between observer and urban flow"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The passenger's partial concealment beside the window can be read as a private moment occurring within the impersonal movement of a crowded city.",
+      "alternative_interpretations": [
+        "The person may simply be looking down during an ordinary trip."
+      ],
+      "limitations": [
+        "The face and activity are mostly obscured, so isolation or introspection cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1347_P2",
+      "visual_anchors": [
+        "vehicles packed into lanes",
+        "bus interior"
+      ],
+      "symbolic_mapping": [
+        "traffic queue → constrained collective mobility"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The congested road illustrates how technologies designed for mobility can collectively restrict movement when many users depend on them at once.",
+      "alternative_interpretations": [
+        "Traffic conditions may be temporary and do not by themselves represent a general technological paradox."
+      ],
+      "limitations": [
+        "A single frame cannot establish speed, duration, or the cause of congestion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1347_P3",
+      "visual_anchors": [
+        "resting passenger",
+        "high-rise corridor",
+        "vehicle queue"
+      ],
+      "symbolic_mapping": [
+        "commute → time spent in transit"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of a resting passenger and slow traffic permits a reflection on everyday time consumed by necessary travel.",
+      "alternative_interpretations": [
+        "The passenger's trip may be voluntary, brief, or recreational rather than burdensome."
+      ],
+      "limitations": [
+        "The image contains no timing information or evidence about the trip's purpose."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "codex_visual_audit",
+    "verdict": "revised_by_audit_visual_inspection",
+    "issues": [
+      "Previous fallback annotation described a different image; all semantic annotation fields were replaced after direct inspection of the mapped image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:39:38.198026+00:00",
+    "generator": "zcode_ai_agent_manual_visual",
+    "reviewer": "none",
+    "image_input": "direct_local_view_by_ai_agent",
+    "audit_revision": {
+      "timestamp_utc": "2026-09-07T14:37:45.702430+00:00",
+      "reason_code": "cross_image_annotation_mismatch",
+      "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1347.json",
+      "formal_gold": false
+    }
+  }
+}

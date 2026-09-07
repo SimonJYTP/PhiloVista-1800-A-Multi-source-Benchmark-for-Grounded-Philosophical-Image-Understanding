@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1246",
+  "sample_id": "PHL1800_IRFL_0378",
+  "file_name": "PHL1800_IRFL_0378.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a dual-scale thermometer against a sunlit orange sky",
+  "captions": {
+    "scene": [
+      "A wooden thermometer with Celsius and Fahrenheit scales is positioned diagonally against a vivid orange-yellow sky.",
+      "A bright sun with radiating beams appears behind the upper right portion of the thermometer, partially obscured by clouds.",
+      "Cumulus-like clouds with dark undersides and illuminated orange tops occupy the lower left and right quadrants."
+    ],
+    "action": [
+      "The red liquid column in the thermometer rises to approximately 38°C (100°F).",
+      "Sunlight casts strong highlights on the thermometer’s surface and creates lens flare effects around the sun.",
+      "Clouds appear static with no visible motion blur or wind indicators."
+    ],
+    "rationale": [
+      "The thermometer’s scale markings are legible and consistent with standard metric/imperial conventions, supporting accurate reading of the liquid level.",
+      "The color saturation and lighting suggest either sunrise/sunset or heavy atmospheric scattering, but no time-of-day markers are present.",
+      "The thermometer shows no signs of damage or distortion, implying it is functional, though its calibration cannot be verified visually."
+    ],
+    "object": [
+      "The thermometer has a rectangular wooden body with black printed scale lines and numerals for both °C (left) and °F (right).",
+      "The red liquid column reaches just below the 40°C mark and aligns precisely with the 100°F mark.",
+      "The top of the thermometer displays '°C' and '°F' labels above their respective scales; all numerals from -20 to 50 (°C) and 0 to 120 (°F) are visible and legible.",
+      "The background features a gradient sky transitioning from deep orange at the bottom to bright yellow near the sun.",
+      "Two cloud masses flank the thermometer: one larger on the left with darker bases, and a smaller one on the right with brighter edges."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1246_P1",
+      "visual_anchors": [
+        "red liquid at 100°F",
+        "sunburst behind thermometer",
+        "cloud shadows"
+      ],
+      "symbolic_mapping": [
+        "100°F as threshold of human thermal stress",
+        "sun as indifferent natural force"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The fixed reading at a critical temperature under an unrelenting sun evokes the vulnerability of biological limits against immutable natural forces, suggesting mortality as measured by physical thresholds.",
+      "alternative_interpretations": [
+        "It may simply depict a hot day with a functioning thermometer, without symbolic intent."
+      ],
+      "limitations": [
+        "No human presence or physiological response is shown to confirm the interpretation of bodily vulnerability."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1246_P2",
+      "visual_anchors": [
+        "dual-scale labeling",
+        "wooden construction",
+        "clear numerical gradations"
+      ],
+      "symbolic_mapping": [
+        "dual scales as epistemic frameworks",
+        "wood as tradition vs. modern measurement"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The coexistence of Celsius and Fahrenheit scales on a single instrument reflects competing systems of truth—how reality is quantified depends on cultural or institutional choice, not absolute fact.",
+      "alternative_interpretations": [
+        "The dual scale is standard for international usability and carries no philosophical intent."
+      ],
+      "limitations": [
+        "No contextual cues indicate awareness or preference for one scale over the other; the design is conventional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1246_P3",
+      "visual_anchors": [
+        "sun’s rays piercing through clouds",
+        "thermometer standing vertically",
+        "unbroken liquid column"
+      ],
+      "symbolic_mapping": [
+        "vertical orientation as aspiration",
+        "light breaking through as revelation"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "freedom_constraint"
+      ],
+      "interpretation": "The thermometer stands upright amid dramatic light, suggesting a search for objective measure within overwhelming subjective conditions—truth as a constrained yet persistent act of orientation.",
+      "alternative_interpretations": [
+        "The composition is purely aesthetic, using contrast and symmetry for visual impact."
+      ],
+      "limitations": [
+        "The thermometer’s orientation is likely due to photographic staging, not intentional symbolism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:07:32.368008+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6fe4529e-b0e5-946e-9534-c4948f08a694",
+      "usage": {
+        "prompt_tokens": 3010,
+        "completion_tokens": 954,
+        "total_tokens": 3964,
+        "completion_tokens_details": {
+          "text_tokens": 954
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2503,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040719bd4c760a302d4ecf",
+      "usage": {
+        "completion_tokens": 800,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4932,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5732
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

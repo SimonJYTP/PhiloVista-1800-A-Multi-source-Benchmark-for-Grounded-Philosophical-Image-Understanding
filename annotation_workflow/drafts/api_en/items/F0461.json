@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0461",
+  "sample_id": "PHL1800_HL_0088",
+  "file_name": "PHL1800_HL_0088.png",
+  "batch_id": "B011",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a giraffe and a kudu standing side by side on sandy ground",
+  "captions": {
+    "scene": [
+      "A sunlit outdoor enclosure with wooden railings, rocks, and sparse vegetation, viewed from a slightly elevated perspective.",
+      "Visitors stand behind a wooden fence on an elevated walkway in the background; some wear jackets and carry bags.",
+      "The foreground contains loose sand and scattered gray rocks; the midground holds two large ungulates, one tall and spotted, the other shorter with spiral horns."
+    ],
+    "action": [
+      "The giraffe walks forward with its left foreleg extended and head turned toward the left, mouth slightly open.",
+      "The kudu stands still, facing left, ears alert, with its body partially obscured by the giraffe’s torso.",
+      "Multiple people in the background are stationary or moving slowly along the walkway; one person holds a black bag with orange trim."
+    ],
+    "rationale": [
+      "The giraffe’s leg position and head orientation indicate forward locomotion rather than standing still.",
+      "The kudu’s posture—weight evenly distributed, no lifted limbs—suggests it is not moving at this instant.",
+      "The presence of railings, visitor walkway, and controlled terrain implies a managed setting such as a zoo, though no signage confirms this."
+    ],
+    "object": [
+      "A giraffe with a long neck, ossicones, and a coat pattern of irregular brown patches separated by cream-colored lines stands in profile.",
+      "A kudu with large, spiraled horns, large ears, and a gray-brown coat with faint vertical stripes stands beside the giraffe, partially overlapped.",
+      "A wooden railing composed of horizontal logs and vertical posts runs across the background, separating the animals from visitors.",
+      "Rocks of varying sizes and shapes lie scattered on the sandy ground in front of the animals and along the enclosure edge.",
+      "At least five human figures are visible on the elevated walkway: two clearly in white and dark jackets, others partially occluded or distant."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0461_P1",
+      "visual_anchors": [
+        "giraffe’s elongated neck",
+        "kudu’s spiral horns",
+        "shared enclosure space"
+      ],
+      "symbolic_mapping": [
+        "distinct morphologies coexisting in proximity suggest non-hierarchical cohabitation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of two phylogenetically distinct herbivores occupying the same bounded space evokes questions about shared existence under imposed spatial limits, where biological difference does not preclude proximity but is mediated by external structure.",
+      "alternative_interpretations": [
+        "This may simply reflect standard zoo exhibit design for mixed-species display without symbolic intent."
+      ],
+      "limitations": [
+        "No signage, behavioral interaction, or contextual text confirms intentional symbolism; proximity alone is insufficient to infer social meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0461_P2",
+      "visual_anchors": [
+        "sunlit sand",
+        "shadows cast directly beneath animals",
+        "clear sky reflection on surfaces"
+      ],
+      "symbolic_mapping": [
+        "strong daylight illuminating both animals equally suggests temporal immediacy and presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The sharp shadows and uniform illumination emphasize the animals’ physical forms in a transient moment, highlighting how appearance is fixed only fleetingly within continuous time—each stance is a snapshot before motion resumes.",
+      "alternative_interpretations": [
+        "The lighting is typical of midday outdoor photography and may reflect practical exhibition conditions rather than philosophical emphasis."
+      ],
+      "limitations": [
+        "No clock, aging markers, or sequential frames confirm temporal reflection; lighting alone does not necessitate mortality themes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0461_P3",
+      "visual_anchors": [
+        "visitors behind barrier",
+        "elevated walkway",
+        "animals on lower ground"
+      ],
+      "symbolic_mapping": [
+        "vertical separation between observer and observed mirrors epistemic distance in knowledge acquisition"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The physical elevation and barrier between humans and animals visually enact a hierarchy of observation: viewers possess positional advantage but are excluded from direct engagement, mirroring how knowledge of the ‘other’ is often constructed through mediated, constrained access.",
+      "alternative_interpretations": [
+        "The elevation is likely for safety and viewing ergonomics, not symbolic representation of epistemic power."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or labels indicate viewer intent or awareness of hierarchy; structure may be purely functional."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:48:56.454805+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8582b944-877a-93dc-8966-0bdccf0951e9",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1024,
+        "total_tokens": 1793,
+        "completion_tokens_details": {
+          "text_tokens": 1024
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024834fad72ccef83d4e6d",
+      "usage": {
+        "completion_tokens": 889,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1959,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2848
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

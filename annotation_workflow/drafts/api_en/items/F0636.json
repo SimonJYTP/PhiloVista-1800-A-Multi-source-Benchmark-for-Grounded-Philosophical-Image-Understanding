@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0636",
+  "sample_id": "PHL1800_HAIV_0361",
+  "file_name": "PHL1800_HAIV_0361.png",
+  "batch_id": "B015",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a silhouetted human figure inside a large hourglass",
+  "captions": {
+    "scene": [
+      "A stylized street scene with a teal bus and a smaller teal vehicle on a yellow textured road, viewed from a low angle.",
+      "A large blue hourglass dominates the left foreground, partially obscuring the vehicles behind it.",
+      "The background has a grainy yellow-beige texture with dark smudges near the top edge."
+    ],
+    "action": [
+      "The silhouetted figure sits on the lower bulb of the hourglass, holding a small rectangular object horizontally in both hands.",
+      "The bus and smaller vehicle appear stationary or moving slowly, indicated by their aligned orientation and lack of motion blur.",
+      "Sand-like material fills the upper bulb of the hourglass and flows through the narrow neck toward the lower bulb where the figure sits."
+    ],
+    "rationale": [
+      "The figure’s posture and hand position suggest engagement with the object, but its identity or purpose is not visually determinable.",
+      "The vehicles share the same color scheme and perspective, implying intentional compositional pairing rather than random placement.",
+      "The hourglass’s scale relative to the vehicles suggests symbolic exaggeration, not literal size; no scale reference confirms actual dimensions."
+    ],
+    "object": [
+      "The hourglass has black vertical support rods, two spherical nodes mid-stem, and a blue-tinted glass body containing white-to-blue gradient sand-like substance.",
+      "The silhouetted figure is seated, facing right, with legs bent, feet flat on the inner base, and arms extended forward holding a dark rectangular object.",
+      "The bus is teal with six vertical white window panes, a red circular taillight, black wheels with white hubs, and a blank white license plate area.",
+      "The smaller vehicle behind the bus is also teal, boxy, with two rear windows, a visible red taillight, and black wheels.",
+      "The road surface is uniformly yellow-beige with a granular texture and casts long black shadows beneath the vehicles and hourglass supports."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0636_P1",
+      "visual_anchors": [
+        "hourglass",
+        "flowing sand",
+        "seated figure"
+      ],
+      "symbolic_mapping": [
+        "hourglass represents finite duration",
+        "figure’s containment signifies bounded agency"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure exists within a measurable temporal boundary, suggesting human life as a constrained passage subject to irreversible flow.",
+      "alternative_interpretations": [
+        "The image may depict a literal waiting scenario, such as commuting delay, with the hourglass as decorative or incidental."
+      ],
+      "limitations": [
+        "No textual labels confirm symbolic intent; the hourglass could be purely aesthetic or functional within a fictional setting."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0636_P2",
+      "visual_anchors": [
+        "teal bus",
+        "smaller vehicle",
+        "shared color palette"
+      ],
+      "symbolic_mapping": [
+        "uniform vehicle coloring implies systemic uniformity",
+        "road as shared infrastructure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "Standardized transport forms coexist with an individual in isolation, reflecting societal structures that organize movement while individuating experience.",
+      "alternative_interpretations": [
+        "The vehicles are generic background elements chosen for visual harmony, not conceptual commentary."
+      ],
+      "limitations": [
+        "Vehicle design lacks distinguishing marks (e.g., logos, signage) to confirm institutional or functional roles."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0636_P3",
+      "visual_anchors": [
+        "figure holding rectangular object",
+        "no facial features",
+        "silhouette form"
+      ],
+      "symbolic_mapping": [
+        "anonymous figure denotes universal subject",
+        "object as indeterminate tool or text"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The absence of identifying traits positions the figure as a placeholder for any observer, prompting reflection on how knowledge is mediated through obscured or simplified representation.",
+      "alternative_interpretations": [
+        "The silhouette is a stylistic choice for contrast and simplicity, not philosophical abstraction."
+      ],
+      "limitations": [
+        "The object’s nature is unreadable; it could be a book, tablet, or unrelated item—no visual cues specify function."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:03:14.647222+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4200d2b7-0336-9219-b488-d1b490120e39",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 961,
+        "total_tokens": 2494,
+        "completion_tokens_details": {
+          "text_tokens": 961
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030248ec4251ed22c447cf",
+      "usage": {
+        "completion_tokens": 822,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2921,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3743
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

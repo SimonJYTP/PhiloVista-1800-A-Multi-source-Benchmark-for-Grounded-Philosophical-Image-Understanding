@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0183",
+  "sample_id": "PHL1800_HAIV_0287",
+  "file_name": "PHL1800_HAIV_0287.png",
+  "batch_id": "B006",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized cartoon face with brown hair",
+  "captions": {
+    "scene": [
+      "A white background with multiple blue lightning bolts and two large blue cloud shapes flanking the face",
+      "A prominent yellow lightning bolt diagonally crosses the lower right portion of the image, intersecting the face and clouds",
+      "Smaller blue lightning bolts are scattered in the lower-left and lower-right quadrants"
+    ],
+    "action": [
+      "The face displays a frowning expression with downturned mouth and narrowed eyes",
+      "The face is partially obscured by a large yellow lightning bolt passing in front of it",
+      "Blue cloud shapes appear behind and beside the head, suggesting an atmospheric context"
+    ],
+    "rationale": [
+      "The facial features (downward mouth curve, angular eyebrows) indicate a negative affective state, though exact emotion is not specified",
+      "The presence of multiple lightning bolts and clouds strongly suggests a storm motif, but no rain or wind lines are visible",
+      "The yellow lightning bolt overlaps the face and clouds, implying spatial layering, but depth cues are minimal and stylized"
+    ],
+    "object": [
+      "The face has white skin tone, black circular eyes, and a simple U-shaped downturned mouth outlined in maroon.",
+      "Brown hair is depicted as two symmetrical side sections framing the face, with a central part line visible at the top.",
+      "Two large blue cloud shapes with black outlines flank the left and right sides of the face, each partially behind the hair.",
+      "A thick yellow lightning bolt with black outline runs diagonally from upper right to lower left, crossing over the face and clouds.",
+      "At least nine smaller blue lightning bolts with black outlines and red inner highlights are distributed across the lower half of the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0183_P1",
+      "visual_anchors": [
+        "yellow lightning bolt crossing the face",
+        "frowning expression",
+        "clouds surrounding head"
+      ],
+      "symbolic_mapping": [
+        "lightning as sudden external force",
+        "frown as resistance or distress"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image may represent an individual confronting overwhelming external power, where the lightning symbolizes coercive force and the facial expression signifies constrained agency.",
+      "alternative_interpretations": [
+        "It could simply be a decorative weather-themed illustration without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or narrative context confirm intentional symbolism; visual elements are generic and widely used in non-philosophical contexts."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0183_P2",
+      "visual_anchors": [
+        "symmetrical hair framing face",
+        "flat white facial surface",
+        "lack of texture or detail on face"
+      ],
+      "symbolic_mapping": [
+        "minimalist face as blank identity",
+        "hair as sole distinguishing feature"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The stark simplicity of the face—devoid of nose, ears, or shading—may evoke questions about how appearance constructs social recognition, with hair serving as the only individuating trait.",
+      "alternative_interpretations": [
+        "The design reflects stylistic constraints of cartoon iconography rather than philosophical commentary."
+      ],
+      "limitations": [
+        "The absence of other figures or social cues prevents confirmation of identity or social dynamics being depicted."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0183_P3",
+      "visual_anchors": [
+        "multiple lightning bolts of varying sizes",
+        "central yellow bolt dominating composition",
+        "clouds positioned laterally"
+      ],
+      "symbolic_mapping": [
+        "hierarchical scale of bolts suggesting intensity gradation",
+        "central bolt as focal disruption"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The arrangement may suggest a moment of decisive interruption in a process—the large bolt as a singular event altering trajectory—though no path or timeline is visually present.",
+      "alternative_interpretations": [
+        "The bolts are purely decorative elements emphasizing energy or drama without temporal implication."
+      ],
+      "limitations": [
+        "No directional motion lines, sequence markers, or temporal indicators (e.g., clocks, aging signs) exist to support a journey or mortality reading."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:15:00.926982+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-314afde6-6c7a-986c-a03a-ff7b0be5184b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 934,
+        "total_tokens": 2467,
+        "completion_tokens_details": {
+          "text_tokens": 934
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070214328ba2bd4e450b4b9d",
+      "usage": {
+        "completion_tokens": 792,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2891,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3683
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

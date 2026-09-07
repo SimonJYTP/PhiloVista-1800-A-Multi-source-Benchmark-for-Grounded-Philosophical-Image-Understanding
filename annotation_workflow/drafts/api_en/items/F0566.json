@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0566",
+  "sample_id": "PHL1800_HL_0086",
+  "file_name": "PHL1800_HL_0086.png",
+  "batch_id": "B013",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person releasing a bird of prey in an open field",
+  "captions": {
+    "scene": [
+      "A grassy field under a partly cloudy sky with distant tree-lined hills and two vertical wooden posts in the foreground.",
+      "The horizon shows layered terrain with forested ridges and a faint haze, suggesting moderate atmospheric depth.",
+      "A dark blue cloth-covered object rests on the ground near the person’s feet."
+    ],
+    "action": [
+      "The person extends their right arm forward, palm up, while standing beside a covered object.",
+      "A raptor is airborne mid-flight, wings spread and talons slightly extended, positioned above and ahead of the person’s outstretched hand.",
+      "The person wears a cap, short-sleeved shirt, and long pants, and appears to be in a stable standing posture."
+    ],
+    "rationale": [
+      "The bird’s orientation and proximity to the person’s hand suggest it was recently released from that position, though no direct contact is visible.",
+      "The presence of wooden posts and a covered object implies a structured activity (e.g., falconry demonstration), but no signage or equipment confirms this.",
+      "The person’s gaze direction is not discernible due to head angle and resolution; thus, attentional focus cannot be confirmed."
+    ],
+    "object": [
+      "A single human figure stands on grass, wearing a light-colored cap, a blue short-sleeved shirt, and dark trousers.",
+      "A bird of prey with mottled brown and white plumage, broad wings, and a fanned tail is captured in flight approximately 2 meters above ground level.",
+      "Two weathered wooden posts stand vertically in the foreground, spaced about 1.5 meters apart, with no visible attachments.",
+      "A rectangular object draped in dark blue fabric sits on the ground near the person’s left foot, its shape suggesting a box or crate.",
+      "The sky contains scattered cumulus clouds against a pale blue background, with no visible sun or shadows indicating precise time of day."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0566_P1",
+      "visual_anchors": [
+        "outstretched human hand",
+        "bird in mid-flight",
+        "open field"
+      ],
+      "symbolic_mapping": [
+        "the hand as gesture of release",
+        "flight as embodiment of autonomy"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The moment captures a deliberate relinquishment of control, where human agency enables nonhuman agency—highlighting freedom not as absence of constraint but as enabled transition.",
+      "alternative_interpretations": [
+        "This may simply be a routine training maneuver in falconry, with no symbolic intent."
+      ],
+      "limitations": [
+        "No visible tether, glove, or handler cues confirm intentional release versus accidental escape."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0566_P2",
+      "visual_anchors": [
+        "person alone in wide landscape",
+        "distant hills",
+        "bird ascending"
+      ],
+      "symbolic_mapping": [
+        "solitary figure against expanse as existential positioning",
+        "bird’s ascent as temporal passage"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The image frames a transient interaction within vast natural continuity, evoking awareness of finite human action against enduring ecological cycles.",
+      "alternative_interpretations": [
+        "The scene may reflect recreational activity with no contemplative dimension."
+      ],
+      "limitations": [
+        "No facial expression or contextual markers indicate reflective state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0566_P3",
+      "visual_anchors": [
+        "covered object on ground",
+        "wooden posts",
+        "structured field setting"
+      ],
+      "symbolic_mapping": [
+        "posts as markers of boundary or ritual space",
+        "covered object as concealed potential"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The arrangement suggests a threshold moment—where preparation (covered object), structure (posts), and action (release) converge to signify a deliberate step into an unfolding path.",
+      "alternative_interpretations": [
+        "The posts and clothed object may serve purely functional roles (e.g., perches, equipment storage)."
+      ],
+      "limitations": [
+        "No visible path, signage, or directional cues confirm journey symbolism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:57:09.629752+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0722f51c-a8cc-97f0-a6a6-937fd20c5591",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 928,
+        "total_tokens": 1697,
+        "completion_tokens_details": {
+          "text_tokens": 928
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702565552bc5d9b7dc74f64",
+      "usage": {
+        "completion_tokens": 792,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1862,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2654
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

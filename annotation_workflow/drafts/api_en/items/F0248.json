@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0248",
+  "sample_id": "PHL1800_HL_0340",
+  "file_name": "PHL1800_HL_0340.png",
+  "batch_id": "B007",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three children near a subway entrance",
+  "captions": {
+    "scene": [
+      "Urban street corner with multi-story brick apartment buildings, green metal subway railing, and traffic signals.",
+      "A large billboard showing a woman in red attire is mounted on a building facade above the subway entrance.",
+      "Pedestrians cross the street and walk along sidewalks; vehicles including a black SUV and white delivery truck are visible."
+    ],
+    "action": [
+      "Two children stand side-by-side facing forward near the top of a descending subway ramp; one holds a pink backpack strap.",
+      "A third child walks past the subway entrance from left to right, adjusting her hair with her right hand while carrying a black backpack.",
+      "Multiple pedestrians are mid-stride across the intersection or on sidewalks; some carry bags or push carts."
+    ],
+    "rationale": [
+      "The children’s positioning at the ramp suggests they are either entering or pausing before descending, supported by their orientation and proximity to stairs.",
+      "The presence of a Citibank sign and street signs (e.g., 'W 86 St', 'Broadway') indicates a New York City setting, though exact location is not verifiable from image alone.",
+      "The billboard figure wears red fabric and poses reclined; however, whether it depicts a specific product, campaign, or artistic work is unreadable and thus uncertain."
+    ],
+    "object": [
+      "Three children are visible: two standing together near the subway ramp entrance, one walking left to right past the railing.",
+      "A green-painted metal railing encloses the subway entrance ramp, with vertical bars and horizontal supports.",
+      "A rectangular billboard displays a reclining woman in red clothing against a light background; text below is illegible.",
+      "Street signs include a green 'BROADWAY' sign and a white 'W 86 ST' sign mounted on a pole.",
+      "A black SUV is parked or stopped near the curb; a white box truck with partial red logo is further back on the street."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0248_P1",
+      "visual_anchors": [
+        "green subway railing",
+        "children paused at entrance",
+        "pedestrians moving independently"
+      ],
+      "symbolic_mapping": [
+        "railing as boundary between public transit and street life",
+        "pause as moment of decision before descent"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The children’s stillness at the threshold of the subway embodies the philosophical tension between voluntary constraint (entering structured transit) and open mobility (remaining on the street), reflecting how urban infrastructure shapes individual choice.",
+      "alternative_interpretations": [
+        "They may simply be waiting for a companion or checking directions, with no intentional symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm deliberation; posture could indicate fatigue or distraction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0248_P2",
+      "visual_anchors": [
+        "billboard woman in red",
+        "children in casual clothes",
+        "surrounding pedestrians in varied attire"
+      ],
+      "symbolic_mapping": [
+        "billboard figure as mediated ideal vs. lived diversity of street subjects"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a stylized, static commercial image against dynamic, heterogeneous pedestrian bodies highlights how identity is simultaneously constructed through mass media representation and embodied social presence.",
+      "alternative_interpretations": [
+        "The billboard is merely background advertising with no intended contrast to passersby."
+      ],
+      "limitations": [
+        "The billboard’s content is partially obscured and unreadable; its intended message cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0248_P3",
+      "visual_anchors": [
+        "sunlit sidewalk shadows",
+        "traffic light amber signal",
+        "children’s aligned stance"
+      ],
+      "symbolic_mapping": [
+        "shadow length indicating time of day",
+        "amber light as transitional state"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The interplay of elongated shadows and the amber traffic signal frames the children’s moment as temporally suspended—a liminal interval where routine movement halts, evoking awareness of fleeting present moments within urban continuity.",
+      "alternative_interpretations": [
+        "The lighting is typical afternoon sun; the traffic light phase is routine and unremarkable."
+      ],
+      "limitations": [
+        "Shadow direction and length alone cannot precisely date the moment or confirm symbolic intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:24:39.654474+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dfc084ad-eeed-9574-b1d9-e79dfbce8fb6",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 988,
+        "total_tokens": 1757,
+        "completion_tokens_details": {
+          "text_tokens": 988
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070224235ad4654d08b94174",
+      "usage": {
+        "completion_tokens": 847,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1920,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2767
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

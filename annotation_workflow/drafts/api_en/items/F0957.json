@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0957",
+  "sample_id": "PHL1800_HL_0336",
+  "file_name": "PHL1800_HL_0336.png",
+  "batch_id": "B021",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a marked police cruiser stopped at an urban intersection",
+  "captions": {
+    "scene": [
+      "A sunlit city street intersection with brick buildings, traffic signals, and orange construction barriers.",
+      "A historic-style stone building with columns occupies the left corner; a modern multi-story brick building stands behind it.",
+      "Multiple vehicles including a white pickup truck, several sedans, and a police cruiser are present on the road."
+    ],
+    "action": [
+      "The police cruiser is stationary in the intersection with its emergency lights off and driver-side door closed.",
+      "Two pedestrians stand near the entrance of the stone building; one wears a blue jacket, the other a dark coat.",
+      "Traffic signals show red for the cross-street direction and amber for the main street direction."
+    ],
+    "rationale": [
+      "The police vehicle’s position across lane markings suggests it may be blocking or controlling traffic, though no active enforcement is visible.",
+      "Orange plastic barriers and cones indicate ongoing or recent road work, but no workers or equipment are visible in frame.",
+      "Sun glare creates strong shadows and obscures some details (e.g., license plate, facial features), limiting certainty about intent or status."
+    ],
+    "object": [
+      "A white four-door sedan marked 'POLICE' in blue lettering on its side, with a light bar on the roof and a rear-mounted antenna.",
+      "An orange metal barricade with reflective stripes lies horizontally across the sidewalk curb on the right foreground.",
+      "A traffic signal pole displays two red circular lights and one amber circular light, all illuminated.",
+      "A white pickup truck is parked parallel to the curb behind the police car, facing away from the camera.",
+      "A manhole cover with concentric rings is centered in the asphalt near the bottom edge of the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0957_P1",
+      "visual_anchors": [
+        "police cruiser positioned across lanes",
+        "orange construction barriers",
+        "red traffic lights"
+      ],
+      "symbolic_mapping": [
+        "barriers represent institutional control over movement",
+        "red lights signify imposed pause"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the tension between individual mobility and systemic regulation, where physical infrastructure enforces temporal and spatial limits on action.",
+      "alternative_interpretations": [
+        "It simply documents routine traffic management during road maintenance, with no symbolic intent."
+      ],
+      "limitations": [
+        "No signage explains the purpose of the barriers or police presence; context is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0957_P2",
+      "visual_anchors": [
+        "sun glare casting long shadows",
+        "sharp contrast between lit and shaded areas",
+        "static vehicles"
+      ],
+      "symbolic_mapping": [
+        "light/shadow dichotomy mirrors visibility/invisibility of authority",
+        "stillness under bright light suggests suspended time"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The stark illumination and frozen motion evoke a momentary suspension—where human activity halts under institutional gaze, echoing the fragility of routine continuity.",
+      "alternative_interpretations": [
+        "The lighting is merely midday sun; shadows are incidental, not thematic."
+      ],
+      "limitations": [
+        "No clocks, aging signs, or explicit mortality cues are present; interpretation relies on metaphorical extension."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0957_P3",
+      "visual_anchors": [
+        "two pedestrians near building entrance",
+        "police car facing them",
+        "ABM sign on left wall"
+      ],
+      "symbolic_mapping": [
+        "pedestrians as anonymous citizens within regulated space",
+        "ABM sign indicating commercial infrastructure embedded in civic life"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The coexistence of private individuals, public authority, and commercial signage illustrates how social identity is negotiated within layered institutional frameworks.",
+      "alternative_interpretations": [
+        "The people are waiting to enter the building; their relation to the police car is coincidental."
+      ],
+      "limitations": [
+        "Facial features and postures are indistinct; no interaction between pedestrians and police is visible."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:31:22.471009+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9869b8b3-cf04-9275-b3d1-a9457753c716",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 905,
+        "total_tokens": 1714,
+        "completion_tokens_details": {
+          "text_tokens": 905
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703305854c8bd7c0f8d432f",
+      "usage": {
+        "completion_tokens": 770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1886,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2656
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

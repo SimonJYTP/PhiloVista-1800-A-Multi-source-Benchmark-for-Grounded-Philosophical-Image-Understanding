@@ -1,0 +1,168 @@
+{
+  "annotation_item_id": "F1518",
+  "sample_id": "PHL1800_HL_0511",
+  "file_name": "PHL1800_HL_0511.png",
+  "batch_id": "B031",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a blue and yellow diesel locomotive numbered 82118",
+  "captions": {
+    "scene": [
+      "A railway station platform with brick buildings, signage, and overhead structures in the background.",
+      "The locomotive occupies the right side of the frame, adjacent to a concrete platform with a yellow tactile paving strip.",
+      "Rail tracks run parallel to the platform; one track holds the locomotive, another is visible to its left."
+    ],
+    "action": [
+      "The locomotive is stationary on the track, with its front couplers engaged and buffers extended.",
+      "A person wearing a dark coat and light-colored hat stands on the platform holding two shopping bags, facing away from the camera.",
+      "The locomotive’s left headlight is illuminated red; the right headlight is off or obscured."
+    ],
+    "rationale": [
+      "The train’s position relative to the platform edge and lack of motion blur suggest it is not moving at the moment of capture.",
+      "The presence of a passenger with bags near the train implies readiness for boarding or recent alighting, though no door is open.",
+      "The red headlight may indicate a braking or caution state, but without operational context, this remains speculative."
+    ],
+    "object": [
+      "The locomotive has a blue body with a yellow front panel bearing the number '82118' in black numerals.",
+      "Two circular headlights are embedded in the lower front; the left emits red light, the right appears dark or covered.",
+      "The front features two large black buffers and a central coupling mechanism with visible wear and rust.",
+      "A white horizontal stripe runs along the side of the locomotive, interrupted by a rectangular window and a vertical door with a handle.",
+      "Reflections of surrounding structures appear on the locomotive’s glossy blue surface, including what looks like a building facade and sky."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1518_P1",
+      "visual_anchors": [
+        "locomotive number 82118",
+        "yellow front panel",
+        "station platform edge"
+      ],
+      "symbolic_mapping": [
+        "the fixed numbering suggests institutional categorization",
+        "the platform edge marks a threshold between movement and stillness"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The locomotive’s standardized appearance and numeric identity reflect how technology is assigned discrete roles within systems of transport, embodying a tension between individual function and systemic conformity.",
+      "alternative_interpretations": [
+        "It is simply a vehicle awaiting its next scheduled duty, with no deeper meaning implied by its design or placement."
+      ],
+      "limitations": [
+        "No signage confirms the train’s route, destination, or operator, limiting interpretive scope to visual form alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1518_P2",
+      "visual_anchors": [
+        "person holding shopping bags",
+        "empty platform space",
+        "tactile paving strip"
+      ],
+      "symbolic_mapping": [
+        "the bags signify routine consumption",
+        "the tactile strip enforces bodily awareness at thresholds"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The solitary figure amid infrastructure highlights the interdependence of individual agency and engineered constraint—movement permitted only within designated zones and signals.",
+      "alternative_interpretations": [
+        "The person is waiting for a train; the tactile paving is a standard safety feature with no symbolic intent."
+      ],
+      "limitations": [
+        "Facial expression, direction of gaze, and intended action are not visible, preventing confirmation of intent or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1518_P3",
+      "visual_anchors": [
+        "red illuminated headlight",
+        "worn coupling hardware",
+        "reflection of sky on blue paint"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "A literal description of a blue and yellow diesel locomotive numbered 82118 is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a blue and yellow diesel locomotive numbered 82118 as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:41:04.060273+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2855b3f2-817a-96fa-8629-b47c68a935b8",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 998,
+        "total_tokens": 1807,
+        "completion_tokens_details": {
+          "text_tokens": 998
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070440452623b989ef044270",
+      "usage": {
+        "completion_tokens": 839,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1954,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2793
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1518.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

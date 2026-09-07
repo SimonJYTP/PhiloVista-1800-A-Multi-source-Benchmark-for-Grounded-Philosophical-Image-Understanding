@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1224",
+  "sample_id": "PHL1800_HL_0132",
+  "file_name": "PHL1800_HL_0132.png",
+  "batch_id": "B026",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a bronze statue of a man holding an umbrella and gesturing with his right hand",
+  "captions": {
+    "scene": [
+      "A paved plaza with curved brick patterns, surrounded by trees showing autumn foliage and low-rise buildings in the background.",
+      "A black umbrella is held aloft over the statue, casting a shadow on its upper torso and head.",
+      "In the background, two indistinct human figures walk near a white vehicle parked beside a building with large windows."
+    ],
+    "action": [
+      "The statue’s right arm is extended forward with index finger pointing upward and slightly leftward.",
+      "The statue’s left hand grips the shaft of a black umbrella positioned above its head.",
+      "The statue’s mouth is slightly open and head tilted upward, suggesting mid-speech or vocalization."
+    ],
+    "rationale": [
+      "The pointing gesture and open mouth suggest the figure is addressing an audience or making a declaration, though no audience is visible.",
+      "The bronze patina and fixed pose confirm it is a static sculpture, not a living person; the umbrella appears integrated into the work.",
+      "Background figures are distant and blurred, indicating they are not part of the primary subject and their activity is incidental."
+    ],
+    "object": [
+      "The statue wears a suit jacket, white collared shirt, and red tie, all rendered in bronze with realistic folds and texture.",
+      "The umbrella has a black canopy and a metallic shaft that the statue’s left hand grasps near its midpoint.",
+      "The statue’s right hand forms a precise pointing gesture with the index finger extended and other fingers curled inward.",
+      "The facial features include defined eyebrows, a prominent nose, and parted lips, all cast in bronze with subtle surface oxidation.",
+      "The base of the statue is not fully visible, but the lower torso merges into a plinth or ground-level mounting consistent with public sculpture."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1224_P1",
+      "visual_anchors": [
+        "pointing index finger",
+        "open mouth",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "the pointing finger maps to assertion or direction",
+        "the open mouth maps to speech or proclamation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The statue embodies the act of public declaration—where speech and gesture converge to assert truth or claim social presence—highlighting how authority is visually performed through posture and dress.",
+      "alternative_interpretations": [
+        "It may simply commemorate a historical speaker without philosophical intent, functioning as civic decoration."
+      ],
+      "limitations": [
+        "No inscriptions or contextual plaques are visible to confirm intended meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1224_P2",
+      "visual_anchors": [
+        "bronze material",
+        "fixed pose",
+        "umbrella overhead"
+      ],
+      "symbolic_mapping": [
+        "bronze signifies permanence against decay",
+        "umbrella suggests protection or shelter from external forces"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The enduring bronze form contrasts with the transient gesture of pointing, evoking tension between mortal impermanence and the desire for lasting influence, while the umbrella implies constraint or curated exposure.",
+      "alternative_interpretations": [
+        "The umbrella may be purely aesthetic or functional (e.g., weather protection for the statue), not symbolic."
+      ],
+      "limitations": [
+        "The umbrella’s origin—integral sculpture vs. added prop—is ambiguous without close inspection of attachment points."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1224_P3",
+      "visual_anchors": [
+        "suit and tie",
+        "gestural emphasis",
+        "public plaza setting"
+      ],
+      "symbolic_mapping": [
+        "formal attire maps to institutional role",
+        "gesture maps to agency or command"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The statue stages identity as performance: appearance (clothing) and action (gesture) jointly construct a persona of authority, raising questions about whether power resides in the individual or in the symbols they inhabit.",
+      "alternative_interpretations": [
+        "It could represent a generic ‘everyman’ speaker rather than a specific power figure, minimizing hierarchical reading."
+      ],
+      "limitations": [
+        "Facial features lack distinguishing traits, preventing identification of a specific role or office."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:05:13.987717+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-57268088-9bf5-9403-bdbc-0d56899d79fc",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 950,
+        "total_tokens": 1619,
+        "completion_tokens_details": {
+          "text_tokens": 950
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704044993ba5a8cf57d4b6a",
+      "usage": {
+        "completion_tokens": 812,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1752,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2564
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

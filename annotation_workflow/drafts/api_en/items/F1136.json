@@ -1,0 +1,168 @@
+{
+  "annotation_item_id": "F1136",
+  "sample_id": "PHL1800_HL_0558",
+  "file_name": "PHL1800_HL_0558.png",
+  "batch_id": "B024",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman running on a beach with a black dog on a leash",
+  "captions": {
+    "scene": [
+      "Sandy beach foreground with wet and dry sand patches, ocean with breaking greenish waves in midground, clear sky above",
+      "A surfer on a yellow surfboard is visible in the water behind the runner, partially obscured by white foam",
+      "The shoreline shows wave wash-up lines and scattered footprints in the sand"
+    ],
+    "action": [
+      "The woman is mid-stride, left foot lifted off ground, right foot planted, body leaning forward",
+      "The black dog runs ahead of the woman, tail raised and ears back, all four paws off ground in motion",
+      "The woman holds a black leash in her right hand, attached to the dog’s collar; her left hand holds a green object near waist level"
+    ],
+    "rationale": [
+      "The woman’s posture and foot placement indicate forward locomotion rather than standing or walking slowly",
+      "The dog’s airborne limbs and extended body suggest active running, not trotting or pausing",
+      "The presence of a leash implies intentional control or companionship, though the exact nature (e.g., ownership) cannot be confirmed visually"
+    ],
+    "object": [
+      "The woman wears a white short-sleeved t-shirt, black shorts with red side stripes, dark athletic shoes with white soles, and has dark hair tied back.",
+      "The dog is medium-to-large, predominantly black with a white patch on its chest, erect tail with bushy fur, and appears to be a mixed breed.",
+      "A thin black leash extends from the woman’s right hand to the dog’s neck area, forming a diagonal line across the frame.",
+      "A green cylindrical object, possibly a water bottle or container, is held in the woman’s left hand near her hip.",
+      "In the background, a person wearing a dark wetsuit sits upright on a yellow surfboard amid white surf, facing toward shore."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1136_P1",
+      "visual_anchors": [
+        "woman holding leash",
+        "dog running ahead",
+        "shared direction of motion"
+      ],
+      "symbolic_mapping": [
+        "leash as physical constraint enabling shared movement",
+        "forward motion as enacted choice"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The leash physically binds two agents yet enables coordinated motion, illustrating how constraint can facilitate shared agency rather than negate freedom.",
+      "alternative_interpretations": [
+        "The leash may simply indicate routine pet exercise without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1136_P2",
+      "visual_anchors": [
+        "footprints in sand",
+        "wave wash-up line",
+        "runner’s mid-stride position"
+      ],
+      "symbolic_mapping": [
+        "sand as ephemeral record of passage",
+        "waves erasing traces"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The transient footprints being overwritten by advancing surf evoke impermanence: each step is recorded only until the next wave, mirroring the fleeting nature of human action in time.",
+      "alternative_interpretations": [
+        "Footprints are merely incidental evidence of recent movement, not symbolic markers."
+      ],
+      "limitations": [
+        "No timestamp or sequence confirms erasure; the wave may not reach those prints."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1136_P3",
+      "visual_anchors": [
+        "surfer in background",
+        "runner and dog in foreground",
+        "spatial separation between figures"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "A literal description of a woman running on a beach with a black dog on a leash is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a woman running on a beach with a black dog on a leash as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:54:02.531209+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-71587ea2-4c43-9425-8e2f-0716840a3987",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 928,
+        "total_tokens": 1629,
+        "completion_tokens_details": {
+          "text_tokens": 928
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035349154bfb7fa8e64616",
+      "usage": {
+        "completion_tokens": 782,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1739,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2521
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1136.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

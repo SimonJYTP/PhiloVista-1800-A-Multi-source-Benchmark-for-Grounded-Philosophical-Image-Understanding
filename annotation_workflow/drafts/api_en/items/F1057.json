@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1057",
+  "sample_id": "PHL1800_IRFL_0058",
+  "file_name": "PHL1800_IRFL_0058.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two large animals interacting in shallow water and mud",
+  "captions": {
+    "scene": [
+      "Shallow, murky water with exposed muddy bank; surface reflects diffuse light.",
+      "Mud-splattered ground with visible drag marks and disturbed sediment.",
+      "Two large vertebrates positioned closely, partially submerged, with one on its side."
+    ],
+    "action": [
+      "One animal has its jaws wide open, revealing upper and lower teeth and tongue.",
+      "The second animal is leaning over the first, forelimbs extended toward its torso.",
+      "Both animals are physically in contact; no visible motion blur suggests stillness or slow movement."
+    ],
+    "rationale": [
+      "The open mouth and exposed dentition suggest a defensive or aggressive posture, but intent cannot be confirmed from morphology alone.",
+      "Contact between limbs and torso indicates direct physical interaction, though whether it is predatory, competitive, or incidental is indeterminate.",
+      "Mud adherence and body orientation imply recent movement through wet substrate, but sequence of events is not visible."
+    ],
+    "object": [
+      "An elongated reptilian animal lies laterally in water, with scaly dorsal osteoderms visible along its back and tail.",
+      "A mammalian animal with tawny fur, prominent mane-like neck hair, and muscular forelimbs stands over the reptile.",
+      "The reptile’s head is raised, mouth agape, showing conical teeth and pink oral mucosa.",
+      "The mammal’s front paws rest near the reptile’s midsection, with claws partially embedded in mud.",
+      "Water surface shows ripples and reflections consistent with low-angle ambient illumination."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1057_P1",
+      "visual_anchors": [
+        "open jaws with visible teeth",
+        "forelimbs pressing into mud",
+        "muddy water reflecting light"
+      ],
+      "symbolic_mapping": [
+        "open jaws → confrontation",
+        "mud resistance → constraint"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes an immediate tension between exerted force and bodily resistance, where physical dominance is mediated by environmental friction and posture rather than decisive outcome.",
+      "alternative_interpretations": [
+        "A momentary postural adjustment during co-feeding or scavenging, with no conflict implied."
+      ],
+      "limitations": [
+        "No behavioral context (e.g., vocalization, prior movement) is visible to confirm aggression or cooperation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1057_P2",
+      "visual_anchors": [
+        "reptile’s lateral recumbency",
+        "mammal’s upright stance",
+        "shared immersion in water/mud"
+      ],
+      "symbolic_mapping": [
+        "lateral position → vulnerability",
+        "upright posture → agency"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Bodily orientation relative to substrate and conspecific signals contingent identity—neither animal fully dominates the frame, suggesting relational status rather than fixed hierarchy.",
+      "alternative_interpretations": [
+        "Mechanical consequence of terrain: the reptile is simply lying down while the mammal steps onto higher ground."
+      ],
+      "limitations": [
+        "No facial expression or gaze direction is discernible to infer social signaling."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1057_P3",
+      "visual_anchors": [
+        "mud clinging to both bodies",
+        "disturbed sediment trail",
+        "wet reflective surface"
+      ],
+      "symbolic_mapping": [
+        "mud as residue of action",
+        "reflection as transient trace"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The scene captures a temporally bounded event where material traces (mud, ripples) index presence and interaction, yet the absence of narrative continuity leaves truth contingent on incomplete sensory evidence.",
+      "alternative_interpretations": [
+        "A staged or edited photograph with artificial composition, unrelated to natural behavior."
+      ],
+      "limitations": [
+        "Temporal duration and causality are unobservable; only a single frozen instant is presented."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:45:08.544050+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ee176829-edef-9f15-a8c8-f16436723015",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 899,
+        "total_tokens": 1478,
+        "completion_tokens_details": {
+          "text_tokens": 899
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034455c331ce1a5d9c473b",
+      "usage": {
+        "completion_tokens": 760,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1580,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2340
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

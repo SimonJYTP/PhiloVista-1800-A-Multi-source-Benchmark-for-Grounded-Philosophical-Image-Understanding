@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0428",
+  "sample_id": "PHL1800_HL_0533",
+  "file_name": "PHL1800_HL_0533.png",
+  "batch_id": "B011",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a baseball pitcher mid-throw on the mound with three fielders and spectators",
+  "captions": {
+    "scene": [
+      "A sunlit baseball field with striped mown grass, a dirt pitcher’s mound, and a green outfield wall featuring an advertisement banner.",
+      "A crowd of spectators fills tiered seating behind the outfield wall; many wear casual summer clothing and sunglasses.",
+      "Three players in white uniforms with orange lettering are positioned on the infield: one on the mound, one near first base, and one at shortstop, plus a runner in a grey uniform near first base."
+    ],
+    "action": [
+      "The pitcher is in follow-through motion after releasing the ball, left leg extended forward, right arm across torso, glove hand raised.",
+      "The first baseman stands alert near first base, knees bent, glove ready, eyes directed toward home plate or pitcher.",
+      "The shortstop crouches slightly with glove out, watching the play, while a runner in grey uniform stands near first base."
+    ],
+    "rationale": [
+      "The pitcher’s body orientation and arm position indicate a completed throwing motion rather than wind-up, based on standard pitching biomechanics visible.",
+      "The presence of multiple fielders in defensive stances and a runner off base suggests an active at-bat or baserunning situation, not pre-game warm-up.",
+      "The advertisement banner reads 'mash HD BE THERE' with a logo, but partial text and imagery (e.g., blurred player photos) prevent full identification of sponsor or context."
+    ],
+    "object": [
+      "The pitcher wears a white jersey with 'Orioles' in orange script across the chest and number '18' below, white pants, black cap with orange brim, and black glove on left hand.",
+      "A runner in a grey uniform with black helmet and white socks stands near first base, left foot lifted, body leaning forward.",
+      "The first baseman wears a white uniform identical to the pitcher’s, with black cap, black belt, and black glove held low in front.",
+      "The shortstop wears a white uniform with black cap and black glove, standing with feet shoulder-width apart and knees flexed.",
+      "The outfield wall displays a rectangular banner with white background, red and black text reading 'mash HD', a circular logo, and the phrase 'BE THERE'; three indistinct photographic panels appear to the left of the text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0428_P1",
+      "visual_anchors": [
+        "pitcher’s isolated stance on mound",
+        "crowd observing from fixed seats",
+        "fielders positioned in anticipation"
+      ],
+      "symbolic_mapping": [
+        "the mound as a locus of individual agency amid collective expectation"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The pitcher’s solitary act of release, witnessed by a passive audience and coordinated teammates, embodies the tension between individual decisive action and embedded social role.",
+      "alternative_interpretations": [
+        "This is merely a routine moment in a sports contest with no deeper meaning beyond athletic performance."
+      ],
+      "limitations": [
+        "No facial expressions or gestures convey internal states; interpretation relies solely on spatial arrangement and posture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0428_P2",
+      "visual_anchors": [
+        "striped grass pattern",
+        "precise baselines",
+        "uniform alignment of players"
+      ],
+      "symbolic_mapping": [
+        "geometric order of the field reflecting imposed structure on human movement"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The rigid geometry of the field and synchronized positioning of players illustrate how institutional frameworks constrain and channel embodied action into prescribed roles.",
+      "alternative_interpretations": [
+        "The stripes and lines are purely functional for gameplay visibility and have no symbolic intent."
+      ],
+      "limitations": [
+        "The image does not show rulebooks, umpires, or explicit enforcement mechanisms—only outcomes of such systems."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0428_P3",
+      "visual_anchors": [
+        "blurred spectator faces",
+        "identical team uniforms",
+        "advertising banner with slogan 'BE THERE'"
+      ],
+      "symbolic_mapping": [
+        "collective presence as mediated experience rather than direct participation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The slogan ‘BE THERE’ juxtaposed with distant, indistinct spectators highlights the paradox of presence in mass-mediated spectacles: proximity does not guarantee engagement, and truth of experience is filtered through representation.",
+      "alternative_interpretations": [
+        "The banner is commercial branding with no philosophical intent; spectators are simply watching a game."
+      ],
+      "limitations": [
+        "The phrase ‘BE THERE’ is readable but its intended referent (physical attendance vs. broadcast viewing) is ambiguous without context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of fielders: candidate states four players in white uniforms but image shows three (pitcher, first baseman, shortstop) plus one runner in grey; shortstop is misdescribed as wearing grey uniform when they wear white; runner near second base is misidentified as leading off second base when they are near first base; advertisement banner text is misread as 'MASN HD' when it is 'mash HD'."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:46:00.357257+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5d161e9a-91c1-9aac-aa9c-449bb1a23bb1",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 1048,
+        "total_tokens": 1837,
+        "completion_tokens_details": {
+          "text_tokens": 1048
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024545487d9509ef8e49c0",
+      "usage": {
+        "completion_tokens": 1012,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2004,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3016
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0269",
+  "sample_id": "PHL1800_IRFL_0437",
+  "file_name": "PHL1800_IRFL_0437.jpg",
+  "batch_id": "B008",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a metal screwdriver tip engaged with a partially inserted metal screw in wood",
+  "captions": {
+    "scene": [
+      "A shallow depth-of-field close-up showing a screwdriver and screw on a light-toned wooden surface with blurred background.",
+      "The foreground features a metallic screwdriver shaft and screw head; the background is uniformly out-of-focus brown.",
+      "Wood grain is visible on the surface beneath the screw, indicating a planar wooden substrate."
+    ],
+    "action": [
+      "The screwdriver tip is seated in the recess of the screw head, suggesting rotational engagement.",
+      "The screw is partially embedded in the wood, with threads visible above the surface and wood fibers displaced around the entry point.",
+      "No motion blur is present; the system appears static at the moment of capture."
+    ],
+    "rationale": [
+      "The alignment of driver tip and screw recess implies intended torque application, though no rotation is visually confirmed.",
+      "The presence of displaced wood fibers near the screw shank suggests recent insertion, but timing cannot be determined from still image alone.",
+      "The screw’s partial embedment indicates incomplete fastening, yet whether this is intentional or interrupted is not evident."
+    ],
+    "object": [
+      "A silver-colored metal screwdriver with a flat-bladed (slotted) tip is vertically oriented and centered in the frame.",
+      "A metal screw with a rounded head, central slot, and helical threads is inserted approximately halfway into a wooden surface.",
+      "The wooden surface exhibits parallel grain lines running horizontally across the lower third of the image.",
+      "The screw head shows slight wear or machining marks on its upper surface and rim.",
+      "The screwdriver shaft reflects ambient light, revealing a cylindrical cross-section and smooth finish."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0269_P1",
+      "visual_anchors": [
+        "screw partially embedded",
+        "driver tip seated in slot",
+        "wood fibers displaced"
+      ],
+      "symbolic_mapping": [
+        "partial insertion as unfinished action",
+        "tool-screw interface as dependency"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a moment suspended between intention and completion, where human agency (via tool) initiates transformation of material, yet remains incomplete—evoking the philosophical tension between deliberate action and its contingent realization.",
+      "alternative_interpretations": [
+        "A routine mechanical step in assembly, with no symbolic intent beyond functional fastening."
+      ],
+      "limitations": [
+        "No evidence of human presence, intent, or temporal context prevents confirmation of deliberation or suspension."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0269_P2",
+      "visual_anchors": [
+        "metal screw",
+        "wood substrate",
+        "tight fit of driver in slot"
+      ],
+      "symbolic_mapping": [
+        "rigid metal penetrating organic material as imposition",
+        "precision fit as control"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The enforced penetration of rigid metal into yielding wood, mediated by a precisely aligned tool, visualizes a microcosm of domination through technical precision—where constraint is enacted not by force alone but by exact conformity of parts.",
+      "alternative_interpretations": [
+        "A standard fastening operation where material compatibility ensures structural integrity without conflict."
+      ],
+      "limitations": [
+        "No deformation, resistance, or stress indicators in the wood contradict the ‘imposition’ reading."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0269_P3",
+      "visual_anchors": [
+        "shallow depth of field",
+        "isolated screw-driver pair",
+        "absence of surrounding context"
+      ],
+      "symbolic_mapping": [
+        "focus isolation as epistemic narrowing",
+        "single interaction as unit of knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "By isolating the tool-object interface and blurring all else, the image enacts a phenomenological reduction: truth emerges only in the precise contact zone, while identity of the whole system recedes—suggesting knowledge is contingent upon focal attention rather than holistic view.",
+      "alternative_interpretations": [
+        "A photographic technique emphasizing subject detail, with no epistemological implication intended."
+      ],
+      "limitations": [
+        "Depth-of-field is a technical choice, not intrinsic to the objects; no textual or contextual cues confirm epistemic intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:27:23.400291+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-aca6fbc5-b9be-95cf-8252-9b8a8cd8ba9b",
+      "usage": {
+        "prompt_tokens": 629,
+        "completion_tokens": 954,
+        "total_tokens": 1583,
+        "completion_tokens_details": {
+          "text_tokens": 954
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 122,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070227057c96a20d33234e9b",
+      "usage": {
+        "completion_tokens": 815,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1713,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2528
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

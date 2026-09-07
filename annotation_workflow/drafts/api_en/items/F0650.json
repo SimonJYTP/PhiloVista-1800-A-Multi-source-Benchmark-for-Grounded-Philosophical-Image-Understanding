@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0650",
+  "sample_id": "PHL1800_HL_0435",
+  "file_name": "PHL1800_HL_0435.png",
+  "batch_id": "B015",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person skiing on snow",
+  "captions": {
+    "scene": [
+      "Snow-covered ground with sparse vegetation and leafless trees in the background under an overcast sky",
+      "A low hedge or shrub line runs horizontally behind the skier, partially dusted with snow",
+      "Two prominent tree trunks stand to the right of the skier; one is thick and textured, the other thinner"
+    ],
+    "action": [
+      "The person is mid-stride, left ski forward and right ski trailing, indicating forward motion",
+      "The person holds a single ski pole in the right hand, angled backward, suggesting propulsion or balance",
+      "The person’s head is turned slightly downward and leftward, gaze directed toward the snow ahead"
+    ],
+    "rationale": [
+      "Motion blur in the background and slight blur on the skier’s limbs suggest movement rather than static pose",
+      "The bent knee and forward lean are consistent with cross-country skiing technique, though no classic diagonal stride is fully visible",
+      "The hat covers ears and part of the face, implying cold weather; however, exact temperature cannot be confirmed from image alone"
+    ],
+    "object": [
+      "The person wears a tan hooded winter hat with ear flaps pulled down over the ears and a dark blue insulated jacket with a raised collar.",
+      "The person wears dark green or blue trousers, light blue patterned socks visible above white ski boots, and holds a ski pole with an orange grip and black strap.",
+      "The skis are red and white with visible bindings; only the tips and parts of the bases are visible beneath the boots.",
+      "The background includes a row of bare deciduous trees and shrubs with patches of snow on the ground and lower branches.",
+      "The sky is uniformly pale gray-white with no visible sun, clouds, or horizon line distinct from the treeline."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0650_P1",
+      "visual_anchors": [
+        "forward-leaning posture",
+        "single visible ski pole",
+        "snow-covered path"
+      ],
+      "symbolic_mapping": [
+        "the solitary stride maps to individual perseverance",
+        "the obscured face maps to anonymity in routine effort"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The skier’s forward motion along a narrow snowy track, with face partially hidden and no companions, evokes the existential condition of undertaking a personal journey where agency resides in continuous small choices amid environmental constraint.",
+      "alternative_interpretations": [
+        "This is simply a recreational activity captured mid-motion; no deeper meaning is required."
+      ],
+      "limitations": [
+        "No facial expression, destination, or context beyond immediate surroundings is visible, limiting attribution of intent or meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0650_P2",
+      "visual_anchors": [
+        "motion blur",
+        "overcast sky",
+        "bare trees"
+      ],
+      "symbolic_mapping": [
+        "blurred background maps to temporal flux",
+        "monochrome palette maps to suspended time"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The blurred environment against a static figure suggests a fleeting present moment—where movement persists despite seasonal dormancy and visual indistinctness—highlighting how freedom is exercised within natural limits that signal impermanence.",
+      "alternative_interpretations": [
+        "Blur results from camera panning during photography; it does not signify philosophical temporality."
+      ],
+      "limitations": [
+        "Motion blur could equally stem from technical exposure settings rather than intentional aesthetic or symbolic choice."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0650_P3",
+      "visual_anchors": [
+        "hood covering head",
+        "layered clothing",
+        "isolated figure"
+      ],
+      "symbolic_mapping": [
+        "concealment of identity maps to social withdrawal",
+        "practical attire maps to embodied labor against elements"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The skier’s functional attire and obscured features reflect a mode of existence where bodily adaptation to environment supersedes social presentation, suggesting labor—not as wage work, but as sustained physical negotiation with nature—is foundational to being-in-the-world.",
+      "alternative_interpretations": [
+        "The clothing is standard winter gear for outdoor activity; concealment is for warmth, not philosophical statement."
+      ],
+      "limitations": [
+        "No tools, instruments, or explicit labor markers (e.g., carrying load, repetitive motion) confirm labor interpretation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:04:41.047337+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-673b1399-73a6-964b-9d8c-9e094184874d",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 983,
+        "total_tokens": 1792,
+        "completion_tokens_details": {
+          "text_tokens": 983
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030415e21d8e1a635e4de8",
+      "usage": {
+        "completion_tokens": 841,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1960,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2801
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1789",
+  "sample_id": "PHL1800_HL_0027",
+  "file_name": "PHL1800_HL_0027.png",
+  "batch_id": "B002",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person taking a mirror selfie in a bathroom",
+  "captions": {
+    "scene": [
+      "A white ceramic sink with a chrome faucet mounted on a tiled wall, under a rectangular mirror.",
+      "A folded white towel rests on the left edge of the sink countertop.",
+      "The background shows off-white square wall tiles and a partial reflection of another person wearing a striped tie."
+    ],
+    "action": [
+      "A person with dark hair and glasses holds a small digital camera pointed toward the mirror, capturing their own reflection.",
+      "A second person’s arm and torso appear blurred in the foreground right, suggesting motion or proximity to the camera lens.",
+      "A third person’s reflection is visible on the left side of the mirror, extending an arm toward the center while wearing a striped tie and light shirt."
+    ],
+    "rationale": [
+      "The camera held by the central reflected figure is oriented toward the mirror, consistent with self-portraiture; no other framing suggests external subject focus.",
+      "The foreground blur indicates movement or shallow depth-of-field, implying the photographer is close to the lens—common in handheld selfies.",
+      "The reflected tie-wearing figure appears to be interacting with the scene (e.g., adjusting something), but their intent is not visually determinable beyond posture and gesture."
+    ],
+    "object": [
+      "The sink is a one-piece white ceramic unit with an integrated basin and flat countertop extending leftward.",
+      "A chrome single-handle faucet with a rounded spout and lever handle is centered above the basin.",
+      "A white textured towel lies folded on the left countertop edge, partially overlapping the sink rim.",
+      "The mirror has a thin metallic frame and reflects two distinct human figures: one holding a camera and one in a tie; a third figure is blurred in the foreground.",
+      "Visible plumbing includes a chrome P-trap and two supply lines beneath the sink, connected to the faucet base."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1789_P1",
+      "visual_anchors": [
+        "mirror reflection",
+        "camera held by reflected person",
+        "blurred foreground figure"
+      ],
+      "symbolic_mapping": [
+        "mirror as site of mediated self-perception",
+        "camera as instrument of self-documentation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image stages a recursive act of self-observation where identity is constructed through technological mediation—the mirror doubles the subject, and the camera freezes that doubled image, raising questions about whether the self is known directly or only via representation.",
+      "alternative_interpretations": [
+        "It may simply depict a routine hygiene-space activity with incidental photography, not intentional philosophical staging."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentionality; the camera could be recording for non-reflective purposes (e.g., vlog setup)."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1789_P2",
+      "visual_anchors": [
+        "two distinct human presences (reflected and foreground)",
+        "spatial layering (foreground blur, midground sink, background reflection)"
+      ],
+      "symbolic_mapping": [
+        "spatial overlap as metaphor for co-presence without interaction",
+        "reflection as symbolic of social mirroring"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The simultaneous presence of two individuals in constrained physical space—one reflected, one blurred—suggests social existence as inherently layered and partially obscured, where proximity does not guarantee mutual awareness or shared context.",
+      "alternative_interpretations": [
+        "The figures may be unrelated users of a public restroom, with no intended social commentary."
+      ],
+      "limitations": [
+        "No eye contact, gestures, or dialogue cues confirm relational dynamics; spatial proximity alone is weak evidence of social meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1789_P3",
+      "visual_anchors": [
+        "white towel on sink",
+        "chrome faucet",
+        "tiled wall"
+      ],
+      "symbolic_mapping": [
+        "sanitary fixtures as symbols of routine order",
+        "clean surfaces as metaphors for epistemic clarity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The sterile, functional design of the sink area—standardized, utilitarian, and unadorned—contrasts with the subjective act of self-recording, implying that truth-seeking (via self-documentation) occurs within institutionalized frameworks of hygiene and maintenance, where technology enables both bodily care and epistemic labor.",
+      "alternative_interpretations": [
+        "The setting is generic infrastructure; its features reflect cost-efficiency and durability, not symbolic intent."
+      ],
+      "limitations": [
+        "No branding, signage, or anomalous detail distinguishes this sink from countless others; symbolic reading depends on external associations."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate claims three people (one holding camera, one in tie, one blurred foreground), but image shows two people (one reflected holding camera, one foreground blurred) with a third partial reflection (arm/tie) that is not a full person."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:46:26.459191+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6a8ca83c-d590-9dac-892f-ea60c05bc923",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1037,
+        "total_tokens": 1846,
+        "completion_tokens_details": {
+          "text_tokens": 1037
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701460430b5f51493c042a4",
+      "usage": {
+        "completion_tokens": 959,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2009,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2968
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

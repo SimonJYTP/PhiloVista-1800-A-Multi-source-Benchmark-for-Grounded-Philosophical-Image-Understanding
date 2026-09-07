@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1457",
+  "sample_id": "PHL1800_HAIV_0413",
+  "file_name": "PHL1800_HAIV_0413.png",
+  "batch_id": "B030",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person lying in bed",
+  "captions": {
+    "scene": [
+      "A person lies on a green mattress with a brown headboard and white pillow, partially covered by a white quilted blanket with black grid lines.",
+      "The bed is positioned against a light blue background with stylized white swirls suggesting motion or air currents near the left side.",
+      "The person wears a light blue short-sleeved shirt with a yellow vertical stripe on the right side and has dark hair."
+    ],
+    "action": [
+      "The person’s right arm is raised upward with an open palm; the left arm extends outward to the left, also with an open palm.",
+      "The person’s eyes are closed and mouth slightly open, head tilted back on the pillow.",
+      "The blanket is bunched and displaced, exposing part of the person’s torso and left leg, which is wrapped in a white striped bandage."
+    ],
+    "rationale": [
+      "The raised arms and open palms suggest a reactive or involuntary movement rather than restful sleep, though intent cannot be confirmed.",
+      "The presence of a bandaged leg implies prior physical injury, but the timing, cause, or medical context is not visible.",
+      "The swirling lines near the left edge may indicate airflow or disturbance, but their nature (e.g., wind, dream symbolism) is ambiguous without textual support."
+    ],
+    "object": [
+      "A rectangular brown headboard with black outline frames the upper portion of the bed.",
+      "A white pillow supports the person’s head and neck, partially compressed under the head.",
+      "A white quilted blanket with black intersecting lines covers the person’s lower body and midsection, folded irregularly.",
+      "The person’s left leg is encased in a white bandage with horizontal gray stripes, visible below the blanket’s edge.",
+      "The mattress is green with a thin brown base visible beneath it, and the bed frame includes two brown legs at the bottom corners."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1457_P1",
+      "visual_anchors": [
+        "bandaged left leg",
+        "raised arms",
+        "closed eyes"
+      ],
+      "symbolic_mapping": [
+        "bandaged leg → bodily vulnerability",
+        "raised arms → surrender or appeal"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually juxtaposes physical constraint (bandage, bed) with gestural openness (raised arms), evoking tension between embodied limitation and aspirational release—a motif resonant with existential reflections on finitude and agency.",
+      "alternative_interpretations": [
+        "The posture may simply depict restless sleep or discomfort from injury, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression detail beyond closed eyes and slight mouth opening; emotional or cognitive state is unverifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1457_P2",
+      "visual_anchors": [
+        "white quilted blanket",
+        "green mattress",
+        "brown headboard"
+      ],
+      "symbolic_mapping": [
+        "grid pattern on blanket → imposed order",
+        "color contrast (green/brown/white) → domestic containment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The structured grid on the blanket overlying a relaxed human form suggests societal norms overlaying individual presence, hinting at how identity is mediated through domestic frameworks and material appearances.",
+      "alternative_interpretations": [
+        "The grid is merely a textile pattern with no intended meaning; colors reflect common bedding choices."
+      ],
+      "limitations": [
+        "Pattern is generic and non-textual; no cultural or contextual markers confirm symbolic intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1457_P3",
+      "visual_anchors": [
+        "swirling white lines near left edge",
+        "outstretched left hand",
+        "displaced blanket"
+      ],
+      "symbolic_mapping": [
+        "swirls → external force or flux",
+        "hand reaching outward → desire for connection or escape"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visual imbalance—body confined yet limbs extended toward dynamic external elements—captures a moment of liminal choice: whether to remain within constraint or engage the uncertain flow beyond, aligning with philosophical inquiries into volition amid structural limits.",
+      "alternative_interpretations": [
+        "The swirls are decorative background elements; the arm position results from shifting during sleep."
+      ],
+      "limitations": [
+        "Swirls lack directional or causal indicators; no narrative context confirms intentionality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:34:38.710023+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-14fb896b-0593-9db7-8590-7d400a8b30a4",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 990,
+        "total_tokens": 2523,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704341915757c614547498e",
+      "usage": {
+        "completion_tokens": 851,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2946,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3797
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

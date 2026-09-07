@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0003",
+  "sample_id": "PHL1800_HL_0446",
+  "file_name": "PHL1800_HL_0446.png",
+  "batch_id": "B003",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stone clock tower viewed from a narrow street between two buildings",
+  "captions": {
+    "scene": [
+      "A narrow urban alley flanked by multi-story buildings with shuttered windows, leading toward a tall stone tower under an overcast sky.",
+      "The tower dominates the visual center, constructed of rough-hewn stone blocks, with a clock face and a green-topped spire above.",
+      "A parked car occupies the lower-left foreground; a person walks on the right sidewalk near the base of the tower."
+    ],
+    "action": [
+      "A single person walks away from the camera along the right sidewalk, carrying a dark bag.",
+      "The clock hands indicate approximately 10:10; the clock face is visible but no motion is captured.",
+      "Shutters on adjacent buildings are mostly closed; one upper-floor shutter is partially open."
+    ],
+    "rationale": [
+      "The tower’s construction style (ashlar masonry, Gothic arch window, spire) suggests a historical ecclesiastical or civic function, though no signage confirms this.",
+      "The narrowness of the street and building proximity imply a dense historic urban fabric, but no street name or signage is legible to confirm location.",
+      "The lighting is diffuse and even, suggesting overcast daylight; shadows are soft and indistinct, preventing precise time-of-day determination."
+    ],
+    "object": [
+      "The clock tower is built of irregular gray stone blocks, features a large arched window with tracery below the clock, and a conical green metal roof topped with a weathervane.",
+      "The building on the left has beige stucco walls, rectangular windows with brown wooden shutters, and a small external light fixture near the top.",
+      "The building on the right has light-gray stucco walls, multiple vertically aligned windows with brown wooden shutters, and a projecting balcony with a metal railing on the second floor.",
+      "A dark-colored sedan is partially visible in the lower-left corner, showing its rear windshield and part of the trunk lid.",
+      "A person wearing dark clothing and carrying a black shoulder bag walks on the paved sidewalk on the right side, facing away from the camera."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0003_P1",
+      "visual_anchors": [
+        "clock face showing 10:10",
+        "tall stone tower rising above surrounding buildings",
+        "narrow alley constraining view"
+      ],
+      "symbolic_mapping": [
+        "the fixed clock time contrasts with the enduring stone structure, evoking time’s passage against permanence"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a precise, transient moment (the clock reading) against the massive, aged tower suggests human attempts to measure fleeting experience against structures that outlive individuals.",
+      "alternative_interpretations": [
+        "The clock may simply be functional infrastructure; the tower may serve municipal rather than symbolic purposes."
+      ],
+      "limitations": [
+        "No inscription or context confirms intentional symbolism; the time shown could be inaccurate or decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0003_P2",
+      "visual_anchors": [
+        "person walking alone on sidewalk",
+        "buildings tightly enclosing the street",
+        "shutters closed on most windows"
+      ],
+      "symbolic_mapping": [
+        "the solitary figure moving through constrained space reflects individual navigation within social or architectural constraints"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The lone pedestrian traversing a narrow, walled passage embodies the tension between personal movement and imposed spatial limits, hinting at broader societal boundaries.",
+      "alternative_interpretations": [
+        "The person may be merely commuting; the narrow street is typical of old European towns and not necessarily symbolic."
+      ],
+      "limitations": [
+        "Only one person is visible; their intent, destination, or relationship to surroundings is unknown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0003_P3",
+      "visual_anchors": [
+        "Gothic-style arched window on tower",
+        "weathered stone surface",
+        "weathervane atop spire"
+      ],
+      "symbolic_mapping": [
+        "architectural elements evoke continuity of tradition amid changing daily life"
+      ],
+      "concept_ids": [
+        "faith_meaning"
+      ],
+      "interpretation": "The tower’s religiously resonant form—pointed arch, vertical aspiration, and weather vane as directional guide—suggests a persistent search for orientation and meaning embedded in built environment.",
+      "alternative_interpretations": [
+        "The arch may be purely structural or aesthetic; the tower could be secular (e.g., town hall), and the weathervane purely utilitarian."
+      ],
+      "limitations": [
+        "No crosses, inscriptions, or liturgical markers confirm religious function; style alone is insufficient evidence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:47:06.132358+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-111a409a-b6db-9479-9e75-12f09e031d89",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 1038,
+        "total_tokens": 1707,
+        "completion_tokens_details": {
+          "text_tokens": 1038
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014630886e9e0340b04a15",
+      "usage": {
+        "completion_tokens": 901,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1835,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2736
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

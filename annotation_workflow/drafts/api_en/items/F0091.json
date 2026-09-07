@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F0091",
+  "sample_id": "PHL1800_IRFL_0342",
+  "file_name": "PHL1800_IRFL_0342.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one young woman",
+  "captions": {
+    "scene": [
+      "A studio-style portrait with a plain light-gray background and even lighting",
+      "The subject occupies the right two-thirds of the frame, leaving negative space on the left",
+      "A watermark grid with spiral logos and faint text overlays the entire image"
+    ],
+    "action": [
+      "The woman gazes toward the upper left of the frame, eyes open and focused",
+      "Her lips are slightly parted in a neutral expression, not smiling or frowning",
+      "She remains still, with no visible motion blur or dynamic posture"
+    ],
+    "rationale": [
+      "The even frontal lighting and uniform background suggest a controlled studio setting rather than natural environment",
+      "The presence of Dreamstime watermarks indicates this is a stock photograph intended for licensing",
+      "The subject’s head tilt and gaze direction imply posed composition, though her exact intent is not visually determinable"
+    ],
+    "object": [
+      "The woman has straight, shoulder-length brown hair with lighter highlights near the ends.",
+      "She wears a maroon short-sleeved top with a rounded neckline and a thin gold chain necklace.",
+      "Her face shows visible freckles across the nose and cheeks, and her eyebrows are naturally shaped and filled-in.",
+      "Her eyes are brown with visible catchlights indicating a frontal light source.",
+      "The image contains repeated watermark text reading 'dreamstime' and spiral logo symbols across the entire surface."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0091_P1",
+      "visual_anchors": [
+        "freckles on nose and cheeks",
+        "natural eyebrow shape",
+        "unretouched skin texture"
+      ],
+      "symbolic_mapping": [
+        "freckles → authenticity of bodily appearance",
+        "unretouched texture → resistance to idealized beauty norms"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The visible natural skin features may evoke reflection on how identity is constructed through unaltered physical presentation versus curated self-image.",
+      "alternative_interpretations": [
+        "These features are simply incidental characteristics captured by standard portrait photography without symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the features could be purely descriptive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0091_P2",
+      "visual_anchors": [
+        "gaze directed off-camera",
+        "slight head tilt",
+        "neutral lip position"
+      ],
+      "symbolic_mapping": [
+        "off-camera gaze → interiority or contemplation beyond the frame"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The subject’s outward-looking yet non-engaged expression may suggest epistemic openness—awareness of something unseen, aligning with inquiry into truth beyond immediate perception.",
+      "alternative_interpretations": [
+        "The pose is a conventional modeling directive to create visual interest and avoid direct eye contact with the viewer."
+      ],
+      "limitations": [
+        "No facial muscle tension or contextual cues confirm cognitive activity; expression is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0091_P3",
+      "visual_anchors": [
+        "Dreamstime watermark grid",
+        "uniform studio lighting",
+        "posed posture"
+      ],
+      "symbolic_mapping": [
+        "watermark overlay → mediation of identity through commercial imagery"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The visible commercial watermark superimposed on the subject’s likeness underscores how individual presence is commodified and distributed within social systems of representation.",
+      "alternative_interpretations": [
+        "The watermark is a legal requirement for preview images and carries no philosophical meaning in the visual content itself."
+      ],
+      "limitations": [
+        "The watermark is functional metadata, not integrated into the subject’s portrayal as symbolic content."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:58:20.933466+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a5151053-6e82-9af3-8409-86d09ed8ff54",
+      "usage": {
+        "prompt_tokens": 1739,
+        "completion_tokens": 826,
+        "total_tokens": 2565,
+        "completion_tokens_details": {
+          "text_tokens": 826
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1232,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070158077f8f4529cd4c440c",
+      "usage": {
+        "completion_tokens": 684,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2971,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3655
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

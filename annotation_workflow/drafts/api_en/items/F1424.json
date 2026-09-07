@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1424",
+  "sample_id": "PHL1800_HAIV_0228",
+  "file_name": "PHL1800_HAIV_0228.png",
+  "batch_id": "B029",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a courtroom scene with a gavel in the foreground and two figures in the background",
+  "captions": {
+    "scene": [
+      "A stylized courtroom interior with warm ochre and reddish-brown tones, featuring vertical bars separating two zones.",
+      "A large wooden gavel rests on its sounding block in the immediate foreground on a textured reddish surface.",
+      "Two human figures are visible behind a barrier: one standing left, gesturing with raised right hand; one seated right, partially obscured by bars."
+    ],
+    "action": [
+      "The standing figure extends their right arm upward with an open palm, fingers spread, while holding an object near their chest with the left hand.",
+      "The seated figure remains still, facing forward, with head and shoulders visible between vertical bars.",
+      "The gavel is stationary on its block, positioned at an angle suggesting recent or imminent use."
+    ],
+    "rationale": [
+      "The presence of bars and a gavel strongly suggests a judicial setting, though no explicit signage confirms this.",
+      "The standing figure’s gesture resembles advocacy or testimony, but without context, it could also be expressive speech or appeal.",
+      "The seated figure’s posture and partial occlusion imply confinement or separation, yet no visible restraints or uniform confirm status."
+    ],
+    "object": [
+      "A wooden gavel with a cylindrical head and tapered handle lies diagonally across a circular, tiered sounding block on a rough-textured reddish surface.",
+      "Vertical wooden bars, evenly spaced and parallel, divide the background space into two compartments.",
+      "The standing figure wears a loose, short-sleeved garment with irregular shading and has short hair; their facial features are indistinct and stylized.",
+      "The seated figure appears as a silhouette with rounded head and broad shoulders, rendered in muted gray tones behind the bars.",
+      "A horizontal ledge or bench runs behind the bars, supporting small rectangular shapes resembling books or files."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1424_P1",
+      "visual_anchors": [
+        "vertical wooden bars",
+        "seated figure behind bars",
+        "standing figure gesturing toward barred zone"
+      ],
+      "symbolic_mapping": [
+        "bars represent institutional constraint",
+        "gesture toward confinement suggests appeal against limitation"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the tension between individual agency (gesture) and structural restriction (bars), framing justice as a site where freedom is negotiated under imposed limits.",
+      "alternative_interpretations": [
+        "The bars may simply denote architectural separation in a courtroom, not symbolic imprisonment."
+      ],
+      "limitations": [
+        "No text or explicit iconography identifies the bars as punitive rather than procedural."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1424_P2",
+      "visual_anchors": [
+        "gavel on sounding block",
+        "foreground dominance of gavel",
+        "background figures out of focus"
+      ],
+      "symbolic_mapping": [
+        "gavel embodies authoritative decision-making",
+        "its prominence foregrounds judgment over participants"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "Authority is materially centered in the gavel, which physically dominates the composition, implying that institutional power mediates and potentially overshadows human voices in legal proceedings.",
+      "alternative_interpretations": [
+        "The gavel’s size may result from perspective distortion rather than symbolic emphasis."
+      ],
+      "limitations": [
+        "The drawing style uses exaggerated scale; no proportional reference confirms intentional hierarchy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1424_P3",
+      "visual_anchors": [
+        "indistinct facial features",
+        "stylized rendering of both figures",
+        "absence of identifying markers"
+      ],
+      "symbolic_mapping": [
+        "anonymity reflects universal subject position in law",
+        "lack of individuation emphasizes role over identity"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "By rendering figures without distinct identity, the image suggests that legal participation reduces individuals to functional roles—accused, advocate—within a social structure that defines existence through institutional categories.",
+      "alternative_interpretations": [
+        "Stylization may reflect artistic medium constraints rather than philosophical intent."
+      ],
+      "limitations": [
+        "The technique is consistent across the entire image; no contrast with identifiable elements exists to isolate intent."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:30:44.976514+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8d293af7-6784-9104-95af-3675490a01bd",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 936,
+        "total_tokens": 2469,
+        "completion_tokens_details": {
+          "text_tokens": 936
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043023b0a52abcd6004c53",
+      "usage": {
+        "completion_tokens": 800,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2892,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3692
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1313",
+  "sample_id": "PHL1800_HL_0029",
+  "file_name": "PHL1800_HL_0029.png",
+  "batch_id": "B002",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man standing beside a large military-style dump truck",
+  "captions": {
+    "scene": [
+      "Black-and-white outdoor scene with trees, a dirt surface, and a building partially visible behind the truck",
+      "Two American flags mounted on poles attached to the truck’s cab roof",
+      "Leafy foliage frames the upper right and left edges of the image"
+    ],
+    "action": [
+      "The man stands upright facing the camera, holding a small object in both hands at waist level",
+      "The truck is stationary with its dump bed raised and covered by a dark tarp",
+      "Shadows cast on the ground indicate bright overhead lighting"
+    ],
+    "rationale": [
+      "The truck’s design—large tires, high clearance, canvas-covered dump bed—suggests heavy-duty utility, possibly military or construction use",
+      "The presence of two U.S. flags and the man’s formal posture may indicate a ceremonial or official context, though no explicit event is visible",
+      "The black-and-white medium and vehicle style suggest an older photograph, but exact era cannot be determined from visual evidence alone"
+    ],
+    "object": [
+      "A heavy-duty truck with a prominent front grille bearing a circular emblem, two round headlights, and a vertical exhaust pipe on the driver’s side.",
+      "The truck has four large, deeply treaded off-road tires visible, with dual rear wheels on each side.",
+      "A dark tarp covers the raised dump bed, secured with visible straps and grommets; part of the tarp hangs loose near the rear.",
+      "The man wears a light-colored short-sleeved shirt, dark trousers, a brimmed hat, and dark shoes; he holds a small rectangular object with both hands.",
+      "Two American flags are affixed to poles extending upward from the cab roof; one flag appears fully unfurled, the other partially obscured."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1313_P1",
+      "visual_anchors": [
+        "man holding small object",
+        "flags on truck",
+        "tarp-covered dump bed"
+      ],
+      "symbolic_mapping": [
+        "the held object may represent documentation or authority",
+        "flags signify national affiliation or duty"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of individual presence against massive machinery evokes the tension between human agency and institutional scale, where identity is mediated through service roles and material tools.",
+      "alternative_interpretations": [
+        "The man may simply be posing for a routine vehicle inspection photo; no symbolic intent is required."
+      ],
+      "limitations": [
+        "No readable text confirms role, event, or intent; object in hands is indistinct."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1313_P2",
+      "visual_anchors": [
+        "black-and-white tonality",
+        "aged vehicle design",
+        "static pose"
+      ],
+      "symbolic_mapping": [
+        "monochrome rendering suggests historical distance",
+        "stillness implies commemoration or pause"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The image captures a moment suspended outside immediate utility—a figure defined by attire and stance rather than motion—inviting reflection on how appearance encodes temporal position and social role.",
+      "alternative_interpretations": [
+        "The monochrome effect results from photographic process choice, not intentional symbolism."
+      ],
+      "limitations": [
+        "No date, caption, or contextual signage confirms historical framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1313_P3",
+      "visual_anchors": [
+        "tarp covering bed",
+        "exhaust pipe",
+        "man’s centered placement"
+      ],
+      "symbolic_mapping": [
+        "concealment of cargo suggests latent function or withheld purpose",
+        "exhaust as conduit of power"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The covered load and rigid posture imply constrained action: the vehicle’s capacity is present but inactive, mirroring how institutional structures enable yet delimit individual expression.",
+      "alternative_interpretations": [
+        "The tarp is practical protection from weather; no ideological meaning is evident."
+      ],
+      "limitations": [
+        "Content under tarp is entirely hidden; no indication of conflict or coercion is visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:43:28.339566+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5e729e6a-1432-94a1-9bc3-53ce5220b737",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 937,
+        "total_tokens": 1766,
+        "completion_tokens_details": {
+          "text_tokens": 937
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014307efd8f2a22c6a4a60",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1930,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2725
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

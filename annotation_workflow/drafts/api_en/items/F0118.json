@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0118",
+  "sample_id": "PHL1800_MM_0006",
+  "file_name": "PHL1800_MM_0006.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two hockey players on ice, one prone and one standing",
+  "captions": {
+    "scene": [
+      "Indoor ice rink with red-and-white boards, yellow protective strip, and spectator seating in background",
+      "Blue circular logo with stylized 'M' visible on white board panel",
+      "Ice surface shows scuff marks and a blue painted circle segment near foreground"
+    ],
+    "action": [
+      "Player wearing navy-blue and yellow jersey number 30 lies supine on ice, holding stick, helmet on head, left glove extended",
+      "Second player in matching uniform stands upright with skates near the prone player’s legs, holding stick horizontally across waist level",
+      "Fine ice particles are airborne near the prone player’s right skate, indicating recent motion or impact"
+    ],
+    "rationale": [
+      "The prone player’s posture and contact with ice suggest a fall occurred recently; however, no visible injury or struggle confirms causality",
+      "The standing player’s orientation and proximity imply interaction, but no physical contact is visible between bodies",
+      "The speech bubble text is legible and attributed to the prone player via a tail pointing to their helmet; however, speech bubbles are graphic overlays, not real-time utterances"
+    ],
+    "object": [
+      "A hockey player wears a navy-blue helmet with clear visor, navy-and-yellow jersey with number 30 and partial reversed lettering 'OY', navy pants, and black gloves with yellow trim.",
+      "A second hockey player wears a white jersey with navy-and-yellow stripes, navy shorts with a gold shield logo, white socks with navy/yellow bands, and black gloves with yellow accents; their stick has 'Bauer' branding visible.",
+      "The prone player’s right skate shows black-and-white lacing and 'CCM' branding on the boot; ice shavings surround it.",
+      "The boards feature a blue oval logo containing a white stylized 'M' with a diagonal slash, mounted on a white panel bordered by red top rail and yellow lower strip.",
+      "A black-and-yellow hockey stick lies on the ice beside the prone player, with blade tip pointing left and shaft extending toward center."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0118_P1",
+      "visual_anchors": [
+        "prone player with speech bubble",
+        "standing player’s proximity",
+        "ice shavings near skate"
+      ],
+      "symbolic_mapping": [
+        "fallen player’s dialogue suggests resilience amid physical disruption"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image frames a moment where bodily constraint (lying on ice) coexists with verbal assertion of agency ('Let's get up and keep playing'), illustrating how choice persists even within imposed limits.",
+      "alternative_interpretations": [
+        "This is a staged or edited sports photograph emphasizing motivational messaging rather than documenting an actual game event."
+      ],
+      "limitations": [
+        "The speech bubble is a non-diegetic graphic element; no audio or lip movement confirms the utterance occurred."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0118_P2",
+      "visual_anchors": [
+        "identical team uniforms",
+        "shared arena environment",
+        "proximity without contact"
+      ],
+      "symbolic_mapping": [
+        "uniformity signals collective identity despite individual vulnerability"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Uniformed players occupy shared space yet enact distinct roles—one grounded, one upright—highlighting how social existence emerges through relational positioning rather than isolated presence.",
+      "alternative_interpretations": [
+        "The scene reflects standard post-check recovery behavior in hockey, with no deeper symbolic intent intended by participants."
+      ],
+      "limitations": [
+        "No facial expressions or gestures beyond basic posture are discernible due to helmet and distance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0118_P3",
+      "visual_anchors": [
+        "blue painted circle on ice",
+        "scuffed ice surface",
+        "player number 30 clearly visible"
+      ],
+      "symbolic_mapping": [
+        "numbered jersey and marked ice denote structured temporality within sport"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The numbered athlete on marked ice embodies labor within a temporally bounded system: the circle signifies a zone of action, the number denotes replaceable role, and the fall interrupts but does not end the sequence—echoing cyclical labor under institutional time.",
+      "alternative_interpretations": [
+        "The blue circle is simply part of the rink’s face-off dot design, with no symbolic function intended."
+      ],
+      "limitations": [
+        "The blue circle is partially cropped and its full shape is not visible; its purpose cannot be confirmed from image alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:37:33.660135+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b2444403-612c-95ed-b044-599332e2ec2f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1029,
+        "total_tokens": 2562,
+        "completion_tokens_details": {
+          "text_tokens": 1029
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701371958eafac5f2564729",
+      "usage": {
+        "completion_tokens": 886,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2975,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3861
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

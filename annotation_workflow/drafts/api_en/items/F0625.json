@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0625",
+  "sample_id": "PHL1800_IRFL_0315",
+  "file_name": "PHL1800_IRFL_0315.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a silver Chevrolet pickup truck",
+  "captions": {
+    "scene": [
+      "A paved two-lane road with double yellow center lines cuts through arid, rolling hills under a partly cloudy sky.",
+      "Sparse desert vegetation including several Joshua trees and low shrubs occupies the roadside embankment.",
+      "The background features undulating brownish hills with minimal vegetation and no visible structures."
+    ],
+    "action": [
+      "The truck is moving forward along the road, indicated by motion blur on the road surface and wheels.",
+      "The front wheels are slightly turned left, suggesting a gentle curve or lane adjustment.",
+      "The vehicle maintains a consistent distance from the right edge of the road, aligned with the lane markings."
+    ],
+    "rationale": [
+      "Motion blur on the asphalt and tires implies forward motion rather than static positioning.",
+      "The slight steering angle of the front wheels suggests active directional control, not coasting straight.",
+      "The absence of visible occupants in the cabin prevents confirmation of driver presence or intent."
+    ],
+    "object": [
+      "The truck is a four-door crew cab model with a short bed, painted metallic silver with chrome trim accents.",
+      "The front grille features horizontal slats and a centered Chevrolet bowtie emblem; headlamp units are illuminated and integrated into the fascia.",
+      "Side mirrors are body-colored with integrated turn signals; door handles are chrome; a black running board is mounted below the doors.",
+      "Wheels are multi-spoke alloy with low-profile tires; brake calipers are not visible behind the spokes.",
+      "A small unreadable badge appears on the front fender near the wheel well, and another unreadable decal is present on the lower driver-side door."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0625_P1",
+      "visual_anchors": [
+        "motion blur on road surface",
+        "double yellow lines",
+        "isolated Joshua tree"
+      ],
+      "symbolic_mapping": [
+        "the road as a path of directed movement",
+        "the lone tree as endurance amid scarcity"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The image evokes a sense of deliberate traversal through a sparse landscape, where the marked road signifies constrained yet chosen directionality, while the enduring Joshua tree hints at persistence across temporal scales beyond human passage.",
+      "alternative_interpretations": [
+        "This is a standard automotive promotional shot emphasizing vehicle capability and aesthetic appeal in a scenic setting."
+      ],
+      "limitations": [
+        "No visible human agent or narrative context confirms intentional journey or existential reflection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0625_P2",
+      "visual_anchors": [
+        "silver truck exterior",
+        "chrome accents",
+        "clean body lines"
+      ],
+      "symbolic_mapping": [
+        "polished surface as curated identity",
+        "brand emblem as signifier of affiliation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The vehicle’s reflective finish and prominent branding function as visual extensions of social identity, projecting status and belonging through manufactured aesthetics in a public space.",
+      "alternative_interpretations": [
+        "The design choices reflect market-driven styling conventions for utility vehicles, not personal expression."
+      ],
+      "limitations": [
+        "No occupant or interaction is shown to ground identity claims in lived experience."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0625_P3",
+      "visual_anchors": [
+        "desert terrain",
+        "paved road cutting through natural land",
+        "truck occupying roadway"
+      ],
+      "symbolic_mapping": [
+        "road as human imposition on nature",
+        "vehicle as instrument of access and control"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The engineered road bisecting untamed terrain embodies the tension between technological enablement and environmental constraint, where mobility is granted only within constructed corridors.",
+      "alternative_interpretations": [
+        "The road is simply infrastructure enabling safe travel; its presence is functional, not symbolic."
+      ],
+      "limitations": [
+        "No signage, construction equipment, or ecological impact indicators confirm intentional contrast or critique."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:02:05.414174+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5ee3f9b8-9696-9712-84b2-0319fd50ff3c",
+      "usage": {
+        "prompt_tokens": 1060,
+        "completion_tokens": 895,
+        "total_tokens": 1955,
+        "completion_tokens_details": {
+          "text_tokens": 895
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 553,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030147b3da58f9176d4873",
+      "usage": {
+        "completion_tokens": 756,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2210,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2966
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0711",
+  "sample_id": "PHL1800_IRFL_0013",
+  "file_name": "PHL1800_IRFL_0013.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single human silhouette mid-air between two cliff edges",
+  "captions": {
+    "scene": [
+      "A silhouetted figure suspended against a sunset sky with a bright sun near the horizon and scattered clouds.",
+      "Two dark, irregular cliff edges frame the lower portion of the image, separated by a visible gap.",
+      "The sky transitions from orange near the sun to muted brownish-gray below the cloud layer."
+    ],
+    "action": [
+      "The figure is airborne with both legs extended forward and arms outstretched laterally, suggesting a leap.",
+      "The figure’s torso is upright and oriented toward the right cliff edge.",
+      "No contact is visible between the figure and either cliff surface; the figure occupies the empty space between them."
+    ],
+    "rationale": [
+      "The figure’s posture—legs apart, arms spread—matches biomechanical patterns of jumping or leaping observed in human locomotion.",
+      "The absence of any visible support beneath the figure implies motion through air rather than standing or hanging.",
+      "The alignment of the figure relative to the cliffs suggests directional intent toward the right edge, though no landing is depicted."
+    ],
+    "object": [
+      "A single human silhouette appears centrally in the vertical axis, positioned above the gap between two landmasses.",
+      "The sun is a bright, circular disc located slightly above the horizontal midline and centered horizontally in the upper half of the image.",
+      "Cloud formations appear as diffuse, irregular patches below and to the right of the sun, rendered in warm tones.",
+      "The left cliff edge rises from the bottom-left corner with a jagged top contour and a flat inner face facing the gap.",
+      "The right cliff edge rises from the bottom-right corner with a similarly jagged top and an inward-facing vertical face."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0711_P1",
+      "visual_anchors": [
+        "mid-air human silhouette",
+        "gap between cliffs",
+        "setting sun"
+      ],
+      "symbolic_mapping": [
+        "the gap maps to uncertainty or risk",
+        "the leap maps to decisive action"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually enacts a moment of volitional transition where agency is exercised across an unsecured interval, embodying the philosophical tension between self-determination and environmental limitation.",
+      "alternative_interpretations": [
+        "A literal depiction of a stunt performer executing a controlled jump between rock formations at golden hour."
+      ],
+      "limitations": [
+        "No visual evidence confirms intentionality, outcome, or context beyond the instantaneous pose and setting."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0711_P2",
+      "visual_anchors": [
+        "silhouette against luminous sun",
+        "lack of facial or bodily detail",
+        "uniform black fill of figure"
+      ],
+      "symbolic_mapping": [
+        "silhouette maps to anonymity or universal subject"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The erasure of individual features through backlighting renders the figure a generic placeholder, inviting reflection on how identity is constructed or dissolved in moments of existential exposure.",
+      "alternative_interpretations": [
+        "The silhouette results from strong backlighting typical of sunset photography, not deliberate abstraction."
+      ],
+      "limitations": [
+        "The figure’s gender, age, and attire are indiscernible due to silhouette rendering, preventing confirmation of intentional anonymity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0711_P3",
+      "visual_anchors": [
+        "sun near horizon",
+        "figure suspended at peak height",
+        "static composition"
+      ],
+      "symbolic_mapping": [
+        "sunset maps to temporal finitude",
+        "mid-leap maps to suspended possibility"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of a transient celestial event with a frozen moment of human motion evokes the philosophical idea that meaningful choice occurs within bounded time, where action must be taken before closure arrives.",
+      "alternative_interpretations": [
+        "The image captures a high-speed photograph of a jump timed to coincide with sunset for aesthetic contrast."
+      ],
+      "limitations": [
+        "The exact duration of the leap and the sun’s position relative to true sunset cannot be determined from a single frame."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:39:29.115787+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b4a32d6f-e154-98c2-8ce9-a729c8ec5b06",
+      "usage": {
+        "prompt_tokens": 3010,
+        "completion_tokens": 934,
+        "total_tokens": 3944,
+        "completion_tokens_details": {
+          "text_tokens": 934
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2503,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013907db8fe77f4eb04d85",
+      "usage": {
+        "completion_tokens": 796,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7071,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 7867
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

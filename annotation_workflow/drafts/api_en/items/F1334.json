@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1334",
+  "sample_id": "PHL1800_MM_0116",
+  "file_name": "PHL1800_MM_0116.jpg",
+  "batch_id": "B028",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man standing at a wooden podium in a formal room",
+  "captions": {
+    "scene": [
+      "A formal indoor setting with golden drapes, an American flag to the left, and a dark blue flag to the right.",
+      "Multiple seated individuals facing the speaker, viewed from behind; at least four distinct people are visible.",
+      "A polished wooden floor with a patterned rug beneath the podium."
+    ],
+    "action": [
+      "The man stands upright behind a rectangular wooden podium with both hands resting on its surface.",
+      "A microphone is positioned on the podium directly in front of the man’s mouth.",
+      "A speech bubble containing English text appears near the man’s head, originating from a small white circle."
+    ],
+    "rationale": [
+      "The presence of flags, formal attire, and a podium suggests an official or ceremonial context, though no insignia confirms institutional affiliation.",
+      "The speech bubble is clearly superimposed and not part of the original scene, indicating digital alteration.",
+      "The seated audience members face forward but show no visible reaction; their postures are neutral and static."
+    ],
+    "object": [
+      "The man wears a dark navy suit, white collared shirt, and a red-and-white diagonally striped tie with a small lapel pin on his left lapel.",
+      "The podium is made of reddish-brown wood with a flat top and a single central support column.",
+      "The American flag displays 50 white stars on a blue canton and alternating red and white stripes; it hangs vertically behind the man’s left shoulder.",
+      "Four seated individuals are visible: two on the left (one bald man, one woman with long brown hair), one partially visible on the far right (woman with shoulder-length brown hair), and one blurred foreground figure whose back and chair are visible.",
+      "The speech bubble contains the legible English text: 'Haha! We, Americans, are quite friendly.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1334_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "American flag",
+        "formal podium"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents constructed public utterance",
+        "the flag signifies national identity as backdrop"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image stages a tension between performative national identity and the mediated nature of public speech, where friendliness is declared rather than demonstrated.",
+      "alternative_interpretations": [
+        "The speech bubble may be a satirical edit added post-capture, unrelated to the original event."
+      ],
+      "limitations": [
+        "No evidence confirms whether the man spoke these words or whether the bubble existed at the time of capture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1334_P2",
+      "visual_anchors": [
+        "seated audience viewed from behind",
+        "man at podium",
+        "golden drapes"
+      ],
+      "symbolic_mapping": [
+        "audience anonymity reflects passive reception",
+        "drapes evoke theatrical framing"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "knowledge_truth"
+      ],
+      "interpretation": "The spatial arrangement—speaker elevated and centered, audience obscured and silent—evokes asymmetrical knowledge distribution and authority over narrative construction.",
+      "alternative_interpretations": [
+        "The composition follows standard press briefing conventions, with no intentional symbolic hierarchy implied."
+      ],
+      "limitations": [
+        "Audience members’ attention direction and posture are ambiguous; some may be looking elsewhere."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1334_P3",
+      "visual_anchors": [
+        "man’s hands on podium",
+        "microphone placement",
+        "static facial expression"
+      ],
+      "symbolic_mapping": [
+        "hands on podium indicate control or containment",
+        "microphone as conduit for sanctioned speech"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The physical restraint of posture and equipment suggests institutional constraint on expression, raising questions about responsibility in curated public discourse.",
+      "alternative_interpretations": [
+        "The man is simply standing normally during a routine address; no constraint is visually evident."
+      ],
+      "limitations": [
+        "Facial expression is neutral and cannot confirm internal state or intent; posture is common in formal speaking contexts."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:19:16.434233+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b43b8c3e-70c3-98f1-bf5b-c0e593035731",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 934,
+        "total_tokens": 2467,
+        "completion_tokens_details": {
+          "text_tokens": 934
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041838623867feccbe424e",
+      "usage": {
+        "completion_tokens": 794,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2886,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3680
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

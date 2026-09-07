@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0904",
+  "sample_id": "PHL1800_HAIV_0125",
+  "file_name": "PHL1800_HAIV_0125.png",
+  "batch_id": "B020",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two overlapping human face profiles with a knife",
+  "captions": {
+    "scene": [
+      "A white background with two black-ink line-drawn face profiles partially overlapping.",
+      "One face is oriented leftward, the other rightward; both show eyes, eyebrows, noses, and mouths in sketch style.",
+      "A purple-bladed knife with black handle is held diagonally across the lower central area, intersecting both faces."
+    ],
+    "action": [
+      "A hand (visible only as fingers gripping the knife handle) holds the knife in a static position.",
+      "The knife blade lies across the mouth and chin region of the left-facing profile and near the cheek of the right-facing profile.",
+      "Both faces are depicted without motion indicators; no expression lines beyond basic features are present."
+    ],
+    "rationale": [
+      "The overlapping outlines suggest intentional compositional layering rather than accidental overlap, based on consistent line weight and alignment.",
+      "The knife’s placement across facial features may imply symbolic interaction, though no physical contact or deformation is drawn.",
+      "The absence of shading, context, or environmental cues prevents definitive classification of setting or intent."
+    ],
+    "object": [
+      "Two distinct human face profiles are rendered in black ink line art, each with one visible eye, eyebrow, nose, and mouth.",
+      "The left-facing profile has a wavy hairline and irregular jaw contour; the right-facing profile shows textured hair strands extending upward and outward.",
+      "A knife with a solid purple-colored blade and black handle is positioned diagonally from lower-left to upper-right across the image center.",
+      "The knife blade exhibits fine parallel striations suggesting texture or wear, and its tip points toward the upper right quadrant.",
+      "A partial hand appears at the lower right, with three visible fingers wrapped around the knife handle, drawn in minimal linework."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0904_P1",
+      "visual_anchors": [
+        "overlapping face profiles",
+        "knife crossing both mouths"
+      ],
+      "symbolic_mapping": [
+        "intersecting faces → contested identity",
+        "blade over mouths → suppression of speech"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The superimposition of two faces with a blade traversing their oral regions visually evokes tension between self-representation and external imposition, suggesting identity as a site of conflict.",
+      "alternative_interpretations": [
+        "The image may simply depict a stylized portrait composition using juxtaposition and a decorative element, with no intended symbolism."
+      ],
+      "limitations": [
+        "No textual labels or contextual markers confirm symbolic intent; line art alone permits multiple readings."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0904_P2",
+      "visual_anchors": [
+        "single knife held by one hand",
+        "two faces sharing visual space"
+      ],
+      "symbolic_mapping": [
+        "shared visual field → interdependence",
+        "knife as mediator → forced proximity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The co-location of two faces under a single instrument implies relational entanglement where agency (the hand) introduces constraint or direction into shared existence.",
+      "alternative_interpretations": [
+        "The hand and knife may belong to a third unseen figure, making the scene a tripartite interaction rather than dyadic."
+      ],
+      "limitations": [
+        "The hand is only partially visible and not clearly attached to either face, leaving authorship ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0904_P3",
+      "visual_anchors": [
+        "asymmetrical line quality",
+        "purple blade against monochrome faces"
+      ],
+      "symbolic_mapping": [
+        "color accent on blade → focal disruption",
+        "rough linework → instability of perception"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The selective use of color on the knife amid otherwise monochrome rendering highlights it as an epistemic rupture—introducing doubt or violence into the act of seeing or knowing the faces.",
+      "alternative_interpretations": [
+        "Purple may be an arbitrary aesthetic choice with no semantic function, especially given the sketch-like medium."
+      ],
+      "limitations": [
+        "Color application is limited to one object and lacks supporting motifs; its significance cannot be verified from image alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:26:47.155852+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-45b624d5-6612-95e2-b4a7-72b83cf18464",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 942,
+        "total_tokens": 2475,
+        "completion_tokens_details": {
+          "text_tokens": 942
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703262361be3f275d244b09",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2903,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3710
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

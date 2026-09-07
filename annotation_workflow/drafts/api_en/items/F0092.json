@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0092",
+  "sample_id": "PHL1800_IRFL_0499",
+  "file_name": "PHL1800_IRFL_0499.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a glass mason jar filled with pale yellow liquid, surrounded by whole lemons and limes",
+  "captions": {
+    "scene": [
+      "A clear glass mason jar sits centrally on a dark matte surface, flanked by citrus fruits.",
+      "Multiple whole yellow lemons and green limes are arranged loosely around the base of the jar.",
+      "The background is uniformly dark and out-of-focus, emphasizing the foreground objects."
+    ],
+    "action": [
+      "The jar contains a translucent, pale yellow liquid at approximately three-quarters full.",
+      "Citrus fruits rest stationary on the surface, some partially overlapping others.",
+      "Light reflects off the jar’s rim and curved surface, indicating a direct light source from the front-left."
+    ],
+    "rationale": [
+      "The liquid’s color and surrounding citrus suggest it may be citrus juice, but no labeling or pouring action confirms this.",
+      "The jar appears to be a standard wide-mouth mason jar, evidenced by its threaded rim and embossed markings, though the text is unreadable.",
+      "No motion blur or splashes are present, so the scene is static; however, the arrangement implies intentional staging rather than accidental placement."
+    ],
+    "object": [
+      "A transparent glass mason jar with a threaded metal-lid rim and faint embossed lettering that is not legible.",
+      "At least six whole citrus fruits are visible: four yellow lemons and two green limes in the foreground, plus two additional green limes partially obscured behind the jar.",
+      "The liquid inside the jar is homogeneous, non-carbonated, and has a slight opacity with no visible pulp or sediment.",
+      "One lemon in the lower-left foreground shows a small stem scar and minor surface texture imperfections.",
+      "One lime in the lower-right foreground displays a glossy skin with a visible oil gland pattern and a small navel-like indentation."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0092_P1",
+      "visual_anchors": [
+        "embossed but unreadable jar markings",
+        "uniformly dark background",
+        "symmetrical fruit arrangement"
+      ],
+      "symbolic_mapping": [
+        "unreadable text → obscured origin or authorship",
+        "dark void background → absence of context"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The unreadable embossing on the jar, paired with the isolating dark background, evokes epistemic limitation: the object’s provenance and composition remain partially unknowable despite visual clarity.",
+      "alternative_interpretations": [
+        "The jar is simply a container for homemade juice, and the markings are standard manufacturing identifiers not meant to be read in this context."
+      ],
+      "limitations": [
+        "No legible text exists to confirm whether the markings convey functional, brand, or symbolic information."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0092_P2",
+      "visual_anchors": [
+        "whole uncut citrus fruits",
+        "liquid contained within jar",
+        "no tools or human presence"
+      ],
+      "symbolic_mapping": [
+        "intact fruit → potentiality",
+        "contained liquid → realized transformation"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of raw, whole citrus and their extracted juice embodies a silent transition from latent possibility to enacted outcome, suggesting an unobserved but decisive act of selection and processing.",
+      "alternative_interpretations": [
+        "The fruits and juice are displayed together for aesthetic or culinary presentation, with no narrative implied."
+      ],
+      "limitations": [
+        "No evidence of prior or subsequent actions (e.g., juicer, cut fruit, spillage) confirms transformation occurred here."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0092_P3",
+      "visual_anchors": [
+        "glass transparency",
+        "citrus skin texture",
+        "contrast between yellow and green"
+      ],
+      "symbolic_mapping": [
+        "transparency of jar → visibility of content",
+        "skin texture → natural imperfection"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The jar’s transparency reveals its contents plainly, while the fruits’ textured skins resist idealized smoothness—highlighting tension between revealed essence and surface appearance as constitutive of identity.",
+      "alternative_interpretations": [
+        "The image is a food photography setup emphasizing freshness and color contrast for commercial appeal."
+      ],
+      "limitations": [
+        "No facial features, clothing, or personal artifacts are present to ground identity in a human subject."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:59:12.295749+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-53c766cb-f127-9b00-8cca-b29b05a3bec6",
+      "usage": {
+        "prompt_tokens": 993,
+        "completion_tokens": 962,
+        "total_tokens": 1955,
+        "completion_tokens_details": {
+          "text_tokens": 962
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 486,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701581540abed29b6254709",
+      "usage": {
+        "completion_tokens": 827,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2228,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3055
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

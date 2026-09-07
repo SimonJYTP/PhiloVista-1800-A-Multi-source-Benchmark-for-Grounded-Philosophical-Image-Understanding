@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1398",
+  "sample_id": "PHL1800_HL_0269",
+  "file_name": "PHL1800_HL_0269.png",
+  "batch_id": "B029",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large military transport aircraft on display with a crowd of civilians and one uniformed person nearby",
+  "captions": {
+    "scene": [
+      "A camouflaged four-engine military transport aircraft parked on an open tarmac under a partly cloudy sky, with a low building to the left and distant hills.",
+      "A diverse group of approximately 50–60 people, including adults and children, scattered across the tarmac in front of and beside the aircraft.",
+      "A single person in a green camouflage uniform walks across the foreground from right to left, while others stand, sit, or push strollers."
+    ],
+    "action": [
+      "The aircraft is stationary on the ground with landing gear deployed and no visible motion blur.",
+      "Multiple individuals are walking, standing, or seated; some hold cameras; one adult pushes a stroller with a child inside.",
+      "A person in camouflage uniform strides forward with arms swinging, head facing forward, and legs mid-stride."
+    ],
+    "rationale": [
+      "The aircraft’s size, high T-tail, and four engines suggest it is a heavy-lift transport; however, specific model identification requires readable markings, which are not legible here.",
+      "The presence of casual clothing, strollers, and cameras suggests a public event rather than active military operation, but no signage confirms this.",
+      "The uniformed individual’s posture and isolation from the crowd imply possible security or escort duty, yet no insignia or equipment confirms role or affiliation."
+    ],
+    "object": [
+      "The aircraft features a green-and-brown disruptive camouflage pattern, a high-mounted T-tail with a vertical stabilizer bearing a small unreadable insignia near its tip, and four turboprop engines with visible propeller hubs.",
+      "A concrete tarmac surface occupies the foreground and midground, showing faint tire marks and minor debris, with no painted lines or markings visible.",
+      "At least 8 children are visible: 3 in the left cluster (one in pink shorts, one in white shirt, one in blue), 2 near center (one in green tank top, one in white), 3 on right (two in blue shirts, one in striped shirt), and 2 more partially obscured near canopies.",
+      "A black folding chair with red fabric sits unoccupied near center-left, next to a small red-and-white cooler or bag.",
+      "Two white canopies appear in the background behind the aircraft, with indistinct figures beneath them; their structure is supported by poles and fabric."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1398_P1",
+      "visual_anchors": [
+        "camouflage paint scheme",
+        "civilian crowd surrounding military hardware",
+        "uniformed individual walking separately"
+      ],
+      "symbolic_mapping": [
+        "camouflage as concealment vs. visibility in public space",
+        "proximity without participation as symbolic distance"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of militarized concealment (camouflage) with open public exposure reveals tension between institutional secrecy and civic transparency, where the crowd’s passive observation underscores a mediated relationship to state power.",
+      "alternative_interpretations": [
+        "This may simply be an airshow display with no intended symbolism; the camouflage serves only functional identification purposes for the aircraft type."
+      ],
+      "limitations": [
+        "No readable text, insignia, or contextual signage confirms intent or affiliation, making symbolic reading speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1398_P2",
+      "visual_anchors": [
+        "child in stroller",
+        "adult pushing stroller",
+        "uniformed person walking alone"
+      ],
+      "symbolic_mapping": [
+        "stroller as dependency and care",
+        "solitary uniformed figure as institutional duty"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The contrast between embodied care (stroller) and detached institutional labor (uniformed walker) highlights how identity is shaped through relational roles versus assigned function, especially when technology (aircraft) mediates both.",
+      "alternative_interpretations": [
+        "The stroller and uniformed person are coincidental spatial placements with no thematic connection; the image captures random moments at a public gathering."
+      ],
+      "limitations": [
+        "No facial expressions, interaction, or directional gaze links the stroller user and uniformed person; causality or meaning is absent in visual data."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1398_P3",
+      "visual_anchors": [
+        "partly cloudy sky",
+        "static aircraft",
+        "crowd dispersed across space"
+      ],
+      "symbolic_mapping": [
+        "clouds as temporal flux",
+        "aircraft as frozen capability"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The stillness of the machine against the transient human assembly under shifting clouds evokes the philosophical contrast between enduring technological artifacts and the fleeting nature of collective human experience—each person present embodies a unique, unrepeatable moment amid shared spectacle.",
+      "alternative_interpretations": [
+        "The sky and crowd distribution reflect typical weather and crowd behavior at outdoor events; no deeper temporal commentary is visually encoded."
+      ],
+      "limitations": [
+        "Cloud movement cannot be inferred from a single frame; ‘fleeting’ is an interpretive projection, not observable fact."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of children (12 claimed, but visual inspection shows fewer distinct individuals); unsupported claim of umbrellas (none visible); inaccurate object description of tents (structures appear as canopies, not tents)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:27:38.352963+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-eb3d2a70-3597-9706-b6ff-171c7e4a5e95",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1174,
+        "total_tokens": 1943,
+        "completion_tokens_details": {
+          "text_tokens": 1174
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042713e2b442b6e6964672",
+      "usage": {
+        "completion_tokens": 1139,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2092,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3231
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

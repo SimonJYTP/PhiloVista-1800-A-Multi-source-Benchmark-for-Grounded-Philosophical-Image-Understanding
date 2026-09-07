@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0338",
+  "sample_id": "PHL1800_IRFL_0213",
+  "file_name": "PHL1800_IRFL_0213.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals engaged in a handshake while one conceals fingers behind their back",
+  "captions": {
+    "scene": [
+      "A dimly lit interior with a textured gray wall background and warm backlighting creating lens flare.",
+      "Two people stand close, partially cropped at shoulders and waist, wearing formal dark attire.",
+      "One person’s right hand is extended forward in a handshake; the other’s left hand is visible behind their back."
+    ],
+    "action": [
+      "The left-hand individual’s right hand grips the right-hand individual’s right hand in a standard handshake posture.",
+      "The right-hand individual’s left hand is held behind their back with index and middle fingers crossed, thumb extended outward.",
+      "Both individuals remain stationary in mid-interaction, with no motion blur or dynamic posture change evident."
+    ],
+    "rationale": [
+      "The crossed fingers behind the back may indicate insincerity, but this gesture alone does not confirm intent without contextual cues.",
+      "The handshake suggests agreement or greeting, yet the concealed gesture introduces ambiguity about mutual consent or honesty.",
+      "The lighting and shallow depth of field focus attention on the hands, implying deliberate compositional emphasis on the duality of gesture."
+    ],
+    "object": [
+      "A person on the left wears a dark long-sleeved garment and extends their right hand to grasp another’s hand.",
+      "A person on the right wears a dark suit jacket with lapels visible and holds their left hand behind their torso with fingers crossed.",
+      "The handshake occurs at approximately waist height, with both hands fully interlocked and palms facing inward.",
+      "A bright light source from the upper right creates a lens flare and casts a warm glow across the right person’s shoulder and sleeve.",
+      "The background consists of a mottled gray surface with irregular texture, possibly concrete or plaster, showing no discernible markings or text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0338_P1",
+      "visual_anchors": [
+        "crossed fingers behind back",
+        "handshake grip",
+        "backlit silhouette"
+      ],
+      "symbolic_mapping": [
+        "crossed fingers → hidden contradiction",
+        "handshake → public agreement"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes the tension between social performance and private reservation, where external conformity (handshake) coexists with internal dissent (crossed fingers), raising questions about moral accountability in relational acts.",
+      "alternative_interpretations": [
+        "The crossed fingers may be an unconscious habit or unrelated to the handshake, such as adjusting clothing or holding an object out of frame."
+      ],
+      "limitations": [
+        "No facial expressions, eye contact, or verbal context is visible to confirm intentional deception or symbolic meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0338_P2",
+      "visual_anchors": [
+        "dual hand positions",
+        "asymmetrical lighting",
+        "cropped torsos"
+      ],
+      "symbolic_mapping": [
+        "handshake → shared commitment",
+        "concealed hand → withheld autonomy"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of an open gesture and a hidden one reflects constrained agency: participation in a socially mandated act while retaining a private locus of refusal or reservation, embodying the paradox of choice within structural expectations.",
+      "alternative_interpretations": [
+        "The person may simply be holding something behind their back (e.g., a phone or document) with no symbolic intent."
+      ],
+      "limitations": [
+        "The object behind the back is fully occluded; its nature and purpose cannot be determined from visual evidence alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0338_P3",
+      "visual_anchors": [
+        "warm backlight",
+        "textured wall",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "light gradient → epistemic uncertainty",
+        "handshake → provisional truth claim"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The image stages a moment where consensus is visually enacted yet undermined by a concealed counter-gesture, suggesting that social truths are often performative and contingent, dependent on what remains unseen or unacknowledged.",
+      "alternative_interpretations": [
+        "The lighting is purely technical (e.g., studio setup) and carries no symbolic weight; the scene may depict a routine business interaction without irony."
+      ],
+      "limitations": [
+        "No textual labels, logos, or environmental markers exist to anchor the scene in a specific discourse or institution."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:35:13.145266+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5c6a16c6-438f-9e86-9e53-0e8ab375f3d4",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 990,
+        "total_tokens": 1569,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070234523e267c644ba84fee",
+      "usage": {
+        "completion_tokens": 851,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1649,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2500
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

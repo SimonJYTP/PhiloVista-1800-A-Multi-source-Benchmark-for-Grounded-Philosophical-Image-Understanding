@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1782",
+  "sample_id": "PHL1800_MM_0015",
+  "file_name": "PHL1800_MM_0015.jpg",
+  "batch_id": "B036",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two women seated at a conference table",
+  "captions": {
+    "scene": [
+      "A modern office interior with large floor-to-ceiling windows showing a blurred cityscape background.",
+      "A round wooden conference table with two occupied chairs and one empty black chair visible.",
+      "Neutral-toned walls and ceiling fixtures suggest a corporate meeting room setting."
+    ],
+    "action": [
+      "The woman on the right sits upright, hands resting on a white notepad, eyes directed downward toward it.",
+      "The woman on the left is in profile, facing right, with her left hand resting on the table near a smartwatch.",
+      "A speech bubble originates from the woman on the right, containing legible English text."
+    ],
+    "rationale": [
+      "The speech bubble’s placement near the right woman’s head suggests attribution to her, though no mouth movement confirms utterance.",
+      "The presence of a smartphone and notepad on the table indicates a formal or semi-formal meeting context.",
+      "The lack of visible facial expressions beyond neutral gaze prevents confirmation of emotional state or intent."
+    ],
+    "object": [
+      "A woman with shoulder-length brown hair wears a dark blazer over a white collared shirt and a delicate necklace; she sits with both hands on a white rectangular notepad.",
+      "A second woman with dark hair wears a dark blazer, white shirt, and patterned tie; her left wrist bears a black smartwatch, and her left hand rests on the table surface.",
+      "A black smartphone lies screen-down on the table between the two women.",
+      "A black ergonomic office chair is unoccupied to the right of the rightmost woman.",
+      "A white oval speech bubble with black sans-serif text reads: 'This meeting is dragging; let me check the score real quick.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1782_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "notepad under hands",
+        "smartphone on table"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents internal thought externalized",
+        "the notepad and phone symbolize competing modes of attention"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the tension between social obligation (attending the meeting) and personal autonomy (desire to disengage for private interest), manifesting as an internal monologue made visible.",
+      "alternative_interpretations": [
+        "The speech bubble may be a graphic overlay added post-capture, not part of the original scene; the women may simply be reviewing documents silently."
+      ],
+      "limitations": [
+        "No visible lip movement, eye contact, or gesture confirms the speech bubble reflects actual cognition rather than editorial addition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1782_P2",
+      "visual_anchors": [
+        "woman looking down at notepad",
+        "neutral facial expression",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "downcast gaze signifies withdrawal from shared discourse",
+        "formal dress enforces role conformity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The subject’s embodied posture—visually compliant yet mentally diverted—illustrates how institutional roles constrain authentic presence, revealing identity as performative under professional scrutiny.",
+      "alternative_interpretations": [
+        "The downward gaze may indicate concentration on notes, not disengagement; the attire is standard business wear without implied coercion."
+      ],
+      "limitations": [
+        "Facial expression is minimally detailed; no contextual cues confirm conflict or performance intent."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1782_P3",
+      "visual_anchors": [
+        "blurred cityscape through window",
+        "round table",
+        "two participants facing each other"
+      ],
+      "symbolic_mapping": [
+        "window transparency contrasts with opaque interior focus",
+        "circular table implies equality but seating arrangement suggests hierarchy"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of external openness (window) and internal constraint (meeting dynamics) frames knowledge acquisition as situated within bounded choices, where truth-seeking competes with pragmatic diversion.",
+      "alternative_interpretations": [
+        "The window view is purely environmental; the table shape has no symbolic intent—it is functional furniture."
+      ],
+      "limitations": [
+        "No textual or behavioral evidence links the window view to epistemic themes; circular tables are common in corporate design without ideological implication."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:13:28.310782+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-135e2cdf-6cf1-95d3-963f-985d1d3f0074",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 973,
+        "total_tokens": 2506,
+        "completion_tokens_details": {
+          "text_tokens": 973
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070513074f6294bb39ed4d7f",
+      "usage": {
+        "completion_tokens": 834,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2924,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3758
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

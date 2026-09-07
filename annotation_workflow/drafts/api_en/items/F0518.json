@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0518",
+  "sample_id": "PHL1800_IRFL_0156",
+  "file_name": "PHL1800_IRFL_0156.jpg",
+  "batch_id": "B012",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a green sticky note pinned to a corkboard",
+  "captions": {
+    "scene": [
+      "A lime-green rectangular paper note is affixed to a brown textured cork surface.",
+      "A red spherical pushpin secures the top center of the note to the corkboard.",
+      "The background consists solely of uniformly granular cork material with no other objects visible."
+    ],
+    "action": [
+      "The note remains stationary, held in place by the pushpin.",
+      "The pushpin is embedded vertically into the corkboard and through the note.",
+      "Handwritten black text on the note reads 'See You Soon' in two lines."
+    ],
+    "rationale": [
+      "The note’s color and shape suggest it is a standard adhesive memo sheet; this is consistent with common office supplies but not definitively verifiable from image alone.",
+      "The text appears handwritten with a marker or pen; stroke width and slight irregularity support this, though tool type cannot be confirmed.",
+      "No human presence or motion is visible; any inference about authorship or intended recipient lacks visual support."
+    ],
+    "object": [
+      "The sticky note is rectangular, bright green, and occupies the central region of the frame.",
+      "A single red pushpin with a smooth spherical head is inserted through the upper-middle portion of the note.",
+      "The text 'See You Soon' is written in black ink across two centered lines: 'See You' on the first, 'Soon' on the second.",
+      "The corkboard background exhibits a coarse, porous texture with small dark specks and minor tonal variation.",
+      "The lighting creates a soft shadow beneath the note’s lower edge and a subtle highlight on the pushpin’s dome."
+    ]
+  },
+  "rationale_support": [
+    "commonsense_inference",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0518_P1",
+      "visual_anchors": [
+        "green sticky note",
+        "handwritten phrase 'See You Soon'",
+        "red pushpin"
+      ],
+      "symbolic_mapping": [
+        "the phrase signifies temporal anticipation",
+        "the pin fixes a transient message in physical space"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The note embodies a socially mediated promise of future reconnection, anchoring ephemeral intention in material form—highlighting how human continuity relies on symbolic gestures that bridge absence and presence.",
+      "alternative_interpretations": [
+        "It is a routine administrative reminder with no deeper significance, such as scheduling a meeting."
+      ],
+      "limitations": [
+        "No context confirms whether the message was sent, received, or acted upon; the note could be unused or abandoned."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0518_P2",
+      "visual_anchors": [
+        "black handwritten text",
+        "uniform green background",
+        "central alignment of words"
+      ],
+      "symbolic_mapping": [
+        "handwriting implies personal agency",
+        "simplicity of layout emphasizes directness over ornament"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The deliberate choice of minimal, legible script on a vivid field reflects an assertion of individual voice within constrained communicative formats—suggesting identity expressed through intentional, bounded self-presentation.",
+      "alternative_interpretations": [
+        "The handwriting style is generic and could be produced by anyone; no unique identity markers are present."
+      ],
+      "limitations": [
+        "Handwriting cannot be attributed to a specific person; stylistic features like slant or letter formation are insufficient for identification."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0518_P3",
+      "visual_anchors": [
+        "red pushpin",
+        "note pinned against cork",
+        "phrase 'Soon'"
+      ],
+      "symbolic_mapping": [
+        "the pin enacts constraint on mobility",
+        "the word 'Soon' defers resolution indefinitely"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The physical fixation of a temporally open-ended promise illustrates how social obligations can immobilize intention—binding hope to a location while postponing its fulfillment, thus revealing tension between commitment and autonomy.",
+      "alternative_interpretations": [
+        "The pin merely serves a functional purpose to prevent the note from falling; no symbolic weight is intended."
+      ],
+      "limitations": [
+        "No evidence indicates the note’s duration of attachment or whether 'Soon' refers to minutes, days, or longer; temporal vagueness prevents precise interpretation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:53:28.295929+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e4df52d0-da4c-9be9-aad0-d07e2d6cd603",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 953,
+        "total_tokens": 1534,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 74,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025308d2242627764a4ddd",
+      "usage": {
+        "completion_tokens": 816,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1633,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2449
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

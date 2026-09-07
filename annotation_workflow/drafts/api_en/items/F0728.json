@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0728",
+  "sample_id": "PHL1800_MM_0012",
+  "file_name": "PHL1800_MM_0012.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three business-dressed individuals in a conference room setting",
+  "captions": {
+    "scene": [
+      "A modern office conference room with large windows, light wood tables, and gray vertical wall panels.",
+      "Three adults are positioned around a rectangular wooden table: one standing on the left, two seated on the right side.",
+      "The lighting is bright and diffuse, suggesting daytime illumination from the windows behind the seated individuals."
+    ],
+    "action": [
+      "The standing woman holds loose sheets of paper in both hands and faces the seated men, mouth slightly open as if speaking.",
+      "The central seated man has arms crossed, gazes toward the woman, and wears a dark suit with a blue striped tie.",
+      "The rightmost seated man wears glasses and a dark suit, looks toward the woman, and rests his forearms on the table."
+    ],
+    "rationale": [
+      "The woman’s posture and paper-holding suggest she is presenting; this is consistent with common meeting behavior but not definitively confirmed by visual evidence alone.",
+      "The seated men’s orientation toward the woman indicates attention, but their facial expressions do not confirm comprehension or agreement.",
+      "A speech bubble containing legible text appears above the woman’s head, implying internal thought or narration, though no visible brain activity or vocalization confirms its source."
+    ],
+    "object": [
+      "A woman with shoulder-length brown hair wears a black pinstripe suit jacket over a white collared shirt and matching trousers.",
+      "A stack of white papers lies flat on the table surface near the center, separate from the papers held by the woman.",
+      "The central seated man has short dark hair, a trimmed beard, and wears a navy suit with a light blue shirt and diagonally striped blue-and-white tie.",
+      "The rightmost seated man has short brown hair, wears thin-rimmed eyeglasses, a navy suit, white shirt, and a dark tie partially obscured by his arm.",
+      "The conference table is light-toned wood with visible grain, rectangular, and supported by black metal legs with casters."
+    ]
+  },
+  "rationale_support": [
+    "commonsense_inference",
+    "commonsense_inference",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0728_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "woman holding documents",
+        "seated men facing her"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents internal evaluation of external output",
+        "the documents symbolize codified knowledge presented for judgment"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image stages a moment where propositional content (the proposals) is externally manifested while internal assessment ('remarkably thorough') occurs separately, highlighting the epistemic gap between presentation and judgment.",
+      "alternative_interpretations": [
+        "The speech bubble may be a narrative device added post-production, not part of the scene’s diegetic reality."
+      ],
+      "limitations": [
+        "No visible facial microexpressions confirm the seated men’s cognitive response; the thought is attributed solely via the bubble."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0728_P2",
+      "visual_anchors": [
+        "formal attire",
+        "hierarchical spatial arrangement",
+        "table as boundary"
+      ],
+      "symbolic_mapping": [
+        "the standing position signifies active role versus passive reception",
+        "the table functions as a social demarcation line"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The spatial configuration—standing presenter versus seated evaluators—visually encodes asymmetrical authority, where legitimacy of proposals depends on approval from those physically positioned lower in the frame.",
+      "alternative_interpretations": [
+        "The arrangement may reflect standard meeting protocol rather than power imbalance; seating could be due to chair availability or prior arrangement."
+      ],
+      "limitations": [
+        "No gestures, eye contact intensity, or body language definitively indicate dominance or subordination."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0728_P3",
+      "visual_anchors": [
+        "identical suit styles",
+        "neutral expressions",
+        "uniform lighting"
+      ],
+      "symbolic_mapping": [
+        "standardized dress signals professional role over individual identity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The convergence of appearance—matching dark suits, minimal accessories, restrained posture—suggests identity is subsumed under institutional role, raising questions about authenticity in professional contexts.",
+      "alternative_interpretations": [
+        "Attire reflects industry norms rather than intentional erasure of individuality."
+      ],
+      "limitations": [
+        "Hair color, cut, and facial features differ among individuals, indicating retained physical distinctiveness despite sartorial uniformity."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:11:30.139734+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0fea1bfc-c1cb-948b-921b-86cc74198b71",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 993,
+        "total_tokens": 2526,
+        "completion_tokens_details": {
+          "text_tokens": 993
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070311124b2bd4d59f144ccf",
+      "usage": {
+        "completion_tokens": 859,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2948,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3807
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

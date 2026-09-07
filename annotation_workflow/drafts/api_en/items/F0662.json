@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0662",
+  "sample_id": "PHL1800_IRFL_0429",
+  "file_name": "PHL1800_IRFL_0429.jpg",
+  "batch_id": "B015",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a cast-iron skillet containing a cooked food item with a face-like pattern",
+  "captions": {
+    "scene": [
+      "A top-down view of a dark cast-iron skillet on a light beige background speckled with small brown stains.",
+      "The skillet holds a circular, pale-yellow food item surrounded by a ring of darker cooked material and liquid residue.",
+      "The food item displays a stylized facial expression formed by dark markings: two angular eyes and a wavy mouth."
+    ],
+    "action": [
+      "The food item appears stationary and fully cooked, with visible browning at the edges and surface bubbles.",
+      "Liquid residue (likely fat or oil) pools around the perimeter of the food within the skillet.",
+      "The skillet shows signs of use: discoloration, slight rust near the rim, and a worn handle."
+    ],
+    "rationale": [
+      "The facial features are intentionally shaped rather than random, suggesting deliberate design—though no tool or hand is visible to confirm intent.",
+      "The food’s texture and color gradient suggest it has undergone heating; however, no steam, flame, or heat source is visible to confirm active cooking.",
+      "The background stains resemble splatters, possibly from prior cooking, but their origin cannot be confirmed without motion or context."
+    ],
+    "object": [
+      "The skillet is round with a single looped handle extending upward and rightward, showing patina and minor corrosion.",
+      "Inside the skillet, a circular food mass occupies the center, with a thick dark ring encircling it and a lighter inner region forming the face.",
+      "Two black arrow-shaped marks serve as eyes, pointing inward and slightly downward; a black wavy line forms a downturned mouth beneath them.",
+      "The outer edge of the food mass contacts the skillet wall, where a thin layer of frothy white residue adheres to the metal.",
+      "No text, branding, or legible inscriptions appear on the skillet or food; all markings are pictorial only."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0662_P1",
+      "visual_anchors": [
+        "dark ring enclosing the face",
+        "wavy downturned mouth",
+        "isolated food item in skillet"
+      ],
+      "symbolic_mapping": [
+        "the ring suggests containment or boundary",
+        "the mouth conveys distress or resistance"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The enclosed face may symbolize an identity constrained by external conditions, where appearance (the face) expresses internal tension against imposed limits (the ring).",
+      "alternative_interpretations": [
+        "It could simply be a decorative food presentation using burnt edges for contrast, with no symbolic intent."
+      ],
+      "limitations": [
+        "No contextual cues confirm intentional symbolism; the face is abstract and non-representational."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0662_P2",
+      "visual_anchors": [
+        "cast-iron skillet",
+        "cooked food with browning",
+        "residue and stains"
+      ],
+      "symbolic_mapping": [
+        "skillet as tool of transformation",
+        "browning as irreversible change"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The image evokes labor through the utilitarian skillet and the irreversible alteration of raw material into cooked form, hinting at mortality via the finality of heat-induced change.",
+      "alternative_interpretations": [
+        "The stains may be accidental spills, not symbolic of decay; the cooking may be routine, not ritualistic."
+      ],
+      "limitations": [
+        "No evidence of human presence or intentionality in the cooking process is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0662_P3",
+      "visual_anchors": [
+        "two inward-pointing eyes",
+        "asymmetrical mouth",
+        "central placement in pan"
+      ],
+      "symbolic_mapping": [
+        "eyes suggest focus or scrutiny",
+        "central position implies subjecthood"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The face’s gaze and central positioning may reflect a being subjected to observation or judgment, raising questions about how truth or social recognition is constructed through visual framing.",
+      "alternative_interpretations": [
+        "The eyes are merely stylized shapes; the composition follows common food-plating symmetry, not philosophical staging."
+      ],
+      "limitations": [
+        "Facial features lack anatomical detail and are non-expressive beyond basic valence (negative), limiting interpretive depth."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:06:24.453044+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1a23b1d5-f235-9e3e-ae31-b8763b1fc16c",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 978,
+        "total_tokens": 1727,
+        "completion_tokens_details": {
+          "text_tokens": 978
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703055754cea91407444c0c",
+      "usage": {
+        "completion_tokens": 839,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1890,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2729
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

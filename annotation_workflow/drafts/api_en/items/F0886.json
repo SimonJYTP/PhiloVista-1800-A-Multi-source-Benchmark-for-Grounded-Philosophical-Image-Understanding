@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0886",
+  "sample_id": "PHL1800_IRFL_0369",
+  "file_name": "PHL1800_IRFL_0369.jpg",
+  "batch_id": "B019",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single light-brown dog lying on a sandy surface",
+  "captions": {
+    "scene": [
+      "A flat, light-gray granular surface resembling dry sand or fine gravel occupies the entire background and foreground.",
+      "No vegetation, structures, or other animals are visible in the frame.",
+      "The lighting is diffuse and even, with no strong shadows indicating overcast or indirect sunlight."
+    ],
+    "action": [
+      "The dog lies recumbent with its front legs extended forward and hind legs splayed to the left side.",
+      "Its head is lowered toward the ground, with the muzzle near the surface and eyes partially open but not focused on any object.",
+      "Ribs and vertebrae are visibly protruding through the skin along the torso, indicating low body condition."
+    ],
+    "rationale": [
+      "The dog’s posture suggests rest or exhaustion rather than active movement, based on limb positioning and lack of muscle tension.",
+      "Visible ribcage prominence implies reduced subcutaneous fat and muscle mass; however, cause (e.g., starvation, illness, age) cannot be determined from image alone.",
+      "The absence of collar, tags, or human presence does not confirm stray status; such items may be absent for multiple reasons including removal or non-use."
+    ],
+    "object": [
+      "The dog has short, light-tan fur with slightly darker shading along the dorsal spine and ear edges.",
+      "Its left ear is erect and pointed, while the right ear folds slightly inward at the tip.",
+      "The eyes are dark brown with visible sclera, and the nose is black and moist-looking.",
+      "The forelimbs show defined musculature only near the shoulders; distal limbs appear thin with visible joints.",
+      "The tail is not fully visible but appears to lie alongside the left hind leg, consistent with relaxed positioning."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0886_P1",
+      "visual_anchors": [
+        "protruding ribs",
+        "low head position",
+        "bare sandy ground"
+      ],
+      "symbolic_mapping": [
+        "exposed skeletal structure → vulnerability",
+        "ground contact without shelter → exposure to elemental forces"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "time_mortality"
+      ],
+      "interpretation": "The image evokes ethical questions about care obligations toward dependent beings, where bodily fragility signals temporal finitude and moral urgency.",
+      "alternative_interpretations": [
+        "This may simply document a naturally occurring state in a wild or free-roaming canine population without implying neglect."
+      ],
+      "limitations": [
+        "No contextual markers (e.g., human proximity, infrastructure, time of day) confirm intentionality or societal context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0886_P2",
+      "visual_anchors": [
+        "uniform sandy substrate",
+        "lack of distinguishing features",
+        "neutral gaze direction"
+      ],
+      "symbolic_mapping": [
+        "monotone environment → erasure of individuality",
+        "unmarked body → anonymity within ecological systems"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The dog’s indistinct setting and unadorned form suggest a being existing outside socially constructed categories, prompting reflection on how identity is conferred or denied.",
+      "alternative_interpretations": [
+        "The uniform background may result from photographic framing choice rather than ecological reality."
+      ],
+      "limitations": [
+        "Absence of comparative subjects prevents inference about social recognition or exclusion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0886_P3",
+      "visual_anchors": [
+        "stillness of body",
+        "open but unfocused eyes",
+        "absence of motion blur"
+      ],
+      "symbolic_mapping": [
+        "motionless repose → suspension between action and passivity",
+        "gaze directed downward → withdrawal from external engagement"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The dog’s immobile state—neither actively seeking nor resisting—invites contemplation of agency under constraint, where freedom manifests as endurance rather than movement.",
+      "alternative_interpretations": [
+        "The dog may be sleeping lightly or resting normally; stillness does not inherently imply constraint."
+      ],
+      "limitations": [
+        "Physiological state (e.g., sleep, fatigue, pain) cannot be verified visually without behavioral or contextual cues."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:24:54.014223+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-870a881a-c76e-95dd-a5f4-8ee48409b46c",
+      "usage": {
+        "prompt_tokens": 775,
+        "completion_tokens": 946,
+        "total_tokens": 1721,
+        "completion_tokens_details": {
+          "text_tokens": 946
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 268,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032433b4e469ec7b9f4f9d",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1887,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2694
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1468",
+  "sample_id": "PHL1800_HL_0501",
+  "file_name": "PHL1800_HL_0501.png",
+  "batch_id": "B030",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a youth baseball batter in ready stance with catcher and umpire in position",
+  "captions": {
+    "scene": [
+      "A daytime outdoor baseball field enclosed by green chain-link fencing, with spectators standing behind the fence.",
+      "Dirt infield with white chalk lines marking the batter’s box and home plate; grass outfield visible beyond.",
+      "Multiple children and adults in casual or sports attire, some wearing team uniforms (maroon shirts), others in street clothes."
+    ],
+    "action": [
+      "A child batter in maroon shirt and beige pants holds a bat in a ready stance, body slightly rotated, front foot planted.",
+      "A catcher in black chest protector, shin guards, and helmet crouches behind home plate, glove raised near waist level.",
+      "An umpire in light blue shirt, black pants, and face mask stands behind the catcher, leaning forward with hands on knees."
+    ],
+    "rationale": [
+      "The batter’s posture—bat held across shoulders, body turned toward pitcher—indicates readiness to swing, not active motion.",
+      "The catcher’s bent knees and forward glove position are consistent with preparation to receive a pitch.",
+      "The presence of multiple uniformed players and standard field markings suggests an organized game, though no scoreboard confirms league status."
+    ],
+    "object": [
+      "A baseball bat is held horizontally across the batter’s shoulders, with visible wear but material (wood/metal) not clearly distinguishable.",
+      "A brown leather catcher’s mitt is open and extended toward the strike zone, attached to the catcher’s left hand.",
+      "A green chain-link fence with vertical support posts runs continuously behind home plate and extends into background.",
+      "A dark rectangular sign with white text reading 'VOLUNTEER' is mounted on the fence right side.",
+      "No red-and-white striped banner is visible on the fence left side; the area shows only fence and background trees."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1468_P1",
+      "visual_anchors": [
+        "batter in ready stance",
+        "catcher crouched in readiness",
+        "umpire observing closely"
+      ],
+      "symbolic_mapping": [
+        "coordinated roles reflect interdependence in structured activity"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The triad of batter, catcher, and umpire embodies a microcosm of social existence: each role gains meaning only through the others’ participation, illustrating how identity and function emerge relationally within shared rules.",
+      "alternative_interpretations": [
+        "This is simply a routine moment in a recreational sport with no deeper implication."
+      ],
+      "limitations": [
+        "No facial expressions or dialogue are visible to confirm intentional coordination or awareness of roles."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1468_P2",
+      "visual_anchors": [
+        "green fence enclosing the field",
+        "spectators separated by barrier",
+        "players inside defined space"
+      ],
+      "symbolic_mapping": [
+        "the fence demarcates permitted action versus observation, enforcing constraint for safety and fairness"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The physical enclosure enacts freedom through constraint: players act freely within boundaries that prevent chaos, suggesting that meaningful agency often requires externally imposed limits.",
+      "alternative_interpretations": [
+        "The fence is purely functional for safety and has no symbolic intent."
+      ],
+      "limitations": [
+        "No signage or design features indicate intentional symbolism; the fence appears standard municipal infrastructure."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1468_P3",
+      "visual_anchors": [
+        "child batter wearing maroon jersey",
+        "adult spectator raising arm in gesture",
+        "multiple children in similar jerseys nearby"
+      ],
+      "symbolic_mapping": [
+        "uniforms signal collective belonging; the raised arm may signify encouragement or celebration"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Appearance—through jersey color and gear—constructs temporary but salient identity within the group, where visibility and recognition become prerequisites for participation and validation.",
+      "alternative_interpretations": [
+        "The jersey is just clothing; the raised arm is incidental, possibly shielding eyes from sun."
+      ],
+      "limitations": [
+        "The raised arm lacks context to confirm intent; no visible text on jerseys to confirm team identity."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people in background (candidate lists 3 spectators but image shows 5 distinct individuals behind fence); 'red-and-white striped fabric banner' is not visible in image; 'wooden bat' description lacks visual confirmation of material; 'batter mid-swing' action is inaccurate as bat is held in ready position, not mid-swing; 'white rectangular sign with blue text' is misdescribed (actual sign is dark with white text)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:36:07.493843+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bfd96203-9efb-9ad7-9e1b-284ab883e50b",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 963,
+        "total_tokens": 1732,
+        "completion_tokens_details": {
+          "text_tokens": 963
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043554e76caa0eb72545aa",
+      "usage": {
+        "completion_tokens": 962,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1888,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2850
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1027",
+  "sample_id": "PHL1800_IRFL_0391",
+  "file_name": "PHL1800_IRFL_0391.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red sports car driving on a paved road",
+  "captions": {
+    "scene": [
+      "A two-lane asphalt road flanked by dense, leafless trees with brown and gray trunks and branches",
+      "Blurred background indicating rapid lateral motion relative to the camera",
+      "Overcast sky visible through the tree canopy, casting diffuse lighting"
+    ],
+    "action": [
+      "The car is moving forward along the road, evidenced by motion blur of surroundings and road surface",
+      "The front wheels are aligned straight ahead, suggesting no active turning at this instant",
+      "The driver is seated inside the vehicle, visible through the windshield as a silhouette with head and shoulders"
+    ],
+    "rationale": [
+      "Motion blur implies high speed, but exact velocity cannot be determined from visual evidence alone",
+      "The car’s headlights are illuminated, suggesting low ambient light or standard daytime running lights; not definitive proof of darkness",
+      "No license plates or branding text are legible; any identification beyond color and shape is unsupported"
+    ],
+    "object": [
+      "The car has a glossy red paint finish with two black racing stripes running longitudinally over the hood.",
+      "The front fascia features large air intakes on either side of a central black grille and a small circular emblem centered below the windshield.",
+      "The headlights are on and have a distinctive angular, multi-element design with white illumination.",
+      "The vehicle has a low ground clearance, wide stance, and side-view mirrors mounted on slender stalks.",
+      "The road surface shows a white painted edge line on the left and a faint center line, both slightly blurred due to motion."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1027_P1",
+      "visual_anchors": [
+        "motion blur of trees",
+        "fixed car orientation",
+        "driver silhouette"
+      ],
+      "symbolic_mapping": [
+        "blurred surroundings map to subjective experience of time acceleration",
+        "driver’s fixed position maps to agency within flux"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The image evokes the tension between personal continuity (the driver’s stable presence) and external transience (the streaked environment), suggesting that identity persists amid temporal flow.",
+      "alternative_interpretations": [
+        "It may simply depict a high-speed drive without symbolic intent, emphasizing technical performance rather than existential reflection."
+      ],
+      "limitations": [
+        "No facial expression or interior detail confirms the driver’s awareness or intention; the silhouette is non-specific."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1027_P2",
+      "visual_anchors": [
+        "red color",
+        "black racing stripes",
+        "low-slung body"
+      ],
+      "symbolic_mapping": [
+        "vibrant red maps to assertion of presence",
+        "stripes map to deliberate aesthetic choice within constraints"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The car’s appearance functions as a curated self-presentation—its bold color and markings assert individuality within the physical limits of aerodynamics and road infrastructure.",
+      "alternative_interpretations": [
+        "The design may reflect manufacturer standards rather than personal expression; the stripes could be functional for visibility or cooling."
+      ],
+      "limitations": [
+        "No owner or context confirms intentional self-representation; appearance may be default factory configuration."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1027_P3",
+      "visual_anchors": [
+        "asphalt road",
+        "tree-lined corridor",
+        "forward-facing perspective"
+      ],
+      "symbolic_mapping": [
+        "road maps to linear progression",
+        "enclosing trees map to bounded possibility"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The constrained path through the forest visually enacts the philosophical idea that freedom exists not in infinite options but in purposeful navigation within given boundaries.",
+      "alternative_interpretations": [
+        "This is a standard rural road; the trees are natural vegetation, not symbolic framing devices."
+      ],
+      "limitations": [
+        "The road curves slightly out of frame, so its full geometry and alternatives are unseen; the ‘corridor’ effect may be photographic composition rather than environmental fact."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:40:32.982693+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-33605ee9-bb35-9b5e-89b2-040eef525fb4",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 911,
+        "total_tokens": 1660,
+        "completion_tokens_details": {
+          "text_tokens": 911
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070340203f234063510f47c6",
+      "usage": {
+        "completion_tokens": 770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1816,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2586
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1028",
+  "sample_id": "PHL1800_HL_0305",
+  "file_name": "PHL1800_HL_0305.png",
+  "batch_id": "B022",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of cross-country skiers in a competitive race",
+  "captions": {
+    "scene": [
+      "A snowy, forested slope with numerous skiers in colorful racing suits moving uphill in a tight pack.",
+      "Evergreen trees heavily laden with snow line the background; the sky is overcast and diffuse.",
+      "The foreground shows deep snow tracks and ski poles planted in snow, indicating recent passage."
+    ],
+    "action": [
+      "Skiers are actively striding forward using classic cross-country technique, arms swinging and poles planted alternately.",
+      "Multiple athletes wear numbered bibs (e.g., '101', '3') and sponsor logos including 'RAYMOND' and 'SALOMON'.",
+      "Some skiers lean forward with focused posture; others appear mid-stride with legs extended or bent."
+    ],
+    "rationale": [
+      "The uniformity of equipment (skis, poles, boots) and attire suggests organized competition rather than recreation.",
+      "The presence of bib numbers and visible brand markings indicates sponsorship and official event status.",
+      "The density of participants and parallel trajectories imply a competitive race, though exact race type is not fully verifiable from image alone."
+    ],
+    "object": [
+      "At least 15 distinct individuals are visible: 10 in the central cluster, 3 behind left, 2 behind right, and 2 farther back near trees.",
+      "All visible skiers wear full winter racing suits with varied color schemes (blue/white/red, orange/white/black, etc.) and helmets or knit caps.",
+      "Each skier uses two ski poles with metal tips embedded in snow; skis are narrow and long, typical for cross-country racing.",
+      "Bib number '101' is clearly legible on the front of the leading skier’s white suit; '3' appears on a black-and-orange suit to the left; no '40' is visible.",
+      "Snow surface shows parallel grooves and disturbed powder consistent with repeated ski traffic and uphill motion."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1028_P1",
+      "visual_anchors": [
+        "bib number '101'",
+        "identical ski equipment across competitors",
+        "tight formation of skiers"
+      ],
+      "symbolic_mapping": [
+        "bib number as marker of individual identity within collective effort",
+        "uniform gear as symbol of equalized starting conditions"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The bib number individuates each racer while their synchronized motion and shared terrain underscore interdependence—identity emerges not in isolation but through participation in a structured social contest.",
+      "alternative_interpretations": [
+        "The bibs merely serve administrative function; no deeper meaning is intended or visible."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentional symbolic use of numbering; interpretation relies on external cultural knowledge of sport."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1028_P2",
+      "visual_anchors": [
+        "uphill snow slope",
+        "forward-leaning postures",
+        "deep snow resistance"
+      ],
+      "symbolic_mapping": [
+        "physical ascent as metaphor for striving against constraint"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The skiers’ exertion against gravity and snow resistance visualizes the tension between self-determined movement and environmental limitation—a literal enactment of freedom constrained by material reality.",
+      "alternative_interpretations": [
+        "This is simply standard terrain for cross-country skiing; no philosophical intent is evident."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm metaphorical intent; the scene may be purely functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1028_P3",
+      "visual_anchors": [
+        "multiple skiers in overlapping frames",
+        "shared directionality",
+        "absence of overt rivalry gestures"
+      ],
+      "symbolic_mapping": [
+        "collective motion without collision as embodiment of regulated coexistence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The dense yet non-colliding formation reflects implicit adherence to shared rules and mutual spatial responsibility—ethics manifest not through declaration but through coordinated bodily conduct.",
+      "alternative_interpretations": [
+        "Proximity results from race dynamics, not ethical choice; collisions are avoided for performance reasons only."
+      ],
+      "limitations": [
+        "No visible rule signs, officials, or explicit cooperative signals; coordination may be tactical rather than moral."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count: 21 distinct individuals is incorrect; actual count is approximately 15 visible skiers. Bib numbers: '40' is not visible; '3' is not clearly legible on a black-and-orange suit. Rationale: 'mass-start race' is an unsupported causal claim; the image shows a tight pack but does not confirm mass-start format."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:40:58.525706+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4bf99a71-21e4-97cd-9d9a-50259aeb87b0",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 994,
+        "total_tokens": 1663,
+        "completion_tokens_details": {
+          "text_tokens": 994
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703403978f77a5619b24253",
+      "usage": {
+        "completion_tokens": 996,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1786,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2782
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

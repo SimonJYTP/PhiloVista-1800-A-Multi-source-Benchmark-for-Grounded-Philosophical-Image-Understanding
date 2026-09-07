@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0598",
+  "sample_id": "PHL1800_IRFL_0287",
+  "file_name": "PHL1800_IRFL_0287.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male",
+  "captions": {
+    "scene": [
+      "Solid yellow background with no texture or gradient visible",
+      "Even frontal lighting casting minimal shadows on the subject",
+      "Watermark pattern of '123RF' and camera icons overlaid across the image"
+    ],
+    "action": [
+      "Both hands are placed on either side of the head, fingers interlaced or gripping hair",
+      "Eyes are tightly closed with eyebrows furrowed downward and inward",
+      "Mouth is pursed horizontally with lips pressed together and slightly protruding"
+    ],
+    "rationale": [
+      "The facial musculature suggests muscular contraction consistent with strain or exertion, but the exact cause is not visible",
+      "The posture (hands on head, head tilted back) commonly appears in depictions of distress, though alternative interpretations like stretching are possible",
+      "No contextual objects (e.g., phone, document, clock) are present to confirm situational triggers"
+    ],
+    "object": [
+      "The subject wears a heather gray long-sleeved knit sweater with ribbed cuffs and neckline.",
+      "A white crew-neck undershirt collar is visible at the base of the neck beneath the sweater.",
+      "The subject has short dark brown hair with visible volume and slight disarray at the crown.",
+      "Facial hair consists of light stubble covering the jawline, chin, and upper lip area.",
+      "The nose is straight with visible nostrils; the bridge shows no distortion under current lighting."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0598_P1",
+      "visual_anchors": [
+        "closed eyes",
+        "furrowed brows",
+        "hands gripping head"
+      ],
+      "symbolic_mapping": [
+        "closed eyes → withdrawal from external reality",
+        "hands on head → internal pressure or cognitive load"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image may represent the embodied tension between seeking truth and experiencing constraint—where sensory withdrawal (closed eyes) and physical self-containment (hands on head) signal an internal struggle against epistemic or volitional limits.",
+      "alternative_interpretations": [
+        "The pose could simply reflect a momentary physical reaction such as sneezing inhibition or muscle fatigue during a stretch."
+      ],
+      "limitations": [
+        "No verbal or environmental cues confirm intentionality or conceptual framing; the expression is ambiguous without context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0598_P2",
+      "visual_anchors": [
+        "heather gray sweater",
+        "visible undershirt",
+        "neutral background"
+      ],
+      "symbolic_mapping": [
+        "layered clothing → social presentation vs. inner state",
+        "uniform background → removal of identity markers"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The deliberate isolation of the figure against a blank field, combined with modest attire, highlights how appearance functions as a mediated interface between individual experience and social recognition—here, stripped of context, the body becomes the sole site of meaning.",
+      "alternative_interpretations": [
+        "The plain background and clothing are standard studio choices for stock photography, intended to maximize versatility rather than convey symbolism."
+      ],
+      "limitations": [
+        "Clothing style is generic and non-distinctive; no logos, patterns, or cultural markers are present to support identity-based readings."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0598_P3",
+      "visual_anchors": [
+        "pursed lips",
+        "tensed facial muscles",
+        "upward gaze direction (head tilted back)"
+      ],
+      "symbolic_mapping": [
+        "pursed lips → withheld speech or refusal",
+        "upward tilt → aspiration or resistance to gravity/pressure"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The restrained expression and upward orientation may evoke the moral weight of decision-making—where silence (pursed lips) and bodily resistance (tilted head) signify the burden of responsibility in navigating a personal journey without external guidance.",
+      "alternative_interpretations": [
+        "The lip position and head angle could result from holding breath during a physical maneuver, such as preparing to lift or vocalize."
+      ],
+      "limitations": [
+        "Facial expression lacks micro-expression specificity (e.g., eye crinkling, cheek elevation) needed to distinguish emotional valence reliably."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:59:47.903285+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-89181dfc-6d05-92f3-a1b6-e316be7e939c",
+      "usage": {
+        "prompt_tokens": 1616,
+        "completion_tokens": 955,
+        "total_tokens": 2571,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1109,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702592848b560bf175a4ffd",
+      "usage": {
+        "completion_tokens": 812,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2966,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3778
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

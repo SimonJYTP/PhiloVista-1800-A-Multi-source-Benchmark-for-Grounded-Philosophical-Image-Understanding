@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0334",
+  "sample_id": "PHL1800_IRFL_0243",
+  "file_name": "PHL1800_IRFL_0243.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two hands exchanging US $100 bills over a document",
+  "captions": {
+    "scene": [
+      "A close-up of two pairs of hands above a white paper document with printed text and an orange border.",
+      "One hand holds a fanned stack of US $100 bills; another hand is open, palm up, positioned beneath the bills.",
+      "A third hand holds a pen poised over the document, suggesting imminent signing or writing."
+    ],
+    "action": [
+      "A hand fans out multiple US $100 bills, displaying their front side with Benjamin Franklin’s portrait visible.",
+      "An open palm faces upward, directly under the fanned bills, in a receiving posture.",
+      "A hand grips a metallic pen with black grip, tip near the paper surface but not touching it."
+    ],
+    "rationale": [
+      "The presence of US currency and a formal document suggests a transactional context, though the exact nature (e.g., loan, payment, bribe) is not visually determinable.",
+      "The open palm beneath the money implies intended transfer, but no physical contact between money and hand is visible, so actual exchange is not confirmed.",
+      "The pen hovering over the document indicates preparation for writing, but no ink mark or signature is visible, so document completion status is unknown."
+    ],
+    "object": [
+      "Five US $100 bills are fanned in the foreground, each showing the numeral '100', Benjamin Franklin’s portrait, and the Treasury seal; serial numbers and fine print are unreadable.",
+      "A white sheet of paper lies flat beneath the hands, featuring dense printed text in black ink and a thin orange border along its top edge.",
+      "A metallic pen with a black rubberized grip is held diagonally by a right hand; the nib points toward the paper but does not touch it.",
+      "Two distinct hands are visible in the lower half: one gripping the bills, the other open and cupped, both appearing adult-sized with light skin tone.",
+      "A third hand appears in the upper left, holding the pen; only fingers and part of the palm are visible, with no identifying features."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0334_P1",
+      "visual_anchors": [
+        "fanned $100 bills",
+        "open receiving palm",
+        "pen hovering over document"
+      ],
+      "symbolic_mapping": [
+        "money as medium of obligation",
+        "palm as gesture of consent or vulnerability"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The image frames a moment where material value and formal agreement converge, raising questions about whether consent is freely given or coerced when economic power is visibly asymmetrical.",
+      "alternative_interpretations": [
+        "This may simply depict a routine financial closing, such as a real estate transaction, with no moral tension implied."
+      ],
+      "limitations": [
+        "No facial expressions, body posture beyond hands, or contextual signage confirm intent or power dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0334_P2",
+      "visual_anchors": [
+        "Benjamin Franklin’s portrait on bills",
+        "unreadable printed text on paper",
+        "three hands in proximity"
+      ],
+      "symbolic_mapping": [
+        "currency as institutional trust",
+        "document as codified social contract"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The reliance on standardized symbols—Franklin’s image, legal formatting—suggests that shared belief in abstract systems enables coordinated action, even when individual understanding of the terms remains partial or obscured.",
+      "alternative_interpretations": [
+        "The scene could be staged for illustration, with no actual agreement or transfer occurring."
+      ],
+      "limitations": [
+        "The document’s content is illegible; thus, no verification of contractual truth or social role is possible from visual data alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0334_P3",
+      "visual_anchors": [
+        "hand holding pen",
+        "hand holding money",
+        "empty space between them"
+      ],
+      "symbolic_mapping": [
+        "pen as instrument of decision",
+        "gap as threshold of commitment"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The suspended moment—money offered, pen ready, but no contact made—captures the existential weight of choice: agency resides in the interval before action, where constraint and freedom coexist.",
+      "alternative_interpretations": [
+        "The pause may be purely mechanical, e.g., waiting for a signal or adjusting grip, with no deliberative significance."
+      ],
+      "limitations": [
+        "Temporal sequence is frozen; we cannot observe prior or subsequent motion to infer intentionality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:34:25.398569+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7d11ffd8-6d17-9912-8c6c-55f69fbc0826",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 1024,
+        "total_tokens": 1641,
+        "completion_tokens_details": {
+          "text_tokens": 1024
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 110,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070234082dde015bab0f4f09",
+      "usage": {
+        "completion_tokens": 874,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1756,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2630
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

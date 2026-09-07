@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0994",
+  "sample_id": "PHL1800_HL_0529",
+  "file_name": "PHL1800_HL_0529.png",
+  "batch_id": "B021",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large elephant statue partially obscured by foliage",
+  "captions": {
+    "scene": [
+      "A lush, dense tropical vegetation setting with bamboo stalks, palm fronds, and broad-leafed plants surrounding a dark water body.",
+      "The foreground contains calm greenish water with scattered floating debris; the bank is lined with dark soil and low-growing plants.",
+      "Sunlight filters through the canopy, creating dappled illumination on the foliage and the statue."
+    ],
+    "action": [
+      "The elephant statue stands motionless with its trunk lowered toward the ground.",
+      "Vegetation appears static with no visible wind movement or disturbance.",
+      "A human arm segment is visible at the bottom right edge, suggesting proximity to the water’s edge but no active interaction."
+    ],
+    "rationale": [
+      "The elephant is likely a statue because its surface shows uniform texture and lack of biological detail such as skin folds, eye moisture, or ear movement.",
+      "The scene resembles a constructed environment (e.g., theme park or exhibit) due to the deliberate arrangement of plants and the artificial appearance of the elephant’s placement relative to the water.",
+      "The presence of a partial human limb implies observation from a boat or platform, though the exact context remains indeterminate without further evidence."
+    ],
+    "object": [
+      "A gray, sculpted elephant with large white tusks, prominent ears, and a downward-curving trunk is positioned behind a cluster of green plants.",
+      "Tall, slender bamboo stalks form a vertical backdrop directly behind the elephant’s head and shoulders.",
+      "Several fan-shaped palm leaves extend horizontally across the midground, partially obscuring the elephant’s torso.",
+      "The water surface is dark green with small floating particles and subtle ripples near the bank.",
+      "A bare human forearm and elbow appear in the lower-right corner, cut off by the frame edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0994_P1",
+      "visual_anchors": [
+        "elephant statue",
+        "dense foliage",
+        "human arm fragment"
+      ],
+      "symbolic_mapping": [
+        "statue as fixed representation vs. living being",
+        "foliage as concealment or natural framing"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The statue’s immobility amid vibrant life evokes tension between constructed identity and organic existence—appearance is fixed while surroundings remain dynamic, questioning whether representation can ever capture lived reality.",
+      "alternative_interpretations": [
+        "It may simply be a decorative element in a themed attraction, with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expression, movement, or contextual signage confirms intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0994_P2",
+      "visual_anchors": [
+        "dappled sunlight",
+        "still water",
+        "uniform statue texture"
+      ],
+      "symbolic_mapping": [
+        "light filtering through leaves as fragmented perception",
+        "still water as reflection without clarity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The interplay of light and shadow across the scene suggests incomplete access to truth: what is visible is mediated by layers of foliage, much like knowledge filtered through imperfect senses or cultural constructs.",
+      "alternative_interpretations": [
+        "The lighting is merely natural daylight under a forest canopy, with no epistemic intent."
+      ],
+      "limitations": [
+        "No textual cues or deliberate compositional framing confirm epistemological intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0994_P3",
+      "visual_anchors": [
+        "human arm at edge",
+        "elephant facing forward",
+        "plants forming a barrier"
+      ],
+      "symbolic_mapping": [
+        "arm as observer position",
+        "plants as social or perceptual boundary"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The viewer’s partial inclusion—only an arm visible—frames existence as relational and bounded: one participates in a scene without full entry, mirroring how social roles often position individuals at thresholds rather than centers.",
+      "alternative_interpretations": [
+        "The arm belongs to someone seated in a boat, incidental to the composition."
+      ],
+      "limitations": [
+        "The arm’s posture and orientation do not indicate intentional positioning for symbolic effect."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:23:26.523661+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-31c8e644-672d-9082-83e2-3d66478cb13c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 936,
+        "total_tokens": 1745,
+        "completion_tokens_details": {
+          "text_tokens": 936
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070523060b6e5eecaab54ec0",
+      "usage": {
+        "completion_tokens": 798,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1917,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2715
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

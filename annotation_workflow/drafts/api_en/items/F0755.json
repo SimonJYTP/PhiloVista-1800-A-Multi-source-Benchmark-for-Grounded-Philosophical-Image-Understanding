@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0755",
+  "sample_id": "PHL1800_HL_0209",
+  "file_name": "PHL1800_HL_0209.png",
+  "batch_id": "B017",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two older men on a stage before an audience",
+  "captions": {
+    "scene": [
+      "Two men stand on a raised wooden stage with green pleated curtains behind them.",
+      "A seated audience of children and adults fills the foreground, viewed from behind.",
+      "The stage floor is light wood; a vertical orange-brown support beam stands between the men."
+    ],
+    "action": [
+      "The man on the right holds a red octagonal stop sign with white lettering 'STOP' and a green cloth in his left hand.",
+      "The man on the left stands with hands at his sides, mouth open, wearing glasses and a blue zip-up jacket over a gray shirt.",
+      "The man on the right has a white beard, wears a green polo shirt and blue jeans, and looks toward the audience."
+    ],
+    "rationale": [
+      "The stop sign is held upright and centered, suggesting it is being presented intentionally rather than carried incidentally.",
+      "The audience consists predominantly of children based on head size, hair length, and visible clothing patterns.",
+      "The green cloth appears to be draped or partially unfurled in the right man’s left hand, but its purpose or identity is not visually determinable."
+    ],
+    "object": [
+      "A red octagonal sign with white uppercase letters spelling 'STOP' is held vertically by the right man.",
+      "The man on the left wears clear-framed eyeglasses, a gray crew-neck sweater, and a navy-blue zippered jacket.",
+      "The man on the right wears a short-sleeved green polo shirt with a small indistinct logo on the left chest and blue denim jeans.",
+      "A dark green fabric item, possibly a flag or banner, is held loosely in the right man’s left hand and trails downward.",
+      "At least 28 distinct heads are visible in the audience, including children and adults, arranged in rows."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0755_P1",
+      "visual_anchors": [
+        "red STOP sign",
+        "man holding sign",
+        "audience of children"
+      ],
+      "symbolic_mapping": [
+        "the STOP sign represents a deliberate interruption of routine or instruction"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The staged presentation of a traffic sign to children may symbolize the introduction of societal rules as formative constraints that shape individual choice pathways.",
+      "alternative_interpretations": [
+        "It is a safety education demonstration using visual aids for traffic awareness."
+      ],
+      "limitations": [
+        "No textual context confirms educational intent; the sign could be part of a theatrical skit or unrelated prop usage."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0755_P2",
+      "visual_anchors": [
+        "two older men on stage",
+        "green curtains",
+        "audience facing them"
+      ],
+      "symbolic_mapping": [
+        "the stage setup evokes formal transmission of knowledge across generational lines"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The spatial arrangement—speakers elevated, audience seated below—visually enacts a traditional epistemic hierarchy where authority figures convey truth to learners.",
+      "alternative_interpretations": [
+        "It is a casual community event with no formal pedagogical structure implied by posture or props."
+      ],
+      "limitations": [
+        "Postures are relaxed, not authoritative; no lectern, microphone, or instructional materials are visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0755_P3",
+      "visual_anchors": [
+        "man with white beard",
+        "man with glasses",
+        "shared stage space"
+      ],
+      "symbolic_mapping": [
+        "dual presence suggests collaborative enactment of roles rather than singular authority"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The juxtaposition of two visibly distinct older men—one holding a directive sign, the other observing—may reflect shared responsibility in modeling civic behavior, where identity is performed through relational positioning rather than solo declaration.",
+      "alternative_interpretations": [
+        "They are co-presenters in a routine performance; their roles are assigned but not inherently symbolic."
+      ],
+      "limitations": [
+        "No interaction (e.g., eye contact, gesture coordination) is clearly visible to confirm collaboration versus parallel presence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:13:56.366528+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-19a560f4-5751-91f9-a4fe-66d72ae43f5d",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 945,
+        "total_tokens": 1714,
+        "completion_tokens_details": {
+          "text_tokens": 945
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070313433387da912e7c4b4e",
+      "usage": {
+        "completion_tokens": 805,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1875,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2680
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

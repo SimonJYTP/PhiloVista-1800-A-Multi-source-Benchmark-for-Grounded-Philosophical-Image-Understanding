@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0045",
+  "sample_id": "PHL1800_IRFL_0306",
+  "file_name": "PHL1800_IRFL_0306.jpg",
+  "batch_id": "B003",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a silver Dodge Challenger SRT vehicle with a driver",
+  "captions": {
+    "scene": [
+      "A paved surface with parallel dark tire marks under bright daylight",
+      "A clear pale blue sky above the horizon with no clouds visible",
+      "A plume of brownish-gray smoke or dust trailing from the rear right wheel area"
+    ],
+    "action": [
+      "The car is angled leftward relative to the camera, suggesting lateral motion",
+      "Rear tires are emitting smoke/dust, indicating loss of traction or burnout",
+      "The driver is seated upright, facing forward, with both hands on the steering wheel"
+    ],
+    "rationale": [
+      "The smoke plume originates near the rear right tire and extends backward, consistent with wheel spin",
+      "The front wheels are turned slightly left, and the car’s body orientation suggests active steering during motion",
+      "The lighting and shadow direction indicate a low sun angle, possibly early morning or late afternoon, though time cannot be confirmed"
+    ],
+    "object": [
+      "The vehicle is a two-door coupe with a matte silver finish, black grille, dual circular headlights with halos, and a functional hood scoop.",
+      "The front bumper includes a large central air intake, side vents, and an orange side marker light on the right fender.",
+      "The driver is visible through the windshield: a person with short dark hair wearing a dark top, seated in a black racing-style seat with a headrest.",
+      "The rear right tire shows motion blur and a dense cloud of particulate matter directly behind it, while the rear left tire appears less obscured.",
+      "The windshield has a faint green-tinted upper band; the 'SRT' badge is visible on the grille but the full text is partially obscured by reflections."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0045_P1",
+      "visual_anchors": [
+        "smoke plume from rear tire",
+        "tire marks on pavement",
+        "driver’s focused posture"
+      ],
+      "symbolic_mapping": [
+        "smoke as transient consequence of force application",
+        "tire marks as enduring traces of motion"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The ephemeral smoke contrasts with the persistent tire marks, evoking the tension between fleeting action and its lasting imprint—suggesting that choices manifest both immediately and over time.",
+      "alternative_interpretations": [
+        "The smoke may simply result from mechanical friction during acceleration, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; interpretation relies solely on visual juxtaposition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0045_P2",
+      "visual_anchors": [
+        "driver’s visible hands on steering wheel",
+        "closed cabin",
+        "isolated setting"
+      ],
+      "symbolic_mapping": [
+        "steering wheel as locus of agency",
+        "enclosed cockpit as boundary of self"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The driver’s physical control within a sealed environment reflects the paradox of autonomy: freedom exercised within engineered constraints, where identity is performed through mastery of machine.",
+      "alternative_interpretations": [
+        "The driver is merely operating a vehicle; the cabin enclosure serves only aerodynamic and safety functions."
+      ],
+      "limitations": [
+        "Facial expression and intent are indiscernible; agency is inferred from posture alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0045_P3",
+      "visual_anchors": [
+        "hood scoop",
+        "aggressive front fascia",
+        "low ground clearance"
+      ],
+      "symbolic_mapping": [
+        "hood scoop as conduit for external force",
+        "front-end design as assertion of presence"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The car’s form embodies engineered dominance—its intake channels raw energy, its stance declares territorial claim—highlighting how technology mediates power not through abstraction but through visceral, material assertion.",
+      "alternative_interpretations": [
+        "These features serve functional purposes: cooling, downforce, and stability, with no expressive intent."
+      ],
+      "limitations": [
+        "Design intent is not observable; functional explanation remains primary without manufacturer context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:52:42.312922+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-26c0a333-be4a-9706-bd38-27de1561d0e4",
+      "usage": {
+        "prompt_tokens": 2993,
+        "completion_tokens": 930,
+        "total_tokens": 3923,
+        "completion_tokens_details": {
+          "text_tokens": 930
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2486,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015217355146dbc34742e6",
+      "usage": {
+        "completion_tokens": 786,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7179,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 7965
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

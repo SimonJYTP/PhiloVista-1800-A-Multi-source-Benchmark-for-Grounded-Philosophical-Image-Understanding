@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0388",
+  "sample_id": "PHL1800_HL_0356",
+  "file_name": "PHL1800_HL_0356.png",
+  "batch_id": "B010",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a blue crane truck stopped at a pedestrian crossing in an urban street",
+  "captions": {
+    "scene": [
+      "A European-style street with multi-story buildings featuring ornate facades, red-tiled roofs, and overhead tram wires crossing the sky.",
+      "A paved intersection with white zebra crossing stripes, flanked by sidewalks where pedestrians stand or walk.",
+      "Multiple vehicles including a prominent blue crane truck, a second blue utility truck behind it, and partial views of cars and a black SUV."
+    ],
+    "action": [
+      "The blue crane truck is stationary with its rear facing the camera, its articulated boom arm raised and extended over the cab.",
+      "Several pedestrians are standing on the sidewalk to the left, some holding shopping bags or plastic bags, observing or waiting.",
+      "A worker in orange high-visibility clothing stands near the second blue truck, facing away from the camera, possibly directing or supervising."
+    ],
+    "rationale": [
+      "The truck’s position straddling the crosswalk and lack of motion blur suggest it is paused, likely for pedestrian passage or operational coordination.",
+      "The presence of multiple workers in safety vests and two utility trucks implies organized municipal or construction activity, though no active work is visible.",
+      "Pedestrians’ orientation toward the trucks and absence of movement across the crosswalk indicate they are waiting rather than crossing, supporting a temporary stop."
+    ],
+    "object": [
+      "A blue WAF-branded crane truck with red-and-white diagonal hazard stripes on its rear bumper and a black hydraulic boom arm mounted above the cab.",
+      "A woman in a green short-sleeve top and grey pants holds a bright green gift-wrapped box while standing on the sidewalk near a dark wooden post.",
+      "A person wearing a light-blue headscarf, patterned long dress, and white shoes stands beside the first woman, holding a white plastic bag and looking toward the trucks.",
+      "At least 10 distinct individuals are visible: 3 on the left sidewalk cluster (including the two women), 3 near the second truck (including one in orange vest), 3 on the right sidewalk (including one taking a photo), and 1 partially visible near the black SUV.",
+      "A blue directional sign with white arrows is mounted on a pole near the right sidewalk; no white rectangular sign with text is clearly visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0388_P1",
+      "visual_anchors": [
+        "blue crane truck halted at crosswalk",
+        "pedestrians waiting on sidewalk",
+        "worker in orange vest near utility vehicle"
+      ],
+      "symbolic_mapping": [
+        "the halted machine represents institutional pause before action",
+        "waiting pedestrians embody collective suspension of individual motion"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where technological infrastructure (the crane truck) defers to human presence, illustrating how labor and machinery are socially embedded through regulated pauses that affirm shared public space.",
+      "alternative_interpretations": [
+        "This is simply routine traffic control during a minor road operation, with no deeper social meaning."
+      ],
+      "limitations": [
+        "No signage or context confirms the purpose of the stop; the 'pause' could be due to traffic signals rather than social deference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0388_P2",
+      "visual_anchors": [
+        "woman holding green wrapped box",
+        "person in headscarf holding plastic bag",
+        "multiple pedestrians in varied attire"
+      ],
+      "symbolic_mapping": [
+        "the wrapped gift signifies intentionality amid routine",
+        "diverse dress styles reflect coexistence without interaction"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Individual identity is expressed through appearance and carried objects (gift, bag), yet these identities remain parallel rather than intersecting—highlighting modern urban anonymity within shared physical space.",
+      "alternative_interpretations": [
+        "The people are simply bystanders; their clothing and items reflect daily errands, not symbolic identity performance."
+      ],
+      "limitations": [
+        "Facial expressions and gaze directions are indistinct; we cannot confirm whether individuals notice each other or are internally focused."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0388_P3",
+      "visual_anchors": [
+        "overhead tram wires",
+        "multi-story historic buildings",
+        "zebra crossing lines"
+      ],
+      "symbolic_mapping": [
+        "wires span across time layers of architecture",
+        "crosswalk lines impose order on chaotic movement"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of enduring built heritage with transient human figures and imposed linear markings suggests that freedom is structured by inherited constraints—both physical (crosswalks) and temporal (architectural legacy).",
+      "alternative_interpretations": [
+        "These are merely functional urban elements with no philosophical resonance; wires power trams, buildings house people, and crosswalks guide traffic."
+      ],
+      "limitations": [
+        "No explicit temporal markers (e.g., clocks, dates) or overt symbols of mortality are present; the interpretation relies on associative reading."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (14 vs. actual ~10), misidentified truck brand (WABCO vs. WAF), and inaccurate object details (e.g., white sign text described as unreadable when not visible)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:42:39.075875+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-663a6cfc-63f6-955f-82fd-9ff5a16212e6",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1124,
+        "total_tokens": 1893,
+        "completion_tokens_details": {
+          "text_tokens": 1124
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024216a877315fd9a14c3c",
+      "usage": {
+        "completion_tokens": 1020,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2055,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3075
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

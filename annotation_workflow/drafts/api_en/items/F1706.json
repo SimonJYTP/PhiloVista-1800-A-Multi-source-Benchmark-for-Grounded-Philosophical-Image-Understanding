@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1706",
+  "sample_id": "PHL1800_IRFL_0469",
+  "file_name": "PHL1800_IRFL_0469.jpg",
+  "batch_id": "B035",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three metallic cartridge casings with bullet tips",
+  "captions": {
+    "scene": [
+      "Three cartridge casings lie on a plain white background, spaced apart with no overlapping.",
+      "The casings are oriented at different angles: one vertical, one diagonal upper-right, one diagonal lower-left.",
+      "Surface texture shows discoloration, pitting, and minor corrosion across all three objects."
+    ],
+    "action": [
+      "The casings are stationary and exhibit no motion blur or dynamic interaction.",
+      "Each casing displays visible banding: a reddish-brown ring near the base and another near the bullet-casing junction.",
+      "One casing (left) shows a greenish residue near its midsection, distinct from the others."
+    ],
+    "rationale": [
+      "The uniform brass-like color and cylindrical shape with conical tip suggest they are firearm cartridges, though no markings confirm caliber or origin.",
+      "The presence of multiple identical forms implies mass production, but no packaging, labels, or context confirms this.",
+      "Surface wear patterns indicate prior handling or exposure, yet no definitive evidence distinguishes use from storage degradation."
+    ],
+    "object": [
+      "Each object consists of a metallic cylindrical casing with a tapered projectile tip fused to its front end.",
+      "A dark reddish-brown circumferential band is present near the base of each casing and again just behind the projectile tip.",
+      "The leftmost casing has a small irregular greenish deposit on its body, not present on the other two.",
+      "All three casings show mottled surface oxidation, including speckled brown and gray patches over a golden base tone.",
+      "The base of each casing is flat and slightly recessed, with no visible primer indentation or stamping."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1706_P1",
+      "visual_anchors": [
+        "mottled oxidation",
+        "identical form",
+        "isolated placement"
+      ],
+      "symbolic_mapping": [
+        "uniform shape suggests standardization",
+        "surface decay implies temporal exposure"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The identical manufactured form juxtaposed with individualized corrosion evokes the tension between industrial reproducibility and irreversible material entropy.",
+      "alternative_interpretations": [
+        "They are simply spent ammunition components awaiting disposal, with no symbolic intent."
+      ],
+      "limitations": [
+        "No maker marks, dates, or usage context are visible to ground temporal or technological claims."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1706_P2",
+      "visual_anchors": [
+        "green residue on left casing",
+        "two clean casings",
+        "shared geometry"
+      ],
+      "symbolic_mapping": [
+        "anomalous mark signals deviation",
+        "repetition implies normativity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The singular green stain disrupts the visual uniformity of the group, suggesting how minor deviations in appearance can mark distinction within otherwise identical entities.",
+      "alternative_interpretations": [
+        "The green spot is incidental contamination, not intentional differentiation."
+      ],
+      "limitations": [
+        "The origin and nature of the green residue cannot be determined visually; it may be paint, verdigris, or adhesive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1706_P3",
+      "visual_anchors": [
+        "flat bases",
+        "no primer indentations",
+        "static arrangement"
+      ],
+      "symbolic_mapping": [
+        "absence of firing evidence implies potential",
+        "stillness contrasts with implied violence"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "ethics_responsibility"
+      ],
+      "interpretation": "Their inert state—lacking signs of discharge—holds latent capacity for action, raising questions about responsibility in the absence of realized consequence.",
+      "alternative_interpretations": [
+        "They are inert display items or dummies with no functional design for firing."
+      ],
+      "limitations": [
+        "No internal structure or primer visibility confirms whether they are live, dummy, or inert rounds."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:04:02.036637+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ce2ea003-0856-9d81-82bb-f3705c5a3cd1",
+      "usage": {
+        "prompt_tokens": 1209,
+        "completion_tokens": 884,
+        "total_tokens": 2093,
+        "completion_tokens_details": {
+          "text_tokens": 884
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 702,
+          "text_tokens": 507,
+          "cached_tokens": 1024
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705034832136cde915b495a",
+      "usage": {
+        "completion_tokens": 745,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2365,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3110
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

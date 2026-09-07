@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1041",
+  "sample_id": "PHL1800_MM_0099",
+  "file_name": "PHL1800_MM_0099.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two formally dressed individuals in an office setting",
+  "captions": {
+    "scene": [
+      "A wooden desk with a potted green plant, a black tablet-like object, and a small blue-and-white notepad sits in the foreground.",
+      "A man in a navy suit sits at the desk; behind him is a gray wall and a large bright window or screen.",
+      "A woman in a navy suit stands to the right of the seated man, leaning slightly forward with one hand on the desk."
+    ],
+    "action": [
+      "The man sits upright with both hands resting on a notepad on the desk, looking forward with a neutral expression.",
+      "The woman stands with her left hand placed flat on the desk surface and her right arm bent at her side, head turned toward the man.",
+      "A speech bubble originates from near the man’s head and contains legible English text."
+    ],
+    "rationale": [
+      "The speech bubble’s placement near the man suggests he is the implied speaker, though no mouth movement is visible.",
+      "Both individuals wear matching navy suits with white shirts and red ties, indicating possible organizational uniformity or dress code adherence.",
+      "The woman’s posture—standing while the man sits—may indicate a hierarchical or evaluative role, but no rank insignia or explicit authority markers are visible."
+    ],
+    "object": [
+      "A small potted plant with glossy green leaves sits in a black cylindrical pot on the left side of the desk.",
+      "A rectangular black electronic device lies flat beneath the plant, partially obscured by its base.",
+      "The man wears a navy blazer with a white pocket square, a white collared shirt, and a maroon tie with diagonal white stripes.",
+      "The woman wears a navy blazer with three visible dark buttons, a white collared shirt, and a solid red tie; her red hair is styled in a high bun.",
+      "A white oval speech bubble with black sans-serif text reads: 'You need to change your hairstyle to fit the company's image.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1041_P1",
+      "visual_anchors": [
+        "speech bubble with directive text",
+        "man’s unchanged hairstyle",
+        "woman’s formal attire"
+      ],
+      "symbolic_mapping": [
+        "hairstyle as external marker of conformity",
+        "speech bubble as institutional voice"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes how institutional expectations can impose normative standards on personal appearance, framing identity as negotiable under social pressure.",
+      "alternative_interpretations": [
+        "This may simply depict routine workplace feedback without deeper sociopolitical implication."
+      ],
+      "limitations": [
+        "No facial expressions or body language confirm emotional response; the man’s neutrality prevents inferring internal conflict."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1041_P2",
+      "visual_anchors": [
+        "matching navy suits",
+        "red ties",
+        "shared color scheme"
+      ],
+      "symbolic_mapping": [
+        "uniformity of dress as visual cohesion",
+        "red tie as shared symbolic element"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The coordinated attire suggests enforced collective identity, where individual distinction is minimized to reinforce group coherence and implicit power structures.",
+      "alternative_interpretations": [
+        "The matching outfits could reflect standard corporate dress policy rather than ideological enforcement."
+      ],
+      "limitations": [
+        "No logos, badges, or name tags confirm organizational affiliation or hierarchy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1041_P3",
+      "visual_anchors": [
+        "man seated at desk",
+        "woman standing beside him",
+        "hand on desk surface"
+      ],
+      "symbolic_mapping": [
+        "seated position as passive reception",
+        "standing position as active assertion"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "choice_journey"
+      ],
+      "interpretation": "The spatial arrangement implies a moment of imposed choice—where autonomy is constrained by external judgment—highlighting tension between personal agency and institutional demand.",
+      "alternative_interpretations": [
+        "The pose may reflect standard meeting etiquette (e.g., presenter vs. attendee) rather than coercion."
+      ],
+      "limitations": [
+        "No visible documents, screens, or gestures indicate decision-making context or consequence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:43:01.899281+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-629bdd9f-a1d7-9a8d-8b9a-fb5eb33795c4",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 936,
+        "total_tokens": 2469,
+        "completion_tokens_details": {
+          "text_tokens": 936
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703424176855a6449904635",
+      "usage": {
+        "completion_tokens": 797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2889,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3686
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

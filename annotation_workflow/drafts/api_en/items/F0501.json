@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0501",
+  "sample_id": "PHL1800_IRFL_0077",
+  "file_name": "PHL1800_IRFL_0077.jpg",
+  "batch_id": "B012",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "LinkedIn logo overlaid on US currency and textured background",
+  "captions": {
+    "scene": [
+      "A blue rounded rectangle with white 'in' logo positioned diagonally over a stack of US $100 bills",
+      "Background consists of layered textures: orange-brown grunge on left, greenish grid pattern on right, with faint diagonal lines across entire frame",
+      "US currency appears fanned or slightly lifted, revealing multiple bill edges and partial portraits"
+    ],
+    "action": [
+      "The LinkedIn logo is static and sharply focused in the foreground",
+      "Currency notes are arranged in overlapping layers, suggesting depth but no motion",
+      "Grid lines and texture overlays intersect the logo and bills without distortion"
+    ],
+    "rationale": [
+      "The logo’s placement suggests intentional compositional emphasis rather than accidental overlap",
+      "Partial visibility of the $100 bill’s reverse side (Independence Hall) confirms denomination but not full orientation",
+      "No human figures, hands, or tools are visible; thus agency or interaction cannot be confirmed"
+    ],
+    "object": [
+      "A white lowercase 'in' logo with a circular dot above the 'i', set inside a blue rounded rectangle with subtle texture and gradient.",
+      "At least three US $100 bills are visible, stacked and fanned, showing portions of the reverse side including Independence Hall and the numeral '100'.",
+      "A green-tinted grid pattern overlays the right portion of the image, intersecting both currency and logo.",
+      "An orange-brown distressed texture occupies the lower-left quadrant, partially under the blue logo shape.",
+      "Faint yellow security threads and microprinting are discernible on the topmost bill but remain unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0501_P1",
+      "visual_anchors": [
+        "blue LinkedIn logo",
+        "stacked $100 bills",
+        "grid overlay"
+      ],
+      "symbolic_mapping": [
+        "logo represents professional identity",
+        "currency represents economic value"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of a professional networking symbol with high-denomination currency visually frames labor and identity as quantifiable economic assets within structured systems.",
+      "alternative_interpretations": [
+        "This may simply be a stock graphic combining common business-related icons without deeper intent."
+      ],
+      "limitations": [
+        "No explicit textual claim or context is provided to confirm symbolic intent; the composition could be purely decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0501_P2",
+      "visual_anchors": [
+        "gridded background",
+        "layered textures",
+        "overlapping logo and money"
+      ],
+      "symbolic_mapping": [
+        "grid implies systemic constraint",
+        "layering implies mediation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The superimposition of digital branding onto physical currency, mediated by geometric grids, suggests institutional frameworks that regulate access to economic opportunity and social capital.",
+      "alternative_interpretations": [
+        "The grid may merely be a design aesthetic for visual depth, not a metaphor for control."
+      ],
+      "limitations": [
+        "Grid lines are generic and appear in many digital graphics; no unique structural features indicate intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0501_P3",
+      "visual_anchors": [
+        "distressed orange texture",
+        "sharp logo",
+        "partially obscured bills"
+      ],
+      "symbolic_mapping": [
+        "texture decay vs. digital clarity",
+        "obscured details imply incomplete transparency"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The contrast between worn background texture and clean corporate logo evokes tension between surface presentation and underlying complexity in professional self-representation.",
+      "alternative_interpretations": [
+        "Texture may serve only to add visual interest and avoid flatness, with no semantic role."
+      ],
+      "limitations": [
+        "The texture lacks specific iconography (e.g., cracks, erasure marks) that would strongly support decay or concealment readings."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:51:53.735936+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-018c4db7-8fd4-9ad2-add2-fcb77e8bc61a",
+      "usage": {
+        "prompt_tokens": 1459,
+        "completion_tokens": 894,
+        "total_tokens": 2353,
+        "completion_tokens_details": {
+          "text_tokens": 894
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 952,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070251396aa5cdfcecf84c48",
+      "usage": {
+        "completion_tokens": 742,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2715,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3457
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

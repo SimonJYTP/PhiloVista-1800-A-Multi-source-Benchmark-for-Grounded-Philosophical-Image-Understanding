@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0856",
+  "sample_id": "PHL1800_IRFL_0305",
+  "file_name": "PHL1800_IRFL_0305.jpg",
+  "batch_id": "B019",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male with facial hair",
+  "captions": {
+    "scene": [
+      "Close-up portrait against a black background with studio-style lighting highlighting facial features",
+      "High-contrast illumination creates strong shadows under the nose, eyes, and beard",
+      "Subject occupies nearly the entire frame from forehead to upper chest"
+    ],
+    "action": [
+      "Mouth wide open in an extreme vocalization posture, revealing upper and lower teeth and tongue",
+      "Eyes wide open with visible sclera around irises, eyebrows deeply furrowed",
+      "Facial muscles tensed: nasolabial folds deepened, glabella wrinkled, cheeks raised"
+    ],
+    "rationale": [
+      "The open mouth and exposed dentition suggest vocal emission, but the exact sound type (shout, scream, yell) cannot be confirmed visually",
+      "Eyebrow furrowing and widened eyes indicate intense facial activation, yet specific emotional valence (anger, fear, exertion) is not determinable from physiology alone",
+      "Skin texture shows pores and minor sheen, possibly sweat or oil, but hydration state or ambient temperature cannot be inferred definitively"
+    ],
+    "object": [
+      "The subject has short-cropped dark hair on the sides of the head and a full dark beard with some lighter strands near the chin.",
+      "The subject wears a black crew-neck garment with a visible ribbed collar edge at the neckline.",
+      "The left canine tooth appears slightly more prominent than the right; both upper incisors are visible and aligned.",
+      "The inner mouth cavity shows pink mucosa, a visible uvula, and the tongue positioned low and flat.",
+      "Lighting produces specular highlights on the nasal bridge, upper lip, and forehead, indicating a frontal light source."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0856_P1",
+      "visual_anchors": [
+        "wide-open mouth",
+        "exposed teeth",
+        "tensed facial musculature"
+      ],
+      "symbolic_mapping": [
+        "open mouth as rupture of silence",
+        "teeth as boundary between internal and external"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes bodily assertion as a form of resistance—where vocal projection becomes a physical claim against imposed silence or constraint.",
+      "alternative_interpretations": [
+        "This may simply depict a physiological reflex during strenuous activity, such as weightlifting or singing, without intentional expression."
+      ],
+      "limitations": [
+        "No contextual cues (e.g., setting, audience, gesture) confirm intent or reception of the vocal act."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0856_P2",
+      "visual_anchors": [
+        "deeply furrowed brow",
+        "dilated pupils",
+        "high-contrast shadowing"
+      ],
+      "symbolic_mapping": [
+        "furrowed brow as cognitive load",
+        "shadowing as epistemic obscurity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The face embodies the tension between perception and reality: heightened sensory input (wide eyes) coexists with obscured judgment (shadowed midface), questioning the reliability of surface appearance in discerning truth.",
+      "alternative_interpretations": [
+        "The lighting setup alone creates dramatic shadows; no evidence confirms the subject’s cognitive state or intention to convey ambiguity."
+      ],
+      "limitations": [
+        "Studio lighting artificially enhances contrast; facial expression cannot be disentangled from photographic technique."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0856_P3",
+      "visual_anchors": [
+        "full beard",
+        "visible skin pores",
+        "uneven hair coloration"
+      ],
+      "symbolic_mapping": [
+        "beard as marker of embodied time",
+        "pores as evidence of biological continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The textured, aging surface of the face—marked by hair variation and micro-detail—grounds identity in temporal materiality, resisting idealized or static representations of selfhood in social discourse.",
+      "alternative_interpretations": [
+        "These features may reflect grooming choices or lighting artifacts rather than chronological aging."
+      ],
+      "limitations": [
+        "No longitudinal data or comparative reference exists to confirm age progression or biological significance of observed traits."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:22:22.312698+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b8cb3c3f-fa40-946b-bd56-ddc9dac1306e",
+      "usage": {
+        "prompt_tokens": 870,
+        "completion_tokens": 934,
+        "total_tokens": 1804,
+        "completion_tokens_details": {
+          "text_tokens": 934
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 363,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032211d687f09a1ed04336",
+      "usage": {
+        "completion_tokens": 793,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2005,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2798
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

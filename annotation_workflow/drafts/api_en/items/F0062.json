@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0062",
+  "sample_id": "PHL1800_IRFL_0196",
+  "file_name": "PHL1800_IRFL_0196.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male",
+  "captions": {
+    "scene": [
+      "A person centered against a uniform yellow background with no visible furniture or environment details.",
+      "The background is solid yellow with faint repeated watermark text reading \"iStock by Getty Images\" and a numeric string \"997840114\" in the lower-left corner.",
+      "No windows, doors, or natural light sources are visible; lighting appears even and studio-like."
+    ],
+    "action": [
+      "The person presses both index fingers against their temples, palms facing inward, with other fingers partially curled.",
+      "The person’s eyebrows are furrowed, eyes narrowed, and mouth slightly downturned with lips pressed together.",
+      "The person’s head is tilted slightly downward and forward, gaze directed toward the lower center of the frame."
+    ],
+    "rationale": [
+      "The hand placement on temples is consistent with common gestures associated with headache or mental strain, though causation is not visible.",
+      "Facial muscle tension (furrowed brow, tightened jaw) suggests physical discomfort or concentration, but internal state cannot be confirmed.",
+      "The plain background isolates the subject, emphasizing posture and expression, yet no contextual cues confirm intent or situation."
+    ],
+    "object": [
+      "The person wears a long-sleeved, heather-gray knit sweater with ribbed cuffs and neckline.",
+      "The person has short, dark brown hair with slight volume at the crown and visible stubble on the chin and upper lip.",
+      "Both hands are raised to head level, with index fingers contacting the lateral aspects of the forehead near the temporal bones.",
+      "The person’s eyes are partially closed, with visible creasing at the outer corners and upper eyelids lowered over the pupils.",
+      "The watermark text 'iStock by Getty Images' appears repeatedly across the image in semi-transparent white font, and '997840114' appears in the bottom-left corner."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0062_P1",
+      "visual_anchors": [
+        "furrowed brow",
+        "index fingers on temples",
+        "downcast gaze"
+      ],
+      "symbolic_mapping": [
+        "temporal pressure points mapped to cognitive burden",
+        "downward gaze mapped to introspective withdrawal"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The gesture and expression may symbolize the tension between perceived truth and cognitive limitation—where the subject physically enacts the strain of reconciling internal knowledge with external constraints.",
+      "alternative_interpretations": [
+        "The pose could simply reflect transient physical discomfort such as a tension headache, unrelated to abstract reasoning."
+      ],
+      "limitations": [
+        "No textual or contextual indicators confirm symbolic intent; the image lacks narrative framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0062_P2",
+      "visual_anchors": [
+        "plain yellow background",
+        "isolated figure",
+        "neutral clothing"
+      ],
+      "symbolic_mapping": [
+        "uniform background mapped to existential void",
+        "isolation mapped to social disconnection"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The stark simplicity of setting and attire foregrounds the individual as a site of contested selfhood, where appearance (clothing, grooming) remains stable while internal distress disrupts the coherence of social presence.",
+      "alternative_interpretations": [
+        "The yellow backdrop is a standard studio choice for stock photography and carries no inherent meaning."
+      ],
+      "limitations": [
+        "Background color choice is commercially conventional and not uniquely expressive without cultural context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0062_P3",
+      "visual_anchors": [
+        "pressed lips",
+        "tightened facial muscles",
+        "symmetrical hand placement"
+      ],
+      "symbolic_mapping": [
+        "bodily symmetry mapped to attempted control",
+        "suppressed mouth mapped to withheld speech"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The restrained expression and deliberate symmetry suggest an ethical moment of self-regulation—where the subject exercises agency by containing reaction, implying responsibility for inner state amid uncertain external demands.",
+      "alternative_interpretations": [
+        "The facial configuration may result from involuntary muscular response to pain rather than volitional restraint."
+      ],
+      "limitations": [
+        "Muscle activation cannot be distinguished as voluntary vs. reflexive from static visual data alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:54:33.065513+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c8f2cc0a-f93b-9e60-b500-71305e6e5fff",
+      "usage": {
+        "prompt_tokens": 1181,
+        "completion_tokens": 960,
+        "total_tokens": 2141,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 674,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701541437a07c7a404d4d00",
+      "usage": {
+        "completion_tokens": 814,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2430,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3244
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

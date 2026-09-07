@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0174",
+  "sample_id": "PHL1800_HL_0472",
+  "file_name": "PHL1800_HL_0472.png",
+  "batch_id": "B006",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a multi-person office workspace under a sloped wooden ceiling",
+  "captions": {
+    "scene": [
+      "An attic-style office with exposed wooden beams, multiple desks, dual-monitor setups, and scattered personal items including a small decorated tree.",
+      "A cluttered open-plan workstation featuring at least two occupied desks, printers, cables, and decorative objects like flowers and figurines.",
+      "A mixed-use workspace with visible computer hardware, paper documents, beverage containers, and a fan in the background near corrugated metal walls."
+    ],
+    "action": [
+      "At least two individuals are seated at desks facing monitors; one appears to be typing or viewing code on dual screens.",
+      "A person with long dark hair sits at a rear desk, partially obscured by a monitor and floral decoration.",
+      "One monitor displays lines of text resembling source code; another shows a terminal or log interface with white-on-dark text."
+    ],
+    "rationale": [
+      "The presence of dual monitors, keyboards, and active screen content suggests professional or technical work rather than casual use.",
+      "The sloped ceiling and exposed rafters indicate an attic or upper-floor conversion, though the exact building type is not confirmed.",
+      "Multiple desks and shared peripherals imply collaborative or co-located work, but no direct interaction is visible."
+    ],
+    "object": [
+      "Two silver-framed LCD monitors sit side-by-side on a curved wooden desk, both powered on and displaying monochrome text interfaces.",
+      "A black ergonomic keyboard rests in front of the monitors, accompanied by a black optical mouse on a beige mousepad.",
+      "A white ceramic mug with a red logo sits to the left of the keyboard, next to a small potted plant with pink blossoms.",
+      "A white inkjet printer with stacked paper sits on the right side of the desk, beside a green portable audio device and a white iPod-like player.",
+      "A black pedestal fan stands upright in the background near a corrugated metal wall, with its blades stationary."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0174_P1",
+      "visual_anchors": [
+        "dual monitors displaying code",
+        "cluttered desk with personal items",
+        "exposed wooden beams"
+      ],
+      "symbolic_mapping": [
+        "code screens → mediated knowledge production",
+        "personal clutter → embodied presence within systems"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of abstract digital output (code) against tactile, aging infrastructure (wooden beams) reflects the tension between immaterial knowledge work and material constraints of labor environments.",
+      "alternative_interpretations": [
+        "This is simply a functional tech workspace with no symbolic intent."
+      ],
+      "limitations": [
+        "No legible text confirms the nature of the code or user intent; interpretation relies on generic visual cues."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0174_P2",
+      "visual_anchors": [
+        "small decorated tree",
+        "flowers in vase",
+        "personal mug"
+      ],
+      "symbolic_mapping": [
+        "decorative flora → assertion of individuality amid standardized tools"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The deliberate placement of organic, non-functional items within a tool-dense environment signals an attempt to assert personal identity and social continuity against the homogenizing force of technical workflows.",
+      "alternative_interpretations": [
+        "These items serve purely utilitarian or aesthetic purposes without symbolic meaning."
+      ],
+      "limitations": [
+        "No labels or context confirm intentional symbolism; decoration may be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0174_P3",
+      "visual_anchors": [
+        "multiple desks in shared space",
+        "cables running across floor",
+        "fan near wall"
+      ],
+      "symbolic_mapping": [
+        "shared infrastructure → interdependence despite spatial separation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The physical entanglement of cables and proximity of workstations embodies the paradox of modern labor: individuals operate in semi-autonomous zones yet remain materially and functionally bound by shared infrastructural constraints.",
+      "alternative_interpretations": [
+        "Cabling is merely practical wiring with no social implication."
+      ],
+      "limitations": [
+        "No visible interaction or communication confirms interdependence; layout could reflect cost-saving, not philosophy."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:13:17.055757+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f9d28c89-6c4d-931b-a430-b412d9989832",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 954,
+        "total_tokens": 1655,
+        "completion_tokens_details": {
+          "text_tokens": 954
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702130842453ca51e8546ae",
+      "usage": {
+        "completion_tokens": 810,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1770,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2580
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

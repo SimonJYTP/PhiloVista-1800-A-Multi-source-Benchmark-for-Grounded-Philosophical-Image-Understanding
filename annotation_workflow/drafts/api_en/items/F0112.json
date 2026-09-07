@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0112",
+  "sample_id": "PHL1800_IRFL_0344",
+  "file_name": "PHL1800_IRFL_0344.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a bearded man in the foreground wearing a red cloak and armor",
+  "captions": {
+    "scene": [
+      "A dusty, warm-toned battlefield with blurred figures lying on the ground behind the main subject",
+      "A chaotic melee environment with indistinct bodies and debris in the background",
+      "A close-up composition emphasizing the foreground figure against a shallow depth-of-field backdrop"
+    ],
+    "action": [
+      "The man’s mouth is wide open in a vocalization, with teeth visible and tongue exposed",
+      "His eyes are narrowed and focused forward; brows are furrowed and facial muscles tensed",
+      "His right arm is extended downward holding a dark object resembling a weapon hilt"
+    ],
+    "rationale": [
+      "The open mouth and facial tension suggest vocal exertion, though the exact sound or intent is not visually determinable",
+      "The background contains multiple prone human forms, indicating prior or ongoing physical conflict",
+      "The red cloak shows wear and a dark stain near the shoulder, implying recent physical engagement"
+    ],
+    "object": [
+      "The man has short dark hair, a full dark beard, and visible facial abrasions including a cut above his left eyebrow.",
+      "He wears a rust-colored draped cloak over bare shoulders, with a metallic bracer on his left forearm.",
+      "A dark-handled object, possibly a sword hilt, is gripped in his right hand, partially visible at lower left.",
+      "His left shoulder bears a dark irregular stain on the cloak, consistent with liquid residue or soiling.",
+      "The background contains at least six discernible human forms lying horizontally, some with limbs extended, all out of focus."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0112_P1",
+      "visual_anchors": [
+        "open mouth",
+        "tensed facial muscles",
+        "extended arm holding weapon"
+      ],
+      "symbolic_mapping": [
+        "vocalization as assertion of presence",
+        "physical strain as embodiment of resistance"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image frames bodily exertion as an immediate enactment of agency amid constraint, where voice and posture become non-verbal claims to autonomy within violent imposition.",
+      "alternative_interpretations": [
+        "This may simply depict a moment of physiological response—such as pain, shock, or command issuance—without symbolic intent."
+      ],
+      "limitations": [
+        "No linguistic context or narrative framing is present to confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0112_P2",
+      "visual_anchors": [
+        "blood-like stain on cloak",
+        "multiple prone figures",
+        "dust-filled air"
+      ],
+      "symbolic_mapping": [
+        "stain as trace of consequence",
+        "bodies as evidence of collective vulnerability"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a single active figure against scattered inert forms evokes the fragility of individual continuity within shared mortality, highlighting how social existence is punctuated by irreversible loss.",
+      "alternative_interpretations": [
+        "The scene may represent staged choreography rather than actual casualty, limiting literal interpretation of mortality."
+      ],
+      "limitations": [
+        "Blurring prevents confirmation of lifelessness or injury severity in background figures."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0112_P3",
+      "visual_anchors": [
+        "metallic bracer",
+        "red cloak",
+        "bare torso"
+      ],
+      "symbolic_mapping": [
+        "armor as selective protection",
+        "cloak as marker of role or affiliation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The partial adornment—armored limb yet exposed torso—suggests identity constructed through deliberate omission and inclusion, raising questions about what aspects of self one chooses to shield or reveal under duress.",
+      "alternative_interpretations": [
+        "The attire may reflect practical combat requirements rather than symbolic choice, such as mobility versus protection trade-offs."
+      ],
+      "limitations": [
+        "No cultural or contextual markers confirm intentional semiotic use of clothing elements."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:01:44.088649+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-82f9c664-a4c1-9791-8aea-2fd56848e374",
+      "usage": {
+        "prompt_tokens": 849,
+        "completion_tokens": 893,
+        "total_tokens": 1742,
+        "completion_tokens_details": {
+          "text_tokens": 893
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 342,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070201326c416ba9f58a4ac0",
+      "usage": {
+        "completion_tokens": 752,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1917,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2669
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

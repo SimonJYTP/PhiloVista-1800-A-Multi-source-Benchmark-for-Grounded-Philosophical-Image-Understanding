@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1229",
+  "sample_id": "PHL1800_HL_0322",
+  "file_name": "PHL1800_HL_0322.png",
+  "batch_id": "B026",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two cyclists with a dog crossing a street near a discarded sofa and traffic sign",
+  "captions": {
+    "scene": [
+      "A sunlit residential street with mature trees, parked cars, houses, and concrete barriers flanking a central roadway.",
+      "A white sofa lies horizontally across the road between two white plastic traffic barriers; behind it stands a red-and-white circular 'DO NOT ENTER' sign on a pole.",
+      "Two cyclists—one adult wearing a helmet and carrying a bag, the other a child in orange—are riding bicycles across the street, accompanied by a black dog walking beside the adult's bike."
+    ],
+    "action": [
+      "The adult cyclist is pedaling forward while holding the leash of a black dog that walks alongside the left side of the bicycle.",
+      "The child cyclist is pedaling forward on a smaller blue bicycle, positioned to the right of the adult cyclist and slightly ahead.",
+      "A white fire hydrant stands near the curb on the far right, and several vehicles are parked or moving in the background."
+    ],
+    "rationale": [
+      "The presence of a 'DO NOT ENTER' sign suggests the road segment may be temporarily closed or restricted, though no physical barrier blocks the cyclists’ path.",
+      "The sofa appears intentionally placed or abandoned in the roadway, possibly as a makeshift barricade or art installation, given its symmetrical placement between barriers.",
+      "The dog walks calmly beside the adult’s bike without visible restraint beyond the leash, indicating it is accustomed to this activity; however, no collar or tag is clearly visible."
+    ],
+    "object": [
+      "A black medium-sized dog walks on asphalt, leashed to the handlebar of a black bicycle ridden by an adult wearing a dark helmet and red backpack.",
+      "A child wearing an orange shirt and a light-colored helmet rides a blue bicycle with training wheels, positioned to the right of the adult cyclist.",
+      "A white upholstered sofa lies horizontally across the street, supported at each end by white plastic traffic barriers with reflective stripes.",
+      "A circular red-bordered sign with white background displays the words 'DO NOT ENTER' in black uppercase letters, mounted on a metal pole behind the sofa.",
+      "A white fire hydrant with a cap and side nozzle is visible on the grass verge to the far right, near a tree trunk and low shrubs."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1229_P1",
+      "visual_anchors": [
+        "discarded white sofa in street",
+        "DO NOT ENTER sign",
+        "cyclists passing through"
+      ],
+      "symbolic_mapping": [
+        "the sofa as obstruction turned into passage",
+        "the sign as official prohibition ignored in practice"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The image embodies a quiet assertion of agency: individuals navigate a formally prohibited space using improvised means, suggesting that lived experience can redefine imposed boundaries.",
+      "alternative_interpretations": [
+        "The scene may simply reflect a temporary neighborhood blockage due to moving or construction, with cyclists taking a practical detour."
+      ],
+      "limitations": [
+        "No signage explains the sofa’s purpose; its intentional placement versus accidental abandonment cannot be confirmed from visual evidence alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1229_P2",
+      "visual_anchors": [
+        "black dog walking beside cyclist",
+        "leash connecting dog to bike",
+        "shared motion direction"
+      ],
+      "symbolic_mapping": [
+        "leash as bond rather than control",
+        "co-traveling as mutual participation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The dog’s synchronized movement with the cyclist implies a non-hierarchical companionship, where responsibility manifests as shared rhythm rather than domination.",
+      "alternative_interpretations": [
+        "The dog may be trained for utility (e.g., delivery or assistance), making the leash functional rather than symbolic."
+      ],
+      "limitations": [
+        "The dog’s posture and gaze are not clearly visible; its emotional state or intent cannot be determined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1229_P3",
+      "visual_anchors": [
+        "child on small bicycle",
+        "adult cyclist nearby",
+        "open street with no visible supervision"
+      ],
+      "symbolic_mapping": [
+        "bicycle as instrument of autonomy",
+        "proximity as implicit guardianship"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The child’s independent cycling within a loosely supervised context reflects the emergence of self-directed identity through embodied choice, where appearance (helmet, clothing) signals preparedness rather than conformity.",
+      "alternative_interpretations": [
+        "The adult may be a parent or guardian actively supervising off-camera, and the child’s ride is routine rather than symbolic."
+      ],
+      "limitations": [
+        "No facial expressions or direct interaction between the two cyclists is visible; their relationship remains unspecified."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:05:47.034432+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-75919eb4-5e20-9f6d-9384-9bdde2a55def",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 1058,
+        "total_tokens": 1847,
+        "completion_tokens_details": {
+          "text_tokens": 1058
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040532533bea7fca2f49f5",
+      "usage": {
+        "completion_tokens": 920,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1989,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2909
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

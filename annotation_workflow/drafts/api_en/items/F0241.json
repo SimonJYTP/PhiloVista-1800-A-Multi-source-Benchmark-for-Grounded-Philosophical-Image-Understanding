@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0241",
+  "sample_id": "PHL1800_HL_0046",
+  "file_name": "PHL1800_HL_0046.png",
+  "batch_id": "B007",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large ornamental street clock with visible signage",
+  "captions": {
+    "scene": [
+      "A sunlit urban sidewalk scene with a prominent vintage-style street clock mounted on a black iron pole, flanked by green foliage and parked vehicles.",
+      "A small outdoor table with three people (one in a yellow shirt, one in a white tank top, and one in a red stroller) sits in the foreground near the clock's base; cups and food items are on the table.",
+      "In the background, a pedestrian in a blue top walks away on the sidewalk past traffic signs, including a blue directional sign and a red stop sign."
+    ],
+    "action": [
+      "One person at the table raises both arms upward while seated; another person in a yellow shirt leans forward toward the table surface; a third person is in a red stroller beside them.",
+      "A woman in a blue top walks away from the camera along the sidewalk, mid-stride.",
+      "The clock hands indicate approximately 1:24, with the minute hand between 4 and 5, hour hand just past 1."
+    ],
+    "rationale": [
+      "The raised arms suggest an expressive gesture (e.g., stretching or celebration), but the exact intent cannot be determined from posture alone.",
+      "The clock’s inscription 'America’s Oldest Jewelers' implies commercial branding, yet no active retail activity is visible nearby.",
+      "The presence of multiple pedestrians and parked cars suggests daytime urban activity, though time of day is inferred only from lighting and shadows."
+    ],
+    "object": [
+      "The clock face is white with black Arabic numerals 1–12, black hour and minute hands, and a thin second hand pointing near 12; it has a gold-colored inner ring and black ornate metal casing.",
+      "The clock bears the text 'Birks ESTABLISHED 1879 America’s Oldest Jewelers', with 'Birks' in cursive script and the rest in sans-serif capitals; all text is legible.",
+      "A silver sedan is parked to the left of the clock, partially obscured by foliage and the clock pole; its driver-side window is closed and reflects surrounding trees.",
+      "A round green plastic table holds four white disposable cups, a yellow bottle, a brown paper bag, and scattered food wrappers.",
+      "Three individuals are at the table: one wearing a yellow short-sleeve shirt and glasses, facing right; one wearing a white tank top, back to camera, with arms raised; and one in a red stroller beside them."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "commonsense_inference"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0241_P1",
+      "visual_anchors": [
+        "clock face showing 1:24",
+        "text 'ESTABLISHED 1879'",
+        "person raising arms"
+      ],
+      "symbolic_mapping": [
+        "the fixed clock face contrasts with transient human gesture",
+        "established date anchors continuity against fleeting present"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a timepiece marking a precise moment with a human gesture that defies measurement evokes tension between objective chronology and subjective experience of duration.",
+      "alternative_interpretations": [
+        "The raised arms may simply indicate stretching after sitting, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual cues confirm emotional or philosophical intent behind the gesture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0241_P2",
+      "visual_anchors": [
+        "'America’s Oldest Jewelers' inscription",
+        "ornate ironwork on clock",
+        "pedestrian walking away"
+      ],
+      "symbolic_mapping": [
+        "brand longevity as cultural persistence",
+        "ornamentation as social signaling of value"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The clock functions not merely as timekeeper but as a public assertion of institutional identity through heritage branding and decorative form, embedding commercial identity into civic space.",
+      "alternative_interpretations": [
+        "The signage is purely functional advertising, with ornamentation serving only aesthetic or structural purposes."
+      ],
+      "limitations": [
+        "The image does not show interaction with the sign or evidence of public recognition of the brand."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0241_P3",
+      "visual_anchors": [
+        "three people seated at small table",
+        "stroller beside them",
+        "sidewalk context"
+      ],
+      "symbolic_mapping": [
+        "shared meal as microcosm of social cohesion",
+        "public seating as negotiated communal space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The informal gathering at a public table—within sight of traffic control and commercial signage—illustrates how everyday social existence unfolds within layered constraints of infrastructure, commerce, and regulation.",
+      "alternative_interpretations": [
+        "This is a routine lunch break with no deeper social commentary intended or perceived."
+      ],
+      "limitations": [
+        "Only partial views of participants are visible; their relationship and purpose remain undetermined."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people at the table (described as two, but three are visible: one in yellow shirt, one in white tank top, and one in red stroller); inaccurate clock time (minute hand is between 4 and 5, hour hand is just past 1, but the candidate states 1:24 which misplaces the hour hand); text on the clock is 'Birks' not 'Birks' (candidate has a typo); the person raising arms is one individual, not two; the stroller is partially visible but not explicitly described as holding a person; the pedestrian in the background is wearing a blue top, but the candidate's action description is accurate."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:24:15.761735+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-eb506234-2dc2-9495-b773-db7118a7ea75",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1057,
+        "total_tokens": 1826,
+        "completion_tokens_details": {
+          "text_tokens": 1057
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070223416d73190b96da49cc",
+      "usage": {
+        "completion_tokens": 1178,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1981,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3159
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

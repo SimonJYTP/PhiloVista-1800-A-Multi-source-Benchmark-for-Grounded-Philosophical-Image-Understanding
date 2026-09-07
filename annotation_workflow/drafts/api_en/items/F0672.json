@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0672",
+  "sample_id": "PHL1800_IRFL_0217",
+  "file_name": "PHL1800_IRFL_0217.jpg",
+  "batch_id": "B015",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one bald man in military camouflage uniform",
+  "captions": {
+    "scene": [
+      "dense green coniferous trees form a blurred background behind the subject",
+      "natural daylight illuminates the scene with soft shadows",
+      "the ground is not fully visible but appears to be unpaved earth or grass"
+    ],
+    "action": [
+      "the man is airborne with both feet off the ground, knees bent and body leaning forward",
+      "his right hand grips a black object resembling a weapon or training aid with straps",
+      "his mouth is open and facial muscles are tensed, consistent with exertion or vocalization"
+    ],
+    "rationale": [
+      "the subject’s posture and limb positioning suggest dynamic motion rather than static posing",
+      "the presence of insignia on the uniform indicates affiliation with a formal military organization",
+      "the object held in the right hand has features consistent with a firearm or training replica, though exact type is indeterminate"
+    ],
+    "object": [
+      "The man wears a digital camouflage uniform with U.S. Army-style pattern, including a name tape reading 'PETTY' on the chest and a rank insignia on the left sleeve.",
+      "A patch on the right shoulder shows a circular emblem with a central star and surrounding text that is unreadable due to resolution.",
+      "A subdued American flag patch is visible on the left sleeve, oriented with stars forward.",
+      "The man holds a black object with a cylindrical barrel-like extension, a strap assembly, and a grip; no serial numbers or markings are legible.",
+      "His boots are tan-colored combat boots with laces and visible scuffing, worn over camouflage trousers tucked into them."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0672_P1",
+      "visual_anchors": [
+        "bald head",
+        "open mouth",
+        "tense facial musculature"
+      ],
+      "symbolic_mapping": [
+        "exposed scalp as vulnerability",
+        "facial strain as embodiment of effort"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The visible physical exertion and stripped-down appearance (baldness, unadorned face) foreground the body as instrument and site of disciplined labor, where identity is temporarily subsumed by functional role.",
+      "alternative_interpretations": [
+        "The expression may simply reflect momentary physical strain during a routine drill, without symbolic intent."
+      ],
+      "limitations": [
+        "No contextual signage, dialogue, or sequence confirms intentional symbolism; facial expression alone cannot verify internal state or purpose."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0672_P2",
+      "visual_anchors": [
+        "camouflage uniform",
+        "weapon-like object",
+        "forward-leaning airborne posture"
+      ],
+      "symbolic_mapping": [
+        "uniform as erasure of individuality",
+        "mid-air suspension as liminal state between action and consequence"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "choice_journey"
+      ],
+      "interpretation": "The suspended figure embodies a moment of agency within structured violence: the uniform signifies institutional power, while the leap suggests volitional movement through a constrained path of duty.",
+      "alternative_interpretations": [
+        "This may be a staged training exercise with no real stakes, rendering the 'leap' purely procedural."
+      ],
+      "limitations": [
+        "The object’s function is ambiguous—it could be inert training gear—so assumptions about conflict are unsupported."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0672_P3",
+      "visual_anchors": [
+        "dense evergreen background",
+        "single subject centered",
+        "no other people visible"
+      ],
+      "symbolic_mapping": [
+        "forest as indifferent natural order",
+        "isolation as condition of responsibility"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "time_mortality"
+      ],
+      "interpretation": "The solitary figure against an undifferentiated natural backdrop evokes the ethical weight borne individually in moments of action, where time is compressed into a single decisive gesture.",
+      "alternative_interpretations": [
+        "The background is merely a convenient training location; its visual density does not imply philosophical meaning."
+      ],
+      "limitations": [
+        "No temporal markers (e.g., aging, decay, clocks) appear; mortality cannot be inferred from posture alone."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:06:52.605290+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f5a67b76-d4e7-97fc-8742-444e528a236f",
+      "usage": {
+        "prompt_tokens": 680,
+        "completion_tokens": 924,
+        "total_tokens": 1604,
+        "completion_tokens_details": {
+          "text_tokens": 924
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 173,
+          "text_tokens": 507,
+          "cached_tokens": 512
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070306273986a385f9424572",
+      "usage": {
+        "completion_tokens": 782,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1741,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2523
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

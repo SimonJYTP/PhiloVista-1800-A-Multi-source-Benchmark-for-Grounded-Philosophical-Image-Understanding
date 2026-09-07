@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1742",
+  "sample_id": "PHL1800_IRFL_0399",
+  "file_name": "PHL1800_IRFL_0399.jpg",
+  "batch_id": "B035",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single cat",
+  "captions": {
+    "scene": [
+      "A paved surface composed of rectangular grey stone blocks arranged in a staggered pattern.",
+      "Strong directional lighting casts elongated shadows across the pavement, suggesting low-angle illumination.",
+      "The background is uniformly paved with no visible vegetation, structures, or other objects."
+    ],
+    "action": [
+      "The cat is mid-stride, with its right front paw lifted and left front paw planted on the ground.",
+      "Its head is lowered and eyes are partially closed or squinting, facing forward along its path.",
+      "The cat’s body is oriented toward the camera, moving diagonally across the frame from upper right to lower left."
+    ],
+    "rationale": [
+      "The cat’s posture and limb positioning indicate locomotion rather than standing still.",
+      "The shadow direction and intensity suggest a single strong light source outside the frame, likely the sun.",
+      "No collar, tags, or human-made markings are visible on the cat, though absence of evidence is not evidence of absence."
+    ],
+    "object": [
+      "The cat has orange and white fur with tabby striping on its legs, face, and back; its chest and paws are predominantly white.",
+      "Its ears are erect and pointed, with inner surfaces showing pinkish skin tone.",
+      "The cat’s nose is pink, and its muzzle is white with faint orange markings around the eyes.",
+      "The pavement consists of uniformly sized, weathered grey stone pavers with narrow dirt-filled joints.",
+      "The cat’s tail is not fully visible but appears to be held low and aligned with its body axis."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1742_P1",
+      "visual_anchors": [
+        "cat walking alone on uniform pavement",
+        "strong directional shadow",
+        "no visible human presence"
+      ],
+      "symbolic_mapping": [
+        "solitary movement across repetitive structure → individual traversal of structured time"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The cat’s solitary passage across an unchanging grid of stones evokes the inexorable progression through time, where each step replaces the last in a fixed sequence.",
+      "alternative_interpretations": [
+        "A routine animal crossing a public walkway, with no symbolic intent implied by the scene itself."
+      ],
+      "limitations": [
+        "The pavement pattern is geometric but not explicitly cyclical or numerically ordered; temporal symbolism is projected, not depicted."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1742_P2",
+      "visual_anchors": [
+        "cat’s partially closed eyes",
+        "forward gaze",
+        "low head posture"
+      ],
+      "symbolic_mapping": [
+        "squinting against light → navigating uncertainty with limited perception"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The cat’s narrowed eyes amid strong illumination suggest a creature operating within perceptual limits, highlighting the tension between sensory input and reliable knowledge.",
+      "alternative_interpretations": [
+        "The cat may simply be reacting to bright light, a common physiological response unrelated to epistemic concerns."
+      ],
+      "limitations": [
+        "Eye aperture size cannot confirm intentionality or cognitive state; it may reflect reflexive photophobia only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1742_P3",
+      "visual_anchors": [
+        "orange-and-white tabby cat",
+        "no identifying marks",
+        "paved urban-like surface"
+      ],
+      "symbolic_mapping": [
+        "unmarked animal in structured environment → ambiguous social status between wild and domestic"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The cat’s indeterminate affiliation—neither clearly owned nor feral—mirrors questions about belonging and recognition within socially constructed spaces.",
+      "alternative_interpretations": [
+        "The cat is a typical stray or community cat in a city setting, with no inherent ambiguity beyond observable features."
+      ],
+      "limitations": [
+        "Absence of a collar does not prove lack of ownership; many owned cats roam freely without identification."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:07:20.517590+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0f0b4a03-3c58-9a89-9b4a-73608a4597d5",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 875,
+        "total_tokens": 1648,
+        "completion_tokens_details": {
+          "text_tokens": 875
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 266,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050708b91f6c3a8eae4191",
+      "usage": {
+        "completion_tokens": 743,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1811,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2554
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

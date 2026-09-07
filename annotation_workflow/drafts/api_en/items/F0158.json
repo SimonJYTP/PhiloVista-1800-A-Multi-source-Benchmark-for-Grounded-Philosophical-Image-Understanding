@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0158",
+  "sample_id": "PHL1800_IRFL_0351",
+  "file_name": "PHL1800_IRFL_0351.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one muscular adult male",
+  "captions": {
+    "scene": [
+      "dimly lit indoor gym with black ceiling ductwork and fluorescent lighting",
+      "background contains blurred exercise equipment and large windows showing greenery outside",
+      "foreground features a cable crossover machine with yellow handles and metal chains"
+    ],
+    "action": [
+      "man is actively pulling two cable handles inward toward his torso in a mid-motion contraction",
+      "his upper body is tensed, with visible striations on pectorals, deltoids, and biceps",
+      "his head is turned slightly rightward, mouth partially open, eyes focused forward"
+    ],
+    "rationale": [
+      "the man’s posture and muscle engagement suggest resistance training; however, exact exercise type cannot be confirmed without full machine view",
+      "tattoos are present on both upper arms but specific symbols are only partially legible (e.g., interlocking rings on left arm)",
+      "lighting creates strong highlights and shadows, indicating directional studio-style illumination rather than ambient gym lighting alone"
+    ],
+    "object": [
+      "The man has a shaved head, defined facial musculature, and no visible clothing above the waist.",
+      "A tattoo of three interlocking rings appears on his left upper arm, accompanied by smaller indistinct markings below it.",
+      "His right upper arm displays a dark ink tattoo with curved lines and possible lettering, but the text is unreadable.",
+      "He grips two yellow-handled cables attached to metal chains that connect to a pulley system.",
+      "A black padded seat and part of a weight stack housing are visible behind his left hip."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0158_P1",
+      "visual_anchors": [
+        "interlocking ring tattoo",
+        "exposed torso",
+        "cable resistance tension"
+      ],
+      "symbolic_mapping": [
+        "interlocking rings → unity or continuity",
+        "muscular tension under load → embodied discipline"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The image frames bodily cultivation as a deliberate practice where appearance becomes a medium for expressing self-formation through disciplined labor with technological tools.",
+      "alternative_interpretations": [
+        "It may simply document a routine strength-training moment without symbolic intent."
+      ],
+      "limitations": [
+        "Tattoo meaning is ambiguous without context; rings could represent sport, affiliation, or personal iconography unrelated to philosophical themes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0158_P2",
+      "visual_anchors": [
+        "shaved head",
+        "focused gaze",
+        "asymmetrical lighting"
+      ],
+      "symbolic_mapping": [
+        "shaved head → intentional minimalism or removal of social signifiers",
+        "focused gaze → internal concentration amid external constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s controlled physical presentation under mechanical resistance suggests a negotiation between self-determination and imposed structural limits, where identity is asserted through constrained action.",
+      "alternative_interpretations": [
+        "The lighting and pose may be staged for aesthetic photography rather than reflecting existential tension."
+      ],
+      "limitations": [
+        "No evidence confirms the subject’s intent; gaze direction does not prove introspection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0158_P3",
+      "visual_anchors": [
+        "visible sweat sheen",
+        "defined musculature",
+        "chain-and-pulley apparatus"
+      ],
+      "symbolic_mapping": [
+        "sweat sheen → transient bodily effort",
+        "chains → mediation of force between body and machine"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The image captures a moment where human physiology interfaces with engineered resistance, highlighting the temporality of physical achievement and the dependence of bodily mastery on external systems.",
+      "alternative_interpretations": [
+        "This is a standard fitness photograph emphasizing aesthetics and performance, not metaphysical reflection."
+      ],
+      "limitations": [
+        "Sweat is visually present but its quantity and origin (heat vs. exertion) cannot be definitively separated."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:11:21.698386+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-efd12f90-ec3f-920a-b9e1-56130f2117db",
+      "usage": {
+        "prompt_tokens": 718,
+        "completion_tokens": 894,
+        "total_tokens": 1612,
+        "completion_tokens_details": {
+          "text_tokens": 894
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 211,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070211048254180803e64f0e",
+      "usage": {
+        "completion_tokens": 751,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1743,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2494
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0517",
+  "sample_id": "PHL1800_IRFL_0029",
+  "file_name": "PHL1800_IRFL_0029.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one boy in motion",
+  "captions": {
+    "scene": [
+      "A white background with a boy and scattered school-related objects mid-air.",
+      "A red backpack, books, papers, crayons, scissors, a basketball, food items, and stationery float around the boy.",
+      "The boy wears a blue shirt, jeans, and black shoes; his right foot contacts an orange basketball."
+    ],
+    "action": [
+      "The boy leans forward with arms bent, left leg extended backward, suggesting running or kicking motion.",
+      "Multiple objects appear suspended in air as if ejected from or trailing behind the boy.",
+      "A sandwich with visible filling and an apple are airborne near the boy’s torso."
+    ],
+    "rationale": [
+      "The boy’s posture and limb positioning indicate dynamic forward movement, though no motion blur confirms velocity.",
+      "Objects are arranged in a fan-shaped trajectory behind the boy, consistent with centrifugal dispersal during rapid motion.",
+      "The basketball is under the boy’s right foot but not visibly compressed or deformed, so contact may be momentary or staged."
+    ],
+    "object": [
+      "A red backpack with black straps floats above and behind the boy’s right shoulder.",
+      "An open book with printed text lies mid-air to the left, pages fanned outward.",
+      "A yellow pencil with an eraser tip rests horizontally on the ground near crumpled paper.",
+      "A brown paper bag, a green stapler, a blue pencil sharpener, and a calculator are among the airborne items.",
+      "A math worksheet shows the expression '2 + 5' in black print inside a red-bordered box; other text on surrounding papers is unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0517_P1",
+      "visual_anchors": [
+        "floating school supplies",
+        "boy in motion",
+        "basketball under foot"
+      ],
+      "symbolic_mapping": [
+        "scattered objects represent fragmented attention",
+        "motion suggests transition between domains"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the tension between structured learning (books, worksheets) and embodied freedom (running, basketball), framing education as a path where constraint and agency coexist.",
+      "alternative_interpretations": [
+        "A staged studio photograph illustrating back-to-school chaos or a child’s energetic playtime."
+      ],
+      "limitations": [
+        "No contextual setting (e.g., classroom, hallway) confirms educational intent; objects could be generic clutter."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0517_P2",
+      "visual_anchors": [
+        "crumpled paper",
+        "torn notebook pages",
+        "spilled food"
+      ],
+      "symbolic_mapping": [
+        "disorder signifies cognitive overload",
+        "food remnants imply time pressure"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The dispersal of academic materials alongside bodily needs (food) suggests knowledge acquisition is entangled with physical labor and temporal limits, questioning idealized rationality.",
+      "alternative_interpretations": [
+        "Accidental spillage during a hurried departure, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or gaze direction indicates internal state; interpretation relies on object association alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0517_P3",
+      "visual_anchors": [
+        "single boy",
+        "no other people",
+        "isolated white background"
+      ],
+      "symbolic_mapping": [
+        "solitary figure embodies individual responsibility",
+        "floating objects act as externalized burdens"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The boy’s solitary motion amid chaotic objects reflects modern individuated responsibility—where personal agency must manage fragmented demands without communal scaffolding.",
+      "alternative_interpretations": [
+        "Commercial stock imagery designed for generic ‘back to school’ themes, emphasizing energy over meaning."
+      ],
+      "limitations": [
+        "Absence of social cues (e.g., peers, adults, institutional signage) prevents confirmation of isolation as intentional theme."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:39:13.855394+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f1b6aa9b-f381-9c88-ad16-8b703d9ee593",
+      "usage": {
+        "prompt_tokens": 1573,
+        "completion_tokens": 892,
+        "total_tokens": 2465,
+        "completion_tokens_details": {
+          "text_tokens": 892
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1066,
+          "text_tokens": 507,
+          "cached_tokens": 1408
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013853615c98b26cbe4d67",
+      "usage": {
+        "completion_tokens": 753,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2854,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3607
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0173",
+  "sample_id": "PHL1800_HL_0465",
+  "file_name": "PHL1800_HL_0465.png",
+  "batch_id": "B006",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three people in a living room: two adults using laptops and one toddler interacting with toys",
+  "captions": {
+    "scene": [
+      "A modestly furnished living room with hardwood flooring, a beige sofa, a wooden coffee table cluttered with children's toys, and a large framed painting of green foliage on the wall.",
+      "Natural light enters from a window draped with beige curtains; a wicker basket, small wooden stool, and white side table are visible near the window.",
+      "The room contains multiple objects indicating child presence: scattered plastic toys, a red toy box, a green sippy cup, and plush figures on and around the sofa."
+    ],
+    "action": [
+      "The adult on the left sits on the sofa, leaning forward while typing on a silver laptop resting on his lap.",
+      "The toddler stands beside the sofa, holding a blue-and-yellow toy book or board, facing away from the camera toward the sofa’s backrest.",
+      "The adult on the right sits in a black chair, looking at a silver Apple laptop placed on his lap, with one hand on the trackpad."
+    ],
+    "rationale": [
+      "The toddler’s posture and proximity to the sofa suggest engagement with the environment rather than passive observation, though exact intent is not visible.",
+      "Both adults face their respective laptops with hands positioned for interaction, supporting active use rather than idle placement.",
+      "The arrangement of toys on the floor and table implies recent or ongoing play, but no motion blur confirms current activity."
+    ],
+    "object": [
+      "A silver laptop with an illuminated Apple logo rests on the lap of the person seated in the black chair on the right.",
+      "A beige fabric sofa holds a green plush frog, a gray plush creature, and a black remote control on its left cushion.",
+      "A wooden coffee table displays a white plastic toy kitchen set, a green sippy cup, a white paper sheet with a pen, and assorted colorful plastic toys.",
+      "A red rectangular plastic container filled with multicolored building blocks sits on the floor to the right of the coffee table.",
+      "A framed artwork depicting dense green foliage with hints of yellow and red hangs centered above the sofa."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0173_P1",
+      "visual_anchors": [
+        "two adults focused on laptops",
+        "toddler standing amid toys",
+        "coffee table covered in disassembled play items"
+      ],
+      "symbolic_mapping": [
+        "laptops as interfaces to external worlds",
+        "toys as fragments of unstructured exploration"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The simultaneous immersion in digital tools and physical play objects suggests a fragmented coexistence of mediated labor and embodied childhood, where attention is distributed across parallel ontological registers.",
+      "alternative_interpretations": [
+        "This may simply reflect routine domestic multitasking without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or eye direction confirm cognitive engagement or emotional valence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0173_P2",
+      "visual_anchors": [
+        "toddler holding open toy book",
+        "adults not making eye contact with child",
+        "spatial separation between users"
+      ],
+      "symbolic_mapping": [
+        "open book as potential for narrative",
+        "physical distance as absence of shared focus"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The scene visualizes a moment where individual choices—digital work versus tactile discovery—coexist without integration, raising questions about responsibility in shared domestic space when attention is partitioned.",
+      "alternative_interpretations": [
+        "The adults may be intermittently monitoring the child; lack of eye contact does not prove neglect."
+      ],
+      "limitations": [
+        "Temporal context is missing; this could be a brief interval within sustained interaction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0173_P3",
+      "visual_anchors": [
+        "hardwood floor with scattered toys",
+        "unmade sofa with plush figures",
+        "natural light from window"
+      ],
+      "symbolic_mapping": [
+        "clutter as evidence of lived time",
+        "light as indifferent witness"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The accumulation of transient objects in a sunlit domestic interior evokes the passage of unrecorded moments, where freedom to play exists alongside constraints of structure and adult obligation.",
+      "alternative_interpretations": [
+        "The scene may represent ordinary household disorder, not philosophical tension."
+      ],
+      "limitations": [
+        "No clocks, calendars, or aging indicators provide direct evidence of temporal flow."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:13:32.827403+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-af4de4c4-becc-9b2b-a376-efaffb7fedad",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 1010,
+        "total_tokens": 1711,
+        "completion_tokens_details": {
+          "text_tokens": 1010
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021308abce489d0c614722",
+      "usage": {
+        "completion_tokens": 871,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1833,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2704
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

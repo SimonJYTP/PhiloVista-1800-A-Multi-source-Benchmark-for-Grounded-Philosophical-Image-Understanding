@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0430",
+  "sample_id": "PHL1800_HAIV_0050",
+  "file_name": "PHL1800_HAIV_0050.png",
+  "batch_id": "B011",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single human figure depicted frontally from the waist up",
+  "captions": {
+    "scene": [
+      "A figure stands against a textured beige-tan background with mottled staining resembling aged paper or parchment.",
+      "A thin, irregular blue line forms an incomplete rectangular frame around the figure’s torso and shoulders.",
+      "The figure’s chest is open, revealing a heart-shaped cavity containing fragmented blue and brown forms."
+    ],
+    "action": [
+      "The figure’s head is tilted slightly upward; eyes are closed or obscured, mouth is slightly open.",
+      "The torso displays an exposed anatomical cavity shaped like a heart, with internal components visible but non-realistic.",
+      "The figure remains static with arms at sides; no motion blur or dynamic posture is present."
+    ],
+    "rationale": [
+      "The facial features are heavily smudged and indistinct, suggesting intentional obscuration rather than photographic blur.",
+      "The heart-shaped cavity contains geometric fragments and layered colors inconsistent with biological anatomy, indicating stylization.",
+      "The blue rectangular outline appears hand-drawn and misaligned, implying it is part of the artwork rather than a physical object."
+    ],
+    "object": [
+      "The figure has short dark hair, partially covering the forehead and ears, with visible strands extending laterally.",
+      "The skin tone is rendered in brown washes with black contour lines emphasizing musculature and folds.",
+      "Inside the heart-shaped cavity, light blue irregular shapes interlock with tan and brown fragments; one small red-orange rectangle appears near the lower right interior edge.",
+      "A faint black dot with a short trailing line appears at the bottom-left corner of the blue rectangle, possibly a pin or anchor mark.",
+      "The background shows uneven pigment distribution with darker splotches concentrated toward the top left and bottom right quadrants."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0430_P1",
+      "visual_anchors": [
+        "heart-shaped chest cavity",
+        "fragmented blue interior",
+        "smudged facial features"
+      ],
+      "symbolic_mapping": [
+        "exposed heart as vulnerability",
+        "fragmentation as disintegration of self"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The figure’s obscured face paired with an exposed, fragmented heart suggests a tension between external identity and internal dissolution, evoking questions about continuity of self amid decay.",
+      "alternative_interpretations": [
+        "The image may represent a technical illustration of a mechanical or symbolic heart, not necessarily tied to human psychology."
+      ],
+      "limitations": [
+        "No textual labels confirm symbolic intent; fragmentation could be purely formal/aesthetic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0430_P2",
+      "visual_anchors": [
+        "blue rectangular outline",
+        "incomplete framing",
+        "figure positioned centrally within it"
+      ],
+      "symbolic_mapping": [
+        "frame as constraint",
+        "misalignment as resistance to containment"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The loosely drawn, off-kilter frame surrounding the figure implies imposed structure that fails to fully contain the subject, reflecting themes of institutional or social boundaries that are porous or contested.",
+      "alternative_interpretations": [
+        "The line may simply be a compositional device for balancing the image, with no symbolic intent."
+      ],
+      "limitations": [
+        "The line’s irregularity could stem from medium limitations (e.g., ink bleed) rather than conceptual choice."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0430_P3",
+      "visual_anchors": [
+        "layered blue and brown forms inside cavity",
+        "lack of clear organ differentiation",
+        "presence of a small red-orange rectangle"
+      ],
+      "symbolic_mapping": [
+        "heterogeneous interior as composite knowledge",
+        "red rectangle as focal truth or artifact"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The non-anatomical, collage-like interior of the heart suggests cognition or memory as assembled fragments rather than unified essence, with the red-orange element marking a singular datum amid ambiguity.",
+      "alternative_interpretations": [
+        "The interior may depict abstract geography or cartographic elements, unrelated to epistemology."
+      ],
+      "limitations": [
+        "Color choices (blue, brown, red-orange) lack contextual anchors to confirm referential meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:46:19.631129+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b3df09e1-3895-9fa6-aebd-826600449600",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 941,
+        "total_tokens": 2474,
+        "completion_tokens_details": {
+          "text_tokens": 941
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024607844126d1b6c54d46",
+      "usage": {
+        "completion_tokens": 801,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2900,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3701
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

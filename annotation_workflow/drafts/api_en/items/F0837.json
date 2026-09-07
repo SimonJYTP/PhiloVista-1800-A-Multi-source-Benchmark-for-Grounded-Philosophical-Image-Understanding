@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0837",
+  "sample_id": "PHL1800_HAIV_0225",
+  "file_name": "PHL1800_HAIV_0225.png",
+  "batch_id": "B018",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single silhouetted figure wearing headphones, viewed from behind",
+  "captions": {
+    "scene": [
+      "A narrow aisle flanked by tall wooden bookshelves filled with colorful spines against a pink-red background",
+      "Floating black musical notes and abstract dark shapes appear in the central space above the figure",
+      "Two reddish-brown chairs are visible on the floor at lower left and lower right corners"
+    ],
+    "action": [
+      "The figure holds one hand to the side of a headphone cup, suggesting adjustment or engagement",
+      "The figure remains stationary within the aisle, facing away from the viewer toward the shelves",
+      "No motion blur or dynamic posture is present; the figure appears static"
+    ],
+    "rationale": [
+      "The figure’s silhouette lacks facial features or clothing detail, preventing identification of age, gender, or identity",
+      "Musical notes are stylized and non-representational; their presence does not confirm actual sound production",
+      "Book spines contain indistinct color blocks but no legible titles or text, limiting semantic interpretation"
+    ],
+    "object": [
+      "The figure is rendered as a solid dark teal silhouette with a white collar-like band at the neck and white outlines on the headphones.",
+      "Wooden bookshelves occupy the left and right edges of the frame, each with six visible horizontal shelves holding vertically aligned books.",
+      "Black musical note symbols—including eighth notes and quarter notes—are scattered in the upper central area, varying in orientation and size.",
+      "Two chairs with reddish-brown upholstery and angular frames sit on the floor, one partially cropped on the left and one on the right.",
+      "The background is uniformly pink-red with subtle texture, and no windows, doors, or ceiling elements are visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0837_P1",
+      "visual_anchors": [
+        "silhouetted figure",
+        "bookshelves",
+        "floating musical notes"
+      ],
+      "symbolic_mapping": [
+        "bookshelves → repositories of knowledge",
+        "musical notes → intangible experience"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure stands between structured knowledge (bookshelves) and unstructured sensory input (notes), evoking tension between codified truth and subjective perception.",
+      "alternative_interpretations": [
+        "The image may simply depict a person listening to music in a library, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or narrative context confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0837_P2",
+      "visual_anchors": [
+        "headphones",
+        "back-facing posture",
+        "empty aisle"
+      ],
+      "symbolic_mapping": [
+        "headphones → selective auditory enclosure",
+        "back-facing → withdrawal from shared space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s obscured identity and self-contained auditory space suggest a negotiation of social presence versus internal self-definition.",
+      "alternative_interpretations": [
+        "The back view may be purely compositional, emphasizing depth and framing rather than social commentary."
+      ],
+      "limitations": [
+        "Posture alone cannot verify intent to withdraw; it may reflect standard viewing orientation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0837_P3",
+      "visual_anchors": [
+        "color-blocked book spines",
+        "uniform pink-red background",
+        "abstract dark shapes"
+      ],
+      "symbolic_mapping": [
+        "indistinct spines → inaccessible or generalized knowledge",
+        "monochrome background → emotional or perceptual filter"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "faith_meaning"
+      ],
+      "interpretation": "The figure navigates an environment where meaning is suggested but not specified—books imply potential paths, yet none are legible, reflecting uncertainty in meaning-making.",
+      "alternative_interpretations": [
+        "The style is expressionistic; color blocking serves aesthetic unity rather than conceptual metaphor."
+      ],
+      "limitations": [
+        "Absence of readable text or sequential narrative prevents verification of journey or faith themes."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:20:54.763663+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6881e891-b110-947f-ba43-5457aa413a54",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 893,
+        "total_tokens": 2426,
+        "completion_tokens_details": {
+          "text_tokens": 893
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070320343b7b81289126493f",
+      "usage": {
+        "completion_tokens": 752,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2851,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3603
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

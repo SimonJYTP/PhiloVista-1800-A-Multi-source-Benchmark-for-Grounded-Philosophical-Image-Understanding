@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0172",
+  "sample_id": "PHL1800_IRFL_0403",
+  "file_name": "PHL1800_IRFL_0403.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male in foreground",
+  "captions": {
+    "scene": [
+      "A man stands before a promotional backdrop featuring desert landscape imagery and partial text.",
+      "The backdrop includes a wooden vertical element on the left edge and a printed image of a figure wearing a wide-brimmed hat on the right.",
+      "The background contains layered rectangular panels with muted earth tones and red typography."
+    ],
+    "action": [
+      "The man is smiling with teeth visible and eyes open, facing forward.",
+      "His head is upright and slightly tilted toward the camera’s left.",
+      "He wears a dark outer garment over a collared shirt; no motion is evident."
+    ],
+    "rationale": [
+      "The presence of branded text and staged backdrop suggests a formal media or promotional event setting.",
+      "The man’s attire and posture are consistent with posed photography, though no explicit camera is visible.",
+      "Partial legibility of 'NETFLIX' and 'A NETFLIX ORIGINAL FILM' indicates the backdrop relates to a film release, but full title is obscured."
+    ],
+    "object": [
+      "The man has short dark hair, light skin tone, visible stubble on jawline and upper lip, and brown eyes.",
+      "He wears a black coat with a notched lapel over a dark maroon or burgundy collared shirt.",
+      "Behind him, a printed image shows a second person wearing a wide-brimmed hat, a red vest, and a white shirt with a dark tie.",
+      "Red uppercase letters 'NETFLIX' appear at the top right of the backdrop; below it, smaller white text reads 'A NETFLIX ORIGINAL FILM'.",
+      "A fragment of red uppercase text ending in 'ER' appears above the printed figure, but the preceding characters are not visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0172_P1",
+      "visual_anchors": [
+        "man’s direct gaze",
+        "smile with visible teeth",
+        "layered backdrop with partial text"
+      ],
+      "symbolic_mapping": [
+        "direct gaze → social engagement",
+        "smile → curated self-presentation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s frontal orientation and controlled expression suggest an intentional performance of self within a public visual economy, where identity is mediated through framing and context.",
+      "alternative_interpretations": [
+        "This may simply be a standard portrait pose for event documentation, without symbolic intent."
+      ],
+      "limitations": [
+        "No verbal or behavioral context confirms intentionality behind the expression or framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0172_P2",
+      "visual_anchors": [
+        "desert landscape panel",
+        "figure in hat on backdrop",
+        "partial red text 'ER'"
+      ],
+      "symbolic_mapping": [
+        "desert imagery → temporal distance or narrative setting",
+        "hat-wearing figure → archetypal role or historical reference"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of a contemporary subject against a stylized historical or fictional backdrop evokes tension between present embodiment and narrative time, suggesting how individuals are situated within inherited stories.",
+      "alternative_interpretations": [
+        "The backdrop is purely decorative and genre-specific (e.g., Western film), with no philosophical implication intended."
+      ],
+      "limitations": [
+        "The incomplete text and lack of full scene context prevent confirmation of narrative intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0172_P3",
+      "visual_anchors": [
+        "wooden vertical element on left",
+        "printed figure partially overlapping man’s shoulder",
+        "layered panel structure"
+      ],
+      "symbolic_mapping": [
+        "wooden element → material grounding",
+        "overlapping figures → coexistence of real and represented selves"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The physical layering of real and printed figures, combined with a natural-material border, visually enacts the relational constitution of identity—where the self emerges at the intersection of lived presence and mediated representation.",
+      "alternative_interpretations": [
+        "These are coincidental compositional elements resulting from event staging, not deliberate semiotic design."
+      ],
+      "limitations": [
+        "No evidence confirms designer intent; overlap may be accidental due to framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:13:12.394172+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3679a072-7f58-974c-9ed8-d628f2d2a575",
+      "usage": {
+        "prompt_tokens": 1181,
+        "completion_tokens": 947,
+        "total_tokens": 2128,
+        "completion_tokens_details": {
+          "text_tokens": 947
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 674,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070212581b4adec3add34aa6",
+      "usage": {
+        "completion_tokens": 809,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2425,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3234
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0373",
+  "sample_id": "PHL1800_HL_0324",
+  "file_name": "PHL1800_HL_0324.png",
+  "batch_id": "B010",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red double-decker bus parked at a street curb viewed from inside a café",
+  "captions": {
+    "scene": [
+      "An urban street scene with classical stone buildings, a wide plaza, and a glass-walled interior space containing wooden chairs and tables.",
+      "A cloudy daytime view through large windows showing pedestrians, cyclists, and a red double-decker bus on a multi-lane road intersecting a square.",
+      "Interior signage includes partial text 'PLU' and 'Motor', and a visible 'Stagecoach' logo on the bus; no clear street names or landmarks are legible."
+    ],
+    "action": [
+      "A cyclist in high-visibility clothing rides leftward across the street near the bus’s rear.",
+      "Several pedestrians walk across the plaza and along sidewalks; at least 5 distinct individuals are visible in the distance.",
+      "The red double-decker bus is stationary, with its destination display (printed, not lit) showing '15' followed by illegible text."
+    ],
+    "rationale": [
+      "The bus appears stationary because its wheels show no motion blur and it aligns precisely with the curb and tactile paving edge.",
+      "The interior is likely a café or restaurant because of the arrangement of tables, chairs, and wall-mounted lighting fixtures typical of food service venues.",
+      "The weather is overcast: sky is uniformly gray, shadows are soft and diffuse, and no direct sunlight is visible on surfaces."
+    ],
+    "object": [
+      "A red double-decker bus with 'Stagecoach' branding on its side and a yellow destination sign reading '15' followed by illegible text.",
+      "A cyclist wearing a bright green jacket and dark pants rides a bicycle with visible handlebars and wheels across the road.",
+      "One other red double-decker bus is visible in the background; other vehicles are obscured or not clearly identifiable as buses.",
+      "The interior features white countertops, medium-toned wooden chairs with curved backs, and recessed ceiling spotlights.",
+      "Two flags fly atop a distant building: one is indistinct, the other is vertically oriented and not clearly identifiable as the Union Jack."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0373_P1",
+      "visual_anchors": [
+        "red double-decker bus",
+        "glass window separating interior and street",
+        "tactile paving along curb"
+      ],
+      "symbolic_mapping": [
+        "the window as a boundary between observer and observed",
+        "tactile paving as designed accessibility for unseen users"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image frames a structured social environment where mobility (bus, cyclist) and access (tactile paving) are engineered, yet the viewer remains physically separated—suggesting institutionalized inclusion that still enforces observational distance.",
+      "alternative_interpretations": [
+        "It is simply a tourist’s view from a coffee shop overlooking a busy city intersection."
+      ],
+      "limitations": [
+        "No signage confirms the function of the interior space or the exact location, limiting claims about institutional intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0373_P2",
+      "visual_anchors": [
+        "overcast sky",
+        "static bus",
+        "pedestrians moving at varied paces"
+      ],
+      "symbolic_mapping": [
+        "cloud cover as temporal suspension",
+        "simultaneous motion and stillness as coexisting states"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of a halted vehicle and dispersed human movement under a uniform sky evokes the phenomenology of time—not as linear progress but as layered co-presence, where individual trajectories unfold within shared atmospheric conditions.",
+      "alternative_interpretations": [
+        "The scene reflects ordinary urban rhythm during off-peak hours with neutral weather."
+      ],
+      "limitations": [
+        "No clocks, timestamps, or aging indicators are present to confirm temporal interpretation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0373_P3",
+      "visual_anchors": [
+        "multiple buses",
+        "uniform architecture",
+        "repeating window patterns on facades"
+      ],
+      "symbolic_mapping": [
+        "repetition of form as systemic order",
+        "public transport as collective ritual"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The recurrence of standardized elements—buses, stone façades, grid-aligned windows—highlights how infrastructure mediates social existence: individuals navigate prescribed paths while embedded in visually harmonized systems that obscure their heterogeneity.",
+      "alternative_interpretations": [
+        "The architecture and vehicles reflect common design conventions in a historic European city center."
+      ],
+      "limitations": [
+        "No visible laborers, maintenance activity, or explicit technological interfaces prevent direct linkage to labor processes."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Candidate overcounts pedestrians (claims 'at least 12 distinct individuals' but only ~5 are visible in the distance); misidentifies a flag as the Union Jack (no clear blue field with red/white crosses is visible); incorrectly states 'three other buses' (only one additional red double-decker is clearly visible, others are obscured or not buses); claims 'destination display lit but unreadable' but the sign is not lit, just a printed destination; misdescribes the interior as having 'light-colored countertops' (they are white, but the claim is not a major error)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:40:45.538644+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4572fd03-c467-956d-9643-36d537cf92e7",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1043,
+        "total_tokens": 1852,
+        "completion_tokens_details": {
+          "text_tokens": 1043
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070240253a2446789dd04dc0",
+      "usage": {
+        "completion_tokens": 1096,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2017,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3113
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

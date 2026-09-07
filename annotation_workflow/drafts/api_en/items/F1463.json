@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1463",
+  "sample_id": "PHL1800_IRFL_0275",
+  "file_name": "PHL1800_IRFL_0275.jpg",
+  "batch_id": "B030",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one young woman seated at a table",
+  "captions": {
+    "scene": [
+      "A chalkboard densely covered with handwritten mathematical equations, graphs, and diagrams forms the background.",
+      "A white table surface holds an open, aged book with yellowed pages in front of the subject.",
+      "The subject wears a black blazer, white collared shirt, and red bow tie, positioned centrally in the frame."
+    ],
+    "action": [
+      "The woman sits upright with both hands resting flat on the open book’s pages.",
+      "Her gaze is directed forward toward the viewer, with neutral facial expression and slightly parted lips.",
+      "Her hair appears tousled, with strands displaced as if by motion or air current."
+    ],
+    "rationale": [
+      "The presence of advanced mathematical notation (e.g., integrals, trigonometric identities, series expansions) suggests an academic or theoretical context.",
+      "The open book and formal attire imply engagement with scholarly material, though no reading action is visible.",
+      "The chalkboard contains multiple overlapping expressions; some are legible (e.g., 'I_c = √(ab(a+b+c)(a+b−c))', 'sin²x + cos²x = 1'), others are partially obscured or smudged."
+    ],
+    "object": [
+      "A black chalkboard fills the background, bearing numerous handwritten formulas including integrals, trigonometric identities, and wave functions such as '2 sin x' and 'sin x'.",
+      "An open hardcover book lies flat on the table, its pages aged and unevenly colored, with printed text visible but unreadable due to resolution and angle.",
+      "The woman wears a black single-breasted blazer with a visible lapel pin on the left side and a red bow tie centered at the collar.",
+      "Her right hand rests palm-down on the left page of the open book; her left hand mirrors this position on the right page.",
+      "A small rectangular diagram resembling a shaded area under a curve appears near the upper-left quadrant of the chalkboard, labeled with axes and tick marks."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1463_P1",
+      "visual_anchors": [
+        "dense mathematical equations",
+        "open aged book",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "chalkboard as repository of accumulated knowledge",
+        "book as medium of transmitted truth"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of formal dress, an open historical text, and complex derivations evokes the tension between inherited intellectual authority and active inquiry into objective truth.",
+      "alternative_interpretations": [
+        "The scene may simply depict a staged educational portrait without philosophical intent."
+      ],
+      "limitations": [
+        "No explicit textual claim about truth or knowledge is present; interpretation relies on conventional associations of symbols."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1463_P2",
+      "visual_anchors": [
+        "tousled hair",
+        "neutral expression",
+        "hands placed firmly on book"
+      ],
+      "symbolic_mapping": [
+        "hair displacement suggesting dynamism amid stillness",
+        "hands as assertion of control or grounding"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s composed posture contrasts with disordered hair, visually staging identity as simultaneously constructed (via attire) and contingent (via physical instability).",
+      "alternative_interpretations": [
+        "Hair may be styled intentionally for aesthetic effect rather than symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expression or gesture indicates internal conflict; neutrality precludes definitive identity reading."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1463_P3",
+      "visual_anchors": [
+        "overlapping equations",
+        "partial erasures",
+        "graph of sin(x) waveform"
+      ],
+      "symbolic_mapping": [
+        "equation layering as iterative refinement",
+        "waveform as cyclical process"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The chalkboard’s layered, corrected derivations alongside periodic functions suggest knowledge as a non-linear journey involving repeated choices, detours, and re-evaluation.",
+      "alternative_interpretations": [
+        "Overwriting may reflect practical classroom reuse rather than conceptual iteration."
+      ],
+      "limitations": [
+        "No sequence markers (e.g., timestamps, numbering) confirm temporal progression of the writings."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:35:34.064049+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f928797e-ee1d-9f2c-b67e-83007ea51f1a",
+      "usage": {
+        "prompt_tokens": 834,
+        "completion_tokens": 946,
+        "total_tokens": 1780,
+        "completion_tokens_details": {
+          "text_tokens": 946
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 327,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070435125ab5122b434a43e8",
+      "usage": {
+        "completion_tokens": 811,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1967,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2778
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

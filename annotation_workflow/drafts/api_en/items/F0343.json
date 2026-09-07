@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0343",
+  "sample_id": "PHL1800_HL_0362",
+  "file_name": "PHL1800_HL_0362.png",
+  "batch_id": "B009",
+  "position_in_batch": 23,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two women standing on a sidewalk examining a paper map",
+  "captions": {
+    "scene": [
+      "Urban street corner with concrete bollards, traffic light pole, and large advertising billboards.",
+      "Two large vertical advertisements: one blue with fashion models, one orange with airline pricing and branding.",
+      "Background includes leafy green trees, building facade, and partial view of a cyclist in red skirt."
+    ],
+    "action": [
+      "One woman in white pants leans forward, pointing at or holding a folded paper map while looking down.",
+      "The second woman, wearing a blue jacket, stands beside her, also looking down at the map with head tilted.",
+      "Both women are stationary, positioned between two stone bollards near a pedestrian crossing area."
+    ],
+    "rationale": [
+      "The presence of a paper map and focused downward gaze suggests navigation or orientation behavior.",
+      "Their proximity and shared visual focus indicate collaborative activity rather than independent actions.",
+      "The orange billboard displays 'easyJet' and 'Amsterdam ab 21,99', implying a European urban setting, but exact location is not verifiable from image alone."
+    ],
+    "object": [
+      "A green traffic light is illuminated and mounted on a yellow metal pole with a blue circular sign above it showing a white arrow pointing left.",
+      "A large blue billboard shows two female figures in motion: one mid-leap in red dress and black shoes, another walking with a red bag; text is unreadable.",
+      "An orange vertical advertisement features white text reading 'NEU!', 'Amsterdam', 'ab 21,99', and 'easyJet.' with a small tulip icon and airplane graphic.",
+      "Two women stand side by side: one wears white trousers, brown shoes, dark jacket, and carries a brown shoulder bag; the other wears dark jeans, blue jacket, and holds a brown strap across her chest.",
+      "Three gray stone bollards are visible in the foreground, aligned along the curb edge, with the central one partially obscuring the women."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0343_P1",
+      "visual_anchors": [
+        "paper map held by two people",
+        "orange easyJet advertisement",
+        "bollards delimiting pedestrian space"
+      ],
+      "symbolic_mapping": [
+        "map as representation of uncertain path",
+        "advertising as external directive influencing choice"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The act of jointly consulting a physical map amid commercial signage reflects the tension between self-directed navigation and externally imposed destinations—a microcosm of how individual journeys are shaped by collective infrastructures and market signals.",
+      "alternative_interpretations": [
+        "They may simply be checking directions for a nearby café, with no deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues confirm deliberation or uncertainty; the map could be a brochure or ticket."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0343_P2",
+      "visual_anchors": [
+        "blue billboard with stylized female figures",
+        "orange billboard with pricing",
+        "women in contemporary clothing"
+      ],
+      "symbolic_mapping": [
+        "fashion imagery representing curated identity",
+        "price tag reducing experience to transaction"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The juxtaposition of idealized bodily motion in advertising against the grounded, collaborative stillness of the women highlights how public space mediates between aspirational self-presentation and practical coexistence.",
+      "alternative_interpretations": [
+        "The billboards are generic background elements with no intended contrast; their content is coincidental."
+      ],
+      "limitations": [
+        "The women’s attire is ordinary and not clearly responsive to the ads; no eye contact with billboards is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0343_P3",
+      "visual_anchors": [
+        "traffic light showing green",
+        "pedestrian bollards",
+        "shared focus on map"
+      ],
+      "symbolic_mapping": [
+        "green light as permission to proceed",
+        "bollards as institutional boundaries"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The scene embodies situated agency: movement is technically permitted (green light), physically channeled (bollards), and collectively decided (map consultation), illustrating how freedom operates within layered constraints of infrastructure and intersubjectivity.",
+      "alternative_interpretations": [
+        "They are waiting for a bus and using the map to verify the stop number; the green light is irrelevant to them."
+      ],
+      "limitations": [
+        "No indication they intend to cross immediately; the green light may apply to vehicular traffic only."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:36:08.772084+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-384dad9d-0d2a-9a57-8dd1-79c84ea05306",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 1035,
+        "total_tokens": 1824,
+        "completion_tokens_details": {
+          "text_tokens": 1035
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023540f2f452a0f1144ad2",
+      "usage": {
+        "completion_tokens": 887,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1983,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2870
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

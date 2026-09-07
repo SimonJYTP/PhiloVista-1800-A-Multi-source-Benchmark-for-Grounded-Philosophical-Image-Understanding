@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1475",
+  "sample_id": "PHL1800_HL_0560",
+  "file_name": "PHL1800_HL_0560.png",
+  "batch_id": "B030",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman with short blond hair seated at a table",
+  "captions": {
+    "scene": [
+      "An interior cabin setting with patterned blue-and-white wallpaper, wooden trim, and a bed with white linens in the background.",
+      "A round table holds three plates of food, two glasses of sparkling beverage, cutlery, and a small lamp on a side shelf.",
+      "The room includes a mirrored wall segment above the bed and a decorative shelf holding a covered dish."
+    ],
+    "action": [
+      "The woman holds a stemmed glass containing a pale yellow liquid near her lips, gaze directed leftward.",
+      "Her right hand grips the stem of the glass; her left arm rests on the table edge near a plate.",
+      "Three plates are arranged before her: one with smoked salmon, lemon, cherry tomatoes, and greens; one with a bagel topped with cream cheese and salmon; and one partially visible with salad elements."
+    ],
+    "rationale": [
+      "The presence of multiple plated meals and two filled glasses suggests a meal in progress rather than preparation or cleanup.",
+      "The woman’s posture—seated upright, holding a drink mid-gesture—indicates active participation in dining, though no bite is captured.",
+      "The background bed and compact layout imply a confined space such as a cruise cabin or hotel room, but no signage confirms this."
+    ],
+    "object": [
+      "A woman with short, wavy blond hair wears a gray tank top and dark blue pants while seated at a round table.",
+      "A clear stemmed wine glass in her right hand contains a bubbly, pale-yellow liquid consistent with champagne or sparkling wine.",
+      "A second identical glass sits on the table to her left, also filled with the same liquid.",
+      "One plate displays sliced smoked salmon, a lemon wedge, halved cherry tomatoes, green leafy vegetables, and a dollop of white sauce.",
+      "Another plate holds a toasted bagel split open, spread with white cream cheese, and topped with a piece of smoked salmon and a small green garnish."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1475_P1",
+      "visual_anchors": [
+        "woman holding glass mid-air",
+        "three distinct plated meals",
+        "mirrored wall behind"
+      ],
+      "symbolic_mapping": [
+        "the suspended gesture may symbolize hesitation or reflection",
+        "multiple plates suggest abundance or choice"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The image captures a moment where consumption is paused, inviting contemplation of personal agency amid material provision—where appearance (attire, grooming) and choice (meal selection, posture) co-constitute identity in a transient domestic space.",
+      "alternative_interpretations": [
+        "This is simply a candid snapshot of breakfast aboard a cruise ship, with no intended symbolism."
+      ],
+      "limitations": [
+        "No facial expression is clearly readable; the direction of gaze is ambiguous and not tied to any labeled object."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1475_P2",
+      "visual_anchors": [
+        "mirrored wall reflecting part of the room",
+        "bed partially visible behind",
+        "lamp on shelf"
+      ],
+      "symbolic_mapping": [
+        "mirror introduces doubling and potential self-regard",
+        "bed signifies rest or private life adjacent to public dining"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of intimate domestic elements (bed, lamp) with formal dining (plates, glassware) within a confined mirrored space reflects the tension between social performance and private constraint—existence shaped by spatial limits and ritualized behavior.",
+      "alternative_interpretations": [
+        "The mirror is purely functional for space perception; the bed is incidental background furniture."
+      ],
+      "limitations": [
+        "The mirror’s reflection is incomplete and does not show the subject’s full face or back, limiting claims about self-regard."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1475_P3",
+      "visual_anchors": [
+        "patterned wallpaper",
+        "wooden framing",
+        "uniform plate designs"
+      ],
+      "symbolic_mapping": [
+        "repetitive patterns evoke routine or constructed normalcy",
+        "standardized tableware implies institutional provisioning"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The curated aesthetic and standardized meal presentation suggest systems of service labor and technological mediation that enable leisure, raising questions about responsibility toward unseen workers who produce such moments of apparent autonomy.",
+      "alternative_interpretations": [
+        "The decor is typical of commercial lodging and carries no deeper implication about labor or ethics."
+      ],
+      "limitations": [
+        "No staff, service equipment, or branding is visible; all inference about labor is external to the frame."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:36:59.881957+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2fbad956-f695-9f00-8a21-a126cfe3288f",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1036,
+        "total_tokens": 1805,
+        "completion_tokens_details": {
+          "text_tokens": 1036
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070436296af67787bd7f4e20",
+      "usage": {
+        "completion_tokens": 897,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1966,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2863
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

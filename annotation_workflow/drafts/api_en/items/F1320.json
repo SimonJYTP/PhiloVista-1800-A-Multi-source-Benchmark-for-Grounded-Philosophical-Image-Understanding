@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1320",
+  "sample_id": "PHL1800_HAIV_0324",
+  "file_name": "PHL1800_HAIV_0324.png",
+  "batch_id": "B027",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a central overweight man depicted in ink-line drawing style, flanked by at least two other partially visible figures",
+  "captions": {
+    "scene": [
+      "A black-and-white ink drawing with light blue background washes showing a central figure and partial figures behind him against a grid-like wall pattern",
+      "The setting appears interior, suggested by vertical and horizontal lines forming rectangular panels in the background",
+      "Multiple human figures are present: one dominant central figure, one figure with hands on his shoulders, and at least one more figure visible to the right edge"
+    ],
+    "action": [
+      "The central figure stands with both hands placed on his abdomen, fingers spread",
+      "Two hands rest on the central figure’s shoulders, belonging to figures behind him",
+      "The central figure’s mouth is slightly open and his eyes are half-closed; his posture is upright but relaxed"
+    ],
+    "rationale": [
+      "The presence of multiple distinct limb sets and head silhouettes confirms at least three individuals",
+      "The grid background suggests architectural elements like tiles or window panes, though no definitive function can be assigned",
+      "The blue wash areas appear as background color rather than clothing or objects, indicating intentional stylistic choice rather than literal depiction"
+    ],
+    "object": [
+      "The central figure wears a long-sleeved button-up shirt with visible dark buttons down the front placket.",
+      "His left hand rests on his lower abdomen with fingers splayed; his right hand similarly rests on his upper abdomen.",
+      "Two hands grip his shoulders—one from the left side, one from the right—each with clearly drawn fingers and thumbs.",
+      "To the far right, a partial figure shows a head with dark hair, a torso in light blue, and one leg in dark pants ending near the bottom edge.",
+      "Behind the central figure’s left shoulder, a second partial figure shows a forearm and hand resting on the shoulder, with a sleeve ending just above the wrist."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1320_P1",
+      "visual_anchors": [
+        "hands on shoulders",
+        "central figure’s belly exposed by shirt tension",
+        "grid background"
+      ],
+      "symbolic_mapping": [
+        "shoulder contact → social support or pressure",
+        "abdomen prominence → bodily presence or vulnerability"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image may reflect how individual identity is shaped through embodied presence and interpersonal contact within structured environments.",
+      "alternative_interpretations": [
+        "It could simply depict a casual group portrait emphasizing physicality without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions are fully legible, and background geometry lacks contextual markers to confirm institutional or domestic setting."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1320_P2",
+      "visual_anchors": [
+        "ink cross-hatching for shading",
+        "uniform line weight",
+        "absence of facial detail beyond outline"
+      ],
+      "symbolic_mapping": [
+        "stylized rendering → abstraction of human form",
+        "monochrome palette → reduction to essential features"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The drawing technique foregrounds the constructed nature of visual representation, suggesting that perception of self and others is mediated by artistic convention.",
+      "alternative_interpretations": [
+        "The style may reflect technical constraints or aesthetic preference rather than philosophical commentary."
+      ],
+      "limitations": [
+        "The medium (ink drawing) is conventional for illustration; no unique formal deviation confirms intentional epistemological critique."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1320_P3",
+      "visual_anchors": [
+        "central figure’s hands on own body",
+        "others’ hands on his shoulders",
+        "asymmetrical framing with partial figures"
+      ],
+      "symbolic_mapping": [
+        "self-touch → introspection or self-regulation",
+        "external touch → influence or surveillance"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The composition visualizes the tension between autonomous bodily awareness and external social imposition, where proximity implies both care and control.",
+      "alternative_interpretations": [
+        "The pose may be naturalistic—e.g., a group photo stance—with no intended duality of freedom/constraint."
+      ],
+      "limitations": [
+        "No directional gaze, gesture hierarchy, or spatial dominance cues confirm power asymmetry; contact could be neutral or supportive."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:17:57.493431+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c04eaa6e-2723-98f2-a7d2-93dac211817b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 963,
+        "total_tokens": 2496,
+        "completion_tokens_details": {
+          "text_tokens": 963
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041710028434b812f142fc",
+      "usage": {
+        "completion_tokens": 822,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2917,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3739
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

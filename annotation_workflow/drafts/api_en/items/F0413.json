@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0413",
+  "sample_id": "PHL1800_IRFL_0126",
+  "file_name": "PHL1800_IRFL_0126.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a US twenty-dollar bill inserted into a metal drain cover",
+  "captions": {
+    "scene": [
+      "A close-up of a metallic circular drain cover with multiple circular perforations against a plain white background.",
+      "A folded US twenty-dollar bill is vertically oriented and partially inserted into the central opening of the drain cover.",
+      "The bill displays green ink, serial numbers, and partial Treasury seal; the background is uniformly white with no shadows or context."
+    ],
+    "action": [
+      "The bill is held in a conical fold, tapering toward the drain opening.",
+      "The lower portion of the bill is inside the drain’s central aperture, while the upper portion remains outside and visible.",
+      "No motion is evident; the configuration appears static and deliberately arranged."
+    ],
+    "rationale": [
+      "The bill’s orientation and insertion suggest intentional placement rather than accidental drop, though no agent is visible.",
+      "The clean white background isolates the objects, implying studio setup rather than real-world environment.",
+      "The visible serial number 'K30681949F' and denomination '20' confirm it is a genuine US $20 Federal Reserve Note, but its condition (crease, slight wear) cannot be fully assessed."
+    ],
+    "object": [
+      "A US twenty-dollar bill is folded lengthwise into a cone shape with its narrow end inserted into a circular metal drain grate.",
+      "The drain cover is made of brushed metal, features eight evenly spaced circular holes around a larger central opening, and has a raised rim.",
+      "The bill shows the reverse side’s green Treasury seal, part of the numeral '20', and the serial number 'K30681949F' in black ink.",
+      "The top edge of the bill is slightly frayed and creased, indicating prior handling.",
+      "No human hands, tools, or additional objects are visible in the frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0413_P1",
+      "visual_anchors": [
+        "folded $20 bill",
+        "drain opening",
+        "metal grate"
+      ],
+      "symbolic_mapping": [
+        "money entering drain → loss of value",
+        "grate as barrier → institutional constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The image visualizes the tension between individual agency (choosing to insert money) and systemic limitation (the drain as an irreversible conduit), suggesting that choices may lead to entrapment within structures not of one’s making.",
+      "alternative_interpretations": [
+        "A literal depiction of discarding currency, possibly for artistic or commercial photography without symbolic intent."
+      ],
+      "limitations": [
+        "No context confirms intent; the absence of a person prevents attribution of motive or decision-making."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0413_P2",
+      "visual_anchors": [
+        "US $20 bill",
+        "white background",
+        "static composition"
+      ],
+      "symbolic_mapping": [
+        "isolated bill → commodification of value",
+        "uniform whiteness → abstraction from social reality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "By removing the bill from any economic or interpersonal context and placing it into a drain, the image questions whether monetary value retains meaning when detached from social exchange and moral accountability.",
+      "alternative_interpretations": [
+        "A product shot demonstrating paper durability or folding technique."
+      ],
+      "limitations": [
+        "The white background erases socioeconomic cues; no transactional or relational elements are present."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0413_P3",
+      "visual_anchors": [
+        "conical fold of bill",
+        "central drain aperture",
+        "perforated ring"
+      ],
+      "symbolic_mapping": [
+        "tapering form → narrowing possibilities",
+        "central hole → singular point of no return"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The converging geometry of the folded bill leading into the drain evokes inevitability—like time’s arrow—where accumulated value is funneled toward dissolution, reflecting power dynamics where capital is consumed by unseen systems.",
+      "alternative_interpretations": [
+        "A demonstration of origami-like manipulation of currency for visual effect."
+      ],
+      "limitations": [
+        "The image contains no temporal markers (e.g., clocks, decay) to substantiate mortality symbolism directly."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:44:38.728805+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ac4e51e8-488c-9090-ad89-e8c41602056b",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 969,
+        "total_tokens": 1559,
+        "completion_tokens_details": {
+          "text_tokens": 969
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 83,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024421ee5bae10459d4a28",
+      "usage": {
+        "completion_tokens": 818,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1666,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2484
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1749",
+  "sample_id": "PHL1800_HL_0097",
+  "file_name": "PHL1800_HL_0097.png",
+  "batch_id": "B036",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a discarded teddy bear resting against a chain-link fence beside black trash bags",
+  "captions": {
+    "scene": [
+      "A narrow urban sidewalk bordered by parked cars on the left and a chain-link fence with bicycles on the right, under overcast lighting.",
+      "Row houses with stoops and bay windows line the street in the background; bare trees suggest late autumn or winter.",
+      "Two black plastic trash bags lie on the sidewalk near the curb, with a large stuffed bear propped against the fence and a disposable cup nearby."
+    ],
+    "action": [
+      "A person in dark clothing walks away down the sidewalk, pushing a bicycle.",
+      "Two bicycles are locked to the fence, one partially obscured behind the other.",
+      "The teddy bear lies on its side, head tilted upward, with one eye visible and a white patch on its snout."
+    ],
+    "rationale": [
+      "The presence of multiple parked vehicles and residential architecture suggests a dense residential neighborhood rather than commercial or industrial use.",
+      "The bare branches and lack of foliage indicate a season outside summer, though exact month cannot be determined from monochrome alone.",
+      "The trash bags and discarded toy imply recent disposal, but no human is actively discarding them in the frame."
+    ],
+    "object": [
+      "A large brown teddy bear with visible stitched eyes, a white circular nose patch, and a slightly open mouth rests against a metal fence post.",
+      "Two black plastic garbage bags sit upright on the sidewalk, one partially collapsed, both sealed at the top.",
+      "A clear plastic cup with a lid and straw stands on the sidewalk near the bags, containing a dark liquid residue.",
+      "A chain-link fence runs parallel to the sidewalk, supporting two bicycles secured with U-locks.",
+      "Two people are visible in the distance: one walking away with a bicycle, and one other further back near a parked car."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1749_P1",
+      "visual_anchors": [
+        "discarded teddy bear",
+        "black trash bags",
+        "sidewalk curb"
+      ],
+      "symbolic_mapping": [
+        "the bear as a relic of childhood care placed among refuse"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a once-treasured object now abandoned alongside waste evokes the impermanence of emotional attachments and the social erasure of personal history when objects lose utility.",
+      "alternative_interpretations": [
+        "The scene may simply reflect routine curbside trash collection day, with the bear accidentally or intentionally included in household refuse."
+      ],
+      "limitations": [
+        "No labels, tags, or contextual signage confirm intentional symbolism; the bear could have been placed there for practical reasons unrelated to meaning-making."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1749_P2",
+      "visual_anchors": [
+        "chain-link fence",
+        "bicycles locked to fence",
+        "sidewalk boundary"
+      ],
+      "symbolic_mapping": [
+        "fence as a permeable yet restrictive boundary between private property and public space"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The fence demarcates ownership while allowing visual access, illustrating how physical infrastructure mediates collective coexistence—simultaneously enabling security and reinforcing spatial exclusion.",
+      "alternative_interpretations": [
+        "The fence serves purely functional purposes: deterring trespass and securing bikes, with no intended symbolic role."
+      ],
+      "limitations": [
+        "No signage or markings indicate intended social function beyond basic enclosure; interpretation depends on external frameworks."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1749_P3",
+      "visual_anchors": [
+        "person walking away with bicycle",
+        "distant figures",
+        "empty foreground"
+      ],
+      "symbolic_mapping": [
+        "retreating figure as emblem of transient presence in shared environments"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The solitary departure amid static objects underscores how individual movement defines identity in urban space—not through permanence, but through passage and selection of path.",
+      "alternative_interpretations": [
+        "The person is merely commuting; their motion is incidental and not expressive of existential choice."
+      ],
+      "limitations": [
+        "Posture, direction, and context do not reveal intent or self-conception; movement alone cannot confirm philosophical agency."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate claims three people, but image shows two distinct figures (one walking with a bicycle, one further back)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:12:23.082385+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8f2acbe0-fc8c-9868-9504-404176c0cb5c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 955,
+        "total_tokens": 1764,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907051207c9b996d3ef054388",
+      "usage": {
+        "completion_tokens": 849,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1932,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2781
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

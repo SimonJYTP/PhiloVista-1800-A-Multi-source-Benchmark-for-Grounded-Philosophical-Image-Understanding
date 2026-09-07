@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0950",
+  "sample_id": "PHL1800_IRFL_0475",
+  "file_name": "PHL1800_IRFL_0475.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult brown bear",
+  "captions": {
+    "scene": [
+      "A bear stands amid low shrubs with autumnal foliage in muted yellows, greens, and reds.",
+      "The background is a softly blurred field of similar vegetation, suggesting shallow depth of field.",
+      "Foreground vegetation includes small leaves and stems partially obscuring the bear's lower torso."
+    ],
+    "action": [
+      "The bear’s mouth is open, revealing upper and lower teeth and part of the tongue.",
+      "Its head is oriented toward the viewer, with eyes fixed forward and ears erect.",
+      "The bear’s body is angled slightly leftward while its gaze remains frontal."
+    ],
+    "rationale": [
+      "The open mouth may indicate vocalization, panting, or reaction to stimulus—but no sound or context confirms intent.",
+      "Erect ears and direct gaze suggest alertness, though internal state cannot be determined from posture alone.",
+      "The bear appears stationary; no motion blur or limb displacement confirms movement."
+    ],
+    "object": [
+      "The bear has thick, shaggy brown fur with lighter tips on the dorsal side and darker underfur visible near the neck.",
+      "Its snout is tan with a black nose, and white fur outlines the muzzle and lower jaw.",
+      "The eyes are dark, round, and reflective, with no visible pupil dilation due to resolution limits.",
+      "The left ear is fully visible and rounded; the right ear is partially occluded by the head angle but similarly shaped.",
+      "Vegetation in the foreground includes stems with ovate leaves showing yellow, green, and reddish pigmentation."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0950_P1",
+      "visual_anchors": [
+        "open mouth with visible teeth",
+        "direct gaze",
+        "dense fur texture"
+      ],
+      "symbolic_mapping": [
+        "open mouth as threshold between interior and exterior",
+        "gaze as confrontation with observer"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The bear’s exposed dentition and unblinking stare manifest a raw assertion of presence that challenges the observer’s assumed dominance, framing identity not as constructed but as immediately embodied and contested.",
+      "alternative_interpretations": [
+        "The open mouth is a thermoregulatory behavior common in bears during mild exertion, unrelated to symbolic communication."
+      ],
+      "limitations": [
+        "No facial musculature detail confirms intentionality behind the mouth position."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0950_P2",
+      "visual_anchors": [
+        "autumnal foliage",
+        "shallow depth of field",
+        "bear’s partial concealment by plants"
+      ],
+      "symbolic_mapping": [
+        "seasonal color shift as marker of temporal passage",
+        "partial occlusion as metaphor for incomplete perception"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The bear emerges from a transient seasonal backdrop while being visually fragmented by foreground flora, evoking the epistemic limit: truth about wild beings is always mediated, never fully captured.",
+      "alternative_interpretations": [
+        "The shallow depth of field results from photographic technique rather than intentional symbolism."
+      ],
+      "limitations": [
+        "The foliage colors could reflect lighting conditions rather than seasonality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0950_P3",
+      "visual_anchors": [
+        "single bear",
+        "no other animals or humans",
+        "neutral expression despite open mouth"
+      ],
+      "symbolic_mapping": [
+        "solitary stance as ontological independence",
+        "lack of social cues as resistance to anthropomorphic projection"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The bear’s solitary, non-performative presence—neither threatening nor placating—invites reflection on existence outside relational definition, suggesting freedom as absence of imposed meaning rather than active choice.",
+      "alternative_interpretations": [
+        "The bear is simply foraging or moving through habitat; solitude reflects ecological niche, not philosophy."
+      ],
+      "limitations": [
+        "Absence of other subjects does not prove intentional isolation; camera framing may exclude companions."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:30:19.947136+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fc0796ac-5e6c-9c49-9bc8-1e5faa0d82b2",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 910,
+        "total_tokens": 1819,
+        "completion_tokens_details": {
+          "text_tokens": 910
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 402,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703301029ec1a7d565544fd",
+      "usage": {
+        "completion_tokens": 771,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2028,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2799
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

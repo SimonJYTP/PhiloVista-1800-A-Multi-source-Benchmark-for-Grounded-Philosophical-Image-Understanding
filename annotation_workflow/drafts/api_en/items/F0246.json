@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0246",
+  "sample_id": "PHL1800_IRFL_0100",
+  "file_name": "PHL1800_IRFL_0100.jpg",
+  "batch_id": "B007",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four cartoon-style human figures in a line, moving left to right",
+  "captions": {
+    "scene": [
+      "A plain beige background with no environmental details or landmarks.",
+      "Four stylized male figures arranged horizontally across the frame, each with distinct clothing and expressions.",
+      "The figures appear sequentially: leftmost figure holds empty pockets; second figure stands behind him; third points forward while holding green bills; fourth runs ahead holding green bills and smiling."
+    ],
+    "action": [
+      "The leftmost figure pulls open his empty trouser pockets with both hands and displays wide eyes and an open mouth.",
+      "The third figure from left points forward with his right index finger while clutching green rectangular objects (resembling banknotes) in his left hand.",
+      "The rightmost figure runs forward with bent knees, arms raised, holding green rectangular objects in both hands, and shows a wide grin with visible teeth."
+    ],
+    "rationale": [
+      "The green rectangular objects held by two figures resemble currency due to shape, color, and context of display, but no denomination or text is legible.",
+      "The sequential positioning and differing postures suggest directional movement from left to right, though no ground line or motion blur confirms actual motion.",
+      "Facial expressions (wide eyes, open mouth, grin) are exaggerated and stylized, indicating intended emotional signaling, but specific internal states cannot be verified visually."
+    ],
+    "object": [
+      "The leftmost figure wears a green long-sleeve shirt, blue trousers, and gray shoes, and has blond hair and large round eyes.",
+      "The second figure wears a dark blue suit jacket, brown trousers, and brown shoes, and has balding gray hair and a neutral facial expression.",
+      "The third figure wears a light blue long-sleeve shirt, darker blue trousers, and gray shoes, and has brown hair, a pointing right hand, and green rectangular objects in his left hand.",
+      "The rightmost figure wears a lavender long-sleeve shirt, gray trousers, and white shoes, and holds green rectangular objects in both hands while running.",
+      "All four figures have simplified cartoon anatomy with oversized heads, minimal shading, and no visible shadows or depth cues."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0246_P1",
+      "visual_anchors": [
+        "empty pockets pulled open",
+        "green rectangular objects held aloft",
+        "running figure with grin"
+      ],
+      "symbolic_mapping": [
+        "empty pockets → lack of resources",
+        "green objects → material gain"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes a contrast between deprivation and acquisition within a social sequence, suggesting how perceived freedom may be constrained by material disparity.",
+      "alternative_interpretations": [
+        "It may simply depict a comic strip panel showing a chase or race for money without deeper meaning."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm symbolic intent; the green objects could represent non-monetary items."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0246_P2",
+      "visual_anchors": [
+        "pointing gesture",
+        "sequential arrangement",
+        "differing facial expressions"
+      ],
+      "symbolic_mapping": [
+        "pointing → direction or influence",
+        "sequence → progression or hierarchy"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The pointing figure mediates between scarcity and abundance, implying agency in directing outcomes—a visual metaphor for how power shapes individual journeys through choice structures.",
+      "alternative_interpretations": [
+        "The pointing may indicate surprise or alarm rather than guidance, and the sequence may reflect random positioning rather than hierarchy."
+      ],
+      "limitations": [
+        "Gesture direction is ambiguous without context; no visual cue confirms authority or intent behind the point."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0246_P3",
+      "visual_anchors": [
+        "exaggerated facial features",
+        "uniform cartoon style",
+        "lack of background detail"
+      ],
+      "symbolic_mapping": [
+        "stylization → abstraction of human condition"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The uniform simplification of appearance across figures underscores how identity becomes secondary to economic role, raising questions about ethical responsibility in systems that reduce individuals to financial status markers.",
+      "alternative_interpretations": [
+        "The style is purely aesthetic convention for humor or clarity, not philosophical commentary."
+      ],
+      "limitations": [
+        "Cartoon style is common in illustration and does not inherently imply critique; no moral indicators (e.g., symbols of harm or duty) are present."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:27:37.279356+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-875f48c1-0797-9cb5-8d50-cf637ab4028f",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 1007,
+        "total_tokens": 1586,
+        "completion_tokens_details": {
+          "text_tokens": 1007
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 384
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022718d0280030db48482d",
+      "usage": {
+        "completion_tokens": 869,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1628,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2497
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

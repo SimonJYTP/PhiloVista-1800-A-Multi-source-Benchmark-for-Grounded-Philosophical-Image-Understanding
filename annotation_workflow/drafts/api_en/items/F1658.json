@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1658",
+  "sample_id": "PHL1800_HL_0148",
+  "file_name": "PHL1800_HL_0148.png",
+  "batch_id": "B034",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in a gray hoodie extending a red frisbee toward a boy in a camouflage hoodie",
+  "captions": {
+    "scene": [
+      "An indoor gymnasium with polished wooden flooring, maroon wall panels, and a white banner reading '20 & 14 UNDER' above a painted white silhouette of a person in motion.",
+      "A table with food items and drinks sits behind the central figures; a black jacket hangs on a chair nearby.",
+      "Three individuals are present: one woman holding a frisbee, one boy facing her, and another woman in the background holding a phone."
+    ],
+    "action": [
+      "The woman in the gray hoodie extends both arms forward, holding a red frisbee horizontally at chest height, mouth open in apparent vocalization or laughter.",
+      "The boy in the camouflage hoodie stands with his back to the camera, arms slightly raised, facing the woman and the frisbee.",
+      "The third person, wearing glasses and a dark jacket, holds a silver smartphone horizontally, aiming it toward the central pair."
+    ],
+    "rationale": [
+      "The frisbee is held parallel to the floor and directed toward the boy’s torso, suggesting an imminent handoff or throw rather than a toss into space.",
+      "The boy’s posture—upright, shoulders squared, arms partially raised—indicates readiness to receive or interact with the object, not passive observation.",
+      "The background woman’s phone orientation and stance imply she is recording or photographing the interaction, though the screen content is unreadable."
+    ],
+    "object": [
+      "A red plastic frisbee is held horizontally by the woman in the gray hoodie, positioned between her and the boy.",
+      "The woman wears rectangular-framed eyeglasses, a gray hooded sweatshirt over a light-colored shirt, blue jeans, and white sneakers with dark laces.",
+      "The boy wears a black-and-gray digital camouflage-patterned hoodie with a white collar visible at the neckline.",
+      "A white banner mounted high on the wall displays partial text: '20', a basketball icon, '& 14 UNDER'; other characters are obscured or illegible.",
+      "A folding chair with a black garment draped over its backrest stands near a white-topped table bearing bottles, cups, and wrapped food items."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1658_P1",
+      "visual_anchors": [
+        "red frisbee mid-transfer",
+        "boy’s raised arms",
+        "woman’s open mouth"
+      ],
+      "symbolic_mapping": [
+        "the frisbee as a medium of shared activity",
+        "raised arms as anticipation of reciprocity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The moment captures a micro-social contract: the offering and potential acceptance of an object embody mutual recognition and voluntary participation in a shared frame of action.",
+      "alternative_interpretations": [
+        "It may simply be a casual game initiation without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions of the boy are visible; his internal state is inaccessible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1658_P2",
+      "visual_anchors": [
+        "background photographer with phone",
+        "central pair in focus",
+        "gymnasium setting"
+      ],
+      "symbolic_mapping": [
+        "the act of documentation framing lived experience as worthy of preservation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The presence of a recorder transforms the spontaneous interaction into a potential artifact of memory, raising questions about how truth is stabilized through representation.",
+      "alternative_interpretations": [
+        "The photographer may be capturing a personal memento, not engaging in epistemic curation."
+      ],
+      "limitations": [
+        "The phone screen is not visible; intent to document versus casual snapshot cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1658_P3",
+      "visual_anchors": [
+        "banner with age categories",
+        "casual attire",
+        "indoor recreational space"
+      ],
+      "symbolic_mapping": [
+        "age markers as institutional scaffolding for social roles"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The visible age classification ('20 & 14 UNDER') situates the interaction within regulated social domains, suggesting that even playful exchange occurs under implicit structural constraints.",
+      "alternative_interpretations": [
+        "The banner may be decorative or unrelated to the current activity."
+      ],
+      "limitations": [
+        "The banner’s full context (e.g., event name, purpose) is incomplete and unreadable beyond partial text."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:58:28.024933+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6daa7f3b-e200-9b93-aa3d-9241262b74cc",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1005,
+        "total_tokens": 1774,
+        "completion_tokens_details": {
+          "text_tokens": 1005
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704580917e3526b495f448f",
+      "usage": {
+        "completion_tokens": 863,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1930,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2793
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

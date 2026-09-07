@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0925",
+  "sample_id": "PHL1800_HAIV_0005",
+  "file_name": "PHL1800_HAIV_0005.png",
+  "batch_id": "B001",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized globe enclosed within a metal cage with a lock",
+  "captions": {
+    "scene": [
+      "A spherical representation of Earth with green landmasses and blue oceans is fully surrounded by vertical and horizontal gray metal bars forming a cage.",
+      "The cage features a central rectangular locking mechanism with a keyhole, a lever handle, and visible fasteners.",
+      "Behind the bars, the globe is partially obscured by a solid brown vertical panel covering the central longitudinal strip."
+    ],
+    "action": [
+      "The cage is in a closed and locked state, indicated by the engaged lever handle and the keyhole cover positioned over the keyway.",
+      "No motion is depicted; all elements are static and fixed in position.",
+      "The lever handle is rotated horizontally to the right, consistent with a locked configuration."
+    ],
+    "rationale": [
+      "The presence of a functional-looking lock and lever suggests intentional containment rather than decorative framing.",
+      "The brown panel behind the bars may indicate occlusion or obstruction, but its material and purpose are not visually determinable.",
+      "The globe’s depiction uses simplified geography (e.g., recognizable continental shapes), implying symbolic rather than cartographic intent."
+    ],
+    "object": [
+      "The globe is circular, with green regions representing continents and blue regions representing oceans, outlined in black.",
+      "The cage consists of evenly spaced vertical gray bars intersected by two horizontal gray bars, one near the top and one near the middle.",
+      "A rectangular metallic lock assembly is mounted at the center of the cage, secured with four visible screws at its corners.",
+      "The lock includes a black keyhole silhouette, a small square plate with an unreadable symbol adjacent to it, and a white lever handle extending rightward.",
+      "A solid brown vertical rectangle spans the height of the image behind the central bars, obscuring part of the globe."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0925_P1",
+      "visual_anchors": [
+        "metal cage enclosing globe",
+        "locked lever handle",
+        "brown central panel"
+      ],
+      "symbolic_mapping": [
+        "cage → constraint",
+        "lock → enforced restriction"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually enacts the philosophical tension between planetary wholeness and imposed limitation, where the cage signifies external structures that curtail global autonomy.",
+      "alternative_interpretations": [
+        "It may represent a security measure for protecting the planet, such as environmental safeguards or controlled access to resources."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm whether the cage is protective, punitive, or metaphorical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0925_P2",
+      "visual_anchors": [
+        "globe visible through bars",
+        "central brown panel",
+        "keyhole with cover"
+      ],
+      "symbolic_mapping": [
+        "brown panel → hidden knowledge",
+        "keyhole → inaccessible truth"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The partial occlusion of the globe by the brown panel, combined with a sealed keyhole, suggests epistemic limitation—truth about the whole world remains partially concealed and inaccessible without authorization.",
+      "alternative_interpretations": [
+        "The brown panel could be structural support or a shadow cast by the cage, not intentional concealment."
+      ],
+      "limitations": [
+        "The brown panel lacks texture or labeling to confirm intentional masking versus incidental obstruction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0925_P3",
+      "visual_anchors": [
+        "uniform cage bars",
+        "symmetric layout",
+        "central lock"
+      ],
+      "symbolic_mapping": [
+        "repetitive bars → systemic control",
+        "central lock → singular authority point"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The symmetrical, rigid cage structure centered on a single lock implies a centralized power architecture that regulates access to the global sphere, reflecting dynamics of domination and resistance inherent in institutional control.",
+      "alternative_interpretations": [
+        "The design may simply reflect engineering constraints of a physical enclosure, not political symbolism."
+      ],
+      "limitations": [
+        "No figures, insignia, or hierarchical indicators are present to confirm intentional representation of power relations."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:41:23.159618+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bdcda96f-1e15-9a74-868b-79bc0bb481a7",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 916,
+        "total_tokens": 2449,
+        "completion_tokens_details": {
+          "text_tokens": 916
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014104168a005fffe142fe",
+      "usage": {
+        "completion_tokens": 781,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2874,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3655
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

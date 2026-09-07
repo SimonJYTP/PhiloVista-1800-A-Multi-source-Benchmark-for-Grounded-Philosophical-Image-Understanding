@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0473",
+  "sample_id": "PHL1800_HL_0011",
+  "file_name": "PHL1800_HL_0011.png",
+  "batch_id": "B001",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three people in a domestic interior: a woman holding a sleeping child on a sofa, and a man seated on a chair holding a white remote",
+  "captions": {
+    "scene": [
+      "A dimly lit living room with beige upholstered furniture, a black side table bearing framed photos, and a shelf with fruit and containers above.",
+      "A brown fabric sofa with two large cushions, one occupied by a woman and child, the other empty with a crumpled white object resting on it.",
+      "A black wooden chair to the right, occupied by a man wearing a dark zippered jacket with visible white lettering 'ZHA' on the left chest."
+    ],
+    "action": [
+      "The woman wears glasses and rests her head slightly back while holding a sleeping child wrapped in a blue blanket with yellow cartoon figures.",
+      "The child lies supine across the woman’s lap, eyes closed, mouth slightly open, one arm extended outward.",
+      "The man sits upright, looking toward the left side of the frame, holding a white Nintendo Wii remote in both hands with thumbs positioned as if actively using it."
+    ],
+    "rationale": [
+      "The child’s closed eyes, relaxed facial muscles, and prone posture strongly indicate sleep; no movement is visible.",
+      "The man’s gaze direction and hand placement on the remote suggest engagement with a screen outside the frame, though the screen itself is not visible.",
+      "The white object on the sofa cushion appears crumpled and irregular in shape, resembling a used tissue or napkin, but its identity cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "A white Nintendo Wii remote with a wrist strap is held in both hands by the man; the button layout and elongated shape are characteristic of that model.",
+      "A green glass bottle with a metal cap stands on the floor beside the man’s right leg, partially obscured by his knee.",
+      "A clear wine glass containing amber liquid and a white spherical object (possibly an olive or decorative sphere) sits on a white plate on a low surface in front of the sofa.",
+      "Two framed photographs sit on a black side table: one shows a person in profile, the other depicts a small child; both frames are white with matte borders.",
+      "A blue fleece blanket with yellow cartoon characters (resembling ducks or birds) covers the child and drapes over the woman’s lap."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0473_P1",
+      "visual_anchors": [
+        "child sleeping on woman’s lap",
+        "man holding Wii remote",
+        "empty space on sofa cushion"
+      ],
+      "symbolic_mapping": [
+        "the sleeping child represents vulnerability and dependence",
+        "the remote symbolizes mediated engagement with external reality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of embodied care (sleeping child held) and technologically mediated attention (remote in hand) illustrates the coexistence of intimate relational presence and instrumental detachment within shared domestic space.",
+      "alternative_interpretations": [
+        "This may simply reflect routine evening relaxation without symbolic intent—e.g., the man paused gameplay while the child napped."
+      ],
+      "limitations": [
+        "No facial expressions or eye contact are visible to confirm intentionality or emotional valence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0473_P2",
+      "visual_anchors": [
+        "framed photos on side table",
+        "crumpled white object on cushion",
+        "woman’s relaxed posture"
+      ],
+      "symbolic_mapping": [
+        "framed images signify curated memory",
+        "crumpled object suggests transient use or discard"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The stillness of the scene—sleep, repose, static objects—contrasts with traces of prior activity (crumpled item, photos), evoking the tension between enduring self-representation and the ephemeral nature of lived moments.",
+      "alternative_interpretations": [
+        "The crumpled object could be laundry or packaging; the photos may be decorative rather than memorial."
+      ],
+      "limitations": [
+        "The content of the photos is indistinct; the white object’s function is unverifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0473_P3",
+      "visual_anchors": [
+        "man’s jacket with partial text 'ZHA'",
+        "beige sofa texture",
+        "green bottle on floor"
+      ],
+      "symbolic_mapping": [
+        "partial branding hints at commercial identity overlaying personal space",
+        "bottle placement suggests informality or temporary state"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The integration of branded apparel, consumer technology, and casual object placement within a caregiving context reflects how ethical responsibility for others coexists with embedded market and technological infrastructures in everyday life.",
+      "alternative_interpretations": [
+        "The jacket logo may be unrelated to branding (e.g., initials); the bottle may belong to a guest or be part of meal cleanup."
+      ],
+      "limitations": [
+        "The text 'ZHA' is incomplete and could be non-commercial (e.g., team name, acronym)."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:38:07.297023+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-30529a2e-4282-937e-b8f3-7d137f6bda92",
+      "usage": {
+        "prompt_tokens": 869,
+        "completion_tokens": 1124,
+        "total_tokens": 1993,
+        "completion_tokens_details": {
+          "text_tokens": 1124
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 362,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013756be64a90a7b574b3a",
+      "usage": {
+        "completion_tokens": 984,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2168,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3152
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

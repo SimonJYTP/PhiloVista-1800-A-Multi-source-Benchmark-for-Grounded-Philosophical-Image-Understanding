@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0332",
+  "sample_id": "PHL1800_IRFL_0291",
+  "file_name": "PHL1800_IRFL_0291.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults seated on a dark sofa",
+  "captions": {
+    "scene": [
+      "Indoor domestic setting with blurred background showing kitchen appliances and a window",
+      "Two individuals occupy opposite ends of a dark-colored sectional sofa",
+      "A wooden coffee table holds two transparent glasses containing amber-colored liquid"
+    ],
+    "action": [
+      "The person on the left rests their right hand against their forehead, eyes closed, head tilted downward",
+      "The person on the right sits with torso angled away, gaze directed downward toward lap, hands clasped over knees",
+      "Both individuals maintain physical separation without contact, facing away from each other"
+    ],
+    "rationale": [
+      "Postural divergence and lack of eye contact suggest interpersonal tension or emotional distance",
+      "Hand-on-forehead gesture commonly correlates with distress, fatigue, or frustration in visual conventions",
+      "Presence of drinks on table may indicate prior shared activity, but current posture implies disengagement"
+    ],
+    "object": [
+      "The person on the left wears a light gray short-sleeved t-shirt and black-and-white plaid trousers.",
+      "The person on the right wears a heather gray short-sleeved t-shirt and light gray trousers.",
+      "Both individuals have dark curly hair: the left person has an afro-style texture; the right person has dreadlocks.",
+      "Two clear drinking glasses sit on a wooden surface in the foreground, each partially filled with a yellow-amber liquid.",
+      "A dark fabric sofa with visible seams and cushioning supports both individuals; no visible branding or text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0332_P1",
+      "visual_anchors": [
+        "physical separation on shared sofa",
+        "downcast gazes",
+        "unconsumed drinks"
+      ],
+      "symbolic_mapping": [
+        "spatial distance as metaphor for relational estrangement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages a moment where cohabitation does not imply connection, raising questions about the conditions under which shared space sustains or undermines social existence.",
+      "alternative_interpretations": [
+        "The subjects may simply be resting after separate activities, with posture reflecting fatigue rather than relational rupture."
+      ],
+      "limitations": [
+        "No facial expressions are fully legible due to angle and partial occlusion; emotional valence cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0332_P2",
+      "visual_anchors": [
+        "hand pressed to forehead",
+        "clenched hands over knees",
+        "static seated positions"
+      ],
+      "symbolic_mapping": [
+        "bodily restraint as embodiment of internal constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "Bodily stillness and self-directed gestures suggest an internal negotiation where external action is suspended, evoking the philosophical tension between felt constraint and latent agency.",
+      "alternative_interpretations": [
+        "These postures could reflect physical discomfort (e.g., headache, muscle strain) unrelated to psychological states."
+      ],
+      "limitations": [
+        "No visible indicators confirm intentionality behind the gestures; biomechanical causes remain possible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0332_P3",
+      "visual_anchors": [
+        "two identical glasses on table",
+        "asymmetrical engagement with environment",
+        "shared domestic interior"
+      ],
+      "symbolic_mapping": [
+        "parallel objects amid divergent attention symbolizing fractured reciprocity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The symmetry of the glasses contrasts with the asymmetry of attention, prompting reflection on whether ethical responsibility in relationships requires mutual orientation, not merely proximity.",
+      "alternative_interpretations": [
+        "The glasses may belong to different people who drank at different times; their placement need not signify shared intent."
+      ],
+      "limitations": [
+        "Glass contents and usage history are invisible; assumed equivalence is inferential."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:34:08.103147+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1eb3c36c-1480-983f-b069-1cadd60a9ef3",
+      "usage": {
+        "prompt_tokens": 1966,
+        "completion_tokens": 870,
+        "total_tokens": 2836,
+        "completion_tokens_details": {
+          "text_tokens": 870
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1459,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023345becce2e6d66f428f",
+      "usage": {
+        "completion_tokens": 732,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3401,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4133
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

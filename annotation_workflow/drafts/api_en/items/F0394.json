@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0394",
+  "sample_id": "PHL1800_HAIV_0067",
+  "file_name": "PHL1800_HAIV_0067.png",
+  "batch_id": "B010",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized truck carrying heart-shaped objects on a winding road",
+  "captions": {
+    "scene": [
+      "A black two-lane road with white edge lines curves through green hills under a blue sky.",
+      "White cloud-like forms float above the road and hills, partially overlapping the truck.",
+      "Multiple orange hearts of varying sizes appear in the upper left and within a large magenta shape."
+    ],
+    "action": [
+      "The truck is positioned on the road as if traveling along its curve.",
+      "A large magenta heart-shaped form emerges from or sits atop the truck’s cargo area.",
+      "Three smaller orange hearts are embedded inside the magenta shape; one additional orange heart floats separately above it."
+    ],
+    "rationale": [
+      "The truck’s orientation and placement on the road suggest forward motion, though no motion blur or wheels-in-contact evidence confirms movement.",
+      "The magenta shape’s position relative to the truck implies it is carried or emitted, but no visible attachment or support structure exists.",
+      "Hearts are universally recognized symbols, yet their specific meaning here cannot be determined without external context; visual arrangement alone does not confirm intent."
+    ],
+    "object": [
+      "A two-wheeled vehicle with a gray rectangular cargo body and a blue cab section featuring a white oval window.",
+      "Two black circular wheels with gray centers are attached beneath the vehicle, aligned with the road surface.",
+      "A large magenta irregular shape resembling a heart contains three smaller solid orange hearts inside it.",
+      "One separate solid orange heart appears in the upper left quadrant, unattached to other elements.",
+      "The road consists of a black central strip flanked by two parallel white lines, curving rightward across green terrain."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0394_P1",
+      "visual_anchors": [
+        "winding black road",
+        "truck on road",
+        "magenta heart shape"
+      ],
+      "symbolic_mapping": [
+        "road → path of life",
+        "heart shape → emotional payload"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The image may represent a journey where choices (the road’s bends) carry affective content (the hearts), suggesting that moral or personal direction entails transporting inner values.",
+      "alternative_interpretations": [
+        "It could simply depict a delivery vehicle transporting decorative items for a celebration, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm symbolic intent; the hearts could be literal cargo."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0394_P2",
+      "visual_anchors": [
+        "multiple hearts",
+        "truck as carrier",
+        "floating hearts"
+      ],
+      "symbolic_mapping": [
+        "hearts → love or care",
+        "truck → labor or service"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The depiction of a mechanical vehicle conveying emotional symbols suggests labor as a conduit for social connection, where technology mediates affective exchange.",
+      "alternative_interpretations": [
+        "The hearts may be part of a graphic design for a children’s book or advertisement, emphasizing visual appeal over philosophical depth."
+      ],
+      "limitations": [
+        "The truck lacks realistic detail (e.g., driver, branding), weakening claims about labor or social function."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0394_P3",
+      "visual_anchors": [
+        "blue sky",
+        "green hills",
+        "white cloud forms"
+      ],
+      "symbolic_mapping": [
+        "sky/hills → stable background",
+        "clouds → ephemeral thought or emotion"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The constrained path of the road contrasts with the open sky and floating hearts, evoking tension between structural limitation and expressive freedom.",
+      "alternative_interpretations": [
+        "The white forms may be stylized snowbanks or abstract terrain features, not clouds or thoughts."
+      ],
+      "limitations": [
+        "The white forms lack texture or shading typical of clouds; their identity is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:42:55.150346+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-734e155f-48fb-9fc7-ab0f-5eddb324617d",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 887,
+        "total_tokens": 2420,
+        "completion_tokens_details": {
+          "text_tokens": 887
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702423965f767349c84436a",
+      "usage": {
+        "completion_tokens": 750,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2846,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3596
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

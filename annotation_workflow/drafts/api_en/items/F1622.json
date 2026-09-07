@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1622",
+  "sample_id": "PHL1800_HL_0389",
+  "file_name": "PHL1800_HL_0389.png",
+  "batch_id": "B033",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people skiing on a snow-covered trail",
+  "captions": {
+    "scene": [
+      "A narrow, groomed ski trail winds through a dense coniferous forest under overcast or twilight lighting.",
+      "Snow covers the ground uniformly; trees line both sides of the trail with visible trunks and dark foliage.",
+      "The trail surface shows parallel grooves consistent with classic cross-country skiing tracks."
+    ],
+    "action": [
+      "An adult in a blue jacket and black hat skis forward using poles, holding the hand of a child.",
+      "A child in pink winter clothing and red hat stands upright on skis, holding the adult’s hand while moving forward.",
+      "Both individuals are oriented away from the camera, progressing along the trail in the same direction."
+    ],
+    "rationale": [
+      "The adult’s posture—leaning slightly forward with poles planted—suggests active propulsion rather than coasting.",
+      "The child’s upright stance and grip on the adult’s hand indicate dependence for balance or guidance, not independent skiing.",
+      "The presence of parallel ski tracks and pole marks implies recent or ongoing use of classic cross-country technique, though no wax or binding details are visible."
+    ],
+    "object": [
+      "The adult wears a royal blue long-sleeved jacket, dark pants, a black beanie, and yellow-tipped ski poles; a small pouch is attached to their waistband.",
+      "The child wears a pink hooded jacket, magenta snow pants, a red knit hat with a pom-pom, and pink ski boots clipped into short skis.",
+      "Two pairs of skis are visible: longer yellow-green skis under the adult, shorter red-and-white skis under the child.",
+      "The surrounding forest consists of tall evergreen trees with dark green needles and brown trunks, some bare lower branches exposed.",
+      "A small leafless shrub protrudes from the snow on the right side of the trail near the foreground."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1622_P1",
+      "visual_anchors": [
+        "adult holding child's hand",
+        "parallel ski tracks",
+        "narrow forest trail"
+      ],
+      "symbolic_mapping": [
+        "hand-holding as embodied guidance",
+        "trail as linear path"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies the philosophical notion that individual journeys are often co-constituted through relational support, where the path forward is navigated not in isolation but through interdependent movement.",
+      "alternative_interpretations": [
+        "This may simply depict a routine recreational activity without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; the interpretation relies on post-hoc framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1622_P2",
+      "visual_anchors": [
+        "child’s upright posture",
+        "adult’s forward lean",
+        "shared directionality"
+      ],
+      "symbolic_mapping": [
+        "postural contrast as dependency",
+        "shared trajectory as alignment"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The visual asymmetry in posture and scale suggests an ethical relationship wherein care manifests physically—responsibility is enacted through bodily proximity and shared motion rather than verbal instruction.",
+      "alternative_interpretations": [
+        "The posture difference could reflect skill disparity rather than moral duty."
+      ],
+      "limitations": [
+        "No evidence confirms intentionality behind the physical arrangement beyond observable mechanics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1622_P3",
+      "visual_anchors": [
+        "overcast lighting",
+        "dense trees enclosing trail",
+        "uniform snow cover"
+      ],
+      "symbolic_mapping": [
+        "enclosed trail as bounded possibility",
+        "snow as equalizing medium"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The constrained forest corridor and uniform snow surface evoke a phenomenological tension between freedom of movement and environmental limitation, suggesting that agency is always exercised within material boundaries that obscure what lies beyond.",
+      "alternative_interpretations": [
+        "The setting may merely reflect typical Nordic winter terrain without existential implication."
+      ],
+      "limitations": [
+        "Lighting conditions are ambiguous (dawn/dusk/overcast); no temporal markers confirm mortality themes."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:53:51.811566+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-78ca1662-3a43-96ac-9c2a-b08a5d0aaad5",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 937,
+        "total_tokens": 1686,
+        "completion_tokens_details": {
+          "text_tokens": 937
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045341649be6be2d554b36",
+      "usage": {
+        "completion_tokens": 799,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1845,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2644
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

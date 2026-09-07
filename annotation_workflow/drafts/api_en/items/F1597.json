@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1597",
+  "sample_id": "PHL1800_HL_0079",
+  "file_name": "PHL1800_HL_0079.png",
+  "batch_id": "B033",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult person holding a sign and a phone",
+  "captions": {
+    "scene": [
+      "A person stands beside a fluted stone column and a glass-paneled wall.",
+      "The background includes vertical architectural grooves and a reflective dark frame.",
+      "Natural daylight illuminates the scene, casting soft shadows."
+    ],
+    "action": [
+      "The person holds a large yellow-and-black sign with both hands in front of their torso.",
+      "Their right hand also holds a black smartphone, oriented horizontally.",
+      "Their head is tilted downward, eyes directed toward the phone screen."
+    ],
+    "rationale": [
+      "The sign’s text is fully legible and appears intentionally displayed, suggesting public expression.",
+      "The person’s gaze and hand position indicate active engagement with the phone, not passive holding.",
+      "The attire (black T-shirt with partial white text) and sign content suggest participation in a protest or advocacy event, though no crowd or context beyond the individual is visible."
+    ],
+    "object": [
+      "A rectangular sign with a white border, yellow background, and bold black sans-serif text reading 'CALIFORNIA BELONGS TO THE PEOPLE, Not The CORPORATIONS!'",
+      "A black smartphone held in the person’s right hand, screen facing upward, partially obscured by fingers.",
+      "A black short-sleeved T-shirt with visible white uppercase letters 'INFLUENCE' near the hem.",
+      "A pair of thin-framed eyeglasses worn on the person’s face, with lenses reflecting ambient light.",
+      "A white wristband with a small dark emblem worn on the left wrist."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1597_P1",
+      "visual_anchors": [
+        "yellow sign with 'CALIFORNIA BELONGS TO THE PEOPLE'",
+        "black T-shirt with 'INFLUENCE'",
+        "person holding phone while displaying sign"
+      ],
+      "symbolic_mapping": [
+        "'THE PEOPLE' vs 'CORPORATIONS' maps to collective sovereignty versus institutional power",
+        "Phone use during sign display maps to mediated civic engagement"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes a tension between democratic legitimacy and corporate influence, framing political belonging as contested terrain where individual action (holding sign) coexists with digital mediation (phone).",
+      "alternative_interpretations": [
+        "The person may be reviewing logistics or messages related to an event, with the sign serving as background context rather than primary focus."
+      ],
+      "limitations": [
+        "No visible audience, banners, or movement confirms intent; the sign could be staged or repurposed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1597_P2",
+      "visual_anchors": [
+        "fluted stone column",
+        "glass wall",
+        "person positioned between them"
+      ],
+      "symbolic_mapping": [
+        "Column represents institutional permanence; glass reflects transience and surveillance"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The subject occupies a liminal architectural space—between classical authority (column) and modern transparency (glass)—suggesting identity formation under structural constraints and visibility pressures.",
+      "alternative_interpretations": [
+        "The background elements are incidental urban architecture with no symbolic intent; the person simply stands near available surfaces."
+      ],
+      "limitations": [
+        "No evidence the person chose this location for symbolic reasons; column and glass may be generic building features."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1597_P3",
+      "visual_anchors": [
+        "downcast gaze toward phone",
+        "sign held upright but not directly facing camera",
+        "partial visibility of T-shirt text 'INFLUENCE'"
+      ],
+      "symbolic_mapping": [
+        "Gaze away from sign implies internal deliberation or distraction amid public statement"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The divergence between outward message (sign) and inward attention (phone) evokes epistemic tension: asserting truth publicly while simultaneously accessing or verifying information privately, reflecting modern dilemmas of conviction and verification.",
+      "alternative_interpretations": [
+        "The person is checking time, navigation, or messages unrelated to the sign’s content; the posture is habitual, not philosophical."
+      ],
+      "limitations": [
+        "Eye direction and phone orientation do not confirm cognitive state; no screen content is visible."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:49:40.727806+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7a67c3d4-4f7f-9ea2-baea-53adfefa8cda",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 956,
+        "total_tokens": 1765,
+        "completion_tokens_details": {
+          "text_tokens": 956
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704493081e407369ad54963",
+      "usage": {
+        "completion_tokens": 822,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1931,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2753
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

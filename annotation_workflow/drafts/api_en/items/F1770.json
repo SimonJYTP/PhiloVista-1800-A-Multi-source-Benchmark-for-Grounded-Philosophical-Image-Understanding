@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1770",
+  "sample_id": "PHL1800_MM_0123",
+  "file_name": "PHL1800_MM_0123.jpg",
+  "batch_id": "B036",
+  "position_in_batch": 23,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men in business attire inside an office meeting room",
+  "captions": {
+    "scene": [
+      "A modern interior with wood-paneled walls, a large window showing blurred cityscape, and a light wood conference table.",
+      "The room is lit by ambient indoor lighting and strong daylight from the right-side window.",
+      "A black office chair is partially visible behind the seated man."
+    ],
+    "action": [
+      "One man stands on the left side of the frame, facing slightly right, with hands at his sides and a slight smile.",
+      "The second man sits at the table, leaning forward with both hands clasped on the tabletop, looking toward the standing man.",
+      "A speech bubble originates near the standing man’s head, containing legible text."
+    ],
+    "rationale": [
+      "The standing man’s posture and facial expression suggest he is speaking or reacting; however, no mouth movement is visible, so this remains uncertain.",
+      "The seated man’s gaze direction and hand placement indicate attention toward the other man, but his exact emotional state cannot be determined from visual cues alone.",
+      "The speech bubble implies communication, but its content is presented as stylized text—not verbatim audio—so its representational fidelity is insufficient to confirm actual utterance."
+    ],
+    "object": [
+      "The standing man wears a dark navy suit, white collared shirt, and a diagonally striped blue tie; his left hand rests near his thigh and his right hand is partially in his pocket.",
+      "The seated man wears a dark suit, light blue shirt, solid dark blue tie, and a wristwatch on his left wrist; his sleeves are cuffed, revealing white shirt cuffs.",
+      "A rectangular wooden conference table occupies the foreground, with visible grain and clean edges.",
+      "A large window with a black frame occupies the right background; outside, indistinct high-rise buildings appear under bright sky.",
+      "A speech bubble with black sans-serif text reads: 'Haha! Our sales were abysmal last quarter!' and is connected by a small circle to the standing man’s head region."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1770_P1",
+      "visual_anchors": [
+        "speech bubble with ironic statement",
+        "smiling expression of standing man",
+        "seated man’s attentive posture"
+      ],
+      "symbolic_mapping": [
+        "ironic humor as social mask",
+        "professional demeanor amid negative data"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The juxtaposition of a grim financial report with laughter may reflect how social roles compel individuals to perform positivity despite adverse outcomes, raising questions about authenticity in professional identity.",
+      "alternative_interpretations": [
+        "The scene could simply depict a lighthearted internal joke among colleagues without deeper implication."
+      ],
+      "limitations": [
+        "No audio or context confirms whether the laughter is genuine, sarcastic, or performative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1770_P2",
+      "visual_anchors": [
+        "two men in matching formal attire",
+        "symmetrical framing around table",
+        "shared focus direction"
+      ],
+      "symbolic_mapping": [
+        "uniform dress as erasure of individuality",
+        "table as neutral ground for power negotiation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The visual parity in clothing and positioning suggests institutional conformity, where personal identity is subsumed under corporate role, potentially masking underlying hierarchies or tensions.",
+      "alternative_interpretations": [
+        "The similarity in dress may merely reflect standard corporate dress code without symbolic intent."
+      ],
+      "limitations": [
+        "No insignia, name tags, or positional hierarchy (e.g., chair height, table placement) is visible to confirm power dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1770_P3",
+      "visual_anchors": [
+        "large window showing external cityscape",
+        "interior lighting contrast",
+        "man seated facing outward light"
+      ],
+      "symbolic_mapping": [
+        "window as boundary between internal narrative and external reality",
+        "light source as metaphor for truth or exposure"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The bright exterior contrasts with the contained interior dialogue, suggesting that organizational narratives (e.g., downplaying poor sales) may obscure external realities, implicating constraints on truthful discourse within institutional settings.",
+      "alternative_interpretations": [
+        "The window is purely functional architecture with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "The cityscape is blurred and non-identifiable; no textual or visual cue links it to the speech content."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:11:42.126152+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-be04fb15-21af-9fe9-a964-327056b1c43d",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1010,
+        "total_tokens": 2543,
+        "completion_tokens_details": {
+          "text_tokens": 1010
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070511252831b3738d4c4952",
+      "usage": {
+        "completion_tokens": 872,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2963,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3835
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

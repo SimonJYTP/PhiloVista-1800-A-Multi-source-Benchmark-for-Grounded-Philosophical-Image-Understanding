@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0934",
+  "sample_id": "PHL1800_IRFL_0323",
+  "file_name": "PHL1800_IRFL_0323.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one woman",
+  "captions": {
+    "scene": [
+      "A sunlit urban street with a red-and-white building facade on the left and blurred green foliage on the right.",
+      "Shallow depth of field isolates the subject against a bright, overexposed sky and indistinct background architecture.",
+      "Warm backlighting creates lens flare and highlights stray hair strands around the subject’s head."
+    ],
+    "action": [
+      "The woman is smiling broadly with visible upper teeth and turned slightly toward the camera.",
+      "She holds a disposable coffee cup with a black plastic lid in her right hand.",
+      "Her left shoulder is bare and angled forward; a thin black strap rests on her left shoulder."
+    ],
+    "rationale": [
+      "The smile appears genuine due to visible zygomatic muscle engagement and slight eye crinkling, though emotional state cannot be confirmed.",
+      "The coffee cup suggests recent or ongoing consumption, but no liquid level or sip action is visible.",
+      "The sunglasses obscure the eyes, preventing verification of gaze direction or ocular expression."
+    ],
+    "object": [
+      "The woman wears round dark-lensed sunglasses with a two-tone frame: black arms and a silver-toned upper bridge with fine horizontal texturing.",
+      "Her brown hair is medium-length, wavy, partially pulled back, with loose strands illuminated by backlighting.",
+      "She wears a black halter-style top with a visible knot at the nape of her neck and a thin strap over her left shoulder.",
+      "The coffee cup is white paper with a corrugated brown sleeve and a black plastic sip lid featuring a raised tab.",
+      "A yellow object, possibly part of a bag or garment, is partially visible behind her left arm."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0934_P1",
+      "visual_anchors": [
+        "sunglasses with opaque lenses",
+        "direct gaze toward camera despite obscured eyes",
+        "smiling mouth"
+      ],
+      "symbolic_mapping": [
+        "opaque lenses as concealment of inner state",
+        "smile as performative social signal"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image presents appearance as a curated interface: the sunglasses hide the eyes—the traditional 'windows to the soul'—while the smile and posture project sociable engagement, suggesting identity is actively constructed through visible cues rather than revealed through transparency.",
+      "alternative_interpretations": [
+        "The subject may simply be enjoying a sunny day; the sunglasses are functional sun protection and the smile reflects momentary pleasure."
+      ],
+      "limitations": [
+        "No facial musculature below the nose is fully visible due to angle and lighting; lip shape alone cannot confirm sincerity or intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0934_P2",
+      "visual_anchors": [
+        "backlit hair strands",
+        "overexposed sky",
+        "shallow depth of field"
+      ],
+      "symbolic_mapping": [
+        "light halo around hair as temporal ephemerality",
+        "blurred background as dissolution of context"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The radiant backlighting isolates the subject in a transient luminous moment, visually evoking the fleeting nature of present experience—where clarity of self is momentarily heightened against an indistinct, receding world.",
+      "alternative_interpretations": [
+        "The lighting is standard golden-hour photography technique used for aesthetic softness and contrast enhancement, not symbolic intent."
+      ],
+      "limitations": [
+        "No clock, calendar, aging markers, or explicit temporal indicators are present; ‘fleeting’ is inferred from lighting alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0934_P3",
+      "visual_anchors": [
+        "disposable coffee cup",
+        "urban architecture",
+        "casual attire"
+      ],
+      "symbolic_mapping": [
+        "coffee cup as emblem of routine modernity",
+        "architectural backdrop as inherited social structure"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a mass-produced consumable (the cup) against historic-looking architecture implies participation in contemporary social rhythms—where individual agency is exercised within infrastructural and commercial frameworks that precede and outlast the subject.",
+      "alternative_interpretations": [
+        "The cup is merely a beverage container; the building is incidental background with no intended thematic role."
+      ],
+      "limitations": [
+        "Brand, origin, or production details of the cup are unreadable; architectural style is too blurred to identify period or function definitively."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:28:50.382747+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-34bd3e4b-01d7-9289-bb7e-fbad4e6c7f3d",
+      "usage": {
+        "prompt_tokens": 3003,
+        "completion_tokens": 998,
+        "total_tokens": 4001,
+        "completion_tokens_details": {
+          "text_tokens": 998
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2496,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032836fe18690eaa2f4f37",
+      "usage": {
+        "completion_tokens": 857,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7615,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 8472
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

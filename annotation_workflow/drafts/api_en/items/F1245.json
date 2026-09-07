@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1245",
+  "sample_id": "PHL1800_HL_0475",
+  "file_name": "PHL1800_HL_0475.png",
+  "batch_id": "B026",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a worker operating a donut glazing machine on a conveyor line",
+  "captions": {
+    "scene": [
+      "An industrial food production setting with stainless steel machinery, metal grates, and a conveyor belt carrying glazed donuts.",
+      "A brightly lit indoor facility with visible ventilation ducts in the background and stacked metal racks behind the main equipment.",
+      "A yellow-shirted worker stands beside a glazing apparatus with white flexible hoses and a caution sign on the machine."
+    ],
+    "action": [
+      "Glazed donuts are moving left-to-right on a metal mesh conveyor belt beneath a dispensing nozzle.",
+      "The worker’s right arm is extended toward the machine, suggesting interaction with controls or monitoring output.",
+      "Donuts are arranged in rows on two parallel conveyors: one with freshly glazed donuts, another with unglazed or partially glazed ones."
+    ],
+    "rationale": [
+      "The presence of a 'CAUTION MOVING PARTS' label implies active mechanical motion, consistent with the visible belt movement.",
+      "The uniform golden-brown color and glossy surface of many donuts indicate recent glazing; some lack sheen, suggesting staging before or after glazing.",
+      "The worker wears a branded polo shirt and stands in proximity to operational equipment, supporting the inference of supervised production—though no direct manipulation is captured."
+    ],
+    "object": [
+      "A stainless steel conveyor system with two parallel metal-mesh belts transporting ring-shaped donuts.",
+      "A white flexible hose connects from above to a metallic glazing head positioned over the upper conveyor belt.",
+      "A yellow rectangular warning label with black uppercase text reading 'CAUTION MOVING PARTS' is affixed to the side of the machine.",
+      "The worker wears a short-sleeved yellow polo shirt with a small red-and-white logo on the left chest and dark footwear.",
+      "Multiple donuts appear uniformly shaped and sized, with some exhibiting a shiny glaze and others matte surfaces, indicating different processing stages."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1245_P1",
+      "visual_anchors": [
+        "CAUTION MOVING PARTS label",
+        "worker’s proximity to machinery",
+        "repetitive donut arrangement"
+      ],
+      "symbolic_mapping": [
+        "moving parts → mechanized labor",
+        "caution sign → institutional risk management"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image embodies the tension between human oversight and automated repetition, where safety signage mediates responsibility amid industrial efficiency.",
+      "alternative_interpretations": [
+        "It simply documents routine food manufacturing without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or body language confirms worker’s awareness or attitude toward the system."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1245_P2",
+      "visual_anchors": [
+        "identical donuts in rows",
+        "conveyor belt directionality",
+        "uniform glazing"
+      ],
+      "symbolic_mapping": [
+        "repetition → standardization",
+        "belt motion → linear time progression"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The identical donuts moving along a fixed path evoke the erasure of individuality under mass production, mirroring philosophical concerns about identity in standardized systems.",
+      "alternative_interpretations": [
+        "The uniformity reflects quality control, not existential commentary."
+      ],
+      "limitations": [
+        "Donuts are inanimate objects; attributing identity loss requires anthropomorphism beyond visual evidence."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1245_P3",
+      "visual_anchors": [
+        "worker’s partial visibility",
+        "machine dominance in frame",
+        "hoses and nozzles obscuring direct contact"
+      ],
+      "symbolic_mapping": [
+        "obscured hands → diminished agency",
+        "central machine → technological mediation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The worker’s role appears constrained by the machine’s design, illustrating how technology can structure human action within narrow procedural boundaries.",
+      "alternative_interpretations": [
+        "The worker may be adjusting settings or performing quality checks just outside frame."
+      ],
+      "limitations": [
+        "Only torso and arm are visible; full posture and hand position are unknown."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:07:27.432507+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-84bee450-3c03-991d-bdda-8336a068e37b",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 943,
+        "total_tokens": 1644,
+        "completion_tokens_details": {
+          "text_tokens": 943
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040717d5b6a64f73e6459d",
+      "usage": {
+        "completion_tokens": 797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1755,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2552
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

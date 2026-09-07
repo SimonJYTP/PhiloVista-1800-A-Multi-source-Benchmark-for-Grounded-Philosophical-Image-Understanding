@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1503",
+  "sample_id": "PHL1800_MM_0021",
+  "file_name": "PHL1800_MM_0021.jpg",
+  "batch_id": "B031",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people walking away from the viewer toward a lit doorway",
+  "captions": {
+    "scene": [
+      "Nighttime exterior of a stone-and-wood building with warm interior lighting visible through an open doorway and sidelight.",
+      "A paved sidewalk slopes upward toward the entrance; a potted evergreen tree sits left of the door, and shrubbery lines the right.",
+      "An overhead light fixture illuminates the doorway area, casting yellowish glow on the door frame and adjacent wall."
+    ],
+    "action": [
+      "Two individuals walk side by side, backs to camera, moving toward the open doorway.",
+      "The person on the left carries a pink backpack and wears dark pants and a dark jacket.",
+      "The person on the right wears a blue hooded top and dark pants; both wear closed-toe footwear."
+    ],
+    "rationale": [
+      "The open doorway and interior illumination suggest the building is occupied or accessible at this time.",
+      "The presence of a backpack implies possible student or commuter status, though no school or transit infrastructure is visible.",
+      "A speech bubble containing legible text appears above the pair, but its origin (who is thinking/speaking) is not visually specified."
+    ],
+    "object": [
+      "A rectangular white speech bubble with black sans-serif text reading 'I can handle myself, stop worrying about the neighborhood!' is positioned above the two figures.",
+      "A small white circular dot connects the speech bubble to the space between the two individuals, without attaching to either head.",
+      "The doorway consists of a gray vertical-paneled door partially open inward, revealing a warmly lit interior hallway.",
+      "A wall-mounted lantern-style light fixture with glass panes and a metal frame is affixed to the left stone pillar beside the entrance.",
+      "The sidewalk is composed of irregularly shaped concrete slabs with visible joints and slight elevation change near the threshold."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1503_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "two figures walking together",
+        "lit doorway ahead"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents asserted autonomy",
+        "the doorway symbolizes transition or entry into a contested space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes a tension between individual agency and communal surveillance, where the spoken assertion of self-sufficiency occurs precisely as the subjects enter a space under ambient observation (lighting, architecture, implied neighborhood gaze).",
+      "alternative_interpretations": [
+        "The text may be a narrative overlay added post-capture, unrelated to the actual moment; the figures could simply be returning home without any internal monologue."
+      ],
+      "limitations": [
+        "No facial expressions or body language confirm the speaker’s emotional state or intent; the speech bubble lacks a clear speaker indicator."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1503_P2",
+      "visual_anchors": [
+        "backpack",
+        "hooded top",
+        "even stride"
+      ],
+      "symbolic_mapping": [
+        "coordinated movement suggests mutual purpose",
+        "attire indicates routine activity rather than exceptional event"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "Walking in unison toward a threshold embodies a shared journey where identity is temporarily subsumed by collective motion—appearance (clothing, gear) signals role without revealing individuality, emphasizing relational over personal identity.",
+      "alternative_interpretations": [
+        "They may be strangers coincidentally walking the same path; no physical contact or orientation confirms intentional companionship."
+      ],
+      "limitations": [
+        "No eye contact, hand-holding, or synchronized gait details are visible to confirm intentionality of pairing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1503_P3",
+      "visual_anchors": [
+        "overhead light casting long shadows",
+        "dark foliage on right",
+        "warm interior light contrasting cool street tones"
+      ],
+      "symbolic_mapping": [
+        "light/dark contrast evokes safety versus uncertainty",
+        "threshold marks boundary between known and unknown domains"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The liminal moment at the doorway—illuminated yet shadowed—invokes ethical responsibility for care across spatial boundaries, where the plea to ‘stop worrying’ paradoxically acknowledges the observer’s concern as morally salient even while rejecting it.",
+      "alternative_interpretations": [
+        "The lighting is purely functional for nighttime navigation; no symbolic meaning is intended or required."
+      ],
+      "limitations": [
+        "Lighting could result from standard residential fixtures without expressive intent; no signage or cultural markers confirm symbolic reading."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:39:56.754460+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-78c391a8-27ab-989e-9667-1ecafdeda17f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1025,
+        "total_tokens": 2558,
+        "completion_tokens_details": {
+          "text_tokens": 1025
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043932649d4c5d7dfa44e8",
+      "usage": {
+        "completion_tokens": 883,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2972,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3855
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

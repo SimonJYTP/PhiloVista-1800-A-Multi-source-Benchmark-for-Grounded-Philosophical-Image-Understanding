@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0739",
+  "sample_id": "PHL1800_HL_0559",
+  "file_name": "PHL1800_HL_0559.png",
+  "batch_id": "B016",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person wearing a high-visibility yellow jacket standing in a street near a silver sedan",
+  "captions": {
+    "scene": [
+      "Urban street at dusk with illuminated traffic signals, storefronts, and streetlights; wet pavement reflects lights.",
+      "A silver sedan is stopped or turning across marked lanes; rear brake lights are illuminated.",
+      "Multiple pedestrians are visible on sidewalks and near the curb; one person carries a blue bag."
+    ],
+    "action": [
+      "The person in the yellow jacket stands facing the silver car with arms slightly extended, possibly directing traffic or assisting.",
+      "A man in a brown coat stands on the right sidewalk observing the scene, holding a dark bag.",
+      "Pedestrians walk along the sidewalk in the background; some appear to be entering or exiting buildings."
+    ],
+    "rationale": [
+      "The yellow jacket has reflective stripes and appears to be official issue, suggesting a role in traffic control or public safety—though no badge or insignia is legible.",
+      "The car’s brake lights are on and its orientation suggests it is maneuvering in an intersection, not parked.",
+      "The presence of multiple people and active traffic signals indicates this is a functioning urban intersection during low-light hours."
+    ],
+    "object": [
+      "A silver four-door sedan with illuminated red taillights and a visible license plate (characters unreadable).",
+      "A person wearing a fluorescent yellow jacket with white reflective chevrons on back and shoulders, black pants, and a dark hat or hood.",
+      "A man in a brown overcoat, dark trousers, and dark shoes, holding a black shoulder bag, standing on the sidewalk to the right.",
+      "A green street sign reading 'BROADWAY' above a red traffic light showing amber illumination.",
+      "A vertical sign on a building reading 'PARK' in white letters on a dark background, partially obscured."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0739_P1",
+      "visual_anchors": [
+        "yellow reflective jacket",
+        "pedestrian observing from sidewalk",
+        "car halted mid-intersection"
+      ],
+      "symbolic_mapping": [
+        "the jacket signifies institutional authority mediating movement",
+        "the observer embodies passive civic witness"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image captures a moment where structured authority (reflected light, uniform-like attire) temporarily suspends individual autonomy (the car’s motion) for collective order, while a bystander’s stillness underscores the asymmetry between enacted power and observed compliance.",
+      "alternative_interpretations": [
+        "This may simply depict routine traffic assistance during evening congestion, with no deeper social commentary intended."
+      ],
+      "limitations": [
+        "No visible insignia confirms official status; the jacket could belong to private security or event staff."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0739_P2",
+      "visual_anchors": [
+        "wet pavement reflecting streetlights",
+        "dusk lighting",
+        "blurred motion of background pedestrians"
+      ],
+      "symbolic_mapping": [
+        "reflections suggest transient perception",
+        "dusk marks threshold between day and night"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The fleeting clarity of the central figures against blurred motion and fading light evokes epistemic uncertainty: what is captured is provisional, contingent on illumination and perspective, questioning the stability of witnessed truth.",
+      "alternative_interpretations": [
+        "The blur results from camera exposure settings rather than intentional symbolism; reflections are incidental physics."
+      ],
+      "limitations": [
+        "Motion blur is consistent with standard low-light photography; no evidence of deliberate aesthetic framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0739_P3",
+      "visual_anchors": [
+        "man holding bag on sidewalk",
+        "person in yellow jacket facing car",
+        "multiple indistinct figures in background"
+      ],
+      "symbolic_mapping": [
+        "the bag signifies personal continuity amid flux",
+        "spatial separation implies social distance despite proximity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "Individual identity is mediated through appearance (coat, bag, stance) and constrained by spatial roles (sidewalk vs. roadway), revealing how freedom is negotiated within infrastructural boundaries that dictate permissible positions.",
+      "alternative_interpretations": [
+        "People are simply waiting to cross or have finished crossing; their postures reflect convenience, not philosophical positioning."
+      ],
+      "limitations": [
+        "Clothing and posture do not uniquely determine identity or intent; cultural context is absent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:12:24.572002+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b9348037-051d-92f9-9d79-88f44b1d6bd3",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 986,
+        "total_tokens": 1815,
+        "completion_tokens_details": {
+          "text_tokens": 986
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070312093032bf5517aa4bff",
+      "usage": {
+        "completion_tokens": 847,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1989,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2836
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

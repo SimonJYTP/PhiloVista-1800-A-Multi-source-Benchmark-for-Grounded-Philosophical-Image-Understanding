@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1625",
+  "sample_id": "PHL1800_HL_0101",
+  "file_name": "PHL1800_HL_0101.png",
+  "batch_id": "B033",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person performing a skateboarding trick",
+  "captions": {
+    "scene": [
+      "A red-brick building with multi-paned windows and a decorative stone balustrade curving downward.",
+      "A mature tree with a textured trunk stands beside the building, partially obscuring a window.",
+      "A low brick retaining wall topped with concrete separates a grassy foreground from the building's base."
+    ],
+    "action": [
+      "The person is airborne, crouched over a skateboard with both feet on the board, knees bent inward.",
+      "The skateboard is oriented horizontally beneath the person, parallel to the curved stone structure.",
+      "The person’s left hand grips the edge of the skateboard near the front truck while the right arm extends backward for balance."
+    ],
+    "rationale": [
+      "The person’s posture and board orientation suggest a mid-air maneuver rather than a static pose, given the separation from all surfaces.",
+      "The curved stone element appears designed as architectural ornamentation, not a functional ramp; its use for skating is nonstandard.",
+      "No visible safety gear (e.g., helmet, pads) is present, though this does not confirm intent or risk level without further context."
+    ],
+    "object": [
+      "The person wears a black short-sleeved shirt, dark pants, and dark shoes with white soles.",
+      "The skateboard has a dark deck, light-colored grip tape on top, and visible metal trucks and wheels.",
+      "The stone balustrade features a spherical finial atop a tapered post and a smooth, concave curve descending toward ground level.",
+      "The brick wall consists of stretcher bonds in varying shades of red and brown, with mortar joints clearly visible.",
+      "A small green plant grows from the top of the stone finial, with slender stems and leaves extending outward."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1625_P1",
+      "visual_anchors": [
+        "curved stone balustrade",
+        "person airborne above it",
+        "brick wall backdrop"
+      ],
+      "symbolic_mapping": [
+        "the balustrade as a rigid architectural boundary",
+        "the jump as temporary suspension of that boundary"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The act of launching off an ornamental, non-functional structure embodies a momentary defiance of imposed spatial order, where human motion temporarily reclaims utility from decoration.",
+      "alternative_interpretations": [
+        "The person is simply practicing a trick using available terrain, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the interpretation relies solely on formal juxtaposition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1625_P2",
+      "visual_anchors": [
+        "person’s focused gaze downward",
+        "tight crouch",
+        "hands actively engaged with board"
+      ],
+      "symbolic_mapping": [
+        "bodily control amid motion as embodiment of agency"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The precise coordination required mid-air reflects a microcosm of deliberate choice—each millisecond of flight representing a path selected through skill and intention rather than chance.",
+      "alternative_interpretations": [
+        "The posture is biomechanically necessary for landing and not expressive of decision-making."
+      ],
+      "limitations": [
+        "Facial expression and eye direction are partially obscured; intent cannot be verified visually."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1625_P3",
+      "visual_anchors": [
+        "tree trunk beside building",
+        "grass strip",
+        "brick wall dividing zones"
+      ],
+      "symbolic_mapping": [
+        "natural growth intersecting built environment",
+        "horizontal plane separating human activity from foundation"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The layered spatial division—grass, wall, building—mirrors social stratification, while the skater’s leap across layers suggests transient negotiation of inherited boundaries.",
+      "alternative_interpretations": [
+        "The scene is a typical urban park setting with no sociological implication intended."
+      ],
+      "limitations": [
+        "No signage, people, or activity beyond the single subject indicates social structure; mapping is speculative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:54:31.478616+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-90b009c6-f5f9-9248-8a31-70e30f8f1b91",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 904,
+        "total_tokens": 1693,
+        "completion_tokens_details": {
+          "text_tokens": 904
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045410b767c35d00154e27",
+      "usage": {
+        "completion_tokens": 770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1856,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2626
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0404",
+  "sample_id": "PHL1800_HAIV_0327",
+  "file_name": "PHL1800_HAIV_0327.png",
+  "batch_id": "B010",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person holding a dessert",
+  "captions": {
+    "scene": [
+      "A brightly colored, stylized illustration with scattered multicolored dots and drips against a white background.",
+      "The figure wears a light blue short-sleeved collared shirt with a yellow pocket patch and brown trousers with a belt.",
+      "The person’s face and shirt are smeared with multiple colors including yellow, green, red, purple, and brown."
+    ],
+    "action": [
+      "The person holds a plate with a layered dessert topped with cream and colorful round toppings in their right hand.",
+      "Their mouth is open wide, revealing teeth and colorful smears inside the oral cavity.",
+      "Their left hand is raised near chest level, fingers partially visible, with pink and brown streaks extending downward from it."
+    ],
+    "rationale": [
+      "The presence of smeared colors on face and clothing suggests recent contact with messy substances, though the exact source is not visible.",
+      "The dessert appears intact on the plate despite surrounding splatters, indicating it has not yet been consumed or dropped.",
+      "The figure’s expression—open mouth, wide eyes—is ambiguous; it could indicate excitement, surprise, or exertion, but no definitive emotion can be confirmed from visual cues alone."
+    ],
+    "object": [
+      "The person has short brown hair, visible ears, and facial features outlined in black ink with pink skin tone.",
+      "The shirt has a yellow rectangular pocket patch with a small dark diamond-shaped mark at its center.",
+      "The belt is brown with a metallic-looking buckle featuring indistinct engraved markings that are unreadable.",
+      "The dessert consists of a dark base layer, a thick off-white creamy topping, and multiple small spherical decorations in red, yellow, blue, purple, and green.",
+      "Multicolored circular and elongated splotches float around the figure, some appearing as drips or splashes, others as detached dots."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0404_P1",
+      "visual_anchors": [
+        "smeared colors across face and shirt",
+        "intact dessert on plate",
+        "black outline defining figure"
+      ],
+      "symbolic_mapping": [
+        "color smears → disruption of expected appearance",
+        "intact dessert → preserved intention amid chaos"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The figure’s bodily boundaries are visually destabilized by overlapping pigments, suggesting identity as a permeable surface subject to external contamination or expressive overflow, while social role (server, celebrant) remains nominally intact.",
+      "alternative_interpretations": [
+        "The image may simply depict a messy eating scene without symbolic intent, emphasizing physical comedy or sensory overload."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm intentional symbolism; color application resembles painterly accident rather than deliberate iconography."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0404_P2",
+      "visual_anchors": [
+        "open mouth with visible teeth and color residue",
+        "raised left hand with trailing streaks",
+        "floating colored dots"
+      ],
+      "symbolic_mapping": [
+        "open mouth → threshold between interior and exterior",
+        "trailing streaks → temporal continuity of action"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The moment captured appears suspended between ingestion and expulsion, with streaks implying motion through time; the figure stands at a decision point where consumption could lead to further dissolution or reintegration.",
+      "alternative_interpretations": [
+        "The streaks may represent paint drips from an artistic process, not bodily movement or temporal flow."
+      ],
+      "limitations": [
+        "No clear directionality or sequence is shown; streaks lack origin/endpoint confirmation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0404_P3",
+      "visual_anchors": [
+        "yellow pocket patch with dark diamond mark",
+        "multicolored dessert toppings",
+        "belt buckle with unreadable engraving"
+      ],
+      "symbolic_mapping": [
+        "pocket patch → site of minor authority or identification",
+        "unidentifiable buckle text → obscured institutional markers"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The figure wears signs of assigned role (uniform-like shirt, belt), yet those markers are defaced or rendered illegible, implying a tension between prescribed duty and embodied resistance or accident.",
+      "alternative_interpretations": [
+        "The details are decorative flourishes with no referential meaning; the diamond may be purely ornamental."
+      ],
+      "limitations": [
+        "The pocket patch and buckle contain no legible text or standard insignia; their function is visually ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:44:02.835492+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0e80d738-0e52-9dc7-8ae4-c6e698c0e416",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1018,
+        "total_tokens": 2551,
+        "completion_tokens_details": {
+          "text_tokens": 1018
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024345a7c6ca380b414010",
+      "usage": {
+        "completion_tokens": 880,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2978,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3858
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1243",
+  "sample_id": "PHL1800_IRFL_0096",
+  "file_name": "PHL1800_IRFL_0096.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two children seated back-to-back on a sofa",
+  "captions": {
+    "scene": [
+      "Two children sit back-to-back on a textured gray fabric sofa with a window and white wall visible in the background.",
+      "Natural light enters from a large window behind the children, illuminating the right side of the scene more brightly.",
+      "The background includes a plain white wall and a window frame; no furniture or decor beyond the sofa is visible."
+    ],
+    "action": [
+      "The child on the left has arms crossed tightly over the chest and gazes leftward, away from the other child.",
+      "The child on the right has arms crossed over the chest and gazes rightward, away from the other child.",
+      "Both children maintain rigid postures with shoulders squared and heads turned laterally, not facing each other."
+    ],
+    "rationale": [
+      "The symmetrical posture and mutual avoidance suggest a shared emotional state or interaction pattern, though the specific cause is not visible.",
+      "The absence of physical contact and the mirrored arm-crossing may indicate tension, but this interpretation relies on cultural conventions rather than direct visual proof.",
+      "The lighting gradient (brighter on the right) may influence perceived mood, but no causal link to behavior can be established from the image alone."
+    ],
+    "object": [
+      "A child with short curly dark hair wears a light teal short-sleeved shirt and sits on the left side of the sofa.",
+      "A child with voluminous curly dark hair tied up wears a long-sleeved white shirt and sits on the right side of the sofa.",
+      "The sofa has a woven gray textile surface with visible texture and seam lines running horizontally across the backrest.",
+      "A rectangular window with a white frame occupies the upper background, partially obscured by the children’s heads.",
+      "No text, logos, or readable inscriptions appear anywhere in the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1243_P1",
+      "visual_anchors": [
+        "back-to-back seating",
+        "crossed arms",
+        "mutual gaze aversion"
+      ],
+      "symbolic_mapping": [
+        "back-to-back posture maps to relational separation",
+        "crossed arms map to self-boundary enforcement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial arrangement embodies a moment of negotiated autonomy within proximity—each child asserts bodily sovereignty while remaining physically tethered in shared space, reflecting how social existence often entails simultaneous connection and constraint.",
+      "alternative_interpretations": [
+        "The children may simply be posing for a photograph with directed posture, unrelated to interpersonal dynamics."
+      ],
+      "limitations": [
+        "No facial expressions are fully visible; only profile views are shown, limiting inference about affective states."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1243_P2",
+      "visual_anchors": [
+        "identical arm-crossing",
+        "symmetrical orientation",
+        "shared sofa surface"
+      ],
+      "symbolic_mapping": [
+        "mirrored posture maps to reciprocal response",
+        "shared seating maps to enforced coexistence"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual symmetry suggests a non-verbal dialectic where identity is performed through resistance—each child’s appearance (clothing, hair) remains distinct, yet their postural alignment implies a shared script of opposition, revealing how identity emerges in contrast to the other.",
+      "alternative_interpretations": [
+        "The pose could be choreographed for aesthetic balance, emphasizing composition over meaning."
+      ],
+      "limitations": [
+        "Hair and clothing details do not confirm intentional styling choices; they may be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1243_P3",
+      "visual_anchors": [
+        "window light source",
+        "shadowed faces",
+        "unoccupied space between them"
+      ],
+      "symbolic_mapping": [
+        "light gradient maps to asymmetry in attention or privilege",
+        "empty space maps to unresolved dialogue"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The unoccupied midline between the children functions as a visual void representing suspended agency—their current stance reflects a choice point where responsibility for reconnection lies unexercised, illustrating ethics as embodied hesitation rather than action.",
+      "alternative_interpretations": [
+        "The gap is merely compositional negative space with no symbolic intent."
+      ],
+      "limitations": [
+        "Lighting direction does not prove intentional symbolism; it may result from ambient conditions."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:07:01.539604+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e6ac99d9-60ee-9397-9149-d41c699352e1",
+      "usage": {
+        "prompt_tokens": 586,
+        "completion_tokens": 981,
+        "total_tokens": 1567,
+        "completion_tokens_details": {
+          "text_tokens": 981
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 79,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040643135ff44538df42eb",
+      "usage": {
+        "completion_tokens": 843,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1627,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2470
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

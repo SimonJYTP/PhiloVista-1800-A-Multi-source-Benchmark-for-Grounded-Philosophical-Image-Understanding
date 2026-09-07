@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0973",
+  "sample_id": "PHL1800_HL_0424",
+  "file_name": "PHL1800_HL_0424.png",
+  "batch_id": "B021",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "six cross-country skiers in mid-race on snow",
+  "captions": {
+    "scene": [
+      "Snow-covered flat terrain with a distant city skyline, overhead power lines, and advertising banners along the course edge",
+      "Overcast daylight conditions with diffuse lighting and no visible shadows",
+      "A mix of red, white, blue, and black racing suits with bib numbers, helmets, and ski poles; one banner reads 'graubuende' and another shows '2'"
+    ],
+    "action": [
+      "All six skiers are actively gliding forward on skis, with poles planted or swinging in motion",
+      "Skier with bib number 18 (white suit) is leaning forward with left pole extended backward and right pole forward",
+      "Skier with bib number 2 (blue suit) is upright, holding poles diagonally, and appears to be in double-poling phase"
+    ],
+    "rationale": [
+      "The presence of numbered bibs, uniformed attire, and parallel tracks suggests an organized competitive event rather than recreational skiing",
+      "The consistent forward orientation and synchronized pole use across multiple skiers indicate coordinated racing technique, though exact technique type (e.g., classic vs. skate) cannot be confirmed due to partial occlusion",
+      "Banners with German-language text ('graubuende', 'SHALLE Noss') and sponsor logos imply a European venue, but country cannot be definitively identified from visual evidence alone"
+    ],
+    "object": [
+      "Six distinct individuals are visible: three in red suits (one with bib 1, one with bib unreadable, one partially obscured), two in white suits (bib 18 and another with unreadable bib), and one in blue suit (bib 2).",
+      "Each skier wears a helmet or cap, goggles or sunglasses, and holds two ski poles; all are on narrow skis with bindings.",
+      "A red banner with white text 'graubuende' is visible on the right side of the image; a blue banner behind contains partial text including 'SHALLE Noss' and 'altmühltal'.",
+      "A vertical sign with the letter 'B' in white on blue is mounted on a post near the right edge.",
+      "The snow surface shows parallel grooves and disturbed texture consistent with prior ski traffic, and ski tracks are visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0973_P1",
+      "visual_anchors": [
+        "bib number 2 in blue suit",
+        "parallel ski tracks converging toward horizon",
+        "uniformed bodies in synchronized motion"
+      ],
+      "symbolic_mapping": [
+        "identical gear and posture map to shared rules",
+        "converging tracks suggest collective direction despite individual effort"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The skiers embody a tension between individual agency and collective participation: each moves independently yet remains bound by the same course, timing, and regulations—illustrating how social existence structures personal journeys.",
+      "alternative_interpretations": [
+        "This is simply a snapshot of athletic competition with no deeper meaning beyond sport performance."
+      ],
+      "limitations": [
+        "No facial expressions or body language indicating internal states are visible; interpretation relies solely on spatial arrangement and attire."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0973_P2",
+      "visual_anchors": [
+        "overcast sky",
+        "distant blurred buildings",
+        "snow-covered ground without landmarks"
+      ],
+      "symbolic_mapping": [
+        "featureless horizon evokes temporal continuity",
+        "monochrome palette suggests suspension of ordinary time"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The indistinct background and uniform lighting flatten spatial depth, creating a liminal zone where the skiers’ exertion feels suspended outside linear time—highlighting how constraint (course boundaries, equipment) paradoxically enables focused presence.",
+      "alternative_interpretations": [
+        "The scene reflects typical winter weather and urban proximity, not philosophical abstraction."
+      ],
+      "limitations": [
+        "The background is too blurry to confirm absence of landmarks; buildings may be recognizable to locals."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0973_P3",
+      "visual_anchors": [
+        "multiple identical sponsor logos on red suits",
+        "bib numbers as sole identifiers",
+        "helmets obscuring hair and ears"
+      ],
+      "symbolic_mapping": [
+        "logos replace personal insignia",
+        "numbers supersede names"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "Standardized attire and anonymizing bibs reduce individual identity to functional role within a system, revealing how labor (here, athletic performance) is mediated through technological and commercial frameworks that prioritize visibility over personhood.",
+      "alternative_interpretations": [
+        "Uniforms are practical for team identification and aerodynamics, not ideological erasure."
+      ],
+      "limitations": [
+        "Some skiers wear distinct color schemes (e.g., blue vs. red), preserving group-level differentiation."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The count of skiers is incorrect; there are six visible skiers, not seven. The description of skier attire and bib numbers contains inaccuracies (e.g., no skier with bib 11, and the number of skiers in each suit color is misstated). The object description incorrectly claims 'no footprints are visible' when ski tracks are present."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:32:50.896598+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-09e51727-b0a3-940d-8803-394d6f5a7597",
+      "usage": {
+        "prompt_tokens": 689,
+        "completion_tokens": 1109,
+        "total_tokens": 1798,
+        "completion_tokens_details": {
+          "text_tokens": 1109
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 182,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033227733f1ab426c845d5",
+      "usage": {
+        "completion_tokens": 1022,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1916,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2938
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

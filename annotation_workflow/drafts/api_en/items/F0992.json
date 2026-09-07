@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0992",
+  "sample_id": "PHL1800_HL_0359",
+  "file_name": "PHL1800_HL_0359.png",
+  "batch_id": "B021",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red octagonal stop sign with white text and a mounted rectangular sign above it",
+  "captions": {
+    "scene": [
+      "A sunlit urban street intersection with multi-story mixed-use buildings, overhead utility wires, and traffic signals.",
+      "Pedestrians and vehicles occupy the crosswalk and road; a cyclist is visible near the center of the intersection.",
+      "Blue banners with abstract patterns hang from a pole on the left; storefronts line the street front."
+    ],
+    "action": [
+      "Two pedestrians are crossing the street from right to left, one walking and one appearing to skate or stride quickly.",
+      "A cyclist in dark clothing rides across the intersection from left to right, partially obscured by the stop sign pole.",
+      "A white sedan and a silver hatchback are stopped or moving slowly at the intersection; a white vehicle with markings is parked on the far side."
+    ],
+    "rationale": [
+      "The presence of multiple traffic control devices (stop sign, traffic lights, crosswalk) indicates a regulated intersection, though exact signal status is ambiguous due to angle and glare.",
+      "The shadows cast sharply to the left suggest midday or early afternoon sunlight, but precise time cannot be determined without knowing orientation.",
+      "The banner text appears stylized and partially legible as 'en' and 't', but full words are unreadable; thus no definitive commercial or institutional identification can be made."
+    ],
+    "object": [
+      "A red octagonal stop sign displays the word 'STOP' in uppercase white sans-serif letters, with no additional text visible above or below the main word.",
+      "A white rectangular sign is mounted directly above the stop sign, oriented vertically, but its content is completely illegible due to overexposure and angle.",
+      "A black metal pole supports both signs and extends downward into the sidewalk area, where a green awning and a small structure are adjacent.",
+      "Two distinct pedestrians are visible: one in dark clothing walking near the left curb, one mid-crossing on the right—only their lower bodies and motion blur are clear.",
+      "A bicycle with thin wheels and a dark frame is being ridden across the intersection; the rider wears dark attire."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0992_P1",
+      "visual_anchors": [
+        "red stop sign with 'STOP'",
+        "pedestrians crossing despite stop sign",
+        "cyclist moving through intersection"
+      ],
+      "symbolic_mapping": [
+        "the stop sign as a symbol of imposed order",
+        "crossing against instruction as assertion of agency"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures tension between codified regulation (the stop sign) and embodied autonomy (pedestrians and cyclist in motion), suggesting that daily life involves continual negotiation between external constraints and personal trajectories.",
+      "alternative_interpretations": [
+        "The scene may simply depict normal traffic flow where the stop sign applies only to vehicles, not pedestrians, making the crossing lawful and unremarkable."
+      ],
+      "limitations": [
+        "No visible signage clarifies pedestrian right-of-way rules; the stop sign’s legal scope for non-motorists is not visually specified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0992_P2",
+      "visual_anchors": [
+        "blue banners with abstract patterns",
+        "multi-colored building facades",
+        "overhead wires crisscrossing sky"
+      ],
+      "symbolic_mapping": [
+        "banners as markers of cultural or commercial identity",
+        "wires as invisible infrastructure enabling connection"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The layered visual elements—decorative banners, functional architecture, and utility infrastructure—reflect how social existence is materially scaffolded by both expressive and instrumental systems operating simultaneously in public space.",
+      "alternative_interpretations": [
+        "The banners and wires are incidental background elements with no intended symbolic role; they merely indicate a typical city streetscape."
+      ],
+      "limitations": [
+        "Banner text is unreadable, preventing confirmation of intended message or affiliation; wire function is inferred but not verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0992_P3",
+      "visual_anchors": [
+        "sharp shadows indicating strong sunlight",
+        "motion blur on moving figures",
+        "static buildings and signs"
+      ],
+      "symbolic_mapping": [
+        "shadow length and direction as temporal marker",
+        "motion blur as representation of fleeting presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The contrast between enduring built structures and transient human movement—accentuated by motion blur and fixed shadows—evokes the philosophical theme of impermanence: individuals pass through stable environments, leaving only ephemeral traces in light and motion.",
+      "alternative_interpretations": [
+        "Motion blur results from camera shutter speed choice rather than intentional symbolism; shadows are purely optical effects of daylight conditions."
+      ],
+      "limitations": [
+        "No timestamps or dated objects confirm temporal context; blur could stem from technical factors unrelated to meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (3 described vs 2 visible); inaccurate description of cyclist's attire (helmet not visible); unsupported claim of police vehicle markings; 'driving' text on stop sign is a hallucination; '2008' text on stop sign is a hallucination; 'green trash bin' is not visible; 'small kiosk-like structure' is not clearly identifiable; 'three distinct pedestrians' miscounts visible individuals."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:35:32.345821+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-02a68321-646b-9d53-bf31-eb9c4446ce31",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1108,
+        "total_tokens": 1877,
+        "completion_tokens_details": {
+          "text_tokens": 1108
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703350825d5ab69cd204c8e",
+      "usage": {
+        "completion_tokens": 1038,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2040,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3078
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

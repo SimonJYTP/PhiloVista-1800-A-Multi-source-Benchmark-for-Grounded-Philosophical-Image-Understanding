@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1118",
+  "sample_id": "PHL1800_HAIV_0338",
+  "file_name": "PHL1800_HAIV_0338.png",
+  "batch_id": "B024",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single silhouetted humanoid figure seated before a ruined classical facade",
+  "captions": {
+    "scene": [
+      "A fragmented Doric-style temple front with four columns, a pediment, and exposed brickwork behind.",
+      "The background consists of vertical white bands alternating with brown-to-ochre gradient panels, suggesting damaged or incomplete wall surfaces.",
+      "The structure shows signs of decay: cracked masonry, irregular column edges, and dripping dark pigment on inner column faces."
+    ],
+    "action": [
+      "The figure sits with arms extended outward and downward, hands resting near the base of the structure.",
+      "The figure’s head is bowed forward, obscuring facial features; shoulders are raised slightly.",
+      "The figure wears a garment with high-contrast light-and-dark patterning across torso and upper limbs."
+    ],
+    "rationale": [
+      "The figure’s posture suggests physical support or exhaustion, but no motion is captured; only static pose is visible.",
+      "The architectural style resembles Greco-Roman temples, yet the damage implies intentional stylization rather than documentary realism.",
+      "The absence of facial detail prevents identification of expression or intent; interpretation must rely solely on silhouette and context."
+    ],
+    "object": [
+      "The figure is rendered as a black silhouette with white and light-gray linear accents defining musculature and garment folds.",
+      "Four vertical columns support a horizontal entablature and triangular pediment; the leftmost and rightmost columns show severe erosion and exposed brick texture.",
+      "The pediment contains a dark rectangular void with faint vertical striations, possibly representing a broken tympanum or curtain.",
+      "Brickwork appears behind the columns in two vertical zones, composed of irregularly shaped ochre blocks with black crack lines.",
+      "Dark vertical drips descend from the top edge of the central intercolumnar spaces, resembling paint or decay residue."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1118_P1",
+      "visual_anchors": [
+        "bowed head",
+        "ruined columns",
+        "silhouette without face"
+      ],
+      "symbolic_mapping": [
+        "bowed head → submission or contemplation",
+        "ruined columns → collapse of inherited order"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s featureless form against decaying architecture evokes the impermanence of human constructs and the erasure of individual identity within historical ruin.",
+      "alternative_interpretations": [
+        "The image may simply depict a stylized comic-book character posing in front of a set piece, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial features or contextual signage confirm intentional symbolism; abstraction permits multiple readings."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1118_P2",
+      "visual_anchors": [
+        "extended arms",
+        "contact with base of structure",
+        "asymmetrical garment pattern"
+      ],
+      "symbolic_mapping": [
+        "arms pressing down → burden-bearing",
+        "pattern contrast → internal duality"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s grounded posture and tactile engagement with the crumbling edifice suggest an ethical stance of sustaining or confronting inherited constraints.",
+      "alternative_interpretations": [
+        "The pose could be ergonomic for sitting on a low platform, with patterned clothing chosen for visual contrast alone."
+      ],
+      "limitations": [
+        "The garment pattern lacks legible iconography; its meaning is inferred from contrast, not content."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1118_P3",
+      "visual_anchors": [
+        "white vertical bands behind columns",
+        "dark drips on columns",
+        "pediment void"
+      ],
+      "symbolic_mapping": [
+        "white bands → absence or negation",
+        "drips → entropy or leakage of meaning"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The alternating voids and decay imply fractured epistemic foundations, where truth (white bands) is interrupted by deterioration (drips, ruin), questioning collective social memory.",
+      "alternative_interpretations": [
+        "The white bands may be intentional negative space for compositional balance, not symbolic absence."
+      ],
+      "limitations": [
+        "The white bands are uniform and lack texture or framing that would confirm representational intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:52:38.107632+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-33a604f4-2edc-90ea-aaf6-ab89822350b5",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 943,
+        "total_tokens": 2476,
+        "completion_tokens_details": {
+          "text_tokens": 943
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703521712870c3b94e6412d",
+      "usage": {
+        "completion_tokens": 805,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2900,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3705
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

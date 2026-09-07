@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1107",
+  "sample_id": "PHL1800_IRFL_0095",
+  "file_name": "PHL1800_IRFL_0095.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men engaged in physical contact",
+  "captions": {
+    "scene": [
+      "Two men depicted in a stylized illustration against a plain light-blue background.",
+      "The man on the left wears a white short-sleeved shirt and grey trousers; the man on the right wears a beige sleeveless tank top.",
+      "Both figures are shown from the waist up, with partial torsos visible and no surrounding environment details."
+    ],
+    "action": [
+      "The man on the right has both hands placed on the left man’s upper chest and shoulder area.",
+      "The left man’s mouth is open, his head tilted back slightly, and his left arm is raised near his own chest.",
+      "The right man’s torso leans forward toward the left man, suggesting proximity and active engagement."
+    ],
+    "rationale": [
+      "The hand placement and body orientation suggest physical interaction rather than casual proximity.",
+      "The open mouth and facial expression of the left man may indicate vocalization or exertion, but exact intent is not visually determinable.",
+      "Clothing and posture do not confirm context (e.g., sport, conflict, dance), so interpretation beyond observable motion is unsupported."
+    ],
+    "object": [
+      "The man on the left has dark hair, visible stubble on his jawline, and wears a white short-sleeved shirt that is partially lifted to expose his abdomen.",
+      "The man on the right has short light-brown hair, no visible facial hair, and wears a beige sleeveless tank top with visible shoulder straps.",
+      "The left man’s right hand is clenched into a loose fist near his mid-torso; his left hand is raised near his collarbone.",
+      "The right man’s right hand rests on the left man’s left pectoral region; his left hand grips the left man’s right shoulder.",
+      "A watermark reading 'wikiHow' appears in the lower-right corner in green sans-serif font, partially legible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1107_P1",
+      "visual_anchors": [
+        "hands gripping shoulders",
+        "open mouth",
+        "proximal torsos"
+      ],
+      "symbolic_mapping": [
+        "physical contact as embodiment of power dynamics"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The asymmetrical positioning and tactile dominance suggest an embodied negotiation of control, where proximity and touch become sites of contested agency.",
+      "alternative_interpretations": [
+        "This could represent a consensual demonstration, such as martial arts instruction or theatrical rehearsal, given the stylized nature and lack of injury indicators."
+      ],
+      "limitations": [
+        "No facial expressions beyond mouth openness are discernible; eyes are not clearly rendered, limiting emotional inference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1107_P2",
+      "visual_anchors": [
+        "exposed abdomen",
+        "lifted shirt hem",
+        "tense arm posture"
+      ],
+      "symbolic_mapping": [
+        "bodily exposure as vulnerability under social scrutiny"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The partial exposure of the torso amid interpersonal contact evokes the fragility of bodily autonomy within social interaction, where visibility invites judgment or intervention.",
+      "alternative_interpretations": [
+        "The shirt lift may simply result from movement during physical activity, with no symbolic intent implied by the image alone."
+      ],
+      "limitations": [
+        "The illustration style abstracts anatomical detail; the exposed skin lacks contextual markers like scars, tattoos, or clothing damage."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1107_P3",
+      "visual_anchors": [
+        "beige tank top",
+        "white shirt",
+        "neutral background"
+      ],
+      "symbolic_mapping": [
+        "minimalist attire and setting emphasizing relational form over identity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The reduction of distinguishing features—generic clothing, undifferentiated backdrop—foregrounds the relational gesture itself, implying that identity is constituted primarily through interaction rather than intrinsic attributes.",
+      "alternative_interpretations": [
+        "The simplicity reflects instructional illustration conventions, prioritizing clarity over symbolic depth."
+      ],
+      "limitations": [
+        "No facial features, insignia, or environmental cues exist to confirm intentional abstraction versus functional design choice."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:51:27.489921+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-abcdfb6b-c7aa-9ba7-879a-6f3795328121",
+      "usage": {
+        "prompt_tokens": 663,
+        "completion_tokens": 928,
+        "total_tokens": 1591,
+        "completion_tokens_details": {
+          "text_tokens": 928
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 156,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703510849d7b44655bb4e77",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1705,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2500
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

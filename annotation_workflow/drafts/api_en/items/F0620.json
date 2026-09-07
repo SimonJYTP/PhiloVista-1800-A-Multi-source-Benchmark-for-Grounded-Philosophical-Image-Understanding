@@ -1,0 +1,168 @@
+{
+  "annotation_item_id": "F0620",
+  "sample_id": "PHL1800_HL_0545",
+  "file_name": "PHL1800_HL_0545.png",
+  "batch_id": "B014",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single baseball pitcher mid-throw on a mound",
+  "captions": {
+    "scene": [
+      "A sunlit baseball field with green grass and a brown dirt pitching mound",
+      "The pitcher stands on the mound casting a sharp shadow under bright daylight",
+      "A white baseball is airborne just above the pitcher’s outstretched hand"
+    ],
+    "action": [
+      "The pitcher’s right arm is extended forward in follow-through motion after releasing the ball",
+      "His left leg is planted firmly on the mound while his right leg trails behind, knee bent",
+      "His gaze is fixed downward toward the release point, head tilted slightly forward"
+    ],
+    "rationale": [
+      "The ball’s position and blur suggest it has just left the hand, not yet in flight for long duration",
+      "The uniform’s pinstripes and cap logo indicate affiliation with a team, though specific identity is unreadable",
+      "The glove is held open and low near the hip, consistent with post-release posture rather than ready stance"
+    ],
+    "object": [
+      "The pitcher wears a white pinstriped uniform with dark vertical stripes, a black belt, and black cleats.",
+      "A navy blue cap with a red embroidered logo (partially visible, shape resembles a stylized 'T') sits on his head.",
+      "A black leather baseball glove with red stitching rests against his left hip, fingers open.",
+      "A white baseball with visible red seams is suspended in air approximately 12–18 inches above the pitcher’s right hand.",
+      "The pitcher’s right forearm shows muscle definition and slight motion blur, indicating rapid movement."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0620_P1",
+      "visual_anchors": [
+        "ball suspended mid-air",
+        "pitcher’s focused gaze",
+        "sharp shadow on mound"
+      ],
+      "symbolic_mapping": [
+        "the suspended ball represents a moment of indeterminacy before outcome",
+        "the fixed gaze signifies intentional agency within constraint"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The image captures a temporally compressed decision point where human intention intersects with physical inevitability—the pitch is released, yet its trajectory remains unsealed, embodying the tension between deliberate action and temporal finitude.",
+      "alternative_interpretations": [
+        "This is simply a standard athletic motion captured at high shutter speed, with no deeper meaning intended or implied by the subject."
+      ],
+      "limitations": [
+        "No facial expression beyond concentration is discernible; emotional or cognitive states are not visually accessible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0620_P2",
+      "visual_anchors": [
+        "pinstriped uniform",
+        "team cap logo",
+        "glove held low"
+      ],
+      "symbolic_mapping": [
+        "uniform as marker of assigned role",
+        "glove as tool mediating individual and collective performance"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The pitcher’s attire and equipment function as visual signifiers that embed the individual within a structured social framework—his identity is temporarily subsumed into the role of ‘pitcher’, illustrating how appearance mediates social recognition and functional belonging.",
+      "alternative_interpretations": [
+        "The clothing is purely functional sportswear chosen for comfort and regulation compliance, with no symbolic intent."
+      ],
+      "limitations": [
+        "The logo is partially obscured and cannot be definitively identified; thus, team affiliation remains uncertain."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0620_P3",
+      "visual_anchors": [
+        "motion blur on forearm",
+        "static ball in air",
+        "shadow aligned with body axis"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "A literal description of a single baseball pitcher mid-throw on a mound is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a single baseball pitcher mid-throw on a mound as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:01:53.176984+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fd05b510-4bc1-9df4-8843-32d5d7759d26",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 953,
+        "total_tokens": 1782,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030130017c533aa20d405c",
+      "usage": {
+        "completion_tokens": 809,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1951,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2760
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "supported",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F0620.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0570",
+  "sample_id": "PHL1800_HL_0370",
+  "file_name": "PHL1800_HL_0370.png",
+  "batch_id": "B013",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of six people with luggage beside a vintage car at an airport terminal",
+  "captions": {
+    "scene": [
+      "A black-and-white photograph showing a two-story building labeled 'SCHIPHOL AIRPORT' above its facade, with a smaller 'SABENA' sign on a left-side window.",
+      "A dark-colored 1950s sedan parked on a paved surface in front of the building, with chrome trim and whitewall tires visible.",
+      "Six individuals—two men in formal attire, two women, one boy, and one girl—standing near the car with multiple suitcases and bags."
+    ],
+    "action": [
+      "A man in a hat lifts a rectangular object (possibly a box or case) overhead with both hands while standing beside the driver’s door.",
+      "A man in a suit extends his right arm toward the car, palm open, as if gesturing or directing.",
+      "A boy in shorts and a short-sleeved shirt holds a suitcase upright near the rear passenger door; a girl in a dress stands beside him."
+    ],
+    "rationale": [
+      "The presence of suitcases, airport signage, and coordinated positioning suggests travel preparation rather than casual gathering.",
+      "The man’s posture and raised object imply a service role (e.g., baggage handling), though no airline insignia is legible.",
+      "The group’s orientation toward the car and lack of interaction with background figures indicate they form a cohesive unit, likely a family or party traveling together."
+    ],
+    "object": [
+      "A dark-colored 1950s sedan with a prominent chrome grille, dual headlights, and whitewall tires.",
+      "A hard-shell suitcase with metal latches sits upright on the pavement near the front wheel well.",
+      "A second suitcase with a lighter-colored top and dark body rests beside the rear passenger door, held by a boy in shorts and a short-sleeved shirt.",
+      "A third bag, smaller and rectangular with a handle, is held by a girl in a dress.",
+      "A 'SABENA' sign in uppercase letters is visible on a left-side window of the building."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0570_P1",
+      "visual_anchors": [
+        "man in hat lifting object",
+        "man in suit gesturing",
+        "group clustered around car"
+      ],
+      "symbolic_mapping": [
+        "the lifted object symbolizes transfer of responsibility",
+        "the gesture signifies direction or authority"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The image captures a moment where delegated duty (baggage handling) intersects with hierarchical direction (gesturing man), reflecting structured social roles in transit contexts.",
+      "alternative_interpretations": [
+        "It may simply depict routine airport assistance without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or dialogue are visible to confirm intentionality behind gestures or roles."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0570_P2",
+      "visual_anchors": [
+        "boy holding luggage",
+        "girl standing beside boy",
+        "group clustered around car"
+      ],
+      "symbolic_mapping": [
+        "children participating in travel tasks",
+        "shared space suggesting family unit"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual of children with luggage, alongside adults, suggests identity formation through participation in a social unit during transition.",
+      "alternative_interpretations": [
+        "The clothing and actions may reflect practical travel norms of the era rather than symbolic role-play."
+      ],
+      "limitations": [
+        "No evidence confirms whether the children’s actions were chosen for symbolic reasons or convenience."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0570_P3",
+      "visual_anchors": [
+        "SCHIPHOL AIRPORT sign",
+        "vintage car",
+        "group with luggage"
+      ],
+      "symbolic_mapping": [
+        "airport as threshold between places",
+        "car as vessel of journey"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The fixed frame freezes a liminal passage—departure from one place to another—emphasizing human movement across spatial boundaries.",
+      "alternative_interpretations": [
+        "The photo may be a staged promotional image with no existential intent."
+      ],
+      "limitations": [
+        "The photograph’s genre (documentary vs. staged) is undetermined from visual evidence alone."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (7 vs. 6 actual); 'uniformed man' misdescribes a person in a hat; 'man in suit extending arm' misattributes gesture direction; 'two boys' miscounts children (1 boy, 1 girl); 'third suitcase' misdescribes a bag; 'SABENA' sign is on a window, not mounted; 'DeSoto' badge is not visible; 'black sedan' is dark-colored but not confirmed black; 'rectangular sign' misdescribes the SABENA sign; 'matching suits' misidentifies the boy’s suit as matching the adult’s; 'identical suitcase styles' misstates differences; 'black-and-white medium' is a format, not a visual anchor for philosophy; 'time_mortality' concept is unsupported by visual evidence."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:57:28.661620+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bcd69417-2aa1-9e43-8891-7cce15e2513c",
+      "usage": {
+        "prompt_tokens": 685,
+        "completion_tokens": 1013,
+        "total_tokens": 1698,
+        "completion_tokens_details": {
+          "text_tokens": 1013
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 178,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025710b290f2b1e9d44285",
+      "usage": {
+        "completion_tokens": 1070,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1817,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2887
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

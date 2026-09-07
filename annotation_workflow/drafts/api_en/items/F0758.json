@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0758",
+  "sample_id": "PHL1800_HL_0581",
+  "file_name": "PHL1800_HL_0581.png",
+  "batch_id": "B017",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person kneeling in snow with a snowboard",
+  "captions": {
+    "scene": [
+      "Snow-covered mountain slope with exposed rocky outcrops",
+      "Overcast daylight with soft shadows",
+      "A thin horizontal cable in the upper midground"
+    ],
+    "action": [
+      "The person kneels on both knees in deep snow with torso upright",
+      "The snowboard lies horizontally in front, partially buried",
+      "The person wears a helmet with text and goggles pushed up"
+    ],
+    "rationale": [
+      "Posture and proximity to snowboard suggest preparation or pause",
+      "Snowboard gear (helmet, goggles, board) indicates winter sports engagement",
+      "Snow depth around knees/board implies recent snowfall or undisturbed terrain; no motion blur confirms static pose"
+    ],
+    "object": [
+      "A black helmet with white and red text reading 'BURTON' and other partially legible characters",
+      "A pair of ski/snowboard goggles with dark lenses and reflective silver frame resting atop the helmet",
+      "A black insulated jacket with visible buttons and a small circular logo on the left chest",
+      "Black snow pants with snow accumulation on knees and lower legs",
+      "A snowboard with a predominantly white base showing red and black graphics, including reversed 'BURTON' lettering near the tail"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0758_P1",
+      "visual_anchors": [
+        "kneeling posture",
+        "buried snowboard",
+        "exposed rocky terrain"
+      ],
+      "symbolic_mapping": [
+        "kneeling as submission to environment",
+        "buried board as suspended agency"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The figure’s grounded stance amid vast, unyielding terrain evokes a moment where personal volition confronts natural constraint—movement is possible only through negotiation with physical limits.",
+      "alternative_interpretations": [
+        "The pose may simply reflect rest or equipment adjustment, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or gesture confirms intentional symbolism; posture could be purely functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0758_P2",
+      "visual_anchors": [
+        "helmet with branded text",
+        "goggles pushed up",
+        "uniform black attire"
+      ],
+      "symbolic_mapping": [
+        "branding as identity marker",
+        "goggle position as transitional state between protection and exposure"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visible branding and standardized protective gear situate the individual within a commercialized recreational subculture, where self-presentation is mediated through commodified symbols of belonging.",
+      "alternative_interpretations": [
+        "Gear choices may reflect practicality or availability rather than identity signaling."
+      ],
+      "limitations": [
+        "Only partial text is legible; full branding context is missing, and attire lacks unique identifiers."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0758_P3",
+      "visual_anchors": [
+        "horizontal cable across scene",
+        "isolated figure",
+        "undisturbed snow surface"
+      ],
+      "symbolic_mapping": [
+        "cable as artificial line cutting nature",
+        "solitude as condition of modern experience"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "time_mortality"
+      ],
+      "interpretation": "The lone figure framed beneath an engineered line in a timeless snowy expanse suggests tension between human infrastructure and natural permanence—a fleeting human presence against enduring geological scale.",
+      "alternative_interpretations": [
+        "The cable is likely part of a ski lift system, indicating routine infrastructure, not symbolic intrusion."
+      ],
+      "limitations": [
+        "Cable function is not confirmed; it could be utility wiring unrelated to recreation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:14:16.853283+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-aaf811ba-88d6-973a-9bfd-e921214f825a",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 874,
+        "total_tokens": 1683,
+        "completion_tokens_details": {
+          "text_tokens": 874
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070313595bdd4220c318436f",
+      "usage": {
+        "completion_tokens": 682,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1852,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2534
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

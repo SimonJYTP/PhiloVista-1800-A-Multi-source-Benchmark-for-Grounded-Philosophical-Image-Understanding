@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0913",
+  "sample_id": "PHL1800_IRFL_0060",
+  "file_name": "PHL1800_IRFL_0060.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three office workers gathered around a laptop on a desk",
+  "captions": {
+    "scene": [
+      "A brightly lit modern office interior with large windows, white shelving holding books and a small potted plant in the background.",
+      "Three adults stand or sit at a white table; two women flank a seated man who faces a silver laptop.",
+      "All three wear lanyards with ID badges; the setting suggests a professional collaborative workspace."
+    ],
+    "action": [
+      "The woman on the left leans forward, mouth slightly open, facing the woman on the right, suggesting speech or active listening.",
+      "The man in the center looks downward toward the laptop screen with a focused expression, hands near the keyboard area.",
+      "The woman on the right stands upright, facing the left woman, with both hands resting on the table surface."
+    ],
+    "rationale": [
+      "The orientation of heads and eye lines indicates a triangular conversational configuration rather than parallel independent tasks.",
+      "The presence of an open laptop and documents on the table implies work-related activity, though specific content is unreadable.",
+      "Lanyards with visible ID badges suggest institutional affiliation, but organizational type cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "A silver-colored laptop with a closed lid is positioned centrally on the white table, facing the man.",
+      "A blue clipboard with papers containing colored charts or tables lies to the left of the laptop, partially under the left woman’s hand.",
+      "Each person wears a blue lanyard with a white rectangular ID badge; the right woman’s badge has a blue top tab, the others have blue side tabs.",
+      "The background includes a white shelf unit with vertical blue book spines and a small green-leafed plant in a brown pot.",
+      "The man wears a white long-sleeved collared shirt; the left woman wears a light-blue long-sleeved collared shirt; the right woman wears a white long-sleeved shirt with fine vertical stripes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0913_P1",
+      "visual_anchors": [
+        "three people arranged in a triangle",
+        "laptop as central focal object",
+        "ID badges worn by all"
+      ],
+      "symbolic_mapping": [
+        "laptop as mediator of shared attention",
+        "triangle formation as non-hierarchical engagement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image visually enacts a moment of intersubjective knowledge construction, where truth emerges not from solitary cognition but through embodied dialogue mediated by technology and institutional identity markers.",
+      "alternative_interpretations": [
+        "This may simply depict routine task coordination in an office, with no deeper epistemic significance."
+      ],
+      "limitations": [
+        "No readable text or facial expressions confirm intent or content of discussion; symbolic mapping relies on conventional associations, not direct evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0913_P2",
+      "visual_anchors": [
+        "ID badges with lanyards",
+        "uniform professional attire",
+        "shared workspace"
+      ],
+      "symbolic_mapping": [
+        "badges as tokens of assigned role",
+        "attire as conformity to institutional norms"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "Visible markers of institutional belonging (badges, dress) frame individual presence within a structure of implied authority and expected conduct, raising questions about selfhood under organizational constraint.",
+      "alternative_interpretations": [
+        "Badges and attire may merely reflect standard workplace policy without implying power dynamics or identity suppression."
+      ],
+      "limitations": [
+        "Badge content is unreadable; no hierarchy (e.g., seating, posture dominance) is evident to confirm power asymmetry."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0913_P3",
+      "visual_anchors": [
+        "man seated while two women stand",
+        "all hands near or on table surface",
+        "laptop screen facing man"
+      ],
+      "symbolic_mapping": [
+        "seated position as locus of control or access",
+        "shared table as common ground for labor"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The spatial arrangement positions technology as the pivot of collaborative labor, where agency is distributed yet anchored in physical proximity and shared material conditions—suggesting labor as a situated, relational process rather than isolated execution.",
+      "alternative_interpretations": [
+        "Seating may reflect ergonomic preference or prior task assignment, not intentional role differentiation."
+      ],
+      "limitations": [
+        "No visible tools, gestures, or output indicate actual labor performed; posture could result from transient positioning rather than fixed roles."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:27:37.434568+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-eb068b21-6cdd-9283-ab88-b7e16e4ad296",
+      "usage": {
+        "prompt_tokens": 2273,
+        "completion_tokens": 1011,
+        "total_tokens": 3284,
+        "completion_tokens_details": {
+          "text_tokens": 1011
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1766,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703271441926353f3ed4721",
+      "usage": {
+        "completion_tokens": 872,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3904,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4776
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

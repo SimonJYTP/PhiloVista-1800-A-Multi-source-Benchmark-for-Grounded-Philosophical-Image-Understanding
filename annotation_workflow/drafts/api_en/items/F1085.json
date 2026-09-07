@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1085",
+  "sample_id": "PHL1800_HAIV_0282",
+  "file_name": "PHL1800_HAIV_0282.png",
+  "batch_id": "B023",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two stylized cartoon figures and a wooden signboard",
+  "captions": {
+    "scene": [
+      "A brown rectangular figure wearing a fedora, suit, tie, and white shirt occupies the left foreground.",
+      "A partial view of a second figure with reddish-brown hair, closed eyes, black jacket, and white collar appears on the right.",
+      "A blank wooden signboard with visible grain texture and a dark vertical edge is positioned above and to the right of the first figure."
+    ],
+    "action": [
+      "The left figure has wide-open eyes and a straight mouth line, suggesting a neutral or stern expression; no motion is depicted.",
+      "The right figure’s eyes are closed and lips slightly parted; no motion is depicted.",
+      "The wooden signboard is stationary and unmarked; no text is visible on it."
+    ],
+    "rationale": [
+      "The left figure’s blocky head and clothing suggest a stylized anthropomorphic character rather than a realistic human.",
+      "The right figure’s partial visibility and lack of facial detail prevent identification of gender, age, or intent.",
+      "The signboard’s blank surface and absence of text indicate no readable message is present in the image."
+    ],
+    "object": [
+      "The left figure has a square orange-brown head with two white-rimmed circular eyes containing black pupils, a small oval nose, and a horizontal rectangular mouth.",
+      "The left figure wears a brown fedora with a black band, a brown suit jacket with lapels, a white collared shirt, and a black necktie with a round knot.",
+      "The right figure shows only the right half of a face: closed curved eyelids, a small visible portion of a mouth, reddish-brown shoulder-length hair, a black jacket, and a white collar.",
+      "The wooden signboard is rectangular, horizontally oriented, with light-to-medium brown wood grain, a darker vertical side piece, and a curved lower-right corner.",
+      "All elements are rendered in flat vector-style illustration with bold black outlines and minimal shading."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1085_P1",
+      "visual_anchors": [
+        "square head",
+        "fedora",
+        "blank signboard"
+      ],
+      "symbolic_mapping": [
+        "square head → rigid identity",
+        "blank signboard → withheld meaning"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of a fixed, geometric persona with an empty sign suggests tension between constructed self-presentation and the absence of communicable truth.",
+      "alternative_interpretations": [
+        "The scene may simply depict generic cartoon characters awaiting dialogue or signage in a storyboard layout."
+      ],
+      "limitations": [
+        "No textual content or contextual setting confirms symbolic intent; visual style alone does not mandate philosophical reading."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1085_P2",
+      "visual_anchors": [
+        "closed eyes of right figure",
+        "stern gaze of left figure",
+        "shared white background"
+      ],
+      "symbolic_mapping": [
+        "closed eyes → interiority",
+        "stern gaze → external judgment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The contrast between inward-facing stillness and outward-facing vigilance evokes questions about moral accountability in social observation.",
+      "alternative_interpretations": [
+        "The right figure may be sleeping or resting while the left figure stands guard—a mundane narrative possibility."
+      ],
+      "limitations": [
+        "Facial expressions are highly stylized and lack nuance; emotional states cannot be objectively verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1085_P3",
+      "visual_anchors": [
+        "wood grain texture",
+        "uniform color palette",
+        "lack of environmental context"
+      ],
+      "symbolic_mapping": [
+        "wood grain → natural material amid artificial forms",
+        "monochromatic brown scheme → constraint or uniformity"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The use of organic wood texture against rigid geometric figures may reflect tensions between natural embodiment and imposed structural roles.",
+      "alternative_interpretations": [
+        "The wood texture is a default fill pattern for a signboard asset, with no intended symbolism."
+      ],
+      "limitations": [
+        "Texture is generic and commonly used in vector art; no unique features link it to thematic intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:48:42.345083+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2055b833-aae4-989c-8bac-99fe43991a5e",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 956,
+        "total_tokens": 2489,
+        "completion_tokens_details": {
+          "text_tokens": 956
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034831fe4d54b7d0704d71",
+      "usage": {
+        "completion_tokens": 816,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2911,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3727
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

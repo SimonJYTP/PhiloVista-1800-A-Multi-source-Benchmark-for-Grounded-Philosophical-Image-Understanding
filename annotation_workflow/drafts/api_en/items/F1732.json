@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1732",
+  "sample_id": "PHL1800_HL_0358",
+  "file_name": "PHL1800_HL_0358.png",
+  "batch_id": "B035",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two pedestrians on a wet riverside walkway",
+  "captions": {
+    "scene": [
+      "A wide river with several boats, flanked by a city skyline under overcast skies.",
+      "An ornate metal-and-wood railing with repeating geometric cutouts separates the walkway from the river.",
+      "The walkway surface is dark and reflective, indicating recent or ongoing rain."
+    ],
+    "action": [
+      "A person in a light-colored raincoat walks leftward while holding a transparent plastic sheet over their head and shoulders.",
+      "A second person to the right holds a dark umbrella aloft with both hands, facing slightly toward the river.",
+      "Both individuals appear mid-stride, with visible motion blur suggesting forward movement."
+    ],
+    "rationale": [
+      "The translucent sheet and raised umbrella indicate precipitation; however, no falling droplets are visible, so rain intensity is uncertain.",
+      "The blurred limbs and feet suggest walking motion, but the exact speed or gait cannot be determined from still imagery.",
+      "The background architecture includes modern high-rises and older low-rise buildings, yet no signage or landmarks confirm location or era."
+    ],
+    "object": [
+      "A person wearing a light gray hooded raincoat, blue jeans, white sandals, and carrying a clear plastic sheet as improvised rain protection.",
+      "A second person wearing a dark green jacket, blue jeans, dark shoes, and holding a black umbrella with a visible metal shaft and ribs.",
+      "A decorative railing composed of vertical blue-painted posts and cream-colored panels featuring interlaced diamond motifs.",
+      "At least three vessels are visible on the river: one white motorboat near center, one smaller craft farther left, and another indistinct shape upstream.",
+      "Three small pink circular artifacts appear on the lower-right foreground—likely lens flare or sensor artifacts—not part of the scene."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1732_P1",
+      "visual_anchors": [
+        "transparent plastic sheet",
+        "dark umbrella",
+        "wet reflective pavement"
+      ],
+      "symbolic_mapping": [
+        "improvised shelter vs. conventional tool as response to shared environmental condition"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The contrast between the makeshift plastic sheet and the standard umbrella visualizes divergent strategies for navigating constraint—suggesting that freedom manifests not in absence of limitation but in the repertoire of responses available within it.",
+      "alternative_interpretations": [
+        "The objects may simply reflect differing access to gear or personal preference, with no deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual cues confirm intentional symbolism; the interpretation relies on post-hoc pattern assignment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1732_P2",
+      "visual_anchors": [
+        "motion blur on legs",
+        "static cityscape",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "human transience against enduring urban infrastructure"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The blurred movement of pedestrians against the fixed geometry of the railing and distant buildings evokes the phenomenological tension between lived temporality and institutional permanence—individual passage set against collective spatial memory.",
+      "alternative_interpretations": [
+        "Motion blur results from camera shutter speed, not philosophical commentary; the scene is a routine urban moment."
+      ],
+      "limitations": [
+        "Blurring is a technical artifact, not necessarily expressive; the cityscape lacks identifying features to ground ‘permanence’ claim."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1732_P3",
+      "visual_anchors": [
+        "two figures walking parallel but not interacting",
+        "separate rain protections",
+        "shared path"
+      ],
+      "symbolic_mapping": [
+        "coexistence without communion in public space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The physical proximity yet functional separation of the two walkers—each encased in distinct protective apparatus—illustrates how modern public life enables simultaneous presence and ontological distance, where identity is performed through individualized adaptation rather than shared ritual.",
+      "alternative_interpretations": [
+        "They may be strangers coincidentally sharing a route; no evidence confirms intentional non-interaction."
+      ],
+      "limitations": [
+        "No eye contact, gestures, or spatial orientation data confirm relational intent; proximity alone does not imply social meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:06:11.868825+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9921406d-b5ec-98bd-a295-56270a24559a",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 960,
+        "total_tokens": 1729,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705060022519db942e44551",
+      "usage": {
+        "completion_tokens": 824,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1890,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2714
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

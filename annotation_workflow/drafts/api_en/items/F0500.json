@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0500",
+  "sample_id": "PHL1800_HAIV_0088",
+  "file_name": "PHL1800_HAIV_0088.png",
+  "batch_id": "B012",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two stylized human-like figures standing side by side",
+  "captions": {
+    "scene": [
+      "Two figures depicted against a plain white background with no environmental context.",
+      "Figures are drawn with thick black outlines and flat color fills, suggesting a digital or hand-drawn illustration style.",
+      "Both figures have oversized blue eyes, pale skin tones, and visible bruise-like discolorations under the eyes."
+    ],
+    "action": [
+      "Both figures stand upright with arms at their sides; hands are open with fingers splayed.",
+      "The figure on the right has its mouth slightly open, revealing a small red-and-white object inside the oral cavity.",
+      "Neither figure shows motion blur or dynamic posture; both appear static and frontal."
+    ],
+    "rationale": [
+      "The uniform pallor and periorbital discoloration suggest intentional stylization rather than realistic depiction of health status.",
+      "Clothing differences (pants vs. skirt) indicate deliberate gendered or role-based distinction, though no genitalia or secondary sex characteristics are shown.",
+      "The presence of a small object in the right figure’s mouth is visually confirmed but its identity cannot be determined from the image alone."
+    ],
+    "object": [
+      "The left figure wears a beige long-sleeved top, olive-green pants with a black belt, and is barefoot.",
+      "The right figure wears a green long-sleeved top and a blue skirt with a wavy hemline, and is also barefoot.",
+      "Both figures have brown hair cut short with uneven, jagged edges; ears are visible on both sides of each head.",
+      "Each figure has two large blue eyes with black pupils and white highlights; the right figure’s left eye contains a small white geometric shape within the iris.",
+      "Hands are drawn with five fingers each, outlined in black, with dark shading on fingertips and palm areas."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0500_P1",
+      "visual_anchors": [
+        "oversized blue eyes",
+        "pale skin with periorbital discoloration",
+        "open mouths"
+      ],
+      "symbolic_mapping": [
+        "enlarged eyes → heightened perception or vulnerability",
+        "bruising → exposure to harm or fatigue"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The exaggerated ocular features and signs of physical strain may symbolize the fragility of self-presentation under scrutiny or the temporal erosion of bodily integrity.",
+      "alternative_interpretations": [
+        "The figures could simply represent cartoon characters with expressive design choices unrelated to philosophical themes."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm symbolic intent; visual elements are ambiguous without external framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0500_P2",
+      "visual_anchors": [
+        "bare feet",
+        "simple clothing",
+        "static postures"
+      ],
+      "symbolic_mapping": [
+        "bare feet → grounding or lack of protection",
+        "uniform simplicity → social neutrality or erasure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The minimal attire and lack of footwear may evoke questions about social positioning—whether the figures are stripped of status markers or constrained by systemic conditions.",
+      "alternative_interpretations": [
+        "Bare feet and simple clothes may reflect artistic economy or childlike representation rather than socio-political commentary."
+      ],
+      "limitations": [
+        "Clothing style is generic and non-specific; no cultural or institutional symbols are present to anchor interpretation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0500_P3",
+      "visual_anchors": [
+        "asymmetrical eye details",
+        "slightly open mouth with indistinct object",
+        "identical body proportions"
+      ],
+      "symbolic_mapping": [
+        "eye asymmetry → fractured perception",
+        "ambiguous oral object → incomplete communication"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The subtle visual discrepancies between otherwise similar figures may reflect the instability of truth claims or the constructed nature of personal identity when observed externally.",
+      "alternative_interpretations": [
+        "Differences may result from drawing variation or iterative sketching rather than intentional symbolism."
+      ],
+      "limitations": [
+        "The object in the mouth is too small and low-resolution to identify; asymmetry could be unintentional."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:52:00.721554+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b01fb0e3-ac4b-9740-accb-0960f88d3699",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 945,
+        "total_tokens": 2478,
+        "completion_tokens_details": {
+          "text_tokens": 945
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702514139e4ad47b7f64dea",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2906,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3713
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

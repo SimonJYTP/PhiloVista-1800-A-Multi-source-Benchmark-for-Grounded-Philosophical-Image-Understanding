@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1512",
+  "sample_id": "PHL1800_IRFL_0383",
+  "file_name": "PHL1800_IRFL_0383.jpg",
+  "batch_id": "B031",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a glowing metal rod on an anvil with a hammer in motion",
+  "captions": {
+    "scene": [
+      "A dimly lit workshop with scattered metal scale debris on a dark anvil surface",
+      "A blurred motion of a hammer descending toward a red-hot metal rod resting on the anvil",
+      "A person wearing yellow gloves and a brown leather apron partially visible in the background"
+    ],
+    "action": [
+      "The metal rod exhibits incandescence at its tip, transitioning from bright orange-red to dull gray along its length",
+      "The hammer head is captured mid-strike with motion blur indicating rapid downward movement",
+      "Metal scale fragments are displaced around the contact point on the anvil surface"
+    ],
+    "rationale": [
+      "The glow gradient suggests localized heating, likely from recent forging or quenching; however, the exact thermal history is not visible",
+      "The presence of gloves and apron implies protective gear for hot work, but the wearer’s identity or intent is not discernible",
+      "The anvil shows wear and residue consistent with repeated metalworking, yet no tool markings or inscriptions are legible"
+    ],
+    "object": [
+      "A long, tapered metal rod lies diagonally across a rectangular anvil, with its pointed tip glowing orange-red and the remainder appearing dark gray.",
+      "A large hammer with a wooden handle and metallic head is blurred in motion above the rod, positioned as if about to strike the glowing tip.",
+      "Yellow fabric gloves grip the rod near its non-glowing end, and a brown leather apron covers the torso of a figure standing behind the anvil.",
+      "Small irregular flakes of dark gray and black material—likely oxidized metal scale—are scattered on the anvil surface near the rod’s tip.",
+      "The anvil has a flat top surface with visible pitting, discoloration, and a square hole (hardy hole) near its lower right corner."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1512_P1",
+      "visual_anchors": [
+        "glowing metal tip",
+        "motion-blurred hammer",
+        "scattered scale debris"
+      ],
+      "symbolic_mapping": [
+        "incandescence as transient transformation",
+        "hammer motion as directed force"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The image captures a moment where raw material is subjected to controlled violence to achieve form—a metaphor for how human labor imposes order on chaos through repetitive, time-bound effort, where each strike erases prior states and leaves only residue.",
+      "alternative_interpretations": [
+        "This is simply a technical step in blacksmithing: shaping heated steel before it cools, with no symbolic intent implied by the visual evidence alone."
+      ],
+      "limitations": [
+        "No facial expression, tools beyond hammer/anvil, or contextual signage confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1512_P2",
+      "visual_anchors": [
+        "yellow gloves",
+        "leather apron",
+        "anvil wear"
+      ],
+      "symbolic_mapping": [
+        "protective gear as boundary between body and hazard",
+        "anvil as enduring witness to repeated action"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visible safeguards and worn surfaces imply a relationship of responsibility: the maker must constrain their own exposure to danger while constraining the material, revealing ethics embedded in bodily discipline rather than abstract principle.",
+      "alternative_interpretations": [
+        "The gloves and apron are standard safety equipment; their presence reflects regulation or habit, not philosophical stance."
+      ],
+      "limitations": [
+        "No visible injury, hesitation, or decision-making cues prevent confirming ethical deliberation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1512_P3",
+      "visual_anchors": [
+        "gradual color fade from red to gray",
+        "sharp tip geometry",
+        "debris distribution"
+      ],
+      "symbolic_mapping": [
+        "thermal gradient as impermanence",
+        "precision of tip as intentionality"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The rod’s luminous tip—sharply defined yet fading—suggests a truth that is momentarily evident only at the point of action, where choice manifests physically before dissipating into inert form, echoing epistemological fragility in embodied practice.",
+      "alternative_interpretations": [
+        "The color gradient is purely thermodynamic: temperature decreases with distance from heat source, with no cognitive or semantic layer required."
+      ],
+      "limitations": [
+        "No textual labels, diagrams, or instructional context link the visual to epistemic claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:40:36.925076+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1c89c373-04af-9029-9fbc-34a200a8ca24",
+      "usage": {
+        "prompt_tokens": 3010,
+        "completion_tokens": 1017,
+        "total_tokens": 4027,
+        "completion_tokens_details": {
+          "text_tokens": 1017
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2503,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070440190cf79ced8fed4fd1",
+      "usage": {
+        "completion_tokens": 875,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 6939,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 7814
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

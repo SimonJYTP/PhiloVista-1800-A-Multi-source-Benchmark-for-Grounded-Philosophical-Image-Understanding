@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0362",
+  "sample_id": "PHL1800_HL_0565",
+  "file_name": "PHL1800_HL_0565.png",
+  "batch_id": "B009",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one skier in red ski suit lying on snow",
+  "captions": {
+    "scene": [
+      "Sloped snow surface with sparse dark vegetation patches visible near top right",
+      "Snow appears disturbed around the skier, indicating recent motion or impact",
+      "Background is uniformly white and textured with minor irregularities"
+    ],
+    "action": [
+      "Skier is supine on snow with arms extended outward and legs splayed",
+      "One ski is airborne above the skier’s torso, angled upward; the other ski lies partially buried nearby",
+      "Helmeted head is turned slightly leftward; no visible motion blur suggests momentary stillness"
+    ],
+    "rationale": [
+      "The skier’s posture and displaced equipment suggest a fall occurred recently, though exact timing is unverifiable",
+      "Absence of visible tracks leading directly to the skier implies either obscured approach path or prior movement not captured",
+      "No visible injury or assistance indicates the scene is isolated at this instant, but intent or outcome remains unknown"
+    ],
+    "object": [
+      "A person wearing a bright red full-body ski suit with white trim on sleeves and torso is lying on their back in snow.",
+      "The person wears an orange helmet with a reflective visor covering the eyes and upper face.",
+      "One black ski with metallic bindings is suspended mid-air above the person’s chest, oriented diagonally upward to the right.",
+      "A second ski lies partially embedded in snow to the right of the person’s hips, yellow tip visible.",
+      "Snow surface shows scattered small dark specks and irregular depressions consistent with recent disturbance."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0362_P1",
+      "visual_anchors": [
+        "airborne ski",
+        "supine body",
+        "disturbed snow"
+      ],
+      "symbolic_mapping": [
+        "airborne ski → rupture of intended trajectory",
+        "supine body → temporary suspension of agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where deliberate motion collapses into involuntary stasis, illustrating how choice (to ski) confronts constraint (gravity, terrain), revealing journey as inherently punctuated by loss of control.",
+      "alternative_interpretations": [
+        "A routine fall during recreational skiing, with no deeper significance beyond physical accident."
+      ],
+      "limitations": [
+        "No facial expression, context, or aftermath is visible, preventing confirmation of intent or consequence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0362_P2",
+      "visual_anchors": [
+        "orange helmet",
+        "red suit",
+        "isolated figure"
+      ],
+      "symbolic_mapping": [
+        "helmet → protective boundary between self and world",
+        "red suit → constructed visibility against neutral background"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The skier’s vivid attire and protective gear constitute a curated appearance that asserts individual presence within an indifferent environment, suggesting identity is performed through contrast and containment.",
+      "alternative_interpretations": [
+        "Functional clothing chosen for visibility and safety, not symbolic expression."
+      ],
+      "limitations": [
+        "Color and design may be standard issue; no evidence of intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0362_P3",
+      "visual_anchors": [
+        "snow-covered ground",
+        "scattered vegetation",
+        "single human figure"
+      ],
+      "symbolic_mapping": [
+        "bare snow → erasure of prior marks",
+        "vegetation peeking through → persistence of underlying reality"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The fallen skier occupies a transient state amid a landscape that both records and obscures action—evoking how truth emerges only fleetingly from surfaces that constantly renew and conceal.",
+      "alternative_interpretations": [
+        "Natural snowfall has covered earlier tracks; vegetation simply protrudes due to shallow snow depth."
+      ],
+      "limitations": [
+        "No temporal sequence is shown; snow texture alone cannot confirm renewal or erasure."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:38:33.819335+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-11e04b12-5893-9223-8d48-d2928bc7623e",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 884,
+        "total_tokens": 1585,
+        "completion_tokens_details": {
+          "text_tokens": 884
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023816264486e8613d416e",
+      "usage": {
+        "completion_tokens": 742,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1704,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2446
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

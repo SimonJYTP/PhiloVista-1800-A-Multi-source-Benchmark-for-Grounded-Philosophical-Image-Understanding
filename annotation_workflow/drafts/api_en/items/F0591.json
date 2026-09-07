@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F0591",
+  "sample_id": "PHL1800_IRFL_0150",
+  "file_name": "PHL1800_IRFL_0150.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red rotary-dial telephone with handset lifted off the cradle",
+  "captions": {
+    "scene": [
+      "A glossy red telephone isolated against a pure white background.",
+      "The telephone rests on four small black feet, angled slightly toward the viewer.",
+      "No other objects, surfaces, or environmental context are visible."
+    ],
+    "action": [
+      "The handset is raised and suspended above the base, not resting in the cradle.",
+      "The coiled cord connecting handset and base is extended and hangs freely.",
+      "The rotary dial is stationary and unengaged; no finger is inserted in any digit hole."
+    ],
+    "rationale": [
+      "The handset’s elevated position suggests it has been lifted, but no agent or motion is visible.",
+      "The absence of shadows or reflections implies studio lighting, though exact setup is not verifiable.",
+      "The transparent dial window reveals internal components, but their functional state cannot be determined from appearance alone."
+    ],
+    "object": [
+      "The telephone body is molded plastic, uniformly red with a high-gloss finish and rounded edges.",
+      "A circular transparent rotary dial is centered on the front face, containing ten numbered finger holes and a metallic finger stop.",
+      "The handset is ergonomically curved, matching the red color and material of the base, with a visible earpiece and mouthpiece opening.",
+      "A red coiled cord connects the handset to the left side of the base, forming multiple tight loops.",
+      "Two small red buttons or levers sit atop the base near the cradle, and four black cylindrical feet support the unit."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0591_P1",
+      "visual_anchors": [
+        "lifted handset",
+        "coiled cord",
+        "empty cradle"
+      ],
+      "symbolic_mapping": [
+        "the lifted handset signifies interruption or readiness for communication"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The suspended handset embodies a moment of potential connection—neither fully engaged nor disengaged—reflecting the fragile threshold between presence and absence in human interaction.",
+      "alternative_interpretations": [
+        "It may simply be staged for product photography, with no communicative intent implied."
+      ],
+      "limitations": [
+        "No sender, receiver, or message content is visible; the state could be static rather than transitional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0591_P2",
+      "visual_anchors": [
+        "rotary dial",
+        "translucent window",
+        "mechanical finger holes"
+      ],
+      "symbolic_mapping": [
+        "the analog dial represents deliberate, embodied action versus digital immediacy"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The visible mechanical interface foregrounds human effort in information transmission, evoking a philosophy where technology mediates labor through tactile, time-consuming ritual.",
+      "alternative_interpretations": [
+        "The dial is merely a standard feature of its era, not intentionally symbolic."
+      ],
+      "limitations": [
+        "The image shows no user interaction; the dial’s operation is inferred, not observed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0591_P3",
+      "visual_anchors": [
+        "uniform red color",
+        "glossy surface",
+        "isolated presentation"
+      ],
+      "symbolic_mapping": [
+        "monochromatic saturation emphasizes objecthood over function"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The telephone’s vivid, undifferentiated redness reduces it to an aesthetic artifact, suggesting identity is constructed through surface appearance when context is stripped away.",
+      "alternative_interpretations": [
+        "Red was a common consumer color choice for telephones in certain decades, not necessarily symbolic."
+      ],
+      "limitations": [
+        "Color perception may vary under different lighting; no cultural or temporal markers confirm intentional semiotics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:59:09.873898+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-53935c5e-cb71-934c-8d67-60771ef1fbe1",
+      "usage": {
+        "prompt_tokens": 1159,
+        "completion_tokens": 841,
+        "total_tokens": 2000,
+        "completion_tokens_details": {
+          "text_tokens": 841
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 652,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070258492be9c03c18cc4ea4",
+      "usage": {
+        "completion_tokens": 708,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2300,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3008
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

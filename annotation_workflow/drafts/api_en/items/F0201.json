@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0201",
+  "sample_id": "PHL1800_HAIV_0054",
+  "file_name": "PHL1800_HAIV_0054.png",
+  "batch_id": "B006",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single robed figure standing in an open doorway",
+  "captions": {
+    "scene": [
+      "A light-blue horizontally paneled exterior wall frames a dark-framed doorway.",
+      "The doorway opens onto a bright, overexposed background with indistinct vertical and horizontal shapes suggesting distant structures.",
+      "A distorted, glossy foreground object with curved metallic edges lies at the base of the steps leading to the door."
+    ],
+    "action": [
+      "The figure stands upright, facing slightly leftward, with head bowed and hands clasped or held low in front of the torso.",
+      "The door is ajar, swung inward to the right, revealing its two rectangular glass panels and upper arched panel.",
+      "The figure’s robe drapes vertically with pronounced folds, casting deep shadows along its length."
+    ],
+    "rationale": [
+      "The figure’s posture suggests stillness rather than motion, as no limb displacement or blur indicates movement.",
+      "The high-contrast lighting—bright behind the figure, dark on the robe—implies a strong external light source outside the doorway.",
+      "The foreground object appears non-functional and stylized; its form does not match standard household items, suggesting artistic abstraction."
+    ],
+    "object": [
+      "The figure wears a full-length black robe with a hood that obscures the head and face, leaving only a faint white oval shape visible where the face would be.",
+      "The door is painted light blue, has three glazed sections (one arched top, two stacked rectangles), and a black handle and lock plate on its right edge.",
+      "Three dark, irregularly shaped steps ascend toward the doorway, each showing sharp highlights and deep shadowing consistent with strong directional lighting.",
+      "The exterior wall consists of evenly spaced horizontal siding planks, each with a raised lip casting a thin shadow below it.",
+      "The foreground object is silver-gray with reflective surfaces, featuring a prominent curved loop resembling a handle or hook, and fragmented planar surfaces suggesting broken or melted material."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0201_P1",
+      "visual_anchors": [
+        "hooded robe",
+        "obscured face",
+        "white oval shape"
+      ],
+      "symbolic_mapping": [
+        "the obscured face maps to concealment of identity",
+        "the white oval maps to absence of expression or feature"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s anonymity—achieved through complete facial occlusion and uniform draping—invokes questions about whether identity resides in appearance or in presence alone.",
+      "alternative_interpretations": [
+        "The figure may represent a generic religious or ceremonial role, with the hood indicating office rather than personal erasure."
+      ],
+      "limitations": [
+        "No facial features are visible; the white oval is ambiguous and could be a reflection, artifact, or intentional void."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0201_P2",
+      "visual_anchors": [
+        "open doorway",
+        "bright overexposed background",
+        "figure positioned at threshold"
+      ],
+      "symbolic_mapping": [
+        "the threshold maps to a moment of decision or transition",
+        "the overexposed background maps to unknowable future or truth"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "Standing at the liminal space between interior shadow and exterior glare, the figure embodies the existential pause before committing to a path whose outcome remains visually inaccessible.",
+      "alternative_interpretations": [
+        "The brightness may simply indicate daylight, and the figure may be waiting for someone, not contemplating action."
+      ],
+      "limitations": [
+        "No forward motion or gaze direction confirms intent; the figure faces away from the viewer but not necessarily toward the light."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0201_P3",
+      "visual_anchors": [
+        "distorted foreground object",
+        "sharp contrast between object and steps",
+        "lack of functional context"
+      ],
+      "symbolic_mapping": [
+        "the fragmented object maps to disruption of domestic order",
+        "its reflective surface maps to distorted perception of reality"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The warped, unreadable object in the foreground—placed where a welcome mat or stoop might reside—suggests that immediate sensory data may mislead or obscure what lies just beyond the threshold of perception.",
+      "alternative_interpretations": [
+        "The object may be a stylized representation of a broken appliance or discarded item, with no symbolic intent."
+      ],
+      "limitations": [
+        "The object’s material, origin, and purpose are visually indeterminate; its interpretation relies entirely on compositional placement."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:17:22.078973+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7c4be411-f903-9246-b219-9c09e06a769c",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1006,
+        "total_tokens": 2539,
+        "completion_tokens_details": {
+          "text_tokens": 1006
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070217057021f173c7844690",
+      "usage": {
+        "completion_tokens": 864,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2960,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3824
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

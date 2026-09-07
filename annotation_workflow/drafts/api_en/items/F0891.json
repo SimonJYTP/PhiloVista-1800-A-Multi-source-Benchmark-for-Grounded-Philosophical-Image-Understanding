@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0891",
+  "sample_id": "PHL1800_HAIV_0012",
+  "file_name": "PHL1800_HAIV_0012.png",
+  "batch_id": "B001",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized humanoid figure with an open book for a head",
+  "captions": {
+    "scene": [
+      "A white background with no environmental elements or context.",
+      "The figure casts a flat gray shadow beneath its feet, indicating a light source from above and slightly forward.",
+      "No other figures, objects, or spatial markers are present in the frame."
+    ],
+    "action": [
+      "The figure is depicted mid-stride, with left leg forward and right leg trailing, suggesting walking motion.",
+      "Arms are extended laterally, elbows bent, hands loosely closed—consistent with natural gait arm swing.",
+      "The book-head remains upright and centered over the torso, not tilting or rotating relative to the body."
+    ],
+    "rationale": [
+      "The figure’s posture (asymmetrical limb placement, weight shift) strongly suggests locomotion rather than static standing.",
+      "The open book replaces the head entirely; no facial features or neck are visible, implying intentional abstraction.",
+      "The small white graphic on the torso is indistinct and unreadable, preventing identification of branding or meaning."
+    ],
+    "object": [
+      "The figure wears a gray short-sleeved top with a small unidentifiable white graphic near the chest.",
+      "The figure wears gray knee-length shorts with visible seam lines and shading indicating volume.",
+      "The figure wears black ankle-high shoes with rounded toes and subtle lacing detail.",
+      "The figure has pale pink lower legs and light gray upper limbs with smooth, matte surfaces and no joints or fingers shown.",
+      "The book-head has tan covers, dark red spine and edges, cream-colored pages with evenly spaced gray horizontal lines, and a purple bookmark protruding from the left page stack."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0891_P1",
+      "visual_anchors": [
+        "open book as head",
+        "gray uniform clothing",
+        "mid-stride posture"
+      ],
+      "symbolic_mapping": [
+        "book-head → embodiment of knowledge",
+        "walking motion → pursuit or application of knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The figure literalizes the idea that identity or agency may be constituted by accumulated knowledge rather than biological selfhood, with movement suggesting active engagement rather than passive possession.",
+      "alternative_interpretations": [
+        "It may simply represent a mascot or icon for reading promotion, without philosophical intent."
+      ],
+      "limitations": [
+        "No textual content is legible in the book, so the specific nature of the 'knowledge' is undefined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0891_P2",
+      "visual_anchors": [
+        "book obscuring face",
+        "uniform gray attire",
+        "lack of distinguishing features"
+      ],
+      "symbolic_mapping": [
+        "faceless book-head → erasure of individual identity",
+        "generic clothing → depersonalization or conformity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The substitution of a standardized book for a face implies that external information or cultural texts may overwrite or define personal appearance and social recognition.",
+      "alternative_interpretations": [
+        "The design may prioritize visual simplicity or child-friendly aesthetics over symbolic depth."
+      ],
+      "limitations": [
+        "The absence of facial features could equally reflect stylistic minimalism rather than intentional erasure."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0891_P3",
+      "visual_anchors": [
+        "forward stride",
+        "arms out for balance",
+        "shadow indicating directionality"
+      ],
+      "symbolic_mapping": [
+        "walking → progression through time or experience",
+        "book-head → guidance or burden carried forward"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The figure embodies a journey where decisions and direction are mediated by textual knowledge, with physical motion underscoring agency despite the head’s inanimate nature.",
+      "alternative_interpretations": [
+        "The pose may be a default animation frame for a character model, not intended as metaphor."
+      ],
+      "limitations": [
+        "No destination, obstacles, or path are visible, so the ‘journey’ lacks contextual grounding."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:41:20.318838+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-78d87770-a404-9fef-9642-58019dbd7a4b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 893,
+        "total_tokens": 2426,
+        "completion_tokens_details": {
+          "text_tokens": 893
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014105eae269891bd843b4",
+      "usage": {
+        "completion_tokens": 757,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2850,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3607
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0885",
+  "sample_id": "PHL1800_MM_0083",
+  "file_name": "PHL1800_MM_0083.jpg",
+  "batch_id": "B019",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four individuals in business attire seated or standing around a conference table",
+  "captions": {
+    "scene": [
+      "A modern office conference room with floor-to-ceiling windows showing a blurred cityscape background.",
+      "A light wood rectangular conference table with black tablet-like devices and papers placed on its surface.",
+      "Four people wearing dark suits, white shirts, and ties; three are seated, one is standing near the head of the table."
+    ],
+    "action": [
+      "The standing man holds a pen in his right hand and gestures slightly with his left hand near his waist.",
+      "The seated man on the left (viewer’s perspective) raises his right index finger while facing the speaker.",
+      "The seated man on the right smiles and looks toward the standing man, with both hands resting on the table."
+    ],
+    "rationale": [
+      "The standing man appears to be addressing the group due to his central position, upright posture, and orientation toward others.",
+      "The speech bubble above the standing man contains legible English text, indicating a spoken or thought utterance attributed to him.",
+      "The presence of tablets and documents suggests a formal meeting context, though no active writing or screen interaction is visible."
+    ],
+    "object": [
+      "A standing man wears a navy blue suit, white shirt, patterned blue tie, and a brown belt; he has short dark hair and a beard.",
+      "A seated man on the left wears glasses, a dark suit, white shirt, and has a short beard; his right hand is raised with index finger extended.",
+      "A seated man on the right wears a dark suit, white shirt, solid dark tie, and has short brown hair; he is smiling and looking leftward.",
+      "A fourth person is partially visible on the far right, showing only the back of their head and shoulders, wearing a dark suit jacket.",
+      "A black oval speech bubble with black sans-serif text reads: 'Perhaps you'll find something interesting at my wife's store.'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0885_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "standing man holding pen",
+        "seated listeners"
+      ],
+      "symbolic_mapping": [
+        "spoken suggestion as indirect influence",
+        "pen as instrument of authority or record"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The utterance functions as a subtle assertion of relational leverage within a professional setting, where personal affiliation (‘my wife’s store’) is introduced into a formal discourse, blurring boundaries between private and institutional spheres.",
+      "alternative_interpretations": [
+        "The statement may simply be an offhand remark unrelated to the meeting’s purpose, with no intended rhetorical effect."
+      ],
+      "limitations": [
+        "No facial expressions beyond basic orientation and smile are discernible; intent cannot be confirmed from visual cues alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0885_P2",
+      "visual_anchors": [
+        "cityscape through window",
+        "uniform dark suits",
+        "table symmetry"
+      ],
+      "symbolic_mapping": [
+        "urban backdrop as impersonal system",
+        "identical attire as conformity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visual uniformity of dress and the neutral, expansive urban view suggest a tension between individual identity and institutional role, where appearance enforces participation in a constrained social order.",
+      "alternative_interpretations": [
+        "The attire reflects standard corporate dress code without symbolic intent; the window view is merely architectural context."
+      ],
+      "limitations": [
+        "No distinguishing features (e.g., logos, name tags, unique accessories) confirm institutional affiliation or intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0885_P3",
+      "visual_anchors": [
+        "tablet devices on table",
+        "absence of paper notes",
+        "man gesturing with pen"
+      ],
+      "symbolic_mapping": [
+        "digital tools as mediation of communication",
+        "pen as residual analog gesture"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of digital interfaces and a traditional writing instrument signals a transitional epistemic regime, where truth claims are negotiated across analog and digital modes of representation.",
+      "alternative_interpretations": [
+        "The pen is held casually and not used; tablets may be inactive placeholders rather than functional tools."
+      ],
+      "limitations": [
+        "Screen content is unreadable and device states (on/off) are indeterminate; no interaction with either object is observed."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:24:45.914431+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-54d7105e-4fd2-935a-b7f8-67d8c8d06270",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 990,
+        "total_tokens": 2523,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032425adbca1ba2aa844fe",
+      "usage": {
+        "completion_tokens": 850,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2946,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3796
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

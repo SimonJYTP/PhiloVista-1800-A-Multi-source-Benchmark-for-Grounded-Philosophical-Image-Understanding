@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0317",
+  "sample_id": "PHL1800_IRFL_0337",
+  "file_name": "PHL1800_IRFL_0337.jpg",
+  "batch_id": "B008",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult woman",
+  "captions": {
+    "scene": [
+      "A dimly lit indoor workspace at night, indicated by out-of-focus bokeh lights visible through a window in the background.",
+      "A wooden desk surface with a silver laptop, black-framed eyeglasses, and a dark smartphone placed on it.",
+      "A white upholstered chair partially visible behind the subject, suggesting an office or home-office setting."
+    ],
+    "action": [
+      "The woman rests her head on her left forearm, which is propped on the desk, elbow bent and hand near her temple.",
+      "Her eyes are open and directed toward the laptop screen, with eyelids partially lowered.",
+      "Her right arm lies across her torso, with the hand not visible; her posture suggests physical fatigue or prolonged stillness."
+    ],
+    "rationale": [
+      "The presence of a laptop, smartphone, and eyeglasses on the desk supports the inference that work or screen-based activity occurred recently.",
+      "The low ambient lighting and external bokeh lights suggest nighttime, though exact time cannot be confirmed without a clock.",
+      "Her facial expression and posture are consistent with exhaustion, but no definitive emotional state can be determined from visual evidence alone."
+    ],
+    "object": [
+      "A silver-colored laptop with a visible keyboard and partially open lid sits on the left side of the desk.",
+      "A pair of black-rimmed eyeglasses with clear lenses lies horizontally on the desk, near the laptop’s base.",
+      "A dark rectangular smartphone with a powered-off or black screen rests beside the laptop, oriented horizontally.",
+      "The woman wears a gray blazer with three black buttons visible on the left sleeve cuff and a white collared shirt underneath.",
+      "Her short dark hair is styled close to the scalp, and she has defined eyebrows, visible eyeliner, and glossy lips."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0317_P1",
+      "visual_anchors": [
+        "laptop screen glow",
+        "eyeglasses on desk",
+        "woman’s head resting on arm"
+      ],
+      "symbolic_mapping": [
+        "laptop screen glow → mediated perception",
+        "eyeglasses on desk → suspended cognition"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The image evokes the tension between embodied presence and digital mediation: the subject remains physically engaged with the machine while sensory tools (glasses) lie idle, suggesting knowledge acquisition has reached a threshold of saturation or disjunction.",
+      "alternative_interpretations": [
+        "She may simply be pausing briefly during late-night work, with no deeper symbolic intent."
+      ],
+      "limitations": [
+        "No text, interface content, or contextual signage confirms the nature of the laptop’s display or her task."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0317_P2",
+      "visual_anchors": [
+        "dark background bokeh lights",
+        "single illuminated subject",
+        "desk as boundary"
+      ],
+      "symbolic_mapping": [
+        "bokeh lights → external world beyond reach",
+        "desk boundary → enclosure of labor"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The spatial framing isolates the individual within a self-contained zone of labor, where the blurred external lights signify a social world rendered distant or inaccessible—highlighting constraint imposed by occupational demands.",
+      "alternative_interpretations": [
+        "The background lights may merely indicate an urban environment and not intentional symbolism."
+      ],
+      "limitations": [
+        "Background elements are out of focus and lack identifiable features; their meaning is interpretive rather than evidential."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0317_P3",
+      "visual_anchors": [
+        "three black buttons on sleeve",
+        "structured blazer",
+        "posture of collapse against formality"
+      ],
+      "symbolic_mapping": [
+        "blazer buttons → institutional conformity",
+        "posture of collapse → bodily resistance to structure"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The contrast between the rigid sartorial signifiers of professional identity and the involuntary slumping gesture reveals a moment where bodily autonomy momentarily disrupts expected performance—a micro-conflict between role and self.",
+      "alternative_interpretations": [
+        "The pose may result from ergonomic discomfort rather than symbolic resistance."
+      ],
+      "limitations": [
+        "No visible insignia, name tag, or workplace branding confirms institutional affiliation or role expectations."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:31:20.456100+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-eb6da6a5-ae2f-96a9-ae82-566debc535e0",
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 968,
+        "total_tokens": 2259,
+        "completion_tokens_details": {
+          "text_tokens": 968
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 784,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023110e9660f503b244f75",
+      "usage": {
+        "completion_tokens": 829,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2571,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3400
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

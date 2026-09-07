@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0725",
+  "sample_id": "PHL1800_HAIV_0218",
+  "file_name": "PHL1800_HAIV_0218.png",
+  "batch_id": "B016",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized human brain displayed on a computer monitor with overlaid yellow lines and attached peripheral devices",
+  "captions": {
+    "scene": [
+      "A computer monitor with a thick silver-gray bezel displays a white line-drawn brain against a solid purple background.",
+      "Yellow squiggly lines overlay and extend from the brain, connecting to a pink-and-white rectangular device mounted below the brain image.",
+      "A black cable runs from the monitor base toward the lower-left corner, and a keyboard-like object lies beneath the monitor with faint sketchy figures visible on its surface."
+    ],
+    "action": [
+      "Yellow lines appear to emanate from and wrap around the brain illustration, some terminating at the pink device.",
+      "The pink device is physically attached to the monitor’s lower bezel via a blue vertical support.",
+      "The brain illustration remains static; no motion is depicted."
+    ],
+    "rationale": [
+      "The yellow lines resemble wiring or neural pathways due to their tangled, branching structure and connection to the brain and peripheral device.",
+      "The pink device likely functions as an interface or sensor because it is positioned directly beneath the brain and linked by lines, though its exact purpose is not specified visually.",
+      "The presence of sketchy figures on the keyboard-like object suggests possible user representation, but their identity and intent are indiscernible due to low resolution and abstraction."
+    ],
+    "object": [
+      "The monitor has a rectangular screen with a black inner border and a silver-gray outer frame, drawn with hand-sketched linework.",
+      "The brain is rendered in white outline with internal gyri and sulci indicated by irregular black lines, lacking color fill.",
+      "Approximately twelve distinct yellow lines of varying lengths and curvatures overlay the brain and extend outward, some looping back, others reaching the pink device or monitor base.",
+      "The pink device consists of a white central rectangle flanked by two pink trapezoidal side pieces, mounted on a blue vertical post affixed to the monitor’s lower bezel.",
+      "A horizontal object resembling a keyboard lies beneath the monitor, featuring faint black line drawings of small human-like figures and abstract shapes, with no legible text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0725_P1",
+      "visual_anchors": [
+        "yellow lines connecting brain to peripheral device",
+        "brain displayed on monitor",
+        "keyboard with sketchy figures"
+      ],
+      "symbolic_mapping": [
+        "yellow lines → mediated cognition",
+        "monitor display → externalization of thought"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The image visualizes cognition as externally mediated and technologically scaffolded, where thought processes are not self-contained but routed through interfaces and tools.",
+      "alternative_interpretations": [
+        "It may simply depict a neuroimaging setup with hardware connections, without symbolic intent."
+      ],
+      "limitations": [
+        "No labels, icons, or contextual cues confirm intentional symbolism; the drawing style is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0725_P2",
+      "visual_anchors": [
+        "brain outlined in white on purple field",
+        "tangled yellow lines",
+        "pink device attached below"
+      ],
+      "symbolic_mapping": [
+        "tangled lines → complexity or confusion",
+        "purple background → abstraction or interiority"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The brain’s appearance is defined by its entanglement with external systems, suggesting identity is shaped by technological constraints rather than intrinsic properties.",
+      "alternative_interpretations": [
+        "The tangles could represent literal electrode wires in a medical or experimental context."
+      ],
+      "limitations": [
+        "The absence of facial features, body, or environment prevents confirmation of identity-related intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0725_P3",
+      "visual_anchors": [
+        "black cable exiting monitor base",
+        "keyboard with faint figures",
+        "lines extending beyond screen edges"
+      ],
+      "symbolic_mapping": [
+        "cable → dependency",
+        "figures on keyboard → obscured agency"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "Human cognition and action are portrayed as embedded within infrastructural dependencies, where agency is distributed across devices and obscured by technical mediation.",
+      "alternative_interpretations": [
+        "The figures may be decorative doodles with no representational function."
+      ],
+      "limitations": [
+        "The figures are too indistinct to verify as intentional representations of people or social roles."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:11:20.173947+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-aa24f841-edca-9561-a9d1-af9a5a548e14",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 984,
+        "total_tokens": 2517,
+        "completion_tokens_details": {
+          "text_tokens": 984
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070310561ebde8fd27b048ff",
+      "usage": {
+        "completion_tokens": 845,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2944,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3789
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

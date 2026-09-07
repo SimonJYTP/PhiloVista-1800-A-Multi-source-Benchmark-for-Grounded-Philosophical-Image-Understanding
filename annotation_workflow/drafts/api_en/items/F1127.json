@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1127",
+  "sample_id": "PHL1800_IRFL_0005",
+  "file_name": "PHL1800_IRFL_0005.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person lying on a concrete floor",
+  "captions": {
+    "scene": [
+      "A concrete floor meets a speckled stone wall and a smooth light-gray panelled wall at a right angle.",
+      "The lighting casts a sharp shadow of the person and objects onto the floor, suggesting an artificial overhead or side light source.",
+      "A white plastic bag rests beside the person’s hip, partially crumpled and open."
+    ],
+    "action": [
+      "The person lies curled on their side, knees bent, head covered by a blanket and a red cap.",
+      "Their feet are extended forward, wearing athletic shoes with neon green lacing and blue-grey uppers.",
+      "A patterned fleece blanket—green, blue, and white with palm-leaf motifs—is draped over the torso and head, partially slipping off."
+    ],
+    "rationale": [
+      "The posture and blanket suggest rest or sleep, but no eye contact, facial expression, or movement confirms intent or state.",
+      "The presence of a cap worn under a blanket may indicate temperature regulation or privacy-seeking behavior, though purpose is not visually verifiable.",
+      "The plastic bag and lack of furniture imply temporary occupancy of a non-residential space, yet no signage or context confirms location type."
+    ],
+    "object": [
+      "The person wears grey sweatpants with visible seam lines and slight creasing at the knee joints.",
+      "The red cap has a white logo on the front; the logo appears to be stylized letters, possibly 'M' and another character, but is not fully legible.",
+      "The blanket is a thick fleece material with a repeating tropical leaf pattern in shades of teal, dark blue, white, and black.",
+      "The shoes are low-top athletic sneakers with mesh uppers, bright lime-green laces, and a visible Asics tiger stripe logo on the side.",
+      "The floor is unfinished concrete with minor stains, scuffs, and scattered small debris near the person’s feet."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1127_P1",
+      "visual_anchors": [
+        "red cap with partial white logo",
+        "blanket covering head",
+        "concrete floor"
+      ],
+      "symbolic_mapping": [
+        "the cap as a marker of individuality amid anonymity",
+        "the blanket as a barrier against external observation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The partial concealment of the face by fabric and cap juxtaposed with a branded garment suggests tension between social visibility and self-protection in public space.",
+      "alternative_interpretations": [
+        "The cap and blanket may simply serve thermal or comfort functions without symbolic intent."
+      ],
+      "limitations": [
+        "No facial features or gaze direction are visible, preventing confirmation of intentional concealment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1127_P2",
+      "visual_anchors": [
+        "curled fetal-like posture",
+        "shoes still on",
+        "plastic bag nearby"
+      ],
+      "symbolic_mapping": [
+        "posture as embodiment of vulnerability",
+        "retained footwear as residue of prior mobility or routine"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The static, grounded position contrasts with the functional design of the shoes, evoking a suspended state between agency and immobility.",
+      "alternative_interpretations": [
+        "The person may have lain down briefly for rest and intends to rise soon; posture does not necessarily indicate long-term condition."
+      ],
+      "limitations": [
+        "Duration of the pose and intentionality cannot be determined from a single frame."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1127_P3",
+      "visual_anchors": [
+        "speckled stone wall",
+        "panelled wall",
+        "concrete floor"
+      ],
+      "symbolic_mapping": [
+        "architectural boundaries as institutional framing",
+        "floor as literal and metaphorical ground of existence"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The stark, unadorned architectural enclosure frames the figure without offering shelter, raising questions about spatial entitlement and societal provision.",
+      "alternative_interpretations": [
+        "The setting could be a transit corridor or utility area where resting is tolerated, not a site of exclusion."
+      ],
+      "limitations": [
+        "Wall materials and layout do not specify building function or access rules."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:41:58.190149+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-50bbcef3-3bcf-9c69-9793-e0eb235f3b01",
+      "usage": {
+        "prompt_tokens": 1573,
+        "completion_tokens": 957,
+        "total_tokens": 2530,
+        "completion_tokens_details": {
+          "text_tokens": 957
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1066,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070141447685c5b8830442f6",
+      "usage": {
+        "completion_tokens": 819,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2916,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3735
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

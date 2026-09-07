@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1604",
+  "sample_id": "PHL1800_HL_0076",
+  "file_name": "PHL1800_HL_0076.png",
+  "batch_id": "B033",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of people holding a pink banner beneath a historic clock archway",
+  "captions": {
+    "scene": [
+      "A stone archway with an ornate metal clock tower spanning a narrow street lined with timber-framed and brick buildings under overcast skies.",
+      "Red, white, and blue triangular bunting strung across the street above the banner, with commercial signage visible on building facades.",
+      "The street surface is paved with wet cobblestones reflecting diffuse light, suggesting recent rain or damp conditions."
+    ],
+    "action": [
+      "Four individuals are present: one on the left holding one end of a pink banner, two centrally positioned behind the banner (one partially obscured), and one on the right holding the other end while raising a camera or phone.",
+      "The banner is stretched horizontally across the street at approximately waist height, displaying capitalized blue text reading 'FREE BRADLEY MANNING'.",
+      "One person on the far right appears to be photographing or recording the scene; others stand still, facing forward or slightly toward the camera."
+    ],
+    "rationale": [
+      "The banner’s explicit text indicates a public advocacy act, but without external context, the specific intent (e.g., legal, political, symbolic) cannot be confirmed solely from visual evidence.",
+      "The architectural style—timber framing, stone arch, decorative ironwork—suggests a historic European town center, yet no definitive geographic markers (e.g., language-exclusive signs, national symbols) confirm location.",
+      "The presence of multiple observers and a photographer implies the event is intentional and possibly documented for dissemination, though whether it is spontaneous or organized remains visually undetermined."
+    ],
+    "object": [
+      "A large, arched stone gateway supports an elaborate wrought-iron clock structure featuring a central circular clock face with Roman numerals, flanked by decorative panels and topped with a weather vane bearing a flag-like element.",
+      "A bright pink fabric banner spans the street width, printed in bold blue sans-serif capital letters with the legible phrase 'FREE BRADLEY MANNING'; no other text on the banner is readable.",
+      "Two red-and-white 'To Let' signs are mounted on the right-hand building facade, each containing smaller illegible text beneath the main heading.",
+      "Triangular pennant bunting in red, white, and blue hangs in two parallel lines across the street, suspended between buildings above the banner.",
+      "Four distinct human figures are visible: one on far left wearing dark jacket and cap, two central figures (one in dark trousers and light top, another partially hidden), and one on right holding banner end and a black rectangular device near eye level."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1604_P1",
+      "visual_anchors": [
+        "pink banner with 'FREE BRADLEY MANNING'",
+        "public street setting",
+        "multiple participants holding banner"
+      ],
+      "symbolic_mapping": [
+        "banner as a material assertion of dissent",
+        "archway as a threshold between institutional space and civic expression"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The banner functions as a performative claim to political freedom within a constrained public sphere, where the historic archway symbolizes enduring institutional authority against which the act of collective display asserts social presence.",
+      "alternative_interpretations": [
+        "It may simply be a commemorative or solidarity gesture with no immediate political demand, analogous to ceremonial displays in public spaces."
+      ],
+      "limitations": [
+        "The image does not show reactions from passersby, official responses, or temporal context (e.g., date, duration), limiting claims about impact or reception."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1604_P2",
+      "visual_anchors": [
+        "ornate clock face showing approximately 10:10",
+        "wet cobblestones",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "clock as marker of historical moment",
+        "damp ground as sign of transience or vulnerability"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of a precise mechanical timepiece with ephemeral human action in a weathered urban environment evokes tension between institutional permanence and the fleeting visibility of individual or collective identity in public memory.",
+      "alternative_interpretations": [
+        "The clock time is incidental; the wet pavement merely reflects ambient lighting conditions without symbolic weight."
+      ],
+      "limitations": [
+        "No evidence confirms the clock’s accuracy or whether its time holds significance beyond aesthetic composition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1604_P3",
+      "visual_anchors": [
+        "multiple people jointly holding banner",
+        "shared physical alignment",
+        "absence of uniformity in clothing"
+      ],
+      "symbolic_mapping": [
+        "coordinated stance as enacted solidarity",
+        "non-uniform attire as affirmation of plural agency"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visible coordination among heterogeneous individuals enacts a shared ethical responsibility through embodied presence, grounding moral claim in collective spatial occupation rather than speech or text alone.",
+      "alternative_interpretations": [
+        "The participants may be unrelated individuals coincidentally aligned, or acting under direction without personal commitment."
+      ],
+      "limitations": [
+        "Facial expressions and body orientation are insufficient to confirm internal motivation or consensus; only external posture is observable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate states 'at least five individuals' but image shows four distinct people; one person on the right is holding a device, not two separate individuals."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:55:18.442975+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f74da556-aa1c-9b79-bd9f-f18f39fd5e09",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 1172,
+        "total_tokens": 1961,
+        "completion_tokens_details": {
+          "text_tokens": 1172
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045443ffe19d8527b943e7",
+      "usage": {
+        "completion_tokens": 1063,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2144,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3207
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

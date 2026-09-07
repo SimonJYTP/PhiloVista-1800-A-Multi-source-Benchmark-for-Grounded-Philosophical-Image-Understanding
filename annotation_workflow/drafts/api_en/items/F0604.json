@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0604",
+  "sample_id": "PHL1800_HAIV_0094",
+  "file_name": "PHL1800_HAIV_0094.png",
+  "batch_id": "B014",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized male figure in business attire",
+  "captions": {
+    "scene": [
+      "A large dark green mountain dominates the background with a winding gray path ascending its slope.",
+      "The sky above the mountain is rendered in muted beige with a thick, irregular band of dark gray smoke or cloud at the top edge.",
+      "Sparse green grass blades appear at the bottom foreground, partially framing the lower edge of the scene."
+    ],
+    "action": [
+      "The figure stands upright on a narrow gray path that leads toward the mountain base.",
+      "A thought bubble emerges from the figure’s head containing a blue lightbulb icon with a gear inside.",
+      "The figure maintains a neutral facial expression with closed lips and symmetrical eyes; no motion is depicted."
+    ],
+    "rationale": [
+      "The presence of a path and mountain suggests a journey motif, though no movement is shown—only static positioning.",
+      "The lightbulb-with-gear icon is a conventional visual metaphor for innovation or problem-solving, but its specific meaning depends on context not provided in the image.",
+      "The dark upper band may represent obstruction or challenge, yet its material nature (smoke, cloud, shadow) is visually ambiguous."
+    ],
+    "object": [
+      "The figure wears a white collared shirt, a red tie, and has short brown hair with simple line-drawn facial features.",
+      "A white cloud-shaped thought bubble with a blue outline floats above the figure’s head, connected by three small circles.",
+      "Inside the thought bubble is a blue lightbulb outline containing a yellow-centered gear with eight teeth and radiating lines.",
+      "The mountain is rendered in gradient dark green with visible brushstroke texture and a central lighter-gray serpentine trail.",
+      "No text is legible anywhere in the image; all lettering, if present, is absent or unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0604_P1",
+      "visual_anchors": [
+        "winding gray path",
+        "mountain silhouette",
+        "figure positioned at path start"
+      ],
+      "symbolic_mapping": [
+        "path → deliberate progression",
+        "mountain → obstacle or goal"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The composition visually frames decision-making as a solitary ascent toward an imposing objective, where the path’s curvature implies nonlinearity and effort.",
+      "alternative_interpretations": [
+        "It may simply depict a generic businessperson outdoors, with the mountain serving as neutral background scenery."
+      ],
+      "limitations": [
+        "No directional cues (e.g., arrows, footprints) confirm forward motion or intent; the figure could be stationary or retreating."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0604_P2",
+      "visual_anchors": [
+        "lightbulb-with-gear icon",
+        "thought bubble",
+        "figure’s calm expression"
+      ],
+      "symbolic_mapping": [
+        "gear-in-lightbulb → synthesis of creativity and mechanism"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The image suggests cognition as instrumental—idea generation fused with operational design—positioned against a natural backdrop that contrasts organic scale with human-scale reasoning.",
+      "alternative_interpretations": [
+        "The icon may be decorative or generic branding, not necessarily tied to labor or technology themes."
+      ],
+      "limitations": [
+        "The icon lacks contextual labels or integration with tools/machines; its meaning remains abstract without external reference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0604_P3",
+      "visual_anchors": [
+        "dark upper band",
+        "figure below it",
+        "unbroken path leading upward"
+      ],
+      "symbolic_mapping": [
+        "dark band → constraint or uncertainty",
+        "path continuity → persistence despite obscurity"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure occupies a space beneath an opaque overhead layer yet faces a clear route forward, implying agency within bounded conditions rather than absolute freedom or total restriction.",
+      "alternative_interpretations": [
+        "The dark band could be purely aesthetic—a stylistic horizon line—with no symbolic intent."
+      ],
+      "limitations": [
+        "The band’s edges are soft and painterly; it does not physically enclose or block the path, weakening a strict constraint reading."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:00:22.445032+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b988ada5-e564-97f0-8448-dad5ab63b3f1",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 930,
+        "total_tokens": 2463,
+        "completion_tokens_details": {
+          "text_tokens": 930
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025957205cc123572a4a94",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2890,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3685
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

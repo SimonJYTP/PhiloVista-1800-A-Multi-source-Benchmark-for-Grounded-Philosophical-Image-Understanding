@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0983",
+  "sample_id": "PHL1800_IRFL_0124",
+  "file_name": "PHL1800_IRFL_0124.jpg",
+  "batch_id": "B021",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a weathered sign with the word 'LOCKDOWN'",
+  "captions": {
+    "scene": [
+      "A white rectangular sign with black lettering is mounted outdoors amid dense green and red foliage under daylight.",
+      "Sunlight filters through leaves, casting dappled light on the sign and surrounding vegetation.",
+      "The sign appears aged, with visible cracks and peeling paint on its surface."
+    ],
+    "action": [
+      "The sign remains stationary in a fixed position among plants.",
+      "Leaves in the foreground are out of focus, suggesting shallow depth of field.",
+      "No human or animal figures are present or moving in the frame."
+    ],
+    "rationale": [
+      "The sign’s deterioration suggests prolonged outdoor exposure; this is supported by visible cracks and flaking paint.",
+      "The presence of both green and red leaves indicates a season where deciduous plants display autumnal coloration, though exact season cannot be confirmed without broader context.",
+      "The word 'LOCKDOWN' is fully legible, but no additional text or symbols are visible on the sign to clarify its origin or purpose."
+    ],
+    "object": [
+      "The sign has a white background with bold black sans-serif capital letters spelling 'LOCKDOWN'.",
+      "The sign’s surface shows extensive cracking and chipping of the white paint layer, especially along the top edge and between letters.",
+      "A dark border frames the sign, appearing slightly raised or beveled relative to the face.",
+      "Foliage partially obscures the lower and right edges of the sign, with blurred green leaves in the immediate foreground.",
+      "In the upper left, red-leafed branches extend into the frame, contrasting with the greenery elsewhere."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0983_P1",
+      "visual_anchors": [
+        "cracked paint on the sign",
+        "overgrown foliage surrounding the sign"
+      ],
+      "symbolic_mapping": [
+        "cracks represent erosion of imposed order",
+        "foliage encroachment symbolizes nature reclaiming human constructs"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The decaying sign amidst regrowth suggests the impermanence of enforced restrictions and the inevitable reassertion of natural cycles over institutional control.",
+      "alternative_interpretations": [
+        "The sign may simply be an abandoned artifact, with no symbolic intent—its placement among plants could be coincidental rather than meaningful."
+      ],
+      "limitations": [
+        "No contextual signage, dates, or human activity confirm intentional symbolism; decay could result from neglect rather than metaphorical meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0983_P2",
+      "visual_anchors": [
+        "the word 'LOCKDOWN'",
+        "sunlight piercing through leaves",
+        "sign partially obscured by foreground blur"
+      ],
+      "symbolic_mapping": [
+        "'LOCKDOWN' as a linguistic marker of constraint",
+        "sunlight as persistent external reality beyond imposed limits"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The visible yet deteriorating declaration of restriction, juxtaposed with unobstructed natural light, evokes tension between socially constructed boundaries and objective continuity of experience.",
+      "alternative_interpretations": [
+        "The image may document a literal lockdown-related sign left in place post-event, with lighting and framing being purely aesthetic choices by the photographer."
+      ],
+      "limitations": [
+        "The sign lacks attribution or date, making it impossible to verify whether it refers to a specific historical event or is generic/artistic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0983_P3",
+      "visual_anchors": [
+        "black lettering on white background",
+        "uneven wear across the sign surface",
+        "no visible authorship or authority marks"
+      ],
+      "symbolic_mapping": [
+        "uniform typography implying institutional voice",
+        "asymmetrical decay indicating uneven enforcement or fading relevance"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "The sign’s authoritative typography contrasts with its physical degradation, reflecting how power manifests visibly yet erodes materially over time, altering perception of legitimacy.",
+      "alternative_interpretations": [
+        "The sign could be decorative or repurposed, with wear resulting from environmental exposure rather than ideological contestation."
+      ],
+      "limitations": [
+        "No evidence of intentional modification, defacement, or replacement; wear patterns do not conclusively indicate conflict or resistance."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:38:25.890067+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0bce4664-76be-938a-9168-bae581186b7a",
+      "usage": {
+        "prompt_tokens": 941,
+        "completion_tokens": 959,
+        "total_tokens": 1900,
+        "completion_tokens_details": {
+          "text_tokens": 959
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 434,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703375291352eeb915746e3",
+      "usage": {
+        "completion_tokens": 824,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2137,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2961
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

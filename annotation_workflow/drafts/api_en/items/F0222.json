@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0222",
+  "sample_id": "PHL1800_IRFL_0202",
+  "file_name": "PHL1800_IRFL_0202.jpg",
+  "batch_id": "B007",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one infant",
+  "captions": {
+    "scene": [
+      "A softly lit, high-key background with uniform white fabric beneath the subject",
+      "Shallow depth of field blurs the background and parts of the foreground",
+      "The infant lies supine on a textured white surface, likely bedding"
+    ],
+    "action": [
+      "Eyes are closed with visible upper eyelashes and relaxed facial musculature",
+      "Hands are positioned near the face, fingers slightly curled and interlaced",
+      "Mouth is partially open with lips parted, showing no tension"
+    ],
+    "rationale": [
+      "Closed eyes and relaxed facial features suggest a state of rest or sleep, though not definitively verifiable without motion or context",
+      "The positioning of hands near the face may indicate self-soothing behavior, but this is speculative without behavioral history",
+      "Uniform lighting and lack of shadows imply controlled studio-like conditions, yet no equipment or environment markers are visible"
+    ],
+    "object": [
+      "The infant wears a long-sleeved garment in off-white or cream color with ribbed cuffs visible at the wrists.",
+      "The skin tone is light with subtle pink blush on the cheeks and nose area.",
+      "Eyelashes are dark, fine, and clearly defined against the closed eyelids.",
+      "Fingernails are short, smooth, and translucent with no polish or markings.",
+      "The surface beneath the infant appears to be a soft, woven textile with gentle folds and texture."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0222_P1",
+      "visual_anchors": [
+        "closed eyes",
+        "relaxed mouth",
+        "interlaced fingers"
+      ],
+      "symbolic_mapping": [
+        "closed eyes → suspension of perception",
+        "interlaced fingers → internal coherence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The image captures a moment where external identity dissolves into undifferentiated presence, highlighting how appearance recedes when consciousness withdraws—a visual metaphor for the temporality of selfhood.",
+      "alternative_interpretations": [
+        "This is simply a portrait of an infant at rest, with no symbolic intent; the composition emphasizes aesthetic softness rather than philosophical meaning."
+      ],
+      "limitations": [
+        "No facial expression change or temporal sequence is visible, so attributing 'suspension of perception' relies on cultural assumptions about sleep."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0222_P2",
+      "visual_anchors": [
+        "uniform white fabric",
+        "soft focus",
+        "monochromatic palette"
+      ],
+      "symbolic_mapping": [
+        "white fabric → neutrality",
+        "soft focus → epistemic indeterminacy"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The absence of contextual markers and the deliberate obscuring of boundaries evoke the limits of empirical knowledge—what is known is only the immediate sensory surface, not the interior state or surrounding reality.",
+      "alternative_interpretations": [
+        "The white background and shallow depth of field are standard photographic techniques to isolate the subject and reduce distraction, not to signify epistemic limits."
+      ],
+      "limitations": [
+        "The soft focus is a technical choice, not evidence of ontological ambiguity; no textual or symbolic cues confirm intentional epistemological commentary."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0222_P3",
+      "visual_anchors": [
+        "infant’s hands near face",
+        "unmarked skin",
+        "smooth garment"
+      ],
+      "symbolic_mapping": [
+        "unmarked skin → pre-social embodiment",
+        "hands near face → nascent agency"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The image presents a body before social inscription—untattooed, unadorned, unposed—suggesting a primordial condition where existence precedes relational definition, and choice is latent rather than enacted.",
+      "alternative_interpretations": [
+        "The infant is dressed in typical clothing and posed for a photograph; the lack of adornment reflects normative infant presentation, not philosophical abstraction."
+      ],
+      "limitations": [
+        "Clothing and grooming choices (e.g., trimmed nails, clean garment) already constitute social mediation, undermining claims of ‘pre-social’ status."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:19:43.525982+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-25e4835f-0a10-937b-8192-695448d0d743",
+      "usage": {
+        "prompt_tokens": 2637,
+        "completion_tokens": 935,
+        "total_tokens": 3572,
+        "completion_tokens_details": {
+          "text_tokens": 935
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2130,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070219271efd282df4e94b23",
+      "usage": {
+        "completion_tokens": 788,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4273,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5061
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

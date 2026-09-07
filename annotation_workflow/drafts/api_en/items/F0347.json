@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0347",
+  "sample_id": "PHL1800_HL_0298",
+  "file_name": "PHL1800_HL_0298.png",
+  "batch_id": "B009",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of motocross riders at a starting line on a sandy surface",
+  "captions": {
+    "scene": [
+      "A beach-like sandy terrain with multiple parked vehicles—including white vans, a red SUV, and a dark blue van—behind a line of motocross motorcycles and riders.",
+      "Riders in full protective gear (helmets, goggles, jerseys, boots) are seated or straddling dirt bikes, some with visible number plates such as '3', '23', '118', '71', '0', and '4'.",
+      "Dust is visibly kicked up near the front wheels of several bikes, indicating recent or imminent motion; the sky appears overcast and the background shows a flat horizon with water or wet sand."
+    ],
+    "action": [
+      "Riders are stationary but leaning forward in racing posture, gripping handlebars, with feet on pegs or ground.",
+      "At least two riders (numbers 3 and 23) have their left foot planted on the sand while right foot remains on the bike peg, suggesting preparation for launch.",
+      "One rider (number 118) has both feet on the ground and appears to be adjusting position; another (number 71) holds the throttle hand slightly raised."
+    ],
+    "rationale": [
+      "The alignment of bikes in a tight row and uniform forward lean strongly suggest a race start formation rather than casual gathering.",
+      "Visible dust clouds near tires imply recent engine revving or wheel spin, consistent with pre-race warm-up or false starts.",
+      "Number plates are standard for competitive events, but no official flags, timing equipment, or marshals are visible, so event status is uncertain."
+    ],
+    "object": [
+      "There are exactly 11 distinct riders visible, each wearing a helmet and riding gear, seated or standing beside a motocross motorcycle.",
+      "Five motorcycles display legible number plates: '3' (white on red), '23' (white on black), '118' (white on red), '71' (white on orange), and '0' (black on white); two others show partial numbers ('4' and one unreadable).",
+      "A red SUV is parked directly behind the central riders, with its rear hatch open and interior partially visible; a white van is to the far left with its side door open and at least two people inside or beside it.",
+      "The ground is light brown sand with scattered tire tracks and disturbed patches where riders have positioned their bikes.",
+      "One rider (number 3) wears an orange helmet with black visor and red-and-white jersey; another (number 118) wears a red helmet with white stripe and matching red jersey."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0347_P1",
+      "visual_anchors": [
+        "riders in identical postures",
+        "uniform protective gear",
+        "numbered bikes"
+      ],
+      "symbolic_mapping": [
+        "standardized gear symbolizes suppression of individuality for collective function",
+        "number plates reduce identity to role within system"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene embodies the tension between individual agency and systemic conformity: riders appear as interchangeable units defined by assigned numbers and standardized equipment, yet each maintains a unique stance and subtle variation in posture, suggesting persistent selfhood beneath institutional framing.",
+      "alternative_interpretations": [
+        "This is simply a procedural moment before a race, with no deeper meaning—gear and numbers serve purely functional identification and safety purposes."
+      ],
+      "limitations": [
+        "No facial features or personal markings are visible due to helmets and distance, preventing verification of individual differentiation beyond posture and bike color."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0347_P2",
+      "visual_anchors": [
+        "dust rising from tires",
+        "forward-leaning bodies",
+        "open vehicle doors in background"
+      ],
+      "symbolic_mapping": [
+        "dust signifies transient effort against inertia",
+        "open doors suggest thresholds between preparation and action"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The suspended instant before motion captures the existential weight of decision: riders poised at the threshold of exertion, where potential energy (readiness) confronts kinetic release (launch), echoing the human condition of being perpetually on the verge of irreversible action.",
+      "alternative_interpretations": [
+        "Dust is merely incidental from engine idling; open doors indicate crew access, not symbolic thresholds."
+      ],
+      "limitations": [
+        "Temporal sequence is frozen—no motion blur or sequential frames confirm intentionality of the pause."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0347_P3",
+      "visual_anchors": [
+        "multiple vehicles forming backdrop",
+        "riders clustered tightly",
+        "sand as unstable substrate"
+      ],
+      "symbolic_mapping": [
+        "vehicles represent external infrastructure enabling the activity",
+        "tight clustering reflects interdependence despite competition"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "power_conflict"
+      ],
+      "interpretation": "The image reveals labor embedded in spectacle: riders’ physical readiness is scaffolded by logistical support (vans, SUV), illustrating how individual performance depends on unseen infrastructural labor, while the proximity of competitors hints at latent conflict masked by shared ritual.",
+      "alternative_interpretations": [
+        "Vehicles are just parking; riders are simply waiting—not evidence of labor hierarchy or conflict."
+      ],
+      "limitations": [
+        "No visible crew members performing tasks, so labor roles cannot be confirmed visually."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The count of riders is incorrect; there are 11 distinct riders visible, not 12. The candidate incorrectly states 'exactly 12 distinct riders' in the object caption."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:41:06.154836+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dbc846fc-9877-980b-ac37-a1129ddf3316",
+      "usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 1199,
+        "total_tokens": 1820,
+        "completion_tokens_details": {
+          "text_tokens": 1199
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 114,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070240495d89015381ac4107",
+      "usage": {
+        "completion_tokens": 1082,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1917,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2999
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

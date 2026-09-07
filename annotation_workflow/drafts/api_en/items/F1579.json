@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1579",
+  "sample_id": "PHL1800_HL_0413",
+  "file_name": "PHL1800_HL_0413.png",
+  "batch_id": "B032",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two women in white religious-style garments standing on a sidewalk, holding hands",
+  "captions": {
+    "scene": [
+      "A crowded urban sidewalk with pedestrians waiting near a traffic signal showing a red standing figure.",
+      "A storefront window displays balloons (pink and white), a black-and-white portrait, and reversed text reading 'HY PERKINS' and 'BU'.",
+      "A blue public waste bin stands on the left edge of the sidewalk; a metal pole supports the traffic light."
+    ],
+    "action": [
+      "Two women in white robes stand facing each other, clasping hands at waist level.",
+      "Multiple people are stationary or slowly moving on the sidewalk, some looking toward the women, others away.",
+      "A man in a brown jacket stands with hands in pockets, observing the scene; another man in a suit looks toward the women."
+    ],
+    "rationale": [
+      "The white garments resemble religious habit attire due to their cut, length, and accessories (e.g., rope belt, head covering), though no insignia is visible to confirm affiliation.",
+      "The red pedestrian signal indicates that crossing is prohibited at this moment, supporting the inference that people are waiting.",
+      "The reversed text in the window suggests it is viewed through glass from outside, but the full business name cannot be reconstructed reliably."
+    ],
+    "object": [
+      "A traffic light mounted on a black pole shows an illuminated red standing human figure above a dark circular lens.",
+      "Two women wear long white robes: one has a beige shoulder bag and a black headband; the other wears a white rope belt and a white head covering.",
+      "A man in a brown jacket and blue jeans stands with both hands in his pockets, facing slightly leftward.",
+      "Behind the women, a woman in a black coat holds a black handbag and looks toward them; her mouth is open as if speaking.",
+      "Pink and white spherical balloons are clustered inside the shop window behind the group."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1579_P1",
+      "visual_anchors": [
+        "two women in white robes holding hands",
+        "red pedestrian signal",
+        "crowd observing"
+      ],
+      "symbolic_mapping": [
+        "hand-holding as mutual commitment",
+        "red signal as external constraint"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of voluntary connection (hand-holding) against institutional regulation (red signal) evokes tension between personal agency and societal limits on movement and expression.",
+      "alternative_interpretations": [
+        "The women may simply be posing for a photograph; the crowd’s attention could reflect curiosity rather than symbolic engagement."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intent or meaning; the robes’ affiliation is unverified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1579_P2",
+      "visual_anchors": [
+        "white robes with rope belts",
+        "reversed store signage",
+        "balloons in window"
+      ],
+      "symbolic_mapping": [
+        "white garments as purity or role identity",
+        "reversed text as obscured meaning"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The visual ambiguity—garments suggesting defined roles yet lacking identifying marks, and text rendered unreadable by reflection—highlights how appearance can imply identity while simultaneously resisting definitive interpretation.",
+      "alternative_interpretations": [
+        "The robes are costume or ceremonial wear for a non-religious event; the reversed text is incidental to the scene."
+      ],
+      "limitations": [
+        "No badges, insignia, or readable context confirms the nature of the garments or the shop’s purpose."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1579_P3",
+      "visual_anchors": [
+        "crowd gathered around two central figures",
+        "varied attire (suits, casual, religious-style)",
+        "sidewalk as shared public space"
+      ],
+      "symbolic_mapping": [
+        "sidewalk as neutral ground for coexistence",
+        "diverse dress as plural identities"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image captures a moment where disparate individuals occupy the same physical space without interaction, raising questions about shared responsibility in public life and the ethics of passive witness.",
+      "alternative_interpretations": [
+        "People are merely waiting to cross; proximity does not imply social engagement or moral consideration."
+      ],
+      "limitations": [
+        "No eye contact, gestures, or dialogue is visible to confirm awareness or ethical stance among observers."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:47:55.269257+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0edd224d-79d1-9e67-97dd-a58653057b29",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 990,
+        "total_tokens": 1779,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704472851082c3ffcfc46c6",
+      "usage": {
+        "completion_tokens": 851,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1943,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2794
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

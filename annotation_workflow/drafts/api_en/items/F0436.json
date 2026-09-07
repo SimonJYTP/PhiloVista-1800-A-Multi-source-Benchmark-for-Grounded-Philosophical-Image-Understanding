@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0436",
+  "sample_id": "PHL1800_MM_0142",
+  "file_name": "PHL1800_MM_0142.jpg",
+  "batch_id": "B011",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_deepseek_generate_glm_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "the man in blue overalls",
+  "captions": {
+    "scene": [
+      "A man stands behind a kitchen counter.",
+      "A large cooked turkey is on a white platter.",
+      "Pumpkins are visible in the background."
+    ],
+    "action": [
+      "The man looks directly at the viewer.",
+      "A thought bubble shows text about having sex with the turkey.",
+      "The man is standing still behind the turkey."
+    ],
+    "rationale": [
+      "The thought bubble text is visible and clear, so it is evidence of a stated intent.",
+      "The kitchen setting, overalls, and turkey suggest a food preparation context, but this is inferred.",
+      "Whether the man will actually perform the stated act cannot be determined from the image."
+    ],
+    "object": [
+      "A man with brown hair and a neutral facial expression is wearing a white t-shirt under blue overalls.",
+      "A large roasted turkey is placed on a white oval platter.",
+      "The turkey is garnished with green herb sprigs and small orange pieces.",
+      "A white thought bubble contains the text 'Haha! I'm going to have sex with it!'.",
+      "There are pumpkins on the left side of the kitchen area."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0436_P1",
+      "visual_anchors": [
+        "the thought bubble text",
+        "the turkey"
+      ],
+      "symbolic_mapping": [
+        "the turkey as an object of desire",
+        "the thought bubble as an expression of inner intent"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The visible thought bubble expresses an intention to use an object for sexual gratification, raising questions about responsible treatment of things that are not consenting subjects.",
+      "alternative_interpretations": [
+        "The image is simply a humorous or absurd meme without deeper meaning."
+      ],
+      "limitations": [
+        "The image does not show the action taking place, only a stated thought."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0436_P2",
+      "visual_anchors": [
+        "the man in overalls",
+        "the kitchen and pumpkins"
+      ],
+      "symbolic_mapping": [
+        "overalls and kitchen as symbols of domestic labor",
+        "turkey as a symbol of a holiday meal"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The domestic kitchen context and overalls present the man as engaged in food preparation, while the absurd thought bubble disrupts the expected ritual of a holiday meal.",
+      "alternative_interpretations": [
+        "The overalls are merely clothing, and the pumpkins are decorative."
+      ],
+      "limitations": [
+        "Specific time of year or actual labor is not directly shown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0436_P3",
+      "visual_anchors": [
+        "the man's neutral expression",
+        "the thought bubble text"
+      ],
+      "symbolic_mapping": [
+        "the gap between external appearance and internal thought"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The man's calm outward appearance contrasts with his explicit inner thought, illustrating the difference between social presentation and private desire.",
+      "alternative_interpretations": [
+        "The expression is simply a neutral pose for the image, with no intention of contrast."
+      ],
+      "limitations": [
+        "The thought bubble is not actual evidence of the man's real mental state; it is an artifact in the image."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:31:21.241922+00:00",
+    "generator": "deepseek",
+    "reviewer": "glm",
+    "primary": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash-vision-exp",
+      "request_id": "9d4422c2-587b-43ed-824a-3ebbffda41d1",
+      "usage": {
+        "prompt_tokens": 997,
+        "completion_tokens": 2979,
+        "total_tokens": 3976,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2123
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 101
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070531040feee8cbb57c4403",
+      "usage": {
+        "completion_tokens": 638,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2753,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3391
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

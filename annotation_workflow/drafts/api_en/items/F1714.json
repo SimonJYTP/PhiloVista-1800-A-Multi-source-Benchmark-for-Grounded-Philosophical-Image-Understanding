@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1714",
+  "sample_id": "PHL1800_IRFL_0099",
+  "file_name": "PHL1800_IRFL_0099.webp",
+  "batch_id": "B035",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals engaged in a physical interaction",
+  "captions": {
+    "scene": [
+      "An outdoor setting with a beige wall, a vertical tan panel on the left, and green foliage visible above the wall.",
+      "A gray ground surface beneath the figures, suggesting pavement or concrete.",
+      "A light blue sky above the wall with no clouds visible."
+    ],
+    "action": [
+      "The person on the left extends their right arm forward, gripping the right wrist of the person on the right.",
+      "The person on the right leans backward with bent knees, left hand raised near face, right arm extended and held by the other person.",
+      "Both individuals are in dynamic postures: the left person lunges forward with left leg extended; the right person braces with both feet planted."
+    ],
+    "rationale": [
+      "The grip on the wrist and opposing body angles suggest an attempt to control or redirect motion, but intent (e.g., assistance vs. restraint) is not determinable from posture alone.",
+      "The raised hand of the right person could indicate shielding, surprise, or balance maintenance—no facial expression is visible due to hat and angle, limiting interpretation.",
+      "No visible weapons, uniforms, or signage identify context (e.g., training, conflict, performance); environment lacks distinguishing features."
+    ],
+    "object": [
+      "The left individual wears a light blue short-sleeved shirt, blue jeans, and flat brown shoes with white soles.",
+      "The right individual wears a mustard-yellow long-sleeved shirt, beige pants, light blue sneakers, and a blue baseball cap worn forward.",
+      "A tan rectangular panel stands vertically against the wall on the far left, partially obscuring the left figure’s hip.",
+      "The wall behind the figures is uniformly beige with no texture, seams, or markings visible.",
+      "The watermark 'wikiHow' appears in lowercase sans-serif font at the bottom right corner, partially cut off but legible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1714_P1",
+      "visual_anchors": [
+        "gripped wrist",
+        "asymmetrical stances",
+        "shared physical contact"
+      ],
+      "symbolic_mapping": [
+        "wrist grip → imposition of external will",
+        "leaning away → resistance or vulnerability"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes a moment where bodily autonomy is contested through direct physical intervention, illustrating how power manifests in proximate constraint rather than abstract authority.",
+      "alternative_interpretations": [
+        "This may depict a martial arts demonstration where controlled contact simulates resistance without actual coercion."
+      ],
+      "limitations": [
+        "Facial expressions and prior/following actions are absent, preventing confirmation of consent, aggression, or pedagogy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1714_P2",
+      "visual_anchors": [
+        "blue cap obscuring face",
+        "neutral background",
+        "identical footwear style"
+      ],
+      "symbolic_mapping": [
+        "face concealment → anonymity in social interaction",
+        "uniform ground/wall → erasure of contextual specificity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "By anonymizing individual identity through headwear and generic attire while emphasizing relational tension, the image suggests that social existence is constituted primarily through interactional roles rather than intrinsic traits.",
+      "alternative_interpretations": [
+        "The cap and clothing are simply casual attire; no intentional symbolism is present."
+      ],
+      "limitations": [
+        "Clothing and accessories are common and non-exclusive; no unique identifiers confirm deliberate anonymization."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1714_P3",
+      "visual_anchors": [
+        "forward lunge",
+        "backward lean",
+        "simultaneous foot placement"
+      ],
+      "symbolic_mapping": [
+        "dynamic equilibrium → negotiated stability",
+        "mutual tension → interdependence in opposition"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The frozen motion captures a relational threshold where neither party fully dominates nor yields, embodying a philosophical notion of choice as co-constituted through reciprocal constraint rather than solitary decision.",
+      "alternative_interpretations": [
+        "This is a staged pose for instructional illustration, not a representation of real-time decision-making."
+      ],
+      "limitations": [
+        "The static nature of the image precludes evidence of intentionality or temporal progression required for ‘choice’ claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:04:38.638813+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-561b8609-00f8-9938-bb75-cae9572f6242",
+      "usage": {
+        "prompt_tokens": 663,
+        "completion_tokens": 969,
+        "total_tokens": 1632,
+        "completion_tokens_details": {
+          "text_tokens": 969
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 156,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070504236f14d059963846a7",
+      "usage": {
+        "completion_tokens": 831,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1748,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2579
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

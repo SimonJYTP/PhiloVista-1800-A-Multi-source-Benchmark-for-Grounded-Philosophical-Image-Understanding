@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0113",
+  "sample_id": "PHL1800_HL_0404",
+  "file_name": "PHL1800_HL_0404.png",
+  "batch_id": "B005",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "crowded urban street with vehicles and pedestrians",
+  "captions": {
+    "scene": [
+      "A wide multi-lane road filled with yellow buses, white sedans, vans, and taxis under an overcast sky, flanked by modern high-rise buildings and construction cranes.",
+      "Pedestrians walk across and along the road amid stopped or slow-moving vehicles; some carry bags or stand in groups near roadside stalls.",
+      "A mix of older model cars and buses dominates the traffic; several buses are parked or idling in rows, while others navigate lanes."
+    ],
+    "action": [
+      "People are crossing the street, standing beside vehicles, and interacting near small roadside kiosks.",
+      "Vehicles—including at least 15 yellow buses, 10 white sedans, 4 vans, and 8 yellow taxis—are stationary or moving slowly in congested lanes.",
+      "Construction cranes operate atop unfinished high-rises in the background; one crane arm is extended horizontally."
+    ],
+    "rationale": [
+      "The density of vehicles and pedestrians suggests peak-hour congestion rather than a planned event, as movement appears disorganized and spontaneous.",
+      "The uniform yellow color of many buses indicates a standardized public transport fleet, though no route numbers or logos are legible.",
+      "The presence of open-air stalls and people carrying goods implies informal commerce integrated into the traffic flow, though exact transactions are not visible."
+    ],
+    "object": [
+      "At least 50 distinct human figures are visible: 25 on the left sidewalk/road edge, 15 mid-road among vehicles, 8 near right-side stalls, and 2 on the far-right curb; all appear upright and active.",
+      "Two tall construction cranes are mounted on building frames in the background; one has a visible lattice boom, the other has a jib extended eastward.",
+      "A black sedan with chrome bumpers and whitewall tires is parked diagonally across two lanes, front facing left, with its driver-side door closed.",
+      "A white van with sliding side door and roof rack is positioned perpendicular to traffic flow, partially blocking a lane, with two people standing beside its rear.",
+      "A yellow bus with open side windows and visible interior seats is angled toward the center lane, its front wheels turned right, and its driver visible through the windshield."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0113_P1",
+      "visual_anchors": [
+        "crowded pedestrian crossing",
+        "multiple yellow buses in parallel rows",
+        "open-air vendor stalls amid traffic"
+      ],
+      "symbolic_mapping": [
+        "street as contested space",
+        "uniform buses as institutional presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes social existence as negotiated through shared infrastructure, where formal transport systems coexist with informal economic activity under conditions of spatial scarcity.",
+      "alternative_interpretations": [
+        "This is simply a snapshot of daily commuting in a rapidly developing city without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No signage, facial expressions, or transactional details confirm intentional symbolism; all mappings remain speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0113_P2",
+      "visual_anchors": [
+        "construction cranes against cloudy sky",
+        "unfinished high-rises",
+        "older vehicles mixed with new infrastructure"
+      ],
+      "symbolic_mapping": [
+        "cranes as markers of incomplete progress",
+        "vehicle age disparity as temporal layering"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of ongoing construction and aging transport evokes time’s layered accumulation—where labor reshapes the built environment while material objects persist beyond their intended lifespans.",
+      "alternative_interpretations": [
+        "The scene reflects budget constraints and phased development, not philosophical commentary on time or labor."
+      ],
+      "limitations": [
+        "Crane operation status (active/idle) is ambiguous; no workers are clearly visible on structures to confirm labor continuity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0113_P3",
+      "visual_anchors": [
+        "pedestrians walking between moving vehicles",
+        "no visible crosswalks or signals",
+        "people carrying personal items while navigating traffic"
+      ],
+      "symbolic_mapping": [
+        "bodily navigation as assertion of agency",
+        "traffic as imposed constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "Individual movement through congested space illustrates freedom constrained by systemic infrastructure—each step is a micro-choice within a larger path dictated by vehicle flow and urban design.",
+      "alternative_interpretations": [
+        "People are simply using the most direct route available due to lack of sidewalks, not expressing philosophical agency."
+      ],
+      "limitations": [
+        "Direction of pedestrian gaze and intent cannot be determined; some figures may be waiting rather than actively choosing paths."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for human figures is inaccurate; some vehicles and crane details are misdescribed."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:02:09.411764+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-62c0c4e9-9fdd-9932-aff1-c5fc84103a06",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1056,
+        "total_tokens": 1825,
+        "completion_tokens_details": {
+          "text_tokens": 1056
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702013929d3ec0fce7e48c3",
+      "usage": {
+        "completion_tokens": 933,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1986,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2919
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

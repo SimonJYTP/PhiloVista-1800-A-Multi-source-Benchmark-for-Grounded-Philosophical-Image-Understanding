@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1112",
+  "sample_id": "PHL1800_IRFL_0254",
+  "file_name": "PHL1800_IRFL_0254.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three US one-dollar bills resting on a laptop keyboard",
+  "captions": {
+    "scene": [
+      "A silver-colored laptop sits open on a light brown wooden surface, with three US one-dollar bills fanned across its keyboard.",
+      "The laptop’s black chiclet-style keyboard is partially visible beneath the currency; ports and a headphone jack are visible on the right side.",
+      "The image is taken at a shallow depth of field, with the foreground bills in focus and the background (including screen bezel) blurred."
+    ],
+    "action": [
+      "The dollar bills lie flat and overlapping on the laptop’s palm rest and keyboard area.",
+      "No human hands or motion are visible; the scene is static.",
+      "The top bill is oriented diagonally, revealing George Washington’s portrait and the green seal; the lower two show reverse-side details including 'ONE DOLLAR' and serial numbers."
+    ],
+    "rationale": [
+      "The bills appear to be genuine US currency based on visible design elements: portrait, green seal, serial numbers, and typography consistent with Federal Reserve Notes.",
+      "The laptop is likely powered off or in sleep mode because the screen is dark and no backlight is visible on the keys.",
+      "The arrangement suggests intentional placement rather than accidental drop, though no agent is visible to confirm intent."
+    ],
+    "object": [
+      "Three US one-dollar Federal Reserve Notes are placed on the laptop, with the topmost bill showing George Washington’s portrait, the Treasury seal, and the serial number ending in '12'.",
+      "The laptop has a silver aluminum chassis, black keyboard keys, a visible headphone jack, two USB-A ports, and a small circular power indicator near the ports.",
+      "The wooden surface beneath the laptop shows a fine grain pattern and warm tone, indicating a tabletop or desk.",
+      "The top bill’s reverse side is partially visible beneath it, showing the word 'ONE' and part of the Great Seal’s pyramid motif.",
+      "The bills exhibit slight creasing and discoloration consistent with circulation, but no tears or defacement are evident."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1112_P1",
+      "visual_anchors": [
+        "US one-dollar bills",
+        "laptop keyboard",
+        "wooden desk surface"
+      ],
+      "symbolic_mapping": [
+        "currency on device → monetization of digital labor",
+        "keyboard as interface between human and machine"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of physical money atop a digital tool evokes tensions between embodied economic value and immaterial digital production, suggesting labor’s quantification through financial metrics.",
+      "alternative_interpretations": [
+        "This may simply depict a casual moment—e.g., counting change while working—or a staged stock photo for finance-related content."
+      ],
+      "limitations": [
+        "No visible user, transaction record, or screen content confirms economic activity or intentionality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1112_P2",
+      "visual_anchors": [
+        "fanned arrangement of bills",
+        "shallow depth of field",
+        "focus on currency"
+      ],
+      "symbolic_mapping": [
+        "selective focus on money → prioritization of financial over digital means"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The deliberate framing emphasizes monetary artifacts over the technological instrument, implying a choice to foreground tangible value amid intangible systems—a constraint on digital abstraction by material reality.",
+      "alternative_interpretations": [
+        "Photographic technique (depth of field) naturally isolates foreground objects; the focus may reflect aesthetic preference rather than conceptual emphasis."
+      ],
+      "limitations": [
+        "No contextual cues (e.g., receipts, contracts, user posture) verify decision-making or constraint."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1112_P3",
+      "visual_anchors": [
+        "serial numbers visible on bills",
+        "standardized bill design",
+        "uniform keyboard layout"
+      ],
+      "symbolic_mapping": [
+        "repetition of standardized forms → institutional order and reproducibility"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The repetition of identical official designs—both in currency and hardware—underscores how social coordination relies on shared, verifiable symbols, where truth is stabilized through consensus-based artifacts.",
+      "alternative_interpretations": [
+        "These are merely common manufactured items; their similarity reflects mass production, not philosophical intent."
+      ],
+      "limitations": [
+        "No inscriptions, annotations, or deviations from standard design provide evidence of symbolic intent beyond functional use."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:51:52.997896+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-91071b38-4641-94d7-baec-99c65ac6376f",
+      "usage": {
+        "prompt_tokens": 1459,
+        "completion_tokens": 999,
+        "total_tokens": 2458,
+        "completion_tokens_details": {
+          "text_tokens": 999
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 952,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035141b67bdb0210af4278",
+      "usage": {
+        "completion_tokens": 861,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2830,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3691
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

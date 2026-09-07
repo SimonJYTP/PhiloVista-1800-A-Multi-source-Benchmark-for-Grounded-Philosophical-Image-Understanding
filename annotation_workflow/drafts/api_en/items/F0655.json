@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0655",
+  "sample_id": "PHL1800_IRFL_0023",
+  "file_name": "PHL1800_IRFL_0023.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one boy",
+  "captions": {
+    "scene": [
+      "A blurred green foliage background suggesting an outdoor setting",
+      "A dark weathered wooden barrier occupying the lower third of the frame",
+      "Natural daylight illumination with soft shadows"
+    ],
+    "action": [
+      "The boy is leaning forward over the top edge of the wooden barrier with both hands placed on its surface",
+      "His torso is angled downward while his head is raised and turned toward the camera",
+      "His mouth is slightly open and his eyes are directed at the viewer"
+    ],
+    "rationale": [
+      "The boy’s posture suggests active engagement with the barrier, possibly climbing or pausing mid-movement, though no motion blur confirms movement",
+      "The headband and wristband indicate participation in an organized activity, but the specific nature cannot be confirmed from visual evidence alone",
+      "The facial expression appears neutral to mildly positive, but assigning emotion requires inference beyond visible cues"
+    ],
+    "object": [
+      "The boy has short light-blonde hair and fair skin.",
+      "He wears a black headband with white text reading 'SPRINT' and numerals '11250', plus a red circular logo partially visible to the left of 'SPRINT'.",
+      "He wears a dark navy short-sleeved t-shirt with a small white logo on the left sleeve near the cuff.",
+      "He wears blue athletic shorts with a textured pattern visible on the left thigh.",
+      "An orange wristband with black printed characters is on his left wrist; the characters are partially legible as '275U...' but the full text is unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0655_P1",
+      "visual_anchors": [
+        "black headband with 'SPRINT 11250'",
+        "orange wristband",
+        "wooden barrier"
+      ],
+      "symbolic_mapping": [
+        "the numbered headband maps to participation in a structured event",
+        "the barrier maps to a physical constraint or challenge"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where individual agency intersects with externally imposed structure: the boy navigates a fixed obstacle while marked by identifiers of organized participation, reflecting the tension between self-directed action and institutional framing.",
+      "alternative_interpretations": [
+        "This is simply a candid photo of a child resting during a race or obstacle course, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "No context confirms whether the barrier is part of a competition, training, or play; the symbolic mapping relies on assumed cultural associations."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0655_P2",
+      "visual_anchors": [
+        "boy’s direct gaze",
+        "slight smile",
+        "hands gripping barrier"
+      ],
+      "symbolic_mapping": [
+        "gaze maps to presence and acknowledgment",
+        "grip maps to effort or readiness"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The boy’s visible engagement—eye contact, posture, attire—constructs a temporary social identity through performance of role (participant), where appearance (headband, wristband) mediates recognition within a shared activity framework.",
+      "alternative_interpretations": [
+        "The boy is looking at the photographer out of curiosity or habit, not as a deliberate act of social positioning."
+      ],
+      "limitations": [
+        "Facial expression is ambiguous; the ‘smile’ may be incidental rather than intentional communication."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0655_P3",
+      "visual_anchors": [
+        "weathered wooden barrier",
+        "natural background",
+        "child’s proximity to edge"
+      ],
+      "symbolic_mapping": [
+        "barrier maps to boundary between safety and risk",
+        "outdoor setting maps to uncontrolled environment"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a transient human figure against enduring natural elements and a man-made obstacle evokes the fleeting nature of childhood exertion within larger cycles of decay and renewal, where constraint enables the experience of temporal passage.",
+      "alternative_interpretations": [
+        "The wood is simply part of an obstacle course; its weathering is incidental and not thematically significant."
+      ],
+      "limitations": [
+        "No evidence links the wood’s age or condition to philosophical themes; the interpretation imposes narrative onto neutral material properties."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:38:49.963006+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4392afe7-db6b-940a-aec3-e5832f68a28b",
+      "usage": {
+        "prompt_tokens": 1231,
+        "completion_tokens": 966,
+        "total_tokens": 2197,
+        "completion_tokens_details": {
+          "text_tokens": 966
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 724,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013825ee228a12b5884e38",
+      "usage": {
+        "completion_tokens": 819,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2489,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3308
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

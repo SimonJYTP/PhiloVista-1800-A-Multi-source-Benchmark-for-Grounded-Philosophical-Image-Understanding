@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0359",
+  "sample_id": "PHL1800_IRFL_0034",
+  "file_name": "PHL1800_IRFL_0034.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man in blue shirt and orange pants interacting with three identical doorways",
+  "captions": {
+    "scene": [
+      "A man stands left of an open doorway, hand on chin, gazing upward.",
+      "The same man walks through a second open doorway, head bowed, hand on chin.",
+      "The man stands right of a third open doorway, looking down at a baby held by an unseen person."
+    ],
+    "action": [
+      "The man adopts a contemplative pose beside the first door.",
+      "The man is mid-stride, passing through the second door while maintaining a pensive posture.",
+      "The man observes a baby being presented through the third door; his hands are on hips and near waist."
+    ],
+    "rationale": [
+      "Three sequential positions suggest temporal progression across identical frames, though no explicit motion blur or timestamps exist.",
+      "The consistent clothing and posture across panels indicate the same individual is depicted in three stages.",
+      "The baby appears only in the third panel, introduced by external hands, implying a new element entering the scene rather than continuity from prior panels."
+    ],
+    "object": [
+      "A man with black hair, wearing a blue long-sleeve shirt, orange pants, and black shoes, appears in all three panels.",
+      "Three identical dark gray doors with gold round doorknobs are shown open, each framed by a black doorframe.",
+      "A baby wearing a blue hat, orange top, black pants, and white socks is held by two visible adult hands in the third panel only.",
+      "The floor is light gray; the wall behind is off-white; shadows are cast to the right of figures and doors.",
+      "The man’s right hand rests on his chin in the first two panels; in the third, his left hand rests on his hip and his right hand is near his waist."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0359_P1",
+      "visual_anchors": [
+        "man’s contemplative pose before first door",
+        "man walking through second door",
+        "baby presented at third door"
+      ],
+      "symbolic_mapping": [
+        "doorway as threshold",
+        "progression of stance as decision sequence"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes a staged transition from deliberation to action to relational consequence, framing choice as a linear passage with social outcomes.",
+      "alternative_interpretations": [
+        "It may depict literal movement through identical rooms, with the baby introduced as a surprise event unrelated to prior states."
+      ],
+      "limitations": [
+        "No facial expressions are detailed enough to confirm internal states like doubt or resolve; posture alone is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0359_P2",
+      "visual_anchors": [
+        "identical doors",
+        "unchanged attire",
+        "consistent lighting"
+      ],
+      "symbolic_mapping": [
+        "repetition of structure implies constraint",
+        "uniform environment suggests systemic repetition"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The repeated architectural motif and unchanging appearance of the man suggest identity is maintained despite shifting contexts, highlighting constraint within apparent choice.",
+      "alternative_interpretations": [
+        "The doors may simply be part of a hallway design; repetition could reflect artistic composition rather than symbolic intent."
+      ],
+      "limitations": [
+        "Doors lack distinguishing marks (e.g., labels, textures), so their equivalence is assumed visually but not confirmed semantically."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0359_P3",
+      "visual_anchors": [
+        "external hands presenting baby",
+        "man’s downward gaze",
+        "spatial separation between man and baby"
+      ],
+      "symbolic_mapping": [
+        "hands as agency external to subject",
+        "gaze direction indicating reception not initiation"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "Responsibility emerges not from autonomous action but from external introduction of vulnerability, positioning care as a response to imposed relational demand.",
+      "alternative_interpretations": [
+        "The hands may belong to a caregiver placing the baby for inspection; the scene could be routine rather than ethically charged."
+      ],
+      "limitations": [
+        "The origin and intent of the hands are invisible beyond the wrists; no gestures or context confirm moral weight."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:37:51.160249+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-626821ee-75b0-97a8-8712-93f71fde49c9",
+      "usage": {
+        "prompt_tokens": 2994,
+        "completion_tokens": 940,
+        "total_tokens": 3934,
+        "completion_tokens_details": {
+          "text_tokens": 940
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2487,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023726b1039ec113d1403f",
+      "usage": {
+        "completion_tokens": 802,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 5716,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 6518
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1209",
+  "sample_id": "PHL1800_MM_0133",
+  "file_name": "PHL1800_MM_0133.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two children in a mall play area",
+  "captions": {
+    "scene": [
+      "Indoor commercial space with tiled flooring, red carpet strip, and visible storefronts including a 'Rite Aid' sign partially obscured by a green inflatable column.",
+      "A brightly colored inflatable play structure with blue, orange, yellow, and green sections occupies the right foreground.",
+      "Metal railings separate the play area from a walkway where several adults stand or walk in the background."
+    ],
+    "action": [
+      "A girl with long dark hair, wearing a denim jacket with heart-shaped patches, stands facing away from the camera toward the play structure.",
+      "A boy in a gray hoodie and jeans stands on an orange step of the inflatable structure, holding onto a blue section with his right hand.",
+      "A speech bubble above the girl’s head contains the text: 'Oops! I couldn't hold it any longer!'"
+    ],
+    "rationale": [
+      "The speech bubble is positioned near the girl and oriented toward her, suggesting attribution to her, though no mouth movement or facial expression confirms speaker identity.",
+      "The boy’s posture—leaning forward, gripping the structure—indicates active engagement with the inflatable, possibly climbing or stabilizing himself.",
+      "The girl’s stationary stance and orientation suggest observation or waiting, but no motion blur or limb position confirms intent or emotional state."
+    ],
+    "object": [
+      "The girl wears a light-colored patterned dress under a blue denim jacket adorned with a yellow heart and a green circular patch on the back.",
+      "The boy wears dark blue jeans, brown shoes with black soles, and a gray hooded sweatshirt with the hood down.",
+      "The inflatable structure includes a vertical blue pillar with orange rectangular panels, a turquoise slide-like element, and an orange base platform.",
+      "A green inflatable tube extends horizontally from a green-and-white striped support column near the left edge of the frame.",
+      "The floor consists of large square tiles in alternating shades of beige and gray, with a red carpet runner running parallel to the railing."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1209_P1",
+      "visual_anchors": [
+        "speech bubble with 'Oops! I couldn't hold it any longer!'",
+        "girl standing still",
+        "boy actively gripping inflatable"
+      ],
+      "symbolic_mapping": [
+        "the phrase 'couldn't hold it any longer' may map to loss of control over bodily or emotional states"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The utterance evokes a momentary rupture in self-regulation, highlighting how social presence (the boy nearby, observers behind) intensifies awareness of bodily limits and temporal vulnerability.",
+      "alternative_interpretations": [
+        "The text may be a generic comic-style caption added post-hoc, unrelated to actual child behavior; the girl may simply be watching, not reacting."
+      ],
+      "limitations": [
+        "No facial expression, gesture, or physiological cue (e.g., blushing, posture shift) confirms the girl uttered the phrase or experienced the stated condition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1209_P2",
+      "visual_anchors": [
+        "metal railing separating play zone from walkway",
+        "children positioned on opposite sides of the barrier's implied axis",
+        "inflatable as shared but segmented space"
+      ],
+      "symbolic_mapping": [
+        "railing as literal and figurative boundary between supervised and autonomous zones"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement embodies negotiated autonomy: the children inhabit adjacent but distinct domains—monitored yet permitted agency—reflecting societal scaffolding of childhood freedom within constraint.",
+      "alternative_interpretations": [
+        "The railing serves purely functional safety purposes; no symbolic meaning is intended or visually encoded."
+      ],
+      "limitations": [
+        "The railing’s height and spacing are standard for public venues; no signage or interaction indicates intentional symbolic use."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1209_P3",
+      "visual_anchors": [
+        "denim jacket with decorative patches",
+        "gray hoodie",
+        "inflatable colors mimicking primary/secondary palette"
+      ],
+      "symbolic_mapping": [
+        "clothing as curated appearance amid standardized commercial environment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The children’s attire—individuated through small embellishments—contrasts with the uniformity of the mall setting, suggesting identity formation as an ongoing act of selective differentiation within institutionalized spaces.",
+      "alternative_interpretations": [
+        "Clothing choices reflect parental selection or availability, not deliberate self-expression; patches are incidental branding or wear patterns."
+      ],
+      "limitations": [
+        "Patch shapes and placement are visible but their origin (intentional decoration vs. manufacturer design) cannot be determined from image alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:03:21.789178+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0d7d5c8e-f8ae-9459-8512-2b50b81e18a9",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1056,
+        "total_tokens": 2589,
+        "completion_tokens_details": {
+          "text_tokens": 1056
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040306d7af7687ee514e25",
+      "usage": {
+        "completion_tokens": 926,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3008,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3934
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

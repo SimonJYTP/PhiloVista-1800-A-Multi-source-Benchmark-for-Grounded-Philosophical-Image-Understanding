@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0955",
+  "sample_id": "PHL1800_IRFL_0386",
+  "file_name": "PHL1800_IRFL_0386.jpg",
+  "batch_id": "B021",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single red apple",
+  "captions": {
+    "scene": [
+      "A red apple centered against a uniformly white background with soft shadow beneath.",
+      "High-key studio lighting creates specular highlights on the apple's glossy skin.",
+      "The apple occupies most of the frame, with no other objects or environmental context visible."
+    ],
+    "action": [
+      "The apple is stationary and resting on a flat surface.",
+      "Light reflects off the apple’s surface, producing a bright highlight near the top-left curvature.",
+      "The stem remains attached and extends upward from the calyx cavity."
+    ],
+    "rationale": [
+      "The uniform white background and controlled lighting suggest a studio setting rather than a natural environment.",
+      "The absence of blemishes, cuts, or decay indicates the apple is intact and unaltered in the image frame.",
+      "The presence of fine lenticels (small dots) across the skin is consistent with typical apple morphology, though species cannot be determined from visual alone."
+    ],
+    "object": [
+      "The apple has a smooth, glossy red skin with numerous small, light-colored lenticels distributed across its surface.",
+      "A short, brown, woody stem protrudes from the depression at the top center of the apple.",
+      "The apple exhibits a classic rounded-conical shape with a slight taper toward the base.",
+      "A subtle shadow is cast directly beneath the apple onto the white surface, indicating a light source above and slightly to the left.",
+      "No bite marks, cuts, stickers, or foreign attachments are visible on the apple’s exterior."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0955_P1",
+      "visual_anchors": [
+        "glossy red skin",
+        "uniform white background",
+        "intact whole form"
+      ],
+      "symbolic_mapping": [
+        "the unblemished surface maps to idealized appearance",
+        "the isolation against white maps to abstraction from context"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The apple’s polished, singular presentation evokes questions about how surface perfection shapes perception of identity, especially when divorced from ecological or social context.",
+      "alternative_interpretations": [
+        "It is simply a product photograph emphasizing freshness and commercial appeal."
+      ],
+      "limitations": [
+        "No cultural or textual cues confirm intentional symbolism; the interpretation relies on viewer projection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0955_P2",
+      "visual_anchors": [
+        "attached stem",
+        "intact calyx cavity",
+        "no signs of decay"
+      ],
+      "symbolic_mapping": [
+        "the stem as remnant of connection to origin",
+        "the unbroken form as temporal stasis"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The apple’s preserved wholeness and still-attached stem suggest suspended temporality—simultaneously ripe and not yet subject to entropy—raising reflection on thresholds between vitality and decay.",
+      "alternative_interpretations": [
+        "The apple is freshly harvested and photographed before any spoilage could occur."
+      ],
+      "limitations": [
+        "No evidence of aging or time-lapse; the state is static and momentary."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0955_P3",
+      "visual_anchors": [
+        "specular highlight",
+        "smooth curvature",
+        "symmetrical composition"
+      ],
+      "symbolic_mapping": [
+        "light reflection as mediated perception",
+        "curvature as resistance to flat categorization"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The way light bends and reflects across the apple’s surface illustrates how truth may be contingent on perspective and illumination, resisting singular, flat representation.",
+      "alternative_interpretations": [
+        "The highlight is a standard photographic effect used to convey freshness and texture."
+      ],
+      "limitations": [
+        "The lighting setup is conventional; no deliberate distortion or ambiguity is introduced."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:30:54.108552+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8bde6c6a-d549-94d1-89d9-1fd840811ff8",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 843,
+        "total_tokens": 2376,
+        "completion_tokens_details": {
+          "text_tokens": 843
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070330378096206d31d54586",
+      "usage": {
+        "completion_tokens": 708,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2802,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3510
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

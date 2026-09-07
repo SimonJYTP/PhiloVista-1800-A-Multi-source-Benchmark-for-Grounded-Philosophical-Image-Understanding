@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0022",
+  "sample_id": "PHL1800_MM_0060",
+  "file_name": "PHL1800_MM_0060.jpg",
+  "batch_id": "B003",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two chefs in a professional kitchen",
+  "captions": {
+    "scene": [
+      "A brightly lit commercial kitchen with stainless steel surfaces, a large ventilation hood, and visible food prep stations.",
+      "Two individuals wearing chef uniforms stand behind a dark countertop with prepared dishes and a glass of orange liquid.",
+      "Background includes shelves with jars, cooking equipment, and a blurred window or light source."
+    ],
+    "action": [
+      "The left chef holds a golden trophy cup with both hands and smiles toward the viewer.",
+      "The right chef stands with arms crossed, smiling toward the viewer.",
+      "A speech bubble above the left chef contains readable English text stating: 'I'm thrilled that we won the competition with the dish I prepared!'"
+    ],
+    "rationale": [
+      "The presence of matching chef attire, aprons, and kitchen equipment supports identification as chefs in a professional setting.",
+      "The trophy and speech bubble indicate a competitive culinary event outcome, though the exact nature of the competition is not visually specified.",
+      "The speech bubble attributes authorship of the winning dish to the left chef; however, the visual evidence alone does not confirm whether the dish shown was indeed the winning one."
+    ],
+    "object": [
+      "The left chef wears a white double-breasted jacket with black buttons, a black bow tie, a white toque, and a black apron with embroidered patches on both sleeves; he holds a two-handled golden trophy cup.",
+      "The right chef wears a white double-breasted jacket with black buttons, a white toque, and a black apron with a visible patch on the left sleeve; his arms are crossed over his chest.",
+      "On the counter to the left, there is a white bowl containing green salad with red and yellow vegetables, and another bowl with golden-brown fried items.",
+      "To the right of the chefs, a clear glass tumbler holds an opaque orange liquid, possibly juice or sauce, with a small spoon resting inside.",
+      "A large metallic conical ventilation hood hangs above the left chef, partially out of frame, with warm lighting illuminating the scene from above and front."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0022_P1",
+      "visual_anchors": [
+        "golden trophy",
+        "speech bubble claiming authorship",
+        "two chefs standing together"
+      ],
+      "symbolic_mapping": [
+        "trophy → recognition",
+        "speech bubble → self-attribution"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image stages a tension between collective achievement (two chefs present) and individual credit (speech bubble naming 'I' as creator), reflecting how social recognition often centers on singular identity despite collaborative labor.",
+      "alternative_interpretations": [
+        "It may simply depict a standard post-competition photo opportunity without intended philosophical commentary."
+      ],
+      "limitations": [
+        "The speech bubble is authored by the left chef but does not visually confirm whether the right chef contributed to the dish; no shared gesture or joint action confirms collaboration."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0022_P2",
+      "visual_anchors": [
+        "black aprons with patches",
+        "matching uniforms",
+        "professional kitchen setting"
+      ],
+      "symbolic_mapping": [
+        "uniforms → role conformity",
+        "apron patches → institutional affiliation"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "Standardized attire and branded aprons suggest labor embedded within institutional frameworks, where personal identity is subsumed under occupational roles and organizational branding.",
+      "alternative_interpretations": [
+        "The patches may be decorative or generic rather than indicating specific institutions; uniformity could reflect hygiene standards rather than identity suppression."
+      ],
+      "limitations": [
+        "The text on the apron patches is unreadable; therefore, institutional affiliation cannot be verified."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0022_P3",
+      "visual_anchors": [
+        "smiling faces",
+        "crossed arms",
+        "trophy held centrally"
+      ],
+      "symbolic_mapping": [
+        "smiles → affect display",
+        "trophy → external validation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The visible affect (smiles) and object (trophy) serve as performative markers of success, raising questions about whether truth in achievement resides in objective outcome or in socially ratified representation.",
+      "alternative_interpretations": [
+        "The smiles may be posed for photography and not indicative of actual emotional state; the trophy may be symbolic rather than awarded."
+      ],
+      "limitations": [
+        "Facial expressions are stylized and static; no dynamic behavior confirms genuine emotion or causal link to the stated victory."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:49:28.835965+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-24ad71f9-6ba5-923e-ac85-76bf54f3c7f7",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1020,
+        "total_tokens": 2553,
+        "completion_tokens_details": {
+          "text_tokens": 1020
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014911c62d0ff31b054822",
+      "usage": {
+        "completion_tokens": 878,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2969,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3847
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

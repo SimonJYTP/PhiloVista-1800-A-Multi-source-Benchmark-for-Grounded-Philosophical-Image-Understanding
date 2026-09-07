@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0805",
+  "sample_id": "PHL1800_IRFL_0420",
+  "file_name": "PHL1800_IRFL_0420.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a modern open-plan interior space featuring dining, kitchen, and lounge zones",
+  "captions": {
+    "scene": [
+      "A brightly lit interior with white shiplap walls, a textured ceiling, and dark flooring in parts of the room.",
+      "A long rectangular dining table with ten light-colored chairs is centered in the foreground.",
+      "A kitchen island with four bar stools sits adjacent to white cabinetry and appliances, while a lounge area with two sofas and armchairs occupies the right side."
+    ],
+    "action": [
+      "No people or animals are present; all furniture is stationary.",
+      "Three pendant lights hang above the dining table and kitchen island; two chandeliers are suspended near the left wall and center.",
+      "A large framed mirror hangs on the right wall, reflecting part of the room."
+    ],
+    "rationale": [
+      "The absence of occupants suggests the space is staged or unoccupied at the time of capture.",
+      "The uniform color palette (white, cream, black) and symmetrical layout imply intentional design rather than organic use.",
+      "The presence of multiple lighting fixtures of different styles indicates deliberate aesthetic layering, though their exact function (e.g., functional vs. decorative) cannot be confirmed visually."
+    ],
+    "object": [
+      "A rectangular white dining table with ten matching upholstered chairs arranged around it, some with visible wooden legs.",
+      "A kitchen island with a light countertop, integrated sink, and four high-backed bar stools with light upholstery and metal frames.",
+      "Two off-white three-seater sofas facing each other across a dark circular rug in the lounge zone.",
+      "Three pendant lamps with cream-colored conical shades hang over the dining table and island; two ornate crystal chandeliers hang elsewhere.",
+      "A large rectangular mirror with a dark frame is mounted on the shiplap wall opposite the dining area."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0805_P1",
+      "visual_anchors": [
+        "empty dining table",
+        "symmetrical seating arrangement",
+        "unoccupied lounge"
+      ],
+      "symbolic_mapping": [
+        "the empty table as a site of anticipated social gathering",
+        "symmetry as order imposed on potential chaos"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The meticulously arranged but vacant dining and lounge zones evoke the tension between social intention and actual presence, suggesting that social existence is defined not only by bodies but by the preparedness for them.",
+      "alternative_interpretations": [
+        "The space may simply be a digital rendering or showroom setup with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No human figures or personal items are present to confirm intent or use patterns."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0805_P2",
+      "visual_anchors": [
+        "white shiplap walls",
+        "uniform chair designs",
+        "repetitive lighting fixtures"
+      ],
+      "symbolic_mapping": [
+        "whiteness as erasure of individuality",
+        "repetition as standardization of experience"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The homogenized visual language—identical chairs, monochromatic surfaces, and duplicated lighting—suggests a curated identity shaped more by aesthetic consensus than by personal expression, raising questions about appearance as conformity.",
+      "alternative_interpretations": [
+        "The uniformity reflects contemporary minimalist design trends rather than philosophical stance."
+      ],
+      "limitations": [
+        "Design choices could stem from budget, software constraints, or client brief—not ideology."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0805_P3",
+      "visual_anchors": [
+        "dark floor section contrasting with light furniture",
+        "ceiling texture resembling cloud patterns",
+        "mirror reflecting emptiness"
+      ],
+      "symbolic_mapping": [
+        "floor contrast as boundary between utility and ceremony",
+        "ceiling texture as metaphor for mental atmosphere"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial division—dark floor under dining/kitchen versus lighter lounge—creates zones that simultaneously invite movement and impose implicit boundaries, illustrating how freedom is always mediated by architectural constraint.",
+      "alternative_interpretations": [
+        "Floor color variation may serve practical purposes like delineating zones for cleaning or acoustics."
+      ],
+      "limitations": [
+        "No signage, doors, or thresholds indicate enforced restriction; the division is purely visual."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:18:06.740217+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-afa0e733-07d5-9b5b-ae24-4f74ba102702",
+      "usage": {
+        "prompt_tokens": 1097,
+        "completion_tokens": 943,
+        "total_tokens": 2040,
+        "completion_tokens_details": {
+          "text_tokens": 943
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 590,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031756a717f1d57d644bee",
+      "usage": {
+        "completion_tokens": 808,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2301,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3109
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

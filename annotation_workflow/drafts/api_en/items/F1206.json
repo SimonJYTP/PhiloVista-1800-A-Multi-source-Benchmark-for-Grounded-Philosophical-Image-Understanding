@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1206",
+  "sample_id": "PHL1800_HL_0569",
+  "file_name": "PHL1800_HL_0569.png",
+  "batch_id": "B025",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one surfer riding a wave",
+  "captions": {
+    "scene": [
+      "A deep blue ocean under a clear, cloudless sky with a distant horizon line.",
+      "A large, green-crested wave breaking toward the shore, with white foam in the foreground.",
+      "A small, indistinct object visible on the horizon near center, possibly a vessel."
+    ],
+    "action": [
+      "The surfer is crouched low on a surfboard, positioned inside the curl of a breaking wave.",
+      "Water is spraying upward around the surfer due to board motion and wave dynamics.",
+      "The wave’s face shows smooth glassy texture ahead of the breaking lip, with turbulent whitewater below."
+    ],
+    "rationale": [
+      "The surfer appears to be actively riding rather than falling, based on body posture and board orientation relative to wave face.",
+      "The wave is mid-break: the crest is curling but not yet fully collapsed, indicated by the hollow barrel shape and spray pattern.",
+      "The distant horizon object is too small and low-resolution to identify definitively; it may be a boat or buoy."
+    ],
+    "object": [
+      "The surfer wears a dark wetsuit and is positioned near the wave’s pocket, with arms extended for balance.",
+      "The surfboard is light-colored, partially submerged, and angled slightly upward toward the wave face.",
+      "The wave exhibits a translucent green hue in its unbroken section and white froth where it breaks.",
+      "Foam and churned water occupy the lower third of the image, indicating recent wave collapse near shore.",
+      "The sky occupies approximately the upper 40% of the frame and is uniformly pale blue with no visible clouds."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1206_P1",
+      "visual_anchors": [
+        "surfer crouched inside wave barrel",
+        "spray radiating from board",
+        "clear horizon line"
+      ],
+      "symbolic_mapping": [
+        "the barrel as a transient threshold between order and chaos"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The surfer’s momentary containment within the wave’s barrel visually embodies a fleeting passage through a self-contained world—where decision, timing, and impermanence converge in a single arc of motion.",
+      "alternative_interpretations": [
+        "This is simply a snapshot of recreational surfing with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the interpretation relies solely on formal composition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1206_P2",
+      "visual_anchors": [
+        "single figure against vast ocean",
+        "horizon dividing sky and sea",
+        "foam obscuring nearshore detail"
+      ],
+      "symbolic_mapping": [
+        "the lone surfer as an agent navigating indifferent natural forces"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The isolation of the surfer amid expansive, unpeopled water suggests an existential negotiation between autonomy and environmental constraint—agency exercised within fixed physical limits.",
+      "alternative_interpretations": [
+        "The surfer is part of a larger group not captured in frame; the scene may be crowded beyond view."
+      ],
+      "limitations": [
+        "Only one person is visible; absence of others cannot confirm social isolation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1206_P3",
+      "visual_anchors": [
+        "wave crest curling forward",
+        "light reflecting off wet surface",
+        "surfer’s shadow faintly visible on wave face"
+      ],
+      "symbolic_mapping": [
+        "reflection and shadow as dual manifestations of presence and absence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The interplay of reflected light and the surfer’s subtle shadow on the wave surface evokes epistemic tension: what is seen (glint, form) versus what is inferred (mass, motion), mirroring how perception constructs reality.",
+      "alternative_interpretations": [
+        "The shadow is merely optical artifact from sun angle and wave curvature, with no semantic weight."
+      ],
+      "limitations": [
+        "Shadow is faint and ambiguous; its origin and significance are not verifiable from image alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:03:01.242712+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b94ba28f-793b-959e-bf37-6fe792fa9201",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 933,
+        "total_tokens": 1762,
+        "completion_tokens_details": {
+          "text_tokens": 933
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040249454385f362e74e31",
+      "usage": {
+        "completion_tokens": 797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1932,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2729
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

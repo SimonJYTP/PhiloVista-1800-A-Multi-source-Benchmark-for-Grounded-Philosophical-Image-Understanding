@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1469",
+  "sample_id": "PHL1800_IRFL_0111",
+  "file_name": "PHL1800_IRFL_0111.jpg",
+  "batch_id": "B030",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three occupants in a red convertible automobile",
+  "captions": {
+    "scene": [
+      "A two-lane paved road stretches into the distance under a clear blue sky, flanked by dry brown terrain and wire fences.",
+      "Distant hazy mountain ridges form the horizon behind the vehicle.",
+      "The road surface shows faded yellow center lines and a shadow cast by the car."
+    ],
+    "action": [
+      "Two occupants raise one arm each above the vehicle’s rear window frame; the third occupant’s arms are not visibly raised.",
+      "The convertible’s top is down, exposing all occupants to open air.",
+      "The vehicle moves forward along the road, as indicated by its orientation and shadow position."
+    ],
+    "rationale": [
+      "The raised arms suggest celebratory or expressive motion, though exact intent is unverifiable from posture alone.",
+      "The presence of three distinct heads confirms three occupants, but facial features and gender are indiscernible.",
+      "The license plate reads 'CBR 2632', but jurisdiction or date cannot be determined from visible characters alone."
+    ],
+    "object": [
+      "A vintage-style red convertible with white trim, chrome bumpers, and dual round taillights is centered on the road.",
+      "Three human figures occupy the vehicle: one driver visible in profile, one front passenger with light-colored hair, and one rear passenger with dark hair.",
+      "The vehicle bears a rectangular license plate with black uppercase alphanumeric characters 'CBR 2632' on a white background.",
+      "A wire fence with wooden posts runs parallel to the road on both sides, separating the asphalt from arid ground.",
+      "The sky is uniformly blue with no clouds; distant mountains appear as layered silhouettes with reduced contrast due to atmospheric haze."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1469_P1",
+      "visual_anchors": [
+        "raised arms",
+        "open-top car",
+        "unobstructed road ahead"
+      ],
+      "symbolic_mapping": [
+        "raised arms → embodied expression of agency",
+        "open road → spatial metaphor for possibility"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image frames movement along an open road as a literal enactment of choice, where physical gesture (raised arms) and vehicle configuration (convertible, top down) jointly signify a temporary suspension of constraint.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine travel under pleasant weather, with raised arms resulting from wind or casual posture rather than symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual markers confirm intentional symbolism; gestures could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1469_P2",
+      "visual_anchors": [
+        "three occupants sharing one vehicle",
+        "shared directionality",
+        "proximity within confined space"
+      ],
+      "symbolic_mapping": [
+        "shared vehicle → interdependence in motion",
+        "uniform forward orientation → collective trajectory"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The co-location of three individuals within a single moving frame visually enacts social existence as contingent upon shared spatial and temporal conditions, where identity is partially constituted by proximity and mutual direction.",
+      "alternative_interpretations": [
+        "The occupants may be unrelated travelers or strangers temporarily grouped by circumstance, not implying enduring social bonds."
+      ],
+      "limitations": [
+        "Facial anonymity and lack of interaction cues prevent confirmation of relational depth."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1469_P3",
+      "visual_anchors": [
+        "vintage car design",
+        "distant mountains",
+        "clear sky"
+      ],
+      "symbolic_mapping": [
+        "classic car → temporal layering of past forms in present use",
+        "mountains → enduring backdrop against transient motion"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The juxtaposition of a dated automobile—evidencing human artifact temporality—against geologic-scale mountains evokes the contrast between finite human projects and deep time, suggesting mortality through material obsolescence amid permanence.",
+      "alternative_interpretations": [
+        "The car may be chosen for aesthetic or functional reasons unrelated to temporal reflection; mountains are generic landscape elements."
+      ],
+      "limitations": [
+        "No explicit indicators (e.g., decay, inscription, contrastive lighting) confirm thematic intent regarding time or mortality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:36:12.523919+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f4d49400-ee5c-9d85-a2ee-7d9ea10ea894",
+      "usage": {
+        "prompt_tokens": 1497,
+        "completion_tokens": 961,
+        "total_tokens": 2458,
+        "completion_tokens_details": {
+          "text_tokens": 961
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 990,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043600f7df2d6fe2a740e6",
+      "usage": {
+        "completion_tokens": 820,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2820,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3640
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

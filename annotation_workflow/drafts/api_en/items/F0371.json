@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0371",
+  "sample_id": "PHL1800_HL_0142",
+  "file_name": "PHL1800_HL_0142.png",
+  "batch_id": "B009",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stone building entrance with India Post signage and a person walking past",
+  "captions": {
+    "scene": [
+      "A two-story stone building with arched windows, a central doorway, and a red overhead sign reading 'भारतीय डाक INDIA POST' and 'DARJEELING 734'",
+      "Three concrete steps lead up to an open wooden door beneath a clock mounted in a decorative archway; black metal gates flank the entrance",
+      "A person wearing a backpack walks leftward on the sidewalk beside a white banner with partial text 'the India One Rate'"
+    ],
+    "action": [
+      "A person is walking leftward across the foreground, partially visible from the side",
+      "The main entrance doors are fully open, revealing a dark interior corridor",
+      "A red postbox stands on the right sidewalk near the gate, unattended"
+    ],
+    "rationale": [
+      "The presence of bilingual signage (Devanagari and Latin script) and 'DARJEELING' suggests a location in India, but exact geographic placement cannot be confirmed solely from visual evidence",
+      "The clock shows approximately 10:10, but without verification of its functionality or synchronization, time inference remains uncertain",
+      "The banner’s phrase 'the India One Rate' appears promotional, yet its full context or validity is unreadable due to occlusion and angle"
+    ],
+    "object": [
+      "A red horizontal sign above the building displays 'भारतीय डाक', 'India Post', and 'INDIA POST' in white lettering, with a yellow swoosh logo on the left.",
+      "A round analog clock with Roman numerals is centered above the doorway, housed in a white stone arch with decorative molding.",
+      "Two black wrought-iron gates stand open on either side of the entrance, each attached to a white-painted stone pillar.",
+      "A person with short dark hair, wearing a light-colored shirt, dark trousers, and a beige backpack, walks past the left side of the frame.",
+      "A red cylindrical postbox with a domed top sits on the right sidewalk, adjacent to the right gate and a small green plant."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0371_P1",
+      "visual_anchors": [
+        "open wooden doors",
+        "clock above entrance",
+        "person walking past"
+      ],
+      "symbolic_mapping": [
+        "the open doors suggest accessibility or invitation",
+        "the clock marks a fixed moment amid transient movement"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a static institutional timepiece and a passing individual evokes the tension between enduring public structures and fleeting personal presence within them.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine postal service operations without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or directional gaze confirms intentional engagement with the building or clock."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0371_P2",
+      "visual_anchors": [
+        "bilingual signage",
+        "stone architecture",
+        "wrought-iron gates"
+      ],
+      "symbolic_mapping": [
+        "Devanagari and English coexistence reflects linguistic plurality",
+        "gates open yet formal suggest regulated access"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The layered signage and controlled entry point visually encode state authority and cultural hybridity, where identity is mediated through official language and architectural form.",
+      "alternative_interpretations": [
+        "The design follows standard Indian Post Office templates for visibility and security, not ideological messaging."
+      ],
+      "limitations": [
+        "No visible enforcement personnel or signage about access rules prevents confirmation of power dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0371_P3",
+      "visual_anchors": [
+        "white banner with partial text",
+        "red postbox",
+        "steps leading upward"
+      ],
+      "symbolic_mapping": [
+        "the banner hints at standardized service",
+        "the postbox represents communication infrastructure"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "The ascending steps toward an open portal, flanked by tools of civic communication, frame daily transit as a micro-journey embedded in institutional labor systems.",
+      "alternative_interpretations": [
+        "The steps are functional for elevation change; the banner is commercial advertising unrelated to philosophy."
+      ],
+      "limitations": [
+        "The banner text is incomplete and illegible beyond fragments, weakening symbolic linkage."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:40:13.154293+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1d2a22dd-405f-9b18-a560-7d4f888f0a6c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 998,
+        "total_tokens": 1807,
+        "completion_tokens_details": {
+          "text_tokens": 998
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702395819f8fc842d9e40ec",
+      "usage": {
+        "completion_tokens": 852,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1970,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2822
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

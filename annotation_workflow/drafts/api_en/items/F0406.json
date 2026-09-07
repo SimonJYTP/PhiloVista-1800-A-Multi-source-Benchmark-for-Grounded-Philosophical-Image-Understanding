@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0406",
+  "sample_id": "PHL1800_IRFL_0042",
+  "file_name": "PHL1800_IRFL_0042.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person standing beside a signpost with multiple directional arrows",
+  "captions": {
+    "scene": [
+      "A gradient orange-to-pink background with no horizon line or environmental context.",
+      "A black vertical pole with four white arrow-shaped signs attached at different heights and orientations.",
+      "A single human figure in profile, wearing a blue suit and holding a black briefcase, positioned to the right of the signpost."
+    ],
+    "action": [
+      "The person stands upright with feet together, facing the signpost, head tilted upward toward the arrows.",
+      "The signpost displays four white arrow signs: two pointing left, one pointing right, and one pointing up; all are blank with no visible text or markings.",
+      "No motion is depicted; all elements are static and rendered in flat vector style."
+    ],
+    "rationale": [
+      "The person’s orientation and gaze direction suggest attention toward the signpost rather than movement away from it.",
+      "The absence of text on the arrows implies the directions are generic or symbolic, not specific destinations.",
+      "The uniform color palette and lack of shadows or texture indicate stylized illustration, not photographic realism."
+    ],
+    "object": [
+      "A black cylindrical pole stands vertically on a subtle circular shadow cast on the ground plane.",
+      "Four white arrow-shaped signs are affixed to the pole: topmost points up, second points right, third points left, bottommost points left.",
+      "The person has short dark hair, wears a long-sleeved blue jacket, dark trousers, and holds a rectangular black briefcase in the left hand.",
+      "All arrow signs are identical in shape and size, with clean edges and no visible lettering or symbols.",
+      "The background is a smooth horizontal gradient from warm orange on the left to soft pink on the right, with no additional objects or textures."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0406_P1",
+      "visual_anchors": [
+        "four blank directional arrows",
+        "person gazing upward at arrows",
+        "briefcase held at side"
+      ],
+      "symbolic_mapping": [
+        "blank arrows → undefined options",
+        "gaze upward → contemplation of alternatives"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The image visualizes decision-making under indeterminacy, where available paths lack distinguishing information, prompting reflective pause before commitment.",
+      "alternative_interpretations": [
+        "A corporate worker pausing before choosing a route to an office meeting, with arrows representing literal street directions."
+      ],
+      "limitations": [
+        "No textual labels confirm abstract intent; arrows could be literal signage in a simplified environment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0406_P2",
+      "visual_anchors": [
+        "single figure",
+        "isolated signpost",
+        "empty background"
+      ],
+      "symbolic_mapping": [
+        "solitary stance → individual agency",
+        "lack of other figures → absence of social guidance"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The scene evokes existential freedom wherein the subject faces unguided choice, with constraint implied by the fixed structure of the signpost limiting possible directions to only four predefined vectors.",
+      "alternative_interpretations": [
+        "A minimalist graphic design for navigation software, emphasizing clarity and simplicity in interface elements."
+      ],
+      "limitations": [
+        "The absence of contextual cues (e.g., roads, buildings) prevents confirmation of isolation as intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0406_P3",
+      "visual_anchors": [
+        "briefcase",
+        "formal attire",
+        "static posture"
+      ],
+      "symbolic_mapping": [
+        "briefcase → professional role",
+        "stillness → deliberation before action"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The figure embodies modern labor’s moment of strategic pause—where routine tools (briefcase) accompany decisions shaped by systemic structures (the rigid signpost), suggesting technology-mediated choice within institutional frameworks.",
+      "alternative_interpretations": [
+        "An iconographic representation of a business traveler waiting for directional instructions at a transit hub."
+      ],
+      "limitations": [
+        "Attire and briefcase are generic; no explicit technological device or workplace context is shown."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:44:09.806897+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f1a0c59f-6433-94b2-b4e7-e96e4fdf51cf",
+      "usage": {
+        "prompt_tokens": 587,
+        "completion_tokens": 915,
+        "total_tokens": 1502,
+        "completion_tokens_details": {
+          "text_tokens": 915
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 80,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024351e7b7f18bb99346cd",
+      "usage": {
+        "completion_tokens": 778,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1562,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2340
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

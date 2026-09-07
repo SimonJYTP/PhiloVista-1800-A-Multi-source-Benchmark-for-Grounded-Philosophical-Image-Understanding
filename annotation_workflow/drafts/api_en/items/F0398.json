@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0398",
+  "sample_id": "PHL1800_IRFL_0464",
+  "file_name": "PHL1800_IRFL_0464.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a fanned spread of ten playing cards",
+  "captions": {
+    "scene": [
+      "Ten playing cards lie fanned on a light beige textured surface.",
+      "The cards are arranged in overlapping layers, angled from lower-left to upper-right.",
+      "All visible card faces show numeric ranks and suit symbols; no face cards appear."
+    ],
+    "action": [
+      "Cards are stationary and fully revealed in a static fan layout.",
+      "The topmost card (Hearts) is most visible; others are partially obscured by it.",
+      "No motion blur or hand interaction is present; the arrangement appears deliberate and fixed."
+    ],
+    "rationale": [
+      "The consistent orientation and overlap suggest intentional placement rather than random scattering.",
+      "Only ranks 11, 12, and 13 appear, implying a nonstandard deck or custom design—standard decks lack rank 11.",
+      "The absence of jokers or face cards may indicate a specialized or incomplete set, though insufficient evidence confirms incompleteness."
+    ],
+    "object": [
+      "The rightmost card displays red hearts with the numeral '11' in red at top-left and bottom-right corners.",
+      "The second card from right shows red hearts with '13' in red at top-left and bottom-right corners.",
+      "The third card from right shows black clubs with '11' in black at top-left and bottom-right corners.",
+      "The fourth card from right shows black clubs with '12' in black at top-left and bottom-right corners.",
+      "The leftmost visible card shows black spades with '12' in black at top-left and bottom-right corners."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0398_P1",
+      "visual_anchors": [
+        "numerals 11, 12, 13",
+        "repetition of rank across suits",
+        "uniform card size and layout"
+      ],
+      "symbolic_mapping": [
+        "numeric sequence beyond standard 1–10 suggests extension of order",
+        "identical rank across suits implies equivalence despite difference"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The display of nonstandard high numerals (11–13) across suits may symbolize the persistence of structured categories beyond conventional limits, reflecting how social constructs extend meaning beyond natural boundaries.",
+      "alternative_interpretations": [
+        "These may simply be custom-designed cards for a specific game, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual context or external reference confirms intentional symbolism; numerals could be arbitrary design choices."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0398_P2",
+      "visual_anchors": [
+        "hearts suit dominates foreground",
+        "red vs. black color contrast",
+        "fan arrangement revealing hierarchy"
+      ],
+      "symbolic_mapping": [
+        "hearts as emotional valence foregrounded over other suits",
+        "color dichotomy suggesting binary opposition"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The visual prominence of red hearts amid black suits may reflect how affective identity (appearance of emotion) can dominate perception, even when structurally equivalent elements exist.",
+      "alternative_interpretations": [
+        "The fan was arranged to maximize visibility of the hearts card, a practical choice unrelated to symbolism."
+      ],
+      "limitations": [
+        "Card order may be accidental; no evidence confirms intentional foregrounding of hearts."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0398_P3",
+      "visual_anchors": [
+        "exact repetition of rank numbers across suits",
+        "no face cards or jokers",
+        "clean white background"
+      ],
+      "symbolic_mapping": [
+        "numerical uniformity across difference suggests abstraction of value",
+        "absence of personified figures emphasizes impersonal systems"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The reduction of cards to pure numerals and suits—stripped of royal figures—evokes a system where truth is derived from formal relations rather than authority, highlighting constraint through rule-based structure.",
+      "alternative_interpretations": [
+        "This is a minimalist deck design optimized for clarity in gameplay, not philosophical commentary."
+      ],
+      "limitations": [
+        "Standard decks also omit jokers in many contexts; absence alone does not imply intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:43:32.447087+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1cbd6103-9102-96c0-945f-0b197655e717",
+      "usage": {
+        "prompt_tokens": 1649,
+        "completion_tokens": 943,
+        "total_tokens": 2592,
+        "completion_tokens_details": {
+          "text_tokens": 943
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1142,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024258e7f9191de8134c4f",
+      "usage": {
+        "completion_tokens": 790,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3022,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3812
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

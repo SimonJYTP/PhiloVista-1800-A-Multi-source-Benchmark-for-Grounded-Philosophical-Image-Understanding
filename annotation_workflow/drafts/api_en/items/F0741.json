@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0741",
+  "sample_id": "PHL1800_IRFL_0329",
+  "file_name": "PHL1800_IRFL_0329.jpg",
+  "batch_id": "B017",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red low-profile sports car in motion on a paved road",
+  "captions": {
+    "scene": [
+      "A coastal highway at dusk or dawn with ocean waves visible behind a concrete barrier",
+      "Motion blur on the road surface and background indicates high speed",
+      "Bright orange flames erupt from the rear right wheel area of the car"
+    ],
+    "action": [
+      "The car is moving forward rapidly, evidenced by horizontal motion blur",
+      "Flames are actively trailing from the rear right tire region",
+      "The car’s front wheels are turned slightly left relative to its direction of travel"
+    ],
+    "rationale": [
+      "Flame presence suggests extreme friction or mechanical failure at the rear right wheel; however, no smoke plume or damage to bodywork is visible beyond the fire itself",
+      "The driver’s silhouette is faintly visible through the windshield but facial features or actions cannot be determined",
+      "The text 'Ressa' appears on the side skirt near the rear wheel; it is partially legible but not fully decipherable due to angle and motion blur"
+    ],
+    "object": [
+      "The car has a glossy red finish with black aerodynamic side intakes and a black stripe running along the lower body.",
+      "It features a low-slung monocoque chassis, a fixed roofline, and two side mirrors mounted on short stalks.",
+      "The front fascia includes a wide splitter, three vertical vents above the bumper, and narrow LED-style headlights.",
+      "The rear right wheel is engulfed in bright orange and yellow flames that extend backward and upward, with no visible tire tread remaining in the flame zone.",
+      "A white painted line runs parallel to the car on the asphalt surface, indicating a lane boundary."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0741_P1",
+      "visual_anchors": [
+        "flames trailing from the wheel",
+        "motion blur",
+        "coastal horizon"
+      ],
+      "symbolic_mapping": [
+        "fire as uncontrolled energy",
+        "motion blur as temporal passage"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The image juxtaposes engineered speed against elemental destruction, suggesting a moment where human-made control confronts inevitable entropy—fire consuming the vehicle as it races toward an indistinct horizon.",
+      "alternative_interpretations": [
+        "This may be a digitally composited promotional image emphasizing performance drama, not a real incident."
+      ],
+      "limitations": [
+        "No evidence confirms whether the fire is real, simulated, or post-processed; the car shows no structural deformation consistent with sustained burning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0741_P2",
+      "visual_anchors": [
+        "red color scheme",
+        "streamlined silhouette",
+        "driver silhouette visible through windshield"
+      ],
+      "symbolic_mapping": [
+        "red as assertion of presence",
+        "silhouette as anonymity within agency"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The car’s vivid appearance dominates the frame while the occupant remains indistinct, reflecting how technological artifacts can overshadow individual identity in modern spectacle-driven contexts.",
+      "alternative_interpretations": [
+        "The driver may be intentionally obscured for aesthetic focus on the machine, common in automotive photography."
+      ],
+      "limitations": [
+        "The interior is too dark and blurred to confirm occupancy or number of persons; only one vague head-shaped shadow is discernible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0741_P3",
+      "visual_anchors": [
+        "ocean waves in background",
+        "concrete barrier",
+        "asphalt road with white line"
+      ],
+      "symbolic_mapping": [
+        "barrier as imposed constraint",
+        "ocean as unbounded potential"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The rigid infrastructure confines the vehicle’s path even as it accelerates toward open space, embodying the tension between self-determined motion and externally enforced boundaries.",
+      "alternative_interpretations": [
+        "The barrier and road simply define a safe driving environment; no symbolic intent is required."
+      ],
+      "limitations": [
+        "No signage, markings, or contextual cues indicate intentional metaphor; the setting could be purely functional."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:12:35.253485+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-60cc90d4-3b77-934c-8b1a-b34c3d6e6cfd",
+      "usage": {
+        "prompt_tokens": 1389,
+        "completion_tokens": 924,
+        "total_tokens": 2313,
+        "completion_tokens_details": {
+          "text_tokens": 924
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 882,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031219d5fbb8911eb94e27",
+      "usage": {
+        "completion_tokens": 783,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2707,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3490
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

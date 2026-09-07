@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1448",
+  "sample_id": "PHL1800_HL_0420",
+  "file_name": "PHL1800_HL_0420.png",
+  "batch_id": "B030",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "pedestrians crossing a snow-dusted street near a construction site and red double-decker buses",
+  "captions": {
+    "scene": [
+      "A wet urban street with patches of snow on sidewalks and road edges, flanked by black metal railings and bare trees.",
+      "A multi-story building under construction with exposed concrete floors, steel supports, and temporary hoarding; scaffolding is visible on upper levels.",
+      "Two red double-decker buses are present: one stopped or moving slowly at a traffic light, the other partially visible behind it; traffic signals and overhead gantries are active."
+    ],
+    "action": [
+      "Six pedestrians are mid-crossing: three walking left-to-right, two right-to-left, and one standing near the railing.",
+      "A person in dark clothing steps onto the curb, facing leftward; no clear gesture is visible.",
+      "Snow lies unevenly on ground surfaces, indicating recent snowfall or partial melting; pavement is dark and reflective."
+    ],
+    "rationale": [
+      "The presence of snow on ground but not heavily covering roads suggests recent light snowfall or daytime melting, supported by wet pavement.",
+      "Construction scaffolding and incomplete floor slabs indicate active building work, though no workers are visible on site at this moment.",
+      "Pedestrian movement across the street appears coordinated with traffic signal phase, as vehicles are stationary and crosswalk is unobstructed—though signal status is ambiguous due to angle and occlusion."
+    ],
+    "object": [
+      "A black wrought-iron fence runs parallel to the sidewalk, separating pedestrian walkway from roadway; vertical bars are evenly spaced and capped with pointed finials.",
+      "A red double-decker bus displays yellow and white diagonal stripes on its rear lower panel and has a destination display that is unreadable.",
+      "A white rectangular sign mounted on a pole reads 'ANGEL' in bold uppercase letters above smaller text that is illegible due to resolution and distance.",
+      "A tall green metal lattice tower stands behind the construction site, supporting overhead electrical or signaling infrastructure.",
+      "No person wearing a bright orange high-visibility vest is visible in the frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1448_P1",
+      "visual_anchors": [
+        "bare leafless trees",
+        "exposed concrete skeleton of building",
+        "wet reflective pavement"
+      ],
+      "symbolic_mapping": [
+        "bare trees → temporal transience",
+        "unfinished structure → incompleteness of human projects"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of decaying natural cycles (bare trees) and incomplete human construction evokes the persistent tension between organic impermanence and technological ambition.",
+      "alternative_interpretations": [
+        "This may simply reflect seasonal weather and standard urban development without symbolic intent."
+      ],
+      "limitations": [
+        "No explicit signage or iconography confirms intentional symbolism; interpretation relies on conventional associations rather than image-specific cues."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1448_P2",
+      "visual_anchors": [
+        "six pedestrians crossing simultaneously",
+        "black metal railing dividing sidewalk from street",
+        "red buses halted at intersection"
+      ],
+      "symbolic_mapping": [
+        "railings → institutional boundaries",
+        "coordinated crossing → negotiated social order"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The regulated flow of individuals across a constrained public space illustrates how freedom operates within imposed structural limits, enacted through routine compliance.",
+      "alternative_interpretations": [
+        "People are merely using a legal crosswalk during a green phase; the railing serves only safety, not symbolic division."
+      ],
+      "limitations": [
+        "Intent to constrain or enable is not visually encoded; the railing’s function is utilitarian, not ideological."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1448_P3",
+      "visual_anchors": [
+        "person stepping onto curb",
+        "others walking without interaction",
+        "snow partially melted on pavement"
+      ],
+      "symbolic_mapping": [
+        "isolated movement → individual agency amid collective motion",
+        "melting snow → erosion of distinct states"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "A single individual’s movement amid anonymous transit highlights the fragile visibility of individual intention within homogenized urban flow.",
+      "alternative_interpretations": [
+        "The person may be simply following the crosswalk; melting snow is a natural process, not a metaphor for state erosion."
+      ],
+      "limitations": [
+        "Hand position and facial expression are indistinct; gesture meaning cannot be confirmed from visual data alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (7 vs 6 visible); no person in orange vest; 'ANGEL' sign text is legible; 'gesturing' action is unsupported; 'melting snow' rationale is speculative; philosophy interpretations overreach visual anchors."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:34:08.096107+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-92db6c3d-2a6f-984d-9bda-da15b988b355",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 1019,
+        "total_tokens": 1720,
+        "completion_tokens_details": {
+          "text_tokens": 1019
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070433362619a2ca1f9a46d7",
+      "usage": {
+        "completion_tokens": 985,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1837,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2822
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

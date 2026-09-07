@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0943",
+  "sample_id": "PHL1800_HAIV_0400",
+  "file_name": "PHL1800_HAIV_0400.png",
+  "batch_id": "B020",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a green bottle with a skull-and-crossbones label and a broken red heart",
+  "captions": {
+    "scene": [
+      "A green glass bottle with a brown stopper sits on the left against a white background.",
+      "A stylized red heart is fractured vertically into two main pieces with jagged black outlines.",
+      "Red liquid droplets and splashes appear near and below the broken heart."
+    ],
+    "action": [
+      "The heart is depicted in a state of rupture, with a visible crack separating its halves.",
+      "Red liquid is shown mid-splash above the heart and as discrete droplets falling below it.",
+      "The bottle remains stationary with no visible motion or interaction with the heart."
+    ],
+    "rationale": [
+      "The skull-and-crossbones symbol on the bottle is a conventional warning sign for poison, suggesting hazardous content.",
+      "The broken heart with leaking liquid visually implies emotional or physical damage, though no explicit cause is shown.",
+      "No text is legible in the image; all labels and markings are symbolic or unreadable."
+    ],
+    "object": [
+      "The bottle is green with a narrow neck, a brown cylindrical stopper, and a circular label containing a light-green skull and crossbones over a dark-green oval background.",
+      "The heart is deep red, composed of two irregularly shaped halves separated by a jagged black fissure with white highlights along the break.",
+      "Three small red circular droplets are positioned below the heart’s lower right fragment, aligned diagonally downward.",
+      "Two larger red splashes float above the heart: one teardrop-shaped and one elongated curved shape.",
+      "The entire composition is rendered in flat vector-style colors with bold black outlines and no shading or texture."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0943_P1",
+      "visual_anchors": [
+        "skull-and-crossbones symbol",
+        "broken heart",
+        "red liquid droplets"
+      ],
+      "symbolic_mapping": [
+        "skull-and-crossbones → lethal danger",
+        "broken heart → irreversible emotional rupture"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition suggests that exposure to a harmful agent (bottle) may precipitate irreversible personal loss (broken heart), raising questions about moral accountability for introducing danger into relational contexts.",
+      "alternative_interpretations": [
+        "It could represent a literal poisoning event followed by physiological hemorrhage, without symbolic intent."
+      ],
+      "limitations": [
+        "No causal link is drawn between bottle and heart; spatial proximity alone does not confirm interaction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0943_P2",
+      "visual_anchors": [
+        "green bottle",
+        "fractured heart",
+        "jagged black crack"
+      ],
+      "symbolic_mapping": [
+        "green bottle → artificial or unnatural substance",
+        "jagged crack → sudden, violent disruption"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image may reflect a moment where a deliberate choice (ingesting or encountering the bottle’s contents) leads to constrained emotional freedom, embodied by the heart’s fragmentation and leakage.",
+      "alternative_interpretations": [
+        "The elements may be unrelated decorative motifs placed side-by-side without narrative connection."
+      ],
+      "limitations": [
+        "No agent or decision-making process is depicted; the bottle is sealed and inert."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0943_P3",
+      "visual_anchors": [
+        "red liquid splashes",
+        "two heart fragments",
+        "white background"
+      ],
+      "symbolic_mapping": [
+        "splashes → irreversible spillage",
+        "white background → void or absence of context"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The isolated broken heart amid emptiness may signify the dissolution of social bonds or self-identity when confronted with toxic external forces, where appearance (intact heart) no longer reflects internal reality.",
+      "alternative_interpretations": [
+        "This could be a generic illustration for a health warning about cardiotoxic substances, emphasizing physical rather than social consequences."
+      ],
+      "limitations": [
+        "No human figures, faces, or social cues are present to ground identity or social context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:29:51.245136+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-93da9413-0e7b-9d33-8208-5d510272c8b9",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 924,
+        "total_tokens": 2457,
+        "completion_tokens_details": {
+          "text_tokens": 924
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070329308e5314e6b8a1455b",
+      "usage": {
+        "completion_tokens": 786,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2885,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3671
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

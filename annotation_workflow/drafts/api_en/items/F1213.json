@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1213",
+  "sample_id": "PHL1800_HAIV_0506",
+  "file_name": "PHL1800_HAIV_0506.png",
+  "batch_id": "B025",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two illustrated human figures: one seated with head exposed, one standing and interacting with the seated figure's head",
+  "captions": {
+    "scene": [
+      "A brightly colored illustration on a white background featuring two figures at a red surface.",
+      "The seated figure has an orange-toned face and neck, black hair styled in a bun, and wears no visible clothing above the neck.",
+      "The standing figure wears a yellow long-sleeved shirt under a blue vest with orange trim and a white collar."
+    ],
+    "action": [
+      "The standing figure’s right hand rests on top of the seated figure’s head near the hairline.",
+      "The standing figure’s left hand touches the seated figure’s left eye area, fingers spread across the temple and brow.",
+      "The seated figure’s eyes are open and directed forward; mouth is closed in a neutral curve."
+    ],
+    "rationale": [
+      "The seated figure’s head is tilted slightly upward, suggesting passive reception of the interaction rather than active resistance.",
+      "The standing figure’s posture—leaning forward with both hands engaged—indicates focused manual activity, though tool use is absent.",
+      "No tools, instruments, or containers are visible; the interaction appears purely manual and direct."
+    ],
+    "object": [
+      "The seated figure has a single horizontal mark between the eyebrows, rendered as a short black line.",
+      "The seated figure’s hair is black, coiled into a compact bun atop the head, with a small circular detail embedded in the bun.",
+      "The standing figure has short black hair, a visible left ear with defined helix and antihelix, and a closed-eye expression with curved eyelids.",
+      "The red surface beneath the figures appears flat and uniform, extending horizontally across the lower portion of the image.",
+      "The standing figure’s vest has a V-neck opening revealing the yellow shirt underneath and orange shoulder panels."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1213_P1",
+      "visual_anchors": [
+        "hand on head",
+        "hand near eye",
+        "horizontal mark between eyebrows"
+      ],
+      "symbolic_mapping": [
+        "hand placement suggests guidance or modification",
+        "mark between brows may signify identity marker or ritual sign"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The act of manual adjustment to another’s facial region—especially near symbolic zones like the brow—may reflect socially mediated construction of appearance and thus identity.",
+      "alternative_interpretations": [
+        "The scene could depict routine grooming or hair styling without symbolic intent."
+      ],
+      "limitations": [
+        "No cultural context, attire details, or textual cues confirm ritual or social meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1213_P2",
+      "visual_anchors": [
+        "seated figure’s passive gaze",
+        "standing figure’s focused posture",
+        "lack of tools"
+      ],
+      "symbolic_mapping": [
+        "direct physical contact implies immediacy of labor",
+        "absence of instruments emphasizes bodily skill"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The unmediated hand-to-head contact foregrounds embodied labor and responsibility, where care or alteration depends entirely on human dexterity and attention.",
+      "alternative_interpretations": [
+        "This may simply be an illustration of a casual, non-professional interaction such as helping someone adjust their hair."
+      ],
+      "limitations": [
+        "No indication of professional role, setting, or outcome prevents definitive classification as labor or care."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1213_P3",
+      "visual_anchors": [
+        "orange skin tone of seated figure",
+        "blue-and-yellow attire of standing figure",
+        "shared red surface"
+      ],
+      "symbolic_mapping": [
+        "color contrast may denote relational distinction",
+        "shared plane suggests shared context or dependency"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The visual separation yet spatial proximity of the figures evokes interdependence within social existence, where one figure’s state is actively shaped by another’s intervention.",
+      "alternative_interpretations": [
+        "The color choices may be purely aesthetic or stylistic, with no intended relational symbolism."
+      ],
+      "limitations": [
+        "Color usage lacks standardized semiotic coding in this image; interpretation relies on external conventions."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:04:12.737810+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2bbf06f8-00a6-900d-9a8b-5cc67426f231",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 944,
+        "total_tokens": 2477,
+        "completion_tokens_details": {
+          "text_tokens": 944
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040350f70bf31201984a88",
+      "usage": {
+        "completion_tokens": 804,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2899,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3703
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

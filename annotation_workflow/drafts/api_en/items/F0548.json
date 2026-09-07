@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0548",
+  "sample_id": "PHL1800_HL_0582",
+  "file_name": "PHL1800_HL_0582.png",
+  "batch_id": "B013",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man wearing glasses and a black t-shirt with a white skeletal ribcage print, seated at a wooden table outdoors",
+  "captions": {
+    "scene": [
+      "An outdoor wooden picnic table surrounded by tall pine trees and a rustic cabin in the background.",
+      "A green ceramic plate holds a rectangular chocolate cake topped with chopped nuts; a white bowl and a beer bottle sit nearby.",
+      "A knife with visible engraved text 'Gibson 38' is held over the cake; chopsticks and a napkin with cutlery rest on the table."
+    ],
+    "action": [
+      "The man holds a large knife above a chocolate cake, blade angled downward toward the cake surface.",
+      "His right hand grips the knife handle while his left rests near a white bowl; he looks toward the camera with a slight smile.",
+      "The cake shows a glossy chocolate glaze with scattered nut pieces and several small white spherical decorations."
+    ],
+    "rationale": [
+      "The man’s posture and gaze suggest he is posing for a photograph rather than actively cutting the cake at this instant.",
+      "The presence of a full beer bottle and untouched bowl implies the meal or celebration has not yet commenced.",
+      "The engraved text on the knife is partially legible as 'Gibson 38', but other characters are obscured or unreadable due to angle and lighting."
+    ],
+    "object": [
+      "A rectangular chocolate-frosted cake sits on a green ceramic plate, decorated with chopped nuts and small white spheres.",
+      "A stainless steel knife with a wooden handle and engraved text 'Gibson 38' is held horizontally above the cake.",
+      "A white ceramic bowl with a thin green rim rests on the table beside the plate.",
+      "A brown glass beer bottle with a white label (text unreadable) stands upright to the right of the plate.",
+      "Two wooden chopsticks lie parallel on the table surface near the beer bottle."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0548_P1",
+      "visual_anchors": [
+        "skeletal ribcage print on shirt",
+        "chocolate cake with nuts",
+        "outdoor forest setting"
+      ],
+      "symbolic_mapping": [
+        "skeletal motif may evoke mortality",
+        "cake as ritual offering or communal sharing"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a skeletal motif—commonly associated with transience—with a celebratory cake in a natural setting suggests a contemplation of life’s finite duration amid shared human rituals.",
+      "alternative_interpretations": [
+        "The shirt design is purely aesthetic fashion; the scene is a casual picnic with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the skeleton print could be decorative without philosophical reference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0548_P2",
+      "visual_anchors": [
+        "man holding knife over cake",
+        "glasses",
+        "direct gaze at camera"
+      ],
+      "symbolic_mapping": [
+        "knife as instrument of division or creation",
+        "gaze as assertion of presence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The act of poised cutting—neither completed nor abandoned—mirrors the liminal state of decision-making, where identity is performed through gesture and appearance before action crystallizes.",
+      "alternative_interpretations": [
+        "He is simply about to serve cake; the pose is standard for food photography."
+      ],
+      "limitations": [
+        "The knife is not yet in contact with the cake, so no actual cutting occurs; intention remains visually ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0548_P3",
+      "visual_anchors": [
+        "wooden picnic table",
+        "cabin in background",
+        "beer bottle"
+      ],
+      "symbolic_mapping": [
+        "hybrid objects suggesting cultural blending",
+        "rural setting as contrast to modern attire"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The coexistence of culturally mixed items (chopsticks, Western beer, American-style cabin) on a rustic table reflects negotiated social existence where freedom of expression intersects with environmental and material constraints.",
+      "alternative_interpretations": [
+        "Chopsticks were left over from a prior meal; their presence is incidental, not symbolic."
+      ],
+      "limitations": [
+        "Only two chopsticks are visible with no accompanying dish or context confirming their intended use."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:55:56.743475+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dab88c69-5bd6-9ff4-a5f5-ba550f81fd56",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 981,
+        "total_tokens": 1790,
+        "completion_tokens_details": {
+          "text_tokens": 981
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025534644d8c6a700c44f3",
+      "usage": {
+        "completion_tokens": 835,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1954,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2789
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

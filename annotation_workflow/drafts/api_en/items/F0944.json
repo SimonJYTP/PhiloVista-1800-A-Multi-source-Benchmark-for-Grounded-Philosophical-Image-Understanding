@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0944",
+  "sample_id": "PHL1800_HL_0344",
+  "file_name": "PHL1800_HL_0344.png",
+  "batch_id": "B020",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two standing people on a subway platform beside a moving train",
+  "captions": {
+    "scene": [
+      "A dimly lit subway station with tiled flooring, a yellow safety line, and a metallic column in the foreground.",
+      "A silver train with dark windows and a yellow stripe passes horizontally across the frame, blurred by motion.",
+      "The ceiling features parallel linear lighting fixtures and a pinkish-purple band above the platform edge."
+    ],
+    "action": [
+      "Two individuals stand still on the platform near the right edge, facing the train’s direction of travel.",
+      "The train exhibits pronounced horizontal motion blur, indicating high speed relative to the camera exposure time.",
+      "A white shopping bag rests on the floor beside the two people, upright and unattended."
+    ],
+    "rationale": [
+      "The motion blur of the train suggests it is moving rapidly; stationary objects like the column and platform remain sharp in comparison.",
+      "The two figures appear to be waiting or observing the train, based on posture and orientation toward the tracks.",
+      "The presence of a shopping bag implies recent or intended transit-related activity, though its origin or destination is not visible."
+    ],
+    "object": [
+      "A cylindrical metallic column stands vertically in the foreground, reflecting ambient light and showing surface texture.",
+      "The platform floor consists of dark gray rectangular tiles arranged in a herringbone pattern, with visible grout lines and reflections.",
+      "A yellow tactile warning strip runs parallel to the track edge, partially obscured by motion blur but clearly demarcated.",
+      "The train has a silver body, dark-tinted rectangular windows, and a continuous yellow stripe along its lower side.",
+      "Two human figures are visible: one wearing a red top and dark pants, the other in a dark top and dark pants, both with discernible heads and torsos."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0944_P1",
+      "visual_anchors": [
+        "motion-blurred train",
+        "stationary figures",
+        "yellow safety line"
+      ],
+      "symbolic_mapping": [
+        "the blurred train represents transience",
+        "the static figures represent endurance"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of rapid transit and waiting observers evokes the tension between fleeting moments and persistent social presence within urban infrastructure.",
+      "alternative_interpretations": [
+        "This is simply a routine scene of commuters waiting for a train, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or contextual signage confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0944_P2",
+      "visual_anchors": [
+        "metallic column",
+        "tiled floor",
+        "shopping bag"
+      ],
+      "symbolic_mapping": [
+        "the column as structural support",
+        "the bag as personal burden or choice"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The engineered environment (column, tiles) frames individual agency (bag, stance), suggesting how technological infrastructure mediates everyday decisions and movement.",
+      "alternative_interpretations": [
+        "The bag is incidental; the column is purely functional architecture with no metaphorical role."
+      ],
+      "limitations": [
+        "The bag’s contents and owner’s intent are invisible; the column’s design is standard, not unique."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0944_P3",
+      "visual_anchors": [
+        "two figures standing close",
+        "shared gaze direction",
+        "absence of interaction cues"
+      ],
+      "symbolic_mapping": [
+        "proximity without contact reflects modern anonymity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Proximity without visible engagement illustrates how contemporary public spaces enable coexistence without recognition, highlighting fragmented social identity.",
+      "alternative_interpretations": [
+        "The figures may be conversing silently or simply sharing space without deeper implication."
+      ],
+      "limitations": [
+        "Facial features and body language are indistinct due to distance and lighting; no clear evidence of non-interaction."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:29:59.278840+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d3c764b1-7700-9dff-b27e-98eb8b180289",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 891,
+        "total_tokens": 1620,
+        "completion_tokens_details": {
+          "text_tokens": 891
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703293603820f05bdb84d65",
+      "usage": {
+        "completion_tokens": 753,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1779,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2532
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

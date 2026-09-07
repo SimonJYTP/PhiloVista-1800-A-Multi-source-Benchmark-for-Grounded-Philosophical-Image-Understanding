@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1560",
+  "sample_id": "PHL1800_HAIV_0258",
+  "file_name": "PHL1800_HAIV_0258.png",
+  "batch_id": "B032",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized human hand interacting with an ATM-like machine",
+  "captions": {
+    "scene": [
+      "A purple and blue machine with a central screen, card slot, and display panel, overlaid with white scratch-like artifacts.",
+      "The background is a soft gradient from pale green to white, framing the machine in a circular vignette.",
+      "Transparent crystalline or icy shards surround the hand and lower portion of the machine."
+    ],
+    "action": [
+      "A translucent yellow-orange hand extends its index finger toward a floating banknote inside the machine’s screen area.",
+      "A green-tinted banknote with a circular portrait and abstract markings hovers diagonally within the screen compartment.",
+      "The machine’s top display shows reversed, unreadable text; the right-side panel includes a vertical white rectangle and a black circular element."
+    ],
+    "rationale": [
+      "The hand’s translucency and surrounding shards suggest digital or symbolic rendering rather than physical reality.",
+      "The banknote appears suspended mid-air without visible support, indicating non-physical interaction.",
+      "The reversed text on the display is illegible, preventing identification of function or language."
+    ],
+    "object": [
+      "A single stylized hand with five fingers, rendered in semi-transparent yellow-orange material, occupies the lower center of the image.",
+      "A rectangular screen cavity contains a tilted green banknote featuring a dark circular portrait and blue geometric patterns.",
+      "A black-framed rectangular display at the top of the machine shows horizontally mirrored, indecipherable characters.",
+      "A vertical white panel with a black circular cutout is positioned to the right of the main screen cavity.",
+      "White linear artifacts resembling scratches or circuit traces overlay the left and right edges of the machine."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1560_P1",
+      "visual_anchors": [
+        "translucent hand",
+        "floating banknote",
+        "crystalline shards"
+      ],
+      "symbolic_mapping": [
+        "hand as mediated agency",
+        "shards as fragmentation of transactional trust"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the alienation of financial labor through technological mediation: the hand cannot directly grasp value (the note), which floats untethered, while crystalline fragments imply systemic brittleness in automated exchange.",
+      "alternative_interpretations": [
+        "It may depict a glitch in a digital payment interface, where UI elements render incorrectly due to software error."
+      ],
+      "limitations": [
+        "No explicit branding, currency symbols, or contextual signage confirm financial intent; the 'banknote' could be abstract art."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1560_P2",
+      "visual_anchors": [
+        "reversed text display",
+        "scratch-like overlays",
+        "non-realistic hand texture"
+      ],
+      "symbolic_mapping": [
+        "reversed text as epistemic obstruction",
+        "scratches as data corruption"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The unreadable display and distorted visual layering evoke the instability of shared knowledge in digitally mediated social systems, where interfaces obscure rather than reveal operational truth.",
+      "alternative_interpretations": [
+        "The reversed text and artifacts are aesthetic choices to convey futuristic or cyberpunk style, not conceptual critique."
+      ],
+      "limitations": [
+        "The reversal could be an artifact of image generation rather than intentional semiotic design."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1560_P3",
+      "visual_anchors": [
+        "hand reaching but not touching",
+        "floating note",
+        "machine enclosure"
+      ],
+      "symbolic_mapping": [
+        "enclosure as institutional constraint",
+        "reach without contact as deferred agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The composition stages a moment of constrained choice: the subject extends toward value but remains separated by machine logic and material barriers, illustrating how institutional power structures mediate individual economic action.",
+      "alternative_interpretations": [
+        "This is a literal depiction of contactless withdrawal where the user gestures near the screen to initiate dispensing."
+      ],
+      "limitations": [
+        "No visible sensor, feedback indicator, or motion blur confirms gesture-based interaction; the note’s position suggests static placement."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:45:07.800811+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-feca5bf0-f79c-9d04-8dfc-f4c26938a106",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 935,
+        "total_tokens": 2468,
+        "completion_tokens_details": {
+          "text_tokens": 935
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044453f94fef8d5405467e",
+      "usage": {
+        "completion_tokens": 796,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2891,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3687
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

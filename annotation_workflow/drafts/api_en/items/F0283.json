@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0283",
+  "sample_id": "PHL1800_HAIV_0295",
+  "file_name": "PHL1800_HAIV_0295.png",
+  "batch_id": "B008",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person seated behind a rectangular container",
+  "captions": {
+    "scene": [
+      "A sandy beach with turquoise water and a pale yellow sky",
+      "A small wooden boat floating near the shore, bearing a red heart-shaped object on a pole",
+      "A stylized bird in flight above the horizon, with a second smaller distant bird visible"
+    ],
+    "action": [
+      "The person is seated upright, facing forward, with hands not visible",
+      "The boat remains stationary on the water surface",
+      "The large bird is depicted mid-flight with wings extended"
+    ],
+    "rationale": [
+      "The person’s posture suggests stillness rather than motion, as no limbs indicate movement",
+      "The heart symbol is affixed vertically to the boat’s mast-like pole, indicating intentional placement",
+      "The purple substance inside the container has irregular edges and light highlights, suggesting it is a solid or viscous material rather than liquid"
+    ],
+    "object": [
+      "A person with dark hair tied back, wearing a patterned jacket over an orange shirt, and a dark cap or head covering.",
+      "A rectangular dark brown container with a gold-trimmed rim, containing a magenta-pink mass with white highlights.",
+      "A wooden rowboat with a single vertical pole supporting a bright red heart shape.",
+      "A large bird with outstretched wings, rendered in blue-purple tones, flying above the waterline.",
+      "A second, much smaller bird silhouette appears far in the distance near the upper right quadrant of the sky."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0283_P1",
+      "visual_anchors": [
+        "red heart on boat",
+        "person seated before container",
+        "empty beach"
+      ],
+      "symbolic_mapping": [
+        "heart may represent emotional offering or vulnerability",
+        "container may signify containment or preservation"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of a symbolic heart placed on a vessel at sea, observed by a solitary figure before a contained substance, evokes a contemplative stance toward meaning-making amid isolation.",
+      "alternative_interpretations": [
+        "The scene may depict a literal setup for a ritual or performance involving symbolic objects, without inherent philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual markers confirm symbolic intent; color and form alone are ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0283_P2",
+      "visual_anchors": [
+        "person’s neutral expression",
+        "layered clothing",
+        "flat horizon line"
+      ],
+      "symbolic_mapping": [
+        "layered attire may suggest constructed identity",
+        "horizon may denote boundary between known and unknown"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s composed demeanor and layered garments, set against an expansive but bounded landscape, suggest tension between self-presentation and environmental limitation.",
+      "alternative_interpretations": [
+        "The clothing and pose may simply reflect practical attire for a coastal setting, with no intended commentary on constraint."
+      ],
+      "limitations": [
+        "Facial features are stylized and lack micro-expressions; identity cannot be confirmed from appearance alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0283_P3",
+      "visual_anchors": [
+        "purple mass in container",
+        "boat adrift near shore",
+        "two birds at different distances"
+      ],
+      "symbolic_mapping": [
+        "distance between birds may imply temporal or relational separation",
+        "container may evoke burial or offering"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement—near container, mid-distance boat, distant birds—creates a visual hierarchy that may reflect stages of presence, departure, and memory within social continuity.",
+      "alternative_interpretations": [
+        "The composition may follow aesthetic principles of depth and balance rather than narrative symbolism."
+      ],
+      "limitations": [
+        "No chronological sequence is depicted; temporal inference relies on assumed conventions of perspective."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:28:32.159638+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-08bbd8ec-61b7-9f49-8e2f-3930446fc69f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 874,
+        "total_tokens": 2407,
+        "completion_tokens_details": {
+          "text_tokens": 874
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070228194a411208f2984e53",
+      "usage": {
+        "completion_tokens": 733,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2832,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3565
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

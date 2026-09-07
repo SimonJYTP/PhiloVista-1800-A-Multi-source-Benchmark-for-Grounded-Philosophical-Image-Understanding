@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0203",
+  "sample_id": "PHL1800_IRFL_0269",
+  "file_name": "PHL1800_IRFL_0269.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one armed individual in tactical gear crouching on a dirt path",
+  "captions": {
+    "scene": [
+      "A sunlit, arid dirt road with sparse dry vegetation on either side",
+      "Background is blurred with indistinct terrain and possible low shrubs or trees",
+      "Warm sepia-toned lighting suggests late afternoon or filtered sunlight"
+    ],
+    "action": [
+      "The individual is crouched low with knees bent and weight on balls of feet",
+      "Right hand extends forward with index finger pointing; left hand grips a rifle held diagonally across the torso",
+      "Head is turned toward the direction of the pointing finger, eyes visible through helmet visor"
+    ],
+    "rationale": [
+      "The posture and weapon suggest readiness for engagement, but no target is visible to confirm intent",
+      "Pointing gesture may indicate direction or identification, yet no secondary figure or object aligns with the line of sight",
+      "Tactical gear implies formal training or affiliation, but insignia or unit markings are not legible"
+    ],
+    "object": [
+      "The person wears a matte-finish combat helmet with a dark mesh face covering and goggles pushed up onto the helmet.",
+      "A black suppressor is attached to the barrel of an assault rifle held in the left hand, with a vertical foregrip visible.",
+      "Camouflage-patterned uniform includes padded knee guards and a large backpack with external pouches.",
+      "The right hand is gloved in dark material and extended forward with the index finger straightened while other fingers are curled.",
+      "Dust is visible on the ground near the subject’s boots, indicating recent movement or disturbance of the surface."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0203_P1",
+      "visual_anchors": [
+        "pointing index finger",
+        "helmet obscuring facial features",
+        "rifle held ready"
+      ],
+      "symbolic_mapping": [
+        "the obscured face maps to anonymity in institutional roles",
+        "the pointing gesture maps to directive agency under constraint"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The image embodies the tension between individual agency—expressed through the deliberate pointing gesture—and the erasure of personal identity imposed by standardized protective gear, reflecting how institutional power structures mediate action through depersonalized embodiment.",
+      "alternative_interpretations": [
+        "The subject is simply signaling a teammate during a training exercise; the visual elements reflect procedural realism rather than symbolic meaning."
+      ],
+      "limitations": [
+        "No visible insignia, context markers, or interaction with others prevents confirmation of institutional affiliation or intended audience."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0203_P2",
+      "visual_anchors": [
+        "crouched stance",
+        "dirt path receding into blur",
+        "single figure isolated in frame"
+      ],
+      "symbolic_mapping": [
+        "the path maps to uncertain trajectory",
+        "the crouch maps to suspended decision"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The solitary figure poised mid-motion on an undefined trail evokes the existential condition of being at a threshold: action is imminent yet undetermined, mirroring the human experience of confronting irreversible choices within finite time.",
+      "alternative_interpretations": [
+        "The pose is standard tactical cover positioning; the blurred background results from shallow depth of field, not symbolic indeterminacy."
+      ],
+      "limitations": [
+        "The direction of gaze and pointing does not intersect any identifiable landmark or horizon line, weakening the journey metaphor."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0203_P3",
+      "visual_anchors": [
+        "rifle with suppressor",
+        "tactical vest with pouches",
+        "hand signal without verbal accompaniment"
+      ],
+      "symbolic_mapping": [
+        "suppressor maps to controlled force",
+        "non-verbal signal maps to reliance on shared protocol"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The reliance on silent, standardized gestures and muted weaponry suggests a moral framework where responsibility is distributed across a system of trained coordination rather than resting solely on individual judgment, highlighting how social existence shapes ethical action in high-stakes environments.",
+      "alternative_interpretations": [
+        "The suppressor is for noise reduction in close-quarters operations; the hand signal is routine communication, not a philosophical statement."
+      ],
+      "limitations": [
+        "No visible team members or command structure confirms the presence of a coordinated social system."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:17:39.209982+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6c488b17-fdc8-99e9-9467-f7b0c44681b7",
+      "usage": {
+        "prompt_tokens": 696,
+        "completion_tokens": 978,
+        "total_tokens": 1674,
+        "completion_tokens_details": {
+          "text_tokens": 978
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 189,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021720fec8ca11b0014f47",
+      "usage": {
+        "completion_tokens": 837,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1812,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2649
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

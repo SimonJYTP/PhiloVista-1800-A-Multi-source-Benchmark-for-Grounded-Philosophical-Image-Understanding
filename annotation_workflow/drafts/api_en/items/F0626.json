@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0626",
+  "sample_id": "PHL1800_HL_0473",
+  "file_name": "PHL1800_HL_0473.png",
+  "batch_id": "B014",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one man seated inside a vehicle",
+  "captions": {
+    "scene": [
+      "Interior of a vehicle with visible window frame and partial rear seat; sunlight casts strong diagonal shadow across the subject’s face.",
+      "Dark background behind the subject suggests either interior shadow or external darkness beyond the window.",
+      "A blue object, possibly a child safety seat strap or latch, is visible on the left side near the window."
+    ],
+    "action": [
+      "The man is seated, leaning slightly forward, with his right arm resting on an unseen surface and his left hand partially visible near his lap.",
+      "His head is turned toward the camera, eyes directed at the viewer, with lips closed and neutral expression.",
+      "His right wrist displays a watch with a metallic band and dark face; sleeve cuff is visible with buttoned cufflink."
+    ],
+    "rationale": [
+      "The lighting pattern (sharp shadow across one side of the face) indicates a single strong light source outside the vehicle, likely daylight from the left.",
+      "The presence of a formal suit, tie, and watch suggests intentional dressing for an occasion, though the specific context remains unconfirmed.",
+      "The man’s posture and gaze suggest he is aware of being photographed, but no motion blur or interaction with objects confirms active engagement."
+    ],
+    "object": [
+      "The man wears a charcoal-gray suit jacket over a white collared dress shirt with a pointed collar.",
+      "He wears a necktie with a dense paisley-like pattern in shades of purple, pink, and white on a dark background.",
+      "His hair is dark, combed back smoothly, with visible parting on the left side and slight sheen suggesting product use.",
+      "A silver-toned wristwatch with a round face and dark dial is worn on his left wrist, partially obscured by the shirt cuff.",
+      "The vehicle interior includes a black upholstered seat, a curved window frame with green foliage visible outside, and a blue plastic component on the left."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0626_P1",
+      "visual_anchors": [
+        "strong directional shadow across half the face",
+        "formal attire",
+        "direct gaze"
+      ],
+      "symbolic_mapping": [
+        "shadow as duality of visibility/invisibility",
+        "attire as social role performance"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The stark chiaroscuro lighting juxtaposed with formal dress evokes the tension between public persona and private self, where appearance becomes a site of negotiated identity within social structures.",
+      "alternative_interpretations": [
+        "The lighting may simply result from sun angle through a car window, and the attire reflects routine professional dress without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression variation or contextual setting confirms intentional symbolism; lighting could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0626_P2",
+      "visual_anchors": [
+        "watch on left wrist",
+        "static seated posture",
+        "unmoving gaze"
+      ],
+      "symbolic_mapping": [
+        "watch as marker of temporal discipline",
+        "stillness as suspension of action"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The visible timepiece combined with arrested motion suggests a moment suspended between decision and consequence—a threshold where time is measured not by movement but by anticipation.",
+      "alternative_interpretations": [
+        "The man may be waiting passively for transport; the watch is functional, not symbolic."
+      ],
+      "limitations": [
+        "No indication of urgency, countdown, or narrative progression; the watch face is unreadable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0626_P3",
+      "visual_anchors": [
+        "blue plastic object near window",
+        "dark background behind subject",
+        "tight framing"
+      ],
+      "symbolic_mapping": [
+        "confined space as constraint",
+        "partial visibility of environment as fragmented reality"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The tight composition and occluded surroundings imply epistemic limitation: what is known is confined to the illuminated figure, while the broader context remains obscured, reflecting how perception shapes truth within bounded conditions.",
+      "alternative_interpretations": [
+        "The framing is photographic composition choice; the background darkness is due to exposure settings, not philosophical intent."
+      ],
+      "limitations": [
+        "The blue object’s function is indeterminate; background darkness lacks semantic content without context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:02:13.324430+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1640bbc4-ded9-9a1a-ab01-2c96209d5f67",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 969,
+        "total_tokens": 1638,
+        "completion_tokens_details": {
+          "text_tokens": 969
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030153d27f8ce459154b97",
+      "usage": {
+        "completion_tokens": 831,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1775,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2606
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

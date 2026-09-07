@@ -1,0 +1,110 @@
+{
+  "workflow_version": "1.0.0",
+  "guideline_version": "0.1.0-draft",
+  "date": "2026-09-06",
+  "dataset": "PhiloVista-1800",
+  "dataset_full_name": "PhiloVista-1800: A Multi-source Benchmark for Grounded Philosophical Image Understanding",
+  "language": "en",
+  "source_manifest": "../final_selection_1800/final_selection_manifest.csv",
+  "blind_index": "../final_selection_1800/human_review/blind_image_index.csv",
+  "total_images": 1800,
+  "tracks": {
+    "positive": 1620,
+    "boundary": 180
+  },
+  "sources": {
+    "HL Dataset": 600,
+    "MM-MoralBench": 150,
+    "HAIVMet": 550,
+    "IRFL": 500
+  },
+  "batching": {
+    "batch_size": 50,
+    "batch_count": 36,
+    "pilot_batches": ["B001", "B002"],
+    "pilot_images": 100,
+    "production_batches": ["B003", "B036"]
+  },
+  "references_per_image": {
+    "scene": 3,
+    "action": 3,
+    "rationale": 3,
+    "object": 5,
+    "philosophy_interpretations": 3
+  },
+  "generation": {
+    "primary_annotators_per_image": 3,
+    "supplemental_object_annotators_per_image": 2,
+    "all_five_object_authors_must_be_distinct": true,
+    "show_other_annotations": false,
+    "show_upstream_metadata": false
+  },
+  "hl_confidence": {
+    "axes": ["scene", "action", "rationale"],
+    "scale": [1, 2, 3, 4, 5],
+    "minimum_independent_ratings_per_reference": 1,
+    "pilot_independent_ratings_per_reference": 2,
+    "production_double_rating_fraction": 0.1,
+    "author_cannot_rate_own_text": true,
+    "double_rating_aggregation": "median"
+  },
+  "philosophy_review": {
+    "independent_reviewers_per_interpretation": 2,
+    "dimensions": [
+      "visual_support_1_5",
+      "concept_fit_1_5",
+      "coherence_1_5",
+      "overinterpretation_risk_1_5"
+    ],
+    "verdicts": ["accept", "revise", "reject"],
+    "author_cannot_review_own_text": true,
+    "acceptance_rule": {
+      "visual_support_median_min": 4,
+      "concept_fit_median_min": 4,
+      "overinterpretation_risk_median_max": 2,
+      "verdict": "both_accept_or_adjudicated_accept"
+    }
+  },
+  "hl_export": {
+    "csv_columns": [
+      "图片文件名",
+      "Scene场景描述",
+      "Action动作描述",
+      "Rationale理由描述",
+      "Object物体描述"
+    ],
+    "reference_separator": "；",
+    "encoding": "UTF-8",
+    "jsonl_top_level_fields": [
+      "file_name",
+      "captions",
+      "confidence",
+      "purity",
+      "diversity"
+    ]
+  },
+  "split_targets": {
+    "calibration": 180,
+    "dev": 180,
+    "test": 1440,
+    "assignment_unit": "group_id"
+  },
+  "states": [
+    "selected",
+    "human_screen_pending",
+    "rights_pending",
+    "eligible_for_annotation",
+    "primary_annotation_complete",
+    "object_complete",
+    "hl_rating_complete",
+    "philosophy_rating_complete",
+    "adjudication_pending",
+    "batch_qa_pending",
+    "accepted",
+    "split_assigned",
+    "frozen",
+    "released",
+    "rejected",
+    "replaced"
+  ]
+}

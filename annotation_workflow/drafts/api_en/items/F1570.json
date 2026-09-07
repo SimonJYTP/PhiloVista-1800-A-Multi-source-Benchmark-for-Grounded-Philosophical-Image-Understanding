@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1570",
+  "sample_id": "PHL1800_MM_0107",
+  "file_name": "PHL1800_MM_0107.jpg",
+  "batch_id": "B032",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in a black business suit standing at the front of a room",
+  "captions": {
+    "scene": [
+      "An indoor conference or presentation space with blue carpeting, white walls, and dark blue vertical panels.",
+      "A large blank white projection screen dominates the back wall behind the speaker.",
+      "Three seated audience members are visible: two on the left (one partially cropped), one on the right viewed from behind."
+    ],
+    "action": [
+      "The woman stands upright with hands clasped near her waist, facing slightly toward the right-side audience member.",
+      "A speech bubble graphic is superimposed above her head containing English text.",
+      "Audience members remain seated and oriented toward the speaker; none are visibly interacting with devices or each other."
+    ],
+    "rationale": [
+      "The presence of a podium, projection screen, and formal attire suggests a professional presentation setting, though no slides are displayed.",
+      "The speech bubble is clearly added post-capture as a graphic overlay, not part of the original scene; its content cannot be verified as spoken.",
+      "The woman’s posture and gaze direction indicate engagement with the audience, but no facial expression can be definitively interpreted due to resolution and angle."
+    ],
+    "object": [
+      "The woman wears a black blazer with lapels, a black knee-length skirt, black high-heeled shoes, a thin necklace, and small earrings.",
+      "A white rectangular podium with a black tablet-like device and a white paper sheet rests to the woman’s left.",
+      "The floor is covered with a patterned blue-gray commercial carpet featuring diagonal linear motifs.",
+      "The man on the right has a receding hairline, short dark beard, and wears a dark suit jacket over a white collared shirt.",
+      "The speech bubble contains legible English text reading: 'I host this networking event to support my brother's rival company!'"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1570_P1",
+      "visual_anchors": [
+        "speech bubble with explicit statement",
+        "woman’s formal attire",
+        "audience orientation"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents disclosed intention versus observable role"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a formal professional role (hosting a networking event) with a stated motive that undermines institutional loyalty raises questions about moral responsibility in social roles.",
+      "alternative_interpretations": [
+        "The speech bubble may be satirical or fictional, indicating the image is digitally manipulated for commentary rather than documenting a real event."
+      ],
+      "limitations": [
+        "No evidence confirms the speaker actually uttered the text; it is a graphic overlay with no audio or contextual verification."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1570_P2",
+      "visual_anchors": [
+        "woman’s centered position",
+        "blank projection screen",
+        "audience facing her"
+      ],
+      "symbolic_mapping": [
+        "empty screen symbolizes absence of declared agenda or transparency"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The void of the blank screen contrasts with the loaded claim in the speech bubble, suggesting a tension between surface authority and hidden motives—where power is exercised through omission as much as declaration.",
+      "alternative_interpretations": [
+        "The screen is simply not yet activated; its blankness carries no symbolic weight and reflects standard pre-presentation setup."
+      ],
+      "limitations": [
+        "The screen’s blankness is neutral without corroborating context; assigning meaning requires assuming intent beyond visual data."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1570_P3",
+      "visual_anchors": [
+        "woman’s composed posture",
+        "audience members’ stillness",
+        "uniform professional dress code"
+      ],
+      "symbolic_mapping": [
+        "shared sartorial conformity masks potential internal divergence of interest"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Uniform appearance across participants constructs a facade of collective purpose, while the overlaid statement hints at fractured loyalties—highlighting how social existence often depends on performative alignment despite private contradictions.",
+      "alternative_interpretations": [
+        "All individuals are simply attending a routine corporate event; no internal conflict is visually evident or implied by behavior alone."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or interactions reveal internal states; appearance alone cannot confirm identity conflict."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:46:29.753840+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d0e3b175-eafa-9dbf-81fe-5772f5221e5e",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 966,
+        "total_tokens": 2499,
+        "completion_tokens_details": {
+          "text_tokens": 966
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704461601f366a445ca41a1",
+      "usage": {
+        "completion_tokens": 830,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2917,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3747
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

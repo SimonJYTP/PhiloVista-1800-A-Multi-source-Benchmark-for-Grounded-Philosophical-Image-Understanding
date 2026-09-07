@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0635",
+  "sample_id": "PHL1800_MM_0076",
+  "file_name": "PHL1800_MM_0076.jpg",
+  "batch_id": "B015",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three formally dressed adults in an office kitchen setting",
+  "captions": {
+    "scene": [
+      "A modern indoor space with light wood countertop, white cabinetry, and large windows admitting daylight.",
+      "Three individuals stand near a counter; one in foreground left, two in background mid-right.",
+      "A brown rectangular box of assorted chocolates sits on the counter alongside a white cup and stacked wooden coasters."
+    ],
+    "action": [
+      "The foreground man in a navy suit reaches toward the chocolate box with both hands, fingers extended toward a specific piece.",
+      "The background man in a blue suit smiles and looks toward the foreground man and the box.",
+      "The background woman in a black blazer stands with hands clasped loosely in front, facing forward with a neutral expression."
+    ],
+    "rationale": [
+      "The speech bubble text 'These are mine now; find your own treats!' suggests a possessive or playful claim over the chocolates, though its source is visually unattributed (no visible speaker mouth or gaze alignment).",
+      "The foreground man’s posture and hand position indicate active selection or appropriation, not passive observation.",
+      "The background figures’ positioning and orientation imply they are observers rather than participants in the immediate interaction with the box."
+    ],
+    "object": [
+      "A rectangular brown cardboard box contains 18 individually wrapped chocolates arranged in three rows of six, each in a fluted paper cup.",
+      "The foreground man wears a navy suit jacket, white collared shirt, and a dark blue tie with small white speckles; his belt buckle is metallic and partially visible.",
+      "The background man wears a royal blue suit jacket, white shirt, solid navy tie, and a white pocket square; he has short dark hair and a light beard.",
+      "The background woman wears a black blazer over a white collared shirt, with long straight brown hair falling past her shoulders.",
+      "On the counter left of the chocolate box lies a closed white notebook with a purple bookmark tab protruding from its top edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0635_P1",
+      "visual_anchors": [
+        "speech bubble with possessive statement",
+        "foreground man’s reaching hands",
+        "chocolate box as shared object"
+      ],
+      "symbolic_mapping": [
+        "the box represents a limited resource",
+        "the speech bubble signals assertion of ownership"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes a micro-drama of resource allocation where verbal claim precedes physical appropriation, reflecting how social hierarchies can be enacted through symbolic declaration and bodily gesture.",
+      "alternative_interpretations": [
+        "It may simply depict a lighthearted office moment with no deeper implication—colleagues sharing treats with joking tone."
+      ],
+      "limitations": [
+        "The speaker of the speech bubble is not visually identified, making attribution ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0635_P2",
+      "visual_anchors": [
+        "three formally dressed adults",
+        "identical attire style (suits, shirts, ties)",
+        "spatial arrangement (one active, two passive)"
+      ],
+      "symbolic_mapping": [
+        "uniformity of dress suggests institutional belonging",
+        "asymmetry in engagement hints at role differentiation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Professional appearance functions as a shared signifier of group membership, while differential engagement with the object reveals subtle status distinctions within that collective identity.",
+      "alternative_interpretations": [
+        "The attire reflects standard business dress code without intentional signaling of hierarchy or identity."
+      ],
+      "limitations": [
+        "No badges, name tags, or insignia confirm organizational affiliation or rank."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0635_P3",
+      "visual_anchors": [
+        "chocolate box with varied wrappers",
+        "foreground man selecting one piece",
+        "background observers watching"
+      ],
+      "symbolic_mapping": [
+        "variety within the box mirrors choice among options",
+        "selection act embodies individual agency within constraint"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The act of choosing one treat from many under observed conditions illustrates constrained autonomy: freedom exists only within socially bounded possibilities and performative contexts.",
+      "alternative_interpretations": [
+        "The man is merely picking a favorite flavor; no philosophical tension is intended or present."
+      ],
+      "limitations": [
+        "No evidence confirms whether the chocolates were offered collectively or claimed unilaterally before this moment."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:03:51.071770+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-521c0e00-ba16-98b2-8d16-034935ac2207",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 989,
+        "total_tokens": 2522,
+        "completion_tokens_details": {
+          "text_tokens": 989
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070303338f917b4e656e497e",
+      "usage": {
+        "completion_tokens": 850,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2943,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3793
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

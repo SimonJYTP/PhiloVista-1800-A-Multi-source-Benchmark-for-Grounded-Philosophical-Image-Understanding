@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0833",
+  "sample_id": "PHL1800_IRFL_0106",
+  "file_name": "PHL1800_IRFL_0106.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "car side-view mirror reflecting landscape and vehicle",
+  "captions": {
+    "scene": [
+      "A mountain range silhouetted against a warm-toned sky at low sun angle, visible in the mirror reflection.",
+      "A paved road running through a field of dry grasses and sparse vegetation, seen in the mirror.",
+      "A white van or SUV positioned behind the observing vehicle on the road, captured in the mirror."
+    ],
+    "action": [
+      "The mirror reflects a static scene with no visible motion blur; vehicles appear stationary or moving slowly.",
+      "Sunlight illuminates the mountains from behind, casting long shadows across slopes.",
+      "The foreground outside the mirror is out of focus, indicating shallow depth of field centered on the mirror."
+    ],
+    "rationale": [
+      "The warm color gradient and low-angle illumination suggest either sunrise or sunset, but time of day cannot be confirmed without additional context.",
+      "The presence of a second vehicle in the mirror implies the observer’s vehicle is on a road with traffic, yet no driver or interior details are visible to confirm occupancy.",
+      "The mirror frame is black and rigid, suggesting a standard automotive side mirror, but make/model cannot be determined from shape alone."
+    ],
+    "object": [
+      "A black plastic side-view mirror housing with an irregular octagonal reflective surface dominates the foreground.",
+      "Within the mirror, a white boxy vehicle with a dark windshield and visible front grille is positioned approximately two car lengths behind.",
+      "The reflected landscape includes layered mountain ridges with varying elevation and shadowing, indicating topographic relief.",
+      "A narrow asphalt road curves gently leftward in the reflection, bordered by golden-brown vegetation on both sides.",
+      "The immediate environment outside the mirror consists of blurred green and ochre grasses under diffuse ambient light."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0833_P1",
+      "visual_anchors": [
+        "mirror frame",
+        "reflected vehicle",
+        "mountain silhouette"
+      ],
+      "symbolic_mapping": [
+        "mirror as mediation between self and world",
+        "distant vehicle as reminder of shared space"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The mirror enacts a dual presentation: the immediate physical boundary (frame) and the mediated reality beyond it, prompting reflection on how identity is constructed through relational positioning rather than isolated presence.",
+      "alternative_interpretations": [
+        "A routine travel photograph emphasizing scenic beauty and road safety awareness."
+      ],
+      "limitations": [
+        "No human figures or facial expressions are present to ground identity claims in embodied experience."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0833_P2",
+      "visual_anchors": [
+        "low sun angle",
+        "long shadows",
+        "static vehicles"
+      ],
+      "symbolic_mapping": [
+        "golden hour light as temporal threshold",
+        "stillness as suspended decision"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a moment poised between departure and arrival, where the fixed perspective of the mirror frames time not as linear progression but as a held interval—inviting contemplation of journey as existential condition rather than destination pursuit.",
+      "alternative_interpretations": [
+        "A technical demonstration of depth-of-field photography using automotive mirrors."
+      ],
+      "limitations": [
+        "No clocks, calendars, or explicit markers of duration prevent definitive temporal interpretation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0833_P3",
+      "visual_anchors": [
+        "field of dry grass",
+        "paved road",
+        "mountains"
+      ],
+      "symbolic_mapping": [
+        "road as imposed order on natural terrain",
+        "mountains as enduring resistance"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The engineered road cutting through wild terrain, viewed indirectly via a manufactured object (mirror), embodies the tension between human agency and environmental constraint—technology enabling movement while simultaneously framing nature as backdrop to human transit.",
+      "alternative_interpretations": [
+        "A landscape composition emphasizing contrast between man-made and natural elements for aesthetic balance."
+      ],
+      "limitations": [
+        "No visible construction equipment, signage, or laborers prevents confirmation of intentional engineering intent."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:20:45.641522+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ac535ec6-7285-9ca9-8f9d-9f73975546ea",
+      "usage": {
+        "prompt_tokens": 839,
+        "completion_tokens": 916,
+        "total_tokens": 1755,
+        "completion_tokens_details": {
+          "text_tokens": 916
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 332,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032021b9f545ec5b424ecf",
+      "usage": {
+        "completion_tokens": 777,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1928,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2705
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

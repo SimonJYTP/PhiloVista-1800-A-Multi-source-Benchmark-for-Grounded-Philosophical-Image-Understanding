@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0775",
+  "sample_id": "PHL1800_MM_0016",
+  "file_name": "PHL1800_MM_0016.jpg",
+  "batch_id": "B017",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two service staff members standing at a restaurant table",
+  "captions": {
+    "scene": [
+      "An indoor restaurant setting with warm ambient lighting, visible pendant lights, and blurred background diners.",
+      "A wooden table set with two white ceramic plates, silverware (fork and knife), and two clear drinking glasses—one containing a white liquid.",
+      "Red upholstered booth seating is visible behind the subjects; large windows show a blue exterior scene."
+    ],
+    "action": [
+      "The woman on the left stands with hands clasped in front, holding a folded metal utensil, smiling toward the man.",
+      "The man on the right holds a small notepad with green binding and appears to be listening or responding, with mouth slightly open and gaze directed at the woman.",
+      "A speech bubble above the man contains legible English text: 'I apologize, I'll wear a clean white shirt as requested.'"
+    ],
+    "rationale": [
+      "The woman’s attire (colorful patchwork top, white apron, black hair in low bun) suggests a uniform or role distinct from the man’s, possibly indicating different positions or shifts.",
+      "The man’s formal white shirt, dark tie, black apron, and notepad imply a supervisory or managerial function relative to the woman’s appearance.",
+      "The speech bubble’s content indicates a verbal exchange involving compliance with a dress code request, but no visual evidence confirms who issued the request or whether it was recent."
+    ],
+    "object": [
+      "The woman wears a short-sleeved multicolored floral-patterned top with red trim at the neckline and a white waist-length apron over it.",
+      "The man wears a long-sleeved white collared shirt with rolled cuffs, a dark necktie, and a black bib apron with shoulder straps.",
+      "A black analog wristwatch with a round face is visible on the woman’s left wrist.",
+      "Two identical white ceramic dinner plates rest on the table, each centered before a place setting.",
+      "The man holds a rectangular notepad with a green cover and white lined pages; the writing on the pages is illegible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0775_P1",
+      "visual_anchors": [
+        "woman’s colorful top",
+        "man’s plain white shirt",
+        "speech bubble about wearing a clean white shirt"
+      ],
+      "symbolic_mapping": [
+        "colorful attire vs. monochrome uniform may symbolize individual expression versus institutional conformity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between the woman’s vibrant clothing and the man’s standardized attire—combined with his verbal commitment to comply with a dress code—suggests a tension between personal identity and occupational role expectations within a service hierarchy.",
+      "alternative_interpretations": [
+        "The difference in clothing may simply reflect shift-based uniform variations or personal preference without symbolic intent."
+      ],
+      "limitations": [
+        "No visible insignia, name tags, or signage confirm hierarchical roles or policy enforcement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0775_P2",
+      "visual_anchors": [
+        "man holding notepad",
+        "woman holding utensil",
+        "table set for two"
+      ],
+      "symbolic_mapping": [
+        "notepad as instrument of record-keeping or authority; utensil as tool of service labor"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "power_conflict"
+      ],
+      "interpretation": "The notepad and utensil function as material proxies for differing modes of labor: administrative oversight versus direct service execution, implying a division of labor that may encode power asymmetry.",
+      "alternative_interpretations": [
+        "Both items are standard equipment for restaurant staff and do not necessarily indicate role differentiation beyond task assignment."
+      ],
+      "limitations": [
+        "The notepad’s content is unreadable and its use (e.g., taking orders vs. noting feedback) is not visually confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0775_P3",
+      "visual_anchors": [
+        "speech bubble with apology",
+        "woman’s smile",
+        "man’s neutral-to-positive expression"
+      ],
+      "symbolic_mapping": [
+        "apology as acknowledgment of norm violation; smile as social lubricant in professional interaction"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The explicit verbal apology for noncompliance with a dress code, met with a calm smile, illustrates how ethical accountability in service work is performed through ritualized language and affective display rather than substantive change.",
+      "alternative_interpretations": [
+        "The exchange may be routine feedback, not an ethical breach; the smile could indicate agreement rather than emotional management."
+      ],
+      "limitations": [
+        "Facial expressions are stylized (illustrative) and cannot reliably convey internal states or intent."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:15:46.082557+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4fa39e8c-56bb-9e51-afbc-c55cf9d04eb1",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1046,
+        "total_tokens": 2579,
+        "completion_tokens_details": {
+          "text_tokens": 1046
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070315200d522e6967be44c4",
+      "usage": {
+        "completion_tokens": 909,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2999,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3908
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

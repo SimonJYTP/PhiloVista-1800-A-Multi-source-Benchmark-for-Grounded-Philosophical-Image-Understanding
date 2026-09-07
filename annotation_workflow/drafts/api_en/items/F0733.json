@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0733",
+  "sample_id": "PHL1800_HL_0408",
+  "file_name": "PHL1800_HL_0408.png",
+  "batch_id": "B016",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of approximately 15 people standing on a street curb beside a building",
+  "captions": {
+    "scene": [
+      "A light-colored two-story building with white-trimmed windows and a street pole bearing a 'DO NOT ENTER' sign and traffic signal.",
+      "An asphalt street with a white painted line, adjacent to a sidewalk where people are gathered.",
+      "A standalone UPS drop box on the sidewalk near the group."
+    ],
+    "action": [
+      "Multiple individuals stand facing generally toward the right side of the frame, some looking forward, others glancing sideways or downward.",
+      "One person in an orange shirt raises their right arm upward with an open hand.",
+      "A man in a dark jacket walks leftward across the foreground, partially intersecting the group’s alignment."
+    ],
+    "rationale": [
+      "The group appears organized along the curb, suggesting they may be waiting for something; however, no vehicle, event, or signage confirms this.",
+      "The raised arm of the person in orange could indicate signaling or greeting, but without context, intent is indeterminate.",
+      "The presence of a UPS drop box and traffic control devices implies an urban or semi-urban setting, yet no street name or city identifier is visible."
+    ],
+    "object": [
+      "A circular red-and-white 'DO NOT ENTER' sign is mounted on a metal pole above a pedestrian crossing signal with no lights illuminated.",
+      "A black UPS drop box with yellow logo and text 'UPS' is a standalone unit on the sidewalk at waist height.",
+      "At least 15 distinct individuals are visible: 7 on the left cluster (including seated figures), 1 walking across, and 7 aligned along the curb to the right.",
+      "The building facade features evenly spaced rectangular windows with white frames and decorative lintels; some windows have closed shutters.",
+      "A woman in a red hoodie stands with hands in pockets; a man in a navy jacket wears sunglasses and holds a small object in his left hand."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0733_P1",
+      "visual_anchors": [
+        "raised arm of person in orange shirt",
+        "uniform alignment of people along curb",
+        "‘DO NOT ENTER’ sign"
+      ],
+      "symbolic_mapping": [
+        "raised arm as gesture of assertion or appeal",
+        "curb alignment as spatial embodiment of collective pause"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a prohibitive traffic sign and a person’s raised arm suggests tension between institutional constraint and individual expression within shared public space.",
+      "alternative_interpretations": [
+        "The raised arm may simply be adjusting hair or shielding eyes from sun; the group may be waiting for a bus with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0733_P2",
+      "visual_anchors": [
+        "UPS drop box",
+        "pedestrian group",
+        "street infrastructure"
+      ],
+      "symbolic_mapping": [
+        "drop box as node of transactional labor",
+        "group as temporally suspended participants in urban flow"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The static gathering beside a logistics artifact evokes the modern condition where human presence is measured against cycles of delivery and delay, highlighting temporal suspension amid systemic motion.",
+      "alternative_interpretations": [
+        "People are casually waiting; the UPS box is incidental background infrastructure."
+      ],
+      "limitations": [
+        "No visible clocks, packages, or work attire confirm labor-related interpretation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0733_P3",
+      "visual_anchors": [
+        "multiple clothing styles (hoodies, jackets, caps)",
+        "varied postures (standing, leaning, walking)",
+        "shared physical proximity"
+      ],
+      "symbolic_mapping": [
+        "clothing as markers of differentiated identity within collective space"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The coexistence of diverse attire and stances within a bounded public zone illustrates how identity is performed relationally—simultaneously distinct and interdependent—within everyday social architecture.",
+      "alternative_interpretations": [
+        "Clothing differences reflect weather adaptation or personal preference, not identity performance."
+      ],
+      "limitations": [
+        "No labels, logos beyond UPS, or expressive gestures definitively link attire to identity claims."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (candidate states 14, actual count is 15 distinct individuals visible); candidate incorrectly describes a UPS drop box as mounted on the building wall (it is a standalone unit on the sidewalk); candidate misstates the traffic signal as having amber lights illuminated (no lights are visibly illuminated)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:12:03.383432+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-21a993e9-7257-9205-b7cf-45116bc65ce5",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 978,
+        "total_tokens": 1787,
+        "completion_tokens_details": {
+          "text_tokens": 978
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703114124bd81a351d8450b",
+      "usage": {
+        "completion_tokens": 984,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1956,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2940
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

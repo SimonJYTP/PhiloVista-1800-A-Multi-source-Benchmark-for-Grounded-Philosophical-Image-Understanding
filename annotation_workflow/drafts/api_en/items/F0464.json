@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0464",
+  "sample_id": "PHL1800_IRFL_0069",
+  "file_name": "PHL1800_IRFL_0069.jpg",
+  "batch_id": "B011",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two hands engaged in a handshake with a banknote partially inserted between them",
+  "captions": {
+    "scene": [
+      "Indoor setting with a blurred vertical striped background suggestive of curtains or blinds",
+      "Neutral-toned wall and possibly a radiator or baseboard visible at lower edge",
+      "Close-up framing focused on the hands and forearms, excluding faces and full bodies"
+    ],
+    "action": [
+      "Two hands clasped in a standard handshake grip",
+      "A folded yellow-green banknote is held between the palms, oriented horizontally",
+      "The banknote displays the numeral '50' clearly visible on its upper right portion"
+    ],
+    "rationale": [
+      "The presence of a banknote within a handshake suggests a transactional context, though no explicit exchange motion is captured",
+      "The handshake appears firm and symmetrical, indicating mutual participation, but intent (e.g., gift, bribe, payment) cannot be determined from posture alone",
+      "The banknote’s denomination is legible as '50', but currency type and country are not identifiable due to partial occlusion and lack of other markings"
+    ],
+    "object": [
+      "The left hand wears a dark blue long-sleeved garment with a smooth cuff ending just above the wrist.",
+      "The right hand wears a dark gray or black suit sleeve with a visible seam and structured cuff.",
+      "A folded banknote with yellow-green coloration and the numeral '50' printed in black is positioned between the two palms.",
+      "The fingers of both hands interlock partially, with the thumb of the right hand pressing over the banknote’s top edge.",
+      "Skin tone of both hands appears light to medium, with visible knuckle creases and natural skin texture."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0464_P1",
+      "visual_anchors": [
+        "banknote with '50'",
+        "handshake grip",
+        "sleeve contrast (blue vs. gray)"
+      ],
+      "symbolic_mapping": [
+        "banknote as material value",
+        "handshake as social contract"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes the entanglement of economic value and social ritual, where the handshake—a symbol of trust—simultaneously frames and conceals the transfer of monetary value, raising questions about whether agreement precedes or legitimizes exchange.",
+      "alternative_interpretations": [
+        "A routine commercial payment during a formal meeting, with no symbolic layer intended."
+      ],
+      "limitations": [
+        "No facial expressions, body language beyond hands, or contextual objects (e.g., documents, logos) are visible to confirm intent or relationship."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0464_P2",
+      "visual_anchors": [
+        "folded banknote",
+        "palms pressed together",
+        "partial occlusion of note by fingers"
+      ],
+      "symbolic_mapping": [
+        "occluded note as hidden condition",
+        "shared grip as mutual dependency"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The partial concealment of the banknote within the handshake suggests that moral responsibility may be distributed or obscured in transactions where consent and compensation are physically intertwined yet visually ambiguous.",
+      "alternative_interpretations": [
+        "The note is simply being presented for inspection or counting during a handshake greeting, with no ethical implication."
+      ],
+      "limitations": [
+        "The direction of note insertion (who placed it, when) is not observable; the gesture could be simultaneous or sequential."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0464_P3",
+      "visual_anchors": [
+        "yellow-green banknote",
+        "symmetrical hand positioning",
+        "lack of background detail"
+      ],
+      "symbolic_mapping": [
+        "monetary object as mediator of relation",
+        "neutral backdrop as abstraction of context"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The reduction of interaction to hands and currency highlights how identity in transactional settings may be performative and constrained—defined not by individuality but by role (giver/receiver) and instrument (money).",
+      "alternative_interpretations": [
+        "A candid moment captured during a routine financial settlement, with no emphasis on identity or constraint."
+      ],
+      "limitations": [
+        "No distinguishing features (tattoos, rings, scars, gender markers) are visible to ground identity claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:49:03.365076+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-876d6c04-36af-9810-8f3d-2e57930caa3d",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 971,
+        "total_tokens": 1550,
+        "completion_tokens_details": {
+          "text_tokens": 971
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024852c0ea5974ea5c43e6",
+      "usage": {
+        "completion_tokens": 826,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1623,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2449
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

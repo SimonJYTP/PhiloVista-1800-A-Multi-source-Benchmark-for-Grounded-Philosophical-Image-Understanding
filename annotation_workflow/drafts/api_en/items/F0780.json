@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0780",
+  "sample_id": "PHL1800_HL_0172",
+  "file_name": "PHL1800_HL_0172.png",
+  "batch_id": "B017",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of people on scooters and bicycles stopped beside a red two-wheeled vehicle",
+  "captions": {
+    "scene": [
+      "A sunny urban waterfront with a modern high-rise building labeled 'ORENCHOKS' in the background, cranes to the left, and a yellow barrier separating the road from water.",
+      "A red two-wheeled microcar is parked or stopped in traffic, with its driver visible through the open window; behind it, a white scooter and two bicycles are present.",
+      "Four individuals are visible near vehicles: one man on a white scooter talking on a phone, two women on bicycles, and a person partially visible behind them."
+    ],
+    "action": [
+      "A man in a white t-shirt sits on a white scooter, holding a mobile phone to his right ear with his right hand.",
+      "A woman in a striped tank top stands beside a bicycle, facing away, with her left hand resting on the handlebar and her right arm bent across her torso.",
+      "A second woman, wearing a white top, sits on a black scooter with a grey rear cargo bag, looking forward; her left hand holds a strap or bag handle."
+    ],
+    "rationale": [
+      "The man’s posture and phone placement strongly suggest he is engaged in a call, though audio cannot be verified.",
+      "The red vehicle appears stationary due to its proximity to other stopped vehicles and lack of motion blur, but no tire rotation or brake lights are visible to confirm.",
+      "The presence of multiple cyclists and a microcar suggests a mixed-traffic environment, yet no traffic signals, lane markings, or directional signs are clearly legible to infer regulation or intent."
+    ],
+    "object": [
+      "A red two-wheeled vehicle with black trim, side mirrors, and a visible license plate reading 'FJ9 584' is positioned centrally in the frame.",
+      "A white scooter with black seat and front fairing is occupied by a man wearing a white t-shirt with a green cursive logo and blue jeans.",
+      "A black scooter with a grey rear cargo bag and a visible rear light is ridden by a woman in a white top; a yellow license plate attached reads 'FJ9 584'.",
+      "A woman in a grey-and-black striped tank top and olive-green pants stands beside a bicycle with a black saddle and silver handlebars; she wears a small brown shoulder bag.",
+      "A tall modern building with dark glass facade and white lettering 'ORENCHOKS' appears in the background, flanked by lower brick structures and construction cranes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0780_P1",
+      "visual_anchors": [
+        "man on scooter holding phone",
+        "red microcar with narrow cabin",
+        "bicycles adjacent to motorized vehicles"
+      ],
+      "symbolic_mapping": [
+        "phone use amid traffic symbolizes mediated presence",
+        "microcar as compact mobility reflects spatial constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of personal communication technology and constrained urban transport embodies the tension between individual autonomy and infrastructural limitation in contemporary public space.",
+      "alternative_interpretations": [
+        "This is simply a routine traffic stop with no symbolic intent; people are waiting for a signal or congestion to clear."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; the phone could be held for non-verbal reasons (e.g., checking screen)."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0780_P2",
+      "visual_anchors": [
+        "woman in striped tank top viewed from behind",
+        "unidentifiable faces",
+        "multiple backs turned toward camera"
+      ],
+      "symbolic_mapping": [
+        "back-facing figures represent anonymity in public life"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The repeated occlusion of faces and emphasis on posterior views underscores how identity in urban transit is often reduced to functional role rather than individual recognition.",
+      "alternative_interpretations": [
+        "People naturally face forward while waiting in traffic; their backs are visible only because the photographer is behind them."
+      ],
+      "limitations": [
+        "Only one face is partially visible (driver in red car); absence of frontal views may reflect camera angle, not deliberate anonymization."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0780_P3",
+      "visual_anchors": [
+        "yellow barrier separating road from water",
+        "cranes in distance",
+        "modern tower vs. older brick buildings"
+      ],
+      "symbolic_mapping": [
+        "barrier as literal and metaphorical division between work and leisure zones"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The physical separation of the roadway from the waterfront via a fence, combined with industrial infrastructure in view, suggests a curated urban experience where movement is channeled and labor remains visibly proximate yet segregated.",
+      "alternative_interpretations": [
+        "The barrier is a standard safety railing for a quay or dock area, with no intended symbolic function."
+      ],
+      "limitations": [
+        "The barrier’s purpose (safety, aesthetic, regulatory) is not specified; its color and material do not inherently denote meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect vehicle type: red car is two-wheeled, not three-wheeled; wrong license plate number for black scooter; overcounted people (4 vs. 4 visible but misdescribed); inaccurate object details (scooter colors, cargo bag color)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:16:09.667680+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-44bcf021-041e-9ba4-868d-ec8fe24fef68",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1147,
+        "total_tokens": 1956,
+        "completion_tokens_details": {
+          "text_tokens": 1147
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070315423e8b8d3e05ee431a",
+      "usage": {
+        "completion_tokens": 1143,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2123,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3266
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

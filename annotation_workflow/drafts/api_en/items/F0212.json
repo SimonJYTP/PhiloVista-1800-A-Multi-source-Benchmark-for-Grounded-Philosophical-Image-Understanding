@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0212",
+  "sample_id": "PHL1800_HL_0302",
+  "file_name": "PHL1800_HL_0302.png",
+  "batch_id": "B006",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a skateboarder in black shirt and blue jeans navigating a slalom course of cones",
+  "captions": {
+    "scene": [
+      "An outdoor paved area with green trees in the background, red umbrellas providing shade, and white-and-red striped barriers demarcating a course.",
+      "Multiple people are present: some seated under umbrellas, others standing or moving near the course; at least six individuals are visible.",
+      "A series of white and lime-green traffic cones are arranged in alternating rows on asphalt, forming a slalom path."
+    ],
+    "action": [
+      "The foreground skateboarder leans sharply left while riding a longboard with green wheels, arms extended for balance.",
+      "A second skateboarder in red shirt and black helmet rides behind, also leaning into a turn on a skateboard.",
+      "Spectators stand or sit near barriers; one person in red shirt walks toward the right edge of frame."
+    ],
+    "rationale": [
+      "The skateboarder’s bent knees, torso lean, and arm extension suggest active maneuvering rather than coasting—consistent with slalom racing.",
+      "The presence of repeated cone patterns and barrier tape indicates an organized activity, though no signage confirms it is a competition.",
+      "The red umbrella and casual attire imply a daytime recreational or community event, but no explicit event branding or signage is legible."
+    ],
+    "object": [
+      "A skateboard with a wooden deck, black grip tape, and four bright green wheels is under the feet of the foreground rider.",
+      "A lime-green traffic cone stands upright on asphalt approximately 1.5 meters ahead of the skateboarder’s front wheels.",
+      "A red fabric umbrella with a silver metal pole is positioned behind the second skateboarder, shading several seated people.",
+      "A blue portable signboard with unreadable text and graphics stands near the course boundary, partially obscured by the foreground rider.",
+      "A white plastic chair with red metal frame is occupied by a person wearing a red top, located left of center."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0212_P1",
+      "visual_anchors": [
+        "skateboarder leaning through cones",
+        "cones forming a constrained path",
+        "rider’s focused posture"
+      ],
+      "symbolic_mapping": [
+        "cones represent imposed structure",
+        "lean represents adaptation within limits"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes freedom not as absence of limits but as skillful navigation within them—the rider’s motion expresses agency precisely because constraints (cones) define the field of action.",
+      "alternative_interpretations": [
+        "It may simply depict a recreational slalom drill with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the interpretation relies solely on formal arrangement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0212_P2",
+      "visual_anchors": [
+        "multiple riders on similar boards",
+        "shared course layout",
+        "spectators observing"
+      ],
+      "symbolic_mapping": [
+        "parallel paths suggest shared experience",
+        "observation implies social validation"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "Individual performance gains meaning through collective witnessing—the rider’s act is constituted partly by the presence of others who see and recognize it.",
+      "alternative_interpretations": [
+        "Spectators may be incidental passersby with no engagement in the activity."
+      ],
+      "limitations": [
+        "Facial expressions and body orientation of spectators are indistinct; their attention level cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0212_P3",
+      "visual_anchors": [
+        "black helmet worn by second rider",
+        "protective elbow pad visible on same rider",
+        "foreground rider without visible protection"
+      ],
+      "symbolic_mapping": [
+        "gear signifies risk awareness",
+        "absence of gear signals choice or omission"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The differential use of safety equipment among participants visually raises questions about personal responsibility toward self and others in shared public space.",
+      "alternative_interpretations": [
+        "Gear differences may reflect personal preference, availability, or role (e.g., competitor vs. demonstrator)."
+      ],
+      "limitations": [
+        "Only partial views of protective gear are visible; full equipment status for all riders is unknown."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (candidate states 'at least eight individuals' but image shows fewer distinct individuals); inaccurate description of a person holding a bicycle handlebar (no one is holding a handlebar in the image); mischaracterization of the second skateboarder's board size (board size is not visually distinguishable as 'smaller'); object description of the chair's occupant's attire is inaccurate (occupant wears a red top, not dark sleeveless)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:18:24.380670+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-38ee981f-d29f-9091-9b48-116c7edf6595",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 951,
+        "total_tokens": 1720,
+        "completion_tokens_details": {
+          "text_tokens": 951
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070218087fe5d99c8f4c4c6b",
+      "usage": {
+        "completion_tokens": 897,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1885,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2782
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

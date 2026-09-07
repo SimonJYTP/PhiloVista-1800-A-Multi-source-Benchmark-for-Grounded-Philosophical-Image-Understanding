@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1282",
+  "sample_id": "PHL1800_IRFL_0051",
+  "file_name": "PHL1800_IRFL_0051.jpg",
+  "batch_id": "B027",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "anatomical illustration of human head and neck with labeled pathology",
+  "captions": {
+    "scene": [
+      "Side-view cross-section of a human head and upper torso showing oral cavity, pharynx, larynx, esophagus, and cervical vertebrae",
+      "Translucent skin and soft tissue reveal internal structures including tongue, epiglottis, vocal folds, and trachea",
+      "A pink oval-shaped mass is visible in the oropharyngeal region near the base of the tongue"
+    ],
+    "action": [
+      "The mouth is open with teeth exposed and tongue elevated toward the hard palate",
+      "The epiglottis is depicted in a raised position, not covering the laryngeal inlet",
+      "The pink mass appears stationary and embedded within surrounding tissue"
+    ],
+    "rationale": [
+      "The presence of a distinct pink mass suggests localized anatomical abnormality, though its nature (e.g., tumor, cyst, inflammation) cannot be determined from visual alone",
+      "The title 'Swallowing Problems' implies functional impairment, but no dynamic motion or physiological process is shown—only static anatomy",
+      "Structures such as the hyoid bone and cricoid cartilage are partially visible, supporting identification of upper aerodigestive tract, yet precise pathological diagnosis is unsupported"
+    ],
+    "object": [
+      "The image displays a single human figure in profile, rendered as a semi-transparent anatomical model with visible skeletal and soft-tissue layers.",
+      "A pink oval structure is positioned posterior to the tongue and anterior to the vertebral column, within the oropharynx.",
+      "The cervical spine is shown with individual vertebrae, intervertebral discs, and associated musculature extending from skull base to thoracic inlet.",
+      "The oral cavity contains upper and lower dentition, with the tongue occupying the floor of the mouth and contacting the hard palate.",
+      "The text 'Swallowing Problems' appears in bold dark blue sans-serif font on the right side of the image, superimposed over the background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1282_P1",
+      "visual_anchors": [
+        "pink mass in oropharynx",
+        "open mouth with exposed teeth",
+        "translucent tissue revealing internal structures"
+      ],
+      "symbolic_mapping": [
+        "the pink mass symbolizes bodily vulnerability",
+        "translucency represents epistemic access to hidden interior states"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The illustration frames the body as knowable through dissection and visualization, suggesting that truth about selfhood resides in observable internal structures rather than external appearance.",
+      "alternative_interpretations": [
+        "This is a clinical teaching diagram intended solely for anatomical education, with no symbolic intent."
+      ],
+      "limitations": [
+        "No labeling identifies the pink mass; its symbolic meaning is imposed externally without textual or contextual confirmation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1282_P2",
+      "visual_anchors": [
+        "epiglottis in raised position",
+        "open airway",
+        "title 'Swallowing Problems'"
+      ],
+      "symbolic_mapping": [
+        "the open airway juxtaposed with the title evokes tension between function and dysfunction"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The static depiction of an unobstructed passage alongside the phrase 'Swallowing Problems' reflects the philosophical tension between bodily autonomy and involuntary constraint—where freedom is contingent on unseen physiological integrity.",
+      "alternative_interpretations": [
+        "The epiglottis is simply shown in its default anatomical position during inspiration, unrelated to swallowing pathology."
+      ],
+      "limitations": [
+        "No motion or functional sequence is illustrated; the epiglottis position alone does not confirm swallowing phase or disorder."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1282_P3",
+      "visual_anchors": [
+        "cervical vertebrae aligned vertically",
+        "tongue pressing against palate",
+        "layered tissue transparency"
+      ],
+      "symbolic_mapping": [
+        "vertical spinal alignment signifies structural continuity",
+        "layered transparency suggests hierarchical knowledge acquisition"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "time_mortality"
+      ],
+      "interpretation": "The ordered vertical stack of vertebrae beneath the vulnerable oropharynx visually enacts the idea that social existence depends on fragile biological continuity, where mortality looms as the inevitable endpoint of structural integrity.",
+      "alternative_interpretations": [
+        "The image is a standard medical illustration emphasizing spatial relationships, not existential themes."
+      ],
+      "limitations": [
+        "No temporal indicators (e.g., aging, decay, injury progression) are present; mortality is not depicted."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:12:33.479645+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-40f459db-28dc-993c-9ebe-9ab8f07bbf05",
+      "usage": {
+        "prompt_tokens": 1389,
+        "completion_tokens": 1036,
+        "total_tokens": 2425,
+        "completion_tokens_details": {
+          "text_tokens": 1036
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 882,
+          "text_tokens": 507,
+          "cached_tokens": 1152
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041203dd255041937740fd",
+      "usage": {
+        "completion_tokens": 896,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2815,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3711
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

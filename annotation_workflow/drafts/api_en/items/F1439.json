@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1439",
+  "sample_id": "PHL1800_HAIV_0359",
+  "file_name": "PHL1800_HAIV_0359.png",
+  "batch_id": "B030",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a black circular table with a skull-and-crossbones emblem at its center and arranged place settings",
+  "captions": {
+    "scene": [
+      "A dark, round table covered with a black cloth featuring a central yellow skull and gray crossed swords.",
+      "Multiple white plates are set around the table’s perimeter; some hold food items including a yellow block and an orange smear with a white sphere.",
+      "Five arched backrests with patterned interiors are visible behind the table, each paired with a bottle or plate."
+    ],
+    "action": [
+      "No human or animal figures are present; all elements are static objects in fixed positions.",
+      "A crumpled white napkin rests near the center of the table, slightly left of the skull emblem.",
+      "Two bottles—one green-capped and one red-capped—are placed beside plates on opposite sides of the table."
+    ],
+    "rationale": [
+      "The skull-and-crossbones motif is centrally positioned and stylistically consistent with symbolic warnings, though no explicit hazard is depicted.",
+      "The arrangement of plates, bottles, and backrests suggests a formal or ritualistic seating layout, but no activity confirms use.",
+      "The presence of uneaten food and unoccupied chairs implies preparation rather than consumption, yet no temporal marker confirms this."
+    ],
+    "object": [
+      "A yellow stylized skull with two black circular eye sockets and a black triangular nasal aperture sits atop two intersecting gray swords with silver hilts.",
+      "One white plate holds a rectangular yellow solid object with horizontal striations on its top surface.",
+      "Another white plate contains an irregular orange mass with a small white circular object embedded near its edge.",
+      "A green-capped bottle with a white body stands to the left of the yellow solid; a red-capped bottle with a white body stands to the right of the orange mass.",
+      "Five identical arched chair backs with dark interiors speckled with red, orange, and black shapes are evenly spaced behind the table."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1439_P1",
+      "visual_anchors": [
+        "yellow skull",
+        "crossed swords",
+        "black tablecloth"
+      ],
+      "symbolic_mapping": [
+        "skull as memento mori",
+        "crossed swords as conflict or duality"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The central skull and swords evoke a confrontation with mortality within a structured social setting, suggesting that power and death are inseparable from communal ritual.",
+      "alternative_interpretations": [
+        "It may simply be decorative pirate-themed tableware without deeper intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm symbolic intent; the imagery remains visually ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1439_P2",
+      "visual_anchors": [
+        "empty chairs",
+        "set plates with untouched food",
+        "crumpled napkin"
+      ],
+      "symbolic_mapping": [
+        "absence of diners as absence of presence",
+        "prepared but unused meal as suspended action"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The vacant seats and unconsumed provisions imply a gathering anticipated but not realized, raising questions about collective commitment and the threshold between intention and action.",
+      "alternative_interpretations": [
+        "The scene could represent a still-life composition staged for artistic effect, with no implied narrative."
+      ],
+      "limitations": [
+        "No indicators of time, identity, or prior event prevent confirmation of abandonment or anticipation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1439_P3",
+      "visual_anchors": [
+        "black tablecloth with scalloped edge",
+        "uniform white plates",
+        "symmetrical placement"
+      ],
+      "symbolic_mapping": [
+        "uniformity of place settings as enforced equality",
+        "dark cloth as concealment or void"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The rigid symmetry and uniformity of the setting suggest institutional order, where individual agency is subsumed under prescribed roles—raising ethical questions about responsibility within constrained systems.",
+      "alternative_interpretations": [
+        "The symmetry may reflect aesthetic preference rather than ideological statement."
+      ],
+      "limitations": [
+        "No signage, gestures, or hierarchical markers distinguish roles or enforce constraints visually."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:32:16.036612+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c5bba83b-3877-94da-b28c-df1f749a8259",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 948,
+        "total_tokens": 2481,
+        "completion_tokens_details": {
+          "text_tokens": 948
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070431587203f6097df441d9",
+      "usage": {
+        "completion_tokens": 810,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2905,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3715
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

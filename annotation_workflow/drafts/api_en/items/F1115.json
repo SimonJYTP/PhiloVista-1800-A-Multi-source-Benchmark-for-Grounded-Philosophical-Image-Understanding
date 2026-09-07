@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1115",
+  "sample_id": "PHL1800_HL_0069",
+  "file_name": "PHL1800_HL_0069.png",
+  "batch_id": "B024",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man in a dark long-sleeve shirt holding a white Wii Remote, viewed from behind",
+  "captions": {
+    "scene": [
+      "An indoor exhibition or demo space with white walls, exposed structural beams, and multiple people gathered around interactive displays.",
+      "A large flat-screen monitor mounted on a white kiosk shows a colorful boxing video game; a blue spherical object is attached to the kiosk’s front panel.",
+      "Several individuals stand or walk near display units; some wear white shirts with visible 'Wii' branding on the back."
+    ],
+    "action": [
+      "The foreground man holds a white Wii Remote in his right hand, arm extended forward, suggesting active gameplay.",
+      "A person in a white 'Wii' shirt stands facing away, also holding a controller, positioned near the same display unit.",
+      "Two children (one in black shirt, one in white) stand beside the foreground man, observing the screen or activity."
+    ],
+    "rationale": [
+      "The presence of branded 'Wii' shirts and Nintendo Wii controllers strongly suggests a Nintendo product demonstration event.",
+      "The monitor displays a boxing game with two avatars and a timer reading '0:17', indicating an ongoing timed match segment.",
+      "Multiple people are oriented toward the screen and controllers, implying shared attention to the interactive experience, though no direct interaction between individuals is confirmed."
+    ],
+    "object": [
+      "A white Wii Remote with a white wrist strap is held in the right hand of the foreground man.",
+      "A large LCD monitor displays a boxing game scene with red- and blue-clad avatars, a digital timer showing '0:17', and a score indicator partially visible.",
+      "A white kiosk structure supports the monitor and features a glossy blue sphere mounted on its lower front face.",
+      "A man in a white short-sleeve shirt has 'Wii' printed in gray sans-serif font across the upper back.",
+      "At least five distinct individuals are visible: foreground man (dark shirt), two children to his left, man in white 'Wii' shirt, man in red shirt in background, and one person partially obscured behind the kiosk."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1115_P1",
+      "visual_anchors": [
+        "Wii Remote held by foreground man",
+        "blue sphere on kiosk",
+        "multiple observers focused on screen"
+      ],
+      "symbolic_mapping": [
+        "the controller as extension of agency",
+        "the sphere as interface node mediating human-machine interaction"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where embodied action (controller grip, posture) and collective attention converge around a technological interface, illustrating how social presence is constituted through shared engagement with mediated systems.",
+      "alternative_interpretations": [
+        "This is simply a product demo with no deeper meaning—people are just playing a game."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues are visible to confirm intent, emotion, or interpersonal dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1115_P2",
+      "visual_anchors": [
+        "timer reading '0:17'",
+        "boxing avatars mid-fight",
+        "players holding controllers"
+      ],
+      "symbolic_mapping": [
+        "the countdown as marker of finite engagement",
+        "the virtual fight as proxy for real-world competition"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The visible timer imposes a bounded temporality on play, framing the virtual contest as a transient event that echoes human concerns with limited duration and contested outcomes.",
+      "alternative_interpretations": [
+        "The timer is merely functional feedback for gameplay mechanics, not symbolic."
+      ],
+      "limitations": [
+        "The exact significance of '0:17' is unknown—it could be remaining time, elapsed time, or a fixed round length."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1115_P3",
+      "visual_anchors": [
+        "man in white 'Wii' shirt with logo",
+        "children observing",
+        "kiosk design with branded elements"
+      ],
+      "symbolic_mapping": [
+        "branded apparel as identity marker within consumer culture",
+        "observer stance as passive participation in spectacle"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Visible branding and differentiated roles (player vs. observer) reveal how identity is performed and recognized within technologically mediated public spaces, where appearance signals affiliation and participation status.",
+      "alternative_interpretations": [
+        "The shirts are promotional giveaways with no identity function beyond utility."
+      ],
+      "limitations": [
+        "No text confirms the shirt’s origin or wearer’s affiliation; branding may be incidental."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate claims 'at least six distinct individuals' but image shows five visible people; revise to match visual count."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:52:21.460782+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-66c0eb7e-2775-98d9-9daf-bac4d19b9da3",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 1028,
+        "total_tokens": 1729,
+        "completion_tokens_details": {
+          "text_tokens": 1028
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070352076026ac17cc0b4da2",
+      "usage": {
+        "completion_tokens": 999,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1843,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2842
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

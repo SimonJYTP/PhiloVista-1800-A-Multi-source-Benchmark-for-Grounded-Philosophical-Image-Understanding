@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1696",
+  "sample_id": "PHL1800_HL_0174",
+  "file_name": "PHL1800_HL_0174.png",
+  "batch_id": "B035",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a boy in a white shirt receiving a green-and-white device from a man in a white t-shirt",
+  "captions": {
+    "scene": [
+      "An indoor setting with teal-painted doors and walls, one door marked with pink X and green smiley stickers.",
+      "A group of people including children and adults standing near stacked cardboard boxes labeled with green numerals '1'.",
+      "Natural light enters from the left through an open doorway revealing trees outside."
+    ],
+    "action": [
+      "The boy holds a green-and-white rectangular device with both hands while looking down at it.",
+      "The man extends his right hand toward the boy, appearing to hand over or assist with the device.",
+      "A woman on the right holds a blue notebook and observes the interaction; another man in the background holds a camera to his eye."
+    ],
+    "rationale": [
+      "The presence of labeled boxes and uniform devices suggests a distribution event, though purpose is not confirmed by visible evidence.",
+      "The man’s t-shirt bears a green logo with a red dot and partial text '...onal', possibly indicating affiliation, but full branding is unreadable.",
+      "Multiple observers and a photographer imply documentation or public activity, yet no signage confirms intent or context."
+    ],
+    "object": [
+      "A boy wearing a white long-sleeve shirt, dark trousers, and a black tie holds a green-and-white electronic device wrapped partially in clear plastic.",
+      "A man in a white short-sleeve t-shirt with a green stylized 'X' logo and indistinct lower text stands beside stacked brown cardboard boxes marked with green numeral '1'.",
+      "A woman wearing glasses, a beige blouse, and a blue polka-dot scarf holds a light-blue notebook and a pen in her right hand.",
+      "A man in the background wears a red shirt under a grey jacket, holds a silver digital camera to his face, and stands beside another partially visible person.",
+      "Three stacked cardboard boxes are visible: two labeled '1' in green, one unlabeled box on top with flaps open; a fourth box is partially visible behind them."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1696_P1",
+      "visual_anchors": [
+        "green 'X' logo on man's shirt",
+        "boy holding device",
+        "stacked labeled boxes"
+      ],
+      "symbolic_mapping": [
+        "the 'X' may symbolize crossing or exchange; the device represents mediated access"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The scene visualizes a moment of technological transfer that reconfigures social roles—recipient, distributor, observer—highlighting how tools mediate participation in collective life.",
+      "alternative_interpretations": [
+        "This is a routine school supply distribution with no symbolic intent beyond logistics."
+      ],
+      "limitations": [
+        "The logo text is incomplete and cannot confirm organizational identity or ideological framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1696_P2",
+      "visual_anchors": [
+        "boy’s focused gaze on device",
+        "man’s outstretched hand",
+        "woman’s notebook"
+      ],
+      "symbolic_mapping": [
+        "the act of handing over as ritualized knowledge transmission"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The gesture of transfer, witnessed and recorded, frames learning as a contingent passage—not innate but conferred—raising questions about who controls access to epistemic tools.",
+      "alternative_interpretations": [
+        "The boy is simply accepting a gift; the notebook is for inventory, not observation."
+      ],
+      "limitations": [
+        "No visible text on the device or boxes confirms educational or informational content."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1696_P3",
+      "visual_anchors": [
+        "pink X on door",
+        "green smiley face sticker",
+        "multiple observers"
+      ],
+      "symbolic_mapping": [
+        "X as marker of selection or exclusion; smiley as affective regulation in institutional space"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "Decorative markings on institutional architecture juxtapose playful symbols with structured distribution, suggesting identity is shaped within constrained environments where expression is curated and monitored.",
+      "alternative_interpretations": [
+        "The stickers are random decorations placed by children with no systemic meaning."
+      ],
+      "limitations": [
+        "Sticker placement and origin are unknown; no contextual signage links them to policy or identity protocols."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:02:30.184763+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c64afa76-d3d6-90b1-b96c-d65718d1beb8",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 976,
+        "total_tokens": 1785,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070502169441842458b94153",
+      "usage": {
+        "completion_tokens": 840,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1952,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2792
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

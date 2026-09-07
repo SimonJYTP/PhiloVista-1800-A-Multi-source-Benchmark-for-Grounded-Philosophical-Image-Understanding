@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1589",
+  "sample_id": "PHL1800_HAIV_0401",
+  "file_name": "PHL1800_HAIV_0401.png",
+  "batch_id": "B033",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a heart outline with a paintbrush and a paint palette",
+  "captions": {
+    "scene": [
+      "A large black-outlined heart dominates the background on a white field.",
+      "A brown artist’s palette with dollops of colored paint sits in the lower-left quadrant.",
+      "A red-handled paintbrush with a gray bristle head leans diagonally across the right side of the heart."
+    ],
+    "action": [
+      "The paintbrush is stationary, angled from upper-right to lower-left, partially overlapping the heart outline.",
+      "The palette contains six distinct blobs of paint: red (two), blue (two), yellow, and green, all resting on its surface without motion cues.",
+      "No human hands or movement indicators are present; all objects appear static and arranged compositionally."
+    ],
+    "rationale": [
+      "The heart is drawn as an empty outline, suggesting it is intended to be filled—this is inferred from its blank interior and proximity to painting tools.",
+      "The paint colors are placed in irregular blobs rather than neat wells, implying use or preparation for use, though no brush contact is visible.",
+      "The composition strongly suggests artistic creation, but no actual painting activity (e.g., wet strokes, drips, hand) is depicted."
+    ],
+    "object": [
+      "A black-contoured heart shape occupies most of the image area, with no fill color inside.",
+      "A brown, kidney-shaped paint palette has a thick black outline and holds six discrete paint blobs: two red, two blue, one yellow, one green.",
+      "A paintbrush features a red cylindrical handle, a silver ferrule, and a gray rounded bristle tip, oriented diagonally across the frame.",
+      "All paint blobs on the palette have glossy highlights indicating a smooth, viscous surface, but no smearing or blending is visible.",
+      "The background is uniformly white with no texture, gradient, or additional elements beyond the three main objects."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1589_P1",
+      "visual_anchors": [
+        "empty heart outline",
+        "palette with multiple colors",
+        "paintbrush poised near heart"
+      ],
+      "symbolic_mapping": [
+        "the empty heart represents potential for emotional expression",
+        "the palette signifies multiplicity of affective states available for inscription"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The image frames identity as a constructive act: the self (heart) is not given but awaiting deliberate coloring through chosen expressive means.",
+      "alternative_interpretations": [
+        "It may simply illustrate art supplies arranged decoratively around a heart symbol, with no deeper intent."
+      ],
+      "limitations": [
+        "No agent is shown performing the act of painting, so agency is implied but not evidenced."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1589_P2",
+      "visual_anchors": [
+        "red paint blob on palette",
+        "red handle of brush",
+        "heart outline"
+      ],
+      "symbolic_mapping": [
+        "red as a recurring visual motif links tool, medium, and symbolic form"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "faith_meaning"
+      ],
+      "interpretation": "Red recurs across instrument, material, and symbol, suggesting that meaning-making (the heart) requires responsible engagement with passionate tools and substances.",
+      "alternative_interpretations": [
+        "Red is used for visual contrast and aesthetic balance, not symbolic unity."
+      ],
+      "limitations": [
+        "Color repetition alone does not confirm intentional symbolism; chromatic harmony could be purely compositional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1589_P3",
+      "visual_anchors": [
+        "static arrangement",
+        "no hand or motion",
+        "clean white background"
+      ],
+      "symbolic_mapping": [
+        "the stillness implies contemplation before action",
+        "the void within the heart denotes unactualized possibility"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The suspended moment—tools ready but unused—evokes the existential weight of freedom: the subject faces an open field of creation with no external directive, highlighting constraint as self-imposed hesitation.",
+      "alternative_interpretations": [
+        "The image is a clipart-style illustration meant for decoration, with no temporal or existential layer intended."
+      ],
+      "limitations": [
+        "Absence of motion cannot definitively indicate deliberation; it may reflect stylistic simplification."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:49:08.454287+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-524645d3-b776-9acc-a454-59950fc50eb9",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 958,
+        "total_tokens": 2491,
+        "completion_tokens_details": {
+          "text_tokens": 958
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070448350db7cca126dd4ee0",
+      "usage": {
+        "completion_tokens": 821,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2915,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3736
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

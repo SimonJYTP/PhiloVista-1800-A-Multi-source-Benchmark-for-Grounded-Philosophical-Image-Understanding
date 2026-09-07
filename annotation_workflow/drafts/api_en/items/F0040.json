@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0040",
+  "sample_id": "PHL1800_HL_0373",
+  "file_name": "PHL1800_HL_0373.png",
+  "batch_id": "B003",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two giraffes and two people in an enclosed outdoor area",
+  "captions": {
+    "scene": [
+      "A fenced enclosure with green chain-link fencing in the foreground, containing two giraffes and a wooden structure behind them.",
+      "Dense green trees form a backdrop under an overcast sky; no direct sunlight is visible.",
+      "A raised wooden platform with vertical poles and horizontal rails sits behind the giraffes, occupied by two individuals."
+    ],
+    "action": [
+      "One giraffe stands with its head lowered toward the ground near the fence; the other faces away, head raised slightly above the fence line.",
+      "Two people stand on the wooden platform: one wears a blue jacket and faces left; the other, partially obscured, appears to wear dark clothing and faces forward.",
+      "The giraffes are stationary; no motion blur is present in their limbs or necks."
+    ],
+    "rationale": [
+      "The giraffes’ positioning relative to the fence and platform suggests they are contained within a managed habitat, not wild terrain.",
+      "The presence of constructed wooden elements and uniform fencing indicates human design rather than natural formation.",
+      "The overcast lighting and lack of shadows imply diffuse illumination, consistent with cloud cover, though exact time of day cannot be determined."
+    ],
+    "object": [
+      "Two giraffes with reticulated coat patterns stand inside a green-painted chain-link enclosure; both have ossicones and long necks visible.",
+      "A wooden platform with irregular vertical poles and horizontal railings occupies the midground, supporting two human figures.",
+      "The foreground fence consists of horizontal top rails and vertical posts painted olive green, with mesh extending downward.",
+      "One person wears a dark blue hooded jacket and stands upright facing left; only upper torso and head are visible.",
+      "A second person, partially hidden behind the first, wears dark clothing and appears to hold or lean on the railing; no facial features are discernible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0040_P1",
+      "visual_anchors": [
+        "green chain-link fence",
+        "wooden platform with poles",
+        "giraffes positioned near barrier"
+      ],
+      "symbolic_mapping": [
+        "fence as physical boundary representing constraint",
+        "platform as elevated observation point implying separation"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial arrangement—giraffes confined behind fencing while humans occupy a raised, unobstructed vantage—visually enacts a hierarchy of access and agency, where mobility is materially restricted for some and preserved for others.",
+      "alternative_interpretations": [
+        "The scene may simply depict standard zoo husbandry practice with no intentional symbolic meaning."
+      ],
+      "limitations": [
+        "No signage, labels, or behavioral cues confirm intent; the platform could serve functional feeding or maintenance purposes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0040_P2",
+      "visual_anchors": [
+        "two giraffes standing close but not interacting",
+        "people on platform not engaging with animals",
+        "uniform overcast lighting"
+      ],
+      "symbolic_mapping": [
+        "parallel stillness suggesting coexistence without connection",
+        "shared space without shared attention indicating social distance"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The simultaneous presence of species and humans within the same frame, yet without mutual orientation or interaction, illustrates a form of social existence defined by proximity without relational engagement.",
+      "alternative_interpretations": [
+        "The subjects may be momentarily paused; interaction could occur before or after the captured instant."
+      ],
+      "limitations": [
+        "Temporal limitation: a single frame cannot confirm sustained disengagement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0040_P3",
+      "visual_anchors": [
+        "giraffe heads at different heights",
+        "one giraffe looking down, the other up",
+        "uneven wooden poles behind them"
+      ],
+      "symbolic_mapping": [
+        "vertical variation in posture reflecting divergent orientations",
+        "asymmetry in structure mirroring non-uniform perception"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The differing head angles of the giraffes—downward versus upward—within the same environment suggest that embodied perspective shapes observable reality, aligning with epistemological views where truth is contingent on positionality.",
+      "alternative_interpretations": [
+        "The postures likely reflect momentary feeding or scanning behavior unrelated to cognition."
+      ],
+      "limitations": [
+        "Animal posture cannot be reliably mapped to internal states like belief or knowledge."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:52:00.781727+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ae73514d-ad49-9e1d-8d82-453d29e50e45",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 988,
+        "total_tokens": 1797,
+        "completion_tokens_details": {
+          "text_tokens": 988
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015132f1af0cd7b49d444b",
+      "usage": {
+        "completion_tokens": 853,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1969,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2822
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

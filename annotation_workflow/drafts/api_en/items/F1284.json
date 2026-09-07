@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1284",
+  "sample_id": "PHL1800_HL_0541",
+  "file_name": "PHL1800_HL_0541.png",
+  "batch_id": "B027",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one baseball player in mid-air catching a ball",
+  "captions": {
+    "scene": [
+      "A sunlit baseball field with brown dirt infield and green grass outfield, bounded by a dark advertising banner.",
+      "The background features a large rectangular sign with white text on black and teal panels.",
+      "No other players, spectators, or equipment are visible in the immediate frame."
+    ],
+    "action": [
+      "The player is airborne, both feet off the ground, body angled upward and forward.",
+      "His right arm is fully extended upward, glove open toward a small white object (ball) just above it.",
+      "His left arm is bent and held near his torso; his gaze is directed at the ball."
+    ],
+    "rationale": [
+      "The player’s posture and airborne state suggest he jumped to catch the ball, though the exact takeoff point is not visible.",
+      "The ball appears to be in contact with or just entering the glove, but motion blur prevents confirmation of contact.",
+      "The uniform (green jersey, white pants, cap) and glove indicate organized baseball play, but league or team identity is not verifiable from visuals alone."
+    ],
+    "object": [
+      "The player wears a white baseball cap with a dark brim, a green short-sleeved jersey with a circular logo on the left chest, and light-colored baseball pants with a dark belt.",
+      "He wears a tan leather baseball glove on his right hand, with fingers spread and palm facing upward.",
+      "A white wristband is visible on his left wrist; black athletic shoes with white soles are on his feet.",
+      "A white spherical object, consistent in size and shape with a baseball, is positioned directly above the glove opening.",
+      "The background sign displays legible text: 'WLMI 92.9', partially obscured text reading 'ng's Great... Hill!', and '929wmi.com'; other portions are unreadable due to cropping or blur."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1284_P1",
+      "visual_anchors": [
+        "player airborne",
+        "glove reaching upward",
+        "ball suspended just above glove"
+      ],
+      "symbolic_mapping": [
+        "the suspended moment before contact symbolizes anticipation as a form of agency"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a temporally compressed decision point where effort converges with chance—highlighting how human action is often defined not by outcome but by the committed gesture toward it.",
+      "alternative_interpretations": [
+        "A routine athletic maneuver captured with motion blur, emphasizing physical skill rather than philosophical tension."
+      ],
+      "limitations": [
+        "No facial expression or context confirms intentionality beyond observable motion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1284_P2",
+      "visual_anchors": [
+        "green jersey with logo",
+        "white cap",
+        "standard baseball uniform"
+      ],
+      "symbolic_mapping": [
+        "uniform elements signify role adoption within a structured social practice"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The player’s attire and posture enact a socially recognized role, illustrating how identity is performed through embodied participation in shared symbolic systems.",
+      "alternative_interpretations": [
+        "The clothing is functional sportswear chosen for comfort and regulation compliance, not symbolic expression."
+      ],
+      "limitations": [
+        "Logo details are indistinct; no team name or insignia is readable to confirm affiliation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1284_P3",
+      "visual_anchors": [
+        "sunlit field",
+        "sharp shadow beneath player",
+        "clear sky implied by lighting"
+      ],
+      "symbolic_mapping": [
+        "the isolated figure against open space evokes individual effort within vast, indifferent conditions"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The fleeting airborne instant—measurable in fractions of a second—underscores the transience of human exertion against an enduring natural backdrop, echoing finitude as inherent to action.",
+      "alternative_interpretations": [
+        "The lighting simply indicates daytime play; shadows are normal optical effects with no existential implication."
+      ],
+      "limitations": [
+        "No clock, aging cues, or temporal markers confirm reflection on mortality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:12:02.803277+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c57909eb-f77e-9984-a6b6-ee67c36ff852",
+      "usage": {
+        "prompt_tokens": 889,
+        "completion_tokens": 928,
+        "total_tokens": 1817,
+        "completion_tokens_details": {
+          "text_tokens": 928
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 382,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041147ead6f08776d64691",
+      "usage": {
+        "completion_tokens": 788,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2012,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2800
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

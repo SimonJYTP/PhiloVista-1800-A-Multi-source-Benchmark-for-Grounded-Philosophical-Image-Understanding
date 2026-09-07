@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1506",
+  "sample_id": "PHL1800_IRFL_0016",
+  "file_name": "PHL1800_IRFL_0016.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one woman viewed from behind",
+  "captions": {
+    "scene": [
+      "Indoor setting with large multi-pane window showing blurred outdoor foliage in muted autumnal tones",
+      "Window frame is light gray metal or composite, with visible vertical mullion and horizontal transom",
+      "Interior lighting is diffuse and soft; no direct sunlight or artificial light sources are visible"
+    ],
+    "action": [
+      "Woman stands facing the window with her right hand placed flat against the glass pane",
+      "She wears a white disposable face mask secured with ear loops and tied behind her head",
+      "Her left arm hangs relaxed at her side while her right arm is raised to chest height"
+    ],
+    "rationale": [
+      "The reflection of the woman’s masked face on the glass suggests she is close to the window and the surface is smooth and reflective",
+      "The mask appears to be a standard surgical-style mask based on its pleated structure and white color, though brand or text is unreadable",
+      "Her posture and hand placement indicate intentional contact with the window, but intent (e.g., longing, inspection) cannot be determined from visual evidence alone"
+    ],
+    "object": [
+      "The woman has shoulder-length light brown hair gathered partially at the back with a black hair clip visible above her right ear.",
+      "She wears a dark long-sleeved top with a rounded neckline and subtle fabric texture visible near the shoulder.",
+      "A white elastic strap from the mask loops around her right ear and extends behind her head, where it is tied in a bow-like knot.",
+      "The window glass shows a faint, inverted, and blurred reflection of her masked face and upper torso.",
+      "No text, logos, or readable inscriptions appear anywhere in the image; all markings are indistinct or absent."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1506_P1",
+      "visual_anchors": [
+        "hand pressed against glass",
+        "mask covering lower face",
+        "reflection on window"
+      ],
+      "symbolic_mapping": [
+        "glass as barrier between interior and exterior",
+        "mask as partial concealment of identity"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The physical separation imposed by the window pane and the partial occlusion of facial features by the mask jointly evoke a tension between presence and restriction—being physically located yet visually mediated or incomplete.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine hygiene behavior during a public health measure, with no symbolic intent."
+      ],
+      "limitations": [
+        "No contextual signage, dates, or cultural markers confirm whether the mask use is voluntary, mandated, or habitual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1506_P2",
+      "visual_anchors": [
+        "blurred outdoor foliage",
+        "indoor stillness",
+        "single figure"
+      ],
+      "symbolic_mapping": [
+        "out-of-focus background as temporal distance",
+        "still posture as suspended action"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The contrast between the static human figure and the indistinct natural backdrop suggests a moment arrested in time, where agency is implied by posture but not enacted—raising questions about waiting, transition, or deferred movement.",
+      "alternative_interpretations": [
+        "The blur may result from shallow depth of field rather than intentional symbolism; the woman may be momentarily pausing before moving away."
+      ],
+      "limitations": [
+        "Camera focus settings are unknown; blur could be technical rather than compositional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1506_P3",
+      "visual_anchors": [
+        "reflection of masked face",
+        "hand touching glass",
+        "no other people visible"
+      ],
+      "symbolic_mapping": [
+        "reflection as doubled self",
+        "touch as attempt at connection across boundary"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The reflection creates a secondary, distorted image of the subject, implying that self-perception is mediated through surfaces and constraints—suggesting that truth about one’s position or state may be only partially accessible or inherently refracted.",
+      "alternative_interpretations": [
+        "Reflection is a normal optical effect of glass; no deliberate doubling or metaphor is required."
+      ],
+      "limitations": [
+        "The reflection lacks facial detail due to mask and blur, preventing confirmation of intentional mirroring or self-regard."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:45:04.900849+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2e00be9f-d95f-92ec-a857-6faa5f5b1f3b",
+      "usage": {
+        "prompt_tokens": 845,
+        "completion_tokens": 957,
+        "total_tokens": 1802,
+        "completion_tokens_details": {
+          "text_tokens": 957
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 338,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070144538a879ad2dcb947bc",
+      "usage": {
+        "completion_tokens": 816,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1985,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2801
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

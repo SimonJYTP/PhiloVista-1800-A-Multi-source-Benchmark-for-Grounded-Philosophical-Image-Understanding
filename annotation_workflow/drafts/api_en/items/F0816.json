@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0816",
+  "sample_id": "PHL1800_MM_0087",
+  "file_name": "PHL1800_MM_0087.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two young males in formal attire interacting at a table",
+  "captions": {
+    "scene": [
+      "An indoor room with beige walls, a blue lower wall trim, and a whiteboard mounted on the back wall.",
+      "A wooden rectangular table with scattered papers, folders, and writing instruments.",
+      "Two individuals seated/standing at the table; one facing forward, the other viewed from behind."
+    ],
+    "action": [
+      "The seated male looks toward the standing male with a neutral facial expression and hands resting on documents.",
+      "The standing male holds a clipboard and pen, appearing to review or record information.",
+      "A speech bubble originates near the seated male’s head, containing legible English text."
+    ],
+    "rationale": [
+      "The speech bubble suggests verbal communication is occurring, though only one side is shown visually.",
+      "The presence of documents and formal dress implies an official or procedural context, but the exact nature is unspecified.",
+      "Text on the whiteboard is partially visible but largely illegible due to resolution and angle."
+    ],
+    "object": [
+      "A young male with short brown hair, wearing a navy suit, white shirt, and blue-and-white striped tie, sits at the table with his left hand on paper.",
+      "A second young male, seen from the back, wears a navy suit jacket over a white collared shirt and light-colored trousers, holding a blue clipboard and black pen.",
+      "The table surface is light wood grain, supporting at least five sheets of white paper, two dark folders, and a black pen.",
+      "A whiteboard with faint multicolored text (red, blue, black) is mounted on the rear wall; most characters are unreadable.",
+      "A small circular white dot appears near the seated male’s temple, attached to the speech bubble tail, indicating its origin point."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0816_P1",
+      "visual_anchors": [
+        "speech bubble with 'You don't need to pay extra dues for the event'",
+        "formal attire",
+        "clipboard and documents"
+      ],
+      "symbolic_mapping": [
+        "spoken assurance as a gesture of institutional fairness",
+        "documents as proxies for bureaucratic legitimacy"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes a moment where institutional authority (implied by attire and paperwork) communicates transparency or obligation relief, raising questions about duty, trust, and the moral weight of administrative clarity in social coordination.",
+      "alternative_interpretations": [
+        "This may simply depict routine event registration with a standard fee clarification, devoid of philosophical intent."
+      ],
+      "limitations": [
+        "No visible institutional logos, names, or explicit roles prevent confirming whether the speaker holds formal authority."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0816_P2",
+      "visual_anchors": [
+        "seated male’s direct gaze",
+        "standing male’s obscured face",
+        "asymmetrical positioning at table"
+      ],
+      "symbolic_mapping": [
+        "gaze direction as assertion of agency",
+        "back-facing posture as anonymity or role subordination"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The visual asymmetry—where one subject is fully presented while the other remains anonymous—invites reflection on how visibility shapes perceived legitimacy and power in interpersonal transactions.",
+      "alternative_interpretations": [
+        "The standing figure may be turned away merely due to ergonomic convenience during note-taking, not symbolic erasure."
+      ],
+      "limitations": [
+        "No facial expressions or body language beyond posture are discernible for the standing figure."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0816_P3",
+      "visual_anchors": [
+        "whiteboard with indecipherable text",
+        "paper documents",
+        "speech bubble containing precise instruction"
+      ],
+      "symbolic_mapping": [
+        "illegible background text vs. legible foreground utterance as contrast between systemic opacity and individual clarity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of unreadable institutional signage with a clear spoken directive highlights tensions between accessible truth and structural obscurity, suggesting that freedom from constraint may depend on localized, interpersonal clarification rather than systemic transparency.",
+      "alternative_interpretations": [
+        "The whiteboard content may be irrelevant decoration; the focus is purely on the interaction, not epistemic hierarchy."
+      ],
+      "limitations": [
+        "The whiteboard’s content cannot be verified as intentionally obscure or meaningful—it may simply be out of focus."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:19:09.019699+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3fb2117e-ad9f-9924-82b4-02732259ac54",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 987,
+        "total_tokens": 2520,
+        "completion_tokens_details": {
+          "text_tokens": 987
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703185036141457b5d34ad2",
+      "usage": {
+        "completion_tokens": 851,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2944,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3795
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

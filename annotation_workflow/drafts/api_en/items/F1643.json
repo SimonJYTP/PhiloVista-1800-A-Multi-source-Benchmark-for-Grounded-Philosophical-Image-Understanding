@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1643",
+  "sample_id": "PHL1800_HL_0127",
+  "file_name": "PHL1800_HL_0127.png",
+  "batch_id": "B033",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman holding two children at a glass door while a man stands outside holding groceries",
+  "captions": {
+    "scene": [
+      "A brick-walled storefront with a glass double door marked 'OPEN' and a posted schedule sign.",
+      "A yellow fire hydrant is positioned in the foreground, partially obscuring the lower portion of the doorway.",
+      "Inside the store, reflections show additional figures including a child in purple clothing."
+    ],
+    "action": [
+      "The woman inside grips the door handle with her left hand and supports a toddler in purple on her hip with her right arm.",
+      "A second child lies horizontally across the woman’s forearm, head near the door frame, wearing light-colored clothing and holding a small object.",
+      "A man outside stands facing the door, holding a smartphone in his right hand and two plastic grocery bags in his left."
+    ],
+    "rationale": [
+      "The woman’s posture and grip suggest she is actively managing entry/exit with two dependent children, indicated by their positions relative to her body.",
+      "The man’s orientation and phone-holding imply he may be waiting or coordinating, though no direct interaction is visible; this is speculative without facial or gestural cues.",
+      "The presence of a handicap accessibility sign on the door indicates compliance with accessibility standards, but no person using mobility aids is visible."
+    ],
+    "object": [
+      "A rectangular white sign with black text reading 'OPEN' is affixed above the door handle.",
+      "A smaller white sign with black text lists business hours: 'Monday through Friday: 9-5:30' and 'Saturday & Sunday — Closed', though some characters are slightly blurred.",
+      "A blue International Symbol of Access (wheelchair) sign is mounted on the left door panel, with unreadable text beneath it.",
+      "The fire hydrant is painted bright yellow with a hexagonal operating nut and two side nozzles capped with yellow caps.",
+      "The man wears a gray short-sleeved t-shirt, dark knee-length shorts, eyeglasses, and holds translucent plastic bags containing indistinct items."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1643_P1",
+      "visual_anchors": [
+        "woman holding two children",
+        "man holding grocery bags",
+        "handicap sign on door"
+      ],
+      "symbolic_mapping": [
+        "the physical burden of care mapped to social responsibility",
+        "the separation of interior/exterior space mapped to inclusion/exclusion"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where care labor is visibly enacted at a threshold of public access, highlighting how ethical responsibility for dependents intersects with spatial inclusion governed by institutional signage.",
+      "alternative_interpretations": [
+        "This is simply a routine family entrance with no symbolic weight—just people moving through a commercial doorway."
+      ],
+      "limitations": [
+        "No facial expressions or verbal exchange are visible, so intent or emotional valence cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1643_P2",
+      "visual_anchors": [
+        "fire hydrant in foreground",
+        "glass door reflecting interior",
+        "child lying across arm"
+      ],
+      "symbolic_mapping": [
+        "the hydrant as inert infrastructure contrasting with human motion",
+        "reflection as partial visibility of hidden activity"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The fire hydrant obstructs full view of the doorway, symbolizing how mundane infrastructure constrains perception and movement, while reflections hint at incomplete knowledge of interior states.",
+      "alternative_interpretations": [
+        "The hydrant is merely a foreground element with no intended symbolism; reflections are incidental optical effects."
+      ],
+      "limitations": [
+        "The reflection shows only partial silhouettes; no identifiable actions or identities can be extracted from it."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1643_P3",
+      "visual_anchors": [
+        "man holding phone",
+        "woman gripping door",
+        "two children in close proximity"
+      ],
+      "symbolic_mapping": [
+        "phone as mediation of presence",
+        "door as liminal boundary between roles"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of mediated attention (phone) and embodied care (holding children) at a threshold suggests tension between constructed identity in public space and the unmediated demands of relational existence.",
+      "alternative_interpretations": [
+        "The man is checking time or messages; the woman is simply opening the door—no deeper narrative is present."
+      ],
+      "limitations": [
+        "The phone screen is not visible, so its use cannot be determined; no gaze direction confirms attentional focus."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:56:41.790276+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e5854ad2-9d48-99b8-b6e6-0a792b7fbb29",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1020,
+        "total_tokens": 1829,
+        "completion_tokens_details": {
+          "text_tokens": 1020
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070456249ea5c8b3ef044ebf",
+      "usage": {
+        "completion_tokens": 881,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1996,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2877
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

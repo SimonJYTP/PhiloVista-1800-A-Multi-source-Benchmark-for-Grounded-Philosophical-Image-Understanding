@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0202",
+  "sample_id": "PHL1800_HL_0309",
+  "file_name": "PHL1800_HL_0309.png",
+  "batch_id": "B006",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "five youth soccer players in mid-action near a goal net",
+  "captions": {
+    "scene": [
+      "A grass field with a white goal net in the foreground, trees, and a distant scoreboard in the background.",
+      "Three players wear pink jerseys with white shorts and pink socks; two wear yellow jerseys with white shorts and green socks; one wears a blue jersey with white shorts and pink socks.",
+      "A white soccer ball is airborne near the center of the frame, partially obscured by a player’s leg and the net."
+    ],
+    "action": [
+      "A pink-jerseyed player (center) is airborne, right leg extended toward the ball, left knee bent, arms out for balance.",
+      "A yellow-jerseyed player (left of center) is also airborne, legs crossed, arms raised, appearing to challenge for the ball.",
+      "A blue-jerseyed player (right) faces away, leaning forward with arms slightly raised, observing the play."
+    ],
+    "rationale": [
+      "The central pink-jerseyed player’s posture—lifted off ground, leg raised high—indicates active aerial engagement with the ball, not standing or falling.",
+      "The net’s distortion and proximity suggest the action occurs within or just outside the goal area, though exact position relative to the goal line is ambiguous due to occlusion.",
+      "The presence of multiple players converging on the ball implies a contested moment, but whether it is an offensive shot, defensive clearance, or accidental collision cannot be determined from the still image alone."
+    ],
+    "object": [
+      "A white soccer ball with visible black paneling is suspended mid-air at approximately head height of the central pink-jerseyed player.",
+      "The goal net consists of white square-mesh nylon, taut and slightly deformed near the center where players are clustered.",
+      "One pink-jerseyed player wears a black headband; another pink-jerseyed player (far left) has short brown hair and no headband.",
+      "The blue-jerseyed player’s back displays the name 'ELDER' above the number '1' in white capital letters.",
+      "A yellow-jerseyed player (second from left) has both hands raised near chest level and wears no headband."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0202_P1",
+      "visual_anchors": [
+        "pink jersey with 'ATHENS FC' text",
+        "blue jersey with 'ELDER 1'",
+        "multiple players converging on one ball"
+      ],
+      "symbolic_mapping": [
+        "uniform numbers and names signify assigned roles within a collective structure",
+        "shared focus on a single object reflects temporary alignment of individual agency toward a common objective"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a microcosm of social existence where individual identity (name/number) is subsumed temporarily under collective action (ball contest), illustrating how structured roles enable coordinated movement toward shared goals despite divergent immediate intentions.",
+      "alternative_interpretations": [
+        "This is simply a routine competitive sports moment with no deeper meaning beyond athletic execution."
+      ],
+      "limitations": [
+        "No facial expressions or post-game context are visible, so inferred social dynamics remain speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0202_P2",
+      "visual_anchors": [
+        "net occupying foreground",
+        "players partially obscured by mesh",
+        "ball visible through net openings"
+      ],
+      "symbolic_mapping": [
+        "the net acts as a filter mediating perception of action",
+        "occlusion suggests partial knowledge of events even when visually present"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The net functions as a literal and metaphorical constraint: it physically limits access to the goal while simultaneously framing what can be known—the ball’s trajectory and players’ positions are only partially discernible, echoing epistemic limits in human observation.",
+      "alternative_interpretations": [
+        "The net is merely functional equipment; its visual interference is incidental, not symbolic."
+      ],
+      "limitations": [
+        "The net’s role as symbolic filter depends on interpreting its placement as intentional framing rather than standard goal design."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0202_P3",
+      "visual_anchors": [
+        "two airborne players in opposing kits",
+        "identical pink socks across teams",
+        "simultaneous upward motion"
+      ],
+      "symbolic_mapping": [
+        "shared sock color overrides team distinction in moment of physical exertion",
+        "vertical leap signifies suspension of grounded hierarchy"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "In the instant of vertical ascent, uniform differences blur—especially via matching pink socks—suggesting that embodied effort momentarily dissolves categorical boundaries, revealing identity as contingent upon shared physical condition rather than fixed affiliation.",
+      "alternative_interpretations": [
+        "Socks match due to league-wide equipment rules, not symbolic intent."
+      ],
+      "limitations": [
+        "Sock color consistency may result from administrative policy rather than expressive choice, undermining symbolic reading."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of players: candidate states six but image shows five; misdescribes pink-jerseyed players as five (actually three) and yellow-jerseyed as two (actually two) with conflicting details; misidentifies a player’s headband color (pink instead of black) and misstates a player’s hair/headband presence."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:17:42.985900+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-23aae9e0-2133-9781-891e-ad928e0b6e70",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1104,
+        "total_tokens": 1873,
+        "completion_tokens_details": {
+          "text_tokens": 1104
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021722bd4bd57ff0664db1",
+      "usage": {
+        "completion_tokens": 1124,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2039,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3163
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

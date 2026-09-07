@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0377",
+  "sample_id": "PHL1800_HL_0312",
+  "file_name": "PHL1800_HL_0312.png",
+  "batch_id": "B010",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a utility worker standing beside a white utility truck at a road closure",
+  "captions": {
+    "scene": [
+      "A black-and-white urban-industrial street scene with overhead power lines, utility poles, and construction fencing in the background.",
+      "A paved road intersection blocked by traffic cones and two signs: 'ROAD CLOSED' and 'BUSINESS ONLY'.",
+      "Multiple vehicles including a white utility truck, a van, and distant trucks are visible; buildings and cranes appear in the far background."
+    ],
+    "action": [
+      "A person wearing a high-visibility vest and hard hat stands beside the driver’s side of a parked utility truck.",
+      "The utility truck is stationary with its front wheels turned slightly left, positioned across the lane to enforce the closure.",
+      "Traffic cones are arranged in a linear barrier across the roadway, indicating active traffic control."
+    ],
+    "rationale": [
+      "The presence of 'ROAD CLOSED' and 'BUSINESS ONLY' signs suggests intentional restriction of public access, likely for work or safety.",
+      "The worker’s attire (vest, hard hat) and proximity to the truck imply occupational engagement, though no tools or active work are visible.",
+      "Overhead wires and multiple utility poles indicate infrastructure maintenance or installation activity, but no ongoing work is depicted."
+    ],
+    "object": [
+      "A white utility truck with a side-mounted equipment box and visible company logo on the door is parked diagonally across the road.",
+      "Five orange traffic cones with white reflective bands are placed in a row across the asphalt surface, forming a physical barrier.",
+      "Two rectangular signs mounted on posts are legible: one reads 'ROAD CLOSED', the other 'BUSINESS ONLY'.",
+      "A person with short hair, wearing a light-colored high-visibility vest over dark clothing and a dark hard hat, stands with hands clasped in front.",
+      "Three tall wooden utility poles with crossarms and insulators support multiple parallel overhead wires crossing the frame horizontally."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0377_P1",
+      "visual_anchors": [
+        "'ROAD CLOSED' sign",
+        "traffic cones",
+        "utility worker"
+      ],
+      "symbolic_mapping": [
+        "road closure as enforced boundary",
+        "cones as temporary authority markers"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies the tension between collective order and individual mobility: the physical barrier and signage instantiate institutional constraint, while the lone worker becomes a human proxy for systemic regulation.",
+      "alternative_interpretations": [
+        "This is simply a routine traffic management setup with no symbolic intent; the worker is merely waiting for instructions."
+      ],
+      "limitations": [
+        "No facial expression, gesture, or interaction is visible to confirm agency or intentionality of the worker."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0377_P2",
+      "visual_anchors": [
+        "utility truck",
+        "overhead power lines",
+        "worker in vest"
+      ],
+      "symbolic_mapping": [
+        "truck as extension of labor",
+        "wires as invisible infrastructure sustaining modern life"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The scene visualizes the hidden labor that maintains societal function—visible only when disruption occurs—highlighting how technological systems depend on anonymous human effort.",
+      "alternative_interpretations": [
+        "The truck and worker are incidental to the scene; the focus is on the road closure itself, not labor."
+      ],
+      "limitations": [
+        "The worker’s specific task is unknown; no tools, repair activity, or equipment deployment is shown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0377_P3",
+      "visual_anchors": [
+        "black-and-white tonality",
+        "empty lanes beyond cones",
+        "distant industrial structures"
+      ],
+      "symbolic_mapping": [
+        "monochrome rendering as temporal distancing",
+        "emptiness as suspended time"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The grayscale palette and static composition evoke a moment arrested in transition—where movement is halted, decisions deferred, and the ordinary rhythm of passage suspended by external decree.",
+      "alternative_interpretations": [
+        "The image is monochrome due to photographic choice or processing, not symbolic intent; the emptiness reflects low traffic volume at that hour."
+      ],
+      "limitations": [
+        "No clock, shadow length, or contextual time indicators confirm temporal suspension; lighting suggests daytime but not precise moment."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:41:24.774388+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e0145e39-73c7-93e7-ab50-23416fd80db7",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 974,
+        "total_tokens": 1783,
+        "completion_tokens_details": {
+          "text_tokens": 974
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702410664d73d99f8274a2a",
+      "usage": {
+        "completion_tokens": 835,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1953,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2788
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

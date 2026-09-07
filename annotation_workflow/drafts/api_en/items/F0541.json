@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0541",
+  "sample_id": "PHL1800_HL_0262",
+  "file_name": "PHL1800_HL_0262.png",
+  "batch_id": "B013",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "male tennis player in white attire mid-serve on grass court",
+  "captions": {
+    "scene": [
+      "Green grass tennis court with white boundary lines and a green perimeter wall topped by a low metal railing",
+      "Spectators seated behind the wall in multiple rows, wearing varied casual clothing; some leaning forward attentively",
+      "A beige fabric barrier runs along the base of the wall, separating the court from spectator seating"
+    ],
+    "action": [
+      "The player’s right arm is raised high with an open hand, left arm holds a blue-framed racket near waist level, body rotated sideways",
+      "The player’s left foot is planted while right foot is lifted off the ground, knees bent, torso leaning forward",
+      "Multiple spectators are looking toward the player or slightly upward; one person in red cap holds a camera to eye level"
+    ],
+    "rationale": [
+      "The player’s posture—raised non-racket arm, bent knees, and racket position—is consistent with a tennis serve motion",
+      "The presence of a tennis racket, grass surface, and white court lines confirms this is a tennis match setting",
+      "The ball is not visible in the frame, so its exact location or trajectory cannot be confirmed"
+    ],
+    "object": [
+      "A male adult with short dark hair wears a white short-sleeved shirt with red trim on shoulders and sleeves, white shorts with red side stripe, white socks, and white athletic shoes with black accents.",
+      "A tennis racket with a blue frame, white strings, and a black grip is held in the player’s left hand, angled downward.",
+      "A green vertical wall with evenly spaced dark vertical supports stands behind the court; a horizontal metal railing runs across its top edge.",
+      "At least 18 distinct individuals are visible in the spectator area: 7 in the front row, 6 in the second row, and 5 partially visible behind them.",
+      "A bright yellow-green tennis ball appears in the upper right corner, blurred and partially cut off by the image edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0541_P1",
+      "visual_anchors": [
+        "player’s raised arm and focused gaze",
+        "spectators’ fixed attention",
+        "green wall separating player from crowd"
+      ],
+      "symbolic_mapping": [
+        "raised arm as gesture of commitment before action",
+        "wall as physical manifestation of role separation"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The moment captures the tension between individual agency—embodied in the player’s poised decision to serve—and the collective witnessing that constitutes social validation of that act.",
+      "alternative_interpretations": [
+        "It is simply a standard athletic motion during a competitive match, with no deeper meaning implied by the visual elements alone."
+      ],
+      "limitations": [
+        "No facial expressions are fully legible; emotional or intentional states cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0541_P2",
+      "visual_anchors": [
+        "grass court surface",
+        "white boundary lines",
+        "player’s uniform with red accents"
+      ],
+      "symbolic_mapping": [
+        "grass as ephemeral natural medium contrasted with rigid lines",
+        "uniform colors as markers of institutional affiliation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The structured geometry of the court imposes constraint on movement, while the player’s attire signals adherence to codified identity norms within a regulated sport.",
+      "alternative_interpretations": [
+        "The grass and lines are functional for gameplay; the uniform follows tournament dress codes, not symbolic intent."
+      ],
+      "limitations": [
+        "No signage or logos confirm institutional rules; appearance may be coincidental rather than prescribed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0541_P3",
+      "visual_anchors": [
+        "blurred tennis ball at edge of frame",
+        "player’s dynamic pose frozen mid-motion",
+        "spectators’ stillness contrasting with athlete’s motion"
+      ],
+      "symbolic_mapping": [
+        "blurred ball as fleeting instant of potential",
+        "frozen pose as suspension of time before outcome"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image freezes a transient event where truth (the ball’s trajectory) is not yet knowable, evoking the human condition of acting amid uncertainty about future consequences.",
+      "alternative_interpretations": [
+        "Motion blur results from camera shutter speed and subject movement, not philosophical intent."
+      ],
+      "limitations": [
+        "The ball’s position and velocity are indeterminate; no outcome is depicted or implied."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:55:08.465399+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f97e0213-a058-944a-b0d1-8eabddb2597f",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1001,
+        "total_tokens": 1770,
+        "completion_tokens_details": {
+          "text_tokens": 1001
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702545190f6c9cc743544c9",
+      "usage": {
+        "completion_tokens": 859,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1932,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2791
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

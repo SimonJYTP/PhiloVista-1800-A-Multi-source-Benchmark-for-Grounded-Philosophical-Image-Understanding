@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0116",
+  "sample_id": "PHL1800_HAIV_0306",
+  "file_name": "PHL1800_HAIV_0306.png",
+  "batch_id": "B005",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized wine bottle and wine glass with heart-shaped visual elements",
+  "captions": {
+    "scene": [
+      "A dark wine bottle with a yellow label featuring a brown heart, positioned centrally against a white background.",
+      "A wine glass filled with red liquid sits to the lower left of the bottle, with a small droplet suspended above the rim.",
+      "Two curved maroon lines arch symmetrically from the bottle’s shoulders upward and outward, forming a heart-like outline around the bottle’s neck."
+    ],
+    "action": [
+      "A red droplet is depicted mid-air above the wine glass rim, suggesting recent pouring or splashing.",
+      "A thin wavy maroon line rises from the bottle’s neck, indicating vapor or aroma emission.",
+      "The bottle and glass are stationary; no motion blur or dynamic posture is visible."
+    ],
+    "rationale": [
+      "The heart shape formed by the maroon arcs and the heart on the label suggest intentional thematic design rather than accidental composition.",
+      "The droplet above the glass implies a moment captured just after liquid transfer, though no hand or pourer is shown.",
+      "The absence of text on the label or glass prevents identification of brand, origin, or vintage; all labeling is purely graphical."
+    ],
+    "object": [
+      "The wine bottle has a black body, olive-green neck, and a gold band at the neck–shoulder junction.",
+      "The bottle’s label is yellow with a solid brown heart centered on it and a thin brown border.",
+      "The wine glass has a clear bowl containing deep red liquid, a thin stem, and a circular base; its rim shows a golden outline.",
+      "A single red droplet appears suspended in air above the glass rim, slightly offset to the left.",
+      "Two symmetrical maroon arcs originate near the bottle’s shoulders and curve upward, converging loosely above the neck without touching."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0116_P1",
+      "visual_anchors": [
+        "brown heart on yellow label",
+        "maroon arcs forming heart outline",
+        "red droplet above glass"
+      ],
+      "symbolic_mapping": [
+        "heart shape → love or affection",
+        "droplet → transience or offering"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "time_mortality"
+      ],
+      "interpretation": "The repeated heart motif alongside a fleeting droplet suggests the fragility and intentionality of social bonds—love as both enduring symbol and momentary gesture.",
+      "alternative_interpretations": [
+        "The image may simply be decorative packaging art emphasizing romance for marketing purposes, with no deeper intent."
+      ],
+      "limitations": [
+        "No textual context confirms symbolic intent; hearts are common commercial motifs without inherent philosophical meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0116_P2",
+      "visual_anchors": [
+        "wine bottle",
+        "filled glass",
+        "vapor line rising from neck"
+      ],
+      "symbolic_mapping": [
+        "wine → ritual or communion",
+        "vapor → impermanence or evaporation of experience"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "time_mortality"
+      ],
+      "interpretation": "The rising vapor from the sealed bottle juxtaposed with the full glass evokes the tension between preserved potential and consumed actuality, questioning what endures after experience is enacted.",
+      "alternative_interpretations": [
+        "The vapor line may represent aroma, a standard sensory cue in wine illustration, not metaphysical symbolism."
+      ],
+      "limitations": [
+        "The vapor line is abstract and non-representational; its interpretation as ‘impermanence’ relies on external metaphor, not visual specificity."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0116_P3",
+      "visual_anchors": [
+        "symmetrical maroon arcs",
+        "central bottle",
+        "glass offset to left"
+      ],
+      "symbolic_mapping": [
+        "symmetry → balance or duality",
+        "offset placement → asymmetry in relationship"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The balanced framing of the bottle by arcs contrasts with the off-center glass, reflecting how identity (the bottle) may be framed by ideals while lived experience (the glass) remains unevenly positioned within them.",
+      "alternative_interpretations": [
+        "The composition follows standard graphic design principles for visual hierarchy and balance, not conceptual contrast."
+      ],
+      "limitations": [
+        "No facial features, figures, or narrative cues tie the objects to identity or choice; spatial arrangement alone is weak evidence."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:02:20.469825+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-33c54838-78ce-97cb-b2ba-29145c2fa898",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 976,
+        "total_tokens": 2509,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070201494181bf87ed8a4183",
+      "usage": {
+        "completion_tokens": 838,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2937,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3775
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

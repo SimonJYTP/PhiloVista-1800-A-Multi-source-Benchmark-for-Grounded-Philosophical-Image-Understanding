@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1719",
+  "sample_id": "PHL1800_IRFL_0025",
+  "file_name": "PHL1800_IRFL_0025.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult woman seated at a desk",
+  "captions": {
+    "scene": [
+      "A dimly lit indoor office setting with a dark gray wall and a black office chair visible behind the subject.",
+      "A white desk surface holds printed documents with blue bar charts, a red pen, and a black computer keyboard.",
+      "The lighting is low-key with directional illumination highlighting the subject’s face and arms while casting shadows elsewhere."
+    ],
+    "action": [
+      "The woman grips her hair with both hands, fingers inserted into her scalp near the temples.",
+      "Her eyes are closed, eyebrows furrowed, and mouth slightly open in a grimace-like expression.",
+      "She leans forward over the desk, resting her forearms on the surface while her head remains elevated."
+    ],
+    "rationale": [
+      "The posture and facial musculature suggest physical tension or discomfort, though the specific cause is not visible.",
+      "The presence of charts and a keyboard indicates a work-related context, but no explicit task is being performed.",
+      "The watermark 'dreamstime' overlays the image, indicating it is a stock photograph; thus, the scene may be staged."
+    ],
+    "object": [
+      "The woman wears a white long-sleeved collared shirt with a buttoned cuff visible on her right wrist.",
+      "A black suit jacket hangs over the back of the chair behind her left shoulder.",
+      "Two sheets of paper lie on the desk: one displays blue horizontal bar graphs, the other is blank except for a red pen resting on it.",
+      "A standard black QWERTY keyboard occupies the lower-right foreground, partially cropped.",
+      "Her dark brown hair is disheveled, with strands pulled upward by her hands and some falling across her forehead."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1719_P1",
+      "visual_anchors": [
+        "gripping hair with both hands",
+        "closed eyes",
+        "furrowed brow"
+      ],
+      "symbolic_mapping": [
+        "physical self-contact under stress as embodiment of internal conflict"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The gesture of clutching one’s own hair may symbolize an embodied struggle against constraints imposed by labor systems or technological demands, where agency is felt as physically constricting.",
+      "alternative_interpretations": [
+        "It may simply reflect transient fatigue or headache unrelated to philosophical themes."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the pose is common in stock imagery for generic distress."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1719_P2",
+      "visual_anchors": [
+        "blue bar charts",
+        "keyboard",
+        "white shirt"
+      ],
+      "symbolic_mapping": [
+        "data visualization as representation of quantified existence"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of abstract data (charts) with bodily strain suggests a tension between objective knowledge claims and lived social experience, where truth is mediated through institutional labor.",
+      "alternative_interpretations": [
+        "The charts are generic placeholders; their content is unreadable and likely irrelevant to the subject’s immediate state."
+      ],
+      "limitations": [
+        "Chart labels and axes are illegible, preventing verification of data meaning or relevance."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1719_P3",
+      "visual_anchors": [
+        "dark background",
+        "isolated figure",
+        "desk as boundary"
+      ],
+      "symbolic_mapping": [
+        "desk edge as threshold between public role and private strain"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The subject’s position—leaning over the desk yet not fully collapsed—captures a moment of suspended identity, where appearance (professional attire) conflicts with unperformed interiority, reflecting a stalled journey of self-definition.",
+      "alternative_interpretations": [
+        "She may be pausing momentarily before resuming work; no evidence confirms narrative stasis."
+      ],
+      "limitations": [
+        "No facial expression or gaze direction confirms introspection; the expression could indicate pain rather than existential reflection."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:46:03.734979+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9bc55a5d-26d3-9a89-804d-23723abb189d",
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 906,
+        "total_tokens": 1840,
+        "completion_tokens_details": {
+          "text_tokens": 906
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 427,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014544c55b2563a6ca4264",
+      "usage": {
+        "completion_tokens": 770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2039,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2809
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1009",
+  "sample_id": "PHL1800_IRFL_0037",
+  "file_name": "PHL1800_IRFL_0037.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one woman",
+  "captions": {
+    "scene": [
+      "A light-colored fabric sofa occupies the foreground and midground.",
+      "A softly blurred background shows vertical white panels, possibly window blinds or wall molding.",
+      "Natural lighting illuminates the scene from the upper left, casting soft shadows."
+    ],
+    "action": [
+      "The woman reclines with her head tilted back and eyes closed.",
+      "Her arms are raised behind her head, hands clasped or resting near her neck.",
+      "Her mouth is open in a visible smile showing upper teeth."
+    ],
+    "rationale": [
+      "The relaxed posture and facial expression suggest comfort, though internal state is not directly observable.",
+      "The orange long-sleeved top appears form-fitting and smooth-textured, consistent with casual indoor wear.",
+      "Hair is dark, curly, and gathered loosely at the back of the head; exact styling cannot be confirmed due to partial occlusion."
+    ],
+    "object": [
+      "The woman wears a solid orange long-sleeved top with a rounded neckline that dips slightly at the center.",
+      "Her hair is dark brown to black, curly, and pulled back into a high, loose bun or ponytail.",
+      "She rests on a beige or light gray woven fabric sofa with visible texture and seam lines.",
+      "Her left ear is fully visible; her right ear is partially obscured by her arm and hair.",
+      "The background contains no readable text or distinct objects beyond indistinct white vertical elements."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1009_P1",
+      "visual_anchors": [
+        "closed eyes",
+        "reclined posture",
+        "smiling mouth"
+      ],
+      "symbolic_mapping": [
+        "closed eyes → withdrawal from external stimuli",
+        "reclined posture → temporary suspension of agency"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually frames a moment where bodily stillness and facial expression co-occur, suggesting a voluntary pause from action—a phenomenological instance of freedom as self-determined cessation rather than movement.",
+      "alternative_interpretations": [
+        "This may simply depict physical relaxation after exertion, with no intentional philosophical stance."
+      ],
+      "limitations": [
+        "No contextual cues confirm intentionality or duration of the pose; it could be staged or transient."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1009_P2",
+      "visual_anchors": [
+        "orange top",
+        "light sofa",
+        "soft lighting"
+      ],
+      "symbolic_mapping": [
+        "warm color palette → affective resonance",
+        "neutral background → decontextualized subjectivity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The deliberate visual harmony between garment color and ambient tone emphasizes appearance as a curated interface—where identity is momentarily expressed through aesthetic coherence rather than narrative or role.",
+      "alternative_interpretations": [
+        "The color choice may reflect wardrobe availability or lighting conditions, not symbolic intent."
+      ],
+      "limitations": [
+        "Color perception is subject to white balance and display variation; no label confirms garment intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1009_P3",
+      "visual_anchors": [
+        "hands behind head",
+        "neck exposed",
+        "unadorned skin"
+      ],
+      "symbolic_mapping": [
+        "exposed neck → vulnerability",
+        "symmetrical arm position → equilibrium"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The pose presents a body in unguarded repose within a domestic interior, evoking the tension between private embodiment and the implied social contract of safety required for such exposure.",
+      "alternative_interpretations": [
+        "The pose is common in commercial photography and likely optimized for visual appeal, not sociological commentary."
+      ],
+      "limitations": [
+        "No indicators of audience, surveillance, or social interaction are present; the setting is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:38:22.428353+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ba77a278-2f5c-995d-8022-c864eb20f5d0",
+      "usage": {
+        "prompt_tokens": 1901,
+        "completion_tokens": 848,
+        "total_tokens": 2749,
+        "completion_tokens_details": {
+          "text_tokens": 848
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1394,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033802427c191873b546dd",
+      "usage": {
+        "completion_tokens": 713,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3249,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3962
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

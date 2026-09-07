@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0897",
+  "sample_id": "PHL1800_MM_0034",
+  "file_name": "PHL1800_MM_0034.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a boy in an orange shirt and a woman in a blue suit sitting cross-legged on a carpeted floor",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor space with bookshelves, tables, and multiple children seated at desks in the background.",
+      "The foreground features two individuals seated on a teal patterned carpet; behind them are wooden bookshelves filled with colorful books and educational posters on green walls.",
+      "Natural light enters from large windows on the left, casting shadows across the floor and illuminating the central pair."
+    ],
+    "action": [
+      "The boy has his mouth open, eyes wide, hands clasped near his chest, and is looking toward the woman.",
+      "The woman holds an open illustrated book with both hands and gazes downward at it; her posture is upright and still.",
+      "A speech bubble originates near the boy’s head and contains legible text: 'I'm listening quietly to the story.'"
+    ],
+    "rationale": [
+      "The boy’s facial expression and posture suggest active engagement or reaction, though the exact emotional valence is not determinable from visual evidence alone.",
+      "The woman’s focused gaze on the book and stable hand position indicate she is reading or presenting the book, but whether she is speaking is not visually verifiable.",
+      "The presence of other children seated at tables suggests a group setting such as a classroom or library story time, but the specific institutional context cannot be confirmed solely from visible elements."
+    ],
+    "object": [
+      "The boy wears an orange short-sleeved T-shirt with a partially visible graphic and blue jeans; he sits cross-legged on the carpet with black shoes.",
+      "The woman wears a navy-blue blazer over a light-blue collared shirt, dark opaque tights, and is seated cross-legged holding a hardcover children’s book with multicolored illustrations on its pages.",
+      "The book’s cover shows yellow, green, and red sections with indistinct text and imagery; interior pages display full-color illustrations but no readable words.",
+      "In the background, six other children are visible: five seated at wooden tables facing forward, one partially obscured behind the boy; all wear casual clothing.",
+      "Wooden bookshelves line the right and rear walls, stocked with books whose spines show varied colors (blue, red, yellow, green) but no legible titles."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0897_P1",
+      "visual_anchors": [
+        "boy’s open mouth",
+        "speech bubble with declarative sentence",
+        "woman’s downward gaze at book"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents an assertion of internal state",
+        "the book symbolizes transmitted knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The image stages a moment where a child publicly declares attentive reception of narrative—a performative alignment of self with communal learning norms, highlighting how truth-claims about inner states are socially enacted through language and posture.",
+      "alternative_interpretations": [
+        "The speech bubble may be a narrative device added post-capture, not reflecting actual utterance; the scene could simply depict silent reading without verbalization."
+      ],
+      "limitations": [
+        "The speech bubble’s origin point is ambiguous—it appears near the boy but lacks a clear tail connecting to his mouth, making speaker attribution inferential rather than definitive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0897_P2",
+      "visual_anchors": [
+        "multiple children seated in rows",
+        "bookshelves framing the space",
+        "uniform lighting"
+      ],
+      "symbolic_mapping": [
+        "rows of desks imply structured participation",
+        "book-filled environment signifies institutionalized knowledge access"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The spatial arrangement—adult reader centrally positioned while children occupy peripheral or subordinate positions—visually encodes hierarchical social roles within pedagogical settings, where authority is mediated through control of narrative and physical placement.",
+      "alternative_interpretations": [
+        "The layout may reflect practical ergonomics for group storytelling rather than intentional power signaling; children appear relaxed, not coerced."
+      ],
+      "limitations": [
+        "No visible gestures of authority (e.g., raised hand, pointing) or resistance (e.g., turned heads, frowning) confirm intent behind spatial organization."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0897_P3",
+      "visual_anchors": [
+        "boy’s wide eyes",
+        "static posture of both figures",
+        "carpet texture and shadow patterns"
+      ],
+      "symbolic_mapping": [
+        "stillness contrasts with implied narrative motion",
+        "shadow indicates external illumination source beyond the frame"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The frozen instant captures a tension between temporal flow (the unfolding story) and stasis (bodies held in attentive pose), suggesting how constraint—physical, social, or cognitive—enables focused engagement with transient meaning.",
+      "alternative_interpretations": [
+        "The image is a staged photograph; the stillness reflects photographic capture, not philosophical tension."
+      ],
+      "limitations": [
+        "No clock, timer, or sequential frames exist to verify temporal dynamics; interpretation relies on assumed narrative continuity not present in the single image."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The count of background children is incorrect; the image shows six children in the background, not seven."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:26:10.255010+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d41ed9cc-9acb-9f52-a9db-f64b88dee0ea",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1152,
+        "total_tokens": 2685,
+        "completion_tokens_details": {
+          "text_tokens": 1152
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032543591c24d86e3b4478",
+      "usage": {
+        "completion_tokens": 1025,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3108,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4133
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

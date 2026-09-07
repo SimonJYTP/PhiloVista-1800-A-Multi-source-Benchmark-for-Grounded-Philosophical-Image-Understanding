@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1177",
+  "sample_id": "PHL1800_IRFL_0088",
+  "file_name": "PHL1800_IRFL_0088.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a lion and a fox positioned near a cave entrance",
+  "captions": {
+    "scene": [
+      "A large lion sits at the mouth of a rocky cave with white and gray striated walls.",
+      "A smaller orange fox sits on pinkish ground facing the lion, with green grass patches nearby.",
+      "Paw prints are visible on the pink ground between the two animals."
+    ],
+    "action": [
+      "The lion is seated with front paws extended forward, head raised, and eyes directed toward the fox.",
+      "The fox is seated upright on its hind legs, tail curled beside it, head turned toward the lion.",
+      "Both animals are stationary and oriented toward each other in a face-to-face configuration."
+    ],
+    "rationale": [
+      "The lion’s posture suggests alertness rather than aggression due to lack of bared teeth or raised hackles.",
+      "The fox’s upright posture and direct gaze indicate attention, but no visible signs confirm intent (e.g., submission or challenge).",
+      "The presence of paw prints implies prior movement, yet no motion blur confirms current movement; stillness is inferred from pose stability."
+    ],
+    "object": [
+      "The lion has tawny fur, a full mane, and visible claws on its front paws resting on the ground.",
+      "The fox has reddish-orange fur, a bushy tail with a white tip, pointed ears, and a slender snout.",
+      "The cave entrance is irregularly shaped, with shadowed interior and light-colored exterior rock surfaces.",
+      "The ground surface is predominantly pink with scattered dark specks interpreted as paw prints.",
+      "Small green tufts of vegetation appear at the lower left edge and upper right corner of the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1177_P1",
+      "visual_anchors": [
+        "lion seated at cave mouth",
+        "fox facing lion",
+        "paw prints on ground"
+      ],
+      "symbolic_mapping": [
+        "cave entrance as threshold",
+        "face-to-face orientation as encounter"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "choice_journey"
+      ],
+      "interpretation": "The spatial arrangement evokes a moment of decision at a liminal boundary, where relative size and positioning suggest asymmetrical power dynamics preceding a potential choice.",
+      "alternative_interpretations": [
+        "A simple wildlife illustration showing two species coexisting near shelter without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or narrative context confirm intentional symbolism; posture alone cannot verify internal states or intentions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1177_P2",
+      "visual_anchors": [
+        "lion’s direct gaze",
+        "fox’s attentive posture",
+        "shared ground space"
+      ],
+      "symbolic_mapping": [
+        "mutual observation as recognition",
+        "proximity without contact as restraint"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The sustained visual engagement without physical interaction may reflect a social acknowledgment that implies ethical restraint—each animal recognizes the other’s presence without violating boundaries.",
+      "alternative_interpretations": [
+        "Animals merely scanning for threat or opportunity, with no implied moral dimension."
+      ],
+      "limitations": [
+        "Absence of facial expression detail (e.g., eye shape, mouth position) prevents confirmation of recognition or intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1177_P3",
+      "visual_anchors": [
+        "paw prints leading toward lion",
+        "fox positioned after prints",
+        "lion stationary at origin point"
+      ],
+      "symbolic_mapping": [
+        "trail of prints as past action",
+        "stillness as present pause"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The sequence implied by prints ending at the lion’s location suggests a trajectory of approach culminating in suspended inquiry, symbolizing how knowledge-seeking often halts before truth, constrained by temporal limits.",
+      "alternative_interpretations": [
+        "Prints are decorative elements with no narrative function; the scene is static with no implied sequence."
+      ],
+      "limitations": [
+        "Print directionality is ambiguous—no clear start or end point is marked, and overlapping prints prevent definitive path reconstruction."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:58:52.463087+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-16864f90-f62c-9ed2-85c2-79e1e17f1cd3",
+      "usage": {
+        "prompt_tokens": 589,
+        "completion_tokens": 913,
+        "total_tokens": 1502,
+        "completion_tokens_details": {
+          "text_tokens": 913
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 82,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035823f85fb2c6912943bd",
+      "usage": {
+        "completion_tokens": 775,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1587,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2362
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

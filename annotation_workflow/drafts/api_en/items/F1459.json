@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1459",
+  "sample_id": "PHL1800_HL_0114",
+  "file_name": "PHL1800_HL_0114.png",
+  "batch_id": "B030",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman holding a camera in the foreground, with a bear visible behind a fence in the background",
+  "captions": {
+    "scene": [
+      "A gravelly, sparsely vegetated outdoor area enclosed by a wire-mesh fence supported by wooden posts.",
+      "A dark-furred bear is partially visible behind the fence, positioned on the left side of the frame.",
+      "The woman stands in the right foreground wearing sunglasses, a light-blue tank top, and carrying a brown shoulder bag."
+    ],
+    "action": [
+      "The woman holds a black DSLR-style camera with both hands, fingers positioned near controls.",
+      "The bear appears to be standing or crouching low, facing away from the camera, with its head lowered toward the ground.",
+      "The woman’s mouth is open in a smile-like expression; her eyes are obscured by sunglasses."
+    ],
+    "rationale": [
+      "The presence of a fence and the bear’s posture suggest containment rather than wild habitat, but no signage confirms enclosure type.",
+      "The woman’s grip on the camera indicates active handling, yet no shutter motion or screen illumination is visible to confirm operation.",
+      "The bear’s species cannot be definitively identified from silhouette and fur color alone due to distance and partial occlusion."
+    ],
+    "object": [
+      "A woman with short dark hair wears brown-tinted sunglasses, a sleeveless light-blue top, and a tan leather strap over her right shoulder attached to a bag.",
+      "She holds a black digital single-lens reflex (DSLR) camera with a lens cap removed, showing a visible lens barrel and control dials.",
+      "A wire-mesh fence with vertical wooden support posts runs horizontally across the midground, separating the foreground from the background terrain.",
+      "Behind the fence, a large quadrupedal mammal with dark brown to black fur is visible from the side, showing a rounded body, short legs, and a head near ground level.",
+      "Sparse green vegetation and scattered small rocks appear on the ground surface in both foreground and background zones."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1459_P1",
+      "visual_anchors": [
+        "wire-mesh fence",
+        "woman holding camera",
+        "bear behind barrier"
+      ],
+      "symbolic_mapping": [
+        "fence as physical manifestation of separation between observer and observed",
+        "camera as instrument mediating experience"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image embodies the epistemic tension between mediated observation and direct access: the fence enforces constraint, while the camera promises knowledge—yet both position the human as external to the animal’s reality.",
+      "alternative_interpretations": [
+        "This is simply a tourist photograph at a wildlife facility, with no intended philosophical meaning."
+      ],
+      "limitations": [
+        "No textual labels or contextual signage confirm whether the setting is a zoo, sanctuary, or research site, limiting definitive interpretation of intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1459_P2",
+      "visual_anchors": [
+        "woman’s smile",
+        "sunglasses obscuring eyes",
+        "bear turned away"
+      ],
+      "symbolic_mapping": [
+        "smile as social performance",
+        "sunglasses as visual barrier to reciprocity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The asymmetry of gaze—human smiling toward viewer while bear faces away—highlights how identity is constructed through appearance and directed attention, raising questions about recognition and mutual presence.",
+      "alternative_interpretations": [
+        "The woman is reacting naturally to being photographed; the bear’s orientation is coincidental and unrelated to human presence."
+      ],
+      "limitations": [
+        "Facial expression cannot be verified as intentional or emotional due to sunglasses and static framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1459_P3",
+      "visual_anchors": [
+        "gravel ground",
+        "sparse vegetation",
+        "man-made fence"
+      ],
+      "symbolic_mapping": [
+        "barren substrate as metaphor for stripped context",
+        "enclosure as imposed order"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The stark, managed environment juxtaposed with a non-human subject evokes ethical responsibility in human-dominated landscapes, where power manifests not through overt violence but through spatial control and surveillance infrastructure.",
+      "alternative_interpretations": [
+        "The terrain reflects natural subalpine or disturbed ground, not deliberate design; the fence serves only safety, not symbolic domination."
+      ],
+      "limitations": [
+        "No evidence of human intervention beyond the fence itself; ground composition could be natural or anthropogenic without distinguishing markers."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:35:00.946269+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-71085c09-f672-9c01-99b9-bec3b88fabb8",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 1013,
+        "total_tokens": 1762,
+        "completion_tokens_details": {
+          "text_tokens": 1013
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704344896106ea94c024ddd",
+      "usage": {
+        "completion_tokens": 873,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1919,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2792
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

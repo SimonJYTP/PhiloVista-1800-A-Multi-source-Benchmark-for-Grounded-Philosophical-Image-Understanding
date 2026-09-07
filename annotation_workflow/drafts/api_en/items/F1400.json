@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1400",
+  "sample_id": "PHL1800_HL_0044",
+  "file_name": "PHL1800_HL_0044.png",
+  "batch_id": "B029",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four standing adults and one seated person in a living room watching a television screen",
+  "captions": {
+    "scene": [
+      "A modestly furnished living room with beige walls, a wooden TV stand, two framed wall artworks, and a floor fan on the left.",
+      "A television displays a colorful sports video game interface with visible court lines and player icons; text on screen is present but unreadable.",
+      "Multiple decorative vases sit on a white shelf above the TV; a small wooden side table holds a dark vase near the right edge."
+    ],
+    "action": [
+      "Four men stand facing the TV, holding white controllers; their postures suggest active engagement with the game.",
+      "One person sits reclined in a blue armchair with legs extended, wearing white socks and dark pants, observing the scene passively.",
+      "No fifth standing person is visible; the seated person is clearly distinguishable from the standing group."
+    ],
+    "rationale": [
+      "The presence of multiple identical white controllers and synchronized body orientation strongly suggests cooperative or competitive gameplay rather than passive viewing.",
+      "The seated person’s relaxed posture and lack of controller imply non-participation, though visual evidence does not confirm intent or awareness level.",
+      "The unreadable on-screen text prevents confirmation of game genre or specific activity; only visual layout (court-like grid, icons) supports inference of sports simulation."
+    ],
+    "object": [
+      "A flat-screen television rests on a light-wood media console with glass-fronted lower cabinets and open upper shelves.",
+      "Four distinct individuals are standing: three fully visible from back/side, one partially visible behind another; one person is seated in a blue armchair.",
+      "A white oscillating floor fan stands to the far left, its blades visible and stationary.",
+      "Two framed artworks hang on the wall: one rectangular landscape above the TV shelf, one larger horizontal abstract piece to the right of the TV.",
+      "A dark ceramic vase sits on a small wooden end table to the right; another similar vase is on the shelf above the TV alongside two smaller reddish-brown vases."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1400_P1",
+      "visual_anchors": [
+        "four standing figures holding identical controllers",
+        "one seated figure with no controller",
+        "shared focus on a single screen"
+      ],
+      "symbolic_mapping": [
+        "controllers as instruments of agency",
+        "spatial segregation as role differentiation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The arrangement visually enacts a temporary social hierarchy defined by participation: those holding controllers occupy active subject positions, while the seated observer occupies a marginal, receptive role—highlighting how shared technological interfaces can simultaneously unify and stratify group identity.",
+      "alternative_interpretations": [
+        "The seated person may simply be resting between turns; the spatial arrangement reflects comfort preference rather than social exclusion."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues confirm subjective experience or intentionality of inclusion/exclusion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1400_P2",
+      "visual_anchors": [
+        "television screen displaying a simulated tennis court",
+        "players’ bodies oriented toward the screen",
+        "absence of real rackets or net"
+      ],
+      "symbolic_mapping": [
+        "screen as mediated reality",
+        "body posture as embodied belief in simulation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The collective physical alignment toward a digital representation of sport illustrates a modern epistemic condition where truth is validated through interactive simulation rather than direct experience—technology becomes the arbiter of what counts as ‘real’ play.",
+      "alternative_interpretations": [
+        "Participants are merely enjoying entertainment; no epistemic claim is being made about reality or truth."
+      ],
+      "limitations": [
+        "The image captures only external behavior; internal belief states about simulation vs. reality are not observable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1400_P3",
+      "visual_anchors": [
+        "multiple people sharing one screen",
+        "identical white controllers",
+        "uniform direction of gaze"
+      ],
+      "symbolic_mapping": [
+        "shared focal point as consensus formation",
+        "controllers as equalized tools of input"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The uniformity of equipment and attention suggests a negotiated constraint: voluntary submission to shared rules encoded in the game, where individual freedom is exercised only within the system’s boundaries—raising questions about consent in technologically mediated social contracts.",
+      "alternative_interpretations": [
+        "This is casual recreation; no contractual or ethical framework is implied by the visual setup."
+      ],
+      "limitations": [
+        "No visible rules, menus, or explicit agreements confirm intentional constraint or ethical deliberation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of standing people (candidate states five standing adults; image shows four standing, one seated); misdescription of a seated person as standing; inaccurate object details (e.g., 'five distinct individuals are standing' contradicts the seated person)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:27:55.783140+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-96fb83f8-8d44-9b8e-957e-a27fe1fc1a9d",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1058,
+        "total_tokens": 1867,
+        "completion_tokens_details": {
+          "text_tokens": 1058
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070427334a5630311fd34f6a",
+      "usage": {
+        "completion_tokens": 957,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2034,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2991
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0533",
+  "sample_id": "PHL1800_IRFL_0010",
+  "file_name": "PHL1800_IRFL_0010.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a golden egg with drawn limbs and crown, standing atop four white eggs with drawn faces",
+  "captions": {
+    "scene": [
+      "Five eggs arranged horizontally on a flat surface against a solid teal background",
+      "One egg is metallic gold with a jagged crown-shaped shell fragment on top; the other four are matte white",
+      "All five eggs have black line-drawn facial features and limbs; the golden egg is elevated above the others"
+    ],
+    "action": [
+      "The golden egg stands upright with both arms extended outward and legs apart, as if balancing or striding",
+      "Four white eggs remain stationary in a row, each displaying a unique hand-drawn expression",
+      "The golden egg’s crown appears to be a broken-off piece of its own shell, positioned on its apex"
+    ],
+    "rationale": [
+      "The golden egg’s posture suggests intentional movement rather than passive placement, due to symmetric limb positioning and elevation",
+      "Facial expressions on white eggs differ (e.g., one shows open mouth and eyes, another has downturned lines), indicating individualized drawing but no shared motion",
+      "The crown is physically attached to the golden egg’s top and matches its shell texture, implying it originated from that egg"
+    ],
+    "object": [
+      "A single golden-colored egg with a glossy surface, featuring a jagged-edged crown made of the same material resting on its apex.",
+      "Four white eggs of similar size and shape, aligned horizontally, each bearing distinct black ink line drawings of eyes, mouths, and limbs.",
+      "The golden egg has two stick-figure arms ending in three-fingered hands and two stick-figure legs ending in simple oval feet.",
+      "One white egg (second from left) displays a face with two curved eyes and a wavy mouth; another (third from left) shows crossed lines for eyes and a V-shaped mouth.",
+      "The background is a uniform teal color with no gradients, textures, or additional objects visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0533_P1",
+      "visual_anchors": [
+        "golden egg wearing a crown",
+        "white eggs with varied expressions",
+        "golden egg elevated above others"
+      ],
+      "symbolic_mapping": [
+        "crown → status distinction",
+        "elevation → hierarchy"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image visually stages a hierarchy where one entity assumes symbolic authority (crown) and physical dominance (elevation) over peers, suggesting a critique of emergent social stratification.",
+      "alternative_interpretations": [
+        "It may simply depict a playful anthropomorphism of eggs, with the crown representing a decorative or accidental shell fragment rather than intentional symbolism."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intent; the crown could be non-symbolic debris."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0533_P2",
+      "visual_anchors": [
+        "all eggs share egg form but differ in color and adornment",
+        "drawn faces vary in expression",
+        "golden egg has limbs while white eggs have partial limbs"
+      ],
+      "symbolic_mapping": [
+        "shared shape → common origin",
+        "differential drawing → individuation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Uniform biological form (egg shape) contrasts with divergent drawn identities, illustrating how appearance and assigned traits construct perceived individuality within a homogeneous group.",
+      "alternative_interpretations": [
+        "The variation may reflect artistic whimsy—different doodles applied without conceptual intent—rather than commentary on identity."
+      ],
+      "limitations": [
+        "The drawings are minimal and non-standard; expressions are ambiguous and not culturally codified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0533_P3",
+      "visual_anchors": [
+        "golden egg’s crown is a broken shell fragment",
+        "golden egg stands on other eggs",
+        "all eggs are intact except for the crown detachment"
+      ],
+      "symbolic_mapping": [
+        "broken shell → self-alteration",
+        "standing on peers → dependence on others for position"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The golden egg’s status derives from both self-modification (using its own shell as crown) and reliance on others (standing upon them), implying ethical tension between self-assertion and communal support.",
+      "alternative_interpretations": [
+        "The arrangement may be purely compositional—height achieved via stacking for visual balance, not symbolic meaning."
+      ],
+      "limitations": [
+        "No evidence confirms the crown was deliberately placed or that the stance implies moral judgment; physics alone could explain the pose."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:38:32.632615+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5429a53e-4fdb-9a81-bc63-a3e3bec60c71",
+      "usage": {
+        "prompt_tokens": 2549,
+        "completion_tokens": 1017,
+        "total_tokens": 3566,
+        "completion_tokens_details": {
+          "text_tokens": 1017
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2042,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013811ac53f179de3841bd",
+      "usage": {
+        "completion_tokens": 876,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4292,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5168
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

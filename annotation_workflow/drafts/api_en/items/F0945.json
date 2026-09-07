@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0945",
+  "sample_id": "PHL1800_IRFL_0368",
+  "file_name": "PHL1800_IRFL_0368.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a glass mason jar filled with yellow liquid, surrounded by citrus fruits",
+  "captions": {
+    "scene": [
+      "A clear glass mason jar sits on a light-colored marble or stone surface, flanked by whole and cut citrus fruits.",
+      "Halved lemons and limes, along with wedges and whole fruits, are arranged around the jar in a shallow depth of field.",
+      "Green leaves attached to some fruit stems lie scattered across the surface near the citrus."
+    ],
+    "action": [
+      "The jar contains a translucent yellow liquid at approximately three-quarters full, with no visible motion or bubbling.",
+      "Several citrus fruits are cut open, exposing their segmented interiors; others remain whole.",
+      "No human presence, tool use, or dynamic process is visible; all objects are stationary."
+    ],
+    "rationale": [
+      "The jar’s embossed text includes 'Kerr' and 'SELF SEALING', suggesting it is a branded canning jar; however, partial letters are unreadable due to angle and refraction.",
+      "The liquid’s color and surrounding citrus strongly suggest it is citrus juice, but the exact composition cannot be confirmed visually.",
+      "The arrangement appears staged for photography due to symmetry and shallow focus, yet no explicit evidence confirms intent or context."
+    ],
+    "object": [
+      "A transparent glass mason jar with embossed lettering, containing a pale yellow liquid up to ~75% capacity.",
+      "One whole yellow citrus fruit (likely lemon) with textured rind lies to the left of the jar.",
+      "One halved yellow citrus fruit shows radial segments and central pith, positioned to the right of the jar.",
+      "One whole green citrus fruit (likely lime) with smooth rind sits behind the jar, partially obscured.",
+      "Two lime halves and two lime wedges are placed in front and right of the jar, displaying green pulp and white pith."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0945_P1",
+      "visual_anchors": [
+        "halved lemon revealing internal segments",
+        "transparent jar showing liquid contents",
+        "whole fruits intact beside cut ones"
+      ],
+      "symbolic_mapping": [
+        "exposed interior as vulnerability",
+        "transparency as honesty"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of whole and cut citrus alongside a transparent vessel suggests a tension between concealed wholeness and revealed structure—how truth emerges only when surfaces are opened, and appearance shifts with exposure.",
+      "alternative_interpretations": [
+        "This is a standard food photography setup emphasizing freshness and ingredient visibility for culinary purposes."
+      ],
+      "limitations": [
+        "No textual labels confirm symbolic intent; segmentation and transparency are physical properties, not necessarily intentional metaphors."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0945_P2",
+      "visual_anchors": [
+        "embossed 'Kerr' logo on jar",
+        "uniform citrus arrangement",
+        "marble surface"
+      ],
+      "symbolic_mapping": [
+        "branded container as artifact of domestic labor",
+        "repetition of fruit forms as routine"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The branded jar amid prepared fruit evokes domestic production—where technology (canning jar) enables preservation, framing everyday choices as micro-journeys through repetition and care.",
+      "alternative_interpretations": [
+        "The jar is simply a convenient vessel; branding is incidental and not thematically emphasized."
+      ],
+      "limitations": [
+        "The jar’s function (storage vs. serving) is ambiguous; no tools or process indicate labor in progress."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0945_P3",
+      "visual_anchors": [
+        "green leaves still attached to fruit stems",
+        "freshly cut citrus with moist pulp",
+        "no signs of decay or aging"
+      ],
+      "symbolic_mapping": [
+        "attached leaves as continuity with origin",
+        "vibrant color as fleeting vitality"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The presence of intact stems and fresh cuts implies a moment suspended just after harvest—highlighting the precarious temporality of natural abundance and its dependence on social practices of gathering and sharing.",
+      "alternative_interpretations": [
+        "Leaves were left for aesthetic appeal; freshness is standard for food styling and does not imply temporal commentary."
+      ],
+      "limitations": [
+        "No clock, shadow progression, or decay markers provide temporal evidence beyond immediate visual freshness."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:30:06.845548+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2ed549d3-6ce0-9091-a953-848c19d3f3f6",
+      "usage": {
+        "prompt_tokens": 1953,
+        "completion_tokens": 983,
+        "total_tokens": 2936,
+        "completion_tokens_details": {
+          "text_tokens": 983
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1446,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070329461560a7e13fcc4111",
+      "usage": {
+        "completion_tokens": 843,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3420,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4263
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

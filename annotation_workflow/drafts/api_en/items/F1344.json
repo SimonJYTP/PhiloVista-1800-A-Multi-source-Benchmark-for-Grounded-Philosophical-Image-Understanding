@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1344",
+  "sample_id": "PHL1800_HAIV_0035",
+  "file_name": "PHL1800_HAIV_0035.png",
+  "batch_id": "B028",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure with red hair, depicted front-facing and torso-up",
+  "captions": {
+    "scene": [
+      "A brown wooden bookshelf with multiple shelves filled with upright and leaning books of varying heights and colors (white, gray, black, red, orange).",
+      "The figure is centered within a large, irregularly shaped light-blue translucent panel that overlaps the bookshelf background.",
+      "The figure wears a dark gray open-front garment over a white torso; a red book with visible white pages is embedded in the chest area."
+    ],
+    "action": [
+      "The figure stands motionless, facing forward, with no visible limbs beyond shoulders and upper arms.",
+      "A red book appears physically integrated into the figure’s chest cavity, with its spine and pages exposed.",
+      "The translucent panel behind the figure shows diagonal white lines suggesting reflection or glass-like surface."
+    ],
+    "rationale": [
+      "The figure lacks facial features and hands, suggesting intentional abstraction rather than omission due to perspective.",
+      "The book’s placement inside the torso implies symbolic integration rather than literal holding, given absence of arms and unnatural positioning.",
+      "The translucent panel may function as a mirror or window, but its irregular shape and lack of frame prevent definitive classification."
+    ],
+    "object": [
+      "The figure has short, wavy red hair and a featureless white face and neck.",
+      "The figure wears a sleeveless or short-sleeved dark gray garment open at the front, revealing a white torso.",
+      "A red hardcover book with white page edges is positioned vertically in the center of the figure’s chest, partially obscuring the torso.",
+      "The background consists of a multi-shelf wooden bookcase containing at least 18 visible books arranged non-uniformly across five horizontal shelves.",
+      "The light-blue translucent panel behind the figure has thick black outlines and two diagonal white stripes crossing its upper portion."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1344_P1",
+      "visual_anchors": [
+        "featureless white face",
+        "red book embedded in chest"
+      ],
+      "symbolic_mapping": [
+        "facelessness → erasure of individual identity",
+        "book in chest → internalization of knowledge"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The figure embodies the tension between selfhood and absorbed knowledge: without a face, personal identity recedes, while the book lodged in the torso suggests knowledge has become constitutive of being.",
+      "alternative_interpretations": [
+        "The image may simply depict a librarian or reader in a stylized library setting, with the book placement as artistic exaggeration rather than symbolism."
+      ],
+      "limitations": [
+        "No textual labels or contextual signage confirm symbolic intent; the abstraction permits multiple readings."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1344_P2",
+      "visual_anchors": [
+        "translucent panel with diagonal stripes",
+        "bookshelf background"
+      ],
+      "symbolic_mapping": [
+        "panel as reflective surface → self-perception mediated by environment",
+        "books as external cultural archive"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The figure exists within a constructed space where self-reflection (panel) and external knowledge (bookshelf) jointly define presence, implying social existence is scaffolded by inherited information systems.",
+      "alternative_interpretations": [
+        "The panel could be a decorative backdrop or lighting effect, not necessarily symbolic; the scene may represent a generic study or reading nook."
+      ],
+      "limitations": [
+        "The panel’s function is ambiguous—no clear reflection of the figure or surroundings confirms it as a mirror."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1344_P3",
+      "visual_anchors": [
+        "absence of arms",
+        "book fixed in chest"
+      ],
+      "symbolic_mapping": [
+        "lack of limbs → constraint or passivity",
+        "book as inseparable core → determinism by knowledge"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The immobilized figure with knowledge physically fused to its core suggests a condition where intellectual inheritance limits agency, framing learning not as empowerment but as ontological binding.",
+      "alternative_interpretations": [
+        "The missing arms may be stylistic simplification common in graphic illustration, not intended to convey constraint."
+      ],
+      "limitations": [
+        "Stylization conventions in line art often omit extremities for clarity; this does not necessarily imply meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:20:58.924054+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-30eca037-ea73-933c-af55-0469d169f30e",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 974,
+        "total_tokens": 2507,
+        "completion_tokens_details": {
+          "text_tokens": 974
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070420391ccc08ef51f145d2",
+      "usage": {
+        "completion_tokens": 837,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2929,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3766
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

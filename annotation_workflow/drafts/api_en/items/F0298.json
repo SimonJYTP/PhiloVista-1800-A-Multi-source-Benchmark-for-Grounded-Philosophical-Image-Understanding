@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0298",
+  "sample_id": "PHL1800_HL_0050",
+  "file_name": "PHL1800_HL_0050.png",
+  "batch_id": "B008",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult elephant walking left to right across a grassy enclosure",
+  "captions": {
+    "scene": [
+      "A lush green grassy area bordered by wooden posts and low fencing, with dense trees in the background.",
+      "Foreground foliage partially obscures the view; leaves and branches frame the image on left and right edges.",
+      "A paved path or road is visible behind the enclosure, with a person standing near it on the far left."
+    ],
+    "action": [
+      "The elephant walks forward with its trunk lowered and slightly curled toward the ground.",
+      "Its left foreleg is lifted mid-stride, indicating motion from right to left across the frame.",
+      "The elephant’s body is partially obscured by overhanging greenery and foreground vegetation."
+    ],
+    "rationale": [
+      "The elephant’s posture and limb position suggest locomotion rather than standing still.",
+      "The presence of wooden posts and a defined boundary implies an enclosed or managed habitat, not wild terrain.",
+      "The person in the background appears distant and stationary, but their activity cannot be confirmed due to resolution and occlusion."
+    ],
+    "object": [
+      "An adult elephant with gray, wrinkled skin and visible ear margins walks through tall green grass.",
+      "A row of vertical wooden posts, uneven in height and weathered, runs horizontally across the middle ground.",
+      "Dense deciduous trees form a continuous dark-green backdrop behind the enclosure.",
+      "A person wearing light-colored clothing stands near a paved surface on the far left, partially hidden by foliage.",
+      "The elephant’s tail hangs down behind its hindquarters, and its tusks are not clearly visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0298_P1",
+      "visual_anchors": [
+        "wooden posts forming a barrier",
+        "elephant walking parallel to the barrier",
+        "foreground foliage obstructing full view"
+      ],
+      "symbolic_mapping": [
+        "the barrier represents imposed limits",
+        "the elephant’s steady gait suggests endurance within constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image evokes the tension between natural movement and artificial containment, where the elephant’s persistent motion within bounded space reflects a condition of constrained agency.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine animal husbandry without symbolic intent."
+      ],
+      "limitations": [
+        "No signage, labels, or explicit contextual cues confirm intentional symbolism; interpretation relies on visual analogy alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0298_P2",
+      "visual_anchors": [
+        "dense overlapping foliage in foreground and background",
+        "partial occlusion of the elephant’s head and legs",
+        "uneven lighting filtering through leaves"
+      ],
+      "symbolic_mapping": [
+        "occlusion mirrors epistemic limitation",
+        "fragmented visibility suggests incomplete perception"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The fragmented sightline—where parts of the subject are hidden by vegetation—mirrors how observation is inherently partial, challenging claims of full representational fidelity.",
+      "alternative_interpretations": [
+        "The foliage is incidental landscaping, not a deliberate compositional device for epistemological commentary."
+      ],
+      "limitations": [
+        "No evidence that the framing was intentional for philosophical effect; occlusion could result from natural growth or camera positioning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0298_P3",
+      "visual_anchors": [
+        "single elephant as sole large subject",
+        "distant human figure barely discernible",
+        "spatial separation between them"
+      ],
+      "symbolic_mapping": [
+        "distance signifies relational asymmetry",
+        "scale difference emphasizes disparity in presence"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial and visual separation between the elephant and the human underscores a mode of coexistence defined by proximity without reciprocity—presence without mutual recognition.",
+      "alternative_interpretations": [
+        "The human is a visitor observing from a designated path; the separation reflects standard zoo design, not existential commentary."
+      ],
+      "limitations": [
+        "The human’s posture, gaze direction, and attention are indiscernible; no interaction is visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:29:39.730107+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b5a41d5a-4b0d-955b-a544-8e8e794e2448",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 900,
+        "total_tokens": 1709,
+        "completion_tokens_details": {
+          "text_tokens": 900
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702292911218d0a18414704",
+      "usage": {
+        "completion_tokens": 765,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1881,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2646
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

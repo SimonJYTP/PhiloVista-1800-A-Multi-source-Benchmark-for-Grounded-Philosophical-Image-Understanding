@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0589",
+  "sample_id": "PHL1800_HL_0157",
+  "file_name": "PHL1800_HL_0157.png",
+  "batch_id": "B014",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red octagonal stop sign mounted on a metal pole",
+  "captions": {
+    "scene": [
+      "A beige two-story building with green-trimmed windows and signage sits on a hillside with sparse vegetation.",
+      "A stone retaining wall and concrete stairs lead upward toward the building, flanked by green shrubs and trees.",
+      "Overhead utility wires cross above the scene, attached to a wooden utility pole to the right of the stop sign."
+    ],
+    "action": [
+      "Two people are seated on a low wall at the bottom left, one wearing a white shirt and the other in dark clothing; both appear stationary.",
+      "The stop sign is upright and fixed to its post, showing no motion or damage.",
+      "Vegetation including leafy bushes and vines grows around the stairs and base of the building."
+    ],
+    "rationale": [
+      "The building’s architecture and signage suggest a commercial or public-use structure, though specific function is not confirmed by visible text alone.",
+      "The presence of stairs, railings, and a retaining wall indicates designed pedestrian access up a slope.",
+      "The stop sign’s placement near stairs and a walkway implies traffic control for vehicles or pedestrians, but its exact regulatory scope cannot be determined from image alone."
+    ],
+    "object": [
+      "The stop sign is red with white uppercase letters spelling 'STOP' and has two visible silver bolts, one near the top and one near the bottom center.",
+      "A weathered wooden utility pole stands vertically to the right of the sign, supporting overhead wires.",
+      "The building facade includes three visible signs: one reading 'VIN GALLERY', another partially legible as 'CERONIC WINE', and a third with unreadable text beneath a green awning.",
+      "A set of concrete stairs with metal handrails ascends from lower left toward the building entrance, with a person partially visible mid-staircase.",
+      "Two individuals sit side-by-side on a low stone ledge at the bottom-left corner; their faces and postures are visible but not identifiable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0589_P1",
+      "visual_anchors": [
+        "stop sign",
+        "stairs leading upward",
+        "two seated figures"
+      ],
+      "symbolic_mapping": [
+        "the stop sign as a literal interruption to movement",
+        "the stairs as a path requiring effort or decision"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of enforced stopping and an ascending path evokes tension between imposed limits and personal progression, suggesting that constraint may precede or frame voluntary movement.",
+      "alternative_interpretations": [
+        "The sign simply regulates traffic at a street intersection adjacent to pedestrian steps, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the arrangement may be coincidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0589_P2",
+      "visual_anchors": [
+        "two seated people",
+        "building signage",
+        "utility pole and wires"
+      ],
+      "symbolic_mapping": [
+        "seated figures as observers within a constructed environment",
+        "wires as invisible infrastructure enabling social space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "Human presence is embedded within layered infrastructural systems—architectural, electrical, and regulatory—highlighting how social existence depends on unseen labor and material constraints.",
+      "alternative_interpretations": [
+        "The people are resting casually; the wires and building are ordinary background elements with no deeper implication."
+      ],
+      "limitations": [
+        "No evidence of labor activity or explicit social interaction; interpretation relies on inference from static objects."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0589_P3",
+      "visual_anchors": [
+        "hillside vegetation",
+        "weathered stone wall",
+        "faded signage"
+      ],
+      "symbolic_mapping": [
+        "natural slope versus built structures",
+        "signage degradation implying temporal passage"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The contrast between enduring natural terrain and aging human-made elements suggests impermanence of cultural markers, where identity (as expressed through signs) fades against geological time.",
+      "alternative_interpretations": [
+        "The signs are merely aged due to exposure; the hillside is typical terrain with no symbolic weight."
+      ],
+      "limitations": [
+        "No dates, inscriptions, or decay indicators beyond general weathering; temporal claims are speculative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:59:07.414267+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8bbad7c1-2dd8-9e6a-b2cd-2938857a336e",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 979,
+        "total_tokens": 1788,
+        "completion_tokens_details": {
+          "text_tokens": 979
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025847c6864acf9a3c43e8",
+      "usage": {
+        "completion_tokens": 840,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1959,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2799
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

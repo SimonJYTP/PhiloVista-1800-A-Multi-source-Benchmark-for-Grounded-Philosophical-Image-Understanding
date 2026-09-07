@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0490",
+  "sample_id": "PHL1800_IRFL_0121",
+  "file_name": "PHL1800_IRFL_0121.jpg",
+  "batch_id": "B012",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a dog and a cat positioned near two trees",
+  "captions": {
+    "scene": [
+      "Two stylized brown-trunked trees with dense green foliage stand side by side on a white background.",
+      "A brown-and-white dog sits at the base of the left tree, facing right, with mouth open and tongue visible.",
+      "An orange tabby cat lies supine on a branch of the right tree, paws extended upward, tail curled."
+    ],
+    "action": [
+      "The dog’s mouth is wide open, teeth and tongue visible, suggesting vocalization or panting.",
+      "The cat rests on its back on a horizontal branch, limbs relaxed and extended.",
+      "Both animals are stationary relative to their respective trees; no motion lines or blur indicate movement."
+    ],
+    "rationale": [
+      "The dog’s open mouth and raised front paws suggest an expressive posture, but the absence of sound indicators means vocalization cannot be confirmed.",
+      "The cat’s supine position on a branch implies comfort or playfulness, yet without context, intent (e.g., sleeping vs. stretching) remains ambiguous.",
+      "The trees appear identical in trunk shape and foliage density, but no scale reference prevents confirmation of equal height or species."
+    ],
+    "object": [
+      "The left tree has a thick, textured brown trunk splitting into two main branches supporting a rounded green canopy.",
+      "The right tree mirrors the left in structure: thick brown trunk, bifurcated lower trunk, and similarly shaped green canopy.",
+      "The dog has floppy ears, a white muzzle and chest, brown patches on its back and head, and wears a blue collar with a gold tag.",
+      "The cat has orange fur with darker stripes, white muzzle and paws, and a bushy tail with alternating orange and dark bands.",
+      "Both trees have visible root flares at ground level, depicted as widening extensions of the trunks into the white background."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0490_P1",
+      "visual_anchors": [
+        "dog sitting upright at tree base",
+        "cat reclining on elevated branch"
+      ],
+      "symbolic_mapping": [
+        "ground-level posture ↔ grounded existence",
+        "elevated repose ↔ detachment or privilege"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial separation—dog on earth, cat aloft—may reflect divergent modes of being within a shared environment, where proximity does not imply equivalence in condition or agency.",
+      "alternative_interpretations": [
+        "The arrangement may simply depict common animal behaviors: dogs often sit near trees while cats rest in branches, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual cues confirm intentional contrast; both postures are biologically plausible resting positions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0490_P2",
+      "visual_anchors": [
+        "dog’s open mouth and visible teeth",
+        "cat’s relaxed limbs and closed eyes"
+      ],
+      "symbolic_mapping": [
+        "open mouth ↔ expression of need or alarm",
+        "closed eyes ↔ trust or surrender"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "identity_appearance"
+      ],
+      "interpretation": "The contrast between active vocal display and passive repose raises questions about responsibility in cohabitation: one signals, the other assumes safety, implying unspoken mutual reliance.",
+      "alternative_interpretations": [
+        "The dog may be panting from exertion; the cat may be asleep—the states are physiological, not ethical."
+      ],
+      "limitations": [
+        "Eye state of the dog is obscured by open mouth; cat’s eyes are drawn shut but not verifiably closed in reality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0490_P3",
+      "visual_anchors": [
+        "two identical trees",
+        "dog and cat each associated with one tree"
+      ],
+      "symbolic_mapping": [
+        "duplicated arboreal forms ↔ structural symmetry",
+        "separate occupancy ↔ parallel yet isolated experience"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The mirrored trees frame two distinct subjects occupying analogous positions, suggesting that parallel paths can exist without intersection—a visual metaphor for coexistence without communion.",
+      "alternative_interpretations": [
+        "The duplication is stylistic convention for balance in cartoon illustration, not conceptual framing."
+      ],
+      "limitations": [
+        "No directional cues (e.g., gaze, movement) confirm relational intent between subjects; they face different directions."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:51:03.509468+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-94ec8bb8-50bf-9cef-b855-2f0979e5620d",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 984,
+        "total_tokens": 1565,
+        "completion_tokens_details": {
+          "text_tokens": 984
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 74,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070250410819145c70134db8",
+      "usage": {
+        "completion_tokens": 849,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1637,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2486
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

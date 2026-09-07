@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0921",
+  "sample_id": "PHL1800_IRFL_0259",
+  "file_name": "PHL1800_IRFL_0259.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man kneeling before a standing woman on a paved terrace",
+  "captions": {
+    "scene": [
+      "A twilight outdoor terrace with a white pergola draped in sheer fabric and floral garlands, overlooking a coastal cliffside settlement.",
+      "Numerous small lit candles in glass holders are arranged in a large circular pattern on the ground around the two figures.",
+      "Background includes teal chairs at a table, palm trees, modern vertical light fixtures, and distant white buildings under a fading blue sky."
+    ],
+    "action": [
+      "The man is kneeling on his right knee, facing the woman, holding a small open box in both hands at chest level.",
+      "The woman stands with her back mostly to the camera, wearing a long lace dress, head turned slightly toward the man.",
+      "Both individuals are stationary in a posed configuration; no motion blur is visible."
+    ],
+    "rationale": [
+      "The man’s posture and open box suggest a formal proposal gesture, consistent with common cultural conventions for engagement proposals.",
+      "The candle circle and decorated pergola indicate deliberate staging for a ceremonial or celebratory event, not spontaneous activity.",
+      "The absence of rings, facial expressions, or verbal cues means the exact nature of the interaction (e.g., acceptance, surprise) cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "A man in a dark suit jacket, white collared shirt, and dark trousers kneels on a light-colored stone surface.",
+      "A woman wears a floor-length sleeveless dress made of off-white lace with a fitted bodice and flared skirt.",
+      "Approximately 32 visible lit candles in clear cylindrical glass holders form an incomplete circle around the pair.",
+      "A white wooden pergola structure with hanging floral arrangements and sheer white curtains stands behind the man.",
+      "Two teal-painted metal-framed chairs sit at a round table covered with a white cloth, positioned left of the pergola."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0921_P1",
+      "visual_anchors": [
+        "candle circle",
+        "kneeling posture",
+        "open box"
+      ],
+      "symbolic_mapping": [
+        "circular arrangement → cyclical commitment",
+        "kneeling → submission or reverence"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The staged spatial arrangement—candles forming a boundary, one figure kneeling within it—visually enacts a ritualized moment where individual choice intersects with social recognition, framing personal decision as publicly witnessed transition.",
+      "alternative_interpretations": [
+        "It may be a commercial photoshoot replicating romantic tropes without actual interpersonal significance."
+      ],
+      "limitations": [
+        "No facial expressions or verbal context confirm intent or mutual agreement; the scene could be entirely performative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0921_P2",
+      "visual_anchors": [
+        "twilight sky",
+        "coastal cliffs",
+        "distant white buildings"
+      ],
+      "symbolic_mapping": [
+        "fading daylight → temporal threshold",
+        "cliff edge → existential precipice"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The setting at dusk on an elevated terrace overlooking a fragile settlement evokes the philosophical tension between human aspiration (height, openness) and vulnerability (edge, transience), suggesting that moments of decisive action occur against a backdrop of impermanence.",
+      "alternative_interpretations": [
+        "The location is simply a scenic tourist destination chosen for aesthetic appeal, with no symbolic intent."
+      ],
+      "limitations": [
+        "The background is generic Mediterranean architecture; no unique landmarks or inscriptions tie it to specific metaphysical themes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0921_P3",
+      "visual_anchors": [
+        "woman’s back-facing pose",
+        "man’s frontal gaze",
+        "lace dress texture"
+      ],
+      "symbolic_mapping": [
+        "back turned → withheld subjectivity",
+        "lace opacity → mediated visibility"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The asymmetry of visibility—the woman’s identity obscured by posture and fabric while the man is fully presented—highlights how social rituals often center male agency while rendering female presence ornamental or contingent, raising questions about representation in ceremonial acts.",
+      "alternative_interpretations": [
+        "The photographer’s angle was chosen for compositional balance, not ideological statement."
+      ],
+      "limitations": [
+        "Only one viewpoint is shown; the woman’s face and orientation relative to the man are not visible, preventing definitive claims about gaze dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:28:14.949138+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dd4c484c-eb53-9cdf-ae82-a9cb2b6fd40e",
+      "usage": {
+        "prompt_tokens": 1059,
+        "completion_tokens": 999,
+        "total_tokens": 2058,
+        "completion_tokens_details": {
+          "text_tokens": 999
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 552,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032759b7a93e19edf34044",
+      "usage": {
+        "completion_tokens": 854,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2313,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3167
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0225",
+  "sample_id": "PHL1800_HL_0192",
+  "file_name": "PHL1800_HL_0192.png",
+  "batch_id": "B007",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a bearded man in a white shirt and green tie, centered in the foreground",
+  "captions": {
+    "scene": [
+      "An ornate interior with arched ceilings, hanging pendant lights, and large columns; people are gathered in groups.",
+      "A crowded indoor setting with warm lighting, visible staircases in the background, and multiple individuals wearing green shirts.",
+      "A public hall with decorative architectural elements including moldings, recessed lighting, and at least one American flag partially visible behind the crowd."
+    ],
+    "action": [
+      "The central man is smiling broadly with eyes open, facing the camera directly.",
+      "Multiple individuals are standing or moving in small clusters; some look away from the camera, others appear engaged in conversation.",
+      "A woman to the left wears a green shirt with partial white text reading 'NG TOGETHER' and two stars above the word 'TOGETHER', though the full phrase is cut off."
+    ],
+    "rationale": [
+      "The man’s facial expression and direct gaze suggest he is posing for the photograph, though intent cannot be confirmed.",
+      "The presence of multiple green shirts may indicate group affiliation, but no uniformity or explicit signage confirms organized participation.",
+      "Architectural features (arches, columns, chandeliers) imply a formal civic or institutional building, but the exact type is not identifiable from visible evidence alone."
+    ],
+    "object": [
+      "The central man has long gray-and-white beard and mustache, light-colored eyes, and short brown hair; he wears a white collared shirt, a solid dark green necktie, and carries a black strap over his right shoulder.",
+      "To the man’s left, a woman with long brown hair and glasses wears a green T-shirt with white lettering and star graphics; only part of the text is legible: 'NG TOGETHER' and 'TOGETHER'.",
+      "Behind the central man, at least five other individuals are partially visible: two women in green shirts, one man with short dark hair, one balding man, and one person with blonde hair; no additional distinct figures are clearly identifiable in the background.",
+      "Three pendant lights with frosted globes hang from the ceiling in the mid-ground; additional smaller lights are embedded in the ceiling arches.",
+      "A dark statue or sculpture is mounted high on a wall behind the man’s head, silhouetted against the ceiling; its form is indistinct but appears to depict a figure in motion."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0225_P1",
+      "visual_anchors": [
+        "man’s full beard",
+        "white shirt and green tie",
+        "crowd in green shirts"
+      ],
+      "symbolic_mapping": [
+        "beard as marker of individuality amid conformity",
+        "green shirts suggesting collective identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between the man’s distinctive facial hair and the repeated green attire of others visually frames a tension between personal expression and group belonging.",
+      "alternative_interpretations": [
+        "The green shirts may simply reflect event-themed apparel with no symbolic intent; the beard may be habitual rather than expressive."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; color coordination could be coincidental or logistical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0225_P2",
+      "visual_anchors": [
+        "ornate architecture",
+        "crowded hall",
+        "man smiling at camera"
+      ],
+      "symbolic_mapping": [
+        "grand space as stage for civic presence",
+        "smile as assertion of agency within collective setting"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "Within a formally structured environment suggestive of institutional authority, the subject’s voluntary smile asserts an individual moment of self-presentation amid social density.",
+      "alternative_interpretations": [
+        "The smile may be reflexive or prompted by external direction (e.g., photographer), not autonomous expression."
+      ],
+      "limitations": [
+        "Facial expression cannot be definitively linked to internal state or philosophical stance without behavioral context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0225_P3",
+      "visual_anchors": [
+        "partial text 'NG TOGETHER'",
+        "two white stars on green shirt",
+        "American flag in background"
+      ],
+      "symbolic_mapping": [
+        "stars evoking national symbolism",
+        "fragmented phrase implying incomplete unity or aspiration"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The fragmented slogan combined with national iconography suggests a contingent, unfinished project of collective action—where responsibility is implied but not fully articulated.",
+      "alternative_interpretations": [
+        "The text may be unrelated branding (e.g., organization name); stars may be decorative rather than symbolic."
+      ],
+      "limitations": [
+        "Only partial text is visible; no full phrase or logo confirms political or ethical intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people behind the central man: candidate states 'at least seven other individuals' but visual inspection shows fewer distinct figures; 'two indistinct figures further back' is unsupported as they are not clearly distinguishable as separate people."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:20:33.125290+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-656e65e1-97f8-96f0-865c-0fa9116f752a",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1070,
+        "total_tokens": 1879,
+        "completion_tokens_details": {
+          "text_tokens": 1070
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022012b23c05ee1740491f",
+      "usage": {
+        "completion_tokens": 985,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2050,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3035
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

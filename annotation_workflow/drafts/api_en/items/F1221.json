@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1221",
+  "sample_id": "PHL1800_HAIV_0226",
+  "file_name": "PHL1800_HAIV_0226.png",
+  "batch_id": "B026",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man and a crocodile",
+  "captions": {
+    "scene": [
+      "A tropical riverside setting with green foliage, a palm tree, and yellow sky.",
+      "A crocodile emerges from turquoise water onto a tan platform, mouth wide open.",
+      "A man in purple shirt and dark pants runs toward the crocodile with arms outstretched."
+    ],
+    "action": [
+      "The crocodile’s jaws are fully agape, revealing a bright pink interior and teeth.",
+      "The man is mid-stride, leaning forward, with both hands extended toward the crocodile.",
+      "A pink heart-shaped object floats between the man and the crocodile’s head."
+    ],
+    "rationale": [
+      "The man’s posture and outstretched arms suggest intentional movement toward the crocodile, not flight.",
+      "The heart shape’s placement implies symbolic connection, but its origin (thrown, floating, drawn) is visually ambiguous.",
+      "The crocodile’s open mouth could indicate aggression or passive display; no motion lines confirm intent."
+    ],
+    "object": [
+      "The crocodile has gray scaly skin, visible eyes with orange irises, and sharp conical teeth along both jaws.",
+      "The man wears a short-sleeved purple shirt, olive-green trousers, black shoes with white soles, and has dark hair and a mustache.",
+      "A single pink heart-shaped object appears suspended in air between the man’s hands and the crocodile’s snout.",
+      "The background includes a line of green shrubs, one tall palm tree with five fronds, and a solid yellow sky.",
+      "Water is rendered in turquoise with white wave lines; the platform under the crocodile is tan with brown edges."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1221_P1",
+      "visual_anchors": [
+        "man running toward open-jawed crocodile",
+        "floating pink heart",
+        "tropical setting"
+      ],
+      "symbolic_mapping": [
+        "heart between man and predator → idealized love confronting danger"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The image visualizes a choice to approach peril with symbolic affection, framing agency as an act of deliberate vulnerability rather than avoidance.",
+      "alternative_interpretations": [
+        "The scene may depict a cartoonish near-miss: the man slipped while fleeing, and the heart is a coincidental graphic element unrelated to intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm emotional state or narrative intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1221_P2",
+      "visual_anchors": [
+        "crocodile on raised platform",
+        "man on same level ground",
+        "heart positioned centrally"
+      ],
+      "symbolic_mapping": [
+        "platform elevation → asymmetrical power dynamic",
+        "heart as mediator → attempted reconciliation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The composition stages a negotiation across a power divide, where symbolic gesture (heart) attempts to reframe antagonism as coexistence.",
+      "alternative_interpretations": [
+        "The platform may simply be a sandbar; the crocodile is not elevated by design but by natural topography, weakening intentional hierarchy reading."
+      ],
+      "limitations": [
+        "No visual cues (e.g., ropes, cages, gestures of submission) confirm intentional negotiation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1221_P3",
+      "visual_anchors": [
+        "yellow sky",
+        "green foliage",
+        "turquoise water"
+      ],
+      "symbolic_mapping": [
+        "unnatural color saturation → stylized unreality",
+        "flat perspective → allegorical space"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "faith_meaning"
+      ],
+      "interpretation": "The exaggerated palette and simplified forms signal a non-literal domain, inviting interpretation of the encounter as a metaphor for belief systems confronting existential threat.",
+      "alternative_interpretations": [
+        "The colors reflect a children’s book illustration style, prioritizing clarity and visual appeal over symbolic depth."
+      ],
+      "limitations": [
+        "Color choices alone do not establish allegory without supporting textual or iconographic context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:05:01.339361+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5a98f788-a4f6-9935-82b8-09156974d9b8",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 908,
+        "total_tokens": 2441,
+        "completion_tokens_details": {
+          "text_tokens": 908
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040435430cc6ae6c7c4058",
+      "usage": {
+        "completion_tokens": 771,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2865,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3636
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0582",
+  "sample_id": "PHL1800_IRFL_0108",
+  "file_name": "PHL1800_IRFL_0108.jpg",
+  "batch_id": "B013",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a white ceramic toilet with an open lid and seat, receiving a stream of US dollar bills from a metal bucket held by a hand",
+  "captions": {
+    "scene": [
+      "A plain off-white wall serves as background behind a standard white porcelain toilet.",
+      "A metallic bucket, partially visible, is tilted above the toilet bowl, releasing currency.",
+      "Multiple green US dollar bills are mid-air in motion toward and into the toilet bowl."
+    ],
+    "action": [
+      "A human hand grips the handle of a metal bucket, tilting it to pour contents.",
+      "US dollar bills—mostly $1 and $20 denominations—are captured in motion, some blurred due to speed.",
+      "Bills have already landed on the rim and inside the toilet bowl, forming a small pile."
+    ],
+    "rationale": [
+      "The blur on some bills suggests rapid downward motion, consistent with pouring rather than gentle placement.",
+      "The bucket’s orientation and the trajectory of the bills indicate intentional dumping, not accidental spillage.",
+      "Only one hand is visible; no other body parts or persons are present, so the number of individuals is at least one but cannot be confirmed beyond that."
+    ],
+    "object": [
+      "The toilet has a raised white plastic lid and seat, both in the upright open position.",
+      "The bucket is silver-colored metal with a visible wire handle and reflective surface showing light glare.",
+      "At least ten distinct US dollar bills are visible in flight or resting in the bowl, with green ink, serial numbers, and numerals partially legible (e.g., '20', '1').",
+      "The hand holding the bucket appears light-skinned, with fingers wrapped around the handle; no jewelry or distinguishing marks are visible.",
+      "The interior of the toilet bowl contains water and several bills submerged or floating near the surface."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0582_P1",
+      "visual_anchors": [
+        "stream of money entering toilet",
+        "open toilet bowl",
+        "hand controlling bucket"
+      ],
+      "symbolic_mapping": [
+        "toilet as symbolic receptacle for waste",
+        "money as socially constructed value"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The act visualizes the ethical tension between resource allocation and wasteful disposal, where agency (the hand) directs value-laden objects into a site of negation.",
+      "alternative_interpretations": [
+        "A literal demonstration of flushing cash, possibly for comedic or instructional purposes unrelated to philosophy."
+      ],
+      "limitations": [
+        "No textual labels or contextual signage confirm intent; the symbolism relies entirely on cultural associations not directly depicted."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0582_P2",
+      "visual_anchors": [
+        "motion-blurred bills",
+        "open lid",
+        "empty space above bowl"
+      ],
+      "symbolic_mapping": [
+        "flight of money as irreversible loss",
+        "open lid as threshold between utility and discard"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The suspended moment captures irreversible transition—currency passing a point of no return—evoking temporal finitude and the weight of decisive action.",
+      "alternative_interpretations": [
+        "A staged photograph using slow shutter speed to emphasize motion, with no intended temporal metaphor."
+      ],
+      "limitations": [
+        "Motion blur alone does not prove irreversibility; the bills could theoretically be retrieved before settling."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0582_P3",
+      "visual_anchors": [
+        "single visible hand",
+        "uniform white toilet",
+        "standard US currency"
+      ],
+      "symbolic_mapping": [
+        "hand as locus of individual agency",
+        "currency as shared social token"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image frames individual action within institutional infrastructure: the hand exercises freedom while operating within the constraints of standardized monetary and sanitary systems.",
+      "alternative_interpretations": [
+        "A commercial stock photo illustrating financial loss, with no sociopolitical commentary intended."
+      ],
+      "limitations": [
+        "The uniformity of the setting obscures whether the toilet represents public or private infrastructure, weakening the constraint claim."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:58:32.362206+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2095de4c-c44c-9e29-8910-85418f8d4c47",
+      "usage": {
+        "prompt_tokens": 870,
+        "completion_tokens": 922,
+        "total_tokens": 1792,
+        "completion_tokens_details": {
+          "text_tokens": 922
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 363,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025809a37019a2b18f49ad",
+      "usage": {
+        "completion_tokens": 782,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1949,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2731
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

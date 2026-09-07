@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0379",
+  "sample_id": "PHL1800_HAIV_0143",
+  "file_name": "PHL1800_HAIV_0143.png",
+  "batch_id": "B010",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized female figure whose torso and limbs frame a composite landscape",
+  "captions": {
+    "scene": [
+      "A pink-topped tower stands on green terrain beside a white-dressed figure with brown hair.",
+      "A golden-yellow castle with dark red spires sits atop a green hill under a purple-and-blue sky.",
+      "A turquoise river flows through a valley containing a dark horse, evergreen trees, stone arches, and a submerged deer-like animal."
+    ],
+    "action": [
+      "The central figure stands in profile, facing right, with arms raised outward and upward.",
+      "A dark reddish-brown quadruped walks leftward across the riverbed.",
+      "A light-brown deer-like creature is partially submerged in turbulent turquoise water near the lower-left."
+    ],
+    "rationale": [
+      "The figure’s pose suggests framing or holding the landscape, as her arms enclose the central scene without touching it.",
+      "The landscape elements appear layered and non-spatially coherent, indicating intentional collage rather than realistic depiction.",
+      "Color transitions (e.g., yellow-to-green torso, blue-to-turquoise water) suggest painted media with visible brushwork, not digital rendering."
+    ],
+    "object": [
+      "Two distinct human-like figures are visible: one in white dress at upper left, and a larger figure whose limbs and torso dominate the composition.",
+      "A multi-towered castle with four visible spires and gold-yellow walls occupies the upper-center background.",
+      "A dark reddish-brown horse or pony walks mid-scene on a light-colored riverbed, head lowered, legs extended in motion.",
+      "A deer-like animal with light brown fur and visible antlers lies partially submerged in foamy turquoise water at lower left.",
+      "A pink flower-shaped object floats near the center of the green hill area, and another pink shape appears near the upper-right arm."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0379_P1",
+      "visual_anchors": [
+        "torso forming a container for disparate scenes",
+        "arms raised symmetrically",
+        "multiple ecosystems within one body"
+      ],
+      "symbolic_mapping": [
+        "the body as a vessel for fragmented experience",
+        "raised arms as gesture of offering or burden"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The figure embodies a self that integrates contradictory or discontinuous life episodes—castle, river, forest—as internal geography, suggesting identity is assembled from heterogeneous moments rather than linear progression.",
+      "alternative_interpretations": [
+        "The image may simply depict a fairy-tale illustration where the protagonist’s silhouette frames narrative vignettes without deeper metaphor."
+      ],
+      "limitations": [
+        "No textual labels confirm symbolic intent; visual cohesion relies on stylistic juxtaposition alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0379_P2",
+      "visual_anchors": [
+        "submerged deer",
+        "turbulent water",
+        "stable castle above"
+      ],
+      "symbolic_mapping": [
+        "drowning figure as vulnerability amid stability",
+        "vertical stratification as hierarchy of safety"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The vertical arrangement—endangered animal below, enduring architecture above—suggests a philosophical tension between transient biological existence and enduring cultural constructs, questioning whether freedom lies in ascent or immersion.",
+      "alternative_interpretations": [
+        "The deer may be resting or playing, not drowning; water turbulence could represent energy rather than danger."
+      ],
+      "limitations": [
+        "The deer’s posture and surrounding foam do not definitively indicate distress; facial expression is indistinct."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0379_P3",
+      "visual_anchors": [
+        "pink tower",
+        "golden castle",
+        "dark horse"
+      ],
+      "symbolic_mapping": [
+        "color-coded zones as emotional registers",
+        "repetition of pink as motif of desire or fragility"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "social_existence"
+      ],
+      "interpretation": "Recurring pink elements (tower, flowers, shapes) punctuate otherwise naturalistic or architectural zones, implying that meaning or belief is inserted into reality as recurring, non-functional markers—suggesting faith operates as aesthetic intrusion rather than structural foundation.",
+      "alternative_interpretations": [
+        "Pink may be purely decorative, chosen for visual contrast without symbolic intent."
+      ],
+      "limitations": [
+        "No consistent placement or scale of pink objects confirms intentional symbolism; color use may follow painterly convention."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:41:50.201745+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-69b21ceb-fe9d-90c8-9caf-b124964bfc7f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 984,
+        "total_tokens": 2517,
+        "completion_tokens_details": {
+          "text_tokens": 984
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024131944ac5de620c47d6",
+      "usage": {
+        "completion_tokens": 837,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2935,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3772
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

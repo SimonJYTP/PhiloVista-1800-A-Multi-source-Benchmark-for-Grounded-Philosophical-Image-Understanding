@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0916",
+  "sample_id": "PHL1800_HAIV_0299",
+  "file_name": "PHL1800_HAIV_0299.png",
+  "batch_id": "B020",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one stylized human figure standing upright",
+  "captions": {
+    "scene": [
+      "A bright yellow-orange sun in the upper left quadrant against a white background.",
+      "A blue cloud with falling blue dots (suggesting rain) in the upper right quadrant.",
+      "Green grass at the bottom edge, above brown ground where the figure stands."
+    ],
+    "action": [
+      "The figure stands barefoot on brown ground with arms hanging loosely at sides.",
+      "Orange-red patches appear on the figure’s scalp, neck, shoulders, and upper arms.",
+      "Black irregular specks are scattered around the figure’s lower legs and feet."
+    ],
+    "rationale": [
+      "The orange-red patches align with areas exposed to the sun, suggesting localized surface change; however, no motion or temporal sequence is visible.",
+      "The blue cloud and dots resemble rain, but no wetness, puddles, or interaction with the figure is depicted; thus causality is unconfirmed.",
+      "The black specks near the feet may be debris or symbolic marks, but their origin, nature, or relation to the figure is not visually specified."
+    ],
+    "object": [
+      "The figure has a bald head, no facial features, and a simplified torso with internal line drawings resembling organs or anatomical sketches.",
+      "The figure wears black shorts with a large tan-colored patch covering the right hip and thigh area.",
+      "The figure’s skin tone is light beige, with brown shading on the upper chest and shoulders.",
+      "The sun is rendered as a soft-edged circular gradient from yellow to orange, without rays or texture.",
+      "The blue cloud is an irregular smudge with discrete blue circles beneath it, arranged in loose vertical columns."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0916_P1",
+      "visual_anchors": [
+        "orange-red patches on exposed skin",
+        "sun in upper left",
+        "bare feet on ground"
+      ],
+      "symbolic_mapping": [
+        "sun exposure → bodily vulnerability",
+        "bare feet → direct contact with environment"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s exposed skin reacting to solar radiation while grounded suggests a tension between natural forces and embodied limitation—highlighting how physical existence entails unavoidable exposure and constraint over time.",
+      "alternative_interpretations": [
+        "The orange patches could simply indicate sunburn in a literal health-education illustration, with no philosophical intent."
+      ],
+      "limitations": [
+        "No temporal progression or narrative context confirms intentional symbolism; color choices may be stylistic rather than semantic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0916_P2",
+      "visual_anchors": [
+        "internal organ-like line drawings on torso",
+        "tan patch on shorts",
+        "black specks near feet"
+      ],
+      "symbolic_mapping": [
+        "internal sketch → hidden complexity beneath surface",
+        "patch → partial concealment or repair"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of visible external markings (patches, specks) with internal schematic drawings implies that identity and truth are layered: what appears externally may mask or partially reveal deeper structures not directly observable.",
+      "alternative_interpretations": [
+        "The torso drawing may be decorative or pedagogical anatomy, not symbolic; the patch may be a clothing design choice."
+      ],
+      "limitations": [
+        "The internal lines are abstract and unreadable as specific anatomy; no labels confirm interpretive intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0916_P3",
+      "visual_anchors": [
+        "blue rain cloud with falling dots",
+        "sun on opposite side",
+        "figure positioned centrally between them"
+      ],
+      "symbolic_mapping": [
+        "dual environmental forces → opposing conditions",
+        "central stance → endurance or neutrality"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The figure stands equidistant between sun and rain, neither sheltered nor fully immersed, evoking a condition of sustained presence amid contradictory external pressures—a metaphor for navigating social existence without resolution or escape.",
+      "alternative_interpretations": [
+        "The composition may reflect weather variation in a simple outdoor scene, with no intended duality or existential meaning."
+      ],
+      "limitations": [
+        "No directional gaze, posture shift, or interaction indicates conscious positioning; symmetry may be compositional accident."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:27:37.392280+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9c2a6553-4ba0-9705-bbf2-5e49083c264d",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 951,
+        "total_tokens": 2484,
+        "completion_tokens_details": {
+          "text_tokens": 951
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070327199486ea3559a9486f",
+      "usage": {
+        "completion_tokens": 812,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2911,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3723
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

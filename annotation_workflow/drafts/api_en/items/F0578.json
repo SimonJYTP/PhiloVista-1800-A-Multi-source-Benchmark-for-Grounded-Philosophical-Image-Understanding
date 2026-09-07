@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0578",
+  "sample_id": "PHL1800_MM_0088",
+  "file_name": "PHL1800_MM_0088.jpg",
+  "batch_id": "B013",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two females: one child and one adult",
+  "captions": {
+    "scene": [
+      "A warmly lit bedroom with sheer curtains admitting sunlight, a wooden bed with white bedding and a maroon throw, and a nightstand with a lamp and small vase.",
+      "The floor is hardwood with a pinkish rug underfoot; both figures stand on the rug facing each other near the window.",
+      "A framed picture hangs on the wall above the bed’s headboard; the lamp is illuminated."
+    ],
+    "action": [
+      "The adult female stands with arms crossed, body angled slightly away, looking toward the child.",
+      "The child stands barefoot, hands clasped in front, gazing up at the adult.",
+      "A speech bubble originates from the adult’s mouth area containing legible English text."
+    ],
+    "rationale": [
+      "The adult’s posture (crossed arms, turned torso) suggests nonverbal resistance or authority, though intent is not visually verifiable.",
+      "The child’s upward gaze and proximity indicate engagement or appeal, but emotional state cannot be confirmed from expression alone.",
+      "The speech bubble implies a verbal directive about dress approval, yet no lip movement or sound is observable; reliance on text introduces uncertainty."
+    ],
+    "object": [
+      "The adult wears a blue denim jacket over a white top, vertically striped dark trousers, and brown slip-on shoes.",
+      "The child wears a knee-length pink dress with short sleeves and a gathered waist, and is barefoot.",
+      "A speech bubble with black sans-serif text reads: 'You can't wear that dress until I approve it!'",
+      "The bed has a wooden headboard, two white pillows, a white duvet, and a folded maroon fabric across the foot.",
+      "A wall-mounted brass-finished lamp with a conical shade emits light; its switch or cord is not visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0578_P1",
+      "visual_anchors": [
+        "speech bubble with directive text",
+        "adult’s crossed arms",
+        "child’s upward gaze"
+      ],
+      "symbolic_mapping": [
+        "the dress as a symbol of personal expression",
+        "approval as gatekeeping of autonomy"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes a tension between individual self-presentation and external authorization, where appearance becomes a site of negotiated agency.",
+      "alternative_interpretations": [
+        "This may simply depict a routine parental clothing check without deeper ideological framing."
+      ],
+      "limitations": [
+        "No facial expressions are clearly readable; the child’s face is in profile and the adult’s is neutral, limiting affective inference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0578_P2",
+      "visual_anchors": [
+        "sunlight streaming through sheer curtains",
+        "shadow cast on rug",
+        "static postures"
+      ],
+      "symbolic_mapping": [
+        "light as illumination of judgment",
+        "shadow as consequence of restriction"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "choice_journey"
+      ],
+      "interpretation": "The spatial arrangement—adult taller, positioned between light source and child—suggests asymmetrical power dynamics shaping the child’s possible choices.",
+      "alternative_interpretations": [
+        "The lighting may be purely aesthetic, chosen for mood rather than symbolic meaning."
+      ],
+      "limitations": [
+        "No temporal progression is shown; the moment is frozen, so ‘journey’ cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0578_P3",
+      "visual_anchors": [
+        "bed with neatly arranged linens",
+        "nightstand with minimal objects",
+        "uniform color palette (pinks, browns, whites)"
+      ],
+      "symbolic_mapping": [
+        "domestic order as backdrop to interpersonal regulation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The orderly domestic setting frames the interaction as embedded within social norms where care entails constraint, raising questions about responsibility in relational contexts.",
+      "alternative_interpretations": [
+        "The room decor reflects common interior design preferences and carries no necessary ethical weight."
+      ],
+      "limitations": [
+        "Furniture arrangement and color scheme are culturally conventional; no unique markers indicate intentional symbolism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:57:59.977689+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-310af09b-8324-9726-8581-93ea1cad2ea7",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 926,
+        "total_tokens": 2459,
+        "completion_tokens_details": {
+          "text_tokens": 926
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702574029f772188ff94a3a",
+      "usage": {
+        "completion_tokens": 790,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2883,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3673
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

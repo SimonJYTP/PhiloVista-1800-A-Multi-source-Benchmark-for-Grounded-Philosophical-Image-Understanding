@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1447",
+  "sample_id": "PHL1800_HAIV_0157",
+  "file_name": "PHL1800_HAIV_0157.png",
+  "batch_id": "B030",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person standing beside a large open basket containing multiple objects",
+  "captions": {
+    "scene": [
+      "A stylized outdoor setting with a yellow sky, white ground plane, and a lavender horizontal band separating them.",
+      "The figure stands on a flat white surface casting a sharp gray shadow to the right.",
+      "The basket is positioned to the left of the figure, tilted slightly forward, revealing its contents."
+    ],
+    "action": [
+      "The person stands upright with arms relaxed at sides, facing forward.",
+      "The basket holds an assortment of elongated wooden items, some tipped with feathers or colored bands.",
+      "The person wears a multi-colored striped sash over a white tunic and a feathered headdress with black plumes radiating outward."
+    ],
+    "rationale": [
+      "The figure’s posture and lack of motion blur suggest static posing rather than active movement.",
+      "The basket’s open top and visible interior contents indicate it is being displayed or carried, not sealed or stored.",
+      "The headdress and sash feature vivid, non-uniform color bands, suggesting intentional decorative design rather than utilitarian wear."
+    ],
+    "object": [
+      "A brown leather-like basket with a rounded base, vertical seams, and two arched wooden handles joined at the top by a carved toggle.",
+      "Inside the basket are at least six wooden shafts, some with black feather tufts near their tips and others wrapped with multicolored fabric bands.",
+      "The person wears a white short-sleeved tunic with a V-neckline edged in purple trim and multicolored horizontal stripes on the sleeve cuffs.",
+      "A wide sash draped over the left shoulder consists of vertical stripes in red, blue, yellow, purple, and green, with a fringed lower edge.",
+      "The headdress comprises a circular band adorned with pink, yellow, and blue ribbons, from which eight black feather plumes extend radially upward and outward."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1447_P1",
+      "visual_anchors": [
+        "feathered headdress",
+        "striped sash",
+        "white tunic"
+      ],
+      "symbolic_mapping": [
+        "headdress → cultural signifier",
+        "sash → layered identity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The layered adornments—feathers, stripes, and plain tunic—visually articulate a constructed identity where appearance mediates social recognition and self-presentation.",
+      "alternative_interpretations": [
+        "The attire may simply reflect ceremonial costume without symbolic intent, serving functional or aesthetic roles only."
+      ],
+      "limitations": [
+        "No textual labels or contextual markers confirm intended symbolism; color and form alone cannot verify meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1447_P2",
+      "visual_anchors": [
+        "basket filled with shafts",
+        "person standing beside it",
+        "shadow cast to right"
+      ],
+      "symbolic_mapping": [
+        "basket contents → tools or offerings",
+        "static pose → readiness or pause"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of prepared implements in the basket and the figure’s stillness suggests a moment of deliberation before action, embodying the philosophical tension between preparation and enactment of choice.",
+      "alternative_interpretations": [
+        "The arrangement may be purely compositional, emphasizing visual balance rather than narrative or decision-making."
+      ],
+      "limitations": [
+        "No directional cues (e.g., gaze, foot orientation) indicate intent toward movement or selection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1447_P3",
+      "visual_anchors": [
+        "multicolored sash",
+        "feather plumes",
+        "wooden shafts with feathers"
+      ],
+      "symbolic_mapping": [
+        "repetition of feathers across objects → thematic unity",
+        "color saturation → expressive emphasis"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The recurrence of feather motifs across personal adornment and carried objects implies a relational coherence between individual and community artifacts, reflecting how social existence is materially enacted through shared visual codes.",
+      "alternative_interpretations": [
+        "Feathers may be used for practical reasons (e.g., fletching) without social connotation."
+      ],
+      "limitations": [
+        "Feathers appear on both wearable and non-wearable items, but no interaction or exchange is depicted to confirm social function."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:33:45.683986+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6f4d2697-c517-90e9-8fb4-9636668a8085",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 957,
+        "total_tokens": 2490,
+        "completion_tokens_details": {
+          "text_tokens": 957
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070433248a2fd0b87cf54fd4",
+      "usage": {
+        "completion_tokens": 822,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2914,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3736
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

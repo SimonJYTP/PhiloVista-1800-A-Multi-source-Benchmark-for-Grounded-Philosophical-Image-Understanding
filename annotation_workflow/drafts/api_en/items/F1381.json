@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1381",
+  "sample_id": "PHL1800_IRFL_0312",
+  "file_name": "PHL1800_IRFL_0312.jpg",
+  "batch_id": "B029",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "crowded urban plaza with pedestrians, vehicles, and illuminated billboards",
+  "captions": {
+    "scene": [
+      "A wide street intersection flanked by tall glass-and-steel skyscrapers under a dusky sky with scattered clouds.",
+      "Multiple large digital and static billboards display advertisements, logos, and text in English; some are brightly lit while others are dimmer.",
+      "A central stone monument stands on a paved plaza surrounded by dense crowds of people seated and standing."
+    ],
+    "action": [
+      "Pedestrians walk across crosswalks and gather in groups on sidewalks and the plaza; many appear stationary or slowly moving.",
+      "Yellow taxis and other vehicles move along the street; at least 10 yellow cabs are visible in motion or stopped in traffic lanes.",
+      "An American flag hangs from a pole, partially unfurled, indicating light wind or recent movement."
+    ],
+    "rationale": [
+      "The presence of multiple recognizable commercial logos (e.g., McDonald’s golden arches, Bank of America) suggests a major commercial district, but exact location cannot be confirmed from image alone.",
+      "Billboard content includes phrases like 'WINNER BEST MUSICAL', 'MAMMA MIA!', and 'SPORTSMANSHIP', indicating entertainment and advertising contexts; however, some text is too small or blurred to read fully.",
+      "Crowd density and posture suggest a public gathering or routine evening activity, but no explicit event signage confirms a specific occasion."
+    ],
+    "object": [
+      "A McDonald’s restaurant with illuminated golden arches and red signage occupies the lower-left corner, with people queuing outside.",
+      "A stone obelisk-like monument with engraved text stands centrally on the plaza; the top portion reads 'FRANCIS P. DUFFY' and '1918–1919' is partially legible.",
+      "At least 12 distinct billboards are visible: one shows 'maxell', another 'BILLY ELLIOT', one displays 'TOY STORY 2' with Buzz Lightyear, and another reads 'Helped injured opponent win. SPORTSMANSHIP'.",
+      "At least 10 yellow taxis are visible: three stopped at a crosswalk near the center, two more in the left lane, two in the right lane, and three further back in the distance—total of 10 clearly identifiable yellow cabs.",
+      "A large American flag hangs diagonally from a white pole near the right-center; its stars and stripes are discernible despite partial occlusion."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1381_P1",
+      "visual_anchors": [
+        "stone monument with engraved names",
+        "crowds gathered around it",
+        "billboards displaying commercial slogans"
+      ],
+      "symbolic_mapping": [
+        "monument → collective memory",
+        "billboards → commodified attention"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of a war memorial and pervasive commercial messaging visualizes tension between civic remembrance and market-driven spectacle, suggesting social existence is mediated through competing narratives of duty and consumption.",
+      "alternative_interpretations": [
+        "The scene may simply reflect routine urban life where memorials coexist with advertising without symbolic intent."
+      ],
+      "limitations": [
+        "No inscription beyond partial name and dates is fully legible; thus, the monument’s intended meaning cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1381_P2",
+      "visual_anchors": [
+        "dusk sky with fading light",
+        "illuminated signs overpowering natural light",
+        "crowds facing screens"
+      ],
+      "symbolic_mapping": [
+        "dusk → transitional time",
+        "glowing billboards → artificial permanence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The encroachment of artificial illumination over twilight signals a cultural preference for curated, commercialized temporality over natural cycles, raising questions about how truth is constructed when perception is dominated by engineered light and message.",
+      "alternative_interpretations": [
+        "The lighting reflects practical necessity for visibility in evening hours, not philosophical intent."
+      ],
+      "limitations": [
+        "The time of day is inferred from sky color and artificial lighting; no clock or timestamp confirms exact hour."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1381_P3",
+      "visual_anchors": [
+        "dense pedestrian clusters",
+        "individuals looking at phones or signs",
+        "shared public space with no clear hierarchy"
+      ],
+      "symbolic_mapping": [
+        "crowd heterogeneity → fragmented identity",
+        "shared plaza → contested commons"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "Individuals appear simultaneously anonymous and self-directed within a tightly regulated commercial environment, illustrating how identity is performed amid constraints of space, surveillance, and branding—freedom exists only within prescribed zones of movement and gaze.",
+      "alternative_interpretations": [
+        "People are simply enjoying leisure time in a tourist area; no evidence of constraint or identity performance is directly visible."
+      ],
+      "limitations": [
+        "Facial expressions and individual intentions are not discernible; postures suggest casual activity, not ideological stance."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of yellow taxis (candidate states 7, but image shows at least 10 visible)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:25:38.063765+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-230cae12-cd78-9b10-ad09-aa89b04fc8c4",
+      "usage": {
+        "prompt_tokens": 1459,
+        "completion_tokens": 1117,
+        "total_tokens": 2576,
+        "completion_tokens_details": {
+          "text_tokens": 1117
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 952,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042523999ed216daf741ca",
+      "usage": {
+        "completion_tokens": 1005,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2947,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3952
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

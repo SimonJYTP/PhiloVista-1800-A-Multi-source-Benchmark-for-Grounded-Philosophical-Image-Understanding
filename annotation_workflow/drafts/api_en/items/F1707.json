@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1707",
+  "sample_id": "PHL1800_HL_0215",
+  "file_name": "PHL1800_HL_0215.png",
+  "batch_id": "B035",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male seated on a toilet",
+  "captions": {
+    "scene": [
+      "A tiled bathroom with multicolored stone tiles on walls and floor, a white-framed window above the toilet, and a pedestal sink to the right.",
+      "A framed artwork hangs on the wall beside a round mirror; tissue box and glass sit on the sink counter.",
+      "The man sits barefoot on a standard white ceramic toilet, partially enclosed by a silver-colored cylindrical object resembling a large beverage can."
+    ],
+    "action": [
+      "The man holds an open magazine or booklet with both hands and looks down at it.",
+      "He wears a blue long-sleeved shirt and dark shorts, with his legs crossed at the ankles.",
+      "His upper torso is encased in a silver, ribbed, can-shaped structure that covers his shoulders and extends downward over the toilet bowl."
+    ],
+    "rationale": [
+      "The silver object’s shape, ribbing, and partial text suggest it mimics a beverage can, though full branding is not legible.",
+      "The man’s posture and gaze indicate focused reading, not interaction with plumbing or other fixtures.",
+      "No visible water, steam, or motion blur suggests the scene is static and staged rather than functional use of the toilet."
+    ],
+    "object": [
+      "A white ceramic toilet with a closed lid, occupied by a person wearing a blue shirt and dark shorts.",
+      "A silver, cylindrical, ribbed object resembling a giant aluminum beverage can, positioned around the person’s torso and resting on the toilet rim.",
+      "A white pedestal sink with a rectangular basin, chrome faucet, and a green-tinted glass container holding tissues.",
+      "A rectangular window with white frame and two horizontal sashes, showing bright daylight outside.",
+      "A framed picture with a teal-green central panel and black matting, mounted on the wall above the sink."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1707_P1",
+      "visual_anchors": [
+        "silver can-shaped enclosure",
+        "man reading while seated",
+        "bathroom setting"
+      ],
+      "symbolic_mapping": [
+        "the can as consumer packaging enclosing the individual",
+        "reading as private intellectual activity within constrained space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image stages a critique of how consumer identity (via branded enclosure) permeates even private bodily spaces, collapsing the boundary between self and product.",
+      "alternative_interpretations": [
+        "It may be a humorous costume or art installation unrelated to social commentary, emphasizing absurdity over meaning."
+      ],
+      "limitations": [
+        "The unreadable text on the can prevents confirmation of brand or intended reference, weakening the consumerism claim."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1707_P2",
+      "visual_anchors": [
+        "bare feet on tiled floor",
+        "static seated pose",
+        "closed toilet lid"
+      ],
+      "symbolic_mapping": [
+        "bare feet as vulnerability or grounding",
+        "stillness as suspension of action"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The subject’s immobilized posture within a domestic fixture evokes the paradox of freedom: physically confined yet mentally engaged in reading, suggesting temporal stasis amid routine existence.",
+      "alternative_interpretations": [
+        "This could simply depict a casual moment of leisure without philosophical intent."
+      ],
+      "limitations": [
+        "No clock, calendar, or aging indicators are present to support mortality themes directly."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1707_P3",
+      "visual_anchors": [
+        "magazine held open",
+        "focused gaze",
+        "enclosure resembling industrial object"
+      ],
+      "symbolic_mapping": [
+        "reading as pursuit of knowledge",
+        "can as technological artifact mediating experience"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of analog reading and industrial-scale enclosure implies knowledge acquisition occurs within systems of production and containment, questioning neutrality of information access.",
+      "alternative_interpretations": [
+        "The magazine may be purely decorative; the can could be a prop for photography with no symbolic intent."
+      ],
+      "limitations": [
+        "The magazine’s content is illegible, so its epistemic status cannot be verified."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:03:46.178541+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-25b5eb3a-3969-935e-8ee8-e827553cd7ee",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 937,
+        "total_tokens": 1746,
+        "completion_tokens_details": {
+          "text_tokens": 937
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070503353bcd2be6d2ce4507",
+      "usage": {
+        "completion_tokens": 798,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1913,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2711
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

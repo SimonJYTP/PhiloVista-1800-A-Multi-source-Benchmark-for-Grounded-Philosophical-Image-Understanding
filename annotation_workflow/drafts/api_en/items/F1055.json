@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1055",
+  "sample_id": "PHL1800_HAIV_0384",
+  "file_name": "PHL1800_HAIV_0384.png",
+  "batch_id": "B023",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a tombstone partially submerged in water",
+  "captions": {
+    "scene": [
+      "A gray arched tombstone with a black cross stands upright in green-to-teal rippling water, with dark landmasses visible at the bottom left and right edges.",
+      "The water surface shows white wave crests and concentric ripples emanating from the base of the tombstone.",
+      "The background is a pale gray sky above undulating green water, suggesting an open aquatic environment."
+    ],
+    "action": [
+      "The tombstone remains stationary while water flows around it, indicated by curved white lines representing surface motion.",
+      "Ripples radiate outward from the tombstone’s submerged base, implying recent or ongoing disturbance.",
+      "The tombstone is vertically oriented and partially submerged, with its lower portion obscured by deeper blue water and shadow."
+    ],
+    "rationale": [
+      "The presence of ripples centered on the tombstone suggests it is interacting with the water rather than being fully static; however, no motion blur confirms actual movement.",
+      "The cross is clearly rendered as a solid black shape on the tombstone face, indicating intentional design rather than accidental marking.",
+      "The color gradient on the tombstone (dark gray to near-black) implies lighting from above, but no explicit light source is visible; this inference relies on shading convention."
+    ],
+    "object": [
+      "The tombstone is arched at the top, monolithic in form, and shaded with a vertical gradient from medium gray at the top to near-black at the bottom.",
+      "A black Latin cross is centrally placed on the tombstone’s visible face, with equal-length horizontal arms and a slightly longer vertical stem.",
+      "White stylized wave lines overlay the green and teal water, varying in curvature and density to suggest surface motion.",
+      "The water transitions in color from bright green near the top to darker teal and blue near the tombstone base, indicating depth or shadowing.",
+      "Two irregular black shapes occupy the lower-left and lower-right corners, forming a V-shaped opening that frames the tombstone and water."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "commonsense_inference"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1055_P1",
+      "visual_anchors": [
+        "submerged tombstone",
+        "rippling water",
+        "black cross"
+      ],
+      "symbolic_mapping": [
+        "tombstone → mortality",
+        "water → time or flux"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The image visually stages mortality as persistently present amid continual change, where the fixed marker of death endures even as surrounding conditions shift.",
+      "alternative_interpretations": [
+        "It may depict a literal flooded graveyard without symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions or contextual markers confirm commemorative function; the cross could be decorative rather than religious."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1055_P2",
+      "visual_anchors": [
+        "black cross",
+        "vertical orientation of tombstone",
+        "contrast between dark stone and light water"
+      ],
+      "symbolic_mapping": [
+        "cross → faith or meaning-making",
+        "verticality → aspiration or transcendence"
+      ],
+      "concept_ids": [
+        "faith_meaning"
+      ],
+      "interpretation": "The upright cross on the tombstone amid turbulent water suggests an assertion of enduring meaning or belief despite environmental instability or dissolution.",
+      "alternative_interpretations": [
+        "The cross may simply be a conventional grave marker with no intended theological resonance."
+      ],
+      "limitations": [
+        "The cross lacks stylistic details (e.g., crucified figure, ornamentation) that would specify Christian theology; its interpretation as 'faith' depends on cultural association."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1055_P3",
+      "visual_anchors": [
+        "V-shaped dark landmasses",
+        "central tombstone",
+        "concentric ripples"
+      ],
+      "symbolic_mapping": [
+        "framing landmasses → boundaries or constraints",
+        "ripples → consequences or reverberations"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The tombstone is confined within a narrow aquatic channel bounded by dark land, symbolizing how mortality or legacy operates within structural limits, with effects radiating outward despite confinement.",
+      "alternative_interpretations": [
+        "The dark shapes are merely foreground rocks with no symbolic role."
+      ],
+      "limitations": [
+        "The landmasses are minimally detailed and lack clear edges or texture, making their role as ‘boundaries’ interpretive rather than evidential."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:44:56.092026+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-50815702-0e22-9146-aca3-efb944fdc6b9",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 971,
+        "total_tokens": 2504,
+        "completion_tokens_details": {
+          "text_tokens": 971
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070344430aaca1307fba4888",
+      "usage": {
+        "completion_tokens": 836,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2928,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3764
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

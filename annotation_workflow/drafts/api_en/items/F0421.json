@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0421",
+  "sample_id": "PHL1800_IRFL_0214",
+  "file_name": "PHL1800_IRFL_0214.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one woman",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor setting with a white background and diffuse natural light from the left.",
+      "A modern office or home workspace featuring a white desk and a mesh-backed chair.",
+      "A shallow depth-of-field composition focusing on the subject, with the background blurred."
+    ],
+    "action": [
+      "The woman holds both hands to her temples, fingers pressing against her forehead and temples.",
+      "Her head is tilted downward and slightly forward, eyes directed toward the laptop screen.",
+      "She is seated upright at a desk with a silver laptop open in front of her."
+    ],
+    "rationale": [
+      "The hand-to-head posture suggests physical discomfort or cognitive strain, though the exact cause is not visible.",
+      "The downward gaze and proximity to the screen indicate focused attention on the laptop, but intent or emotional state is not observable.",
+      "The striped shirt and chair design are contemporary, but temporal or cultural context cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "A silver-colored laptop with a matte finish lid is open on a white desk surface, screen facing the woman.",
+      "The woman has long, straight brown hair parted on the left, extending past her shoulders.",
+      "She wears a long-sleeved shirt with horizontal blue and white stripes and a visible blue collar trim.",
+      "Her right elbow rests on the desk while her right hand contacts her right temple; her left hand contacts her left temple.",
+      "She sits in a white ergonomic chair with a perforated mesh backrest partially visible behind her torso."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0421_P1",
+      "visual_anchors": [
+        "laptop screen",
+        "hands on temples",
+        "downcast gaze"
+      ],
+      "symbolic_mapping": [
+        "the laptop as a locus of mediated experience",
+        "the gesture as embodiment of cognitive load"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The image visually stages the tension between human cognition and digital interface, where truth-seeking or information processing manifests as embodied strain rather than intellectual clarity.",
+      "alternative_interpretations": [
+        "The posture may simply reflect temporary fatigue or headache unrelated to the device or epistemic activity."
+      ],
+      "limitations": [
+        "No text is visible on the screen, so content-driven interpretation is unsupported."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0421_P2",
+      "visual_anchors": [
+        "striped shirt",
+        "neutral background",
+        "isolated figure"
+      ],
+      "symbolic_mapping": [
+        "uniformity of stripes suggesting social conformity",
+        "isolation implying individualized experience"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The subject’s appearance—structured patterned clothing against an undifferentiated backdrop—highlights how identity is performed through visible markers within socially constructed environments.",
+      "alternative_interpretations": [
+        "The shirt is a casual garment choice with no intended symbolic meaning; the background is merely architectural."
+      ],
+      "limitations": [
+        "Clothing pattern does not confirm intentional semiotic signaling; background lacks contextual cues."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0421_P3",
+      "visual_anchors": [
+        "desk",
+        "laptop",
+        "seated posture"
+      ],
+      "symbolic_mapping": [
+        "desk as boundary between labor and rest",
+        "laptop as instrument of both productivity and constraint"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The arrangement of body, tool, and surface evokes the modern condition wherein technological mediation structures agency—freedom is enacted within the constraints of the workstation.",
+      "alternative_interpretations": [
+        "This is a routine work or study setup with no philosophical implication beyond functional use."
+      ],
+      "limitations": [
+        "No visible indicators of coercion, choice, or resistance; posture is common in many non-ideological contexts."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:45:19.419344+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4165b9bb-005e-9cf6-8356-96ee82340cfb",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 869,
+        "total_tokens": 1778,
+        "completion_tokens_details": {
+          "text_tokens": 869
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 402,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702450340454ad3e58649a9",
+      "usage": {
+        "completion_tokens": 729,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2007,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2736
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

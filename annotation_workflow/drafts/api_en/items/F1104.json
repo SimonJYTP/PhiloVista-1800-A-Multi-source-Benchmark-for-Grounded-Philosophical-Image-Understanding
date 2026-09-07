@@ -1,0 +1,131 @@
+{
+  "annotation_item_id": "F1104",
+  "sample_id": "PHL1800_HL_0414",
+  "file_name": "PHL1800_HL_0414.png",
+  "batch_id": "B023",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "ai_agent_direct_visual_reannotation_after_audit_non_independent",
+  "formal_gold": false,
+  "target_subject": "pedestrians gathered at and moving across a striped urban crosswalk",
+  "captions": {
+    "scene": [
+      "A black-and-white street photograph shows a broad striped crosswalk in front of crowded storefronts.",
+      "Numerous pedestrians occupy the curb and street beneath shop signs containing East Asian characters.",
+      "Two light-colored umbrellas stand out among the people in the busy commercial setting."
+    ],
+    "action": [
+      "Several pedestrians stand near the curb facing the crosswalk.",
+      "Other people walk laterally along the storefronts and across the edge of the street.",
+      "Two pedestrians hold open umbrellas while waiting or moving with the crowd."
+    ],
+    "rationale": [
+      "The alignment of people at the curb suggests that some are waiting for a safe or permitted moment to cross.",
+      "The dense shop signs and foot traffic indicate an active commercial street rather than an isolated roadway.",
+      "The umbrellas may provide shade or protection from weather, but their exact purpose is not visible."
+    ],
+    "object": [
+      "Wide alternating dark and light stripes fill the foreground crosswalk.",
+      "A row of adults in varied casual clothing stands across the middle of the image.",
+      "Two open pale umbrellas are held above pedestrians near the left and center-right.",
+      "Storefronts behind the crowd display many vertical and horizontal signs with East Asian writing.",
+      "The monochrome photograph contains people walking in both directions at the sides of the waiting group."
+    ]
+  },
+  "rationale_support": [
+    "commonsense_inference",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1104_P1",
+      "visual_anchors": [
+        "people aligned at the curb",
+        "striped crosswalk"
+      ],
+      "symbolic_mapping": [
+        "crosswalk → shared rule for coordinated movement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The crowd's relation to the crosswalk suggests how individual movement becomes coordinated through common spatial rules.",
+      "alternative_interpretations": [
+        "The people may not all be waiting to cross, and the alignment may be accidental."
+      ],
+      "limitations": [
+        "A still image does not show the traffic signal or whether anyone is following a rule."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1104_P2",
+      "visual_anchors": [
+        "many pedestrians",
+        "faces oriented in different directions",
+        "dense storefronts"
+      ],
+      "symbolic_mapping": [
+        "crowd → coexistence among strangers"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene can be read as urban coexistence in which strangers share a space while remaining socially separate and visually anonymous.",
+      "alternative_interpretations": [
+        "It may simply document ordinary pedestrian traffic without commenting on anonymity."
+      ],
+      "limitations": [
+        "The photograph gives no access to relationships or subjective feelings among the people."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1104_P3",
+      "visual_anchors": [
+        "commercial signs",
+        "people moving beneath them"
+      ],
+      "symbolic_mapping": [
+        "advertising field → attention shaped by commerce"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "power_conflict"
+      ],
+      "interpretation": "The visual density of shop signs around the pedestrians permits a reading of public attention as structured by commercial messages.",
+      "alternative_interpretations": [
+        "The signs may only identify shops and need not dominate anyone's attention."
+      ],
+      "limitations": [
+        "Most text is not readable at this resolution, so its content and influence cannot be established."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "codex_visual_audit",
+    "verdict": "revised_by_audit_visual_inspection",
+    "issues": [
+      "Previous fallback annotation described a different image; all semantic annotation fields were replaced after direct inspection of the mapped image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:39:38.197045+00:00",
+    "generator": "zcode_ai_agent_manual_visual",
+    "reviewer": "none",
+    "image_input": "direct_local_view_by_ai_agent",
+    "audit_revision": {
+      "timestamp_utc": "2026-09-07T14:37:45.702430+00:00",
+      "reason_code": "cross_image_annotation_mismatch",
+      "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1104.json",
+      "formal_gold": false
+    }
+  }
+}

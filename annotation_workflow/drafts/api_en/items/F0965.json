@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0965",
+  "sample_id": "PHL1800_HL_0230",
+  "file_name": "PHL1800_HL_0230.png",
+  "batch_id": "B021",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four mounted police officers on horseback crossing a street",
+  "captions": {
+    "scene": [
+      "Urban street intersection with white crosswalk stripes, a beige stone building with decorative transom window, and a utility pole covered in stickers.",
+      "A blue 'Bus Stop' sign is mounted on a pole near the curb; a red fire hydrant is visible beside the sidewalk.",
+      "Three horses are fully visible in profile; a fourth horse’s rear and tail appear at far left edge."
+    ],
+    "action": [
+      "Four officers in light-gray uniforms, dark helmets, and duty belts ride horses across a marked crosswalk.",
+      "The horses are in mid-stride, moving left to right relative to the camera; their legs show motion blur consistent with walking pace.",
+      "One officer (second from left) holds reins with both hands; others appear to hold reins with one hand or rest hands on saddle."
+    ],
+    "rationale": [
+      "The presence of matching uniforms, helmets, and visible badge patches suggests official law enforcement affiliation, though agency name is not legible.",
+      "Horses wear bridles and saddle blankets with gold-trimmed emblems; the emblem design is consistent across horses but too blurry to identify precisely.",
+      "The utility pole has layered paper stickers and torn remnants; some text fragments like '21' and partial logos are visible but unreadable as full messages."
+    ],
+    "object": [
+      "Four distinct mounted officers are visible: three fully, one partially at far left edge; each wears a helmet, light-gray shirt, dark trousers, and black boots.",
+      "Three brown horses are fully visible; all wear black bridles, dark saddle blankets with yellow/gold borders and central circular emblems, and black saddle pads.",
+      "A fourth horse’s hindquarters and black tail appear at extreme left, aligned with the first officer, indicating it is part of the same formation.",
+      "A blue rectangular sign with white sans-serif text reading 'Bus Stop' is affixed to a vertical pole near the curb.",
+      "A red fire hydrant with white caps stands on the sidewalk between the first two horses and the building entrance."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0965_P1",
+      "visual_anchors": [
+        "uniformed officers on horseback",
+        "saddle blankets with identical emblems",
+        "crosswalk markings"
+      ],
+      "symbolic_mapping": [
+        "identical emblems → institutional uniformity",
+        "crosswalk → regulated public movement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The synchronized presence of uniformed riders within a legally demarcated space visually enacts the negotiation between collective order and individual mobility, where authority is both displayed and constrained by infrastructure.",
+      "alternative_interpretations": [
+        "This may simply depict routine patrol logistics without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; emblems are illegible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0965_P2",
+      "visual_anchors": [
+        "horses in motion across pavement",
+        "utility pole with torn posters",
+        "fire hydrant adjacent to riders"
+      ],
+      "symbolic_mapping": [
+        "horses vs. urban infrastructure → tradition meeting modernity"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of animal-powered transport against fixed civic infrastructure evokes tension between embodied labor and mechanized systems, suggesting continuity of human agency amid technological layering.",
+      "alternative_interpretations": [
+        "Horses are used for practical visibility and crowd control, not symbolic contrast."
+      ],
+      "limitations": [
+        "No evidence of deliberate staging; utility pole wear is incidental background detail."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0965_P3",
+      "visual_anchors": [
+        "officers’ helmets obscuring faces",
+        "reins held loosely",
+        "shared direction of travel"
+      ],
+      "symbolic_mapping": [
+        "face concealment → depersonalized authority",
+        "shared motion → collective purpose"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visual erasure of individual identity through standardized gear foregrounds role-based responsibility, implying ethical conduct is expected to emerge from function rather than personal disposition.",
+      "alternative_interpretations": [
+        "Helmets are standard safety equipment; no intentional identity suppression is evident."
+      ],
+      "limitations": [
+        "Facial occlusion is functional, not necessarily ideological; no gestures indicate moral deliberation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:31:56.477870+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7e746682-a33b-95d5-9153-7666703e4b29",
+      "usage": {
+        "prompt_tokens": 717,
+        "completion_tokens": 995,
+        "total_tokens": 1712,
+        "completion_tokens_details": {
+          "text_tokens": 995
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 210,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070331333bca3bb9957d4b52",
+      "usage": {
+        "completion_tokens": 856,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1835,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2691
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

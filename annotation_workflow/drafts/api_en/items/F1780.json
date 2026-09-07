@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1780",
+  "sample_id": "PHL1800_HL_0243",
+  "file_name": "PHL1800_HL_0243.png",
+  "batch_id": "B036",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one police officer riding a motorcycle",
+  "captions": {
+    "scene": [
+      "An urban street with parked vehicles including a black Mercedes-Benz SUV and a black BMW sedan in the background.",
+      "A metal fence and bare trees are visible behind the vehicles, suggesting a temperate-season city environment.",
+      "The asphalt road surface shows white lane markings and minor debris."
+    ],
+    "action": [
+      "The officer is seated upright on a motorcycle with both hands on the handlebars, appearing to be in motion or preparing to move.",
+      "The officer wears a white short-sleeved uniform shirt, black trousers, black boots, sunglasses, and a white helmet with a dark visor.",
+      "The motorcycle’s headlight and amber turn signals are illuminated."
+    ],
+    "rationale": [
+      "The officer’s posture and grip suggest active control of the vehicle; however, motion blur is absent, so movement cannot be confirmed visually.",
+      "The presence of multiple police markings (‘POLICE’ on side case, windshield, and helmet badge) indicates official duty status, but no badge number or agency name is legible.",
+      "The background vehicles are stationary relative to the officer, but their exact state (parked vs. stopped in traffic) is indeterminate due to framing and depth."
+    ],
+    "object": [
+      "A white police motorcycle with chrome engine components, spoked front wheel, and a clear windscreen bearing the word ‘POLICE’ in gold capital letters.",
+      "A white saddlebag mounted on the left side of the motorcycle displays the word ‘POLICE’ in black capital letters above a black horizontal stripe.",
+      "The officer wears a white helmet with a black chin strap and a small circular badge on the front; the badge design is not fully legible.",
+      "The officer’s uniform includes a white shirt with epaulets, a black neck gaiter or collar insert, and a silver badge pinned on the left chest.",
+      "Two amber turn signals are lit on the front fairing, and a single round headlamp is illuminated; a smaller blue light is also visible below the headlamp."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1780_P1",
+      "visual_anchors": [
+        "white helmet",
+        "sunglasses",
+        "uniform shirt"
+      ],
+      "symbolic_mapping": [
+        "the helmet and sunglasses obscure facial features, emphasizing role over individuality"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The officer’s standardized appearance enacts a public persona where institutional identity supersedes personal visage, reflecting how social roles mediate individual presence in civic space.",
+      "alternative_interpretations": [
+        "This is simply standard protective and uniform equipment for visibility and safety, with no intentional symbolic function."
+      ],
+      "limitations": [
+        "No facial expression or distinguishing marks are visible; the anonymity could stem from equipment rather than philosophical intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1780_P2",
+      "visual_anchors": [
+        "illuminated headlight",
+        "amber turn signals",
+        "windshield with POLICE text"
+      ],
+      "symbolic_mapping": [
+        "active lights signify readiness and authority; the text declares jurisdictional presence"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The lit signals and explicit labeling constitute a visual assertion of regulatory authority, embodying the tension between lawful order and individual mobility within shared infrastructure.",
+      "alternative_interpretations": [
+        "Lights are functional for traffic safety and visibility; the text serves administrative identification only."
+      ],
+      "limitations": [
+        "No interaction with other road users is shown, so the enforcement context remains speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1780_P3",
+      "visual_anchors": [
+        "chrome engine",
+        "spoked wheel",
+        "black leather gloves"
+      ],
+      "symbolic_mapping": [
+        "mechanical precision and manual control evoke human agency interfacing with technology"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The officer’s direct physical engagement with the motorcycle—gloved hands on controls, body aligned with machine—illustrates embodied labor where technological mediation does not erase but reconfigures human intentionality in routine patrol.",
+      "alternative_interpretations": [
+        "These are standard operational gear items with no deeper significance beyond utility and regulation."
+      ],
+      "limitations": [
+        "No motion or decision point is captured; the image freezes a moment without revealing intent or trajectory."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:13:35.788790+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6f63e1fe-2f54-97c2-8ca9-602029c226e8",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 989,
+        "total_tokens": 1758,
+        "completion_tokens_details": {
+          "text_tokens": 989
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907051246cff5d4720f694df2",
+      "usage": {
+        "completion_tokens": 845,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1911,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2756
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

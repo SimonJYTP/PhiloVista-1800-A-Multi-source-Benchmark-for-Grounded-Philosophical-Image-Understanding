@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0442",
+  "sample_id": "PHL1800_IRFL_0067",
+  "file_name": "PHL1800_IRFL_0067.jpg",
+  "batch_id": "B011",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults in a living room setting",
+  "captions": {
+    "scene": [
+      "A brightly lit interior space with neutral walls, a ceiling light fixture, and a doorway visible in the background.",
+      "A blue sectional sofa occupies the foreground and midground, with two large blue cushions and a smartphone resting on its seat.",
+      "A wooden shelving unit stands near the doorway in the background right; no text is legible on it."
+    ],
+    "action": [
+      "The seated adult (appearing female) holds both hands to her temples, eyes closed or downcast, body leaning forward slightly.",
+      "The standing adult (appearing male) gestures with raised right hand, mouth open, facing the seated adult.",
+      "Both individuals are positioned within the same room, with the standing adult behind and to the left of the seated adult."
+    ],
+    "rationale": [
+      "The seated person’s posture and hand placement suggest distress or fatigue, though exact emotional state is not verifiable from visual data alone.",
+      "The standing person’s open mouth and raised hand indicate vocalization and gestural emphasis, but specific intent or content cannot be determined.",
+      "No physical contact occurs between the individuals; spatial proximity implies interaction but does not confirm relationship type or event sequence."
+    ],
+    "object": [
+      "A blue fabric sectional sofa with three visible back cushions and one visible armrest section is present in the foreground.",
+      "A silver-colored smartphone lies screen-down on the left side of the sofa seat cushion.",
+      "The standing adult wears a light-blue unbuttoned shirt over a rust-colored t-shirt and dark trousers.",
+      "The seated adult wears a light-blue striped button-up shirt (partially unbuttoned), a light-gray undershirt, and blue denim jeans.",
+      "A white cylindrical pendant light hangs from the ceiling above the central area of the room."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0442_P1",
+      "visual_anchors": [
+        "standing adult’s raised hand",
+        "seated adult’s hands on temples",
+        "spatial separation between figures"
+      ],
+      "symbolic_mapping": [
+        "raised hand → expression of authority or demand",
+        "hands on temples → internal withdrawal or overload"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages a tension between external assertion and internal constraint, where bodily positioning and gesture imply a dynamic of imposed pressure versus embodied resistance or exhaustion.",
+      "alternative_interpretations": [
+        "The scene may depict a routine domestic disagreement without philosophical significance, such as negotiating household tasks."
+      ],
+      "limitations": [
+        "No facial expressions are fully legible due to angle and resolution; emotional valence remains ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0442_P2",
+      "visual_anchors": [
+        "blue sofa as shared furniture",
+        "neutral wall color",
+        "absence of personal decor"
+      ],
+      "symbolic_mapping": [
+        "minimalist interior → social neutrality or erasure of identity",
+        "shared seating surface → contested common ground"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The undifferentiated domestic environment frames the individuals as subjects defined primarily through relational conflict rather than individual attributes, suggesting social existence as constituted by interactional friction.",
+      "alternative_interpretations": [
+        "The plain décor reflects recent move-in or budget constraints, not intentional symbolic minimalism."
+      ],
+      "limitations": [
+        "Wall color and furniture style are generic; no unique identifiers confirm intentional aesthetic meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0442_P3",
+      "visual_anchors": [
+        "smartphone on sofa",
+        "unoccupied space beside seated adult",
+        "standing adult’s forward lean"
+      ],
+      "symbolic_mapping": [
+        "abandoned phone → interruption of digital mediation",
+        "empty adjacent seat → potential for reconciliation or abandonment"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of a disengaged communication device and physically proximate yet emotionally divergent figures suggests a moment where mediated knowledge fails and embodied choice—whether to remain, withdraw, or act—is suspended.",
+      "alternative_interpretations": [
+        "The phone was placed there casually before the interaction began; its presence carries no symbolic weight."
+      ],
+      "limitations": [
+        "Orientation and screen status of the phone are indeterminate; no evidence confirms it was recently used or intentionally set aside."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:47:05.517218+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-22be63a1-1a79-9558-a4b7-7ff046f112f2",
+      "usage": {
+        "prompt_tokens": 893,
+        "completion_tokens": 966,
+        "total_tokens": 1859,
+        "completion_tokens_details": {
+          "text_tokens": 966
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 386,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024653d5cc512619484354",
+      "usage": {
+        "completion_tokens": 828,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2042,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2870
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

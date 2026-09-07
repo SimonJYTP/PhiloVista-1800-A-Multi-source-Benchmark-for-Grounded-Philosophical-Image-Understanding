@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0942",
+  "sample_id": "PHL1800_HL_0116",
+  "file_name": "PHL1800_HL_0116.png",
+  "batch_id": "B020",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two children standing in front of a wooden fence with cattle behind it",
+  "captions": {
+    "scene": [
+      "A sunlit grassy field bordered by a weathered horizontal wooden fence, with tall green vegetation in the foreground.",
+      "Multiple brown and tan cattle with long hair and horns are visible behind the fence, grazing or standing.",
+      "The background includes scattered trees and a pale blue sky with faint clouds."
+    ],
+    "action": [
+      "The child on the left faces the camera with lips pursed and arms crossed over the chest.",
+      "The child on the right stands with back to the camera, looking toward the cattle.",
+      "Several cattle stand or graze behind the fence; one cow lifts its head slightly while others remain still."
+    ],
+    "rationale": [
+      "The child’s facial expression and posture suggest intentional posing, though the exact intent is not visually verifiable.",
+      "The cattle appear calm and unalarmed, consistent with routine pasture behavior, but no motion blur confirms movement.",
+      "The fence separates the children from the animals, indicating a physical boundary, though its purpose (containment vs. demarcation) is not specified."
+    ],
+    "object": [
+      "A child with tousled dark hair wears a blue short-sleeved t-shirt with a faint graphic on the back and dark shorts.",
+      "A second child with shoulder-length light-blonde hair wears a bright green short-sleeved t-shirt and a yellow skirt.",
+      "A rustic wooden fence composed of three horizontal planks, showing moss and weathering, runs across the midground.",
+      "At least six distinct bovine animals are visible behind the fence: four brown/tan Highland-type cattle with shaggy coats and horns, one lighter-colored animal partially obscured, and one white-faced cow near the right edge.",
+      "Tall green grass and thin reed-like stalks occupy the immediate foreground, partially obscuring the lower legs of the children."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0942_P1",
+      "visual_anchors": [
+        "child facing camera with pursed lips",
+        "wooden fence separating children from cattle"
+      ],
+      "symbolic_mapping": [
+        "the fence as a marker of human-imposed division",
+        "the child’s direct gaze as assertion of presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image stages a moment where human subjectivity—expressed through the child’s deliberate pose—is framed against a naturalized boundary that both protects and isolates, evoking questions about how social categories are materially enforced.",
+      "alternative_interpretations": [
+        "This may simply be a candid snapshot of children observing farm animals during a visit, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual signage confirm the fence’s function or the setting’s cultural meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0942_P2",
+      "visual_anchors": [
+        "two children of different apparent ages/statures",
+        "shared space before the same fence",
+        "cattle as non-human observers"
+      ],
+      "symbolic_mapping": [
+        "proximity without interaction as emblem of coexistence without communion"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The juxtaposition of two children—one turned inward toward the viewer, the other outward toward animals—suggests divergent modes of being-in-the-world, highlighting how identity is shaped by orientation rather than mere presence.",
+      "alternative_interpretations": [
+        "The children may be waiting for an adult’s instruction; their postures reflect momentary distraction or impatience, not philosophical stance."
+      ],
+      "limitations": [
+        "Hair color, clothing, and posture alone cannot determine age, relationship, or intention definitively."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0942_P3",
+      "visual_anchors": [
+        "sunlit field",
+        "static cattle",
+        "children standing still"
+      ],
+      "symbolic_mapping": [
+        "stillness as suspension of time",
+        "pastoral setting as locus of continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "faith_meaning"
+      ],
+      "interpretation": "The scene’s quiet equilibrium—where humans and animals share a bounded landscape under open sky—invites reflection on temporal endurance: life persists in routine, yet each moment is irreplaceable and finite.",
+      "alternative_interpretations": [
+        "The lighting and composition suggest a typical daytime outdoor photo; stillness may result from camera shutter speed, not thematic choice."
+      ],
+      "limitations": [
+        "No clocks, aging markers, or ritual objects confirm temporal or existential themes."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:29:38.489658+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d0690e86-d17e-977e-875d-a4c896f999cf",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1010,
+        "total_tokens": 1819,
+        "completion_tokens_details": {
+          "text_tokens": 1010
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032928c5ce9b4ea7414f31",
+      "usage": {
+        "completion_tokens": 868,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1991,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2859
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

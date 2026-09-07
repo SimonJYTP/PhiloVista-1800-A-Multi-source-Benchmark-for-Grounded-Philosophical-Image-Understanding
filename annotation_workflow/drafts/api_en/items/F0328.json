@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0328",
+  "sample_id": "PHL1800_HL_0036",
+  "file_name": "PHL1800_HL_0036.png",
+  "batch_id": "B009",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a wall-mounted analog clock with a red frame and a printed portrait face",
+  "captions": {
+    "scene": [
+      "A blurry indoor setting with a clock mounted on a light-colored wall above reflective, crinkled plastic sheeting.",
+      "The background includes horizontal metal or wooden trim and vertical seams suggesting paneling or construction joints.",
+      "Light reflects off the plastic sheeting, producing irregular bright patches and obscuring underlying details."
+    ],
+    "action": [
+      "The clock hands indicate approximately 9:11, with the second hand near the 10.",
+      "The clock face displays two human figures in formal attire, positioned symmetrically around the center.",
+      "No motion is visible; the image is static and out of focus."
+    ],
+    "rationale": [
+      "The time reading is inferred from hand positions relative to numerals, but blur reduces precision.",
+      "The presence of two figures is confirmed by distinct head shapes and clothing outlines, though facial features are indistinct.",
+      "The red frame and printed face suggest mass production rather than custom craftsmanship, based on uniform color and print texture."
+    ],
+    "object": [
+      "The clock has a circular red plastic or painted metal frame with slight wear visible at the lower right edge.",
+      "Black Arabic numerals 1 through 12 are printed on the face, with numerals 10, 11, 12, 1, 2, 3, 8, 9 clearly legible despite blur.",
+      "Two human figures appear on the clock face: one on the left wearing a light-colored jacket and patterned tie, one on the right wearing a dark hat and floral-patterned garment.",
+      "Three black hands (hour, minute, second) extend from a central gold-toned pivot; the hour hand points between 9 and 10, the minute hand near 2, the second hand near 10.",
+      "The clock is mounted on a vertical surface with a visible seam or joint directly above it and a metallic-looking strip below the frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0328_P1",
+      "visual_anchors": [
+        "two figures printed on a timepiece",
+        "clock hands indicating a specific moment",
+        "red frame enclosing the image"
+      ],
+      "symbolic_mapping": [
+        "the fixed portrait juxtaposed with moving hands suggests permanence versus transience",
+        "the enclosure by the frame may symbolize social containment of identity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The clock embodies the tension between enduring social representation—captured in the static portrait—and the relentless progression of time, implying that identity is both preserved and eroded by temporal passage.",
+      "alternative_interpretations": [
+        "It may simply be a decorative item with no intended symbolism, chosen for aesthetic or commemorative reasons without philosophical intent."
+      ],
+      "limitations": [
+        "Blur prevents verification of facial expressions, text, or fine details that could confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0328_P2",
+      "visual_anchors": [
+        "printed portrait of two individuals",
+        "symmetrical placement around clock center",
+        "formal attire visible despite blur"
+      ],
+      "symbolic_mapping": [
+        "dual figures centered on time suggest shared temporal experience or mutual accountability",
+        "formality implies institutional or ceremonial context"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "identity_appearance"
+      ],
+      "interpretation": "The paired figures, formally attired and centrally framed by time, evoke a notion of shared responsibility within a public or official role, where appearance and timing jointly constitute legitimacy.",
+      "alternative_interpretations": [
+        "The figures may be generic stock imagery used for commercial clock production, with no ethical or identity-related intent."
+      ],
+      "limitations": [
+        "No identifying text or insignia is readable; attire details are too blurred to confirm rank, office, or relationship."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0328_P3",
+      "visual_anchors": [
+        "reflective plastic sheeting behind the clock",
+        "blur obscuring background details",
+        "clock mounted on utilitarian wall"
+      ],
+      "symbolic_mapping": [
+        "distorted reflection mirrors the obscured reality behind official imagery",
+        "mounting on plain wall contrasts with ornate face, suggesting dissonance between presentation and context"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The obscured background and reflective distortion imply that truth is mediated and partial, while the fixed clock face represents an imposed temporal order that constrains perception of reality.",
+      "alternative_interpretations": [
+        "The plastic sheeting is likely protective covering during construction or storage, not symbolic material."
+      ],
+      "limitations": [
+        "The nature and purpose of the sheeting cannot be determined from visual evidence alone; reflections are ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:33:26.754182+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-051f01a9-d1bc-927c-ae59-720cf6532b57",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1054,
+        "total_tokens": 1863,
+        "completion_tokens_details": {
+          "text_tokens": 1054
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070233112b220b81b2e2405c",
+      "usage": {
+        "completion_tokens": 907,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2026,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2933
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

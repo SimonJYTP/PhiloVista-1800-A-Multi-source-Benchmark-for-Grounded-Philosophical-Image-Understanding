@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0229",
+  "sample_id": "PHL1800_HL_0049",
+  "file_name": "PHL1800_HL_0049.png",
+  "batch_id": "B007",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a bald man wearing a red long-sleeve shirt and dark jeans, standing outdoors while holding a mobile phone to his right ear",
+  "captions": {
+    "scene": [
+      "An outdoor urban setting with blue corrugated metal construction barriers on the left and a black vertical-bar metal fence on the right, both partially enclosing a concrete ledge where the man stands.",
+      "Background includes blurred green foliage, a white truck cab, and indistinct construction equipment under bright daylight.",
+      "Graffiti in light-colored characters is visible on the blue barrier; some characters appear East Asian but are not fully legible."
+    ],
+    "action": [
+      "The man holds a silver-colored mobile phone to his right ear with his right hand, fingers curled around the device, suggesting active phone use.",
+      "He stands with his body angled slightly leftward, left foot forward, weight resting on both feet atop a low concrete ledge.",
+      "His head is tilted slightly downward and toward the phone, eyes likely directed at the ground or phone screen, though facial features are not visible."
+    ],
+    "rationale": [
+      "The phone’s position against the ear and hand grip strongly indicate a call is in progress rather than mere holding.",
+      "The presence of construction barriers and a truck suggests an active worksite nearby, though no workers or machinery are clearly visible.",
+      "The graffiti appears handwritten and non-standardized, but its content cannot be reliably transcribed due to resolution and angle."
+    ],
+    "object": [
+      "The man has a shaved head with no visible hair, and his skin tone appears light to medium under direct sunlight.",
+      "He wears a solid red long-sleeve pullover with no visible logos, paired with dark gray or black denim jeans showing slight fading on the thighs.",
+      "His footwear consists of gray sneakers with white soles and laces, partially obscured by the ledge edge.",
+      "A thin red string or cord runs horizontally across the blue barrier, tied at intervals, possibly for temporary demarcation.",
+      "The black metal fence comprises evenly spaced vertical bars welded to horizontal top and bottom rails, mounted on a blue base panel matching the barrier color."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0229_P1",
+      "visual_anchors": [
+        "bald head",
+        "red shirt against blue barriers",
+        "phone held to ear"
+      ],
+      "symbolic_mapping": [
+        "the bald head may signify exposure or vulnerability",
+        "the red shirt contrasts with industrial surroundings, highlighting individual presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s stark visual contrast with the impersonal construction environment evokes the tension between individual identity and institutional or infrastructural anonymity.",
+      "alternative_interpretations": [
+        "The man is simply waiting for someone or taking a break near a worksite; the color contrast is coincidental."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0229_P2",
+      "visual_anchors": [
+        "concrete ledge",
+        "metal barriers",
+        "vertical fence bars"
+      ],
+      "symbolic_mapping": [
+        "the ledge acts as a threshold between open space and restricted zone",
+        "bars suggest containment or separation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "Standing on a narrow ledge beside rigid barriers, the subject occupies an intermediate physical position that mirrors the philosophical condition of being simultaneously constrained and capable of movement or decision.",
+      "alternative_interpretations": [
+        "The ledge is merely a convenient place to stand; the barriers serve only safety purposes."
+      ],
+      "limitations": [
+        "The man’s posture does not confirm deliberation or hesitation—only static stance is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0229_P3",
+      "visual_anchors": [
+        "mobile phone in use",
+        "blurred background",
+        "isolated figure"
+      ],
+      "symbolic_mapping": [
+        "the phone mediates connection across spatial separation",
+        "background blur emphasizes focus on the immediate interaction"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The act of telecommunication in a visually fragmented, transitional space underscores how mediated communication sustains social existence even when physical context is unstable or provisional.",
+      "alternative_interpretations": [
+        "He is making a routine call unrelated to the setting; the blur is due to shallow depth of field, not conceptual intent."
+      ],
+      "limitations": [
+        "The call’s content, recipient, and purpose are entirely unseen and unverifiable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:22:44.546444+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-93a02402-e73a-93a6-b2da-32628e48f993",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 998,
+        "total_tokens": 1767,
+        "completion_tokens_details": {
+          "text_tokens": 998
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022234b953d9caa8f0445c",
+      "usage": {
+        "completion_tokens": 858,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1930,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2788
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

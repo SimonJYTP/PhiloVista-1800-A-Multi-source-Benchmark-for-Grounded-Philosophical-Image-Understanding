@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1250",
+  "sample_id": "PHL1800_HL_0037",
+  "file_name": "PHL1800_HL_0037.png",
+  "batch_id": "B026",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a boy standing with arms crossed, wearing a signboard with a clock and text",
+  "captions": {
+    "scene": [
+      "A paved street beside a light-green colonial-style building with barred wooden doors and stone columns",
+      "A person in the background walking away, wearing a white top and blue jeans",
+      "A partial view of another person on the left carrying an orange-and-black backpack"
+    ],
+    "action": [
+      "The boy stands upright with arms crossed over his chest, looking toward the camera",
+      "The boy wears a yellow signboard strapped to his torso, featuring a round analog clock showing approximately 10:25",
+      "The background person walks away from the camera along the sidewalk"
+    ],
+    "rationale": [
+      "The boy’s posture (crossed arms, direct gaze) suggests attentiveness or waiting, though internal state is not observable",
+      "The signboard’s text includes Spanish phrases like 'ENTREGA INMEDIATA' and 'PAGUELO FACILMENTE', indicating commercial intent, but affiliation cannot be verified visually",
+      "The building’s architecture and signage suggest a Latin American urban setting, but exact location is unverifiable from image alone"
+    ],
+    "object": [
+      "A round analog clock with black numerals 1–12, black hour and minute hands, and a silver rim is mounted on a yellow rectangular signboard.",
+      "The signboard displays red and black uppercase Spanish text: 'LUIS', 'ENTREGA INMEDIATA', 'AQUI', 'PAGUELO FACILMENTE', and 'AFILIADO A FONACOT'; some letters are partially obscured by the clock.",
+      "The boy wears a light gray short-sleeved polo shirt with a red-and-blue graphic on the chest and beige suspenders over the shirt.",
+      "The building facade has pale green painted walls, exposed stone pilasters, and two large dark wooden doors with vertical iron bars.",
+      "A second person in the background wears a white sleeveless top, blue jeans, and carries a small bag over one shoulder while walking."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1250_P1",
+      "visual_anchors": [
+        "analog clock showing 10:25",
+        "signboard with 'ENTREGA INMEDIATA'",
+        "boy’s static pose"
+      ],
+      "symbolic_mapping": [
+        "clock as marker of urgency",
+        "signboard text as demand for immediacy"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of a precise time display with the phrase 'ENTREGA INMEDIATA' frames time not as neutral duration but as a scarce resource under social pressure, evoking tension between lived temporality and institutional scheduling.",
+      "alternative_interpretations": [
+        "The clock may simply indicate current time for passersby; the sign may be standard advertising without philosophical intent."
+      ],
+      "limitations": [
+        "No evidence confirms the boy’s awareness of or reflection on the clock’s symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1250_P2",
+      "visual_anchors": [
+        "boy wearing a branded signboard",
+        "suspenders over casual shirt",
+        "public street setting"
+      ],
+      "symbolic_mapping": [
+        "signboard as extension of self",
+        "clothing as hybrid identity marker"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The boy’s body functions as a mobile advertisement platform, blurring boundaries between personal identity and commercial role—suggesting how social existence can be mediated through visible affiliations imposed or adopted.",
+      "alternative_interpretations": [
+        "He may be temporarily assisting a family business; the attire could reflect practicality rather than identity negotiation."
+      ],
+      "limitations": [
+        "The image does not show whether the sign was chosen, assigned, or worn voluntarily."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1250_P3",
+      "visual_anchors": [
+        "barred wooden doors",
+        "stone columns",
+        "boy positioned in foreground"
+      ],
+      "symbolic_mapping": [
+        "barred doors as constraint",
+        "foreground figure as focal point of agency"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The architectural barriers (barred doors) contrast with the boy’s central, unobstructed presence, raising questions about structural constraints versus individual visibility—where visibility does not necessarily imply access or power.",
+      "alternative_interpretations": [
+        "Barred doors are typical security features in historic buildings and may not symbolize restriction in context."
+      ],
+      "limitations": [
+        "No visual evidence links the boy’s position to intentional commentary on architecture or power."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:08:06.751608+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-25a30f08-bead-9c4d-841c-00b854a47b3c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1037,
+        "total_tokens": 1846,
+        "completion_tokens_details": {
+          "text_tokens": 1037
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040750ef72480dc1844ca4",
+      "usage": {
+        "completion_tokens": 885,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1999,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2884
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

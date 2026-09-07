@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1032",
+  "sample_id": "PHL1800_IRFL_0075",
+  "file_name": "PHL1800_IRFL_0075.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "eight people seated around a wooden table eating a meal",
+  "captions": {
+    "scene": [
+      "An overhead view of a rustic outdoor dining setting with a dark wooden table on a stone-paved ground",
+      "Green cushioned chairs surround the table; yellow napkins are placed beside white ceramic plates",
+      "Multiple dishes including grilled fish, roasted vegetables, mixed salad, olives, and tomatoes are centrally arranged"
+    ],
+    "action": [
+      "A person in a striped shirt reaches toward a central platter of food",
+      "A person in a light blue shirt uses a fork to take food from a shared plate of grilled fish",
+      "A person in a white shirt holds a small bowl of green olives above their plate"
+    ],
+    "rationale": [
+      "The presence of multiple hands reaching toward central platters suggests communal serving rather than individual pre-portioned meals",
+      "The arrangement of cutlery (forks and knives) on both sides of each plate implies standard Western dining etiquette is being followed",
+      "The visible wine bottle, glasses, and open container holding another bottle indicate alcoholic beverage consumption is occurring"
+    ],
+    "object": [
+      "Eight distinct individuals are visible: four adults and four children, identifiable by head position, hair length, and clothing size.",
+      "A white ceramic plate holds two whole grilled fish with visible char marks and skin texture.",
+      "A colorful rimmed ceramic bowl contains a mixed green salad with red tomato wedges, yellow bell pepper, and leafy greens.",
+      "A small white bowl filled with green olives sits in the hands of a person wearing a white long-sleeve shirt.",
+      "A white basket holds a dark glass bottle with a silver foil cap and a second smaller dark bottle beside it."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1032_P1",
+      "visual_anchors": [
+        "shared central platters",
+        "multiple hands reaching simultaneously",
+        "identical white plates"
+      ],
+      "symbolic_mapping": [
+        "central platters → collective sustenance",
+        "identical plates → egalitarian participation"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial organization of food and utensils visually enacts a temporary social contract where individual agency is subordinated to shared ritual and mutual access.",
+      "alternative_interpretations": [
+        "This may simply reflect practical meal service for a large group without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues are visible to confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1032_P2",
+      "visual_anchors": [
+        "stone pavement",
+        "wooden table",
+        "green chair cushions"
+      ],
+      "symbolic_mapping": [
+        "stone pavement → enduring materiality",
+        "wooden table → crafted human interface"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of natural stone, processed wood, and manufactured ceramics indexes layers of human labor embedded in everyday dining infrastructure.",
+      "alternative_interpretations": [
+        "These materials may be chosen solely for durability and comfort in an outdoor setting."
+      ],
+      "limitations": [
+        "Material origins and production methods are not visible; only surface appearance is evident."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1032_P3",
+      "visual_anchors": [
+        "child’s hand grasping fork over fish",
+        "adult pouring wine",
+        "person holding olives aloft"
+      ],
+      "symbolic_mapping": [
+        "grasping fork → initiation into practice",
+        "pouring wine → stewardship of resources"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "Each visible action demonstrates delegated responsibility—care for others’ nourishment, moderation in consumption, and inclusion of younger participants in normative conduct.",
+      "alternative_interpretations": [
+        "These are routine behaviors with no moral dimension intended by the actors."
+      ],
+      "limitations": [
+        "Intent behind actions cannot be determined from posture alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (seven vs. eight visible); inaccurate action descriptions (e.g., 'pours red wine' not visible, 'child in light blue shirt' misidentifies a person); object description errors (e.g., 'rectangular white ceramic container' misdescribes a white basket)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:41:22.686786+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f5ef5907-371d-96d0-9c9b-99c522ad04f0",
+      "usage": {
+        "prompt_tokens": 1459,
+        "completion_tokens": 871,
+        "total_tokens": 2330,
+        "completion_tokens_details": {
+          "text_tokens": 871
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 952,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034110b2a36da825934b3e",
+      "usage": {
+        "completion_tokens": 791,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2698,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3489
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

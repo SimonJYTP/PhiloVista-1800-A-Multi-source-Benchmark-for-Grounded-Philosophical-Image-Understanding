@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1405",
+  "sample_id": "PHL1800_HL_0009",
+  "file_name": "PHL1800_HL_0009.png",
+  "batch_id": "B002",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "five young men gathered near a large stone bust sculpture in an outdoor plaza",
+  "captions": {
+    "scene": [
+      "A paved plaza with light-colored stone walls, metal benches with yellow seats, and a large dark stone bust mounted on a pedestal.",
+      "A leafy tree with white-painted lower trunk stands to the right of the bust; a window with bars is visible in the background wall.",
+      "Two skateboards lie on the ground near the group; one has red graphics on its deck."
+    ],
+    "action": [
+      "One man in a white t-shirt and blue jeans stands facing the bust, holding a silver cylindrical object in his right hand.",
+      "Another man in a grey t-shirt and blue jeans stands leftmost, looking toward the bust while standing beside a skateboard.",
+      "Three men cluster on the right: two face the bust (one wearing a white t-shirt with a black strap across his back), and one faces them in a grey shirt and jeans."
+    ],
+    "rationale": [
+      "The group’s orientation and proximity suggest shared attention toward the bust, though no direct eye contact or gesture confirms mutual focus.",
+      "The presence of skateboards and casual attire implies informal recreation, but no motion blur confirms active skating.",
+      "The bust’s facial features are highly detailed and realistic, indicating intentional sculptural craftsmanship rather than accidental erosion."
+    ],
+    "object": [
+      "A large monolithic stone bust depicting a male face with deep-set eyes, furrowed brow, and prominent nose, mounted on a rough-hewn stone base adorned with floral relief carvings.",
+      "Five distinct individuals are present: all stand upright; all wear short-sleeved shirts and long pants.",
+      "Two skateboards rest on the pavement: one under the leftmost man’s foot, the other near the center man’s feet; both have visible wheels and trucks.",
+      "A metal bench with ornamental circular cutouts in its backrest and yellow wooden slats sits against the wall behind the leftmost man.",
+      "A small rectangular plaque is affixed to the lower right side of the bust’s pedestal, but its text is illegible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1405_P1",
+      "visual_anchors": [
+        "large stone bust",
+        "group of young men observing it",
+        "skateboards on ground"
+      ],
+      "symbolic_mapping": [
+        "bust as enduring representation vs. transient youth activity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a permanent, solemn sculptural portrait with mobile, ephemeral youth suggests tension between historical memory and lived contemporaneity.",
+      "alternative_interpretations": [
+        "The scene may simply depict a casual pause during skateboarding, with no symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions or contextual signage confirm the bust’s subject or purpose."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1405_P2",
+      "visual_anchors": [
+        "man holding silver cylinder",
+        "backpack strap crossing torso",
+        "casual clothing"
+      ],
+      "symbolic_mapping": [
+        "everyday objects as markers of individual identity within collective space"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Individual accessories and postures—such as the carried cylinder and cross-body strap—function as subtle assertions of selfhood amid shared public engagement.",
+      "alternative_interpretations": [
+        "The cylinder may be a water bottle or container with no identity-signaling function."
+      ],
+      "limitations": [
+        "The cylinder’s purpose and branding are indiscernible; strap color and style are generic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1405_P3",
+      "visual_anchors": [
+        "bust’s intense gaze directed outward",
+        "men positioned at varying distances",
+        "open plaza layout"
+      ],
+      "symbolic_mapping": [
+        "sculpted gaze as unreciprocated observation, evoking asymmetrical power in representation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The bust’s fixed, penetrating gaze contrasts with the fluid positioning of viewers, highlighting how monumental imagery can impose a silent authority over public bodily movement.",
+      "alternative_interpretations": [
+        "The bust’s orientation is standard for portraiture and does not imply intentional surveillance."
+      ],
+      "limitations": [
+        "The bust’s eye direction is sculpted but cannot be confirmed as ‘gazing’ without context; no facial expression conveys intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (described as five but image shows five distinct individuals; no partial obscuration)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:45:22.869748+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-850ab44e-81b9-9a51-8bc3-2bf77f25cd26",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 993,
+        "total_tokens": 1742,
+        "completion_tokens_details": {
+          "text_tokens": 993
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014459ea37c77bb3a9432c",
+      "usage": {
+        "completion_tokens": 875,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1898,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2773
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

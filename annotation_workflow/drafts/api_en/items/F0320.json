@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0320",
+  "sample_id": "PHL1800_HL_0291",
+  "file_name": "PHL1800_HL_0291.png",
+  "batch_id": "B008",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male in military camouflage uniform",
+  "captions": {
+    "scene": [
+      "Interior of a white fabric tent with visible seams and a circular vent or fixture on the wall",
+      "A black folding table holding electronic equipment including a laptop, a vertical monitor displaying a grayscale image, and blue cables",
+      "A gray folding chair occupied by the subject, with a white printer-like device and black cases on the floor nearby"
+    ],
+    "action": [
+      "The subject is seated, facing rightward, with both hands positioned over a laptop keyboard",
+      "The subject’s gaze is directed toward the vertical monitor, which shows a bright rectangular grayscale display",
+      "The subject remains still in a posture consistent with focused interaction with computing equipment"
+    ],
+    "rationale": [
+      "The presence of military camouflage, a portable workstation, and a tent interior suggests a field-deployed operational setting, though no insignia or unit identifiers are legible",
+      "The vertical monitor displays a high-contrast monochrome image resembling a radiographic scan, but the content is not definitively identifiable due to resolution and glare",
+      "Blue Ethernet-style cables run across the table and into the tent wall, indicating network connectivity, yet the source and destination of the cables are not visible"
+    ],
+    "object": [
+      "A man wearing a digital camouflage uniform with a circular patch on the left sleeve and glasses sits on a gray metal folding chair.",
+      "A black rectangular laptop with an open lid rests on a black table; its screen is dark and its keyboard is partially obscured by the man’s hands.",
+      "A vertically oriented monitor with a beige frame displays a bright grayscale image that appears anatomical but lacks readable labels or scale markers.",
+      "A white box-shaped device with a top-loading tray sits on the floor to the left of the table, resembling a label or receipt printer.",
+      "Multiple blue cables lie loosely on the table surface and extend toward the tent wall, with one cable plugged into the laptop’s left side."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0320_P1",
+      "visual_anchors": [
+        "vertical monitor displaying grayscale image",
+        "man’s focused gaze",
+        "camouflage uniform"
+      ],
+      "symbolic_mapping": [
+        "monitor as interface between human perception and abstract data",
+        "uniform as marker of institutional role mediating action"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The scene embodies the mediation of truth through technological labor: the operator interprets an opaque data representation (the scan) within a structured institutional role, highlighting how knowledge is constructed at the intersection of human attention and machine output.",
+      "alternative_interpretations": [
+        "This is simply a routine medical or diagnostic task in a field clinic, with no deeper symbolic intent."
+      ],
+      "limitations": [
+        "The displayed image content is too indistinct to confirm it is medical; it could be terrain analysis, equipment diagnostics, or test pattern."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0320_P2",
+      "visual_anchors": [
+        "white tent walls",
+        "folded chair",
+        "portable equipment"
+      ],
+      "symbolic_mapping": [
+        "tent as temporary boundary between order and contingency",
+        "portability as embodiment of constrained autonomy"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The subject operates within a deliberately minimal, transient environment—suggesting social existence defined by functional enclosure rather than permanence, where freedom is expressed through disciplined adaptation to constraint.",
+      "alternative_interpretations": [
+        "The tent is standard issue for field operations and conveys no philosophical meaning beyond utility."
+      ],
+      "limitations": [
+        "No visible markings indicate whether the tent is temporary or semi-permanent; interior layout may be standardized rather than intentional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0320_P3",
+      "visual_anchors": [
+        "blue cables crossing table",
+        "laptop connected to monitor",
+        "single occupant"
+      ],
+      "symbolic_mapping": [
+        "cables as literal conduits of dependency",
+        "isolation of operator amid networked tools"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "The solitary figure surrounded by interconnected devices reflects a modern condition where identity is enacted through technical interfaces, and power resides in control over information flow—even when the operator appears subordinate to the system.",
+      "alternative_interpretations": [
+        "The setup is typical for remote diagnostics and does not imply hierarchy or alienation."
+      ],
+      "limitations": [
+        "No visible authority symbols, screens showing command hierarchies, or interpersonal interaction to ground power dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:32:06.246854+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-84140681-cf67-9f99-9a66-64bb7c6a7077",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 1007,
+        "total_tokens": 1676,
+        "completion_tokens_details": {
+          "text_tokens": 1007
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070231489af1a931b39c4bb3",
+      "usage": {
+        "completion_tokens": 865,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1809,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2674
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

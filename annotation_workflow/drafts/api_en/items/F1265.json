@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1265",
+  "sample_id": "PHL1800_HAIV_0022",
+  "file_name": "PHL1800_HAIV_0022.png",
+  "batch_id": "B002",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a kneeling person facing a standing statue",
+  "captions": {
+    "scene": [
+      "A white background with two figures: a draped stone-like statue on a tiered pedestal and a person in blue-grey clothing kneeling to its right.",
+      "The statue stands upright on a three-tiered base; the person kneels on one knee with the other foot planted, hands resting near the knee.",
+      "Both figures are rendered in sketchy ink-and-wash style with visible line work and shading; no environment beyond the figures and base is depicted."
+    ],
+    "action": [
+      "The person is in a kneeling posture, oriented toward the statue, with head tilted upward and gaze directed at the statue’s torso/face region.",
+      "The statue stands motionless, arms crossed over chest, draped in layered fabric folds, head slightly bowed.",
+      "No movement is evident; both figures are static, with shadows cast beneath them suggesting a light source from upper left."
+    ],
+    "rationale": [
+      "The kneeling posture and orientation strongly suggest engagement with the statue rather than incidental proximity.",
+      "The statue’s crossed arms and draped form resemble classical or funerary sculpture conventions, though no inscription confirms function.",
+      "The absence of facial features on the statue and partial obscuring of the person’s face prevent identification of expression or identity."
+    ],
+    "object": [
+      "The statue is monochromatic beige-grey with black contour lines, stands on a three-level stepped plinth composed of dark grey, tan, and light beige layers.",
+      "The person wears a long-sleeved blue-grey tunic belted at the waist, dark blue leggings, and brown ankle boots; hair is short and dark.",
+      "The statue’s garment has deep vertical folds and horizontal bands across the chest, with one arm partially obscured by drapery.",
+      "The person’s right hand rests on the right knee, left hand is near the left thigh; both hands are lightly shaded but lack detailed fingers.",
+      "Shadows under the statue’s base and the person’s knees indicate a consistent light direction and ground plane."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1265_P1",
+      "visual_anchors": [
+        "kneeling posture",
+        "statue’s crossed arms",
+        "tiered pedestal"
+      ],
+      "symbolic_mapping": [
+        "kneeling as deference to enduring form",
+        "pedestal as separation between human and idealized object"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "time_mortality"
+      ],
+      "interpretation": "The kneeling figure before an immutable statue evokes contemplation of human transience versus enduring symbolic presence, where the pedestal enforces ontological distance.",
+      "alternative_interpretations": [
+        "The scene may depict routine maintenance or artistic study, with kneeling indicating proximity for inspection rather than reverence."
+      ],
+      "limitations": [
+        "No inscriptions, facial expressions, or contextual markers confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1265_P2",
+      "visual_anchors": [
+        "draped statue",
+        "person’s turned back",
+        "shared vertical axis"
+      ],
+      "symbolic_mapping": [
+        "drapery as concealment of identity",
+        "back-facing posture as withdrawal or introspection"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between the statue’s fixed appearance and the person’s obscured back suggests tension between projected social form and private self-conception.",
+      "alternative_interpretations": [
+        "The person’s back is turned simply due to perspective choice; the artist may prioritize compositional balance over narrative intent."
+      ],
+      "limitations": [
+        "The figure’s head is not fully visible, so orientation cannot be confirmed as deliberate avoidance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1265_P3",
+      "visual_anchors": [
+        "empty space between figures",
+        "uniform lighting",
+        "lack of interaction cues"
+      ],
+      "symbolic_mapping": [
+        "void as epistemic gap",
+        "light as neutral observation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The unoccupied space between knower and known object highlights the irreducible distance in seeking truth through representation, where the journey remains solitary and unresolved.",
+      "alternative_interpretations": [
+        "The spacing reflects standard illustrative composition to avoid visual crowding, not philosophical intent."
+      ],
+      "limitations": [
+        "No textual or gestural indicators confirm epistemic framing; spatial arrangement could be purely aesthetic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:43:10.807070+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-12849f93-874a-9d8f-9e22-cec79b42cd67",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 978,
+        "total_tokens": 2511,
+        "completion_tokens_details": {
+          "text_tokens": 978
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014246f3c35c838e414162",
+      "usage": {
+        "completion_tokens": 839,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2931,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3770
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

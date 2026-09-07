@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0553",
+  "sample_id": "PHL1800_HL_0263",
+  "file_name": "PHL1800_HL_0263.png",
+  "batch_id": "B013",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "military personnel and biplanes on an open airfield",
+  "captions": {
+    "scene": [
+      "A flat, barren expanse with multiple early-20th-century biplanes parked in rows, a truck in the foreground, and groups of uniformed men scattered across the ground.",
+      "Three biplanes are clearly visible in the midground: one with its nose pointed left and propeller exposed, another angled right with landing gear down, and a third partially obscured behind the second.",
+      "A dark-toned utility truck with an open cargo bed is positioned centrally, surrounded by approximately 20 individuals in military-style uniforms."
+    ],
+    "action": [
+      "Several men stand in small clusters conversing or observing; some face aircraft, others face the truck or each other.",
+      "One man walks alone toward the center-right of the frame; another stands near the front wheel of the truck holding what appears to be a tool or rod.",
+      "Two men appear to be inspecting or working on the engine of the leftmost biplane, with one leaning into the cockpit area."
+    ],
+    "rationale": [
+      "The presence of multiple identical biplane designs and standardized uniforms suggests organized military aviation activity rather than civilian use.",
+      "The lack of paved surfaces, hangars, or infrastructure implies a temporary or forward operating airfield, possibly in a desert or arid region.",
+      "The orientation of aircraft and positioning of personnel suggest preparation, maintenance, or post-flight debriefing rather than active takeoff/landing."
+    ],
+    "object": [
+      "The leftmost biplane has a white fuselage with a circular insignia (dark center, light ring) on the side, two open cockpits, and a large engine with exposed cylinders (rotary design not definitively confirmed).",
+      "A dark-colored truck with spoked wheels and an open cargo bed holds no visible cargo; no canvas cover or spare tire is clearly visible on its side.",
+      "Approximately 20 distinct individuals are present: 10 near the left plane, 5 around the truck, 3 near the central plane, 2 near the rightmost plane, and 2 walking separately; all wear caps or helmets and long-sleeved uniforms.",
+      "Three biplanes are fully visible: the leftmost with a single propeller and open cockpit structure; the middle one with its tail raised slightly and landing gear deployed; the rightmost with a similar design but partially hidden behind a box-like structure.",
+      "A rectangular wooden crate or shelter sits near the right edge, with two figures standing beside it and one seated on top; no text is legible on its surface."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0553_P1",
+      "visual_anchors": [
+        "men grouped around aircraft",
+        "uniforms indicating role assignment",
+        "shared focus on machines"
+      ],
+      "symbolic_mapping": [
+        "uniforms → social role codification",
+        "aircraft as shared tools → collective agency"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The image manifests social existence through disciplined grouping and role-specific attire, where identity is enacted via participation in a technologically mediated collective task.",
+      "alternative_interpretations": [
+        "This may simply document routine maintenance without symbolic intent; the grouping could reflect logistical necessity rather than ideological cohesion."
+      ],
+      "limitations": [
+        "No facial expressions, insignia details, or written orders are legible to confirm intentionality or hierarchy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0553_P2",
+      "visual_anchors": [
+        "exposed engine",
+        "spoked wheels",
+        "manual inspection"
+      ],
+      "symbolic_mapping": [
+        "mechanical fragility vs. human proximity → vulnerability of technological systems",
+        "manual inspection → embodied knowledge transmission"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "knowledge_truth"
+      ],
+      "interpretation": "Labor and technology intersect in the tactile engagement with early aviation machinery, suggesting truth is verified not through documentation but through direct sensory and procedural verification.",
+      "alternative_interpretations": [
+        "The scene may reflect standard operational procedure with no epistemic emphasis; proximity to engines could be for safety or efficiency, not knowledge validation."
+      ],
+      "limitations": [
+        "No visible tools, manuals, or gestures indicating teaching, testing, or verification—only static observation and minor manipulation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0553_P3",
+      "visual_anchors": [
+        "flat horizon line",
+        "sparse terrain",
+        "repetition of aircraft forms"
+      ],
+      "symbolic_mapping": [
+        "horizon → temporal threshold",
+        "repetition → institutional continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The stark openness and serial arrangement of machines evoke time’s passage and mortality’s inevitability, while the uniformed presence asserts institutional power over volatile technology and uncertain terrain.",
+      "alternative_interpretations": [
+        "The flat landscape may merely indicate geographic location (e.g., desert), not philosophical abstraction; repetition may reflect logistics, not ideology."
+      ],
+      "limitations": [
+        "No clocks, ruins, or explicit symbols of death or authority (e.g., flags, ranks) are visible; interpretation relies on compositional inference."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (28 vs. actual ~20), misdescription of biplane details (e.g., 'rotary engine with exposed cylinders' not clearly visible), and unsupported claims about 'canvas-covered cab roof' and 'spare tire on truck'"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:56:12.656333+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-72bde135-8b98-9da6-8589-593fe656d1c1",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 1140,
+        "total_tokens": 1889,
+        "completion_tokens_details": {
+          "text_tokens": 1140
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070256016b987ee35caf4ba3",
+      "usage": {
+        "completion_tokens": 1049,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2023,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3072
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

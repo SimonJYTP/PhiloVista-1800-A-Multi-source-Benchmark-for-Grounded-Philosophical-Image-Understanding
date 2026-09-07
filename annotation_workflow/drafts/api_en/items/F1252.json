@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1252",
+  "sample_id": "PHL1800_IRFL_0197",
+  "file_name": "PHL1800_IRFL_0197.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male figure",
+  "captions": {
+    "scene": [
+      "A textured gray wall serves as background with a gradient from dark left to light right.",
+      "The figure is centered in medium close-up framing, occupying most of the vertical space.",
+      "Lighting originates from front-right, casting soft shadows on left side of face and neck."
+    ],
+    "action": [
+      "The man presses index fingers against both temples, thumbs resting below jawline.",
+      "His eyes are closed or nearly closed, brows furrowed, mouth slightly parted.",
+      "Black line-drawn scribbles emerge from the top of his head, forming a chaotic cloud above."
+    ],
+    "rationale": [
+      "The scribble cloud likely represents mental activity because it originates at the head and lacks physical support or attachment.",
+      "The hand placement suggests self-soothing or concentration due to standard ergonomic positioning near cranial pressure points.",
+      "The facial expression indicates strain or effort, though exact emotional valence cannot be confirmed without context."
+    ],
+    "object": [
+      "The man wears a plain light-beige crew-neck t-shirt with visible seam stitching at collar and shoulder.",
+      "He has short dark hair, visible stubble on chin and upper lip, and defined jawline.",
+      "His hands show natural skin tone, visible knuckles, fingernails, and fine arm hair on forearms.",
+      "The scribble cloud consists of overlapping black lines, some containing small unreadable symbols or numerals.",
+      "The background surface shows mottled texture with horizontal striations and subtle discoloration patches."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1252_P1",
+      "visual_anchors": [
+        "scribble cloud above head",
+        "index fingers pressed to temples",
+        "closed eyes"
+      ],
+      "symbolic_mapping": [
+        "chaotic lines → unstructured thought",
+        "hand-to-temple contact → attempt to contain or regulate cognition"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the tension between the mind’s capacity for generating unbounded symbolic content and the embodied effort required to impose order or coherence upon it.",
+      "alternative_interpretations": [
+        "It may depict a migraine or sensory overload, where external stimuli manifest as visual noise rather than internal thought."
+      ],
+      "limitations": [
+        "No textual labels confirm the scribbles represent thoughts; they could equally signify external interference or artistic embellishment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1252_P2",
+      "visual_anchors": [
+        "man’s neutral clothing",
+        "plain background",
+        "lack of contextual objects"
+      ],
+      "symbolic_mapping": [
+        "absence of identifiers → universalized subject",
+        "monochrome palette → abstraction from lived specificity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "By stripping away markers of social role or environment, the image foregrounds the individual as a site of internal conflict independent of external validation or relational definition.",
+      "alternative_interpretations": [
+        "The minimal setting may simply reflect studio constraints rather than intentional abstraction."
+      ],
+      "limitations": [
+        "Clothing color and cut are generic but not universally neutral; beige t-shirt still implies contemporary casual context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1252_P3",
+      "visual_anchors": [
+        "dense overlapping lines",
+        "unreadable embedded glyphs",
+        "fingers applying pressure"
+      ],
+      "symbolic_mapping": [
+        "unreadable marks → limits of representation",
+        "physical gesture → embodiment of cognitive labor"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The image stages knowledge production as physically taxing labor, where meaning-making involves wrestling with illegible or excessive symbolic material that resists clean articulation.",
+      "alternative_interpretations": [
+        "The glyphs may be decorative doodles with no semantic intent, making the ‘unreadability’ accidental rather than thematic."
+      ],
+      "limitations": [
+        "Embedded marks are too small and distorted to verify as intentional glyphs versus random line intersections."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:08:17.476824+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-efc17340-000d-9065-b394-69092a989c94",
+      "usage": {
+        "prompt_tokens": 1439,
+        "completion_tokens": 896,
+        "total_tokens": 2335,
+        "completion_tokens_details": {
+          "text_tokens": 896
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 932,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040754168c98dd7c7c4d15",
+      "usage": {
+        "completion_tokens": 841,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2704,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3545
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

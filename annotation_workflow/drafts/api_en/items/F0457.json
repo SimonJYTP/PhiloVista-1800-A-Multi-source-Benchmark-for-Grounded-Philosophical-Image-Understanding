@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0457",
+  "sample_id": "PHL1800_HAIV_0469",
+  "file_name": "PHL1800_HAIV_0469.png",
+  "batch_id": "B011",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single man seated in a paper boat filled with US currency",
+  "captions": {
+    "scene": [
+      "A stylized illustration shows a man in a red striped garment sitting in a white paper boat on teal water, with a sailboat silhouette and bar chart in the background.",
+      "The background includes a light-yellow sky, a white sailboat to the left, and a descending red zigzag line over vertical purple bars suggesting a financial chart.",
+      "The paper boat is overflowing with green US dollar bills; some are fanned in the man’s right hand, others lie loose in the boat."
+    ],
+    "action": [
+      "The man holds a fan of US dollar bills in his right hand while his left hand rests near the boat’s edge.",
+      "The man gazes toward the right side of the image, where a red downward-trending line overlays purple bars.",
+      "The paper boat floats on stylized teal water, with no visible propulsion or oars."
+    ],
+    "rationale": [
+      "The red zigzag line ending in an arrowhead points downward over bars, consistent with visual conventions for declining metrics, though no axis labels or units are present.",
+      "The man wears a red striped garment over a light blue shirt and red tie, suggesting formal or business attire, but the garment’s texture and drape resemble a blanket or robe rather than a suit jacket.",
+      "The boat is clearly made of folded white paper (visible creases and sharp edges), not wood or plastic, and is overloaded with currency, implying instability."
+    ],
+    "object": [
+      "The man has dark hair, a mustache, and a goatee, and is depicted in profile facing right.",
+      "The paper boat contains at least ten visible US $100 bills, identifiable by green color, black serial-number-like markings, and central oval portraits, though specific denominations are not legible.",
+      "A white sailboat with horizontal gray stripes appears in the upper-left background, partially cropped.",
+      "Five vertical purple bars of varying heights stand behind the man, aligned horizontally; their tops are level with the red zigzag line’s path.",
+      "The red zigzag line begins above the tallest purple bar and ends with a downward-pointing arrowhead below the shortest bar, indicating a net decline."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0457_P1",
+      "visual_anchors": [
+        "paper boat",
+        "overflowing money",
+        "downward red arrow"
+      ],
+      "symbolic_mapping": [
+        "paper boat → fragility of wealth",
+        "downward arrow → systemic decline"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image suggests that apparent affluence (money-filled boat) coexists with structural vulnerability (paper vessel) and external forces beyond individual control (descending chart), framing economic power as inherently constrained.",
+      "alternative_interpretations": [
+        "It may simply depict a whimsical or satirical scene of hoarding cash without deeper intent."
+      ],
+      "limitations": [
+        "No textual labels confirm the chart represents finance or that the boat symbolizes anything beyond its literal form."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0457_P2",
+      "visual_anchors": [
+        "man holding money",
+        "gaze directed at chart",
+        "formal attire over casual wrapping"
+      ],
+      "symbolic_mapping": [
+        "gaze toward decline → awareness without agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The man’s focused attention on the falling metric while physically immersed in wealth reflects a tension between individual perception and collective socioeconomic trajectory, highlighting how social existence shapes perceived choice.",
+      "alternative_interpretations": [
+        "He may be counting money and glancing casually; the chart could be decorative background."
+      ],
+      "limitations": [
+        "Facial expression is neutral and stylized, precluding confirmation of awareness or concern."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0457_P3",
+      "visual_anchors": [
+        "teal water",
+        "sailboat in distance",
+        "paper boat in foreground"
+      ],
+      "symbolic_mapping": [
+        "sailboat → traditional stability",
+        "paper boat → precarious modernity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "Contrast between the distant, structured sailboat and the immediate, makeshift paper boat implies a critique of identity constructed through appearance (red stripes, tie) rather than durable substance, especially when mediated by financial systems.",
+      "alternative_interpretations": [
+        "The sailboat may be unrelated scenery; color choices may reflect aesthetic preference only."
+      ],
+      "limitations": [
+        "No visual evidence links the sailboat to ‘tradition’ or the paper boat to ‘modernity’ beyond viewer association."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:48:47.341603+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-12bbead2-d4ad-9005-a89d-0d6a8e982bc7",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1044,
+        "total_tokens": 2577,
+        "completion_tokens_details": {
+          "text_tokens": 1044
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024818d9f56aab55734a91",
+      "usage": {
+        "completion_tokens": 904,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3002,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3906
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

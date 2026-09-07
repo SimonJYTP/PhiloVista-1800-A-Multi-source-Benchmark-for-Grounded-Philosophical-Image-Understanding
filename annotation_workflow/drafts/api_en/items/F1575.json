@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1575",
+  "sample_id": "PHL1800_HAIV_0476",
+  "file_name": "PHL1800_HAIV_0476.png",
+  "batch_id": "B032",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person depicted in a painted style",
+  "captions": {
+    "scene": [
+      "A figure with brown hair and mud-like smudges on face, neck, and shoulders against a textured light-blue and beige background",
+      "The background shows layered paint strokes and speckled texture, suggesting an artistic surface rather than a real environment",
+      "Black uppercase letters appear at four positions: top-left 'MIT', top-right 'MiD', bottom-left 'MID', and bottom-right partially obscured text ending in 'ITTY'"
+    ],
+    "action": [
+      "The person’s eyes are open and directed toward the viewer’s left; mouth is closed with a slight upward curve",
+      "Hair appears disheveled and radiates outward from the head, with strands overlapping facial features",
+      "Brown pigment is applied in irregular patches across skin areas, consistent with smearing or splattering"
+    ],
+    "rationale": [
+      "The figure is likely a painted representation rather than a photograph due to visible brushwork, inconsistent lighting, and non-photorealistic texture",
+      "The text fragments may form a word or phrase but are spatially disjointed and partially illegible, especially the bottom-right fragment",
+      "The asymmetry of pigment distribution suggests intentional artistic application rather than accidental soiling"
+    ],
+    "object": [
+      "The person wears a dark purple sleeveless top with visible shoulder straps.",
+      "Brown pigment covers portions of the forehead, right cheek, nose, chin, upper chest, and both shoulders.",
+      "The eyes are white with black pupils and irises; eyebrows are thin and dark, one slightly arched.",
+      "Hair is medium-length, brown with darker and lighter streaks, and extends beyond the head outline in multiple directions.",
+      "The background consists of pale blue and off-white layers with visible texture resembling scraped or brushed paint."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1575_P1",
+      "visual_anchors": [
+        "mud-like pigment on face",
+        "disheveled hair",
+        "fragmented text"
+      ],
+      "symbolic_mapping": [
+        "pigment as obscuring layer over identity",
+        "fragmented text as disrupted communication"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The partial concealment of facial features by pigment, combined with fragmented textual elements, suggests a tension between self-presentation and external labeling or social categorization.",
+      "alternative_interpretations": [
+        "The pigment may simply represent physical dirt from an activity like gardening or play, with text serving decorative or typographic function."
+      ],
+      "limitations": [
+        "No contextual cues confirm whether pigment is symbolic or literal; text fragments do not form a coherent word."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1575_P2",
+      "visual_anchors": [
+        "asymmetrical pigment placement",
+        "fixed gaze direction",
+        "visible skin beneath smudges"
+      ],
+      "symbolic_mapping": [
+        "exposed skin as persistence of core self",
+        "asymmetry as incomplete erasure"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The selective coverage of the face—leaving eyes, parts of cheeks, and forehead visible—may imply that truth or selfhood persists despite attempts at masking or distortion.",
+      "alternative_interpretations": [
+        "The artist may have used asymmetry for compositional balance or aesthetic contrast without symbolic intent."
+      ],
+      "limitations": [
+        "No explicit narrative or iconography confirms intentional symbolism; brushwork alone does not establish meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1575_P3",
+      "visual_anchors": [
+        "repeated 'MID' variants",
+        "central figure positioned amid text",
+        "layered background texture"
+      ],
+      "symbolic_mapping": [
+        "text repetition as echo or fragmentation of self-reference"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The scattered, incomplete iterations of 'MID' surrounding the figure may reflect a destabilized sense of position or midpoint in a social or existential trajectory.",
+      "alternative_interpretations": [
+        "The text could be arbitrary lettering chosen for visual rhythm or phonetic resonance without conceptual reference."
+      ],
+      "limitations": [
+        "The bottom-right text is unreadable (appears as 'ITTY' with trailing marks), preventing confirmation of intended word or pattern."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:47:14.865416+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5556cb83-8280-92c1-91d0-991e50bb28a0",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 954,
+        "total_tokens": 2487,
+        "completion_tokens_details": {
+          "text_tokens": 954
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044653967b361569ec4b35",
+      "usage": {
+        "completion_tokens": 815,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2909,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3724
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

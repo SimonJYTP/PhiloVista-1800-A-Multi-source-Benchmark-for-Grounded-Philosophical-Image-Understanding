@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0900",
+  "sample_id": "PHL1800_HL_0216",
+  "file_name": "PHL1800_HL_0216.png",
+  "batch_id": "B020",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a police motorcyclist in uniform riding a white motorcycle with blue-and-red markings",
+  "captions": {
+    "scene": [
+      "A paved open area in front of a classical stone building with columns and large windows",
+      "A formal gathering of numerous uniformed personnel standing in rows behind the motorcyclist",
+      "A black speaker mounted on a stand is visible near the left edge of the background"
+    ],
+    "action": [
+      "The motorcyclist is seated upright on a moving motorcycle, hands on handlebars, head turned slightly right",
+      "Multiple individuals in military or police uniforms stand at attention or observe the scene",
+      "The motorcycle’s blue emergency lights are illuminated on the front fairing"
+    ],
+    "rationale": [
+      "The motorcyclist’s posture and forward wheel orientation suggest motion rather than static display",
+      "Uniform variations (e.g., peaked caps, berets, epaulettes) indicate multiple distinct service branches present",
+      "The presence of a speaker and orderly formation implies an organized ceremonial event, though exact nature is not legible"
+    ],
+    "object": [
+      "The motorcycle is white with blue and red stripes, features 'POLICE' printed in blue capital letters on the windscreen, and has a black rear storage case.",
+      "The rider wears a white helmet with a dark visor, a dark navy-blue double-breasted jacket with silver buttons and insignia, white gloves, and black boots.",
+      "At least 28 individuals are visible in the background: 10 in light-gray uniforms with peaked caps, 9 in darker uniforms with berets or peaked caps, and 9 others in varied attire including some with medals.",
+      "The building facade includes fluted Doric-style columns, rectangular windows with white frames, and a stone entablature above the ground floor.",
+      "A watermark in the bottom-right corner reads 'ALEXANDRE PREVOT PHOTOGRAPHIE' in black sans-serif font."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0900_P1",
+      "visual_anchors": [
+        "blue emergency lights flashing",
+        "rider’s focused gaze",
+        "uniform insignia"
+      ],
+      "symbolic_mapping": [
+        "flashing lights → institutional authority made visible",
+        "uniform insignia → codified role within social order"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies the tension between individual agency and institutional mandate: the rider’s personal focus contrasts with the standardized symbols that subsume identity into collective function.",
+      "alternative_interpretations": [
+        "It may simply document a routine ceremonial escort without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression is discernible due to helmet visor; thus internal state remains inaccessible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0900_P2",
+      "visual_anchors": [
+        "rows of uniformed observers",
+        "classical architecture",
+        "motorcycle as modern technology"
+      ],
+      "symbolic_mapping": [
+        "classical columns → enduring tradition",
+        "motorcycle → contemporary enforcement tool"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of neoclassical architecture and a high-speed police motorcycle suggests continuity of state power across temporal regimes, where labor (policing) is mediated through evolving technologies while ritual form persists.",
+      "alternative_interpretations": [
+        "The architecture and motorcycle are coincidental background/foreground elements with no intended contrast."
+      ],
+      "limitations": [
+        "No date or inscription confirms historical period of building or motorcycle model."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0900_P3",
+      "visual_anchors": [
+        "white gloves",
+        "symmetrical uniform details",
+        "precise spacing of background personnel"
+      ],
+      "symbolic_mapping": [
+        "gloves → ritualized purity or separation from civilian contact",
+        "spacing → disciplined social ordering"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "Appearance is rigorously regulated to signify ethical accountability: the rider’s standardized presentation enacts a visual contract wherein identity is surrendered to role, reinforcing duty over self.",
+      "alternative_interpretations": [
+        "Gloves and spacing reflect practical hygiene and operational discipline, not symbolic ethics."
+      ],
+      "limitations": [
+        "Gloves could serve functional purposes (grip, weather protection) unrelated to symbolism."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:25:59.288094+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-91b4d723-4424-9aa1-a523-1c3f2b4503ef",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 965,
+        "total_tokens": 1734,
+        "completion_tokens_details": {
+          "text_tokens": 965
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070325410ec40411dd604b96",
+      "usage": {
+        "completion_tokens": 821,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1894,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2715
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

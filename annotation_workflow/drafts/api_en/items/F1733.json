@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1733",
+  "sample_id": "PHL1800_MM_0032",
+  "file_name": "PHL1800_MM_0032.jpg",
+  "batch_id": "B035",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of five school-aged girls and one adult woman in a gallery setting",
+  "captions": {
+    "scene": [
+      "An indoor gallery with light-colored walls, wooden flooring, and framed artwork visible on the right wall.",
+      "A central cluster of four girls in school uniforms interacting with an adult woman in formal dark attire.",
+      "One additional girl stands slightly behind and to the left, observing the central interaction."
+    ],
+    "action": [
+      "One girl holds an open booklet or pamphlet while facing the adult woman.",
+      "The adult woman gestures with her hands toward the booklet and looks at the girl holding it.",
+      "A speech bubble above a girl contains the legible text: 'Excuse me, can you tell me more about this exhibit?'"
+    ],
+    "rationale": [
+      "The speech bubble suggests a request for information, but its placement above a girl’s head and the direction of gaze imply she may be role-playing or facilitating a student-led explanation.",
+      "Uniforms differ slightly among girls—some wear navy blazers with badges, others wear striped shirts with ties—indicating possible grade or role differentiation within the same institution.",
+      "The presence of multiple observers and the structured grouping suggest a guided educational activity rather than casual visitation."
+    ],
+    "object": [
+      "Five girls are visible: three in navy blazers with white collared shirts and striped ties, one in a blue coat over a white shirt and red skirt, one in a striped shirt with a blue necktie and black skirt, and one in a black dress with black tights and heeled shoes.",
+      "One adult woman stands on the right, wearing a black suit jacket with a red tie and a circular badge on the left lapel, black trousers, and black polished shoes.",
+      "A framed monochrome photograph hangs on the right wall, depicting several figures in historical-style clothing.",
+      "The floor is light-toned wood planking with visible grain and seams.",
+      "The speech bubble is white with black sans-serif text; no other readable text appears on uniforms, badges, or the booklet."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1733_P1",
+      "visual_anchors": [
+        "speech bubble with question",
+        "girl holding open booklet",
+        "adult woman listening attentively"
+      ],
+      "symbolic_mapping": [
+        "the act of asking for explanation as epistemic humility",
+        "booklet as mediated knowledge transmission"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The scene visualizes knowledge as socially constructed and contingent upon dialogue, where authority is temporarily deferred from adult to student through inquiry.",
+      "alternative_interpretations": [
+        "The adult is a docent testing students’ preparedness, making the exchange performative rather than genuinely inquisitive."
+      ],
+      "limitations": [
+        "The speech bubble’s origin (who ‘speaks’) is ambiguous due to overlapping figures and lack of directional cue beyond placement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1733_P2",
+      "visual_anchors": [
+        "uniform variations among girls",
+        "badges on blazers",
+        "structured grouping"
+      ],
+      "symbolic_mapping": [
+        "uniform differentiation as institutional categorization",
+        "spatial arrangement as hierarchy or role assignment"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "Identity here is enacted through regulated appearance and assigned roles within a collective, illustrating how social existence is maintained via visible markers and relational positioning.",
+      "alternative_interpretations": [
+        "Differences reflect practical choices (e.g., weather, grade level) without symbolic intent."
+      ],
+      "limitations": [
+        "Badge insignia and uniform details are not legible enough to confirm institutional meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1733_P3",
+      "visual_anchors": [
+        "framed historical photograph on wall",
+        "girls focused on present interaction",
+        "adult positioned between past image and current group"
+      ],
+      "symbolic_mapping": [
+        "gallery wall as temporal boundary",
+        "attention directed away from historical artifact toward immediate exchange"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a static historical image with dynamic present engagement suggests time as layered—not linear—where meaning emerges in the gap between preservation and lived interpretation.",
+      "alternative_interpretations": [
+        "The photograph is merely background decor; no intentional temporal contrast is staged."
+      ],
+      "limitations": [
+        "The content and date of the framed photograph are indiscernible, preventing confirmation of historical reference."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: there are five girls, not six; speech bubble is above a girl, not the adult woman; some object descriptions are inaccurate (e.g., grey coat is a blue coat, red skirt is a red skirt but paired with a white shirt, not grey coat)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:06:49.678130+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a26a3fbd-46fa-9bd7-9db3-ad54a26e63a7",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 977,
+        "total_tokens": 2510,
+        "completion_tokens_details": {
+          "text_tokens": 977
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070506300be60a11e0294659",
+      "usage": {
+        "completion_tokens": 900,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2929,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3829
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1541",
+  "sample_id": "PHL1800_HL_0256",
+  "file_name": "PHL1800_HL_0256.png",
+  "batch_id": "B032",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a male tennis player in athletic attire holding a racket and ball",
+  "captions": {
+    "scene": [
+      "An outdoor tennis court with green surface and blue perimeter walls, under bright daylight.",
+      "Empty dark-blue stadium seating rises behind the court, with one spectator visible in the background.",
+      "The background includes structural elements such as metal railings and tiered bleachers."
+    ],
+    "action": [
+      "The man holds a red-and-black tennis racket in his right hand and a yellow tennis ball in his left hand, positioned near his waist.",
+      "His body is angled forward with knees slightly bent, head turned toward his right, mouth open as if speaking or reacting.",
+      "He wears a white wristband on his left wrist and stands in a ready posture on the court surface."
+    ],
+    "rationale": [
+      "The presence of a tennis racket, ball, court surface, and athletic clothing strongly indicates a tennis-related activity.",
+      "The spectator in the background appears seated and out of focus, suggesting the primary subject is foregrounded for performance or practice.",
+      "The Adidas logo is visible on the shirt and shorts; however, brand visibility alone does not confirm professional status or event type."
+    ],
+    "object": [
+      "The man wears a gray short-sleeved t-shirt with a black Adidas trefoil logo and the word 'adidas' printed below it in lowercase letters.",
+      "He wears royal blue athletic shorts with a white Adidas logo on the lower left leg.",
+      "He holds a tennis racket with a red frame, black strings, and a light-colored grip; the racket head is oriented horizontally.",
+      "A standard yellow tennis ball rests in his left palm, partially obscured by fingers.",
+      "A white fabric wristband is wrapped around his left wrist, showing no visible markings."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1541_P1",
+      "visual_anchors": [
+        "Adidas logo on shirt and shorts",
+        "white wristband",
+        "standardized athletic attire"
+      ],
+      "symbolic_mapping": [
+        "branding as marker of institutional affiliation",
+        "uniformity as expression of role conformity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The standardized apparel and visible branding suggest an individual embedded within structured sporting institutions, where appearance mediates social recognition and functional role.",
+      "alternative_interpretations": [
+        "The clothing may simply reflect personal preference or sponsorship without deeper social implication."
+      ],
+      "limitations": [
+        "No visible team insignia, event signage, or crowd interaction confirms institutional context beyond generic sport setting."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1541_P2",
+      "visual_anchors": [
+        "man’s focused gaze to the right",
+        "open mouth",
+        "forward-leaning posture"
+      ],
+      "symbolic_mapping": [
+        "bodily readiness as anticipation of action",
+        "momentary suspension before decision"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The poised stance and directed attention capture a liminal moment where physical constraint (rules, court boundaries) coexists with volitional potential (next stroke choice).",
+      "alternative_interpretations": [
+        "The posture may reflect routine warm-up rather than decisive intent."
+      ],
+      "limitations": [
+        "Facial expression is ambiguous; no opponent, net, or ball trajectory is visible to confirm competitive context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1541_P3",
+      "visual_anchors": [
+        "empty stadium seats",
+        "single distant spectator",
+        "foreground isolation of player"
+      ],
+      "symbolic_mapping": [
+        "spatial emptiness as metaphor for individual effort",
+        "presence of observer as minimal validation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between solitary foreground action and sparse background audience evokes the transient nature of performance—effort enacted in time that quickly recedes into silence unless witnessed.",
+      "alternative_interpretations": [
+        "The venue may be a practice session with intentionally limited attendance, not symbolic absence."
+      ],
+      "limitations": [
+        "The spectator’s posture and engagement level are indistinct due to blur and distance."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:43:13.854585+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0740e6ac-65c9-901d-8654-ed11ba5aa89a",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 912,
+        "total_tokens": 1681,
+        "completion_tokens_details": {
+          "text_tokens": 912
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044254d010b136fd91482d",
+      "usage": {
+        "completion_tokens": 774,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1843,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2617
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

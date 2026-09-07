@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1004",
+  "sample_id": "PHL1800_IRFL_0123",
+  "file_name": "PHL1800_IRFL_0123.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two cartoon animals positioned near two trees on grass",
+  "captions": {
+    "scene": [
+      "Two green-leafed trees with brown trunks stand on a green grassy field under a light blue sky.",
+      "A yellow-striped animal with a long tail sits in the branches of the left tree.",
+      "A reddish-brown animal with a bushy tail crouches at the base of the right tree, facing left."
+    ],
+    "action": [
+      "The yellow-striped animal is seated among the leaves and branches of the left tree.",
+      "The reddish-brown animal is bent forward with front paws on the ground, head raised toward the left tree.",
+      "Both animals are stationary in fixed postures relative to their respective trees."
+    ],
+    "rationale": [
+      "The yellow-striped animal’s posture suggests it is resting or observing from elevation, based on limb placement and orientation within foliage.",
+      "The reddish-brown animal’s forward lean and gaze direction indicate attention toward the other animal or tree, though no motion lines confirm movement.",
+      "No visible facial expressions or speech indicators prevent confirmation of intent, emotion, or communication."
+    ],
+    "object": [
+      "The left tree has a thick brown trunk, a rounded canopy of green foliage, and visible branches supporting a yellow-striped animal.",
+      "The right tree has a similar trunk and canopy shape but lacks any occupant in its branches.",
+      "The yellow-striped animal has vertical black stripes, four limbs, a long tail, and is partially obscured by leaves.",
+      "The reddish-brown animal has a pointed snout, upright ears, a bushy tail held low, and is positioned on all fours at the tree base.",
+      "The ground is uniformly green with no texture details; the sky is solid light blue with no clouds or gradients."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1004_P1",
+      "visual_anchors": [
+        "yellow-striped animal elevated in tree",
+        "reddish-brown animal grounded at base",
+        "two separate trees"
+      ],
+      "symbolic_mapping": [
+        "elevation vs. ground position → hierarchical positioning",
+        "separation by trees → spatial division"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The spatial separation and differential elevation may reflect social stratification or asymmetric power dynamics between agents occupying distinct domains.",
+      "alternative_interpretations": [
+        "The arrangement could simply depict natural habitat use—arboreal versus terrestrial species behavior—with no intentional symbolism."
+      ],
+      "limitations": [
+        "No shared gaze, interaction, or contextual markers confirm relational intent; positions could be coincidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1004_P2",
+      "visual_anchors": [
+        "animal in tree looking downward",
+        "animal on ground looking upward",
+        "static postures"
+      ],
+      "symbolic_mapping": [
+        "gaze direction across vertical space → awareness across difference"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The mutual orientation without contact suggests a moment of potential recognition or epistemic distance—awareness of another’s existence without shared action or resolution.",
+      "alternative_interpretations": [
+        "Both animals may be independently scanning for predators or food; upward/downward gaze need not imply reciprocity."
+      ],
+      "limitations": [
+        "Eyes are not detailed enough to confirm directionality or focus; posture alone cannot verify attention."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1004_P3",
+      "visual_anchors": [
+        "two identical tree forms",
+        "one occupied, one empty",
+        "animals of different coloration and posture"
+      ],
+      "symbolic_mapping": [
+        "identical structures with divergent use → possibility of alternative paths"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The parallel trees—one inhabited, one vacant—may symbolize constrained choice or identity formation through occupation of available roles within a symmetric environment.",
+      "alternative_interpretations": [
+        "The empty tree may simply lack suitable perch or be irrelevant to the scene’s narrative; symmetry may be aesthetic rather than symbolic."
+      ],
+      "limitations": [
+        "No visual cue indicates the animals perceive the trees as equivalent options; absence of occupancy is not evidence of refusal or constraint."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:37:41.629678+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5fbb80a4-84e4-9b39-bded-472546654b93",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 934,
+        "total_tokens": 1515,
+        "completion_tokens_details": {
+          "text_tokens": 934
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 74,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033724d5d9d23fc79346b9",
+      "usage": {
+        "completion_tokens": 798,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1610,
+        "prompt_tokens_details": {
+          "cached_tokens": 4
+        },
+        "total_tokens": 2408
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

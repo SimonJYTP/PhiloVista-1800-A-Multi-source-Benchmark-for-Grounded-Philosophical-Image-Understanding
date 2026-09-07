@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1025",
+  "sample_id": "PHL1800_HL_0200",
+  "file_name": "PHL1800_HL_0200.png",
+  "batch_id": "B022",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "aviation museum interior with suspended and ground-display aircraft and visitors",
+  "captions": {
+    "scene": [
+      "A spacious, high-ceilinged hall with a steel truss roof and large glass walls admitting daylight.",
+      "Multiple aircraft displayed at varying heights: one large white-blue NASA jet suspended horizontally near the ceiling, others on elevated platforms and floor level.",
+      "Visitors walk along white walkways and stand near exhibits; some wear casual clothing, backpacks, or hats."
+    ],
+    "action": [
+      "People are standing, walking, or observing aircraft; no motion blur indicates mostly static poses.",
+      "Aircraft are stationary, mounted on supports or stands; none show signs of operation or movement.",
+      "One person in dark clothing walks alone toward the right foreground; another group of four stands near a black-and-white jet marked '363 ORCAF'."
+    ],
+    "rationale": [
+      "The suspended aircraft’s orientation and mounting hardware suggest intentional display rather than flight readiness.",
+      "The presence of railings, walkways, and uniform lighting implies a curated exhibition space, not an active airfield.",
+      "Text markings such as 'NASA', 'U.S. AIR FORCE', and 'AK' are legible on fuselages, indicating institutional affiliation but not operational status."
+    ],
+    "object": [
+      "A large white aircraft with blue underside and yellow tail stripe bears 'NASA 820' and 'N820NA' on its rear fuselage and vertical stabilizer.",
+      "A green-and-brown camouflaged jet on the floor has 'AK' and 'AF 40776' painted on its nose and cockpit side.",
+      "A black-and-white jet on a raised platform displays '363 ORCAF' on its fuselage and 'III' on its tail fin.",
+      "A red-and-gray jet behind the NASA aircraft shows partial text 'U.S. AIR FORCE' and '94987' on its tail.",
+      "A small white propeller plane with yellow wingtips sits on a lower platform near center, partially obscured by people."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1025_P1",
+      "visual_anchors": [
+        "NASA 820 aircraft suspended mid-air",
+        "multiple national/military insignia",
+        "walkways separating viewers from machines"
+      ],
+      "symbolic_mapping": [
+        "Suspended aircraft as frozen time",
+        "Insignia as markers of institutional authority"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The static suspension of high-speed vehicles evokes a meditation on technological ambition halted by time, while visible emblems index competing sovereignties that once deployed these machines in service of power.",
+      "alternative_interpretations": [
+        "This is simply a functional museum layout optimizing visitor flow and artifact preservation."
+      ],
+      "limitations": [
+        "No contextual placards or dates are visible to confirm historical period or intent of display."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1025_P2",
+      "visual_anchors": [
+        "visitors observing from defined pathways",
+        "aircraft arranged hierarchically by size and elevation",
+        "uniform lighting across exhibits"
+      ],
+      "symbolic_mapping": [
+        "Pathways as enforced perspective",
+        "Elevation as symbolic hierarchy"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The curated spatial order enforces a collective viewing ritual where identity is shaped through mediated proximity to instruments of national identity, reinforcing social roles as spectator and symbol.",
+      "alternative_interpretations": [
+        "The layout reflects engineering constraints (e.g., ceiling height, weight distribution) rather than symbolic design."
+      ],
+      "limitations": [
+        "Visitor expressions and interactions are indistinct; no dialogue or signage confirms interpretive framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1025_P3",
+      "visual_anchors": [
+        "multiple aircraft with legible serial numbers",
+        "clean, modern architecture",
+        "absence of damage or wear on most displays"
+      ],
+      "symbolic_mapping": [
+        "Serial numbers as traces of individuality within mass production",
+        "Polished surfaces as erasure of use-history"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The presentation privileges technical documentation over lived experience, suggesting truth resides in official markings rather than embodied labor or operational history.",
+      "alternative_interpretations": [
+        "Museum standards require conservation, so wear is minimized for preservation—not ideological erasure."
+      ],
+      "limitations": [
+        "Only exterior surfaces are visible; internal components, maintenance logs, or pilot records are absent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:40:15.383052+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7abb0fdb-5c21-93c3-b725-514798dff9b1",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1013,
+        "total_tokens": 1782,
+        "completion_tokens_details": {
+          "text_tokens": 1013
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070339594e73c12a72924cad",
+      "usage": {
+        "completion_tokens": 865,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1934,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2799
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

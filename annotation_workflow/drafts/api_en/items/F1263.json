@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1263",
+  "sample_id": "PHL1800_HL_0194",
+  "file_name": "PHL1800_HL_0194.png",
+  "batch_id": "B026",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman seated on a park bench reading a book",
+  "captions": {
+    "scene": [
+      "A green metal-and-wood park bench positioned beside a large tree with mottled bark, under dappled sunlight.",
+      "Grassy ground with scattered dry leaves and twigs beneath the bench; background shows blurred foliage and distant figures.",
+      "A white plastic bag and a maroon backpack rest on the bench beside the woman."
+    ],
+    "action": [
+      "The woman holds an open paperback book in both hands and gazes downward at its pages.",
+      "She wears white wired earphones, with one earbud visible in her right ear and the wire trailing toward her lap.",
+      "Her left leg is crossed over her right knee; she wears a blue dress and open-toed sandals."
+    ],
+    "rationale": [
+      "The book’s cover displays printed text and a small image, but specific words are illegible due to resolution and angle.",
+      "The presence of earphones suggests audio engagement, though no device is visible to confirm active playback.",
+      "The backpack and bag are placed adjacent to her, implying personal possession, but no branding or contents are discernible."
+    ],
+    "object": [
+      "The bench has dark green painted wooden slats and black wrought-iron armrests and legs with ornamental scrollwork.",
+      "The woman has light brown hair cut above shoulder length, fair skin, and wears a short-sleeved teal-blue dress ending mid-thigh.",
+      "A maroon fabric backpack with visible zippers and straps lies on the bench seat to her left.",
+      "A crumpled white plastic bag rests atop the backpack, partially obscuring it.",
+      "The tree trunk behind the bench exhibits exfoliating bark with patches of gray, beige, and green lichen."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1263_P1",
+      "visual_anchors": [
+        "open book held in hands",
+        "earphones inserted",
+        "focused downward gaze"
+      ],
+      "symbolic_mapping": [
+        "the book as a medium of external knowledge",
+        "earphones as mediation of sensory input"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The simultaneous engagement with textual and auditory inputs reflects a fragmented yet intentional pursuit of understanding, where truth is accessed through layered, technologically mediated channels rather than direct experience.",
+      "alternative_interpretations": [
+        "She is simply relaxing and enjoying leisure reading with background music, with no deeper cognitive intent."
+      ],
+      "limitations": [
+        "No visible text in the book or device screen confirms content type or purpose; earphone use could be passive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1263_P2",
+      "visual_anchors": [
+        "solitary figure on public bench",
+        "personal items placed beside her",
+        "background figures out of focus"
+      ],
+      "symbolic_mapping": [
+        "bench as liminal social space",
+        "proximity without interaction as enacted boundary"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "Her physical presence in a shared public setting, while maintaining perceptual isolation via reading and audio, illustrates the modern condition of co-presence without communion—existence defined by proximity yet insulated by attentional choice.",
+      "alternative_interpretations": [
+        "She is waiting for someone and using the time to read; the background figures are irrelevant context."
+      ],
+      "limitations": [
+        "No evidence of intentional avoidance; background figures may not be observing her, nor she them."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1263_P3",
+      "visual_anchors": [
+        "crossed legs",
+        "sandals with visible toes",
+        "dress hem ending above knee"
+      ],
+      "symbolic_mapping": [
+        "exposed skin as voluntary presentation",
+        "posture as self-contained repose"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The deliberate composition of attire, posture, and bodily exposure constructs a visible identity that balances modesty and autonomy—appearance as a quiet assertion of self within public space, neither concealed nor performative.",
+      "alternative_interpretations": [
+        "Her clothing and pose reflect comfort and weather conditions, not symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or gesture confirms intentionality; appearance may be incidental to function."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:09:29.906259+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1e52c673-ba70-936d-86b5-d7b70ff87758",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 937,
+        "total_tokens": 1746,
+        "completion_tokens_details": {
+          "text_tokens": 937
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070409197b58734a0aae4985",
+      "usage": {
+        "completion_tokens": 802,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1914,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2716
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

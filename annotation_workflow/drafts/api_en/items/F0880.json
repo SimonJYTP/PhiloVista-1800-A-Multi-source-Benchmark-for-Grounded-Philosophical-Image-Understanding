@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0880",
+  "sample_id": "PHL1800_IRFL_0138",
+  "file_name": "PHL1800_IRFL_0138.webp",
+  "batch_id": "B019",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single person seated and holding paper and pen",
+  "captions": {
+    "scene": [
+      "A light gray background with four red-outlined numbered circles (1–4) aligned vertically on the left.",
+      "The person sits against a green and teal cushioned surface, possibly a chair or sofa back.",
+      "The image has a flat, illustrative style with minimal shading and solid color fills."
+    ],
+    "action": [
+      "The person holds a white sheet of paper in their left hand, angled upward.",
+      "The person holds a black pen near their mouth with their right hand, tip pointing toward the paper.",
+      "The person’s gaze is directed toward the paper, eyes partially closed or narrowed."
+    ],
+    "rationale": [
+      "The numbered circles suggest a stepwise sequence, but no explicit connection to the person’s activity is visible.",
+      "The pen near the mouth may indicate contemplation, but this is not verifiable from posture alone.",
+      "The paper appears blank; no writing or markings are visible on its surface."
+    ],
+    "object": [
+      "Four red circular outlines containing numerals '1', '2', '3', and '4' in red, arranged vertically on the left side of the frame.",
+      "A person with brown hair, wearing a purple short-sleeved shirt and black lower garment, is shown in profile facing right.",
+      "A white rectangular sheet of paper is held in the person’s left hand, slightly crumpled at one corner.",
+      "A black pen with a visible tip is held between the fingers of the person’s right hand, positioned near the lips.",
+      "A green triangular shape and a teal curved shape form a backdrop behind the person’s torso and head."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0880_P1",
+      "visual_anchors": [
+        "numbered circles 1–4",
+        "blank paper",
+        "pen near mouth"
+      ],
+      "symbolic_mapping": [
+        "numbered circles → structured process",
+        "blank paper → potential or unformed thought"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of a sequential numbering system with an empty sheet and poised pen suggests the threshold before articulation—where decision or knowledge formation is imminent but not yet fixed.",
+      "alternative_interpretations": [
+        "The image may simply illustrate a step-by-step tutorial, with the person pausing between steps."
+      ],
+      "limitations": [
+        "No text or context confirms whether the numbers refer to instructions, stages, or unrelated elements."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0880_P2",
+      "visual_anchors": [
+        "person’s focused gaze",
+        "paper held close",
+        "pen not touching paper"
+      ],
+      "symbolic_mapping": [
+        "gaze toward paper → internal reflection",
+        "pen suspended → hesitation or deliberation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The subject’s stillness and proximity to the tool of expression imply a moment of self-construction—where identity is not yet inscribed, and freedom lies in the unresolved act of writing or withholding.",
+      "alternative_interpretations": [
+        "The pose could reflect fatigue or distraction rather than philosophical deliberation."
+      ],
+      "limitations": [
+        "Facial expression is stylized and lacks micro-expressions needed to confirm introspection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0880_P3",
+      "visual_anchors": [
+        "green and teal backdrop",
+        "isolated figure",
+        "absence of other people or objects"
+      ],
+      "symbolic_mapping": [
+        "solitary figure → individual agency",
+        "plain background → abstraction from social context"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visual isolation emphasizes the individual as sole author of meaning, raising questions about responsibility for what is (or is not) committed to the blank page in a socially silent space.",
+      "alternative_interpretations": [
+        "The background colors may be purely decorative or indicative of a generic interior setting."
+      ],
+      "limitations": [
+        "No indicators of social context (e.g., doors, windows, other figures) exist to confirm intentional isolation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:24:20.780852+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1283c155-7cb5-9da1-96b7-577628cd9242",
+      "usage": {
+        "prompt_tokens": 677,
+        "completion_tokens": 926,
+        "total_tokens": 1603,
+        "completion_tokens_details": {
+          "text_tokens": 926
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 170,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703241023547886220841f0",
+      "usage": {
+        "completion_tokens": 788,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1725,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2513
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

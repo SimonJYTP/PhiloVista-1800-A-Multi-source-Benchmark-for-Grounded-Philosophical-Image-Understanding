@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0802",
+  "sample_id": "PHL1800_HL_0546",
+  "file_name": "PHL1800_HL_0546.png",
+  "batch_id": "B018",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red-and-white-haired doll seated beside a laptop and scissors",
+  "captions": {
+    "scene": [
+      "A doll with vibrant red hair and white bangs sits on a beige speckled countertop in front of an open Dell laptop.",
+      "The laptop screen displays a paused video titled 'Masterpiece: Downton Abbey Episode 7' showing two figures in close proximity.",
+      "A pair of metal scissors lies horizontally on the countertop to the right of the doll, near the laptop's base."
+    ],
+    "action": [
+      "The doll is seated upright with legs extended forward and arms resting at its sides; no motion is visible.",
+      "The laptop screen shows a static image from a television episode; playback appears paused.",
+      "No human or animal agents are visibly present or performing actions in the frame."
+    ],
+    "rationale": [
+      "The doll’s pose suggests intentional placement rather than spontaneous positioning, given its articulated limbs and stable orientation.",
+      "The presence of scissors near an unclad doll may imply preparation for modification, though no cutting activity is occurring.",
+      "The laptop’s display content is legible enough to identify title and episode number, but facial details of characters are blurred due to resolution and distance."
+    ],
+    "object": [
+      "A nude-bodied ball-jointed doll with synthetic red hair featuring white frontal bangs and large dark eyes sits on a flat surface.",
+      "A black Dell laptop is open, displaying a video interface with visible text 'Masterpiece: Downton Abbey Episode 7' and a still image of two people in period attire.",
+      "A stainless steel scissor with straight blades and oval finger loops rests on the countertop, oriented parallel to the laptop’s front edge.",
+      "The countertop is light beige with fine dark speckles and reflects ambient light faintly.",
+      "A white rectangular object, possibly a speaker or power adapter, is partially visible on the far right edge of the frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0802_P1",
+      "visual_anchors": [
+        "doll’s exposed torso",
+        "scissors placed nearby",
+        "laptop displaying narrative media"
+      ],
+      "symbolic_mapping": [
+        "unadorned doll body → constructed identity",
+        "scissors → potential for alteration"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of an unmodified doll body, tools of modification, and a narrative about social roles suggests tension between imposed identity and self-determined transformation.",
+      "alternative_interpretations": [
+        "This is a casual setup for doll customization, with no symbolic intent—scissors are simply within reach and the show is background entertainment."
+      ],
+      "limitations": [
+        "No visible hands, labels, or context confirm intent; the doll’s state could be pre- or post-modification."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0802_P2",
+      "visual_anchors": [
+        "paused video of historical drama",
+        "modern laptop",
+        "contemporary doll"
+      ],
+      "symbolic_mapping": [
+        "Downton Abbey episode → inherited social order",
+        "doll → malleable subject"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The scene evokes a contrast between fixed historical hierarchies (as depicted) and the contemporary capacity to reshape individual form, hinting at ongoing struggles over agency within inherited structures.",
+      "alternative_interpretations": [
+        "The laptop is playing a show while the user prepares to work on the doll; the pairing is coincidental, not thematic."
+      ],
+      "limitations": [
+        "The video is paused and only one frame is visible; narrative context beyond title is inaccessible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0802_P3",
+      "visual_anchors": [
+        "doll’s large eyes gazing forward",
+        "static posture",
+        "screen glow illuminating its face"
+      ],
+      "symbolic_mapping": [
+        "fixed gaze → observation without participation",
+        "screen light → mediated reality"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The doll’s passive observation of a fictional world under artificial light may reflect on epistemic dependence—knowing through curated representation rather than direct experience—and the constraints of being an object rather than an agent.",
+      "alternative_interpretations": [
+        "The doll is positioned to face the camera; its orientation is photographic staging, not symbolic observation."
+      ],
+      "limitations": [
+        "Dolls lack volition; attributing perception or cognition requires anthropomorphism unsupported by visual evidence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:17:51.294880+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1b2080f1-ed4c-9b63-aa35-e621ca29b12e",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 997,
+        "total_tokens": 1726,
+        "completion_tokens_details": {
+          "text_tokens": 997
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703174197094d1f32184343",
+      "usage": {
+        "completion_tokens": 859,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1886,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2745
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1329",
+  "sample_id": "PHL1800_HL_0294",
+  "file_name": "PHL1800_HL_0294.png",
+  "batch_id": "B028",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man on a skateboard navigating orange cones, with another person partially visible behind him",
+  "captions": {
+    "scene": [
+      "Outdoor paved surface under bright daylight with dense green trees in the background",
+      "Five orange traffic cones arranged linearly on the ground, three in front of the skateboarder and two farther back",
+      "A logo 'MyProfe' appears in the upper-left corner inside an oval watermark"
+    ],
+    "action": [
+      "The man is balancing on a skateboard with both feet, knees bent, arms extended laterally for stability",
+      "He wears a white helmet, black wrist guards, and a light gray t-shirt with printed text and graphics",
+      "A second person stands directly behind him, partially obscured, with one arm extended horizontally to the left"
+    ],
+    "rationale": [
+      "The skateboarder’s posture and cone arrangement suggest a slalom or balance drill rather than casual riding",
+      "The presence of protective gear (helmet, wrist guards) indicates intentional risk mitigation during activity",
+      "The second person’s proximity and arm position may indicate spotting or instruction, but no direct contact is visible"
+    ],
+    "object": [
+      "The man wears beige knee-length shorts, dark sneakers with white soles and laces, and a gray t-shirt featuring a circular rainbow graphic above partially legible text including 'THE SOUL' and 'BEACH'.",
+      "The skateboard has black grip tape, visible trucks, and wheels colored orange and black; it is oriented parallel to the line of cones.",
+      "Three orange cones in the foreground bear the word 'kipsta' in black lowercase letters; two rear cones are unmarked or unreadable.",
+      "The second person wears light-colored shorts and white sneakers with purple accents; only their lower torso, legs, and one outstretched arm are visible.",
+      "The watermark 'MyProfe' is rendered in stylized white font within a silver-gray oval border in the top-left corner."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1329_P1",
+      "visual_anchors": [
+        "man balancing on skateboard",
+        "orange cones forming a constrained path",
+        "wrist guards and helmet"
+      ],
+      "symbolic_mapping": [
+        "cones as imposed structure",
+        "protective gear as self-imposed limits"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The skateboarder navigates a predetermined course while voluntarily adopting safeguards, embodying the tension between self-directed movement and externally defined boundaries.",
+      "alternative_interpretations": [
+        "This is simply a training exercise with standard safety equipment and course markers, devoid of symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism; the cones may be generic sports equipment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1329_P2",
+      "visual_anchors": [
+        "second person’s outstretched arm",
+        "proximity without contact",
+        "shared orientation toward cones"
+      ],
+      "symbolic_mapping": [
+        "arm extension as non-intrusive support",
+        "shared space implying relational coordination"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The silent proximity and gesture of the second figure suggest a form of ethical presence—attentiveness without interference—highlighting how social existence can manifest through restrained support.",
+      "alternative_interpretations": [
+        "The second person may be waiting their turn or adjusting stance; the arm position could be incidental balance."
+      ],
+      "limitations": [
+        "Only partial body visibility prevents confirmation of intent or relationship; no eye contact or interaction is observable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1329_P3",
+      "visual_anchors": [
+        "'kipsta' branding on cones",
+        "printed text on t-shirt",
+        "watermark 'MyProfe'"
+      ],
+      "symbolic_mapping": [
+        "commercial markings as embedded cultural signals",
+        "layered textual artifacts indexing participation in systems"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The accumulation of branded and authored visual elements—on apparel, equipment, and image overlay—reflects how identity is constructed through mediated appearances within technologically saturated environments.",
+      "alternative_interpretations": [
+        "These are incidental commercial markings typical of sports gear and stock photography watermarks, not deliberate semiotic layering."
+      ],
+      "limitations": [
+        "Text legibility is partial (e.g., t-shirt phrase incomplete); watermark placement suggests post-capture editing, not in-scene meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:22:50.686129+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b7fdfd44-446d-91ae-a2c7-ecdf53592959",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 992,
+        "total_tokens": 1761,
+        "completion_tokens_details": {
+          "text_tokens": 992
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042232e34e655abb8b4e8e",
+      "usage": {
+        "completion_tokens": 850,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1919,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2769
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0883",
+  "sample_id": "PHL1800_IRFL_0009",
+  "file_name": "PHL1800_IRFL_0009.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person wearing an orange jumpsuit, viewed from behind",
+  "captions": {
+    "scene": [
+      "A metal-barred cell door with vertical bars and a horizontal crossbar, set in a light-blue painted wall.",
+      "An interior corridor or holding area with beige walls visible through the open doorway beyond the bars.",
+      "A dimly lit institutional setting with artificial lighting casting shadows on the floor and walls."
+    ],
+    "action": [
+      "The person stands motionless facing the open doorway, hands cuffed behind their back.",
+      "The person’s head is slightly bowed; posture suggests stillness rather than movement.",
+      "The barred door is fully open, revealing the space beyond without obstruction."
+    ],
+    "rationale": [
+      "The orange jumpsuit and handcuffs suggest institutional custody, though the specific facility type is not confirmed by visual evidence alone.",
+      "The text 'COUNTY JAIL' is partially visible on the back of the jumpsuit but is not fully legible due to resolution and angle.",
+      "No facial features, gender markers, or identifying traits are visible; only silhouette and clothing are observable."
+    ],
+    "object": [
+      "A person wearing a long-sleeved orange jumpsuit with black lettering on the upper back reading 'COUNTY JAIL', though some characters are blurred or occluded.",
+      "Metal handcuffs are secured around the person’s wrists behind their back, with visible metallic links and a central locking mechanism.",
+      "Vertical steel bars form a gate-like structure with a horizontal bar near the top; the bars are evenly spaced and attached to a frame.",
+      "The wall surrounding the doorway is painted light blue with visible texture and minor scuff marks near the base.",
+      "The floor appears to be concrete, gray in tone, with a faint reflection suggesting low-gloss finish."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0883_P1",
+      "visual_anchors": [
+        "handcuffs behind back",
+        "bars of the doorway",
+        "orange jumpsuit"
+      ],
+      "symbolic_mapping": [
+        "bars → physical constraint",
+        "handcuffs → enforced immobility"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually enacts the tension between bodily presence and imposed restriction, where the subject occupies space yet is denied agency through binding and enclosure.",
+      "alternative_interpretations": [
+        "This may simply depict routine intake or transfer within a correctional facility, with no symbolic intent intended by the scene’s composition."
+      ],
+      "limitations": [
+        "No context confirms whether the subject entered voluntarily, was escorted, or is awaiting processing; the moment is isolated."
+      ],
+      "sufficiency": "supported"
+    },
+    {
+      "candidate_id": "AI_F0883_P2",
+      "visual_anchors": [
+        "back-facing posture",
+        "unreadable face",
+        "uniform labeling"
+      ],
+      "symbolic_mapping": [
+        "anonymous back view → erasure of individuality",
+        "uniform label → institutional categorization"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The subject’s identity is visually subsumed by institutional signage and posture, illustrating how social roles can overwrite personal appearance in regulated environments.",
+      "alternative_interpretations": [
+        "The back view may result from photographic framing choice rather than intentional anonymization; the uniform may serve practical identification purposes only."
+      ],
+      "limitations": [
+        "The person’s hair length, build, and other distinguishing features remain visible enough to suggest individuality despite the uniform."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0883_P3",
+      "visual_anchors": [
+        "open doorway beyond bars",
+        "person positioned at threshold",
+        "dim lighting ahead"
+      ],
+      "symbolic_mapping": [
+        "threshold → liminal state",
+        "light gradient → uncertainty of transition"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "Standing at the threshold of a barred opening, the figure embodies a suspended moment between states—neither fully inside nor outside—evoking existential passage without guaranteed direction.",
+      "alternative_interpretations": [
+        "The open door may indicate standard procedure (e.g., moving to another cell), not symbolic transition; lighting may reflect facility design, not metaphorical ambiguity."
+      ],
+      "limitations": [
+        "The direction of movement is unknown; the person could be entering, exiting, or waiting indefinitely."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:40:31.738356+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-aa482fc8-5dc2-9454-8382-44082c04aa8c",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 944,
+        "total_tokens": 1523,
+        "completion_tokens_details": {
+          "text_tokens": 944
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070139350e57ca77a5ac4c2a",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1601,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2408
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

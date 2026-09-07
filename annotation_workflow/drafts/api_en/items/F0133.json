@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0133",
+  "sample_id": "PHL1800_MM_0041",
+  "file_name": "PHL1800_MM_0041.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults standing face-to-face on a sidewalk outside a building entrance",
+  "captions": {
+    "scene": [
+      "A red-framed building entrance with a lit sign reading 'BIND DATE' in uppercase red sans-serif letters on a white background.",
+      "A paved sidewalk with rectangular stone tiles, casting shadows under bright daylight.",
+      "A tall potted evergreen shrub in a dark gray cylindrical planter to the right of the frame."
+    ],
+    "action": [
+      "The man stands with hands in jacket pockets, facing the woman, head slightly turned toward her.",
+      "The woman holds a smartphone in both hands, angled downward, and looks at the screen while facing the man.",
+      "A speech bubble originates near the woman’s head and contains legible English text: 'I need to cancel this date, you doesn't look like your profile picture!'"
+    ],
+    "rationale": [
+      "The speech bubble is positioned near the woman and oriented toward the man, suggesting she is speaking to him; however, the grammatical error ('you doesn't') and visual placement do not definitively confirm speaker identity without assuming narrative intent.",
+      "The man’s posture and gaze direction indicate attention toward the woman, but no facial expression is clearly visible to confirm emotional response.",
+      "The sign 'BIND DATE' is visually present but its semantic relationship to the interaction is ambiguous—it may be a fictional or decorative element rather than a functional business name."
+    ],
+    "object": [
+      "The man wears a black leather-style jacket over a light gray collared shirt, blue denim jeans, and brown lace-up shoes with dark laces.",
+      "The woman wears a navy blue knee-length coat with a hood and belt, fitted blue jeans, and dark brown heeled ankle boots.",
+      "The smartphone held by the woman has a black front bezel and a visible illuminated screen showing indistinct content.",
+      "The building entrance features double glass doors with vertical metallic frames and interior lighting visible through the glass.",
+      "A vertical decorative panel with a blue-and-white abstract pattern is mounted on the red wall to the right of the doorway."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0133_P1",
+      "visual_anchors": [
+        "speech bubble text",
+        "woman holding phone",
+        "man facing woman"
+      ],
+      "symbolic_mapping": [
+        "profile picture mismatch → discrepancy between digital self-presentation and physical presence"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The image stages a moment where mediated identity (profile picture) fails to align with embodied reality, raising questions about authenticity in digitally mediated social encounters.",
+      "alternative_interpretations": [
+        "The scene may be staged satire or meme imagery, not depicting a real interpersonal event."
+      ],
+      "limitations": [
+        "The speech bubble text contains nonstandard grammar, suggesting artificial construction rather than spontaneous dialogue."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0133_P2",
+      "visual_anchors": [
+        "BIND DATE sign",
+        "sidewalk meeting",
+        "phone as focal object"
+      ],
+      "symbolic_mapping": [
+        "'BIND DATE' juxtaposed with cancellation → irony of contractual expectation versus contingent human interaction"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The phrase 'BIND DATE' evokes obligation or commitment, yet the depicted action is withdrawal—highlighting tension between planned social contracts and emergent personal judgment.",
+      "alternative_interpretations": [
+        "'BIND DATE' could be a store name unrelated to dating, making the connection coincidental."
+      ],
+      "limitations": [
+        "No evidence confirms the sign refers to romantic dating; it may denote a business unrelated to relationships."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0133_P3",
+      "visual_anchors": [
+        "woman focused on phone",
+        "man stationary and attentive",
+        "public outdoor setting"
+      ],
+      "symbolic_mapping": [
+        "phone-mediated communication interrupting direct presence → displacement of embodied interaction by digital interface"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The woman’s attention to the device during a face-to-face encounter illustrates how digital mediation can restructure the phenomenology of social co-presence, privileging virtual verification over immediate experience.",
+      "alternative_interpretations": [
+        "She may be checking directions or confirming details, not necessarily rejecting the person."
+      ],
+      "limitations": [
+        "The screen content is unreadable; the phone’s function cannot be determined solely from its orientation and grip."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:09:50.462351+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-96e06f47-70bc-95b4-afbe-bceaa9801fe9",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 978,
+        "total_tokens": 2511,
+        "completion_tokens_details": {
+          "text_tokens": 978
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070209380f2592f1d91c4c2d",
+      "usage": {
+        "completion_tokens": 839,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2928,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3767
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0985",
+  "sample_id": "PHL1800_HL_0337",
+  "file_name": "PHL1800_HL_0337.png",
+  "batch_id": "B021",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a street median with traffic signage and landscaping",
+  "captions": {
+    "scene": [
+      "A wide asphalt road with double yellow center lines, flanked by trees, lampposts, and a billboard on the left under a clear blue sky.",
+      "A concrete median island with a lamppost, a vertical banner, a directional sign, and a small flowerbed with green shrubs.",
+      "Vehicles parked and moving in the distance; pedestrians visible on sidewalks on both sides of the street."
+    ],
+    "action": [
+      "A white rectangular sign with a black U-turn arrow is mounted on a pole at the median’s edge.",
+      "A vertical striped banner (black, red, gold/yellow) hangs from the lamppost above the sign, featuring an unreadable circular emblem near its top.",
+      "The word 'ONLY' is painted in large white capital letters across the road surface, partially worn and cut off at the bottom edge of the frame."
+    ],
+    "rationale": [
+      "The presence of a U-turn sign and painted lane markings suggests regulated vehicle movement, though no vehicles are actively turning in the frame.",
+      "The banner’s colors resemble those of the German flag, but without readable text or context, national affiliation cannot be confirmed.",
+      "Two pedestrians are visible on the right sidewalk—one standing near a tree, another walking farther back—indicating light pedestrian activity."
+    ],
+    "object": [
+      "A multi-head ornamental street lamp stands on the median, supporting a vertical banner and a traffic sign.",
+      "A rectangular white sign with a black U-turn symbol is affixed to the lamp post, oriented toward oncoming traffic.",
+      "A large blue billboard on the left displays partial text including 'GEORGIAN COURT UNIVERSITY' and several small portraits; other text is illegible.",
+      "A fire hydrant painted yellow and black is positioned on the left sidewalk near the curb.",
+      "The road surface shows faded white painted lettering reading 'ONLY', aligned with the lane direction."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0985_P1",
+      "visual_anchors": [
+        "U-turn sign",
+        "painted 'ONLY' marking",
+        "median island separating traffic directions"
+      ],
+      "symbolic_mapping": [
+        "U-turn sign as metaphor for reconsideration of path",
+        "‘ONLY’ as constraint on permitted action"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a mandatory directional restriction ('ONLY') and an option to reverse course (U-turn) visually embodies the tension between institutional constraint and individual agency within structured environments.",
+      "alternative_interpretations": [
+        "This may simply reflect standard traffic engineering to manage flow and prevent unsafe maneuvers."
+      ],
+      "limitations": [
+        "No driver behavior or decision-making is visible; interpretation relies solely on static signage semantics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0985_P2",
+      "visual_anchors": [
+        "vertical banner with emblem",
+        "billboard with institutional name",
+        "symmetrical street layout"
+      ],
+      "symbolic_mapping": [
+        "Banner as marker of collective identity",
+        "Billboard as assertion of institutional presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Public space is layered with competing claims of identity—the banner’s symbolic colors and emblem versus the university’s explicit branding—suggesting how social groups assert visibility through spatial signage.",
+      "alternative_interpretations": [
+        "The banner may be decorative or commemorative with no identity function; the billboard is purely commercial/informational."
+      ],
+      "limitations": [
+        "The banner’s emblem and text are unreadable, preventing confirmation of intended meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0985_P3",
+      "visual_anchors": [
+        "worn 'ONLY' paint",
+        "green shrubs in median",
+        "clear sky overhead"
+      ],
+      "symbolic_mapping": [
+        "Fading paint as erosion of rule enforcement",
+        "Median greenery as persistence of life amid infrastructure"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The degraded road marking contrasts with the maintained vegetation, evoking a reflection on impermanence of human-imposed order versus resilience of natural systems within engineered landscapes.",
+      "alternative_interpretations": [
+        "The paint wear is routine degradation due to traffic and weather, not symbolic intent."
+      ],
+      "limitations": [
+        "No temporal sequence is shown; wear level cannot be dated or attributed to specific causes."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:34:01.515993+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ea647cca-edba-9330-a842-618de6a2f7fa",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 984,
+        "total_tokens": 1793,
+        "completion_tokens_details": {
+          "text_tokens": 984
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033340c6c915aa5ac34307",
+      "usage": {
+        "completion_tokens": 845,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1964,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2809
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

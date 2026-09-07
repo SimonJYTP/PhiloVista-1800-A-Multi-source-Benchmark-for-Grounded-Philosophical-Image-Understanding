@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1674",
+  "sample_id": "PHL1800_IRFL_0061",
+  "file_name": "PHL1800_IRFL_0061.jpg",
+  "batch_id": "B034",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one child",
+  "captions": {
+    "scene": [
+      "A child is positioned behind vertical black metal bars against a plain gray background.",
+      "The setting appears to be an indoor studio with controlled lighting and no visible windows or furniture.",
+      "Watermarks reading 'dreamstime' and a spiral logo are overlaid across the image."
+    ],
+    "action": [
+      "The child grips two adjacent bars with both hands, fingers wrapped around them.",
+      "The child’s facial muscles are tensed: eyebrows lowered, eyes narrowed, mouth open showing teeth and tongue.",
+      "The child’s head is slightly tilted forward and pressed between the bars."
+    ],
+    "rationale": [
+      "The bars are thick, evenly spaced, and appear rigid, suggesting confinement rather than decorative use.",
+      "The child’s expression and posture indicate acute physical or emotional strain, though the cause is not visible.",
+      "The striped green-and-brown shirt and short curly hair are clearly visible, but no identifying features (e.g., name, location) are present."
+    ],
+    "object": [
+      "The child has dark skin, short tightly curled brown hair, and wears a short-sleeved shirt with horizontal stripes of mint green, olive green, and beige.",
+      "Five vertical black cylindrical bars are visible in the foreground, with the child’s face and upper torso framed between the second and fourth bars from the left.",
+      "The child’s right hand grasps the second bar from the left; the left hand grasps the fourth bar from the left, with fingers curled over the top edge.",
+      "The child’s mouth is open wide, revealing upper and lower incisors and canines, with lips pulled back and tongue partially visible.",
+      "The background is a uniform matte gray surface with no texture, seams, or objects."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1674_P1",
+      "visual_anchors": [
+        "black vertical bars",
+        "child’s hands gripping bars",
+        "tensed facial expression"
+      ],
+      "symbolic_mapping": [
+        "bars → physical constraint",
+        "gripping → active resistance or desperation"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages a tension between embodied agency (gripping, straining) and imposed limitation (rigid bars), evoking the philosophical problem of constrained freedom where action persists even under structural restriction.",
+      "alternative_interpretations": [
+        "The scene may depict a staged performance or symbolic play, such as a child pretending to be imprisoned during imaginative role-play."
+      ],
+      "limitations": [
+        "No context confirms whether the bars are functional, decorative, or simulated; the child’s intent is not observable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1674_P2",
+      "visual_anchors": [
+        "child’s open mouth showing teeth",
+        "furrowed brow",
+        "narrowed eyes"
+      ],
+      "symbolic_mapping": [
+        "facial grimace → nonverbal expression of distress",
+        "exposed teeth → primal signaling of threat or pain"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The child’s visage functions as a nonlinguistic assertion of resistance or protest, illustrating how bodily expression becomes a site of power negotiation when verbal or institutional channels are inaccessible.",
+      "alternative_interpretations": [
+        "The expression could result from physical exertion (e.g., pushing against bars) without intentional communicative purpose."
+      ],
+      "limitations": [
+        "Facial expressions are polysemous; the same musculature can signal anger, pain, effort, or fear without external corroboration."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1674_P3",
+      "visual_anchors": [
+        "uniform gray background",
+        "studio lighting",
+        "watermark overlay"
+      ],
+      "symbolic_mapping": [
+        "neutral backdrop → abstraction from specific context",
+        "watermark → commodified representation"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The image’s constructed neutrality and commercial watermark frame the child’s experience as a generalized social symbol, raising questions about how marginalized subjects are represented and consumed in visual culture.",
+      "alternative_interpretations": [
+        "The gray background and lighting are standard for stock photography and carry no intended symbolic meaning beyond technical utility."
+      ],
+      "limitations": [
+        "The watermark is generic and does not specify audience, usage, or editorial framing; thus, attributing sociopolitical intent requires external knowledge."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:00:20.849178+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bde6dd47-2ee2-94ec-986c-92f2410de822",
+      "usage": {
+        "prompt_tokens": 2258,
+        "completion_tokens": 967,
+        "total_tokens": 3225,
+        "completion_tokens_details": {
+          "text_tokens": 967
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1751,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050001e20f81de16834501",
+      "usage": {
+        "completion_tokens": 831,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3832,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4663
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

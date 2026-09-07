@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0235",
+  "sample_id": "PHL1800_HAIV_0519",
+  "file_name": "PHL1800_HAIV_0519.png",
+  "batch_id": "B007",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one man in a white lab coat holding a pill bottle",
+  "captions": {
+    "scene": [
+      "A cartoon-style illustration with high-contrast black outlines and flat color fills on a white background",
+      "The man occupies the right two-thirds of the frame; his left hand holds a pill bottle extending toward the left third",
+      "Radiating black lines emanate from the pill bottle, suggesting emphasis or impact"
+    ],
+    "action": [
+      "The man’s mouth is wide open in an exaggerated laugh or shout, revealing upper and lower teeth and a red circular object inside his oral cavity",
+      "His eyes are tightly closed with curved lines indicating crinkling, and his eyebrows are raised",
+      "His left hand grips a cylindrical pill bottle with a yellow cap featuring two red horizontal bands and a light-blue body"
+    ],
+    "rationale": [
+      "The radiating lines near the bottle suggest visual emphasis, but their exact semantic intent (e.g., danger, excitement) is not specified by visible evidence alone",
+      "The red circular object in the mouth resembles a pill or lozenge, but its identity cannot be confirmed without text or context",
+      "The man wears a white lab coat over a blue shirt and tie, implying a professional role, yet no credentials, insignia, or setting confirm medical or scientific affiliation"
+    ],
+    "object": [
+      "The man has short orange-blonde hair styled upward with black contour lines defining strands.",
+      "He wears a white lab coat with black outline detailing folds and lapels, over a solid blue collared shirt and a solid blue tie.",
+      "His left hand holds a pill bottle: cylindrical, light-blue body, yellow cap with two parallel red bands near the top edge.",
+      "His open mouth displays 12 visible upper teeth and 12 visible lower teeth, all white with black outlines; gums are red with green speckles near molars.",
+      "A solid red circular object, approximately the size of a large pill, is centered in the oral cavity behind the lower teeth."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0235_P1",
+      "visual_anchors": [
+        "open mouth with red circle",
+        "radiating lines from bottle",
+        "lab coat"
+      ],
+      "symbolic_mapping": [
+        "red circle → consumption of external substance",
+        "radiating lines → amplification of effect"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The image may depict the uncritical acceptance of a prescribed truth or solution, where institutional authority (lab coat) and dramatic presentation (radiating lines) override scrutiny of the substance itself (red circle).",
+      "alternative_interpretations": [
+        "It could simply illustrate comedic enthusiasm for medication, with no philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels identify the bottle’s contents or the man’s role, making symbolic readings speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0235_P2",
+      "visual_anchors": [
+        "tight eye closure",
+        "exaggerated grin",
+        "hand gripping bottle"
+      ],
+      "symbolic_mapping": [
+        "eye closure → suspension of perception",
+        "grip → agency or compulsion"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The subject’s facial expression and posture may symbolize a performative identity—joy or conviction enacted through bodily gesture—while the held bottle suggests an external determinant of that state, raising questions about autonomy.",
+      "alternative_interpretations": [
+        "The expression may be literal laughter unrelated to the bottle, with the grip being incidental."
+      ],
+      "limitations": [
+        "Facial expressions in cartoon style are stylized and not diagnostic of internal states."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0235_P3",
+      "visual_anchors": [
+        "white lab coat",
+        "blue tie",
+        "red pill-like object"
+      ],
+      "symbolic_mapping": [
+        "lab coat + tie → formal authority",
+        "red object → singular focal intervention"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of professional attire and a simplified, almost theatrical delivery of a remedy may critique how social roles mediate responsibility—where appearance of expertise displaces ethical evaluation of action.",
+      "alternative_interpretations": [
+        "This may be a generic promotional illustration for pharmaceuticals, emphasizing positivity without deeper commentary."
+      ],
+      "limitations": [
+        "No institutional logos, text, or contextual cues confirm a critique rather than endorsement."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:23:29.551691+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4dcbe522-b783-9109-a591-ce859d8f4d2b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 988,
+        "total_tokens": 2521,
+        "completion_tokens_details": {
+          "text_tokens": 988
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022307864a0e713a0a44a0",
+      "usage": {
+        "completion_tokens": 845,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2943,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3788
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

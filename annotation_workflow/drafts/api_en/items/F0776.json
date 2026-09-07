@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F0776",
+  "sample_id": "PHL1800_IRFL_0229",
+  "file_name": "PHL1800_IRFL_0229.jpg",
+  "batch_id": "B017",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two females seated on a gray sofa",
+  "captions": {
+    "scene": [
+      "Indoor living room setting with neutral-toned walls, a gray fabric sofa, and a white lamp visible on a side table to the right.",
+      "A light-colored wooden shelf with indistinct small objects sits behind the sofa against the wall.",
+      "Natural or soft artificial lighting illuminates the scene evenly; no windows are visible."
+    ],
+    "action": [
+      "The younger female holds a pink cylindrical object near her mouth with her right hand, lips parted as if tasting or applying it.",
+      "The older female holds a similar pink cylindrical object near her mouth with her right hand, head tilted slightly toward the younger female.",
+      "Both individuals are seated cross-legged on the sofa, facing each other at close proximity, with relaxed postures and direct eye contact."
+    ],
+    "rationale": [
+      "The pink objects resemble lip balm or lipstick applicators based on shape, size, and usage context, but their exact identity is not confirmed by visible labeling.",
+      "The shared activity and mutual gaze suggest interaction, yet no verbal or auditory evidence is present; interpretation of intent relies on posture alone.",
+      "Clothing (white sleeveless dress, blue long-sleeve shirt, denim jeans) indicates casual attire, but temporal or cultural context cannot be determined from visual cues alone."
+    ],
+    "object": [
+      "A gray textured throw pillow rests between the two individuals on the sofa cushion.",
+      "The younger female wears a white sleeveless dress with a gathered waist and short dark hair cut above the shoulders.",
+      "The older female wears a light-blue long-sleeve button-up shirt, rolled at the cuffs, and medium-wash denim jeans, with long brown hair tied in a low ponytail.",
+      "Each individual holds a pink cylindrical object approximately 8–10 cm long, with a visible cap or tip near the mouth.",
+      "The sofa has a segmented backrest and appears upholstered in a woven gray fabric with subtle texture."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0776_P1",
+      "visual_anchors": [
+        "shared pink object",
+        "mutual gaze",
+        "proximal seating"
+      ],
+      "symbolic_mapping": [
+        "the identical objects suggest imitation or transmission of practice"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The image visually grounds the idea that social existence is constituted through shared embodied practices, where learning occurs via co-presence and mimicry rather than explicit instruction.",
+      "alternative_interpretations": [
+        "This may simply depict a moment of parallel personal grooming without pedagogical intent."
+      ],
+      "limitations": [
+        "No facial expressions are fully legible to confirm intentionality or emotional valence; only posture and object use are observable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0776_P2",
+      "visual_anchors": [
+        "cross-legged posture",
+        "bare feet",
+        "casual clothing"
+      ],
+      "symbolic_mapping": [
+        "informal bodily positioning signals suspension of formal roles"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The relaxed physical arrangement implies a temporary suspension of external constraints, illustrating how freedom can manifest in unguarded domestic intimacy.",
+      "alternative_interpretations": [
+        "The posture may reflect comfort due to ambient temperature or furniture design rather than ideological stance."
+      ],
+      "limitations": [
+        "No external environment or institutional markers are visible to contrast with the depicted state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0776_P3",
+      "visual_anchors": [
+        "pink object held identically",
+        "mirror-like orientation",
+        "lack of text or branding"
+      ],
+      "symbolic_mapping": [
+        "repetition of gesture without mediation suggests non-linguistic knowledge transfer"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The scene exemplifies tacit knowledge acquisition—truth or skill conveyed not through propositions but through synchronized action and presence.",
+      "alternative_interpretations": [
+        "The individuals may be independently using the same product without interaction or teaching occurring."
+      ],
+      "limitations": [
+        "The directionality and purpose of the action (e.g., whether one initiates and the other follows) cannot be determined from static framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:15:40.827940+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a5e79d38-2fe9-964d-9c7a-cf54bd1c867f",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 927,
+        "total_tokens": 1506,
+        "completion_tokens_details": {
+          "text_tokens": 927
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031531b1480a3b074f441f",
+      "usage": {
+        "completion_tokens": 793,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1585,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2378
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

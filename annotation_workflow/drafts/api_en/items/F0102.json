@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0102",
+  "sample_id": "PHL1800_HL_0224",
+  "file_name": "PHL1800_HL_0224.png",
+  "batch_id": "B004",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in a magenta sleeveless dress seated at a formal dining table with other guests",
+  "captions": {
+    "scene": [
+      "An indoor formal dining setting with ornate architectural details including gilded curtains, white columns, and chandeliers.",
+      "A long banquet table set with green glassware, white plates, name cards, and a large centerpiece of colorful vegetables (peppers, squash, tomatoes).",
+      "Multiple people seated and standing in the background, some holding cameras or recording equipment, suggesting media presence."
+    ],
+    "action": [
+      "The woman in magenta smiles while looking toward her right; her posture is upright and engaged.",
+      "A young girl with a white headband sits beside her, also smiling and looking forward.",
+      "A boy in a light blue shirt and tie sits to the left foreground, facing right with a neutral expression."
+    ],
+    "rationale": [
+      "The presence of professional cameras and multiple attendees suggests this is a public or official event rather than a private gathering.",
+      "The table setting—including matching green cups with straws, place cards, and a vegetable centerpiece—indicates a curated, possibly themed, formal meal.",
+      "The visible text 'www.cookwithamber.com' on a card implies an association with a food-related website, though its exact relevance cannot be confirmed from image alone."
+    ],
+    "object": [
+      "A woman with shoulder-length reddish-blonde hair wears a sleeveless magenta dress and sits at a table with a green cup containing a straw in front of her.",
+      "A young Black girl with braided hair and a white headband wears a patterned top and sits next to the woman, smiling toward the camera’s direction.",
+      "A boy in the lower-left foreground wears a light blue collared shirt, dark tie, and has short brown hair; he looks rightward without smiling.",
+      "A centerpiece composed of orange, yellow, red, and green bell peppers, zucchini, and tomatoes rests on the table near a white card with printed text.",
+      "At least 15 distinct individuals are visible: 7 seated at the foreground/mid-table, 8+ in background clusters (including photographers), with some partially obscured but identifiable by heads or shoulders."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0102_P1",
+      "visual_anchors": [
+        "green cups with straws",
+        "vegetable centerpiece",
+        "name cards"
+      ],
+      "symbolic_mapping": [
+        "the standardized tableware suggests institutional order",
+        "the edible centerpiece blurs line between decoration and sustenance"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of decorative produce and uniform tableware reflects how social rituals codify nourishment into spectacle, revealing labor embedded in presentation even when consumption is deferred.",
+      "alternative_interpretations": [
+        "The arrangement may simply follow a seasonal or culinary theme without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No visible labels confirm the produce is non-edible or purely ornamental; it could be served later."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0102_P2",
+      "visual_anchors": [
+        "woman smiling toward right",
+        "girl mirroring smile",
+        "boy looking away with neutral face"
+      ],
+      "symbolic_mapping": [
+        "shared gaze direction indicates alignment",
+        "divergent attention signals individual positioning within group norms"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Differential engagement across adjacent individuals illustrates how identity is performed relationally—through mimicry, divergence, or neutrality—within constrained social frames.",
+      "alternative_interpretations": [
+        "Facial expressions may reflect momentary reactions to off-camera stimuli rather than enduring social positioning."
+      ],
+      "limitations": [
+        "Only frontal or near-frontal views are available; side profiles or back views are absent, limiting full behavioral assessment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0102_P3",
+      "visual_anchors": [
+        "multiple cameras held by background figures",
+        "formal attire",
+        "gilded interior architecture"
+      ],
+      "symbolic_mapping": [
+        "surveillance apparatus coexists with ceremonial space",
+        "ornamentation signifies authority or tradition"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "knowledge_truth"
+      ],
+      "interpretation": "The simultaneous presence of documentation technology and classical decor enacts a tension between transparency (recording) and opacity (ceremonial ritual), questioning whether truth emerges from observation or from sanctioned performance.",
+      "alternative_interpretations": [
+        "Cameras may be present for archival or journalistic purposes without implying conflict or epistemic tension."
+      ],
+      "limitations": [
+        "Camera operators’ intentions, affiliations, and editing choices are invisible; only hardware is observable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The count of 'at least 22 distinct individuals' is unsupported; the image shows fewer clearly identifiable people, and the background clusters are partially obscured, making an exact count unreliable."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:04:43.724805+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8458a8a0-77f8-9122-b378-f05ecf00db37",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1040,
+        "total_tokens": 1809,
+        "completion_tokens_details": {
+          "text_tokens": 1040
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020409a7e8352c370345a9",
+      "usage": {
+        "completion_tokens": 1021,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1968,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2989
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

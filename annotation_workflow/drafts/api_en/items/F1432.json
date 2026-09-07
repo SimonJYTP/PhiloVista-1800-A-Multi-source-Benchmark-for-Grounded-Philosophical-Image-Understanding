@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1432",
+  "sample_id": "PHL1800_HL_0099",
+  "file_name": "PHL1800_HL_0099.png",
+  "batch_id": "B030",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adolescent with curly light-brown hair, seated on a futon",
+  "captions": {
+    "scene": [
+      "Indoor living space with patterned futon, wooden armrest, and vertical blinds in background",
+      "A tall black speaker cabinet stands to the right, featuring circular ports and a small framed photo",
+      "Green chair back visible behind the futon; beige carpet covers floor"
+    ],
+    "action": [
+      "Holding two white Nintendo Wii controllers, one in each hand, with cords dangling",
+      "Sitting cross-legged on a woven-pattern futon cushion, torso upright, gaze directed forward",
+      "Wearing layered clothing: green-and-white striped polo over red shirt, rolled-up sleeves, blue jeans, and white socks"
+    ],
+    "rationale": [
+      "The subject’s posture and controller grip suggest active engagement with a video game system",
+      "The presence of two Wii controllers implies possible multiplayer or motion-controlled gameplay",
+      "Facial expression appears neutral to focused, but no definitive emotional state can be confirmed from visual cues alone"
+    ],
+    "object": [
+      "The subject wears a green short-sleeved polo shirt with white horizontal stripes and a small blue bird logo on the left chest.",
+      "A red crew-neck shirt is visible beneath the polo’s open collar and at the hem.",
+      "Blue denim jeans show fading on thighs and knees, with cuffs resting above white ankle socks.",
+      "Two white Wii controllers are held: the left-hand one has a visible wrist strap and button layout; the right-hand one is partially obscured but identifiable by shape and size.",
+      "The futon has a brown-and-beige checkerboard weave pattern and wooden frame with slatted backrest."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1432_P1",
+      "visual_anchors": [
+        "green-and-white striped polo",
+        "blue bird logo",
+        "layered shirts"
+      ],
+      "symbolic_mapping": [
+        "clothing layers as visible negotiation of personal presentation"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The deliberate layering and branding on attire reflect an embodied negotiation of self-presentation within a domestic setting, where identity is constructed through visible semiotic choices rather than explicit declaration.",
+      "alternative_interpretations": [
+        "The clothing is simply casual wear chosen for comfort without symbolic intent"
+      ],
+      "limitations": [
+        "No textual labels or context confirm intentional symbolism in garment selection"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1432_P2",
+      "visual_anchors": [
+        "two Wii controllers",
+        "wrist straps",
+        "cord connecting them"
+      ],
+      "symbolic_mapping": [
+        "tethered controllers as physical manifestation of mediated agency"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The physical connection between hands and controllers—via cords and straps—materializes the dependency of human action on technological interfaces, illustrating how labor (here, play-as-labor) is constrained and enabled by device design.",
+      "alternative_interpretations": [
+        "The cords are merely functional safety features with no deeper implication"
+      ],
+      "limitations": [
+        "No evidence of exertion, fatigue, or task completion to confirm labor framing"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1432_P3",
+      "visual_anchors": [
+        "direct gaze toward camera",
+        "neutral facial expression",
+        "symmetrical hand positioning"
+      ],
+      "symbolic_mapping": [
+        "stillness amid interactive technology as resistance to temporal flow"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The subject’s poised stillness while holding gaming controllers evokes a suspension of linear time—a moment arrested where digital interaction defers the awareness of duration and decay, aligning with phenomenological experiences of ‘timeless’ engagement.",
+      "alternative_interpretations": [
+        "The subject is simply pausing between game actions, not philosophically resisting time"
+      ],
+      "limitations": [
+        "No clock, aging signs, or temporal markers present to ground mortality theme"
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:36:02.933214+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e69d3db1-e93f-9441-8438-4df73d7f9289",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 876,
+        "total_tokens": 1685,
+        "completion_tokens_details": {
+          "text_tokens": 876
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070435386011d43a0348443c",
+      "usage": {
+        "completion_tokens": 734,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1843,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2577
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

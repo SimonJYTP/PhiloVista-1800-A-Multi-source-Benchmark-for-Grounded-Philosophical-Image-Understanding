@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0121",
+  "sample_id": "PHL1800_IRFL_0234",
+  "file_name": "PHL1800_IRFL_0234.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "five fully depicted people and two shadow silhouettes in an indoor social gathering",
+  "captions": {
+    "scene": [
+      "An interior room with muted green walls, a framed abstract painting, and a potted plant on a counter.",
+      "A doorway with warm-toned wall paneling is visible to the right; shadows of two additional figures appear on walls.",
+      "The floor is light pinkish-beige; lighting creates soft shadows and highlights on figures and surfaces."
+    ],
+    "action": [
+      "A bald man in a striped shirt gestures with both hands toward a woman in a white t-shirt who raises her left hand and touches her face near her eye.",
+      "A woman with dark curly hair holds a wine glass and places her right hand on the shoulder of a person with short white hair wearing glasses and a navy shirt.",
+      "A woman with blonde hair and red-rimmed glasses stands holding a blue-and-white can, observing the central interaction."
+    ],
+    "rationale": [
+      "The bald man’s open-palmed gesture and orientation toward the woman suggest he is speaking or explaining something; however, no mouth movement or speech lines are visible, so intent is not confirmed.",
+      "The woman touching her face may be wiping a tear or adjusting her hair, but facial expression details are stylized and insufficient to determine emotional state.",
+      "Two shadow silhouettes on the left and right walls indicate at least two additional individuals are present but not fully depicted; their presence is inferred solely from shadows."
+    ],
+    "object": [
+      "A framed artwork hangs on the back wall, featuring abstract shapes in blue, yellow, and white against a beige background; text or signature is unreadable.",
+      "A small potted green plant sits on a wooden countertop behind the bald man; the pot is white and cylindrical.",
+      "The woman in the white t-shirt wears brown trousers with two visible yellowish patches on the knees and light-blue slip-on shoes.",
+      "The woman with curly hair wears an orange tank top, blue jeans with front pockets, and a yellow wristband on her right wrist.",
+      "The blonde woman holds a beverage can with a blue upper band and white lower section; no brand or text is legible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0121_P1",
+      "visual_anchors": [
+        "woman touching face",
+        "bald man gesturing",
+        "shared gaze direction"
+      ],
+      "symbolic_mapping": [
+        "hand-to-face gesture as embodied response to discourse",
+        "open palms as non-coercive communication attempt"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The scene visualizes epistemic vulnerability: one person’s expressive gesture meets another’s embodied reaction, suggesting knowledge exchange that implicates bodily presence and intersubjective accountability.",
+      "alternative_interpretations": [
+        "A routine conversational moment at a casual party, with gestures reflecting ordinary emphasis or mild surprise."
+      ],
+      "limitations": [
+        "Facial features are stylized and lack micro-expressions; no dialogue or context confirms epistemic framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0121_P2",
+      "visual_anchors": [
+        "shadow silhouettes",
+        "group clustering",
+        "physical contact (hand on shoulder)"
+      ],
+      "symbolic_mapping": [
+        "shadows as absent-presence indicating extended social field",
+        "touch as affirmation of inclusion"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Identity is enacted through relational positioning: visible figures occupy foreground roles while shadows imply peripheral yet real participants, underscoring that selfhood emerges within a network of witnessed and witnessing others.",
+      "alternative_interpretations": [
+        "Shadows result from ambient lighting and furniture placement, not intentional representation of absent people."
+      ],
+      "limitations": [
+        "Shadow shapes are generic and could originate from objects; no distinguishing features confirm human form."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0121_P3",
+      "visual_anchors": [
+        "potted plant on counter",
+        "framed abstract art",
+        "casual attire"
+      ],
+      "symbolic_mapping": [
+        "plant as symbol of care/maintenance in domestic space",
+        "abstract art as non-representational backdrop to lived interaction"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "Everyday ethics manifest in mundane stewardship—the plant’s presence implies ongoing care—and spatial freedom is bounded by interior architecture, where choice occurs within constrained domestic frames.",
+      "alternative_interpretations": [
+        "The plant and art are decorative elements with no symbolic intent; attire reflects comfort, not philosophical stance."
+      ],
+      "limitations": [
+        "No labels, inscriptions, or contextual cues tie the plant or art to ethical themes; interpretation relies on conventional symbolism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate states five visible people but image shows five fully depicted people plus two shadow silhouettes (total seven individuals present); shadows are not 'visible people' but inferred presence."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:03:07.249908+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-da015c83-0939-966f-b5e4-6cc55813fd2d",
+      "usage": {
+        "prompt_tokens": 1966,
+        "completion_tokens": 1038,
+        "total_tokens": 3004,
+        "completion_tokens_details": {
+          "text_tokens": 1038
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1459,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020239fe5683ca77784da3",
+      "usage": {
+        "completion_tokens": 1034,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3572,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4606
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

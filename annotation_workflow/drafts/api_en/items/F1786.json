@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F1786",
+  "sample_id": "PHL1800_HL_0407",
+  "file_name": "PHL1800_HL_0407.png",
+  "batch_id": "B036",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a Gothic Revival clock tower structure with three archways and ornate stonework",
+  "captions": {
+    "scene": [
+      "A sunlit urban street scene featuring a historic stone clock tower flanked by brick and plaster buildings under a partly cloudy sky.",
+      "Pedestrians walk on paved sidewalks around the base of an ornate stone structure with arched passageways and a central clock face.",
+      "The foreground shows red brick paving, while background buildings include signage with partially legible text such as 'ORA' and a circular traffic sign."
+    ],
+    "action": [
+      "A person in light-colored clothing stands near the left archway holding a bicycle handlebar, appearing stationary.",
+      "Multiple individuals are walking or standing in groups near the tower’s base; at least 14 distinct people are visible across the scene.",
+      "Two seated figures occupy the central recessed alcove beneath the clock face, one wearing red, the other dark clothing."
+    ],
+    "rationale": [
+      "The structure’s pointed arches, pinnacles, and tracery suggest Gothic Revival architectural style, though no documentation is visible to confirm this.",
+      "The clock face displays approximately 1:10, but without knowing if it is AM or PM, temporal context remains ambiguous.",
+      "People appear engaged in routine pedestrian activity, but no facial expressions or gestures allow inference of intent or emotion."
+    ],
+    "object": [
+      "The central stone structure has three ground-level archways: two side arches with pointed Gothic profiles and a wider central arch containing a seated area and a large circular clock face with Roman numerals and black hands.",
+      "Above the clock, a tiered belfry-like lantern with open arcades and a conical roof topped by a weather vane rises from the main body.",
+      "The facade includes carved foliate motifs, crockets along gables, and finials atop vertical buttresses flanking each arch.",
+      "To the left of the tower, a white rectangular sign with black text includes a red circle with a diagonal line over a symbol (likely a traffic restriction), and below it, a smaller sign reads 'PARKING' with additional unreadable lines.",
+      "On the right, a multi-story brick building features sash windows and a ground-floor shopfront with partial lettering 'OR...' visible above the entrance."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1786_P1",
+      "visual_anchors": [
+        "central clock face showing time",
+        "pedestrians moving through archways",
+        "weather vane atop tower"
+      ],
+      "symbolic_mapping": [
+        "the clock represents measured, linear time; the archways represent thresholds of passage"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The fixed clock juxtaposed with transient human movement through arches evokes the philosophical tension between enduring temporal measurement and fleeting human presence.",
+      "alternative_interpretations": [
+        "It may simply function as a civic timepiece and shelter, with no intended symbolism."
+      ],
+      "limitations": [
+        "No inscriptions or contextual plaques confirm symbolic intent; interpretation relies solely on formal arrangement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1786_P2",
+      "visual_anchors": [
+        "multiple pedestrians in varied attire",
+        "shared public space under the tower",
+        "seated figures in central alcove"
+      ],
+      "symbolic_mapping": [
+        "the archways frame collective coexistence; the alcove offers temporary rest amid flow"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The architecture structures social interaction by providing both passage and pause, suggesting that shared physical infrastructure enables modes of communal being.",
+      "alternative_interpretations": [
+        "The alcove may be purely functional for shelter or waiting, not designed for social reflection."
+      ],
+      "limitations": [
+        "No observable interaction among individuals confirms intentional social design; proximity does not imply engagement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1786_P3",
+      "visual_anchors": [
+        "ornate stonework with repetitive motifs",
+        "asymmetrical wear on stone surfaces",
+        "weather vane pointing directionally"
+      ],
+      "symbolic_mapping": [
+        "craftsmanship implies human intentionality; erosion signals material impermanence"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The visible masonry labor—precise carving contrasted with natural weathering—embodies the dialectic between human technological effort and entropy’s inevitable reclamation.",
+      "alternative_interpretations": [
+        "The wear may result from maintenance or cleaning rather than age-related decay."
+      ],
+      "limitations": [
+        "No tools, construction records, or maker’s marks are visible to verify labor process or timeline."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:13:43.205088+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d234280f-c6f0-93e4-a80b-342cce953550",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1033,
+        "total_tokens": 1802,
+        "completion_tokens_details": {
+          "text_tokens": 1033
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705132554cc7b3e0c624a7b",
+      "usage": {
+        "completion_tokens": 891,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1931,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2822
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

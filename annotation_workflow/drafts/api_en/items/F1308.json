@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1308",
+  "sample_id": "PHL1800_HL_0299",
+  "file_name": "PHL1800_HL_0299.png",
+  "batch_id": "B027",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one skier in motion on a snow slope",
+  "captions": {
+    "scene": [
+      "A sunlit, uneven snow-covered slope with sparse vegetation and a utility pole visible at upper left",
+      "Red plastic safety tape strung between poles marks a boundary across the lower portion of the slope",
+      "Shadows cast by trees and terrain indicate strong directional sunlight from upper right"
+    ],
+    "action": [
+      "The skier leans forward with bent knees, holding ski poles, and appears to be traversing diagonally across the slope",
+      "Skis are parallel and angled slightly inward, suggesting controlled turning or edging",
+      "The skier’s head is turned toward the direction of travel, with goggles and helmet fully covering face and head"
+    ],
+    "rationale": [
+      "The skier’s posture and equipment placement suggest active skiing rather than standing still, though speed cannot be quantified visually",
+      "The red tape likely demarcates a course or restricted zone, inferred from its placement and typical use in ski areas; however, no signage confirms purpose",
+      "The presence of a utility pole and bare trees suggests a managed or semi-developed slope, not wilderness; but exact location remains unspecified"
+    ],
+    "object": [
+      "A person wearing a black helmet, dark goggles, a black jacket, and dark pants stands on two skis with bindings.",
+      "Two ski poles are held, one in each hand, with tips touching or near the snow surface.",
+      "A bright red plastic ribbon is stretched taut between two thin red poles embedded in the snow.",
+      "The snow surface shows irregular texture with ridges, depressions, and scattered shadows, indicating prior use or natural formation.",
+      "In the upper-left background, a gray metal utility pole with attached cables and a white cylindrical component is partially visible among leafless shrubs."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1308_P1",
+      "visual_anchors": [
+        "red safety tape",
+        "skier’s focused posture",
+        "uneven snow surface"
+      ],
+      "symbolic_mapping": [
+        "red tape as imposed boundary",
+        "posture as deliberate navigation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The skier moves within a defined corridor marked by red tape, embodying the tension between self-directed motion and externally imposed limits—a literal enactment of constrained freedom.",
+      "alternative_interpretations": [
+        "The tape may simply mark a temporary maintenance zone with no symbolic intent; the skier is merely following standard trail etiquette."
+      ],
+      "limitations": [
+        "No textual labels or contextual signage confirm the tape’s intended meaning; its function is inferred solely from form and placement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1308_P2",
+      "visual_anchors": [
+        "helmet and goggles fully obscuring face",
+        "uniform dark clothing",
+        "lack of distinguishing features"
+      ],
+      "symbolic_mapping": [
+        "concealment of identity as neutrality in action"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The skier’s anonymized appearance—face hidden, attire generic—suggests a moment where individual identity recedes in favor of role-based participation in a shared activity, highlighting how social contexts can suspend personal distinctiveness.",
+      "alternative_interpretations": [
+        "The gear is purely functional for safety and weather protection; no intentional erasure of identity is evident."
+      ],
+      "limitations": [
+        "Facial concealment is standard ski equipment; no evidence indicates intentional anonymity beyond practical necessity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1308_P3",
+      "visual_anchors": [
+        "sunlit snow with sharp shadows",
+        "single figure against expansive slope",
+        "utility pole intruding into natural scene"
+      ],
+      "symbolic_mapping": [
+        "solitary figure amid engineered nature as modern human condition"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The lone skier glides across a landscape modified by infrastructure (pole, tape), evoking the contemporary human experience of navigating spaces that are simultaneously natural and technologically mediated—a fleeting moment underscored by the transient quality of snow and shadow.",
+      "alternative_interpretations": [
+        "This is a routine recreational scene with no deeper implication; the pole and tape are incidental background elements."
+      ],
+      "limitations": [
+        "No temporal markers (e.g., melting snow, clock, aging) directly indicate mortality; the ‘fleeting’ quality is interpretive."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:15:55.500014+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e9081344-ef0b-9657-b7c7-1f6ef88f660f",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 990,
+        "total_tokens": 1659,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070415411cd4fe070901493f",
+      "usage": {
+        "completion_tokens": 848,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1786,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2634
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0903",
+  "sample_id": "PHL1800_HAIV_0130",
+  "file_name": "PHL1800_HAIV_0130.png",
+  "batch_id": "B020",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person with long black hair inside a birdcage, holding a small gray bird",
+  "captions": {
+    "scene": [
+      "A golden-brown wire birdcage with a domed top and handle stands against a pale blue background.",
+      "A person wearing a white garment is enclosed within the cage, visible from chest up.",
+      "A disembodied hand in a dark blue sleeve extends from the upper right toward the cage top."
+    ],
+    "action": [
+      "The person’s mouth is wide open with teeth and tongue visible; eyes are closed and cheeks flushed pink.",
+      "The person grips vertical cage bars with both hands, fingers curled around them.",
+      "A small gray bird with a yellow beak rests on the person’s left forearm, facing right."
+    ],
+    "rationale": [
+      "The person’s facial expression suggests vocalization or strong emotion, but the exact nature (joy, distress, singing) cannot be determined from visual evidence alone.",
+      "The hand above the cage appears to be reaching toward or hovering near the handle, but no contact or motion is depicted; intent is ambiguous.",
+      "The bird is perched calmly on the person’s arm, yet its species, state of captivity, or relationship to the person is not visually specified."
+    ],
+    "object": [
+      "The birdcage consists of vertical and horizontal metal bars forming a rectangular body with a geometric domed roof and a circular top handle.",
+      "The person has straight black hair extending past the shoulders, fair skin, defined eyebrows, and red lips with visible upper and lower teeth.",
+      "The person wears a white collared garment with loose sleeves; a thin purple line appears at the collar center.",
+      "The gray bird has a rounded body, short tail, yellow beak, and dark eye; its feet grip the person’s forearm.",
+      "The external hand has light skin tone, visible knuckles and fingernails, and emerges from a dark blue sleeve ending just before the wrist."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0903_P1",
+      "visual_anchors": [
+        "person inside cage",
+        "hand reaching from outside",
+        "bird perched on arm"
+      ],
+      "symbolic_mapping": [
+        "cage → constraint",
+        "external hand → external agency"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The image visually stages a tension between internal experience (expressive face) and external control (cage and looming hand), suggesting that perceived freedom may coexist with structural confinement.",
+      "alternative_interpretations": [
+        "This may depict a theatrical performance or illustration where the cage is symbolic props and the expression is stylized acting, not literal entrapment."
+      ],
+      "limitations": [
+        "No textual labels or contextual setting confirm symbolic intent; the scene could be literal (e.g., an art installation) without metaphorical meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0903_P2",
+      "visual_anchors": [
+        "flushed cheeks",
+        "wide-open mouth",
+        "closed eyes"
+      ],
+      "symbolic_mapping": [
+        "facial expression → embodied affect",
+        "lack of visible tears or strain → ambiguity of valence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The exaggerated facial features foreground appearance as a site of social negotiation—where expression is simultaneously personal and performative under observation.",
+      "alternative_interpretations": [
+        "The expression may simply represent laughter or vocal exertion during a routine activity, with no deeper social commentary intended."
+      ],
+      "limitations": [
+        "Facial expressions are culturally variable and cannot be objectively classified as ‘performative’ without context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0903_P3",
+      "visual_anchors": [
+        "bird on forearm",
+        "person gripping bars",
+        "same scale for human and bird"
+      ],
+      "symbolic_mapping": [
+        "shared enclosure → relational interdependence",
+        "bird’s calm posture vs. person’s intensity → asymmetry in experience"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The juxtaposition of a confined human and a seemingly unbothered bird within the same structure questions assumptions about who or what experiences constraint—and whether proximity implies shared fate.",
+      "alternative_interpretations": [
+        "The bird may be trained or accustomed to human contact, and its presence is incidental rather than symbolic."
+      ],
+      "limitations": [
+        "The bird’s behavior is static; no movement or interaction confirms intentionality or relational meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:26:01.586066+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9149d23b-ceea-90bd-979b-1229a1715ef4",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 994,
+        "total_tokens": 2527,
+        "completion_tokens_details": {
+          "text_tokens": 994
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070325460e2d101ea9284901",
+      "usage": {
+        "completion_tokens": 855,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2954,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3809
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

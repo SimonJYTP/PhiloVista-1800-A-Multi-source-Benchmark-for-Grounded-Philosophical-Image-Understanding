@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1578",
+  "sample_id": "PHL1800_IRFL_0258",
+  "file_name": "PHL1800_IRFL_0258.jpg",
+  "batch_id": "B032",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three adult men seated at a wooden table in a bar setting",
+  "captions": {
+    "scene": [
+      "A dimly lit interior with copper brewing tanks and glassware visible on shelves in the background",
+      "Three men sit around a dark wooden table with three beer mugs and a small white plate of snacks",
+      "The background features a marble-tiled wall beneath a wooden shelf holding rows of clear drinking glasses"
+    ],
+    "action": [
+      "All three men are smiling and looking toward each other, engaged in apparent conversation",
+      "The man on the left holds a beer mug raised mid-toast; the man on the right also holds a mug raised; the central man holds two mugs, one in each hand",
+      "The central man’s mouth is open in a wide smile showing teeth; the left man’s mouth is open mid-laugh; the right man’s lips are parted in a smile"
+    ],
+    "rationale": [
+      "The presence of multiple full beer mugs and a shared snack plate suggests a social drinking context rather than solitary consumption",
+      "The orientation of bodies and gaze direction indicates mutual engagement, though no speech or gesture beyond facial expression is visible",
+      "The copper tanks and glassware arrangement imply a brewery-adjacent or craft-beer-themed venue, but the exact function (e.g., active production vs. decoration) is not verifiable from image alone"
+    ],
+    "object": [
+      "Three men with short dark hair and light skin tones are seated at a rectangular wooden table.",
+      "Each man holds at least one transparent glass beer mug containing amber liquid with visible foam heads.",
+      "A small white ceramic plate with scattered light-brown snack items rests on the table near the center man’s left hand.",
+      "Behind the men, two large cylindrical copper-colored vessels with horizontal bands and reflective surfaces are mounted on a back wall.",
+      "A wooden bar shelf holds multiple rows of identical clear stemmed glasses, some inverted, others upright."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1578_P1",
+      "visual_anchors": [
+        "three men raising mugs simultaneously",
+        "shared plate of snacks",
+        "mutual eye contact"
+      ],
+      "symbolic_mapping": [
+        "raised mugs → collective affirmation",
+        "shared food → interdependence"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The synchronized gesture of toasting among peers visually enacts a moment of consensual belonging, where shared ritual reinforces temporary communal identity.",
+      "alternative_interpretations": [
+        "This may simply be a posed photograph for commercial use, with staged expressions and positioning."
+      ],
+      "limitations": [
+        "No audio, temporal sequence, or prior context confirms whether the toast is spontaneous or rehearsed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1578_P2",
+      "visual_anchors": [
+        "copper brewing tanks in background",
+        "transparent mugs showing liquid clarity",
+        "men’s casual attire"
+      ],
+      "symbolic_mapping": [
+        "visible brewing infrastructure → transparency of process",
+        "clear glass → visibility of content"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of industrial equipment and consumable product in the same frame suggests an epistemic claim: what is produced is made visible and verifiable through direct presentation.",
+      "alternative_interpretations": [
+        "The tanks may be purely decorative and nonfunctional; their presence does not guarantee authenticity of the beverage served."
+      ],
+      "limitations": [
+        "Functionality of the copper vessels cannot be confirmed; they may be ornamental replicas."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1578_P3",
+      "visual_anchors": [
+        "man in grey polo shirt centrally positioned",
+        "man in blue shirt leaning forward",
+        "man in white shirt slightly reclined"
+      ],
+      "symbolic_mapping": [
+        "central figure holding two mugs → mediating role",
+        "asymmetrical postures → differentiated participation"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Differential bodily orientation and object handling construct distinct social roles within the group, where appearance (clothing, posture, grip) indexes relational position rather than intrinsic status.",
+      "alternative_interpretations": [
+        "Postural differences may reflect seating constraints or momentary comfort rather than intentional role signaling."
+      ],
+      "limitations": [
+        "Only a single frozen frame is available; dynamic shifts in posture or gaze are unobservable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:47:38.096283+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e10e0b39-ca24-94ea-a9b0-95c69e749d94",
+      "usage": {
+        "prompt_tokens": 1616,
+        "completion_tokens": 958,
+        "total_tokens": 2574,
+        "completion_tokens_details": {
+          "text_tokens": 958
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1109,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070447274a49ddb3d591442e",
+      "usage": {
+        "completion_tokens": 820,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2967,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3787
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

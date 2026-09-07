@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0762",
+  "sample_id": "PHL1800_HL_0203",
+  "file_name": "PHL1800_HL_0203.png",
+  "batch_id": "B017",
+  "position_in_batch": 23,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "an open vintage cookbook titled 'To the Modern American Homemaker'",
+  "captions": {
+    "scene": [
+      "A two-page spread of a printed book lying flat on a wooden surface",
+      "Left page features a line illustration of a woman in an apron standing behind a counter with food items",
+      "Right page contains a colored illustration of three people (one adult, two children) beside an open refrigerator"
+    ],
+    "action": [
+      "The book is open and stationary on a table",
+      "The illustrated woman holds a bowl and stands upright at a work surface",
+      "The illustrated adult leans toward the refrigerator while two children stand beside it, one holding a bottle"
+    ],
+    "rationale": [
+      "The presence of copyright text and edition information suggests this is a published commercial manual",
+      "The foreword explicitly references a 'General Electric Refrigerator', linking the content to mid-20th-century appliance marketing",
+      "The layout—illustration paired with instructional text—indicates a didactic purpose rather than artistic or literary intent"
+    ],
+    "object": [
+      "The left page displays the title 'To the MODERN AMERICAN HOMEMAKER' in serif font above a black-and-white line drawing.",
+      "Below the illustration on the left page, printed text reads: 'COPYRIGHT 1937 GENERAL ELECTRIC COMPANY Home Refrigeration Department Home Building, Cleveland Fifth Edition : September 1939 PRINTED IN U.S.A.'",
+      "The right page features a decorative border around a color illustration showing a refrigerator with visible shelves, food items, and three human figures.",
+      "The right page includes a foreword beginning with a large ornamental initial 'W' followed by text discussing family food problems and recipes adapted for the General Electric Refrigerator.",
+      "A small circular logo appears near the bottom center of the left page, but its details are illegible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0762_P1",
+      "visual_anchors": [
+        "woman in apron at counter",
+        "refrigerator illustration",
+        "foreword text mentioning 'family food problems'"
+      ],
+      "symbolic_mapping": [
+        "the homemaker figure symbolizes domestic labor as structured knowledge",
+        "the refrigerator represents technology mediating household responsibility"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image frames domestic labor not as innate skill but as rationalized, technologically mediated practice requiring instruction—suggesting a shift where moral duty (feeding the family) becomes contingent on correct use of engineered tools.",
+      "alternative_interpretations": [
+        "It may simply reflect standard mid-century advertising conventions without philosophical intent."
+      ],
+      "limitations": [
+        "No explicit ethical language appears; interpretation relies on contextual inference from era-typical design and phrasing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0762_P2",
+      "visual_anchors": [
+        "three figures around refrigerator",
+        "adult guiding children",
+        "text stating 'recipes planned for four to six people'"
+      ],
+      "symbolic_mapping": [
+        "the group configuration implies intergenerational transmission of domestic norms"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene constructs social existence through prescribed roles: the adult embodies authority and instruction, children embody receptivity, and the shared appliance becomes a site where identity is performed via conformity to expected domestic appearance.",
+      "alternative_interpretations": [
+        "The illustration may only aim to depict typical usage scenarios for marketing clarity."
+      ],
+      "limitations": [
+        "Facial expressions and gestures are stylized and non-individualized, limiting claims about interpersonal dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0762_P3",
+      "visual_anchors": [
+        "ornamental initial 'W'",
+        "decorative borders",
+        "formal serif typography"
+      ],
+      "symbolic_mapping": [
+        "typographic formality signals institutional authority over domestic knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The visual framing treats culinary knowledge as codified truth delivered by corporate authority (General Electric), implying a power structure where domestic expertise is outsourced to industrial producers rather than emerging from lived experience.",
+      "alternative_interpretations": [
+        "These design choices may reflect period-appropriate publishing standards rather than ideological positioning."
+      ],
+      "limitations": [
+        "No overt hierarchical language or contrast with alternative sources is present in the visible text or imagery."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:14:37.244476+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-99d26ee4-9dba-94ad-903d-0f852862b90c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 976,
+        "total_tokens": 1785,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031416af6ef0bf0abc46ee",
+      "usage": {
+        "completion_tokens": 829,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1944,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2773
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

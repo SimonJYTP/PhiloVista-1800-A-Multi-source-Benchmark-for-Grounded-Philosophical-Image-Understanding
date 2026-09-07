@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0211",
+  "sample_id": "PHL1800_IRFL_0082",
+  "file_name": "PHL1800_IRFL_0082.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single anthropomorphic yellow circular figure",
+  "captions": {
+    "scene": [
+      "A white background with no environmental details or context.",
+      "The figure occupies the central visual field, with limbs extending laterally and downward.",
+      "No other figures, objects, or spatial markers are present in the frame."
+    ],
+    "action": [
+      "The figure’s eyebrows are sharply angled downward and inward, forming a V-shape over the eyes.",
+      "The mouth is open in a grimace, showing upper and lower teeth with red gums visible between them.",
+      "Both arms are raised with clenched fists positioned near shoulder height."
+    ],
+    "rationale": [
+      "The facial features suggest an intense emotional expression, but the specific emotion cannot be definitively identified from visual cues alone.",
+      "The clenched fists and raised arms indicate physical tension or readiness for action, though no motion is captured.",
+      "The color gradient (yellow to red at the center of the face) may imply intensity, but its semantic meaning is not visually specified."
+    ],
+    "object": [
+      "The figure has a solid yellow circular head with a radial orange-to-red gradient centered on the nose bridge area.",
+      "Two black thick eyebrows slant downward toward the center of the face, meeting above a vertical red line that bisects the forehead.",
+      "The eyes are white ovals with black pupils offset toward the inner corners, and thin black curved lines below them suggest narrowed eyelids.",
+      "The mouth consists of two horizontal rows of rectangular white teeth separated by a red gap representing gums; the lower lip is a simple downward curve.",
+      "The figure has two black cylindrical arms ending in white gloved fists with three visible finger indentations each, and two black cylindrical legs partially visible above blue oval-shaped feet."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0211_P1",
+      "visual_anchors": [
+        "clenched fists",
+        "downward-slanting eyebrows",
+        "red gradient at face center"
+      ],
+      "symbolic_mapping": [
+        "clenched fists → embodied resistance",
+        "red gradient → internal pressure or heat"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The figure embodies a moment of confrontational agency where bodily posture and facial intensity signal an assertion of will against an implied external force.",
+      "alternative_interpretations": [
+        "It may simply represent a stylized cartoon expression of anger without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No contextual cues confirm whether the figure is reacting to a specific agent, event, or internal state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0211_P2",
+      "visual_anchors": [
+        "circular head",
+        "symmetrical limbs",
+        "uniform yellow base color"
+      ],
+      "symbolic_mapping": [
+        "circular form → wholeness or simplicity",
+        "symmetry → intentional design or artificiality"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s standardized, non-organic form suggests identity as constructed appearance—where selfhood is expressed through exaggerated, codified visual traits rather than individual nuance.",
+      "alternative_interpretations": [
+        "It could be a generic emoji-style character designed for universal recognition, not philosophical commentary."
+      ],
+      "limitations": [
+        "The absence of distinguishing features prevents confirmation of intentional identity construction versus default design convention."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0211_P3",
+      "visual_anchors": [
+        "open mouth with visible teeth",
+        "tense facial musculature implied by lines",
+        "raised arms"
+      ],
+      "symbolic_mapping": [
+        "open mouth → vocalization or protest",
+        "tense posture → constraint or resistance"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s posture and expression visualize the paradox of expressive freedom within physical or social constraint—its body is rigidly posed yet attempting articulation.",
+      "alternative_interpretations": [
+        "It may depict a generic ‘angry’ state without reference to systemic or existential conditions."
+      ],
+      "limitations": [
+        "No surrounding environment or opposing entity is shown to ground the constraint visually."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:18:16.834337+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1dbebe55-1597-9b14-8bb5-7e188a0d21de",
+      "usage": {
+        "prompt_tokens": 1709,
+        "completion_tokens": 902,
+        "total_tokens": 2611,
+        "completion_tokens_details": {
+          "text_tokens": 902
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1202,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021805e06f06d0fa3b4cd5",
+      "usage": {
+        "completion_tokens": 767,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3087,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3854
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

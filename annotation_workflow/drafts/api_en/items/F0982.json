@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0982",
+  "sample_id": "PHL1800_HAIV_0468",
+  "file_name": "PHL1800_HAIV_0468.png",
+  "batch_id": "B021",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a black car surrounded by various household and electronic objects on a stylized globe",
+  "captions": {
+    "scene": [
+      "A cartoon-style Earth with green continents and cyan oceans, overlaid with scattered consumer objects and a central black car.",
+      "Multiple rectangular screens of varying sizes and colors are distributed across the globe surface, some with dark or blue displays.",
+      "A yellow lightbulb with a green filament and a brown base floats near Europe; several objects have stick-like appendages extending outward."
+    ],
+    "action": [
+      "The black car is stationary but depicted with anthropomorphic features: one visible eye on the front right fender and red/amber headlights resembling facial elements.",
+      "Several objects—including a vacuum cleaner, a microwave, and a laptop—have thin black lines radiating from them, suggesting connection or motion.",
+      "A small brown banana-shaped object rests on a beige landmass at the bottom edge, separate from other items."
+    ],
+    "rationale": [
+      "The presence of multiple screens and appliances suggests a theme of technology saturation, though no explicit interaction is shown.",
+      "Stick-like lines emanating from objects may indicate connectivity or influence, but their endpoints are unattached and ambiguous.",
+      "The car’s eye and headlights resemble facial features, implying personification, yet no movement or expression is definitively depicted."
+    ],
+    "object": [
+      "A black four-door sedan with purple wheels, red and yellow circular headlights, and a single visible eye on its front right side.",
+      "A yellow incandescent lightbulb with a green coiled filament and brown screw base, positioned above Europe on the globe.",
+      "A gray laptop with a grid-patterned screen and red power button, located to the right of the car.",
+      "An orange-handled vacuum cleaner with a red nozzle and tan body, situated below the car near South America.",
+      "A beige microwave with a blue rectangular window and pink control panel, placed above North America."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0982_P1",
+      "visual_anchors": [
+        "black car with eye",
+        "radiating lines from objects",
+        "globe background"
+      ],
+      "symbolic_mapping": [
+        "car as agent within technological ecosystem",
+        "lines as abstract connections or dependencies"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The car’s personified gaze amid proliferating devices may symbolize human agency embedded in, and possibly overwhelmed by, pervasive technological infrastructure.",
+      "alternative_interpretations": [
+        "It could simply be a child’s drawing combining favorite objects without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels confirm intent; anthropomorphism is minimal and ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0982_P2",
+      "visual_anchors": [
+        "multiple screens",
+        "lightbulb",
+        "globe"
+      ],
+      "symbolic_mapping": [
+        "screens as fragmented knowledge sources",
+        "lightbulb as isolated insight"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The scattered screens and solitary illuminated bulb suggest fragmented access to truth, where illumination is rare and disconnected from broader context.",
+      "alternative_interpretations": [
+        "The arrangement may reflect random placement of toys or drawings without epistemic meaning."
+      ],
+      "limitations": [
+        "Screen contents are blank or uniformly colored; no legible text or data confirms knowledge representation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0982_P3",
+      "visual_anchors": [
+        "vacuum cleaner with handle",
+        "microwave",
+        "car with limbs-like lines"
+      ],
+      "symbolic_mapping": [
+        "appliances as extensions of human labor",
+        "lines as constraints or obligations"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "Domestic tools and transport linked by rigid lines evoke the entanglement of daily labor with systemic constraints, where autonomy is visually mediated through mechanical forms.",
+      "alternative_interpretations": [
+        "The lines may merely be decorative strokes or attempts at perspective by the artist."
+      ],
+      "limitations": [
+        "Lines do not consistently connect objects to each other or to the car; many terminate mid-air."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:38:12.005187+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bbdcb49b-2de3-9f45-bb28-a71f6113fe3b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 925,
+        "total_tokens": 2458,
+        "completion_tokens_details": {
+          "text_tokens": 925
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033751e1e8035a24d849f1",
+      "usage": {
+        "completion_tokens": 785,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2884,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3669
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

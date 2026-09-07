@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0300",
+  "sample_id": "PHL1800_HL_0187",
+  "file_name": "PHL1800_HL_0187.png",
+  "batch_id": "B008",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person reclining on a bed in dim interior light",
+  "captions": {
+    "scene": [
+      "A dimly lit bedroom with framed artwork on the wall and a bedside table holding a lamp and small objects.",
+      "An open French door reveals a balcony with ornate wrought-iron railing, overlooking stone buildings and a distant tower under overcast sky.",
+      "A terracotta planter with green foliage sits on the balcony floor near the railing."
+    ],
+    "action": [
+      "The person lies supine or semi-reclined on a bed, legs bent at the knees, feet bare and visible.",
+      "The person holds an open book or magazine above their torso, oriented toward their face.",
+      "Natural light enters from the open doorway, illuminating the balcony and casting the interior into silhouette."
+    ],
+    "rationale": [
+      "The figure’s posture and object orientation suggest reading, though the book’s content is not visible and the person’s gaze direction cannot be confirmed.",
+      "The balcony railing design and building materials (stone, tile roof) indicate a historic or Mediterranean-style urban setting, but no specific location can be identified.",
+      "The strong backlighting creates high contrast; facial features, clothing details, and exact body position are obscured, limiting definitive interpretation of activity or identity."
+    ],
+    "object": [
+      "A white conical lampshade sits atop a base on a small rectangular side table next to the bed.",
+      "Two framed pictures hang vertically on the wall: one shows a dark floral motif, the other a botanical illustration with leaves and stems.",
+      "The open double doors consist of glass panes with wooden frames; the right door is ajar inward, revealing its inner wood grain.",
+      "A red-orange terracotta pot containing a leafy green plant rests on the tiled balcony floor.",
+      "The bed surface is covered with a textured fabric in muted greenish-brown tones, partially wrinkled beneath the person’s legs."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0300_P1",
+      "visual_anchors": [
+        "open French door",
+        "silhouetted reader",
+        "distant stone tower"
+      ],
+      "symbolic_mapping": [
+        "threshold between interior solitude and exterior world",
+        "book as mediator of knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image stages a tension between enclosed contemplation and external reality, where the open door invites engagement yet the figure remains physically contained—suggesting knowledge pursued within self-imposed constraints.",
+      "alternative_interpretations": [
+        "A routine moment of rest in a vacation rental, with no symbolic intent."
+      ],
+      "limitations": [
+        "No legible text confirms the book’s content or the viewer’s intent; the tower’s significance is unknown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0300_P2",
+      "visual_anchors": [
+        "strong backlighting",
+        "indistinct facial features",
+        "shadowed body"
+      ],
+      "symbolic_mapping": [
+        "light obscuring identity",
+        "interior darkness vs. exterior clarity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The erasure of individual features by shadow may reflect the transient nature of personal appearance against enduring architectural forms, evoking mortality through visual anonymity.",
+      "alternative_interpretations": [
+        "Simple low-light photography causing underexposure, not intentional symbolism."
+      ],
+      "limitations": [
+        "Lighting conditions alone do not prove intentional abstraction of identity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0300_P3",
+      "visual_anchors": [
+        "wrought-iron balcony railing",
+        "person lying horizontally",
+        "vertical tower in distance"
+      ],
+      "symbolic_mapping": [
+        "railing as boundary",
+        "horizontal vs. vertical orientation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The horizontal repose contrasts with the vertical aspiration of the tower, while the railing demarcates private space from public view—implying social existence as negotiated through spatial boundaries and chosen stillness versus movement.",
+      "alternative_interpretations": [
+        "Architectural features coincidentally aligned; no intended metaphor."
+      ],
+      "limitations": [
+        "No evidence the person is observing the tower or contemplating movement; posture may be purely ergonomic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:29:57.121736+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3ff4ba33-c4df-9a46-aa11-20e9be16d25f",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 944,
+        "total_tokens": 1753,
+        "completion_tokens_details": {
+          "text_tokens": 944
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070229389971315b7ac2483c",
+      "usage": {
+        "completion_tokens": 806,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1925,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2731
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

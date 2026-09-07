@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0106",
+  "sample_id": "PHL1800_HL_0193",
+  "file_name": "PHL1800_HL_0193.png",
+  "batch_id": "B004",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of children and one standing adult in an indoor room",
+  "captions": {
+    "scene": [
+      "An indoor setting with yellow walls, a doorway with a bright interior, and a black folding table holding a laptop and papers.",
+      "Multiple children seated on black metal-framed chairs arranged in rows; one child wears a green shirt and blue shorts, another wears a white shirt with a dark logo.",
+      "A standing person in a dark blue t-shirt and jeans faces the seated children; other partially visible individuals sit or stand in the background."
+    ],
+    "action": [
+      "The child in the green shirt sits with legs crossed, hands clasped near chest, head turned toward the standing person.",
+      "The standing person leans slightly forward with hands behind back, appearing to address the group.",
+      "At least five seated individuals face forward or toward the standing person; one child holds a small object near mouth."
+    ],
+    "rationale": [
+      "The arrangement of chairs and orientation of bodies suggests a structured gathering such as a class or workshop, though no explicit signage confirms this.",
+      "The presence of a laptop on the table implies possible digital activity, but no screen content is visible to confirm usage.",
+      "Clothing and posture indicate informality, yet the spatial organization hints at instruction or facilitation—evidence is circumstantial."
+    ],
+    "object": [
+      "A black rectangular laptop sits open on a black folding table with metal legs; a white sheet of paper lies beside it.",
+      "A child in a green short-sleeved shirt and navy blue shorts sits on a black chair with chrome legs, feet off the floor.",
+      "A standing person wears a dark blue t-shirt with faint white text (unreadable), light-wash denim jeans, and dark shoes.",
+      "A second seated child wears a white t-shirt with a circular dark logo containing indistinct white shapes; the logo is not legible.",
+      "The room has vertical wood-paneled walls on the right and a yellow-painted wall with a recessed doorway on the left."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0106_P1",
+      "visual_anchors": [
+        "child in green shirt facing standing adult",
+        "laptop on table",
+        "rows of chairs"
+      ],
+      "symbolic_mapping": [
+        "seated posture → receptivity",
+        "standing posture → authority or guidance"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The spatial hierarchy—standing figure addressing seated listeners—visually enacts a moment where knowledge transmission is implied through bodily positioning, reflecting how social roles are physically instantiated in learning contexts.",
+      "alternative_interpretations": [
+        "This may simply be a casual group meeting with no pedagogical intent; the seating could reflect available furniture rather than intentional arrangement."
+      ],
+      "limitations": [
+        "No facial expressions, speech, or instructional materials are visible to confirm intent or content of interaction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0106_P2",
+      "visual_anchors": [
+        "multiple children in similar chairs",
+        "uniform direction of gaze",
+        "absence of individualized decoration"
+      ],
+      "symbolic_mapping": [
+        "repetition of chairs → standardization",
+        "shared orientation → collective attention"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The uniformity of seating and shared focus suggests a context where individual autonomy is temporarily subordinated to group alignment, raising questions about how environments shape behavioral conformity through physical design.",
+      "alternative_interpretations": [
+        "Children may be voluntarily gathered for entertainment or play; the chairs may be the only ones available, not chosen for symbolic effect."
+      ],
+      "limitations": [
+        "No evidence of coercion, rules, or explicit expectations; posture alone cannot confirm constraint."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0106_P3",
+      "visual_anchors": [
+        "doorway emitting bright light",
+        "children silhouetted against interior",
+        "standing figure partially blocking light source"
+      ],
+      "symbolic_mapping": [
+        "light from doorway → external world or transition",
+        "figure blocking light → mediation or threshold"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The doorway’s luminous opening juxtaposed with the seated group evokes a liminal space—where present engagement occurs just before potential movement outward, symbolizing the suspended moment before decision or departure.",
+      "alternative_interpretations": [
+        "The bright light is likely from an adjacent room’s lighting; the doorway is functionally ordinary and not symbolic."
+      ],
+      "limitations": [
+        "Light intensity is due to exposure settings or ambient lighting; no temporal markers (e.g., clocks, shadows) support a mortality reading."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:00:24.056788+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b7a8023f-fc92-9259-b0cb-8333c202b215",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 1030,
+        "total_tokens": 1647,
+        "completion_tokens_details": {
+          "text_tokens": 1030
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 110,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702000817f37ea110584d94",
+      "usage": {
+        "completion_tokens": 892,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1770,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2662
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

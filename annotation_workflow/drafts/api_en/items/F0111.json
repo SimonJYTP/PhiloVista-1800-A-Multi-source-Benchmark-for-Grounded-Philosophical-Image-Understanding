@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0111",
+  "sample_id": "PHL1800_IRFL_0226",
+  "file_name": "PHL1800_IRFL_0226.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a car wheel in motion on an asphalt surface",
+  "captions": {
+    "scene": [
+      "A dark-colored vehicle’s rear wheel assembly captured at night or in low ambient light, with strong blue-toned illumination highlighting the wheel and tire.",
+      "The wheel contacts a wet or damp asphalt road surface, producing visible vapor or fine particulate dispersion near the tire contact patch.",
+      "The vehicle body is partially visible on the left and right, showing glossy paint reflecting ambient light; no license plates, logos, or readable text are present."
+    ],
+    "action": [
+      "The wheel exhibits rotational motion blur, indicating rapid spinning relative to the camera exposure time.",
+      "A plume of white vapor or dust emanates from the tire–road interface, suggesting friction-induced heating or displacement of surface moisture/particles.",
+      "The tire tread is not clearly resolved due to motion blur and lighting, but the sidewall appears intact and mounted on a five-spoke alloy rim."
+    ],
+    "rationale": [
+      "The motion blur on the wheel strongly suggests active rotation rather than static positioning, though exact speed cannot be quantified from visual evidence alone.",
+      "The white plume near the contact patch is consistent with either tire smoke (from skidding) or steam/dust from heated wet pavement, but its composition is visually ambiguous.",
+      "The absence of visible brake calipers, suspension components, or other mechanical details limits inference about vehicle type, drivetrain, or braking state."
+    ],
+    "object": [
+      "A black-painted vehicle fender curves over a silver five-spoke alloy wheel with a central hub containing five lug nut holes.",
+      "The tire is black rubber with visible sidewall curvature and no discernible tread pattern due to motion blur and lighting angle.",
+      "The asphalt surface is granular-textured, dark gray, and shows specular highlights indicating moisture or recent wetting.",
+      "A diffuse white cloud-like emission originates from the lower-left quadrant of the tire contact zone and extends leftward across the road surface.",
+      "The wheel rim reflects blue light strongly, while the vehicle body reflects cooler tones with subtle gradients indicating curved surfaces."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0111_P1",
+      "visual_anchors": [
+        "rotational motion blur",
+        "vapor plume at tire-road interface",
+        "glossy reflective surfaces"
+      ],
+      "symbolic_mapping": [
+        "motion blur → transient passage of time",
+        "vapor plume → ephemeral consequence of force application"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The image captures a moment where kinetic energy manifests visibly as vapor and blur, underscoring the impermanence of physical exertion and the inevitable dissipation inherent in action.",
+      "alternative_interpretations": [
+        "This may simply depict a routine acceleration or burnout without symbolic intent; the vapor could be condensation from ambient humidity rather than friction effects."
+      ],
+      "limitations": [
+        "No temporal sequence is shown, so causality between motion and vapor cannot be confirmed solely from this frame."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0111_P2",
+      "visual_anchors": [
+        "five-spoke wheel design",
+        "asymmetrical lighting",
+        "partial vehicle enclosure"
+      ],
+      "symbolic_mapping": [
+        "enclosed wheel well → constraint on motion",
+        "symmetric rim vs. chaotic vapor → order versus disruption"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The wheel, engineered for controlled direction, is simultaneously generating uncontrolled dispersion—suggesting that deliberate movement inevitably produces unintended externalities, framing agency within systemic limits.",
+      "alternative_interpretations": [
+        "The asymmetry may result from camera angle and lighting setup rather than intentional compositional symbolism."
+      ],
+      "limitations": [
+        "The vehicle’s orientation and direction of travel are not fully determinable; the ‘journey’ is inferred, not observed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0111_P3",
+      "visual_anchors": [
+        "blue-dominated color cast",
+        "high-contrast reflections",
+        "absence of human figures"
+      ],
+      "symbolic_mapping": [
+        "monochromatic lighting → artificial mediation of perception",
+        "reflection without source visibility → obscured origins"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene is rendered through a selective chromatic filter that enhances certain features while suppressing others, illustrating how truth claims about motion and materiality depend on the instrumental conditions of observation.",
+      "alternative_interpretations": [
+        "The blue lighting may be from a nearby LED source or photographic gel, not a conceptual choice—thus the color may lack intentional meaning."
+      ],
+      "limitations": [
+        "No information about the light source, camera settings, or post-processing is visible; interpretation assumes intentional aesthetic framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:01:23.388956+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-35b32131-a0c1-95e2-a44c-03016801a73f",
+      "usage": {
+        "prompt_tokens": 905,
+        "completion_tokens": 1051,
+        "total_tokens": 1956,
+        "completion_tokens_details": {
+          "text_tokens": 1051
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 398,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020113761aa7ca704247c6",
+      "usage": {
+        "completion_tokens": 913,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2141,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3054
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

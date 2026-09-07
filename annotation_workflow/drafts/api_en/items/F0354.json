@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0354",
+  "sample_id": "PHL1800_HAIV_0196",
+  "file_name": "PHL1800_HAIV_0196.png",
+  "batch_id": "B009",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of stylized human figures surrounding a black arched structure with a green frog on its plinth",
+  "captions": {
+    "scene": [
+      "A conical spotlight illuminates a central black arched structure and surrounding figures against a gradient gray-to-yellow background.",
+      "Six distinct human-like figures stand in a semicircle around the central structure, each rendered with simplified features and monochrome or minimal color clothing.",
+      "The floor is a uniform tan surface casting sharp shadows from all figures and the central structure."
+    ],
+    "action": [
+      "All visible figures are stationary, facing toward the central structure with upright postures.",
+      "A small green frog with a red lower body and dark headpiece stands atop the white plinth of the black arch.",
+      "One figure on the left wears a black sleeveless dress and pink shoes; another on the right wears a gray top and black skirt."
+    ],
+    "rationale": [
+      "The spotlight’s shape suggests an artificial light source positioned above and slightly behind the viewer, given the cone’s apex and shadow directions.",
+      "The frog’s placement on the plinth implies intentional display rather than accidental positioning, though its nature (statue, puppet, etc.) is indeterminate.",
+      "Figures’ lack of facial detail and uniform posture suggest stylization rather than realism, but no explicit narrative context is provided."
+    ],
+    "object": [
+      "The central structure consists of a black arched frame mounted on a white rectangular plinth, which sits atop a larger black rectangular base with a silver-gray horizontal panel below it.",
+      "A green frog with a red lower torso and dark headgear stands centered on the white plinth, facing forward.",
+      "Six human-like figures are present: three on the left (one in black dress, two in black suits), one directly in front (silver-gray suit), two on the right (one bald, one with black hair and gray top), and no partially visible figure on the far right.",
+      "All figures cast long, straight shadows extending away from the light source toward the bottom-left of the image.",
+      "The background transitions smoothly from dark gray at the top corners to pale yellow at the center, forming a radial gradient aligned with the spotlight."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0354_P1",
+      "visual_anchors": [
+        "green frog on plinth",
+        "spotlight cone",
+        "uniformly oriented figures"
+      ],
+      "symbolic_mapping": [
+        "the frog as focal point of collective attention",
+        "spotlight as imposed visibility or judgment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The arrangement suggests a ritualized observation where a singular entity is elevated under institutional illumination while observers assume passive, aligned stances—evoking questions about consensus, surveillance, and the construction of significance.",
+      "alternative_interpretations": [
+        "It may depict a theatrical stage setup with actors awaiting cue, where the frog is a prop or character model."
+      ],
+      "limitations": [
+        "No textual labels, facial expressions, or contextual props confirm ritual, performance, or authority; posture alone does not prove submission or reverence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0354_P2",
+      "visual_anchors": [
+        "black arched structure",
+        "six surrounding figures",
+        "shadows cast uniformly"
+      ],
+      "symbolic_mapping": [
+        "arch as threshold or memorial",
+        "six figures as incomplete set or symbolic number"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The stark contrast between the dark arch and illuminated space, combined with static observers, evokes a moment suspended between presence and absence—suggesting reflection on transience where identity is reduced to silhouette and position.",
+      "alternative_interpretations": [
+        "The scene could represent a product unveiling or exhibition display, with figures as attendees observing a new artifact."
+      ],
+      "limitations": [
+        "The arch lacks inscriptions, funerary motifs, or temporal markers; the frog’s form does not clearly signify death or memory."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0354_P3",
+      "visual_anchors": [
+        "green frog with red base",
+        "monochrome attire of observers",
+        "central symmetry"
+      ],
+      "symbolic_mapping": [
+        "color accent on frog as deviation from norm",
+        "uniform observer appearance as conformity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The sole chromatic anomaly—the green frog with red lower portion—stands out amid otherwise muted figures, possibly symbolizing an individual bearing responsibility or difference within a constrained social field where movement and expression are restricted.",
+      "alternative_interpretations": [
+        "The color scheme may be purely aesthetic, with green and red chosen for visual contrast without symbolic intent."
+      ],
+      "limitations": [
+        "Color usage is minimal and non-representational; no gestures, tools, or spatial barriers indicate constraint or moral burden."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of human figures: candidate states seven, but image shows six distinct human-like figures; the green-and-red object is an animal (frog) not a human figure."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:41:26.977914+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8a810f7f-16ec-9add-9998-75f52d8b89c2",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1082,
+        "total_tokens": 2615,
+        "completion_tokens_details": {
+          "text_tokens": 1082
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024108dbb6fe69300b4787",
+      "usage": {
+        "completion_tokens": 971,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3043,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4014
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

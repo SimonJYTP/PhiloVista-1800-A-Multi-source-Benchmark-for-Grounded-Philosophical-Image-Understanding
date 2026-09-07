@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0840",
+  "sample_id": "PHL1800_MM_0023",
+  "file_name": "PHL1800_MM_0023.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults in professional attire interacting near a table with architectural drawings",
+  "captions": {
+    "scene": [
+      "A brightly lit modern interior with large windows, potted plants, and minimalist furniture.",
+      "A wooden-top table holds an orange folder, open notebooks, and a pen; two black chairs are partially visible.",
+      "A whiteboard-style display shows a line-drawing floor plan of a building with labeled rooms and structural elements."
+    ],
+    "action": [
+      "The woman holds a wine glass in her right hand and a small dark object (possibly a phone or remote) in her left hand, facing the man.",
+      "The man points with his right index finger toward the lower-right portion of the floor plan while holding a small rectangular object in his left hand.",
+      "Both individuals stand upright, oriented toward each other and the displayed drawing, suggesting a discussion or presentation."
+    ],
+    "rationale": [
+      "The presence of architectural drawings and formal attire suggests a professional design review context, though no explicit job titles or company logos are visible.",
+      "The speech bubble contains legible text stating 'These designs are too complex for our budget constraints!', indicating a stated concern about cost versus complexity; however, attribution to either speaker is not visually confirmed.",
+      "The woman’s posture and gaze suggest engagement, but no facial expression is fully visible due to profile view; emotional state cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "A white rectangular display board mounted on a black frame shows a black-and-white architectural floor plan with walls, doors, windows, and room labels (some labels are too small to read).",
+      "The woman wears a light blue long-sleeved shirt, a dark vest, and dark trousers; her hair is pulled back into a low ponytail.",
+      "The man wears a navy suit, white collared shirt, diagonally striped navy-and-white tie, and a wristwatch on his left wrist; he has short brown hair and a trimmed beard.",
+      "On the table, an orange hardcover folder lies atop two stacked white notebooks; a silver pen rests on the top notebook.",
+      "A clear stemmed wine glass containing a pale yellow liquid is held in the woman’s right hand."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0840_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "architectural floor plan",
+        "woman holding wine glass"
+      ],
+      "symbolic_mapping": [
+        "the speech bubble represents expressed constraint",
+        "the floor plan symbolizes planned possibility"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the tension between creative aspiration (design complexity) and material limitation (budget), framing constraint not as absence but as a constitutive condition of practical decision-making.",
+      "alternative_interpretations": [
+        "This may simply depict a routine client meeting where cost feedback is being given, without philosophical intent."
+      ],
+      "limitations": [
+        "The speech bubble is attributed to no specific speaker; its origin is ambiguous and could be editorial rather than diegetic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0840_P2",
+      "visual_anchors": [
+        "man pointing at drawing",
+        "woman observing",
+        "shared focus on plan"
+      ],
+      "symbolic_mapping": [
+        "pointing gesture signifies direction of agency",
+        "shared attention implies negotiated meaning"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "Collaborative sense-making emerges through embodied interaction: the pointing hand and attentive stance constitute a shared epistemic space where professional identity is enacted relationally rather than individually.",
+      "alternative_interpretations": [
+        "The man may be explaining; the woman listening—standard instructional dynamic with no deeper social ontology implied."
+      ],
+      "limitations": [
+        "No verbal exchange is audible or transcribed beyond the single bubble; relational dynamics are inferred from posture alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0840_P3",
+      "visual_anchors": [
+        "wine glass in professional setting",
+        "formal attire",
+        "structured documents"
+      ],
+      "symbolic_mapping": [
+        "wine introduces informality within formality",
+        "documents signify codified knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of ritualized consumption (wine) with technical documentation suggests that truth in design practice is provisional, mediated by social ritual and contingent negotiation rather than pure objective representation.",
+      "alternative_interpretations": [
+        "The wine may indicate a celebratory or relaxed meeting tone, common in certain business cultures, with no epistemological implication."
+      ],
+      "limitations": [
+        "The purpose of the wine glass is not specified; it could be decorative, ceremonial, or incidental."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:21:23.262820+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ed37c608-db48-9252-a26a-e0e756d66386",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1018,
+        "total_tokens": 2551,
+        "completion_tokens_details": {
+          "text_tokens": 1018
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703210626b10c899b9d486f",
+      "usage": {
+        "completion_tokens": 883,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2973,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3856
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0107",
+  "sample_id": "PHL1800_IRFL_0189",
+  "file_name": "PHL1800_IRFL_0189.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized depiction of Earth at night",
+  "captions": {
+    "scene": [
+      "A spherical celestial body against a black background, illuminated on one side with visible city lights.",
+      "Night-side view of a planet showing continental outlines and clusters of yellow-white light points.",
+      "A dark blue sphere with subtle atmospheric glow along its terminator edge."
+    ],
+    "action": [
+      "The planet is shown in static pose with no motion indicated.",
+      "City lights are lit across landmasses, indicating human settlement activity.",
+      "No visible rotation, orbit, or interaction with other objects."
+    ],
+    "rationale": [
+      "The presence of concentrated light clusters suggests anthropogenic illumination rather than natural phenomena.",
+      "The curvature and continental shape strongly resemble Earth, though no labels confirm identity.",
+      "The text overlay 'US$5000 trillion' implies a monetary valuation, but the image alone does not specify what is being valued."
+    ],
+    "object": [
+      "A spherical object with deep blue surface tones and faint cloud-like textures occupies the central frame.",
+      "Yellow-white point sources of light are distributed across the surface, denser in certain regions resembling continents.",
+      "A bright crescent of illumination defines the day-night boundary (terminator) on the right side of the sphere.",
+      "White serif-style text reading 'US$5000 trillion' is superimposed over the central-left portion of the sphere.",
+      "The background is uniformly black with no stars, moons, or other celestial bodies visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0107_P1",
+      "visual_anchors": [
+        "city lights",
+        "dark oceans",
+        "text 'US$5000 trillion'"
+      ],
+      "symbolic_mapping": [
+        "city lights → human economic activity",
+        "monetary value overlay → commodification of planetary scale"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image frames planetary existence through an economic lens, suggesting that collective human presence is quantifiable and reducible to a single financial figure, raising questions about whose interests define such valuation.",
+      "alternative_interpretations": [
+        "It may simply be a visual aid for a macroeconomic statistic, with no philosophical intent."
+      ],
+      "limitations": [
+        "The image provides no context for the origin, purpose, or referent of the monetary figure, making attribution of intent speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0107_P2",
+      "visual_anchors": [
+        "night-side illumination",
+        "global scale",
+        "absence of people"
+      ],
+      "symbolic_mapping": [
+        "night lights → persistent human agency across time zones",
+        "global view → interconnectedness without visible borders"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "By depicting Earth at night with continuous artificial lighting, the image evokes the idea of human civilization as an enduring, planet-scale phenomenon that persists across temporal cycles, yet remains anonymous and disembodied.",
+      "alternative_interpretations": [
+        "It could be a standard satellite-derived night-light composite used for data visualization, devoid of symbolic intent."
+      ],
+      "limitations": [
+        "No individual humans or cultural markers are visible; the abstraction prevents confirmation of intended social commentary."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0107_P3",
+      "visual_anchors": [
+        "text overlay",
+        "planet silhouette",
+        "contrast between lit and dark regions"
+      ],
+      "symbolic_mapping": [
+        "monetary figure → abstraction of value",
+        "dark unlit areas → invisibility of non-monetized life or ecosystems"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The imposition of a precise monetary value onto the whole planet highlights the epistemic limitation of reducing complex ecological and social systems to a single numeric representation, prompting reflection on responsibility for such simplifications.",
+      "alternative_interpretations": [
+        "The text may serve only as a label for a chart or infographic element, with no normative claim intended."
+      ],
+      "limitations": [
+        "The image does not indicate whether the figure refers to GDP, asset value, or another metric, nor does it show who assigned the value."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:00:40.496560+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b3589ad9-a811-9b70-80a3-7bf7889ced8a",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 924,
+        "total_tokens": 1505,
+        "completion_tokens_details": {
+          "text_tokens": 924
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 74,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070200172560d2beb13e40ee",
+      "usage": {
+        "completion_tokens": 780,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1568,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2348
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

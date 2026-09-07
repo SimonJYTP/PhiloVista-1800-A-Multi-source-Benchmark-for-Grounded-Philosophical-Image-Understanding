@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0893",
+  "sample_id": "PHL1800_HAIV_0131",
+  "file_name": "PHL1800_HAIV_0131.png",
+  "batch_id": "B019",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a bald human figure in profile with a visible purple brain, positioned before a shelving unit",
+  "captions": {
+    "scene": [
+      "A gray multi-compartment shelving unit filled with colorful, stylized objects including boxes, bottles, books, and abstract forms.",
+      "The leftmost column contains a red box with a white circular label, a tan cylindrical container, and two blue glass-like vessels with orange caps.",
+      "The rightmost column includes stacked books with purple, yellow, and green spines, a yellow box with green lid, and a small red table."
+    ],
+    "action": [
+      "The figure is stationary in profile, facing right toward the shelves.",
+      "No motion is depicted; all objects are static within fixed compartments.",
+      "The brain is exposed through the skull’s top surface, rendered in purple with visible gyri."
+    ],
+    "rationale": [
+      "The figure’s orientation and gaze direction suggest attention toward the shelves, though no eye movement or expression is visible.",
+      "Objects appear deliberately arranged rather than randomly placed, indicated by consistent alignment and compartmentalization.",
+      "The brain’s visibility implies intentional anatomical exposure, not injury or surgery, given the stylized, non-realistic rendering."
+    ],
+    "object": [
+      "A bald human head in left-facing profile shows a purple brain visible through an open cranial vault.",
+      "A red rectangular box with a white circular emblem containing a green ring and central dot sits on the second shelf, left column.",
+      "A small red four-legged table occupies the bottom-right compartment of the shelving unit.",
+      "Two translucent blue bottles with orange caps and internal vertical striations stand side-by-side on the fourth shelf, middle column.",
+      "A yellow box with a blue horizontal stripe and a white circular emblem identical to the red box’s sits on the second shelf, middle column."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0893_P1",
+      "visual_anchors": [
+        "exposed purple brain",
+        "shelving unit with categorized items"
+      ],
+      "symbolic_mapping": [
+        "brain as repository of knowledge",
+        "shelves as externalized memory or cultural artifacts"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of an exposed brain and organized shelves suggests cognition as both internal processing and external curation—knowledge as constructed from internal structure and external inputs.",
+      "alternative_interpretations": [
+        "A literal inventory scene where the figure inspects stored goods; the brain depiction may be decorative or stylistic without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels confirm symbolic intent; color and form are stylized, not semantically coded."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0893_P2",
+      "visual_anchors": [
+        "bald head with visible brain",
+        "uniform gray shelves",
+        "color-blocked objects"
+      ],
+      "symbolic_mapping": [
+        "transparency of thought",
+        "systematic ordering of experience"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s lack of hair and exposed neural tissue contrasts with the orderly, colorful contents of the shelves, implying identity as shaped by both intrinsic biology and curated external influences.",
+      "alternative_interpretations": [
+        "The baldness and brain exposure are aesthetic choices for visual clarity in illustration, not conceptual statements about selfhood."
+      ],
+      "limitations": [
+        "No facial features or clothing details beyond collar and jacket distinguish individual identity; appearance is minimal."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0893_P3",
+      "visual_anchors": [
+        "red box with circular emblem",
+        "yellow box with identical emblem",
+        "blue box with orange stripe"
+      ],
+      "symbolic_mapping": [
+        "repetition of emblem as shared classification",
+        "color-coded containers as categorical boundaries"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "Repeated emblems across differently colored boxes imply standardized social categorization, where shared symbols organize disparate elements into collective meaning systems.",
+      "alternative_interpretations": [
+        "The emblems are generic design motifs with no intended semantic function, like brand placeholders in stock illustration."
+      ],
+      "limitations": [
+        "The emblem’s inner detail is too small to read; its meaning cannot be verified visually."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:25:11.827044+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-56d03432-65b1-96a1-9c1e-f2ec997590a3",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 926,
+        "total_tokens": 2459,
+        "completion_tokens_details": {
+          "text_tokens": 926
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703250082751467b1fe4ba6",
+      "usage": {
+        "completion_tokens": 792,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2887,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3679
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

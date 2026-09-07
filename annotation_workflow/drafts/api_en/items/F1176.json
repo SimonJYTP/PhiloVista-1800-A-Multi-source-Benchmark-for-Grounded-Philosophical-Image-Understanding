@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1176",
+  "sample_id": "PHL1800_HL_0329",
+  "file_name": "PHL1800_HL_0329.png",
+  "batch_id": "B025",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a light-green passenger bus with passengers on its roof and in its cabin",
+  "captions": {
+    "scene": [
+      "A two-lane paved road flanked by vegetation under hazy daylight conditions",
+      "Red-flowering shrubs line the left roadside median; trees appear in the background on both sides",
+      "A white car follows behind the bus, and a distant truck is visible further back on the right lane"
+    ],
+    "action": [
+      "Six individuals are seated on the roof of the bus, facing forward or slightly sideways",
+      "At least three people are visible inside the bus through the windshield: driver, front passenger, and rear cabin occupant",
+      "The bus is moving forward on the road, as indicated by its orientation and relative position to other vehicles"
+    ],
+    "rationale": [
+      "The bus’s headlights are off and ambient light is diffuse, suggesting daytime but not bright noon; haze reduces contrast",
+      "Passengers on the roof likely indicate overcrowding or local transport norms, though no signage confirms this",
+      "Text on the bus includes Devanagari script and a license plate (UP23T 3687), but full meaning requires linguistic knowledge beyond visual evidence"
+    ],
+    "object": [
+      "The bus has a yellow roof panel with red Devanagari text reading 'फोन्ट नगरी डिपो' and smaller unreadable script below it",
+      "The front grille is horizontal-bar style, flanked by two circular headlights and two smaller auxiliary lamps",
+      "The license plate reads 'UP23T 3687' in black characters on a yellow background, mounted below the bumper",
+      "Six distinct heads are visible on the roof: four clustered left-center, one near center-right, and one at far right edge",
+      "Inside the cabin, a person wearing a green shirt sits in the driver’s seat, another in a light-colored shirt occupies the front passenger seat, and a third person in a patterned shirt is visible behind them"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1176_P1",
+      "visual_anchors": [
+        "six people seated atop the bus roof",
+        "driver and passengers inside cabin",
+        "road stretching ahead"
+      ],
+      "symbolic_mapping": [
+        "roof riders → collective endurance under spatial constraint",
+        "forward motion → continuation despite precarious positioning"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The image embodies a tension between imposed limitation—evident in the necessity of riding on the roof—and persistent forward movement, suggesting that agency persists even within structural constraints.",
+      "alternative_interpretations": [
+        "This may simply reflect standard local transit practice with no symbolic intent; the roof seating could be routine rather than exceptional."
+      ],
+      "limitations": [
+        "No visible facial expressions or contextual signage confirm intentional symbolism; posture and arrangement could be purely functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1176_P2",
+      "visual_anchors": [
+        "hazy atmosphere",
+        "distant trees partially obscured",
+        "bus and cars in motion blur marginally"
+      ],
+      "symbolic_mapping": [
+        "atmospheric obscurity → epistemic uncertainty",
+        "shared vehicle space → interdependence amid limited visibility"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The reduced visual clarity and shared travel space evoke how communal existence often proceeds without full epistemic certainty, relying instead on mutual presence and directionality.",
+      "alternative_interpretations": [
+        "Haze may result from pollution or weather, not metaphor; vehicle occupancy reflects practical capacity limits, not philosophical stance."
+      ],
+      "limitations": [
+        "Atmospheric haze is physically measurable but not semantically encoded; no textual or behavioral cues link it to cognition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1176_P3",
+      "visual_anchors": [
+        "Devanagari text on roof",
+        "license plate indicating Uttar Pradesh registration",
+        "mixed attire of passengers"
+      ],
+      "symbolic_mapping": [
+        "regional script + state plate → embedded local identity",
+        "diverse clothing → coexistence of individual appearance within collective mobility"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The bus functions as a mobile site where regional identity (via script and registration) and individual presentation converge, illustrating how social existence is enacted through shared infrastructure and visible differentiation.",
+      "alternative_interpretations": [
+        "Text and plate are administrative identifiers with no expressive function; clothing variation is incidental, not curated."
+      ],
+      "limitations": [
+        "Script is readable as Devanagari but not fully translatable from image alone; attire details are low-resolution and non-distinctive."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:58:47.333825+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a84cc907-11b4-9084-8544-e034a08c9594",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1038,
+        "total_tokens": 1807,
+        "completion_tokens_details": {
+          "text_tokens": 1038
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070358279daff8e09424462c",
+      "usage": {
+        "completion_tokens": 893,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1963,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2856
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

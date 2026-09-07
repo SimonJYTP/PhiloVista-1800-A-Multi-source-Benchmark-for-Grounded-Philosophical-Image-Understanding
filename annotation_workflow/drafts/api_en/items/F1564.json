@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1564",
+  "sample_id": "PHL1800_IRFL_0286",
+  "file_name": "PHL1800_IRFL_0286.jpg",
+  "batch_id": "B032",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one child sitting on a carpeted floor",
+  "captions": {
+    "scene": [
+      "A narrow indoor corridor with patterned green carpet, cream walls, and a white paneled door at the far end.",
+      "A vertical radiator is mounted on the right wall; a backpack rests against the left wall near a partially visible bed frame.",
+      "Warm directional lighting casts strong shadows, illuminating the child from the front-left while leaving the background dim."
+    ],
+    "action": [
+      "The child sits cross-legged on the floor, leaning forward with head bowed and arms wrapped around knees.",
+      "The child’s hands are clasped or interlocked near the shins, elbows resting on knees.",
+      "The child remains stationary with no visible motion blur or limb displacement."
+    ],
+    "rationale": [
+      "The posture suggests withdrawal or rest, but no facial expression or muscle tension is visible to confirm intent.",
+      "The lighting direction implies an off-camera light source positioned low and to the left of the child.",
+      "The presence of a backpack and bed frame indicates a residential or temporary lodging setting, though room function is not fully determinable."
+    ],
+    "object": [
+      "A child with short dark hair wears a light-colored long-sleeve shirt and dark trousers with dark socks.",
+      "The carpet features a repeating floral motif in beige and orange tones on a green field.",
+      "A white paneled door with a metallic handle is centered at the corridor’s end, slightly ajar.",
+      "A brown fabric backpack lies on the floor beside a wooden bed frame on the left side of the image.",
+      "A white finned radiator is affixed vertically to the right wall, partially obscuring the child’s right side."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1564_P1",
+      "visual_anchors": [
+        "child seated alone",
+        "radiator casting shadow",
+        "closed door at corridor end"
+      ],
+      "symbolic_mapping": [
+        "closed door → limitation of agency",
+        "shadowed figure → obscured subjectivity"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The spatial confinement and partial occlusion evoke questions about autonomy within structured environments, where physical boundaries mirror social constraints on individual presence.",
+      "alternative_interpretations": [
+        "The scene may simply depict a moment of quiet rest in a modest interior, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1564_P2",
+      "visual_anchors": [
+        "patterned carpet",
+        "repeating floral motif",
+        "uniform lighting gradient"
+      ],
+      "symbolic_mapping": [
+        "repetitive pattern → routine or entrapment",
+        "light gradient → passage of time or transition"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The static repetition of domestic ornamentation juxtaposed with the child’s stillness suggests a suspended temporality—where habitual surroundings both anchor and limit movement through lived experience.",
+      "alternative_interpretations": [
+        "The carpet pattern is standard commercial flooring; its repetition carries no intended meaning."
+      ],
+      "limitations": [
+        "Pattern design origin and cultural significance are not visually verifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1564_P3",
+      "visual_anchors": [
+        "child’s arms wrapped around legs",
+        "body angled toward radiator",
+        "backpack near bed frame"
+      ],
+      "symbolic_mapping": [
+        "self-embrace → internal containment",
+        "proximity to heating element → need for warmth or comfort"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The child’s self-contained posture amid domestic objects raises inquiry into how appearance of vulnerability intersects with societal expectations of care and responsibility toward dependent subjects.",
+      "alternative_interpretations": [
+        "The pose is ergonomically neutral and common for seated rest on carpet."
+      ],
+      "limitations": [
+        "No indicators of age, dependency status, or caregiver presence are visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:45:46.112413+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4add9910-104d-9498-824d-d3a53bb9ecec",
+      "usage": {
+        "prompt_tokens": 737,
+        "completion_tokens": 888,
+        "total_tokens": 1625,
+        "completion_tokens_details": {
+          "text_tokens": 888
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 230,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044532e4a77e0ef6534450",
+      "usage": {
+        "completion_tokens": 750,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1768,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2518
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0021",
+  "sample_id": "PHL1800_HL_0346",
+  "file_name": "PHL1800_HL_0346.png",
+  "batch_id": "B003",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a traffic control officer standing in a street intersection",
+  "captions": {
+    "scene": [
+      "An overcast urban street corner with brick buildings, mature trees, and a green street sign reading 'Ditmars Blvd'.",
+      "A metal pole supports a horizontal arm holding a traffic signal and two street signs: one partially visible reading 'ONE WAY' and the other 'Ditmars Blvd'.",
+      "Two orange traffic cones are placed on the asphalt near the curb; a black SUV is stopped behind the officer."
+    ],
+    "action": [
+      "The officer stands upright in the roadway wearing a reflective vest with yellow lettering (partially legible as 'TRAFFIC'), holding a white glove in the right hand and gesturing with the left arm extended horizontally.",
+      "A person sits on a low stoop beside a potted plant, holding a leash attached to a medium-sized tan dog seated beside them.",
+      "A black SUV is stationary in the travel lane directly behind the officer, with its brake lights illuminated."
+    ],
+    "rationale": [
+      "The officer’s posture, vest, and hand signal strongly suggest active traffic direction rather than passive observation, though no vehicles are visibly moving through the intersection at this instant.",
+      "The presence of two traffic cones and the officer’s position in the lane indicate a temporary traffic control situation, possibly due to construction or an incident, but no construction equipment or debris is visible.",
+      "The 'ONE WAY' sign orientation and the direction of the officer’s gesture imply traffic flow is restricted to one direction on the cross street, yet the SUV’s position suggests it may be waiting for clearance to proceed across the intersection."
+    ],
+    "object": [
+      "A green rectangular street sign with white sans-serif text reading 'Ditmars Blvd' is mounted on a horizontal metal arm extending from a gray utility pole.",
+      "A vertical gray metal pole bears a white rectangular sign with black uppercase text 'ONE WAY' and a black arrow pointing left; the sign is partially obscured by the pole and a yellow traffic light housing.",
+      "A traffic signal assembly hangs from the horizontal arm and contains three vertically aligned circular amber lenses, all unlit.",
+      "A person wearing a blue short-sleeved shirt and dark pants sits on a concrete stoop next to a large terracotta planter containing a leafy shrub; a tan dog with pointed ears sits calmly beside them on a leash.",
+      "An orange traffic cone with two white reflective bands stands upright on the asphalt near the curb; another identical cone is visible further back near the SUV’s rear wheel."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0021_P1",
+      "visual_anchors": [
+        "officer’s raised arm",
+        "two traffic cones",
+        "stationary SUV"
+      ],
+      "symbolic_mapping": [
+        "the raised arm as a symbol of imposed order",
+        "cones as markers of provisional boundaries"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where individual mobility is suspended by institutional authority, illustrating how social order is enacted through embodied gestures and temporary spatial demarcations.",
+      "alternative_interpretations": [
+        "This is simply routine traffic management during a minor road event, with no deeper implication beyond functional coordination."
+      ],
+      "limitations": [
+        "No signage indicates the reason for the stoppage; the officer’s exact directive is ambiguous without motion or context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0021_P2",
+      "visual_anchors": [
+        "person and dog on stoop",
+        "brick building facade",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "the stoop as threshold between private and public",
+        "dog as silent witness to urban routine"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The stillness of the seated figure and dog against the backdrop of regulated movement evokes the tension between personal continuity and the transient demands of civic infrastructure.",
+      "alternative_interpretations": [
+        "The person and dog are merely waiting, with no symbolic intent; their presence is incidental to the traffic scene."
+      ],
+      "limitations": [
+        "Facial expressions and body language are indistinct; the dog’s attention direction is unclear."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0021_P3",
+      "visual_anchors": [
+        "green street sign 'Ditmars Blvd'",
+        "yellow traffic light housing",
+        "reflector vest with partial text"
+      ],
+      "symbolic_mapping": [
+        "street name as fixed identifier amid flux",
+        "vest text as fragmented authority"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "Legible yet incomplete textual elements—such as the truncated vest inscription and the unilateral 'ONE WAY' directive—highlight how truth and authority in public space are conveyed through partial, standardized signs that require interpretation and compliance.",
+      "alternative_interpretations": [
+        "The text is fully functional for its purpose; partial visibility does not undermine its communicative efficacy."
+      ],
+      "limitations": [
+        "The vest’s full text is unreadable; the 'ONE WAY' sign’s full context (e.g., which street it governs) is not fully visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:49:22.534803+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a80eb6fd-a45f-9d42-b16c-6c7dafd38d6d",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1127,
+        "total_tokens": 1936,
+        "completion_tokens_details": {
+          "text_tokens": 1127
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070149014d51be81350f4fe2",
+      "usage": {
+        "completion_tokens": 990,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2104,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3094
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

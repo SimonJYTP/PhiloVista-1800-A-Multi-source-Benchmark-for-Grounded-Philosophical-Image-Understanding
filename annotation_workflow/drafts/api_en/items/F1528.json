@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1528",
+  "sample_id": "PHL1800_HAIV_0488",
+  "file_name": "PHL1800_HAIV_0488.png",
+  "batch_id": "B031",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of approximately 12–14 people walking across a grassy field",
+  "captions": {
+    "scene": [
+      "A stylized outdoor scene with heavily processed, high-contrast lighting: bright yellow-orange sky above dark storm-like clouds and silhouetted treeline.",
+      "Foreground shows green-yellow grass underfoot; right side features a large evergreen tree with dense foliage.",
+      "Midground contains a crowd moving left-to-right, with one prominent American flag on a pole held near the left edge."
+    ],
+    "action": [
+      "Multiple individuals are in motion, captured mid-stride, suggesting forward locomotion across open terrain.",
+      "One person holds a vertically oriented U.S. flag with red-and-white stripes and blue canton visible; flag appears unfurled but not fully taut.",
+      "Several figures wear brightly colored outerwear (e.g., lime green, pink, white), while others wear darker clothing; some carry bags or backpacks."
+    ],
+    "rationale": [
+      "The horizontal alignment and overlapping limbs suggest coordinated movement rather than static posing, though motion blur is absent due to stylization.",
+      "The presence of a national flag implies possible affiliation or symbolic intent, but no text or insignia confirms purpose.",
+      "Figures are too abstracted by painterly filtering to reliably determine age, gender, or facial expression; only gross body shapes and clothing colors are discernible."
+    ],
+    "object": [
+      "A U.S. flag with visible red stripes, white stripes, and a blue field in the upper-left quadrant is held upright by a figure near the left edge.",
+      "At least 12 distinct human forms are present: 3 clustered on far left near flag, 5–6 in central mass, and 4–5 spaced toward right including one isolated figure in light clothing.",
+      "A tall coniferous tree occupies the right third of the image, its branches dense and dark green with black shadowing.",
+      "The sky exhibits extreme contrast: a luminous yellow-orange band at top left, irregular black cloud masses below it, and overexposed white regions elsewhere.",
+      "Ground surface is mottled green and ochre, consistent with grassy terrain, with no visible paths, signage, or built structures."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1528_P1",
+      "visual_anchors": [
+        "U.S. flag held aloft",
+        "group moving in same direction",
+        "stormy sky above"
+      ],
+      "symbolic_mapping": [
+        "flag as collective symbol",
+        "shared trajectory as social cohesion"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of a national emblem carried through turbulent atmospheric conditions may reflect the persistence of communal identity amid external instability.",
+      "alternative_interpretations": [
+        "The flag could be incidental decoration or part of a recreational event; the sky may simply be artistic exaggeration without symbolic intent."
+      ],
+      "limitations": [
+        "Stylization obscures fine detail needed to confirm intentional symbolism or context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1528_P2",
+      "visual_anchors": [
+        "multiple figures in motion",
+        "varied clothing colors",
+        "uneven spacing between individuals"
+      ],
+      "symbolic_mapping": [
+        "diverse attire as individuality within collectivity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The heterogeneous appearance of walkers moving together suggests a philosophical tension between personal expression and shared purpose in collective action.",
+      "alternative_interpretations": [
+        "Clothing variation may result from random selection or weather adaptation, not deliberate identity signaling."
+      ],
+      "limitations": [
+        "No facial features or gestures confirm intentionality behind attire choices."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1528_P3",
+      "visual_anchors": [
+        "overexposed white sky region",
+        "dark cloud forms",
+        "ground-level figures small against scale"
+      ],
+      "symbolic_mapping": [
+        "sky as indeterminate horizon",
+        "figures as finite agents"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The overwhelming scale of the sky relative to human figures evokes existential finitude, where movement occurs under conditions beyond individual control.",
+      "alternative_interpretations": [
+        "The sky’s distortion is purely aesthetic—a digital filter—not meant to convey metaphysical meaning."
+      ],
+      "limitations": [
+        "Absence of temporal markers (e.g., clocks, aging signs) prevents confirmation of mortality theme."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:42:06.139223+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a8e02946-2c21-9e60-8b96-8e8f4d15f1e3",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 990,
+        "total_tokens": 2523,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704414564a20486461849a7",
+      "usage": {
+        "completion_tokens": 849,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2943,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3792
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

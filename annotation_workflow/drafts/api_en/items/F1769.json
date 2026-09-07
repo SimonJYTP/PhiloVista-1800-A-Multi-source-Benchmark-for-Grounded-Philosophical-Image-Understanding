@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1769",
+  "sample_id": "PHL1800_IRFL_0153",
+  "file_name": "PHL1800_IRFL_0153.jpg",
+  "batch_id": "B036",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults seated on a teal sofa",
+  "captions": {
+    "scene": [
+      "A brightly lit interior room with large white-framed windows showing green foliage outside.",
+      "A teal fabric sofa with two patterned blue-and-white square pillows and one plain teal pillow.",
+      "Natural light casts distinct shadows across the sofa and occupants, indicating a daytime setting."
+    ],
+    "action": [
+      "The woman sits cross-legged, leaning slightly forward with her left arm resting on the back of the sofa, looking toward the man.",
+      "The man reclines with legs extended, right hand near a black smartphone on the sofa cushion, head turned toward the woman.",
+      "Both individuals maintain eye contact directionally: the woman gazes at the man; the man gazes toward the woman’s face or upper torso."
+    ],
+    "rationale": [
+      "The woman’s posture—arm on backrest, body oriented toward the man—suggests engagement in an interaction rather than passive rest.",
+      "The man’s hand proximity to the phone without holding it implies potential recent or pending device use, but no active operation is visible.",
+      "Sunlight patterns indicate a fixed light source (likely window), supporting that the scene is static at this moment, though motion cannot be ruled out."
+    ],
+    "object": [
+      "The woman has long dark hair, wears a beige top under a black open-front cardigan, light-wash jeans, and a silver hoop earring in her left ear.",
+      "The man has short dark hair, a beard, wears a dark grey short-sleeved button-up shirt and dark grey trousers, and has a small earring in his left earlobe.",
+      "A black smartphone lies screen-down on the sofa cushion between the two individuals, near the man’s right hand.",
+      "Two decorative pillows feature a repeating geometric diamond-in-square pattern in blue and white; one is partially under the man’s arm, the other beside the woman.",
+      "The sofa is upholstered in textured teal fabric with visible seam lines and tufting on the backrest."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1769_P1",
+      "visual_anchors": [
+        "woman’s arm resting on sofa back",
+        "man’s gaze directed at woman",
+        "shared physical proximity on sofa"
+      ],
+      "symbolic_mapping": [
+        "physical orientation as nonverbal communication",
+        "shared space as relational context"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement and mutual gaze suggest a moment of interpersonal presence where co-location and attention constitute a form of shared social reality.",
+      "alternative_interpretations": [
+        "They may be waiting silently for an external event, with gaze direction coincidental rather than intentional."
+      ],
+      "limitations": [
+        "No facial expressions are fully legible; micro-expressions or intent cannot be confirmed from visible features alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1769_P2",
+      "visual_anchors": [
+        "smartphone lying idle on cushion",
+        "man’s hand near but not touching device",
+        "natural light illuminating scene"
+      ],
+      "symbolic_mapping": [
+        "device proximity without engagement as suspension of digital mediation"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The unheld phone in proximity to the man signifies a choice point—presence over distraction—highlighting how technological artifacts can embody latent constraints on attentional freedom.",
+      "alternative_interpretations": [
+        "The phone may have been placed there moments ago; its current state reflects routine placement, not deliberate abstention."
+      ],
+      "limitations": [
+        "No evidence confirms whether the phone was recently used or will be used next; temporal sequence is unknown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1769_P3",
+      "visual_anchors": [
+        "patterned pillows with geometric symmetry",
+        "uniform teal upholstery",
+        "window panes dividing exterior view into rectangles"
+      ],
+      "symbolic_mapping": [
+        "repetition of grids as structuring of lived space",
+        "framing of nature by architecture"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The ordered visual motifs—pillow patterns, window grids, and consistent color palette—frame the subjects within a constructed domestic aesthetic, suggesting identity is partially shaped by curated environmental appearance.",
+      "alternative_interpretations": [
+        "The patterns are purely functional/decorative choices with no symbolic intent; their repetition is coincidental or conventional."
+      ],
+      "limitations": [
+        "No signage, labels, or personal items confirm intentional semiotic design; patterns may be standard commercial upholstery."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:11:33.093915+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b7f12fd9-002c-9189-bb28-62126b53a57d",
+      "usage": {
+        "prompt_tokens": 3010,
+        "completion_tokens": 991,
+        "total_tokens": 4001,
+        "completion_tokens_details": {
+          "text_tokens": 991
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2503,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070511163e15fdfd30824d42",
+      "usage": {
+        "completion_tokens": 857,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4985,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5842
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

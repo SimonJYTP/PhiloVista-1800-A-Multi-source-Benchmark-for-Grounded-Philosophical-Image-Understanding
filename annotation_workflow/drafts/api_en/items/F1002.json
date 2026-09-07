@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1002",
+  "sample_id": "PHL1800_HL_0313",
+  "file_name": "PHL1800_HL_0313.png",
+  "batch_id": "B021",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a small dog with light gray and white fur leaning out of the rear passenger-side window of a dark green sedan",
+  "captions": {
+    "scene": [
+      "A sunlit urban street with asphalt road, concrete sidewalk with painted curb lines, parked and moving vehicles, low-rise commercial buildings, and trees behind a metal fence.",
+      "The foreground shows a dark green four-door sedan parked on the right side of the road; the background includes a red car, a blue hatchback, a white truck with a red cargo bed, and pedestrians near storefronts.",
+      "Shadows cast sharply across the road and sidewalk indicate bright daylight; the street appears moderately busy with traffic and some pedestrian activity."
+    ],
+    "action": [
+      "The dog rests its front paws on the open window sill and extends its head and upper torso outside the vehicle, facing forward along the road direction.",
+      "A person wearing a dark top is partially visible inside the car, seated in the rear passenger seat behind the dog, with their arm and shoulder near the window frame.",
+      "Vehicles are in motion: the red car ahead is moving away, the blue car is turning or changing lanes, and the white truck is stationary or slowly advancing near a building."
+    ],
+    "rationale": [
+      "The dog’s posture—paws on the sill, body extended outward—is consistent with active observation rather than passive rest, suggesting engagement with the environment.",
+      "The presence of multiple vehicles and visible lane markings implies this is a public roadway used for through traffic, not a private lot or dead-end street.",
+      "The partial visibility of a human figure in the rear seat supports that the dog is accompanied, though no direct interaction is observable."
+    ],
+    "object": [
+      "A small dog with shaggy light gray and white fur has its front legs draped over the open rear passenger-side window ledge of a dark green sedan, with its head turned slightly leftward toward the road ahead.",
+      "The dark green sedan has a black side mirror, silver door handle, and a rear spoiler; its rear passenger window is fully lowered, and the interior shows a dark fabric seat and part of a person’s arm and torso.",
+      "A red hatchback is driving ahead in the same lane, approximately 20 meters away, with its brake lights off and rear license plate partially visible but unreadable.",
+      "A white cab-over-engine truck with a red metal cargo bed is parked or idling near a yellow-painted building with a sign reading 'BANK' in uppercase letters; the sign text is legible but other nearby signage is blurred or unreadable.",
+      "A concrete sidewalk runs parallel to the road, marked with intermittent white painted lines and scattered debris including a small brown object near the curb."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1002_P1",
+      "visual_anchors": [
+        "dog leaning out window",
+        "open car window",
+        "road stretching ahead"
+      ],
+      "symbolic_mapping": [
+        "the open window as a threshold between containment and exposure",
+        "the dog’s gaze toward the road as anticipation of movement"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The dog’s voluntary extension beyond the car’s boundary embodies a momentary negotiation between safety (inside) and curiosity (outside), reflecting how agency often manifests at liminal thresholds.",
+      "alternative_interpretations": [
+        "The dog may simply be cooling itself or reacting to wind, with no intentional exploration implied."
+      ],
+      "limitations": [
+        "No facial expression or muscle tension is discernible to confirm intent; the dog’s head orientation could be passive response to airflow."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1002_P2",
+      "visual_anchors": [
+        "person partially visible in rear seat",
+        "dog positioned in front of that person",
+        "car stationary relative to curb"
+      ],
+      "symbolic_mapping": [
+        "the obscured human as background condition enabling the dog’s foreground action",
+        "spatial hierarchy implying care without direct supervision"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The arrangement suggests a relational dependency where the human’s presence enables the dog’s experience, raising questions about responsibility when care is implicit rather than active.",
+      "alternative_interpretations": [
+        "The person may be sleeping or distracted; the dog’s position could be accidental rather than facilitated."
+      ],
+      "limitations": [
+        "Only a fragment of the person is visible; their attention, posture, or intent cannot be determined from the image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1002_P3",
+      "visual_anchors": [
+        "sharp shadows on pavement",
+        "multiple vehicles in motion",
+        "static buildings in background"
+      ],
+      "symbolic_mapping": [
+        "shadows indicating fixed time of day amid transient traffic",
+        "buildings representing enduring structures versus fleeting movement"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The contrast between the fixed architecture and the dynamic flow of vehicles—including the dog’s ephemeral posture—evokes the tension between permanence and transience inherent in urban temporality.",
+      "alternative_interpretations": [
+        "The scene is ordinary daily traffic; the shadows merely indicate midday lighting with no deeper temporal symbolism."
+      ],
+      "limitations": [
+        "No clock, calendar, or aging indicators are present; the ‘permanence’ of buildings is assumed from typical construction, not verified visually."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:37:40.070747+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e7d59535-1a96-9a47-a8d4-85bb0183b779",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 1175,
+        "total_tokens": 1964,
+        "completion_tokens_details": {
+          "text_tokens": 1175
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070337206299581245634a51",
+      "usage": {
+        "completion_tokens": 1035,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2127,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3162
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

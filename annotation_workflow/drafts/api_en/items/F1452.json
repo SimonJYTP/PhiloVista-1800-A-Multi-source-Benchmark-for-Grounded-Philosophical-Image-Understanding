@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1452",
+  "sample_id": "PHL1800_IRFL_0381",
+  "file_name": "PHL1800_IRFL_0381.jpg",
+  "batch_id": "B030",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a cluttered indoor living space with no visible people",
+  "captions": {
+    "scene": [
+      "A carpeted room with white paneled walls, containing a plaid-covered futon, scattered cardboard boxes, plastic bags, and loose items on the floor.",
+      "A tripod stands near the center of the room beside a black backpack; clothing hangs over the futon and a small wooden stool.",
+      "Bright light enters from a doorway on the right, illuminating debris including papers, containers, tools, and packaging."
+    ],
+    "action": [
+      "No human or animal figures are present; all objects are stationary.",
+      "Clothing is draped over furniture and the tripod, indicating recent use or abandonment.",
+      "Multiple open cardboard boxes and torn packaging suggest recent unpacking or disassembly."
+    ],
+    "rationale": [
+      "The absence of visible persons implies the scene is unoccupied at capture time, though recent activity is evident from displaced items.",
+      "The density and variety of objects (e.g., tools, containers, electronics) suggest functional use rather than intentional art installation.",
+      "Some text is partially visible on boxes (e.g., 'HARDWOOD' on a white box), but most printed material is illegible due to angle, distance, or occlusion."
+    ],
+    "object": [
+      "A wooden-framed futon covered with a beige-and-brown plaid fabric holds several garments and a dark jacket draped over its backrest.",
+      "A silver-and-black tripod with three legs and a central column stands upright on the carpet near the futon’s right side.",
+      "A white plastic shopping bag sits near the foreground left, next to an orange plastic jug with a green cap and an open cardboard box.",
+      "A blue rectangular object resembling a book or manual lies face-up in the lower center, with red and white graphics and unreadable text.",
+      "A black backpack rests on the floor to the right of the tripod, adjacent to a yellow-and-white stacked storage unit holding a labeled box."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1452_P1",
+      "visual_anchors": [
+        "open cardboard boxes",
+        "discarded packaging",
+        "scattered papers"
+      ],
+      "symbolic_mapping": [
+        "unpacking as transition",
+        "clutter as unresolved potential"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The accumulation of unpacked materials and ephemera evokes a suspended moment between departure and settlement, where decisions remain unmade and time appears arrested in physical disorder.",
+      "alternative_interpretations": [
+        "This is simply a temporarily disorganized space during relocation or cleaning, with no deeper temporal implication."
+      ],
+      "limitations": [
+        "No clocks, calendars, or dated documents are visible to confirm temporal framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1452_P2",
+      "visual_anchors": [
+        "clothing draped over furniture",
+        "tripod positioned centrally",
+        "black backpack nearby"
+      ],
+      "symbolic_mapping": [
+        "garments as absent presence",
+        "tripod as instrument of observation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The arrangement implies a person’s recent but invisible presence—identity mediated through abandoned artifacts and tools of documentation—raising questions about self-representation when the subject is absent.",
+      "alternative_interpretations": [
+        "These items were placed for practical reasons (e.g., drying clothes, storing gear) without symbolic intent."
+      ],
+      "limitations": [
+        "No personal identifiers (photos, names, distinctive wear patterns) confirm intentional representation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1452_P3",
+      "visual_anchors": [
+        "stacked boxes with partial label 'HARDWOOD'",
+        "blue manual",
+        "metal canisters"
+      ],
+      "symbolic_mapping": [
+        "packaged materials as deferred utility",
+        "manuals as unrealized knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "Scattered instructional and material objects suggest knowledge and labor are present but unapplied, reflecting a gap between intention and execution where truth resides in potential rather than outcome.",
+      "alternative_interpretations": [
+        "Items are in transit or mid-use; their arrangement reflects workflow, not philosophical tension."
+      ],
+      "limitations": [
+        "The manual’s content and the purpose of the canisters are not legible or verifiable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:34:21.786867+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-acc64add-7022-9a02-be83-5c09e33e14f3",
+      "usage": {
+        "prompt_tokens": 1341,
+        "completion_tokens": 970,
+        "total_tokens": 2311,
+        "completion_tokens_details": {
+          "text_tokens": 970
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 834,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043407f8f342b1680642d1",
+      "usage": {
+        "completion_tokens": 827,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2623,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3450
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

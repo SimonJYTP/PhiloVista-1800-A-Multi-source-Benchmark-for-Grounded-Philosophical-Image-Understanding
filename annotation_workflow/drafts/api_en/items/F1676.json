@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1676",
+  "sample_id": "PHL1800_HL_0372",
+  "file_name": "PHL1800_HL_0372.png",
+  "batch_id": "B034",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults standing beside a tree on a village street",
+  "captions": {
+    "scene": [
+      "A paved street in a stone-built village with shops, parked cars, and pedestrians under daylight.",
+      "A low stone wall with potted plants borders the sidewalk where two people stand near a large tree trunk.",
+      "Background buildings include white-walled cottages with signage; one sign reads 'COTSWOLD' and another shows 'PRIVATE PARKING'."
+    ],
+    "action": [
+      "An older man in a blue jacket holds a white plastic bag and faces a woman in a striped top.",
+      "The woman stands with her left hand near her mouth and right arm crossed over her torso, looking toward the man.",
+      "Two other pedestrians walk across the street behind them: one in a light shirt and dark trousers, another in dark clothing."
+    ],
+    "rationale": [
+      "The man’s posture and bag suggest he may have just shopped, but no receipt or store exit is visible—this is speculative.",
+      "The woman’s hand-to-mouth gesture could indicate thoughtfulness or surprise, but facial expression is partially obscured and context absent.",
+      "The presence of multiple signs (e.g., 'PRIVATE PARKING', 'COTSWOLD') implies a commercial tourist area, though exact function is not confirmed by visual evidence alone."
+    ],
+    "object": [
+      "A mature tree with thick, textured bark stands between two people and a stone retaining wall.",
+      "A white plastic shopping bag with blue print is held in the man’s left hand.",
+      "A green cylindrical bin labeled 'GREEN' in white capital letters sits on the roadside near the curb.",
+      "A black sedan is parked on the left side of the street, partially behind a white A-frame signboard.",
+      "A rectangular window on the right building displays a poster with a black shoe silhouette and unreadable text above it."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1676_P1",
+      "visual_anchors": [
+        "man holding shopping bag",
+        "woman with hand near face",
+        "stone wall separating street from garden"
+      ],
+      "symbolic_mapping": [
+        "the bag as transient possession",
+        "the wall as boundary between public and private space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of everyday transaction (bag) and bodily hesitation (hand to face) against a fixed architectural boundary evokes tension between social role performance and individual interiority within constrained public space.",
+      "alternative_interpretations": [
+        "They are simply waiting for someone or discussing directions; no symbolic depth is required."
+      ],
+      "limitations": [
+        "Facial expressions are not fully visible; intent cannot be determined from posture alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1676_P2",
+      "visual_anchors": [
+        "large tree trunk",
+        "stone wall with plants",
+        "background cottages with signage"
+      ],
+      "symbolic_mapping": [
+        "tree as enduring natural presence amid human activity",
+        "signage as markers of commodified identity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The aged tree stands silently while humans engage in fleeting interaction and commerce, suggesting a contrast between biological continuity and socially constructed self-presentation through dress and consumption.",
+      "alternative_interpretations": [
+        "The tree is merely a convenient meeting point; its age is irrelevant to the scene."
+      ],
+      "limitations": [
+        "No visible rings or decay confirm tree age; 'aged' is inferred from girth and bark texture only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1676_P3",
+      "visual_anchors": [
+        "two people facing each other",
+        "yellow road marking curving away",
+        "pedestrians walking independently in background"
+      ],
+      "symbolic_mapping": [
+        "facing stance as momentary alignment",
+        "curved line as divergence path"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The convergent positioning of two individuals amid diverging paths (yellow line, separate walkers) visually embodies the philosophical notion that social connection occurs at junctures of otherwise independent trajectories.",
+      "alternative_interpretations": [
+        "They are just talking; the yellow line is a standard traffic marking with no symbolic role."
+      ],
+      "limitations": [
+        "The yellow line does not visibly intersect their feet or indicate directionality relative to them."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:00:22.598300+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-56522f4d-e868-9f0c-86af-4cf7688e06ce",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 966,
+        "total_tokens": 1715,
+        "completion_tokens_details": {
+          "text_tokens": 966
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070500083998b4d8212743ab",
+      "usage": {
+        "completion_tokens": 828,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1874,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2702
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

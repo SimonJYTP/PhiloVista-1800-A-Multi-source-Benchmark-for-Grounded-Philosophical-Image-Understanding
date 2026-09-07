@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1476",
+  "sample_id": "PHL1800_MM_0061",
+  "file_name": "PHL1800_MM_0061.jpg",
+  "batch_id": "B030",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men in business attire seated at a conference table",
+  "captions": {
+    "scene": [
+      "An indoor office setting with beige walls, a large window with white blinds, and a potted plant on a wooden shelf in the background.",
+      "A polished orange-brown wooden conference table occupies the foreground and midground.",
+      "Two black leather executive chairs are visible; one occupied by each man."
+    ],
+    "action": [
+      "The foreground man smiles broadly, looks toward the viewer, and holds a pen over an open white notebook on a blue folder.",
+      "The background man wears glasses and a beard, looks down at a laptop keyboard, and types with both hands.",
+      "A speech bubble originates from the foreground man’s head containing legible English text."
+    ],
+    "rationale": [
+      "The foreground man’s posture, direct gaze, and smile suggest he is posing or presenting rather than engaged in spontaneous work; however, this is not verifiable from visual evidence alone.",
+      "The background man’s focused gaze and hand placement indicate active typing, but the screen content is not visible, so task identity is uncertain.",
+      "The speech bubble text is fully legible and attributed to the foreground man via standard comic convention; no other textual elements appear readable."
+    ],
+    "object": [
+      "The foreground man has brown styled hair, wears a navy blue suit, white collared shirt, and a navy tie with diagonal white stripes.",
+      "The background man has brown hair, a short beard, black-rimmed glasses, a navy blue suit, white shirt, and a teal tie with diagonal dark stripes.",
+      "A closed silver laptop sits in front of the background man; its screen is angled away and unreadable.",
+      "A blue folder with white paper pages lies flat on the table before the foreground man; the top sheet is blank.",
+      "A small green-leafed potted plant in a terracotta pot rests on a wooden shelf behind the background man."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1476_P1",
+      "visual_anchors": [
+        "foreground man’s smile",
+        "speech bubble",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "smile and speech bubble map to public self-presentation",
+        "suit maps to professional role adoption"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image stages a moment where personal narrative (‘I landed the job because of my mom’) is performed within institutional dress code, suggesting identity is co-constructed through familial attribution and occupational role.",
+      "alternative_interpretations": [
+        "This may simply be a stock illustration for career success stories, with no intended philosophical depth."
+      ],
+      "limitations": [
+        "The speech bubble is the sole source of narrative; without it, the scene conveys only generic professionalism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1476_P2",
+      "visual_anchors": [
+        "two men at same table",
+        "different focus directions",
+        "shared environment"
+      ],
+      "symbolic_mapping": [
+        "spatial proximity without interaction maps to social coexistence without communion"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "Simultaneous presence in a shared professional space does not imply shared attention or mutual recognition, highlighting how modern labor environments can sustain parallel existences rather than integrated community.",
+      "alternative_interpretations": [
+        "The men may be collaborating silently; their divergent gazes could reflect division of tasks, not alienation."
+      ],
+      "limitations": [
+        "No eye contact or gesture confirms absence of interaction; posture alone is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1476_P3",
+      "visual_anchors": [
+        "pen poised over blank page",
+        "open notebook",
+        "laptop in use"
+      ],
+      "symbolic_mapping": [
+        "blank page maps to potential knowledge creation",
+        "laptop maps to mediated information processing"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of analog note-taking readiness and digital engagement suggests a hybrid epistemic practice where truth claims are negotiated between embodied inscription and algorithmic mediation.",
+      "alternative_interpretations": [
+        "The notebook may be unused decoration; the pen may be held for pose, not imminent writing."
+      ],
+      "limitations": [
+        "No writing appears on the page, and the pen tip does not touch paper, so intent to write is unconfirmed."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:37:00.163792+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-01dc7bef-9f53-9dad-bd0b-031826960920",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 975,
+        "total_tokens": 2508,
+        "completion_tokens_details": {
+          "text_tokens": 975
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070436355b7c3a4a09154c14",
+      "usage": {
+        "completion_tokens": 837,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2927,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3764
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

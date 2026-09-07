@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0401",
+  "sample_id": "PHL1800_MM_0078",
+  "file_name": "PHL1800_MM_0078.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two athletes on a volleyball court separated by a net",
+  "captions": {
+    "scene": [
+      "Indoor volleyball court with light blue flooring, white boundary lines, and a black net with white tape.",
+      "Dark background with two vertical red-and-white banners partially visible behind the net.",
+      "Bright overhead lighting casting distinct shadows of the athletes onto the court surface."
+    ],
+    "action": [
+      "A female athlete in a red-and-white jersey (number 13) stands facing away from the viewer, extending her right arm toward the net with an open hand.",
+      "A male athlete in a red jersey (number 10) stands on the opposite side of the net, holding a volleyball in his left hand, looking toward the female athlete.",
+      "A white speech bubble originates near the female athlete’s head and contains legible text: 'Haha! I'm pretending the ball hurt a lot!'"
+    ],
+    "rationale": [
+      "The speech bubble suggests performative behavior, but its content is presented as visual text rather than observable action; thus, the claim about pretending is not independently verifiable from body language alone.",
+      "The athletes are positioned at typical ready stance distances from the net, consistent with pre-serve or post-play positioning, though no serve or hit is occurring.",
+      "The ball is held by the male athlete, not in motion, and no contact with either player is visible; therefore, no impact or injury can be confirmed visually."
+    ],
+    "object": [
+      "The female athlete wears a red sleeveless jersey with white trim and the number '13' in white with black outline on the back, paired with white shorts featuring three red vertical stripes on each side and red waistband.",
+      "She wears red crew socks with white bands at the top and black athletic shoes with red and white accents.",
+      "Her hair is styled in long braids gathered into a low ponytail.",
+      "The male athlete wears a solid red short-sleeved jersey with the number '10' in white on the chest, red shorts with white side stripes, and black shoes with white soles.",
+      "A standard volleyball net with black mesh and white upper band spans horizontally across the image, separating the two athletes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0401_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "female athlete's outstretched hand",
+        "male athlete holding ball"
+      ],
+      "symbolic_mapping": [
+        "speech bubble represents self-disclosed performance",
+        "outstretched hand signals non-aggression or playfulness"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image stages a moment where social interaction is mediated through explicit verbal framing—'pretending' becomes a shared convention, revealing how identity is performed and negotiated in sport contexts.",
+      "alternative_interpretations": [
+        "It may simply depict a lighthearted pause during practice, with the text added for comedic effect unrelated to actual gameplay dynamics."
+      ],
+      "limitations": [
+        "The speech bubble is artificial overlay text; no facial expression or gesture confirms the speaker’s intent or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0401_P2",
+      "visual_anchors": [
+        "net dividing two players",
+        "static posture of both athletes",
+        "held ball not in play"
+      ],
+      "symbolic_mapping": [
+        "net as boundary between roles",
+        "stillness as suspension of competition"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The suspended action highlights a liminal space where choice is present but unexercised—freedom exists in the pause before action, constrained only by rules and mutual recognition.",
+      "alternative_interpretations": [
+        "This could be a rendered still from a video game, where poses are pre-scripted and not indicative of real-time decision-making."
+      ],
+      "limitations": [
+        "No motion blur, facial cues, or contextual indicators confirm intentional pausing versus static rendering."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0401_P3",
+      "visual_anchors": [
+        "numbered jerseys",
+        "uniform color coordination",
+        "symmetrical court layout"
+      ],
+      "symbolic_mapping": [
+        "numbers denote assigned roles",
+        "uniformity implies institutional structure"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "Standardized attire and spatial division reflect institutional frameworks that assign responsibility and regulate conflict, suggesting sport as a microcosm of structured societal power relations.",
+      "alternative_interpretations": [
+        "The uniforms merely indicate team affiliation without implying deeper systemic commentary."
+      ],
+      "limitations": [
+        "No logos, emblems, or hierarchical markers beyond numbers are visible to confirm institutional authority or ethical framing."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:44:00.549788+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-67b0ec7f-e357-942d-a3d8-fac7f18fdac1",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1042,
+        "total_tokens": 2575,
+        "completion_tokens_details": {
+          "text_tokens": 1042
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024334d32a12e5afb1468c",
+      "usage": {
+        "completion_tokens": 899,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2991,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3890
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

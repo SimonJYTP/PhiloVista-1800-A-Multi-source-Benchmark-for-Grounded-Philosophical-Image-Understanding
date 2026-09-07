@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0710",
+  "sample_id": "PHL1800_HL_0198",
+  "file_name": "PHL1800_HL_0198.png",
+  "batch_id": "B016",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red double-decker bus with cream upper deck",
+  "captions": {
+    "scene": [
+      "A red double-decker bus is on a paved road in front of a brick building housing a bus station and commercial signage.",
+      "The bus displays multiple advertisements including 'Torbay Aircraft Museum' and 'Pollen's', and route number '203 SPECIAL'.",
+      "Yellow pedestrian warning signs reading 'PEDESTRIANS EXTREME DANGER!' are placed along the curb near the bus."
+    ],
+    "action": [
+      "The bus is stationary or moving slowly on the road, with its front wheels turned slightly left.",
+      "A person wearing a yellow high-visibility vest stands beside the open front door of the bus, facing inward.",
+      "Two individuals are visible inside the driver’s cab: one seated at the wheel, another standing behind them."
+    ],
+    "rationale": [
+      "The bus appears to be at or near a bus stop because of the proximity to the 'Torquay Bus Station' sign and the presence of a staff member in high-visibility clothing.",
+      "The bus likely serves a special or heritage route, indicated by the 'SPECIAL' designation on the destination display and vintage styling.",
+      "The presence of multiple safety warnings suggests this is a designated passenger drop-off/pick-up zone with known hazards for pedestrians."
+    ],
+    "object": [
+      "The bus is a classic AEC Routemaster-style vehicle, painted red with a cream-colored upper deck roof and side panels.",
+      "The front of the bus features a chrome grille, round headlights, and a destination blind showing '203 SPECIAL'.",
+      "On the side of the bus, a banner reads 'TORBAY AIRCRAFT MUSEUM OPEN DAILY', accompanied by an illustration of a biplane.",
+      "A second side advertisement includes the word 'POLLEN'S' and a circular logo with a blue figure inside.",
+      "The building behind has a curved brick facade, large windows, and signage for 'First', 'National Express', and 'Welcome to Torquay Bus Station'."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0710_P1",
+      "visual_anchors": [
+        "red double-decker bus",
+        "‘PEDESTRIANS EXTREME DANGER!’ signs",
+        "high-visibility vest wearer"
+      ],
+      "symbolic_mapping": [
+        "the bus as a symbol of public mobility infrastructure",
+        "warning signs as markers of institutional risk management"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of mass transit infrastructure and explicit danger warnings reflects how collective mobility is structured through regulated constraints that simultaneously enable and restrict individual movement.",
+      "alternative_interpretations": [
+        "This is simply a routine bus stop with standard safety signage; no deeper meaning is intended."
+      ],
+      "limitations": [
+        "No textual explanation of the warnings’ origin or enforcement is visible; their interpretive weight depends on assumed context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0710_P2",
+      "visual_anchors": [
+        "‘TORBAY AIRCRAFT MUSEUM’ banner",
+        "vintage bus design",
+        "‘OPEN DAILY’ text"
+      ],
+      "symbolic_mapping": [
+        "museum advertisement on transport vehicle links past technology to present experience"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The bus—functioning in the present—carries imagery of historical aviation, suggesting a continuity where knowledge of past technological endeavors is preserved and disseminated through everyday public interfaces.",
+      "alternative_interpretations": [
+        "The banner is purely commercial promotion with no temporal or epistemic intent."
+      ],
+      "limitations": [
+        "The museum’s content, mission, or curatorial stance is not visible; only its name and operational status are shown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0710_P3",
+      "visual_anchors": [
+        "two people in driver’s cab",
+        "person in high-vis vest beside open door",
+        "multiple company logos (First, National Express)"
+      ],
+      "symbolic_mapping": [
+        "shared space of operation reflecting layered labor roles and corporate coordination"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The visible division of roles—driver, assistant/staff, and corporate branding—illustrates how social existence in public transit is mediated through interdependent labor and institutional identity, where human action is embedded within technological and organizational frameworks.",
+      "alternative_interpretations": [
+        "These are just routine operational personnel; no sociological pattern is evident."
+      ],
+      "limitations": [
+        "Individual identities, job titles, and employer relationships are not legible; only visual roles are inferred."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:09:53.744225+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e11b00c5-6e09-9629-bc5a-331b37d13a5b",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 1038,
+        "total_tokens": 1787,
+        "completion_tokens_details": {
+          "text_tokens": 1038
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070309380648a045e30b4e8a",
+      "usage": {
+        "completion_tokens": 891,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1916,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2807
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

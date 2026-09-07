@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0707",
+  "sample_id": "PHL1800_IRFL_0425",
+  "file_name": "PHL1800_IRFL_0425.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single tiger",
+  "captions": {
+    "scene": [
+      "A tiger stands on light-colored rocks beside a body of still, grayish water.",
+      "A large weathered log lies horizontally across the water behind the tiger.",
+      "The background consists of water and the submerged portion of the log, with no vegetation visible."
+    ],
+    "action": [
+      "The tiger is mid-stride, with its left front paw lifted and right hind paw planted on rock.",
+      "Its head is turned toward the right side of the frame, eyes open and focused forward.",
+      "Its tail extends straight back with a slight upward curve at the tip, showing full striping."
+    ],
+    "rationale": [
+      "The tiger’s posture suggests locomotion rather than resting, based on limb placement and weight distribution.",
+      "The absence of visible human-made structures or signage implies a naturalistic or controlled habitat setting, but this cannot be confirmed from visual evidence alone.",
+      "The tiger’s gaze direction and ear orientation indicate attention toward something outside the frame to the right, though the target is not visible."
+    ],
+    "object": [
+      "The tiger has orange fur with black vertical stripes of varying thickness across its torso, limbs, and tail; white fur is present on its muzzle, throat, chest, and inner limbs.",
+      "Its right front paw is fully planted on a rock, while the left front paw is raised approximately 5 cm above the surface, indicating motion.",
+      "The tiger’s whiskers are long, white, and radiate outward from both sides of its snout; at least 12 individual whiskers are visible on the right side.",
+      "A small dark tag or mark is visible on the upper left flank near the base of the tail, appearing as a thin linear object embedded in the fur.",
+      "The log behind the tiger shows greenish-gray lichen or moss patches on its bark and a cut end with concentric growth rings visible on the left side."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0707_P1",
+      "visual_anchors": [
+        "tiger’s striped pattern",
+        "rock-water boundary",
+        "forward gaze"
+      ],
+      "symbolic_mapping": [
+        "stripes as markers of individuation within species",
+        "edge of land/water as threshold of agency"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The tiger’s distinct stripe configuration—visually unique yet conforming to species norms—embodies the tension between individual identity and biological category, while its poised movement across the rock-water interface suggests a moment of deliberate transition, not passive presence.",
+      "alternative_interpretations": [
+        "The stripes may simply serve camouflage; the stance may reflect routine patrol behavior without intentionality."
+      ],
+      "limitations": [
+        "No behavioral context (e.g., prey, conspecifics, enclosure boundaries) is visible to confirm intentional choice."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0707_P2",
+      "visual_anchors": [
+        "still water surface",
+        "submerged log",
+        "tiger’s reflection faintly visible"
+      ],
+      "symbolic_mapping": [
+        "water as mirror of impermanence",
+        "log as remnant of past structure"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The muted reflection in the water, distorted and incomplete, evokes epistemic limits: what is seen is partial and mediated, paralleling how perception of reality is always filtered through contingent conditions.",
+      "alternative_interpretations": [
+        "The water is merely a substrate; any reflection is incidental and not meaningful."
+      ],
+      "limitations": [
+        "The reflection is extremely faint and fragmented, making symbolic reading speculative."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0707_P3",
+      "visual_anchors": [
+        "tiger’s alert ears",
+        "forward-facing eyes",
+        "tense neck musculature"
+      ],
+      "symbolic_mapping": [
+        "vigilance as embodied responsibility",
+        "spatial positioning as constraint-aware action"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The tiger’s sustained attentiveness—physically manifested in ear angle, eye focus, and posture—suggests an organism continuously negotiating its environment under constraints, implying a non-human form of situated ethical engagement with immediate surroundings.",
+      "alternative_interpretations": [
+        "These features are standard for a healthy predator scanning for threats or opportunities, not moral cognition."
+      ],
+      "limitations": [
+        "No internal state can be observed; all interpretation relies on extrapolation from morphology and posture."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:09:50.870314+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d1dab8d9-4080-91f9-991b-33a1ebea993a",
+      "usage": {
+        "prompt_tokens": 1229,
+        "completion_tokens": 999,
+        "total_tokens": 2228,
+        "completion_tokens_details": {
+          "text_tokens": 999
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 722,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703094039fac4164c6e40f7",
+      "usage": {
+        "completion_tokens": 857,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2528,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3385
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

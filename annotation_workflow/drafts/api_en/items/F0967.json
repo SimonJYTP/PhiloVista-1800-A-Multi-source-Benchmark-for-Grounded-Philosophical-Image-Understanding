@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0967",
+  "sample_id": "PHL1800_MM_0098",
+  "file_name": "PHL1800_MM_0098.jpg",
+  "batch_id": "B021",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two females: an adult standing and a child seated at a kitchen counter",
+  "captions": {
+    "scene": [
+      "A brightly lit domestic kitchen with white cabinetry, a red-and-white striped valance, pendant lighting, and baked goods visible on counters and shelves.",
+      "Natural light enters through two multi-pane windows behind the adult; one window contains a small potted plant on its sill.",
+      "The countertop holds flour dusting, stacked flatbreads, folded napkins, a toaster oven with bread, and a tray of pastries."
+    ],
+    "action": [
+      "The adult female stands with hands on hips, facing the child, mouth slightly open as if speaking.",
+      "The child sits on a red-cushioned metal stool, leaning forward with both hands resting on the counter, looking up toward the adult.",
+      "A speech bubble originates near the adult’s head and contains legible text: 'You should follow your dreams, whatever they may be.'"
+    ],
+    "rationale": [
+      "The adult’s posture and orientation suggest engagement in conversation with the child, supported by the presence of a speech bubble.",
+      "The child’s gaze direction and body lean indicate attention toward the adult, consistent with listening behavior.",
+      "The presence of flour, raw dough remnants, and finished baked items implies recent or ongoing food preparation activity."
+    ],
+    "object": [
+      "The adult wears a white short-sleeved collared shirt, a brown apron with gold trim and embroidered text 'Chalken', white socks, and brown lace-up shoes.",
+      "The child wears a red-and-white horizontally striped short-sleeved shirt, blue denim jeans, red socks, and white sneakers with red laces.",
+      "A brass-colored metal barstool with a red circular cushion supports the child; it has three concentric footrings.",
+      "A stainless steel toaster oven sits on the right counter, containing a loaf of bread; beside it are stacked golden-brown flatbreads and folded beige cloth napkins.",
+      "A copper-colored canister with a wire handle sits on the left counter next to a white plate holding six small round pastries."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0967_P1",
+      "visual_anchors": [
+        "speech bubble with 'follow your dreams'",
+        "child looking upward",
+        "adult in apron suggesting mentorship role"
+      ],
+      "symbolic_mapping": [
+        "speech bubble → encouragement of personal aspiration",
+        "upward gaze → receptivity to guidance"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image visually stages intergenerational transmission of aspirational values, where the adult’s utterance anchors a moment of moral instruction about self-determination within a domestic setting.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine kitchen interaction with added narrative text for storytelling effect, not necessarily philosophical intent."
+      ],
+      "limitations": [
+        "The speech bubble is the sole textual evidence; without it, the philosophical reading collapses."
+      ],
+      "sufficiency": "supported"
+    },
+    {
+      "candidate_id": "AI_F0967_P2",
+      "visual_anchors": [
+        "flour-dusted counter",
+        "stacked flatbreads",
+        "apron with 'Chalken' text"
+      ],
+      "symbolic_mapping": [
+        "baking activity → labor as care",
+        "domestic space → site of identity formation"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The kitchen functions as a symbolic arena where embodied labor (baking) intersects with identity construction, particularly for the child observing and participating in routine domestic practice.",
+      "alternative_interpretations": [
+        "The flour and food items merely indicate a cooking session without deeper symbolic resonance."
+      ],
+      "limitations": [
+        "No visible action of the child baking; only observation is confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0967_P3",
+      "visual_anchors": [
+        "red-and-white striped valance",
+        "warm lighting",
+        "shared counter space"
+      ],
+      "symbolic_mapping": [
+        "striped pattern → generic kitchen decor",
+        "shared surface → relational proximity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visual harmony of color, light, and spatial proximity suggests a nurturing social environment where freedom to dream is verbally affirmed amid material routine.",
+      "alternative_interpretations": [
+        "The decor reflects common kitchen aesthetics with no intentional symbolism."
+      ],
+      "limitations": [
+        "Striped valance is generic; no unique cultural or temporal markers confirm symbolic intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Apron text misread as 'Garden' instead of 'Chalken'; object descriptions contain minor inaccuracies (e.g., 'stacked pancakes' vs. 'stacked flatbreads'); philosophy interpretations include unsupported symbolic mappings (e.g., striped valance as 'tradition')"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:31:52.528351+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5bc02051-1082-981d-8700-3601a9874575",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 998,
+        "total_tokens": 2531,
+        "completion_tokens_details": {
+          "text_tokens": 998
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703313830bfa8978d864ba9",
+      "usage": {
+        "completion_tokens": 985,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2953,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3938
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

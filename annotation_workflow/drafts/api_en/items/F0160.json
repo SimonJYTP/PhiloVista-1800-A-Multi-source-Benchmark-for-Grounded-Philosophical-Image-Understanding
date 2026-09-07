@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0160",
+  "sample_id": "PHL1800_MM_0073",
+  "file_name": "PHL1800_MM_0073.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "referee holding a card and three players standing nearby",
+  "captions": {
+    "scene": [
+      "A green football pitch with red stadium seating in the background and blue advertising hoardings.",
+      "Four individuals are visible: one referee in black kit, one player in white kit with number 10, and two players in red kits (one with number 14 partially visible).",
+      "The referee stands facing forward, raising his right hand holding a white rectangular object; a speech bubble above him contains English text."
+    ],
+    "action": [
+      "The referee holds a white card aloft in his raised right hand and gestures with his left hand near his chest.",
+      "The player in white (number 10) stands upright, looking toward the referee with mouth slightly open and arms relaxed at his sides.",
+      "The two players in red stand with backs or partial profiles to the camera; one has 'CHAU' and '14' visible on his jersey."
+    ],
+    "rationale": [
+      "The referee’s raised card and posture suggest a disciplinary action is being communicated, though the card color and exact nature cannot be confirmed from this angle.",
+      "The speech bubble text 'I will make fair calls.' is present but its origin (e.g., added digitally) cannot be verified visually; it may not reflect actual spoken words.",
+      "Numbering on shorts (3 on referee, 10 and 11 on white player’s shorts) appears inconsistent—11 is on the right short leg while 10 is on the jersey—suggesting possible image manipulation or non-standard kit design."
+    ],
+    "object": [
+      "The referee wears a black short-sleeved polo shirt with a white logo on the left chest, black shorts with white numeral '3' on the left thigh, black socks, and black cleats.",
+      "The player in white wears an Adidas jersey with black stripes on shoulders, a national crest on the left chest, a UEFA badge on the right sleeve, white shorts with black numerals '10' on the front and '11' on the right leg, white socks with black bands, and orange-yellow cleats.",
+      "A speech bubble with black sans-serif text reading 'I will make fair calls.' is positioned above the referee’s head and overlaps the background.",
+      "One red-jerseyed player in the background has a white numeral '1' partially visible on his back; another red-jerseyed player to the right shows 'CHAU' above numeral '14'.",
+      "The referee’s left wrist bears a black watch or band; his right forearm has a black armband with a white patch."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0160_P1",
+      "visual_anchors": [
+        "referee holding white card",
+        "speech bubble stating 'I will make fair calls.'",
+        "player in white observing attentively"
+      ],
+      "symbolic_mapping": [
+        "white card as symbol of formal judgment",
+        "speech bubble as assertion of procedural integrity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image stages a moment where authority declares its commitment to impartiality, foregrounding the tension between performative assurance and observable action.",
+      "alternative_interpretations": [
+        "The speech bubble is a digital overlay added post-capture, making the statement decorative rather than documentary."
+      ],
+      "limitations": [
+        "No audio or context confirms the utterance was spoken; the card’s color (white vs. yellow/red) is ambiguous due to lighting and resolution."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0160_P2",
+      "visual_anchors": [
+        "referee’s number 3 on shorts",
+        "player’s mismatched numbers 10 (jersey) and 11 (shorts)",
+        "red-jerseyed players with partial names/numbers"
+      ],
+      "symbolic_mapping": [
+        "numerical inconsistency as disruption of expected order",
+        "partial visibility of identity markers as fragmentation of role clarity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Discrepancies in numbering across kits subtly challenge the assumed coherence of institutional roles, suggesting identity in sport is constructed and potentially unstable.",
+      "alternative_interpretations": [
+        "The numbering reflects legitimate kit variations (e.g., squad vs. match numbers) and is not anomalous."
+      ],
+      "limitations": [
+        "Only one angle is shown; full kit specifications are not visible, so mismatches may be intentional design."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0160_P3",
+      "visual_anchors": [
+        "referee’s raised arm",
+        "static postures of surrounding players",
+        "empty seats in background"
+      ],
+      "symbolic_mapping": [
+        "raised arm as gesture of decisive power",
+        "stillness of others as acceptance or suspension of agency"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The frozen tableau emphasizes how institutional authority halts motion—not through force, but through the expectation of compliance embedded in shared rules.",
+      "alternative_interpretations": [
+        "Players are simply waiting for the referee’s next instruction; no deeper constraint is implied."
+      ],
+      "limitations": [
+        "Temporal context is missing; the stillness could be momentary rather than structural."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:11:50.848813+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-23183f67-dcce-9c74-9746-62a1c35c2c87",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1156,
+        "total_tokens": 2689,
+        "completion_tokens_details": {
+          "text_tokens": 1156
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021129f977fa7079d2481e",
+      "usage": {
+        "completion_tokens": 1005,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3098,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4103
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

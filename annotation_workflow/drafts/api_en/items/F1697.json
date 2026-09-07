@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1697",
+  "sample_id": "PHL1800_IRFL_0251",
+  "file_name": "PHL1800_IRFL_0251.jpg",
+  "batch_id": "B035",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male seated on floor",
+  "captions": {
+    "scene": [
+      "Indoor domestic setting with gray fabric sofa, beige pillow, and light wood shelving unit in background",
+      "Dim ambient lighting with directional illumination highlighting subject's face and arms",
+      "Blurred green foliage visible behind subject, suggesting potted plant near window or wall"
+    ],
+    "action": [
+      "Subject holds black smartphone in right hand, screen facing him, eyes directed at device",
+      "Subject’s left hand grips hair at crown of head, forearm vertical, elbow bent at ~90 degrees",
+      "Subject sits cross-legged on floor, torso leaning slightly forward, facial muscles tensed"
+    ],
+    "rationale": [
+      "Facial expression suggests focused attention or negative affect due to proximity of brow furrow, narrowed eyes, and mouth tension",
+      "Hand-on-head gesture commonly associated with stress or confusion, though alternative interpretations include fatigue or scalp irritation",
+      "Device orientation and gaze alignment indicate active engagement with phone content, but specific content is not visible"
+    ],
+    "object": [
+      "The subject wears a short-sleeved gray crew-neck t-shirt with visible seam at collar and slight wrinkling across chest.",
+      "The subject wears blue denim trousers with visible knee creasing and no belt.",
+      "A black rectangular smartphone with rounded corners is held in the subject’s right hand; screen is dark and no text or icons are legible.",
+      "A gray upholstered sofa with textured fabric occupies the left background; a beige square pillow rests against its backrest.",
+      "A light-colored open-shelf unit with four visible cubby compartments stands in the right background; contents are indistinct and out of focus."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1697_P1",
+      "visual_anchors": [
+        "hand gripping hair",
+        "focused gaze on phone",
+        "tense facial musculature"
+      ],
+      "symbolic_mapping": [
+        "hand-on-head as embodied response to information overload",
+        "phone as mediator of external demands"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the tension between autonomous cognition and externally imposed informational pressure, where the body registers epistemic strain before conscious resolution.",
+      "alternative_interpretations": [
+        "The subject may simply be reading a difficult message or troubleshooting a technical issue without philosophical implication."
+      ],
+      "limitations": [
+        "No visible text or interface elements confirm the nature of the phone content, limiting claims about knowledge or constraint sources."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1697_P2",
+      "visual_anchors": [
+        "cross-legged floor seating",
+        "proximity to sofa",
+        "absence of footwear"
+      ],
+      "symbolic_mapping": [
+        "floor position as voluntary withdrawal from conventional posture",
+        "sofa as symbol of domestic normalcy left behind"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s bodily placement—grounded yet detached from furniture—suggests a momentary suspension of social role performance, exposing the self as situated between private interiority and expected public comportment.",
+      "alternative_interpretations": [
+        "The subject may be sitting on the floor for comfort, convenience, or due to lack of available chairs."
+      ],
+      "limitations": [
+        "Posture alone cannot confirm intent to reject social norms; no contextual cues (e.g., disheveled clothing, discarded objects) support deliberate role suspension."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1697_P3",
+      "visual_anchors": [
+        "dim lighting",
+        "shadows on face",
+        "single light source direction"
+      ],
+      "symbolic_mapping": [
+        "shadowed half-face as metaphor for partial visibility of self",
+        "lighting contrast as representation of revelation vs concealment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The chiaroscuro effect frames the subject as simultaneously revealed and obscured, evoking the philosophical problem of self-knowledge: what is seen (expression, posture) may not disclose what is known or felt internally.",
+      "alternative_interpretations": [
+        "Lighting is likely functional (e.g., lamp placement) rather than symbolic; shadows follow standard photographic exposure choices."
+      ],
+      "limitations": [
+        "No evidence confirms intentional artistic lighting design; ambient conditions could result from natural window light or routine room illumination."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:02:47.954828+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-732a73a5-204a-973d-904b-7ede3da843ad",
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 960,
+        "total_tokens": 2251,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 784,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070502188787ebd22683419c",
+      "usage": {
+        "completion_tokens": 818,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2556,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3374
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

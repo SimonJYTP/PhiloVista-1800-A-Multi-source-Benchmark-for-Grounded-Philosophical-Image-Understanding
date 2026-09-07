@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0205",
+  "sample_id": "PHL1800_HAIV_0538",
+  "file_name": "PHL1800_HAIV_0538.png",
+  "batch_id": "B006",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two illustrated human figures shown side-by-side from chest up",
+  "captions": {
+    "scene": [
+      "Two identical upper-body illustrations of a person wearing a light blue shirt with pale green collar and sleeves, against a plain white background.",
+      "The left figure displays a solid red heart symbol centered on the torso; the right figure shows a red glowing area over the chest with jagged lines and a hand placed over it.",
+      "Both figures have neutral facial expressions with closed mouths, visible necks, and partial black lower garments."
+    ],
+    "action": [
+      "The right figure’s right hand is placed over the chest region, covering part of a red illuminated area.",
+      "The left figure remains static with no limb movement or interaction with the heart symbol.",
+      "Both figures exhibit no motion blur or posture change, suggesting posed stillness."
+    ],
+    "rationale": [
+      "The red heart on the left is stylized and flat, lacking texture or depth, indicating symbolic rather than anatomical representation.",
+      "The red glow and jagged lines on the right suggest visual emphasis on internal distress, but no explicit injury or bleeding is depicted.",
+      "The identical clothing and facial features imply intentional comparison, though no causal link is visually confirmed."
+    ],
+    "object": [
+      "A solid red heart shape with black outline is centered on the left figure’s torso.",
+      "The right figure’s chest displays a diffuse pink-to-red radial gradient overlay with three thin, irregular red lines resembling cracks or fissures.",
+      "The right figure’s right hand, with five fingers and brown skin tone, rests palm-down over the glowing chest area.",
+      "Both figures wear a long-sleeved shirt with a light blue body, pale green sleeves and collar, and black waistband visible at the bottom edge.",
+      "Each figure has a visible neck with a small dark mark near the left side of the throat (left figure) and a vertical line near the center (right figure)."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0205_P1",
+      "visual_anchors": [
+        "solid red heart on left figure",
+        "glowing cracked chest on right figure",
+        "identical attire and posture"
+      ],
+      "symbolic_mapping": [
+        "red heart → idealized emotional state",
+        "cracked glow → vulnerability or rupture"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition suggests that identity may be externally presented as stable (uniform clothing, calm face) while internally subject to fragility or decay, raising questions about continuity of self across time and embodiment.",
+      "alternative_interpretations": [
+        "This may simply illustrate two stages of a medical condition (e.g., healthy vs. cardiac distress) without philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm symbolic intent; the crack lines could represent heat, energy, or non-biological phenomena."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0205_P2",
+      "visual_anchors": [
+        "hand placed over chest",
+        "red glow beneath hand",
+        "neutral facial expression"
+      ],
+      "symbolic_mapping": [
+        "hand placement → self-monitoring or containment",
+        "glow → inner experience not externally legible"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s outward composure contrasts with an internal phenomenon requiring physical intervention, implying social existence often demands constraint of inner states, where freedom is mediated by bodily awareness and control.",
+      "alternative_interpretations": [
+        "The hand may indicate pain response rather than philosophical self-regulation."
+      ],
+      "limitations": [
+        "Facial neutrality prevents confirmation of emotional suppression; the gesture could be reflexive rather than intentional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0205_P3",
+      "visual_anchors": [
+        "two identical figures",
+        "one with intact symbol, one with disruption",
+        "no background or setting"
+      ],
+      "symbolic_mapping": [
+        "duplication → possible duality or temporal sequence",
+        "disruption → irreversible change"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The side-by-side presentation implies a before-and-after within a single trajectory, where the journey involves confronting inevitable rupture—suggesting mortality as a structural feature of lived choice rather than a distant endpoint.",
+      "alternative_interpretations": [
+        "The figures may represent two different individuals rather than one person over time."
+      ],
+      "limitations": [
+        "No arrow, timeline marker, or sequential cue confirms temporal progression; duplication alone does not entail chronology."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:17:45.738653+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-71eb4814-1ec9-994b-8f6e-fc53eada4c4f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 996,
+        "total_tokens": 2529,
+        "completion_tokens_details": {
+          "text_tokens": 996
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021728bec8981c355a4e51",
+      "usage": {
+        "completion_tokens": 857,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2957,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3814
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

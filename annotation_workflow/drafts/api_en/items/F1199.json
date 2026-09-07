@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1199",
+  "sample_id": "PHL1800_IRFL_0047",
+  "file_name": "PHL1800_IRFL_0047.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "eight human figures arranged horizontally in life-stage sequence from infancy to death",
+  "captions": {
+    "scene": [
+      "A light blue background with eight stylized human figures aligned left to right, ending with a gravestone labeled 'RIP'.",
+      "Figures include a baby, a child holding books, a graduate, a businesswoman, a bride and groom, a mother holding an infant, an elderly woman with cane, and a tombstone.",
+      "All figures are smiling and depicted in flat vector illustration style with no shadows or depth cues."
+    ],
+    "action": [
+      "The baby sits on the floor holding a pacifier; the child stands holding stacked books; the graduate gestures outward with diploma in hand.",
+      "The businesswoman holds a briefcase and stands upright; the bride and groom hold hands and face forward; the mother cradles a baby against her chest.",
+      "The elderly woman stands upright holding a walking cane; the gravestone stands stationary with visible inscription."
+    ],
+    "rationale": [
+      "The left-to-right ordering and age progression suggest a chronological life-cycle representation, though no explicit timeline markers exist.",
+      "The presence of a gravestone labeled 'RIP' at the far right implies endpoint of life, but no burial scene or mourning behavior is shown.",
+      "All figures smile uniformly, which may indicate idealized depiction rather than emotional realism; this uniformity limits inference about actual affective states."
+    ],
+    "object": [
+      "A seated infant with dark skin, wearing a pink outfit, holds a white pacifier in both hands.",
+      "A standing child with dark skin, wearing a pink dress and yellow backpack, holds three stacked books (green, red, blue spines).",
+      "A young adult woman with dark skin wears a black graduation cap with yellow tassel, black gown with orange stole, holds a rolled diploma in right hand, and gestures with left hand.",
+      "A woman with dark skin wears a black sleeveless dress, white blouse, and carries a brown briefcase in left hand; hair is in a bun.",
+      "A bride in white strapless gown with veil and floral bouquet holds hands with a groom in black suit, white shirt, pink tie; both face forward and smile."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1199_P1",
+      "visual_anchors": [
+        "gravestone with 'RIP'",
+        "infant at left",
+        "elderly woman with cane"
+      ],
+      "symbolic_mapping": [
+        "gravestone → mortality",
+        "infant-to-elderly sequence → temporal passage"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The linear arrangement from birth to grave visually enacts the philosophical notion that human existence is bounded by time and inevitably ends in death, emphasizing finitude as structural to life’s narrative.",
+      "alternative_interpretations": [
+        "This may simply be a pedagogical diagram for teaching life stages, not a metaphysical claim about mortality."
+      ],
+      "limitations": [
+        "No depiction of decay, grief, or transition rituals weakens the mortality symbolism; all figures smile, contradicting typical associations with death."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1199_P2",
+      "visual_anchors": [
+        "graduate with diploma",
+        "businesswoman with briefcase",
+        "bride and groom holding hands"
+      ],
+      "symbolic_mapping": [
+        "diploma and briefcase → social roles",
+        "hand-holding couple → relational identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Social recognition—through education, profession, and marriage—is presented as constitutive of identity across the lifespan, suggesting that selfhood emerges through publicly acknowledged roles rather than internal traits.",
+      "alternative_interpretations": [
+        "These are generic occupational and ceremonial costumes, not necessarily indicators of identity formation; they could reflect cultural stereotypes rather than philosophical claims."
+      ],
+      "limitations": [
+        "No variation in attire beyond role-specific items; no facial expressions differentiate inner states, limiting support for identity-as-social-construction thesis."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1199_P3",
+      "visual_anchors": [
+        "uniform smiles across all figures",
+        "lack of adversity or conflict",
+        "linear progression without branching paths"
+      ],
+      "symbolic_mapping": [
+        "smiles → normative expectation",
+        "linearity → predetermined journey"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image implies a morally sanctioned life trajectory where each stage is fulfilled joyfully and sequentially, suggesting ethical responsibility lies in adhering to expected developmental milestones rather than exercising divergent choices.",
+      "alternative_interpretations": [
+        "The smiles and clean layout may reflect design conventions for children’s educational material, not normative philosophy."
+      ],
+      "limitations": [
+        "No visual indication of decision points, obstacles, or alternative outcomes; thus, the ‘journey’ lacks agency cues required for robust choice interpretation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:01:59.114280+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8bbde8df-21bf-9de0-9bf0-d60f8edafd14",
+      "usage": {
+        "prompt_tokens": 1001,
+        "completion_tokens": 1075,
+        "total_tokens": 2076,
+        "completion_tokens_details": {
+          "text_tokens": 1075
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 494,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040143c408030101ca4f2c",
+      "usage": {
+        "completion_tokens": 938,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2258,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3196
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

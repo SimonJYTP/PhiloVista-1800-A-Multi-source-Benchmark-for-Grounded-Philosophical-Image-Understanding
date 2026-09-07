@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0831",
+  "sample_id": "PHL1800_MM_0013",
+  "file_name": "PHL1800_MM_0013.jpg",
+  "batch_id": "B018",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man wearing a dark blue baseball cap viewed from behind, seated in the foreground",
+  "captions": {
+    "scene": [
+      "A large outdoor stadium with tiered blue seating partially filled by spectators under daylight.",
+      "Spectators wear predominantly red and blue clothing; some wear numbered jerseys (e.g., '30').",
+      "Empty blue plastic seats occupy the immediate foreground rows."
+    ],
+    "action": [
+      "The foreground man remains seated with his head upright and hat on.",
+      "Multiple spectators in mid-ground are also seated; some face forward, others turn toward neighbors.",
+      "A speech bubble overlay contains legible text stating: 'I'm keeping my hat on during this anthem!'"
+    ],
+    "rationale": [
+      "The speech bubble is superimposed and not part of the original scene; its presence suggests post-production editing.",
+      "The man’s posture and hat placement are consistent with passive attendance rather than active participation.",
+      "The phrase 'during this anthem' implies a concurrent ceremonial event, but no musical instruments, performers, or official signage confirming an anthem are visible."
+    ],
+    "object": [
+      "The man wears a dark blue baseball cap with a red-and-white logo featuring a stylized 'W' or similar emblem on the back.",
+      "He wears a white collared shirt beneath a dark navy blazer or suit jacket.",
+      "Rows of empty blue molded plastic stadium seats extend from the foreground to mid-field level.",
+      "In the upper stands, a banner with unreadable white text appears on a gray structural beam.",
+      "A spectator in the middle distance wears a red jersey with white numerals '30' on the back."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0831_P1",
+      "visual_anchors": [
+        "man wearing cap",
+        "speech bubble text",
+        "empty seats in foreground"
+      ],
+      "symbolic_mapping": [
+        "hat as marker of personal stance",
+        "speech bubble as assertion of individual choice"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The image frames a moment where personal appearance (hat retention) becomes a visible declaration of agency within a collective ritual context, suggesting identity is actively performed rather than passively assumed.",
+      "alternative_interpretations": [
+        "The speech bubble may be added humorously or satirically, with no intended philosophical meaning—simply commenting on casual fan behavior."
+      ],
+      "limitations": [
+        "No visual evidence confirms whether the anthem is actually playing or whether the man’s action is intentional protest versus indifference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0831_P2",
+      "visual_anchors": [
+        "crowd in red/blue attire",
+        "structured stadium tiers",
+        "uniform seat design"
+      ],
+      "symbolic_mapping": [
+        "color-coordinated crowd as symbolic unity",
+        "stadium architecture as institutional framing"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The organized spatial arrangement and shared sartorial cues reflect how social existence is scaffolded by institutional settings that simultaneously enable and constrain individual expression.",
+      "alternative_interpretations": [
+        "The color distribution may simply reflect team allegiance without deeper sociopolitical connotation."
+      ],
+      "limitations": [
+        "No signage identifies the event type, team, or jurisdiction, so claims about institutional power remain speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0831_P3",
+      "visual_anchors": [
+        "empty seats in foreground",
+        "occupied seats behind",
+        "man facing forward"
+      ],
+      "symbolic_mapping": [
+        "emptiness as absence of participation",
+        "proximity to action without engagement"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of vacant seats and occupied ones evokes the contingency of presence—highlighting that participation is neither guaranteed nor universal, underscoring freedom as conditional upon physical and temporal positioning.",
+      "alternative_interpretations": [
+        "Empty seats likely result from ticketing patterns or late arrival, not philosophical reflection."
+      ],
+      "limitations": [
+        "Seat occupancy status cannot be confirmed as intentional omission; many seats may be reserved or unassigned."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:20:48.505799+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0880975e-d012-9519-81b9-9aff5a6b793f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 911,
+        "total_tokens": 2444,
+        "completion_tokens_details": {
+          "text_tokens": 911
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070320253cc315aa509843bf",
+      "usage": {
+        "completion_tokens": 770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2863,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3633
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

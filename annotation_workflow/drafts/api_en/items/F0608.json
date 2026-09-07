@@ -1,0 +1,156 @@
+{
+  "annotation_item_id": "F0608",
+  "sample_id": "PHL1800_HL_0124",
+  "file_name": "PHL1800_HL_0124.png",
+  "batch_id": "B014",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a painted mask affixed to a textured wall beneath a street sign",
+  "captions": {
+    "scene": [
+      "A weathered, off-white stucco wall with a blue enamel street sign mounted above a sculpted mask.",
+      "The street sign reads 'RUE CHARLOT' in white uppercase letters on a blue background, with partial green border and rust stains.",
+      "The mask is irregularly shaped, painted in gold, blue, red, and white, with visible cracks and chipped paint."
+    ],
+    "action": [
+      "The mask is fixed to the wall via unseen fasteners; no motion is present.",
+      "Paint has been applied unevenly across the mask’s surface, with drips and overlapping strokes visible.",
+      "The sign shows signs of aging: rust around screw holes and minor corrosion along edges."
+    ],
+    "rationale": [
+      "The mask’s asymmetrical features and open eye/nose apertures suggest intentional stylization rather than functional use.",
+      "The presence of graffiti-like text 'askipare...' on the sign implies prior human interaction, though its meaning is unclear.",
+      "The lack of shadows or lighting gradients suggests diffuse daylight, but no direct light source is visible."
+    ],
+    "object": [
+      "The mask is three-dimensional, roughly oval, with exaggerated facial features including a protruding nose, wide mouth, and one visible eye socket.",
+      "Blue paint forms abstract lines across the mask’s cheek and brow, intersecting with gold base color and red patches near the right side.",
+      "The wall surface is coarse and uneven, with small pits and minor discoloration consistent with exterior exposure.",
+      "The street sign is rectangular, enameled metal, bolted at four corners, with partial lettering indicating a French street name.",
+      "A small white patch appears on the lower-left of the mask, possibly overpaint or repair material."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0608_P1",
+      "visual_anchors": [
+        "gold base coat",
+        "blue abstract strokes",
+        "asymmetrical facial features"
+      ],
+      "symbolic_mapping": [
+        "gold as conventional identity",
+        "blue strokes as disruption or reinterpretation"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The mask embodies the instability of appearance: a foundational identity (gold) is actively overwritten by expressive, non-representational marks (blue), suggesting that self-presentation is perpetually contested and reconstituted.",
+      "alternative_interpretations": [
+        "It may simply be a discarded theatrical prop repurposed as street art, with no intended symbolism."
+      ],
+      "limitations": [
+        "No context confirms authorial intent; the markings could be accidental or decorative rather than conceptual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0608_P2",
+      "visual_anchors": [
+        "cracked surface",
+        "chipped paint",
+        "rust on sign"
+      ],
+      "symbolic_mapping": [
+        "material decay as temporal erosion"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The cumulative wear on both mask and sign—cracks, flaking pigment, rust—visually enacts the passage of time as an irreversible force that degrades even deliberately crafted objects, echoing mortality through material entropy.",
+      "alternative_interpretations": [
+        "These are routine effects of outdoor exposure and require no philosophical reading."
+      ],
+      "limitations": [
+        "The age of the mask relative to the sign is indeterminate; decay may be recent or long-standing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0608_P3",
+      "visual_anchors": [
+        "mask mounted on public wall",
+        "street sign indicating location",
+        "graffiti tag 'askipare...'"
+      ],
+      "symbolic_mapping": [
+        "public space as site of contested meaning"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of official signage (RUE CHARLOT) with unauthorized adornment (mask + tag) reflects how social existence emerges through layered, often conflicting claims on shared space—authority, artistry, and anonymity coexist without resolution.",
+      "alternative_interpretations": [
+        "The mask was placed there casually; the tag may be unrelated vandalism with no thematic connection."
+      ],
+      "limitations": [
+        "No evidence links the mask’s placement to the tag or to civic discourse; proximity does not imply intentionality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:00:44.880133+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-009ef907-33e9-95d4-add4-a869fa0b2848",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 953,
+        "total_tokens": 1762,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703002127cb208352b249b1",
+      "usage": {
+        "completion_tokens": 820,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1934,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2754
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

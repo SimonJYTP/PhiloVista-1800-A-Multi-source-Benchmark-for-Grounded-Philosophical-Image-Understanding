@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1694",
+  "sample_id": "PHL1800_HAIV_0197",
+  "file_name": "PHL1800_HAIV_0197.png",
+  "batch_id": "B034",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a cardboard box with a blue wave emerging from it",
+  "captions": {
+    "scene": [
+      "A stylized seascape with blue waves, a yellow sun with red-orange rays in the upper left, and a distant city/mountain silhouette against a pale yellow sky.",
+      "An open brown cardboard box sits in the foreground on a white surface, with its flaps extended upward.",
+      "A large blue wave, rendered with swirling motion lines and droplets, erupts vertically from the box’s opening."
+    ],
+    "action": [
+      "A blue wave is depicted mid-eruption from the open top of the cardboard box.",
+      "The wave curls forward at its crest, showing dynamic motion with visible splash droplets.",
+      "The box remains stationary while containing or releasing the wave, suggesting containment or emergence."
+    ],
+    "rationale": [
+      "The wave originates inside the box because its base is fully within the box’s interior volume and no external source is visible.",
+      "The text 'DATIONAL' appears handwritten on the inner side of a flap; it is incomplete or stylized, making full reading uncertain.",
+      "The background elements (sun, skyline) are simplified silhouettes without detail, indicating artistic abstraction rather than realism."
+    ],
+    "object": [
+      "A brown cardboard box with four flaps open upward, positioned centrally in the lower half of the image.",
+      "The inner surface of the right front flap bears the handwritten word 'DATIONAL' in dark blue capital letters.",
+      "A beige rectangular label is affixed to the front face of the box, bearing faint, mostly illegible markings and a small barcode-like rectangle on the left side.",
+      "A blue wave with darker shading along its underside and lighter highlights emerges from the box, forming a curling crest with three visible droplets above it.",
+      "The background includes a large yellow circular sun with irregular red-orange radiating lines, a horizontal horizon line, and a blue-gray silhouette of buildings and a conical hill."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1694_P1",
+      "visual_anchors": [
+        "open cardboard box",
+        "emerging wave",
+        "handwritten 'DATIONAL'"
+      ],
+      "symbolic_mapping": [
+        "box → container of concepts",
+        "wave → force of change or emotion"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The box symbolizes imposed limits or categorization, while the wave’s eruption signifies an uncontrollable force breaking free—suggesting tension between institutional constraint and emergent agency.",
+      "alternative_interpretations": [
+        "The image may simply depict a surreal packaging mishap, such as water leaking from a damaged shipping container."
+      ],
+      "limitations": [
+        "The word 'DATIONAL' is incomplete and ambiguous; it could be a misspelling, abbreviation, or invented term, preventing definitive semantic grounding."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1694_P2",
+      "visual_anchors": [
+        "sun with jagged rays",
+        "distant skyline",
+        "white foreground surface"
+      ],
+      "symbolic_mapping": [
+        "sun → time or exposure",
+        "skyline → society or structure"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The stark contrast between the bright, active sun and the static, silhouetted city implies a fleeting moment of revelation against enduring social forms—evoking impermanence amid institutional permanence.",
+      "alternative_interpretations": [
+        "The sun and skyline are generic background elements chosen for color balance and composition, not symbolic intent."
+      ],
+      "limitations": [
+        "No human figures or temporal markers (e.g., clocks, aging) are present to confirm time-related symbolism."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1694_P3",
+      "visual_anchors": [
+        "blue wave with droplets",
+        "curled crest",
+        "box interior shadow"
+      ],
+      "symbolic_mapping": [
+        "wave motion → knowledge overflow",
+        "box label → attempted classification"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The wave escaping a labeled box suggests truth or knowledge that exceeds or disrupts attempts at formal categorization, raising questions about responsibility in framing complex realities.",
+      "alternative_interpretations": [
+        "The wave is purely decorative, emphasizing movement and color contrast without conceptual intent."
+      ],
+      "limitations": [
+        "The label’s text is partially legible and nonstandard; no explicit reference to knowledge systems is visible."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:02:27.974144+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4d44e8f7-6ff8-98e3-85a5-bb51ead55064",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 985,
+        "total_tokens": 2518,
+        "completion_tokens_details": {
+          "text_tokens": 985
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050210e5913e095ec44a07",
+      "usage": {
+        "completion_tokens": 847,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2942,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3789
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

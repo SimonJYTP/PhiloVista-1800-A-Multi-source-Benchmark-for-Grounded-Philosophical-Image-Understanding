@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1573",
+  "sample_id": "PHL1800_HL_0350",
+  "file_name": "PHL1800_HL_0350.png",
+  "batch_id": "B032",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person viewed from behind standing on a paved road near two food trucks",
+  "captions": {
+    "scene": [
+      "A paved road curves gently through a green, tree-lined area under overcast skies.",
+      "Two food trucks are parked on the grass verge beside the road: one cream-colored with visible branding, and one darker truck further back.",
+      "Three other individuals are visible in the background walking away along the road."
+    ],
+    "action": [
+      "The foreground person stands still with hands in pockets, facing toward the trucks.",
+      "Two people in the background walk away from the camera along the road, one carrying a pink bag.",
+      "The cream-colored truck is stationary with its side service window closed."
+    ],
+    "rationale": [
+      "The person’s posture (hands in pockets, upright stance) suggests waiting or observing rather than moving.",
+      "The presence of multiple food trucks and pedestrians implies a temporary gathering, possibly for service or event logistics.",
+      "The overcast lighting and wet-looking pavement suggest recent or ongoing rain, though no active precipitation is visible."
+    ],
+    "object": [
+      "A person wearing a black long-sleeve top, black leggings with white side stripes, light-colored sneakers, and a pink backward-facing cap stands on asphalt.",
+      "A cream-colored food truck displays partial text 'ROXY'S GOURMET GRILLED CH...' and cartoon-style illustrations of a woman holding food items on its side and front panels.",
+      "A second, darker-colored food truck is partially visible behind the first, with a white front grille and red roof-mounted lights.",
+      "Three additional people appear in the mid-background: one in a pink top and blue jeans carrying a pink bag, another in dark clothing beside them, and a third figure slightly ahead and to their left.",
+      "The road surface shows cracks and minor debris; grass borders the right edge where the trucks are parked."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1573_P1",
+      "visual_anchors": [
+        "person standing alone facing trucks",
+        "two food trucks parked side-by-side",
+        "background figures walking away"
+      ],
+      "symbolic_mapping": [
+        "the solitary stance maps to individual anticipation amid collective activity",
+        "parked trucks map to suspended labor or potential exchange"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a moment of suspended social participation—where one individual pauses at the threshold of engagement while others move onward, reflecting how identity and belonging are negotiated at the margins of shared experience.",
+      "alternative_interpretations": [
+        "This is simply a candid snapshot of people waiting for food service at an outdoor event."
+      ],
+      "limitations": [
+        "No facial expressions or explicit interaction confirm intent or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1573_P2",
+      "visual_anchors": [
+        "pink cap worn backward",
+        "black athletic attire",
+        "white stripe detail on leggings"
+      ],
+      "symbolic_mapping": [
+        "cap orientation signals informal self-presentation",
+        "monochrome outfit with accent stripe suggests curated appearance within casual context"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The subject’s attire and posture embody a tension between personal expression and functional conformity—choosing visibility (colorful cap) within constraints of mobility and utility (athletic wear).",
+      "alternative_interpretations": [
+        "The clothing is standard workout gear; the cap orientation is incidental comfort."
+      ],
+      "limitations": [
+        "No evidence confirms intentional styling versus practical choice."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1573_P3",
+      "visual_anchors": [
+        "overcast sky",
+        "wet-looking pavement",
+        "trucks parked off-road on grass"
+      ],
+      "symbolic_mapping": [
+        "cloud cover maps to indeterminacy of outcome",
+        "off-road parking maps to deviation from expected infrastructure"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The scene evokes temporariness and contingency: mobile labor units operate outside fixed venues under uncertain weather, underscoring how human sustenance systems persist amid environmental and institutional flux.",
+      "alternative_interpretations": [
+        "The trucks are parked normally for service; the weather is merely cloudy, not threatening."
+      ],
+      "limitations": [
+        "No raindrops, puddles, or shelter-seeking behavior confirm adverse conditions."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:46:55.732844+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b483613d-2ebe-93c3-90e0-a41579127756",
+      "usage": {
+        "prompt_tokens": 870,
+        "completion_tokens": 962,
+        "total_tokens": 1832,
+        "completion_tokens_details": {
+          "text_tokens": 962
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 363,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704464508464a3d4e9f49c2",
+      "usage": {
+        "completion_tokens": 822,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2030,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2852
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

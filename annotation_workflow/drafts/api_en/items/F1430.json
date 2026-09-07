@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1430",
+  "sample_id": "PHL1800_IRFL_0265",
+  "file_name": "PHL1800_IRFL_0265.jpg",
+  "batch_id": "B029",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male torso and head, partially cropped",
+  "captions": {
+    "scene": [
+      "White background with no visible environment or context",
+      "Studio-style lighting producing soft shadows on the subject's clothing",
+      "Subject occupies right half of frame; left half is empty white space"
+    ],
+    "action": [
+      "Right index finger pressed vertically against closed lips",
+      "Head slightly tilted forward, eyes looking downward toward the finger",
+      "Left arm not visible; right arm bent at elbow with forearm vertical"
+    ],
+    "rationale": [
+      "The gesture resembles a conventional 'silence' signal, but no contextual cues confirm intent",
+      "Clothing suggests formal or business attire, yet no setting confirms occupational role",
+      "Facial expression is partially obscured; only lower face and eyes are visible, limiting emotional inference"
+    ],
+    "object": [
+      "The subject wears a light blue long-sleeved button-up shirt with visible cuff and sleeve placket.",
+      "A dark navy tie with three diagonal light blue stripes runs from collar down the chest.",
+      "The right hand is raised with index finger extended and touching the lips; other fingers are curled inward.",
+      "The subject’s lower face shows closed lips, visible chin, and partial nose bridge; upper face is cut off at forehead.",
+      "No jewelry, tattoos, or accessories are visible on the visible portions of the body or clothing."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1430_P1",
+      "visual_anchors": [
+        "index finger on lips",
+        "closed mouth",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "finger-on-lips gesture maps to withholding speech",
+        "formal attire maps to institutional role"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The image evokes tension between epistemic restraint and social performance: silence may signify disciplined truth-keeping or enforced conformity within hierarchical structures.",
+      "alternative_interpretations": [
+        "It may simply depict a staged pose for stock photography without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression above the nose or surrounding context is visible to confirm communicative intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1430_P2",
+      "visual_anchors": [
+        "light blue shirt",
+        "navy striped tie",
+        "cropped framing"
+      ],
+      "symbolic_mapping": [
+        "standard business attire maps to assumed social role",
+        "cropping removes individual identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The anonymized presentation of professional dress highlights how appearance functions as a socially legible mask, where identity is subsumed by role expectations.",
+      "alternative_interpretations": [
+        "The cropping may be purely compositional, intended to leave copy space rather than convey anonymity."
+      ],
+      "limitations": [
+        "Only partial torso and head are shown; full posture and setting are absent, preventing confirmation of role enactment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1430_P3",
+      "visual_anchors": [
+        "vertical finger alignment",
+        "stillness of pose",
+        "uniform lighting"
+      ],
+      "symbolic_mapping": [
+        "static gesture maps to suspension of action",
+        "neutral background maps to abstraction from time"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The frozen gesture in an empty field suggests a moment suspended between choice and consequence, reflecting existential constraint where agency is limited to non-action.",
+      "alternative_interpretations": [
+        "The stillness may result from photographic staging rather than philosophical intention."
+      ],
+      "limitations": [
+        "No temporal indicators (e.g., clock, motion blur) or environmental cues exist to ground the interpretation in time or consequence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:35:29.304743+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-00999a0e-2001-91fd-a585-c83fe37bd3d0",
+      "usage": {
+        "prompt_tokens": 685,
+        "completion_tokens": 827,
+        "total_tokens": 1512,
+        "completion_tokens_details": {
+          "text_tokens": 827
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 178,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070435127c5b63e9579a44e9",
+      "usage": {
+        "completion_tokens": 686,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1626,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2312
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

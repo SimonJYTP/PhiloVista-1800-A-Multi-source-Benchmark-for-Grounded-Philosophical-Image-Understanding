@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1523",
+  "sample_id": "PHL1800_HL_0556",
+  "file_name": "PHL1800_HL_0556.png",
+  "batch_id": "B031",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man with curly dark hair, a mustache, wearing a dark cap, white shirt, dark tie, and blue jacket with a name tag reading 'Sgt. HAMER'",
+  "captions": {
+    "scene": [
+      "A brightly lit grocery store aisle with refrigerated shelves on the right and open shelving stocked with bottled water, soft drinks, and juice on the left",
+      "Multiple rows of commercial beverage products including Aquafina, Arrowhead, Coca-Cola, Sunkist, and various generic brands",
+      "A long aisle extending into the background with additional refrigerated cases and indistinct figures far down the corridor"
+    ],
+    "action": [
+      "The man stands facing the camera with his left hand holding a clear plastic bottle of Aquafina water",
+      "His right arm is bent with the hand resting near his waist; his posture is upright and still",
+      "He maintains direct eye contact with the camera; his facial expression is neutral to slightly serious"
+    ],
+    "rationale": [
+      "The presence of branded beverage packaging and refrigerated cases strongly indicates a retail grocery environment",
+      "The name tag on his jacket suggests an official or assigned role, though the specific nature (e.g., security, employee, performer) cannot be confirmed from visual evidence alone",
+      "The lighting, floor reflection, and product arrangement are consistent with indoor commercial retail spaces, not a home or warehouse setting"
+    ],
+    "object": [
+      "A clear plastic Aquafina water bottle with blue label is held in the man’s left hand.",
+      "Shelves contain multiple rows of bottled water including Aquafina, Arrowhead, and generic brands with visible labels and caps.",
+      "A red-and-white Coca-Cola can and several glass bottles of Coca-Cola are visible on the lower shelf.",
+      "A yellow box labeled 'SINIVINO' sits on the bottom shelf next to two glass bottles with gold foil caps.",
+      "The man wears a dark peaked cap with a shiny badge, a white collared shirt, a black necktie, and a navy-blue jacket with a circular badge and rectangular name tag."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1523_P1",
+      "visual_anchors": [
+        "name tag reading 'Sgt. HAMER'",
+        "uniform-like attire",
+        "direct gaze toward camera"
+      ],
+      "symbolic_mapping": [
+        "the name tag signifies assigned identity within institutional structure",
+        "the uniform signals role-based conformity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where personal appearance is subsumed under a socially assigned role, raising questions about how institutional markers shape perceived identity in public space.",
+      "alternative_interpretations": [
+        "The attire may be costume or cosplay, indicating voluntary performance rather than institutional assignment."
+      ],
+      "limitations": [
+        "No context confirms whether the role is official, theatrical, or self-adopted; the name tag could be fictional or decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1523_P2",
+      "visual_anchors": [
+        "rows of identical bottled water",
+        "repetitive product packaging",
+        "man positioned amid mass-produced goods"
+      ],
+      "symbolic_mapping": [
+        "standardized containers reflect homogenization of consumption",
+        "individual stands amid industrial replication"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a singular human figure against endless identical commodities evokes tension between individual agency and systemic constraint imposed by mass production and retail environments.",
+      "alternative_interpretations": [
+        "The scene is routine retail work; the repetition is functional, not symbolic."
+      ],
+      "limitations": [
+        "No evidence shows the man’s relationship to the products beyond proximity and holding one item."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1523_P3",
+      "visual_anchors": [
+        "bright fluorescent lighting",
+        "clean reflective floor",
+        "orderly shelving"
+      ],
+      "symbolic_mapping": [
+        "artificial illumination replaces natural light, suggesting constructed reality",
+        "orderliness implies control over environment"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The highly controlled, illuminated retail space functions as a curated epistemic environment where truth is mediated through branding and arrangement, reflecting power dynamics in consumer knowledge formation.",
+      "alternative_interpretations": [
+        "The lighting and layout are standard for retail efficiency and safety, not ideological design."
+      ],
+      "limitations": [
+        "No signage or explicit messaging confirms intentional epistemic framing; lighting is typical for supermarkets."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:41:32.205339+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6f800f2f-2ab5-9681-aea6-83f12330524f",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 999,
+        "total_tokens": 1728,
+        "completion_tokens_details": {
+          "text_tokens": 999
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070441162fb50c9870e54140",
+      "usage": {
+        "completion_tokens": 859,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1880,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2739
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

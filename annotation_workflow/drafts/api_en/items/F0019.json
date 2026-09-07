@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0019",
+  "sample_id": "PHL1800_HL_0014",
+  "file_name": "PHL1800_HL_0014.png",
+  "batch_id": "B001",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people sharing a dark umbrella walking uphill toward a domed building",
+  "captions": {
+    "scene": [
+      "A narrow paved street slopes upward between a multi-story building on the left and open space on the right, under an overcast sky.",
+      "Overhead, multiple trolleybus or tram wires crisscross with suspended bells and insulators; one bell hangs directly above the street.",
+      "In the background, a large white building with two green domes topped by golden crosses dominates the skyline."
+    ],
+    "action": [
+      "Two people walk away from the camera up the incline, sharing a dark umbrella over their heads.",
+      "The figures’ legs are visible beneath the umbrella; they wear dark trousers and appear to be in motion.",
+      "Wires remain static overhead while the people move forward along the street."
+    ],
+    "rationale": [
+      "The umbrella suggests precipitation or imminent rain, supported by the wet pavement and uniformly gray sky.",
+      "The presence of trolleybus infrastructure (wires, bells, poles) indicates an urban setting with electric public transit.",
+      "The architectural style—green domes, white facade, golden crosses—points to an Eastern Orthodox religious structure, though identity is not confirmed."
+    ],
+    "object": [
+      "Two people wearing dark trousers and sharing a dark blue or black umbrella walk uphill on a wet asphalt surface.",
+      "A white building with two green onion-shaped domes, each surmounted by a golden cross, stands in the mid-background.",
+      "Multiple parallel and intersecting overhead wires span the scene, with at least three visible suspension bells attached.",
+      "A blue triangular traffic sign with a white symbol (possibly a pedestrian crossing or warning) is mounted on a pole near the center-left.",
+      "The left-side building has beige stucco walls, rectangular windows with blue or teal frames, and a projecting cornice with small brackets."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0019_P1",
+      "visual_anchors": [
+        "two people walking uphill",
+        "umbrella shielding figures",
+        "domed building ahead"
+      ],
+      "symbolic_mapping": [
+        "uphill walk → effort toward meaning",
+        "umbrella → protection amid uncertainty"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "faith_meaning"
+      ],
+      "interpretation": "The shared ascent toward a symbolic religious edifice under protective cover evokes a collective pilgrimage where agency and belief coexist amid environmental constraint.",
+      "alternative_interpretations": [
+        "The figures may simply be commuting; the umbrella is functional, not symbolic, and the building is merely a landmark."
+      ],
+      "limitations": [
+        "No facial expression, direction of gaze, or explicit ritual action confirms intentional spiritual intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0019_P2",
+      "visual_anchors": [
+        "overhead wires forming a grid",
+        "people moving beneath them",
+        "static bells hanging from wires"
+      ],
+      "symbolic_mapping": [
+        "wires → invisible structures of social order",
+        "bells → signals of regulation or warning"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The individuals traverse a space physically structured by infrastructural lines that both enable and delimit movement, reflecting embedded societal constraints on everyday existence.",
+      "alternative_interpretations": [
+        "The wires are purely utilitarian for transport; their visual density is coincidental, not metaphorical."
+      ],
+      "limitations": [
+        "No signage or interaction indicates enforcement or awareness of the wires’ regulatory function."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0019_P3",
+      "visual_anchors": [
+        "wet reflective pavement",
+        "gray overcast sky",
+        "green domes against muted backdrop"
+      ],
+      "symbolic_mapping": [
+        "monochrome palette → temporal suspension",
+        "dome as enduring form amid flux"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The desaturated environment and reflective surface suggest a moment arrested in time, where transient human passage contrasts with the persistent architectural form, raising questions about continuity versus ephemerality.",
+      "alternative_interpretations": [
+        "The color cast results from photographic processing or film stock, not intentional symbolism."
+      ],
+      "limitations": [
+        "Color grading cannot be verified as intentional artistic choice without metadata or context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The candidate incorrectly describes a single person; the image shows two people sharing one umbrella. The 'object' caption's description of the left-side building's window frames as green is inaccurate (they appear to be blue or teal). The 'action' caption's claim of 'a single person' is a hallucination."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:28:49.181752+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-102eccaa-05c0-9680-9735-0e56794aad10",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 943,
+        "total_tokens": 1712,
+        "completion_tokens_details": {
+          "text_tokens": 943
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907012835c485ae3576d74a17",
+      "usage": {
+        "completion_tokens": 869,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1870,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2739
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

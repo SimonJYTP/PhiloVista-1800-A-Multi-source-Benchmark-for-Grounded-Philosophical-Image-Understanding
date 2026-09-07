@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1695",
+  "sample_id": "PHL1800_IRFL_0041",
+  "file_name": "PHL1800_IRFL_0041.jpg",
+  "batch_id": "B035",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one man viewed from behind",
+  "captions": {
+    "scene": [
+      "A cobblestone path forks into two diverging paths across a grassy field under a partly cloudy sky.",
+      "The foreground shows a stone-paved walkway bordered by green grass with scattered yellow wildflowers.",
+      "Two identical-looking paved paths extend uphill into the distance, forming a Y-shaped junction."
+    ],
+    "action": [
+      "The man stands motionless at the fork, facing away from the viewer toward the divergence.",
+      "His right hand holds a brown leather briefcase at his side.",
+      "He wears a light-colored long-sleeve shirt, dark trousers, and dark shoes, standing upright with feet parallel."
+    ],
+    "rationale": [
+      "The symmetrical divergence of the paths suggests intentional design rather than natural formation, though no construction tools or markings are visible.",
+      "The man’s posture—upright, centered, not leaning—implies deliberation, but no facial expression or gesture confirms intent.",
+      "The lighting is diffuse and even, suggesting daytime, but the exact time cannot be determined due to lack of shadows or sun position."
+    ],
+    "object": [
+      "The man has short dark hair, visible at the nape of his neck, and wears a collared shirt with sleeves rolled to the forearm.",
+      "The cobblestones are irregularly shaped gray and tan stones set in mortar, forming a continuous path surface.",
+      "The grass on both sides is uniformly green and mowed low, with small yellow flowers sparsely distributed.",
+      "The briefcase is rectangular, brown leather, held vertically in the man’s right hand, with a visible handle and no visible logo or text.",
+      "The horizon line is level and distant, with faint vertical structures (possibly utility poles) barely visible on the left edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1695_P1",
+      "visual_anchors": [
+        "forked cobblestone path",
+        "man standing at junction",
+        "identical diverging routes"
+      ],
+      "symbolic_mapping": [
+        "forked path → decision point",
+        "identical routes → indistinguishable options"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The image visually frames a moment of undifferentiated choice, where the physical symmetry of the paths emphasizes the absence of external guidance in selecting a direction.",
+      "alternative_interpretations": [
+        "The scene may depict a staged photograph using forced perspective, where the paths converge or are artificially constructed rather than representing real navigation."
+      ],
+      "limitations": [
+        "No signage, wear patterns, or environmental cues distinguish the paths, making any claim about actual divergence or destination unsupported."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1695_P2",
+      "visual_anchors": [
+        "man holding briefcase",
+        "formal attire",
+        "open field"
+      ],
+      "symbolic_mapping": [
+        "briefcase → professional role",
+        "field → undefined future"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of business attire and an unmarked rural path suggests tension between institutional identity and unstructured possibility, highlighting how social roles persist even outside formal contexts.",
+      "alternative_interpretations": [
+        "The man may be walking to or from a nearby building not shown; the field could be part of a landscaped corporate campus rather than wilderness."
+      ],
+      "limitations": [
+        "No buildings, vehicles, or infrastructure confirm either a corporate or rural setting; the context is deliberately ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1695_P3",
+      "visual_anchors": [
+        "back-facing subject",
+        "no visible face",
+        "centered composition"
+      ],
+      "symbolic_mapping": [
+        "anonymous back view → universal subject",
+        "centered stance → equilibrium before action"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "By omitting facial features and centering the figure at the juncture, the image treats the subject as a placeholder for any individual confronting structural choices, where freedom is constrained by the binary form of the available paths.",
+      "alternative_interpretations": [
+        "The rear view may simply result from photographic framing to avoid model identification, not symbolic intent."
+      ],
+      "limitations": [
+        "The absence of a face is a compositional choice, but does not prove intention to represent universality; it could equally reflect practical photography constraints."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:02:35.698361+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4fab5a72-f32d-914d-b13a-37c9c89b5590",
+      "usage": {
+        "prompt_tokens": 2549,
+        "completion_tokens": 971,
+        "total_tokens": 3520,
+        "completion_tokens_details": {
+          "text_tokens": 971
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2042,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050216d33b247149d64596",
+      "usage": {
+        "completion_tokens": 833,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4247,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5080
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

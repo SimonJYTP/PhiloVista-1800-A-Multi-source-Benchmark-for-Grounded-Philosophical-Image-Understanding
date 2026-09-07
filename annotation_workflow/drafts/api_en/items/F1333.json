@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1333",
+  "sample_id": "PHL1800_HAIV_0120",
+  "file_name": "PHL1800_HAIV_0120.png",
+  "batch_id": "B028",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized multi-story building with barred windows and a padlocked entrance",
+  "captions": {
+    "scene": [
+      "An orange brick-style building with six arched windows arranged in two vertical columns of three, each window fitted with horizontal white bars and dark teal vertical panes.",
+      "Three thick gray horizontal bands span the building’s facade, intersecting all windows and suggesting structural reinforcement or confinement.",
+      "A gray rectangular doorway at the base is sealed by a large yellow padlock attached to a U-shaped shackle over a black grille."
+    ],
+    "action": [
+      "The building stands stationary with no visible motion; all elements are static.",
+      "The padlock is closed and engaged, indicating the entrance is secured.",
+      "Horizontal bars remain fixed across all windows, showing no sign of opening or removal."
+    ],
+    "rationale": [
+      "The presence of uniform barred windows and a padlock suggests intentional restriction of access, though purpose is not specified.",
+      "The repeated architectural motif (arched windows, horizontal bands) implies deliberate design rather than accidental damage or decay.",
+      "A small illegible mark appears near the lower-right window; its content cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "The building has an orange exterior with hand-drawn texture lines indicating brickwork or surface wear.",
+      "Each of the six windows features a white arched frame, three evenly spaced horizontal white bars, and alternating dark teal and black vertical panels behind them.",
+      "Three identical gray horizontal bands run continuously across the building’s width, positioned between window rows and below the lowest row.",
+      "The ground-level entrance consists of a gray rectangular recess containing a black horizontal-bar grille, overlaid by a yellow padlock with a black shackle and keyhole.",
+      "A black irregular shadow is cast beneath the building, indicating a light source above and slightly in front."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1333_P1",
+      "visual_anchors": [
+        "barred windows",
+        "horizontal gray bands",
+        "yellow padlock"
+      ],
+      "symbolic_mapping": [
+        "bars → physical constraint",
+        "padlock → enforced exclusion"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually enacts the concept of institutionalized constraint through repetitive barriers and a singular point of enforced closure, suggesting systemic limitation rather than temporary obstruction.",
+      "alternative_interpretations": [
+        "It may represent a secure storage facility or vault, where bars and locks serve protective rather than restrictive purposes."
+      ],
+      "limitations": [
+        "No signage, context, or human figures confirm intent; the building could be decorative or fictional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1333_P2",
+      "visual_anchors": [
+        "uniform window arrangement",
+        "identical horizontal bands",
+        "symmetrical layout"
+      ],
+      "symbolic_mapping": [
+        "repetition → standardization",
+        "symmetry → imposed order"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The rigid symmetry and repetition evoke structures that regulate collective life—such as housing blocks or detention facilities—highlighting how built environments shape social roles through spatial uniformity.",
+      "alternative_interpretations": [
+        "The symmetry may reflect aesthetic preference in illustration style rather than sociological commentary."
+      ],
+      "limitations": [
+        "The drawing lacks contextual cues (e.g., signage, occupants, surrounding environment) to confirm social function."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1333_P3",
+      "visual_anchors": [
+        "orange brick texture",
+        "hand-drawn lines",
+        "illegible mark near right window"
+      ],
+      "symbolic_mapping": [
+        "imperfect lines → human mediation",
+        "unreadable text → obscured meaning"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The visible imperfections and unreadable inscription suggest that representation itself is incomplete or mediated, implying that truth may be partially concealed or inaccessible behind surface appearances.",
+      "alternative_interpretations": [
+        "The mark is likely an artist’s signature or doodle with no semantic intent."
+      ],
+      "limitations": [
+        "The mark is too small and distorted to verify as text; it may be incidental line work."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:18:48.289560+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a476df46-2d63-9e5b-ba79-85974f8b5272",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 913,
+        "total_tokens": 2446,
+        "completion_tokens_details": {
+          "text_tokens": 913
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041821695cb6ea29b44150",
+      "usage": {
+        "completion_tokens": 778,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2870,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3648
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

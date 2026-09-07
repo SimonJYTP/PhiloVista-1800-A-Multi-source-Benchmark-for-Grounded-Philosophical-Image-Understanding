@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0143",
+  "sample_id": "PHL1800_HL_0411",
+  "file_name": "PHL1800_HL_0411.png",
+  "batch_id": "B005",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "pedestrians and billboards at an urban street intersection",
+  "captions": {
+    "scene": [
+      "A multi-lane city street with palm trees, traffic signals, and two large vertical billboards mounted on a building facade.",
+      "A sidewalk with three visible pedestrians walking near a utility box, a small tree, and a parking sign.",
+      "Overcast daylight conditions; vehicles are present in the street and parked along the curb."
+    ],
+    "action": [
+      "A woman in a blue jacket walks forward on the sidewalk, carrying a bag and looking ahead.",
+      "Two men stand together near a traffic signal pole, one wearing a dark jacket and cap, the other in a black shirt and jeans.",
+      "Traffic lights show green for pedestrians and green for vehicles in one direction; cars are stopped or moving slowly."
+    ],
+    "rationale": [
+      "The presence of multiple commercial billboards suggests a high-traffic commercial zone, though exact location is not identifiable.",
+      "The 'DO NOT BLOCK INTERSECTION' sign indicates regulatory enforcement of traffic flow, implying frequent congestion risk.",
+      "The Apple iPod touch billboard displays multiple device orientations and game screenshots, indicating product promotion focused on entertainment functionality."
+    ],
+    "object": [
+      "A white rectangular billboard above shows the text 'More games. More fun.' and 'iPod touch', with five angled smartphone-like devices displaying colorful game interfaces.",
+      "A black rectangular billboard below reads 'HOW WILL YOU TAKE OVER?' in white uppercase letters, followed by 'NBA 2K10' in stylized red and white font, with action figures in motion depicted on the right side.",
+      "A vertical traffic sign attached to a lamppost reads 'DO NOT BLOCK INTERSECTION' in black uppercase letters on a white background.",
+      "A pedestrian crossing signal shows a white walking figure illuminated, indicating walk phase for pedestrians.",
+      "A gray SUV occupies the lower-right foreground, partially obscuring parked cars behind it."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0143_P1",
+      "visual_anchors": [
+        "'HOW WILL YOU TAKE OVER?' slogan",
+        "NBA 2K10 game imagery",
+        "multiple iPod touch devices showing gameplay"
+      ],
+      "symbolic_mapping": [
+        "The phrase 'TAKE OVER' maps to agency and control within simulated environments"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of competitive sports simulation and mobile gaming frames personal empowerment as performative conquest within curated digital arenas.",
+      "alternative_interpretations": [
+        "It is purely commercial branding emphasizing excitement and dominance in recreational contexts without deeper implication."
+      ],
+      "limitations": [
+        "No visible user interaction or real-world consequence links the slogan to actual power dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0143_P2",
+      "visual_anchors": [
+        "three pedestrians walking separately but in proximity",
+        "urban infrastructure (lamppost, signals, signs)",
+        "parked cars and moving traffic"
+      ],
+      "symbolic_mapping": [
+        "Sidewalk navigation amid signage reflects negotiated coexistence in regulated public space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "Individual movement through a heavily signposted environment embodies the tension between autonomous action and institutional constraint in modern urban life.",
+      "alternative_interpretations": [
+        "The scene simply documents routine pedestrian behavior with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or directional intent confirm internal experience or resistance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0143_P3",
+      "visual_anchors": [
+        "iPod touch advertisement with 'More games. More fun.'",
+        "multiple identical devices shown in varied orientations",
+        "green traffic light for pedestrians"
+      ],
+      "symbolic_mapping": [
+        "Repetition of devices suggests standardization of experience; green light signals permitted motion"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The synchronized display of leisure technology alongside regulated temporal cues (traffic signals) implies that technological engagement structures contemporary temporality and distracts from embodied finitude.",
+      "alternative_interpretations": [
+        "The ad merely highlights product features; the traffic light is functional and unrelated."
+      ],
+      "limitations": [
+        "No clock, aging indicator, or explicit mortality reference appears in the image."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:07:49.043613+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-526617a6-23cd-939b-9b01-be03e50733cf",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 949,
+        "total_tokens": 1738,
+        "completion_tokens_details": {
+          "text_tokens": 949
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702073840bda79226194861",
+      "usage": {
+        "completion_tokens": 809,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1902,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2711
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

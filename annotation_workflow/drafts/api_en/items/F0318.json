@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0318",
+  "sample_id": "PHL1800_HL_0538",
+  "file_name": "PHL1800_HL_0538.png",
+  "batch_id": "B008",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man in a yellow shirt throwing a frisbee",
+  "captions": {
+    "scene": [
+      "A grassy park area with scattered dry leaves, flowering shrubs in the background, and red-painted wooden benches.",
+      "Three people seated on a red bench behind the main subject; one wears a green shirt and holds a water bottle, another wears dark clothing, and a third is partially visible.",
+      "A metal mesh trash can stands beside the red bench, and trees and bushes form a blurred backdrop."
+    ],
+    "action": [
+      "The man extends his right arm forward with an open hand, releasing or having just released a white frisbee that is airborne near his waist level.",
+      "His left leg is lifted and bent at the knee, foot off the ground, suggesting motion from a throw or follow-through.",
+      "He wears glasses, a yellow short-sleeved shirt with a red collar and orange Nike swoosh, beige cargo shorts, white socks, and blue-and-white sneakers."
+    ],
+    "rationale": [
+      "The frisbee’s position and orientation relative to the man’s hand suggest it was recently thrown rather than caught, given the open palm and forward arm extension.",
+      "The lifted left leg and body lean imply dynamic motion consistent with a rotational throwing motion, though no full-body trajectory is visible.",
+      "The seated individuals appear passive and oriented toward the activity, but their exact attention direction cannot be confirmed due to partial occlusion and head angles."
+    ],
+    "object": [
+      "A white plastic frisbee is suspended mid-air approximately at the man’s hip height, slightly in front of his torso.",
+      "The man wears a black wristband on his left wrist and a watch on his right wrist.",
+      "A red wooden bench with metal supports holds three seated individuals; the leftmost person wears sandals and holds a translucent green bottle.",
+      "The ground is covered with green grass interspersed with numerous brown dried leaves.",
+      "A metal trash receptacle with a diamond-pattern mesh side panel is positioned between two red vertical posts."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0318_P1",
+      "visual_anchors": [
+        "man’s extended arm",
+        "mid-air frisbee",
+        "lifted leg"
+      ],
+      "symbolic_mapping": [
+        "the frisbee’s flight represents a momentary transfer of agency from thrower to object"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The act of releasing the frisbee embodies a decisive moment where intention becomes external motion—agency enacted through physical choice, initiating a trajectory independent of the chooser.",
+      "alternative_interpretations": [
+        "It may simply depict recreational play without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism; motion could be routine rather than reflective."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0318_P2",
+      "visual_anchors": [
+        "seated observers",
+        "red bench",
+        "shared park space"
+      ],
+      "symbolic_mapping": [
+        "the bench functions as a stage for passive witnessing, contrasting active participation"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement—active thrower foregrounded, observers seated behind—illustrates how social existence is constituted through simultaneous presence and differential engagement within shared public space.",
+      "alternative_interpretations": [
+        "The observers may be unrelated passersby not attending to the action."
+      ],
+      "limitations": [
+        "Head orientations are ambiguous; no eye contact or gesture confirms observation of the thrower."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0318_P3",
+      "visual_anchors": [
+        "dry leaves on grass",
+        "flowering shrubs",
+        "seasonal foliage"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "A literal description of a man in a yellow shirt throwing a frisbee is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a man in a yellow shirt throwing a frisbee as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:31:45.115495+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ae581b3f-35ba-9e9a-a46e-6c199d6eef7c",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 953,
+        "total_tokens": 1782,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023133d880cc01d522449e",
+      "usage": {
+        "completion_tokens": 821,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1980,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2801
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F0318.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

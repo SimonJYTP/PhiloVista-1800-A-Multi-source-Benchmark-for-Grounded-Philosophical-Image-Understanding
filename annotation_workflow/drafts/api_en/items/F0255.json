@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0255",
+  "sample_id": "PHL1800_IRFL_0040",
+  "file_name": "PHL1800_IRFL_0040.jpg",
+  "batch_id": "B007",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a pair of metal handcuffs with US currency inserted between the cuffs",
+  "captions": {
+    "scene": [
+      "A grayscale close-up on a textured dark surface resembling asphalt or coarse concrete.",
+      "A single pair of metallic handcuffs lies open, partially enclosing folded paper currency.",
+      "The lighting creates strong highlights on the metal and shadows beneath the objects."
+    ],
+    "action": [
+      "The handcuffs are in an open, unlocked state with their jaws slightly separated.",
+      "Paper currency is wedged between the two cuffs, preventing full closure.",
+      "The stack of bills appears compressed and bent by the pressure of the cuffs."
+    ],
+    "rationale": [
+      "The visible '20' numeral suggests a US $20 bill, but other denominations cannot be confirmed due to occlusion and folding.",
+      "The cuffs are not actively restraining anything; their placement with money implies symbolic rather than functional use.",
+      "No human presence or motion is visible, so any narrative involving arrest or transaction is unsupported by direct evidence."
+    ],
+    "object": [
+      "A pair of standard double-locking metal handcuffs with polished surfaces and visible rivets and hinges.",
+      "At least one US $20 Federal Reserve Note is partially visible, showing the numeral '20' and part of the Treasury seal.",
+      "Additional folded paper currency is layered beneath the top bill, with partial serial numbers and edge patterns visible.",
+      "The handcuff chain link is not visible; only the two cuff bodies and their connecting bar are present.",
+      "The surface beneath the objects is granular, non-reflective, and uniformly dark gray with scattered light specks."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0255_P1",
+      "visual_anchors": [
+        "handcuffs",
+        "US $20 bill",
+        "compressed currency"
+      ],
+      "symbolic_mapping": [
+        "handcuffs → constraint",
+        "money inserted into cuffs → corruption of legal enforcement"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The image visually stages a tension between institutional control (handcuffs) and economic incentive (currency), suggesting that constraints may be subverted or commodified when money intervenes in systems designed for restraint.",
+      "alternative_interpretations": [
+        "A staged still-life composition using common props to evoke themes of crime or bribery without depicting actual events."
+      ],
+      "limitations": [
+        "No context confirms whether the money was placed intentionally for symbolism or incidentally; the image lacks temporal or causal markers."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0255_P2",
+      "visual_anchors": [
+        "folded bills",
+        "metal cuffs",
+        "asphalt-like ground"
+      ],
+      "symbolic_mapping": [
+        "ground surface → societal foundation",
+        "currency trapped in restraints → entangled value systems"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The juxtaposition of monetary value and coercive apparatus on a rough, unadorned surface implies that social structures rest on uneasy compromises where ethical responsibility is physically constrained by material interests.",
+      "alternative_interpretations": [
+        "A photographic study of texture, contrast, and object interaction, emphasizing form over meaning."
+      ],
+      "limitations": [
+        "The ground material is indeterminate beyond graininess; it could be studio flooring rather than symbolic terrain."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0255_P3",
+      "visual_anchors": [
+        "open handcuffs",
+        "partially obscured serial numbers",
+        "bent paper edges"
+      ],
+      "symbolic_mapping": [
+        "open cuffs despite inserted money → failed containment",
+        "unreadable text on bills → opacity of value"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The inability to fully read the currency details and the incomplete closure of the cuffs suggest epistemic limits: truth about value and control remains partial, and choices within such systems are structurally compromised.",
+      "alternative_interpretations": [
+        "A technical demonstration of shallow depth of field, with focus on the '20' numeral and cuff hinge while background and lower bills blur."
+      ],
+      "limitations": [
+        "Serial numbers are not fully legible, and no explicit indication of intent to obscure exists—blurring may result from optical properties alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:24:53.658248+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6f67cd3f-234b-91d9-86a0-8f7134a2cb02",
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 945,
+        "total_tokens": 1879,
+        "completion_tokens_details": {
+          "text_tokens": 945
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 427,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702244465da9260c35b46ed",
+      "usage": {
+        "completion_tokens": 801,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2079,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2880
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0176",
+  "sample_id": "PHL1800_HL_0242",
+  "file_name": "PHL1800_HL_0242.png",
+  "batch_id": "B006",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three children observing a cow at an outdoor event",
+  "captions": {
+    "scene": [
+      "A brown-and-white cow stands behind a thin wire fence on straw-covered ground, with three children in front of it.",
+      "A large white canopy tent is visible in the background with several indistinct people underneath and around it.",
+      "The setting is an open grassy field under a clear blue sky, with scattered corn husks and stalks on the ground."
+    ],
+    "action": [
+      "The cow faces forward, ears alert, head slightly lowered, standing still near the fence.",
+      "A boy in a dark blue T-shirt and dark blue rain boots holds a yellow corn husk while looking down toward the smaller child beside him.",
+      "A girl in a navy polka-dot dress and yellow rain boots stands to the right, facing the cow and holding a small object in her left hand."
+    ],
+    "rationale": [
+      "The presence of a fence and scattered corn debris suggests the cow is contained for public viewing, not grazing freely.",
+      "The children’s proximity and orientation toward the cow indicate focused attention, though no direct interaction (e.g., touching) is visible.",
+      "The white tent and multiple background figures imply an organized public gathering, but the specific nature (e.g., fair, farm day) cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "A medium-sized cow with a predominantly brown coat, white face, chest, and belly patch, and a yellow ear tag on its left ear stands behind a single-strand wire fence.",
+      "A boy wearing a dark blue short-sleeved T-shirt with a small graphic on the back, blue jeans, and dark blue rubber boots stands centrally among the children.",
+      "A younger child in a white long-sleeved top, blue jeans, and light-colored sneakers holds a partially peeled ear of corn with both hands.",
+      "A girl wearing a navy-blue sleeveless dress with white polka dots over a white short-sleeved shirt, black leggings, and bright yellow rubber boots stands to the far right.",
+      "A wooden log lies horizontally on the ground just in front of the fence, separating the cow’s area from the children’s standing space."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0176_P1",
+      "visual_anchors": [
+        "cow behind wire fence",
+        "children observing without touching",
+        "corn husk held by boy"
+      ],
+      "symbolic_mapping": [
+        "fence as boundary between domesticated animal and human curiosity",
+        "unconsumed corn as potential sustenance withheld"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where human observation is mediated by physical and social boundaries—fence, age, role—highlighting how interspecies encounters are structured by constraint rather than reciprocity.",
+      "alternative_interpretations": [
+        "This is simply a routine farm visit where children learn about livestock; no deeper structure is intended."
+      ],
+      "limitations": [
+        "No signage, labels, or explicit context confirms intent or institutional framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0176_P2",
+      "visual_anchors": [
+        "three children grouped closely",
+        "differing attire and footwear",
+        "shared focus on the cow"
+      ],
+      "symbolic_mapping": [
+        "proximity despite differences indicating temporary shared experience",
+        "rain boots suggesting preparedness for messy engagement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The children’s varied clothing and unified gaze suggest identity is temporarily subsumed by collective attention—a fleeting social formation grounded in shared sensory encounter.",
+      "alternative_interpretations": [
+        "The children are siblings or classmates; their grouping reflects prior relationship, not emergent sociality."
+      ],
+      "limitations": [
+        "Facial expressions are not clearly visible; emotional alignment cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0176_P3",
+      "visual_anchors": [
+        "scattered corn husks on ground",
+        "child holding intact corn",
+        "cow standing near feed remnants"
+      ],
+      "symbolic_mapping": [
+        "corn as artifact of labor and consumption",
+        "cow as both subject and resource within agricultural cycle"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The juxtaposition of harvested corn, a live animal, and observing children evokes the ethical weight of food systems—where care, use, and witness coexist without resolution.",
+      "alternative_interpretations": [
+        "The corn is merely litter from feeding; no symbolic meaning is present."
+      ],
+      "limitations": [
+        "No visible feeding action, signage, or tools confirm agricultural function or moral framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:14:02.219892+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-642351cb-8b9a-9d38-a1d6-138f85770082",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1032,
+        "total_tokens": 1801,
+        "completion_tokens_details": {
+          "text_tokens": 1032
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070213362c8bef3b347e49bf",
+      "usage": {
+        "completion_tokens": 895,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1966,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2861
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

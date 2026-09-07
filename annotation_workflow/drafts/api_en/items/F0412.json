@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0412",
+  "sample_id": "PHL1800_MM_0049",
+  "file_name": "PHL1800_MM_0049.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 38,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a girl crouching on a beach interacting with seagulls and two green plastic trays",
+  "captions": {
+    "scene": [
+      "A sunny beach with turquoise ocean waves, white sand, scattered seagulls, and a clear blue sky with cumulus clouds.",
+      "The foreground shows sandy terrain with footprints and four visible seagulls; one is near the girl’s hand, two are standing nearby, and one is farther right.",
+      "Two identical green rectangular plastic trays with grid patterns rest on the sand in front of the girl."
+    ],
+    "action": [
+      "The girl is crouched barefoot, leaning forward with her right hand extended toward a small seagull near a green tray.",
+      "A seagull directly in front of the girl has its beak open and appears to be pecking at or near the girl’s fingers or the tray edge.",
+      "Three other seagulls stand alert on the sand at varying distances, observing or facing the interaction."
+    ],
+    "rationale": [
+      "The girl’s posture and hand position suggest intentional engagement with the bird, though intent cannot be confirmed from posture alone.",
+      "The presence of two identical trays implies deliberate placement, possibly as part of an activity, but their function is not visually verifiable.",
+      "The speech bubble text states 'These traps will teach them a lesson', which describes the trays as traps; however, no mechanism confirming trapping functionality is visible."
+    ],
+    "object": [
+      "A girl with long brown hair tied with a blue bow wears a white short-sleeved shirt, pink patterned shorts, and black sandals, crouching on sand.",
+      "Four seagulls are present: one with grey back, white head and underparts, red legs, and red-tipped beak is close to the girl; another similar adult is left of her; a third adult is right of her; and a smaller, less distinct juvenile stands between the girl and the left adult.",
+      "Two green plastic trays with raised grid walls sit side by side on the sand, each approximately 20 cm long, with no visible bait, closure, or trigger mechanism.",
+      "The ocean displays breaking white surf lines against turquoise water extending to the horizon under a bright blue sky with scattered white cumulus clouds.",
+      "A white speech bubble with black sans-serif text reads: 'These traps will teach them a lesson', anchored by a small white circle near the girl’s head."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0412_P1",
+      "visual_anchors": [
+        "green trays",
+        "girl’s outstretched hand",
+        "speech bubble text"
+      ],
+      "symbolic_mapping": [
+        "trays → instruments of control",
+        "speech bubble → declared moral justification"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image stages a moment where human agency (the girl) imposes a punitive framework (labeled 'traps') upon nonhuman agents (seagulls), invoking moral language ('teach them a lesson') to legitimize asymmetrical power—suggesting ethics as performative justification for domination.",
+      "alternative_interpretations": [
+        "The scene may depict playful mimicry or imaginative role-play by the child, with the text being fictional dialogue rather than literal intent."
+      ],
+      "limitations": [
+        "No visible trap mechanism or consequence confirms actual trapping; the text is presented as internal monologue without external verification."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0412_P2",
+      "visual_anchors": [
+        "seagull with open beak near hand",
+        "girl’s focused gaze downward",
+        "proximity of multiple birds"
+      ],
+      "symbolic_mapping": [
+        "open beak → vulnerability or demand",
+        "crouch posture → temporary suspension of hierarchy"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The proximity and mutual orientation of girl and bird evoke a fragile interspecies encounter where freedom is momentarily negotiated—not through dominance but through shared space and attention—highlighting how social existence emerges even across species boundaries.",
+      "alternative_interpretations": [
+        "The bird’s open beak may indicate aggression or feeding behavior unrelated to symbolic negotiation."
+      ],
+      "limitations": [
+        "Bird posture is ambiguous; beak opening could signal threat, hunger, or vocalization without contextual cues."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0412_P3",
+      "visual_anchors": [
+        "speech bubble text",
+        "identical green trays",
+        "uniform seagull appearance"
+      ],
+      "symbolic_mapping": [
+        "repetition of trays → systematization",
+        "generic labeling of 'them' → deindividualization"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The uniformity of trays and the collective designation 'them' in the text reflect a cognitive simplification where individual differences among seagulls are erased in favor of a categorical truth claim—revealing how knowledge systems often rely on appearance-based grouping to assert control.",
+      "alternative_interpretations": [
+        "The text may be ironic or satirical, critiquing such simplifications rather than endorsing them."
+      ],
+      "limitations": [
+        "The speaker’s stance (authorial vs. character) is indeterminate; tone cannot be inferred from visual alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:44:43.387018+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4eff47fb-37d8-9936-9123-b6548a85131b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1151,
+        "total_tokens": 2684,
+        "completion_tokens_details": {
+          "text_tokens": 1151
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070244230d024d72fcc049bb",
+      "usage": {
+        "completion_tokens": 1012,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3106,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4118
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1410",
+  "sample_id": "PHL1800_HAIV_0343",
+  "file_name": "PHL1800_HAIV_0343.png",
+  "batch_id": "B029",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single human figure holding a crucifix surrounded by climbing green vines",
+  "captions": {
+    "scene": [
+      "A white background with a central figure, dark cross, and green leafy vines framing the composition on left and right.",
+      "Vines with serrated leaves and small white blossoms ascend vertically along both sides of the image.",
+      "The figure wears a light-colored garment with visible folds; the cross is rendered in dark teal/black pigment."
+    ],
+    "action": [
+      "The figure holds the crucifix upright with both hands clasped near its base.",
+      "The figure’s head is tilted slightly upward, eyes closed or obscured, mouth partially open.",
+      "Vine stems intertwine with the cross and drape across the figure’s shoulders and arms."
+    ],
+    "rationale": [
+      "The crucifix is positioned centrally and held firmly, suggesting intentional presentation rather than accidental placement.",
+      "The vines appear to grow around and through the figure and cross, indicating spatial integration rather than mere background decoration.",
+      "The monochromatic line work and selective color (green only for foliage) imply deliberate stylistic emphasis on organic vs. symbolic elements."
+    ],
+    "object": [
+      "A dark-colored crucifix with a corpus depicted in lighter tones occupies the vertical center of the image.",
+      "The human figure has long hair, a draped garment, and facial features rendered with black ink outlines and partial shading.",
+      "Two prominent vine stems run parallel to the left and right edges, each bearing multiple compound leaves and small white flowers.",
+      "The figure’s hands are interlocked below the crossbar, fingers overlapping in a gesture of support or embrace.",
+      "Green pigment is applied exclusively to foliage; all other elements use black ink and white paper ground."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1410_P1",
+      "visual_anchors": [
+        "crucifix held upright",
+        "vines entwined with cross",
+        "figure’s closed eyes"
+      ],
+      "symbolic_mapping": [
+        "vines → organic life persisting amid religious symbol",
+        "closed eyes → inward focus or surrender"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "time_mortality"
+      ],
+      "interpretation": "The coexistence of living vines and the static crucifix suggests a tension between enduring natural cycles and fixed spiritual symbolism, possibly reflecting on how meaning persists or transforms over time.",
+      "alternative_interpretations": [
+        "The vines may simply serve as decorative framing without symbolic intent, and the figure’s pose could indicate physical exhaustion rather than contemplation."
+      ],
+      "limitations": [
+        "No textual labels or contextual markers confirm symbolic intent; the style is abstract and non-representational in detail."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1410_P2",
+      "visual_anchors": [
+        "figure’s hands clasped around cross base",
+        "dark cross against light garment",
+        "asymmetrical vine density"
+      ],
+      "symbolic_mapping": [
+        "clasped hands → active engagement or burden-bearing",
+        "contrast of dark cross/light cloth → duality of suffering and purity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s physical embrace of the cross implies voluntary assumption of moral weight, where constraint (the cross) and agency (the grip) coexist, raising questions about responsibility within imposed structures.",
+      "alternative_interpretations": [
+        "The hands may merely stabilize the cross for display; the contrast could be aesthetic rather than thematic."
+      ],
+      "limitations": [
+        "Hand positioning lacks clear directional force or strain indicators; garment color is uniform and unmarked."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1410_P3",
+      "visual_anchors": [
+        "white blossoms on vines",
+        "partial occlusion of face by hair and vines",
+        "cross extending above figure’s head"
+      ],
+      "symbolic_mapping": [
+        "blossoms → fleeting beauty amid solemnity",
+        "occluded face → obscured identity or universality"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The partial concealment of the figure’s face alongside recurring floral motifs suggests that personal identity is mediated or reshaped through external symbols and natural processes, implying a journey where selfhood emerges relationally rather than autonomously.",
+      "alternative_interpretations": [
+        "Facial obscurity may result from artistic simplification or medium limitations, not conceptual intent."
+      ],
+      "limitations": [
+        "No consistent pattern in occlusion—some facial features remain visible—and blossoms are sparse and stylized."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:29:10.391458+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-16f0fccc-cc9f-9008-977d-f2c63c1aebec",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 986,
+        "total_tokens": 2519,
+        "completion_tokens_details": {
+          "text_tokens": 986
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704284973c729b7cccd447f",
+      "usage": {
+        "completion_tokens": 848,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2943,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3791
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

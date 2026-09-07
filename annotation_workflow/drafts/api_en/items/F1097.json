@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F1097",
+  "sample_id": "PHL1800_HL_0303",
+  "file_name": "PHL1800_HL_0303.png",
+  "batch_id": "B023",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a silver four-engine propeller aircraft parked on an airfield tarmac with people nearby",
+  "captions": {
+    "scene": [
+      "Overcast sky with dense gray clouds above a paved airfield; a large hangar is visible in the background left.",
+      "Yellow painted lines mark parking or taxi positions on the gray concrete tarmac.",
+      "Multiple groups of people stand near the aircraft’s fuselage and nose, some wearing casual outerwear."
+    ],
+    "action": [
+      "The aircraft is stationary on its landing gear with both main and nose wheels on the ground.",
+      "A group of six people stands clustered near the open crew entry hatch on the port side mid-fuselage.",
+      "Several individuals are positioned near the nose wheel and cockpit area, facing toward or inspecting the aircraft."
+    ],
+    "rationale": [
+      "The aircraft’s static position and lack of motion blur suggest it is not currently operating; however, engine cowlings are closed and no ground power unit is visible, so operational status is uncertain.",
+      "People are gathered closely around access points (hatch, nose), implying observation or boarding activity, but no one is actively climbing or entering, so intent remains ambiguous.",
+      "Markings include a large black 'A' inside a white square on the vertical stabilizer and 'AFI' in blue on the nose; these appear to be identifiers, but without external reference, their meaning cannot be confirmed."
+    ],
+    "object": [
+      "The aircraft has a high-wing monoplane configuration with four radial engines, each driving a three-bladed propeller; two propellers are visibly stopped and aligned vertically.",
+      "The fuselage bears a white star within a blue circle (U.S. national insignia) on the side, and a black-and-white checkerboard pattern near the tail cone.",
+      "The vertical stabilizer displays a large black capital 'A' centered in a white square; the horizontal stabilizer is silver with no visible markings.",
+      "The nose section features blue lettering reading 'AFI' followed by partially obscured characters; the cockpit glazing is clear and reflects the sky.",
+      "Six distinct individuals stand near the port-side crew hatch: three wear dark jackets, two wear red tops, one wears a light beige coat; all appear upright and stationary."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1097_P1",
+      "visual_anchors": [
+        "large black 'A' on tail",
+        "blue 'AFI' on nose",
+        "U.S. star insignia"
+      ],
+      "symbolic_mapping": [
+        "alphanumeric markings as signifiers of institutional belonging",
+        "national insignia as visual assertion of sovereignty"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The aircraft’s markings function as layered declarations of identity—individual (‘A’), organizational (‘AFI’), and national (star)—revealing how material objects become sites where authority and affiliation are inscribed and contested through visual language.",
+      "alternative_interpretations": [
+        "The markings may simply denote unit assignment and serial identification for logistical purposes, with no intentional symbolic layering."
+      ],
+      "limitations": [
+        "No documentation confirms the origin or intended meaning of ‘AFI’ or the ‘A’; context beyond the image is absent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1097_P2",
+      "visual_anchors": [
+        "six people grouped near hatch",
+        "others near nose",
+        "no visible barriers between crowd and aircraft"
+      ],
+      "symbolic_mapping": [
+        "proximity to machine as embodied engagement with technological heritage"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The voluntary gathering of civilians around a historic military aircraft suggests a collective renegotiation of social memory, where presence replaces archival distance and labor (maintenance, preservation) becomes a shared civic act rather than institutional duty.",
+      "alternative_interpretations": [
+        "The people may be tour participants following a guided route, with proximity dictated by safety protocols rather than personal choice."
+      ],
+      "limitations": [
+        "Facial expressions, gestures, and signage indicating event type are not visible; motivation cannot be determined from posture alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1097_P3",
+      "visual_anchors": [
+        "overcast sky casting diffuse light",
+        "aircraft shadow sharply defined on tarmac",
+        "clouds partially obscuring distant horizon"
+      ],
+      "symbolic_mapping": [
+        "shadow as temporal trace of presence",
+        "cloud cover as metaphor for obscured history"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The crisp shadow cast by the aircraft anchors it firmly in the present moment, while the heavy cloud cover visually occludes continuity with the past or future—evoking how historical artifacts exist simultaneously as evidence and as gaps in collective understanding.",
+      "alternative_interpretations": [
+        "The lighting conditions are meteorologically ordinary; the shadow is merely a physical consequence of ambient illumination and object geometry."
+      ],
+      "limitations": [
+        "No timestamp, date markers, or contextual signage confirm historical period or exhibition status."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people near the port-side crew hatch (candidate states seven, but visual inspection shows six distinct individuals)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:50:16.902066+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2424d5e0-ef60-99bb-90bc-c52414772cbd",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1115,
+        "total_tokens": 1884,
+        "completion_tokens_details": {
+          "text_tokens": 1115
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034954e2e32cb671084877",
+      "usage": {
+        "completion_tokens": 994,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2045,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3039
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

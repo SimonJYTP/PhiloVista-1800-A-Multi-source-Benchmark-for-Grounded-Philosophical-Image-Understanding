@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0402",
+  "sample_id": "PHL1800_HL_0180",
+  "file_name": "PHL1800_HL_0180.png",
+  "batch_id": "B010",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four people at an outdoor table with equipment and signage",
+  "captions": {
+    "scene": [
+      "A sunny outdoor setting with a paved surface, green grassy hills in the background, and a red pickup truck parked nearby.",
+      "A white folding table holds a laptop, bottled drinks, papers, and a yellow bag; a blue umbrella is open over part of the table.",
+      "A signboard with yellow frame and green border stands to the right, displaying text and an image of hands holding library cards."
+    ],
+    "action": [
+      "A man in a brown shirt and sunglasses stands left of the table, holding a yellow bag and looking down.",
+      "A man in a white shirt operates a professional video camera on a tripod behind the table.",
+      "A man in a dark shirt leans over the table, writing or handling items near the laptop."
+    ],
+    "rationale": [
+      "The presence of a sign reading 'Sign Up For LIBRARY CARDS HERE' suggests a public outreach or registration activity, though the exact nature is not confirmed by other visible evidence.",
+      "The open blue umbrella indicates active use for shade, implying prolonged outdoor presence under bright sunlight.",
+      "The video camera operator’s stance and equipment suggest documentation or media production is occurring, but no broadcast or recording status is visually verifiable."
+    ],
+    "object": [
+      "A beige plastic chair is positioned in front of the table, unoccupied.",
+      "A black laptop sits open on the table, screen facing upward, with a black case beside it.",
+      "Two clear plastic bottles with red and blue labels are on the table, alongside a red can and scattered papers.",
+      "A red pickup truck with chrome wheels is parked to the right, partially behind the signboard.",
+      "A building with a gray roof and white walls appears in the background behind trees and a utility pole."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0402_P1",
+      "visual_anchors": [
+        "sign reading 'Sign Up For LIBRARY CARDS HERE'",
+        "man writing at table",
+        "video camera operator"
+      ],
+      "symbolic_mapping": [
+        "library card sign → access to institutional knowledge",
+        "camera operator → surveillance or documentation of civic participation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The scene embodies the negotiation between individual engagement and institutional infrastructure: signing up for a library card symbolizes voluntary entry into a shared epistemic community, while the camera records this act as socially legible performance.",
+      "alternative_interpretations": [
+        "This is simply a routine municipal outreach event with no deeper symbolic layer; the camera may be for internal training, not public documentation."
+      ],
+      "limitations": [
+        "No visible facial expressions or dialogue confirm intent or perception; the sign’s full context (e.g., sponsor, location) is absent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0402_P2",
+      "visual_anchors": [
+        "man in sunglasses holding yellow bag",
+        "blue umbrella shading table",
+        "red pickup truck in background"
+      ],
+      "symbolic_mapping": [
+        "umbrella → temporary shelter against exposure",
+        "yellow bag → provisional container of materials or identity"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of protective elements (umbrella, sunglasses) with open exposure (paved plaza, clear sky) reflects the tension between self-presentation and environmental constraint—individuals manage visibility while operating within publicly regulated space.",
+      "alternative_interpretations": [
+        "The umbrella is purely functional for sun protection; the sunglasses are standard outdoor wear with no symbolic intent."
+      ],
+      "limitations": [
+        "No evidence confirms intentional symbolism; all objects have mundane utilitarian functions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0402_P3",
+      "visual_anchors": [
+        "laptop on table",
+        "paper documents",
+        "man leaning forward writing"
+      ],
+      "symbolic_mapping": [
+        "laptop + paper → hybrid analog-digital labor",
+        "writing gesture → inscription of consent or record"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The co-location of digital and analog tools during a registration act highlights how contemporary civic responsibility is enacted through technologically mediated labor, where data entry carries ethical weight even in informal settings.",
+      "alternative_interpretations": [
+        "The man is merely filling out a form; the laptop may be idle or used for unrelated tasks."
+      ],
+      "limitations": [
+        "Screen content is unreadable; no visible interface confirms data entry or official function."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:43:49.189908+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8fe7d6ed-1b18-9e50-8ec1-e59229a244b6",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 997,
+        "total_tokens": 1806,
+        "completion_tokens_details": {
+          "text_tokens": 997
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702432113a6e67f83b544d2",
+      "usage": {
+        "completion_tokens": 859,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1976,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2835
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

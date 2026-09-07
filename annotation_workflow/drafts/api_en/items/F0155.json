@@ -1,0 +1,167 @@
+{
+  "annotation_item_id": "F0155",
+  "sample_id": "PHL1800_IRFL_0471",
+  "file_name": "PHL1800_IRFL_0471.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single snake coiled on a moss-covered branch",
+  "captions": {
+    "scene": [
+      "Dense tropical forest with layered foliage, including palm fronds and broadleaf plants.",
+      "A thick, horizontally oriented tree branch covered in green moss dominates the foreground.",
+      "Diffuse daylight filters through a high canopy, illuminating mid-ground vegetation while background remains shadowed."
+    ],
+    "action": [
+      "The snake is stationary, coiled in an S-shape with its head raised and facing forward.",
+      "Its body rests fully on the branch, with no contact with surrounding leaves or ground.",
+      "The snake’s scales show clear patterning; no motion blur is present."
+    ],
+    "rationale": [
+      "The snake’s posture suggests alertness rather than rest, based on head elevation and eye orientation.",
+      "Moss coverage on the branch indicates prolonged moisture exposure, consistent with humid forest conditions.",
+      "No other vertebrates are visible; presence of only one snake is confirmed by full-body visibility and lack of overlapping forms."
+    ],
+    "object": [
+      "A snake with tan, brown, and cream-colored geometric markings lies along a mossy branch.",
+      "The branch has rough bark texture partially obscured by dense green moss, especially on upper surfaces.",
+      "Multiple fern-like fronds extend diagonally across the mid-ground, some intersecting the snake’s body visually.",
+      "The snake’s head is triangular with visible dark eyes and a slightly open mouth; no tongue is extended.",
+      "Background consists of out-of-focus trunks and leaves, creating depth without revealing specific species."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0155_P1",
+      "visual_anchors": [
+        "snake’s coiled form",
+        "moss-covered branch",
+        "layered forest depth"
+      ],
+      "symbolic_mapping": [
+        "coiling as cyclical persistence",
+        "moss as time-accumulated presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The snake’s stillness on a decaying yet regenerating substrate evokes the tension between bounded existence and enduring natural cycles.",
+      "alternative_interpretations": [
+        "A simple ecological snapshot of arboreal predation readiness, with no symbolic intent."
+      ],
+      "limitations": [
+        "No behavioral sequence is shown; stillness alone cannot confirm intentionality or temporal awareness."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0155_P2",
+      "visual_anchors": [
+        "snake’s head orientation",
+        "clear eye visibility",
+        "lack of surrounding movement"
+      ],
+      "symbolic_mapping": [
+        "gaze as directed attention",
+        "stillness as poised agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The focused gaze amid environmental complexity suggests a moment of perceptual selection—knowing what to attend to within a field of potential stimuli.",
+      "alternative_interpretations": [
+        "The head angle results from gravitational balance and branch contour, not cognition."
+      ],
+      "limitations": [
+        "Eye structure does not reveal direction of focus; corneal reflection is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0155_P3",
+      "visual_anchors": [
+        "moss enveloping bark",
+        "snake’s pattern blending with branch",
+        "foreground sharpness vs. background blur"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "A literal description of a single snake coiled on a moss-covered branch is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a single snake coiled on a moss-covered branch as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:11:27.683196+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-580eb016-e194-9c70-b8c0-1ab245afe977",
+      "usage": {
+        "prompt_tokens": 2989,
+        "completion_tokens": 852,
+        "total_tokens": 3841,
+        "completion_tokens_details": {
+          "text_tokens": 852
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2482,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702105195526de16369442e",
+      "usage": {
+        "completion_tokens": 713,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7552,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 8265
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F0155.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

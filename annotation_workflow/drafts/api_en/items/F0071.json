@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0071",
+  "sample_id": "PHL1800_HL_0017",
+  "file_name": "PHL1800_HL_0017.png",
+  "batch_id": "B001",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "man holding a digital camera in the foreground",
+  "captions": {
+    "scene": [
+      "Indoor domestic setting with white walls, ceiling molding, and a chandelier visible in background.",
+      "A decorated Christmas tree stands near a bookshelf and window with bright daylight.",
+      "Three other individuals are visible in the background: one leaning in a doorway, one beside the tree, and one standing near the window."
+    ],
+    "action": [
+      "The foreground man holds a compact digital camera at eye level, pointing it toward the viewer/mirror.",
+      "The person in the left doorway rests an arm on the doorframe while facing forward.",
+      "Two background individuals stand still, facing generally toward the camera/mirror; one wears a dark T-shirt with a graphic, the other a green shirt."
+    ],
+    "rationale": [
+      "The foreground man’s posture and camera orientation suggest he is taking a self-portrait via reflection, though the mirror surface is not directly visible.",
+      "The presence of a lit Christmas tree and books implies a lived-in residential space during holiday season, but exact date or occasion cannot be confirmed.",
+      "The text on the foreground man’s shirt is partially legible but contains ambiguous words; full interpretation requires assumption beyond visual evidence."
+    ],
+    "object": [
+      "A black compact digital camera with a silver lens ring is held in the right hand of the foreground man.",
+      "A green artificial Christmas tree adorned with lights and ornaments stands near a tall wooden bookshelf filled with books.",
+      "A flat-screen television sits on a low cabinet to the left of the tree, screen turned off.",
+      "A brass-finished chandelier with multiple glass shades hangs from the ceiling in the background room.",
+      "The foreground man wears a black T-shirt featuring a white line drawing of a stylized figure holding a staff and a banner, with the readable text 'CERNE ABBAS GIANT DORSET' beneath it."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0071_P1",
+      "visual_anchors": [
+        "man holding camera",
+        "mirror-reflected scene",
+        "multiple people in shared space"
+      ],
+      "symbolic_mapping": [
+        "camera as mediation of self-perception",
+        "reflection as dual presence of observer and observed"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The act of photographing oneself through a reflective surface underscores the constructed nature of identity—simultaneously performer, subject, and witness—within a social context where others occupy the same frame yet remain peripheral to the primary act of self-documentation.",
+      "alternative_interpretations": [
+        "This is simply a casual family photo taken during holiday preparations, with no intentional philosophical framing."
+      ],
+      "limitations": [
+        "The mirror surface itself is not visible; reflection is inferred from composition and perspective, so the exact mechanism (mirror vs. screen) is uncertain."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0071_P2",
+      "visual_anchors": [
+        "Christmas tree",
+        "bookshelf",
+        "daylight through window"
+      ],
+      "symbolic_mapping": [
+        "tree as cyclical time marker",
+        "books as accumulated knowledge"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of seasonal decoration (ephemeral celebration) with enduring objects like books and architectural features evokes tension between transient experience and persistent cultural memory, suggesting reflection on how meaning is preserved across time.",
+      "alternative_interpretations": [
+        "These are ordinary household items arranged without symbolic intent; their co-occurrence is coincidental."
+      ],
+      "limitations": [
+        "No explicit temporal markers (e.g., calendar, date-specific ornament) confirm the season beyond the tree’s conventional association."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0071_P3",
+      "visual_anchors": [
+        "T-shirt graphic of Cerne Abbas Giant",
+        "text 'DORSET'",
+        "casual indoor attire"
+      ],
+      "symbolic_mapping": [
+        "ancient chalk figure as symbol of locality and myth",
+        "wearing iconography as assertion of affiliation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "faith_meaning"
+      ],
+      "interpretation": "Wearing an image of a prehistoric geoglyph—often interpreted as a fertility or protective symbol—within a domestic, modern setting suggests negotiation between inherited cultural symbols and personal identity, where meaning is recontextualized through everyday embodiment.",
+      "alternative_interpretations": [
+        "The shirt is a souvenir or fashion item with no deeper significance to the wearer."
+      ],
+      "limitations": [
+        "The wearer’s intent or knowledge about the giant is not visually accessible; only the graphic and text are present."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:32:07.942065+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-148dbf42-5608-9ef3-9338-19a16cb33f7b",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1021,
+        "total_tokens": 1830,
+        "completion_tokens_details": {
+          "text_tokens": 1021
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013142a77de96f60324bb8",
+      "usage": {
+        "completion_tokens": 884,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1995,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2879
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

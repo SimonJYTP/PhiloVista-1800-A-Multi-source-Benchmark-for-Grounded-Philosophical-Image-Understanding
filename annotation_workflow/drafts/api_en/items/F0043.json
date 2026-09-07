@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0043",
+  "sample_id": "PHL1800_HAIV_0128",
+  "file_name": "PHL1800_HAIV_0128.png",
+  "batch_id": "B003",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single cartoon child wearing a Santa hat",
+  "captions": {
+    "scene": [
+      "A close-up of a cartoon child against a plain white background",
+      "The child wears a red Santa hat with white trim and a white pom-pom",
+      "The child wears a red garment decorated with multicolored stars and a green band"
+    ],
+    "action": [
+      "The child's mouth is wide open in an exaggerated expression",
+      "The child's eyes are tightly closed with curved eyelids and visible lashes",
+      "The child's cheeks are puffed outward and the tongue is visible inside the open mouth"
+    ],
+    "rationale": [
+      "The facial features suggest vocalization or exclamation due to the open mouth, raised cheeks, and closed eyes",
+      "The Santa hat and star-patterned garment indicate a festive or holiday-themed context",
+      "The stylized drawing style prevents definitive identification of age, gender, or ethnicity"
+    ],
+    "object": [
+      "A red Santa hat with white trim along the brim and a white spherical pom-pom at the tip of the dangling tail.",
+      "A cartoon face with rosy cheeks, closed eyes with black curved lines for lids and short black lashes, and a broad nose.",
+      "An open mouth revealing upper and lower teeth, pink gums, and a pink tongue; the interior is shaded dark purple-black.",
+      "Short blond hair visible beneath the hat’s brim, with orange-yellow highlights on the right side.",
+      "A red collar and upper torso garment featuring a horizontal green band below which are scattered stars in yellow, white, light blue, and teal."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0043_P1",
+      "visual_anchors": [
+        "open mouth",
+        "closed eyes",
+        "puffed cheeks"
+      ],
+      "symbolic_mapping": [
+        "exaggerated facial expression maps to unfiltered emotional release"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The unrestrained expression may symbolize the social permission granted to children to manifest joy without self-monitoring, reflecting how social roles shape expressive freedom.",
+      "alternative_interpretations": [
+        "It is simply a stylized depiction of laughter common in holiday illustrations, with no deeper intent."
+      ],
+      "limitations": [
+        "No contextual setting or interaction is shown to confirm social framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0043_P2",
+      "visual_anchors": [
+        "Santa hat",
+        "star-decorated garment",
+        "white background"
+      ],
+      "symbolic_mapping": [
+        "festive costume maps to temporary identity adoption during ritual periods"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The costume functions as a visual signifier that overrides individual appearance norms, suggesting identity can be temporarily suspended or reshaped through symbolic attire.",
+      "alternative_interpretations": [
+        "The clothing is generic holiday decoration with no identity implications."
+      ],
+      "limitations": [
+        "No before/after or contrasting state is shown to establish identity shift."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0043_P3",
+      "visual_anchors": [
+        "wide-open mouth",
+        "visible teeth and tongue",
+        "lack of text or narrative context"
+      ],
+      "symbolic_mapping": [
+        "absence of legible speech maps to pre-linguistic or non-verbal expression of meaning"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image foregrounds embodied expression over propositional content, implying that truth or understanding can reside in physical affect rather than articulated language.",
+      "alternative_interpretations": [
+        "The open mouth is purely comedic exaggeration, not a philosophical statement about knowledge."
+      ],
+      "limitations": [
+        "No accompanying symbols or cues confirm epistemic intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:57:11.095653+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fc462ba9-bd21-9a71-b41a-ce9f60227c53",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 831,
+        "total_tokens": 2364,
+        "completion_tokens_details": {
+          "text_tokens": 831
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070156409cb73a8bf78e4828",
+      "usage": {
+        "completion_tokens": 689,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2782,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3471
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1484",
+  "sample_id": "PHL1800_HL_0077",
+  "file_name": "PHL1800_HL_0077.png",
+  "batch_id": "B031",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one toddler with dark curly hair, wearing a striped shirt, seated on a brown fabric surface",
+  "captions": {
+    "scene": [
+      "A dimly lit indoor setting featuring a wooden-framed glass enclosure containing driftwood and bricks in the background.",
+      "The foreground shows a brown upholstered surface, likely a sofa or cushion, with part of a person's arm visible at lower left.",
+      "A black remote control rests on the brown surface near the toddler’s hand."
+    ],
+    "action": [
+      "The toddler’s right hand is extended toward and touching the remote control.",
+      "The toddler’s head is turned away from the camera, facing the remote and the enclosure.",
+      "The toddler is seated upright with torso leaning slightly forward."
+    ],
+    "rationale": [
+      "The toddler’s proximity and hand contact with the remote suggest engagement with it, though intent is not visually verifiable.",
+      "The presence of a glass enclosure with naturalistic contents implies a domestic display (e.g., terrarium or aquarium), but its function cannot be confirmed solely from appearance.",
+      "The lighting is low and directional, casting shadows; this limits visibility of facial features and fine texture details."
+    ],
+    "object": [
+      "A black plastic remote control with a circular navigation pad, multiple buttons, and a white logo near the top that is unreadable.",
+      "A wooden frame with visible grain and a horizontal drawer front featuring a small round metal knob.",
+      "A transparent glass panel above the wooden frame, showing reflections and internal objects including irregular brown driftwood and stacked rectangular bricks.",
+      "A brown textured fabric surface beneath the toddler, consistent with upholstery, showing creases and wear.",
+      "A short-sleeved shirt with vertical stripes alternating between cyan blue and white, worn by the toddler."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1484_P1",
+      "visual_anchors": [
+        "toddler’s hand on remote",
+        "glass enclosure with contained natural elements"
+      ],
+      "symbolic_mapping": [
+        "remote as interface to mediated experience",
+        "enclosure as bounded nature"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a child’s tactile reach toward a technological controller and a sealed natural display evokes tension between direct embodied inquiry and curated, constrained access to reality.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine domestic interaction with household objects, without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or gaze direction is visible to confirm attention or intentionality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1484_P2",
+      "visual_anchors": [
+        "striped shirt",
+        "curly hair",
+        "brown upholstery"
+      ],
+      "symbolic_mapping": [
+        "patterned clothing as social signifier",
+        "texture contrast between fabric and wood"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visible markers of individual appearance—hair texture, garment pattern—situated within shared domestic materiality suggest identity formation occurring through relational embedding rather than isolation.",
+      "alternative_interpretations": [
+        "These features are incidental and reflect only functional clothing choice and natural hair growth."
+      ],
+      "limitations": [
+        "Only partial body view is available; no contextual cues about social role or group affiliation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1484_P3",
+      "visual_anchors": [
+        "wooden drawer with knob",
+        "driftwood inside glass",
+        "low ambient light"
+      ],
+      "symbolic_mapping": [
+        "drawer as latent potential",
+        "driftwood as time-weathered artifact"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The stillness of aged organic matter behind glass, paired with a closed drawer and a child’s emerging agency, frames a quiet meditation on inherited temporality and nascent decision-making within constrained environments.",
+      "alternative_interpretations": [
+        "The objects are arranged for practical or aesthetic reasons with no temporal or existential reference intended."
+      ],
+      "limitations": [
+        "No inscriptions, dates, or sequential indicators confirm temporal narrative or intentional symbolism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:38:09.752195+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2c82a249-242d-9caa-9f6b-278fcc85c4d4",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 910,
+        "total_tokens": 1659,
+        "completion_tokens_details": {
+          "text_tokens": 910
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704372504fc7c9ec253488a",
+      "usage": {
+        "completion_tokens": 773,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1800,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2573
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

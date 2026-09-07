@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0376",
+  "sample_id": "PHL1800_HL_0444",
+  "file_name": "PHL1800_HL_0444.png",
+  "batch_id": "B010",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "five cross-country skiers in a competitive race on snow",
+  "captions": {
+    "scene": [
+      "Snow-covered slope with coniferous trees in the background and visible ski tracks in the foreground",
+      "Overcast daylight conditions with diffuse lighting and no strong shadows",
+      "Five athletes wearing numbered bibs, distinct colored suits, and winter headgear, positioned across the frame"
+    ],
+    "action": [
+      "Skier #131 in blue suit is mid-stride with poles planted, body leaning forward",
+      "Skier #93 in black suit is raising right arm while gliding, left pole planted behind",
+      "Skier #25 in red-and-white top is skiing with poles held low and parallel to snow surface"
+    ],
+    "rationale": [
+      "The presence of numbered bibs, synchronized motion, and identical equipment suggests organized competition rather than recreation",
+      "All individuals wear full winter racing attire including goggles, hats, and form-fitting suits, indicating formal event participation",
+      "The terrain shows groomed parallel tracks and consistent directionality, supporting cross-country skiing rather than downhill or freestyle"
+    ],
+    "object": [
+      "Skier #131 wears a white knit hat, blue full-body suit with multicolored geometric patterns on legs, and white gloves; bib number '131' is fully legible.",
+      "Skier #93 wears a black full-body suit, orange-tinted goggles, red headband, and black gloves; bib number '93' is fully legible.",
+      "Skier #25 wears a red long-sleeve top with white panel, black pants, white cap with dark logo, and black gloves; bib number '25' is fully legible.",
+      "Skier #7 wears a black long-sleeve top with white bib showing '7', black pants, black cap, and holds poles vertically; bib text below number is unreadable.",
+      "Skier #86 wears a yellow-and-black sleeveless vest over black long sleeves, black pants, blue cap, and black gloves; bib number '86' is fully legible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0376_P1",
+      "visual_anchors": [
+        "five skiers aligned diagonally across slope",
+        "identical ski equipment",
+        "numbered bibs"
+      ],
+      "symbolic_mapping": [
+        "bib numbers as markers of individuality within collective discipline"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The uniformity of gear and posture amid differentiated numbering reflects how individual identity is both asserted and subsumed within structured social competition.",
+      "alternative_interpretations": [
+        "This is simply standard race protocol with no symbolic intent"
+      ],
+      "limitations": [
+        "No facial expressions or gestures indicate intentional symbolism"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0376_P2",
+      "visual_anchors": [
+        "skier #93 raising arm",
+        "forward-leaning postures",
+        "parallel ski tracks"
+      ],
+      "symbolic_mapping": [
+        "raised arm as momentary rupture in synchronized motion"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The brief deviation of one skier’s arm gesture against the backdrop of disciplined forward motion embodies the tension between prescribed paths and spontaneous assertion of agency.",
+      "alternative_interpretations": [
+        "The raised arm may be a functional pole swing or signal, not expressive"
+      ],
+      "limitations": [
+        "Arm position could be part of normal double-pole technique at this phase"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0376_P3",
+      "visual_anchors": [
+        "dense evergreen forest bordering track",
+        "white snow covering ground entirely",
+        "no visible horizon or sky break"
+      ],
+      "symbolic_mapping": [
+        "enclosed natural setting as metaphor for bounded human endeavor"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The skiers’ exertion within a confined, repetitive snowy corridor evokes the cyclical nature of labor and the finite temporal window of physical performance against enduring natural backdrop.",
+      "alternative_interpretations": [
+        "Forest merely defines course boundaries; no deeper meaning intended"
+      ],
+      "limitations": [
+        "No clock, aging signs, or decay visible to support mortality theme"
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:41:12.884359+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-46e2edad-f903-9efa-b582-92f08b8bad61",
+      "usage": {
+        "prompt_tokens": 653,
+        "completion_tokens": 955,
+        "total_tokens": 1608,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 146,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070240532a6fe7f6f06b4863",
+      "usage": {
+        "completion_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1717,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2512
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

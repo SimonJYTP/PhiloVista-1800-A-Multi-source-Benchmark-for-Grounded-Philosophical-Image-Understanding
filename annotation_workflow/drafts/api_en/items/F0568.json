@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0568",
+  "sample_id": "PHL1800_IRFL_0416",
+  "file_name": "PHL1800_IRFL_0416.jpg",
+  "batch_id": "B013",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male person",
+  "captions": {
+    "scene": [
+      "A light-colored indoor corridor with plain walls and a smooth floor",
+      "A man lying on his back on the floor with limbs extended upward",
+      "A red leather briefcase and a black smartphone suspended mid-air near the man"
+    ],
+    "action": [
+      "The man’s legs are elevated and bent at the knees, feet pointing toward the ceiling",
+      "His right arm is raised with an open palm, left arm resting beside his torso",
+      "A briefcase and a smartphone appear airborne, suggesting recent release or impact"
+    ],
+    "rationale": [
+      "The man’s posture and airborne objects suggest a fall captured mid-event, though the exact cause is not visible",
+      "Clothing (dark suit, white shirt, striped tie) indicates formal attire, but no context confirms profession or intent",
+      "No visible injury, facial expression detail, or environmental hazard confirms causation or outcome"
+    ],
+    "object": [
+      "A man wearing black dress trousers, black dress shoes, a white collared shirt, and a diagonally striped tie lies supine on a light gray floor.",
+      "A reddish-brown leather briefcase with a top handle and a small metallic clasp hangs in the air to the man’s left side.",
+      "A black rectangular smartphone floats in the air above the man’s torso, oriented vertically with screen facing away from camera.",
+      "The man’s right hand is open and raised, fingers slightly spread, positioned near the phone’s trajectory path.",
+      "The background consists of a plain off-white wall with a horizontal baseboard and a faint vertical seam or fixture near the upper right."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0568_P1",
+      "visual_anchors": [
+        "airborne briefcase",
+        "airborne smartphone",
+        "man supine on floor"
+      ],
+      "symbolic_mapping": [
+        "briefcase as symbol of professional identity",
+        "smartphone as symbol of digital connectivity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The suspension of personal artifacts mid-fall visually disrupts the continuity of social role and technological tether, evoking fragility of constructed identity in modern contexts.",
+      "alternative_interpretations": [
+        "A staged photograph illustrating physical clumsiness or comedic mishap without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels, branding, or contextual signage confirm intended symbolism; objects could be generic props."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0568_P2",
+      "visual_anchors": [
+        "man’s outstretched hand",
+        "floating phone",
+        "lack of contact between hand and phone"
+      ],
+      "symbolic_mapping": [
+        "hand reaching toward device as gesture of attempted control"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The gap between reaching hand and detached device illustrates a moment where agency fails to bridge intention and outcome, reflecting constraints on freedom within routine action.",
+      "alternative_interpretations": [
+        "The hand position results from natural limb motion during a backward fall, not intentional reaching."
+      ],
+      "limitations": [
+        "Hand orientation and muscle tension cannot be assessed; intent is not visually verifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0568_P3",
+      "visual_anchors": [
+        "man’s formal attire",
+        "neutral corridor",
+        "absence of other people"
+      ],
+      "symbolic_mapping": [
+        "empty corridor as metaphor for institutional anonymity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The solitary figure in standardized workwear, isolated in a featureless institutional space, suggests alienation arising from labor systems that reduce individuals to transient functional units.",
+      "alternative_interpretations": [
+        "The setting is a generic office hallway; neutrality does not imply institutional critique."
+      ],
+      "limitations": [
+        "Wall texture, lighting, and architectural details are minimal and non-diagnostic of institutional type or ideology."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:57:20.679867+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8ebc1785-6d4c-9ec6-93ff-e6e2768ed3e2",
+      "usage": {
+        "prompt_tokens": 653,
+        "completion_tokens": 884,
+        "total_tokens": 1537,
+        "completion_tokens_details": {
+          "text_tokens": 884
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 146,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025709f22616f8f9a14b51",
+      "usage": {
+        "completion_tokens": 743,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1665,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2408
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

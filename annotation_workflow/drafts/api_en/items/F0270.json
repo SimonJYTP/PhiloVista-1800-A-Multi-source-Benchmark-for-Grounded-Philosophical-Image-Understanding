@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0270",
+  "sample_id": "PHL1800_HL_0543",
+  "file_name": "PHL1800_HL_0543.png",
+  "batch_id": "B008",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a batter in a white uniform swinging a bat, with a catcher crouched behind him",
+  "captions": {
+    "scene": [
+      "A baseball field with green grass, brown dirt infield, and white chalk lines marking home plate and batter's box",
+      "Night or stadium-lit conditions indicated by even illumination and lack of shadows from natural light",
+      "Two players visible: one batter mid-swing and one catcher in protective gear positioned behind home plate"
+    ],
+    "action": [
+      "The batter is rotating his torso and extending his arms forward, making contact or just past contact with a baseball",
+      "The baseball is visible in mid-air near the bat’s barrel, slightly blurred indicating motion",
+      "The catcher is crouched low with glove raised toward the expected trajectory of the ball"
+    ],
+    "rationale": [
+      "The batter’s posture—weight shifted forward, legs apart, bat angled downward—suggests follow-through after swing initiation",
+      "The ball’s position relative to the bat and its motion blur imply it has been struck rather than missed or fouled",
+      "The catcher’s stance and glove placement indicate anticipation of a fair or foul ball, but no ball is in the glove yet"
+    ],
+    "object": [
+      "The batter wears a white jersey with blue lettering (partially legible as 'Dodgers' on left chest), white pants, blue batting helmet, blue cleats, and white shin guards.",
+      "The bat is wooden with a light-colored barrel and dark handle; the batter grips it with two blue-and-white batting gloves.",
+      "The catcher wears an orange face mask, black chest protector, black shin guards, and a brown leather mitt extended toward home plate.",
+      "Home plate is a white five-sided rubber slab embedded in the dirt, fully visible and clean.",
+      "The infield dirt shows scuff marks and footprints around the batter’s box, consistent with recent movement."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0270_P1",
+      "visual_anchors": [
+        "batter’s focused gaze toward contact point",
+        "motion blur of ball",
+        "chalk line of batter’s box"
+      ],
+      "symbolic_mapping": [
+        "the batter’s box as a bounded zone of agency",
+        "the fleeting ball as transient opportunity"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The image captures a moment where human intention intersects with physical causality: the batter’s deliberate choice to swing within a constrained spatial and temporal window reflects the existential tension between planned action and inevitable transience.",
+      "alternative_interpretations": [
+        "This is simply a routine athletic motion in a regulated sport, with no deeper meaning beyond performance mechanics."
+      ],
+      "limitations": [
+        "No facial expression or internal state is visible due to helmet and angle; interpretation relies on postural inference alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0270_P2",
+      "visual_anchors": [
+        "catcher’s crouched readiness",
+        "shared orientation toward home plate",
+        "identical team color accents on both uniforms"
+      ],
+      "symbolic_mapping": [
+        "coordinated positioning as mutual dependence",
+        "shared field space as negotiated social order"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The synchronized roles of batter and catcher—opposed yet interdependent—embody a microcosm of social existence where individual action is only meaningful through reciprocal recognition and shared rules.",
+      "alternative_interpretations": [
+        "The catcher is merely performing a defensive role dictated by game rules, not engaging in symbolic reciprocity."
+      ],
+      "limitations": [
+        "Only two individuals are visible; broader social context (e.g., crowd, umpire) is absent, limiting generalization."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0270_P3",
+      "visual_anchors": [
+        "white chalk lines on brown dirt",
+        "clean home plate",
+        "uniform consistency"
+      ],
+      "symbolic_mapping": [
+        "chalk boundaries as constructed norms",
+        "standardized gear as identity through conformity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The precise geometry of the batter’s box and the uniform’s standardized design illustrate how identity is both expressed and constrained by institutional frameworks—freedom manifests only within prescribed limits.",
+      "alternative_interpretations": [
+        "The lines and uniforms are functional elements for gameplay clarity, not symbolic constructs."
+      ],
+      "limitations": [
+        "No text or insignia confirms institutional intent; visual cues alone cannot prove normative function."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:27:20.207209+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3b6d646a-bdc4-9431-ba6f-1bd9a853d75c",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 994,
+        "total_tokens": 1783,
+        "completion_tokens_details": {
+          "text_tokens": 994
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070227073c3664d1d5f14a89",
+      "usage": {
+        "completion_tokens": 853,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1949,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2802
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

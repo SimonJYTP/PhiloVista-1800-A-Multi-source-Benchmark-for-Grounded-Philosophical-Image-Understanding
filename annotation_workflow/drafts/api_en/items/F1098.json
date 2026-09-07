@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1098",
+  "sample_id": "PHL1800_IRFL_0447",
+  "file_name": "PHL1800_IRFL_0447.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a human hand inserting a black electrical plug into a wall socket",
+  "captions": {
+    "scene": [
+      "A white painted brick wall with a mounted white triple electrical outlet panel.",
+      "The outlet panel contains three sockets: one round two-pin, one round two-pin with grounding holes, and one rectangular coaxial or data port.",
+      "A black insulated power cord extends from the plug being inserted."
+    ],
+    "action": [
+      "A right hand grips a black two-pin European-style plug and pushes it into the middle socket.",
+      "The plug is partially inserted; metal pins are visible entering the socket apertures.",
+      "The hand’s fingers are curled around the plug body, thumb on top, index finger on side."
+    ],
+    "rationale": [
+      "The plug appears to be a Type C (Europlug) due to its two round pins and lack of grounding prongs, consistent with the socket shape.",
+      "The presence of a coaxial/data port suggests this is a modern multi-function wall plate, common in residential or office settings.",
+      "The hand’s orientation and grip suggest intentional insertion rather than accidental contact, though intent cannot be confirmed visually."
+    ],
+    "object": [
+      "The wall is made of brick covered with uneven white paint, showing texture and minor imperfections.",
+      "The outlet panel is white plastic, rectangular, with three vertically aligned sockets: leftmost is a coaxial/data port with a central pinhole, middle is a round two-pin socket with grounding slots, rightmost is a round two-pin socket without grounding slots.",
+      "The plug is black plastic with two parallel round metal pins protruding from its front face.",
+      "The cord attached to the plug is black, smooth-surfaced, and exits diagonally downward from the plug’s rear.",
+      "The hand has light skin tone, visible knuckles and fingernails, and no jewelry or tattoos."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1098_P1",
+      "visual_anchors": [
+        "black insulated cord",
+        "hand gripping plug",
+        "white brick wall"
+      ],
+      "symbolic_mapping": [
+        "the cord as conduit of external power",
+        "the hand as agent of connection"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The act of plugging in embodies the human negotiation with technological infrastructure—simultaneously an exercise of agency and a submission to standardized systems.",
+      "alternative_interpretations": [
+        "A routine domestic task with no symbolic weight beyond functional utility."
+      ],
+      "limitations": [
+        "No visible branding, labels, or contextual cues indicate purpose or consequence of the connected device."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1098_P2",
+      "visual_anchors": [
+        "white painted brick wall",
+        "clean outlet panel",
+        "precise hand placement"
+      ],
+      "symbolic_mapping": [
+        "wall as boundary between private and public domains",
+        "socket as threshold for energy access"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where individual action interfaces with institutionalized infrastructure, reflecting how social order is maintained through normalized, invisible technical protocols.",
+      "alternative_interpretations": [
+        "A neutral depiction of electrical installation with no sociopolitical implication."
+      ],
+      "limitations": [
+        "The wall’s material and finish provide no evidence of socioeconomic context or institutional affiliation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1098_P3",
+      "visual_anchors": [
+        "partially inserted plug",
+        "visible metal pins",
+        "unpowered state implied by absence of glow or indicator"
+      ],
+      "symbolic_mapping": [
+        "incomplete insertion as suspended potential",
+        "metal pins as latent conduits"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The near-completion of connection evokes the philosophical tension between potentiality and actuality—energy remains unrealized until the final motion, mirroring epistemic thresholds where truth is contingent on completion of an act.",
+      "alternative_interpretations": [
+        "A snapshot mid-action with no intended metaphysical meaning."
+      ],
+      "limitations": [
+        "No visual indication of time passage, failure, or success; the state is temporally ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:50:06.490825+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-72309ac3-5666-9718-b177-468ee48b43f2",
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 930,
+        "total_tokens": 1864,
+        "completion_tokens_details": {
+          "text_tokens": 930
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 427,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703495083cb4c1458924639",
+      "usage": {
+        "completion_tokens": 791,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2066,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2857
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

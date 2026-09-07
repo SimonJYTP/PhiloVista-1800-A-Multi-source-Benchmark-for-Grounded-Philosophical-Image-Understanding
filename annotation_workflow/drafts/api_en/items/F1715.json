@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1715",
+  "sample_id": "PHL1800_HL_0176",
+  "file_name": "PHL1800_HL_0176.png",
+  "batch_id": "B035",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "five males standing outdoors near a disc golf basket",
+  "captions": {
+    "scene": [
+      "A weathered wooden barn with open double doors stands behind a grassy yard under clear blue sky.",
+      "Tall coniferous trees line the background beyond a wooden fence and gravel path.",
+      "A red cooler sits on the grass to the left of the group; a metal disc golf basket is centered in front of them."
+    ],
+    "action": [
+      "The leftmost male holds a yellow disc and extends his arm toward the basket, appearing to demonstrate or prepare to throw.",
+      "The second male from left wears a baseball cap and looks toward the basket while holding no visible object.",
+      "The rightmost male stands with hands at his sides, facing the camera, wearing a dark t-shirt and khaki shorts."
+    ],
+    "rationale": [
+      "The presence of a disc golf basket and multiple discs suggests recreational disc golf activity, though no disc is mid-flight.",
+      "All individuals face generally forward, indicating posed positioning rather than candid motion; however, posture varies slightly.",
+      "Clothing styles (shorts, t-shirts, athletic shoes) are consistent with warm-weather outdoor recreation, but exact temperature cannot be confirmed."
+    ],
+    "object": [
+      "A galvanized metal disc golf basket with chain netting and a wooden base is positioned centrally on the grass.",
+      "A red rectangular cooler with white lid rests on the ground to the lower left of the group.",
+      "Five distinct human figures are visible: one adult male on far left, one boy in maroon shirt and cap, one teen in black shirt holding a green disc, one teen in white shirt holding a yellow disc, and one teen in navy shirt on far right.",
+      "The barn has horizontal wood siding, two small multi-pane windows above the doors, and a sloped roofline partially visible.",
+      "A blue plastic water bottle lies on the grass near the rightmost person’s feet."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1715_P1",
+      "visual_anchors": [
+        "disc golf basket",
+        "five individuals arranged symmetrically",
+        "open barn doors"
+      ],
+      "symbolic_mapping": [
+        "the basket as a focal point of shared purpose",
+        "the open doors suggesting transition or invitation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The arrangement around a shared goal-object (basket) reflects how collective activity structures social presence, where individual positions cohere into a temporary community defined by mutual engagement.",
+      "alternative_interpretations": [
+        "This is simply a casual group photo taken during a recreational outing with no deeper structure intended."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentionality of grouping; symmetry may be coincidental due to framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1715_P2",
+      "visual_anchors": [
+        "weathered barn",
+        "young and adult males together",
+        "discs held in hand"
+      ],
+      "symbolic_mapping": [
+        "barn as symbol of continuity or tradition",
+        "intergenerational presence implying transmission"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of aged infrastructure and youthful participants highlights how identity is performed through participation in culturally embedded practices, where appearance (clothing, stance) signals belonging to a shared activity domain.",
+      "alternative_interpretations": [
+        "The barn is merely background scenery; age differences reflect typical family or friend group composition without symbolic intent."
+      ],
+      "limitations": [
+        "No visible interaction between age groups confirms transmission; clothing is generic sportswear."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1715_P3",
+      "visual_anchors": [
+        "yellow disc extended toward basket",
+        "static postures",
+        "clear daylight"
+      ],
+      "symbolic_mapping": [
+        "disc in motion-ready state representing potential action",
+        "stillness contrasting with implied dynamism"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The suspended moment before release embodies the tension between freedom of choice (to throw or not) and constraint of rules (basket target, disc physics), framed within the finite duration of daylight—a reminder of temporal limits on action.",
+      "alternative_interpretations": [
+        "The person is simply posing for a photo; the disc is held still with no imminent motion implied."
+      ],
+      "limitations": [
+        "No motion blur or follow-through indicates actual throwing; the scene could be entirely static."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:04:37.077775+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-095178f5-ea55-9258-8827-a40b4370e168",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 985,
+        "total_tokens": 1794,
+        "completion_tokens_details": {
+          "text_tokens": 985
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050427ce79444ae1ca4c9f",
+      "usage": {
+        "completion_tokens": 846,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1961,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2807
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

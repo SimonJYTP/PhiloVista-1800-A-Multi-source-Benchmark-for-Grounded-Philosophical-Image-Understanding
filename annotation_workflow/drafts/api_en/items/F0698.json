@@ -1,0 +1,153 @@
+{
+  "annotation_item_id": "F0698",
+  "sample_id": "PHL1800_IRFL_0387",
+  "file_name": "PHL1800_IRFL_0387.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_deepseek_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult woman",
+  "captions": {
+    "scene": [
+      "A woman is shown in a close-up portrait against a plain, neutral background.",
+      "The foreground contains blurred, white cotton-like shapes.",
+      "The lighting is soft and even, creating a studio-like appearance."
+    ],
+    "action": [
+      "The woman is looking directly toward the camera.",
+      "Her face is held still with a neutral expression.",
+      "Her hair is styled upward into a loose updo."
+    ],
+    "rationale": [
+      "The subject is the only clearly focused figure in the frame.",
+      "The visible elements are consistent with a studio portrait, but no setting is shown.",
+      "The exact emotional state of the person cannot be determined from the image."
+    ],
+    "object": [
+      "The woman has light blond hair pulled up into a high, loose bun.",
+      "Her eyes appear light gray-blue and are looking toward the viewer.",
+      "Her lips are pink and her expression is still, with no visible smile.",
+      "She wears a white garment with a low neckline, exposing her shoulders and collarbone.",
+      "In the foreground, there are out-of-focus white, cotton-like shapes blurred by the camera lens."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0698_P1",
+      "visual_anchors": [
+        "the woman's face",
+        "her styled hair",
+        "her makeup"
+      ],
+      "symbolic_mapping": [
+        "styling as constructed appearance"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The image is constructed around visual identity, making appearance the central subject.",
+      "alternative_interpretations": [
+        "This is simply a beauty portrait."
+      ],
+      "limitations": [
+        "No evidence of broader identity context is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0698_P2",
+      "visual_anchors": [
+        "the woman's eyes looking directly at the viewer",
+        "her neutral facial expression"
+      ],
+      "symbolic_mapping": [
+        "the direct gaze as a minimal social connection"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The image stages a social encounter by presenting a face that looks back at the viewer.",
+      "alternative_interpretations": [
+        "The pose is a standard portrait convention."
+      ],
+      "limitations": [
+        "No reciprocal interaction is visible."
+      ],
+      "sufficiency": "supported"
+    },
+    {
+      "candidate_id": "AI_F0698_P3",
+      "visual_anchors": [
+        "the sharply focused face",
+        "the blurred foreground object"
+      ],
+      "symbolic_mapping": [
+        "sharpness versus blur as presence versus background"
+      ],
+      "concept_ids": [
+        "other_abstract_relation"
+      ],
+      "interpretation": "The image presents a binary between a clearly defined focal subject and an indistinct surround.",
+      "alternative_interpretations": [
+        "This is a depth-of-field technique."
+      ],
+      "limitations": [
+        "The obscured foreground prevents certainty about the environment."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:22:11.418634+00:00",
+    "generator": "deepseek",
+    "primary": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash-vision-exp",
+      "request_id": "354be122-da0a-46e6-bc9b-9a6896b64b2b",
+      "usage": {
+        "prompt_tokens": 956,
+        "completion_tokens": 1875,
+        "total_tokens": 2831,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1143
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 60
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907052157dafe2ef6accb4f84",
+      "usage": {
+        "completion_tokens": 518,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1942,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2460
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1349",
+  "sample_id": "PHL1800_IRFL_0131",
+  "file_name": "PHL1800_IRFL_0131.jpg",
+  "batch_id": "B028",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a human hand catching falling banknotes",
+  "captions": {
+    "scene": [
+      "A blurred outdoor background with green foliage and a horizontal metal railing in the mid-ground.",
+      "Multiple colorful paper banknotes suspended in mid-air against a soft-focus natural backdrop.",
+      "A single open palm positioned below the descending notes, partially in focus."
+    ],
+    "action": [
+      "Banknotes are captured in motion, exhibiting motion blur consistent with downward descent.",
+      "The hand is held upward with fingers spread, oriented to intercept falling objects.",
+      "At least one banknote (yellow) shows partial legible text: '50' and a portrait; other notes display red/pink hues and indistinct imagery."
+    ],
+    "rationale": [
+      "The motion blur on notes suggests they were dropped or thrown moments before capture, but directionality cannot be confirmed solely from still image.",
+      "The hand’s orientation implies intent to catch, yet no contact is visible; the state is pre-contact or simultaneous capture.",
+      "Banknote denominations and designs suggest Australian currency, but without full legibility or context, national origin remains uncertain."
+    ],
+    "object": [
+      "A human right hand with visible palm lines, extended upward, fingers slightly splayed, occupying lower-right quadrant of frame.",
+      "A yellow banknote with visible numeral '50', a grayscale portrait, and partial red text; it is angled diagonally and blurred.",
+      "A pink-red banknote beneath the yellow one, showing a large numeral '20' and a faint portrait; also motion-blurred.",
+      "A third banknote above and left of the yellow note, predominantly pink with dark central imagery, heavily blurred and partially occluded.",
+      "A fourth banknote at top-left, mostly out of frame, showing only a pink edge and indistinct dark rectangle; unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1349_P1",
+      "visual_anchors": [
+        "open palm facing upward",
+        "motion-blurred banknotes in descent",
+        "railing separating foreground from background"
+      ],
+      "symbolic_mapping": [
+        "open palm → receptivity or vulnerability",
+        "falling money → contingency or unearned gain"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image evokes tension between agency and passivity: the hand is poised to act, yet the notes fall independently, suggesting social structures that distribute value beyond individual control.",
+      "alternative_interpretations": [
+        "A literal depiction of a money-throwing celebration or stunt, common in certain cultural contexts."
+      ],
+      "limitations": [
+        "No facial expression, clothing, or surrounding people are visible to confirm intent or cultural framing."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1349_P2",
+      "visual_anchors": [
+        "multiple denominations visible",
+        "blurred motion indicating speed",
+        "hand not yet touching notes"
+      ],
+      "symbolic_mapping": [
+        "denominational variety → economic stratification",
+        "temporal gap before contact → deferred outcome"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "choice_journey"
+      ],
+      "interpretation": "The suspended moment before acquisition highlights how value distribution operates through timing and position—those who can reach are not necessarily those who initiated the fall.",
+      "alternative_interpretations": [
+        "A staged photograph emphasizing dynamism and color contrast for commercial or artistic effect."
+      ],
+      "limitations": [
+        "No evidence of coercion, competition, or narrative sequence; the scene is isolated."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1349_P3",
+      "visual_anchors": [
+        "banknotes as printed artifacts",
+        "hand as biological organ",
+        "background foliage implying natural setting"
+      ],
+      "symbolic_mapping": [
+        "paper currency → constructed social agreement",
+        "hand reaching into artificial flow → embodied participation in abstraction"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The image juxtaposes material reality (skin, plant life) with symbolic representation (currency), questioning whether identity is shaped by what one holds—or merely by the gesture of reaching.",
+      "alternative_interpretations": [
+        "A technical demonstration of high-speed photography capturing transient physical events."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm symbolic intent; interpretation relies on external frameworks."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:21:52.702710+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e2697dc1-6f72-90f6-930c-79799634d96e",
+      "usage": {
+        "prompt_tokens": 593,
+        "completion_tokens": 941,
+        "total_tokens": 1534,
+        "completion_tokens_details": {
+          "text_tokens": 941
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 86,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042138c8acbbeae1e449a6",
+      "usage": {
+        "completion_tokens": 800,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1628,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2428
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

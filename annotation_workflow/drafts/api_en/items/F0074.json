@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0074",
+  "sample_id": "PHL1800_IRFL_0172",
+  "file_name": "PHL1800_IRFL_0172.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red passenger car with severe front-end damage",
+  "captions": {
+    "scene": [
+      "A red car is isolated against a plain white background with no surrounding environment visible.",
+      "The vehicle occupies the central and right portion of the frame, angled to show its front-left side.",
+      "Strong directional lighting casts a sharp shadow beneath the car onto the white surface."
+    ],
+    "action": [
+      "The car’s front bumper, hood, and fender are crumpled inward and deformed.",
+      "The left headlight assembly is missing or fully obscured by bent metal and debris.",
+      "The front-left wheel remains attached but sits at an abnormal angle relative to the chassis."
+    ],
+    "rationale": [
+      "The deformation pattern suggests a high-energy frontal impact from the left-front direction, though the cause is not visible.",
+      "The absence of occupants or emergency personnel implies the image was captured post-event and possibly staged or edited for clarity.",
+      "The clean white background and studio-like lighting indicate this is not a field photograph but likely a controlled depiction."
+    ],
+    "object": [
+      "The car is painted glossy red with a black racing stripe running along the driver-side door and rear quarter panel.",
+      "The front-left wheel has a five-spoke silver alloy rim and a worn black tire with visible tread wear.",
+      "The engine bay is exposed through torn sheet metal; internal components such as the radiator support and suspension strut are partially visible.",
+      "The windshield is intact and clear, with no visible cracks or obstructions, and contains faint unreadable text near the top edge.",
+      "A small black plastic fragment hangs loosely from the lower front fascia, suspended by a thin wire or cable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0074_P1",
+      "visual_anchors": [
+        "crumpled hood",
+        "exposed engine bay",
+        "intact windshield"
+      ],
+      "symbolic_mapping": [
+        "the intact windshield contrasts with the destroyed exterior, suggesting preserved interior integrity amid external collapse"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The car’s damaged shell versus its unbroken glass window evokes tension between surface identity and underlying continuity—how appearance can be violently altered while core structure remains momentarily intact, reflecting fragility of constructed identity over time.",
+      "alternative_interpretations": [
+        "This is simply a documentation of collision damage for insurance or repair assessment."
+      ],
+      "limitations": [
+        "No occupant, context, or temporal markers confirm intentional symbolic contrast; the windshield may be undamaged due to impact vector alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0074_P2",
+      "visual_anchors": [
+        "black racing stripe",
+        "five-spoke alloy wheel",
+        "clean white background"
+      ],
+      "symbolic_mapping": [
+        "the deliberate aesthetic elements persist despite destruction, implying design intention surviving functional failure"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The retention of stylistic features—stripe and wheel design—amid structural ruin highlights how human choices embedded in technology (e.g., aesthetics, branding) endure even when utility fails, framing technological artifacts as carriers of intentional journeys beyond mere function.",
+      "alternative_interpretations": [
+        "The stripe and wheel are standard factory options unaffected by the crash location; their visibility is incidental."
+      ],
+      "limitations": [
+        "No evidence confirms designer intent or user choice; the stripe could be aftermarket or default trim."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0074_P3",
+      "visual_anchors": [
+        "hanging plastic fragment",
+        "sharp shadow",
+        "isolated white backdrop"
+      ],
+      "symbolic_mapping": [
+        "the dangling fragment signifies unresolved consequence; the shadow grounds the object in physical reality despite abstraction"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The suspended debris and stark isolation evoke unresolved agency: the car exists in a state of aftermath without context, prompting reflection on responsibility for unseen causes and the constraints imposed by irreversible physical outcomes.",
+      "alternative_interpretations": [
+        "The fragment is merely loose debris; the white background is for product photography or digital compositing."
+      ],
+      "limitations": [
+        "No causal agent, signage, or narrative cues link the scene to ethical judgment or constraint systems."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:56:08.666637+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3e52f303-a811-9654-a433-80e371689f97",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 947,
+        "total_tokens": 1537,
+        "completion_tokens_details": {
+          "text_tokens": 947
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 83,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015549359886ef33464617",
+      "usage": {
+        "completion_tokens": 811,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1642,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2453
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

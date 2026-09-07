@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1234",
+  "sample_id": "PHL1800_HL_0562",
+  "file_name": "PHL1800_HL_0562.png",
+  "batch_id": "B026",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a gray-and-white bird perched on a human hand while eating",
+  "captions": {
+    "scene": [
+      "A blurred background of snow-dusted ground and brown vegetation under bright daylight",
+      "A human hand extended palm-up, holding small food items against a natural outdoor setting",
+      "The bird’s plumage shows fine feather detail with alternating light and dark bands on the wing"
+    ],
+    "action": [
+      "The bird is gripping the hand with its talons and has a dark seed or nut in its beak",
+      "The human hand remains still, supporting the bird without motion blur",
+      "Several small, irregularly shaped food items rest in the palm near the bird’s feet"
+    ],
+    "rationale": [
+      "The bird’s head is lowered toward the hand, indicating feeding behavior rather than mere perching",
+      "The presence of multiple food items in the palm suggests intentional provisioning, though intent cannot be confirmed visually",
+      "Feather wear and slight asymmetry in wing alignment suggest the bird is alive and active, not a model or taxidermy"
+    ],
+    "object": [
+      "The bird has a white crown and nape, a black eye, a short stout dark beak, and gray upperparts with finely barred flight feathers.",
+      "The human hand displays visible skin texture, a gold ring on the ring finger, and three visible food items: two brownish nuts and one greenish-yellow kernel.",
+      "The bird’s left foot grips the hand with three forward-facing talons and one rear talon clearly visible, all dark and curved.",
+      "The background contains patches of white snow intermingled with brown earth and indistinct plant stems, out of focus.",
+      "Lighting creates a sharp shadow beneath the bird’s body on the hand, indicating a strong directional light source from above-left."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1234_P1",
+      "visual_anchors": [
+        "bird gripping hand",
+        "hand holding food",
+        "ring on finger"
+      ],
+      "symbolic_mapping": [
+        "gripping as mutual dependence",
+        "ring as social commitment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The physical contact between species, mediated by provision and grasp, visualizes a moment where interspecies coexistence hinges on voluntary restraint and reciprocal presence.",
+      "alternative_interpretations": [
+        "This is a routine wildlife feeding interaction with no symbolic intent; the ring is incidental and the grip is purely functional for balance."
+      ],
+      "limitations": [
+        "No facial expressions, vocalizations, or contextual signage confirm intentionality or meaning beyond observable mechanics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1234_P2",
+      "visual_anchors": [
+        "feather detail",
+        "sharp beak",
+        "still hand"
+      ],
+      "symbolic_mapping": [
+        "feather precision as embodiment of natural order",
+        "stillness as receptivity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The bird’s precise morphology and the hand’s enforced stillness illustrate how truth emerges only within constraints—biological form and voluntary pause enabling perception.",
+      "alternative_interpretations": [
+        "The stillness results from photographic exposure time and subject cooperation, not philosophical choice."
+      ],
+      "limitations": [
+        "Stillness could be due to camera shutter speed rather than behavioral intent; no evidence of cognition or reflection."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1234_P3",
+      "visual_anchors": [
+        "snow in background",
+        "sunlit hand",
+        "bird’s shadow"
+      ],
+      "symbolic_mapping": [
+        "shadow as transient trace",
+        "snow as temporal marker"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The fleeting shadow cast by the bird onto the hand, against a backdrop of seasonal snow, frames existence as a brief passage where choice manifests in proximity and sustenance.",
+      "alternative_interpretations": [
+        "Shadow is a geometric consequence of lighting; snow indicates season but not temporal philosophy."
+      ],
+      "limitations": [
+        "No clock, calendar, or aging indicators confirm temporal reflection; shadow duration is unmeasured."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:06:05.546513+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6376b992-87fe-9eb1-af78-b81c2a3284be",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 918,
+        "total_tokens": 1707,
+        "completion_tokens_details": {
+          "text_tokens": 918
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070405517afd88aeed8c47af",
+      "usage": {
+        "completion_tokens": 777,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1869,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2646
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

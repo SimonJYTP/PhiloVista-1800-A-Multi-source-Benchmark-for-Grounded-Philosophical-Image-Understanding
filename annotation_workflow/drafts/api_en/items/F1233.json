@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1233",
+  "sample_id": "PHL1800_IRFL_0454",
+  "file_name": "PHL1800_IRFL_0454.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one brown-and-white cow standing in a fenced pasture",
+  "captions": {
+    "scene": [
+      "A grassy field enclosed by a wire fence with trees in the background",
+      "A white plastic bucket sits on the ground near the cow's front legs",
+      "A bale of hay rests on the right side of the frame, partially unrolled"
+    ],
+    "action": [
+      "The cow stands still, facing forward with head slightly lowered",
+      "A thin rope or strap hangs from the cow’s neck and trails toward the ground",
+      "The cow’s tail is extended horizontally behind its body"
+    ],
+    "rationale": [
+      "The cow’s posture suggests it is not actively grazing or moving, but evidence is limited to a single frame",
+      "The presence of a bucket and hay implies feeding context, though no consumption is visible",
+      "The rope suggests human management, but its attachment point and purpose are not fully visible"
+    ],
+    "object": [
+      "The cow has a predominantly reddish-brown coat with a large white patch on its flank and white hind leg below the hock.",
+      "The cow’s ears are upright and alert; its muzzle is light-colored with dark nostrils.",
+      "A white plastic bucket with a metal handle is positioned on the grass near the cow’s front hooves.",
+      "A rectangular bale of dried hay lies on the ground to the right, with loose strands scattered around it.",
+      "A horizontal wire fence runs across the mid-background, separating the pasture from a line of green trees."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1233_P1",
+      "visual_anchors": [
+        "rope hanging from cow’s neck",
+        "white bucket at cow’s feet",
+        "fence in background"
+      ],
+      "symbolic_mapping": [
+        "rope → constraint",
+        "bucket → provision"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of tethering apparatus and sustenance within an enclosure evokes tension between imposed limitation and caretaking obligation.",
+      "alternative_interpretations": [
+        "The rope may be a halter left dangling after handling; the scene may simply depict routine farm logistics without symbolic intent."
+      ],
+      "limitations": [
+        "No visible human agent or explicit signage confirms intentional symbolism; rope may be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1233_P2",
+      "visual_anchors": [
+        "cow’s direct gaze toward camera",
+        "static posture",
+        "isolated framing"
+      ],
+      "symbolic_mapping": [
+        "gaze → recognition",
+        "isolation → individuality"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The cow’s frontal orientation and clear visual distinction from background elements foreground its bodily presence as a singular entity subject to observation.",
+      "alternative_interpretations": [
+        "Animals often face cameras out of curiosity or habit; the pose may reflect momentary attention rather than identity assertion."
+      ],
+      "limitations": [
+        "Facial expression cannot be reliably interpreted as intentional self-presentation; gaze direction alone is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1233_P3",
+      "visual_anchors": [
+        "bale of hay partially unraveled",
+        "bucket placed near hooves",
+        "cow standing without eating"
+      ],
+      "symbolic_mapping": [
+        "unraveled hay → decay or use",
+        "unused provisions → suspended action"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The stillness of the cow amid consumable resources that remain untouched suggests a pause in biological necessity, hinting at temporal suspension or impermanence of need.",
+      "alternative_interpretations": [
+        "The cow may have just finished eating or may eat shortly; the scene captures a neutral interval, not philosophical stasis."
+      ],
+      "limitations": [
+        "No temporal markers (e.g., shadows, clocks, growth stages) confirm duration or cyclical meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:10:36.221794+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d5c90ed3-166a-9297-b7d8-4639ca8d586c",
+      "usage": {
+        "prompt_tokens": 589,
+        "completion_tokens": 861,
+        "total_tokens": 1450,
+        "completion_tokens_details": {
+          "text_tokens": 861
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 82,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070410190c5dadde9ae9480d",
+      "usage": {
+        "completion_tokens": 723,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1543,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2266
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0817",
+  "sample_id": "PHL1800_HL_0365",
+  "file_name": "PHL1800_HL_0365.png",
+  "batch_id": "B018",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of five people on a paved plaza with trees and architecture in the background",
+  "captions": {
+    "scene": [
+      "A wide concrete plaza bordered by manicured shrubs, flowering beds, and mature deciduous trees under overcast daylight.",
+      "Modern low-rise structures with slanted roofs and glass panels appear behind greenery on the left and right sides.",
+      "A white angular structure is visible on the far right edge of the frame."
+    ],
+    "action": [
+      "A woman in a red dress stands, looking down at her hands held near her chest.",
+      "A man in a black suit and white shirt walks leftward holding an orange bouquet; another man in a black suit stands facing him, looking at a handheld device.",
+      "A person crouches on the ground with a camera; two women in red dresses stand beside a woman in white near the right edge."
+    ],
+    "rationale": [
+      "The woman in red is wearing shoes, not barefoot; one pair of black shoes rests on the pavement near the foreground man’s feet, but no other footwear is visible nearby.",
+      "The presence of bouquets and coordinated red dresses implies a ceremonial context, yet no explicit signage or text confirms it is a wedding.",
+      "The crouching figure holds a camera, but the subject being photographed cannot be confirmed solely from posture."
+    ],
+    "object": [
+      "One pair of black shoes rests on the pavement near the foreground man’s feet.",
+      "Three individuals wear red garments: two women in full-length red dresses and one woman in a partial red view.",
+      "A woman in a white floor-length gown holds an orange bouquet and stands beside two women in identical red knee-length dresses.",
+      "A man in a black suit, white shirt, and dark tie stands in profile, holding a small rectangular object (likely a phone) in both hands.",
+      "A large weeping willow tree dominates the center background, its foliage partially obscuring a building behind it."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0817_P1",
+      "visual_anchors": [
+        "woman in red dress",
+        "pair of abandoned shoes",
+        "man checking device"
+      ],
+      "symbolic_mapping": [
+        "abandoned shoes → rupture in expected social performance",
+        "device-checking → mediation of lived experience"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of ritual attire with disengaged behavior suggests tension between prescribed social roles and individual presence within a collective event.",
+      "alternative_interpretations": [
+        "The woman may be adjusting footwear or experiencing discomfort; the shoes may belong to someone else who stepped out of frame."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; posture alone does not establish psychological state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0817_P2",
+      "visual_anchors": [
+        "crouching photographer",
+        "multiple gazes directed downward or inward",
+        "central walking figure holding bouquet"
+      ],
+      "symbolic_mapping": [
+        "crouching stance → subordination of observer to observed",
+        "downward gaze → introspection or deference"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The distribution of attention—some focused on devices, some on ground, one on procession—reflects fragmented modes of witnessing, questioning the unity of shared experience.",
+      "alternative_interpretations": [
+        "People are naturally positioned based on practical needs: photographer crouches for angle, others avoid blocking view or wait for cue."
+      ],
+      "limitations": [
+        "Direction of gaze is inferred from head tilt and body orientation only; eyes are not resolvable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0817_P3",
+      "visual_anchors": [
+        "white gown and red dresses forming a triad",
+        "symmetrical planting beds",
+        "asymmetrical placement of figures"
+      ],
+      "symbolic_mapping": [
+        "color contrast → binary framing disrupted by third element",
+        "spatial asymmetry → instability within formal order"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visual composition enacts a moral geometry where formal symmetry (gardens, attire) is unsettled by human irregularity, implying responsibility lies in navigating constraint rather than conforming to pattern.",
+      "alternative_interpretations": [
+        "The arrangement reflects logistical staging for photography, not symbolic intent; asymmetry results from spontaneous movement."
+      ],
+      "limitations": [
+        "No evidence of deliberate composition; the photographer’s position may dictate framing, not philosophical design."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (candidate states six, image shows five); misdescription of a woman in red as barefoot (she is wearing shoes); inaccurate claim about five individuals in red (image shows three women in red dresses and two men in suits with no red accents); unsupported claim about a white conical tent (structure is angular, not conical); misattribution of a bouquet to a man (the man walking holds a bouquet, but the claim about \"five individuals wear red garments\" is wrong); inaccurate description of the crouching figure’s action (candidate says \"holds a camera pointed toward the central figures\" but posture does not confirm direction of the camera); unsupported claim about a bride in white (no explicit confirmation of wedding context)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:19:27.426551+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8ebb5db2-8a42-9a6c-ae65-cdadcd041512",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 1051,
+        "total_tokens": 1720,
+        "completion_tokens_details": {
+          "text_tokens": 1051
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070318578b05578fc98342ef",
+      "usage": {
+        "completion_tokens": 1103,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1857,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2960
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

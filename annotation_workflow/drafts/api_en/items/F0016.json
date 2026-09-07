@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0016",
+  "sample_id": "PHL1800_HL_0468",
+  "file_name": "PHL1800_HL_0468.png",
+  "batch_id": "B003",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a motorcyclist riding past a commercial street corner with signage and construction",
+  "captions": {
+    "scene": [
+      "A street corner at dusk or dawn with palm trees, parked vehicles, and a large multi-tiered signboard.",
+      "A building under construction or renovation is covered by a blue tarpaulin, supported by scaffolding and cordoned off with yellow caution tape.",
+      "Multiple commercial signs are mounted on a metal pole: 'Internet Cafe', 'Pizzeria Heladeria', 'Bancamérica', 'Watson Homes', and 'Google's Home Decor' (partially obscured)."
+    ],
+    "action": [
+      "A person wearing a white shirt and blue jeans rides a black motorcycle with visible front wheel and handlebars, moving left to right across the foreground.",
+      "Several cars are parked along the curb: a white SUV, a dark red SUV, and a white sedan; one person stands near the white SUV.",
+      "A potted plant sits on the sidewalk beside the caution tape, and utility wires cross above the scene."
+    ],
+    "rationale": [
+      "The lighting suggests low sun angle (long shadows absent but sky gradient indicates twilight), though exact time cannot be confirmed without clock evidence.",
+      "The blue tarp and exposed wooden framing indicate active construction or repair, but no workers are visible in the frame.",
+      "The sign text includes English and Spanish phrases, suggesting a bilingual context, but country or region cannot be determined solely from language mix."
+    ],
+    "object": [
+      "A black motorcycle with chrome accents and spoked wheels is ridden by a single person wearing a white short-sleeved shirt and blue jeans.",
+      "A vertical metal signpost holds four stacked rectangular signs with varied colors, fonts, and logos; the topmost sign has unreadable text due to glare and distance.",
+      "A blue plastic tarp covers a two-story structure with visible wooden beams, metal poles, and a staircase leading upward beneath the tarp.",
+      "Yellow plastic caution tape is strung between metal poles and a signpost, forming a barrier around the construction area.",
+      "A street sign attached to the pole reads 'CALLE H. MATTEOZI' in white uppercase letters on a blue background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0016_P1",
+      "visual_anchors": [
+        "motorcyclist in motion",
+        "static construction site",
+        "caution tape barrier"
+      ],
+      "symbolic_mapping": [
+        "movement vs. stasis",
+        "temporary restriction of space"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The rider’s forward motion juxtaposed with the cordoned-off structure evokes the tension between individual agency and imposed spatial limits in urban life.",
+      "alternative_interpretations": [
+        "The scene simply documents routine traffic flow near ongoing infrastructure work, with no intentional symbolism."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or contextual signage confirm intent or meaning beyond physical arrangement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0016_P2",
+      "visual_anchors": [
+        "multilingual signage",
+        "tarp-covered building",
+        "utility pole with wires"
+      ],
+      "symbolic_mapping": [
+        "layered communication",
+        "obscured function"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "Overlapping commercial messages and concealed architecture suggest how public knowledge is mediated through partial visibility and commercial framing.",
+      "alternative_interpretations": [
+        "Signs reflect local business advertising norms; the tarp is purely functional for weather protection or safety."
+      ],
+      "limitations": [
+        "Text legibility is incomplete (e.g., top sign unreadable), preventing full semantic analysis of message hierarchy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0016_P3",
+      "visual_anchors": [
+        "potted plant on sidewalk",
+        "yellow caution tape",
+        "empty chair under tarp"
+      ],
+      "symbolic_mapping": [
+        "domestic object amid disruption",
+        "temporary order"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The lone potted plant—unmoved despite surrounding upheaval—hints at persistence of ordinary life amid transient structural change, echoing themes of endurance against entropy.",
+      "alternative_interpretations": [
+        "The plant is simply placed there for decoration or pending relocation; no symbolic intent is evident."
+      ],
+      "limitations": [
+        "No evidence confirms the plant’s origin, owner, or intended duration in that location."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:48:48.774228+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ccf4a0d0-ace8-9934-b52e-39604ee8e4ce",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 988,
+        "total_tokens": 1797,
+        "completion_tokens_details": {
+          "text_tokens": 988
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070148361553ca201fd346ba",
+      "usage": {
+        "completion_tokens": 847,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1962,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2809
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

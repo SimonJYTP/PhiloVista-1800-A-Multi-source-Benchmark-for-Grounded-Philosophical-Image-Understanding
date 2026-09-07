@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1001",
+  "sample_id": "PHL1800_HL_0100",
+  "file_name": "PHL1800_HL_0100.png",
+  "batch_id": "B021",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person performing a skateboarding trick on a concrete ramp",
+  "captions": {
+    "scene": [
+      "A concrete skate ramp at dusk with palm trees and parked cars in the background behind a black metal fence",
+      "The sky is pale blue to light orange, indicating late afternoon or early evening lighting",
+      "A second person stands near the base of the ramp, partially obscured by the ramp's curve"
+    ],
+    "action": [
+      "The skateboarder balances on the edge of the ramp with both feet on the board, body leaning forward, arms extended for stability",
+      "The skateboard’s wheels are in contact with the ramp’s coping; the board is angled slightly upward",
+      "The observer wears sunglasses and a striped shirt, standing upright with hands at sides"
+    ],
+    "rationale": [
+      "The skateboarder’s posture and board position suggest a grind or stall maneuver rather than an aerial trick, due to continuous contact with the ramp edge",
+      "The lighting direction and long shadows indicate the sun is low, consistent with golden-hour timing, though exact time cannot be confirmed without clock evidence",
+      "The presence of a fence, parked vehicles, and manicured palms suggests a public park or recreational facility, but no signage confirms this definitively"
+    ],
+    "object": [
+      "A person wearing a black short-sleeved t-shirt with white graphic text (partially legible as 'SKATE' or similar), blue jeans, dark sneakers with white soles, and a dark baseball cap worn backward.",
+      "A skateboard with a light-colored deck, black grip tape, silver trucks, and white wheels, positioned horizontally along the top edge of a curved concrete ramp.",
+      "A second person visible behind the ramp’s vertical face, wearing a white head covering, sunglasses, and a horizontally striped blue-and-white short-sleeve shirt.",
+      "A black metal picket fence runs horizontally across the mid-background, separating the skate area from a grassy zone with several palm trees and parked cars.",
+      "Three visible vehicles behind the fence: a silver sedan, a white SUV, and a darker compact car; all appear stationary with no motion blur."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1001_P1",
+      "visual_anchors": [
+        "skateboarder balancing on narrow ramp edge",
+        "observer standing still behind ramp",
+        "fence separating activity zone from background"
+      ],
+      "symbolic_mapping": [
+        "ramp edge as threshold between control and fall",
+        "observer as witness to risk-taking"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies the tension between individual agency—expressed through precarious physical mastery—and social framing, where the fence and observer demarcate a bounded space of permitted risk within structured public life.",
+      "alternative_interpretations": [
+        "It may simply document a routine skate session without symbolic intent, emphasizing skill practice over philosophical meaning."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; interpretation relies on post-hoc projection onto neutral visual elements."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1001_P2",
+      "visual_anchors": [
+        "low-angle sunlight casting long shadows",
+        "skateboarder mid-maneuver with bent knees",
+        "static background elements including parked cars"
+      ],
+      "symbolic_mapping": [
+        "golden-hour light as metaphor for transient peak moments",
+        "body poised in unstable equilibrium as embodiment of present-focused attention"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The fleeting balance captured under fading light evokes the human condition of navigating finite time through deliberate, momentary choices—here, the decision to engage risk in pursuit of flow rather than safety.",
+      "alternative_interpretations": [
+        "The lighting is merely ambient condition for outdoor photography; the pose reflects standard skate technique, not existential reflection."
+      ],
+      "limitations": [
+        "Temporal duration of the action is unknown; the image freezes one instant without revealing prior or subsequent motion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1001_P3",
+      "visual_anchors": [
+        "person wearing branded t-shirt with unreadable text",
+        "distinct clothing styles between skater and observer",
+        "concrete ramp as man-made structure"
+      ],
+      "symbolic_mapping": [
+        "clothing as marker of subcultural affiliation",
+        "ramp as engineered terrain repurposed for self-expression"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The skater’s attire and use of engineered infrastructure illustrate how identity is performed through embodied interaction with designed environments, where technology (the ramp) enables expressive labor distinct from productive work.",
+      "alternative_interpretations": [
+        "Clothing is functional and incidental; the ramp is just a tool for sport, not a site of identity construction."
+      ],
+      "limitations": [
+        "The text on the shirt is illegible, preventing confirmation of brand or message; no gestures or interactions confirm intentional identity signaling."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:37:15.288910+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d60ba49a-7faa-9d64-affe-6548ec63e7fc",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1085,
+        "total_tokens": 1854,
+        "completion_tokens_details": {
+          "text_tokens": 1085
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033700cadae1336d4e4da6",
+      "usage": {
+        "completion_tokens": 942,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2009,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2951
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

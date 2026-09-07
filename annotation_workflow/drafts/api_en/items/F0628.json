@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0628",
+  "sample_id": "PHL1800_IRFL_0135",
+  "file_name": "PHL1800_IRFL_0135.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one man with dark hair, mustache, and sunglasses, wearing a white shirt and black gloves, gripping a steering wheel",
+  "captions": {
+    "scene": [
+      "Interior of a vehicle at night or in low light, with blurred external lights visible through the windshield",
+      "Cool-toned lighting dominates the scene; reflections appear on glass surfaces",
+      "A second person is partially visible on the left, wearing light-colored clothing"
+    ],
+    "action": [
+      "The man holds a patterned steering wheel with both hands, fingers curled around its rim",
+      "His mouth is slightly open, lips parted, and his gaze is directed forward and slightly upward",
+      "His right hand displays a black glove with a white cross-like symbol on the back"
+    ],
+    "rationale": [
+      "The presence of a steering wheel and windshield suggests the setting is inside a moving or stationary vehicle",
+      "The man’s facial expression and posture may indicate engagement with driving or an interaction, but no definitive intent can be confirmed from visual data alone",
+      "The second figure’s partial visibility prevents confirmation of their role, activity, or relation to the main subject"
+    ],
+    "object": [
+      "The man wears large-framed dark sunglasses with reflective lenses that obscure his eyes.",
+      "He has a neatly trimmed mustache and sideburns extending below his ears.",
+      "His right glove is black leather with a white stylized cross or X-shaped emblem on the dorsal surface.",
+      "The steering wheel has a dark textured grip with a repeating light-colored geometric pattern.",
+      "A white collared shirt is visible beneath a dark outer garment on the man’s torso."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0628_P1",
+      "visual_anchors": [
+        "black glove with white cross-like symbol",
+        "steering wheel grip",
+        "sunglasses obscuring eyes"
+      ],
+      "symbolic_mapping": [
+        "glove symbol may evoke signification of identity or affiliation",
+        "steering wheel as locus of control"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The obscured eyes and marked glove suggest a constructed persona navigating a path where appearance mediates agency, raising questions about self-presentation versus authentic direction.",
+      "alternative_interpretations": [
+        "The glove symbol could be purely decorative branding with no intentional meaning; the scene may simply depict routine driving under stylized lighting."
+      ],
+      "limitations": [
+        "No readable text confirms symbolic intent of the glove emblem; lighting and motion blur reduce detail fidelity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0628_P2",
+      "visual_anchors": [
+        "blurred background lights through windshield",
+        "cool color grading",
+        "tight framing on driver"
+      ],
+      "symbolic_mapping": [
+        "blurred exterior as indistinct future or unknown context"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The driver’s focused posture amid indistinct surroundings evokes a moment suspended between decision and consequence, where movement forward is possible yet bounded by the vehicle’s interior frame.",
+      "alternative_interpretations": [
+        "Blurring results from camera motion or shallow depth of field, not conceptual abstraction; the scene may be a staged performance shot."
+      ],
+      "limitations": [
+        "No temporal markers (e.g., clocks, aging signs) confirm time-related symbolism; constraint is inferred from framing, not explicit barriers."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0628_P3",
+      "visual_anchors": [
+        "second person partially visible on left",
+        "shared vehicle interior",
+        "man’s forward gaze not directed at companion"
+      ],
+      "symbolic_mapping": [
+        "proximity without mutual attention suggesting mediated social existence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Co-presence without visual reciprocity illustrates how individuals occupy shared spaces while maintaining distinct experiential boundaries, highlighting the fragility of intersubjective connection.",
+      "alternative_interpretations": [
+        "The second person may be out of focus due to camera focal plane choice, not intentional social distancing; they could be looking elsewhere for functional reasons."
+      ],
+      "limitations": [
+        "Only one shoulder and partial torso of the second person are visible; no facial orientation or gesture confirms lack of interaction."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:02:26.440070+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ab7495df-1b16-9478-b9e7-62c7c220f291",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 938,
+        "total_tokens": 1667,
+        "completion_tokens_details": {
+          "text_tokens": 938
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070302111a8948d18a0f42cd",
+      "usage": {
+        "completion_tokens": 798,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1823,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2621
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0552",
+  "sample_id": "PHL1800_HL_0283",
+  "file_name": "PHL1800_HL_0283.png",
+  "batch_id": "B013",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person in biathlon attire aiming a rifle",
+  "captions": {
+    "scene": [
+      "Snow-covered ground with sparse dry grass and leafless birch trees in the background",
+      "Two numbered yellow and black markers (30 and 31) placed on snow near skis",
+      "A vertical wooden pole stands to the left of the subject"
+    ],
+    "action": [
+      "The person holds a bolt-action rifle with both gloved hands, stock against shoulder, cheek pressed to comb",
+      "The person’s right eye is aligned with the rifle’s rear sight, suggesting aiming",
+      "Skis lie horizontally on snow beneath the person’s feet; boots are clipped into bindings"
+    ],
+    "rationale": [
+      "The rifle’s open bolt and visible magazine suggest it is a .22 LR biathlon rifle, consistent with competition use",
+      "The bib displays partial text 'NATIONAL' and a logo, indicating official event participation",
+      "The posture—kneeling or standing still with rifle braced—is typical of shooting phase in biathlon, though exact stance is ambiguous due to framing"
+    ],
+    "object": [
+      "The person wears a blue beanie with sunglasses pushed up onto it.",
+      "A multicolored competition suit features red lower legs, black upper legs, and a blue torso panel with white and red patterns and visible text 'NATIONAL'.",
+      "Black gloves cover both hands; the right glove has a textured grip area near the trigger guard.",
+      "The rifle has a wooden stock, black metal barrel and receiver, a black sling, and a red-and-black forend accessory.",
+      "Yellow rectangular marker labeled '30' and black rectangular marker labeled '31' rest on snow beside skis."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0552_P1",
+      "visual_anchors": [
+        "rifle aimed forward",
+        "numbered markers 30 and 31",
+        "static posture"
+      ],
+      "symbolic_mapping": [
+        "numbered markers → temporal sequence or positional identity",
+        "aiming stance → focused intentionality"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of numbered stations and a poised act of aiming evokes the tension between fixed temporal positions and the singular moment of decision—where one must act within a constrained sequence.",
+      "alternative_interpretations": [
+        "The numbers may simply denote shooting lane assignments without symbolic intent."
+      ],
+      "limitations": [
+        "No visible clock, countdown, or explicit temporal indicator confirms time-related symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0552_P2",
+      "visual_anchors": [
+        "competition bib with 'NATIONAL'",
+        "standardized suit design",
+        "uniform equipment"
+      ],
+      "symbolic_mapping": [
+        "bib text → institutional affiliation",
+        "matching gear → collective identity over individuality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s appearance is subsumed under national representation and sport-specific uniformity, illustrating how social roles overwrite personal distinctiveness in formal competitive contexts.",
+      "alternative_interpretations": [
+        "The suit design may prioritize aerodynamics and thermal regulation rather than identity signaling."
+      ],
+      "limitations": [
+        "The word 'NATIONAL' is partially visible and could refer to a team name, sponsor, or event title—not necessarily nation-state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0552_P3",
+      "visual_anchors": [
+        "rifle held steady",
+        "gloved hands gripping weapon",
+        "focused gaze through sights"
+      ],
+      "symbolic_mapping": [
+        "precision aiming → pursuit of objective truth",
+        "mechanical interface between human and tool → mediated knowledge acquisition"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The act of aligning eye, sight, and target embodies a material epistemology: truth is not declared but calibrated, requiring disciplined repetition and technological mediation.",
+      "alternative_interpretations": [
+        "This is purely athletic execution with no epistemic intent."
+      ],
+      "limitations": [
+        "No visible target, scorecard, or feedback mechanism confirms epistemic framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:56:06.988748+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a08a603f-e321-9f3e-b627-516419c5261c",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 923,
+        "total_tokens": 1692,
+        "completion_tokens_details": {
+          "text_tokens": 923
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025548e48ab66d7036472f",
+      "usage": {
+        "completion_tokens": 775,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1847,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2622
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

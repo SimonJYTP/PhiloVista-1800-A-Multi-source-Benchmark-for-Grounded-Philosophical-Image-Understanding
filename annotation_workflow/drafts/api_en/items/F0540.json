@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0540",
+  "sample_id": "PHL1800_HL_0380",
+  "file_name": "PHL1800_HL_0380.png",
+  "batch_id": "B013",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large crowd gathered around a cow and two open train cars",
+  "captions": {
+    "scene": [
+      "A black-and-white outdoor photograph showing a dense assembly of people in early 20th-century attire, centered on a large cow standing on unpaved ground, with two train cars in the background under leafy trees.",
+      "Two train cars have open side doors revealing interior compartments; one has a man standing on a ladder inside, another has a man visible in the doorway holding what appears to be a document or board.",
+      "The crowd consists predominantly of men wearing hats (bowlers, fedoras, flat caps), with a few women in long coats and hats; all face toward the train cars or the cow."
+    ],
+    "action": [
+      "A cow stands still in the foreground, facing right, with its head lowered slightly toward the ground near a man’s legs.",
+      "Multiple individuals are standing motionless or shifting weight, observing the scene; some lean forward, others hold hands or stand arm-in-arm.",
+      "One man stands on a wooden ladder inside the middle train car, looking outward; another man stands in the rightmost car’s doorway, gesturing with his right hand while holding an object in his left."
+    ],
+    "rationale": [
+      "The uniformity of attire (hats, suits, long coats) and the presence of wooden train cars suggest a historical setting circa 1900–1930, though no date is legible.",
+      "The cow’s proximity to the crowd and its calm posture imply it is part of a planned display or inspection, not an accidental intrusion.",
+      "The open train doors and positioned individuals suggest an organized event—possibly livestock exhibition, auction, or agricultural demonstration—but no signage confirms purpose."
+    ],
+    "object": [
+      "A single adult dairy-type cow with white hindquarters and udder, black body and head, and light-colored muzzle stands in the lower-left quadrant, front hooves slightly apart, tail hanging straight down.",
+      "Two train cars are aligned horizontally: leftmost is fully closed with windows; middle has double doors open revealing shelves or partitions; rightmost has a single open door and a curved roof overhang.",
+      "Approximately 60–65 distinct individuals are visible: 50–55 men (mostly in dark suits and varied hats), 8–10 women (in long coats and hats), and 2–3 children or smaller figures interspersed among adults.",
+      "A wooden A-frame ladder leans against the middle train car, with one man standing on its third rung, torso visible above the car floor level.",
+      "A rectangular signboard hangs on the left train car’s side wall, but its text is illegible due to resolution and angle."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0540_P1",
+      "visual_anchors": [
+        "crowd facing uniformly toward train cars",
+        "man on ladder elevated above others",
+        "cow as central non-human focal point"
+      ],
+      "symbolic_mapping": [
+        "elevated position → authority or mediation",
+        "collective gaze → shared attention as social cohesion"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image captures a moment where human social order is enacted through spatial hierarchy and collective focus: the elevated man mediates between infrastructure (train) and community, while the cow—non-speaking, non-participatory—becomes a site of consensus, illustrating how social existence is constituted through shared objects of attention and delegated roles.",
+      "alternative_interpretations": [
+        "This may simply depict a routine livestock inspection at a rural rail siding, with no symbolic intent; the ladder and positioning reflect practical access, not authority."
+      ],
+      "limitations": [
+        "No facial expressions or gestures indicate intentionality; the cow’s role cannot be confirmed as symbolic without contextual documentation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0540_P2",
+      "visual_anchors": [
+        "dense clustering of bodies with minimal personal space",
+        "uniform hat styles across gender lines",
+        "absence of modern technology beyond railcars"
+      ],
+      "symbolic_mapping": [
+        "repetition of headwear → conformity within identity",
+        "bodily proximity without touch → regulated social distance"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Appearance functions as a regulatory mechanism: identical hat types across individuals suppress individual distinction and reinforce group membership, suggesting identity is publicly performed and collectively enforced rather than internally derived.",
+      "alternative_interpretations": [
+        "Hat styles reflect regional fashion norms or occupational requirements (e.g., railway workers, farmers), not ideological conformity."
+      ],
+      "limitations": [
+        "Hats vary in shape and brim width; some individuals wear unique styles, undermining strict uniformity claims."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0540_P3",
+      "visual_anchors": [
+        "open train car doors revealing interior structure",
+        "cow positioned outside, not inside",
+        "people standing on ground, not boarding"
+      ],
+      "symbolic_mapping": [
+        "threshold of train car → boundary between mobility and stasis",
+        "cow outside → embodiment of fixed local economy versus transport-enabled exchange"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The train car’s open doors frame a technological threshold that remains uncrossed by the crowd and the cow, symbolizing how labor and value (here, the animal) are observed and managed from a position of constraint—mobility is present but not accessible, highlighting the tension between infrastructural promise and embodied limitation.",
+      "alternative_interpretations": [
+        "The doors are open for ventilation or loading; the cow is simply being presented before transport, with no symbolic boundary intended."
+      ],
+      "limitations": [
+        "No evidence the crowd intends to enter or that the cow is destined for transport; the scene may be static presentation only."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (78 vs. actual ~60–65), misdescription of train car count (three vs. two open cars), inaccurate object details (signboard text illegibility claim unsupported, ladder position misstated)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:55:30.525249+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-34d7aae0-8ed7-9133-b28a-1591031e4d9b",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1267,
+        "total_tokens": 2076,
+        "completion_tokens_details": {
+          "text_tokens": 1267
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025502de36fcb830814679",
+      "usage": {
+        "completion_tokens": 1176,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2240,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3416
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

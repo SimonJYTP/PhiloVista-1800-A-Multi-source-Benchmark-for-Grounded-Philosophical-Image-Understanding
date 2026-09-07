@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0769",
+  "sample_id": "PHL1800_HAIV_0053",
+  "file_name": "PHL1800_HAIV_0053.png",
+  "batch_id": "B017",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized skull with a document and a globe in the background",
+  "captions": {
+    "scene": [
+      "A cartoonish skull rests on a brown surface with a large green-and-blue Earth globe behind it under a purple sky with white clouds.",
+      "A small humanoid figure with sunglasses, wearing a blue jacket and holding a long orange object, stands left of center against a green hill and cloudy backdrop.",
+      "A white paper labeled 'READ' lies beneath the skull’s jaw; nearby are scattered pink and white objects and a multi-button control panel."
+    ],
+    "action": [
+      "The skull holds or presses its lower jaw onto the paper labeled 'READ'.",
+      "The small figure appears to be standing upright, one hand near its mouth, the other gripping an elongated orange object.",
+      "The globe floats in mid-air behind the skull, partially obscured by the skull’s cranium."
+    ],
+    "rationale": [
+      "The skull’s eye is wide open and detailed, suggesting alertness or emphasis, though no motion is depicted.",
+      "The word 'READ' is legible on the paper, indicating intentional textual focus, but surrounding text is illegible.",
+      "The figure’s posture and accessories (sunglasses, jacket) imply stylization rather than realism, but no explicit narrative action is shown."
+    ],
+    "object": [
+      "A white human skull with black eye sockets, one detailed blue-gray eye, and black markings including partial letters 'ID+' on the right temple.",
+      "A spherical Earth model showing green continents and blue oceans, positioned behind and above the skull.",
+      "A white sheet of paper with bold black uppercase letters 'READ' at its top, followed by faint horizontal lines and unreadable script.",
+      "A rectangular control panel with six colored buttons: two gray, one beige, one red, one blue, and one dark gray, arranged in two rows of three.",
+      "A small humanoid figure with bald head, dark sunglasses, blue sleeves, and a tan torso, holding a long orange cylindrical object vertically."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0769_P1",
+      "visual_anchors": [
+        "skull with open eye",
+        "paper labeled 'READ'",
+        "globe in background"
+      ],
+      "symbolic_mapping": [
+        "skull → mortality",
+        "READ → imperative to engage with knowledge"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of a mortal symbol (skull) with an urgent call to read, set against a global backdrop, suggests that confronting truth or knowledge is inseparable from awareness of finitude and planetary scale.",
+      "alternative_interpretations": [
+        "It may simply depict a surreal collage with no intended philosophical meaning, using common iconography for visual contrast."
+      ],
+      "limitations": [
+        "No explicit context confirms intent; the skull’s expression and the figure’s role remain ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0769_P2",
+      "visual_anchors": [
+        "control panel with colored buttons",
+        "skull pressing paper",
+        "figure holding orange object"
+      ],
+      "symbolic_mapping": [
+        "control panel → agency or decision interface",
+        "orange object → tool or weapon"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The presence of a control interface near a skeletal figure implies that choices—possibly consequential—are mediated through technology, while the distant figure may represent an external agent influencing or observing the process.",
+      "alternative_interpretations": [
+        "The panel could be decorative or nonfunctional; the orange object may be a stylized pen or staff without symbolic weight."
+      ],
+      "limitations": [
+        "Button labels are unreadable and function is unspecified; no interaction is shown."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0769_P3",
+      "visual_anchors": [
+        "figure wearing sunglasses",
+        "skull with 'ID+' marking",
+        "scattered pink and white items"
+      ],
+      "symbolic_mapping": [
+        "sunglasses → concealment or detachment",
+        "ID+ → identity marker or modification"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The obscured face of the figure and the altered skull bearing partial identification suggest tension between constructed identity and biological reality within a shared social space.",
+      "alternative_interpretations": [
+        "Sunglasses and markings may be aesthetic choices without reference to identity theory."
+      ],
+      "limitations": [
+        "No facial features or contextual cues confirm intentional commentary on identity."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:15:14.290322+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-577f68f4-3c32-9847-88b7-581161dda233",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 986,
+        "total_tokens": 2519,
+        "completion_tokens_details": {
+          "text_tokens": 986
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031453710feba43768427a",
+      "usage": {
+        "completion_tokens": 847,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2945,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3792
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

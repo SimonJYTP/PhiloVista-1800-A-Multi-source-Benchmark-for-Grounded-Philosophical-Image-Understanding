@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0753",
+  "sample_id": "PHL1800_HL_0368",
+  "file_name": "PHL1800_HL_0368.png",
+  "batch_id": "B017",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three adults gathered around a motorized blender-like apparatus",
+  "captions": {
+    "scene": [
+      "Indoor setting with large windows showing rain-streaked glass and green foliage outside",
+      "Wood-framed window panels and visible interior wall elements suggest a porch or sunroom",
+      "A red gasoline-powered engine is mounted beneath a stainless-steel cylindrical container on a metal stand"
+    ],
+    "action": [
+      "A man in a light green shirt places his right hand on top of the metallic cylinder, fingers spread",
+      "A man in a blue polo shirt stands to the left, observing the apparatus with mouth slightly open",
+      "A woman in a purple shirt stands behind the apparatus, looking downward toward it with a neutral expression"
+    ],
+    "rationale": [
+      "The presence of rain on the windows indicates recent or ongoing precipitation outside",
+      "The apparatus appears functional and actively engaged, given the hand placement and focused attention",
+      "Clothing shows moisture spots (e.g., blue shirt shoulders, green shirt front), suggesting possible exposure to wet conditions"
+    ],
+    "object": [
+      "A stainless-steel cylindrical container with visible residue or markings on its surface sits atop a square metal frame.",
+      "A red internal combustion engine with black components is attached below the frame, featuring a pull-start handle extending horizontally.",
+      "The man in green wears a wristwatch with a dark band and silver-toned case on his left wrist.",
+      "The man in blue wears thin-framed eyeglasses and has short graying hair.",
+      "The woman has shoulder-length brown hair and wears a short-sleeved purple top."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0753_P1",
+      "visual_anchors": [
+        "man placing hand on cylinder",
+        "red engine beneath",
+        "shared focus on device"
+      ],
+      "symbolic_mapping": [
+        "hand-on-device as direct human intervention",
+        "engine as embodiment of applied force"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The image captures a moment where human agency interfaces directly with mechanical power, illustrating labor not as abstract effort but as tactile engagement with technology’s physical substrate.",
+      "alternative_interpretations": [
+        "This may simply be a demonstration of a homemade juicer or mixer without deeper implication"
+      ],
+      "limitations": [
+        "No labels, controls, or output are visible to confirm function or intent"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0753_P2",
+      "visual_anchors": [
+        "rain-streaked windows",
+        "wet clothing spots",
+        "indoor gathering"
+      ],
+      "symbolic_mapping": [
+        "rain as external condition limiting mobility",
+        "interior focus as retreat into shared activity"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The group’s collective attention amid inclement weather underscores how social existence often coalesces around shared tasks when external conditions constrain individual movement.",
+      "alternative_interpretations": [
+        "They may have just entered indoors after being outside; the wetness need not imply prolonged confinement"
+      ],
+      "limitations": [
+        "No evidence of duration of stay indoors or prior activity"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0753_P3",
+      "visual_anchors": [
+        "stainless-steel cylinder with residue",
+        "unlabeled apparatus",
+        "attentive gazes"
+      ],
+      "symbolic_mapping": [
+        "residue as trace of prior use",
+        "uncertainty of purpose as epistemic gap"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The ambiguous function of the device—observed closely yet not explained—evokes the limits of perceptual knowledge: truth here resides not in what is seen, but in what remains unspoken or undocumented.",
+      "alternative_interpretations": [
+        "The device is a known kitchen tool to the participants; ambiguity is only from the viewer’s perspective"
+      ],
+      "limitations": [
+        "No textual labels or operational context visible to verify uncertainty"
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:13:40.488868+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-60a5d6e5-abb8-9cba-9049-9403657745b6",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 867,
+        "total_tokens": 1676,
+        "completion_tokens_details": {
+          "text_tokens": 867
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070313216297cd9ee30e4b78",
+      "usage": {
+        "completion_tokens": 721,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1837,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2558
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

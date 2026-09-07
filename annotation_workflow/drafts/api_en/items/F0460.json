@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0460",
+  "sample_id": "PHL1800_HL_0456",
+  "file_name": "PHL1800_HL_0456.png",
+  "batch_id": "B011",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a worker in high-visibility vest and hard hat observing a road-maintenance truck",
+  "captions": {
+    "scene": [
+      "A paved two-lane road bordered by dense green foliage and utility poles, with traffic cones placed along the shoulder.",
+      "A specialized municipal vehicle with a large tank, hoses, and rear-mounted equipment occupies the right lane; a blue sedan is visible behind it.",
+      "The setting appears to be daytime under overcast or diffused lighting, with no shadows indicating strong direct sunlight."
+    ],
+    "action": [
+      "The worker stands facing the truck, back to camera, with arms relaxed at sides, suggesting observation or supervision.",
+      "The truck is stationary or moving very slowly, as indicated by its proximity to traffic cones and lack of motion blur.",
+      "A person in dark clothing walks on the far sidewalk, partially visible beyond the blue car."
+    ],
+    "rationale": [
+      "The presence of orange safety vests, hard hats, and traffic cones strongly suggests official road maintenance or construction activity.",
+      "The truck’s configuration—tank, hose reels, and rear applicator assembly—is consistent with asphalt sealcoating or similar pavement treatment.",
+      "The worker’s posture and orientation imply active monitoring rather than passive waiting, though no direct interaction with equipment is visible."
+    ],
+    "object": [
+      "A white hard hat worn by a person whose back is to the camera, with short dark hair visible beneath the brim.",
+      "An orange high-visibility vest with reflective yellow stripes and a circular logo containing the letters 'WSDOT' in white.",
+      "A black-and-silver tanker truck with a cylindrical tank labeled 'Dawn Fuel' and a license plate reading '13280X', equipped with amber warning lights and multiple black flexible hoses.",
+      "A rear-mounted mechanical assembly with metal frames, rollers, and a horizontal bar extending across the road surface, likely for spreading material.",
+      "Two orange traffic cones placed on the asphalt near the truck’s left side, one upright and one slightly tilted."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0460_P1",
+      "visual_anchors": [
+        "WSDOT vest logo",
+        "worker’s back-facing posture",
+        "road-maintenance machinery"
+      ],
+      "symbolic_mapping": [
+        "The vest signifies institutional affiliation; the back-facing stance implies duty without visibility"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies the quiet infrastructure of public labor: individuals who enable collective mobility remain unseen, their identity subsumed by function and uniform.",
+      "alternative_interpretations": [
+        "This is simply routine roadwork with no symbolic intent; the worker is merely positioned for optimal viewing angle."
+      ],
+      "limitations": [
+        "No facial expression or direct engagement is visible, preventing confirmation of intentionality or self-awareness."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0460_P2",
+      "visual_anchors": [
+        "traffic cones",
+        "stationary truck",
+        "asphalt surface"
+      ],
+      "symbolic_mapping": [
+        "Cones mark temporary boundaries; the road surface represents continuity disrupted by intervention"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "Road maintenance enacts a paradox: constraint (cones, lane closure) enables future freedom (safe travel), reflecting how structured limitation sustains collective movement.",
+      "alternative_interpretations": [
+        "Cones are purely functional safety markers with no deeper implication about liberty or path-making."
+      ],
+      "limitations": [
+        "The image shows only one moment; no before/after context confirms long-term effects of the work."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0460_P3",
+      "visual_anchors": [
+        "dense green foliage",
+        "utility poles",
+        "municipal truck"
+      ],
+      "symbolic_mapping": [
+        "Nature borders human infrastructure; poles carry invisible networks that sustain modern life"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The juxtaposition of organic growth and engineered systems reveals an ongoing negotiation between ecological presence and technological imposition, where power resides in the capacity to reshape terrain.",
+      "alternative_interpretations": [
+        "The foliage and poles are incidental background elements with no thematic relevance to the foreground activity."
+      ],
+      "limitations": [
+        "No visible conflict or interaction occurs between nature and machine; they coexist passively."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:48:46.682808+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0e04c564-613d-961a-a1f7-708e0321787a",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 962,
+        "total_tokens": 1731,
+        "completion_tokens_details": {
+          "text_tokens": 962
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070248213858cd5522234ef4",
+      "usage": {
+        "completion_tokens": 823,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1893,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2716
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

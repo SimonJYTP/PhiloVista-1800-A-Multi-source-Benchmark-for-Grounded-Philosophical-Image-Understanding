@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1059",
+  "sample_id": "PHL1800_HAIV_0415",
+  "file_name": "PHL1800_HAIV_0415.png",
+  "batch_id": "B023",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure facing a large padlock",
+  "captions": {
+    "scene": [
+      "A cartoon-style illustration with a white background, green vertical brushstrokes below, and a large metallic padlock dominating the right side.",
+      "The figure is positioned on the left, shown in profile, with exaggerated facial features and a blue garment.",
+      "The padlock has a circular body, six rivets, a keyhole, and a shackle raised upward; its surface shows black-and-blue shading suggesting metal texture."
+    ],
+    "action": [
+      "The figure’s mouth is open wide, eyes wide, and one hand is raised near the cheek in a gesture of shock or alarm.",
+      "The padlock’s shackle is in the open (raised) position, not engaged with the lock body.",
+      "The figure’s gaze is directed toward the padlock, with head tilted slightly upward."
+    ],
+    "rationale": [
+      "The open mouth and widened eyes suggest an immediate reaction to the padlock’s state, though exact emotion is not determinable from anatomy alone.",
+      "The shackle’s raised position indicates the lock is unlocked, but no mechanism or context for opening is visible.",
+      "The figure wears a collared blue garment resembling formal attire, but no insignia or text confirms role or affiliation."
+    ],
+    "object": [
+      "The human figure has brown skin, sparse dark hair receding at the temples, large round eyes with black pupils, and a prominent nose and ear.",
+      "The figure wears a light blue jacket over a white collared shirt and a dark tie, all rendered with sketchy line work and watercolor washes.",
+      "The padlock is white with black outlines, six black circular rivets arranged around the keyhole, and a solid black keyhole shape.",
+      "The shackle is thick, arched, and shaded with black and blue strokes to imply volume and metallic sheen.",
+      "Green vertical brushstrokes appear beneath both figure and padlock, suggesting a surface or ground plane without texture detail."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1059_P1",
+      "visual_anchors": [
+        "open mouth and wide eyes",
+        "raised shackle",
+        "keyhole centered on lock face"
+      ],
+      "symbolic_mapping": [
+        "the keyhole as access point to knowledge",
+        "the open shackle as potential freedom"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The figure’s startled response to an unlocked padlock may reflect the paradoxical anxiety that accompanies sudden access to truth or liberty—visibility of the keyhole without a key implies possibility without agency.",
+      "alternative_interpretations": [
+        "The image could simply depict surprise at finding a lock already open, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual props confirm intentional symbolism; expression is stylized and ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1059_P2",
+      "visual_anchors": [
+        "figure’s hand near face",
+        "exaggerated eye size",
+        "lack of visible key"
+      ],
+      "symbolic_mapping": [
+        "hand gesture as self-restraint or disbelief",
+        "absence of key as missing instrument of action"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The absence of a key despite the unlocked state suggests a disjunction between opportunity and capacity to act, evoking themes where power resides in control of access rather than mere availability.",
+      "alternative_interpretations": [
+        "The figure may be reacting to an unexpected mechanical failure of the lock, not a conceptual dilemma."
+      ],
+      "limitations": [
+        "No depiction of effort, tools, or prior interaction rules out definitive causal narrative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1059_P3",
+      "visual_anchors": [
+        "green vertical strokes beneath figures",
+        "contrast between organic figure and rigid lock",
+        "monochrome lock vs. colored figure"
+      ],
+      "symbolic_mapping": [
+        "green strokes as unstable ground or artificial setting",
+        "color contrast as distinction between subject and system"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s vivid coloring against the stark, unadorned lock may signify the tension between individual identity and impersonal institutional structures that define boundaries of social participation.",
+      "alternative_interpretations": [
+        "Color choices may reflect artistic preference rather than symbolic intent; green may merely indicate floor or backdrop."
+      ],
+      "limitations": [
+        "No cultural markers, signage, or relational cues confirm institutional or social framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:45:24.424866+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-964e51d3-c7b9-930a-9395-664dffde8a82",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1003,
+        "total_tokens": 2536,
+        "completion_tokens_details": {
+          "text_tokens": 1003
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907034504bd52b294221e4a45",
+      "usage": {
+        "completion_tokens": 865,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2959,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3824
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1049",
+  "sample_id": "PHL1800_HL_0138",
+  "file_name": "PHL1800_HL_0138.png",
+  "batch_id": "B022",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person in a red shirt standing on a skateboard on a paved walkway",
+  "captions": {
+    "scene": [
+      "A wide brick-paved promenade bordered by metal railings, overlooking a harbor with moored boats and a city skyline under an overcast sky.",
+      "Modern high-rise buildings and construction cranes are visible across the water, indicating ongoing urban development.",
+      "A lamppost stands near the center of the walkway; another person is partially visible at the far right railing."
+    ],
+    "action": [
+      "The central person stands upright on a skateboard with both feet on the deck, arms slightly raised, facing away from the camera toward the water.",
+      "The person wears a red short-sleeved shirt, blue jeans, and dark shoes; their hair appears long and loose.",
+      "A second individual, wearing light-colored clothing, leans on the railing at the far right edge of the frame."
+    ],
+    "rationale": [
+      "The skateboard is positioned horizontally on the brick surface with wheels visible, confirming it is not airborne or in motion.",
+      "The person’s posture—upright torso, feet parallel on the board, no forward lean—suggests static balance rather than active riding.",
+      "The presence of railings, lamppost, and uniform paving indicates a designed public pedestrian/bike path, not a street or park trail."
+    ],
+    "object": [
+      "A skateboard with black grip tape, four white wheels, and visible trucks lies flat on a brown brick-paved surface.",
+      "A metal railing composed of horizontal bars and vertical posts runs along both sides of the walkway.",
+      "A curved lamppost with a single downward-facing lamp head stands on the walkway near the center-right.",
+      "Multiple sailboats and motorboats are moored in the water behind the railing; one white boat has a blue stripe.",
+      "Two construction cranes—one yellow tower crane and one smaller orange boom crane—are visible behind buildings on the far shore."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1049_P1",
+      "visual_anchors": [
+        "person standing still on skateboard",
+        "empty walkway ahead",
+        "railings framing the path"
+      ],
+      "symbolic_mapping": [
+        "the stationary skateboarder amid open space suggests suspended agency",
+        "railings as literal and metaphorical boundaries to movement"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment of poised potential where physical stillness contrasts with spatial openness, evoking the philosophical tension between freedom of movement and self-imposed or structural constraint.",
+      "alternative_interpretations": [
+        "The subject may simply be pausing to observe the view, with no intentional symbolism."
+      ],
+      "limitations": [
+        "No facial expression or directional gaze is visible to confirm intentionality or internal state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1049_P2",
+      "visual_anchors": [
+        "overcast sky",
+        "construction cranes",
+        "static figure on walkway"
+      ],
+      "symbolic_mapping": [
+        "cranes signify ongoing transformation",
+        "still figure contrasts with background change"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of human stasis against industrial development hints at the fleeting nature of individual presence within larger temporal processes of urban becoming and technological labor.",
+      "alternative_interpretations": [
+        "The scene is a routine recreational setting; the cranes are incidental background elements."
+      ],
+      "limitations": [
+        "No explicit temporal markers (e.g., clocks, shadows indicating time of day) confirm duration or progression."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1049_P3",
+      "visual_anchors": [
+        "two people separated by distance on same path",
+        "one centered, one marginal",
+        "shared railing and horizon"
+      ],
+      "symbolic_mapping": [
+        "spatial separation despite shared environment reflects social proximity without interaction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The composition visually enacts the modern condition of co-presence without communion—individuals occupy the same public space yet remain psychologically and physically distinct, raising questions about mediated social existence.",
+      "alternative_interpretations": [
+        "The second person may be waiting for someone or taking a photo; separation is coincidental, not thematic."
+      ],
+      "limitations": [
+        "Only partial visibility of the second person prevents confirmation of posture, attention, or intent."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:44:31.158475+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-42e3bc27-6842-978c-9779-6e9c078f6463",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 974,
+        "total_tokens": 1783,
+        "completion_tokens_details": {
+          "text_tokens": 974
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703441244cc9c99b0754218",
+      "usage": {
+        "completion_tokens": 836,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1950,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2786
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

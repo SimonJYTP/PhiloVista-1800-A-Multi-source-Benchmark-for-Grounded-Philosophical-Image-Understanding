@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0367",
+  "sample_id": "PHL1800_HL_0219",
+  "file_name": "PHL1800_HL_0219.png",
+  "batch_id": "B009",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two police motorcycles in motion on a multi-lane road",
+  "captions": {
+    "scene": [
+      "A daytime street scene with vehicles including a gray sedan, a black dump truck, a green semi-trailer marked 'EVERGREEN', and a brown pickup truck; pedestrians stand on a sidewalk beside a tree-lined curb.",
+      "Two white-and-black police motorcycles with visible license plates and emergency lights occupy the left lane of a paved road; orange traffic cones are placed near the shoulder.",
+      "Overhead utility poles and wires run parallel to the road; bare deciduous trees and low residential structures appear in the background under an overcast sky."
+    ],
+    "action": [
+      "The two police motorcycles are moving forward in the same direction, with their rear wheels aligned and slight separation between them.",
+      "Five pedestrians stand grouped on the sidewalk to the right, facing toward the road or each other; one wears a dark jacket with a visible logo.",
+      "A gray sedan is positioned ahead of the motorcycles in the adjacent lane, while a brown pickup truck is directly ahead of the second motorcycle."
+    ],
+    "rationale": [
+      "The motorcycles’ orientation, wheel positions, and lack of visible braking suggest forward motion rather than stopping or reversing.",
+      "The presence of traffic cones near the shoulder implies a controlled or restricted zone, possibly related to the police presence.",
+      "The pedestrians’ stationary posture and grouping suggest observation or waiting, though their exact intent cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "A white police motorcycle with black side cases, a rear-mounted light bar, and a white helmet resting on its seat is in the left lane.",
+      "A second white police motorcycle, slightly behind and to the right of the first, displays a rear light bar and a mounted radio antenna.",
+      "A brown Ford pickup truck with chrome tailgate lettering 'FORD' and a visible rear license plate is directly ahead of the second motorcycle.",
+      "An orange traffic cone with reflective stripes stands on the asphalt near the left edge of the road, adjacent to the gray sedan.",
+      "A green semi-trailer with white uppercase text 'EVERGREEN' on its side is partially visible behind the dump truck; additional text is present but unreadable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0367_P1",
+      "visual_anchors": [
+        "two police motorcycles in formation",
+        "pedestrians observing from sidewalk",
+        "traffic cones marking space"
+      ],
+      "symbolic_mapping": [
+        "formation riding as embodiment of institutional order",
+        "sidewalk observers as civic witnesses"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image captures a moment where public authority (motorcycles) moves through shared space while citizens observe from a designated margin, reflecting the tension between collective order and individual presence in urban life.",
+      "alternative_interpretations": [
+        "This may simply depict routine traffic enforcement or escort duty without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, signage, or contextual markers confirm intentional symbolism; observer postures are ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0367_P2",
+      "visual_anchors": [
+        "bare trees",
+        "overcast sky",
+        "moving motorcycles"
+      ],
+      "symbolic_mapping": [
+        "bare branches as temporal transience",
+        "moving machines indicating passage"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of static observers, transient natural elements, and moving machines evokes the fleeting nature of moments within structured societal pathways—each rider and pedestrian occupies a brief, irreversible segment of time.",
+      "alternative_interpretations": [
+        "The bare trees indicate winter seasonality; motorcycle movement is routine, not necessarily philosophical."
+      ],
+      "limitations": [
+        "Seasonality is inferred, not confirmed by foliage type; motion is functional, not necessarily indicative of temporal philosophy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0367_P3",
+      "visual_anchors": [
+        "police motorcycles",
+        "civilian sedan",
+        "pedestrians in varied attire"
+      ],
+      "symbolic_mapping": [
+        "vehicle type as role differentiation",
+        "shared road as contested commons"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "Visible distinctions in vehicle type, attire, and positioning highlight how identity is performed and constrained within infrastructural frameworks—where freedom of movement coexists with regulatory visibility.",
+      "alternative_interpretations": [
+        "The scene reflects standard traffic composition with no deliberate staging of identity contrasts."
+      ],
+      "limitations": [
+        "Uniform details (e.g., badges, insignia) are not legible; pedestrian clothing lacks identifying marks."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Wrong count of pedestrians: candidate states four, but image shows five; license plate text in object descriptions is hallucinated; 'motion blur on motorcycle wheels' is inaccurate as wheels are not blurred; 'uniformed police motorcycles' lacks visual confirmation of uniform details."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:39:30.771086+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-391ab6c1-13b5-9196-b779-cd863bab85cf",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1062,
+        "total_tokens": 1831,
+        "completion_tokens_details": {
+          "text_tokens": 1062
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702390994713b80439349f4",
+      "usage": {
+        "completion_tokens": 1022,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1991,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3013
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

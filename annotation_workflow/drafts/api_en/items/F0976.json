@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0976",
+  "sample_id": "PHL1800_IRFL_0317",
+  "file_name": "PHL1800_IRFL_0317.jpg",
+  "batch_id": "B021",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult person",
+  "captions": {
+    "scene": [
+      "A dimly lit indoor setting with a wooden desk surface and black background.",
+      "A laptop screen emits bright white light, illuminating nearby objects and the person’s face.",
+      "Open printed books and a yellow sticky note lie on the desk beside the laptop."
+    ],
+    "action": [
+      "The person rests their head on their left forearm, elbow propped on the desk.",
+      "Their right hand is placed on top of their head, fingers spread across the scalp.",
+      "Their eyes are open and directed toward the laptop screen."
+    ],
+    "rationale": [
+      "The posture suggests physical fatigue or prolonged engagement, though no explicit sleep or collapse is visible.",
+      "The presence of multiple open books and a laptop implies study or work activity, but purpose cannot be confirmed from visuals alone.",
+      "The lighting contrast (bright screen vs. dark surroundings) indicates intentional low ambient illumination, possibly for focus or late-hour use."
+    ],
+    "object": [
+      "A silver-colored laptop with an illuminated screen displaying horizontal lines of unreadable text; a green clip-on lamp is attached to its upper-right corner.",
+      "An open hardcover book lies flat on the desk, pages fanned out, with printed text visible but illegible.",
+      "A second open book or document is positioned in front of the first, also showing unreadable printed text.",
+      "A rectangular yellow sticky note rests on the laptop’s palm rest area, near the keyboard.",
+      "The person wears a grey long-sleeved top over a blue long-sleeved garment, with visible cuff layers and a small dark earring on the left ear."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0976_P1",
+      "visual_anchors": [
+        "laptop screen glow",
+        "open books",
+        "person’s head resting on arm"
+      ],
+      "symbolic_mapping": [
+        "screen glow as proxy for mediated knowledge",
+        "books as embodied tradition"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of digital and print media under constrained lighting may reflect tension between immediate access and sustained inquiry in the pursuit of truth.",
+      "alternative_interpretations": [
+        "The scene could simply depict routine late-night studying without symbolic intent."
+      ],
+      "limitations": [
+        "No legible text or contextual signage confirms epistemic intent; lighting may be purely functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0976_P2",
+      "visual_anchors": [
+        "dark background",
+        "isolated figure",
+        "desk-bound posture"
+      ],
+      "symbolic_mapping": [
+        "darkness as absence of social context",
+        "desk as site of enforced solitude"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial isolation and self-contained activity suggest a condition where social existence is suspended in favor of individual labor or reflection.",
+      "alternative_interpretations": [
+        "The darkness may result from room lighting choices rather than intentional seclusion."
+      ],
+      "limitations": [
+        "No windows, doors, or other people are visible, so social context cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0976_P3",
+      "visual_anchors": [
+        "green clip-on lamp",
+        "stacked sleeves",
+        "yellow sticky note"
+      ],
+      "symbolic_mapping": [
+        "lamp as tool for extending capacity",
+        "layered clothing as adaptation to environment"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The integration of small assistive tools (lamp, note) into a bodily-anchored workspace illustrates how technology mediates human endurance in labor-intensive cognitive tasks.",
+      "alternative_interpretations": [
+        "These items may be incidental accessories with no functional or symbolic role beyond convenience."
+      ],
+      "limitations": [
+        "Function of the lamp and note is inferred; no action shows their use."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:33:05.421022+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ff4d80a1-36d7-98a8-89f7-5ad99672691d",
+      "usage": {
+        "prompt_tokens": 821,
+        "completion_tokens": 849,
+        "total_tokens": 1670,
+        "completion_tokens_details": {
+          "text_tokens": 849
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 314,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033228428bc94650b9472d",
+      "usage": {
+        "completion_tokens": 713,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1843,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2556
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

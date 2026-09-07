@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0188",
+  "sample_id": "PHL1800_HAIV_0256",
+  "file_name": "PHL1800_HAIV_0256.png",
+  "batch_id": "B006",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure with open mouth and scattered food particles",
+  "captions": {
+    "scene": [
+      "A figure seated at a yellow surface with a white plate in front; background is textured off-white fabric.",
+      "Red-and-orange fragmented shapes radiate outward from the figure’s head and shoulders, suggesting motion or dispersion.",
+      "The figure wears a dark garment with curved black lines on either side of the neck, resembling stylized sound waves or motion lines."
+    ],
+    "action": [
+      "The figure’s mouth is wide open, revealing a dark interior with visible food fragments inside.",
+      "Food fragments—yellow, orange, and red—are suspended mid-air between the mouth, face, and plate.",
+      "Food fragments are also present on the rim and interior of the white plate, some appearing to fall toward it."
+    ],
+    "rationale": [
+      "The presence of identical food fragments both inside the mouth and on the plate suggests a causal link (e.g., expulsion or spillage), though directionality is ambiguous.",
+      "Curved black lines flanking the neck may indicate vibration or force emission, but no explicit source (e.g., speaker, explosion) is visible.",
+      "The figure’s eyes are wide and directed forward; however, no eyelids, pupils, or gaze direction can be confirmed beyond basic orientation."
+    ],
+    "object": [
+      "The figure has black hair, a white face outlined in cyan, and cyan-defined eyes, eyebrows, nose, and lips.",
+      "The plate is white with a cyan inner rim and contains approximately 20–25 irregularly shaped yellow-orange-red food fragments.",
+      "Scattered food fragments outside the plate number over 30 and vary in size and color composition, mostly red with yellow/orange accents.",
+      "The figure’s garment is solid black with two symmetrical sets of three curved black lines on each side of the neck region.",
+      "The background is a uniformly textured off-white surface with no discernible pattern beyond weave-like grain."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0188_P1",
+      "visual_anchors": [
+        "open mouth",
+        "scattered food fragments",
+        "cyan outline"
+      ],
+      "symbolic_mapping": [
+        "open mouth → uncontrolled expression",
+        "scattered fragments → fragmentation of self or message"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image may depict the instability of personal presentation when internal contents erupt uncontrollably into social space, challenging coherent identity.",
+      "alternative_interpretations": [
+        "It could represent literal food spillage during eating, rendered in graphic style without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; visual elements admit multiple mundane readings."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0188_P2",
+      "visual_anchors": [
+        "radiating red fragments",
+        "curved black lines",
+        "yellow table surface"
+      ],
+      "symbolic_mapping": [
+        "radiating fragments → dissemination of influence",
+        "curved lines → acoustic or energetic propagation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The figure appears to emit force or content outward, possibly illustrating how individuals project agency or disruption into shared environments.",
+      "alternative_interpretations": [
+        "The lines and fragments may simply denote motion blur or artistic emphasis on dynamism, not intentional power projection."
+      ],
+      "limitations": [
+        "The direction and origin of the curved lines are ambiguous; they could be decorative rather than representational."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0188_P3",
+      "visual_anchors": [
+        "plate with sparse food",
+        "mouth full of food",
+        "food mid-air"
+      ],
+      "symbolic_mapping": [
+        "plate as expectation",
+        "mid-air food as liminal state between intake and rejection"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The suspended food suggests a moment of indeterminacy where consumption, waste, or sharing remains unresolved—highlighting ethical ambiguity in everyday acts.",
+      "alternative_interpretations": [
+        "This may illustrate a comical or exaggerated sneeze or cough while eating, with no moral dimension intended."
+      ],
+      "limitations": [
+        "No facial expression beyond openness confirms intentionality; the scene lacks narrative context to fix meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:15:27.642324+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-280b0522-bf8e-9357-9eed-8fc70425c308",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 957,
+        "total_tokens": 2490,
+        "completion_tokens_details": {
+          "text_tokens": 957
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070215136d65ad1ddd4642d0",
+      "usage": {
+        "completion_tokens": 815,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2914,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3729
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

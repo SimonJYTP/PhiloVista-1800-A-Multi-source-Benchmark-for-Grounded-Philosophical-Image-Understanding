@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1745",
+  "sample_id": "PHL1800_HL_0004",
+  "file_name": "PHL1800_HL_0004.png",
+  "batch_id": "B002",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a black bear crossing a two-lane paved road",
+  "captions": {
+    "scene": [
+      "A two-lane asphalt road with double yellow center lines, bordered on the right by green vegetation and a metal guardrail, and on the left by a line of vehicles including a large bus.",
+      "A yellow diamond-shaped traffic sign is mounted on a post near the roadside vegetation; its symbol is visible but the specific icon is not clearly legible.",
+      "The background shows sloping terrain with trees and shrubs under overcast lighting; no buildings are visible."
+    ],
+    "action": [
+      "The black bear walks across the road from right to left, positioned between the double yellow lines, with all four paws on the pavement.",
+      "A dark-colored bus with illuminated headlights approaches from the left, occupying the left lane, and appears to be slowing or stopped.",
+      "A person in light-colored clothing sits on the guardrail on the right side of the road, facing away from the camera toward the vegetation."
+    ],
+    "rationale": [
+      "The bear’s posture—head forward, legs in stride—indicates active locomotion rather than standing still; however, speed cannot be determined from a single frame.",
+      "The bus headlights are on and its front is oriented toward the bear, suggesting driver awareness, but whether it is braking or merely idling is visually indeterminate.",
+      "The seated person’s orientation and proximity to the bear suggest observation, but their attention direction and intent are not verifiable from the image alone."
+    ],
+    "object": [
+      "A medium-sized black bear with a glossy coat, visible ears, snout, and limbs, is mid-stride on the road surface.",
+      "A transit-style bus with a dark upper body, yellow lower stripe, and visible windshield wipers occupies the left lane; its destination sign above the windshield contains unreadable text.",
+      "Two parallel solid yellow lines run down the center of the road, indicating no passing; the road surface shows minor wear and tire marks.",
+      "A metal guardrail runs along the right shoulder, with a person seated on it wearing light-colored pants and a darker top; only one person is clearly visible in that area.",
+      "A yellow diamond-shaped traffic warning sign is mounted on a metal post beside the road; the pictogram inside is too blurry to identify definitively."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1745_P1",
+      "visual_anchors": [
+        "black bear crossing road",
+        "bus halted nearby",
+        "guardrail with seated observer"
+      ],
+      "symbolic_mapping": [
+        "the bear as nonhuman agent entering human infrastructure",
+        "the road as imposed boundary"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The bear’s unmediated traversal of a regulated roadway embodies a tension between natural autonomy and anthropogenic spatial control, questioning whose presence constitutes legitimate occupancy of shared space.",
+      "alternative_interpretations": [
+        "A routine wildlife crossing event captured during daytime traffic, with no symbolic intent."
+      ],
+      "limitations": [
+        "No signage or context confirms the road’s jurisdictional status or the bear’s origin; the observer’s role is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1745_P2",
+      "visual_anchors": [
+        "double yellow lines",
+        "bear mid-crossing",
+        "bus headlights on"
+      ],
+      "symbolic_mapping": [
+        "yellow lines as rigid temporal-spatial demarcation",
+        "bear as embodiment of unanticipated contingency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The fixed geometry of the road contrasts with the bear’s transient passage, evoking the fragility of life amid structured systems—each step across the lines is a moment suspended between safety and peril.",
+      "alternative_interpretations": [
+        "A standard traffic delay caused by wildlife, common in rural or park-adjacent roads."
+      ],
+      "limitations": [
+        "The bear’s health, age, or direction beyond the frame is unknown; mortality risk is inferred, not shown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1745_P3",
+      "visual_anchors": [
+        "person seated on guardrail",
+        "bear in road center",
+        "bus in left lane"
+      ],
+      "symbolic_mapping": [
+        "observer as passive witness",
+        "bear as subject outside human narrative control"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "knowledge_truth"
+      ],
+      "interpretation": "The scene presents an epistemic rupture: humans observe but do not intervene, raising questions about moral obligation when knowledge of vulnerability (the bear’s exposure) coexists with inaction.",
+      "alternative_interpretations": [
+        "The person may be waiting for the bear to pass safely, consistent with standard wildlife protocol."
+      ],
+      "limitations": [
+        "The person’s posture and gaze direction do not confirm awareness or intent; no interaction occurs in the frame."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:46:05.377080+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0d93a64d-5b4b-97f7-9bad-be816567bdc2",
+      "usage": {
+        "prompt_tokens": 674,
+        "completion_tokens": 1067,
+        "total_tokens": 1741,
+        "completion_tokens_details": {
+          "text_tokens": 1067
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 167,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014554e7c5b30d7ea44710",
+      "usage": {
+        "completion_tokens": 929,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1871,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2800
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

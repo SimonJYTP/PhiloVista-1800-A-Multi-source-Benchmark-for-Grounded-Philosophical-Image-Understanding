@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1755",
+  "sample_id": "PHL1800_IRFL_0267",
+  "file_name": "PHL1800_IRFL_0267.jpg",
+  "batch_id": "B036",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male",
+  "captions": {
+    "scene": [
+      "Indoor setting with soft-focus neutral-toned background featuring vertical light bands suggestive of window blinds or curtains",
+      "Neutral lighting illuminates the subject from front-left, casting subtle shadows on right side of face and neck",
+      "Shallow depth of field isolates subject; background contains no identifiable furniture or objects"
+    ],
+    "action": [
+      "Subject gazes downward and leftward with eyes partially narrowed and focused",
+      "Right hand supports chin and lower lip, fingers curled under jawline, thumb resting against cheek",
+      "Upper torso leans slightly forward; shoulders are relaxed but not slumped"
+    ],
+    "rationale": [
+      "Hand-to-face posture suggests engagement with internal processing rather than external interaction, though exact intent is unobservable",
+      "Downward gaze combined with furrowed brow may indicate concentration or evaluation, but facial musculature alone does not confirm emotional valence",
+      "Attire (collared shirt, tie) implies formal or professional context, yet no environment cues confirm occupational role"
+    ],
+    "object": [
+      "The subject wears a light blue long-sleeved button-up shirt with a white collar and visible stitching along shoulder seams.",
+      "A dark navy or black necktie lies diagonally across the chest, partially obscured by the right arm and hand.",
+      "The subject has short, tightly curled dark brown hair with visible texture and volume above the temples.",
+      "Facial hair consists of a light stubble covering upper lip, chin, and jawline, with uneven density.",
+      "The right hand shows natural skin tone, visible knuckle creases, and fingernails trimmed short and clean."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1755_P1",
+      "visual_anchors": [
+        "downward gaze",
+        "hand supporting chin",
+        "neutral background"
+      ],
+      "symbolic_mapping": [
+        "chin-resting gesture maps to deliberation",
+        "downward focus maps to introspection"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The posture and gaze evoke a moment of epistemic suspension—where observation halts and judgment is withheld—aligning with Cartesian doubt as a precondition for truth-seeking.",
+      "alternative_interpretations": [
+        "The pose may simply reflect fatigue or physical discomfort during prolonged seated work."
+      ],
+      "limitations": [
+        "No textual or contextual markers confirm intellectual activity; the gesture is culturally variable and non-exclusive to contemplation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1755_P2",
+      "visual_anchors": [
+        "light blue shirt",
+        "dark tie",
+        "unadorned background"
+      ],
+      "symbolic_mapping": [
+        "standard business attire maps to social role conformity",
+        "lack of personal items maps to institutional anonymity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The uniformity of dress and absence of distinguishing features suggest the subject occupies a socially scripted position where individual identity is subsumed by functional role—a visual instantiation of Goffman’s front-stage self.",
+      "alternative_interpretations": [
+        "The clothing may be casual wear chosen for comfort, not symbolic adherence to norms."
+      ],
+      "limitations": [
+        "Color and cut of clothing are generic; no logos, insignia, or deviations provide evidence of institutional affiliation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1755_P3",
+      "visual_anchors": [
+        "curled fingers under jaw",
+        "partially closed eyelids",
+        "stillness of upper body"
+      ],
+      "symbolic_mapping": [
+        "physical containment of mouth maps to restraint of speech",
+        "focused stillness maps to temporal suspension"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The restrained gesture—hand inhibiting vocal expression while the body remains poised—visually enacts the ethical tension between speaking and withholding, echoing Arendt’s notion of responsibility as rooted in the capacity to pause before action.",
+      "alternative_interpretations": [
+        "The hand position could be habitual or ergonomic, unrelated to moral deliberation."
+      ],
+      "limitations": [
+        "No visible mouth movement, vocal apparatus, or situational context confirms intention to speak or withhold speech."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:08:20.879658+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9c2c8dd9-58ed-988d-9e98-25d9c9ec5eeb",
+      "usage": {
+        "prompt_tokens": 1497,
+        "completion_tokens": 933,
+        "total_tokens": 2430,
+        "completion_tokens_details": {
+          "text_tokens": 933
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 990,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070508095b8aaf6782234491",
+      "usage": {
+        "completion_tokens": 791,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2791,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3582
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

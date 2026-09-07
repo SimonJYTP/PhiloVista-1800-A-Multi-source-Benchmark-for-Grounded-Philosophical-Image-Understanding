@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0513",
+  "sample_id": "PHL1800_HAIV_0372",
+  "file_name": "PHL1800_HAIV_0372.png",
+  "batch_id": "B012",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized heart-shaped landscape with a central river",
+  "captions": {
+    "scene": [
+      "A heart-shaped outline encloses layered terrain in red-brown, ochre, and green hues under a radiant orange-yellow sky.",
+      "A sinuous blue river flows vertically through the center, widening toward the bottom where it splashes into turquoise-green water.",
+      "The upper interior of the heart shows two symmetrical sunburst-like gradients flanking the river’s origin point."
+    ],
+    "action": [
+      "The river appears to flow downward from the top center, curving left and right as it descends.",
+      "Water splashes outward at the lower right, indicated by droplet shapes and small circular bubbles.",
+      "Color gradients suggest illumination or atmospheric depth, but no motion blur or temporal markers are present."
+    ],
+    "rationale": [
+      "The heart shape is defined by a thick black contour line enclosing all other elements.",
+      "The river’s path follows a continuous, unbroken blue band with internal shading suggesting volume, not static paint.",
+      "The presence of splash forms and bubbles implies liquid dynamics, though the image is static and stylized."
+    ],
+    "object": [
+      "A black-outlined heart contains a multi-layered landscape composed of reddish-brown hills, ochre banks, and green lowlands.",
+      "A central river rendered in gradient blue (dark to light) winds vertically, bordered by black outlines and adjacent ochre zones.",
+      "At the bottom right, three distinct turquoise droplets and two small green circles depict splashing water.",
+      "Two identical radial gradients of orange and yellow occupy the upper left and right lobes of the heart, separated by the river’s head.",
+      "Thin black lines delineate terrain boundaries and add contour detail across all colored regions."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0513_P1",
+      "visual_anchors": [
+        "central blue river",
+        "heart outline",
+        "downward flow direction"
+      ],
+      "symbolic_mapping": [
+        "river as journey",
+        "heart as container of experience"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The river’s path through the heart suggests an individual’s life course traversing emotional or existential terrain, where choices bifurcate yet remain contained within a bounded self.",
+      "alternative_interpretations": [
+        "It may simply represent a geographic map stylized into a heart, with no intentional symbolism."
+      ],
+      "limitations": [
+        "No textual labels or cultural motifs confirm symbolic intent; the mapping relies on conventional associations rather than image-specific evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0513_P2",
+      "visual_anchors": [
+        "splashing water at base",
+        "gradient transition from blue to turquoise",
+        "enclosing heart boundary"
+      ],
+      "symbolic_mapping": [
+        "splash as release or consequence",
+        "boundary as limitation or protection"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The constrained river culminates in a splash that breaches the lower edge of the heart, visualizing tension between internal containment and external expression or overflow.",
+      "alternative_interpretations": [
+        "The splash could be decorative, emphasizing fluidity without implying conflict or liberation."
+      ],
+      "limitations": [
+        "The splash remains within the overall composition and does not visibly cross the heart’s outer contour line, weakening the ‘breach’ claim."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0513_P3",
+      "visual_anchors": [
+        "symmetrical sunbursts",
+        "dual hill masses flanking river",
+        "color shift from warm (top) to cool (bottom)"
+      ],
+      "symbolic_mapping": [
+        "sunbursts as duality or balance",
+        "warm-to-cool gradient as temporal progression"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The descending color temperature from fiery orange at the apex to aqueous green at the base evokes a passage from vitality toward dissolution or renewal, framed within the finite shape of a heart.",
+      "alternative_interpretations": [
+        "The gradient may reflect standard landscape lighting (sunrise/sunset) without temporal metaphor."
+      ],
+      "limitations": [
+        "No explicit markers of aging, decay, or cyclical rebirth (e.g., skulls, seeds, rings) appear; temperature shift alone is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:53:02.630718+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e1b62920-c7cc-9cd7-9feb-2c2ab853f51a",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 942,
+        "total_tokens": 2475,
+        "completion_tokens_details": {
+          "text_tokens": 942
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070252525f22a1c9d113420b",
+      "usage": {
+        "completion_tokens": 806,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2902,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3708
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

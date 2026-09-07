@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0310",
+  "sample_id": "PHL1800_IRFL_0164",
+  "file_name": "PHL1800_IRFL_0164.jpg",
+  "batch_id": "B008",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male",
+  "captions": {
+    "scene": [
+      "Interior setting with blurred vertical architectural elements suggesting windows or glass partitions in background",
+      "Soft, diffused lighting illuminates the subject from front-left, casting gentle shadows on right side of face",
+      "Shallow depth of field isolates subject against indistinct background structures"
+    ],
+    "action": [
+      "Man gazes toward upper-right frame, eyes open and directed away from camera",
+      "Right hand rests against lower jaw and neck area, fingers partially curled",
+      "Head tilted slightly upward and to left, torso oriented forward"
+    ],
+    "rationale": [
+      "Gaze direction and head tilt suggest attention toward something outside frame, but object of focus is not visible",
+      "Hand position near chin may indicate contemplation or adjustment, though no motion is captured",
+      "Attire (blazer over collared shirt) implies formal or professional context, but no explicit signage confirms this"
+    ],
+    "object": [
+      "The man has dark hair, a full beard, and visible eyebrows; facial features are symmetrically arranged.",
+      "He wears a navy blue blazer with lapels over a white collared shirt with visible top button undone.",
+      "His right hand contacts his neck/jaw region; thumb is positioned along the mandible, fingers rest on the throat.",
+      "Background contains repeating vertical lines and rectangular light patches, consistent with interior glazing or structural framing.",
+      "No text is legible in the image; any potential signage or labels are blurred beyond recognition."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0310_P1",
+      "visual_anchors": [
+        "gaze directed off-frame",
+        "hand near chin",
+        "blurred background"
+      ],
+      "symbolic_mapping": [
+        "off-frame gaze → openness to external reality",
+        "hand near chin → reflective pause"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The subject’s outward gaze and contemplative posture visually evoke the epistemic stance of seeking truth beyond immediate perception, while the unresolved spatial context suggests an ongoing journey of decision without fixed destination.",
+      "alternative_interpretations": [
+        "The pose may simply reflect momentary distraction or physical discomfort, such as adjusting posture or reacting to ambient noise."
+      ],
+      "limitations": [
+        "No visible textual or contextual cues confirm intentional symbolism; the interpretation relies on conventional gesture associations rather than image-specific evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0310_P2",
+      "visual_anchors": [
+        "beard and grooming",
+        "blazer over shirt",
+        "neutral expression"
+      ],
+      "symbolic_mapping": [
+        "facial hair and attire → constructed social presentation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The deliberate combination of facial hair and formal outerwear functions as a visual marker of socially negotiated identity, where appearance mediates presence within institutional or public space.",
+      "alternative_interpretations": [
+        "The clothing and grooming may be routine daily wear with no performative intent, dictated by weather, workplace norms, or habit."
+      ],
+      "limitations": [
+        "No interaction with others or environmental cues confirms social role; appearance alone cannot verify intended signaling."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0310_P3",
+      "visual_anchors": [
+        "shallow depth of field",
+        "isolated figure",
+        "uniform lighting"
+      ],
+      "symbolic_mapping": [
+        "isolation via focus → individual situatedness amid indistinct surroundings"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The photographic technique emphasizes the subject’s singularity against an undifferentiated environment, evoking existential constraint—where freedom is bounded by perceptual limits and temporal immediacy.",
+      "alternative_interpretations": [
+        "The shallow depth of field is a standard portrait technique for aesthetic emphasis, not necessarily symbolic of isolation or limitation."
+      ],
+      "limitations": [
+        "Photographic style (e.g., bokeh) is a technical choice independent of subject meaning; no narrative context supports metaphysical reading."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:30:47.590117+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-69dddf45-c1a5-9c10-b31d-c25d0206d0a8",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 898,
+        "total_tokens": 1477,
+        "completion_tokens_details": {
+          "text_tokens": 898
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070230252894ba398e3f411e",
+      "usage": {
+        "completion_tokens": 759,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1555,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2314
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

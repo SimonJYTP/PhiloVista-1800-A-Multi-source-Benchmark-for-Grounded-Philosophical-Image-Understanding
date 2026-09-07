@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0232",
+  "sample_id": "PHL1800_HAIV_0291",
+  "file_name": "PHL1800_HAIV_0291.png",
+  "batch_id": "B007",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a blue-framed window with airborne papers",
+  "captions": {
+    "scene": [
+      "A four-pane window with a thick blue frame set against a pale pink wall, viewed frontally.",
+      "Multiple tan-colored paper sheets and one white sheet are suspended in mid-air within and around the window aperture.",
+      "The window sill is a solid blue horizontal surface beneath the frame."
+    ],
+    "action": [
+      "Papers are depicted in motion, curving and rotating as if caught in airflow.",
+      "A white rectangular paper with red markings floats centrally, slightly tilted, among the tan papers.",
+      "No visible source of motion (e.g., hand, fan, open door) appears in the image."
+    ],
+    "rationale": [
+      "The curved trajectories and overlapping layers of papers suggest dynamic movement rather than static placement.",
+      "The red markings on the white paper appear stylized but are not legible; thus their content cannot be determined from visual evidence alone.",
+      "The absence of visible external forces implies the motion is either implied by composition or originates outside the frame, but this cannot be confirmed visually."
+    ],
+    "object": [
+      "The window consists of four equal rectangular glass panes separated by a blue mullion crossbar.",
+      "At least six distinct tan paper fragments are visible, varying in size and curvature, some partially transparent or shadowed.",
+      "One white rectangular paper lies near the center, bearing irregular red markings that resemble abstract scribbles or smudges.",
+      "The blue frame has uniform thickness and includes a matching horizontal sill below the lower edge of the window.",
+      "All papers are oriented diagonally or horizontally relative to the window grid, with no paper fully parallel to the panes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0232_P1",
+      "visual_anchors": [
+        "white paper with red markings",
+        "scattered tan papers",
+        "window grid"
+      ],
+      "symbolic_mapping": [
+        "the red markings may represent disrupted meaning",
+        "the window grid may symbolize structure or boundary"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The dispersal of marked and unmarked papers across a rigid window grid suggests the fragility of organized knowledge when confronted with uncontrolled forces, implying truth is unstable without structural containment.",
+      "alternative_interpretations": [
+        "The scene may simply depict papers blown by wind through an open window, with no symbolic intent."
+      ],
+      "limitations": [
+        "The red markings are illegible and non-representational, preventing confirmation of intentional semantic content."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0232_P2",
+      "visual_anchors": [
+        "multiple tan papers in flight",
+        "single white paper with red marks",
+        "blue frame"
+      ],
+      "symbolic_mapping": [
+        "tan papers as undifferentiated data",
+        "white paper as singular document or identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The isolated white paper with distinctive red marks amid homogeneous tan fragments evokes the tension between individual identity and assimilative social forces, where visibility depends on contrast against a uniform background.",
+      "alternative_interpretations": [
+        "The color difference may reflect lighting, material type, or printing method rather than symbolic distinction."
+      ],
+      "limitations": [
+        "No facial features, names, or contextual identifiers exist on any paper to confirm identity-related symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0232_P3",
+      "visual_anchors": [
+        "papers suspended mid-air",
+        "static window frame",
+        "empty background"
+      ],
+      "symbolic_mapping": [
+        "suspended motion as arrested time",
+        "frame as temporal boundary"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The frozen-in-motion papers against the fixed window evoke a moment suspended between action and consequence, reflecting existential hesitation where trajectory is uncertain yet irreversible forces are already in play.",
+      "alternative_interpretations": [
+        "The image may be a stylized illustration of everyday clutter or mail delivery, with no temporal metaphor intended."
+      ],
+      "limitations": [
+        "No clocks, calendars, aging signs, or directional cues confirm temporal interpretation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:22:45.222865+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-014e021b-bfe7-9aae-9f18-9b3d94fbdf4b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 918,
+        "total_tokens": 2451,
+        "completion_tokens_details": {
+          "text_tokens": 918
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022222c6c5fd6e47a74f6c",
+      "usage": {
+        "completion_tokens": 780,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2878,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3658
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

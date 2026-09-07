@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0465",
+  "sample_id": "PHL1800_HL_0600",
+  "file_name": "PHL1800_HL_0600.png",
+  "batch_id": "B011",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two mounted riders and a herd of cattle in an open dusty enclosure",
+  "captions": {
+    "scene": [
+      "A sunlit, dry, unpaved enclosure bordered by wooden fencing and distant trees, with scattered shadows cast on the ground.",
+      "Multiple cattle—some solid dark, some white with dark patches—are dispersed across the foreground and midground; no water body is visible.",
+      "Two riders on dark horses occupy the right-midground, one slightly ahead of the other, both wearing wide-brimmed hats and long-sleeved shirts."
+    ],
+    "action": [
+      "A piebald cow walks leftward across the foreground, head lowered, legs in motion, casting a distinct shadow.",
+      "The foremost rider sits upright, holding reins, with his horse’s left foreleg lifted mid-stride; the second rider follows closely behind, also seated and holding reins.",
+      "Several cattle stand still or move slowly near the fence line; two riders are visible on horseback in the background near the fence."
+    ],
+    "rationale": [
+      "The presence of wooden fencing, multiple riders, and cattle suggests livestock management rather than wild grazing; however, no branding, tags, or clear infrastructure confirms purpose.",
+      "The riders’ attire (hats, long sleeves) and posture suggest active control, but no lassos, prods, or direct interaction with cattle are visible to confirm herding intent.",
+      "The image is monochrome and grainy, limiting color-based identification of species or condition; some distant figures are indistinct due to resolution and distance."
+    ],
+    "object": [
+      "One piebald cow with irregular black-and-white patches walks in the lower-left foreground, its right front leg extended forward and shadow sharply defined beneath it.",
+      "Two riders on dark-colored horses are positioned in the right-midground; both wear light-toned long-sleeved shirts and wide-brimmed hats, and each holds reins with both hands.",
+      "At least eight distinct cattle bodies are visible: five in the midground near the fence, three near the background fence; among them, two are predominantly white with dark patches, others are dark or mottled.",
+      "Two additional human figures on horseback appear in the background near the fence; their forms are partially obscured and low-resolution, but heads and torsos are discernible.",
+      "A horizontal wooden fence runs across the mid-background, separating the enclosure from a treeline; vertical posts are spaced regularly along its length."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0465_P1",
+      "visual_anchors": [
+        "piebald cow walking alone in foreground",
+        "two riders maintaining parallel formation",
+        "fence demarcating space"
+      ],
+      "symbolic_mapping": [
+        "the cow’s independent movement contrasts with the riders’ coordinated control",
+        "the fence signifies imposed boundary"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image presents a tension between autonomous motion (the cow’s unguided stride) and structured oversight (riders aligned within bounded terrain), suggesting how social order emerges through spatial containment and synchronized action.",
+      "alternative_interpretations": [
+        "This may simply depict routine stock movement without symbolic intent; the cow’s path could be random, not deliberate defiance."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or directional cues confirm intentionality in the cow or riders."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0465_P2",
+      "visual_anchors": [
+        "multiple riders at varying distances",
+        "cattle distributed unevenly",
+        "shadows indicating strong overhead light"
+      ],
+      "symbolic_mapping": [
+        "distance between figures implies hierarchy or role differentiation",
+        "shadow sharpness marks temporal specificity"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The arrangement of labor—riders spaced across the field under harsh light—evokes the temporality of manual work: effort measured in daylight hours, bodies and animals subject to diurnal cycles and physical limits.",
+      "alternative_interpretations": [
+        "The spacing may reflect practical necessity (avoiding crowding) rather than symbolic hierarchy or temporal awareness."
+      ],
+      "limitations": [
+        "No clocks, tools, or fatigue indicators confirm temporal consciousness or labor intensity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0465_P3",
+      "visual_anchors": [
+        "riders wearing identical hat styles",
+        "cattle with varied coat patterns",
+        "background figures less distinct"
+      ],
+      "symbolic_mapping": [
+        "uniform attire signals shared role despite individual variation",
+        "visual hierarchy via focus and clarity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Shared appearance (hats, shirts) among riders constructs collective identity amid environmental heterogeneity, while differential visual clarity reinforces social positioning—those nearer and sharper hold narrative centrality.",
+      "alternative_interpretations": [
+        "Hat similarity may result from climate adaptation, not identity signaling; clarity differences stem from photographic depth of field, not intentional hierarchy."
+      ],
+      "limitations": [
+        "Clothing details are low-resolution; no insignia, badges, or postures confirm intentional identity construction."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Candidate incorrectly states \"at least eleven distinct cattle bodies\"; visual count shows fewer (approximately 8–10). Candidate claims \"three additional human figures on horseback\" in background; image shows two. Candidate describes \"a water body visible in the background\"; no water is clearly visible, only a dusty enclosure."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:49:25.682423+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-42ac9d96-b7ba-92f7-b4bf-a1441640b157",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 1148,
+        "total_tokens": 1849,
+        "completion_tokens_details": {
+          "text_tokens": 1148
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024900662ea24349a74e01",
+      "usage": {
+        "completion_tokens": 1053,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1971,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3024
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

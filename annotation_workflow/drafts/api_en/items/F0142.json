@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0142",
+  "sample_id": "PHL1800_IRFL_0012",
+  "file_name": "PHL1800_IRFL_0012.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one human face in extreme close-up",
+  "captions": {
+    "scene": [
+      "Monochrome photographic print with visible grain, dust specks, and linear scratches across the surface",
+      "Tight framing centered on the lower half of a face, including nose, mouth, and chin region",
+      "Shallow depth of field with soft focus on lips and surrounding skin, sharper focus on the index finger"
+    ],
+    "action": [
+      "Index finger pressed vertically against the closed lips",
+      "Lips slightly parted but not moving; no visible airflow or speech articulation",
+      "Nose partially obscured by the finger’s shadow and proximity"
+    ],
+    "rationale": [
+      "The finger placement suggests an intentional gesture rather than accidental contact, though intent cannot be confirmed visually",
+      "Grain and scratches indicate analog photographic origin or emulation, but exact medium is unverifiable from image alone",
+      "Facial expression is indeterminate due to occlusion and lack of eye/eyebrow visibility"
+    ],
+    "object": [
+      "A single human index finger, oriented vertically, contacts the central portion of the lower lip.",
+      "The lips are closed but not tightly sealed; a narrow horizontal gap is visible between upper and lower lip edges.",
+      "The nasal ala and columella are partially visible above the finger, with one nostril shadowed and the other faintly illuminated.",
+      "Skin texture shows fine pores and minor surface irregularities, consistent with high-magnification photography.",
+      "Multiple linear artifacts—likely scratches or dust trails—are present across the image plane, especially near the left cheek and finger."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0142_P1",
+      "visual_anchors": [
+        "index finger pressing lips",
+        "closed mouth",
+        "grainy monochrome texture"
+      ],
+      "symbolic_mapping": [
+        "finger-lip contact → suppression of utterance",
+        "grain → material impermanence"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The gesture and degraded medium jointly evoke epistemic limitation: what is withheld (speech) and what decays (image fidelity) both resist stable transmission of meaning.",
+      "alternative_interpretations": [
+        "A routine pose for portrait photography, emphasizing composition over symbolism."
+      ],
+      "limitations": [
+        "No context confirms intentional symbolism; the gesture may be purely aesthetic or functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0142_P2",
+      "visual_anchors": [
+        "partial facial occlusion",
+        "single visible finger",
+        "asymmetrical lighting"
+      ],
+      "symbolic_mapping": [
+        "occluded features → fragmented identity",
+        "isolated finger → agency without full embodiment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The partial view enacts a phenomenological reduction: identity is presented not as whole self but as a relational interface—here, the threshold between silence and expression.",
+      "alternative_interpretations": [
+        "Technical constraint of shallow depth of field causing unintentional blur and cropping."
+      ],
+      "limitations": [
+        "Only one face is visible; no social interaction is depicted to ground 'social existence'."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0142_P3",
+      "visual_anchors": [
+        "finger pressing lips",
+        "static posture",
+        "absence of motion blur"
+      ],
+      "symbolic_mapping": [
+        "stillness → suspension of action",
+        "contact point → boundary enforcement"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a moment of enforced stasis where physical contact defines a limit—not necessarily imposed externally, but enacted through self-restraint within a bounded visual field.",
+      "alternative_interpretations": [
+        "The subject is holding breath or preparing to speak, with the finger momentarily stabilizing the jaw."
+      ],
+      "limitations": [
+        "No muscular tension or respiratory cues confirm restraint versus neutral positioning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:35:38.169001+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2c8b5b1f-3d33-9f17-ba0c-c4b733965fc2",
+      "usage": {
+        "prompt_tokens": 3009,
+        "completion_tokens": 869,
+        "total_tokens": 3878,
+        "completion_tokens_details": {
+          "text_tokens": 869
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2502,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013454b417e56ea8aa45ea",
+      "usage": {
+        "completion_tokens": 726,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4700,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5426
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

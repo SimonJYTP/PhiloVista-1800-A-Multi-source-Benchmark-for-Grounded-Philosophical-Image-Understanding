@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1743",
+  "sample_id": "PHL1800_HAIV_0356",
+  "file_name": "PHL1800_HAIV_0356.png",
+  "batch_id": "B035",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person depicted twice in mirrored panels",
+  "captions": {
+    "scene": [
+      "Two identical vertical rectangular panels with brown wooden frames, separated by a light-brown textured wall segment.",
+      "Each panel contains a figure with black short hair, purple long-sleeve shirt, and green lower garment against a pale blue background.",
+      "The figure appears in profile on the left panel and facing forward on the right panel, both with open mouths and visible tears."
+    ],
+    "action": [
+      "The figure’s mouth is wide open with upper and lower teeth visible, tongue exposed, suggesting vocalization or crying.",
+      "Blue teardrop shapes are shown exiting the eyes and trailing downward on both depictions.",
+      "The figure’s arms hang loosely at the sides; hands are partially visible with fingers slightly spread."
+    ],
+    "rationale": [
+      "The mirrored framing and identical clothing suggest the two figures represent the same individual viewed from different angles or in reflection.",
+      "Tears and open mouth indicate an intense emotional expression, though the specific emotion (e.g., grief, rage, laughter) cannot be determined solely from visual cues.",
+      "The lack of environmental context (e.g., furniture, windows, signage) prevents identification of setting or purpose beyond the immediate visual composition."
+    ],
+    "object": [
+      "A person with black bowl-cut hair, wearing a solid purple long-sleeved shirt and dark green pants or skirt, is shown in two panels.",
+      "Each panel has a brown wooden frame with visible grain texture and a thin black inner line separating the frame from the image area.",
+      "The background within both panels is uniformly pale blue with no gradients, patterns, or objects.",
+      "Three blue teardrop shapes are visible on the left figure (two near the eye, one mid-cheek); four on the right figure (three near the eye, one mid-cheek).",
+      "The figure’s facial features include thick black eyebrows, closed eyelids with white highlights, and a red oral cavity with white teeth and pink tongue."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1743_P1",
+      "visual_anchors": [
+        "two mirrored panels",
+        "identical figure",
+        "tears"
+      ],
+      "symbolic_mapping": [
+        "mirrored panels → duality of self-perception",
+        "tears → emotional vulnerability"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The split depiction suggests internal fragmentation or the tension between how one sees oneself versus how one is perceived, heightened by visible distress.",
+      "alternative_interpretations": [
+        "The image may simply illustrate a person screaming in front of two adjacent mirrors without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; mirroring could be literal rather than metaphorical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1743_P2",
+      "visual_anchors": [
+        "open mouth",
+        "tears",
+        "static pose"
+      ],
+      "symbolic_mapping": [
+        "open mouth without sound indicator → unvoiced suffering",
+        "static repetition → entrapment in emotional state"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The figure’s repeated, immobilized anguish implies constraint—perhaps epistemic (inability to articulate truth) or existential (trapped in self-reflection).",
+      "alternative_interpretations": [
+        "The figure may be laughing hysterically; open mouth and tears can co-occur in extreme mirth."
+      ],
+      "limitations": [
+        "Facial expression lacks definitive indicators distinguishing pain from joy; mouth shape alone is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1743_P3",
+      "visual_anchors": [
+        "brown wooden frames",
+        "separation by wall",
+        "identical attire"
+      ],
+      "symbolic_mapping": [
+        "frames → boundaries of identity",
+        "wall division → psychological partitioning"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The rigid framing and physical separation imply that identity is constructed through bounded perspectives, where choice is constrained by fixed self-representations.",
+      "alternative_interpretations": [
+        "The frames may merely denote standard picture frames in a room, with no conceptual significance."
+      ],
+      "limitations": [
+        "Frames are generic and lack inscriptions or stylistic markers indicating symbolic function."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:07:32.596859+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4d9db99b-1abb-9214-926b-66c38f6fe5b5",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 955,
+        "total_tokens": 2488,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050710e50bb36739444bd7",
+      "usage": {
+        "completion_tokens": 817,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2912,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3729
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

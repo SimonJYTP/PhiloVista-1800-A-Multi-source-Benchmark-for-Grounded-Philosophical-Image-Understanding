@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0295",
+  "sample_id": "PHL1800_MM_0033",
+  "file_name": "PHL1800_MM_0033.jpg",
+  "batch_id": "B008",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young girl and an older woman seated on a sofa",
+  "captions": {
+    "scene": [
+      "An indoor living room with a wooden bookshelf, large window with vertical blinds, orange sofa, and beige carpet.",
+      "A round wooden coffee table in the foreground holds two orange ceramic pots with green plants.",
+      "Natural light illuminates the scene from the right-side window; no artificial lighting fixtures are visible."
+    ],
+    "action": [
+      "The girl holds a black tablet with both hands and looks toward the woman with a slight smile.",
+      "The woman gestures with both hands open, palms up, while smiling and looking at the girl.",
+      "A speech bubble above the girl contains legible text: 'I'm just going to play my game now, Auntie.'"
+    ],
+    "rationale": [
+      "The speech bubble’s content suggests the girl is announcing intent to use the tablet for gaming, though the tablet screen is blank and no game interface is visible.",
+      "The woman’s open-hand gesture and facial expression indicate active engagement, but her exact verbal response is not visible or audible.",
+      "The term 'Auntie' in the speech bubble implies a familial relationship, yet no kinship documentation or shared surname evidence exists in the image."
+    ],
+    "object": [
+      "The girl wears a white short-sleeved t-shirt with a colorful cartoon graphic and gray fitted pants, and is barefoot.",
+      "The woman wears a textured pink long-sleeved sweater, blue denim jeans, brown wedge sandals, and a gold pendant necklace.",
+      "The sofa is upholstered in textured orange fabric and includes at least one matching orange throw pillow on the right side.",
+      "The tablet is black, rectangular, with rounded corners and no visible branding or screen content.",
+      "The bookshelf behind them contains books, a white spherical vase, a green spherical object, and a red bowl on upper shelves."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0295_P1",
+      "visual_anchors": [
+        "speech bubble with 'I'm just going to play my game now, Auntie'",
+        "girl holding tablet",
+        "woman gesturing"
+      ],
+      "symbolic_mapping": [
+        "tablet as mediator of attention",
+        "speech bubble as assertion of autonomy"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The moment captures a negotiation of agency within intergenerational domestic space, where digital engagement becomes a site for asserting personal choice against relational expectation.",
+      "alternative_interpretations": [
+        "A routine, lighthearted exchange with no deeper significance—simply a child informing an adult of her next activity."
+      ],
+      "limitations": [
+        "No visible reaction from the woman beyond gesture and smile; her internal stance remains unobservable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0295_P2",
+      "visual_anchors": [
+        "orange sofa",
+        "wooden bookshelf",
+        "beige carpet"
+      ],
+      "symbolic_mapping": [
+        "domestic interior as stable social container",
+        "light from window as temporal marker"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The calm, well-ordered domestic setting frames a transient interpersonal moment, underscoring how everyday rituals sustain continuity amid inevitable change.",
+      "alternative_interpretations": [
+        "The setting is generic and functional, chosen for visual clarity rather than symbolic intent."
+      ],
+      "limitations": [
+        "No clocks, calendars, or aging indicators are present to confirm temporal themes."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0295_P3",
+      "visual_anchors": [
+        "girl’s bare feet",
+        "woman’s wedge sandals",
+        "shared seating on same sofa cushion"
+      ],
+      "symbolic_mapping": [
+        "bare feet as informality or vulnerability",
+        "shared surface as co-presence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "Bodily presentation—especially footwear contrast—and proximity suggest negotiated boundaries of formality and autonomy within familial hierarchy.",
+      "alternative_interpretations": [
+        "Footwear choices reflect comfort or temperature preference, not symbolic positioning."
+      ],
+      "limitations": [
+        "No visible posture tension, eye contact duration, or spatial distancing metrics to confirm constraint dynamics."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:29:45.656744+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c94a3f14-f563-974b-bb30-74646a6390cb",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 939,
+        "total_tokens": 2472,
+        "completion_tokens_details": {
+          "text_tokens": 939
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702290719972ce588754999",
+      "usage": {
+        "completion_tokens": 797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2891,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3688
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

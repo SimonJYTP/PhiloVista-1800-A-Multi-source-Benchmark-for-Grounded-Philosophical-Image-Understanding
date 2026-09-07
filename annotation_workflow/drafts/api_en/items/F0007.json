@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0007",
+  "sample_id": "PHL1800_HL_0235",
+  "file_name": "PHL1800_HL_0235.png",
+  "batch_id": "B003",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a police officer standing beside a parked police motorcycle next to a white delivery truck",
+  "captions": {
+    "scene": [
+      "Urban street with pedestrians, vehicles, and signage under daylight; shadows indicate sun from upper left.",
+      "A white box truck with closed metal roll-up rear door is parked at curb; its rear bumper partially obscures a motorcycle.",
+      "A bus lane sign and a public information kiosk are visible on the sidewalk to the left."
+    ],
+    "action": [
+      "A uniformed police officer stands facing the truck, hands behind back, wearing high-visibility vest and peaked cap.",
+      "A police motorcycle with emergency lights, radio antenna, and reflective markings is parked upright, leaning slightly right.",
+      "Three civilians stand near the kiosk: one older man in light jacket, one person in dark jacket, and a partial view of another person in blue."
+    ],
+    "rationale": [
+      "The officer’s posture and proximity to the truck suggest observation or monitoring rather than active intervention; no interaction is visible.",
+      "The motorcycle’s position—partially behind the truck’s rear—implies it was parked there deliberately, possibly for cover or access control.",
+      "The presence of multiple pedestrians and a second van in background indicates normal street activity, not an emergency scene."
+    ],
+    "object": [
+      "A police motorcycle features silver bodywork, blue-and-yellow chevron reflective strips, a clear windscreen, dual rearview mirrors, and a mounted blue emergency light bar.",
+      "The officer wears a black uniform, fluorescent yellow-green high-visibility vest with 'POLICE' in blue lettering, a white peaked cap with badge, and black knee-high boots.",
+      "The white delivery truck has a corrugated metal rear door, visible rust stains along lower edge, and a small blue-and-white sticker near the bottom right corner of the door.",
+      "A vertical green-topped kiosk displays a map and text; some text is unreadable due to angle and resolution, but 'bus lane' and 'ZONE B' are legible on a nearby sign.",
+      "A white van with dark front grille and license plate ending in '71 HB' is visible in background, moving away or parked across the street."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0007_P1",
+      "visual_anchors": [
+        "police officer’s rigid posture",
+        "high-visibility vest",
+        "closed truck door"
+      ],
+      "symbolic_mapping": [
+        "the vest as a marker of institutional visibility",
+        "the closed door as a barrier to transparency"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where authority asserts presence through standardized visual markers while physical access remains restricted, reflecting tensions between institutional oversight and public openness.",
+      "alternative_interpretations": [
+        "The officer may simply be waiting for a colleague or taking a brief pause; the scene could be routine traffic monitoring without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, dialogue, or contextual signage confirms intent or conflict; the truck’s contents and purpose are unknown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0007_P2",
+      "visual_anchors": [
+        "motorcycle’s emergency lights",
+        "pedestrians walking past",
+        "sunlit pavement with shadows"
+      ],
+      "symbolic_mapping": [
+        "lighting equipment as readiness for action",
+        "shadows as temporal passage"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of static enforcement equipment and transient pedestrian movement evokes the contrast between institutional permanence and individual ephemerality within regulated urban space.",
+      "alternative_interpretations": [
+        "The lighting is off and the motorcycle is parked; the scene is mundane and lacks urgency or philosophical weight."
+      ],
+      "limitations": [
+        "No indication the lights are activated; shadows alone do not confirm time-of-day significance beyond daylight."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0007_P3",
+      "visual_anchors": [
+        "multiple people grouped near kiosk",
+        "officer turned away from them",
+        "back of truck obscuring view"
+      ],
+      "symbolic_mapping": [
+        "kiosk as site of shared information",
+        "officer’s orientation as selective attention"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "Public coexistence occurs amid partial visibility and asymmetrical awareness—citizens gather around shared informational infrastructure while authority monitors a different focal point, raising questions about collective knowledge and distributed attention.",
+      "alternative_interpretations": [
+        "People are simply waiting for a bus; the officer is watching traffic; no intentional spatial symbolism is present."
+      ],
+      "limitations": [
+        "No evidence of interaction or gaze direction confirming awareness or ignorance between groups."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:47:25.334276+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-01b28465-85af-93e7-8165-9a2e022ec49d",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1040,
+        "total_tokens": 1849,
+        "completion_tokens_details": {
+          "text_tokens": 1040
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014708a8793d37ec2145ba",
+      "usage": {
+        "completion_tokens": 901,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2016,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2917
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

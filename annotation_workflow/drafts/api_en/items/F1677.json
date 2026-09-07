@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1677",
+  "sample_id": "PHL1800_MM_0109",
+  "file_name": "PHL1800_MM_0109.jpg",
+  "batch_id": "B034",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "man standing at a wooden podium with microphone",
+  "captions": {
+    "scene": [
+      "Indoor setting with red carpet, beige vertical drapes left, large blue-toned screen background",
+      "Audience seated in rows behind speaker; some holding phones or cameras",
+      "Formal event atmosphere with professional lighting and staged composition"
+    ],
+    "action": [
+      "Man stands upright behind podium, hands resting on surface, mouth slightly open as if speaking",
+      "Multiple audience members hold smartphones horizontally, aiming toward speaker",
+      "One audience member holds open notebook and pen, another holds small camera device"
+    ],
+    "rationale": [
+      "Speech bubble text is legible and directly attributed to the man via proximity and tail placement",
+      "Audience posture and device orientation suggest active documentation rather than passive listening",
+      "Podium, microphone, and formal attire indicate a structured public address, though exact context is unspecified"
+    ],
+    "object": [
+      "A man with short dark hair and light stubble wears a navy suit jacket over an unbuttoned white shirt with pocket square.",
+      "A wooden podium with visible grain pattern supports two microphones on gooseneck stands and scattered papers.",
+      "A speech bubble with black sans-serif text reads: 'I am renouncing my Canadian citizenship!' and points to the man's head.",
+      "At least six audience members are visible: three women and three men, all dressed in business or smart-casual attire.",
+      "The background screen displays an abstract blue gradient with faint diagonal lines; no readable text appears on it."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1677_P1",
+      "visual_anchors": [
+        "speech bubble with declaration",
+        "man at podium",
+        "audience recording"
+      ],
+      "symbolic_mapping": [
+        "spoken declaration → public assertion of self-determination",
+        "podium → institutional platform for identity renegotiation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image frames citizenship not as fixed legal status but as a revocable personal choice enacted before witnesses, highlighting tension between individual autonomy and state-defined belonging.",
+      "alternative_interpretations": [
+        "This may be a staged performance or fictional scenario, where the speech bubble functions as narrative device rather than factual statement."
+      ],
+      "limitations": [
+        "No official documents, flags, or governmental insignia confirm actual citizenship status or jurisdiction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1677_P2",
+      "visual_anchors": [
+        "audience members holding phones",
+        "focused gazes",
+        "notebook in lap"
+      ],
+      "symbolic_mapping": [
+        "phone screens → mediation of truth",
+        "note-taking → epistemic verification"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "Truth is treated as publicly verifiable through distributed witnessing: the act gains legitimacy only when recorded and attested by multiple observers in real time.",
+      "alternative_interpretations": [
+        "Device use may reflect routine event documentation without epistemic intent—e.g., social media sharing or personal archiving."
+      ],
+      "limitations": [
+        "Screen contents of devices are unreadable; intent behind recording cannot be confirmed visually."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1677_P3",
+      "visual_anchors": [
+        "unbuttoned shirt under suit",
+        "neutral facial expression",
+        "formal setting"
+      ],
+      "symbolic_mapping": [
+        "partial informality within formality → rupture in expected persona",
+        "static pose amid declared action → dissonance between gesture and affect"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The visual contrast between ceremonial dress and declarative rupture suggests identity is performed through contradiction—choosing to abandon one role while still occupying its symbolic stage.",
+      "alternative_interpretations": [
+        "The attire may simply reflect contemporary fashion norms for public speakers, not intentional semiotic contrast."
+      ],
+      "limitations": [
+        "Facial expression is ambiguous; no prior or subsequent frames exist to establish emotional trajectory."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:00:42.395927+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b9859be5-13ca-9fb1-ae2c-8888cb314ce9",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 891,
+        "total_tokens": 2424,
+        "completion_tokens_details": {
+          "text_tokens": 891
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705001755889450d97a438a",
+      "usage": {
+        "completion_tokens": 750,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2839,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3589
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

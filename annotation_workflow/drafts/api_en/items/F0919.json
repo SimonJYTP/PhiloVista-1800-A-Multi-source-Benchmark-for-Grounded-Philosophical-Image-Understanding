@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0919",
+  "sample_id": "PHL1800_IRFL_0377",
+  "file_name": "PHL1800_IRFL_0377.jpg",
+  "batch_id": "B020",
+  "position_in_batch": 23,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a black low-slung sports car in motion on a coastal road",
+  "captions": {
+    "scene": [
+      "A two-lane asphalt road with double yellow center lines runs parallel to a dry grassy embankment and the ocean horizon.",
+      "The background shows calm sea surface under a pale overcast sky, with no visible clouds or sun.",
+      "The roadside terrain is arid, with sparse brown vegetation and a small rocky outcrop near the water's edge."
+    ],
+    "action": [
+      "The car is moving forward along the road, indicated by motion blur on the wheels and background.",
+      "The front wheels are slightly turned left, suggesting a gentle curve in the road or steering input.",
+      "The car maintains a stable orientation relative to the road surface, with no visible skidding or airborne motion."
+    ],
+    "rationale": [
+      "Motion blur on wheels and background implies forward movement at non-negligible speed.",
+      "The car’s aerodynamic features—large rear wing, vented side intakes, and low ground clearance—are consistent with high-performance design, though function cannot be confirmed visually.",
+      "No driver or passenger is visible through the tinted canopy; interior occupancy status is indeterminate."
+    ],
+    "object": [
+      "The car has a glossy black finish with sharp, angular body panels and a transparent canopy covering the cockpit area.",
+      "The front fascia includes two narrow, vertically oriented LED-style headlights and a central badge with an unreadable logo.",
+      "A large fixed rear wing with a small black endplate bearing an unreadable white symbol is mounted above the rear deck.",
+      "The wheels are silver multi-spoke alloys with visible brake calipers and low-profile tires showing rotational blur.",
+      "Side air intakes feature a honeycomb mesh pattern and are positioned behind the doors, integrated into sculpted fender flares."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0919_P1",
+      "visual_anchors": [
+        "motion blur",
+        "coastal road",
+        "unbroken horizon"
+      ],
+      "symbolic_mapping": [
+        "the blurred wheels suggest transience of present moment",
+        "the straight road meeting horizon evokes open-ended possibility"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The image frames motion as a fleeting state against a static natural backdrop, prompting reflection on the tension between human-driven momentum and immutable environmental limits.",
+      "alternative_interpretations": [
+        "It may simply document a vehicle test drive under favorable lighting conditions without symbolic intent."
+      ],
+      "limitations": [
+        "No explicit textual or contextual cues confirm intentional symbolism; interpretation relies on viewer projection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0919_P2",
+      "visual_anchors": [
+        "opaque canopy",
+        "absence of visible occupants",
+        "symmetrical front design"
+      ],
+      "symbolic_mapping": [
+        "the sealed cockpit obscures agency, raising questions about control versus automation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The car’s sealed, anonymous cabin invites inquiry into how technological mediation reshapes the relationship between operator and machine, especially when human presence is visually erased.",
+      "alternative_interpretations": [
+        "The canopy is tinted for glare reduction and aerodynamics; occupant invisibility is incidental to photographic angle and lighting."
+      ],
+      "limitations": [
+        "No interior view confirms whether occupants are present or absent; opacity alone does not prove autonomy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0919_P3",
+      "visual_anchors": [
+        "double yellow lines",
+        "road edge",
+        "car’s proximity to boundary"
+      ],
+      "symbolic_mapping": [
+        "the painted lines represent imposed order constraining high-speed potential"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The vehicle’s aggressive form juxtaposed with rigid road markings visualizes the dialectic between engineered capability and institutional regulation, where speed is both enabled and delimited by infrastructure.",
+      "alternative_interpretations": [
+        "The road markings are standard traffic control elements; their presence is functional, not metaphorical."
+      ],
+      "limitations": [
+        "No signage or enforcement devices are visible to confirm regulatory intent; lines could be purely functional."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:27:50.964105+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a7fd93c7-e0d9-9d03-b5ba-8ede023a383a",
+      "usage": {
+        "prompt_tokens": 893,
+        "completion_tokens": 931,
+        "total_tokens": 1824,
+        "completion_tokens_details": {
+          "text_tokens": 931
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 386,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032730fe3aa5ad871c4640",
+      "usage": {
+        "completion_tokens": 794,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2052,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2846
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

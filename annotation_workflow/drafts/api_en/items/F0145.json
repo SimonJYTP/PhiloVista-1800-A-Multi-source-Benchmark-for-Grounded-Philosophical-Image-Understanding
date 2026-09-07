@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0145",
+  "sample_id": "PHL1800_HL_0384",
+  "file_name": "PHL1800_HL_0384.png",
+  "batch_id": "B005",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of 14 adults seated at tables in a modern indoor lounge",
+  "captions": {
+    "scene": [
+      "A brightly lit interior space with green and yellow modular seating, white tables, and wall-mounted displays including a TV screen showing colorful graphics.",
+      "Multiple round and rectangular tables hold plates of food, cups, napkins, and condiment containers; some tables are occupied, others empty.",
+      "The background includes a blue-lit corridor entrance, a fire extinguisher mounted on a pillar, and large informational posters with maps and photographs."
+    ],
+    "action": [
+      "A bald man in a pink shirt leans back in his chair with arms crossed, looking toward the camera; his right hand rests on the table edge.",
+      "A woman in a red striped top raises her right hand mid-gesture, palm open, facing forward.",
+      "Several individuals are engaged in conversation: one woman smiles while facing another, a man in a beige jacket looks leftward, and others gaze toward central figures or tables."
+    ],
+    "rationale": [
+      "The presence of multiple partially eaten meals and scattered utensils suggests the group is in the middle of a shared meal rather than arriving or departing.",
+      "The varied postures—leaning, upright, turned heads—and lack of uniform orientation imply informal social interaction rather than a structured presentation or lecture.",
+      "The visible fire extinguisher, exit sign above a doorway, and standardized furniture indicate a public or institutional setting, though the exact type (e.g., community center, museum café) cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "A rectangular wooden table holds six white ceramic plates with remnants of food, four brown paper cups, two small white bowls, and folded orange napkins.",
+      "A television mounted on the wall displays a multicolored abstract image with purple, blue, and yellow elements; no readable text is present on the screen.",
+      "A green cylindrical pillar supports the ceiling and has a red fire extinguisher affixed to its lower portion.",
+      "At least three wall-mounted posters feature photographic collages, maps, and blocks of text; all text is illegible due to resolution and distance.",
+      "A woman wearing glasses and a black top sits in a black chair with her left hand resting on the armrest; she wears a silver wristwatch on her left wrist."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0145_P1",
+      "visual_anchors": [
+        "man leaning back with arms crossed",
+        "woman raising open palm",
+        "multiple overlapping gazes across tables"
+      ],
+      "symbolic_mapping": [
+        "open palm as gesture of inclusion or interruption",
+        "crossed arms as posture of relaxed engagement rather than defensiveness"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The coexistence of divergent bodily postures within a shared meal space visually enacts the phenomenological idea that social being emerges not through uniformity but through simultaneous presence, gesture, and attentional divergence.",
+      "alternative_interpretations": [
+        "This may simply reflect casual dining behavior with no intentional symbolic meaning."
+      ],
+      "limitations": [
+        "No facial expressions are fully legible; intent behind gestures cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0145_P2",
+      "visual_anchors": [
+        "wall posters with maps and photos",
+        "TV screen showing abstract visuals",
+        "modular colored seating"
+      ],
+      "symbolic_mapping": [
+        "maps as representations of spatial knowledge",
+        "abstract screen imagery as displacement of concrete reference"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of documentary-style posters and non-representational digital display suggests a tension between empirical documentation and mediated perception, questioning how truth is stabilized in environments designed for public engagement.",
+      "alternative_interpretations": [
+        "The displays are functional information boards and ambient decor with no epistemic agenda."
+      ],
+      "limitations": [
+        "All textual content on posters and screen is unreadable; semantic intent is inaccessible."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0145_P3",
+      "visual_anchors": [
+        "elderly individuals seated together",
+        "mixed-age group",
+        "shared table with communal dishes"
+      ],
+      "symbolic_mapping": [
+        "shared meal as ritual of continuity",
+        "age diversity as temporal layering within a single frame"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The gathering visually embodies the idea that social existence is sustained through shared practices like communal meals, where age diversity reflects the continuity of social bonds across generations.",
+      "alternative_interpretations": [
+        "This is a routine social event such as a senior lunch club with no philosophical framing intended."
+      ],
+      "limitations": [
+        "Age estimates are approximate; no explicit markers of commemoration or reflection are visible."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (candidate states ~16, actual count is 14 visible adults); object description of the table includes a glass pitcher which is not clearly visible; philosophy interpretation P3's concept_id 'time_mortality' is not strongly supported by visual anchors of age diversity and shared meals alone."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:08:51.385198+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6877649a-0896-9815-9f4f-34fbe8c0178d",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1055,
+        "total_tokens": 1864,
+        "completion_tokens_details": {
+          "text_tokens": 1055
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702082365fc80a665a84db8",
+      "usage": {
+        "completion_tokens": 1033,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2034,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3067
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

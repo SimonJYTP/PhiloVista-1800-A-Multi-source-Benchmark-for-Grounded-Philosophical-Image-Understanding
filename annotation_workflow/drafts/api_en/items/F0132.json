@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0132",
+  "sample_id": "PHL1800_HAIV_0273",
+  "file_name": "PHL1800_HAIV_0273.png",
+  "batch_id": "B005",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person lying prone on a dark mat, with a cloud formation and a black silhouette above",
+  "captions": {
+    "scene": [
+      "A figure lies face-down on a dark rectangular mat against a pale yellow-to-gray gradient background.",
+      "A large, textured, white-and-blue cloud-like mass occupies the upper midground, casting a soft shadow below.",
+      "A black silhouette of a running or leaping human figure appears above and to the left of the cloud."
+    ],
+    "action": [
+      "The prone figure rests motionless with arms folded under the head, eyes closed, and mouth slightly open.",
+      "The black silhouette is captured mid-stride with one leg extended forward and arms outstretched, suggesting motion.",
+      "The cloud mass remains static, with no visible internal movement or airflow indicators."
+    ],
+    "rationale": [
+      "The prone figure’s posture and closed eyes suggest sleep or rest, though no physiological signs (e.g., breathing) are visible.",
+      "The silhouette’s pose implies locomotion, but without background reference points, speed or direction cannot be confirmed.",
+      "The cloud’s texture resembles sculpted material (e.g., plaster or clay), not atmospheric vapor; its physical nature is ambiguous."
+    ],
+    "object": [
+      "The prone figure wears a blue short-sleeved shirt, dark trousers, and blue socks, with brown curly hair and visible facial features including nose, lips, and closed eyes.",
+      "The dark mat beneath the figure is rectangular, flat, and contrasts sharply with the pale ground surface.",
+      "The cloud mass consists of multiple rounded, bulbous segments with visible surface texture and subtle blue shading, suggesting volume and depth.",
+      "The black silhouette lacks internal detail, showing only an outline of limbs and torso in dynamic pose.",
+      "No text, labels, or readable inscriptions appear anywhere in the image."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0132_P1",
+      "visual_anchors": [
+        "prone figure",
+        "black silhouette",
+        "cloud mass"
+      ],
+      "symbolic_mapping": [
+        "silhouette as departure",
+        "cloud as mental space"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a grounded, still figure and a fleeing silhouette above a cloud may represent the tension between embodied constraint and imagined escape, where the cloud mediates between physical reality and projected movement.",
+      "alternative_interpretations": [
+        "The scene could depict a dream sequence rendered literally: the sleeping person (prone figure) imagines themselves running (silhouette) through a sky-like environment (cloud)."
+      ],
+      "limitations": [
+        "No facial expression or contextual cues confirm intentionality or narrative; the cloud’s materiality undermines literal sky interpretation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0132_P2",
+      "visual_anchors": [
+        "cloud mass",
+        "shadow beneath cloud",
+        "mat under figure"
+      ],
+      "symbolic_mapping": [
+        "cloud as barrier",
+        "mat as grounding surface"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The cloud physically separates the resting individual from the moving silhouette, possibly symbolizing social or psychological distance—where the mat signifies fixed social position and the cloud acts as an opaque intermediary.",
+      "alternative_interpretations": [
+        "The cloud may simply be a decorative or sculptural element in a studio setting, with no symbolic intent."
+      ],
+      "limitations": [
+        "The cloud casts a shadow consistent with a light source above, but its scale relative to the figures is inconsistent with natural clouds, weakening environmental symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0132_P3",
+      "visual_anchors": [
+        "closed eyes of prone figure",
+        "static posture",
+        "absence of interaction"
+      ],
+      "symbolic_mapping": [
+        "stillness as suspension",
+        "silhouette as unactualized potential"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s inert state contrasted with the active silhouette suggests a meditation on temporal stasis versus fleeting action, where identity is momentarily suspended during rest, and appearance (the silhouette) becomes detached from the embodied self.",
+      "alternative_interpretations": [
+        "This may be a staged artistic composition emphasizing form and contrast, with no philosophical content intended."
+      ],
+      "limitations": [
+        "No clocks, aging markers, or temporal indicators exist; the silhouette’s identity is indeterminate and could be unrelated to the prone figure."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:10:06.902039+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bda68107-a288-950b-9bae-02729bf25cdb",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 984,
+        "total_tokens": 2517,
+        "completion_tokens_details": {
+          "text_tokens": 984
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020942b6347604db754f0b",
+      "usage": {
+        "completion_tokens": 845,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2944,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3789
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

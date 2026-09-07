@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1618",
+  "sample_id": "PHL1800_HL_0316",
+  "file_name": "PHL1800_HL_0316.png",
+  "batch_id": "B033",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a green Cristal-branded delivery truck stopped at an urban street intersection with pedestrians nearby",
+  "captions": {
+    "scene": [
+      "A sunlit urban street with a green delivery truck, a white bus, parked cars, traffic lights, and leafy trees lining the sidewalk.",
+      "Pedestrians stand and walk on the sidewalk and crosswalk near a curb with a yellow-painted edge and a black bollard.",
+      "A red-and-white cooler sits on a wheeled cart beside two children and an adult near the truck’s right side."
+    ],
+    "action": [
+      "A man in a white shirt and shorts walks left across the foreground crosswalk.",
+      "A man in a light blue shirt and khaki pants stands facing the truck, holding a black backpack over his shoulder.",
+      "Two children and an adult woman stand together on the sidewalk beside a wheeled cart carrying cardboard boxes and a cooler."
+    ],
+    "rationale": [
+      "The truck is likely stopped because its front wheels are aligned with the crosswalk line and the driver’s gaze appears forward, not turning; however, no brake lights or stop signal is visible, so motion status is uncertain.",
+      "The group of three people (woman and two children) appear to be waiting rather than actively moving, based on their static posture and shared orientation toward the street; but no explicit cue like a raised hand confirms intent to cross.",
+      "The presence of a branded commercial vehicle and public transit suggests a commercial urban setting, yet no street signs or building names confirm city or country—thus location remains unspecified."
+    ],
+    "object": [
+      "A green International brand delivery truck with chrome grille, orange clearance lights, and a 'CRISTAL' logo shield on the cab roof; license plate reads 'DR-RW-94' and number '773' is visible on the windshield.",
+      "A white bus with tinted windows and partial blue-and-green graphic design is visible behind the truck’s left side.",
+      "A black metal bollard stands on the sidewalk near the curb, positioned between the walking man and the truck’s front wheel.",
+      "A red-and-white insulated cooler rests on a two-wheeled metal cart with a wooden handle, next to stacked cardboard boxes.",
+      "Three pedestrians—a woman in a black sleeveless top and denim shorts, a boy in a purple t-shirt and gray shorts, and another child in a dark shirt—are grouped on the sidewalk beside the cart."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1618_P1",
+      "visual_anchors": [
+        "green truck with 'CRISTAL' logo",
+        "pedestrians waiting near cart",
+        "yellow curb edge"
+      ],
+      "symbolic_mapping": [
+        "branding as marker of commercial presence in public space",
+        "curb as physical demarcation of regulated movement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where commercial infrastructure (the branded truck) and civic regulation (the painted curb, traffic control) coexist with individual pause—suggesting how social existence is negotiated within constrained spatial orders.",
+      "alternative_interpretations": [
+        "This is simply a routine street scene with no symbolic layer; the truck is delivering goods and people are waiting to cross."
+      ],
+      "limitations": [
+        "No facial expressions, signage, or contextual documents confirm intentional symbolism or social commentary."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1618_P2",
+      "visual_anchors": [
+        "man walking across crosswalk",
+        "man standing still with backpack",
+        "two children observing"
+      ],
+      "symbolic_mapping": [
+        "crosswalk as negotiated passage",
+        "stillness vs. motion as temporal choice"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of motion and stasis among pedestrians reflects the everyday enactment of choice—stepping forward versus pausing—within a fleeting, mortal temporality marked by traffic cycles and pedestrian signals.",
+      "alternative_interpretations": [
+        "The differences in movement are incidental: one person happened to be mid-stride while others waited for the light."
+      ],
+      "limitations": [
+        "The traffic light status is ambiguous (only back of housing visible), so timing of actions cannot be definitively linked to signal phase."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1618_P3",
+      "visual_anchors": [
+        "wheeled cart with cooler and boxes",
+        "black backpack on standing man",
+        "white bus in background"
+      ],
+      "symbolic_mapping": [
+        "portable storage as extension of personal labor",
+        "public transport as collective infrastructure"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "Portable tools (cart, cooler, backpack) mediate individual labor within a shared urban ecosystem, illustrating how technology enables embodied participation in social existence despite structural asymmetries.",
+      "alternative_interpretations": [
+        "The cart and backpack are ordinary personal items with no deeper significance; the bus is just background traffic."
+      ],
+      "limitations": [
+        "No visible branding, labels, or usage context confirms whether the cart is for work, leisure, or transport of personal belongings."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:53:24.291367+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-222a031a-bd50-9d21-89c8-e5893b675cf8",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1126,
+        "total_tokens": 1935,
+        "completion_tokens_details": {
+          "text_tokens": 1126
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070452519d8be0da632e4506",
+      "usage": {
+        "completion_tokens": 985,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2100,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3085
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

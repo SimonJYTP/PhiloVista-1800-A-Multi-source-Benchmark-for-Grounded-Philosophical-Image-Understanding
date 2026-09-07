@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0476",
+  "sample_id": "PHL1800_HL_0001",
+  "file_name": "PHL1800_HL_0001.png",
+  "batch_id": "B001",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a black sedan followed by two police vehicles with activated emergency lights on a multi-lane highway under an overpass",
+  "captions": {
+    "scene": [
+      "A multi-lane highway beneath a concrete overpass, with distant hills and sparse vegetation visible beyond guardrails.",
+      "Overcast daylight conditions; road surface appears dry with standard white lane markings and dashed center lines.",
+      "Traffic includes passenger cars, two marked police sedans with red/blue emergency lights flashing, and a motorcyclist in dark clothing."
+    ],
+    "action": [
+      "Three vehicles—two police sedans and one black sedan—are moving forward in the same direction in adjacent lanes.",
+      "The police vehicles have their emergency lights activated (red and blue), indicating active response or escort.",
+      "A motorcyclist rides in the rightmost lane, positioned behind the black sedan and to its right."
+    ],
+    "rationale": [
+      "The presence of two police vehicles with activated emergency lights suggests coordinated activity, but no pursuit or stop is visually confirmed.",
+      "The black sedan’s position directly ahead of both police cars may indicate it is being escorted or monitored, though no physical contact or blocking is visible.",
+      "The motorcyclist’s proximity to the black sedan could imply observation or participation, but no interaction (e.g., signaling, overtaking) is evident."
+    ],
+    "object": [
+      "A black four-door sedan occupies the rightmost travel lane, viewed from rear; its California license plate reads '5XJ172' and is legible.",
+      "Two dark-colored police sedans are in the middle and left lanes, each with roof-mounted emergency light bars emitting red and blue light; both have rear-facing emergency lights illuminated.",
+      "A person wearing a black helmet and dark jacket rides a motorcycle in the far-right lane, slightly behind the black sedan.",
+      "Concrete overpass structure spans the top third of the image, casting shadow over the roadway; support pillars are visible on the left.",
+      "Green overhead highway signs are present in the distance, including one with unreadable white text and a yellow diamond-shaped warning sign mounted on a pole."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0476_P1",
+      "visual_anchors": [
+        "flashing red/blue police lights",
+        "black sedan centered in frame",
+        "overpass casting shadow"
+      ],
+      "symbolic_mapping": [
+        "emergency lights as symbols of institutional authority",
+        "shadowed roadway as metaphor for obscured agency"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image evokes tension between individual movement and institutional oversight, where the sedan’s forward motion occurs under the literal and figurative shadow of state power.",
+      "alternative_interpretations": [
+        "This may simply depict routine traffic control during a non-urgent police operation, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, vehicle markings beyond generic police styling, or contextual signage confirm intent or narrative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0476_P2",
+      "visual_anchors": [
+        "multiple lanes converging under overpass",
+        "motorcyclist trailing at distance",
+        "uniform lane markings"
+      ],
+      "symbolic_mapping": [
+        "lanes as paths of choice",
+        "distance between rider and sedan as separation of roles"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement suggests parallel yet non-intersecting trajectories within a shared infrastructure, reflecting how individuals coexist in structured societal systems without direct engagement.",
+      "alternative_interpretations": [
+        "The motorcyclist may be changing lanes or preparing to overtake; the spacing is typical for safe following distance."
+      ],
+      "limitations": [
+        "No directional indicators (e.g., turn signals, headlight orientation) confirm intent of any vehicle."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0476_P3",
+      "visual_anchors": [
+        "distant hills under gray sky",
+        "repetitive white lane dashes",
+        "static overpass geometry"
+      ],
+      "symbolic_mapping": [
+        "receding horizon as temporal continuity",
+        "repeating markings as cyclical routine"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The monotony of engineered infrastructure against a muted natural backdrop underscores the human imposition of order onto time and space, revealing labor embedded in invisible systems that sustain daily transit.",
+      "alternative_interpretations": [
+        "This is a standard highway scene captured at dusk or dawn; the lighting is ambient, not symbolic."
+      ],
+      "limitations": [
+        "No clocks, calendars, or aging indicators are present; ‘time’ is inferred solely from lighting and context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:38:16.278430+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b71cbcf5-c598-9b0e-98ef-72894f20277c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1022,
+        "total_tokens": 1831,
+        "completion_tokens_details": {
+          "text_tokens": 1022
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070137577d39fb8f158f41f5",
+      "usage": {
+        "completion_tokens": 881,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1997,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2878
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

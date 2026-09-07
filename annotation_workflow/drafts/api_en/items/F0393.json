@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0393",
+  "sample_id": "PHL1800_HL_0488",
+  "file_name": "PHL1800_HL_0488.png",
+  "batch_id": "B010",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals in an office-like setting, one seated at a keyboard and the other reclining with feet on the desk",
+  "captions": {
+    "scene": [
+      "A cluttered indoor workspace with string lights, wall-mounted papers, a round analog clock showing approximately 10:35, and a lava lamp.",
+      "A computer monitor displays lines of code or text in a light-themed editor; the Microsoft logo is visible on the keyboard.",
+      "The foreground shows the back of a person’s head and shoulders; the background includes another person’s bare legs and feet in sandals resting on the desk surface."
+    ],
+    "action": [
+      "The foreground person’s hands are positioned over a black Microsoft keyboard, fingers near keys, suggesting typing or poised input.",
+      "The background person lies reclined with legs extended onto the desk, feet crossed, wearing open-toed sandals and khaki shorts.",
+      "No facial expressions or eye direction are visible for either person; posture suggests relaxed or informal work behavior."
+    ],
+    "rationale": [
+      "The presence of code on screen and a keyboard implies programming or technical work, though the specific task is not verifiable from visual evidence alone.",
+      "Feet on the desk indicate informality or comfort, but without context, it cannot be confirmed as habitual, temporary, or culturally normative.",
+      "Multiple wall documents and decorative lights suggest a personalized workspace, yet their content (e.g., company policy, personal notes) remains unreadable or ambiguous."
+    ],
+    "object": [
+      "A black Microsoft-branded ergonomic keyboard occupies the lower center of the frame, with both hands resting above it.",
+      "A round analog wall clock with black numerals and hands shows hour hand between 10 and 11, minute hand near 7 (approximately 10:35).",
+      "A blue-tinted lava lamp stands to the right of the monitor, partially obscured by the reclining person’s leg.",
+      "Two pairs of feet are visible: one pair in brown open-toed sandals, the other bare; both rest on the desk surface.",
+      "String lights with multicolored bulbs (green, red, blue, yellow) are strung across the upper wall behind the monitor."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0393_P1",
+      "visual_anchors": [
+        "feet propped on desk",
+        "keyboard under hands",
+        "code on monitor"
+      ],
+      "symbolic_mapping": [
+        "feet on desk → bodily autonomy within institutional space",
+        "keyboard + code → mediation of thought through tools"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of embodied relaxation (feet elevated) against tool-mediated labor (keyboard, code) reflects tension between personal agency and technological work demands.",
+      "alternative_interpretations": [
+        "This may simply reflect ergonomic preference or casual office culture without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial cues or explicit context confirm intentional symbolism; posture could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0393_P2",
+      "visual_anchors": [
+        "analog wall clock",
+        "string lights",
+        "unreadable posted papers"
+      ],
+      "symbolic_mapping": [
+        "clock → linear time measurement",
+        "lights → festive or temporal marking"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The coexistence of precise timekeeping (clock), decorative temporal markers (lights), and bureaucratic documentation evokes layered experiences of time—mechanical, affective, and social—within modern labor.",
+      "alternative_interpretations": [
+        "The items may be purely functional or decorative with no coordinated temporal theme."
+      ],
+      "limitations": [
+        "Paper text is illegible; thus, institutional function cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0393_P3",
+      "visual_anchors": [
+        "back of head in foreground",
+        "reclining legs in background",
+        "shared desk space"
+      ],
+      "symbolic_mapping": [
+        "occluded face → anonymity in collaborative labor",
+        "shared surface → interdependence despite physical separation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visual occlusion of faces and emphasis on partial bodies underscores how identity in contemporary work settings is often mediated through role, posture, and shared infrastructure rather than individual visage.",
+      "alternative_interpretations": [
+        "The framing may result from camera angle rather than intentional commentary on anonymity."
+      ],
+      "limitations": [
+        "Only one full body silhouette is visible; the second person is represented only by legs, making claims about collaboration speculative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:42:46.935377+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-032e3412-bdcf-9bb9-88d0-22af70e4fe89",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1028,
+        "total_tokens": 1837,
+        "completion_tokens_details": {
+          "text_tokens": 1028
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070242261f52227e21a14da5",
+      "usage": {
+        "completion_tokens": 875,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1993,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2868
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

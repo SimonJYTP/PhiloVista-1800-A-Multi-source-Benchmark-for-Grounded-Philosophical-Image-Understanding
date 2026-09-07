@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0723",
+  "sample_id": "PHL1800_MM_0141",
+  "file_name": "PHL1800_MM_0141.jpg",
+  "batch_id": "B016",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three men gathered around a picnic table with a grill",
+  "captions": {
+    "scene": [
+      "A sunny outdoor grassy area with trees and distant smoke in the background",
+      "A wooden picnic table holding a round charcoal grill, skewers, and a plate of food",
+      "Three animated male figures wearing aprons and casual clothing, positioned around the table"
+    ],
+    "action": [
+      "Two standing men jointly hold skewers of grilled meat over the grill",
+      "A seated man looks toward the standing men with a slight smile",
+      "Smoke rises from the grill, indicating active cooking"
+    ],
+    "rationale": [
+      "The shared grip on skewers suggests collaborative handling rather than individual preparation",
+      "The speech bubble above the central figure implies he is speaking, though no mouth movement is visible",
+      "The text on the seated man’s shirt appears partially distorted and likely unreadable due to stylization"
+    ],
+    "object": [
+      "A round black grill sits on a wooden picnic table and contains multiple rectangular pieces of cooked meat arranged in rows.",
+      "Two men stand side-by-side, each gripping one end of two parallel skewers loaded with reddish-brown grilled meat pieces.",
+      "The seated man wears a dark blue T-shirt with orange-yellow lettering reading 'CREATING LEHRGKG,' beneath which is an illegible line; the text is stylized and not fully legible.",
+      "All three men wear aprons: red checkered (left), brown plain (center), and black with brown straps (right).",
+      "A white plate on the table holds golden-brown fried items including what appear to be potato slices and breaded patties."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0723_P1",
+      "visual_anchors": [
+        "three men sharing skewers",
+        "shared grill",
+        "coordinated posture"
+      ],
+      "symbolic_mapping": [
+        "joint handling of food as shared labor",
+        "grill as communal focal point"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The image visually enacts a moment of cooperative sustenance production, where tool use (grill) and shared action (holding skewers) constitute a micro-social contract grounded in mutual presence.",
+      "alternative_interpretations": [
+        "It may simply depict a staged illustration of barbecue preparation without deeper social intent."
+      ],
+      "limitations": [
+        "No facial expressions or dialogue are verifiable beyond the speech bubble text; gestures are stylized and non-naturalistic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0723_P2",
+      "visual_anchors": [
+        "aprons worn by all three",
+        "casual attire",
+        "outdoor setting"
+      ],
+      "symbolic_mapping": [
+        "apron as marker of temporary role adoption",
+        "leisure context as suspension of routine identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The uniform adoption of aprons across differing outfits signals a voluntary, context-bound identity shift—suggesting that self-presentation is modulated by shared activity rather than fixed traits.",
+      "alternative_interpretations": [
+        "Aprons may serve only practical hygiene purposes with no symbolic intent."
+      ],
+      "limitations": [
+        "No prior or subsequent states are shown; role adoption cannot be confirmed as intentional or transient."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0723_P3",
+      "visual_anchors": [
+        "speech bubble stating 'This barbecue is delightful.'",
+        "smoke rising from grill",
+        "food arranged for serving"
+      ],
+      "symbolic_mapping": [
+        "utterance as performative affirmation",
+        "cooked food as realized intention"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The declarative statement about delight functions as a truth-claim anchored in sensory experience, while the act of grilling implies responsibility for provisioning—a convergence of epistemic assertion and ethical care.",
+      "alternative_interpretations": [
+        "The speech bubble may be decorative or generic, not tied to actual evaluation."
+      ],
+      "limitations": [
+        "The speaker’s identity is ambiguous (bubble points near center man but lacks clear origin), and no recipient reaction is visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:11:06.927916+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-31af17ac-ecfa-9623-bfa6-845866ca1b49",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 926,
+        "total_tokens": 2459,
+        "completion_tokens_details": {
+          "text_tokens": 926
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031045d3a27d25da6b4901",
+      "usage": {
+        "completion_tokens": 784,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2879,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3663
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

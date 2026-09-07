@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1675",
+  "sample_id": "PHL1800_HL_0043",
+  "file_name": "PHL1800_HL_0043.png",
+  "batch_id": "B034",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a corner building with a clock tower and ornate balconies, adjacent to modern storefronts",
+  "captions": {
+    "scene": [
+      "A wet urban street corner with a historic-style building featuring wooden balconies and a spire-topped clock tower, flanked by contemporary commercial structures.",
+      "Overcast daylight scene showing pedestrians holding umbrellas on a damp pavement, with visible signage including 'OPTICA' and green cross symbols.",
+      "Architectural contrast between a beige multi-story building with decorative ironwork and wood balconies and a plain white modern building with large windows."
+    ],
+    "action": [
+      "Three pedestrians walk on the sidewalk: one under a blue umbrella, two under a red umbrella; all are moving leftward relative to the camera.",
+      "A person in dark clothing walks alone near the corner building’s ground-floor shopfronts, facing away from the camera.",
+      "The street surface is visibly wet, reflecting ambient light, indicating recent or ongoing rain."
+    ],
+    "rationale": [
+      "The presence of multiple umbrellas and reflective pavement strongly suggests precipitation occurred recently or is occurring.",
+      "The architectural style—curved facade, wrought-iron balconies, clock tower spire—is consistent with early 20th-century European civic design, though no specific location is confirmed.",
+      "Signage includes readable words like 'OPTICA' and symbols (green cross, eye icon), implying optical services, but exact business names are partially obscured or unreadable."
+    ],
+    "object": [
+      "A beige corner building has five visible floors above ground level, with a central clock face at the top of the third floor and a conical spire above it.",
+      "Wooden balconies with carved railings extend from the second and third floors on the corner-facing side; each balcony has glass-paned doors behind it.",
+      "A green cross symbol and an eye-shaped logo appear on a white awning to the right; below them, the word 'OPTICA' is legible in black capital letters.",
+      "Two umbrellas are open: one blue, held by a single person; one red, shared by two people walking side-by-side.",
+      "A circular manhole cover is embedded in the wet asphalt near the curb on the lower right."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1675_P1",
+      "visual_anchors": [
+        "clock face on tower",
+        "wet pavement",
+        "pedestrians with umbrellas"
+      ],
+      "symbolic_mapping": [
+        "the clock signifies measured time against transient weather conditions",
+        "umbrellas represent temporary shelter amid environmental flux"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a fixed timepiece and ephemeral human responses to rain evokes the tension between enduring temporal structure and fleeting embodied experience.",
+      "alternative_interpretations": [
+        "This may simply depict routine urban life during inclement weather without symbolic intent."
+      ],
+      "limitations": [
+        "No explicit textual or contextual cues confirm intentional symbolism; the clock may serve only functional or decorative purposes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1675_P2",
+      "visual_anchors": [
+        "ornate balconies",
+        "modern storefronts",
+        "shared red umbrella"
+      ],
+      "symbolic_mapping": [
+        "balconies suggest historical social visibility",
+        "shared umbrella implies mutual aid in public space"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The coexistence of historic architecture emphasizing communal viewing and contemporary commerce highlights how social presence is negotiated across eras and functions in shared urban terrain.",
+      "alternative_interpretations": [
+        "The scene reflects standard mixed-use zoning rather than deliberate commentary on social relations."
+      ],
+      "limitations": [
+        "No interaction between figures is visible beyond proximity; shared umbrella does not prove cooperation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1675_P3",
+      "visual_anchors": [
+        "green cross sign",
+        "eye logo",
+        "optical shop text"
+      ],
+      "symbolic_mapping": [
+        "eye icon literalizes perception",
+        "optical services mediate visual clarity"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The visible emphasis on vision-related commerce underscores the material infrastructure through which humans seek accurate perception—a metaphor for epistemic tools shaping truth access.",
+      "alternative_interpretations": [
+        "These are standard commercial identifiers with no philosophical intent."
+      ],
+      "limitations": [
+        "The signs serve practical advertising; no textual or compositional framing suggests abstract reflection on knowledge."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:00:18.613552+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1ded649b-59e0-930d-9eac-699a3f239520",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 981,
+        "total_tokens": 1650,
+        "completion_tokens_details": {
+          "text_tokens": 981
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050004f4dd1df820f4436d",
+      "usage": {
+        "completion_tokens": 844,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1781,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2625
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

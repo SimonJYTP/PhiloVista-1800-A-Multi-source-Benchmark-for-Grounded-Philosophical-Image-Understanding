@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0316",
+  "sample_id": "PHL1800_IRFL_0163",
+  "file_name": "PHL1800_IRFL_0163.jpg",
+  "batch_id": "B008",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male seated at a desk",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor space with a large window showing greenery outside and a blue textured wall panel to the right.",
+      "A white desk surface holds open notebooks, a cup of writing instruments, and stacked books; a black office chair is partially visible.",
+      "The subject sits in a black chair with a blue fabric backdrop behind him, suggesting a study or home office environment."
+    ],
+    "action": [
+      "The man rests his chin on his right fist while gazing toward the upper left, away from the desk materials.",
+      "His left arm lies relaxed across his lap; his posture is upright but not rigid.",
+      "An open notebook with lined pages and a red bookmark lies directly before him, unattended."
+    ],
+    "rationale": [
+      "The gaze direction and facial orientation suggest attention directed outside the immediate workspace, though intent is not verifiable.",
+      "The presence of academic materials (notebooks, pens, books) implies engagement with study or writing tasks, but no active manipulation is observed.",
+      "The hand-on-chin pose is commonly associated with contemplation, yet without behavioral context it remains visually ambiguous."
+    ],
+    "object": [
+      "A man with short brown hair and light facial stubble wears a plain royal-blue V-neck T-shirt.",
+      "A black office chair with curved armrests supports the subject; its backrest is partially obscured by the subject’s torso.",
+      "An orange cylindrical cup holds multiple writing tools including green, black, and silver pens and pencils with erasers.",
+      "Two hardcover books are stacked: the top one has a red cover and the bottom one a dark green cover with gold embossing.",
+      "A ring-binder notebook with metal twin loops lies open on the left side of the desk, its pages blank or faintly marked."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0316_P1",
+      "visual_anchors": [
+        "open notebook with blank pages",
+        "man’s unfocused gaze",
+        "stacked books"
+      ],
+      "symbolic_mapping": [
+        "blank pages → potential knowledge not yet inscribed",
+        "gaze away from text → suspension of immediate epistemic action"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image evokes the epistemic threshold where knowledge exists as possibility rather than possession—books represent stored truth, the notebook awaits inscription, and the subject’s pause embodies the reflective interval before committing belief to form.",
+      "alternative_interpretations": [
+        "The subject may simply be tired or distracted; the blank notebook could be unused rather than symbolically potent."
+      ],
+      "limitations": [
+        "No legible text confirms content of books or notebook; the subject’s expression does not definitively indicate reflection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0316_P2",
+      "visual_anchors": [
+        "hand supporting chin",
+        "body angled away from desk",
+        "natural light from window"
+      ],
+      "symbolic_mapping": [
+        "posture of physical support → internal deliberation",
+        "light source outside frame → external influence or openness"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The suspended gesture and orientation toward ambient light suggest a moment of decisional latency—where agency is present but not yet exercised, aligning with the philosophical notion of choice as an unfolding process rather than a discrete event.",
+      "alternative_interpretations": [
+        "The pose may reflect ergonomic comfort or momentary fatigue rather than existential deliberation."
+      ],
+      "limitations": [
+        "No visible decision point (e.g., two options) confirms a choice scenario; the window view is generic foliage."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0316_P3",
+      "visual_anchors": [
+        "blue T-shirt",
+        "black chair",
+        "orange cup"
+      ],
+      "symbolic_mapping": [
+        "color contrast between clothing and objects → differentiation of self from tools",
+        "ordered desk items → constructed order against potential chaos"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The curated visual field—distinct colors, arranged objects, and neutral attire—constructs a provisional identity through material alignment, illustrating how appearance functions not as essence but as situational presentation within a disciplined setting.",
+      "alternative_interpretations": [
+        "Color choices may be coincidental or habitual, not intentional semiotic signaling."
+      ],
+      "limitations": [
+        "No branding, labels, or personal markings confirm intentional identity construction; colors are common and non-exclusive."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:31:25.091143+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3c09a074-45b3-9a1c-9007-0acaffcd3124",
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 990,
+        "total_tokens": 1924,
+        "completion_tokens_details": {
+          "text_tokens": 990
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 427,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702311564661f88fd554d63",
+      "usage": {
+        "completion_tokens": 850,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2126,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2976
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

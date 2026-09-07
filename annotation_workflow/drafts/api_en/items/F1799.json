@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1799",
+  "sample_id": "PHL1800_MM_0028",
+  "file_name": "PHL1800_MM_0028.jpg",
+  "batch_id": "B036",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men in a professional kitchen",
+  "captions": {
+    "scene": [
+      "A stainless-steel commercial kitchen with overhead ventilation hoods, tiled backsplash, and illuminated workstations.",
+      "A light-colored countertop holds a wooden cutting board with bread, a ceramic bowl, and a plate of prepared food items.",
+      "Warm ambient lighting from ceiling fixtures casts soft shadows on the floor and surfaces."
+    ],
+    "action": [
+      "The man in chef’s whites walks forward with his back to the viewer, left foot mid-stride.",
+      "The man in a black tuxedo walks toward the viewer, right foot forward, head oriented slightly leftward.",
+      "A speech bubble above the chef contains legible text: 'I'll fix it right away, chef.'"
+    ],
+    "rationale": [
+      "The chef’s posture and direction suggest he is moving away from the tuxedoed man, possibly toward a cooking station.",
+      "The tuxedoed man’s formal attire and proximity to the chef imply a supervisory or guest role, though no insignia confirms this.",
+      "The speech bubble indicates verbal communication, but its content may be staged or illustrative rather than documentary evidence of actual dialogue."
+    ],
+    "object": [
+      "A man wearing a white double-breasted chef’s jacket with rolled cuffs, black trousers, and a tall white toque walks away from the camera.",
+      "A man wearing a black three-piece tuxedo with a white dress shirt, black bow tie, and a small embroidered monogram 'CV' on the left lapel walks toward the camera.",
+      "A stainless-steel range hood spans the background wall above multiple cooking stations containing pans, utensils, and plated dishes.",
+      "A wooden cutting board rests on a light stone countertop alongside a round ceramic dish and a plate with sliced fruit and bread.",
+      "A hanging cylindrical pendant lamp emits warm light from the upper right corner, partially illuminating the scene."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1799_P1",
+      "visual_anchors": [
+        "chef’s back-facing posture",
+        "tuxedoed man’s frontal gaze",
+        "speech bubble stating 'I'll fix it right away, chef.'"
+      ],
+      "symbolic_mapping": [
+        "back-facing figure → service/subordination",
+        "front-facing figure → authority/observation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The spatial arrangement and directional contrast visually enact a hierarchy where service is performed while authority observes, reflecting how social roles are embodied through posture and orientation.",
+      "alternative_interpretations": [
+        "This may simply depict two colleagues walking past each other during service, with the speech bubble added for narrative effect."
+      ],
+      "limitations": [
+        "No visible badges, name tags, or contextual signage confirm hierarchical status; attire alone does not definitively assign roles."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1799_P2",
+      "visual_anchors": [
+        "stainless-steel kitchen surfaces",
+        "uniformed chef",
+        "formal tuxedo"
+      ],
+      "symbolic_mapping": [
+        "industrial kitchen materials → labor infrastructure",
+        "uniforms → role codification"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The image juxtaposes standardized labor (chef’s uniform) with ceremonial presentation (tuxedo), suggesting identity is constructed through occupational costume within technologically mediated environments.",
+      "alternative_interpretations": [
+        "The tuxedoed man could be a diner or event attendee, not necessarily part of the kitchen staff, making the contrast situational rather than systemic."
+      ],
+      "limitations": [
+        "The tuxedoed man’s lack of kitchen tools or interaction with equipment prevents confirmation of his functional role."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1799_P3",
+      "visual_anchors": [
+        "speech bubble with promise",
+        "simultaneous forward motion of both figures",
+        "clean, ordered kitchen"
+      ],
+      "symbolic_mapping": [
+        "verbal commitment → ethical obligation",
+        "shared movement → temporal alignment"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The utterance 'I'll fix it right away, chef' paired with concurrent motion implies an immediate enactment of responsibility—a moment where moral commitment translates into physical action within a structured environment.",
+      "alternative_interpretations": [
+        "The speech bubble may be fictional or illustrative, not representing real-time intent; the figures’ motion could be coincidental rather than coordinated."
+      ],
+      "limitations": [
+        "The speech bubble is superimposed graphic content; no lip movement or auditory cues verify spoken intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:14:55.195388+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3667fb14-63ec-9d9b-b790-84cc5ac646de",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1024,
+        "total_tokens": 2557,
+        "completion_tokens_details": {
+          "text_tokens": 1024
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705144323212cb3defd4c45",
+      "usage": {
+        "completion_tokens": 883,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2972,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3855
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

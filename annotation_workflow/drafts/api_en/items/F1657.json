@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1657",
+  "sample_id": "PHL1800_HAIV_0513",
+  "file_name": "PHL1800_HAIV_0513.png",
+  "batch_id": "B034",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person viewed from behind",
+  "captions": {
+    "scene": [
+      "A stylized landscape with a yellow sky, pale cloud shapes, and a dark green ground plane intersected by a pink winding path.",
+      "A large abstract black line drawing resembling a loop or knot appears on the left side of the sky.",
+      "A thick black arrow-like line curves upward from the right edge of the ground plane into the sky."
+    ],
+    "action": [
+      "The person walks forward along the pink path, left foot lifted mid-stride, right foot planted.",
+      "The person’s head is turned slightly to the right, facing away from the viewer.",
+      "The person casts a long shadow onto the pink path, angled toward the lower left."
+    ],
+    "rationale": [
+      "The figure’s posture and foot placement indicate forward locomotion rather than standing still.",
+      "The shadow direction suggests a light source positioned upper right, consistent with the scene’s lighting cues.",
+      "The path’s curvature and the arrow’s orientation imply directional intent, though no destination is visible."
+    ],
+    "object": [
+      "The person wears a teal long-sleeved dress with a black waistband and silver-toned leggings underneath.",
+      "The person has shoulder-length straight hair colored olive-green with a yellowish highlight on the right side.",
+      "The pink path is bordered by dark green terrain and rises in elevation toward the right, forming a ramp-like structure.",
+      "A black line drawing in the upper left consists of two overlapping loops without closure points.",
+      "A black arrow-shaped line originates near the ground on the right, curves upward, and terminates in a solid arrowhead pointing rightward."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1657_P1",
+      "visual_anchors": [
+        "pink winding path",
+        "person walking forward",
+        "black arrow curving upward"
+      ],
+      "symbolic_mapping": [
+        "the path represents a non-linear trajectory",
+        "the arrow signifies an external directive or pull"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The image visualizes decision-making as movement along an ambiguous route where internal progression (walking) coexists with external signifiers (arrow), suggesting journey as negotiation between autonomy and influence.",
+      "alternative_interpretations": [
+        "The composition may reflect graphic design conventions for illustrating navigation or user flow in digital interfaces."
+      ],
+      "limitations": [
+        "No textual labels confirm symbolic intent; the arrow could be purely decorative or structural."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1657_P2",
+      "visual_anchors": [
+        "olive-green hair with yellow highlight",
+        "teal dress over silver leggings",
+        "shadow cast on path"
+      ],
+      "symbolic_mapping": [
+        "layered clothing suggests constructed appearance",
+        "shadow indicates presence but not substance"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s layered attire and distinct color contrast against the environment emphasize surface presentation, while the elongated shadow implies a persistent but disembodied trace—highlighting appearance as both intentional and separable from self.",
+      "alternative_interpretations": [
+        "The color choices may follow aesthetic principles of complementary contrast (teal/pink, green/yellow) without symbolic intent."
+      ],
+      "limitations": [
+        "Clothing and hair colors are stylized; no cultural or contextual markers confirm identity-related symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1657_P3",
+      "visual_anchors": [
+        "abstract black loop drawing",
+        "curved pink path",
+        "elevation change in terrain"
+      ],
+      "symbolic_mapping": [
+        "the loop evokes unresolved cycles",
+        "the path’s rise suggests progression despite ambiguity"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a static, tangled loop in the sky with a dynamic, ascending path below may represent the tension between cyclical recurrence and linear passage—implying temporal experience as simultaneously repetitive and forward-moving.",
+      "alternative_interpretations": [
+        "The loop could be a decorative motif or a representation of wind or motion, unrelated to time."
+      ],
+      "limitations": [
+        "The loop lacks internal detail (e.g., numbers, figures) that would anchor it to temporal concepts like clocks or calendars."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:58:21.886446+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-932a5ec6-d9b0-9196-8494-43e2fe3bbe38",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 927,
+        "total_tokens": 2460,
+        "completion_tokens_details": {
+          "text_tokens": 927
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070458064b2d103e32274c55",
+      "usage": {
+        "completion_tokens": 792,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2884,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3676
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1086",
+  "sample_id": "PHL1800_MM_0003",
+  "file_name": "PHL1800_MM_0003.jpg",
+  "batch_id": "B002",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two boys on a gymnasium floor, one standing in formal attire and one seated in a wheelchair",
+  "captions": {
+    "scene": [
+      "Indoor gymnasium with polished wooden flooring marked with red and yellow lines, black stage curtains, and a projection screen displaying abstract multicolored shapes.",
+      "A microphone on a stand is positioned to the left of the standing boy; another stand with equipment is visible to the right of the seated boy.",
+      "The background includes a raised stage area with dark drapes and visible cables on the floor near the right-side equipment."
+    ],
+    "action": [
+      "The standing boy faces the seated boy, body oriented toward him, hands at his sides, head turned slightly toward the seated boy’s face.",
+      "The seated boy looks toward the standing boy, mouth closed, posture upright, hands resting on wheelchair armrests.",
+      "A speech bubble originates near the standing boy’s head and contains legible English text: 'Haha! Look at him trying to perform!'"
+    ],
+    "rationale": [
+      "The speech bubble suggests a verbal or internalized comment directed at the seated boy, but no lip movement or auditory evidence confirms utterance; it may be added post-hoc.",
+      "The seated boy’s neutral facial expression and lack of gesture do not confirm emotional response to the speech bubble content; interpretation requires assumption.",
+      "The setting (gymnasium with stage, mic, and projection) implies a performance or presentation context, but no active performance (e.g., speaking, singing, moving) is occurring in the frame."
+    ],
+    "object": [
+      "The standing boy wears a navy blue suit jacket, matching trousers, white collared shirt, and black dress shoes; his hair is short and curly.",
+      "The seated boy wears a navy blue T-shirt with white block-letter text reading 'TRENTON UNIFIED ELEMENTARY', navy blue pants, and black sneakers with white soles.",
+      "The wheelchair has silver-colored metal frame, large rear wheels with handrims and spokes, black seat/back padding, and two small front casters.",
+      "A black microphone with silver grille is mounted on a black adjustable stand to the left of the standing boy.",
+      "The projection screen above the stage displays irregular patches of teal, purple, yellow, and green, with no discernible figures or text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1086_P1",
+      "visual_anchors": [
+        "speech bubble with mocking phrase",
+        "seated boy in wheelchair",
+        "standing boy in formal attire"
+      ],
+      "symbolic_mapping": [
+        "wheelchair as visible marker of physical difference",
+        "mocking speech bubble as representation of social judgment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages a tension between embodied difference and social perception, where the wheelchair signifies a constraint on normative participation, and the speech bubble exposes how that constraint becomes a site of ridicule rather than accommodation.",
+      "alternative_interpretations": [
+        "The scene may depict a rehearsed skit or educational role-play where the speech bubble is intentionally exaggerated for pedagogical effect, not reflecting real-time hostility."
+      ],
+      "limitations": [
+        "The speech bubble is superimposed graphic content, not verifiable dialogue; its authorship and timing relative to the photograph are unknown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1086_P2",
+      "visual_anchors": [
+        "gymnasium floor markings",
+        "stage backdrop",
+        "microphone stand"
+      ],
+      "symbolic_mapping": [
+        "gymnasium as liminal space between sport and performance",
+        "microphone as instrument of voice and authority"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The spatial arrangement—standing figure near mic, seated figure off-center—suggests asymmetrical access to the platform of expression, raising questions about who is granted legitimacy to perform and who is positioned as audience or object.",
+      "alternative_interpretations": [
+        "Both boys may be co-performers awaiting cue; the microphone is unoccupied and no active speaking occurs, so hierarchy is not confirmed."
+      ],
+      "limitations": [
+        "No motion, sound, or script is visible; staging alone does not prove intent or power dynamics."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1086_P3",
+      "visual_anchors": [
+        "T-shirt text 'TRENTON UNIFIED ELEMENTARY'",
+        "matching navy outfits",
+        "shared indoor setting"
+      ],
+      "symbolic_mapping": [
+        "'Unified' in school name juxtaposed with apparent social division",
+        "uniform-like clothing implying institutional belonging"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visible institutional branding contrasts with the interpersonal dynamic implied by the speech bubble, prompting reflection on whether shared affiliation (e.g., school identity) entails ethical responsibility toward peers’ dignity.",
+      "alternative_interpretations": [
+        "The T-shirt may be casual wear unrelated to current activity; 'Unified' could refer to district consolidation, not social cohesion."
+      ],
+      "limitations": [
+        "The phrase 'Unified Elementary' is readable but its contextual meaning (e.g., policy, motto, event theme) is not visually specified."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:42:07.533258+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-41f15435-0ae4-9ae7-b6bf-ed95c6b03a4e",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1145,
+        "total_tokens": 2678,
+        "completion_tokens_details": {
+          "text_tokens": 1145
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014147d358206484dc49a8",
+      "usage": {
+        "completion_tokens": 1007,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3094,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4101
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

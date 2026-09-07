@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1080",
+  "sample_id": "PHL1800_HL_0211",
+  "file_name": "PHL1800_HL_0211.png",
+  "batch_id": "B023",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two women and a small white dog seated on a dark leather sofa",
+  "captions": {
+    "scene": [
+      "Indoor setting with teal-blue wall behind a dark brown leather sofa; red textured blanket draped over the right armrest.",
+      "Warm ambient lighting casts soft shadows; visible texture of knit sweater, smooth leather, and fluffy dog fur.",
+      "Open magazine held by left woman shows color illustrations and partial text 'BRIO' in red uppercase letters."
+    ],
+    "action": [
+      "Left woman holds open magazine with both hands, eyes directed downward at pages, mouth slightly parted.",
+      "Right woman rests left hand on dog’s back near tail, right hand on her lap, gaze fixed on magazine pages.",
+      "Small white dog sits facing right, rear end visible, tail curled upward, partially obscured by right woman’s arm."
+    ],
+    "rationale": [
+      "The magazine is likely being read jointly because both women orient their heads and eyes toward it simultaneously.",
+      "The dog’s posture suggests it is settled and not actively moving, supported by lack of motion blur and stable contact with lap/sofa.",
+      "The red blanket appears decorative rather than functional (e.g., for warmth) because it is loosely draped and not covering either person."
+    ],
+    "object": [
+      "The left woman wears thin-framed eyeglasses, a maroon short-sleeved top, and a gold chain necklace with pendant.",
+      "The right woman wears wire-rimmed eyeglasses, a gray high-neck knit sweater, and a ring on her left ring finger.",
+      "The magazine has glossy pages; left page displays multiple small images of toys or vehicles; right page shows large blue silhouette and red 'BRIO' logo.",
+      "The sofa is dark brown leather with visible creases and stitching; two distinct seat cushions are present.",
+      "A white dog with fluffy fur occupies the space between the right woman’s torso and the sofa armrest; only its hindquarters and tail are fully visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1080_P1",
+      "visual_anchors": [
+        "open magazine with 'BRIO' branding",
+        "two women jointly attending to same visual material",
+        "dog resting between them"
+      ],
+      "symbolic_mapping": [
+        "shared focus on printed object as site of shared attention",
+        "physical proximity without direct eye contact suggesting mediated connection"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image depicts knowledge transmission or co-attention as a form of social existence, where meaning emerges not through dialogue but through parallel engagement with an external artifact.",
+      "alternative_interpretations": [
+        "Two people casually browsing a product catalog while a pet sits nearby—no deeper significance implied."
+      ],
+      "limitations": [
+        "No facial expressions confirm intent; the magazine content is only partially legible, limiting inference about subject matter."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1080_P2",
+      "visual_anchors": [
+        "red knitted blanket draped over armrest",
+        "gray sweater with high neck",
+        "warm lighting"
+      ],
+      "symbolic_mapping": [
+        "textile layers as buffers against external environment",
+        "enclosure of bodies within domestic space suggesting containment"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "Clothing and textile placement construct a bounded domestic sphere that subtly enforces constraints on bodily exposure and movement, reflecting identity as shaped by habitual spatial enclosure.",
+      "alternative_interpretations": [
+        "The blanket and sweater are simply chosen for comfort in a cool room; no symbolic intent is evident."
+      ],
+      "limitations": [
+        "No evidence of intentional arrangement; blanket could be casually placed, not deliberately symbolic."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1080_P3",
+      "visual_anchors": [
+        "small white dog’s tail curled upward",
+        "right woman’s hand resting on dog’s back",
+        "simultaneous gaze toward magazine"
+      ],
+      "symbolic_mapping": [
+        "touch as nonverbal continuity amid cognitive focus",
+        "animal presence as silent witness to human activity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The tactile contact with the dog, maintained while attention is directed elsewhere, illustrates a form of distributed ethical responsibility—care enacted habitually rather than intentionally.",
+      "alternative_interpretations": [
+        "The woman is merely keeping the dog from moving; the touch is incidental, not meaningful."
+      ],
+      "limitations": [
+        "Hand position could be resting rather than active petting; no observable reaction from dog confirms interaction."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:48:15.484748+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f00d392c-e053-92f7-a9fe-bd050b9905c6",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1001,
+        "total_tokens": 1770,
+        "completion_tokens_details": {
+          "text_tokens": 1001
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703480549b624fc030747aa",
+      "usage": {
+        "completion_tokens": 863,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1932,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2795
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

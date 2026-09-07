@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0323",
+  "sample_id": "PHL1800_MM_0024",
+  "file_name": "PHL1800_MM_0024.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men on a paved sidewalk, one crouching beside a blue aerosol can",
+  "captions": {
+    "scene": [
+      "A sunlit urban sidewalk with large stone columns and glass doors in the background.",
+      "Rectangular paving stones form the ground surface; shadows indicate strong directional sunlight.",
+      "A blue aerosol can stands upright on the pavement near the crouching man."
+    ],
+    "action": [
+      "One man crouches low, right hand extended toward the pavement near the can’s base.",
+      "The second man stands upright, facing the crouching man, hands in pockets, observing.",
+      "A speech bubble with legible text floats above the crouching man’s head."
+    ],
+    "rationale": [
+      "The crouching posture and hand position suggest intent to interact with the pavement surface or can, though no contact is visible.",
+      "The presence of a speech bubble implies attributed internal thought or dialogue, but only the text content is observable.",
+      "The can’s label includes partially legible words (e.g., 'shave', 'blue'), but full product identification is not possible from visible details."
+    ],
+    "object": [
+      "A blue cylindrical aerosol can with white and silver labeling stands vertically on the sidewalk.",
+      "The crouching man wears dark jeans, black lace-up shoes, a dark long-sleeve top, glasses, and a patterned fabric item slung over his shoulder.",
+      "The standing man wears a dark jacket, dark trousers, brown lace-up shoes, and has short brown hair.",
+      "The pavement consists of light gray rectangular concrete slabs with visible seams and minor surface imperfections.",
+      "Two large fluted stone columns frame the background entrance, with reflective glass doors between them."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0323_P1",
+      "visual_anchors": [
+        "crouching man’s hand near pavement",
+        "speech bubble with declarative sentence",
+        "aerosol can positioned centrally"
+      ],
+      "symbolic_mapping": [
+        "the act of preparing to remove stains symbolizes an attempt to restore order or erase traces"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The image stages a moment of individual agency where a person declares intent to rectify a visible disruption—paint stains—suggesting a moral impulse toward cleanliness, accountability, or social conformity.",
+      "alternative_interpretations": [
+        "This may simply depict product demonstration or staged advertising, with the speech bubble added post-capture for narrative effect."
+      ],
+      "limitations": [
+        "No actual paint stains are visible on the pavement; the claim in the speech bubble lacks visual corroboration."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0323_P2",
+      "visual_anchors": [
+        "standing observer",
+        "crouching actor",
+        "shared sidewalk space"
+      ],
+      "symbolic_mapping": [
+        "the spatial arrangement implies witness and performer roles within public space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The asymmetry of posture and attention—observer standing, actor kneeling—evokes dynamics of surveillance and performance in everyday public life, where actions gain meaning through witnessed intent.",
+      "alternative_interpretations": [
+        "The standing man may be waiting, unrelated, or merely pausing; no eye contact or gesture confirms observation."
+      ],
+      "limitations": [
+        "Facial expressions and gaze direction are ambiguous; the standing man’s head is turned but not clearly focused on the crouching man."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0323_P3",
+      "visual_anchors": [
+        "aerosol can as manufactured object",
+        "man’s manual engagement",
+        "urban architectural backdrop"
+      ],
+      "symbolic_mapping": [
+        "the reliance on a commercial product to solve a physical problem reflects mediation of labor by technology"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The scene captures a micro-decision point where human effort is outsourced to a consumable tool, illustrating how modern problem-solving embeds technological intermediaries into routine ethical choices.",
+      "alternative_interpretations": [
+        "The can may be unrelated to the action—e.g., placed there for composition—and the man may be adjusting his shoe or inspecting a crack."
+      ],
+      "limitations": [
+        "No motion, residue, or interaction confirms the can’s functional role; its presence could be coincidental or aesthetic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:32:55.685215+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-be286d90-9a01-987a-80c7-538658b96981",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 978,
+        "total_tokens": 2511,
+        "completion_tokens_details": {
+          "text_tokens": 978
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070232241640357f0fce4973",
+      "usage": {
+        "completion_tokens": 842,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2932,
+        "prompt_tokens_details": {
+          "cached_tokens": 4
+        },
+        "total_tokens": 3774
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

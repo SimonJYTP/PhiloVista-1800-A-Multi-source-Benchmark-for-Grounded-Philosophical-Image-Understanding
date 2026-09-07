@@ -1,0 +1,165 @@
+{
+  "annotation_item_id": "F1730",
+  "sample_id": "PHL1800_IRFL_0484",
+  "file_name": "PHL1800_IRFL_0484.jpg",
+  "batch_id": "B035",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single green apple",
+  "captions": {
+    "scene": [
+      "A uniformly lit, isolated fruit against a pure white background with a soft shadow beneath.",
+      "The apple occupies the central visual field with no other objects or environmental context present.",
+      "Lighting creates subtle highlights on the upper-left surface and gentle gradients across the skin."
+    ],
+    "action": [
+      "The apple is stationary and presented in a frontal three-quarter view.",
+      "The stem remains attached at the calyx, oriented vertically upward.",
+      "Surface texture shows fine speckling and slight irregularities consistent with natural fruit skin."
+    ],
+    "rationale": [
+      "The uniform white background and controlled lighting suggest studio photography rather than natural setting.",
+      "The absence of blemishes, cuts, or bite marks indicates the apple is intact and unaltered in the image frame.",
+      "The visible stem appears dry and brownish, implying it has been detached from the tree for some time—though exact duration cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "The apple is predominantly light green with minor yellow-green tonal variation across its surface.",
+      "Its shape is broadly spherical with a slight taper toward the stem end and a shallow depression at the calyx.",
+      "The skin exhibits a matte finish with scattered lenticels appearing as tiny pale dots.",
+      "A short, woody stem approximately 1 cm long protrudes from the top center, showing brown coloration and fibrous texture.",
+      "A soft, diffuse shadow is cast directly beneath the apple, indicating a light source positioned above and slightly in front."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1730_P1",
+      "visual_anchors": [
+        "intact smooth skin",
+        "uniform green hue",
+        "central placement"
+      ],
+      "symbolic_mapping": [
+        "unblemished surface → idealized purity",
+        "monochromatic color → singularity of form"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The apple’s undisturbed surface and singular hue evoke questions about how appearance constructs perceived identity, especially when isolated from context that might reveal variation or history.",
+      "alternative_interpretations": [
+        "It may simply represent a standard commercial fruit photograph intended for product display without symbolic intent."
+      ],
+      "limitations": [
+        "No facial features, text, or cultural markers are present to confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1730_P2",
+      "visual_anchors": [
+        "attached dried stem",
+        "lack of decay",
+        "static pose"
+      ],
+      "symbolic_mapping": [
+        "stem as remnant of origin → continuity with past",
+        "stillness → suspended temporality"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The preserved but detached stem suggests a moment arrested between growth and decay, prompting reflection on the boundary between vitality and impermanence.",
+      "alternative_interpretations": [
+        "The stem is naturally dry in many harvested apples and does not necessarily indicate aging or symbolic transition."
+      ],
+      "limitations": [
+        "No visible signs of rot, shriveling, or discoloration that would confirm temporal progression."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1730_P3",
+      "visual_anchors": [
+        "isolated object",
+        "neutral background",
+        "even illumination"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "A literal description of a single green apple is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a single green apple as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:06:00.926935+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ced110fc-b368-9abf-852d-ece4f4b7cd84",
+      "usage": {
+        "prompt_tokens": 3008,
+        "completion_tokens": 859,
+        "total_tokens": 3867,
+        "completion_tokens_details": {
+          "text_tokens": 859
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2501,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050544beba4c4e82c94eb6",
+      "usage": {
+        "completion_tokens": 724,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4924,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5648
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F1730.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

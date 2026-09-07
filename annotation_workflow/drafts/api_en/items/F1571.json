@@ -1,0 +1,164 @@
+{
+  "annotation_item_id": "F1571",
+  "sample_id": "PHL1800_HL_0282",
+  "file_name": "PHL1800_HL_0282.png",
+  "batch_id": "B032",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "motorcycle racers at the start of a dirt-track race",
+  "captions": {
+    "scene": [
+      "A dusty, unpaved oval track with spectators in the foreground and industrial buildings in the background.",
+      "A white pickup truck is parked near the track, with several motorcycles and personnel nearby.",
+      "A flagpole with a black-and-white striped flag stands on the left side of the track near the starting line."
+    ],
+    "action": [
+      "Multiple riders on off-road motorcycles are accelerating from a standing start, kicking up dust.",
+      "Spectators in the foreground are observing, some holding cameras or binoculars; one person holds a megaphone.",
+      "Several individuals stand near the track edge, possibly officials or safety crew."
+    ],
+    "rationale": [
+      "The dust plumes and forward lean of riders indicate rapid acceleration from rest, not cruising or braking.",
+      "The presence of a vehicle and personnel suggests an organized event with safety provisions, though no injury is visible and text on the truck is unreadable.",
+      "The flag’s position and orientation suggest it marks a boundary or starting point, but its specific function (e.g., start signal) cannot be confirmed visually."
+    ],
+    "object": [
+      "At least 10 distinct motorcycle riders are visible mid-acceleration, each wearing helmets and riding gear; three more motorcycles are parked or idling behind them.",
+      "A white pickup truck is parked on the infield near the track; text on the truck is not legible.",
+      "A vertical pole with a rectangular black-and-white striped flag is planted near the left edge of the track.",
+      "Approximately 10-12 spectators are visible in the foreground, including two holding cameras, one holding a megaphone, and others watching intently.",
+      "A banner with unreadable text hangs horizontally across the background, above the track and behind the infield."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1571_P1",
+      "visual_anchors": [
+        "dust clouds obscuring lower legs of riders",
+        "uniformed officials standing still while riders move",
+        "spectators holding cameras"
+      ],
+      "symbolic_mapping": [
+        "dust as transient trace of action",
+        "stillness vs motion as contrast of roles"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where human agency manifests through motion, yet is framed by observers and infrastructure that outlast the fleeting act—highlighting how individual action is embedded within collective witnessing and institutional support.",
+      "alternative_interpretations": [
+        "It is simply a sports photograph documenting a race start without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; dust and posture alone do not prove philosophical meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1571_P2",
+      "visual_anchors": [
+        "black-and-white striped flag",
+        "rider numbers visible on some bikes (e.g., 12, 14)",
+        "megaphone held by spectator"
+      ],
+      "symbolic_mapping": [
+        "striped flag as binary marker of legitimacy/zone",
+        "numbers as assigned identity within system"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "power_conflict"
+      ],
+      "interpretation": "The imposition of numbered identities and regulatory markers (flag, officials) onto embodied performance suggests a tension between individual expression and systemic categorization—where freedom to compete is conditioned by formal recognition.",
+      "alternative_interpretations": [
+        "Numbers and flags are purely functional for race management and pose no ideological significance."
+      ],
+      "limitations": [
+        "The flag’s exact meaning is unknown; numbers may only serve identification, not identity construction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1571_P3",
+      "visual_anchors": [
+        "multiple riders aligned at start line",
+        "shared direction of motion",
+        "crowd facing same way"
+      ],
+      "symbolic_mapping": [
+        "parallel trajectories as shared purpose",
+        "collective gaze as alignment of attention"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The synchronized launch reflects a shared journey initiated by individual choice yet enacted collectively—underscoring how personal paths are shaped and witnessed within a social field that validates and frames the endeavor.",
+      "alternative_interpretations": [
+        "Riders are simply following race rules; alignment is logistical, not existential."
+      ],
+      "limitations": [
+        "No evidence of voluntary choice versus obligation; alignment could be enforced by race protocol."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of motorcycle riders (candidate states 8 distinct riders; image shows at least 10 riders in motion) and spectators (candidate states at least 12; image shows approximately 10-12 spectators, but count is ambiguous due to partial visibility).",
+      "Candidate claims a white pickup truck is labeled 'SERVICE' and 'MEDIC'; the text on the truck is not legible in the image, so this is unsupported."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:46:45.513989+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-40832a58-b1df-9438-bd47-1da312eb50e2",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 989,
+        "total_tokens": 1758,
+        "completion_tokens_details": {
+          "text_tokens": 989
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704462924344e914b77483d",
+      "usage": {
+        "completion_tokens": 931,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1918,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2849
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

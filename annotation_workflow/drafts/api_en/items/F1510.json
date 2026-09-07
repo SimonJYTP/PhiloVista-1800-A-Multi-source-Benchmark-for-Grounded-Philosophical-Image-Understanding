@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1510",
+  "sample_id": "PHL1800_IRFL_0320",
+  "file_name": "PHL1800_IRFL_0320.jpg",
+  "batch_id": "B031",
+  "position_in_batch": 23,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a multi-story residential building undergoing partial demolition or severe structural degradation",
+  "captions": {
+    "scene": [
+      "A white-painted, five-story building with exposed concrete framing, missing walls, and uneven floor levels under a clear blue sky.",
+      "Adjacent structures include a red-brick building to the right with broken upper floors and a white-tiled building to the left with intact cladding.",
+      "Clothes hang on lines across open window frames; a wooden ladder leans against the lower facade."
+    ],
+    "action": [
+      "The building exhibits incomplete demolition: some rooms retain doors and windows while adjacent bays are fully open to the exterior.",
+      "A red garment hangs from a line in front of an open ground-floor opening; no human figures are visible.",
+      "Structural elements such as rebar and rough concrete edges are exposed at multiple floor levels, indicating recent or ongoing work or decay."
+    ],
+    "rationale": [
+      "The presence of intact window frames and doors alongside missing wall sections suggests selective removal rather than total collapse.",
+      "The ladder positioned vertically against the building implies recent or intended access to upper floors, though no active use is observed.",
+      "The absence of debris piles directly at the base may indicate off-site disposal or that demolition is paused, but this cannot be confirmed visually."
+    ],
+    "object": [
+      "The central building has five visible stories, each with irregular openings where walls have been removed, revealing interior spaces and ceiling slabs.",
+      "Green-painted wooden doors and shutters remain in several openings on the third and fourth floors; one shutter is partially open.",
+      "A metal-framed window with horizontal bars is installed on the second floor, left side; another barred window appears on the top floor, right side.",
+      "Exposed rebar protrudes from broken concrete edges at multiple floor perimeters, especially along the right-side vertical edge.",
+      "A small rectangular sign with unreadable text is affixed to the lower-left door frame; characters are present but illegible due to resolution and angle."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1510_P1",
+      "visual_anchors": [
+        "exposed rebar at floor edges",
+        "intact doors amid missing walls",
+        "clothes hanging in open voids"
+      ],
+      "symbolic_mapping": [
+        "open frames as thresholds between private and public",
+        "hanging laundry as persistence of domestic routine amid instability"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "time_mortality"
+      ],
+      "interpretation": "The coexistence of habituated domestic signs (laundry) within structurally ruptured space evokes the endurance of social life against material impermanence, suggesting identity and community persist even as physical containers decay.",
+      "alternative_interpretations": [
+        "This may simply reflect delayed demolition where residents continue occupying parts of the structure until forced relocation."
+      ],
+      "limitations": [
+        "No occupants are visible; thus, the inference of continued habitation relies on indirect cues like laundry and intact doors."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1510_P2",
+      "visual_anchors": [
+        "uneven floor levels",
+        "ladder leaning against facade",
+        "unfinished roof structure"
+      ],
+      "symbolic_mapping": [
+        "ladder as unresolved ascent/descent",
+        "asymmetrical floors as disrupted continuity"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The ladder’s static placement without a user, combined with fragmented vertical pathways, visualizes suspended agency—where movement is possible yet uninitiated, reflecting constraint not by law but by material incompleteness.",
+      "alternative_interpretations": [
+        "The ladder may be stored temporarily and unrelated to current activity; its presence does not necessarily imply intent."
+      ],
+      "limitations": [
+        "No person interacts with the ladder; its purpose remains ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1510_P3",
+      "visual_anchors": [
+        "white paint peeling over brick substrate",
+        "green doors contrasting with bare concrete",
+        "multiple window types side-by-side"
+      ],
+      "symbolic_mapping": [
+        "layered surfaces as accumulated history",
+        "color contrast as resistance to erasure"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The visible stratification of finishes—paint over brick, new doors in old frames—suggests identity formed through successive adaptations, where surface appearance encodes contested truths about continuity and change.",
+      "alternative_interpretations": [
+        "Differences in materials may result from piecemeal repairs rather than intentional layering for symbolic effect."
+      ],
+      "limitations": [
+        "No documentation of construction sequence is visible; temporal layering is inferred from material juxtaposition only."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:40:23.557488+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3ffa7573-12be-9c63-9edb-2bf71762c0e1",
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 1021,
+        "total_tokens": 1955,
+        "completion_tokens_details": {
+          "text_tokens": 1021
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 427,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070440095e7998ab3bb14c12",
+      "usage": {
+        "completion_tokens": 883,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2158,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3041
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

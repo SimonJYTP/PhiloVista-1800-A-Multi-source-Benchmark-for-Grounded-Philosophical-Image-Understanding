@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0236",
+  "sample_id": "PHL1800_HL_0410",
+  "file_name": "PHL1800_HL_0410.png",
+  "batch_id": "B007",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a historic clock tower attached to a large building with people and a vehicle in the foreground",
+  "captions": {
+    "scene": [
+      "A tall, ornate brick clock tower with a steep pyramidal roof stands beside a multi-gabled building under an overcast sky.",
+      "A leafy tree occupies the right side of the frame, partially obscuring the building’s facade and casting shadow on the ground.",
+      "A low fence runs horizontally across the mid-ground, separating the building from a grassy area where people and a vintage automobile are situated."
+    ],
+    "action": [
+      "Two or three individuals are seated or reclining on the grass near the front wheel of a parked automobile.",
+      "The clock faces on the tower show two visible times, but specific hour/minute readings are not clearly distinguishable due to image resolution and angle.",
+      "A lamppost stands upright near the left edge of the building, and no small signpost is visible near the fence line."
+    ],
+    "rationale": [
+      "The architectural style—steep roof, arched windows, and decorative brickwork—suggests late 19th- or early 20th-century construction; however, no date markers confirm this.",
+      "The presence of a vintage automobile and clothing style (e.g., long skirts, hats) implies early-to-mid 20th century, but photographic aging alone cannot fix the date.",
+      "The text at the bottom identifies the location as 'NORTHWESTERN DEPOT MILWAUKEE, WIS.', yet the legibility of 'C-2586' is marginal and its meaning is not visually decipherable."
+    ],
+    "object": [
+      "The clock tower has two visible clock faces, each with Roman numerals and two hands, mounted on a square brick shaft topped by a conical spire with a finial.",
+      "The main building features a hipped roof with dormer windows, a central arched entrance, and multiple rectangular windows with stone lintels.",
+      "A single automobile with rounded fenders, a running board, and a spare tire mounted on the rear is parked on grass, positioned near the fence.",
+      "Two or three human figures are visible: two seated closely together on the grass near the car’s front wheel, and a third figure possibly reclining slightly behind them, all wearing period-appropriate attire.",
+      "A metal fence composed of vertical posts and horizontal rails extends across the foreground, with no small signpost bearing unreadable text near its center."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0236_P1",
+      "visual_anchors": [
+        "clock faces showing different times",
+        "tower height dominating the scene",
+        "people resting at its base"
+      ],
+      "symbolic_mapping": [
+        "discrepancy between clock faces → fragmented perception of time",
+        "tower’s verticality → institutional authority over daily life"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The divergent clock readings juxtaposed with the imposing tower suggest time as both measured and contested—a public standard imposed upon private, embodied experience.",
+      "alternative_interpretations": [
+        "The differing times may simply result from mechanical error or maintenance, not symbolic intent."
+      ],
+      "limitations": [
+        "No evidence confirms intentional misalignment; clocks could be non-functional or photographed at an angle causing parallax."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0236_P2",
+      "visual_anchors": [
+        "two or three figures grouped near a vehicle",
+        "fence separating them from the depot",
+        "tree partially screening the building"
+      ],
+      "symbolic_mapping": [
+        "grouping near machine → dependence on transport infrastructure",
+        "fence as boundary → regulated access to civic space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "Human proximity to the automobile and separation from the depot by a fence visualizes the emerging social contract of mobility—where technology mediates access to institutional space.",
+      "alternative_interpretations": [
+        "The group may simply be waiting for a train; the fence serves only safety, not symbolic exclusion."
+      ],
+      "limitations": [
+        "Intent behind fence placement and grouping is not documented visually; posture suggests rest, not protest or negotiation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0236_P3",
+      "visual_anchors": [
+        "text 'NORTHWESTERN DEPOT MILWAUKEE, WIS.'",
+        "architectural grandeur of tower",
+        "absence of signage on building facade"
+      ],
+      "symbolic_mapping": [
+        "named depot → corporate identity embedded in infrastructure",
+        "ornamentation vs. utility → tension between representation and function"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The explicit labeling of the depot contrasts with the building’s lack of internal signage, implying that external naming constructs institutional identity while interior purpose remains visually unasserted.",
+      "alternative_interpretations": [
+        "Signage may have been removed or obscured by angle; the name serves purely functional wayfinding."
+      ],
+      "limitations": [
+        "Only the bottom caption is legible; no other textual identifiers appear on the structure itself."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of clock faces (candidate claims four, image shows two); inaccurate action description (clock times are not visually distinct enough to specify 10:10 and 2:50); unsupported claim about 'small signpost with unreadable text' (no such signpost is visible); 'three human figures' count is plausible but not explicitly confirmed by clear visual separation; 'vintage automobile' description is accurate but 'angled toward the right' is not visually verifiable."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:23:55.970352+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f71ff5a2-71f1-99af-b5e1-8796cac8c333",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1128,
+        "total_tokens": 1897,
+        "completion_tokens_details": {
+          "text_tokens": 1128
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070223422a5e5ce2080a4dce",
+      "usage": {
+        "completion_tokens": 1086,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2054,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3140
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

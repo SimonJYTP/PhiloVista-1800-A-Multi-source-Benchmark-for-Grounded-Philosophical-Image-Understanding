@@ -1,0 +1,164 @@
+{
+  "annotation_item_id": "F1652",
+  "sample_id": "PHL1800_HL_0467",
+  "file_name": "PHL1800_HL_0467.png",
+  "batch_id": "B034",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a Meccano-built synchronous clock model on display",
+  "captions": {
+    "scene": [
+      "A tabletop exhibition with multiple mechanical models, including a prominent red-and-blue Meccano clock in the foreground.",
+      "Black tablecloth-covered tables with various constructed devices; background shows wooden paneling and partial views of people.",
+      "A sign in front identifies the object as 'SYNCHRONOUS CLOCK', model entered for judging, built by David Wall."
+    ],
+    "action": [
+      "The clock’s hour, minute, and second hands are stationary at approximately 10:10:32.",
+      "A small black electrical transformer sits to the left of the clock, connected by thin wires.",
+      "Two people stand in the background near another table; one wears a plaid shirt and dark pants, the other a red shirt (clothing below the waist is not visible)."
+    ],
+    "rationale": [
+      "The clock is likely non-operational during display, inferred from static hands and absence of visible motion blur or power indicator.",
+      "The presence of a judging sign suggests this is part of a competition or exhibition, though the event name is not fully legible.",
+      "The Meccano branding is visible on the baseplate, confirming construction system; however, exact part count or assembly method is not observable."
+    ],
+    "object": [
+      "The clock features a large red circular face with silver rivets and three metallic hands mounted on a blue perforated ring frame.",
+      "Below the main dial, a smaller red sub-dial with its own set of hands is mounted on a vertical metal framework of slotted strips and bolts.",
+      "The base consists of yellow and silver Meccano plates forming a rectangular platform with four feet, and includes a red plaque reading 'MECCANO'.",
+      "A black transformer with two output wires lies on the table to the left of the clock; one wire connects toward the clock’s lower mechanism.",
+      "A printed orange-and-black placard in front reads 'SYNCHRONOUS CLOCK', '3F', 'MODEL ENTERED FOR JUDGING', and 'Built by DAVID WALL'; all text is legible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1652_P1",
+      "visual_anchors": [
+        "red clock face with fixed hands",
+        "Meccano construction grid",
+        "judging placard"
+      ],
+      "symbolic_mapping": [
+        "fixed hands represent arrested time",
+        "modular grid reflects human-imposed order"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The static clock embodies time as a construct—simultaneously measured and suspended—highlighting how labor-intensive technology can freeze temporal flow for scrutiny.",
+      "alternative_interpretations": [
+        "It is simply a functional model displayed for technical evaluation, with no intentional symbolic meaning."
+      ],
+      "limitations": [
+        "No movement or context confirms intentional symbolism; hands may be paused for photography."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1652_P2",
+      "visual_anchors": [
+        "'MODEL ENTERED FOR JUDGING' placard",
+        "multiple background models",
+        "two observers in background"
+      ],
+      "symbolic_mapping": [
+        "judging implies external validation",
+        "exhibition setting frames creation as social performance"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The act of submitting a handmade clock for judgment situates identity through craftsmanship, where appearance (precision, aesthetics) mediates social recognition.",
+      "alternative_interpretations": [
+        "The placard only indicates procedural participation in an event, not deeper identity negotiation."
+      ],
+      "limitations": [
+        "The observers’ attention direction and engagement level are indeterminate."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1652_P3",
+      "visual_anchors": [
+        "perforated metal strips",
+        "riveted joints",
+        "exposed gears and levers"
+      ],
+      "symbolic_mapping": [
+        "modularity signifies reducibility of complex systems",
+        "visible mechanics reject opacity in design"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The exposed, reconfigurable structure asserts that truth in engineering resides in transparency and reproducibility—knowledge is validated through visible, manipulable parts.",
+      "alternative_interpretations": [
+        "The construction follows standard Meccano constraints, not philosophical intent; visibility is incidental to material choice."
+      ],
+      "limitations": [
+        "No labels or annotations confirm epistemic intent; design may prioritize stability over pedagogy."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of background people: candidate states two people, but image shows one person in plaid shirt and another partially visible person in red shirt; total is two, but description of clothing for the second person is inaccurate (no white shorts visible).",
+      "Candidate incorrectly claims a person wears 'white shorts'—no such clothing is visible in the image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:57:49.028681+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2ed486f2-9acb-9a33-b3b0-c50e1d032035",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 996,
+        "total_tokens": 1805,
+        "completion_tokens_details": {
+          "text_tokens": 996
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704572897eeab703b924014",
+      "usage": {
+        "completion_tokens": 1015,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1968,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2983
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

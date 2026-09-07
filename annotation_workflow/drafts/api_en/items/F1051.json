@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1051",
+  "sample_id": "PHL1800_IRFL_0209",
+  "file_name": "PHL1800_IRFL_0209.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two young girls seated side by side on a red bench",
+  "captions": {
+    "scene": [
+      "Outdoor setting with green foliage, a white wall, and a green plastic planter visible in the background",
+      "Red-painted wooden bench with horizontal slats under the subjects",
+      "Bright daylight illumination casting soft shadows; no artificial lighting visible"
+    ],
+    "action": [
+      "Girl on left leans toward girl on right, mouth near right girl's ear, hand cupped beside her own mouth",
+      "Girl on right tilts head slightly, mouth open mid-expression, eyes directed forward-left",
+      "Both girls wear sunglasses; left girl’s glasses have purple frames with floral pattern, right girl’s have white frames with pink accents"
+    ],
+    "rationale": [
+      "The left girl’s hand position and proximity to the right girl’s ear strongly suggest whispering, though no sound is observable",
+      "The right girl’s open mouth and facial orientation indicate active listening or imminent verbal response, but exact intent is unverifiable",
+      "Sunglasses obscure eye direction and expression details, limiting certainty about emotional state or focus"
+    ],
+    "object": [
+      "The girl on the left wears a short-sleeved shirt with horizontal blue and white stripes and a multicolored woven bracelet on her right wrist.",
+      "The girl on the right wears a plain light-pink short-sleeved t-shirt and has wavy blonde hair reaching past her shoulders.",
+      "A red wooden bench with visible grain and three horizontal slats supports both girls; the top slat is partially obscured by their torsos.",
+      "Behind them, a white stucco wall features a green rectangular plastic planter containing red flowers and green leaves.",
+      "The left girl’s sunglasses have translucent purple frames with small pink floral motifs; the right girl’s sunglasses have white frames with pink decorative elements near the temples."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1051_P1",
+      "visual_anchors": [
+        "cupped hand near ear",
+        "open mouth of listener",
+        "sunglasses obscuring eyes"
+      ],
+      "symbolic_mapping": [
+        "cupped hand → mediated transmission of meaning",
+        "obscured eyes → partial concealment of inner state"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The act of whispering embodies the fragility and selectivity of truth—information is shared only with a chosen recipient, while visual cues like obscured eyes signal that full epistemic access is withheld, reflecting how social knowledge often depends on controlled disclosure.",
+      "alternative_interpretations": [
+        "This may simply depict a playful moment between children without intentional symbolic meaning."
+      ],
+      "limitations": [
+        "No textual content or explicit context confirms intentional symbolism; interpretation relies on conventional associations rather than image-specific evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1051_P2",
+      "visual_anchors": [
+        "two girls in close physical proximity",
+        "shared bench",
+        "mirrored posture leaning inward"
+      ],
+      "symbolic_mapping": [
+        "shared seating surface → negotiated coexistence",
+        "mutual orientation → reciprocal attention"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Their shared space and synchronized lean illustrate how identity is co-constituted through relational positioning: appearance (clothing, accessories) marks individuality, yet their alignment demonstrates that selfhood emerges in dialogue with others.",
+      "alternative_interpretations": [
+        "They are sitting together because the bench is narrow and they are friends, not as a statement about identity formation."
+      ],
+      "limitations": [
+        "Posture could be incidental due to bench width or comfort, not deliberate relational signaling."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1051_P3",
+      "visual_anchors": [
+        "bright daylight",
+        "outdoor plants",
+        "red bench"
+      ],
+      "symbolic_mapping": [
+        "daylight → temporal immediacy",
+        "plants in planter → cultivated presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The fleeting quality of childhood interaction, captured under unshaded daylight and framed by domestic greenery, evokes the tension between transience and continuity—each whispered moment is irreplaceable, yet embedded in routines that suggest ongoing development.",
+      "alternative_interpretations": [
+        "The scene is a casual snapshot with no intended commentary on time or growth."
+      ],
+      "limitations": [
+        "No clocks, aging signs, or sequential indicators confirm temporal reflection; interpretation projects narrative onto static composition."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:44:36.763196+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9dadc85f-953a-970c-a73b-9b40e23a36af",
+      "usage": {
+        "prompt_tokens": 685,
+        "completion_tokens": 992,
+        "total_tokens": 1677,
+        "completion_tokens_details": {
+          "text_tokens": 992
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 178,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070344189f9a16cfba8b40ea",
+      "usage": {
+        "completion_tokens": 849,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1807,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2656
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0819",
+  "sample_id": "PHL1800_HAIV_0288",
+  "file_name": "PHL1800_HAIV_0288.png",
+  "batch_id": "B018",
+  "position_in_batch": 29,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human torso viewed from the back",
+  "captions": {
+    "scene": [
+      "A grayscale illustration of a human upper body with ten circular transparent objects affixed to the back.",
+      "The figure stands upright against a plain white background with no environmental context.",
+      "Vertical dark lines run along both sides of the spine, intersecting some of the circular objects."
+    ],
+    "action": [
+      "Ten identical circular objects are attached symmetrically in two vertical columns on the back.",
+      "Each circular object contains a central dark dot and internal swirling patterns suggesting liquid or gel content.",
+      "The figure’s arms hang relaxed at its sides, hands loosely clenched."
+    ],
+    "rationale": [
+      "The symmetry and arrangement suggest intentional placement rather than random adhesion.",
+      "The transparency and internal detail of the circles imply they are containers, possibly for therapeutic or mechanical purposes.",
+      "The absence of facial features or clothing prevents identification of gender, age, or social role."
+    ],
+    "object": [
+      "The figure is rendered in grayscale with bold black outlines defining its silhouette and musculature.",
+      "Ten circular objects are arranged in two columns of five, aligned vertically along the paraspinal regions.",
+      "Each circle has a glossy surface with highlights indicating curvature and translucency.",
+      "A small dark central dot appears in each circle, positioned near the geometric center.",
+      "Two vertical bands of irregular dark markings flank the spinal column, partially overlapping the second and third rows of circles."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0819_P1",
+      "visual_anchors": [
+        "ten symmetrically placed transparent circles",
+        "central dark dots inside each circle",
+        "vertical dark bands flanking the spine"
+      ],
+      "symbolic_mapping": [
+        "transparent circles → external monitoring or intervention",
+        "central dots → focal points of control or data collection"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image may represent bodily surveillance or mechanization, where the human form becomes a substrate for externally imposed systems, evoking tensions between autonomy and control.",
+      "alternative_interpretations": [
+        "It could depict a medical or therapeutic device, such as cupping therapy apparatus, with no philosophical intent."
+      ],
+      "limitations": [
+        "No labels, interfaces, or contextual cues confirm surveillance or control; internal patterns are ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0819_P2",
+      "visual_anchors": [
+        "grayscale monochrome rendering",
+        "absence of head and lower limbs",
+        "uniform repetition of circles"
+      ],
+      "symbolic_mapping": [
+        "lack of individuating features → erasure of personal identity",
+        "repetition → standardization or dehumanization"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The anonymized, segmented body suggests a critique of how modern systems reduce individuals to functional units, emphasizing role over personhood.",
+      "alternative_interpretations": [
+        "The omission of head and legs may be purely stylistic for focus on the torso region, common in anatomical diagrams."
+      ],
+      "limitations": [
+        "Stylization alone does not prove intent to erase identity; many technical illustrations omit non-relevant anatomy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0819_P3",
+      "visual_anchors": [
+        "glossy reflective surfaces of circles",
+        "swirling internal textures",
+        "static posture of figure"
+      ],
+      "symbolic_mapping": [
+        "reflection and swirls → instability of perception or inner states",
+        "static pose → enforced stillness amid internal flux"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The contrast between the fixed external form and dynamic internal contents may symbolize the tension between observable reality and elusive subjective experience, questioning the limits of objective knowledge.",
+      "alternative_interpretations": [
+        "The swirls may simply indicate fluid movement within a physical device, such as suction cups with air displacement."
+      ],
+      "limitations": [
+        "Internal textures are non-representational and could be decorative or incidental; no motion is depicted."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:19:27.621732+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1043a560-784b-9772-882f-1673ef2b0023",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 901,
+        "total_tokens": 2434,
+        "completion_tokens_details": {
+          "text_tokens": 901
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703191002945222ef5e47ac",
+      "usage": {
+        "completion_tokens": 762,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2861,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3623
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

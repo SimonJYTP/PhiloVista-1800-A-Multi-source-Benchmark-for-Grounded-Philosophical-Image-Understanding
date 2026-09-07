@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1072",
+  "sample_id": "PHL1800_IRFL_0049",
+  "file_name": "PHL1800_IRFL_0049.jpg",
+  "batch_id": "B023",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_deepseek_generate_glm_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "an older man receiving a massage from a woman",
+  "captions": {
+    "scene": [
+      "An older man lies face down on a padded massage table.",
+      "A woman stands behind the man, leaning forward slightly.",
+      "The background is plain white, suggesting a studio setting."
+    ],
+    "action": [
+      "The man turns his head to look back at the viewer with his mouth open.",
+      "The woman holds her clasped hands above the man's back.",
+      "The woman looks downward toward the man with a smiling expression."
+    ],
+    "rationale": [
+      "The man's position on the padded table and exposed shoulders indicate a massage setting, but the exact location and therapist relationship are uncertain.",
+      "The woman's clasped hands and smile suggest she is participating in the massage, but whether she is actively pressing or preparing to press is not clearly shown.",
+      "The man's open mouth and direct gaze convey an expressive reaction, but the specific cause or emotion behind it cannot be determined from the still image."
+    ],
+    "object": [
+      "A bald older man with a gray mustache is lying face down on a light-colored padded massage table.",
+      "The man has a tattoo on his left upper arm showing a face-like design.",
+      "The man has a tattoo on his right forearm showing a pink flower.",
+      "A woman with reddish-brown hair is standing behind the man.",
+      "The woman wears a white collared shirt and a silver watch on her left wrist."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1072_P1",
+      "visual_anchors": [
+        "The man's exposed skin and lying posture",
+        "The woman's clasped hands hovering above him"
+      ],
+      "symbolic_mapping": [
+        "Lying face down maps to vulnerability and lack of control",
+        "Clasped hands above map to caregiving or intervention"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The interaction shows a dynamic where one person is physically constrained and exposed while another wields a form of power or care, suggesting a responsibility to act without harming the vulnerable subject.",
+      "alternative_interpretations": [
+        "This could simply be a staged photograph of a massage with no deeper power dynamic."
+      ],
+      "limitations": [
+        "The image does not reveal the relationship between the two people or the outcome of the massage."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1072_P2",
+      "visual_anchors": [
+        "The man's open mouth and wide eyes",
+        "The man's gray hair and mustache"
+      ],
+      "symbolic_mapping": [
+        "The open mouth maps to an expressive moment or exclamation",
+        "Gray hair maps to aging and temporality"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The man's visible aging and sudden expressive face evoke the passage of time and the way outward appearance signals a person's stage in life, while his reaction highlights the immediacy of the present moment.",
+      "alternative_interpretations": [
+        "The expression may just be a playful or staged reaction for a photo, unrelated to mortality or aging."
+      ],
+      "limitations": [
+        "The image cannot show the man's actual age, thoughts, or the context of his reaction."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1072_P3",
+      "visual_anchors": [
+        "The woman looking down with a smile",
+        "The man looking back at the camera"
+      ],
+      "symbolic_mapping": [
+        "Smiling and looking down map to a caring or amused perspective",
+        "Looking back at the camera maps to self-presentation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The differing gazes suggest a social encounter where the woman is engaged with the man while the man presents himself externally, raising questions about what each person knows or perceives about the situation.",
+      "alternative_interpretations": [
+        "The gazes are simply directed by the photographer to capture a specific pose, not indicative of any actual social dynamic."
+      ],
+      "limitations": [
+        "The image is a static photograph and cannot confirm the psychological state of either subject."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:32:40.702101+00:00",
+    "generator": "deepseek",
+    "reviewer": "glm",
+    "primary": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash-vision-exp",
+      "request_id": "19dac10c-a97f-470e-8d67-e8a774dd158d",
+      "usage": {
+        "prompt_tokens": 985,
+        "completion_tokens": 1062,
+        "total_tokens": 2047,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 91
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 89
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907053229db31703ad69544b8",
+      "usage": {
+        "completion_tokens": 778,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2124,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2902
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

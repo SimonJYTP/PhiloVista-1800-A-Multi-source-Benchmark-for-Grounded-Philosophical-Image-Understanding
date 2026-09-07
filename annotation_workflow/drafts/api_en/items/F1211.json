@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1211",
+  "sample_id": "PHL1800_IRFL_0273",
+  "file_name": "PHL1800_IRFL_0273.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one soldier in full combat gear walking on a dirt road",
+  "captions": {
+    "scene": [
+      "A sunlit, unpaved rural road with parallel tire tracks and disturbed soil mounds",
+      "Sparse dry grass and bare earth on sloping terrain flanking the road",
+      "Shallow depth of field blurs background vegetation and ground"
+    ],
+    "action": [
+      "The soldier walks forward with left foot mid-stride, right foot planted",
+      "Both hands grip an assault rifle held diagonally across the torso",
+      "Head is upright, gaze directed slightly downward and ahead"
+    ],
+    "rationale": [
+      "Camouflage pattern and equipment suggest military context, but unit or nation cannot be confirmed from visible insignia alone",
+      "Facial paint application appears deliberate and tactical, yet its specific purpose (e.g., concealment vs. identification) is not visually verifiable",
+      "Weapon configuration includes a handguard, magazine, and sling; exact model is indistinct due to angle and resolution"
+    ],
+    "object": [
+      "The soldier wears a multicam-pattern uniform consisting of jacket, trousers, and cap, all matching in color scheme and texture.",
+      "Green and brown facial camouflage paint covers the forehead, cheeks, and chin, applied in irregular patches.",
+      "A black assault rifle with a polymer handguard, fixed stock, and attached sling is held with both hands across the chest.",
+      "Tan combat boots with laces are worn, showing minor soil accumulation on soles and uppers.",
+      "A tactical vest with MOLLE webbing, pouches, and a visible patch reading 'MY' (partially legible) is worn over the uniform."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1211_P1",
+      "visual_anchors": [
+        "facial camouflage paint",
+        "standardized uniform",
+        "rifle held in ready position"
+      ],
+      "symbolic_mapping": [
+        "uniform signifies institutional identity subsuming individual appearance",
+        "camouflage implies intentional erasure of personal visibility for collective function"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The subject embodies the tension between individual presence and institutional role: the face is partially obscured by paint, the body encased in standardized gear, and the posture disciplined—suggesting identity as a constructed performance within a social structure of duty.",
+      "alternative_interpretations": [
+        "This is simply standard field procedure for concealment and readiness, with no symbolic intent implied by the wearer."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism; paint may serve purely functional purposes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1211_P2",
+      "visual_anchors": [
+        "dirt road with deep tire tracks",
+        "soldier walking alone",
+        "uneven terrain underfoot"
+      ],
+      "symbolic_mapping": [
+        "road as linear path through uncertain landscape",
+        "solitary movement as enactment of commitment despite ambiguity"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The solitary figure advancing along a marked but unrefined path evokes the philosophical notion of journey as continuous choice amid impermanence—the road bears traces of prior passage yet remains unstable, mirroring how action unfolds in time without guaranteed outcomes.",
+      "alternative_interpretations": [
+        "The road is merely a logistical route; the soldier’s movement reflects routine patrol, not existential metaphor."
+      ],
+      "limitations": [
+        "No indication of destination, duration, or internal reflection; the scene lacks narrative markers beyond motion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1211_P3",
+      "visual_anchors": [
+        "tactical vest with visible 'MY' patch",
+        "MOLLE webbing with attached gear",
+        "weapon slung but held ready"
+      ],
+      "symbolic_mapping": [
+        "modular gear system represents distributed responsibility across tools and roles",
+        "readiness posture signals suspended agency awaiting command"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The integration of standardized equipment and controlled posture visualizes ethics as embedded in material practice: responsibility is not abstract but enacted through disciplined readiness, where power resides in the capacity to act—and to refrain—within defined constraints.",
+      "alternative_interpretations": [
+        "Gear configuration follows doctrinal SOP; posture reflects immediate situational awareness, not ethical deliberation."
+      ],
+      "limitations": [
+        "Patch text is incomplete ('MY' only); no visible command interface or moral dilemma is present."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:04:28.679904+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cc586e06-a7e2-91a0-8f87-c77e023ee62a",
+      "usage": {
+        "prompt_tokens": 3010,
+        "completion_tokens": 986,
+        "total_tokens": 3996,
+        "completion_tokens_details": {
+          "text_tokens": 986
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2503,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704034859e4e7140725462e",
+      "usage": {
+        "completion_tokens": 845,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4977,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5822
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

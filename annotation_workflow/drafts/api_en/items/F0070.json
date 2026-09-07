@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0070",
+  "sample_id": "PHL1800_HAIV_0496",
+  "file_name": "PHL1800_HAIV_0496.png",
+  "batch_id": "B004",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a central robed figure pouring liquid from a basin onto a kneeling nude figure, surrounded by eight other figures",
+  "captions": {
+    "scene": [
+      "A brightly lit outdoor or open-air setting with yellow background glow and turquoise ground surface resembling shallow water or wet floor.",
+      "Multiple figures clustered tightly around two central individuals engaged in a pouring action; clothing varies from robes to tunics and sleeveless tops.",
+      "Scattered debris including torn fabric pieces, small dark fragments, and a crumpled grey garment lie on the ground near the kneeling figure."
+    ],
+    "action": [
+      "The central robed figure holds a grey basin tilted downward, releasing a visible stream of blue liquid onto the kneeling figure’s torso and lap.",
+      "The kneeling figure raises both hands upward, palms open, mouth slightly open, and gazes toward the robed figure.",
+      "Six surrounding figures raise one or both hands with open palms; two others have arms lowered but faces oriented toward the central interaction."
+    ],
+    "rationale": [
+      "The stream of blue liquid originates directly from the basin held by the robed figure and contacts the kneeling figure, indicating intentional pouring rather than accidental spillage.",
+      "The consistent upward gaze and open-palm gestures among multiple observers suggest collective attention focused on the central act, though intent (e.g., celebration, ritual, mockery) is not visually determinable.",
+      "The presence of torn fabric and debris on the ground implies prior removal of clothing or disruption, but the sequence of events leading to this state is not depicted."
+    ],
+    "object": [
+      "The robed figure wears a long white robe with loose sleeves, has long brown hair, a full beard, and holds a grey basin with both hands.",
+      "The kneeling figure is bare-chested, has dark curly hair and a beard, and sits partially submerged in a light-blue puddle-like area with scattered grey cloth fragments nearby.",
+      "A figure in a purple tunic stands behind the kneeling figure, smiling broadly with teeth visible and right hand raised palm-outward.",
+      "A figure in a green short-sleeved shirt stands on the far right, bearded, with left hand raised and right hand resting on the shoulder of another figure.",
+      "Eight distinct surrounding figures are visible: one behind the robed figure (left), one directly behind the kneeling figure (center-back), two to the right of the kneeling figure (one purple, one green), and four more in the upper-right cluster (three with raised hands, one partially obscured)."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0070_P1",
+      "visual_anchors": [
+        "open-palm gestures of multiple figures",
+        "stream of liquid flowing from basin to recipient",
+        "torn fabric on ground"
+      ],
+      "symbolic_mapping": [
+        "open palms may signify witness or surrender",
+        "liquid flow may represent transfer or purification"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "social_existence"
+      ],
+      "interpretation": "The scene visually frames an act of communal witnessing where physical transformation (clothing removal, liquid application) is enacted before a group, suggesting shared meaning-making through embodied ritual.",
+      "alternative_interpretations": [
+        "It could depict a practical hygiene event such as bathing or washing after labor, with onlookers reacting with amusement or curiosity."
+      ],
+      "limitations": [
+        "No textual labels, facial expressions are stylized and exaggerated, preventing definitive identification of emotional valence or cultural context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0070_P2",
+      "visual_anchors": [
+        "kneeling figure’s upward gaze",
+        "robed figure’s focused expression",
+        "asymmetrical power positioning (standing vs. kneeling)"
+      ],
+      "symbolic_mapping": [
+        "kneeling posture may indicate submission or receptivity",
+        "standing figure’s control over liquid source suggests agency"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The spatial hierarchy and directed action imply a moment of delegated authority or moral intervention, where one agent performs a transformative act upon another under collective observation.",
+      "alternative_interpretations": [
+        "The kneeling figure may be voluntarily participating in a celebratory or initiatory custom, not subordination."
+      ],
+      "limitations": [
+        "Facial features are caricatured; no clear indicators of coercion, consent, or institutional role are present."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0070_P3",
+      "visual_anchors": [
+        "scattered torn fabric",
+        "bare torso of kneeling figure",
+        "multiple observers with varied expressions"
+      ],
+      "symbolic_mapping": [
+        "removal of garments may signal shedding of prior identity",
+        "group presence reinforces social validation or judgment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visual emphasis on bodily exposure amid communal scrutiny highlights how identity is negotiated through appearance and witnessed transition, especially when stripped of customary coverings.",
+      "alternative_interpretations": [
+        "The torn fabric may result from accidental tearing during movement, not symbolic undressing."
+      ],
+      "limitations": [
+        "No intact garments remain to confirm intentional removal; the state of dress could be due to prior activity unrelated to the depicted moment."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The target subject incorrectly states 'seven other figures' when there are eight surrounding figures; the object description miscounts figures and misidentifies clothing colors; the action description misstates the number of raised hands for surrounding figures."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:55:51.746667+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5d7b470b-4f85-9767-b40f-7f2c42b52575",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1125,
+        "total_tokens": 2658,
+        "completion_tokens_details": {
+          "text_tokens": 1125
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701553170cccc5931d44cf0",
+      "usage": {
+        "completion_tokens": 1031,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3082,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4113
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

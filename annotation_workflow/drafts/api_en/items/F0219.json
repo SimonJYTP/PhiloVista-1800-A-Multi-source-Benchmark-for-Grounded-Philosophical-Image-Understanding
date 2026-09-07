@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0219",
+  "sample_id": "PHL1800_MM_0089",
+  "file_name": "PHL1800_MM_0089.jpg",
+  "batch_id": "B007",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a seated adult man and a standing boy facing each other across a desk",
+  "captions": {
+    "scene": [
+      "A sunlit office interior with large windows, wooden furniture, and bookshelves.",
+      "Papers, open books, and a computer monitor cover the desk surface.",
+      "A tall stack of documents rests on a drawer unit to the right of the desk."
+    ],
+    "action": [
+      "The man sits in an ergonomic office chair, holding a small notebook or notepad with both hands.",
+      "The boy stands upright, holding a blue pen in his right hand, looking toward the man.",
+      "A speech bubble originates from the man’s head area containing legible text: 'You have your own story to tell in your own way.'"
+    ],
+    "rationale": [
+      "The man appears engaged in conversation due to his orientation, facial expression, and the presence of the speech bubble.",
+      "The boy’s posture and gaze suggest attentive listening rather than active speaking at this moment.",
+      "The desk clutter and computer interface imply work or study activity, but specific tasks are unreadable on screen."
+    ],
+    "object": [
+      "A man with short dark hair and a beard wears a light-blue long-sleeved shirt and dark trousers, seated in a black-and-blue wheeled office chair.",
+      "A boy with short brown hair wears a red hooded sweatshirt with a visible patch on the left chest, dark jeans, and dark shoes, standing beside the desk.",
+      "A desktop computer with a silver base and black bezel displays a windowed interface with multiple panels; text within is illegible.",
+      "An open hardcover book lies flat on the desk near the computer, with pages fanned out and a blue pen resting on it.",
+      "A wooden cabinet with three drawers and metal handles sits to the right of the desk, supporting a tall pile of loose papers."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0219_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "boy holding pen",
+        "man seated at desk"
+      ],
+      "symbolic_mapping": [
+        "pen as instrument of self-expression",
+        "desk as site of authority or guidance"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene visually enacts a moment where narrative agency is delegated: the adult affirms the boy’s right to author his own identity through personal storytelling, positioning writing (pen) as a tool for self-definition.",
+      "alternative_interpretations": [
+        "This may simply depict a teacher reviewing a student’s assignment and offering encouragement without deeper philosophical intent."
+      ],
+      "limitations": [
+        "The speech bubble text is the sole explicit indicator of intent; no facial expressions or gestures confirm emotional tone or reciprocity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0219_P2",
+      "visual_anchors": [
+        "stack of papers",
+        "computer screen",
+        "bookshelf with books"
+      ],
+      "symbolic_mapping": [
+        "paper stack as accumulated knowledge or obligation",
+        "screen as mediated information"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of analog (books, paper) and digital (monitor) media suggests tension between traditional epistemic authority and contemporary modes of knowledge production, with the boy positioned at the threshold.",
+      "alternative_interpretations": [
+        "The clutter reflects routine administrative workload rather than symbolic contrast; the boy may be waiting for instructions unrelated to epistemology."
+      ],
+      "limitations": [
+        "Screen content is unreadable; no labels or titles on books or papers identify their subject matter or purpose."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0219_P3",
+      "visual_anchors": [
+        "large windows with daylight",
+        "man and boy facing each other",
+        "shared desk space"
+      ],
+      "symbolic_mapping": [
+        "window light as openness or future possibility",
+        "shared desk as relational boundary"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial arrangement—adult seated, child standing, light entering from behind—frames a social relation where institutional structure (desk, chair, paperwork) coexists with an invitation to autonomous voice, reflecting negotiated freedom within constraint.",
+      "alternative_interpretations": [
+        "The lighting and posture may merely reflect practical room layout and age-appropriate seating, not symbolic hierarchy or liberation."
+      ],
+      "limitations": [
+        "No visible markers (e.g., uniforms, logos, signage) confirm institutional context; posture could be momentary rather than structural."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:19:38.446559+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-caa20a43-957f-9a3c-8f82-965aec909406",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 998,
+        "total_tokens": 2531,
+        "completion_tokens_details": {
+          "text_tokens": 998
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702191638ab9b4d44be4f83",
+      "usage": {
+        "completion_tokens": 858,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2952,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3810
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

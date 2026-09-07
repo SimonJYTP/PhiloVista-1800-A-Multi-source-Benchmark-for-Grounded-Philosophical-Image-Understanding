@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0228",
+  "sample_id": "PHL1800_HAIV_0355",
+  "file_name": "PHL1800_HAIV_0355.png",
+  "batch_id": "B007",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single silhouetted human figure",
+  "captions": {
+    "scene": [
+      "A grayscale interior with vertical striped curtains on the right and a filmstrip-like border on the left.",
+      "Three glossy red hearts float in mid-air against a light gray background, positioned above and to the left of the figure’s head.",
+      "The figure is shown in profile, facing left, with minimal facial detail visible due to silhouette rendering."
+    ],
+    "action": [
+      "The figure remains stationary with head tilted downward and eyes closed or nearly closed.",
+      "Red hearts appear suspended in space without visible support or motion trails.",
+      "No limbs are extended; posture suggests stillness rather than active movement."
+    ],
+    "rationale": [
+      "The presence of filmstrip elements suggests a cinematic or mediated context, though no screen or projector is visible.",
+      "Hearts are rendered with highlights indicating a light source from upper left, but their floating placement lacks physical grounding.",
+      "The figure’s lack of discernible expression or gesture prevents definitive attribution of emotion or intent."
+    ],
+    "object": [
+      "A black silhouette of a human figure occupies the lower-right portion of the image, showing head, shoulders, and upper torso.",
+      "Three identical glossy red heart shapes are positioned in the upper-left quadrant, varying slightly in size and orientation.",
+      "A vertical black-and-gray filmstrip border runs along the left edge, composed of rectangular frames with one frame containing a small white square and black dot.",
+      "Vertical dark gray stripes resembling curtains occupy the far right edge of the image.",
+      "The background is a uniform light gray plane with no texture or gradient."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0228_P1",
+      "visual_anchors": [
+        "filmstrip border",
+        "floating hearts",
+        "silhouette figure"
+      ],
+      "symbolic_mapping": [
+        "filmstrip → mediation of experience",
+        "hearts → affective content detached from embodiment"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image may depict how emotional symbols (hearts) circulate independently of embodied subjects within constructed visual regimes (filmstrip), questioning whether identity is constituted through external signifiers rather than internal states.",
+      "alternative_interpretations": [
+        "It could simply be a stylized illustration for a romantic theme, using conventional iconography without philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or narrative context confirm symbolic intent; hearts and filmstrip are common decorative motifs."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0228_P2",
+      "visual_anchors": [
+        "silhouette figure",
+        "closed eyes",
+        "uniform gray background"
+      ],
+      "symbolic_mapping": [
+        "silhouette → anonymity",
+        "closed eyes → withdrawal or introspection"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s obscured features and inward orientation may suggest a tension between self-concealment and social visibility, raising questions about autonomy when appearance is reduced to a generic form under neutral conditions.",
+      "alternative_interpretations": [
+        "The closed eyes and posture may indicate rest or fatigue rather than philosophical withdrawal."
+      ],
+      "limitations": [
+        "Facial features are absent by design, not omission; thus, ‘withdrawal’ is inferred, not observed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0228_P3",
+      "visual_anchors": [
+        "three red hearts",
+        "lack of connection to figure",
+        "static composition"
+      ],
+      "symbolic_mapping": [
+        "disembodied hearts → idealized affect without reciprocity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The spatial separation between the figure and the hearts may imply a disjunction between subjective presence and projected emotional values, prompting reflection on responsibility for affective symbols that circulate independently of agents.",
+      "alternative_interpretations": [
+        "The hearts may be decorative elements placed for visual balance, with no intended relational meaning."
+      ],
+      "limitations": [
+        "No lines, arrows, or gestures link hearts to the figure; proximity alone does not establish relation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:21:03.884828+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dc001d86-1885-9e94-bb0b-bf33d3aa5206",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 906,
+        "total_tokens": 2439,
+        "completion_tokens_details": {
+          "text_tokens": 906
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070220420768db5d1cb04a4f",
+      "usage": {
+        "completion_tokens": 768,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2865,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3633
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

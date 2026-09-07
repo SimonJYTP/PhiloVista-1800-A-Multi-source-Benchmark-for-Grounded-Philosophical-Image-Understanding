@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0014",
+  "sample_id": "PHL1800_HL_0360",
+  "file_name": "PHL1800_HL_0360.png",
+  "batch_id": "B003",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "mounted police officer and motorcycle officer at street intersection",
+  "captions": {
+    "scene": [
+      "A sunlit urban street with stone buildings, mature trees, and a crowd of pedestrians on the sidewalk.",
+      "A horse-mounted officer stands beside a white police motorcycle near a crosswalk and traffic signal pole.",
+      "Multiple bicycles and pedestrians are visible in the background, suggesting a public gathering or event."
+    ],
+    "action": [
+      "A person wearing a blue helmet sits astride a dark brown horse, holding reins, with feet in stirrups.",
+      "A uniformed officer sits on a white police motorcycle, facing forward, hands near handlebars, wearing sunglasses and a badge.",
+      "Pedestrians stand or walk along the sidewalk; some hold bicycles, others appear to observe the officers."
+    ],
+    "rationale": [
+      "The presence of two uniformed officers—one mounted, one on motorcycle—suggests coordinated patrol or event security, though no explicit signage confirms purpose.",
+      "The horse’s stance (four hooves planted, head upright) indicates it is stationary, not in motion, supported by lack of motion blur.",
+      "The crowd density and casual attire imply a non-emergency context, but the exact nature (e.g., parade, protest, festival) is not visually determinable."
+    ],
+    "object": [
+      "A dark brown horse with black mane and tail stands on asphalt, wearing a saddle with blue trim and a black saddle pad.",
+      "A white police motorcycle with chrome accents, side case labeled 'POLICE', and a blue emergency light bar on front fairing is parked parallel to the curb.",
+      "A person in light-colored shirt, dark pants, and blue helmet sits on the horse, holding wooden reins and wearing black riding boots.",
+      "A uniformed officer wears a white short-sleeved shirt with badge, dark trousers, black boots, and sunglasses; seated on the motorcycle with left hand near throttle.",
+      "A stone building with gray shingle roof, multi-pane windows, and visible brickwork occupies the left background; a tree with green foliage stands behind the motorcycle."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0014_P1",
+      "visual_anchors": [
+        "blue helmet on rider",
+        "white police uniform",
+        "saddle with blue trim"
+      ],
+      "symbolic_mapping": [
+        "uniform elements signify institutional role over individual identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The standardized attire and equipment visually suppress personal distinctiveness in favor of functional social role, illustrating how institutional presence shapes perceived identity in public space.",
+      "alternative_interpretations": [
+        "The clothing may simply reflect practical requirements for visibility and safety, not symbolic intent."
+      ],
+      "limitations": [
+        "No facial features or name tags are visible to confirm whether identity is intentionally obscured or merely incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0014_P2",
+      "visual_anchors": [
+        "horse standing still beside motorcycle",
+        "officers positioned at street edge",
+        "pedestrians observing from sidewalk"
+      ],
+      "symbolic_mapping": [
+        "proximity of traditional (horse) and modern (motorcycle) enforcement tools suggests continuity of authority across technological change"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of equine and motorized policing embodies a layered exercise of state power that integrates historical continuity with technological adaptation, without overt coercion.",
+      "alternative_interpretations": [
+        "The pairing may result from logistical convenience rather than symbolic intention—e.g., both units assigned to same detail."
+      ],
+      "limitations": [
+        "No interaction between officers or deployment context is shown; co-location does not prove conceptual linkage."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0014_P3",
+      "visual_anchors": [
+        "crowd of diverse pedestrians",
+        "bicycles parked or held",
+        "open street with no barriers"
+      ],
+      "symbolic_mapping": [
+        "shared public space occupied simultaneously by authority figures and civilians reflects negotiated coexistence rather than domination"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The unobstructed proximity of civilians to armed officers in a non-confrontational setting visualizes a social contract where freedom persists within implicit constraints of lawful order.",
+      "alternative_interpretations": [
+        "The scene could represent routine surveillance during a permitted assembly, where civilian presence is tolerated but not necessarily affirmed as equal."
+      ],
+      "limitations": [
+        "Facial expressions and body language of pedestrians are indistinct; no verbal or gestural exchange is visible to confirm mutual recognition or tension."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:48:28.507168+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a928c72e-33d9-9166-8ccb-5048b4e3892b",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1012,
+        "total_tokens": 1781,
+        "completion_tokens_details": {
+          "text_tokens": 1012
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014808fb492f2a55a94a8f",
+      "usage": {
+        "completion_tokens": 876,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1942,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2818
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

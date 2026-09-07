@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1204",
+  "sample_id": "PHL1800_HL_0024",
+  "file_name": "PHL1800_HL_0024.png",
+  "batch_id": "B002",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a wet street lined with parked vehicles and storefronts",
+  "captions": {
+    "scene": [
+      "A narrow, damp street flanked by multi-story buildings with varied facades, some showing snow on rooftops.",
+      "Vehicles including a green utility truck, a dark minivan, and a black SUV are parked along the curb in front of commercial establishments.",
+      "Blue directional signs with upward arrows and a blue 'POLICE ROAD CLOSED' sign are placed on the street surface."
+    ],
+    "action": [
+      "The street is visibly wet, suggesting recent rain or melting snow; no active motion is observed.",
+      "All vehicles are stationary with wheels aligned parallel to the curb; no occupants visible inside or outside them.",
+      "A hanging banner displays a horse-and-rider silhouette above a shop entrance; no movement detected in the banner."
+    ],
+    "rationale": [
+      "The presence of snow on roofs but not on the street suggests temperatures have risen above freezing recently.",
+      "The 'ROAD CLOSED' sign implies official restriction, though no barriers or personnel are visible to confirm enforcement.",
+      "Multiple storefronts show open windows and signage (e.g., 'HODGES', 'BANK & COUNTRY KITCHENS'), indicating commercial activity, but no people are present to confirm operation."
+    ],
+    "object": [
+      "A green and silver utility truck with rear cargo cover and license plate 'GJ R 3M' is parked on the left side of the street.",
+      "A dark gray minivan with tinted rear windows and visible side mirror is parked directly behind the utility truck.",
+      "A black SUV with UK-style rear license plate 'BK62 GLU' is parked on the right side, facing away from the camera.",
+      "A rectangular blue sign reading 'POLICE ROAD CLOSED' in white uppercase letters lies flat on the wet pavement near the center-right.",
+      "A vertical blue banner with a black horse-and-rider silhouette and partially legible text 'Lloyds TSB' hangs from a building on the right."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1204_P1",
+      "visual_anchors": [
+        "blue 'POLICE ROAD CLOSED' sign",
+        "empty street",
+        "parked vehicles"
+      ],
+      "symbolic_mapping": [
+        "road closure as enforced absence of passage",
+        "stillness as suspension of routine"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The closed road and vacant street evoke a momentary suspension of civic flow, where institutional authority halts movement, revealing how social existence depends on regulated access rather than mere physical space.",
+      "alternative_interpretations": [
+        "The scene may simply reflect off-peak hours or temporary traffic management without deeper implication."
+      ],
+      "limitations": [
+        "No visible police presence or explanation for closure prevents confirming intent or duration."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1204_P2",
+      "visual_anchors": [
+        "snow on rooftops",
+        "wet pavement",
+        "multiple building facades"
+      ],
+      "symbolic_mapping": [
+        "melting snow as transition between states",
+        "layered architecture as accumulated history"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of residual snow and wet ground marks a temporal threshold—what was solid is now fluid—mirroring how identity and appearance are contingent on transient conditions rather than fixed attributes.",
+      "alternative_interpretations": [
+        "The weather is merely incidental; the image documents a typical winter day in a town center."
+      ],
+      "limitations": [
+        "No clocks, calendars, or seasonal markers beyond snow make precise temporal inference unreliable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1204_P3",
+      "visual_anchors": [
+        "'HODGES' sign",
+        "'BANK & COUNTRY KITCHENS' sign",
+        "Lloyds TSB banner"
+      ],
+      "symbolic_mapping": [
+        "commercial signage as public declaration of function",
+        "coexistence of local and national brands as layered economic identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The co-location of named local businesses and a national financial institution signals a hybrid social fabric where localized labor and standardized technology jointly sustain communal life, even in apparent stillness.",
+      "alternative_interpretations": [
+        "Signage is purely functional; no symbolic layer is intended or required for interpretation."
+      ],
+      "limitations": [
+        "No interior views or operational evidence confirm whether these businesses are active or defunct."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:42:43.412499+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-651a3de1-34e0-97e1-a50c-286e5a1f098e",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 998,
+        "total_tokens": 1807,
+        "completion_tokens_details": {
+          "text_tokens": 998
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014230d79ced7ad2034f9d",
+      "usage": {
+        "completion_tokens": 852,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1963,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2815
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

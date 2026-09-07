@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0488",
+  "sample_id": "PHL1800_IRFL_0436",
+  "file_name": "PHL1800_IRFL_0436.jpg",
+  "batch_id": "B012",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four people collaboratively painting a large canvas",
+  "captions": {
+    "scene": [
+      "A large white canvas on an easel displays a stylized landscape with green foliage, a red house, a yellow vehicle, and winding waterways.",
+      "The canvas rests on a black trestle table against a plain off-white background.",
+      "Four figures are positioned around the canvas: one on a swing within the painted foliage, one on a ladder painting the house, one crouching near blue paint, and one painting the yellow vehicle."
+    ],
+    "action": [
+      "One person sits on a swing suspended from the top edge of the canvas, holding a paintbrush and appearing to paint the green foliage area.",
+      "One person stands on a wooden ladder, reaching upward to apply red paint to the roofline of the painted house.",
+      "One person crouches beside a blue bucket and red-handled brush, dabbing paint onto the lower left portion of the canvas."
+    ],
+    "rationale": [
+      "The swing is physically attached to the canvas frame, not part of the painted scene, because its ropes extend beyond the painted boundary and connect to the real-world top edge of the canvas.",
+      "The ladder is placed in front of the canvas, not depicted within it, because its legs rest on the floor and its rungs intersect the painted surface without being integrated into the image’s perspective.",
+      "The yellow vehicle is partially painted and has visible brushstrokes applied by a standing figure, indicating active creation rather than finished depiction."
+    ],
+    "object": [
+      "A rectangular white canvas is mounted on a black metal easel with two horizontal support bars.",
+      "A wooden A-frame ladder with eight visible rungs stands upright in front of the canvas, supporting one painter.",
+      "A yellow van-like vehicle is depicted on the right side of the canvas, with its front wheel and driver-side door partially painted and a hand applying paint to its hood.",
+      "A blue paint bucket with a red-handled brush resting inside it sits on the floor near the lower-left corner of the canvas.",
+      "A green tree-shaped mass occupies the upper-left quadrant of the canvas, containing a swing with a seated figure whose feet dangle below the swing seat."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0488_P1",
+      "visual_anchors": [
+        "swing attached to canvas frame",
+        "painter on ladder intersecting painted house",
+        "crouching painter adding blue strokes"
+      ],
+      "symbolic_mapping": [
+        "the physical intrusion of tools and bodies into the painted world symbolizes co-creation of reality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The image suggests that social existence is enacted through collaborative making, where participants simultaneously inhabit and construct the shared world they depict.",
+      "alternative_interpretations": [
+        "This is a literal illustration of artists working on a mural, with no symbolic intent beyond depicting teamwork."
+      ],
+      "limitations": [
+        "No textual labels or contextual signage confirm intentional symbolism; all interpretation relies on spatial juxtaposition alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0488_P2",
+      "visual_anchors": [
+        "red house being painted mid-process",
+        "yellow vehicle incomplete",
+        "winding river lines unfinished"
+      ],
+      "symbolic_mapping": [
+        "unfinished elements indicate ongoing becoming rather than fixed representation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "Truth is portrayed as provisional and emergent, shaped by continuous labor rather than static revelation, aligning with process-oriented epistemology.",
+      "alternative_interpretations": [
+        "The incomplete state reflects practical workflow—artists paint in stages—and does not imply philosophical stance."
+      ],
+      "limitations": [
+        "The degree of completion is ambiguous; some areas may be intentionally minimal rather than unfinished."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0488_P3",
+      "visual_anchors": [
+        "four distinct figures engaged in different tasks",
+        "shared canvas as central focus",
+        "no hierarchy in positioning"
+      ],
+      "symbolic_mapping": [
+        "distributed agency across roles mirrors non-hierarchical collective authorship"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "Ethical responsibility emerges through distributed participation: each figure contributes within constraints of the shared medium, enacting freedom through coordinated constraint.",
+      "alternative_interpretations": [
+        "The arrangement reflects standard division of labor in mural painting, not normative claims about ethics or freedom."
+      ],
+      "limitations": [
+        "No visual cues (e.g., facial expressions, gestures of consent or coercion) indicate moral valence or intentional ethical framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:50:45.720337+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8e71f39d-33c2-9034-828e-057b991f5a67",
+      "usage": {
+        "prompt_tokens": 831,
+        "completion_tokens": 1012,
+        "total_tokens": 1843,
+        "completion_tokens_details": {
+          "text_tokens": 1012
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 324,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025035fe14b81559194646",
+      "usage": {
+        "completion_tokens": 877,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2034,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2911
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

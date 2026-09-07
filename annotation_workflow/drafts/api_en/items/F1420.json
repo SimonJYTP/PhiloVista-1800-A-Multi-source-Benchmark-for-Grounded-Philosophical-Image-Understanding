@@ -1,0 +1,164 @@
+{
+  "annotation_item_id": "F1420",
+  "sample_id": "PHL1800_IRFL_0311",
+  "file_name": "PHL1800_IRFL_0311.jpg",
+  "batch_id": "B029",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "dense vehicular and pedestrian traffic on a multi-lane road",
+  "captions": {
+    "scene": [
+      "A congested urban roadway filled with cars, auto-rickshaws, motorcycles, and pedestrians, viewed from an elevated perspective.",
+      "Multiple lanes of traffic moving slowly or stopped, with yellow auto-rickshaws dominating the foreground and midground.",
+      "Green trees line the right edge of the road; a blue bus is visible in the upper left background."
+    ],
+    "action": [
+      "People are seated on the roof and rear platform of a white three-wheeled vehicle, some holding onto railings.",
+      "Drivers and passengers remain inside vehicles; some vehicles show slight motion blur, suggesting minimal movement.",
+      "Pedestrians walk along the right shoulder amid stationary vehicles, including one person in orange near the center-right."
+    ],
+    "rationale": [
+      "The high density of vehicles and absence of gaps suggest traffic congestion rather than normal flow.",
+      "The presence of multiple people on a vehicle’s roof implies space constraints inside, though intent cannot be confirmed.",
+      "Yellow auto-rickshaws appear repeatedly and uniformly, indicating a common local transport type, but regional identification is unsupported."
+    ],
+    "object": [
+      "At least 12 distinct yellow auto-rickshaws are visible across the image, varying in orientation and occupancy.",
+      "A white three-wheeled vehicle in the lower center carries at least 8 people: 5 seated on its roof, 2 on its rear platform, and 1 driver inside.",
+      "A red car is partially visible in the bottom right corner, directly behind a yellow auto-rickshaw.",
+      "A blue bus with unreadable text on its front is positioned in the upper left quadrant, partially obscured by other vehicles.",
+      "Three individuals wearing orange shirts are visible: one standing on the right shoulder, two seated on the roof of the white vehicle."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1420_P1",
+      "visual_anchors": [
+        "people riding on vehicle roofs",
+        "tight clustering of vehicles",
+        "shared use of limited road space"
+      ],
+      "symbolic_mapping": [
+        "roof riders → adaptation under constraint",
+        "vehicle proximity → interdependence in mobility"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image manifests a collective negotiation of spatial limits, where individual movement is conditioned by shared infrastructure scarcity, reflecting how social existence emerges through constrained cohabitation.",
+      "alternative_interpretations": [
+        "This is simply routine traffic during peak hours without deeper implication."
+      ],
+      "limitations": [
+        "No signage, facial expressions, or directional cues confirm intentional adaptation versus passive endurance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1420_P2",
+      "visual_anchors": [
+        "yellow auto-rickshaws as repeated units",
+        "uniform vehicle types amid diversity",
+        "lack of lane discipline"
+      ],
+      "symbolic_mapping": [
+        "repetition of rickshaws → standardized response to systemic need"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The proliferation of identical transport units suggests technology shaped by labor necessity rather than preference, framing mobility not as personal choice but as routinized response to infrastructural conditions.",
+      "alternative_interpretations": [
+        "Yellow is a regulatory color for commercial vehicles in this jurisdiction, explaining uniformity without philosophical import."
+      ],
+      "limitations": [
+        "Vehicle color regulation is not visually verifiable; no license plates or official markings are legible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1420_P3",
+      "visual_anchors": [
+        "pedestrians walking between stopped vehicles",
+        "drivers waiting inside cabins",
+        "overlapping human silhouettes"
+      ],
+      "symbolic_mapping": [
+        "shared immobility → suspended agency",
+        "proximity without interaction → anonymity in density"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The stillness within motion—bodies present but unprogressing—evokes time as experienced in suspension, where identity recedes into the anonymous mass of waiting bodies.",
+      "alternative_interpretations": [
+        "People are merely commuting; their stillness reflects traffic signals, not existential condition."
+      ],
+      "limitations": [
+        "Temporal duration and internal states are invisible; stillness may be momentary, not sustained."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people on the white three-wheeled vehicle (candidate states 7, but visual inspection shows at least 8 distinct individuals: 5 on the roof, 2 on the rear platform, and 1 driver inside).",
+      "Candidate claims three individuals in orange shirts, but only two are visible (one on the right shoulder, two on the white vehicle’s roof—total three, but the image shows two distinct orange-shirted figures: one on the right shoulder and two on the white vehicle, totaling three; however, the candidate’s count of three is correct, but the description of their locations is slightly misaligned (the two on the white vehicle are part of the 7/8 count, so the total orange-shirted individuals are three, but the candidate’s breakdown is redundant).",
+      "Candidate states 'no vehicle appears to be in motion based on lack of motion blur,' but some vehicles (e.g., the white three-wheeled vehicle in the foreground) show slight motion blur, indicating minimal movement."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:30:13.353753+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-59ce27f7-830f-9357-ac86-31fc4b5c3ae2",
+      "usage": {
+        "prompt_tokens": 608,
+        "completion_tokens": 964,
+        "total_tokens": 1572,
+        "completion_tokens_details": {
+          "text_tokens": 964
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 101,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070429529b5952114d8a45b7",
+      "usage": {
+        "completion_tokens": 1114,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1679,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2793
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

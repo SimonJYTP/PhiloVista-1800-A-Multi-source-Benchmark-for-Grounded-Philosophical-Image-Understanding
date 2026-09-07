@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1295",
+  "sample_id": "PHL1800_HL_0349",
+  "file_name": "PHL1800_HL_0349.png",
+  "batch_id": "B027",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a yellow John Deere backhoe loader operating near a damaged sidewalk and fire hydrant",
+  "captions": {
+    "scene": [
+      "A street intersection with asphalt pavement, cracked concrete sidewalk, and a dug-out utility trench adjacent to a yellow fire hydrant.",
+      "Background includes parked cars (white, red), green trees, a bicycle leaning against a pole, and a wooden fence section on the right.",
+      "Daylight outdoor setting with shadows indicating sun from upper left; no visible precipitation or extreme weather."
+    ],
+    "action": [
+      "The backhoe’s bucket is positioned over an open excavation in the sidewalk, with its arm extended downward.",
+      "An operator wearing a high-visibility vest and hard hat is seated inside the cab, facing forward, hands near controls.",
+      "Loose soil and broken concrete surround the trench; several wooden-handled tools lie on the asphalt nearby."
+    ],
+    "rationale": [
+      "The excavated area aligns spatially with the fire hydrant and backhoe bucket, suggesting targeted work near infrastructure.",
+      "The presence of safety gear on the operator implies adherence to standard construction protocols, though compliance cannot be verified.",
+      "The wooden fence appears disassembled or displaced, but no direct causal link to the backhoe’s current position is visible."
+    ],
+    "object": [
+      "A yellow John Deere backhoe loader with black tires, visible 'DEERE' lettering on the boom arm, and a cab containing one person.",
+      "A yellow fire hydrant with a red top, standing upright on intact sidewalk adjacent to a rectangular excavation.",
+      "A rectangular trench in the sidewalk exposing dark soil and fragmented concrete, approximately 1.5 meters long and 0.8 meters wide.",
+      "Three wooden-handled tools (likely shovels or pry bars) lying parallel on the asphalt surface near the trench edge.",
+      "A vertical wooden fence section composed of three planks, leaning against an unseen support, with visible grain and weathering."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1295_P1",
+      "visual_anchors": [
+        "yellow fire hydrant",
+        "excavated trench",
+        "backhoe bucket poised above"
+      ],
+      "symbolic_mapping": [
+        "the hydrant as a symbol of public safety infrastructure",
+        "the trench as rupture in continuity"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of maintained civic infrastructure (hydrant) with active disruption (trench) reflects how technological labor sustains social existence through periodic intervention and repair.",
+      "alternative_interpretations": [
+        "This is routine municipal maintenance with no symbolic intent; the scene merely documents a temporary worksite."
+      ],
+      "limitations": [
+        "No signage, labels, or contextual documentation confirms purpose or jurisdiction of the work."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1295_P2",
+      "visual_anchors": [
+        "operator in high-visibility vest",
+        "isolated cab",
+        "tools laid aside"
+      ],
+      "symbolic_mapping": [
+        "the vest as marker of regulated role",
+        "cab as mediated interface between human and machine"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "labor_technology"
+      ],
+      "interpretation": "The operator’s visible protective attire and controlled posture suggest ethical responsibility enacted through procedural labor, where technology mediates duty toward public space.",
+      "alternative_interpretations": [
+        "The vest may be worn for visibility only; the operator’s posture could indicate waiting rather than active decision-making."
+      ],
+      "limitations": [
+        "Facial expression and hand positions are indistinct; intent cannot be determined from posture alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1295_P3",
+      "visual_anchors": [
+        "cracked sidewalk",
+        "freshly dug earth",
+        "intact hydrant"
+      ],
+      "symbolic_mapping": [
+        "cracks as traces of prior stress",
+        "new excavation as intentional reset"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The contrast between degraded surface (cracks) and deliberate removal (trench) evokes time’s dual nature: entropy visible in decay, and agency manifest in chosen intervention—implying journey through temporal layers of urban fabric.",
+      "alternative_interpretations": [
+        "Cracks may result from thermal expansion, not aging; the trench may be for cable installation, not renewal."
+      ],
+      "limitations": [
+        "Material age and cause of cracking are not determinable from visual evidence alone."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:13:20.283834+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-87909735-cafa-9a81-9de7-7d7d2a9cae0b",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 989,
+        "total_tokens": 1798,
+        "completion_tokens_details": {
+          "text_tokens": 989
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704130299fe7adf6fff4d8d",
+      "usage": {
+        "completion_tokens": 843,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1964,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2807
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

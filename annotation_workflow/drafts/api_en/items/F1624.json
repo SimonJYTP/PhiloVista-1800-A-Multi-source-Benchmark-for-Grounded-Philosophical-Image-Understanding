@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1624",
+  "sample_id": "PHL1800_HL_0195",
+  "file_name": "PHL1800_HL_0195.png",
+  "batch_id": "B033",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in a pink shirt holding food and a man reading a book in a hallway",
+  "captions": {
+    "scene": [
+      "An indoor hallway with patterned carpet, marble-like wall panels, and two elevator doors with brushed metal finishes.",
+      "A ceiling-mounted light fixture with a circular frame and frosted glass shade illuminates the space.",
+      "A standing sign with a framed poster and a small table with papers are visible near the elevators."
+    ],
+    "action": [
+      "The woman holds a hot dog in her right hand and a small plate with a yellow item in her left hand, looking toward the man.",
+      "The man holds an open book with green and black cover and reads it while standing, his gaze directed downward at the pages.",
+      "A third person stands in the background near an elevator, wearing a dark shirt and shorts, facing away from the camera."
+    ],
+    "rationale": [
+      "The woman’s posture and gaze suggest she is observing or interacting with the man, though no direct contact is visible.",
+      "The book’s spine and cover show partial text but it is unreadable; therefore, its title or content cannot be confirmed.",
+      "The presence of a 'MANAGER' badge on the woman’s lanyard indicates a role, but the specific organization or event is not identifiable from visual evidence alone."
+    ],
+    "object": [
+      "A woman wears a pink short-sleeved shirt, a gray skirt, a black lanyard with a yellow badge labeled 'MANAGER', and a silver bracelet on her left wrist.",
+      "A man wears a maroon polo shirt, gray trousers, a black belt, and holds an open book with a green upper cover and black lower section.",
+      "A hot dog in a bun is held in the woman’s right hand; a small white disposable plate with a yellow object (possibly cheese or mustard) rests in her left hand.",
+      "A stainless steel trash can with a black lid stands beside a freestanding sign holder displaying a framed poster with multiple small images and illegible text.",
+      "Three people are present: the foreground man, the foreground woman, and a background man partially obscured by distance and lighting."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1624_P1",
+      "visual_anchors": [
+        "woman's 'MANAGER' badge",
+        "man reading a book",
+        "shared hallway space"
+      ],
+      "symbolic_mapping": [
+        "the badge signifies assigned social role",
+        "the book represents individual engagement with knowledge"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of institutional role (manager) and autonomous study (reading) highlights tension between socially prescribed identity and personal epistemic pursuit within a shared public interior.",
+      "alternative_interpretations": [
+        "This may simply depict routine break-time behavior at a conference or workplace without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or dialogue confirm intentionality behind the pose or gaze direction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1624_P2",
+      "visual_anchors": [
+        "elevator doors",
+        "carpet pattern",
+        "ceiling light"
+      ],
+      "symbolic_mapping": [
+        "elevators as vertical transition points",
+        "repetitive carpet as temporal continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The static framing of individuals paused in a transit corridor evokes the philosophical notion of liminality—being neither fully arrived nor departed—suggesting reflection on paths taken and yet unchosen.",
+      "alternative_interpretations": [
+        "The setting is a functional hotel or office lobby; the subjects are merely waiting or resting, not contemplating existential thresholds."
+      ],
+      "limitations": [
+        "No clocks, windows, or directional signage confirm temporal or spatial ambiguity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1624_P3",
+      "visual_anchors": [
+        "man focused on book",
+        "woman holding food",
+        "third person in background"
+      ],
+      "symbolic_mapping": [
+        "attentional divergence as coexistence without interaction"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "Multiple individuals occupy the same physical space yet enact distinct modes of presence—absorbed, observant, peripheral—illustrating how identity is performed through selective attention amid ambient social constraints.",
+      "alternative_interpretations": [
+        "The scene reflects ordinary multitasking in a low-stakes environment; no deeper performance is intended."
+      ],
+      "limitations": [
+        "Body language is limited to upper torso and hands; full postural context is missing."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:54:36.346576+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-33d4c770-f792-9fdb-8883-0f834b042b9d",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1005,
+        "total_tokens": 1774,
+        "completion_tokens_details": {
+          "text_tokens": 1005
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070454099173a1bba4a545df",
+      "usage": {
+        "completion_tokens": 868,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1936,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2804
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

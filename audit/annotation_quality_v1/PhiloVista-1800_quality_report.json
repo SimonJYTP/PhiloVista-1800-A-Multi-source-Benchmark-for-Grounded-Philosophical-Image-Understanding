@@ -1,0 +1,112 @@
+{
+  "audit_version": "1.0.0",
+  "generated_at_utc": "2026-09-07T15:11:39.926603+00:00",
+  "dataset": "PhiloVista-1800",
+  "scope": "completed 1,800-item English AI annotation draft",
+  "intended_grain": "one item JSON per frozen blind image",
+  "expected_items": 1800,
+  "parsed_items": 1800,
+  "unique_annotation_item_ids": 1800,
+  "source_distribution": {
+    "HAIVMet": 550,
+    "HL Dataset": 600,
+    "IRFL": 500,
+    "MM-MoralBench": 150
+  },
+  "track_distribution": {
+    "boundary": 180,
+    "positive": 1620
+  },
+  "method_distribution": {
+    "ai_agent_direct_visual_reannotation_after_audit_non_independent": 6,
+    "dual_api_deepseek_generate_glm_review_non_independent": 2,
+    "dual_api_deepseek_generate_glm_visual_review_non_independent": 1,
+    "dual_api_qwen_generate_deepseek_review_non_independent": 1,
+    "dual_api_qwen_generate_glm_review_non_independent": 1,
+    "dual_api_qwen_generate_glm_visual_review_non_independent": 1789
+  },
+  "review_verdict_distribution": {
+    "accept": 1581,
+    "revise": 213,
+    "revised_by_audit_visual_inspection": 6
+  },
+  "text_dependency_distribution": {
+    "high": 63,
+    "low": 519,
+    "medium": 387,
+    "none": 831
+  },
+  "philosophy_sufficiency_distribution": {
+    "insufficient": 1589,
+    "plausible": 3789,
+    "supported": 22
+  },
+  "caption_word_length": {
+    "action": {
+      "min": 6,
+      "median": 16.0,
+      "p90": 23,
+      "max": 74
+    },
+    "object": {
+      "min": 8,
+      "median": 21.0,
+      "p90": 29,
+      "max": 79
+    },
+    "rationale": {
+      "min": 9,
+      "median": 20.0,
+      "p90": 26,
+      "max": 58
+    },
+    "scene": {
+      "min": 5,
+      "median": 17.0,
+      "p90": 24,
+      "max": 52
+    }
+  },
+  "schema_shape_variants": 1,
+  "checks": {
+    "mapped_images_decoded_and_sha256_checked": 1800,
+    "export_roundtrip_records_checked": 1800,
+    "possible_upstream_text_leakage_matches": 0,
+    "sensitive_data_leakage_matches": 0,
+    "forbidden_fullwidth_semicolon_matches": 0,
+    "cjk_in_english_fields": 0
+  },
+  "unique_repaired_items": 33,
+  "export_artifacts": {
+    "PhiloVista-1800_HL.jsonl": {
+      "bytes": 3380396,
+      "sha256": "cbc3e2b5857be97f7553640de1607792f51fb1219cd8640ccf542958f923329a"
+    },
+    "PhiloVista-1800_HL.csv": {
+      "bytes": 3208827,
+      "sha256": "5b67086f230c39fd0720c10cc9a2754f71b07f337688ee97cc8e3a3462dbbd4d"
+    },
+    "PhiloVista-1800_philosophy.jsonl": {
+      "bytes": 5415776,
+      "sha256": "6c7bc963252a7ade6f1be23b4ca1b42d171d61c1b66d7cef095beb9222ce30d1"
+    }
+  },
+  "issues": {
+    "total": 17,
+    "by_severity": {
+      "medium": 17
+    },
+    "affected_items_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 17,
+      "low": 0
+    },
+    "by_code": {
+      "cross_image_exact_reuse": 16,
+      "within_axis_near_duplicate": 1
+    }
+  },
+  "release_readiness": "conditionally_ready",
+  "important_scope_note": "This audit assesses AI drafts. It does not convert them into independent human gold annotations or supply HL confidence/purity/diversity fields."
+}

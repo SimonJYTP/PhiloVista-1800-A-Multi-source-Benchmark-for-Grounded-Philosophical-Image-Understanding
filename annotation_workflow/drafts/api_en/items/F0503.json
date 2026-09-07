@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0503",
+  "sample_id": "PHL1800_MM_0128",
+  "file_name": "PHL1800_MM_0128.jpg",
+  "batch_id": "B012",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two formally dressed individuals standing side by side under a floral arch",
+  "captions": {
+    "scene": [
+      "A red carpeted platform with golden pillars supporting an overhead arch decorated with white flowers and green foliage",
+      "Dark red drapery forms the background behind the arch",
+      "The lighting is bright and even, highlighting the subjects and foreground elements"
+    ],
+    "action": [
+      "The man stands with his left hand in his trouser pocket and right arm relaxed at his side",
+      "The woman holds a bouquet of white roses with both hands in front of her waist",
+      "Both individuals face forward with neutral-to-smiling facial expressions and direct gaze toward the viewer"
+    ],
+    "rationale": [
+      "The attire (tuxedo, white gown, veil, boutonnière) and setting (arch, red carpet, bouquet) strongly suggest a ceremonial wedding context",
+      "The speech bubble above the couple contains legible English text stating 'Our love story is the best!', indicating a declarative pose rather than candid interaction",
+      "The symmetry of the floral arrangement and identical pillar designs imply intentional staging, though no photographer or equipment is visible"
+    ],
+    "object": [
+      "A man wears a black satin tuxedo with a white dress shirt, black bow tie, three-button vest, and black dress shoes.",
+      "A woman wears a strapless white satin wedding gown with lace detailing on the bodice and a long train trailing behind her.",
+      "The woman holds a round bouquet composed of white roses with green stems and leaves.",
+      "A white bridal veil extends from the back of the woman’s head over her shoulders and down her back.",
+      "Two ornate golden pillars flank the couple; each supports a vertical floral arrangement of white blossoms and feathery greenery."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0503_P1",
+      "visual_anchors": [
+        "white wedding gown",
+        "golden pillars",
+        "symmetrical floral arch"
+      ],
+      "symbolic_mapping": [
+        "white gown → purity or social convention of marriage",
+        "symmetrical arch → idealized order or ritual structure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual composition enacts a socially sanctioned performance of union, where appearance (gown, posture) and spatial framing (arch, pillars) jointly construct legitimacy through aesthetic harmony.",
+      "alternative_interpretations": [
+        "This may simply be a staged photoshoot for commercial or celebratory purposes without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No cultural or personal context is provided; the symbolism relies on external conventions not confirmed by the image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0503_P2",
+      "visual_anchors": [
+        "speech bubble with text",
+        "direct gaze of both figures",
+        "static pose"
+      ],
+      "symbolic_mapping": [
+        "speech bubble → assertion of narrative control",
+        "direct gaze → claim of presence and authorship"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The explicit declaration 'Our love story is the best!' functions as a performative truth-claim, positioning the couple as narrators who assert subjective certainty within a constructed visual frame.",
+      "alternative_interpretations": [
+        "The text may be added post-production for decorative or humorous effect, unrelated to the subjects’ actual intent."
+      ],
+      "limitations": [
+        "The origin and timing of the speech bubble are unknown; it could be digitally inserted after the photograph was taken."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0503_P3",
+      "visual_anchors": [
+        "red carpet",
+        "golden pillars",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "red carpet → ceremonial threshold or status elevation",
+        "golden pillars → institutional support or tradition"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "faith_meaning"
+      ],
+      "interpretation": "The scene visually stages a moment of transition where individual identity is subsumed into a socially recognized role, mediated by symbols of authority (gold) and ritual (carpet, arch), suggesting meaning derived from collective validation rather than private experience.",
+      "alternative_interpretations": [
+        "These elements may serve purely aesthetic functions—color contrast and visual balance—without symbolic weight."
+      ],
+      "limitations": [
+        "No indicators of power dynamics (e.g., hierarchy, gesture asymmetry) are present; interpretation depends on assumed cultural coding."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:52:14.362398+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d483e8b2-4c18-9e75-b6e4-93e8614db0d7",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 967,
+        "total_tokens": 2500,
+        "completion_tokens_details": {
+          "text_tokens": 967
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702520061fd72d777a44c75",
+      "usage": {
+        "completion_tokens": 910,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2921,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3831
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

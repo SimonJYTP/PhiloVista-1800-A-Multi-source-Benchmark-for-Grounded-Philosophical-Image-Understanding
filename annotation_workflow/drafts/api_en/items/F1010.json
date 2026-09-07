@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1010",
+  "sample_id": "PHL1800_HAIV_0392",
+  "file_name": "PHL1800_HAIV_0392.png",
+  "batch_id": "B022",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure",
+  "captions": {
+    "scene": [
+      "A cyan-outlined figure against a solid black background holds a framed object.",
+      "The figure is depicted in high-contrast neon-style line art with minimal shading.",
+      "A square frame with a multicolored border encloses a heart-shaped form on a black field."
+    ],
+    "action": [
+      "The figure holds the frame with both hands, fingers visible on left and right edges.",
+      "The figure’s head is tilted downward, eyes closed or obscured, gazing toward the frame.",
+      "The heart shape inside the frame shows red-to-blue color blending with no sharp boundaries."
+    ],
+    "rationale": [
+      "The figure’s posture and hand placement suggest intentional presentation of the framed heart.",
+      "The absence of facial features beyond outline implies abstraction rather than portraiture.",
+      "The color gradient within the heart may indicate internal complexity, but its exact nature is visually ambiguous."
+    ],
+    "object": [
+      "The figure is rendered in cyan with white contour lines and wears a black garment outlined in white.",
+      "The frame has a double border: outer blue and inner cyan, surrounding a black interior field.",
+      "The heart shape is centrally placed within the frame and exhibits a smooth red-to-blue gradient without text or pattern.",
+      "The figure’s left hand supports the bottom edge of the frame while the right hand rests on the top-left corner.",
+      "No text, signature, or readable inscription appears anywhere in the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1010_P1",
+      "visual_anchors": [
+        "cyan figure outline",
+        "framed heart",
+        "black background"
+      ],
+      "symbolic_mapping": [
+        "the frame isolates the heart as an object of contemplation",
+        "the monochrome figure contrasts with the colored heart, suggesting external vs internal states"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The figure’s simplified appearance juxtaposed with the vividly colored heart suggests a philosophical tension between outward identity (reduced to outline) and inner affective content (the heart), framing selfhood as mediated through symbolic representation.",
+      "alternative_interpretations": [
+        "The image may simply depict a gift-giving gesture or decorative illustration without deeper intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual cues confirm intentionality or emotional valence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1010_P2",
+      "visual_anchors": [
+        "closed eyes",
+        "downward gaze",
+        "held frame"
+      ],
+      "symbolic_mapping": [
+        "the act of holding implies stewardship or responsibility",
+        "the gaze toward the heart suggests introspection or valuation"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The figure’s focused attention on the contained heart—held deliberately and viewed closely—evokes a moment of ethical consideration or personal decision-making where care for an abstract value (love, empathy) is physically enacted.",
+      "alternative_interpretations": [
+        "The pose could be static composition rather than active contemplation; the eyes may be stylistically omitted, not closed."
+      ],
+      "limitations": [
+        "The eyes are not clearly defined as closed; they may be absent due to artistic style."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1010_P3",
+      "visual_anchors": [
+        "black background",
+        "neon outlines",
+        "color gradient in heart"
+      ],
+      "symbolic_mapping": [
+        "the void-like background emphasizes isolation or focus",
+        "the gradient heart resists binary categorization, implying fluidity"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The stark contrast between the constrained figure (outlined, bounded by clothing and posture) and the unbounded color flow within the heart suggests a philosophical inquiry into whether inner truth or feeling can exist freely despite external constraints.",
+      "alternative_interpretations": [
+        "The gradient may result from technical rendering (e.g., digital brush effect) rather than symbolic intent."
+      ],
+      "limitations": [
+        "Color blending could be aesthetic rather than conceptual; no textual or contextual anchor confirms meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:39:23.501118+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-19446aef-6568-97e2-97c1-7a4496d373d0",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 915,
+        "total_tokens": 2448,
+        "completion_tokens_details": {
+          "text_tokens": 915
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033838e9c607b2ddae4cbf",
+      "usage": {
+        "completion_tokens": 777,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2872,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3649
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

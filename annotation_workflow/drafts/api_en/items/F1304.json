@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1304",
+  "sample_id": "PHL1800_HAIV_0371",
+  "file_name": "PHL1800_HAIV_0371.png",
+  "batch_id": "B027",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two children seated at a circular game table",
+  "captions": {
+    "scene": [
+      "Two cartoon-style children sit opposite each other at a red-rimmed, blue-surfaced circular table with a large red heart in the center.",
+      "The background is solid yellow; two small colored blocks rest on the floor near the table’s base.",
+      "A speech bubble above the boy contains three indistinct colorful shapes and a purple square with unreadable markings."
+    ],
+    "action": [
+      "The boy places his right hand flat on a white card on the table; his left hand rests near another card.",
+      "The girl places her right hand on a white card while smiling broadly; her left arm rests on the table edge.",
+      "Both children look forward toward the viewer or slightly inward, with open-mouthed smiles showing teeth."
+    ],
+    "rationale": [
+      "The presence of multiple identical white cards with simple line drawings suggests a structured matching or memory game.",
+      "The central heart and surrounding cards imply thematic focus on recognition or association, though specific rules are not visible.",
+      "The speech bubble contains visual elements but no legible text, so its semantic content cannot be determined from image alone."
+    ],
+    "object": [
+      "A boy with orange hair, wearing a purple short-sleeved shirt with a red collar trim, sits on the left side of the table.",
+      "A girl with blue braided hair, wearing a green short-sleeved shirt, sits on the right side of the table.",
+      "The table surface is divided into eight blue segments, each holding a white rectangular card with a black line drawing (e.g., glasses, a fish, a key, a circle, a rectangle).",
+      "A glossy red heart occupies the center of the table; two smaller red hearts appear—one on a stick behind the boy, one on the floor near the girl’s side.",
+      "Two cubic blocks lie on the floor: one blue with yellow and green symbols, one red with white and blue symbols."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1304_P1",
+      "visual_anchors": [
+        "central red heart",
+        "eight surrounding cards with abstract icons"
+      ],
+      "symbolic_mapping": [
+        "heart as symbol of shared focus",
+        "cards as representations of discrete identities or traits"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The arrangement suggests that social connection (heart) emerges through the recognition and juxtaposition of distinct individual attributes (cards), implying identity is relational and co-constituted.",
+      "alternative_interpretations": [
+        "It may simply depict a children’s matching game with decorative heart motifs, without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels confirm the meaning of the card icons; their interpretation as 'attributes' is speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1304_P2",
+      "visual_anchors": [
+        "boy and girl both smiling",
+        "hands placed on cards",
+        "shared table space"
+      ],
+      "symbolic_mapping": [
+        "simultaneous engagement as mutual participation",
+        "table as neutral ground for interaction"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes choice as a collaborative act—each child selects or affirms a card within a shared framework, suggesting agency is exercised within relational constraints.",
+      "alternative_interpretations": [
+        "The children may be passively following instructions; their smiles could indicate enjoyment rather than intentional choice."
+      ],
+      "limitations": [
+        "Facial expressions do not prove intentionality; hand placement does not confirm active selection versus resting."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1304_P3",
+      "visual_anchors": [
+        "speech bubble with unreadable symbols",
+        "cards with ambiguous line drawings"
+      ],
+      "symbolic_mapping": [
+        "unintelligible symbols as limits of representation",
+        "abstract icons as incomplete knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The opacity of the speech content and the stylized, non-referential card images evoke epistemic humility—the idea that understanding others or concepts requires interpretation beyond immediate appearance.",
+      "alternative_interpretations": [
+        "The symbols are merely decorative; the cards are simplified illustrations for young children, not philosophical statements."
+      ],
+      "limitations": [
+        "No evidence confirms the symbols are meant to be unreadable rather than accidentally illegible due to resolution or style."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:15:17.087285+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4d38072a-46ff-948a-a8f2-4ac1718f8be2",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 977,
+        "total_tokens": 2510,
+        "completion_tokens_details": {
+          "text_tokens": 977
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070415007116fb6ca8184f0e",
+      "usage": {
+        "completion_tokens": 841,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2934,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3775
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

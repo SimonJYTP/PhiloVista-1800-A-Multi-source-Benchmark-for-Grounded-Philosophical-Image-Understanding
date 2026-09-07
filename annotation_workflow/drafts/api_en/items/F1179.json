@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1179",
+  "sample_id": "PHL1800_HAIV_0174",
+  "file_name": "PHL1800_HAIV_0174.png",
+  "batch_id": "B025",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single cartoon male figure in foreground",
+  "captions": {
+    "scene": [
+      "A stylized urban background with simplified beige buildings under a purple sky",
+      "A blue pickup truck with orange headlights and white bumper positioned behind the figure",
+      "An orange ground plane beneath the truck and figure"
+    ],
+    "action": [
+      "The figure stands with arms crossed over chest",
+      "The figure displays a closed-mouth smile with upward-curving lips",
+      "The figure’s eyes are narrowed into slits, eyebrows arched downward"
+    ],
+    "rationale": [
+      "The figure’s pose and facial expression suggest confidence or smugness, though no internal state is visible",
+      "The truck appears stationary due to lack of motion lines or blurred wheels",
+      "The background architecture lacks windows or doors, indicating stylization rather than realism"
+    ],
+    "object": [
+      "The figure has a bald head with black hair only at the sides and back, outlined in thick black line.",
+      "The figure wears a gray suit jacket, white collared shirt, and solid blue tie.",
+      "The figure’s right hand (viewer’s left) is visible with four fingers and thumb clasped over left forearm.",
+      "The blue truck has a green-tinted windshield, orange front turn signal, and black tires with silver hubcaps.",
+      "The background contains three beige rectangular building shapes with stepped tops against a uniform purple sky."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1179_P1",
+      "visual_anchors": [
+        "bald head with side hair",
+        "smiling mouth with no teeth",
+        "narrowed eyes"
+      ],
+      "symbolic_mapping": [
+        "baldness may symbolize exposure or vulnerability",
+        "closed smile may indicate controlled expression"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The stylized appearance emphasizes constructed identity over biological realism, suggesting social roles shape perception more than innate traits.",
+      "alternative_interpretations": [
+        "The design reflects comic-book conventions for caricature, not philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual narrative confirm symbolic intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1179_P2",
+      "visual_anchors": [
+        "arms crossed",
+        "suit and tie",
+        "truck in background"
+      ],
+      "symbolic_mapping": [
+        "crossed arms may denote authority or defensiveness",
+        "suit-truck pairing may imply economic role"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of formal attire and vehicle implies a mediated relationship between professional identity and material means, raising questions about agency within systems.",
+      "alternative_interpretations": [
+        "The elements are generic props for a business-themed illustration without deeper implication."
+      ],
+      "limitations": [
+        "No interaction occurs between figure and truck; spatial proximity alone does not establish relation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1179_P3",
+      "visual_anchors": [
+        "uniform purple sky",
+        "flat orange ground",
+        "simplified buildings"
+      ],
+      "symbolic_mapping": [
+        "monochromatic backdrop may represent artificial environment",
+        "lack of detail suggests abstraction of reality"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The flattened, non-naturalistic setting frames the figure within a constructed reality, prompting reflection on how perception is bounded by representational frameworks.",
+      "alternative_interpretations": [
+        "The color scheme serves aesthetic contrast and visual hierarchy, not conceptual commentary."
+      ],
+      "limitations": [
+        "Color choices could be stylistic rather than semiotic; no gradient or texture indicates intentional metaphor."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:58:52.465313+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-aca46b5a-8910-99b6-8866-0d7706e1a2bd",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 811,
+        "total_tokens": 2344,
+        "completion_tokens_details": {
+          "text_tokens": 811
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035842183f1584ce6242c1",
+      "usage": {
+        "completion_tokens": 667,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2762,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3429
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

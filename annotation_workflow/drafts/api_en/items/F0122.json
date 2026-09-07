@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0122",
+  "sample_id": "PHL1800_HAIV_0181",
+  "file_name": "PHL1800_HAIV_0181.png",
+  "batch_id": "B005",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one cartoon man",
+  "captions": {
+    "scene": [
+      "A man in a light blue shirt and olive-green trousers stands bent over a large white envelope on a beige surface.",
+      "The background is plain white with no environmental details.",
+      "Three teardrop-shaped droplets float near the man's face, left of his nose."
+    ],
+    "action": [
+      "The man leans forward with his right hand gripping the top flap of a large envelope.",
+      "His facial expression shows tightly closed eyes, bared teeth, and a contorted mouth, suggesting strain or distress.",
+      "His left arm hangs loosely at his side while his torso is angled downward."
+    ],
+    "rationale": [
+      "The presence of teardrops near the face suggests emotional or physical exertion, but their origin (tears, sweat, or stylized effect) is ambiguous.",
+      "The envelope is oversized relative to the man’s hand and body, indicating exaggeration rather than realistic scale.",
+      "The man’s posture and facial distortion imply effort or discomfort, yet no visible resistance or external force is depicted."
+    ],
+    "object": [
+      "The man has short brown hair with a small tuft sticking upward at the crown.",
+      "He wears a short-sleeved light blue button-up shirt with rolled cuffs and olive-green trousers ending above brown loafers.",
+      "The envelope is white with a black border and decorated with multicolored abstract shapes (red, yellow, green, blue) along its edges.",
+      "The envelope flap is partially open, revealing a white interior with no visible text or contents.",
+      "Three translucent gray teardrop shapes are positioned in mid-air to the left of the man’s face, aligned vertically."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0122_P1",
+      "visual_anchors": [
+        "oversized envelope",
+        "man’s strained expression",
+        "teardrop shapes"
+      ],
+      "symbolic_mapping": [
+        "envelope as burden",
+        "distortion as internal pressure"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The exaggerated scale of the envelope and the man’s physical strain may symbolize the oppressive weight of administrative or communicative labor that constrains personal agency.",
+      "alternative_interpretations": [
+        "The image could simply depict a humorous struggle to open a novelty-sized gift envelope."
+      ],
+      "limitations": [
+        "No textual content confirms intent; the envelope’s decoration is abstract and non-representational."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0122_P2",
+      "visual_anchors": [
+        "closed eyes",
+        "bared teeth",
+        "droplets near face"
+      ],
+      "symbolic_mapping": [
+        "facial contortion as suppression of emotion"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The man’s forced expression and visible effluvia suggest a tension between outward performance and inner experience, reflecting how social roles demand controlled appearances despite internal distress.",
+      "alternative_interpretations": [
+        "The expression may represent physical effort alone, such as blowing air to open the envelope."
+      ],
+      "limitations": [
+        "Facial features are stylized; no context confirms emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0122_P3",
+      "visual_anchors": [
+        "single figure",
+        "isolated white background",
+        "hand gripping envelope"
+      ],
+      "symbolic_mapping": [
+        "solitary action as existential confrontation"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The solitary act of opening an unknown envelope—without witnesses or guidance—evokes the philosophical moment of confronting uncertain truth, where choice precedes understanding.",
+      "alternative_interpretations": [
+        "This is a generic cartoon illustration of mail handling, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "The envelope contains no visible message or symbol; its contents are entirely absent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:03:06.527017+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-40f8fbf7-c3ca-9ebd-b193-57499c219b76",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 865,
+        "total_tokens": 2398,
+        "completion_tokens_details": {
+          "text_tokens": 865
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020246219c63b1909544e6",
+      "usage": {
+        "completion_tokens": 728,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2825,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3553
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

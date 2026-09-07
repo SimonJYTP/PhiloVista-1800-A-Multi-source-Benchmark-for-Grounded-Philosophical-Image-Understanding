@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0033",
+  "sample_id": "PHL1800_IRFL_0346",
+  "file_name": "PHL1800_IRFL_0346.jpg",
+  "batch_id": "B003",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one child wearing safety gear on a treetop ropes course",
+  "captions": {
+    "scene": [
+      "Sunlit forest with tall trees and visible rope-and-pulley structures suspended between them",
+      "A wooden platform and yellow cylindrical supports attached to a tree trunk in the background",
+      "Blurred green foliage and dappled sunlight indicating late afternoon or early morning lighting"
+    ],
+    "action": [
+      "The child holds a metal carabiner attached to a safety lanyard with their right hand",
+      "The child’s left hand grips a horizontal steel cable while standing on an unseen support",
+      "The child wears a pink helmet, harness, and gloves, and appears mid-movement across the course"
+    ],
+    "rationale": [
+      "The presence of multiple cables, pulleys, and tree-mounted platforms suggests a commercial adventure course rather than improvised equipment",
+      "The child’s focused gaze and body posture indicate active engagement with the obstacle, though exact intent is not observable",
+      "The harness and helmet are standard for aerial obstacle courses, but no signage confirms certification or operator identity"
+    ],
+    "object": [
+      "A child with shoulder-length dark hair wears a bright pink helmet with a black visor strip and ventilation slots.",
+      "The child wears a light pink short-sleeved shirt, black leggings, and blue-and-gray climbing harness with visible buckles and loops.",
+      "A black camera hangs from the harness via a strap, positioned near the child’s left hip.",
+      "A silver carabiner connects the harness to a steel cable; the child’s right hand grasps the carabiner’s gate.",
+      "A thick tree trunk behind the child has yellow cylindrical spacers and metal brackets securing vertical and diagonal cables."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0033_P1",
+      "visual_anchors": [
+        "child gripping carabiner",
+        "harness clipped to cable",
+        "tree-mounted support structure"
+      ],
+      "symbolic_mapping": [
+        "the carabiner as a literal point of connection representing dependency on external systems"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The child’s movement is simultaneously enabled and bounded by engineered restraints, illustrating how freedom often emerges only within carefully designed constraints.",
+      "alternative_interpretations": [
+        "The image simply documents recreational activity without symbolic intent"
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the mapping is interpretive"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0033_P2",
+      "visual_anchors": [
+        "sun flare through trees",
+        "child’s forward-leaning posture",
+        "unseen path ahead"
+      ],
+      "symbolic_mapping": [
+        "the obscured next segment of the course symbolizing uncertainty in progression"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The visible segment of the course ends just beyond the child’s reach, evoking the philosophical notion that every step forward entails commitment to an unknown continuation.",
+      "alternative_interpretations": [
+        "The blur is due to shallow depth of field, not narrative omission"
+      ],
+      "limitations": [
+        "The ‘unknown path’ is inferred from photographic focus, not explicit visual content"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0033_P3",
+      "visual_anchors": [
+        "multiple cables converging at harness",
+        "child’s hands engaged with two separate points",
+        "tree as fixed anchor"
+      ],
+      "symbolic_mapping": [
+        "the harness distributing load across points mirrors distributed responsibility in collective systems"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The child’s safety depends on redundant mechanical connections, suggesting that ethical responsibility in complex environments may require overlapping safeguards rather than singular accountability.",
+      "alternative_interpretations": [
+        "This is purely functional engineering, not moral analogy"
+      ],
+      "limitations": [
+        "No human agents or social context are visible to ground responsibility claims"
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:50:41.060558+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a827afe7-ece3-9b38-951f-f5dbd465574e",
+      "usage": {
+        "prompt_tokens": 696,
+        "completion_tokens": 858,
+        "total_tokens": 1554,
+        "completion_tokens_details": {
+          "text_tokens": 858
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 189,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015025243f59a83e574d17",
+      "usage": {
+        "completion_tokens": 717,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1686,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2403
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

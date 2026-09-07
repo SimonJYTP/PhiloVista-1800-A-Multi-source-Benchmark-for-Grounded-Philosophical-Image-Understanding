@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0267",
+  "sample_id": "PHL1800_HAIV_0170",
+  "file_name": "PHL1800_HAIV_0170.png",
+  "batch_id": "B007",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a standing figure holding a megaphone above a crowd",
+  "captions": {
+    "scene": [
+      "A stylized drawing with a pink stippled background and black line work showing a raised platform and a dense group of figures below.",
+      "The upper portion contains diagonal lines suggesting radiating light or sound, converging toward the central standing figure.",
+      "The lower portion shows a tightly packed assembly of simplified human-like silhouettes behind a grid-like barrier."
+    ],
+    "action": [
+      "The standing figure holds a megaphone to their mouth with one hand and faces forward.",
+      "The crowd below is stationary, with all visible heads oriented upward toward the speaker.",
+      "No motion lines or dynamic postures indicate movement; the scene appears static."
+    ],
+    "rationale": [
+      "The megaphone’s orientation and placement near the mouth strongly suggest vocal amplification, though no sound waves are drawn.",
+      "The uniform upward gaze of the crowd implies attention directed at the speaker, but facial features are absent so intent cannot be confirmed.",
+      "The grid barrier separates speaker and audience spatially, indicating structured arrangement, yet its function (e.g., security, stage edge) is not specified visually."
+    ],
+    "object": [
+      "One central figure stands on a flat horizontal platform, wearing a short-sleeved top and vertically striped trousers.",
+      "The figure holds a black conical megaphone with one hand, positioned near the mouth region.",
+      "Approximately 24 distinct head-and-shoulder silhouettes populate the lower area, varying slightly in size and orientation but all facing upward.",
+      "A rectangular grid structure, composed of intersecting horizontal and vertical lines, lies between the platform and the crowd.",
+      "Diagonal black lines radiate outward from the upper center, crossing the pink stippled background, without connecting to any object."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0267_P1",
+      "visual_anchors": [
+        "megaphone",
+        "raised platform",
+        "uniform upward gaze"
+      ],
+      "symbolic_mapping": [
+        "megaphone → mediated communication",
+        "platform → hierarchical positioning"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes the asymmetry of voice distribution: one amplified speaker elevated above many silent listeners, evoking questions about legitimacy, access, and the structural conditions enabling public address.",
+      "alternative_interpretations": [
+        "It may simply depict a routine announcement at a gathering, with no intended political or philosophical resonance."
+      ],
+      "limitations": [
+        "No facial expressions, text, or contextual signage confirm intent or content of speech."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0267_P2",
+      "visual_anchors": [
+        "stippled pink background",
+        "radiating lines",
+        "crowd density"
+      ],
+      "symbolic_mapping": [
+        "radiating lines → influence or attention flow",
+        "density → collective presence"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The scene suggests knowledge transmission as a directional, top-down process where truth or information emanates from a singular source into a receptive mass, raising concerns about epistemic authority and consensus formation.",
+      "alternative_interpretations": [
+        "The lines could represent stage lighting rather than symbolic radiation, and the crowd may merely be waiting for instructions."
+      ],
+      "limitations": [
+        "The stippling and lines lack explicit labeling; their meaning is interpretive rather than denotative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0267_P3",
+      "visual_anchors": [
+        "grid barrier",
+        "identical silhouette style",
+        "lack of individual differentiation"
+      ],
+      "symbolic_mapping": [
+        "grid → institutional separation",
+        "silhouette uniformity → loss of individuation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The barrier and homogenized crowd imply constraints on agency and self-expression within collective settings, where identity is subsumed under shared orientation toward an external authority.",
+      "alternative_interpretations": [
+        "The grid may be architectural (e.g., stadium railing), and the stylization reflects artistic economy, not intentional erasure of identity."
+      ],
+      "limitations": [
+        "The drawing style is minimalist; absence of detail does not prove intentional anonymization."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:27:30.094986+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f1eab3ad-e91a-9185-9b66-3678f0265b58",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 946,
+        "total_tokens": 2479,
+        "completion_tokens_details": {
+          "text_tokens": 946
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022700408a78b25bea4e7d",
+      "usage": {
+        "completion_tokens": 807,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2904,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3711
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

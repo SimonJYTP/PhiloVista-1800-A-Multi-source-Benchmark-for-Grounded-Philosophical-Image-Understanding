@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1227",
+  "sample_id": "PHL1800_HL_0214",
+  "file_name": "PHL1800_HL_0214.png",
+  "batch_id": "B026",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "blond boy in red shirt holding tennis racket",
+  "captions": {
+    "scene": [
+      "Outdoor tennis court with red surface and green netting backdrop",
+      "Three visible individuals on court: blond boy in foreground, Black boy in orange shirt behind him, partial white-shirted person on left",
+      "Bright daylight illumination with distinct shadows cast on court surface"
+    ],
+    "action": [
+      "Blond boy holds tennis racket in right hand, left arm bent, body angled forward toward a yellow tennis ball near his feet",
+      "Black boy behind holds racket vertically with both hands, gaze directed forward",
+      "Partial figure on left holds racket horizontally across lower torso"
+    ],
+    "rationale": [
+      "Blond boy’s stance and proximity to ball suggest imminent stroke attempt, though no motion blur confirms movement",
+      "Racket grips and body postures indicate active participation in tennis activity rather than casual standing",
+      "Presence of multiple rackets and court setting strongly implies organized play, but no scoreboard or coach visible to confirm instruction context"
+    ],
+    "object": [
+      "The blond boy wears a plain red short-sleeved t-shirt, blue cargo-style shorts with side pockets, white socks, and black-and-white athletic shoes.",
+      "A bright yellow tennis ball rests on the red court surface approximately 0.5 meters in front of the blond boy’s right foot.",
+      "The boy in orange wears a graphic t-shirt with partially visible white text reading 'LEVI'S' above a red logo; the rest of the text is unreadable.",
+      "The net behind the subjects is dark green mesh with horizontal support bands, extending across the full width of the frame.",
+      "The partial figure on the far left wears a white oversized t-shirt, patterned shorts (gray/black geometric design), and white sneakers with black accents."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1227_P1",
+      "visual_anchors": [
+        "blond boy’s focused gaze",
+        "racket held ready",
+        "ball positioned for contact"
+      ],
+      "symbolic_mapping": [
+        "readiness as anticipation of choice",
+        "proximity of ball as immediacy of decision"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The suspended moment before contact embodies the philosophical weight of imminent agency—where potential action crystallizes into singular choice under constraint of physical law and temporal finitude.",
+      "alternative_interpretations": [
+        "The boy is simply waiting for the ball to bounce once more before hitting it, per standard tennis protocol."
+      ],
+      "limitations": [
+        "No facial expression detail confirms internal focus; gaze direction could be coincidental alignment with ball trajectory."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1227_P2",
+      "visual_anchors": [
+        "three individuals with rackets",
+        "shared court space",
+        "differential positioning (foreground vs. background)"
+      ],
+      "symbolic_mapping": [
+        "spatial hierarchy reflecting role differentiation",
+        "shared equipment indicating collective practice"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "Co-presence on a bounded field with identical tools suggests interdependence through structured activity, where identity emerges relationally rather than in isolation.",
+      "alternative_interpretations": [
+        "They are unrelated players using the same court simultaneously, not interacting."
+      ],
+      "limitations": [
+        "No eye contact, verbal cues, or coordinated movement confirms interaction; spatial proximity alone is weak evidence of social relation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1227_P3",
+      "visual_anchors": [
+        "red shirt contrasting with green net",
+        "white socks against red court",
+        "visible brand text 'LEVI'S'"
+      ],
+      "symbolic_mapping": [
+        "color contrast as visual demarcation of individual within system",
+        "branding as marker of external identity imposition"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "Appearance is mediated by commercial signifiers and chromatic framing—self-presentation occurs within layers of manufactured distinction that both enable and constrain recognition.",
+      "alternative_interpretations": [
+        "Clothing choices reflect comfort, availability, or team assignment, not symbolic intent."
+      ],
+      "limitations": [
+        "Brand visibility is partial and incidental; no evidence the wearer selected attire for expressive purpose."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:05:47.373082+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1825d898-b06a-9570-a377-d67190b0e0ad",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 925,
+        "total_tokens": 1626,
+        "completion_tokens_details": {
+          "text_tokens": 925
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070405083c7a8fa9743440d8",
+      "usage": {
+        "completion_tokens": 787,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1742,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2529
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

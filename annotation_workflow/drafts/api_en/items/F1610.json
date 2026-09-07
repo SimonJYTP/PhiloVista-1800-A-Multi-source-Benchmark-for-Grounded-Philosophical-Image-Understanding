@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1610",
+  "sample_id": "PHL1800_IRFL_0314",
+  "file_name": "PHL1800_IRFL_0314.jpg",
+  "batch_id": "B033",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one man wearing glasses and formal attire, seated and holding an open book",
+  "captions": {
+    "scene": [
+      "A well-lit indoor setting with blurred white shelves containing books and decorative objects in the background",
+      "A brown leather armchair partially visible behind the subject’s shoulders",
+      "Foreground dominated by the thick wooden covers of an open, aged book"
+    ],
+    "action": [
+      "The man gazes directly forward with eyes wide and eyebrows slightly raised",
+      "His mouth is closed in a neutral-to-tense expression, lips pressed together",
+      "He holds the open book with both hands, its covers framing the lower portion of his torso"
+    ],
+    "rationale": [
+      "The shallow depth of field suggests intentional focus on the subject rather than the environment",
+      "The man’s posture and grip indicate active engagement with the book, though no page-turning motion is visible",
+      "The red tie and blue suit jacket imply formal or professional context, but no institutional signage confirms this"
+    ],
+    "object": [
+      "The man wears dark-rimmed eyeglasses with gold-colored bridge and temple hinges.",
+      "He wears a white collared shirt, a textured red necktie, and a navy blue suit jacket.",
+      "The book has thick, dark brown wooden covers with visible grain and minor surface wear.",
+      "The background contains out-of-focus horizontal shelves with rectangular objects of varying colors (red, black, beige).",
+      "The man’s hair is light brown, short, and neatly combed back from his forehead."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1610_P1",
+      "visual_anchors": [
+        "open aged book",
+        "man’s direct gaze",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "the book as repository of accumulated knowledge",
+        "the gaze as confrontation with truth"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image evokes the tension between inherited wisdom (embodied in the physical book) and the individual’s immediate epistemic responsibility to assess it—a moment where knowledge is not passively received but actively interrogated.",
+      "alternative_interpretations": [
+        "The scene may simply depict a person reading in a library or study, with no philosophical intent."
+      ],
+      "limitations": [
+        "No text is legible in the book or background, preventing confirmation of content or context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1610_P2",
+      "visual_anchors": [
+        "tight framing on face",
+        "glasses as visual filter",
+        "book obscuring lower body"
+      ],
+      "symbolic_mapping": [
+        "glasses as mediation of perception",
+        "book as barrier or frame for identity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The composition emphasizes how appearance—especially through corrective lenses and sartorial choices—structures social recognition, while the book simultaneously conceals and defines the subject’s role, suggesting identity as performative and context-dependent.",
+      "alternative_interpretations": [
+        "The framing is purely compositional, intended to highlight facial expression for narrative effect."
+      ],
+      "limitations": [
+        "The subject’s posture and clothing are conventional; no unique markers confirm intentional identity signaling."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1610_P3",
+      "visual_anchors": [
+        "blurred background shelves",
+        "sharp focus on subject",
+        "static pose"
+      ],
+      "symbolic_mapping": [
+        "shelves as symbolic archive of time",
+        "stillness as resistance to temporal flow"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "By isolating the subject against an indistinct backdrop of accumulated objects, the image frames a moment suspended outside linear time—suggesting reflection on finitude through the act of engaging with enduring artifacts.",
+      "alternative_interpretations": [
+        "The blur results from photographic technique (shallow depth of field), not symbolic intent."
+      ],
+      "limitations": [
+        "No explicit temporal markers (e.g., clocks, decay, aging signs) are present in the visible frame."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:51:14.491189+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b3360714-3c6d-9d77-b0c3-723bfacd1965",
+      "usage": {
+        "prompt_tokens": 1389,
+        "completion_tokens": 887,
+        "total_tokens": 2276,
+        "completion_tokens_details": {
+          "text_tokens": 887
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 882,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045102f7044a36bb364e46",
+      "usage": {
+        "completion_tokens": 749,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2666,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3415
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

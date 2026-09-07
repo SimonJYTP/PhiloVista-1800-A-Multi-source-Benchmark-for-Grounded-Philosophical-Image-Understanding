@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0312",
+  "sample_id": "PHL1800_HAIV_0494",
+  "file_name": "PHL1800_HAIV_0494.png",
+  "batch_id": "B008",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a crowd of human silhouettes beneath a flaming Twitter logo",
+  "captions": {
+    "scene": [
+      "A bright cyan background with a central white circle containing a black bird silhouette, surrounded by stylized orange and yellow flames.",
+      "A horizontal row of eleven distinct human silhouettes stands at the bottom edge of the image, directly below the flaming logo.",
+      "Flame elements extend outward from the central circle, with small detached flame fragments floating in the upper right quadrant."
+    ],
+    "action": [
+      "Multiple silhouettes raise arms upward toward the flaming logo; some hold indistinct objects aloft.",
+      "One silhouette on the far left holds a rectangular object above its head with both hands.",
+      "The central group includes overlapping figures, suggesting proximity or movement, but no motion blur is present."
+    ],
+    "rationale": [
+      "The bird silhouette matches the widely recognized Twitter (X) logo design, though no text confirms this identity.",
+      "The flame shapes are stylized and non-realistic, indicating symbolic rather than literal fire.",
+      "Silhouettes lack facial features or clothing detail, preventing identification of age, gender, or role."
+    ],
+    "object": [
+      "There are exactly eleven human-shaped black silhouettes arranged horizontally along the bottom third of the image.",
+      "A white circular field contains a solid black silhouette of a bird in profile facing right, with wing extended downward and tail pointed up.",
+      "Stylized flame forms—composed of layered orange, yellow, and red curved shapes—radiate outward from the white circle’s perimeter.",
+      "Three small detached flame fragments appear in the upper right area, separate from the main flame mass.",
+      "No readable text appears anywhere in the image; all lettering or markings are absent or illegible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0312_P1",
+      "visual_anchors": [
+        "flaming logo",
+        "crowd raising arms",
+        "silhouette anonymity"
+      ],
+      "symbolic_mapping": [
+        "flames → intensity or destruction",
+        "raised arms → collective response"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes collective engagement with a dominant symbol, where anonymity of individuals contrasts with the singularity of the emblem, suggesting tension between communal action and centralized authority.",
+      "alternative_interpretations": [
+        "It may depict celebration or ritual around a digital platform icon, without inherent conflict."
+      ],
+      "limitations": [
+        "No textual context confirms whether the flames signify destruction, energy, or transformation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0312_P2",
+      "visual_anchors": [
+        "eleven silhouettes",
+        "uniform black fill",
+        "shared horizon line"
+      ],
+      "symbolic_mapping": [
+        "identical shading → loss of individual distinction",
+        "horizontal alignment → social aggregation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Uniform silhouetting erases distinguishing traits, emphasizing how group membership can subsume personal identity within a shared visual field.",
+      "alternative_interpretations": [
+        "The figures may simply be decorative elements with no intended commentary on identity."
+      ],
+      "limitations": [
+        "Silhouettes do not prove intentional erasure; they may reflect stylistic minimalism only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0312_P3",
+      "visual_anchors": [
+        "central logo",
+        "surrounding flames",
+        "crowd positioned below"
+      ],
+      "symbolic_mapping": [
+        "vertical hierarchy → symbolic dominance",
+        "fire encircling → envelopment or threat"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The composition establishes a vertical power structure where the emblem dominates visually and spatially, while the crowd remains grounded and reactive, implying constraint or compelled attention.",
+      "alternative_interpretations": [
+        "The arrangement could represent homage or support, with flames signifying passion rather than oppression."
+      ],
+      "limitations": [
+        "Directionality of gaze or posture is indiscernible due to silhouette form; intent cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:35:55.625352+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5fce1b2f-79e9-9d88-8654-6f46df22b4df",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 901,
+        "total_tokens": 2434,
+        "completion_tokens_details": {
+          "text_tokens": 901
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907023519a0caec7353c64458",
+      "usage": {
+        "completion_tokens": 763,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2862,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3625
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

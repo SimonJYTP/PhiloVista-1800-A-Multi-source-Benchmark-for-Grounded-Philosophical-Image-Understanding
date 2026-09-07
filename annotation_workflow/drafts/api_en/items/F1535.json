@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1535",
+  "sample_id": "PHL1800_HAIV_0179",
+  "file_name": "PHL1800_HAIV_0179.png",
+  "batch_id": "B031",
+  "position_in_batch": 47,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person holding a small dog",
+  "captions": {
+    "scene": [
+      "A stylized illustration with a solid warm-orange background and soft radial gradient.",
+      "The composition is centered on a human figure and a canine figure in close proximity.",
+      "Thick black outlines define all forms, with visible brushstroke-like texture in color application."
+    ],
+    "action": [
+      "The person’s hands are cupping the dog’s torso and neck, supporting it in front of their chest.",
+      "The dog is held upright, facing forward, with its head slightly tilted and eyes open.",
+      "The person’s left eye is visible; the right side of their face is partially obscured by the dog’s head."
+    ],
+    "rationale": [
+      "The dog’s posture and placement suggest it is being held rather than standing independently, based on hand positioning and lack of ground contact.",
+      "The person’s facial expression appears neutral or slightly tense, inferred from brow position and mouth line, though stylization limits certainty.",
+      "The yellow objects held between fingers resemble chew toys or bones, but their exact nature is ambiguous due to distortion and lack of text."
+    ],
+    "object": [
+      "The person has short dark hair, a light skin tone, a visible left ear, and wears a dark brown short-sleeved shirt.",
+      "The dog has shaggy yellow-white fur, large dark round eyes, a black nose, erect ears with pink inner surfaces, and a visible pink patch on its abdomen.",
+      "Two yellow elongated objects are gripped between the person’s fingers—one in each hand—each with irregular edges and dark markings resembling wear or texture.",
+      "The person’s hands show defined knuckles, fingernails, and shading indicating volume, with fingers curled around the dog’s body.",
+      "No background elements other than the uniform orange field are present; no floor, furniture, or clothing details beyond the shirt are visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1535_P1",
+      "visual_anchors": [
+        "dog’s exposed pink abdomen",
+        "person’s hands fully enclosing the dog",
+        "lack of ground or environment"
+      ],
+      "symbolic_mapping": [
+        "exposed abdomen → vulnerability",
+        "enclosing hands → protection or control"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the ethical tension between care and constraint: the person’s grip secures the dog yet also restricts its autonomy, while the dog’s bare abdomen signals dependence and exposure.",
+      "alternative_interpretations": [
+        "It may simply depict a routine moment of pet handling without symbolic intent."
+      ],
+      "limitations": [
+        "Stylization obscures fine anatomical detail and emotional cues, weakening definitive attribution of intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1535_P2",
+      "visual_anchors": [
+        "thick black outlines",
+        "brushstroke texture",
+        "flat color fields"
+      ],
+      "symbolic_mapping": [
+        "outline dominance → constructed identity",
+        "texture irregularity → impermanence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The heavy linework and painterly texture foreground appearance as mediated representation, suggesting identity is not fixed but rendered—implying fragility and temporal contingency in how selves and others are depicted.",
+      "alternative_interpretations": [
+        "The style reflects an artistic choice for expressive emphasis, not philosophical commentary."
+      ],
+      "limitations": [
+        "No textual or contextual markers confirm intentional symbolism; style alone is insufficient for definitive interpretation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1535_P3",
+      "visual_anchors": [
+        "dog’s wide-open eyes",
+        "person’s partially hidden face",
+        "shared central framing"
+      ],
+      "symbolic_mapping": [
+        "dog’s gaze → witness or subjectivity",
+        "occluded face → obscured agency"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The dog’s direct gaze contrasts with the person’s partial concealment, raising questions about whose perspective constitutes truth in shared space—suggesting social existence is negotiated through visibility and occlusion.",
+      "alternative_interpretations": [
+        "The composition prioritizes visual balance; the dog’s eyes are large for expressive effect, not epistemological statement."
+      ],
+      "limitations": [
+        "Facial features are stylized and incomplete; the dog’s ‘gaze’ is anthropomorphized by artistic convention, not confirmed behavior."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:42:35.346377+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a27d77ef-fda6-9d54-aa42-2ccafb8bf9d7",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 981,
+        "total_tokens": 2514,
+        "completion_tokens_details": {
+          "text_tokens": 981
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044213ab45db036c7e44ff",
+      "usage": {
+        "completion_tokens": 842,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2937,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3779
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

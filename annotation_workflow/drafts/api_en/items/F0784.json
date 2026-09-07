@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0784",
+  "sample_id": "PHL1800_HL_0020",
+  "file_name": "PHL1800_HL_0020.png",
+  "batch_id": "B001",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "an elderly person lying on a bed with a cat and a laptop",
+  "captions": {
+    "scene": [
+      "A dimly lit bedroom with wooden furniture, two windows with blinds, and an air conditioner unit mounted in one window.",
+      "A bed with patterned bedding holds a resting cat, a laptop displaying a blue-lit scene, and a reclining person wearing pajamas.",
+      "A vintage CRT television sits atop a wooden dresser to the left; a lamp and framed picture rest on a nightstand to the right."
+    ],
+    "action": [
+      "The person lies supine with legs extended, wearing white socks, and holds a tissue near their face with their left hand.",
+      "A light-colored cat rests stretched out on the bed near the person’s torso, eyes closed or nearly closed, appearing asleep or resting.",
+      "A laptop is open on the bed, screen illuminated with a blue-toned image showing indistinct figures or scenery; keyboard and trackpad are visible."
+    ],
+    "rationale": [
+      "The person’s posture—supine with relaxed limbs and a tissue near the face—suggests rest or recovery, though no injury or illness is visible.",
+      "The cat’s position and closed eyes indicate rest, but its exact state (asleep vs. drowsy) cannot be confirmed from still image alone.",
+      "The laptop screen emits light and shows a visual scene, confirming it is powered on, but the content is too blurry to identify definitively."
+    ],
+    "object": [
+      "A wooden dresser with five drawers and metal handles stands to the left of the bed, supporting a white CRT television with a glowing blue power indicator.",
+      "A woven headboard supports stacked folded blankets: one plaid (blue/white), one solid dark blue, and one light gray.",
+      "An open dark-colored laptop rests on the bed, angled toward the person; its screen displays a low-resolution blue-hued image with human-like silhouettes.",
+      "The person wears light-gray sweatpants and a cream-colored pajama top with a repeating dark pattern of small animals or trees.",
+      "A white tissue is held near the person’s face, partially obscuring their lower face and chin area."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0784_P1",
+      "visual_anchors": [
+        "laptop screen emitting blue light",
+        "person holding tissue",
+        "cat resting nearby"
+      ],
+      "symbolic_mapping": [
+        "blue screen light as proxy for mediated experience",
+        "tissue as signifier of vulnerability"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of digital immersion (glowing screen) and embodied fragility (tissue, aging body) evokes tension between mediated knowledge and bodily finitude.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine evening relaxation with entertainment and pet companionship, without symbolic intent."
+      ],
+      "limitations": [
+        "No readable text on screen or objects confirms intentional symbolism; lighting and resolution obscure precise content."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0784_P2",
+      "visual_anchors": [
+        "CRT television unpowered except for standby light",
+        "laptop actively used",
+        "wooden furniture suggesting older decor"
+      ],
+      "symbolic_mapping": [
+        "CRT as obsolete technology contrasted with laptop as current tool"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The coexistence of outdated and contemporary devices reflects layered temporalities of use, suggesting continuity of engagement across technological generations.",
+      "alternative_interpretations": [
+        "The TV may be off due to preference for laptop viewing; its presence need not imply commentary on obsolescence."
+      ],
+      "limitations": [
+        "No evidence the TV was recently used or intentionally juxtaposed; placement could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0784_P3",
+      "visual_anchors": [
+        "cat lying close to person’s torso",
+        "shared bedding surface",
+        "no physical barrier between them"
+      ],
+      "symbolic_mapping": [
+        "proximity without touch as quiet coexistence",
+        "non-human companion as silent witness"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The unspoken intimacy of shared space—human and animal resting in mutual proximity without interaction—suggests a form of social existence grounded in presence rather than action.",
+      "alternative_interpretations": [
+        "The cat may have chosen the spot for warmth or comfort, with no relational significance intended."
+      ],
+      "limitations": [
+        "Animal behavior cannot be interpreted as intentional social signaling from visual evidence alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Candidate incorrectly states the person is 'feet bare and crossed at the ankles' when they are wearing white socks; the cat is described as 'curled' but is lying stretched out; the laptop is described as 'silver' but appears to be a darker color (likely black or dark gray); the tissue is described as 'held loosely in the person’s right hand' but is held near the face with the left hand visible; the headboard is described as 'woven wicker' but appears to be a different material (possibly rattan or another woven style)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:39:40.087356+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f28183d2-2ada-91ba-bd55-7466fd2456e5",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1013,
+        "total_tokens": 1782,
+        "completion_tokens_details": {
+          "text_tokens": 1013
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070139086e4089aa97be4e7d",
+      "usage": {
+        "completion_tokens": 990,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1944,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2934
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

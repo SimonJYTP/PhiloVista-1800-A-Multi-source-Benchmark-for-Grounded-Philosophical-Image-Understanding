@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1702",
+  "sample_id": "PHL1800_HL_0231",
+  "file_name": "PHL1800_HL_0231.png",
+  "batch_id": "B035",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two uniformed officers and one seated civilian near traffic signs",
+  "captions": {
+    "scene": [
+      "A paved sidewalk beside a vegetated roadside under clear daylight with trees overhead.",
+      "Multiple regulatory signs mounted on poles and posts at a street corner or path intersection.",
+      "A man in plaid shirt and cap sits on the ground near two standing officers in dark uniforms."
+    ],
+    "action": [
+      "One officer stands facing away, hands behind back, observing the seated man.",
+      "The second officer stands to the left, partially turned toward the seated man, with one hand near belt equipment.",
+      "The seated man holds an object near his face, possibly a phone or small device, with both hands."
+    ],
+    "rationale": [
+      "The presence of 'DO NOT ENTER' and 'NO PED CROSSING' signs suggests restricted access, but no visible barrier enforces it.",
+      "The officers’ posture and proximity indicate engagement, yet no physical contact or restraint is visible.",
+      "The seated man’s position on the ground may indicate compliance, fatigue, or waiting—but no facial expression or context confirms intent."
+    ],
+    "object": [
+      "A white rectangular sign with black uppercase text reading 'NO PED CROSSING' above 'USE CROSSWALK', with a black left-pointing arrow beneath the lower line, mounted on a gray metal pole.",
+      "A red octagonal sign with white border and text 'DO NOT ENTER' in white uppercase letters, mounted on a post to the left.",
+      "A smaller red rectangular sign below the octagon with white uppercase text 'WRONG WAY', partially obscured by the seated man’s arm.",
+      "Two men in dark short-sleeved uniforms with duty belts, caps, and visible badges; one wears sunglasses.",
+      "A third man wearing a light-colored plaid long-sleeve shirt, dark cap, and light pants, sitting cross-legged on concrete with a green bag beside him."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1702_P1",
+      "visual_anchors": [
+        "'NO PED CROSSING' sign",
+        "seated man near sign",
+        "officers standing nearby"
+      ],
+      "symbolic_mapping": [
+        "the sign represents institutional constraint",
+        "the man's location embodies voluntary or enforced non-compliance"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a prohibitive sign and a person positioned outside its prescribed path visualizes the tension between codified restriction and embodied presence—where constraint is not absolute but negotiated in space and time.",
+      "alternative_interpretations": [
+        "The man may simply be resting where shade is available, with no symbolic intent; the officers may be conducting routine patrol unrelated to the sign."
+      ],
+      "limitations": [
+        "No evidence confirms the man’s awareness of the sign or his reason for sitting there."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1702_P2",
+      "visual_anchors": [
+        "two officers facing one seated civilian",
+        "uniforms vs. civilian clothing",
+        "shared sidewalk space"
+      ],
+      "symbolic_mapping": [
+        "uniforms signify delegated authority",
+        "spatial proximity without contact signals regulated interaction"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The scene captures a moment of asymmetrical spatial occupation: state agents stand upright while a civilian sits low, illustrating how power manifests not only through action but through posture, positioning, and the implicit threat of enforcement.",
+      "alternative_interpretations": [
+        "The officers could be assisting the man, e.g., providing directions or checking welfare, making the posture neutral rather than hierarchical."
+      ],
+      "limitations": [
+        "No gestures, facial expressions, or verbal cues are visible to confirm dominance or cooperation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1702_P3",
+      "visual_anchors": [
+        "green foliage background",
+        "concrete sidewalk foreground",
+        "man holding small object near face"
+      ],
+      "symbolic_mapping": [
+        "natural growth vs. built infrastructure",
+        "personal device as mediator of attention"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The image frames human presence as situated between natural environment and regulatory infrastructure, with individual attention directed inward via a personal device—suggesting modern social existence as simultaneously embedded and detached.",
+      "alternative_interpretations": [
+        "The man may be reading a map or taking a photo; the device use has no necessary philosophical implication."
+      ],
+      "limitations": [
+        "The object held is too indistinct to confirm it is a phone or screen-based device."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:03:19.267537+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-90009cd6-f94c-93e2-83b9-92e9afd12ee6",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 989,
+        "total_tokens": 1798,
+        "completion_tokens_details": {
+          "text_tokens": 989
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070502524160c36ef9aa4bce",
+      "usage": {
+        "completion_tokens": 854,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1966,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2820
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

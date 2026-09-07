@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0336",
+  "sample_id": "PHL1800_MM_0085",
+  "file_name": "PHL1800_MM_0085.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man and a girl seated facing each other in a living room",
+  "captions": {
+    "scene": [
+      "A well-lit interior space with large windows, sheer curtains, beige walls, and a beige upholstered sofa.",
+      "A wooden coffee table occupies the foreground, partially obscuring a laptop on its left side.",
+      "The floor is covered with a light-colored shag carpet; both individuals sit on separate sections of the same sofa."
+    ],
+    "action": [
+      "The man gestures with his right index finger extended toward the girl while his left hand is open and raised near his chest.",
+      "The girl sits upright with hands resting on her lap, looking toward the man with a neutral facial expression.",
+      "A speech bubble originates from the man’s head region and contains legible text."
+    ],
+    "rationale": [
+      "The man’s posture and gesture suggest he is speaking or emphasizing a point, supported by the presence of a speech bubble.",
+      "The girl’s orientation and gaze indicate she is attending to the man, though no facial emotion is clearly discernible.",
+      "The speech bubble’s placement near the man’s head implies attribution to him, but visual evidence alone cannot confirm speaker identity without textual confirmation."
+    ],
+    "object": [
+      "The man wears a blue vertically striped long-sleeve button-down shirt, dark blue jeans, brown lace-up shoes, and a wristwatch on his left wrist.",
+      "The girl wears a pink textured long-sleeve sweater, dark blue jeans, and has long straight brown hair falling past her shoulders.",
+      "A beige two-cushion sectional sofa with visible seam stitching supports both individuals.",
+      "A rectangular wooden coffee table with a smooth top and visible grain occupies the lower-left foreground.",
+      "A black laptop with a visible keyboard and screen edge rests on the coffee table’s left side."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0336_P1",
+      "visual_anchors": [
+        "man pointing",
+        "girl listening",
+        "speech bubble containing 'You should follow your own passion.'"
+      ],
+      "symbolic_mapping": [
+        "pointing gesture maps to directive agency",
+        "speech bubble maps to externalized value proposition"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages a moment where an adult offers guidance about self-determination, framing personal passion as a normative path—suggesting tension between external counsel and internal autonomy.",
+      "alternative_interpretations": [
+        "The scene may simply depict a casual conversation about hobbies or career interests without philosophical intent."
+      ],
+      "limitations": [
+        "The speech bubble is the sole source of the phrase; no contextual cues (e.g., books, art, tools) confirm the topic is passion-related."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0336_P2",
+      "visual_anchors": [
+        "girl’s attentive posture",
+        "man’s expressive hand gesture",
+        "shared seating arrangement"
+      ],
+      "symbolic_mapping": [
+        "face-to-face orientation maps to relational reciprocity",
+        "shared furniture maps to social co-presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The spatial proximity and mutual orientation emphasize intersubjective engagement, where identity formation may occur through dialogue within a domestic social frame.",
+      "alternative_interpretations": [
+        "The arrangement could reflect routine family interaction with no symbolic significance beyond comfort or convenience."
+      ],
+      "limitations": [
+        "No shared gaze or mirrored gestures confirm active reciprocity; the girl’s expression remains neutral and uninterpreted."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0336_P3",
+      "visual_anchors": [
+        "laptop on table",
+        "casual attire",
+        "modern interior"
+      ],
+      "symbolic_mapping": [
+        "laptop maps to contemporary knowledge access",
+        "interior lighting maps to clarity or openness"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of digital tool (laptop) and interpersonal exchange suggests a setting where technological mediation coexists with embodied moral instruction, raising questions about how truth or values are transmitted in hybrid environments.",
+      "alternative_interpretations": [
+        "The laptop may be incidental—unused and merely present—as the focus is clearly on the verbal exchange."
+      ],
+      "limitations": [
+        "The laptop screen is not visible; its state (on/off, content) is unknown, weakening any claim about its functional role."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:34:40.415381+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cd0a870a-77b6-9a13-940a-5b67bbaf7e9d",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 970,
+        "total_tokens": 2503,
+        "completion_tokens_details": {
+          "text_tokens": 970
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070234235221b2ccf4cd42ac",
+      "usage": {
+        "completion_tokens": 831,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2926,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3757
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

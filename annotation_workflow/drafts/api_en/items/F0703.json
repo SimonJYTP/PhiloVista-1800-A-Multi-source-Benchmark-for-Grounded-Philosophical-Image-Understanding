@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0703",
+  "sample_id": "PHL1800_HAIV_0491",
+  "file_name": "PHL1800_HAIV_0491.png",
+  "batch_id": "B016",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two stylized facial halves side by side",
+  "captions": {
+    "scene": [
+      "A vertical split composition: left half is blue-toned with gradient shading, right half is white with black outlines.",
+      "Both sides feature identical cartoon-style eyes, eyebrows, and noses drawn in thick black lines.",
+      "The left side has a smooth color field; the right side is monochrome line art on white background."
+    ],
+    "action": [
+      "Eyes are wide open with visible corneal highlights and dark pupils.",
+      "Eyebrows are drawn as jagged, upward-arching lines suggesting tension or alertness.",
+      "Noses are depicted as simple curved outlines without nostril detail."
+    ],
+    "rationale": [
+      "The symmetry of features suggests intentional mirroring rather than independent depiction.",
+      "The absence of mouth or ears implies deliberate omission to focus on ocular and nasal regions.",
+      "The blue gradient on the left may indicate lighting or material difference, but no source is visible."
+    ],
+    "object": [
+      "Two identical blue irises with white specular highlights and black pupils are present, one per side.",
+      "Each eye is enclosed by a thick black oval outline representing the eyelid contour.",
+      "Four black eyebrow strokes—two per side—are positioned above each eye, angled upward and outward.",
+      "Two black nose outlines, each consisting of two curved lines forming a U-shape, appear below the eyes.",
+      "The left half displays a continuous blue-to-white radial gradient overlaying the facial features."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0703_P1",
+      "visual_anchors": [
+        "blue gradient left half",
+        "white line-art right half",
+        "identical eyes"
+      ],
+      "symbolic_mapping": [
+        "blue field → subjective perception",
+        "white field → objective representation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The duality of colored vs. uncolored rendering may symbolize the tension between experiential subjectivity and formal objectivity in constructing knowledge.",
+      "alternative_interpretations": [
+        "It is a stylistic contrast for visual balance without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0703_P2",
+      "visual_anchors": [
+        "mirrored facial features",
+        "absence of mouth",
+        "shared eye structure"
+      ],
+      "symbolic_mapping": [
+        "identical eyes → shared observation",
+        "missing mouth → withheld expression"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The paired yet divided face suggests a fragmented self presented socially, where perception (eyes) remains constant while expressive identity (mouth) is omitted or suppressed.",
+      "alternative_interpretations": [
+        "The mouth is simply not drawn due to artistic minimalism."
+      ],
+      "limitations": [
+        "No evidence of social context or interaction; only static depiction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0703_P3",
+      "visual_anchors": [
+        "jagged eyebrows",
+        "wide-open eyes",
+        "sharp black lines"
+      ],
+      "symbolic_mapping": [
+        "tense brows → vigilance",
+        "fixed gaze → scrutiny"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The exaggerated alertness conveyed by brow and eye configuration may reflect a state of constrained attention under external pressure or surveillance.",
+      "alternative_interpretations": [
+        "The expression is generic cartoon alarm, not tied to power dynamics."
+      ],
+      "limitations": [
+        "No indicators of external agents, environment, or coercion are present."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:09:16.221584+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6fdba0e3-7b02-9ccf-91be-6e0a209466fb",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 815,
+        "total_tokens": 2348,
+        "completion_tokens_details": {
+          "text_tokens": 815
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070308590fd8374dcc49483c",
+      "usage": {
+        "completion_tokens": 671,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2770,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3441
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0602",
+  "sample_id": "PHL1800_IRFL_0298",
+  "file_name": "PHL1800_IRFL_0298.jpg",
+  "batch_id": "B014",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one boy seated at a table",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor setting with a large window in the background showing blurred outdoor light.",
+      "A white table surface holds an open book, a notebook, a pen, and a transparent cup holding colored pencils.",
+      "The background is out of focus, suggesting shallow depth of field; no other people or furniture are clearly visible."
+    ],
+    "action": [
+      "The boy holds a blue pen in his right hand and writes in a green-covered notebook.",
+      "His left hand rests near the open book, which lies flat on the table with pages spread.",
+      "He looks downward toward the notebook with his head tilted slightly forward."
+    ],
+    "rationale": [
+      "The boy’s posture and gaze direction suggest focused attention on writing, though internal mental state is not observable.",
+      "The presence of school supplies implies a learning or homework context, but the specific activity (e.g., homework vs. journaling) is not confirmed by visual evidence.",
+      "The lighting and background blur indicate intentional photographic composition, but the exact location (e.g., home vs. classroom) cannot be determined from visible cues alone."
+    ],
+    "object": [
+      "The boy wears a long-sleeved shirt with orange sleeves and a beige torso panel featuring a dark collar trim.",
+      "A transparent cylindrical cup contains at least ten colored pencils with visible wood casings and sharpened tips.",
+      "An open hardcover book lies horizontally on the table; its pages are white with no legible text due to resolution and angle.",
+      "A green-covered notebook lies to the left of the book, partially open, with handwritten marks visible on its top page.",
+      "A blue plastic pen with a silver clip is held in the boy’s right hand, tip contacting paper."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0602_P1",
+      "visual_anchors": [
+        "open book",
+        "handwriting in notebook",
+        "colored pencils"
+      ],
+      "symbolic_mapping": [
+        "the open book represents accessible knowledge",
+        "writing signifies active construction of understanding"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of a receptive medium (book) and an expressive act (writing) visually embodies the epistemic process: truth is not merely received but actively inscribed through engagement.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine academic work without symbolic intent."
+      ],
+      "limitations": [
+        "No legible text confirms content or purpose of writing or reading."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0602_P2",
+      "visual_anchors": [
+        "boy’s focused gaze",
+        "single subject in frame",
+        "isolated workspace"
+      ],
+      "symbolic_mapping": [
+        "solitary concentration reflects self-directed inquiry",
+        "table as boundary between inner thought and external tools"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The boy’s solitary engagement with tools of learning suggests a moment in a personal intellectual journey where choice—what to write, how to interpret—defines progression.",
+      "alternative_interpretations": [
+        "The isolation may result from photographic framing rather than intentional solitude."
+      ],
+      "limitations": [
+        "No temporal sequence shows progression; only a static instant is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0602_P3",
+      "visual_anchors": [
+        "colored pencils in transparent cup",
+        "uniform lighting",
+        "clean white table"
+      ],
+      "symbolic_mapping": [
+        "ordered tools imply structured discipline",
+        "transparency of container suggests openness of means"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The orderly arrangement of learning instruments alongside deliberate action implies a nascent sense of responsibility toward knowledge acquisition and self-cultivation.",
+      "alternative_interpretations": [
+        "The arrangement may reflect adult preparation rather than the boy’s own agency."
+      ],
+      "limitations": [
+        "No evidence of intentionality behind object placement; could be staged."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:00:01.315282+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0abaa710-293a-9e6c-9231-aee496d06727",
+      "usage": {
+        "prompt_tokens": 597,
+        "completion_tokens": 878,
+        "total_tokens": 1475,
+        "completion_tokens_details": {
+          "text_tokens": 878
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 90,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025948298c2a90dd394cd2",
+      "usage": {
+        "completion_tokens": 743,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1585,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2328
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1240",
+  "sample_id": "PHL1800_IRFL_0451",
+  "file_name": "PHL1800_IRFL_0451.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single human face in extreme close-up",
+  "captions": {
+    "scene": [
+      "High-contrast monochrome image with deep shadows and bright highlights on facial skin texture",
+      "Surface of the face appears cracked, dry, and heavily textured, resembling aged or weathered material",
+      "No background visible; entire frame filled by facial features from forehead to upper lip"
+    ],
+    "action": [
+      "Eyes are tightly closed with pronounced crow's feet and furrowed brow",
+      "Nose is compressed vertically with visible creases along the sides",
+      "Mouth is slightly parted with lips pressed together, showing fine vertical lines"
+    ],
+    "rationale": [
+      "The extreme wrinkling and cracking suggest prolonged muscular contraction or desiccation, but causation cannot be confirmed from image alone",
+      "Monochrome rendering emphasizes texture over color cues, limiting inference about skin tone or health status",
+      "Absence of external context (e.g., clothing, environment) prevents determination of setting or activity"
+    ],
+    "object": [
+      "The forehead displays deep transverse furrows intersecting with radial wrinkles converging toward the glabella.",
+      "The nasal bridge shows a central vertical crease flanked by bilateral oblique folds extending toward the inner canthi.",
+      "The upper lip exhibits fine vertical striations and a subtle asymmetry in contour between left and right halves.",
+      "The periorbital region contains dense, radiating lines around both eyes, with the left eye area appearing slightly more compressed.",
+      "The skin surface throughout has a granular, fissured appearance with irregular light reflection indicating non-uniform topography."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1240_P1",
+      "visual_anchors": [
+        "deep transverse forehead furrows",
+        "cracked skin texture",
+        "tight eye closure"
+      ],
+      "symbolic_mapping": [
+        "wrinkles as accumulation of temporal experience",
+        "cracking as fragility under sustained pressure"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The face embodies the physical inscription of duration—each fold and fissure registers irreversible change, suggesting identity as a site of temporal erosion rather than stable essence.",
+      "alternative_interpretations": [
+        "The texture may result from artistic manipulation (e.g., clay modeling or digital texturing) rather than biological aging."
+      ],
+      "limitations": [
+        "No chronological markers (e.g., hair, teeth, surrounding context) confirm biological age or natural origin."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1240_P2",
+      "visual_anchors": [
+        "compressed nasal bridge",
+        "asymmetrical lip tension",
+        "converging periocular lines"
+      ],
+      "symbolic_mapping": [
+        "facial compression as internal constraint",
+        "asymmetry as unresolved tension"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The face manifests embodied constraint: muscular tightening and structural distortion imply forces acting inward, visualizing how external or internal power dynamics sculpt expression beyond volition.",
+      "alternative_interpretations": [
+        "The pose could be a voluntary grimace for photographic effect, not evidence of coercion or conflict."
+      ],
+      "limitations": [
+        "Facial musculature alone cannot distinguish voluntary from involuntary contraction without motion or context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1240_P3",
+      "visual_anchors": [
+        "granular skin topography",
+        "high-contrast chiaroscuro",
+        "absence of external reference points"
+      ],
+      "symbolic_mapping": [
+        "texture as epistemic surface",
+        "monochrome as reduction of perceptual noise"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The image foregrounds appearance as the sole accessible datum, challenging the assumption that truth resides beneath surfaces—here, the surface *is* the evidence, demanding interpretation without recourse to hidden interiority.",
+      "alternative_interpretations": [
+        "The monochrome treatment may be aesthetic choice unrelated to epistemological claims."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional philosophical framing; interpretation relies on viewer projection."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:06:52.789169+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-01ba1ba1-40b3-9fa1-bb33-7f42e9ccdd0a",
+      "usage": {
+        "prompt_tokens": 993,
+        "completion_tokens": 909,
+        "total_tokens": 1902,
+        "completion_tokens_details": {
+          "text_tokens": 909
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 486,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704063349adc541dcc34972",
+      "usage": {
+        "completion_tokens": 768,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2117,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2885
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

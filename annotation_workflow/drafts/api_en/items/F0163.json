@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0163",
+  "sample_id": "PHL1800_MM_0140",
+  "file_name": "PHL1800_MM_0140.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person seated on a bed using a laptop and holding a credit card",
+  "captions": {
+    "scene": [
+      "A bedroom interior with white bedding, a mustard-yellow blanket, and two framed portraits on the wall",
+      "A laptop rests on the person's lap; its screen displays a website with a blue header and grid of portrait thumbnails",
+      "Natural light enters from the right side, illuminating the scene and casting soft shadows"
+    ],
+    "action": [
+      "The person holds a blue credit card in their right hand near the laptop keyboard",
+      "The person is viewing the laptop screen, oriented toward it with head slightly tilted",
+      "Two framed images of women hang on the wall behind the laptop, one above the other"
+    ],
+    "rationale": [
+      "The speech bubble contains legible text stating an intent to order a tapestry featuring an influencer’s face, suggesting the laptop screen content relates to that purchase",
+      "The laptop screen shows a website with a search bar and multiple portrait thumbnails, consistent with a customization or print-on-demand service",
+      "The presence of two identical or similar facial images (one in frame, one on screen) may indicate selection or comparison, but exact identity or relationship is not verifiable from visual evidence alone"
+    ],
+    "object": [
+      "A silver laptop with a black keyboard and visible trackpad sits on a mustard-yellow fabric draped over the person’s lap.",
+      "A blue credit card with white markings is held in the person’s right hand, partially obscuring the laptop’s palm rest.",
+      "Two framed portraits hang on the wall: the upper one shows a woman with dark hair wearing a light top, resting her chin on her hand; the lower one shows a woman with long brown hair and neutral expression.",
+      "The laptop screen displays a webpage titled 'Totelmoic' in a sans-serif font, with navigation tabs labeled 'Home', 'Products', 'Characters' (partially legible), and a central blue panel containing a search field and button labeled '#Run'.",
+      "Below the blue panel, a section labeled 'Duelents' shows six square thumbnails, each containing a portrait image and unreadable text beneath."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0163_P1",
+      "visual_anchors": [
+        "speech bubble stating 'I order a tapestry with the face of my favorite influencer!'",
+        "two framed portraits on wall",
+        "laptop screen showing portrait thumbnails"
+      ],
+      "symbolic_mapping": [
+        "framed portrait → curated self-presentation",
+        "influencer face on tapestry → desire for proximity to idealized identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The act of commissioning a physical object bearing another’s visage reflects a negotiation between self-identity and socially mediated ideals, where appearance becomes a site of relational aspiration rather than intrinsic self-definition.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine e-commerce behavior without symbolic intent—ordering decorative home goods featuring familiar faces."
+      ],
+      "limitations": [
+        "The speech bubble is authored by the depicted person but cannot confirm actual intent or internal motivation; it functions as staged narrative text."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0163_P2",
+      "visual_anchors": [
+        "person holding credit card",
+        "laptop displaying commercial interface",
+        "bed as setting for transaction"
+      ],
+      "symbolic_mapping": [
+        "bedroom as private space invaded by commercial interface → blurring of consumption and intimacy"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The integration of transactional technology into domestic repose suggests a normalization of commodified desire, where personal space becomes both sanctuary and marketplace, constraining autonomy through seamless access to consumption.",
+      "alternative_interpretations": [
+        "The setting is coincidental; many people shop online from beds due to comfort and convenience, not ideological alignment."
+      ],
+      "limitations": [
+        "No evidence confirms whether the purchase was impulsive, planned, or coerced; the bed’s use as workspace is common and non-exclusive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0163_P3",
+      "visual_anchors": [
+        "multiple identical or similar facial images across media (frame, screen, speech bubble reference)",
+        "website section labeled 'Duelents'",
+        "unidentifiable text in thumbnails"
+      ],
+      "symbolic_mapping": [
+        "repetition of face across formats → fragmentation of singular identity into distributable tokens"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The proliferation of a single face across physical frames, digital interfaces, and textual declaration illustrates how truth about identity becomes dispersed and contingent upon platform-mediated replication, undermining stable referentiality.",
+      "alternative_interpretations": [
+        "The repeated faces are merely product options on a customization site; no deeper semiotic claim is intended."
+      ],
+      "limitations": [
+        "It is visually ambiguous whether the portraits depict the same individual; lighting, angle, and resolution prevent definitive identification."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:17:11.379212+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6d55acfe-0d8a-99bf-a720-f335ac32a4a9",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1098,
+        "total_tokens": 2631,
+        "completion_tokens_details": {
+          "text_tokens": 1098
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702170059bfd672dc85461d",
+      "usage": {
+        "completion_tokens": 964,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3050,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4014
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

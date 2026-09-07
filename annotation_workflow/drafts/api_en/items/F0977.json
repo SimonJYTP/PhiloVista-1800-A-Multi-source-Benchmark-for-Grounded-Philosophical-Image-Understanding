@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F0977",
+  "sample_id": "PHL1800_HL_0549",
+  "file_name": "PHL1800_HL_0549.png",
+  "batch_id": "B021",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single skier descending a steep snow slope",
+  "captions": {
+    "scene": [
+      "A high-angle view of a snow-covered mountain slope with scattered coniferous trees and exposed rocky outcrops.",
+      "Below the slope, a valley contains a settlement with buildings, roads, and open snowy fields extending toward distant forested hills.",
+      "The sky is bright and clear, casting sharp shadows; sunlight illuminates the snow surface and reveals texture from recent skiing."
+    ],
+    "action": [
+      "The skier leans sharply into a turn, displacing snow with the outer ski edge while holding poles diagonally behind.",
+      "The skier’s body is angled forward and low, knees bent, torso rotated, indicating dynamic balance during high-speed descent.",
+      "Snow sprays outward from the skis’ edges, confirming active carving motion on a firm snow surface."
+    ],
+    "rationale": [
+      "The skier wears full protective gear (helmet, goggles, backpack), suggesting preparedness for backcountry or off-piste terrain rather than groomed resort runs.",
+      "The absence of visible trail markers, lifts, or other skiers implies this is likely an ungroomed, natural slope—though no signage confirms this definitively.",
+      "The valley layout includes winding roads and clustered structures consistent with a small town or village, but no readable text identifies it."
+    ],
+    "object": [
+      "The skier wears a bright orange helmet, dark goggles, a green vest over a dark long-sleeve top, black pants, and white ski boots attached to white skis with red-orange tips.",
+      "Two ski poles are held in both hands, angled backward; the left pole tip contacts snow, the right pole is raised slightly above the surface.",
+      "A black backpack with red straps is worn on the skier’s back, partially visible beneath the vest.",
+      "The slope surface shows parallel grooves and disturbed snow from prior turns, indicating repeated use or tracked descent paths.",
+      "Sparse evergreen trees grow along the slope’s edge and in the mid-ground valley, with some branches dusted in snow."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0977_P1",
+      "visual_anchors": [
+        "skier leaning into a turn",
+        "snow spray from ski edges",
+        "steep unmarked slope"
+      ],
+      "symbolic_mapping": [
+        "the skier’s controlled descent maps to navigating uncertainty with agency"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The skier’s deliberate posture amid a vast, unstructured landscape embodies the existential act of choosing a path without predetermined guidance—each turn a reaffirmation of self-directed motion against indifferent terrain.",
+      "alternative_interpretations": [
+        "This is simply a recreational activity captured mid-movement, with no intentional symbolism."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intent; the interpretation projects meaning onto neutral physical dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0977_P2",
+      "visual_anchors": [
+        "orange helmet contrasting white snow",
+        "isolated figure against expansive valley",
+        "sharp shadow cast by skier"
+      ],
+      "symbolic_mapping": [
+        "high-visibility gear signifies individual presence amid anonymity of nature"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The skier’s vividly colored helmet functions as a visual assertion of identity against a uniform white field, illustrating how appearance becomes a necessary marker of self when social context recedes.",
+      "alternative_interpretations": [
+        "The helmet color is purely functional for visibility and safety, not symbolic expression."
+      ],
+      "limitations": [
+        "Color choice may be dictated by manufacturer availability or regulation, not personal statement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0977_P3",
+      "visual_anchors": [
+        "exposed rock face below slope",
+        "valley settlement far below",
+        "skier positioned mid-descent"
+      ],
+      "symbolic_mapping": [
+        "vertical separation between skier and settlement evokes hierarchical distance between action and consequence"
+      ],
+      "concept_ids": [
+        "ethics_responsibility"
+      ],
+      "interpretation": "The physical elevation gap between the skier and the inhabited valley visually mirrors the moral distance one may feel from downstream effects of individual risk-taking, raising questions about accountability in isolated action.",
+      "alternative_interpretations": [
+        "The elevation difference is purely topographic and incidental to the sport’s requirements."
+      ],
+      "limitations": [
+        "No evidence links the skier’s actions to the valley’s inhabitants; the spatial relationship is geometric, not causal."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:33:13.482303+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-728d2808-7243-986d-b330-b3edcd857454",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 992,
+        "total_tokens": 1761,
+        "completion_tokens_details": {
+          "text_tokens": 992
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070332431b83924c89a44516",
+      "usage": {
+        "completion_tokens": 860,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1927,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2787
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

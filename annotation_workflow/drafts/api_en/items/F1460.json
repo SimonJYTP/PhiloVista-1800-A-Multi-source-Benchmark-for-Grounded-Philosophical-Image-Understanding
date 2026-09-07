@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F1460",
+  "sample_id": "PHL1800_HL_0220",
+  "file_name": "PHL1800_HL_0220.png",
+  "batch_id": "B030",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "nurses and patients in a large ward",
+  "captions": {
+    "scene": [
+      "A spacious, high-ceilinged room with ornate chandeliers, arched windows, and rows of metal-framed hospital beds.",
+      "White curtains divide sections of the ward; some beds are occupied, others appear empty or prepared.",
+      "Multiple individuals in nursing uniforms stand or sit among the beds, while several patients are seated or reclining."
+    ],
+    "action": [
+      "A nurse in a white apron and cap stands near a curtain on the left, facing inward toward the ward.",
+      "Two men sit side by side at the foot of a bed: one reads a document, the other looks down at his lap.",
+      "A nurse in the background stands near a bed, not leaning over a patient."
+    ],
+    "rationale": [
+      "The presence of multiple identical metal-framed beds with patterned blankets suggests institutional medical care rather than domestic setting.",
+      "Uniforms (white caps, aprons, dark dresses) distinguish staff from patients, though exact roles cannot be confirmed without text.",
+      "The arrangement of beds in parallel rows and the use of partition curtains indicate an organized, functional space designed for multiple occupants."
+    ],
+    "object": [
+      "There are five visible individuals: three women in nursing attire (one on far left, one mid-right standing near a bed, one far right partially obscured), and two men (two seated together near foreground).",
+      "Five ornate multi-tiered chandeliers hang from the ceiling, each with numerous glass elements and candle-style bulbs.",
+      "At least eight metal-framed hospital beds are visible in two parallel rows, each with a patterned blanket and pillow; some have side tables or personal items.",
+      "A tall white fabric curtain hangs vertically on the left edge, partially obscuring a doorway or alcove.",
+      "A wooden door with glass panes is visible in the background center, flanked by wall-mounted sconces and framed notices or charts."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1460_P1",
+      "visual_anchors": [
+        "nurse standing alone near curtain",
+        "rows of identical beds",
+        "chandeliers above"
+      ],
+      "symbolic_mapping": [
+        "uniformed figure as embodiment of duty",
+        "repetition of beds as representation of shared vulnerability"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The spatial hierarchy—attendants positioned between structured rows of beds under formal lighting—suggests a moral order where care is institutionalized yet personally enacted.",
+      "alternative_interpretations": [
+        "This may simply reflect standard hospital layout of the era, with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No textual labels confirm roles or institutional purpose; visual cues alone cannot verify intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1460_P2",
+      "visual_anchors": [
+        "man reading document",
+        "man beside him looking downward",
+        "beds extending into depth"
+      ],
+      "symbolic_mapping": [
+        "shared silence amid proximity as reflection of existential isolation within community"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of focused individual activity (reading) against passive waiting (looking down) within a communal space evokes tension between personal temporality and collective stasis.",
+      "alternative_interpretations": [
+        "The men may be discussing medical instructions or correspondence; their postures reflect routine interaction, not philosophical contemplation."
+      ],
+      "limitations": [
+        "Facial expressions and gaze directions are indistinct due to image resolution and angle."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1460_P3",
+      "visual_anchors": [
+        "ornate chandeliers",
+        "plain metal beds",
+        "nurses’ modest uniforms"
+      ],
+      "symbolic_mapping": [
+        "luxurious fixtures contrasting with utilitarian furnishings signal stratified care environments"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The coexistence of decorative opulence and functional austerity visually encodes hierarchies of value—where infrastructure displays prestige while labor and bodies occupy standardized, reproducible units.",
+      "alternative_interpretations": [
+        "Chandeliers may be inherited architectural features unrelated to current function; uniformity of beds reflects hygiene standards, not power dynamics."
+      ],
+      "limitations": [
+        "No signage or contextual markers confirm whether the building was originally non-medical or repurposed."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate states six visible individuals but image shows five (three nurses, two patients).",
+      "Candidate describes a nurse leaning over a patient in the background, but no such action is visible; the background figure is standing near a bed, not leaning."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:35:12.829775+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-801ab907-4252-9648-8f3f-8afaaa45741a",
+      "usage": {
+        "prompt_tokens": 775,
+        "completion_tokens": 991,
+        "total_tokens": 1766,
+        "completion_tokens_details": {
+          "text_tokens": 991
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 268,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070434466e92757bfc2e437d",
+      "usage": {
+        "completion_tokens": 898,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1911,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2809
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

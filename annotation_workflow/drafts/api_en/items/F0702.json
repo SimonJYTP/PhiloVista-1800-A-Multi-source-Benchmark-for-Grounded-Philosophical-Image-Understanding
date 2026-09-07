@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0702",
+  "sample_id": "PHL1800_HL_0125",
+  "file_name": "PHL1800_HL_0125.png",
+  "batch_id": "B016",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red and black bus with two pedestrians nearby",
+  "captions": {
+    "scene": [
+      "A paved road with two buses parked or stopped, trees and a yellow wall in the background under overcast sky",
+      "The red bus has ornate side graphics and open front door; a second bus is partially visible to its left",
+      "Two people walk on the road surface near the red bus’s front wheel and open doorway"
+    ],
+    "action": [
+      "A person in a red hoodie stands beside the open driver-side door of the red bus, facing forward",
+      "A second person walks past the red bus toward the left, carrying a dark bag in their right hand",
+      "The red bus appears stationary with its engine off (no visible exhaust or motion blur)"
+    ],
+    "rationale": [
+      "The bus’s open door and proximity of pedestrians suggest boarding/alighting activity, though no one is actively entering or exiting",
+      "The lack of motion blur on wheels or figures indicates low or zero velocity at capture moment",
+      "Side graphics and color scheme resemble regional transit or school bus styling, but no explicit signage confirms function"
+    ],
+    "object": [
+      "The red bus has a chrome grille, round headlights, and a roof-mounted destination sign holder with unreadable text",
+      "The bus body features yellow and black decorative stripes along its lower side, with partial lettering '...RICA...' visible in red script",
+      "A person in a red hooded sweatshirt with white text 'CAROLINA' on the chest stands with hands at sides, wearing dark pants and shoes",
+      "A second person wears a gray long-sleeve top, dark jeans, and carries a dark shoulder bag; their head is covered by a brown cloth or hair",
+      "A second bus to the left shows a green-and-red front bumper, chrome grille, and partial side text reading '...SALVADOR...' above '...PUEBLA...', both partially obscured"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0702_P1",
+      "visual_anchors": [
+        "open bus door",
+        "person standing beside it",
+        "second person walking away"
+      ],
+      "symbolic_mapping": [
+        "open door as threshold between movement and stasis",
+        "proximity without entry as suspended decision"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment of indeterminate transition: the open door invites passage, yet the figure remains outside, embodying the philosophical tension between potential action and enacted choice.",
+      "alternative_interpretations": [
+        "The person is waiting for someone or for the bus to depart; no symbolic intent is present"
+      ],
+      "limitations": [
+        "No facial expression or gesture confirms deliberation; posture is neutral"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0702_P2",
+      "visual_anchors": [
+        "ornate bus graphics",
+        "chrome grille",
+        "worn pavement"
+      ],
+      "symbolic_mapping": [
+        "decorative bus as cultural artifact expressing identity through form",
+        "contrast between vehicle embellishment and utilitarian road surface"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The bus’s stylized appearance functions as a visual assertion of collective identity amid infrastructure, suggesting that technological objects become carriers of social meaning through aesthetic labor.",
+      "alternative_interpretations": [
+        "Graphics are purely commercial branding with no deeper cultural signaling"
+      ],
+      "limitations": [
+        "Text on graphics is partially illegible; intended audience or origin unknown"
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0702_P3",
+      "visual_anchors": [
+        "two pedestrians near bus",
+        "trees behind wall",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "shared public space as site of anonymous coexistence",
+        "physical proximity without interaction as emblem of modern social distance"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The simultaneous presence of individuals in shared transit space—neither engaging nor avoiding—reflects a condition of structured cohabitation where freedom of movement exists alongside implicit constraints of routine and anonymity.",
+      "alternative_interpretations": [
+        "They are simply moving independently; no social dynamic is implied"
+      ],
+      "limitations": [
+        "No eye contact, orientation, or spatial alignment confirms relational intent"
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:09:14.307062+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6934098b-9568-9ccc-9e81-4eddb813893f",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 953,
+        "total_tokens": 1762,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030855522c6f437c9b42ce",
+      "usage": {
+        "completion_tokens": 805,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1925,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2730
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

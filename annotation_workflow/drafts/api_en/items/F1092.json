@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1092",
+  "sample_id": "PHL1800_HL_0292",
+  "file_name": "PHL1800_HL_0292.png",
+  "batch_id": "B023",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four sheep wearing colored cloths with small figurines on their backs, jumping over a striped hurdle",
+  "captions": {
+    "scene": [
+      "An outdoor grassy field with a crowd behind green net fencing, white tents, and a wind turbine in the background",
+      "A multi-colored horizontal hurdle (purple, white, pink stripes) lies low across the grass, partially crossed by the sheep",
+      "Spectators stand behind barriers; some wear bright clothing; a green canopy tent is visible left of center"
+    ],
+    "action": [
+      "Four sheep are mid-motion: two are airborne over the hurdle, one is just clearing it, and one is approaching it",
+      "Each sheep carries a small seated figurine dressed in distinct attire (e.g., blue jacket, green vest, red coat, purple outfit)",
+      "The sheep wear fitted fabric garments in yellow, pink, red, orange, and purple, covering their torsos"
+    ],
+    "rationale": [
+      "The presence of uniformed figurines and coordinated cloth colors suggests an organized event rather than spontaneous behavior",
+      "The hurdle’s low height and the sheep’s synchronized motion imply training or staging, though no handler is visible in immediate proximity",
+      "The crowd density and infrastructure (tents, fencing) indicate a public gathering, but the specific nature (competition, performance, festival) cannot be confirmed from visuals alone"
+    ],
+    "object": [
+      "A white sheep with a pink cloth and a figurine in a blue jacket is airborne over the left side of the hurdle.",
+      "A second white sheep wearing a red cloth and carrying a figurine in a red coat is also airborne, slightly behind the first.",
+      "A third white sheep in an orange cloth with a figurine in a purple outfit is on the ground, front hooves extended forward, approaching the hurdle.",
+      "A fourth white sheep in a purple cloth with a figurine in a brown hat and blue vest is on the ground to the right, head turned forward, not yet at the hurdle.",
+      "The hurdle consists of two parallel poles: upper pole striped purple-white-pink-white-purple, lower pole solid white, supported by unseen stands."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1092_P1",
+      "visual_anchors": [
+        "sheep wearing colorful cloths",
+        "figurines seated atop each sheep",
+        "hurdle as artificial obstacle"
+      ],
+      "symbolic_mapping": [
+        "colored cloths as assigned roles",
+        "figurines as external agents directing action"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image evokes questions about constructed identity and social positioning, where non-human agents are adorned and directed to perform within human-defined frameworks, mirroring how appearance and assigned roles shape perceived agency.",
+      "alternative_interpretations": [
+        "This may simply be a novelty agricultural fair demonstration with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual context confirms intentional symbolism; the figurines could be purely decorative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1092_P2",
+      "visual_anchors": [
+        "low hurdle",
+        "sheep mid-jump",
+        "crowd observing"
+      ],
+      "symbolic_mapping": [
+        "hurdle as imposed constraint",
+        "jump as negotiated passage"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The act of leaping over an artificial barrier under observation reflects tensions between autonomy and externally imposed structures, suggesting that even constrained movement can constitute a form of enacted choice.",
+      "alternative_interpretations": [
+        "The sheep are responding to training cues; the jump is reflexive, not deliberative."
+      ],
+      "limitations": [
+        "Animal intentionality is not visually verifiable; motion may be coerced or habitual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1092_P3",
+      "visual_anchors": [
+        "multiple spectators behind fence",
+        "uniform arrangement of sheep and riders",
+        "open field setting"
+      ],
+      "symbolic_mapping": [
+        "fence as boundary between participant and observer",
+        "repetition of form as ritual"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The separation of audience from performers via fencing highlights the ethical dimension of spectacle—where beings are made objects of collective attention, raising implicit questions about responsibility in staged animal participation.",
+      "alternative_interpretations": [
+        "The fence is purely for safety and crowd control, with no moral implication intended."
+      ],
+      "limitations": [
+        "Intent behind the setup is invisible; ethical evaluation requires assumptions beyond visual data."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:50:47.105856+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ec46de88-f8ef-9498-a9ca-08aebd77dd72",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 1006,
+        "total_tokens": 1795,
+        "completion_tokens_details": {
+          "text_tokens": 1006
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035028066956315fcc474a",
+      "usage": {
+        "completion_tokens": 865,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1957,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2822
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

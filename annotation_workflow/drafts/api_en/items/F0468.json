@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F0468",
+  "sample_id": "PHL1800_IRFL_0113",
+  "file_name": "PHL1800_IRFL_0113.jpg",
+  "batch_id": "B011",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a modified green Volkswagen van with a raised pop-top tent parked on a pebble beach",
+  "captions": {
+    "scene": [
+      "A pebble-strewn shoreline borders turquoise water under a partly cloudy sky, with distant low mountains visible across the water.",
+      "The van is positioned at an angle on the shore, with its side door open and interior partially visible.",
+      "A yellow and black storage box is mounted on a rear hitch carrier; a patterned mat lies on the ground near the open door."
+    ],
+    "action": [
+      "The pop-top roof tent is fully extended upward and secured in the open position.",
+      "The driver-side sliding door is open, revealing bedding and interior items inside the van.",
+      "The vehicle is stationary on uneven gravelly terrain, casting a distinct shadow to its left."
+    ],
+    "rationale": [
+      "The presence of camping gear (tent, mat, storage box) suggests temporary habitation or travel use, though no active human activity is visible.",
+      "The van’s rugged modifications (winch, bull bar, off-road tires, auxiliary lights) indicate preparation for off-pavement travel, but no motion or recent track evidence is present.",
+      "The open door and visible interior suggest recent or imminent occupancy, yet no person is visible inside or nearby—this state could be momentary or prolonged."
+    ],
+    "object": [
+      "The van is olive-green with black lower trim, features a front-mounted red winch, a steel bull bar with six round auxiliary lamps, and a VW emblem centered on the grille.",
+      "A beige fabric pop-top tent is raised above the roof, supported by metal struts, with a mesh window panel visible on its side.",
+      "The sliding side door is fully open, showing a bed platform with green fabric, a white cloth item, and a yellow bottle inside.",
+      "A yellow and black modular storage container is attached to a rear tow hitch, with circular cutouts and a black handle on top.",
+      "The license plate area displays the characters 'OB-0300' in white on the front bumper, and '4WD' is printed in white on the driver-side front fender."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0468_P1",
+      "visual_anchors": [
+        "open side door",
+        "exposed interior bedding",
+        "absence of visible occupants"
+      ],
+      "symbolic_mapping": [
+        "the threshold between private shelter and public space"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The open door without occupants embodies a suspended state of choice—readiness to engage or withdraw—highlighting how mobility enables self-determined boundaries between solitude and exposure.",
+      "alternative_interpretations": [
+        "It may simply reflect practical ventilation or quick access during a stop, with no intentional symbolism."
+      ],
+      "limitations": [
+        "No human presence confirms intentionality behind the open door; it could be accidental or functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0468_P2",
+      "visual_anchors": [
+        "pop-top tent extended upward",
+        "distant mountains across water",
+        "horizon line dividing sky and sea"
+      ],
+      "symbolic_mapping": [
+        "vertical expansion against horizontal vastness signifies aspiration within limitation"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The raised tent physically asserts human scale against an expansive natural backdrop, suggesting a journey defined not by destination but by the act of positioning oneself deliberately within immensity.",
+      "alternative_interpretations": [
+        "The tent is mechanically deployed for sleeping; its height serves only ergonomic function, not symbolic intent."
+      ],
+      "limitations": [
+        "No indication that the occupant(s) are observing or reflecting on the landscape; the framing may be coincidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0468_P3",
+      "visual_anchors": [
+        "off-road modifications",
+        "pebble beach terrain",
+        "calm water surface"
+      ],
+      "symbolic_mapping": [
+        "technology adapted to non-urban environments reflects redefinition of utility"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The van’s rugged hardware—winch, lights, tires—repurposed for leisure rather than extraction or transport implies technology serving autonomy rather than production, reframing labor as self-sustaining practice.",
+      "alternative_interpretations": [
+        "These are standard overlanding upgrades for safety and reliability, not ideological statements."
+      ],
+      "limitations": [
+        "The image shows no tools, repair activity, or maintenance behavior; modifications alone do not confirm usage intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:49:29.349173+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-691a4353-a3c5-9d39-8a4a-24fe6e14090e",
+      "usage": {
+        "prompt_tokens": 3010,
+        "completion_tokens": 997,
+        "total_tokens": 4007,
+        "completion_tokens_details": {
+          "text_tokens": 997
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2503,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070249105dd770cb69774cbd",
+      "usage": {
+        "completion_tokens": 863,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4993,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 5856
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

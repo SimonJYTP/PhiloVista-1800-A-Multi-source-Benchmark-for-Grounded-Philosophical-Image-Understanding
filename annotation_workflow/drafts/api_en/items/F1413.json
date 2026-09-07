@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1413",
+  "sample_id": "PHL1800_HAIV_0202",
+  "file_name": "PHL1800_HAIV_0202.png",
+  "batch_id": "B029",
+  "position_in_batch": 33,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two anthropomorphic celestial figures and a night-sky arc",
+  "captions": {
+    "scene": [
+      "A yellow sun with orange rays and facial features occupies the upper-left quadrant against a white background.",
+      "A yellow circular face with a gray pointed hat and downturned expression is positioned to the right of the sun.",
+      "A dark blue-to-teal curved arc with two gray five-pointed stars occupies the lower portion of the image."
+    ],
+    "action": [
+      "The sun figure has wide-open eyes, a vertical line for a nose, and a large open oval mouth, suggesting vocalization or shock.",
+      "The right figure has narrowed eyes with small black pupils and a downward-curving mouth, indicating displeasure or fatigue.",
+      "The gray hat on the right figure tilts upward to the right, forming a sharp peak above its head."
+    ],
+    "rationale": [
+      "The sun’s open mouth and wide eyes are consistent with an expressive state such as shouting or surprise, though no sound is audible.",
+      "The right figure’s closed eyelids and frown suggest negative affect, but without context, the specific emotion cannot be confirmed.",
+      "The star placement on the arc implies a night-sky motif, yet no moon or horizon line is present to confirm diurnal transition."
+    ],
+    "object": [
+      "The sun figure is a yellow circle with ten orange triangular rays alternating in size, outlined in black, and featuring two brown-irised eyes, a short vertical nose line, and a large black oval mouth.",
+      "The right figure is a yellow circle outlined in black, topped by a solid gray conical hat pointing rightward, with two horizontal black slits for eyes containing small black dots, and a thick black inverted-U mouth.",
+      "The lower arc is a smooth gradient from dark navy at the top edge to teal at the bottom edge, containing two identical gray five-pointed stars: one near the left third, one near the right third.",
+      "All figures and elements are drawn with bold black outlines and flat color fills; no shading or texture is present.",
+      "No text appears anywhere in the image; all visual content is purely pictorial."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1413_P1",
+      "visual_anchors": [
+        "sun with open mouth",
+        "right figure with frown",
+        "night arc with stars"
+      ],
+      "symbolic_mapping": [
+        "open mouth → expression of demand or proclamation",
+        "frown → resistance or exhaustion"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of an assertive sun and a weary figure beneath a starry arc may symbolize tension between dominant natural forces and subordinate sentient experience within shared space.",
+      "alternative_interpretations": [
+        "It could simply depict a cartoon weather contrast—sunny day versus tired person under night sky—with no symbolic intent."
+      ],
+      "limitations": [
+        "No narrative context, dialogue, or cultural markers are provided to confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1413_P2",
+      "visual_anchors": [
+        "gray pointed hat",
+        "yellow face",
+        "stars on arc"
+      ],
+      "symbolic_mapping": [
+        "hat as marker of role or status",
+        "stars as fixed points amid change"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The hat distinguishes the right figure visually from the sun, suggesting constructed identity amid cosmic continuity, while the stars imply enduring temporal reference points beyond individual expression.",
+      "alternative_interpretations": [
+        "The hat may be purely decorative, like a party hat, with no identity implication."
+      ],
+      "limitations": [
+        "The hat’s shape is generic; no insignia, pattern, or cultural association is visible to ground identity claims."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1413_P3",
+      "visual_anchors": [
+        "sun’s wide eyes",
+        "right figure’s narrowed eyes",
+        "shared yellow hue"
+      ],
+      "symbolic_mapping": [
+        "shared color → common nature",
+        "contrasting gaze → divergent perception"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "Despite sharing chromatic identity (yellow), the figures exhibit opposing visual orientations—attentive vs. withdrawn—suggesting that shared ontology does not guarantee aligned epistemic stance or volitional direction.",
+      "alternative_interpretations": [
+        "The differing eye shapes may reflect artistic style variation rather than conceptual contrast."
+      ],
+      "limitations": [
+        "Eye width alone cannot confirm cognitive states; no behavioral or contextual cues support epistemic interpretation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:29:28.684574+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b7debd6b-3cf3-95f3-92a1-938e94521917",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1010,
+        "total_tokens": 2543,
+        "completion_tokens_details": {
+          "text_tokens": 1010
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070429103a0b9f022eaa400d",
+      "usage": {
+        "completion_tokens": 872,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2967,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3839
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

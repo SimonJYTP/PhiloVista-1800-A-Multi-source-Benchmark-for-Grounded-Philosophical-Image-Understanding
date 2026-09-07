@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1508",
+  "sample_id": "PHL1800_HAIV_0046",
+  "file_name": "PHL1800_HAIV_0046.png",
+  "batch_id": "B031",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single stylized human figure in profile",
+  "captions": {
+    "scene": [
+      "A high-contrast composition with black angular shapes, a light blue sky-like background, and a textured golden-brown ground area.",
+      "A pink flower with green leaves grows vertically from the golden-brown ground, intersecting black geometric forms.",
+      "A bright yellow triangular shape cuts diagonally across the upper right, partially overlapping a white irregular shape with black speckles."
+    ],
+    "action": [
+      "The figure gazes upward toward the flower and the yellow shape, mouth slightly open.",
+      "A white rectangular tag with a black square and a pink circular detail is attached to the flower’s stem near its top leaf.",
+      "The figure wears a large heart-shaped earring divided into blue and orange halves and a small silver hoop earring."
+    ],
+    "rationale": [
+      "The figure’s head orientation and open mouth suggest attention directed at the flower and upper elements, though no explicit interaction occurs.",
+      "The tag on the stem appears affixed rather than floating, implying intentional placement within the scene’s logic.",
+      "The golden-brown textured area beneath the flower resembles soil or ground, but its granular texture lacks botanical detail, making material identification uncertain."
+    ],
+    "object": [
+      "The human figure has dark hair, closed eyes, defined eyebrows, a visible ear with two earrings, and a neck shaded in beige tones.",
+      "The flower has five overlapping petals in shades of pink and peach, with visible line work indicating petal folds and central stamen details.",
+      "The stem is green with subtle vertical striations and supports five distinct leaves with serrated edges and visible venation.",
+      "The white tag is rectangular with rounded corners, contains a solid black square near its lower edge, and a pink circular element near its top right corner.",
+      "The background includes a large black polygonal shape occupying the left and center, a light blue trapezoidal region above it, and a yellow acute triangle extending from top center to right edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1508_P1",
+      "visual_anchors": [
+        "heart-shaped earring split blue/orange",
+        "flower growing through black geometry",
+        "white tag on stem"
+      ],
+      "symbolic_mapping": [
+        "bicolored heart → duality of emotion or identity",
+        "flower piercing darkness → emergence amid constraint"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a segmented heart earring with a flower breaking through rigid black forms suggests an exploration of selfhood as both internally divided and resiliently expressive under structural limits.",
+      "alternative_interpretations": [
+        "The heart earring may simply be decorative; the flower could represent literal growth without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels confirm symbolic intent; color segmentation could be aesthetic rather than conceptual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1508_P2",
+      "visual_anchors": [
+        "tag attached to flower stem",
+        "figure gazing upward",
+        "yellow triangular beam"
+      ],
+      "symbolic_mapping": [
+        "tag → labeling or commodification",
+        "upward gaze → aspiration or scrutiny"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The tagged flower observed by the figure under a stark yellow beam evokes questions about how external markers (tags) mediate perception and social recognition of natural phenomena.",
+      "alternative_interpretations": [
+        "The tag may function as a botanical label in a diagrammatic context, not as critique."
+      ],
+      "limitations": [
+        "The tag’s black square and pink circle lack legible text, preventing confirmation of labeling function."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1508_P3",
+      "visual_anchors": [
+        "golden-brown granular ground",
+        "green stem rooted therein",
+        "black angular masses overhead"
+      ],
+      "symbolic_mapping": [
+        "granular ground → foundational uncertainty",
+        "stem rising vertically → persistence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The flower’s emergence from an indeterminate textured base beneath oppressive black forms visualizes a journey where continuity depends on fragile, upward-directed action amid temporal or existential pressure.",
+      "alternative_interpretations": [
+        "The ground texture may represent sand or pollen, with no temporal implication intended."
+      ],
+      "limitations": [
+        "No clocks, decay signs, or sequential indicators confirm time-related symbolism."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:40:09.344655+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b10ac43f-060c-9ed2-9eaf-b2e2f3b93572",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 981,
+        "total_tokens": 2514,
+        "completion_tokens_details": {
+          "text_tokens": 981
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043958b47f17935b2847ef",
+      "usage": {
+        "completion_tokens": 843,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2938,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3781
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

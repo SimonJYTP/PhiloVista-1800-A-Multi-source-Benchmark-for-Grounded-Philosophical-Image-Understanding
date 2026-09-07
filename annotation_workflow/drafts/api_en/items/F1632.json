@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1632",
+  "sample_id": "PHL1800_MM_0145",
+  "file_name": "PHL1800_MM_0145.jpg",
+  "batch_id": "B033",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two central individuals embracing in a crowd",
+  "captions": {
+    "scene": [
+      "Outdoor daytime festival setting with white conical tents, green grass, and dense crowd under blue sky",
+      "Multiple people wearing summer attire including crop tops, shorts, and sunglasses; some wear patterned or shiny clothing",
+      "Background includes yellow and red canopy structures and trees beyond the crowd"
+    ],
+    "action": [
+      "Two individuals are locked in a tight embrace with arms wrapped around each other's torsos and shoulders",
+      "Both central figures have mouths open wide, eyes closed or nearly closed, and facial expressions suggesting vocal exclamation or laughter",
+      "A speech bubble originates from the head of the person on the left, containing legible text"
+    ],
+    "rationale": [
+      "The speech bubble’s placement near the left individual’s head suggests attribution to that person, though no lip movement confirms speaker identity",
+      "Clothing style (e.g., sequined jacket, cut-off denim shorts) and crowd density indicate a music or cultural festival context, but no signage confirms event type",
+      "Facial expressions convey high arousal, but without audio or prior context, emotional valence (joy vs. distress) cannot be definitively determined"
+    ],
+    "object": [
+      "The person on the left wears a bright blue satin long-sleeve shirt under a multicolored sequined jacket and dark jeans; their hair is spiky and dark brown.",
+      "The person on the right has long blonde hair, wears a matching multicolored sequined jacket over a bare midriff, cut-off denim shorts with side cutouts, and light-colored socks.",
+      "A white oval speech bubble with black sans-serif text reading 'I should control myself better.' is positioned above and slightly right of the left person’s head.",
+      "At least 18 distinct individuals are visible in the image: 2 central figures, 6 clearly identifiable in mid-ground, and ≥10 partial or blurred figures in background.",
+      "A woman to the right of the central pair wears a white crop top and has long wavy brown hair; she looks toward the embracing pair with neutral expression."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1632_P1",
+      "visual_anchors": [
+        "speech bubble with 'I should control myself better.'",
+        "tight embrace",
+        "open-mouthed expressions"
+      ],
+      "symbolic_mapping": [
+        "speech bubble → internal self-monitoring",
+        "embrace → surrender to impulse"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of unguarded physical expression and a meta-comment on self-control evokes tension between spontaneous embodiment and moral self-regulation.",
+      "alternative_interpretations": [
+        "The text may be ironic or humorous commentary added post-hoc, not reflecting actual thought at the moment captured."
+      ],
+      "limitations": [
+        "No evidence confirms the text originated from the depicted person or reflects real-time cognition."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1632_P2",
+      "visual_anchors": [
+        "crowd surrounding two central figures",
+        "shared garment pattern (sequined jacket)",
+        "proximity despite density"
+      ],
+      "symbolic_mapping": [
+        "crowd → social field",
+        "matching jackets → temporary affiliation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Individual identity momentarily dissolves into shared affective experience within a collective, where appearance (jacket) signals belonging rather than distinction.",
+      "alternative_interpretations": [
+        "The matching jackets may be coincidental or rental items common at festivals, not intentional coordination."
+      ],
+      "limitations": [
+        "No visual proof of intent behind clothing choice or mutual recognition among crowd members."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1632_P3",
+      "visual_anchors": [
+        "open mouths",
+        "closed eyes",
+        "physical compression of torsos"
+      ],
+      "symbolic_mapping": [
+        "vocalization without words → pre-linguistic expression",
+        "bodily fusion → loss of boundary"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The image captures a liminal instant where volitional control appears suspended, suggesting a fleeting escape from linear time and deliberative agency into embodied immediacy.",
+      "alternative_interpretations": [
+        "The pose could be staged for photography, mimicking spontaneity without actual loss of control."
+      ],
+      "limitations": [
+        "Still image cannot confirm duration, intentionality, or physiological state (e.g., breath, muscle tension)."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:55:22.421840+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2716029b-cc35-9c05-8163-39a49b6cc089",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1005,
+        "total_tokens": 2538,
+        "completion_tokens_details": {
+          "text_tokens": 1005
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704550921a64c39c7df4f3c",
+      "usage": {
+        "completion_tokens": 860,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2951,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3811
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

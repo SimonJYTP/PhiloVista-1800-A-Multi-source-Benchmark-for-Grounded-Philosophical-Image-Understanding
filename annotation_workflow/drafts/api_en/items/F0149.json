@@ -1,0 +1,154 @@
+{
+  "annotation_item_id": "F0149",
+  "sample_id": "PHL1800_MM_0137",
+  "file_name": "PHL1800_MM_0137.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one woman standing in a kitchen",
+  "captions": {
+    "scene": [
+      "A modern kitchen with wooden cabinets, a gray tiled backsplash, and a marble countertop.",
+      "Natural light enters through a multi-pane window on the right wall.",
+      "Various cooking ingredients and utensils are arranged on the counter: a wooden bowl of vegetables, a roasted bird on a cutting board with rosemary, a small bowl of chopped salad, and stacked metal pots."
+    ],
+    "action": [
+      "The woman stands upright behind a countertop with both hands near a roasted bird on a wooden board.",
+      "Her right hand is slightly raised and clenched; her left hand rests near the bird’s tail.",
+      "A speech bubble above her head contains legible text stating: 'I'm going to mess around with this quail before dinner!'"
+    ],
+    "rationale": [
+      "The bird appears significantly larger than a typical quail, suggesting possible misidentification or humorous intent in the speech bubble.",
+      "The woman’s posture and facial expression (smiling, direct gaze) indicate posed readiness rather than active food preparation at this instant.",
+      "The presence of raw vegetables and prepared garnish implies meal assembly is imminent but not yet underway."
+    ],
+    "object": [
+      "A whole roasted bird with golden-brown skin rests on a bed of green rosemary sprigs atop a rectangular wooden cutting board.",
+      "A light-colored wooden bowl holds red tomatoes, green bell peppers, and yellow citrus fruit, with a metal spoon inserted.",
+      "A dark gray pinstriped apron covers the woman’s torso over a white collared long-sleeve shirt.",
+      "A small ceramic bowl contains diced red and green vegetables mixed with a light dressing.",
+      "Three wooden spoons lie horizontally on the countertop near the right edge of the frame, adjacent to a metal colander containing pasta."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0149_P1",
+      "visual_anchors": [
+        "speech bubble with text",
+        "roasted bird",
+        "woman’s smile"
+      ],
+      "symbolic_mapping": [
+        "the mismatch between labeled 'quail' and visually large bird maps to linguistic slippage between intention and reality"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image stages a tension between declared intent ('mess around with this quail') and perceptual evidence (a large poultry item), highlighting how language can diverge from observable fact—a visual enactment of epistemic uncertainty.",
+      "alternative_interpretations": [
+        "The text may be playful exaggeration common in culinary media, not an epistemic claim."
+      ],
+      "limitations": [
+        "The speech bubble is authored content within the image, not a recorded utterance; its truth value cannot be verified externally."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0149_P2",
+      "visual_anchors": [
+        "apron",
+        "organized countertop",
+        "posed stance"
+      ],
+      "symbolic_mapping": [
+        "the apron as a marker of role-performance aligns with constructed domestic identity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The woman’s attire and composed positioning suggest identity is being performed through culinary labor, where appearance (clean apron, neat hair, smile) co-constitutes the role of competent host or chef.",
+      "alternative_interpretations": [
+        "She may simply be wearing practical clothing for cooking without symbolic intent."
+      ],
+      "limitations": [
+        "No visible branding, insignia, or contextual cues confirm intentional identity signaling beyond generic kitchen wear."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0149_P3",
+      "visual_anchors": [
+        "roasted bird on rosemary",
+        "raw vegetables nearby",
+        "window light"
+      ],
+      "symbolic_mapping": [
+        "the juxtaposition of cooked and raw elements under natural light evokes temporality—immediate preparation versus completed transformation"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The still-life arrangement captures a liminal moment before consumption, where the cooked bird signifies completion and impending decay, while fresh produce signals continuity—invoking awareness of cyclical time and embodied finitude.",
+      "alternative_interpretations": [
+        "This is a standard food photography setup emphasizing freshness and appeal, not philosophical reflection."
+      ],
+      "limitations": [
+        "No explicit markers of decay, aging, or ritual (e.g., candles, memorial items) support mortality interpretation directly."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:10:33.094938+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c02a2b80-29cf-9d4d-958a-9c1d14773204",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 968,
+        "total_tokens": 2501,
+        "completion_tokens_details": {
+          "text_tokens": 968
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070209460e305bb5f6474335",
+      "usage": {
+        "completion_tokens": 835,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2924,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3759
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

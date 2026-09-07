@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1169",
+  "sample_id": "PHL1800_IRFL_0242",
+  "file_name": "PHL1800_IRFL_0242.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one man performing a dumbbell exercise",
+  "captions": {
+    "scene": [
+      "Indoor gym with concrete flooring, visible weight racks in background, and overhead lighting fixtures.",
+      "White walls with vertical structural elements and a partially visible black speaker mounted high on the wall.",
+      "Rows of dumbbells on racks to the right; some equipment appears blurred due to shallow depth of field."
+    ],
+    "action": [
+      "Man is in a low lunge position with left hand on a hexagonal dumbbell on the floor and right hand holding another dumbbell raised at shoulder height.",
+      "His torso is angled forward, knees bent, and gaze directed toward the camera; facial expression shows exertion.",
+      "Sweat is visible on his forearms and upper chest, indicating physical effort during the activity."
+    ],
+    "rationale": [
+      "The posture and dumbbell placement suggest a unilateral strength exercise such as a renegade row or dumbbell lunge variation, though exact movement phase is ambiguous.",
+      "The presence of multiple dumbbells and racks implies a dedicated strength-training environment rather than casual use.",
+      "Blurring of background objects indicates use of a shallow depth-of-field photographic technique, not motion blur from subject movement."
+    ],
+    "object": [
+      "A man with short dark hair and a full beard wears a red short-sleeved athletic shirt and black shorts.",
+      "He wears grey athletic shoes with white soles and visible tread patterns.",
+      "Two black hexagonal dumbbells are present: one held in his right hand, the other resting on the floor under his left hand.",
+      "The floor consists of large square rubber tiles with visible seams and minor scuff marks.",
+      "In the background, a rack holds at least eight dumbbells of varying sizes, arranged in ascending order by mass."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1169_P1",
+      "visual_anchors": [
+        "sweat on forearms",
+        "focused gaze",
+        "asymmetrical load on dumbbells"
+      ],
+      "symbolic_mapping": [
+        "physical strain as embodiment of effort",
+        "gaze toward viewer as assertion of presence"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The image frames bodily labor as intentional self-cultivation, where controlled asymmetry and visible exertion reflect a deliberate path of disciplined becoming.",
+      "alternative_interpretations": [
+        "It may simply document a routine fitness activity without symbolic intent."
+      ],
+      "limitations": [
+        "No textual context or facial micro-expressions confirm intentionality beyond observable posture."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1169_P2",
+      "visual_anchors": [
+        "dumbbell on floor supporting body",
+        "man’s left hand pressing into dumbbell",
+        "tense forearm musculature"
+      ],
+      "symbolic_mapping": [
+        "tool as extension of will",
+        "ground contact as anchoring to reality"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The dumbbell functions both as resistance and support, illustrating how constraint (gravity, weight) enables agency through structured opposition.",
+      "alternative_interpretations": [
+        "The dumbbell is merely equipment used for balance and resistance in standard training protocol."
+      ],
+      "limitations": [
+        "No evidence of struggle or resistance beyond biomechanical necessity; the interaction appears controlled."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1169_P3",
+      "visual_anchors": [
+        "single subject centered",
+        "shallow depth of field isolating figure",
+        "neutral background"
+      ],
+      "symbolic_mapping": [
+        "isolation as focus",
+        "centering as self-authorship"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The compositional isolation emphasizes the individual as site of self-definition, where physical form becomes the medium through which social identity is actively negotiated and asserted.",
+      "alternative_interpretations": [
+        "Photographic framing prioritizes clarity of action, not philosophical statement."
+      ],
+      "limitations": [
+        "Background contains other equipment suggesting shared space; isolation is optical, not spatial."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:57:55.567253+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e1b261f6-286d-9060-80b6-31070e8bdc71",
+      "usage": {
+        "prompt_tokens": 659,
+        "completion_tokens": 909,
+        "total_tokens": 1568,
+        "completion_tokens_details": {
+          "text_tokens": 909
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 152,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035737106861b2f4aa4052",
+      "usage": {
+        "completion_tokens": 770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1710,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2480
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

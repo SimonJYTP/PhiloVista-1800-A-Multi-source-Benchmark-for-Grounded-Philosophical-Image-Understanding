@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0083",
+  "sample_id": "PHL1800_MM_0125",
+  "file_name": "PHL1800_MM_0125.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a standing male student in a dark blazer with a crest, facing seated peers at a long table",
+  "captions": {
+    "scene": [
+      "An indoor formal setting with a wooden table, blue chairs, black curtains, and a projection screen displaying faint text.",
+      "A group of students in formal attire (dark blazers, ties, sweaters) seated around a long rectangular table with papers and folders.",
+      "One male student stands upright beside the table while others are seated; all appear attentive toward him or the front."
+    ],
+    "action": [
+      "The standing male student has his hands clasped in front of him and gazes toward the left side of the frame.",
+      "A seated male student smiles slightly while looking toward the standing student; a seated female student in green looks attentively at the standing student.",
+      "Multiple individuals hold or rest hands on documents spread across the table surface."
+    ],
+    "rationale": [
+      "The standing posture and central positioning suggest he is addressing or being addressed by the group, though no speech is visible.",
+      "The presence of a speech bubble with legible English text implies a narrative overlay rather than real-time dialogue; the text is not part of the physical scene.",
+      "The projection screen contains partially legible but unreadable text (e.g., 'Site be[...]'), limiting inference about the event’s official nature."
+    ],
+    "object": [
+      "A young man stands wearing a navy blazer with a circular embroidered crest on the left breast, a white collared shirt, and a diagonally striped tie.",
+      "A long light-brown wooden table holds at least six open binders or folders and loose sheets of paper, some with purple edges.",
+      "At least eight individuals are visible: one standing, seven seated (including partial views), all appearing to be adolescents or young adults.",
+      "A large white projection screen occupies the background wall, displaying faint blue text that is mostly illegible due to resolution and angle.",
+      "A blue fabric chair with metal legs is visible to the right of the standing student, unoccupied."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0083_P1",
+      "visual_anchors": [
+        "standing student’s formal attire",
+        "seated peers’ focused gaze",
+        "speech bubble containing critical evaluation"
+      ],
+      "symbolic_mapping": [
+        "formal dress signifies institutional role",
+        "gaze direction indicates social accountability"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image visualizes the tension between individual performance and collective expectation within structured social roles, where appearance and posture mediate moral judgment.",
+      "alternative_interpretations": [
+        "This may simply depict a school debate or presentation rehearsal, with the speech bubble added post-hoc for dramatic effect."
+      ],
+      "limitations": [
+        "The speech bubble is clearly superimposed and not part of the original scene; its content cannot be treated as factual dialogue."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0083_P2",
+      "visual_anchors": [
+        "multiple students in uniform blazers",
+        "shared table with identical document layouts",
+        "uniform seating arrangement"
+      ],
+      "symbolic_mapping": [
+        "uniformity of dress reflects enforced conformity",
+        "table as shared but segmented workspace suggests hierarchical participation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual repetition of attire and spatial ordering underscores how institutional settings shape identity through standardized appearance and controlled interaction patterns.",
+      "alternative_interpretations": [
+        "The uniforms may reflect school policy without ideological intent; the arrangement could be logistical rather than symbolic."
+      ],
+      "limitations": [
+        "No visible insignia beyond one crest allows definitive identification of institution or hierarchy level."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0083_P3",
+      "visual_anchors": [
+        "projection screen with indecipherable text",
+        "students holding papers but not actively writing",
+        "static postures suggesting listening"
+      ],
+      "symbolic_mapping": [
+        "unreadable screen represents inaccessible knowledge",
+        "passive reception contrasts with active critique implied by speech bubble"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The scene evokes epistemic uncertainty: participants engage with information they cannot fully access or verify, highlighting the fragility of shared understanding in formal learning contexts.",
+      "alternative_interpretations": [
+        "The screen may display routine administrative content; the students’ stillness may indicate respectful attention, not cognitive dissonance."
+      ],
+      "limitations": [
+        "The projected text is too blurred to confirm whether it conveys substantive content or placeholder material."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:58:03.661136+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9ba921d7-3b8e-9899-be28-3d73c8909a7a",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1004,
+        "total_tokens": 2537,
+        "completion_tokens_details": {
+          "text_tokens": 1004
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015732fcb81281fb33436d",
+      "usage": {
+        "completion_tokens": 866,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2961,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3827
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

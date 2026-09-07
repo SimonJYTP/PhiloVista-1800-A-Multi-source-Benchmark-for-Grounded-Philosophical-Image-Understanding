@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0005",
+  "sample_id": "PHL1800_HL_0462",
+  "file_name": "PHL1800_HL_0462.png",
+  "batch_id": "B003",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person in a high-visibility vest holding a stop sign on a street",
+  "captions": {
+    "scene": [
+      "An urban street with construction activity, including a concrete mixer truck, scaffolding, and orange traffic cones.",
+      "Multiple parked vehicles line the left curb: a red pickup, white SUV, silver sedan, and others; buildings include brick and residential-style structures.",
+      "A clear sky with diffuse daylight; a yellow construction pulley or equipment hangs from a cable overhead near the center background."
+    ],
+    "action": [
+      "The person in the high-visibility vest stands upright, gripping a pole with a red circular 'STOP' sign facing forward.",
+      "Several individuals in safety vests are gathered near the construction zone, some standing still, one appears to be walking toward the right.",
+      "The foreground shows part of a recumbent bicycle or mobility device with handlebars, pedals, and a black backpack attached."
+    ],
+    "rationale": [
+      "The presence of multiple safety vests, traffic cones, and heavy machinery suggests an active worksite requiring traffic control.",
+      "The orientation of the stop sign and the person’s stance indicate they are actively managing vehicle flow, though no vehicles are moving in frame.",
+      "The foreground device is likely a human-powered vehicle due to visible pedals, handlebar controls, and seating posture—though the rider’s full body is not visible."
+    ],
+    "object": [
+      "A red octagonal stop sign with white uppercase letters 'STOP' mounted on a wooden pole held by a person.",
+      "A large cement mixer truck with dual rear wheels and a rotating drum occupies the right side of the road.",
+      "A person wearing a white hard hat, black long-sleeve shirt, neon yellow reflective vest, black track pants with white stripe, and gray sneakers.",
+      "A recumbent-style vehicle with black handlebars featuring two round mirrors, a central lever assembly, and a black backpack strapped behind the seat.",
+      "At least two orange traffic cones placed on the asphalt near the construction area, with four people visible in the mid-ground wearing high-visibility clothing."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0005_P1",
+      "visual_anchors": [
+        "stop sign",
+        "person holding sign",
+        "construction zone"
+      ],
+      "symbolic_mapping": [
+        "the stop sign as a symbol of imposed pause amid progress",
+        "the worker as embodiment of delegated authority in public space"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The image captures a moment where human labor enforces temporal constraint (stopping) to enable collective infrastructure development, revealing how authority is delegated through attire and signage to manage movement and risk.",
+      "alternative_interpretations": [
+        "It is simply a routine traffic control scene with no deeper meaning—just workers doing their job under standard safety protocols."
+      ],
+      "limitations": [
+        "No facial expressions or interaction details are visible to confirm intent or emotional state of the sign-holder."
+      ],
+      "sufficiency": "supported"
+    },
+    {
+      "candidate_id": "AI_F0005_P2",
+      "visual_anchors": [
+        "recumbent vehicle in foreground",
+        "pedals and mirrors",
+        "partial knee/leg visible"
+      ],
+      "symbolic_mapping": [
+        "low-slung vehicle as metaphor for alternative modes of existence",
+        "mirrors reflecting unseen surroundings as epistemic limitation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The rider’s constrained posture and limited field of view—mediated by small mirrors—suggest that perception and agency are shaped by technological affordances, raising questions about what remains unseen despite proximity to action.",
+      "alternative_interpretations": [
+        "The foreground is merely the photographer’s point of view from a bike; the mirrors serve only functional navigation purposes."
+      ],
+      "limitations": [
+        "Only the lower leg and part of the vehicle are visible; no head, eyes, or gaze direction can be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0005_P3",
+      "visual_anchors": [
+        "yellow construction pulley",
+        "workers in uniform",
+        "brick building vs. scaffolding"
+      ],
+      "symbolic_mapping": [
+        "pulley as functional marker of industrial process against urban backdrop",
+        "uniforms as erasure of individual identity in service of system"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of a functional construction pulley against rigid infrastructure and standardized worker attire highlights tension between individual expression and institutional conformity in shared urban space.",
+      "alternative_interpretations": [
+        "The pulley is a practical construction tool, not symbolic; uniforms are practical for visibility and safety."
+      ],
+      "limitations": [
+        "The object’s purpose is ambiguous—it could be functional equipment rather than decorative or symbolic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people in the object list (claimed five, actual four visible in mid-ground); \"three orange traffic cones\" is inaccurate (at least two visible, exact count unclear); \"recumbent bicycle\" is a plausible but unconfirmed interpretation of the foreground device; \"yellow balloon\" is a misdescription (appears to be a construction pulley or equipment, not a balloon)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:47:08.582327+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7210a5cb-4659-9209-b6dd-131065e77c43",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1042,
+        "total_tokens": 1851,
+        "completion_tokens_details": {
+          "text_tokens": 1042
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014651d293f0a3c05b4472",
+      "usage": {
+        "completion_tokens": 979,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2018,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2997
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

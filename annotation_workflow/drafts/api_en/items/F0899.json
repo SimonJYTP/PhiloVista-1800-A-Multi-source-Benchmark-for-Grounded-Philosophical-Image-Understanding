@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0899",
+  "sample_id": "PHL1800_HL_0144",
+  "file_name": "PHL1800_HL_0144.png",
+  "batch_id": "B020",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person visible through the window of a red plastic play train",
+  "captions": {
+    "scene": [
+      "A red plastic play train with yellow and black accents sits outdoors under daylight, with a white arched structure and green trees in the background.",
+      "The train is positioned on a gravel or wood-chip surface near a building with white trim and vertical supports.",
+      "Sunlight casts strong shadows across the train’s side, indicating a clear sky and directional illumination from upper left."
+    ],
+    "action": [
+      "The person leans forward slightly, resting their chin on their hand while looking toward the camera.",
+      "The person’s head and upper torso are visible inside the train’s cab window; no limbs beyond the arms are seen.",
+      "The train remains stationary; no motion blur or displacement of surrounding objects indicates movement."
+    ],
+    "rationale": [
+      "The person appears to be posing for the photograph, inferred from direct gaze and stable posture within the frame.",
+      "The train is likely a playground fixture, supported by its low height, plastic construction, and proximity to a building resembling a park shelter.",
+      "The lighting suggests late afternoon due to long shadows and warm tone on the red surface, though exact time cannot be confirmed."
+    ],
+    "object": [
+      "The train is constructed primarily of red molded plastic with rounded edges, featuring vertical slats on the front cab wall and a curved roofline.",
+      "Two yellow circular elements are mounted on the right side of the train: one as a knob-like protrusion, the other as a flat plate with a central bolt.",
+      "A black semi-circular panel with a rivet is attached to the lower left front of the train, resembling a wheel cover or decorative shield.",
+      "A silver-colored metal latch or handle is affixed to the red side panel, near the window opening, with two visible screw heads.",
+      "The person wears a light gray or beige long-sleeved top; their hair is brown and shoulder-length, partially framing the face."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0899_P1",
+      "visual_anchors": [
+        "person gazing directly at viewer",
+        "enclosed cab window",
+        "red plastic train"
+      ],
+      "symbolic_mapping": [
+        "the window frames the subject as both observed and observer",
+        "the train’s artificiality contrasts with natural background"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The framed gaze through the train’s window evokes the tension between being seen and self-presentation, where the constructed environment mediates social visibility.",
+      "alternative_interpretations": [
+        "The person is simply enjoying a playground ride; the window is merely an opening, not a symbolic frame."
+      ],
+      "limitations": [
+        "No facial expression details beyond orientation are discernible; emotional intent is not visually verifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0899_P2",
+      "visual_anchors": [
+        "strong shadow cast across train side",
+        "sunlit foliage behind",
+        "static train position"
+      ],
+      "symbolic_mapping": [
+        "shadow marks temporal passage on a fixed object",
+        "stillness contrasts with implied motion of trains"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The unmoving train bathed in transient light suggests a suspended moment—where potential journey is deferred, highlighting the paradox of choice without movement.",
+      "alternative_interpretations": [
+        "Shadows are incidental lighting effects; the train is designed to be stationary for play, not symbolic of delay."
+      ],
+      "limitations": [
+        "No clock, calendar, or aging indicators are present; temporal interpretation relies on inferred lighting conditions only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0899_P3",
+      "visual_anchors": [
+        "white arched structure behind train",
+        "plastic train mimicking real locomotive",
+        "person occupying driver’s seat"
+      ],
+      "symbolic_mapping": [
+        "architectural shelter vs. toy vehicle implies layered realities",
+        "role-playing in miniature infrastructure reflects societal roles"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "Occupying the driver’s seat of a non-functional replica within a structured environment underscores how technology and labor roles are internalized even in play, bounded by design and context.",
+      "alternative_interpretations": [
+        "The scene depicts ordinary childlike play; no commentary on labor or constraint is intended or visible."
+      ],
+      "limitations": [
+        "The person’s age, intent, and relationship to the structure are unknown; role assignment is interpretive, not evidential."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:26:39.470573+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-834020c1-6a82-9ee2-a971-941a1ef6247b",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 1008,
+        "total_tokens": 1709,
+        "completion_tokens_details": {
+          "text_tokens": 1008
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032541a6f214b09b4d41a1",
+      "usage": {
+        "completion_tokens": 869,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1831,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2700
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

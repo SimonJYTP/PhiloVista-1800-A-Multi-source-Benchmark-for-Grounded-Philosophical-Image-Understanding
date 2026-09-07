@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1399",
+  "sample_id": "PHL1800_HAIV_0255",
+  "file_name": "PHL1800_HAIV_0255.png",
+  "batch_id": "B029",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single mummy-like figure wrapped in bandages",
+  "captions": {
+    "scene": [
+      "A figure stands on a dark, irregularly shaped patch against a textured olive-brown background and a beige lower plane.",
+      "The figure is positioned centrally, with a circular object with a handle resting beside its right leg.",
+      "Bandages are layered horizontally and diagonally across the figure’s head, torso, arms, and legs, leaving only two black circular eyes visible."
+    ],
+    "action": [
+      "The figure stands upright with arms hanging loosely at its sides.",
+      "The figure appears stationary, with no motion blur or dynamic posture indicating movement.",
+      "A circular object with a handle lies adjacent to the figure’s right leg, partially overlapping the dark ground area."
+    ],
+    "rationale": [
+      "The figure’s uniform wrapping and simplified features suggest stylized representation rather than realism.",
+      "The presence of only two eyes implies intentional omission of other facial features, not occlusion by bandages alone.",
+      "The object beside the figure resembles a wheel or spool but lacks clear functional context due to absence of connecting parts or usage cues."
+    ],
+    "object": [
+      "The figure is entirely encased in off-white bandages with black outlines defining each wrap layer.",
+      "Two solid black circles serve as eyes, set within a visible lavender-gray facial area exposed between bandage layers.",
+      "The figure’s right arm extends downward with a rounded hand shape; the left arm mirrors this posture.",
+      "A circular object with a lavender center, brown outer ring, and attached brown handle rests on the dark ground near the figure’s right leg.",
+      "The background consists of two horizontal zones: upper olive-brown with subtle texture, lower beige with soft edges meeting a central dark irregular shape."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1399_P1",
+      "visual_anchors": [
+        "two black circular eyes",
+        "bandages covering entire body",
+        "exposed lavender-gray facial patch"
+      ],
+      "symbolic_mapping": [
+        "eyes as sole locus of agency or perception",
+        "bandages as concealment of identity"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The figure’s obscured form with only eyes visible suggests a tension between visibility and erasure, where identity is reduced to minimal perceptual markers.",
+      "alternative_interpretations": [
+        "The figure may simply represent a cartoon mummy without symbolic intent, emphasizing visual simplicity over meaning."
+      ],
+      "limitations": [
+        "No textual labels or contextual narrative confirm intentional symbolism; the eyes could be purely stylistic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1399_P2",
+      "visual_anchors": [
+        "circular object with handle",
+        "figure standing beside it",
+        "dark ground patch beneath both"
+      ],
+      "symbolic_mapping": [
+        "object as tool or burden",
+        "proximity implying association without interaction"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of the immobilized figure and the inert tool evokes questions about agency in labor—whether the figure controls the object or is constrained by it.",
+      "alternative_interpretations": [
+        "The object may be decorative or incidental, with no functional relationship to the figure."
+      ],
+      "limitations": [
+        "No motion, grip, or connection between figure and object confirms use or intent."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1399_P3",
+      "visual_anchors": [
+        "layered bandages",
+        "static upright pose",
+        "uniform color palette"
+      ],
+      "symbolic_mapping": [
+        "bandaging as preservation or stasis",
+        "stillness as suspension of time"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The figure’s preserved yet lifeless appearance, frozen in pose, reflects a state between decay and endurance, questioning whether containment defers or enacts mortality.",
+      "alternative_interpretations": [
+        "The image may depict a costume or toy, with no reference to temporal themes."
+      ],
+      "limitations": [
+        "Absence of decay signs (e.g., fraying, discoloration) or temporal indicators (e.g., clocks, shadows) weakens mortality linkage."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:27:33.124348+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bb11542a-ea21-9d9e-8bf4-bae9fa743dd3",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 916,
+        "total_tokens": 2449,
+        "completion_tokens_details": {
+          "text_tokens": 916
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070427147a9e00dcb1514df1",
+      "usage": {
+        "completion_tokens": 780,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2872,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3652
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

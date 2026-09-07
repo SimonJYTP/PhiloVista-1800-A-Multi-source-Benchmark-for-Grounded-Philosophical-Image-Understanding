@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0520",
+  "sample_id": "PHL1800_HL_0210",
+  "file_name": "PHL1800_HL_0210.png",
+  "batch_id": "B012",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a young child walking on a paved surface while pulling a wheeled suitcase",
+  "captions": {
+    "scene": [
+      "A concrete sidewalk with a yellow tactile paving strip adjacent to a metal railing and street curb.",
+      "Daylight illumination with strong shadows indicating overhead or high-angle sunlight.",
+      "A white vehicle partially visible in the upper right background beyond the railing."
+    ],
+    "action": [
+      "The child walks forward left-to-right across the frame, head turned slightly toward the camera’s left.",
+      "The child’s right hand grips the extended telescopic handle of a black rolling suitcase.",
+      "The suitcase rolls on two visible wheels, trailing behind the child at an angle."
+    ],
+    "rationale": [
+      "The child’s posture and foot placement suggest forward locomotion rather than standing still.",
+      "The suitcase handle is fully extended and held in the child’s hand, indicating active pulling rather than passive dragging.",
+      "The presence of a tactile paving strip and metal railing suggests a public transit or pedestrian access zone, though specific location cannot be confirmed."
+    ],
+    "object": [
+      "The child wears a dark blue baseball cap, a bright blue short-sleeved t-shirt with a faint white graphic on the chest, brown cargo-style shorts, and light-colored open-toed sandals.",
+      "The suitcase is black, soft-sided, with visible stitching, a retractable telescopic handle, two small wheels, and a white tag attached near the handle base.",
+      "The sidewalk surface consists of large rectangular concrete slabs with visible seams and minor surface wear.",
+      "A yellow raised tactile paving strip runs parallel to the sidewalk edge, bordered by a low metal railing composed of vertical bars and horizontal supports.",
+      "A white vehicle’s lower portion—possibly a van or bus—is visible in the upper right background, partially obscured by the railing."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0520_P1",
+      "visual_anchors": [
+        "child pulling suitcase",
+        "tactile paving strip",
+        "metal railing"
+      ],
+      "symbolic_mapping": [
+        "suitcase as burden or responsibility",
+        "railing as boundary or guidance structure"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The child’s autonomous movement amid structured urban infrastructure evokes the tension between individual agency and institutional constraint in early life transitions.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine travel logistics, with no symbolic intent; the child is likely accompanying an adult not in frame."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism; the child’s gaze direction is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0520_P2",
+      "visual_anchors": [
+        "backward-worn cap",
+        "blue t-shirt with indistinct graphic",
+        "sandals with visible straps"
+      ],
+      "symbolic_mapping": [
+        "cap orientation as nonconformity or playfulness",
+        "clothing as identity signaling"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The child’s attire—especially the reversed cap—suggests an emergent self-presentation distinct from adult norms, reflecting early negotiation of social visibility and personal style.",
+      "alternative_interpretations": [
+        "The cap may be worn backward for comfort or habit, not expressive intent; the graphic is unreadable and thus non-informative."
+      ],
+      "limitations": [
+        "The graphic on the shirt is illegible; cap orientation alone does not confirm intentionality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0520_P3",
+      "visual_anchors": [
+        "extended suitcase handle",
+        "child’s grip on handle",
+        "rolling wheels in motion"
+      ],
+      "symbolic_mapping": [
+        "handle as extension of will",
+        "wheels as facilitation of mobility"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The child’s physical engagement with a tool designed for adult-scale labor illustrates how technology mediates embodied experience and reconfigures agency across developmental stages.",
+      "alternative_interpretations": [
+        "The suitcase may be lightweight and intended for the child’s use; the action is functional, not metaphorical."
+      ],
+      "limitations": [
+        "Weight, size, and ownership of the suitcase are not visually verifiable; no adult is visible to confirm delegation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:53:33.938094+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c80e7fa1-0261-99a1-9022-50b0a6b6738f",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 953,
+        "total_tokens": 1722,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070253161c588df7e8f24e49",
+      "usage": {
+        "completion_tokens": 811,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1886,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2697
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

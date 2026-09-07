@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1254",
+  "sample_id": "PHL1800_HL_0053",
+  "file_name": "PHL1800_HL_0053.png",
+  "batch_id": "B026",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person wearing glasses holding a hammer near a wall clock",
+  "captions": {
+    "scene": [
+      "A dark background with focused lighting on a person, a hammer, and a round analog wall clock.",
+      "The person is positioned to the left of the frame; the clock occupies the right side.",
+      "The clock face is white with black numerals and hands; the hammer has an orange handle and metallic head."
+    ],
+    "action": [
+      "The person gazes intently at the clock while holding the hammer close to its face.",
+      "The hammer’s claw end is oriented toward the clock’s hour hand and numeral 11.",
+      "The person’s facial expression shows furrowed brows and narrowed eyes, indicating focused attention."
+    ],
+    "rationale": [
+      "The proximity of the hammer to the clock suggests potential interaction, but no contact or motion blur confirms actual striking.",
+      "The clock displays approximately 10:55 (hour hand near 11, minute hand near 11), but the second hand position is ambiguous due to image resolution.",
+      "The person wears eyeglasses with thin black frames; the lenses reflect light, confirming they are worn and not merely held."
+    ],
+    "object": [
+      "A round analog wall clock with a silver-colored metallic rim and a white dial featuring black Arabic numerals from 1 to 12.",
+      "The clock includes three hands: hour, minute, and second; the brand name 'ACANTE' is visible below the center pivot, though partially obscured.",
+      "A claw hammer with a red-orange painted wooden handle showing chipped paint and a tarnished steel head with visible wear marks.",
+      "A person with short dark hair, wearing black-rimmed rectangular eyeglasses, and a dark-colored shirt.",
+      "The lighting creates strong chiaroscuro: the subject’s left cheek and forehead are illuminated, while the right side and background remain in deep shadow."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1254_P1",
+      "visual_anchors": [
+        "hammer poised near clock face",
+        "person’s intense gaze",
+        "clock showing near-11 o’clock time"
+      ],
+      "symbolic_mapping": [
+        "hammer as instrument of intervention",
+        "clock as representation of irreversible temporal flow"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "power_conflict"
+      ],
+      "interpretation": "The composition evokes tension between human agency and temporal inevitability—holding a tool capable of destruction against a symbol of measured, unyielding time suggests a confrontation with mortality or the futility of resisting chronos.",
+      "alternative_interpretations": [
+        "The scene may depict a literal repair attempt, such as adjusting or removing a stuck clock hand, with no symbolic intent."
+      ],
+      "limitations": [
+        "No visible damage to the clock, no motion evidence, and no contextual signage confirm symbolic intent over practical action."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1254_P2",
+      "visual_anchors": [
+        "eyeglasses reflecting light",
+        "focused facial expression",
+        "dark clothing against black background"
+      ],
+      "symbolic_mapping": [
+        "glasses as mediation of perception",
+        "shadowed body as erasure of social context"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s visual focus through corrective lenses onto a precise temporal marker implies a search for objective truth amid ambiguity, while the absence of environmental cues isolates identity to appearance and immediate action.",
+      "alternative_interpretations": [
+        "The lighting simply emphasizes the subject for dramatic effect; the glasses are functional, not symbolic."
+      ],
+      "limitations": [
+        "Reflections in the lenses do not reveal external objects, so mediation of perception cannot be verified visually."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1254_P3",
+      "visual_anchors": [
+        "chipped paint on hammer handle",
+        "tarnished hammer head",
+        "clean clock face"
+      ],
+      "symbolic_mapping": [
+        "worn tool vs. pristine timepiece as contrast between labor and abstraction"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a visibly used manual tool against an immaculate instrument of abstract measurement highlights the embodied effort required to engage with systems of order, suggesting constraint arises not from time itself but from the labor needed to confront it.",
+      "alternative_interpretations": [
+        "The hammer is simply the nearest available tool; its wear reflects prior use, not thematic contrast."
+      ],
+      "limitations": [
+        "No evidence confirms intentional staging of wear versus cleanliness; both objects could be coincidentally in their observed states."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:08:40.309483+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9572995c-19f1-9f6c-8bd7-17e5b29ec3d9",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1013,
+        "total_tokens": 1822,
+        "completion_tokens_details": {
+          "text_tokens": 1013
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070408249471ba48f2804f93",
+      "usage": {
+        "completion_tokens": 868,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1982,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2850
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

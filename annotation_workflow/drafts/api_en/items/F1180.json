@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1180",
+  "sample_id": "PHL1800_IRFL_0044",
+  "file_name": "PHL1800_IRFL_0044.jpg",
+  "batch_id": "B025",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "four children seated side by side on a low surface",
+  "captions": {
+    "scene": [
+      "Four children sit closely together against a textured ochre-colored wall with visible vertical seams.",
+      "The children wear matching red long-sleeved tops and bright pink skirts or wrap garments.",
+      "Each child holds a small plastic bowl—green, lime green, blue, and one partially obscured—resting on their lap or held in hands."
+    ],
+    "action": [
+      "The leftmost child smiles broadly while looking toward the second child.",
+      "The second child looks down at a green bowl with both hands near its rim.",
+      "The third child gazes downward at a lime green bowl held in both hands; the fourth child brings a finger to their mouth while looking at a blue bowl."
+    ],
+    "rationale": [
+      "The uniformity of clothing suggests coordinated attire, possibly institutional or ceremonial, though no insignia or text confirms this.",
+      "All children direct attention toward their respective bowls, indicating shared focus on the objects, but intent (e.g., eating, washing, playing) is not visually verifiable.",
+      "Facial expressions vary (smile, neutral, contemplative), yet no internal state can be confirmed from expression alone; interpretation beyond observable muscle configuration is unsupported."
+    ],
+    "object": [
+      "A green plastic bowl rests on the lap of the second child from the left, with fingers of both hands touching its rim.",
+      "A lime green plastic bowl is held in both hands by the third child, positioned centrally in front of their torso.",
+      "A blue plastic bowl is held in the left hand of the rightmost child, with their right index finger near their lips.",
+      "A small white cylindrical container with a dark lid sits on the lap of the leftmost child, partially hidden by their arm.",
+      "The wall behind the children shows horizontal banding and minor surface irregularities, consistent with earthen or plaster construction."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1180_P1",
+      "visual_anchors": [
+        "matching red tops",
+        "pink skirts",
+        "shared focus on identical-style bowls"
+      ],
+      "symbolic_mapping": [
+        "uniform attire → social role conformity",
+        "identical bowls → shared condition or task"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual repetition of clothing and objects may reflect structured social participation where individual distinction is minimized in favor of collective positioning.",
+      "alternative_interpretations": [
+        "The attire and bowls may simply result from practical resource distribution (e.g., school meal program) without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels, logos, or contextual signage confirm institutional affiliation or intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1180_P2",
+      "visual_anchors": [
+        "child smiling while others look down",
+        "hands positioned near or on bowls",
+        "bowl colors distinct but shapes identical"
+      ],
+      "symbolic_mapping": [
+        "divergent gaze direction → divergent engagement",
+        "hand-bowl contact → embodied interaction with immediate material world"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The variation in attention—smiling outward versus inward focus—suggests nascent differentiation in experiential orientation within a shared physical setting.",
+      "alternative_interpretations": [
+        "Differences in gaze may reflect momentary distraction, fatigue, or response to off-camera stimuli rather than cognitive divergence."
+      ],
+      "limitations": [
+        "Facial expressions are static and lack temporal context; no eye-tracking or behavioral sequence is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1180_P3",
+      "visual_anchors": [
+        "low seating position",
+        "bare feet not visible but implied by skirt length",
+        "wall texture suggesting non-industrial construction"
+      ],
+      "symbolic_mapping": [
+        "proximity to ground → material constraint",
+        "shared modest objects → limited resource access"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The grounded posture and simple utilitarian objects may evoke reflection on material conditions that shape agency and daily practice.",
+      "alternative_interpretations": [
+        "The setting could be a culturally normative domestic or educational space where low seating is customary and not indicative of constraint."
+      ],
+      "limitations": [
+        "Floor surface is not visible; posture may be cultural preference rather than economic limitation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:00:26.104741+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3cf1da4d-efb7-9561-bc05-1c5f42b6b700",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 969,
+        "total_tokens": 1550,
+        "completion_tokens_details": {
+          "text_tokens": 969
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 74,
+          "text_tokens": 507,
+          "cached_tokens": 384
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704001481959e5fc10a4948",
+      "usage": {
+        "completion_tokens": 830,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1620,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2450
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1392",
+  "sample_id": "PHL1800_HL_0433",
+  "file_name": "PHL1800_HL_0433.png",
+  "batch_id": "B029",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person standing on a sidewalk near a traffic signal and a house",
+  "captions": {
+    "scene": [
+      "A two-story residential building with light gray siding, white trim, and a gabled roof under daylight.",
+      "A metal chain-link fence runs along the front yard, separating the sidewalk from vegetation and the house.",
+      "A red traffic light is illuminated on a vertical pole at the street corner, adjacent to the person."
+    ],
+    "action": [
+      "The person wears a red-and-white striped shirt and light-colored pants, holding an object near their head with both hands.",
+      "A banner reading 'got democracy?' is affixed to the second-floor wall of the house.",
+      "Potted plants are visible on a red-painted porch step to the right of the house entrance."
+    ],
+    "rationale": [
+      "The person’s posture suggests they may be adjusting eyewear or shielding eyes, but no facial features or intent are visible.",
+      "The banner’s phrasing implies rhetorical questioning; however, its purpose (e.g., political statement, art, satire) cannot be determined from visual evidence alone.",
+      "The presence of palm fronds and dense shrubbery suggests a temperate or subtropical climate, but regional identification is unsupported."
+    ],
+    "object": [
+      "A vertical traffic signal displays one illuminated red circular light at the top position.",
+      "The house has three visible windows on the upper floor: two with white frames and closed blinds, one with a partially open blind and a yellow object inside.",
+      "A white rectangular banner with black sans-serif text 'got democracy?' is mounted horizontally below the central upper window.",
+      "A person stands on the sidewalk, facing roughly toward the camera, with arms raised near the head, holding a light-colored object.",
+      "A red-painted wooden structure, possibly steps or a planter box, sits beside the front door, supporting multiple potted plants with green foliage."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1392_P1",
+      "visual_anchors": [
+        "banner with 'got democracy?'",
+        "person standing alone near public infrastructure"
+      ],
+      "symbolic_mapping": [
+        "the banner’s interrogative form maps to questioning institutional legitimacy",
+        "the solitary figure maps to individual engagement with civic discourse"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages a moment where civic abstraction (democracy) is rendered as a literal question attached to domestic space, suggesting tension between private life and public accountability.",
+      "alternative_interpretations": [
+        "The banner may be decorative or ironic, unrelated to political engagement—e.g., a reference to consumer slogans or local art project."
+      ],
+      "limitations": [
+        "No context confirms the banner’s authorship, duration of display, or audience reception."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1392_P2",
+      "visual_anchors": [
+        "traffic light showing red",
+        "person paused on sidewalk",
+        "fence separating public and private zones"
+      ],
+      "symbolic_mapping": [
+        "red light signifies enforced pause",
+        "fence marks boundary between participation and exclusion"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The conjunction of enforced stoppage (red light), physical barrier (fence), and rhetorical query evokes constraints on agency within structured civic environments.",
+      "alternative_interpretations": [
+        "The person may simply be waiting to cross; the fence is standard property demarcation with no symbolic intent."
+      ],
+      "limitations": [
+        "No indication the person is responding to the banner or the light beyond spatial proximity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1392_P3",
+      "visual_anchors": [
+        "house facade with banner",
+        "potted plants on red steps",
+        "person wearing striped shirt"
+      ],
+      "symbolic_mapping": [
+        "domestic architecture as site of ideological inscription",
+        "everyday attire contrasting with monumental question"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of mundane residential detail with a universalizing political query invites reflection on how truth claims enter ordinary life through aesthetic and spatial placement.",
+      "alternative_interpretations": [
+        "The banner could be a humorous or commercial parody (e.g., mimicking 'Got Milk?'), not a philosophical proposition."
+      ],
+      "limitations": [
+        "The phrase lacks attribution or framing that would confirm epistemic or ethical intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:26:43.668466+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fbeb7da9-be3d-9192-8a18-1412fff9795f",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 973,
+        "total_tokens": 1674,
+        "completion_tokens_details": {
+          "text_tokens": 973
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704262718776467595b48b7",
+      "usage": {
+        "completion_tokens": 836,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1793,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2629
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

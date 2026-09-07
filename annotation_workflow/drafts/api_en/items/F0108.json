@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0108",
+  "sample_id": "PHL1800_HL_0104",
+  "file_name": "PHL1800_HL_0104.png",
+  "batch_id": "B004",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "five people playing ultimate frisbee on a grass field",
+  "captions": {
+    "scene": [
+      "A green artificial turf field marked with white and yellow lines, bordered by a chain-link fence and leafy trees in the background.",
+      "Overcast daylight illumination with no visible shadows, suggesting diffuse lighting conditions.",
+      "Five individuals in athletic attire are distributed across the field; one airborne, one leaping, two running, and one standing near the fence."
+    ],
+    "action": [
+      "A person in a green hoodie and navy pants is mid-leap, arm extended toward a white frisbee in flight.",
+      "A person in a white t-shirt and black shorts is airborne behind the leaping person, legs bent, appearing to jump or land.",
+      "A person in a green t-shirt and black shorts with white stripes runs forward, back turned to camera, arms swinging."
+    ],
+    "rationale": [
+      "The frisbee’s position above the leaping person and their outstretched arm suggest an attempted catch or block, though contact is not confirmed.",
+      "The airborne posture of the person in white implies recent vertical motion, but whether they jumped to catch, defend, or avoid collision cannot be determined from still image alone.",
+      "The person in pink shorts and black top is crouched with knees bent and arms raised, indicating readiness or reaction, but intent (e.g., defense, anticipation) is ambiguous without motion context."
+    ],
+    "object": [
+      "A white circular frisbee is suspended mid-air approximately at chest height relative to the leaping person.",
+      "A chain-link fence runs horizontally across the background, separating the field from a treeline of deciduous trees with sparse foliage.",
+      "The person in the green hoodie wears white sneakers with black soles and dark blue sweatpants with a visible side stripe.",
+      "The person in the white t-shirt has indistinct blue text on the back, partially legible as 'O' and 'S' but otherwise unreadable.",
+      "The person in pink shorts wears a black long-sleeve shirt with a small yellow logo on the left chest and white athletic shoes."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0108_P1",
+      "visual_anchors": [
+        "leaping person reaching for frisbee",
+        "airborne teammate directly behind",
+        "shared focus on single disc"
+      ],
+      "symbolic_mapping": [
+        "the frisbee as contested object representing shared goal",
+        "proximity without collision implying coordinated risk-taking"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The simultaneous leap and proximity of players illustrate how individual agency emerges within interdependent action—each chooses movement not in isolation but in response to others’ trajectories, embodying social existence as co-constituted motion.",
+      "alternative_interpretations": [
+        "This is simply a moment of competitive sport where players react instinctively to a flying disc, with no deeper coordination implied."
+      ],
+      "limitations": [
+        "No facial expressions or eye direction are visible to confirm intentionality or mutual awareness."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0108_P2",
+      "visual_anchors": [
+        "person in green t-shirt running away from camera",
+        "back turned",
+        "no visible interaction with frisbee"
+      ],
+      "symbolic_mapping": [
+        "absence of direct engagement as spatial metaphor for peripheral participation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The runner’s turned back and separation from the central action highlight how identity in group activity can be defined by positionality and visibility—being present yet uninvolved reflects a constrained freedom to opt out of immediate contest while remaining within the field’s boundaries.",
+      "alternative_interpretations": [
+        "The person is simply repositioning strategically and will soon engage; their back is turned due to directional momentum, not disengagement."
+      ],
+      "limitations": [
+        "Direction of gaze and body orientation relative to teammates cannot be verified from this angle."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0108_P3",
+      "visual_anchors": [
+        "fence separating field from trees",
+        "uniform artificial turf",
+        "standardized line markings"
+      ],
+      "symbolic_mapping": [
+        "fence as boundary between structured play and unstructured nature",
+        "turf as human-imposed order over organic ground"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The rigid geometry of the field and its enclosure by fencing materialize institutional constraint: play occurs only within designated zones, revealing how freedom is mediated through spatial control—a subtle power dynamic encoded in infrastructure rather than interpersonal force.",
+      "alternative_interpretations": [
+        "The fence and turf are merely functional safety and performance features with no symbolic intent."
+      ],
+      "limitations": [
+        "No signage, logos, or contextual markers indicate institutional purpose beyond generic sports use."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:01:06.417772+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ea8c04f8-fc86-965d-9135-870a05e8d565",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1067,
+        "total_tokens": 1836,
+        "completion_tokens_details": {
+          "text_tokens": 1067
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020047ffabae666f80431c",
+      "usage": {
+        "completion_tokens": 930,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1996,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2926
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

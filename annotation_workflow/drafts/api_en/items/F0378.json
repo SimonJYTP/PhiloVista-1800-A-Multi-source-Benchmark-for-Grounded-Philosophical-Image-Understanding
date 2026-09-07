@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0378",
+  "sample_id": "PHL1800_HL_0512",
+  "file_name": "PHL1800_HL_0512.png",
+  "batch_id": "B010",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man standing beside two bicycles in front of a double-decker bus",
+  "captions": {
+    "scene": [
+      "A double-decker bus with turquoise wave-like graphics parked on gravel under a partly cloudy sky",
+      "Two bicycles with panniers and water bottles are positioned in front of the bus's lower windshield",
+      "A blue car is partially visible to the left of the bus; utility poles and vegetation appear in the background"
+    ],
+    "action": [
+      "The man stands upright with hands at his sides, facing forward, wearing sunglasses and a high-visibility vest",
+      "The bicycles are stationary, leaning against each other and the bus, with no rider present",
+      "The bus is parked with its front windshield wipers in vertical resting position and a large paper sheet taped to the lower window"
+    ],
+    "rationale": [
+      "The man’s posture and attire suggest he may be associated with transport or safety operations, but no insignia confirms this",
+      "The paper on the windshield appears to be a notice or document, yet its text is unreadable and its purpose cannot be determined from visual evidence alone",
+      "The presence of two bicycles with touring gear implies travel or transit intent, but no motion or destination is visible"
+    ],
+    "object": [
+      "The double-decker bus has a white upper body with turquoise abstract wave patterns and a blue lower section featuring circular motifs.",
+      "Two bicycles are present: one silver-framed with black saddlebags and one blue-framed with rear panniers and a water bottle mounted on the down tube.",
+      "The man wears a yellow high-visibility vest over a red short-sleeved shirt, olive shorts, dark boots, and dark sunglasses.",
+      "A blue hatchback car is parked to the left of the bus, showing only its rear quarter panel and taillight.",
+      "A wooden utility pole with wires extends vertically behind the right side of the bus and the man."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0378_P1",
+      "visual_anchors": [
+        "man in high-visibility vest",
+        "two bicycles with luggage",
+        "parked bus with taped paper"
+      ],
+      "symbolic_mapping": [
+        "high-visibility vest → visibility as social role",
+        "bicycles with luggage → preparedness for journey"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of standardized safety attire, personal transport equipment, and institutional vehicle suggests a tension between individual agency and structured societal roles in mobility.",
+      "alternative_interpretations": [
+        "This is simply a roadside rest stop during a cycling trip, with no symbolic intent."
+      ],
+      "limitations": [
+        "No legible text or facial expression confirms intentionality or identity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0378_P2",
+      "visual_anchors": [
+        "double-decker bus",
+        "gravel ground",
+        "utility pole"
+      ],
+      "symbolic_mapping": [
+        "bus as obsolete or repurposed technology",
+        "gravel as non-permanent surface"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The stationary bus on unpaved ground, alongside human-scale transport, evokes reflection on technological obsolescence and the constraints imposed by infrastructure choices.",
+      "alternative_interpretations": [
+        "The bus is temporarily parked for maintenance or event use; the ground type reflects local terrain, not symbolic meaning."
+      ],
+      "limitations": [
+        "No signage or context confirms the bus’s operational status or purpose."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0378_P3",
+      "visual_anchors": [
+        "unreadable paper taped to windshield",
+        "man facing camera",
+        "bicycles aligned symmetrically"
+      ],
+      "symbolic_mapping": [
+        "obscured text → limits of knowledge",
+        "symmetry → order amid uncertainty"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The unreadable document combined with the man’s neutral stance and the orderly placement of bicycles highlights how truth and identity remain partially concealed even in seemingly clear visual arrangements.",
+      "alternative_interpretations": [
+        "The paper is a temporary notice (e.g., parking permit) and the composition is coincidental, not deliberate."
+      ],
+      "limitations": [
+        "The paper’s content is entirely illegible; no contextual cues confirm interpretive framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:41:26.233639+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c61a53d9-2f66-9d74-8cf8-2cdaede8308d",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 963,
+        "total_tokens": 1732,
+        "completion_tokens_details": {
+          "text_tokens": 963
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702411223bf71718daa4248",
+      "usage": {
+        "completion_tokens": 821,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1893,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2714
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "annotation_item_id": "F0184",
+  "sample_id": "PHL1800_HL_0524",
+  "file_name": "PHL1800_HL_0524.png",
+  "batch_id": "B006",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a male skateboarder mid-air performing a trick",
+  "captions": {
+    "scene": [
+      "A concrete skatepark bowl with curved ramps under an overcast sky",
+      "Background includes spectators seated and standing along the rim, trees, and a tall red-and-white lattice tower",
+      "A watermark reading 'nicholas oxford photography' appears in the lower-left corner"
+    ],
+    "action": [
+      "The skateboarder is airborne with his left hand raised and right hand gripping the board's edge",
+      "His right knee is bent upward while his left leg extends downward toward the ramp edge",
+      "The skateboard is tilted vertically, its black grip tape facing the camera, with visible wear on the deck"
+    ],
+    "rationale": [
+      "The skateboarder’s posture and board orientation suggest he is executing a flip or grab trick, though exact trick type cannot be confirmed from this single frame",
+      "The presence of multiple spectators and infrastructure implies a public recreational or competitive setting, but no signage confirms event status",
+      "The watermark indicates professional photography, yet no metadata or context confirms date, location, or subject identity"
+    ],
+    "object": [
+      "The skateboarder wears a blue short-sleeved t-shirt, brown shorts, white socks, and a green baseball cap worn backward.",
+      "The skateboard has a black grip-taped top surface, visible scuff marks near the tail, and no discernible brand logo.",
+      "Two tall metal light poles stand behind the skatepark, one partially obscured by foliage.",
+      "At least nine distinct individuals are visible in the background: five seated on the ramp edge, three standing near the right rim, and one partially visible behind the skateboarder’s left arm.",
+      "A faint city skyline with at least two high-rise buildings appears in the far background behind trees."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0184_P1",
+      "visual_anchors": [
+        "skateboarder airborne above ramp edge",
+        "raised left hand",
+        "tilted vertical board"
+      ],
+      "symbolic_mapping": [
+        "the suspended body represents a moment of agency outside routine gravity",
+        "the raised hand may signify acknowledgment of risk or audience"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a transient state where physical constraint (gravity, ramp geometry) is momentarily defied through deliberate bodily choice, embodying freedom as enacted resistance to fixed paths.",
+      "alternative_interpretations": [
+        "It is simply a sports photograph documenting a technical maneuver without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentionality or meaning beyond observable motion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0184_P2",
+      "visual_anchors": [
+        "watermark 'nicholas oxford photography'",
+        "spectators in background",
+        "public skatepark setting"
+      ],
+      "symbolic_mapping": [
+        "the photographer’s signature asserts authorship over a fleeting action",
+        "spectators constitute a witnessing community that validates the act"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The act gains significance only through documentation and observation—individual performance becomes socially constituted through the gaze of others and the permanence of the photographic record.",
+      "alternative_interpretations": [
+        "The watermark is purely functional attribution; spectators are incidental background elements."
+      ],
+      "limitations": [
+        "The spectators’ attention direction and engagement level are indeterminate; some appear to look away."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0184_P3",
+      "visual_anchors": [
+        "worn skateboard grip tape",
+        "concrete ramp surface with scratches",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "A literal description of a male skateboarder mid-air performing a trick is visually supported, but the image alone does not establish a specific philosophical claim; any determinate abstract meaning would require context outside the frame.",
+      "alternative_interpretations": [
+        "A viewer may use a male skateboarder mid-air performing a trick as a metaphor, but that association would be projected onto the scene rather than demonstrated by it."
+      ],
+      "limitations": [
+        "No explicit philosophical text, confirmed symbolic convention, or contextual metadata links the visible scene to one determinate abstract meaning."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:14:57.594392+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3f0fe075-bd88-937e-8fa8-d487737fb66e",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 951,
+        "total_tokens": 1720,
+        "completion_tokens_details": {
+          "text_tokens": 951
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702143513f0dec48a9445b6",
+      "usage": {
+        "completion_tokens": 808,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1880,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2688
+      }
+    },
+    "image_input": "base64_from_local_selected_image",
+    "audit_revisions": [
+      {
+        "timestamp_utc": "2026-09-07T14:42:46.228968+00:00",
+        "reason_code": "boundary_track_overinterpretation_guard",
+        "changed_field": "philosophy_interpretations[2]",
+        "previous_sufficiency": "plausible",
+        "source_backup": "audit/annotation_quality_v1/original_items_before_repair/F0184.json",
+        "formal_gold": false
+      }
+    ]
+  }
+}

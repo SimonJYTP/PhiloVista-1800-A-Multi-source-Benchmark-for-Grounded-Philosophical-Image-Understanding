@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0208",
+  "sample_id": "PHL1800_HAIV_0335",
+  "file_name": "PHL1800_HAIV_0335.png",
+  "batch_id": "B006",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized human figure and a black bird silhouette",
+  "captions": {
+    "scene": [
+      "A monochrome gradient background ranging from off-white at top to light gray at bottom.",
+      "A vertical black line descends from the top edge, terminating in a small ornate object above the bird.",
+      "The human figure stands left of center; the bird is positioned to the right, mid-height."
+    ],
+    "action": [
+      "The human figure stands upright with head tilted downward and eyes narrowed.",
+      "The bird appears suspended in flight with wings extended and tail fanned, facing left toward the human.",
+      "A small detailed object hangs from the black line directly above the bird’s head."
+    ],
+    "rationale": [
+      "The human’s posture and facial orientation suggest attention directed toward the bird or the hanging object, though no direct gaze is visible.",
+      "The bird’s pose resembles mid-flight rather than perching, indicated by wing angle and lack of contact surface.",
+      "The hanging object’s intricate detail contrasts with the otherwise minimal rendering, suggesting intentional emphasis."
+    ],
+    "object": [
+      "The human figure wears a white short-sleeved collared shirt with visible seam lines and dark trousers.",
+      "The human has short dark hair, a neutral mouth line, and shadowed eye sockets without discernible pupils.",
+      "The bird is a solid black silhouette with a single white-and-gray circular eye, a pointed beak, and defined wing and tail feathers.",
+      "A thin black vertical line extends from the top margin to a small ornate pendant-like object approximately two-thirds down the image height.",
+      "The ornate object features symmetrical filigree patterns and appears metallic or decorative, but no text or legible markings are present."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0208_P1",
+      "visual_anchors": [
+        "black vertical line",
+        "hanging ornate object",
+        "bird’s fixed gaze toward human"
+      ],
+      "symbolic_mapping": [
+        "the line represents constraint or connection",
+        "the bird symbolizes an external truth or messenger"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The suspended object and tethering line may represent imposed structure limiting the bird’s autonomy, while the bird’s orientation toward the human suggests a confrontation with received knowledge or obligation.",
+      "alternative_interpretations": [
+        "The scene could depict a simple still-life composition with decorative elements, lacking symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual environment confirm symbolic meaning; all interpretation relies on visual analogy alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0208_P2",
+      "visual_anchors": [
+        "human’s closed or narrowed eyes",
+        "monochrome palette",
+        "lack of ground or horizon"
+      ],
+      "symbolic_mapping": [
+        "closed eyes indicate introspection or refusal to see",
+        "absence of setting implies psychological interiority"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The figure’s obscured vision and simplified form suggest a dissociation between outward appearance and inner state, raising questions about self-perception versus observable reality.",
+      "alternative_interpretations": [
+        "The stylization may reflect artistic medium constraints (e.g., vector illustration) rather than conceptual intent."
+      ],
+      "limitations": [
+        "Facial features are deliberately abstracted; eye closure cannot be confirmed as intentional symbolism versus aesthetic choice."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0208_P3",
+      "visual_anchors": [
+        "bird’s single detailed eye",
+        "human’s static posture",
+        "contrast between solid black bird and grayscale figure"
+      ],
+      "symbolic_mapping": [
+        "the bird’s eye signifies focused observation",
+        "the figure’s neutrality implies passivity or receptivity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The asymmetry in visual detail—especially the bird’s singular eye—may evoke a moral witness observing human inaction, framing responsibility as contingent on being seen.",
+      "alternative_interpretations": [
+        "The eye detail may serve purely compositional balance, drawing attention without ethical implication."
+      ],
+      "limitations": [
+        "No interaction (e.g., touch, movement, shared gaze) confirms relational dynamics; the bird faces the human but does not engage physically."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:22:07.516405+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-25025084-12c5-91d3-b259-3814fd1ea2fe",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 945,
+        "total_tokens": 2478,
+        "completion_tokens_details": {
+          "text_tokens": 945
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022144542201b87cd74a1b",
+      "usage": {
+        "completion_tokens": 804,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2905,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3709
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

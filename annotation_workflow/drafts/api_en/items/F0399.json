@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0399",
+  "sample_id": "PHL1800_IRFL_0402",
+  "file_name": "PHL1800_IRFL_0402.jpg",
+  "batch_id": "B010",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person lying supine on a white pillow and bedding",
+  "captions": {
+    "scene": [
+      "A person rests on a white textured pillow with crumpled white fabric surrounding them.",
+      "The background consists entirely of light-colored bedding with visible creases and folds.",
+      "A small patterned fabric fragment—possibly a garment edge—is partially visible beneath the person's neck."
+    ],
+    "action": [
+      "The person’s eyes are closed; eyelids are relaxed and fully shut.",
+      "The left hand is extended palm-up beside the head, fingers slightly spread.",
+      "The right hand rests lightly on the upper chest/abdomen region, fingers curved inward."
+    ],
+    "rationale": [
+      "The uniform erythema across face, neck, hands, and torso suggests a systemic dermatological condition or acute reaction, though cause is not visually determinable.",
+      "The posture (supine, eyes closed, hands at rest) indicates stillness, but whether this is voluntary rest, unconsciousness, or medical immobilization cannot be confirmed from image alone.",
+      "The absence of visible medical equipment or personnel means clinical context is unsupported by visual evidence."
+    ],
+    "object": [
+      "The person has short-cropped dark hair and visible eyebrows above closed eyes.",
+      "The skin exhibits diffuse redness (erythema) covering the face, neck, dorsal hands, and visible torso area.",
+      "The left hand shows faint linear markings on the palmar surface, possibly superficial scratches or capillary patterns.",
+      "A pale yellowish fabric fold lies near the right hand, draped over the chest or shoulder region.",
+      "The pillowcase is off-white with subtle weave texture and minor discoloration near the neck."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0399_P1",
+      "visual_anchors": [
+        "diffuse facial erythema",
+        "closed eyes",
+        "palm-up left hand"
+      ],
+      "symbolic_mapping": [
+        "exposed skin as vulnerability",
+        "closed eyes as withdrawal from observation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visible redness disrupts conventional markers of facial identity, prompting reflection on how appearance mediates social recognition and self-presentation when bodily integrity appears altered.",
+      "alternative_interpretations": [
+        "The redness may simply reflect a transient physiological state such as fever or allergic response, with no intended symbolic meaning."
+      ],
+      "limitations": [
+        "No contextual cues confirm intentional presentation or viewer engagement; the subject’s gaze is absent, limiting inference about social interaction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0399_P2",
+      "visual_anchors": [
+        "supine posture",
+        "still hands",
+        "uniform bedding"
+      ],
+      "symbolic_mapping": [
+        "horizontal orientation as suspension of agency",
+        "white bedding as neutral or clinical field"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The motionless repose within a confined textile environment evokes themes of temporal suspension and embodied constraint, where physical stillness intersects with existential passivity.",
+      "alternative_interpretations": [
+        "The posture is common in rest or sleep and may indicate ordinary recuperation rather than philosophical stasis."
+      ],
+      "limitations": [
+        "No indicators of duration, intent, or external restriction are visible; stillness alone does not prove constraint."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0399_P3",
+      "visual_anchors": [
+        "left hand extended palm-up",
+        "right hand resting on torso",
+        "visible skin texture"
+      ],
+      "symbolic_mapping": [
+        "open palm as receptivity or exposure",
+        "hand-on-body as self-monitoring or grounding"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of an open, outward-facing hand and a self-directed hand suggests a tension between openness to external judgment and internal self-assessment, raising questions about epistemic responsibility in bodily experience.",
+      "alternative_interpretations": [
+        "The hand positions may result from comfort or habit during rest, without reflective intent."
+      ],
+      "limitations": [
+        "Hand orientation lacks accompanying facial expression or environmental context to confirm communicative or cognitive intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:43:47.452912+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a3439575-ab75-9fb3-9da4-19110ffc7c5b",
+      "usage": {
+        "prompt_tokens": 1229,
+        "completion_tokens": 927,
+        "total_tokens": 2156,
+        "completion_tokens_details": {
+          "text_tokens": 927
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 722,
+          "text_tokens": 507,
+          "cached_tokens": 1024
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024329da8c556fc63d41c5",
+      "usage": {
+        "completion_tokens": 789,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2459,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3248
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

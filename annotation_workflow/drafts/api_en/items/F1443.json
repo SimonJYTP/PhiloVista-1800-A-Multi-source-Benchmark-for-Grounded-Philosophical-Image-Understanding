@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1443",
+  "sample_id": "PHL1800_HL_0484",
+  "file_name": "PHL1800_HL_0484.png",
+  "batch_id": "B030",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one man installing wiring in a kitchen",
+  "captions": {
+    "scene": [
+      "A partially finished kitchen with light wood cabinetry, black granite countertops, and exposed electrical outlets.",
+      "Natural light enters through a window above a sink; tools, cardboard boxes, and loose materials are scattered on the island.",
+      "A microwave is mounted under upper cabinets; power cords hang from wall outlets near the countertop."
+    ],
+    "action": [
+      "The man kneels on the countertop, holding two insulated wires with both hands while looking toward the window frame.",
+      "He wears a baseball cap, white t-shirt, jeans, and a tool belt with pouches and a hammer visible.",
+      "His left knee rests on the counter surface; his right foot is planted on the floor, supporting his posture."
+    ],
+    "rationale": [
+      "The presence of exposed wires, open junction boxes, and uninstalled fixtures suggests ongoing electrical work rather than appliance testing.",
+      "The man’s focused gaze and hand positioning indicate active manipulation of conductors, not passive observation or cleaning.",
+      "The disarray of packaging, tools, and unfinished surfaces implies a renovation phase, though the exact scope (e.g., full remodel vs. partial upgrade) cannot be confirmed."
+    ],
+    "object": [
+      "A black microwave oven is mounted beneath upper wooden cabinets, with its control panel facing forward and a power cord trailing downward.",
+      "Two white insulated wires extend from an open electrical box inside the window frame, held by the man’s hands.",
+      "A brown cardboard box sits open on the island countertop, containing indistinct contents and a white label with unreadable text.",
+      "A stainless steel sink with a high-arc faucet is installed in the left-side countertop, adjacent to a paper towel roll holder.",
+      "Three visible electrical outlets on the backsplash wall have black faceplates; one has a black cord plugged in, another has a dangling cord with no plug."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1443_P1",
+      "visual_anchors": [
+        "exposed wires",
+        "tool belt",
+        "unfinished countertop"
+      ],
+      "symbolic_mapping": [
+        "exposed wires represent vulnerability in systems under construction",
+        "tool belt signifies embodied agency in material transformation"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The image embodies labor as a situated practice where human intention interfaces directly with infrastructure—wiring is neither fully abstract nor complete, mirroring how choices manifest incrementally through physical effort.",
+      "alternative_interpretations": [
+        "This is simply a contractor performing routine installation work without symbolic intent."
+      ],
+      "limitations": [
+        "No signage, labels, or contextual documents confirm intentional symbolism; all mapping is viewer-imposed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1443_P2",
+      "visual_anchors": [
+        "man kneeling on countertop",
+        "unsecured power cords",
+        "open electrical box"
+      ],
+      "symbolic_mapping": [
+        "kneeling posture suggests submission to task over comfort",
+        "unsecured cords imply provisional order amid transition"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The scene captures constraint as productive: the man voluntarily adopts an unstable position to enable future functionality, reflecting how temporal limits (e.g., project deadlines) shape embodied freedom within built environments.",
+      "alternative_interpretations": [
+        "The man is merely using available space efficiently; kneeling is ergonomic, not philosophical."
+      ],
+      "limitations": [
+        "Posture could equally reflect fatigue or lack of ladder—not necessarily deliberate constraint acceptance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1443_P3",
+      "visual_anchors": [
+        "black granite countertop",
+        "light wood cabinets",
+        "cluttered island"
+      ],
+      "symbolic_mapping": [
+        "contrast between polished surface and disorder signals unresolved identity",
+        "cabinets enclose but do not yet contain functional items"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The kitchen’s incomplete state visualizes social existence as emergent: appearance (finished surfaces) precedes function (organized use), suggesting identity is performed through staged material coherence rather than innate completeness.",
+      "alternative_interpretations": [
+        "The clutter reflects temporary workflow, not identity formation."
+      ],
+      "limitations": [
+        "No occupants besides the worker are visible; social existence cannot be verified beyond solitary activity."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:33:14.252616+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-be71c2dd-dc01-9649-8790-6b5e08319035",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 969,
+        "total_tokens": 1638,
+        "completion_tokens_details": {
+          "text_tokens": 969
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 512
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043252e15bb850ac8a4d83",
+      "usage": {
+        "completion_tokens": 830,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1770,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2600
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

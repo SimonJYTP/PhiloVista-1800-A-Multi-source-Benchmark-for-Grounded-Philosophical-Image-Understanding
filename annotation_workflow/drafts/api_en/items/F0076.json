@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0076",
+  "sample_id": "PHL1800_HL_0137",
+  "file_name": "PHL1800_HL_0137.png",
+  "batch_id": "B004",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "ornate clock suspended in a grand interior hall",
+  "captions": {
+    "scene": [
+      "A high-ceilinged hall with arched metal-and-glass roof structure and decorative tiled vaulting",
+      "Large ornamental clock mounted on an iron archway, surrounded by intricate bronze filigree",
+      "Ground floor with scattered people, statues, and signage including a red banner reading 'DEGAS ET LE NU'"
+    ],
+    "action": [
+      "Clock hands indicate approximately 10:10; the clock face is illuminated",
+      "Multiple individuals are standing or walking on the ground level near columns and displays",
+      "A white metal walkway extends horizontally across the upper mid-section of the hall"
+    ],
+    "rationale": [
+      "The clock’s position and scale suggest it functions as a central architectural feature rather than a utilitarian timepiece alone",
+      "The presence of museum-style displays (statue, banner) implies the space serves public exhibition purposes",
+      "The structural materials—wrought iron, glass panes, stone columns—are consistent with late 19th-century industrial architecture"
+    ],
+    "object": [
+      "A large circular clock with Roman numerals, gold-toned hands, and a white enamel face, encased in an elaborate gilded bronze frame featuring floral and scroll motifs.",
+      "An arched iron support structure beneath the clock, decorated with repeating geometric patterns and flanked by vertical columns with carved capitals.",
+      "A vaulted ceiling composed of square tiles with embossed rosette patterns, intersected by exposed steel trusses supporting a grid of glass panes.",
+      "A dark bronze statue of a seated figure on a plinth, located left of center on the ground floor, partially obscured by foreground figures.",
+      "A red rectangular banner with white uppercase text 'DEGAS ET LE NU' affixed to a wall on the right side, below the upper walkway."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "commonsense_inference"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0076_P1",
+      "visual_anchors": [
+        "clock face with Roman numerals",
+        "illuminated dial",
+        "central placement above public space"
+      ],
+      "symbolic_mapping": [
+        "the clock as a marker of shared temporal experience",
+        "its illumination suggesting visibility of time’s passage"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The clock’s prominence and luminosity evoke time as a collective, observable force governing human activity within the space, underscoring finitude through its constant motion.",
+      "alternative_interpretations": [
+        "It may simply serve as a functional timekeeper for train schedules, given the hall’s likely transportation origin."
+      ],
+      "limitations": [
+        "No visible mechanism or inscription confirms symbolic intent; illumination could be purely practical lighting."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0076_P2",
+      "visual_anchors": [
+        "crowd of people at varying distances",
+        "open sightlines across multiple levels",
+        "white walkway separating viewing zones"
+      ],
+      "symbolic_mapping": [
+        "spatial layering reflecting differentiated social access",
+        "shared gaze toward central artifacts indicating communal meaning-making"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The layered architecture and distributed observers illustrate how social existence is structured through shared physical environments that simultaneously enable proximity and separation.",
+      "alternative_interpretations": [
+        "The walkway is a safety railing; crowd distribution reflects casual movement, not intentional social stratification."
+      ],
+      "limitations": [
+        "No clear indicators of hierarchy (e.g., restricted zones, signage of access levels) are visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0076_P3",
+      "visual_anchors": [
+        "ornate bronze clockwork",
+        "exposed iron framework",
+        "glass roof allowing natural light"
+      ],
+      "symbolic_mapping": [
+        "fusion of craftsmanship and industrial material expressing human mastery over nature",
+        "transparency of roof suggesting openness to external reality"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of hand-finished ornamentation against mass-produced structural elements embodies the tension between artisanal labor and mechanized technology in shaping lived environments.",
+      "alternative_interpretations": [
+        "The design follows period aesthetic conventions without deliberate philosophical commentary."
+      ],
+      "limitations": [
+        "No tools, workers, or production context are shown; ornamentation may be purely decorative."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:57:16.841242+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0db2e03d-0005-9f0f-be60-8f7d8324880e",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 951,
+        "total_tokens": 1760,
+        "completion_tokens_details": {
+          "text_tokens": 951
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015649df197d1eb1cf4634",
+      "usage": {
+        "completion_tokens": 810,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1922,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2732
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0342",
+  "sample_id": "PHL1800_HAIV_0326",
+  "file_name": "PHL1800_HAIV_0326.png",
+  "batch_id": "B009",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized alarm clock with a roaring lion face replacing the clock hands and center",
+  "captions": {
+    "scene": [
+      "A red-rimmed analog alarm clock with twin bells on top, rendered in black outline and white fill with red accents.",
+      "The clock face displays Arabic numerals 1 through 12, though some are partially obscured or distorted by the central illustration.",
+      "A large, cartoonish lion head occupies the center of the clock face, its mouth wide open and teeth visible."
+    ],
+    "action": [
+      "The lion’s mouth is open wide in a roar, with visible upper and lower canines and tongue.",
+      "The lion’s eyes are closed or squinted, with curved lines indicating expression.",
+      "The clock numerals appear static; no motion blur or dynamic indicators suggest time passage."
+    ],
+    "rationale": [
+      "The lion’s facial features (open mouth, visible teeth, closed eyes) strongly suggest a vocalization gesture rather than a neutral pose.",
+      "The numerals 1–12 are present but irregularly spaced and partially overlaid by the lion, implying intentional artistic distortion rather than functional clock design.",
+      "The twin bells and hammer mechanism at the top are depicted schematically, lacking mechanical detail, indicating symbolic rather than functional representation."
+    ],
+    "object": [
+      "The clock has a thick red outer rim and a thinner black inner rim surrounding the white face.",
+      "Two red bell-shaped structures sit atop the clock, each with a yellow rectangular accent near its base.",
+      "A small black hammer-like element hangs between the bells, connected by a thin vertical line to the clock body.",
+      "The lion illustration is drawn in black ink with jagged outlines for fur, and includes a black nose, two visible upper canines, and a tongue.",
+      "Numerals 2, 3, 4, 5, 7, 8, 9, and 12 are legible; numerals 1, 6, 10, and 11 are either missing, heavily distorted, or unreadable due to overlay."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0342_P1",
+      "visual_anchors": [
+        "roaring lion face",
+        "alarm clock frame",
+        "distorted numerals"
+      ],
+      "symbolic_mapping": [
+        "lion roar → urgency or interruption",
+        "clock frame → temporal constraint"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The lion’s roar erupting from the clock suggests an existential rupture—time’s rigid structure being violently contested or overwhelmed by raw, untamed presence.",
+      "alternative_interpretations": [
+        "A humorous or decorative motif combining animal imagery with timekeeping devices, common in pop-art or children’s illustrations."
+      ],
+      "limitations": [
+        "No textual context confirms intent; the lion could be purely ornamental without symbolic weight."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0342_P2",
+      "visual_anchors": [
+        "closed eyes of lion",
+        "wide-open mouth",
+        "lack of visible clock hands"
+      ],
+      "symbolic_mapping": [
+        "closed eyes → inward focus or blindness to time",
+        "absent hands → suspension of measurement"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The absence of traditional clock hands replaced by a roaring face implies that identity (here, the lion) dominates over objective timekeeping, questioning whether truth resides in measured duration or embodied expression.",
+      "alternative_interpretations": [
+        "The artist omitted hands for stylistic simplicity, not philosophical intent."
+      ],
+      "limitations": [
+        "No explicit indication that the lack of hands is deliberate symbolism rather than omission."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0342_P3",
+      "visual_anchors": [
+        "twin bells",
+        "hammer mechanism",
+        "lion’s teeth biting into numeral 10 area"
+      ],
+      "symbolic_mapping": [
+        "bells → summons or alarm",
+        "teeth overlapping numeral → consumption or erasure of time"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "choice_journey"
+      ],
+      "interpretation": "The lion’s jaws appear to engulf part of the clock face, suggesting a forceful assertion of agency against imposed temporal order—a metaphor for resistance within a predetermined journey.",
+      "alternative_interpretations": [
+        "The overlap is accidental composition due to scaling, not intentional symbolism."
+      ],
+      "limitations": [
+        "The numeral under the lion’s jaw is illegible; it cannot be confirmed whether it is ‘10’ or another number, weakening the ‘consumption’ claim."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:36:02.302453+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cc83cd79-51ca-9020-90b6-bde409d79ccc",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1007,
+        "total_tokens": 2540,
+        "completion_tokens_details": {
+          "text_tokens": 1007
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070235413d7f75699bb74d0c",
+      "usage": {
+        "completion_tokens": 861,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2960,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3821
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

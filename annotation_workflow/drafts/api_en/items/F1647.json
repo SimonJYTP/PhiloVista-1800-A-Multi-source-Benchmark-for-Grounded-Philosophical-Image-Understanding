@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1647",
+  "sample_id": "PHL1800_HL_0103",
+  "file_name": "PHL1800_HL_0103.png",
+  "batch_id": "B034",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals in full-body gray furry costumes standing beside a red fire hydrant",
+  "captions": {
+    "scene": [
+      "Urban sidewalk with grass verge, parked vehicles, storefronts, and a blue street sign reading 'Third' visible in background",
+      "Daylight outdoor setting with overcast lighting; pavement is dry and clean",
+      "Red fire hydrant with white label partially reading 'WIL...' and 'THU...' and 'F' positioned centrally on sidewalk"
+    ],
+    "action": [
+      "Left-costumed individual raises right arm upward while left foot is lifted off ground, showing sole of shoe",
+      "Right-costumed individual stands upright with both hands in costume pockets, facing forward",
+      "Both individuals wear hooded, textured gray costumes with long tails and paw-like footwear"
+    ],
+    "rationale": [
+      "Costume design (hood, tail, paws) suggests intentional animal mimicry rather than random attire",
+      "Proximity to fire hydrant and pose suggest staged interaction, though no explicit gesture toward hydrant is visible",
+      "Visible text on hydrant is incomplete and partially obscured; exact wording cannot be confirmed"
+    ],
+    "object": [
+      "A bright red fire hydrant with silver caps, bolts, and a side nozzle, mounted on a circular base, stands on concrete sidewalk.",
+      "Two people wear identical gray shaggy full-body costumes with attached hoods covering heads, long tails extending behind, and padded feet resembling animal paws.",
+      "The left-costumed person’s right arm is raised above head level with hand open; left leg is bent with foot elevated, revealing beige sole and black toe detail.",
+      "The right-costumed person has both hands inserted into front pockets of the costume and stands with feet shoulder-width apart, facing camera.",
+      "In the background, a white van and dark SUV are parked on street; a blue rectangular sign with white text 'Third' and directional arrow is mounted on pole."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1647_P1",
+      "visual_anchors": [
+        "gray furry costumes",
+        "hoods obscuring faces",
+        "identical attire"
+      ],
+      "symbolic_mapping": [
+        "costumes conceal individual features, emphasizing uniformity over distinction"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The erasure of facial identity through identical animal costumes may reflect a commentary on how social roles or group affiliations subsume personal distinctiveness in public performance.",
+      "alternative_interpretations": [
+        "The costumes could simply be for entertainment, such as a parade or promotional event, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirms intentional symbolism; costumes may be purely functional or festive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1647_P2",
+      "visual_anchors": [
+        "red fire hydrant",
+        "two costumed figures flanking it",
+        "sidewalk setting"
+      ],
+      "symbolic_mapping": [
+        "hydrant as fixed civic infrastructure juxtaposed with transient, playful human forms"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The static, regulated presence of the fire hydrant contrasts with the dynamic, self-directed postures of the costumed figures, suggesting tension between institutional order and embodied autonomy.",
+      "alternative_interpretations": [
+        "The hydrant is merely a convenient prop; the figures are posing for a photo without conceptual framing."
+      ],
+      "limitations": [
+        "No movement or interaction with hydrant is evident; spatial proximity alone does not imply relational meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1647_P3",
+      "visual_anchors": [
+        "unreadable white label on hydrant",
+        "partial letters 'WIL', 'THU', 'F'",
+        "costume texture resembling worn fabric"
+      ],
+      "symbolic_mapping": [
+        "fragmented text mirrors incomplete perception of public systems or roles"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The obscured labeling on a civic object—paired with anonymized human forms—evokes epistemic uncertainty: what is officially designated remains partially inaccessible, even as subjects perform within its domain.",
+      "alternative_interpretations": [
+        "The label is standard municipal marking; partial visibility results from angle and wear, not design intent."
+      ],
+      "limitations": [
+        "Only fragments of text are visible; no evidence confirms intentional obfuscation or thematic design."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:57:02.158189+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-66722286-3cf4-9c12-a344-b1e670a9baf1",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 982,
+        "total_tokens": 1811,
+        "completion_tokens_details": {
+          "text_tokens": 982
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045651f8e201cfdf7e4f6a",
+      "usage": {
+        "completion_tokens": 839,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1994,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2833
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

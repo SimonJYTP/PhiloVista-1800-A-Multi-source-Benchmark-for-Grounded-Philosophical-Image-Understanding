@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0808",
+  "sample_id": "PHL1800_HAIV_0507",
+  "file_name": "PHL1800_HAIV_0507.png",
+  "batch_id": "B018",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one cartoon man in blue work attire holding a shovel",
+  "captions": {
+    "scene": [
+      "A man in a blue jumpsuit and cap is bent over brown soil with green leafy plants on either side.",
+      "The background is a gradient from pale yellow at the bottom to light blue at the top, suggesting open sky or plain backdrop.",
+      "Small green leaf fragments are airborne near the left plant cluster, indicating recent motion."
+    ],
+    "action": [
+      "The man grips a black-handled shovel with his right hand, blade embedded in soil.",
+      "His body leans forward sharply, torso nearly parallel to the ground, left arm bent across chest.",
+      "His facial expression shows closed eyes, upturned mouth corners, and raised cheeks—consistent with exertion or smiling."
+    ],
+    "rationale": [
+      "The shovel’s blade is partially buried and angled downward, suggesting digging or shoveling motion rather than static holding.",
+      "The man’s posture—forward lean, bent knees (implied by lower-body occlusion), and arm positioning—is biomechanically consistent with active digging.",
+      "The airborne leaf fragments near the left plant imply recent displacement, possibly from the shovel’s movement, though direct causal link is not visually confirmed."
+    ],
+    "object": [
+      "The man wears a blue long-sleeved jumpsuit with two visible flap pockets on the chest and one on the left thigh.",
+      "He wears a blue cap with a circular white-and-blue emblem on the front and a dark brim; the emblem contains an unreadable central symbol.",
+      "He wears light-blue-tinted eyeglasses with thick black frames and a visible nose bridge.",
+      "The shovel has a black D-shaped handle, a black shaft, and a silver-gray rectangular blade with a reinforced collar.",
+      "Brown soil shows layered striations and small gray stones near the lower-left foreground."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0808_P1",
+      "visual_anchors": [
+        "shovel embedded in soil",
+        "man’s forward-leaning posture",
+        "green plants flanking the dig site"
+      ],
+      "symbolic_mapping": [
+        "digging as metaphor for uncovering hidden truths",
+        "physical labor as embodiment of epistemic effort"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The act of digging with focused physical engagement may symbolize the pursuit of knowledge through embodied labor, where truth emerges only after sustained effort in fertile ground.",
+      "alternative_interpretations": [
+        "It may simply depict routine gardening or landscaping without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; the image lacks explicit indicators of abstraction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0808_P2",
+      "visual_anchors": [
+        "blue uniform with pockets",
+        "cap with emblem",
+        "glasses worn during manual work"
+      ],
+      "symbolic_mapping": [
+        "uniform as marker of role-based identity",
+        "glasses as signifier of intellectual or technical competence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The combination of occupational attire and corrective eyewear suggests a constructed identity where appearance signals both social role and cognitive capacity, blurring lines between manual and intellectual labor.",
+      "alternative_interpretations": [
+        "The clothing may be generic workwear with no deliberate semiotic design; glasses may serve purely functional purpose."
+      ],
+      "limitations": [
+        "The emblem is unreadable and the uniform lacks distinguishing insignia; thus role specificity cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0808_P3",
+      "visual_anchors": [
+        "airborne leaf fragments",
+        "tilted body angle",
+        "soil displacement around shovel"
+      ],
+      "symbolic_mapping": [
+        "momentary disruption of plant life as consequence of action",
+        "bent posture as constraint imposed by task"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The figure’s constrained posture amid active intervention in nature reflects a tension between agency (choosing to dig) and limitation (physical demand and ecological impact), framing labor as a situated choice within structural boundaries.",
+      "alternative_interpretations": [
+        "The leaf fragments may result from wind or incidental motion, not intentional digging; posture may reflect momentary balance, not enduring constraint."
+      ],
+      "limitations": [
+        "Causality between shovel motion and leaf dispersal is not directly traceable; no narrative context confirms intentionality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:18:34.310661+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c6d7f2a6-60b4-9f87-882b-c91b18acb09d",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 982,
+        "total_tokens": 2515,
+        "completion_tokens_details": {
+          "text_tokens": 982
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070318105a11e0c79053424c",
+      "usage": {
+        "completion_tokens": 843,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2942,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3785
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

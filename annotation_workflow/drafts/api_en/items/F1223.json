@@ -1,0 +1,156 @@
+{
+  "annotation_item_id": "F1223",
+  "sample_id": "PHL1800_IRFL_0065",
+  "file_name": "PHL1800_IRFL_0065.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "five people gathered around a low white table in an indoor setting",
+  "captions": {
+    "scene": [
+      "Overhead view of five individuals seated on beanbags and the floor around a white table with documents, cups, and tablets",
+      "A brightly lit interior space with light wood flooring, orange and blue beanbags, and a partial green beanbag visible",
+      "People are arranged in a semi-circle; two use laptops or tablets, others examine printed charts and clipboards"
+    ],
+    "action": [
+      "One person in a blue checkered shirt leans over a laptop while holding a pen near paper charts",
+      "A man in a striped shirt holds a tablet horizontally and points at its screen toward the center",
+      "A woman in a yellow cardigan rests her chin on her hand while looking at the central materials; another woman beside her gazes toward the tablet"
+    ],
+    "rationale": [
+      "The group’s orientation and shared focus suggest collaborative work rather than casual socializing",
+      "Presence of multiple digital devices and printed data visualizations implies task-oriented activity, though specific purpose is not legible",
+      "Postures (leaning in, pointing, resting chin) indicate attentiveness, but emotional valence or intent cannot be determined from facial expressions alone"
+    ],
+    "object": [
+      "A white rectangular table holds three white disposable cups, a clipboard with a sheet containing bar graphs and line plots, and scattered papers with colored charts.",
+      "A silver laptop is open in front of the person wearing a blue-and-white checkered shirt; their right hand holds a red pen poised above paper.",
+      "A man in a light-blue striped button-down shirt holds a black tablet with a colorful screen display; his left index finger points toward its lower half.",
+      "A woman with dark curly hair wears a mustard-yellow knitted cardigan over a teal top and looks upward toward the tablet; her right hand supports her chin.",
+      "A second woman with long brown hair, wearing a beige blazer, sits cross-legged on an orange beanbag and rests her chin on her right fist while observing the central activity."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1223_P1",
+      "visual_anchors": [
+        "clipboard with multicolored charts",
+        "multiple people jointly viewing data",
+        "hand pointing at tablet screen"
+      ],
+      "symbolic_mapping": [
+        "shared visual artifacts as externalized knowledge",
+        "pointing gesture as epistemic authority negotiation"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The scene visually enacts collective epistemic labor: truth claims are mediated through shared artifacts and gestural consensus rather than individual assertion.",
+      "alternative_interpretations": [
+        "This may simply depict routine office teamwork without philosophical intent."
+      ],
+      "limitations": [
+        "No legible text confirms the content of charts or tablet; symbolic mapping relies on assumed function of tools."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1223_P2",
+      "visual_anchors": [
+        "beanbags replacing chairs",
+        "informal seating arrangement",
+        "mixed-gender group in close proximity"
+      ],
+      "symbolic_mapping": [
+        "non-hierarchical seating as spatial metaphor for egalitarian interaction"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The physical configuration—ground-level seating, absence of formal furniture—suggests a temporary social formation where relational proximity supersedes institutional structure.",
+      "alternative_interpretations": [
+        "Beanbags may reflect budget constraints or interior design trend rather than intentional social statement."
+      ],
+      "limitations": [
+        "Seating choice could be dictated by available furniture rather than deliberate social engineering."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1223_P3",
+      "visual_anchors": [
+        "person holding pen over paper",
+        "tablet held horizontally",
+        "multiple hands near shared materials"
+      ],
+      "symbolic_mapping": [
+        "simultaneous analog and digital engagement as co-constitutive labor"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "Manual annotation and digital display operate in parallel, implying that technological mediation does not replace but reconfigures embodied labor in knowledge production.",
+      "alternative_interpretations": [
+        "Participants may be using whichever tool is most convenient, with no ideological stance implied."
+      ],
+      "limitations": [
+        "No evidence of tool integration or workflow sequence; simultaneity does not prove interdependence."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:05:08.292549+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c9584c46-c42f-9ce6-99ba-b96446bf3faf",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 955,
+        "total_tokens": 1684,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040450aaaa00e675f44b17",
+      "usage": {
+        "completion_tokens": 818,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1813,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2631
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

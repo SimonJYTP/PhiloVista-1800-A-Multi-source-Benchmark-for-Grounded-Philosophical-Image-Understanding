@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0435",
+  "sample_id": "PHL1800_IRFL_0498",
+  "file_name": "PHL1800_IRFL_0498.jpg",
+  "batch_id": "B011",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person wearing white ice skates, dark trousers, and a long dark coat, standing on an outdoor ice rink",
+  "captions": {
+    "scene": [
+      "A sunlit outdoor ice rink with smooth blue-tinged ice surface and snowbanks in the background.",
+      "Three individuals are visible: one central figure in focus, and two partially visible figures in the background—one in blue pants left, one in dark pants right.",
+      "Snow dust is scattered on the lower hem of the central figure’s coat and on their trousers, indicating recent contact with snow."
+    ],
+    "action": [
+      "The central figure stands upright with both skates flat on the ice, heels slightly raised, suggesting static balance or brief pause.",
+      "The left skate blade is fully in contact with the ice; the right skate blade shows slight lift at the toe, indicating micro-adjustment or weight shift.",
+      "Background figures appear to be gliding or standing on skates, with one showing forward motion blur on the right."
+    ],
+    "rationale": [
+      "The presence of snow on clothing and surrounding terrain supports that the setting is winter and outdoors, though exact temperature cannot be confirmed.",
+      "The blue hue of the ice likely results from sunlight scattering through clear ice over snow, not from artificial coloring—evidence is visual but indirect.",
+      "The central figure’s posture suggests intentional stillness rather than falling, but no motion trajectory is visible, so dynamic intent remains uncertain."
+    ],
+    "object": [
+      "The central figure wears white leather ice skates with brown wooden heel blocks and metal blades; the right blade has a visible blue protective guard partially covering it.",
+      "The figure’s dark trousers show snow specks near the cuffs and along the outer seams, especially on the right leg.",
+      "A long dark coat extends below the knees, with irregular white snow residue along its lower edge and inner side seam.",
+      "The ice surface displays parallel linear scuff marks and subtle texture variations consistent with prior skating activity.",
+      "In the background, a black vertical pole stands near a snowbank, and a green mesh fence is partially visible behind the left figure."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0435_P1",
+      "visual_anchors": [
+        "white skates contrasting with dark trousers",
+        "snow clinging to coat hem",
+        "blue-tinted ice surface"
+      ],
+      "symbolic_mapping": [
+        "contrast between clean footwear and soiled garment suggests tension between intention and environment"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where bodily presentation (clean skates) meets environmental resistance (snow on fabric), evoking how identity is continually negotiated against external constraints.",
+      "alternative_interpretations": [
+        "This may simply reflect practical attire for cold weather skating without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression, gesture, or context confirms intentional symbolism; contrast could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0435_P2",
+      "visual_anchors": [
+        "static stance on reflective ice",
+        "shadows cast sharply forward",
+        "three separate figures spatially distributed"
+      ],
+      "symbolic_mapping": [
+        "stillness amid motion implies suspended agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The central figure’s pause on the rink, while others move, visually frames individual deliberation within shared public space—highlighting how social existence involves moments of chosen stasis amid collective flow.",
+      "alternative_interpretations": [
+        "The figure may be waiting for instruction, adjusting equipment, or momentarily unbalanced—not necessarily choosing stillness."
+      ],
+      "limitations": [
+        "No evidence of gaze direction, interaction, or temporal sequence confirms deliberative intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0435_P3",
+      "visual_anchors": [
+        "snow residue on dark fabric",
+        "ice surface with linear wear patterns",
+        "sunlit clarity of details"
+      ],
+      "symbolic_mapping": [
+        "accumulated traces on clothing mirror accumulated experience on the surface"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The visible accumulation of snow on the coat and the scored ice surface jointly suggest impermanence and trace—each mark records a prior action, implying that truth about presence is inscribed only fleetingly in material evidence.",
+      "alternative_interpretations": [
+        "Snow and scuffs are transient physical residues with no deeper meaning beyond immediate conditions."
+      ],
+      "limitations": [
+        "No temporal sequence or narrative context confirms interpretive linkage between residue and epistemology."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:46:36.081065+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-67dd312c-77cd-9a3d-9d97-3ce64cb40b9d",
+      "usage": {
+        "prompt_tokens": 1549,
+        "completion_tokens": 1008,
+        "total_tokens": 2557,
+        "completion_tokens_details": {
+          "text_tokens": 1008
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1042,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024623d7aa6f5668544717",
+      "usage": {
+        "completion_tokens": 873,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2932,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3805
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

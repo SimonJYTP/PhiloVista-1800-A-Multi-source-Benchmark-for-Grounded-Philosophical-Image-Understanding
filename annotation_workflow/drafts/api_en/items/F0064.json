@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0064",
+  "sample_id": "PHL1800_HL_0572",
+  "file_name": "PHL1800_HL_0572.png",
+  "batch_id": "B004",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person performing a snowboard trick on a rail",
+  "captions": {
+    "scene": [
+      "Bright sun low on the horizon behind bare deciduous trees, casting long shadows across a snow-covered slope",
+      "A metal rail installed horizontally over packed snow, with visible snow mounds on either side",
+      "Background consists of leafless trees under a clear blue sky; no buildings or vehicles visible"
+    ],
+    "action": [
+      "The person is airborne above the rail with both feet off the snowboard, arms raised upward and outward",
+      "The snowboard is angled downward, its base contacting the rail mid-length, suggesting a grind or slide",
+      "The person’s torso is upright and slightly rotated, knees bent, indicating active balance maintenance"
+    ],
+    "rationale": [
+      "The sun’s position and shadow length suggest late afternoon or early morning, but exact time cannot be confirmed without context",
+      "The rail appears to be a standard snow park feature, yet its material (metal) and mounting method are only partially visible",
+      "The person’s clothing (hooded jacket, dark pants) suggests cold weather activity, but temperature cannot be measured visually"
+    ],
+    "object": [
+      "A single human figure wearing a dark hooded jacket, dark pants, and gloves, with head covered by the hood",
+      "A snowboard with a visible underside, positioned diagonally across a horizontal metal rail",
+      "A cylindrical metal rail, painted blue-green in sections, supported by two vertical posts embedded in snow",
+      "Snow surface shows disturbed texture near the rail, including compression marks and small spray from board contact",
+      "Bare tree silhouettes form a continuous line behind the scene, with no leaves or fruit visible on branches"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0064_P1",
+      "visual_anchors": [
+        "person airborne above rail",
+        "sun glare obscuring upper body",
+        "sharp shadow cast forward"
+      ],
+      "symbolic_mapping": [
+        "airborne state → suspension between action and consequence",
+        "sun glare → obscurity of intention or outcome"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The moment captures a deliberate act of physical risk where agency is exercised within rigid environmental constraints—the rail defines permissible motion while the body exceeds ground-bound limits.",
+      "alternative_interpretations": [
+        "A routine snowboarding maneuver captured at peak visual drama due to backlighting and angle, with no deeper intent implied."
+      ],
+      "limitations": [
+        "No facial expression or contextual signage confirms intentional symbolism; posture may reflect biomechanical necessity rather than philosophical stance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0064_P2",
+      "visual_anchors": [
+        "long shadow stretching toward viewer",
+        "low sun behind subject",
+        "isolated figure against trees"
+      ],
+      "symbolic_mapping": [
+        "shadow → temporal extension of self beyond present moment",
+        "isolation → individuation amid natural backdrop"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The elongated shadow projects the subject’s presence into the immediate future while the backlighting dissolves facial identity, emphasizing embodiment over individual recognition in a transient natural setting.",
+      "alternative_interpretations": [
+        "Shadow length is a function of solar angle and terrain slope, not symbolic projection; anonymity results from backlighting, not conceptual erasure."
+      ],
+      "limitations": [
+        "Shadow direction and length depend entirely on sun position and ground topography, not narrative intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0064_P3",
+      "visual_anchors": [
+        "rail as man-made structure in natural snow",
+        "person using rail for elevation",
+        "trees forming unbroken horizon line"
+      ],
+      "symbolic_mapping": [
+        "rail → imposed order enabling controlled deviation",
+        "snow-covered ground → uniform substrate transformed by intervention"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "Human modification of landscape (the rail) enables a temporary liberation from gravity’s constraint, illustrating how technological artifacts mediate freedom within natural limits.",
+      "alternative_interpretations": [
+        "The rail is standard infrastructure for winter sports; its use reflects recreation, not philosophical engagement with constraint."
+      ],
+      "limitations": [
+        "No evidence of design intent or user reflection; the rail’s purpose is functional, not symbolic, unless inferred externally."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:54:36.613327+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-882d6ef4-836d-9f18-a9ee-9a24dbd3edf4",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 959,
+        "total_tokens": 1538,
+        "completion_tokens_details": {
+          "text_tokens": 959
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 72,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701542144087e1c8258401d",
+      "usage": {
+        "completion_tokens": 810,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1585,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2395
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

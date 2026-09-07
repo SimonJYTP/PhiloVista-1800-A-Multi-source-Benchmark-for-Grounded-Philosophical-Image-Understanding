@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0606",
+  "sample_id": "PHL1800_HAIV_0064",
+  "file_name": "PHL1800_HAIV_0064.png",
+  "batch_id": "B014",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "stylized world map with human silhouettes and symbolic pathways",
+  "captions": {
+    "scene": [
+      "A flat, stylized world map with continents in beige and white against a dark teal ocean, framed by ornate gold borders.",
+      "Multiple human silhouettes in different colors (purple, black, beige, white) are positioned across the map, some walking along red/orange curved lines.",
+      "A red signpost with non-Latin script stands near the bottom right, next to a white-clad figure carrying a brown briefcase."
+    ],
+    "action": [
+      "Two purple and black silhouettes walk side-by-side on the Eurasian landmass, connected by an orange line that loops around them.",
+      "A beige silhouette walks southward across Africa; a white silhouette walks eastward near South America, both unconnected to lines.",
+      "A red line originates from North America, traverses the Atlantic, enters Europe, and extends toward Asia, passing near several figures."
+    ],
+    "rationale": [
+      "The red and orange lines likely represent routes or connections because they link geographic regions and pass near figures, but their exact function is not specified visually.",
+      "The signpost’s text is in a non-Latin script (likely Gujarati) and is unreadable due to stylization and resolution; therefore, its semantic content cannot be determined from the image alone.",
+      "Figures differ in color and posture, suggesting differentiation, but no visual cue confirms identity, role, or intent beyond movement."
+    ],
+    "object": [
+      "The map shows five major continental landmasses: North America (top left), South America (bottom left), Africa (center), Europe/Asia (right-center), and Australia (partially visible at bottom right).",
+      "There are exactly four distinct human silhouettes: one beige (Africa), one white (South America), two adjacent (purple and black, Eurasia), and one white with briefcase (near signpost).",
+      "A small rectangular inset image appears inside the North American continent, showing abstract red, blue, and yellow shapes on a light background.",
+      "Three floating rectangular objects—two white-bordered, one brown-bordered—are suspended over the ocean between North America and Eurasia.",
+      "The signpost consists of a vertical red pole topped with a spherical red cap and supports a horizontal red banner with yellow script."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0606_P1",
+      "visual_anchors": [
+        "red/orange lines crossing continents",
+        "multiple silhouettes walking in different directions",
+        "signpost with non-Latin script"
+      ],
+      "symbolic_mapping": [
+        "curved lines → paths of movement or connection",
+        "color-differentiated figures → differentiated agents"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The image suggests that human existence unfolds through divergent yet interconnected journeys across shared geography, where direction and association are visually emphasized but meaning remains open due to absent legible context.",
+      "alternative_interpretations": [
+        "It may simply depict migration routes or trade networks in a decorative cartographic illustration without philosophical intent."
+      ],
+      "limitations": [
+        "No readable text or explicit symbols confirm intentional abstraction; color and line use could be aesthetic rather than symbolic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0606_P2",
+      "visual_anchors": [
+        "white-clad figure carrying briefcase",
+        "signpost with non-Latin script",
+        "floating rectangles over ocean"
+      ],
+      "symbolic_mapping": [
+        "briefcase → purposeful travel",
+        "floating rectangles → decorative motifs"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of a purposeful traveler with illegible signage and detached informational fragments implies a decorative or aesthetic focus rather than a tension between embodied action and inaccessible knowledge, as no visual evidence supports the latter claim.",
+      "alternative_interpretations": [
+        "The briefcase and floating rectangles may be decorative motifs with no intended semiotic weight."
+      ],
+      "limitations": [
+        "The briefcase’s contents and the rectangles’ nature are unspecified; their interpretation as ‘information’ relies on cultural convention, not visual evidence."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0606_P3",
+      "visual_anchors": [
+        "two adjacent silhouettes linked by orange loop",
+        "single beige figure isolated on Africa",
+        "gold ornamental borders"
+      ],
+      "symbolic_mapping": [
+        "adjacent figures → relational existence",
+        "isolated figure → individual trajectory"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Visual grouping versus isolation across the map highlights how social presence is signaled by proximity and shared path, while identity is rendered only through silhouette and color—not facial or bodily detail—emphasizing appearance as the sole visible marker.",
+      "alternative_interpretations": [
+        "Color variation may reflect artistic palette choices rather than conceptual distinction."
+      ],
+      "limitations": [
+        "No facial features, clothing details, or contextual labels exist to verify whether color signifies identity or is purely stylistic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of human silhouettes (candidate states five, but image shows four distinct silhouettes: two adjacent in Eurasia, one beige in Africa, one white with briefcase near signpost); floating objects misdescribed as three (image shows two white-bordered and one brown-bordered, totaling three, but candidate’s count is correct—no issue here; however, the silhouette count error is critical); signpost text described as 'unreadable script' but candidate’s text is in a non-Latin script (likely Gujarati), which is a factual error in text description; philosophy interpretations include unsupported claims like 'tension between embodied action and inaccessible knowledge' without visual anchors for 'inaccessible knowledge'"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:00:45.278097+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-94750479-52b7-98bf-98da-4b84e1cb254d",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1081,
+        "total_tokens": 2614,
+        "completion_tokens_details": {
+          "text_tokens": 1081
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030016dc4b5c2eb0154735",
+      "usage": {
+        "completion_tokens": 1182,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3041,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4223
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

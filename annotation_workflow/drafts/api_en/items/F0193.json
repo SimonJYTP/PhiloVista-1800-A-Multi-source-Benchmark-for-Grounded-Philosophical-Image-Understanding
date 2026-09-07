@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0193",
+  "sample_id": "PHL1800_MM_0005",
+  "file_name": "PHL1800_MM_0005.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 13,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three men seated at a poker table",
+  "captions": {
+    "scene": [
+      "A dimly lit interior with warm ambient lighting, wooden paneling, and out-of-focus background fixtures suggesting a casino or private gaming room.",
+      "A circular green-felt poker table with red leather railings, surrounded by upholstered booth seating.",
+      "Three visible men: one in a dark suit viewed from behind left, one in a grey blazer and black shirt facing forward center, and one in a red-and-white jacket partially visible right."
+    ],
+    "action": [
+      "The central man places or adjusts a stack of blue and black poker chips with his right hand while his left rests near other chip stacks.",
+      "The man on the left has his right hand extended toward the table surface, near face-up playing cards.",
+      "The man on the right leans forward with his right arm resting on the table edge, observing the central player."
+    ],
+    "rationale": [
+      "The speech bubble above the central man contains legible text stating 'I'll just move these chips over, no one will know!', indicating an intended deceptive action involving chip movement.",
+      "Multiple face-up cards (e.g., 7♥, 4♦, 10♠, 5♦) are arranged in front of players, consistent with Texas Hold’em or similar community-card poker variants.",
+      "Chip stacks are color-coded (blue/black, green, red, brown), and their arrangement suggests active betting rounds; however, exact denominations or game phase cannot be confirmed."
+    ],
+    "object": [
+      "A white oval speech bubble with black sans-serif text reading 'I'll just move these chips over, no one will know!' is positioned above the central man’s head, connected by a small white dot to his temple area.",
+      "The poker table displays five community cards face-up: 10♠, 7♥, 4♦, 5♦, and another card partially obscured but showing red pips; two additional face-up cards lie in front of the left player (K♣ and 9♥).",
+      "The central man wears a grey textured blazer over a black button-up shirt with a light-blue collar, a black wristwatch on his left wrist, and has short brown hair with a receding hairline.",
+      "The left man wears a dark grey suit jacket, white collared shirt, black-rimmed glasses, and has short brown hair and a beard; only his back and right profile are visible.",
+      "The right man wears a red zip-up jacket with white side panels, has a full beard, short styled hair, and rests his right forearm on the table edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0193_P1",
+      "visual_anchors": [
+        "speech bubble text",
+        "central man’s hand on chips",
+        "other players’ focused gazes"
+      ],
+      "symbolic_mapping": [
+        "speech bubble → intention to conceal action",
+        "chip manipulation → material representation of stakes"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image stages a moment where claimed ignorance ('no one will know!') confronts observable reality (others watching, chips visibly moved), highlighting tension between subjective belief in secrecy and objective conditions of visibility—raising questions about epistemic responsibility in social deception.",
+      "alternative_interpretations": [
+        "It may simply depict a humorous or ironic meme-style pose, not actual intent to cheat, given the stylized composition and exaggerated speech."
+      ],
+      "limitations": [
+        "No facial expressions confirm intent; the speech bubble is inserted as graphic overlay, not a real-time transcription."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0193_P2",
+      "visual_anchors": [
+        "green felt table",
+        "stacked colored chips",
+        "formal attire"
+      ],
+      "symbolic_mapping": [
+        "chips as quantified risk",
+        "table as bounded arena of decision"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The structured layout of chips and cards frames decision-making as constrained by rules and visible resources, where each move alters relative power—suggesting that choice is not free but negotiated within institutionalized conflict.",
+      "alternative_interpretations": [
+        "This could reflect routine gameplay without deeper conflict; the formal dress may indicate event prestige rather than power dynamics."
+      ],
+      "limitations": [
+        "No gestures or outcomes reveal who holds advantage; chip counts are incomplete."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0193_P3",
+      "visual_anchors": [
+        "man in red jacket observing",
+        "man in suit partially turned away",
+        "central man’s focused posture"
+      ],
+      "symbolic_mapping": [
+        "gaze direction → social surveillance",
+        "seating arrangement → hierarchical positioning"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The spatial configuration—observer, actor, and partial participant—illustrates how identity is performed and perceived through appearance and attention, where being seen shapes behavior even when deception is attempted.",
+      "alternative_interpretations": [
+        "The right man may be disengaged or merely waiting; his posture does not definitively indicate scrutiny."
+      ],
+      "limitations": [
+        "Only partial profiles are visible; eye direction and focus cannot be verified for all subjects."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:37:31.386296+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cbf5fa2e-f059-907c-b59e-5fdac8857436",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1157,
+        "total_tokens": 2690,
+        "completion_tokens_details": {
+          "text_tokens": 1157
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070137195bcb5c1a89364d4a",
+      "usage": {
+        "completion_tokens": 1024,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3116,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4140
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

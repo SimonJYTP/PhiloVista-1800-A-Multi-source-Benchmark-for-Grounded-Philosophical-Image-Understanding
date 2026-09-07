@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0015",
+  "sample_id": "PHL1800_HL_0438",
+  "file_name": "PHL1800_HL_0438.png",
+  "batch_id": "B003",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three people cross-country skiing on a snow-covered forest trail",
+  "captions": {
+    "scene": [
+      "A narrow, winding snow trail cuts through a dense deciduous forest with bare trees and deep snowbanks.",
+      "The ground is uniformly covered in white snow with visible ski tracks and slight undulations.",
+      "Overcast lighting creates soft shadows; no direct sunlight is visible on the snow or trees."
+    ],
+    "action": [
+      "The foreground person in a red jacket stands upright on skis, holding poles, facing the camera with legs apart and knees slightly bent.",
+      "The middle person in a blue jacket glides forward on skis with poles planted diagonally behind them.",
+      "The rear person in dark clothing leans forward while skiing, poles held low and parallel to the snow surface."
+    ],
+    "rationale": [
+      "The foreground skier’s stance suggests momentary pause or preparation for movement, not active propulsion, due to symmetrical pole placement and lack of forward lean.",
+      "The presence of three distinct individuals at different distances along the same trail implies sequential progression rather than simultaneous starting positions.",
+      "The absence of visible ski bindings or boot interfaces prevents confirmation of whether skis are fixed or free-heel; this detail is visually indeterminate."
+    ],
+    "object": [
+      "A person wearing a black beanie, sunglasses, a red hooded jacket, black leggings, and brown ski boots stands on two wooden skis with metal edges.",
+      "Two ski poles with black baskets and orange shafts are held in each hand of the foreground person, angled outward and downward.",
+      "A second person wears a light blue jacket, dark pants, a gray beanie, and uses black ski poles with white baskets while on skis.",
+      "A third person wears a dark long-sleeve top, dark pants, and a dark beanie, holding two black ski poles while skiing uphill on the trail.",
+      "Tree trunks are mostly vertical, leafless, and vary in diameter; some show patches of lichen or bark texture, but no signage or markings are legible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0015_P1",
+      "visual_anchors": [
+        "three skiers spaced along a single trail",
+        "bare trees forming a corridor",
+        "snow covering all ground surfaces"
+      ],
+      "symbolic_mapping": [
+        "the trail as a linear path representing temporal progression",
+        "the uniform snow as erasure of prior traces"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The image evokes the inevitability of forward motion through time, where each skier occupies a distinct temporal position on an unmarked path, with snow obscuring what came before—suggesting impermanence and sequential existence.",
+      "alternative_interpretations": [
+        "This may simply depict recreational activity without symbolic intent; spacing could reflect safety distance or differing speeds rather than metaphorical positioning."
+      ],
+      "limitations": [
+        "No textual or cultural markers confirm intentional symbolism; the trail’s directionality is ambiguous without compass reference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0015_P2",
+      "visual_anchors": [
+        "foreground skier facing camera directly",
+        "glasses reflecting ambient light",
+        "red jacket contrasting with muted surroundings"
+      ],
+      "symbolic_mapping": [
+        "direct gaze as assertion of presence",
+        "color contrast as individuation amid uniformity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The central figure’s frontal orientation and vivid attire assert individual identity within a shared environment, highlighting how appearance mediates social recognition even in isolated natural settings.",
+      "alternative_interpretations": [
+        "The pose may be for photography rather than philosophical statement; the red jacket could be functional (visibility) not symbolic."
+      ],
+      "limitations": [
+        "Facial features are obscured by sunglasses and distance; intention behind gaze cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0015_P3",
+      "visual_anchors": [
+        "skis gliding on snow without visible propulsion mechanism",
+        "poles held in varied positions",
+        "uneven terrain with small rises"
+      ],
+      "symbolic_mapping": [
+        "skiing as negotiated constraint",
+        "body posture adapting to external resistance"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The skiers’ postures reveal continuous negotiation between bodily agency and environmental resistance—freedom is enacted not as absence of limits but as skilled adaptation within physical constraints.",
+      "alternative_interpretations": [
+        "This is standard cross-country technique; posture reflects biomechanics, not philosophical stance."
+      ],
+      "limitations": [
+        "No visible exertion indicators (e.g., breath vapor, sweat) confirm effort level; technique may be routine rather than reflective."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:48:42.519951+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-30bdd8dd-debd-91cd-8527-16af4d74810a",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1044,
+        "total_tokens": 1853,
+        "completion_tokens_details": {
+          "text_tokens": 1044
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014823da006cdc8a0f4421",
+      "usage": {
+        "completion_tokens": 905,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2020,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2925
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

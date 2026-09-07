@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0751",
+  "sample_id": "PHL1800_IRFL_0158",
+  "file_name": "PHL1800_IRFL_0158.jpg",
+  "batch_id": "B017",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large assembly of men in 17th-century European attire gathered in an ornate interior hall",
+  "captions": {
+    "scene": [
+      "A crowded, wood-paneled room with arched stained-glass windows on the left and a stone fireplace with heraldic shields on the right.",
+      "Men seated at tables covered with green cloth and on red-cushioned wooden chairs; some stand or lean forward attentively.",
+      "A central standing figure gestures with both hands toward a seated man in gold doublet and sash, while others observe from multiple rows."
+    ],
+    "action": [
+      "One man stands with arms extended outward, palms open, facing a seated listener.",
+      "Multiple individuals rest chins on hands or hold books, quills, or hats, indicating focused attention or contemplation.",
+      "A man in striped sleeves and white ruff turns his head sharply toward the speaker, mouth slightly open."
+    ],
+    "rationale": [
+      "The presence of ruffs, slashed sleeves, and wide-brimmed hats suggests early-to-mid 17th-century Western European dress; however, exact dating requires external knowledge.",
+      "The arrangement of figures—some seated at tables, others standing or perched on benches—implies a formal gathering, but the specific function (e.g., council, debate, trial) is not visually determinable.",
+      "No visible text is legible; all inscriptions on shields, documents, or books are too small or blurred to read, limiting identification of institutional context."
+    ],
+    "object": [
+      "There are approximately 40-45 distinct human figures visible: 28 seated or kneeling in foreground/midground, 12 standing or partially obscured in background, and 5 near the left window edge.",
+      "A green tablecloth covers a rectangular table holding a silver inkwell, a quill, and two folded papers; one paper lies flat, the other upright.",
+      "Red upholstered chairs feature brass nailhead trim along edges and white fabric ties at backrests.",
+      "The stained-glass window on the left contains three vertical panels with indistinct colored shapes; no readable text or identifiable iconography is present.",
+      "A stone fireplace mantel displays two shield-shaped heraldic escutcheons with quartered fields; additional decorative elements (e.g., lozenge, rectangular) are present but not clearly identifiable as shields, and tinctures/charges are illegible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0751_P1",
+      "visual_anchors": [
+        "man gesturing with open palms",
+        "listener leaning forward with hand near chin",
+        "multiple observers with varied postures"
+      ],
+      "symbolic_mapping": [
+        "open palms → openness to dialogue",
+        "hand-on-chin posture → deliberation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The visual emphasis on embodied listening and gestural exchange suggests epistemic engagement as a socially situated practice, where truth-claims are negotiated through posture, gaze, and gesture rather than abstract reasoning alone.",
+      "alternative_interpretations": [
+        "This may simply depict a procedural moment in a legal or ecclesiastical hearing, with gestures reflecting protocol rather than philosophical intent."
+      ],
+      "limitations": [
+        "No facial expressions are clearly legible due to resolution and painterly style; emotional or cognitive states cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0751_P2",
+      "visual_anchors": [
+        "red-cushioned chairs with uniform upholstery",
+        "hierarchical seating arrangement (front row elevated)",
+        "central figure standing while others sit"
+      ],
+      "symbolic_mapping": [
+        "uniform seating → institutional order",
+        "standing speaker → temporary authority"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "Spatial hierarchy and standardized furniture imply a structured social field where authority is enacted through positioning and shared material conventions, revealing power not as brute force but as consensually maintained role-performance.",
+      "alternative_interpretations": [
+        "The seating may reflect practical constraints (e.g., room layout, seniority by arrival time) rather than deliberate symbolic ordering."
+      ],
+      "limitations": [
+        "Chair heights are not measurable; apparent elevation could result from perspective distortion."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0751_P3",
+      "visual_anchors": [
+        "multiple ruffs of varying sizes",
+        "striped doublet vs. plain black robes",
+        "gold-sashed figure among darker attire"
+      ],
+      "symbolic_mapping": [
+        "ruff size → status differentiation",
+        "color contrast → role distinction"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "Attire functions as a visible grammar of identity, where sartorial choices—though constrained by period norms—signal individual placement within a web of obligations and privileges, illustrating how selfhood is externally codified and internally navigated.",
+      "alternative_interpretations": [
+        "Clothing differences may reflect regional origin or occupational guild affiliation rather than personal identity construction."
+      ],
+      "limitations": [
+        "Fabric textures and embroidery details are indistinct; precise class or office indicators cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The count of 52 distinct human figures is inaccurate; the image contains approximately 40-45 visible figures, with some partially obscured individuals miscounted as separate entities. The description of the fireplace mantel's heraldic shields as 'four' is unsupported—only two shield-shaped escutcheons are clearly visible, with additional decorative elements that may not be shields."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:13:51.168185+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d118a249-aa92-97e4-b8be-0f65aefdc7ac",
+      "usage": {
+        "prompt_tokens": 1421,
+        "completion_tokens": 1116,
+        "total_tokens": 2537,
+        "completion_tokens_details": {
+          "text_tokens": 1116
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 914,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031320640044feff3d4d90",
+      "usage": {
+        "completion_tokens": 1145,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2862,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4007
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

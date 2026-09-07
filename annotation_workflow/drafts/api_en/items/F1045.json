@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1045",
+  "sample_id": "PHL1800_MM_0130",
+  "file_name": "PHL1800_MM_0130.jpg",
+  "batch_id": "B022",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three passengers seated inside a moving vehicle",
+  "captions": {
+    "scene": [
+      "Interior of a public transport vehicle with blue seats, white walls, and large windows showing motion-blurred greenery and a red barrier outside.",
+      "A smartphone screen displays a podcast interface with a goat image and unreadable text; the phone is held by a central passenger.",
+      "A speech bubble containing legible English text floats near the window, unattached to any visible speaker."
+    ],
+    "action": [
+      "The central passenger holds a smartphone with both hands and views its screen.",
+      "The passenger on the right looks toward the window, facing away from the camera.",
+      "The passenger on the left is partially visible, seated beside the central passenger, with no discernible action."
+    ],
+    "rationale": [
+      "The motion blur outside the window indicates the vehicle is in motion, but speed or direction cannot be determined from visual evidence alone.",
+      "The speech bubble’s content is legible but its attribution to any person is unsupported; no mouth or gaze aligns with it.",
+      "The podcast interface shows an animal image and text, yet the specific topic cannot be confirmed beyond the overlaid speech bubble’s claim."
+    ],
+    "object": [
+      "Three distinct human figures are seated: one central figure with dark hair wearing a navy jacket and jeans, one figure to the left with dark hair and a grey sweater, and one figure to the right with long brown hair and light jeans.",
+      "A black smartphone is held horizontally, displaying a blue-themed app interface with a small goat image and two lines of unreadable text beneath it.",
+      "A white oval speech bubble with black sans-serif text reads: 'This podcast about animal care is so informative.'",
+      "Blue plastic seats with white trim are visible; the central passenger sits on one, and the right passenger’s seat has a blue headrest cover.",
+      "A storage compartment below the window contains folded paper materials with indistinct graphics and text."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1045_P1",
+      "visual_anchors": [
+        "motion-blurred landscape",
+        "smartphone screen",
+        "speech bubble"
+      ],
+      "symbolic_mapping": [
+        "blurred exterior as transient experience",
+        "screen as mediated knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of real-time motion and curated digital content suggests tension between lived temporality and constructed understanding.",
+      "alternative_interpretations": [
+        "The scene simply depicts routine commuting with incidental media consumption."
+      ],
+      "limitations": [
+        "No facial expressions or body language confirm engagement or reflection; the speech bubble is non-attributed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1045_P2",
+      "visual_anchors": [
+        "three passengers in shared space",
+        "unconnected speech bubble",
+        "separate gazes"
+      ],
+      "symbolic_mapping": [
+        "physical proximity without interaction as social fragmentation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "Proximity without shared attention illustrates how technological mediation can coexist with spatial closeness while reinforcing individual isolation.",
+      "alternative_interpretations": [
+        "Passengers may be silently sharing the experience; gaze direction does not prove disconnection."
+      ],
+      "limitations": [
+        "Only backs and partial profiles are visible; no eye contact or interaction can be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1045_P3",
+      "visual_anchors": [
+        "goat image on phone",
+        "podcast title in speech bubble",
+        "window view of rural terrain"
+      ],
+      "symbolic_mapping": [
+        "animal representation as ethical focal point amid transit"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The framing of animal care as informative content during transit implies moral consideration being integrated into routine movement, suggesting ethics as portable practice.",
+      "alternative_interpretations": [
+        "The goat image may be generic branding; the speech bubble could be ironic or fictional."
+      ],
+      "limitations": [
+        "The podcast title and content are not verifiable from the screen; the bubble’s origin is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:43:40.889564+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e66a5079-48b6-9f8d-88dd-e7520ee7788e",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 915,
+        "total_tokens": 2448,
+        "completion_tokens_details": {
+          "text_tokens": 915
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703432552565fc6ae2e4ffe",
+      "usage": {
+        "completion_tokens": 779,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2868,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3647
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

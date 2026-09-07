@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0259",
+  "sample_id": "PHL1800_IRFL_0426",
+  "file_name": "PHL1800_IRFL_0426.jpg",
+  "batch_id": "B007",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person's torso and right hand holding a handgun",
+  "captions": {
+    "scene": [
+      "A close-up of a person's midsection against a plain white background.",
+      "The person wears a blue-and-white checkered shirt with French cuffs, black trousers, and a black leather belt with embossed pattern.",
+      "A black semi-automatic pistol is held in the person's right hand, partially inserted into the waistband."
+    ],
+    "action": [
+      "The right hand grips the pistol’s grip and trigger guard, fingers curled around it without the index finger on the trigger.",
+      "The pistol is positioned horizontally, muzzle pointing right, barrel aligned with the hip.",
+      "The shirt cuff is visible with a metallic button fastened; the sleeve is slightly bunched near the wrist."
+    ],
+    "rationale": [
+      "The hand position suggests readiness but not immediate firing intent, as the index finger rests alongside the frame.",
+      "The firearm appears to be a compact semi-automatic pistol based on slide serrations, magazine well shape, and overall proportions.",
+      "The white background and studio lighting indicate a staged or stock photograph rather than an candid scene."
+    ],
+    "object": [
+      "A black semi-automatic pistol with a polymer frame, textured grip, rear slide serrations, and a visible ejection port.",
+      "A right hand with visible skin texture, wrinkles, and veins, gripping the pistol with thumb over the left side of the frame and fingers wrapped beneath.",
+      "A blue-and-white gingham-patterned dress shirt with a single visible French cuff fastened by a round metallic button.",
+      "Black trousers made of smooth fabric, showing a vertical seam and slight creasing at the hip.",
+      "A black leather belt with glossy finish and embossed floral or scroll-like pattern, worn through belt loops."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0259_P1",
+      "visual_anchors": [
+        "hand gripping pistol",
+        "shirt cuff with button",
+        "belt with embossed pattern"
+      ],
+      "symbolic_mapping": [
+        "the juxtaposition of formal attire and weapon suggests tension between civility and coercion"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes the paradox of institutional authority: formal dress signifies social order, while the concealed weapon embodies latent force—raising questions about legitimacy when power resides in private hands.",
+      "alternative_interpretations": [
+        "This may simply depict a licensed concealed carry demonstration for training or licensing purposes, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expression, context, or environment is shown, preventing confirmation of intent or role."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0259_P2",
+      "visual_anchors": [
+        "visible skin texture on hand",
+        "wrinkles and veins",
+        "tight grip on firearm"
+      ],
+      "symbolic_mapping": [
+        "aging hand holding lethal tool evokes mortality intersecting with agency"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The aged hand gripping a weapon materializes the philosophical notion that human finitude does not negate decisive action; each choice carries irreversible weight against the backdrop of limited time.",
+      "alternative_interpretations": [
+        "The hand’s appearance may reflect natural aging unrelated to the act of holding the gun; no temporal narrative is confirmed."
+      ],
+      "limitations": [
+        "Age cannot be precisely determined from skin alone; no temporal markers (e.g., calendar, clock) are present."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0259_P3",
+      "visual_anchors": [
+        "checkered shirt",
+        "black trousers",
+        "belt with ornamental pattern"
+      ],
+      "symbolic_mapping": [
+        "standardized professional attire contrasts with individualized weapon handling, highlighting identity as performance under constraint"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The uniformity of business attire masks individual variation, yet the act of holding a weapon asserts a singular, embodied presence—suggesting identity emerges not in conformity but in moments of deliberate physical assertion.",
+      "alternative_interpretations": [
+        "The clothing may be incidental; the subject could be wearing everyday attire without symbolic significance."
+      ],
+      "limitations": [
+        "No insignia, name tags, or occupational markers confirm professional role or intentional costume."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:25:56.971545+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-370cb3bd-05f7-9193-9706-fe1aa79d9730",
+      "usage": {
+        "prompt_tokens": 1181,
+        "completion_tokens": 944,
+        "total_tokens": 2125,
+        "completion_tokens_details": {
+          "text_tokens": 944
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 674,
+          "text_tokens": 507,
+          "cached_tokens": 1024
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022535081d1a3711f74ea5",
+      "usage": {
+        "completion_tokens": 809,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2421,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3230
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

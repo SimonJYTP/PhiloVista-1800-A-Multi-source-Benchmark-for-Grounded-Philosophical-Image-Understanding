@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1442",
+  "sample_id": "PHL1800_HL_0482",
+  "file_name": "PHL1800_HL_0482.png",
+  "batch_id": "B030",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two individuals engaged with gaming hardware in an indoor setting",
+  "captions": {
+    "scene": [
+      "A tiled-floor room with beige walls, decorated with framed artworks including a black starburst pattern and a night-sky painting.",
+      "A cluttered desk setup with a CRT monitor displaying a colorful game scene, a laptop, a keyboard, and various cables.",
+      "A white Xbox 360 console sits on the floor beside the desk, connected by visible wires to the system."
+    ],
+    "action": [
+      "One person sits on a metal-framed chair facing the monitor, wearing jeans and black boots, hands resting near lap.",
+      "Another person’s hands hold a white Xbox 360 controller with green illuminated buttons, viewed from behind their head.",
+      "Multiple cables snake across the floor, connecting devices including the console, PC tower, and monitor."
+    ],
+    "rationale": [
+      "The seated individual’s posture and orientation toward the screen suggest active observation or participation in the displayed content.",
+      "The presence of two distinct controllers (one held, one possibly on desk) implies potential multiplayer engagement, though only one is actively used.",
+      "Artworks are hung at eye level and appear intentionally placed, indicating a curated environment rather than temporary setup; however, no textual labels confirm purpose."
+    ],
+    "object": [
+      "A CRT monitor displays a brightly lit video game scene with multiple characters and stage lighting effects.",
+      "A silver desktop computer tower with blue LED fan illumination stands under the desk, connected via visible cables.",
+      "A white Xbox 360 console rests on the floor, with its disc tray closed and power cable extending toward the desk area.",
+      "A transparent plastic bin labeled with unreadable Chinese characters sits on the desk shelf beneath the monitor.",
+      "A framed artwork with a black radial pattern of stylized limbs surrounding a central dark circle hangs on the wall above the desk."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1442_P1",
+      "visual_anchors": [
+        "CRT monitor displaying game",
+        "Xbox 360 controller with green lights",
+        "tangled cables on floor"
+      ],
+      "symbolic_mapping": [
+        "monitor as mediated reality",
+        "controller as agency interface"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures the embodied tension between user agency—exercised through the controller—and technological constraint—manifested in the physical tangle of cables and fixed hardware layout—suggesting how digital play remains materially bound despite perceived immersion.",
+      "alternative_interpretations": [
+        "It may simply depict a casual gaming session without symbolic intent, where cables are incidental and monitors are functional tools."
+      ],
+      "limitations": [
+        "No visible facial expressions or dialogue confirm subjective experience; interpretation relies solely on object arrangement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1442_P2",
+      "visual_anchors": [
+        "framed starburst artwork",
+        "night-sky painting with red figure",
+        "seated person viewed from behind"
+      ],
+      "symbolic_mapping": [
+        "starburst as cyclical recurrence",
+        "red figure as outlier or focal point"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of cosmic imagery (night sky, radial symmetry) with the anonymous back view of the player evokes themes of individual insignificance amid vast systems, where identity is reduced to posture and function rather than face or name.",
+      "alternative_interpretations": [
+        "The artworks may be decorative only, chosen for aesthetic harmony rather than conceptual resonance."
+      ],
+      "limitations": [
+        "The paintings’ titles and artist intentions are not visible; symbolic reading assumes intentional curation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1442_P3",
+      "visual_anchors": [
+        "two people in shared space",
+        "one holding controller, one watching screen",
+        "shared desk infrastructure"
+      ],
+      "symbolic_mapping": [
+        "shared hardware as social scaffold",
+        "asymmetrical engagement as relational dynamic"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The spatial proximity and shared technical infrastructure imply co-presence without guaranteed interaction, reflecting modern social existence where connection is mediated through devices rather than direct exchange.",
+      "alternative_interpretations": [
+        "They could be playing cooperatively, with one managing UI while the other controls action—making it collaborative rather than detached."
+      ],
+      "limitations": [
+        "No eye contact, speech, or synchronized movement confirms relational mode; posture alone is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:33:13.147523+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7bf8a427-da83-950a-b220-0f6c1bdaede3",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 991,
+        "total_tokens": 1800,
+        "completion_tokens_details": {
+          "text_tokens": 991
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043257670df884e1544ba9",
+      "usage": {
+        "completion_tokens": 844,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1959,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2803
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

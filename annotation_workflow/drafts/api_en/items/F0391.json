@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0391",
+  "sample_id": "PHL1800_HL_0276",
+  "file_name": "PHL1800_HL_0276.png",
+  "batch_id": "B010",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a bronze statue of a soldier holding a rifle, mounted on a stone plinth in a town square",
+  "captions": {
+    "scene": [
+      "A wet paved roundabout with a central stone monument, flanked by a tall dark-brick clock tower and a two-story stone building with commercial signage.",
+      "Two Union Jack flags fly on poles beside the monument; one is fully visible, the other partially obscured behind the tower.",
+      "Vehicles including a red hatchback and a blue sedan are parked or moving near the roundabout, with pedestrians visible near storefronts."
+    ],
+    "action": [
+      "The statue stands rigidly upright, right hand gripping a rifle held diagonally across the torso, left hand resting on the hip.",
+      "A person in a blue jacket walks past the 'ground' storefront entrance, partially visible behind a flagpole.",
+      "Water droplets and reflections on the pavement indicate recent or ongoing rain."
+    ],
+    "rationale": [
+      "The presence of two Union Jack flags and English-language signage suggests the setting is in the United Kingdom or a British-influenced jurisdiction.",
+      "The statue’s attire—helmet, tunic, and boots—and weapon type resemble early-to-mid 20th-century military uniforms, though exact era cannot be confirmed from image alone.",
+      "The directional blue signs with white arrows point downward-left, indicating traffic guidance, but their specific destination is not legible."
+    ],
+    "object": [
+      "A cylindrical dark-brick clock tower with arched openings, a conical roof, and a white-faced analog clock at mid-height.",
+      "A stone plinth supporting a bronze soldier statue, topped with a wreath of yellow and white flowers placed at its base.",
+      "A red hatchback car parked adjacent to a stone building bearing a circular sign reading 'lilly's' in cursive script.",
+      "A blue circular traffic sign with a white downward-left arrow, mounted on a short post near the curb.",
+      "A storefront with black awning and white lettering reading 'ground' followed by a symbol resembling a stylized 'i' or information icon."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0391_P1",
+      "visual_anchors": [
+        "bronze soldier statue",
+        "wreath of flowers at base",
+        "Union Jack flags"
+      ],
+      "symbolic_mapping": [
+        "statue as enduring memory",
+        "wreath as ritual commemoration"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The statue embodies collective remembrance of sacrifice, where material permanence (bronze) contrasts with human finitude, reinforcing social continuity through memorial practice.",
+      "alternative_interpretations": [
+        "It may simply serve as a local landmark with no intended symbolic depth, functioning primarily as civic decoration."
+      ],
+      "limitations": [
+        "No inscriptions or plaques are legible to confirm commemorative intent or historical context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0391_P2",
+      "visual_anchors": [
+        "clock tower",
+        "wet pavement",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "clock as measure of passing time",
+        "rain as transient condition"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of the fixed clock and ephemeral weather conditions evokes tension between human attempts to order time and nature’s indifferent flux, suggesting constraints on agency within temporal frameworks.",
+      "alternative_interpretations": [
+        "The scene is a routine urban moment; the clock merely indicates time for practical navigation, not philosophical reflection."
+      ],
+      "limitations": [
+        "The clock face is too distant to read precise time, weakening temporal specificity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0391_P3",
+      "visual_anchors": [
+        "two Union Jack flags",
+        "pedestrian near storefront",
+        "commercial signage"
+      ],
+      "symbolic_mapping": [
+        "flags as markers of national identity",
+        "shopfronts as sites of daily life"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "National symbols coexist with mundane commerce, illustrating how identity is performed publicly through both official iconography and routine social participation.",
+      "alternative_interpretations": [
+        "Flags may be decorative or seasonal rather than ideological; their presence does not necessarily signal active identity assertion."
+      ],
+      "limitations": [
+        "No visible behavior (e.g., saluting, speaking) confirms intentional engagement with the flags."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:42:36.837037+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-91666609-948c-9550-9ebf-84882abc26ba",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 984,
+        "total_tokens": 1753,
+        "completion_tokens_details": {
+          "text_tokens": 984
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702422498932da954f84bb8",
+      "usage": {
+        "completion_tokens": 846,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1916,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2762
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1034",
+  "sample_id": "PHL1800_HL_0074",
+  "file_name": "PHL1800_HL_0074.png",
+  "batch_id": "B022",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a child wearing a light blue robe and crown, standing on a skateboard while holding a torch prop",
+  "captions": {
+    "scene": [
+      "A paved street with shadows of trees cast across it, bordered by a grass verge, brick wall, and leafy trees.",
+      "Several people stand or sit along the grass verge behind the main subject; some hold bicycles or bags.",
+      "A brick building with windows and green shrubbery appears in the background behind the wall."
+    ],
+    "action": [
+      "The child balances upright on a longboard-style skateboard with both feet planted.",
+      "The child holds a torch-shaped prop in their right hand, arm bent at the elbow, and left hand rests on their hip.",
+      "Multiple onlookers are stationary or slightly shifting posture; one child in the background holds a white bag."
+    ],
+    "rationale": [
+      "The child’s costume resembles the Statue of Liberty due to the crown, robe, and torch prop, though no text confirms this.",
+      "The skateboard is oriented parallel to the street edge, suggesting forward motion or preparation for movement, but no motion blur confirms motion.",
+      "The presence of multiple spectators and bicycles suggests a public gathering, possibly a parade or community event, but no signage confirms purpose."
+    ],
+    "object": [
+      "The child wears a light blue draped robe with long sleeves, purple slip-on footwear, and a spiked crown with blue-green patina-like coloring.",
+      "The skateboard has a black deck with two white longitudinal stripes, four black wheels, and visible silver trucks.",
+      "The torch prop consists of an orange flame-shaped top, a greenish-blue cupped base, and a gray shaft held in the child’s right hand.",
+      "Behind the child, a boy in a blue shirt and shorts stands near a bicycle with a black frame and silver spokes; another child in a striped shirt holds a white plastic bag.",
+      "A person in a red-orange shirt and dark pants stands near the left edge of the frame, partially obscured by foliage."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1034_P1",
+      "visual_anchors": [
+        "spiked crown",
+        "torch prop",
+        "blue draped robe"
+      ],
+      "symbolic_mapping": [
+        "crown and torch evoke liberty iconography",
+        "robe suggests classical civic virtue"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of a symbolic liberty figure on a modern skateboard may reflect tension between inherited ideals of freedom and contemporary modes of mobility or self-expression.",
+      "alternative_interpretations": [
+        "It may simply be a costume for a neighborhood parade without symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual markers confirm intentional symbolism; costume could be generic or improvised."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1034_P2",
+      "visual_anchors": [
+        "child on skateboard",
+        "spectators in background",
+        "public street setting"
+      ],
+      "symbolic_mapping": [
+        "skateboard as tool of individual agency",
+        "onlookers as social witness"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The child’s centered performance before observers highlights how identity is enacted and recognized within communal space, where visibility constitutes social being.",
+      "alternative_interpretations": [
+        "The child may be merely waiting or posing casually; the observers may not be actively watching."
+      ],
+      "limitations": [
+        "Facial expressions and gaze directions are indistinct; attentional focus cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1034_P3",
+      "visual_anchors": [
+        "purple slip-on footwear",
+        "mismatched costume elements",
+        "casual stance"
+      ],
+      "symbolic_mapping": [
+        "footwear contrasts formal robe",
+        "improvised appearance challenges idealized representation"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The visible disjunction between ceremonial attire and everyday footwear underscores that identity is constructed through contingent, hybrid appearances rather than fixed symbols.",
+      "alternative_interpretations": [
+        "The footwear may be chosen for comfort during physical activity, not for symbolic effect."
+      ],
+      "limitations": [
+        "Shoe color and style are visible, but intent behind selection is not observable."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:42:01.569320+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2e7644d8-6c89-9293-b082-ef98f007858b",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 925,
+        "total_tokens": 1734,
+        "completion_tokens_details": {
+          "text_tokens": 925
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070341458a28dc4d0369437e",
+      "usage": {
+        "completion_tokens": 790,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1900,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2690
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

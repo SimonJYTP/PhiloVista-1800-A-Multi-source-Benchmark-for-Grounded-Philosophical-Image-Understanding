@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0443",
+  "sample_id": "PHL1800_HL_0240",
+  "file_name": "PHL1800_HL_0240.png",
+  "batch_id": "B011",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one police officer seated on a motorcycle",
+  "captions": {
+    "scene": [
+      "Urban street with blurred storefronts and glass windows in the background",
+      "Paved road surface with white lane markings visible beneath the motorcycle",
+      "Daylight outdoor setting with diffuse illumination and no strong shadows"
+    ],
+    "action": [
+      "The officer is seated upright on the motorcycle, hands on handlebars",
+      "The officer wears a helmet, glasses, and a microphone headset, looking forward",
+      "The motorcycle is stationary or moving slowly, with no motion blur evident"
+    ],
+    "rationale": [
+      "The officer’s posture and grip suggest active control of the vehicle, though motion status is ambiguous",
+      "Visible equipment (radio mic, side case, badge) indicates official duty assignment, but specific task is not shown",
+      "Text on the motorcycle includes 'POLICE' and a name fragment 'Ot. K. McDonald', but full context is unreadable"
+    ],
+    "object": [
+      "A black-and-white police motorcycle with chrome accents, a clear windscreen, and blue emergency lights mounted on the front fairing.",
+      "The officer wears a dark navy uniform with visible insignia on the sleeve reading 'BOWERS' in white capital letters.",
+      "A white rectangular case is mounted on the rear rack; a black holster with a firearm is attached to the officer’s right hip.",
+      "The motorcycle’s fuel tank displays a shield-shaped badge with blue, gold, and white colors and an unreadable central emblem.",
+      "The front fender bears cursive script reading 'Ot. K. McDonald', followed by a yellow sticker with indistinct symbols."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0443_P1",
+      "visual_anchors": [
+        "helmet covering head",
+        "microphone headset",
+        "uniform with name tag"
+      ],
+      "symbolic_mapping": [
+        "the helmet as concealment of individual identity in service role"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The uniformed officer embodies a socially constructed role where personal identity is subordinated to institutional function, visually reinforced by standardized gear that obscures individual features while signaling collective authority.",
+      "alternative_interpretations": [
+        "The gear simply reflects practical safety and communication requirements for traffic enforcement."
+      ],
+      "limitations": [
+        "No facial expression or body language confirms internal state or intent; identity suppression is inferred, not observed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0443_P2",
+      "visual_anchors": [
+        "blue emergency lights",
+        "white lane markings",
+        "stationary motorcycle"
+      ],
+      "symbolic_mapping": [
+        "lights as markers of regulated space and temporal authority"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The presence of activated emergency lighting on a still motorcycle in a public thoroughfare visualizes the tension between individual mobility and institutional control—where the law’s potential to interrupt flow is held in abeyance yet visibly asserted.",
+      "alternative_interpretations": [
+        "Lights may be off or non-functional; their activation status is ambiguous due to lack of illumination evidence."
+      ],
+      "limitations": [
+        "No light emission is visible; assumed activation is based on fixture presence alone."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0443_P3",
+      "visual_anchors": [
+        "side-mounted radio case",
+        "hand on throttle grip",
+        "badge on tank"
+      ],
+      "symbolic_mapping": [
+        "technology-mediated authority enabling real-time response within spatial constraints"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The integration of communication hardware, protective gear, and symbolic insignia on the officer’s person illustrates how modern policing enacts responsibility through technologically extended presence—where duty is performed not merely by will but by embedded tools that mediate action and accountability.",
+      "alternative_interpretations": [
+        "Equipment is standard issue with no implied ethical dimension; it serves purely operational purposes."
+      ],
+      "limitations": [
+        "No interaction with radio or other devices is visible; functionality is assumed from form."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:47:11.366929+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3a10a675-f62b-92f2-b2d7-bdff22df75a6",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 911,
+        "total_tokens": 1680,
+        "completion_tokens_details": {
+          "text_tokens": 911
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024654bb249ffae279436e",
+      "usage": {
+        "completion_tokens": 766,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1836,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2602
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

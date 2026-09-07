@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1553",
+  "sample_id": "PHL1800_HL_0361",
+  "file_name": "PHL1800_HL_0361.png",
+  "batch_id": "B032",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red octagonal stop sign with a '4-WAY' plaque mounted below it",
+  "captions": {
+    "scene": [
+      "A brick building with white ornamental trim, arched windows, and decorative black spade symbols flanking a balcony is visible behind the sign.",
+      "A crowd of approximately 18–20 people stands on a sidewalk in front of the building under clear blue sky.",
+      "A black lamppost and a black pole supporting the stop sign are positioned in the foreground."
+    ],
+    "action": [
+      "Multiple individuals are standing or walking slowly on the sidewalk; some face forward, others look toward the building or sideways.",
+      "A woman in a black jacket holds a white paper bag in her right hand and walks leftward across the frame.",
+      "The stop sign remains stationary, affixed to a vertical pole with two visible bolts."
+    ],
+    "rationale": [
+      "The building’s architectural details (arched window, balcony, spade motifs) suggest intentional design rather than accidental appearance.",
+      "The presence of a '4-WAY' plaque implies intersection control, though no intersecting road is visible in the frame.",
+      "The crowd density and varied postures indicate a public gathering or event, but no signage confirms its nature."
+    ],
+    "object": [
+      "The stop sign is red, octagonal, with white uppercase sans-serif letters spelling 'STOP', centered and horizontally aligned.",
+      "Below the stop sign, a rectangular red plaque with white border and white uppercase text reads '4-WAY'.",
+      "The pole holding the sign is black metal, cylindrical, and features a spherical finial at its top.",
+      "The building facade is made of reddish-brown brick with white-painted stone or stucco trim around windows and doors.",
+      "Two black club/spade-shaped cutouts appear symmetrically on either side of the balcony railing beneath the arched window."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1553_P1",
+      "visual_anchors": [
+        "red octagonal stop sign",
+        "4-WAY plaque",
+        "crowd gathered near intersection"
+      ],
+      "symbolic_mapping": [
+        "stop sign as enforced pause in motion",
+        "4-WAY as mutual obligation among parties"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The stop sign embodies a shared civic contract: individual freedom to move is constrained by collective responsibility to yield, making coexistence possible at intersections of paths.",
+      "alternative_interpretations": [
+        "It is merely traffic infrastructure with no symbolic intent; the crowd may be unrelated tourists waiting for a parade."
+      ],
+      "limitations": [
+        "No visible vehicles or crosswalks confirm the sign governs actual traffic flow; the crowd may not be interacting with the sign at all."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1553_P2",
+      "visual_anchors": [
+        "white ornamental balcony",
+        "spade symbols",
+        "brick building facade"
+      ],
+      "symbolic_mapping": [
+        "architectural ornamentation as assertion of identity",
+        "spade motifs as stylized cultural reference"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The building’s curated visual language—symmetry, classical forms, and symbolic motifs—constructs a public identity that asserts belonging and continuity within a social landscape.",
+      "alternative_interpretations": [
+        "The spades are purely decorative elements chosen for aesthetic balance, with no referential meaning."
+      ],
+      "limitations": [
+        "The origin and designer of the spade motifs are unseen; their intended symbolism cannot be verified from image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1553_P3",
+      "visual_anchors": [
+        "crowd of diverse individuals",
+        "shared spatial proximity",
+        "no visible hierarchy or separation"
+      ],
+      "symbolic_mapping": [
+        "bodies occupying shared space as enactment of social being"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The unstructured congregation of people—standing close yet uncoordinated—illustrates how social existence emerges not through formal organization but through mere co-presence and temporal overlap.",
+      "alternative_interpretations": [
+        "The group is loosely assembled for a specific purpose (e.g., tour, event), and their proximity reflects logistics, not philosophy."
+      ],
+      "limitations": [
+        "Facial expressions and interpersonal gestures are indistinct; no interaction is clearly documented."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:44:24.829144+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5cbd1ccd-298e-93db-a091-1b726715c111",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 981,
+        "total_tokens": 1750,
+        "completion_tokens_details": {
+          "text_tokens": 981
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044405502343e8aa7d4004",
+      "usage": {
+        "completion_tokens": 842,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1910,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2752
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1285",
+  "sample_id": "PHL1800_HAIV_0079",
+  "file_name": "PHL1800_HAIV_0079.png",
+  "batch_id": "B027",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of stylized human figures gathered around a fire beneath an open book",
+  "captions": {
+    "scene": [
+      "An open oversized book with brown covers and beige pages forms an arch over a central fire.",
+      "A bright orange flame with a red teardrop-shaped symbol at its center rises between the book's pages.",
+      "Eight simplified human figures in varied solid-color clothing stand or crouch around the fire on a light-blue ground."
+    ],
+    "action": [
+      "Two figures on the left hold a long horizontal pole that extends across the fire; one figure appears to push or pull it.",
+      "One figure on the right holds a similar pole, angled downward toward the fire.",
+      "All figures face inward toward the fire and book structure, suggesting collective attention."
+    ],
+    "rationale": [
+      "The book’s pages contain evenly spaced horizontal lines but no legible text, indicating placeholder writing rather than readable content.",
+      "The red teardrop within the flame is centrally placed and distinct from the flame’s shape, suggesting intentional symbolic inclusion.",
+      "Figures are uniformly stylized with no facial features or distinguishing marks, implying generic representation rather than individual identity."
+    ],
+    "object": [
+      "The open book has thick brown covers, a visible spine hinge at the top center, and two beige pages each marked with five parallel horizontal brown lines.",
+      "The fire consists of layered orange-yellow flame shapes with white inner highlights and a single solid red teardrop centered vertically within the upper flame region.",
+      "Eight human-like figures are present: two on the far left (one dark brown, one red shirt), two near left-center (red and red-orange shirts), one center (dark brown), one center-right (cyan shirt), one right-center (teal shirt), and two on the far right (gray and red shirts).",
+      "Two long thin poles are held horizontally by figures: one spans from left to right across the fire’s base, the other extends from the right figure diagonally downward toward the fire.",
+      "The ground surface beneath the figures is a flat light-blue oval shape with subtle shading, contrasting with the white background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1285_P1",
+      "visual_anchors": [
+        "open book with lined pages",
+        "central flame",
+        "group of figures facing inward"
+      ],
+      "symbolic_mapping": [
+        "book → repository of knowledge",
+        "flame → illumination or truth"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The image depicts collective engagement with knowledge as a shared, illuminating process, where the book and flame together suggest that truth emerges through communal witness and interaction.",
+      "alternative_interpretations": [
+        "It may represent a ritual or performance involving fire and text, such as storytelling or instruction, without philosophical intent."
+      ],
+      "limitations": [
+        "No readable text confirms the book’s content; lines are generic placeholders, not actual script."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1285_P2",
+      "visual_anchors": [
+        "red teardrop inside flame",
+        "figures holding poles directed at fire",
+        "uniform stylization of people"
+      ],
+      "symbolic_mapping": [
+        "teardrop → sacrifice or suffering",
+        "poles → tools of intervention or control"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The red teardrop embedded in the flame, combined with figures actively manipulating the scene via poles, suggests ethical tension around responsibility for sustaining or altering a symbolic source of meaning or danger.",
+      "alternative_interpretations": [
+        "The teardrop could be decorative; the poles might simply support a structure, not imply agency or conflict."
+      ],
+      "limitations": [
+        "Pole orientation and grip do not definitively indicate force application or intent; posture is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1285_P3",
+      "visual_anchors": [
+        "eight figures arranged circumferentially",
+        "shared focal point (fire/book)",
+        "absence of individual differentiation"
+      ],
+      "symbolic_mapping": [
+        "circle formation → community",
+        "shared gaze → collective existence"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The arrangement of undifferentiated figures around a central symbolic element underscores social existence as constituted through shared attention and participation in a common frame of reference.",
+      "alternative_interpretations": [
+        "The grouping may reflect practical positioning for viewing or heating, not symbolic unity."
+      ],
+      "limitations": [
+        "No visual cues confirm intentional symmetry or ritual; spacing is irregular and some figures overlap slightly."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:17:04.543979+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a0971d4b-5d2f-9da0-b60b-35fb0a44ff20",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1003,
+        "total_tokens": 2536,
+        "completion_tokens_details": {
+          "text_tokens": 1003
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041639e544931f88a04870",
+      "usage": {
+        "completion_tokens": 861,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2952,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3813
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

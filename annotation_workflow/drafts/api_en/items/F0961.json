@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F0961",
+  "sample_id": "PHL1800_HAIV_0362",
+  "file_name": "PHL1800_HAIV_0362.png",
+  "batch_id": "B021",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one illustrated person with long brown hair hugging a bottle",
+  "captions": {
+    "scene": [
+      "A stylized cartoon figure against a plain white background",
+      "A dark blue rectangular label with indecipherable white markings appears in the upper left corner",
+      "The figure wears a pale yellow collared shirt and embraces a bottle with both arms"
+    ],
+    "action": [
+      "The person’s eyes are closed and mouth is open in a wide smile",
+      "Both arms are wrapped around a bottle held vertically against the chest",
+      "The right hand rests on the left upper arm, reinforcing the embrace posture"
+    ],
+    "rationale": [
+      "The facial expression suggests positive affect, though exact emotion cannot be confirmed from line art alone",
+      "The bottle is labeled 'CODAS' in white uppercase letters on a black band, indicating intentional branding or reference",
+      "The unreadable text on the blue label prevents identification of its content or purpose"
+    ],
+    "object": [
+      "The figure has long brown hair parted in the middle, extending past the shoulders.",
+      "The bottle has a black neck, a yellow upper body section, a black central band with white text reading 'CODAS', and a yellow lower section.",
+      "The person wears a pale yellow collared shirt with visible lapels and no visible buttons or patterns.",
+      "The left arm crosses over the right forearm, with fingers splayed and visible on the outer side of the right arm.",
+      "The blue rectangle in the top-left contains white symbols that are irregular and not legible as standard characters."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0961_P1",
+      "visual_anchors": [
+        "closed eyes",
+        "wide smile",
+        "tight embrace of bottle"
+      ],
+      "symbolic_mapping": [
+        "the embrace may symbolize attachment to an object as surrogate comfort"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image may reflect how identity or social belonging can become materially anchored—here, through physical intimacy with a branded object—suggesting a collapse of interpersonal and consumer relations.",
+      "alternative_interpretations": [
+        "It could simply depict joyful consumption or fandom without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No contextual cues confirm intentionality behind the embrace; it may be purely decorative or humorous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0961_P2",
+      "visual_anchors": [
+        "bottle labeled 'CODAS'",
+        "person’s face pressed against bottle",
+        "unreadable blue label"
+      ],
+      "symbolic_mapping": [
+        "the unreadable label contrasts with the legible brand, hinting at obscured origins versus marketed identity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of legible branding ('CODAS') and illegible peripheral text may critique how surface-level identity markers (e.g., logos) dominate perception while underlying truths remain inaccessible or deliberately obscured.",
+      "alternative_interpretations": [
+        "The blue label may be purely ornamental, with no intended semantic contrast."
+      ],
+      "limitations": [
+        "The blue label’s content is unreadable; any meaning assigned to it is speculative."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0961_P3",
+      "visual_anchors": [
+        "arms fully encircling bottle",
+        "body posture centered on object",
+        "absence of other figures"
+      ],
+      "symbolic_mapping": [
+        "solitary embrace suggests substitution of human connection with object-based solace"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The solitary, self-contained embrace may illustrate constraint within apparent freedom—choosing to bond with an inanimate object reflects limited relational options or internalized norms about acceptable attachments.",
+      "alternative_interpretations": [
+        "The pose may represent celebration or parody, common in meme-style illustrations, not philosophical commentary."
+      ],
+      "limitations": [
+        "No environmental or behavioral context confirms isolation or constraint; the figure could be in a crowd outside frame."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:31:48.530817+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9b9326c4-f073-9d1b-94c1-097717b765f3",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 886,
+        "total_tokens": 2419,
+        "completion_tokens_details": {
+          "text_tokens": 886
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703311910919e381fcd43f0",
+      "usage": {
+        "completion_tokens": 749,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2844,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3593
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1472",
+  "sample_id": "PHL1800_IRFL_0239",
+  "file_name": "PHL1800_IRFL_0239.jpg",
+  "batch_id": "B030",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man viewed from behind, wearing a pinstripe suit and raising his right hand",
+  "captions": {
+    "scene": [
+      "An indoor setting with muted olive-green walls and soft ambient lighting",
+      "Two men in formal business attire seated or standing within the same room",
+      "A shallow depth of field blurs the background figure while keeping the foreground subject relatively sharp"
+    ],
+    "action": [
+      "The foreground man raises his right hand with fingers loosely curled, palm facing inward",
+      "The background man appears to be looking down at documents on a surface in front of him",
+      "Both individuals are stationary in posture, with no motion blur indicating movement"
+    ],
+    "rationale": [
+      "The raised hand gesture may indicate emphasis during speech, but no mouth or auditory context is visible",
+      "The pinstripe suit and formal shirts suggest a professional or institutional context, though the exact nature is unspecified",
+      "The presence of documents near the background figure implies a procedural or deliberative activity, but their content is unreadable"
+    ],
+    "object": [
+      "The foreground man has thinning gray hair, wears black-rimmed eyeglasses, and a dark charcoal pinstripe suit jacket over a white collared shirt.",
+      "His right arm is bent at the elbow, forearm elevated to approximately shoulder height, with thumb and index finger forming a loose pinch gesture.",
+      "The background man has short dark hair, wears a dark suit, light blue tie, and a white shirt; his head is tilted downward toward a white rectangular object on a surface.",
+      "A white rectangular object, possibly paper or a folder, lies horizontally in front of the background man; any text upon it is illegible due to blur and angle.",
+      "The wall behind both figures is uniformly painted olive-green with no visible fixtures, windows, or decorations."
+    ]
+  },
+  "rationale_support": [
+    "insufficient_evidence",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1472_P1",
+      "visual_anchors": [
+        "raised hand gesture",
+        "pinstripe suit",
+        "blurred background figure"
+      ],
+      "symbolic_mapping": [
+        "raised hand as assertion of position",
+        "formal attire as role conformity"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where bodily gesture asserts presence within a structured social hierarchy, highlighting how authority is performed through posture and dress rather than explicit declaration.",
+      "alternative_interpretations": [
+        "The man may simply be adjusting his sleeve or gesturing casually; the formality need not imply institutional power."
+      ],
+      "limitations": [
+        "No facial expression, vocal cues, or contextual signage confirm intent or role."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1472_P2",
+      "visual_anchors": [
+        "thinning gray hair",
+        "back view",
+        "lack of direct gaze"
+      ],
+      "symbolic_mapping": [
+        "aging hairline as temporal marker",
+        "posterior orientation as exclusion from viewer’s access"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The rear-facing composition denies individual identification while emphasizing physical markers of aging, evoking reflection on the self as temporally situated and partially obscured even in public performance.",
+      "alternative_interpretations": [
+        "The back view is likely due to camera positioning for compositional framing, not intentional anonymity."
+      ],
+      "limitations": [
+        "Hair thinning is visible but cannot establish age or health status definitively."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1472_P3",
+      "visual_anchors": [
+        "two formally dressed men",
+        "shared space",
+        "asymmetrical focus"
+      ],
+      "symbolic_mapping": [
+        "proximity without interaction as coexistence under constraint",
+        "depth-of-field separation as symbolic distance"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement—close yet visually segregated—suggests individuals operating within shared institutional constraints, where proximity does not imply connection, reflecting modern alienation within formal collectives.",
+      "alternative_interpretations": [
+        "The blur may result solely from photographic technique, not intended social commentary."
+      ],
+      "limitations": [
+        "No evidence of emotional state, dialogue, or institutional signage confirms constraint or alienation."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:36:42.341042+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0b783495-b884-928b-ac8d-2238b5eb84d5",
+      "usage": {
+        "prompt_tokens": 1181,
+        "completion_tokens": 931,
+        "total_tokens": 2112,
+        "completion_tokens_details": {
+          "text_tokens": 931
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 674,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070436177c607154d13b45f1",
+      "usage": {
+        "completion_tokens": 789,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2401,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3190
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

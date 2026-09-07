@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1048",
+  "sample_id": "PHL1800_HAIV_0185",
+  "file_name": "PHL1800_HAIV_0185.png",
+  "batch_id": "B022",
+  "position_in_batch": 44,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stylized anthropomorphic skyscraper with facial features and adjacent buildings",
+  "captions": {
+    "scene": [
+      "A central tall gray-blue building with a face, flanked by two narrower gray buildings with white rectangular windows.",
+      "Three vertical structures dominate the composition against a plain white background.",
+      "The central structure has green-and-white eyes, a triangular nose, and a downturned mouth; its base includes two green hand-like shapes and a small black rectangle."
+    ],
+    "action": [
+      "The central building displays a static facial expression: narrowed eyes, a straight downward-curved mouth, and a triangular nose.",
+      "Two green appendages at the bottom suggest hands resting or gripping the base of the structure.",
+      "No motion is depicted; all elements are stationary and rendered in flat cartoon style."
+    ],
+    "rationale": [
+      "The facial features are drawn with bold black outlines and solid color fills, indicating intentional personification rather than accidental resemblance.",
+      "The symmetry and alignment of the side buildings relative to the central one suggest deliberate compositional framing, not random placement.",
+      "The absence of ground line, sky, or environmental context limits inference about scale or setting; only relative proportions are observable."
+    ],
+    "object": [
+      "The central object is a vertically elongated rectangle with a gradient from light gray-blue at the top to darker teal at the bottom, outlined in thick black.",
+      "Two green upper eyelids with white lower segments and small green pupils form eyes; they are asymmetrical and slightly tilted inward.",
+      "A black triangular shape centered below the eyes serves as a nose; a single black curved line beneath it forms a frowning mouth.",
+      "Four smaller gray rectangular buildings appear: two on the left (one taller, one shorter) and two on the right (both tall), each featuring a grid of white squares representing windows.",
+      "At the base of the central building, two green irregular shapes resembling hands flank a small black rectangle with a white interior square, possibly a door or panel."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1048_P1",
+      "visual_anchors": [
+        "green-and-white eyes",
+        "downturned mouth",
+        "central building as sole face"
+      ],
+      "symbolic_mapping": [
+        "eyes as surveillance or observation",
+        "frown as institutional dissatisfaction"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The solitary anthropomorphized tower amid uniform structures may symbolize an individualized entity within a homogenized urban system, evoking tension between singular identity and collective anonymity.",
+      "alternative_interpretations": [
+        "It could simply be a playful cartoon design with no intended symbolism, using facial features for visual interest alone."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm symbolic intent; facial expression is stylized and ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1048_P2",
+      "visual_anchors": [
+        "gradient coloring from light to dark",
+        "vertical orientation",
+        "lack of ground or horizon"
+      ],
+      "symbolic_mapping": [
+        "gradient as temporal progression",
+        "verticality as aspiration or constraint"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The ungrounded, vertically stretched form with tonal shift may reflect an abstract conception of time-bound existence—rising yet contained, without origin or destination.",
+      "alternative_interpretations": [
+        "The gradient may merely indicate lighting or artistic shading choice with no temporal meaning."
+      ],
+      "limitations": [
+        "Color gradient lacks directional markers (e.g., sunrise/sunset); no clock, calendar, or aging indicators present."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1048_P3",
+      "visual_anchors": [
+        "two green hand-like shapes",
+        "black rectangle with white square at base",
+        "symmetric flanking towers"
+      ],
+      "symbolic_mapping": [
+        "hands as labor or control",
+        "door as access or exclusion"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The positioned hands near a minimal doorway on a face-bearing structure suggest agency mediated through infrastructure—identity shaped by functional roles within built environments.",
+      "alternative_interpretations": [
+        "The green shapes may be decorative elements or structural supports, not intentional hands."
+      ],
+      "limitations": [
+        "Hand morphology is highly abstract; no fingers, palms, or articulation visible to confirm intentionality."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:44:17.558740+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1fdab88b-2c9b-9590-be49-6f25128c23d3",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 971,
+        "total_tokens": 2504,
+        "completion_tokens_details": {
+          "text_tokens": 971
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070344012a52f2cf19534a0b",
+      "usage": {
+        "completion_tokens": 831,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2926,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3757
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

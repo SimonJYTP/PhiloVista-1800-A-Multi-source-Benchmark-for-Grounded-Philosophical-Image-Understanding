@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1681",
+  "sample_id": "PHL1800_IRFL_0285",
+  "file_name": "PHL1800_IRFL_0285.jpg",
+  "batch_id": "B034",
+  "position_in_batch": 37,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person wearing a white surgical mask",
+  "captions": {
+    "scene": [
+      "A dimly lit interior with a reflective glass surface showing a faint, blurred background including a bright window-like area on the left.",
+      "The subject is positioned close to a vertical transparent plane that reflects their face and upper torso.",
+      "The lighting is low-key with directional illumination highlighting the right side of the subject’s face and hands."
+    ],
+    "action": [
+      "The person gazes toward the right side of the frame, eyes open and directed laterally.",
+      "Their hands are raised near the chin, fingers lightly touching or nearly touching in a poised configuration.",
+      "The reflection shows a mirrored image of the same pose, slightly offset and less sharp than the primary figure."
+    ],
+    "rationale": [
+      "The presence of a clear reflection indicates a smooth, transparent, and highly reflective surface (e.g., glass) directly in front of the subject.",
+      "The mask covers the nose and mouth but leaves the eyes and brow fully visible, suggesting it is worn correctly for respiratory protection.",
+      "The lack of visible text or logos on the mask prevents identification of brand or origin; any such inference would be unsupported."
+    ],
+    "object": [
+      "A white disposable surgical mask with pleats, ear loops, and a molded nose bridge strip is worn over the lower face.",
+      "The subject has dark hair pulled back from the forehead, revealing well-defined eyebrows and light-colored irises.",
+      "Two hands are visible in the foreground, with fingers extended and tips nearly converging; skin tone appears light.",
+      "The subject wears a dark, ribbed-knit crew-neck garment, likely black or charcoal gray.",
+      "A vertical reflective surface occupies the left half of the frame, displaying a ghosted, slightly distorted mirror image of the subject."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1681_P1",
+      "visual_anchors": [
+        "mirror reflection",
+        "mask covering lower face",
+        "hands near chin"
+      ],
+      "symbolic_mapping": [
+        "reflection → duality of self-perception vs. external appearance",
+        "mask → concealment of identity markers"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of the masked visage and its reflection evokes tension between how one presents to society and how one internally registers that presentation, especially when key expressive features are obscured.",
+      "alternative_interpretations": [
+        "The composition may simply document a moment of quiet contemplation during routine protective behavior, without symbolic intent."
+      ],
+      "limitations": [
+        "No textual cues or contextual signage confirm intentional symbolism; the reflection could result from incidental positioning near a window."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1681_P2",
+      "visual_anchors": [
+        "dim ambient lighting",
+        "focused illumination on eyes and hands",
+        "lateral gaze"
+      ],
+      "symbolic_mapping": [
+        "low light → uncertainty or liminality",
+        "gaze direction → anticipation or surveillance"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The selective illumination isolates sensory organs (eyes) and gesture (hands), suggesting epistemic limitation—what can be known is constrained by what is visible—and the subject’s posture implies constraint rather than agency.",
+      "alternative_interpretations": [
+        "The lighting may be purely functional (e.g., natural light from a side window), not staged for symbolic effect."
+      ],
+      "limitations": [
+        "Lighting source and intent are not verifiable; no evidence confirms deliberate chiaroscuro staging."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1681_P3",
+      "visual_anchors": [
+        "intact mask",
+        "unbroken reflection",
+        "still posture"
+      ],
+      "symbolic_mapping": [
+        "mask integrity → adherence to normative protocol",
+        "stillness → suspension of action"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "time_mortality"
+      ],
+      "interpretation": "The subject’s stillness while wearing a functional mask suggests a moment of ethical pause—acknowledging collective responsibility—within a temporally suspended state where immediate action is deferred.",
+      "alternative_interpretations": [
+        "The subject may be waiting for a signal (e.g., elevator arrival) or resting momentarily; no motion is visible to confirm deliberation."
+      ],
+      "limitations": [
+        "No behavioral sequence is captured; stillness alone does not prove intentionality or moral reflection."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:01:13.648951+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6cb5c50d-7626-9b9f-9832-712a57db40a5",
+      "usage": {
+        "prompt_tokens": 1559,
+        "completion_tokens": 971,
+        "total_tokens": 2530,
+        "completion_tokens_details": {
+          "text_tokens": 971
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1052,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090705004157413292727146fd",
+      "usage": {
+        "completion_tokens": 832,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2900,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3732
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

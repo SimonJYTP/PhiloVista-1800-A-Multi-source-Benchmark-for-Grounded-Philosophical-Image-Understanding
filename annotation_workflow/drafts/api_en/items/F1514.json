@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1514",
+  "sample_id": "PHL1800_HL_0248",
+  "file_name": "PHL1800_HL_0248.png",
+  "batch_id": "B031",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a uniformed police officer standing on a street",
+  "captions": {
+    "scene": [
+      "An urban street scene with trees, traffic signals, and vehicles in the background.",
+      "A white pickup truck is partially visible behind the officer; a pedestrian walks past on the right.",
+      "Two other individuals are visible in the left background near a yellow umbrella."
+    ],
+    "action": [
+      "The officer holds a silver mobile phone to his right ear with his right hand.",
+      "The officer stands upright, facing rightward, with his left hand resting near his waist.",
+      "A holstered firearm is visible on the officer’s right hip, secured by a black duty belt."
+    ],
+    "rationale": [
+      "The officer’s attire—including cap with 'POLICE' text, high-visibility vest, and badge—indicates official law enforcement status.",
+      "The presence of multiple pedestrians and vehicles suggests a public, possibly event-related or routine patrol setting.",
+      "The officer’s posture and phone use suggest active communication, though the content or purpose cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "The officer wears a dark navy long-sleeve shirt with three white chevrons on the left sleeve and a circular embroidered badge on the left chest.",
+      "He wears an orange high-visibility safety vest with reflective yellow-green stripes and a blue rectangular patch reading 'POLICE' in white capital letters.",
+      "His black cap displays the word 'POLICE' in white uppercase letters across the front panel.",
+      "A black pistol holster is attached to his right hip via a black duty belt; the grip of a handgun is visible.",
+      "A silver flip-style mobile phone is held against his right ear; its screen and keypad are not visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1514_P1",
+      "visual_anchors": [
+        "orange high-visibility vest",
+        "three white chevrons on sleeve",
+        "holstered firearm"
+      ],
+      "symbolic_mapping": [
+        "the vest signifies visibility and accountability",
+        "chevrons denote rank and institutional hierarchy"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The officer’s attire embodies the dual role of public service and coercive authority, reflecting how social order is maintained through visible institutional markers and sanctioned force.",
+      "alternative_interpretations": [
+        "The gear may simply reflect standard issue equipment for safety and identification during routine duties, without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No context confirms whether the officer is actively enforcing, observing, or off-duty; symbolism depends on assumed function, not direct evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1514_P2",
+      "visual_anchors": [
+        "phone held to ear",
+        "focused gaze toward right",
+        "static posture"
+      ],
+      "symbolic_mapping": [
+        "the phone represents mediated presence",
+        "stillness amid motion suggests deliberation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The officer’s momentary pause while communicating reflects the tension between immediate action and reflective judgment—highlighting how truth in policing often emerges from situated decisions rather than fixed rules.",
+      "alternative_interpretations": [
+        "He may be receiving routine instructions or coordinating logistics, with no philosophical weight implied by the gesture alone."
+      ],
+      "limitations": [
+        "Facial expression is partially obscured; intent or cognitive state is not observable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1514_P3",
+      "visual_anchors": [
+        "pedestrians walking past",
+        "officer positioned centrally",
+        "background traffic signal"
+      ],
+      "symbolic_mapping": [
+        "shared public space as contested ground",
+        "uniform as boundary marker"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The image captures a microcosm of civic life where individual freedom is implicitly bounded by institutional presence, and identity is publicly performed through standardized appearance rather than personal expression.",
+      "alternative_interpretations": [
+        "The scene may depict ordinary coexistence without tension—people moving freely while officers maintain passive oversight."
+      ],
+      "limitations": [
+        "No interaction occurs between officer and pedestrians; spatial proximity does not prove relational dynamics."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:40:52.159177+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-9158505c-7d46-9319-b483-6ce2be5691d0",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 924,
+        "total_tokens": 1693,
+        "completion_tokens_details": {
+          "text_tokens": 924
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044029b4d9130e1c7b43b0",
+      "usage": {
+        "completion_tokens": 786,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1855,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2641
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "annotation_item_id": "F1414",
+  "sample_id": "PHL1800_HAIV_0214",
+  "file_name": "PHL1800_HAIV_0214.png",
+  "batch_id": "B029",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a single person viewed from behind and reflected in a mirror",
+  "captions": {
+    "scene": [
+      "A person stands before a vanity mirror with a lighted frame and a countertop holding makeup items.",
+      "The mirror shows a frontal reflection of the person holding a small hand mirror and wearing red lipstick.",
+      "The background includes a second, partially visible mirror or cabinet panel to the left."
+    ],
+    "action": [
+      "The person stands with hands on hips, facing the mirror.",
+      "The reflected figure holds a handheld oval mirror near their face and appears to be examining their lips.",
+      "The reflected figure has exaggerated facial features: furrowed brows, narrowed eyes, and pursed red lips."
+    ],
+    "rationale": [
+      "The reflection shows a different expression than would be expected from a neutral back view, suggesting stylized depiction rather than literal realism.",
+      "The presence of multiple makeup tools on the counter supports that the activity involves cosmetic application or inspection.",
+      "The lighting fixtures around the mirror are drawn as circular bulbs, consistent with theatrical or dressing-room vanities, though no illumination effect is rendered."
+    ],
+    "object": [
+      "The person wears a white sleeveless top and brown pants, viewed from behind with short brown hair covering the neck and upper back.",
+      "The main mirror has a black rectangular frame adorned with evenly spaced circular light fixtures along its perimeter.",
+      "On the countertop below the mirror lie five distinct makeup items: two lipstick tubes (one pink-capped, one red-capped), one blue-green compact, and two dark cylindrical applicators.",
+      "The reflected figure wears a pale green sleeveless top and has brown hair parted in the middle, with thick black eyebrows and large red lips.",
+      "The reflected figure holds a small oval hand mirror with a black handle in their right hand, angled toward their face."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1414_P1",
+      "visual_anchors": [
+        "back view of person",
+        "frontal distorted reflection",
+        "handheld mirror held by reflection"
+      ],
+      "symbolic_mapping": [
+        "the back view represents external presentation",
+        "the distorted reflection represents internal self-perception"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The image visually stages a tension between how one presents to the world (back view) and how one critically assesses oneself (distorted frontal reflection), highlighting appearance as a site of self-scrutiny.",
+      "alternative_interpretations": [
+        "It may simply depict a routine makeup check with cartoonish exaggeration for expressive effect, not philosophical commentary."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intentional symbolism; distortion could be purely stylistic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1414_P2",
+      "visual_anchors": [
+        "lighted vanity frame",
+        "makeup items on counter",
+        "person’s posture with hands on hips"
+      ],
+      "symbolic_mapping": [
+        "vanity lighting symbolizes scrutiny",
+        "makeup tools represent tools of self-construction"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The setup implies performance of identity within socially mediated spaces, where appearance is prepared under artificial light and curated through material objects.",
+      "alternative_interpretations": [
+        "The scene may depict a private, non-performative grooming moment without social implication."
+      ],
+      "limitations": [
+        "The absence of other people or audience cues makes social context inferential rather than direct."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1414_P3",
+      "visual_anchors": [
+        "exaggerated frown in reflection",
+        "red lipstick applied unevenly or heavily",
+        "use of secondary hand mirror"
+      ],
+      "symbolic_mapping": [
+        "frown indicates dissatisfaction",
+        "dual mirrors suggest recursive self-observation"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The recursive mirroring and critical expression suggest epistemic uncertainty—questioning whether the observed self aligns with an internal standard of truth or adequacy.",
+      "alternative_interpretations": [
+        "The expression may indicate concentration or irritation unrelated to epistemology, e.g., difficulty applying makeup."
+      ],
+      "limitations": [
+        "Facial expression is stylized and ambiguous; no gaze direction or verbal cue confirms introspection."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:29:30.517045+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-679dbf72-352f-9f80-b17e-bff9386042af",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 939,
+        "total_tokens": 2472,
+        "completion_tokens_details": {
+          "text_tokens": 939
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042916ac91027acae14bfc",
+      "usage": {
+        "completion_tokens": 803,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2895,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3698
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

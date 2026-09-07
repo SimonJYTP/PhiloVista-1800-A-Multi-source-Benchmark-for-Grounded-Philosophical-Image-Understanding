@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0351",
+  "sample_id": "PHL1800_HAIV_0001",
+  "file_name": "PHL1800_HAIV_0001.png",
+  "batch_id": "B001",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large birdcage containing nested symbolic elements and two human silhouettes",
+  "captions": {
+    "scene": [
+      "A black-line-drawn birdcage dominates the frame, with a large red heart visible behind its bars.",
+      "Inside the cage, a smaller white birdcage sits centered in front of the red heart; within it rests a small pink heart-shaped object.",
+      "Two black human silhouettes occupy the lower interior of the large cage: one seated on the left, one kneeling or crouching on the right holding a vertical rod."
+    ],
+    "action": [
+      "The large cage encloses all other elements including the heart, inner cage, and figures.",
+      "The inner white cage contains a pink heart-shaped object resting on its floor.",
+      "The two human silhouettes remain stationary inside the lower portion of the large cage."
+    ],
+    "rationale": [
+      "The nested cage structure suggests layered containment, as the inner cage is fully enclosed by the outer cage’s bars.",
+      "The red heart appears behind the outer cage bars but in front of the inner cage, indicating spatial layering rather than direct contact.",
+      "The human silhouettes are positioned below the central symbolic elements, possibly implying subordination or grounding within the constrained space."
+    ],
+    "object": [
+      "The outer cage is constructed of thick black vertical and horizontal bars forming a rounded enclosure with visible joints at intersections.",
+      "A solid red heart shape fills the background behind the central region of the outer cage, partially obscured by bars and the inner cage.",
+      "A smaller white cage with thin black bars and a domed top sits centrally inside the outer cage; its door appears closed.",
+      "A small pink heart-shaped object with a darker red center lies on the floor of the inner white cage.",
+      "Two distinct black human silhouettes are present inside the lower half of the outer cage: one on the left in a seated posture, one on the right in a crouched/kneeling posture gripping a vertical bar."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0351_P1",
+      "visual_anchors": [
+        "large outer cage",
+        "inner white cage",
+        "pink heart inside inner cage"
+      ],
+      "symbolic_mapping": [
+        "outer cage → constraint",
+        "inner cage → self-imposed or secondary constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visualizes freedom as hierarchically constrained: even when one layer of confinement (the outer cage) is acknowledged, another layer (the inner cage) persists, suggesting that liberation may require dismantling multiple nested structures of limitation.",
+      "alternative_interpretations": [
+        "It may depict emotional protection mechanisms—love (red heart) being guarded by successive barriers (cages), with the pink heart representing fragile inner vulnerability."
+      ],
+      "limitations": [
+        "No textual labels confirm the intended symbolism; the heart shapes could be decorative rather than representational."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0351_P2",
+      "visual_anchors": [
+        "two human silhouettes",
+        "their positions below central symbols",
+        "shared enclosure"
+      ],
+      "symbolic_mapping": [
+        "silhouettes → individuals within social structure",
+        "shared cage → collective condition"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The silhouettes’ placement beneath the symbolic heart-and-cage complex implies that individual agency is situated within and shaped by overarching emotional or institutional frameworks, reflecting how social existence is mediated through shared symbolic environments.",
+      "alternative_interpretations": [
+        "The figures may simply be compositional anchors balancing the upper visual weight, with no intentional sociological meaning."
+      ],
+      "limitations": [
+        "Silhouettes lack distinguishing features; their relationship to each other and to the symbols is purely spatial, not narrative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0351_P3",
+      "visual_anchors": [
+        "red heart with wing-like patterns",
+        "inner cage holding a smaller heart",
+        "black bars intersecting all layers"
+      ],
+      "symbolic_mapping": [
+        "winged heart → desire or love with aspiration",
+        "nested hearts → internalization of emotion"
+      ],
+      "concept_ids": [
+        "choice_journey"
+      ],
+      "interpretation": "The journey toward emotional authenticity may involve moving inward through successive layers of protection (cages), where the final destination is a vulnerable core (pink heart), accessible only after navigating external and internal constraints.",
+      "alternative_interpretations": [
+        "The winged red heart may be a stylized anatomical heart with decorative filigree, not wings; the nesting may reflect artistic composition rather than metaphor."
+      ],
+      "limitations": [
+        "Wing-like patterns are abstract line work without clear avian morphology; they could be ornamental lace or texture."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:37:43.404671+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e74b9e0b-fa4e-9f81-84a2-cad124bd1656",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1034,
+        "total_tokens": 2567,
+        "completion_tokens_details": {
+          "text_tokens": 1034
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013718451bc4715ae146a3",
+      "usage": {
+        "completion_tokens": 899,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2992,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3891
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

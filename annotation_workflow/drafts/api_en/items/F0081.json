@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0081",
+  "sample_id": "PHL1800_HAIV_0437",
+  "file_name": "PHL1800_HAIV_0437.png",
+  "batch_id": "B004",
+  "position_in_batch": 22,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a black bull silhouette charging toward a heart-shaped object",
+  "captions": {
+    "scene": [
+      "A gradient lavender-to-white background with a large pink-outlined heart centered rightward.",
+      "A jagged black line resembling an electrocardiogram (ECG) trace overlays the heart and extends leftward across the image.",
+      "A solid black bull silhouette occupies the lower-left quadrant, oriented rightward with head lowered."
+    ],
+    "action": [
+      "The bull is depicted mid-charge with front hooves lifted and rear legs extended, suggesting forward motion.",
+      "The ECG line intersects the heart shape and continues beyond it, maintaining irregular peaks and troughs.",
+      "The bull’s head and horns point directly toward the lower-left edge of the heart, implying imminent contact."
+    ],
+    "rationale": [
+      "The bull’s posture—lowered head, bent forelegs, raised hind legs—is consistent with a charging stance in animal locomotion depictions.",
+      "The ECG line’s continuity across the heart suggests intentional integration rather than accidental overlap, though no explicit connection is drawn.",
+      "No visible impact or deformation occurs at the bull-heart interface; the proximity implies intention but not confirmed interaction."
+    ],
+    "object": [
+      "The bull is a solid black silhouette with white outline detailing its horns, ears, and muzzle contour.",
+      "The heart has a magenta-pink outer stroke and a radial gradient fill from pale yellow at center to peach near edges.",
+      "The ECG line is a thick, uneven black stroke with sharp vertical spikes and shallow undulations, varying in amplitude.",
+      "The background is a smooth vertical gradient transitioning from light lavender at top to near-white at bottom.",
+      "No text, labels, signatures, or readable inscriptions appear anywhere in the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0081_P1",
+      "visual_anchors": [
+        "charging bull silhouette",
+        "heart with ECG trace",
+        "intersection of bull head and heart edge"
+      ],
+      "symbolic_mapping": [
+        "bull → uncontrolled force or instinct",
+        "heart with ECG → biological vitality or emotional core"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "time_mortality"
+      ],
+      "interpretation": "The image visualizes a confrontation between raw physical impulse and fragile biological continuity, where the bull’s charge threatens the rhythmic pulse signifying life.",
+      "alternative_interpretations": [
+        "It may represent a financial or market metaphor (bull market) colliding with emotional risk, though no monetary symbols are present."
+      ],
+      "limitations": [
+        "The absence of contextual markers (e.g., currency, medical equipment, facial expression) prevents confirmation of any specific domain."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0081_P2",
+      "visual_anchors": [
+        "ECG line traversing heart",
+        "uniform black bull form",
+        "lack of internal detail in either figure"
+      ],
+      "symbolic_mapping": [
+        "solid black silhouette → anonymity or undifferentiated agency",
+        "ECG rhythm → temporal passage or vulnerability"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "By rendering the bull as featureless and the heart as a generic symbol, the image emphasizes appearance over individual identity, suggesting that existential threats operate on abstract forms rather than persons.",
+      "alternative_interpretations": [
+        "It could be a decorative graphic combining common motifs without philosophical intent."
+      ],
+      "limitations": [
+        "No facial features, clothing, or distinguishing marks exist to support claims about identity or personhood."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0081_P3",
+      "visual_anchors": [
+        "heart partially overlaid by ECG",
+        "bull approaching but not touching",
+        "white outline separating bull from background"
+      ],
+      "symbolic_mapping": [
+        "ECG within heart → internal regulation",
+        "bull’s proximity without contact → suspended action or choice point"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The unresolved tension—near-contact without impact—frames a moment of decision where constraint (the heart’s bounded form) meets potential liberation (the bull’s momentum), evoking the philosophical weight of impending action.",
+      "alternative_interpretations": [
+        "The composition may simply reflect aesthetic layering of stock symbols without intended meaning."
+      ],
+      "limitations": [
+        "No directional cues (e.g., arrows, gaze lines) confirm intentionality of the bull’s trajectory toward the heart versus incidental alignment."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:57:13.751995+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c1c5472f-a8a6-9409-a399-7fab8259a6e6",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 976,
+        "total_tokens": 2509,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015644e2deba301a3b42d5",
+      "usage": {
+        "completion_tokens": 837,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2936,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3773
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

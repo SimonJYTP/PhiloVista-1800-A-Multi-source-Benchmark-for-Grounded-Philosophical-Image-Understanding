@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0012",
+  "sample_id": "PHL1800_HL_0343",
+  "file_name": "PHL1800_HL_0343.png",
+  "batch_id": "B003",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a traffic warden in orange high-visibility clothing standing beside a child at a street intersection",
+  "captions": {
+    "scene": [
+      "An urban street intersection with asphalt road surface, painted yellow crossing lines, and a metal utility pole holding a red-illuminated traffic signal.",
+      "A white building facade with exposed brick patches and a closed black roller shutter is visible in the background; a pedestrian walks past on the sidewalk.",
+      "A metal fence, a manhole cover, and a small raised curb define the foreground edge of the pavement where two figures stand."
+    ],
+    "action": [
+      "The traffic warden holds a circular 'STOP' sign with a red border and a black pictogram of a walking figure crossed out; the sign is angled downward.",
+      "The child stands facing the warden, observing, with hands behind back and wearing a black hooded jacket and dark trousers.",
+      "A pedestrian in a dark jacket and blue jeans walks away from the camera on the far sidewalk, partially obscured by shadow."
+    ],
+    "rationale": [
+      "The warden’s posture and equipment suggest active duty at a pedestrian crossing, though no vehicles are visible in motion.",
+      "The child’s orientation toward the warden implies attention or waiting, but no interaction (e.g., hand-holding or speaking) is visually confirmed.",
+      "The red traffic light indicates stop for vehicular traffic, yet no cars are present in frame—this may reflect a momentary lull or staged context."
+    ],
+    "object": [
+      "A vertical traffic signal displays only the top red lamp illuminated; the middle amber and bottom green lamps are unlit.",
+      "The traffic warden wears an orange hooded high-visibility coat with reflective silver stripes and dark trousers; their face is obscured by the hood and sunglasses.",
+      "The child has short dark hair, wears a black hooded jacket with a small red logo on the left chest, and black trousers with dark shoes.",
+      "A yellow rectangular push-button box is mounted on the pole below the traffic signal, adjacent to the warden’s arm.",
+      "The STOP sign held by the warden features bold black uppercase text 'STOP' beneath a black pictogram of a walking person with a diagonal red slash across it, all on a white background within a red circular border."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0012_P1",
+      "visual_anchors": [
+        "red traffic light",
+        "STOP sign with crossed-out pedestrian icon",
+        "warden’s obscured face"
+      ],
+      "symbolic_mapping": [
+        "the red light as enforced pause",
+        "the crossed-out figure as regulated movement"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies institutional constraint on individual mobility: the red light and prohibitory sign physically manifest societal rules that suspend autonomous action in favor of collective safety protocols.",
+      "alternative_interpretations": [
+        "It may simply document routine school crossing supervision without symbolic intent."
+      ],
+      "limitations": [
+        "No signage specifies jurisdiction or purpose; the prohibition symbol could be generic rather than legally binding."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0012_P2",
+      "visual_anchors": [
+        "child observing warden",
+        "warden’s anonymity via hood and sunglasses",
+        "shared sidewalk space"
+      ],
+      "symbolic_mapping": [
+        "the child as learner of civic norms",
+        "the warden as impersonal authority figure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene reflects how social roles are enacted through appearance and spatial positioning: the warden’s uniform erases individual identity to signify function, while the child’s attentive stance signals internalization of normative order.",
+      "alternative_interpretations": [
+        "The child may merely be waiting to cross, with no pedagogical or symbolic engagement occurring."
+      ],
+      "limitations": [
+        "Facial expressions and eye direction are not visible; intent cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0012_P3",
+      "visual_anchors": [
+        "empty road despite red light",
+        "pedestrian walking in background",
+        "static figures in foreground"
+      ],
+      "symbolic_mapping": [
+        "stillness amid potential motion",
+        "temporal suspension at a threshold"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The suspended moment—red light lit, no vehicles, figures paused—evokes the philosophical idea of decision points as existential thresholds where action is deferred, highlighting human agency within structured temporality.",
+      "alternative_interpretations": [
+        "This is a typical quiet interval between traffic cycles, not a metaphysical pause."
+      ],
+      "limitations": [
+        "No clocks, shadows, or motion blur indicate temporal significance; stillness may be coincidental."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:48:20.240835+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8f736c45-3d0a-9562-a567-a1cce8990785",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1043,
+        "total_tokens": 1852,
+        "completion_tokens_details": {
+          "text_tokens": 1043
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701475180415e7c4d98488f",
+      "usage": {
+        "completion_tokens": 905,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2020,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2925
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

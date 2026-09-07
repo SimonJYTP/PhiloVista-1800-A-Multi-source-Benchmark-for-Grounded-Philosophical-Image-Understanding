@@ -1,0 +1,155 @@
+{
+  "annotation_item_id": "F0506",
+  "sample_id": "PHL1800_HL_0577",
+  "file_name": "PHL1800_HL_0577.png",
+  "batch_id": "B012",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a tortoiseshell cat resting on a human foot wearing a decorated shoe",
+  "captions": {
+    "scene": [
+      "A floral-patterned quilt with pink and red roses and green leaves lies beneath the subjects.",
+      "A striped fabric in pink, white, and blue is partially visible under the cat's rear body.",
+      "The background includes a light-blue textured surface adjacent to the quilt."
+    ],
+    "action": [
+      "The cat’s head rests on the top of a black-and-white shoe worn on a human foot.",
+      "The cat’s right front paw is draped over the instep of the shoe, with claws retracted and fur visible.",
+      "The cat’s eyes are closed or nearly closed; its ears are upright and forward-facing."
+    ],
+    "rationale": [
+      "The cat’s posture—head lowered, paw extended, eyes closed—suggests rest rather than active engagement.",
+      "The shoe’s design features a stylized feline face, which may be coincidental given no evidence of intentional thematic coordination.",
+      "The human foot is stationary and bears weight from the cat, indicating passive tolerance of the contact."
+    ],
+    "object": [
+      "A tortoiseshell cat with mottled black, brown, and orange fur occupies the upper right portion of the frame.",
+      "A human foot wears a black patent-leather shoe with a white toe cap depicting a cartoonish cat face with black eyes, nose, and whiskers.",
+      "The quilt beneath has a white ground with repeating rose motifs in pink, red, and green, bordered by a thin blue line.",
+      "A striped textile with diagonal bands of pink, white, and blue lies beneath the cat’s hindquarters and tail region.",
+      "The cat’s right forelimb extends across the shoe’s vamp, showing dark pads and short black fur on the dorsal surface."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0506_P1",
+      "visual_anchors": [
+        "cat resting on shoe",
+        "shoe decorated with cat face",
+        "floral quilt"
+      ],
+      "symbolic_mapping": [
+        "the shoe’s cat motif mirrors the living cat, suggesting self-representation or mimicry"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The visual doubling of feline imagery—one animate, one artificial—invites reflection on how identity is constructed through appearance and repetition, where the real and the represented coexist without hierarchy.",
+      "alternative_interpretations": [
+        "The shoe design is purely decorative and unrelated to the cat’s presence; the overlap is accidental and temporally contingent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the cat’s behavior shows no awareness of the shoe’s motif."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0506_P2",
+      "visual_anchors": [
+        "closed eyes of cat",
+        "relaxed posture",
+        "contact between paw and shoe"
+      ],
+      "symbolic_mapping": [
+        "stillness and physical proximity evoke a temporary suspension of agency"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The cat’s voluntary stillness on a human-attached object illustrates a non-coercive constraint: freedom expressed through chosen dependence, where constraint becomes comfort rather than restriction.",
+      "alternative_interpretations": [
+        "The cat is simply sleeping; no philosophical stance is implied by its position."
+      ],
+      "limitations": [
+        "The cat’s internal state is not observable; ‘choice’ cannot be confirmed visually."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0506_P3",
+      "visual_anchors": [
+        "human foot",
+        "cat body",
+        "shared surface of quilt"
+      ],
+      "symbolic_mapping": [
+        "shared space without separation signifies interspecies cohabitation as normalized routine"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The unremarkable intimacy of cat and human limb on domestic textile suggests social existence as constituted through mundane, embodied proximity rather than explicit interaction or language.",
+      "alternative_interpretations": [
+        "This is a transient moment captured accidentally; no social structure is demonstrated."
+      ],
+      "limitations": [
+        "Only one moment is shown; longitudinal social patterns cannot be inferred."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:52:31.825024+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-31582487-2617-9b76-af80-8b3439fbd034",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 916,
+        "total_tokens": 1825,
+        "completion_tokens_details": {
+          "text_tokens": 916
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 402,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702520951ddaa41ab594b1e",
+      "usage": {
+        "completion_tokens": 784,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2035,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2819
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

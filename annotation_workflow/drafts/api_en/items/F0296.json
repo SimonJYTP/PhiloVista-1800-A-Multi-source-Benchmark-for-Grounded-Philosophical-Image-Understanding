@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0296",
+  "sample_id": "PHL1800_IRFL_0171",
+  "file_name": "PHL1800_IRFL_0171.jpg",
+  "batch_id": "B008",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one adult male seated outdoors",
+  "captions": {
+    "scene": [
+      "A grassy field with blurred trees in the background under diffuse daylight",
+      "An outdoor setting with soft-focus foliage and open sky visible behind the subject",
+      "A bench or low structure occupied by a person, situated in a park-like environment"
+    ],
+    "action": [
+      "The man is leaning forward with hands clasped near his face, elbows resting on his knees",
+      "His head is bowed, eyes appear closed or directed downward, posture suggests stillness",
+      "An open book rests on his lap, pages facing upward, unheld by hands"
+    ],
+    "rationale": [
+      "The hand position and head tilt are consistent with common postures of prayer or deep reflection, though not definitive",
+      "The presence of an open book suggests engagement with text, but no reading motion is visible",
+      "Clothing (collared shirt, trousers) and grooming indicate intentional presentation, yet no contextual markers confirm purpose"
+    ],
+    "object": [
+      "The man wears a dark blue short-sleeved collared shirt and brown trousers.",
+      "A silver-toned wristwatch with a light-colored face is visible on his left wrist.",
+      "An open white-paged book lies flat on his lap, spine oriented toward the viewer.",
+      "His hair is short, dark, and neatly styled; facial hair is present as a trimmed beard and mustache.",
+      "He sits on a grayish-brown bench-like surface with a textured top edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0296_P1",
+      "visual_anchors": [
+        "clasped hands",
+        "bowed head",
+        "open book"
+      ],
+      "symbolic_mapping": [
+        "clasped hands → inward focus",
+        "open book → external knowledge source"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of embodied gesture (hands, posture) and textual artifact (book) visually frames a moment where personal contemplation interfaces with codified meaning, suggesting inquiry into truth through both introspection and tradition.",
+      "alternative_interpretations": [
+        "The man may be resting after reading, shielding eyes from light, or experiencing physical discomfort—no textual or behavioral confirmation of intent exists."
+      ],
+      "limitations": [
+        "No legible text in the book or surrounding environment confirms content or purpose; facial expression is partially obscured."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0296_P2",
+      "visual_anchors": [
+        "outdoor setting",
+        "solitary figure",
+        "unoccupied background"
+      ],
+      "symbolic_mapping": [
+        "empty space behind → isolation or openness"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial separation between the subject and background elements emphasizes individual presence within a non-intrusive environment, evoking questions about autonomy versus relational embeddedness in everyday life.",
+      "alternative_interpretations": [
+        "The background blur may result from shallow depth of field rather than intentional compositional emphasis on solitude."
+      ],
+      "limitations": [
+        "Depth-of-field effects obscure background detail; no other figures or social cues are present to confirm isolation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0296_P3",
+      "visual_anchors": [
+        "wristwatch",
+        "posture",
+        "static book"
+      ],
+      "symbolic_mapping": [
+        "wristwatch → temporal awareness",
+        "stillness → suspension of action"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The visible timepiece combined with arrested motion implies a deliberate pause in temporal flow, possibly reflecting on finite duration or pivotal decision points absent explicit movement.",
+      "alternative_interpretations": [
+        "The watch may simply be worn habitually; the posture could reflect fatigue or waiting rather than philosophical reflection."
+      ],
+      "limitations": [
+        "The watch face is unreadable; no indication of elapsed or intended duration is visible."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:29:30.856729+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8c086864-f2b4-9599-8b44-4bd5e748b855",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 871,
+        "total_tokens": 1488,
+        "completion_tokens_details": {
+          "text_tokens": 871
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 110,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022908158031c491cc4760",
+      "usage": {
+        "completion_tokens": 731,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1598,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2329
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

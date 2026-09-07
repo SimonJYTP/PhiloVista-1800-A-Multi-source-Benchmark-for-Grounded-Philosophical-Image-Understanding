@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0694",
+  "sample_id": "PHL1800_HL_0300",
+  "file_name": "PHL1800_HL_0300.png",
+  "batch_id": "B016",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men in chef attire inside a kitchen setting",
+  "captions": {
+    "scene": [
+      "A brightly lit indoor kitchen with stainless steel appliances, wooden cabinetry, and overhead hanging cookware.",
+      "A counter with a visible KitchenAid logo plaque, a wine cooler to the left, and a dishwasher to the right.",
+      "Open shelving units containing small appliances including a toaster, coffee maker, and food processor."
+    ],
+    "action": [
+      "The foreground man stands upright, smiling, holding a small dark object in his right hand and a white cloth in his left hand.",
+      "The background man stands behind the counter, facing forward, with hands resting on the counter surface near a metal bowl.",
+      "Both men wear white chef coats and aprons; the foreground man’s apron is tied at the waist."
+    ],
+    "rationale": [
+      "The foreground man’s open mouth and upward gaze suggest he is speaking or reacting to something off-camera, though no sound or speech content is visible.",
+      "The presence of multiple cooking tools and appliances indicates a functional kitchen environment, but whether it is commercial or demonstration-style cannot be confirmed solely from visual evidence.",
+      "The KitchenAid branding suggests product placement or sponsorship, but no explicit endorsement or event context is visually verifiable."
+    ],
+    "object": [
+      "A stainless steel wine cooler with glass door and visible bottles inside, located on the left side of the counter.",
+      "A black oval plaque with white text reading 'KitchenAid' and below it 'FOR THE WAY IT'S', mounted on the front of the counter.",
+      "A hanging rack above the counter holds various cookware items including pots, pans, ladles, and measuring cups.",
+      "A silver food processor with transparent bowl and lid sits on a shelf to the right of the foreground man.",
+      "A microwave oven built into cabinetry behind the background man, with a digital display and control panel visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0694_P1",
+      "visual_anchors": [
+        "white chef coat",
+        "tied apron",
+        "stainless steel appliances"
+      ],
+      "symbolic_mapping": [
+        "uniform signifies role expectation",
+        "apron denotes labor boundary"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The standardized attire and integrated appliances reflect how professional identity is materially constructed through tools and dress, mediating the relationship between human skill and machine assistance.",
+      "alternative_interpretations": [
+        "This is simply standard chef clothing and kitchen equipment with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual explanation or contextual signage confirms intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0694_P2",
+      "visual_anchors": [
+        "foreground man holding cloth and object",
+        "background man stationary",
+        "open counter layout"
+      ],
+      "symbolic_mapping": [
+        "cloth as instrument of care or correction",
+        "spatial hierarchy implies audience-performer dynamic"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The spatial arrangement and gestures suggest a performative moment where one individual enacts a role before another, highlighting how social recognition emerges through observable action rather than internal state.",
+      "alternative_interpretations": [
+        "They are simply co-workers preparing for service; no performance is occurring."
+      ],
+      "limitations": [
+        "Facial expressions and body language are ambiguous without audio or context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0694_P3",
+      "visual_anchors": [
+        "hanging cookware",
+        "visible brand plaque",
+        "multiple identical small appliances"
+      ],
+      "symbolic_mapping": [
+        "organized tools imply systematized practice",
+        "branding anchors value to manufactured objects"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The curated visibility of tools and branding constructs a narrative of expertise grounded in reproducible technique and corporate-backed reliability, subtly privileging institutional knowledge over individual improvisation.",
+      "alternative_interpretations": [
+        "The setup is purely functional; organization reflects efficiency, not ideology."
+      ],
+      "limitations": [
+        "No labels indicate intended meaning; arrangement could be logistical rather than rhetorical."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:08:42.195735+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-40d09137-3711-90a8-a444-b814d3dbbc1b",
+      "usage": {
+        "prompt_tokens": 870,
+        "completion_tokens": 921,
+        "total_tokens": 1791,
+        "completion_tokens_details": {
+          "text_tokens": 921
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 363,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703081908856f8911c741ee",
+      "usage": {
+        "completion_tokens": 782,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1994,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2776
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

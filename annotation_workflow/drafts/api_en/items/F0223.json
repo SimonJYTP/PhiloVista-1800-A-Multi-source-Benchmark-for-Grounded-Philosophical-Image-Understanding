@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0223",
+  "sample_id": "PHL1800_HAIV_0122",
+  "file_name": "PHL1800_HAIV_0122.png",
+  "batch_id": "B007",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two adults in a bed",
+  "captions": {
+    "scene": [
+      "A bedroom with a wooden bed frame, green headboard panels, two nightstands with yellow-lampshades, and wall-mounted framed pictures.",
+      "The bed has a turquoise blanket covering the lower bodies of two seated adults; orange spherical objects and orange segmented items lie on the blanket.",
+      "One adult wears a light blue shirt and has exaggerated facial features including large eyes and open mouth; the other wears a magenta top, glasses, and has red hair."
+    ],
+    "action": [
+      "The left adult sits upright with mouth open wide, eyes wide, and one hand near chest; legs are extended under blanket with visible bare feet.",
+      "The right adult sits upright, facing left adult, holding a small white object near the left adult’s foot; both hands are engaged with that object.",
+      "Multiple orange spherical and segmented objects rest on the blanket between the adults’ torsos and legs."
+    ],
+    "rationale": [
+      "The left adult’s open mouth and wide eyes suggest vocalization or alarm, but no sound is audible; expression is stylized, not photographic.",
+      "The right adult’s focused gaze and hand position indicate active manipulation of the white object near the left adult’s foot, though purpose is visually ambiguous.",
+      "Orange objects appear deliberately placed on the blanket; their arrangement suggests intentional composition rather than accidental spillage, but function is not evident."
+    ],
+    "object": [
+      "A wooden bed frame with rounded posts at footboard and headboard, painted brown with orange trim along the footboard top edge.",
+      "Two identical yellow conical lampshades sit atop wooden nightstands flanking the bed; each lamp has a circular base and thin stem.",
+      "Three framed pictures hang on the wall: one larger square frame with indistinct blue interior content, and two smaller rectangular frames with green borders containing unreadable images.",
+      "A turquoise blanket covers the lower bodies of both adults; it shows creases and folds consistent with being draped over legs.",
+      "Five orange spherical objects and six orange segmented (cylindrical or pod-like) objects lie scattered on the blanket between the adults’ torsos and feet."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0223_P1",
+      "visual_anchors": [
+        "open mouth of left adult",
+        "glasses on right adult",
+        "bare feet visible under blanket"
+      ],
+      "symbolic_mapping": [
+        "open mouth → expression of vulnerability",
+        "glasses → mediation of perception"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The contrast between the unmediated, exaggerated expression of the left figure and the spectacled, composed posture of the right figure evokes tension between raw self-presentation and curated perception within intimate space.",
+      "alternative_interpretations": [
+        "The scene may depict a medical or therapeutic interaction, such as foot care or reflexology, with stylized exaggeration for comic effect."
+      ],
+      "limitations": [
+        "No textual labels confirm intent; facial expressions are cartoonish and non-representational, limiting reliable inference about internal states."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0223_P2",
+      "visual_anchors": [
+        "orange spherical objects",
+        "orange segmented objects",
+        "arrangement on blanket"
+      ],
+      "symbolic_mapping": [
+        "repetitive orange forms → ritual or routine",
+        "placement between bodies → shared domain"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The orderly placement of uniform orange objects across the shared blanket surface suggests a domestic ritual or labor practice that structures cohabitation, implying social existence mediated through repeated material acts.",
+      "alternative_interpretations": [
+        "The objects may be toys, snacks, or decorative items incidental to the scene, with no symbolic intent."
+      ],
+      "limitations": [
+        "Object identities are indeterminate; no context confirms functional or symbolic role."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0223_P3",
+      "visual_anchors": [
+        "bare feet of both adults",
+        "shared blanket",
+        "proximity without physical contact"
+      ],
+      "symbolic_mapping": [
+        "bare feet → exposure and grounding",
+        "shared blanket → conditional intimacy"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The simultaneous exposure of feet under a shared covering—while maintaining bodily separation—illustrates a negotiated boundary where freedom of presence coexists with constraint of mutual responsibility in close quarters.",
+      "alternative_interpretations": [
+        "The positioning reflects typical sleeping or resting posture in a cartoon, with no philosophical implication intended."
+      ],
+      "limitations": [
+        "Cartoon conventions distort realism; proximity does not prove relational dynamics."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:19:57.631761+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-63360622-574d-9b4f-9e41-e06ac6aea6df",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1034,
+        "total_tokens": 2567,
+        "completion_tokens_details": {
+          "text_tokens": 1034
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907021944c19c006e588d4b14",
+      "usage": {
+        "completion_tokens": 895,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2992,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3887
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

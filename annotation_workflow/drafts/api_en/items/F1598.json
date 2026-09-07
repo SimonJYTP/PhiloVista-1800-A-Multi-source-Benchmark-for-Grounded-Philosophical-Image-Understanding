@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1598",
+  "sample_id": "PHL1800_HL_0110",
+  "file_name": "PHL1800_HL_0110.png",
+  "batch_id": "B033",
+  "position_in_batch": 8,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a brown cow and a reclining person on a concrete barrier",
+  "captions": {
+    "scene": [
+      "A paved roadside with a low concrete barrier separating it from a green, leafy treeline.",
+      "A weathered white concrete railing runs horizontally across the midground, partially shaded by overhanging tree branches.",
+      "A multi-story building with yellow and white facades is visible through foliage in the background."
+    ],
+    "action": [
+      "A brown cow stands on a raised sidewalk, lowering its head toward the ground as if grazing or sniffing.",
+      "A person lies supine atop the concrete barrier, arms extended outward, legs bent at the knees, eyes closed or face turned away.",
+      "Tree branches with dense green leaves extend over the barrier and cow, casting partial shade."
+    ],
+    "rationale": [
+      "The cow’s posture—head down, mouth near surface—suggests foraging behavior, though no food is visibly present.",
+      "The person’s relaxed limb positioning and horizontal orientation indicate rest or sleep, but facial expression is not discernible.",
+      "The barrier appears functional (e.g., traffic separation), yet used unconventionally as a resting surface; no signage or markings confirm intended use."
+    ],
+    "object": [
+      "A single brown cow with short hair, visible ears, horns, and four legs stands on a concrete sidewalk adjacent to an asphalt road.",
+      "A single person with dark skin, wearing no visible upper clothing, lies fully extended on top of a white concrete barrier.",
+      "The concrete barrier is segmented, shows discoloration and minor cracks, and has vertical recesses forming a repeating pattern.",
+      "Overhanging branches with compound green leaves partially obscure the upper portion of the scene and cast shadows on the barrier and cow.",
+      "A pair of blue flip-flops lies on the sidewalk near the barrier, oriented parallel to the curb."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1598_P1",
+      "visual_anchors": [
+        "cow grazing near human rest",
+        "concrete barrier used as bed",
+        "shared public space"
+      ],
+      "symbolic_mapping": [
+        "the barrier as a liminal threshold between utility and repurposing",
+        "coexistence without interaction as neutrality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image presents a quiet cohabitation where human and animal occupy the same infrastructural plane without hierarchy or conflict, suggesting a form of non-instrumental social existence grounded in shared spatial tolerance.",
+      "alternative_interpretations": [
+        "This may simply depict routine urban informality—people resting where convenient, animals foraging freely—without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or contextual signs confirm intentionality or awareness of proximity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1598_P2",
+      "visual_anchors": [
+        "person lying still",
+        "cow actively lowering head",
+        "static vs. dynamic posture"
+      ],
+      "symbolic_mapping": [
+        "stillness as temporal suspension",
+        "movement as continuity amid stasis"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of motion (cow) and stillness (person) evokes a meditation on time: one subject engages in biological necessity while the other appears suspended, highlighting how lived time diverges from clock time.",
+      "alternative_interpretations": [
+        "The person may be momentarily resting while the cow happens to be feeding; no evidence confirms deliberate contrast."
+      ],
+      "limitations": [
+        "The person’s state (sleep, exhaustion, illness) is indeterminate; motion is minimal and brief."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1598_P3",
+      "visual_anchors": [
+        "bare torso of person",
+        "unadorned cow",
+        "weathered barrier"
+      ],
+      "symbolic_mapping": [
+        "exposure as vulnerability",
+        "infrastructure as indifferent witness"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "identity_appearance"
+      ],
+      "interpretation": "The visible bareness of both human and animal against a decaying civic structure raises questions about societal responsibility toward those who inhabit public margins, where identity is reduced to physical presence without adornment or protection.",
+      "alternative_interpretations": [
+        "The scene reflects ordinary conditions in certain climates or cultures where bare torsos and free-roaming livestock are normative, not exceptional."
+      ],
+      "limitations": [
+        "Clothing norms and local customs are not visually verifiable; no indicators of distress or neglect are present."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:50:05.123658+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-410dc943-e663-99c4-a0fd-cde661e226c9",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 994,
+        "total_tokens": 1763,
+        "completion_tokens_details": {
+          "text_tokens": 994
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907044935dc950c1cc4054930",
+      "usage": {
+        "completion_tokens": 856,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1925,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2781
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

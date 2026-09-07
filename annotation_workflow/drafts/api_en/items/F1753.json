@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1753",
+  "sample_id": "PHL1800_HL_0376",
+  "file_name": "PHL1800_HL_0376.png",
+  "batch_id": "B036",
+  "position_in_batch": 6,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red motorcycle parked in the foreground of a large outdoor motorcycle gathering",
+  "captions": {
+    "scene": [
+      "A wide, unpaved lot under an overcast sky with dozens of motorcycles arranged in rows and clusters.",
+      "Industrial-style buildings with green-roofed sections and white trailers are visible in the background.",
+      "Two people stand near the left side of the frame, observing or conversing beside parked motorcycles."
+    ],
+    "action": [
+      "The red motorcycle is stationary on its kickstand with no rider present.",
+      "Multiple motorcycles are parked in organized groupings; some have riders seated or standing nearby.",
+      "A person wearing a red helmet stands beside another individual near the left edge, both facing toward the center of the lot."
+    ],
+    "rationale": [
+      "The presence of many motorcycles and grouped people suggests a planned gathering rather than random parking.",
+      "The uniform orientation of many bikes and spacing implies intentional arrangement, though no signage confirms purpose.",
+      "The lack of motion blur or dynamic posture across most figures indicates a static scene captured during low activity."
+    ],
+    "object": [
+      "A red Triumph Bonneville-style motorcycle with chrome exhaust, black seat, and visible engine details sits in the foreground on dirt ground.",
+      "At least 28 distinct motorcycles are visible across the image, varying in color (black, silver, red, green) and style (cruiser, sport, touring).",
+      "Two individuals stand on the left: one wears a red helmet and brown jacket, the other wears dark clothing and a cap; both face inward toward the lot.",
+      "A white box trailer is parked near a beige building with green awnings; a small flagpole with a red-and-white flag is mounted near it.",
+      "The ground is dry, light-brown dirt with scattered tire tracks and no vegetation."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1753_P1",
+      "visual_anchors": [
+        "red motorcycle in sharp focus",
+        "rows of identical or similar bikes in background",
+        "dirt ground with tire marks"
+      ],
+      "symbolic_mapping": [
+        "the singular red bike as individuation amid repetition",
+        "tire marks as traces of prior movement and choice"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The foregrounded red motorcycle, distinct in color and position, visually asserts individuality against a backdrop of standardized machines, suggesting how personal identity may emerge through aesthetic differentiation within collective practice.",
+      "alternative_interpretations": [
+        "The red bike may simply be the photographer’s vehicle or the nearest object, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels confirm model names, owner intentions, or event purpose; color contrast alone does not prove symbolic meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1753_P2",
+      "visual_anchors": [
+        "two people standing together without helmets on",
+        "multiple bikes with riders seated or leaning",
+        "overcast sky with diffuse lighting"
+      ],
+      "symbolic_mapping": [
+        "shared stillness as communal presence",
+        "absence of motion as suspended time"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "time_mortality"
+      ],
+      "interpretation": "The clustered yet non-interacting figures and parked machines evoke a shared social existence defined by proximity and common interest rather than active engagement, while the flat lighting and static postures subtly reference the suspension of temporal flow typical of gatherings awaiting initiation.",
+      "alternative_interpretations": [
+        "People are merely waiting for an event to start; their stillness reflects practical pause, not philosophical reflection."
+      ],
+      "limitations": [
+        "Facial expressions and gestures are indistinct; no clocks or temporal markers exist to support time-related claims."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1753_P3",
+      "visual_anchors": [
+        "industrial building with green roof",
+        "white trailer",
+        "dirt lot with no pavement"
+      ],
+      "symbolic_mapping": [
+        "unpaved ground as resistance to formalization",
+        "modular structures as temporary order"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of manufactured machines with an unrefined dirt surface suggests a tension between technological control and embodied freedom—riders gather where infrastructure ends, asserting autonomy through location choice and informal assembly.",
+      "alternative_interpretations": [
+        "The site is simply the only available large open space near facilities; terrain reflects cost or availability, not ideology."
+      ],
+      "limitations": [
+        "No signage, banners, or modifications indicate deliberate rejection of pavement or institutional norms."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:08:38.103254+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-794eebf9-45c4-9966-ab54-430239982e03",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1005,
+        "total_tokens": 1774,
+        "completion_tokens_details": {
+          "text_tokens": 1005
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050805b8ce6a6ea849431e",
+      "usage": {
+        "completion_tokens": 864,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1933,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2797
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

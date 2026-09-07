@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0357",
+  "sample_id": "PHL1800_IRFL_0046",
+  "file_name": "PHL1800_IRFL_0046.jpg",
+  "batch_id": "B009",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a sequence of eight stylized human figures arranged horizontally, depicting life stages from infancy to old age",
+  "captions": {
+    "scene": [
+      "A light blue background with a horizontal ground line; eight figures and one tombstone are aligned left to right.",
+      "Figures increase in apparent age from left to right: infant, toddler, graduate, professional woman, bride and groom, mother holding baby, elderly woman, tombstone.",
+      "Each figure or pair occupies its own vertical zone; no overlapping bodies except the bride and groom standing side by side."
+    ],
+    "action": [
+      "The infant sits on the ground holding a pacifier; the toddler walks while holding a book.",
+      "The graduate leaps mid-air, holding a diploma scroll and a black graduation cap aloft.",
+      "The elderly woman stands upright, smiling, holding a cane in her right hand and gesturing with her left toward the tombstone."
+    ],
+    "rationale": [
+      "The left-to-right ordering and progressive aging suggest a chronological life-course narrative, though no explicit timeline markers are present.",
+      "The presence of a tombstone immediately after the elderly figure implies a terminal stage, but no burial or death event is depicted.",
+      "The bride and groom hold hands and face forward, indicating a shared status, yet no ceremony or officiant is visible."
+    ],
+    "object": [
+      "A bald infant wearing a pink onesie sits on the ground, holding a white pacifier in its mouth and a small blue object in its left hand.",
+      "A girl with brown pigtails wears a red dress and carries a blue book while walking forward with her right foot raised.",
+      "A woman with brown hair in a bun wears a black graduation gown over a red shirt, holds a rolled diploma in her right hand and a black mortarboard in her left, and is airborne with both legs bent.",
+      "A woman with shoulder-length brown hair wears a dark blue sleeveless dress, holds a brown briefcase in her left hand, and stands with arms at her sides.",
+      "A bride in a white gown with veil and tiara holds a bouquet of pink and green flowers; a groom in a white shirt, red tie, and dark trousers stands beside her, their hands clasped."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0357_P1",
+      "visual_anchors": [
+        "infant with pacifier",
+        "toddler holding book",
+        "graduate leaping"
+      ],
+      "symbolic_mapping": [
+        "book → acquisition of knowledge",
+        "leap → achievement milestone"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The early life stages emphasize learning and agency through objects (book, diploma) and dynamic posture (leap), suggesting knowledge as an active, embodied pursuit shaped by personal choices.",
+      "alternative_interpretations": [
+        "The figures may simply represent common societal milestones without philosophical intent; the book could be decorative, not symbolic."
+      ],
+      "limitations": [
+        "No text labels confirm the meaning of the book or diploma; the toddler’s expression is neutral and does not indicate engagement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0357_P2",
+      "visual_anchors": [
+        "elderly woman with cane",
+        "tombstone with unreadable inscription",
+        "her gesture toward the tombstone"
+      ],
+      "symbolic_mapping": [
+        "cane → physical decline",
+        "tombstone → mortality marker"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of the living elder and the tombstone visualizes the proximity of death in later life, framing mortality as a socially acknowledged endpoint rather than a private event.",
+      "alternative_interpretations": [
+        "The tombstone may be generic scenery; the woman’s gesture could be greeting or pointing unrelated to death."
+      ],
+      "limitations": [
+        "The tombstone inscription is illegible; the woman’s facial expression is uniformly smiling, lacking somber affect."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0357_P3",
+      "visual_anchors": [
+        "bride and groom holding hands",
+        "mother holding infant",
+        "professional woman with briefcase"
+      ],
+      "symbolic_mapping": [
+        "hand-holding → social bond",
+        "briefcase → labor role"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "Interpersonal roles (spouse, parent, worker) are presented as discrete, sequential stations, implying that ethical responsibility emerges through socially defined positions rather than internal conviction.",
+      "alternative_interpretations": [
+        "These are merely occupational and familial categories without normative implication; the figures lack interaction beyond proximity."
+      ],
+      "limitations": [
+        "No visual cues indicate obligation, care, or moral deliberation; all figures smile uniformly regardless of role."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:38:20.493777+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-65eb982e-2bb3-9256-be74-08c2c000ca41",
+      "usage": {
+        "prompt_tokens": 1308,
+        "completion_tokens": 1046,
+        "total_tokens": 2354,
+        "completion_tokens_details": {
+          "text_tokens": 1046
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 801,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070238083d316741390743c1",
+      "usage": {
+        "completion_tokens": 908,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2716,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3624
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

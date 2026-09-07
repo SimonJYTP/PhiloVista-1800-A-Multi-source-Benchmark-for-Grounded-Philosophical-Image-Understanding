@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0279",
+  "sample_id": "PHL1800_HAIV_0166",
+  "file_name": "PHL1800_HAIV_0166.png",
+  "batch_id": "B008",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person viewed from behind and right side",
+  "captions": {
+    "scene": [
+      "Vertical stripes of orange, green, and white cover the wall background.",
+      "A black-and-white checkerboard pattern covers the floor surface.",
+      "A wire birdcage hangs on the left wall; a wooden two-tiered stand with objects sits on the right."
+    ],
+    "action": [
+      "The person stands with torso turned slightly right, head oriented toward the right side of the frame.",
+      "The person’s right hand holds a small transparent object near hip level.",
+      "The person wears a sleeveless dress with orange-and-black tiger stripes and an open back."
+    ],
+    "rationale": [
+      "The striped dress pattern matches the wall’s orange and green stripes in hue but not orientation, suggesting deliberate visual contrast or harmony.",
+      "The birdcage is empty and suspended by a hook; no bird or perch is visible inside.",
+      "The object on the upper shelf of the stand appears woven and rectangular, but its material and function are indeterminate from visual evidence alone."
+    ],
+    "object": [
+      "A cylindrical wire birdcage with horizontal reinforcing bands hangs from a hook on the left wall.",
+      "The person has shoulder-length brown hair and fair skin, visible on neck, shoulders, and arms.",
+      "The dress features bold black diagonal stripes over orange fabric, with a V-shaped open back and loose fit.",
+      "A two-tiered dark wooden stand stands to the right; its top shelf holds a light-colored woven rectangular object, and its lower shelf holds a dark curved object resembling a tail or handle.",
+      "The floor consists of uniformly sized alternating black and white squares forming a checkerboard pattern extending across the visible area."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0279_P1",
+      "visual_anchors": [
+        "empty birdcage",
+        "tiger-striped dress",
+        "checkerboard floor"
+      ],
+      "symbolic_mapping": [
+        "birdcage → constraint",
+        "tiger stripes → wildness or mimicry"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of an empty cage and a garment mimicking a caged predator suggests tension between imposed containment and performed wild identity.",
+      "alternative_interpretations": [
+        "The scene may simply depict decorative choices in interior design and fashion without symbolic intent."
+      ],
+      "limitations": [
+        "No text or contextual markers confirm intentional symbolism; patterns could be coincidental or aesthetic only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0279_P2",
+      "visual_anchors": [
+        "vertical striped wall",
+        "checkerboard floor",
+        "person facing away"
+      ],
+      "symbolic_mapping": [
+        "striped wall → structured environment",
+        "checkerboard → binary order"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The rigid geometric patterns framing a figure turned away imply navigation within socially constructed binaries, where movement is constrained yet directional.",
+      "alternative_interpretations": [
+        "The patterns may serve purely compositional functions—creating rhythm and contrast in a stylized illustration."
+      ],
+      "limitations": [
+        "Direction of gaze and posture do not confirm intentionality of ‘journey’; the figure’s orientation could be momentary or arbitrary."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0279_P3",
+      "visual_anchors": [
+        "open-back dress",
+        "visible skin on back and shoulders",
+        "hand holding transparent object"
+      ],
+      "symbolic_mapping": [
+        "exposed back → vulnerability",
+        "transparent object → fragility or clarity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The partial exposure of skin alongside a held transparent item evokes themes of self-presentation and accountability in contexts where appearance mediates perception.",
+      "alternative_interpretations": [
+        "The dress cut and object held may reflect practical comfort or stylistic preference rather than ethical positioning."
+      ],
+      "limitations": [
+        "The object’s identity (e.g., glass, plastic, crystal) is visually ambiguous; its significance cannot be determined from shape alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:28:03.696786+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8fd955f2-f3ac-99a9-aebb-9b26e7881e9c",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 906,
+        "total_tokens": 2439,
+        "completion_tokens_details": {
+          "text_tokens": 906
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702275095f3a947c72443e3",
+      "usage": {
+        "completion_tokens": 766,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2865,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3631
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

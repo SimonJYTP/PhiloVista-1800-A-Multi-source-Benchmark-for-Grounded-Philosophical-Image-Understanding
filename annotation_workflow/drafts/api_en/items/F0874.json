@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0874",
+  "sample_id": "PHL1800_HL_0568",
+  "file_name": "PHL1800_HL_0568.png",
+  "batch_id": "B019",
+  "position_in_batch": 30,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person's hands cutting a sandwich topped with fried potato sticks",
+  "captions": {
+    "scene": [
+      "A red plastic basket lined with white paper holds a large sandwich on a checkered tablecloth.",
+      "A glass of amber liquid sits to the left; another person’s torso and hand are partially visible in the background.",
+      "The setting appears to be an indoor dining area with ambient lighting and casual tableware."
+    ],
+    "action": [
+      "The right hand holds a knife vertically, pressing into the sandwich’s center.",
+      "The left hand stabilizes the sandwich, fingers spread across its top surface.",
+      "Fried potato sticks are scattered densely over the sandwich’s exposed cut surface."
+    ],
+    "rationale": [
+      "The knife is positioned mid-cut, suggesting active slicing rather than preparation or serving only.",
+      "The presence of two distinct people (one cutting, one in background) implies a shared meal context.",
+      "The sandwich remains intact beneath the knife, indicating the cut is incomplete or just begun."
+    ],
+    "object": [
+      "A red perforated plastic food basket contains a long sandwich resting on crumpled white parchment paper.",
+      "The sandwich consists of a split bread roll filled with layers of meat and cheese, topped with golden-brown fried potato sticks.",
+      "A stainless steel knife with a black handle is inserted vertically into the sandwich’s midpoint.",
+      "The person cutting wears a gold ring on the left ring finger and a purple short-sleeved shirt.",
+      "A clear glass containing a carbonated amber beverage with ice sits on the left edge of the frame."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0874_P1",
+      "visual_anchors": [
+        "knife inserted mid-cut",
+        "two hands coordinating action",
+        "sandwich as shared food item"
+      ],
+      "symbolic_mapping": [
+        "the knife as instrument of division",
+        "hands as agents of intention"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The act of cutting a shared meal embodies the tension between individual agency and communal participation—division enables portioning, yet presupposes a prior unity to be divided.",
+      "alternative_interpretations": [
+        "This is simply a practical step in serving food, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues confirm intentional symbolism; the gesture may be purely functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0874_P2",
+      "visual_anchors": [
+        "fried potato sticks scattered unevenly",
+        "crumpled parchment paper",
+        "red basket with perforations"
+      ],
+      "symbolic_mapping": [
+        "imperfect topping distribution as metaphor for contingency",
+        "disposable paper as transient support"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The ephemeral arrangement of toppings and disposable lining evokes impermanence: sustenance is prepared and consumed within constraints of material fragility and temporal limits.",
+      "alternative_interpretations": [
+        "The messiness reflects casual dining norms, not philosophical reflection."
+      ],
+      "limitations": [
+        "The paper and basket are standard food-service items; their use does not inherently signify transience without contextual reinforcement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0874_P3",
+      "visual_anchors": [
+        "gold ring on left hand",
+        "purple shirt sleeve",
+        "background figure partially obscured"
+      ],
+      "symbolic_mapping": [
+        "ring as marker of social status or commitment",
+        "partial visibility of others as relational context"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Visible markers like jewelry and clothing situate the actor within a web of social roles, where identity is partially disclosed through adornment while remaining embedded in collective presence.",
+      "alternative_interpretations": [
+        "The ring and shirt are incidental attire with no intended semiotic function."
+      ],
+      "limitations": [
+        "Only partial views of persons are available; full identity or role cannot be determined from visual evidence alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:23:45.495121+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0d9daa69-18ee-9129-92ce-f72be4fdca5a",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 879,
+        "total_tokens": 1648,
+        "completion_tokens_details": {
+          "text_tokens": 879
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032330eebbbf5667604548",
+      "usage": {
+        "completion_tokens": 741,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1814,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2555
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}
