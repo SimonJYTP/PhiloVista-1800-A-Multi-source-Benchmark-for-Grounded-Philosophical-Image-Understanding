@@ -191,6 +191,8 @@ def main() -> None:
         track_counts[manifest["track"]] += 1
 
         expected_path = V3_ROOT / Path(blind["selected_path"])
+        if not expected_path.is_file():
+            expected_path = V3_ROOT / "images" / expected_path.name
         expected_values = {
             "annotation_item_id": item_id,
             "sample_id": blind["sample_id"],

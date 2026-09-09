@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1664",
+  "sample_id": "PHL1800_HL_0351",
+  "file_name": "PHL1800_HL_0351.png",
+  "batch_id": "B034",
+  "position_in_batch": 21,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "side-view mirror reflecting traffic scene",
+  "captions": {
+    "scene": [
+      "A congested urban road with multiple vehicles including a white van, a blue car, and a dark green/gray bus visible in the mirror reflection and periphery.",
+      "Overcast sky above a line of trees and distant buildings, viewed through the side mirror and windshield.",
+      "Road surface appears damp; lane markings are partially visible beneath vehicles."
+    ],
+    "action": [
+      "Two people are seated inside the white van, visible through the driver’s window, facing forward.",
+      "Vehicles are stationary or moving slowly in a queue, indicated by close spacing and lack of motion blur.",
+      "The side-view mirror captures a rearward perspective while the main view shows forward-facing vehicle interiors and adjacent cars."
+    ],
+    "rationale": [
+      "The white van’s driver and passenger posture suggest active driving or waiting in traffic, though no motion is confirmed.",
+      "Vehicle proximity and alignment imply traffic congestion rather than free-flowing movement.",
+      "Reflection geometry confirms the mirror is mounted on the left side of a vehicle, given the orientation of reflected objects."
+    ],
+    "object": [
+      "A black side-view mirror housing with a convex reflective surface showing a white van, a maroon SUV, and part of a yellow vehicle behind it.",
+      "A dark green/gray double-decker bus with license plate 'N562 RUJ' visible in the upper-left background outside the mirror.",
+      "A white commercial van with partial text on its side including 'www.' and a phone number ending in '01', and a green circular sticker on the driver’s window.",
+      "A blue car occupying the right foreground, with its driver-side door and window frame visible beside the mirror.",
+      "A spare tire mounted on the rear of the dark green/gray bus, bearing the word 'PUR' in white capital letters on a black background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1664_P1",
+      "visual_anchors": [
+        "side-view mirror reflection",
+        "two people visible in van",
+        "multiple vehicles in tight formation"
+      ],
+      "symbolic_mapping": [
+        "mirror as mediated perception",
+        "queue as enforced collectivity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The mirror frames reality indirectly, suggesting knowledge is always filtered through apparatuses; the shared immobility of vehicles evokes social existence as contingent on mutual constraint.",
+      "alternative_interpretations": [
+        "This is simply a traffic jam captured from a driver’s perspective, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; reflection may be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1664_P2",
+      "visual_anchors": [
+        "spare tire with partial text 'PUR'",
+        "unreadable van branding",
+        "blurred background signage"
+      ],
+      "symbolic_mapping": [
+        "fragmented text as incomplete meaning",
+        "obscured signage as epistemic limits"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "Partial legibility of text across surfaces implies that identity and truth are often presented incompletely, requiring interpretation beyond immediate appearance.",
+      "alternative_interpretations": [
+        "Text is merely obscured by angle, distance, or resolution—not deliberately fragmented."
+      ],
+      "limitations": [
+        "No evidence of deliberate textual fragmentation; occlusion is physical, not semantic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1664_P3",
+      "visual_anchors": [
+        "two people in van",
+        "stationary vehicles",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "waiting as suspended agency",
+        "cloud cover as indeterminacy"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "time_mortality"
+      ],
+      "interpretation": "The driver and passenger poised but immobile embody freedom constrained by systemic conditions, while the unchanging sky hints at time’s passage without progress—mortality as endurance within stasis.",
+      "alternative_interpretations": [
+        "The people are simply stopped in traffic; the sky is neutral weather, not symbolic."
+      ],
+      "limitations": [
+        "No facial expression or temporal markers confirm psychological states or existential reflection."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people in the white van (described as one driver but two are visible in the mirror reflection); inaccurate color of the bus (green instead of dark green/gray); missing text details on the white van (partial branding and sticker); unsupported claim about the driver’s hands (no clear visual evidence of hands near the steering wheel); overinterpretation of the spare tire text (only 'PUR' is visible, not full context)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:59:06.940043+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cb152ef6-3710-9b89-85c0-51f2ee693e2a",
+      "usage": {
+        "prompt_tokens": 701,
+        "completion_tokens": 910,
+        "total_tokens": 1611,
+        "completion_tokens_details": {
+          "text_tokens": 910
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 194,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907045848a4ab542414104f78",
+      "usage": {
+        "completion_tokens": 874,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1728,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2602
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

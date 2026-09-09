@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1341",
+  "sample_id": "PHL1800_HL_0197",
+  "file_name": "PHL1800_HL_0197.png",
+  "batch_id": "B028",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a brightly painted public transit bus parked at a curb with passengers boarding",
+  "captions": {
+    "scene": [
+      "A multi-colored, graffiti-style decorated bus is stopped alongside a brick building with large windows and a tree in the foreground.",
+      "The bus displays vibrant cartoonish figures and scenes across its side panels, including stylized humans, animals, musical instruments, and urban motifs.",
+      "Two people are visible near the open front door of the bus: one person inside the doorway wearing a blue shirt, and two others standing on the sidewalk beside the bus."
+    ],
+    "action": [
+      "A person in a blue shirt is partially inside the bus doorway, appearing to enter or assist entry.",
+      "Two individuals stand on the sidewalk adjacent to the front wheel, facing the bus; one wears white sneakers and dark shorts, the other light-colored pants and dark shoes.",
+      "The bus is stationary with its front door open, wheels on pavement, and no motion blur indicating movement."
+    ],
+    "rationale": [
+      "The bus’s open door and proximity of people suggest active boarding rather than waiting or departure, though no foot is visibly crossing the threshold.",
+      "The artwork covers nearly the entire visible side of the bus, implying intentional aesthetic modification rather than incidental wear or partial decoration.",
+      "The sign above the bus reads 'CARTA ELECTRIC SHUTTLE' but the full text is partially occluded; the word 'SHUTTLE' is legible, supporting identification as a shuttle service."
+    ],
+    "object": [
+      "The bus has a white roof and upper body, with a lower body covered in continuous, high-contrast mural art using lime green, magenta, cyan, orange, black, and white.",
+      "Visible windows along the bus side show interior reflections and silhouettes but no clear interior details; one window contains a yellow guitar illustration.",
+      "A small white rectangular sign mounted above the windshield reads 'CARTA ELECTRIC SHUTTLE' in black uppercase letters, with smaller illegible text below.",
+      "A young tree with smooth gray bark and green leaves stands between the viewer and the rear half of the bus, partially obscuring the back windows and rear wheel.",
+      "Two distinct human figures are present on the sidewalk near the front entrance: one wearing dark shorts and white sneakers, and one wearing light-colored pants and dark shoes; a third figure is partially visible inside the doorway (blue shirt, dark hair)."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1341_P1",
+      "visual_anchors": [
+        "multicolored human-like figures in dynamic poses",
+        "a dog with black spots next to a figure holding a basket",
+        "a guitar held by a yellow figure"
+      ],
+      "symbolic_mapping": [
+        "stylized human forms suggest collective presence without individual identity",
+        "the spotted dog may represent companionship or non-human agency within social space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The mural’s flattened, interchangeable figures evoke a conception of social existence where individual identity dissolves into shared symbolic action—people are defined not by uniqueness but by participation in communal motifs like music, labor, and care.",
+      "alternative_interpretations": [
+        "The artwork may simply reflect local artistic style or youth-oriented branding for a transit initiative, with no philosophical intent."
+      ],
+      "limitations": [
+        "No textual explanation accompanies the mural; all symbolic readings depend on external cultural associations not confirmed by the image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1341_P2",
+      "visual_anchors": [
+        "open bus door with person mid-entry",
+        "static bus on paved curb",
+        "tree trunk bisecting the frame"
+      ],
+      "symbolic_mapping": [
+        "the threshold of the bus door represents a moment of transition between public and mobile space",
+        "the tree interrupts visual continuity, suggesting natural interruption of engineered systems"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The scene captures a suspended choice—entering the vehicle implies commitment to a route, yet the stillness and open door indicate deliberation; the tree’s placement visually constrains the path forward, mirroring how infrastructure both enables and limits mobility.",
+      "alternative_interpretations": [
+        "The tree is merely a roadside feature; the bus is paused for routine passenger loading, with no symbolic tension intended."
+      ],
+      "limitations": [
+        "No facial expressions or directional cues confirm intentionality of pause or hesitation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1341_P3",
+      "visual_anchors": [
+        "repeated abstract human shapes in bright colors",
+        "absence of realistic facial features",
+        "uniform scale and posture across figures"
+      ],
+      "symbolic_mapping": [
+        "homogenized figures imply erasure of personal distinction in service contexts",
+        "vibrant color palette contrasts with utilitarian function of the bus, highlighting aesthetic labor"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The bus functions as both transport technology and canvas, where decorative labor reconfigures utility into expressive public artifact—yet the faceless figures suggest that the laborers (artists or riders) remain anonymous within the system they animate.",
+      "alternative_interpretations": [
+        "The design prioritizes visibility and child-friendliness for community engagement, not commentary on labor or identity."
+      ],
+      "limitations": [
+        "Artist attribution, commission context, and intended audience are invisible; appearance alone cannot confirm labor critique."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people near the bus (candidate states three, but image shows two distinct individuals on the sidewalk and one partially visible inside the doorway, totaling three but with unclear separation of the two sidewalk figures as separate entities)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:21:10.547785+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-40f75245-a0ee-99ca-90d0-b717e2e75941",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 1184,
+        "total_tokens": 2013,
+        "completion_tokens_details": {
+          "text_tokens": 1184
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042048b5faf9bb382440ef",
+      "usage": {
+        "completion_tokens": 1092,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2183,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3275
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0551",
+  "sample_id": "PHL1800_HL_0182",
+  "file_name": "PHL1800_HL_0182.png",
+  "batch_id": "B013",
+  "position_in_batch": 20,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two men closely observing a laptop and a mobile phone in an indoor workspace",
+  "captions": {
+    "scene": [
+      "A cluttered indoor workspace with white walls, shelves holding papers and boxes, and a framed certificate on the wall.",
+      "A desk surface covered with electronic equipment, cables, stacked boxes, and a partially visible CRT monitor to the right.",
+      "Three individuals present: two men in the foreground focused on a laptop and mobile phone, and a third person seated in the background, partially obscured."
+    ],
+    "action": [
+      "The man in the foreground holds a mobile phone in his left hand while his right hand rests near the laptop’s keyboard.",
+      "The second man leans over the first, looking intently at the laptop screen, with his face close to the first man’s head.",
+      "The third person sits in the background, head bowed, appearing to look down at something out of frame."
+    ],
+    "rationale": [
+      "The proximity of the two men and shared gaze toward the laptop suggest collaborative troubleshooting or inspection, though no verbal interaction is visible.",
+      "The presence of a mobile phone and open laptop interface implies technical work, but the exact task (e.g., data transfer, diagnostics) cannot be confirmed from visuals alone.",
+      "The third person’s posture and partial occlusion prevent determination of their involvement; they may be unrelated or passively observing."
+    ],
+    "object": [
+      "A black laptop with its screen illuminated, displaying a windowed GUI with blue sidebar elements and unreadable text fields.",
+      "A mobile phone held in the left hand of the foreground man, showing a screen with text and a physical keypad.",
+      "A blue analog wristwatch with metallic bezel worn on the left wrist of the foreground man.",
+      "A CRT monitor with beige casing positioned to the right of the laptop, screen off or blank.",
+      "A stack of boxes beneath a white box labeled with indistinct printed characters, placed behind the laptop."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0551_P1",
+      "visual_anchors": [
+        "exposed mobile phone",
+        "laptop screen displaying structured data",
+        "close physical proximity of two observers"
+      ],
+      "symbolic_mapping": [
+        "the mobile phone symbolizes portable, accessible data; the laptop screen represents processed, interpreted information"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The image captures a moment where embodied human labor interfaces directly with material substrates of knowledge—highlighting how truth claims in digital contexts depend on both physical infrastructure and collaborative verification.",
+      "alternative_interpretations": [
+        "This is simply a routine device check in a repair shop, with no deeper symbolic intent."
+      ],
+      "limitations": [
+        "No readable text confirms the content of the screen or phone labels, so symbolic mapping remains speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0551_P2",
+      "visual_anchors": [
+        "man leaning over another’s shoulder",
+        "shared focal point on screen",
+        "third person excluded from immediate interaction"
+      ],
+      "symbolic_mapping": [
+        "the overlapping bodies suggest epistemic dependence; the excluded figure hints at marginalization within technical practice"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The spatial arrangement enacts a micro-politics of attention: expertise is co-constructed through proximity, while peripheral presence signals asymmetrical inclusion in knowledge production.",
+      "alternative_interpretations": [
+        "The third person is merely waiting and not part of the current task; their position reflects convenience, not exclusion."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentionality behind positioning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0551_P3",
+      "visual_anchors": [
+        "wristwatch with analog face",
+        "digital laptop display",
+        "handheld mechanical device (mobile phone)"
+      ],
+      "symbolic_mapping": [
+        "analog timekeeping contrasts with digital temporality; the mobile phone embodies stored past data awaiting retrieval"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The juxtaposition of analog timepiece and digital storage evokes tension between linear human temporality and the atemporal persistence of data—suggesting that technological engagement is itself a journey through layered temporalities.",
+      "alternative_interpretations": [
+        "The watch is just a timepiece; the mobile phone is a standard component; no temporal symbolism is intended."
+      ],
+      "limitations": [
+        "The watch face is not legible, and no clock context (e.g., countdown, timestamp) appears on screen."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The target subject incorrectly describes the handheld object as a \"hard drive\"; it is a mobile phone. The \"third person\" count is accurate but their description as \"seated behind them\" is vague—clarify as \"seated in the background\". The \"white CRT monitor\" is misidentified; it is a CRT monitor but its color is not clearly white. The \"stack of three books\" is unsupported—only one box is visible behind the laptop."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:56:04.517751+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-453ac84a-7f97-96a2-bafd-784c44b61173",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 1033,
+        "total_tokens": 1702,
+        "completion_tokens_details": {
+          "text_tokens": 1033
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025551376e808442214c91",
+      "usage": {
+        "completion_tokens": 966,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1838,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2804
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "PhiloVista-1800 图片、来源与标注准确性独立审计",
+    "description": "对 1800 张图片的文件完整性、四源溯源、命名编号、标注对应性和语义风险进行独立审查。",
+    "generatedAt": "2026-09-08T00:00:00Z",
+    "cards": [
+      {
+        "id": "files",
+        "description": "清单与实际图像完整对应",
+        "dataset": "metrics",
+        "sourceId": "report_sql",
+        "metrics": [
+          {
+            "label": "结构校验通过",
+            "field": "files",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "archive",
+        "description": "直接与本地源 ZIP 成员逐字节一致",
+        "dataset": "metrics",
+        "sourceId": "report_sql",
+        "metrics": [
+          {
+            "label": "归档 SHA-256 匹配",
+            "field": "archive",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "synthetic",
+        "description": "HAIVMet 与 MM-MoralBench 为合成图",
+        "dataset": "metrics",
+        "sourceId": "report_sql",
+        "metrics": [
+          {
+            "label": "合成图",
+            "field": "synthetic",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "gold",
+        "description": "当前发布不含人工金标准标注",
+        "dataset": "metrics",
+        "sourceId": "report_sql",
+        "metrics": [
+          {
+            "label": "formal gold",
+            "field": "gold",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "revise_share_by_source",
+        "title": "各来源 review.verdict=revise 占比",
+        "subtitle": "当前 item JSON 状态；分母为各来源全部入选项",
+        "type": "bar",
+        "dataset": "qa_by_source",
+        "sourceId": "report_sql",
+        "encodings": {
+          "x": {
+            "field": "source",
+            "type": "ordinal",
+            "label": "上游数据集"
+          },
+          "y": {
+            "field": "revise_share",
+            "type": "quantitative",
+            "label": "revise 占比",
+            "format": "percent"
+          }
+        },
+        "yAxisTitle": "revise 占比",
+        "valueFormat": "percent",
+        "layout": "full"
+      }
+    ],
+    "tables": [
+      {
+        "id": "source_provenance",
+        "title": "四个上游数据源的核验强度",
+        "dataset": "source_provenance",
+        "sourceId": "report_sql",
+        "columns": [
+          {
+            "field": "source",
+            "label": "上游数据集",
+            "type": "text"
+          },
+          {
+            "field": "selected",
+            "label": "入选数",
+            "format": "number"
+          },
+          {
+            "field": "local_byte_match",
+            "label": "本地字节链",
+            "type": "text"
+          },
+          {
+            "field": "official_crosscheck",
+            "label": "官方交叉核验",
+            "type": "text"
+          },
+          {
+            "field": "confidence",
+            "label": "结论",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "structural_checks",
+        "title": "1800 项结构与对应关系校验",
+        "dataset": "structural_checks",
+        "sourceId": "report_sql",
+        "columns": [
+          {
+            "field": "check",
+            "label": "校验项",
+            "type": "text"
+          },
+          {
+            "field": "passed",
+            "label": "通过",
+            "format": "number"
+          },
+          {
+            "field": "total",
+            "label": "总数",
+            "format": "number"
+          },
+          {
+            "field": "result",
+            "label": "结果",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "qa_status",
+        "title": "标注与复核状态",
+        "dataset": "qa_status",
+        "sourceId": "report_sql",
+        "columns": [
+          {
+            "field": "metric",
+            "label": "状态",
+            "type": "text"
+          },
+          {
+            "field": "count",
+            "label": "数量",
+            "format": "number"
+          },
+          {
+            "field": "share",
+            "label": "占比",
+            "type": "text"
+          },
+          {
+            "field": "interpretation",
+            "label": "解释",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "findings",
+        "title": "确认问题与修复建议",
+        "dataset": "findings",
+        "sourceId": "report_sql",
+        "columns": [
+          {
+            "field": "severity",
+            "label": "严重度",
+            "type": "text"
+          },
+          {
+            "field": "sample_id",
+            "label": "样本",
+            "type": "text"
+          },
+          {
+            "field": "field",
+            "label": "字段/层",
+            "type": "text"
+          },
+          {
+            "field": "finding",
+            "label": "确认问题",
+            "type": "text"
+          },
+          {
+            "field": "recommended_fix",
+            "label": "建议修复",
+            "type": "text"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "report_sql",
+        "label": "独立审计报告汇总查询",
+        "path": "report_sources.sql"
+      },
+      {
+        "id": "release_manifest",
+        "label": "PhiloVista-1800 发布清单",
+        "path": "final_selection_manifest.csv"
+      },
+      {
+        "id": "annotation_export",
+        "label": "PhiloVista-1800 英文标注导出",
+        "path": "PhiloVista-1800_HL.csv"
+      },
+      {
+        "id": "item_json",
+        "label": "1800 个逐项标注 JSON",
+        "path": "annotation_workflow/drafts/api_en/items"
+      },
+      {
+        "id": "official_hl",
+        "label": "HL Dataset 官方仓库",
+        "href": "https://github.com/michelecafagna26/HL-dataset"
+      },
+      {
+        "id": "official_haiv",
+        "label": "HAIVMet 官方 Zenodo 记录",
+        "href": "https://zenodo.org/records/8011132"
+      },
+      {
+        "id": "official_irfl",
+        "label": "IRFL 官方 Hugging Face 数据集",
+        "href": "https://huggingface.co/datasets/lampent/IRFL"
+      },
+      {
+        "id": "official_mm",
+        "label": "MM-MoralBench 官方仓库",
+        "href": "https://github.com/BeiiiY/MM-MoralBench"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# PhiloVista-1800 图片、来源与标注准确性独立审计"
+      },
+      {
+        "id": "summary",
+        "type": "markdown",
+        "body": "## 技术结论：文件链可靠，但标注尚不能称为人工金标准\n\n**图片与文件对应关系整体正确。** 1800 张图片全部存在、可解码，命名编号连续，哈希/尺寸/格式与清单一致，CSV 与逐项 JSON 的 captions 完全一致，也没有重复哈希图。\n\n**四源溯源总体可信。** 1200 张 HAIVMet、IRFL、MM-MoralBench 图片与本地源 ZIP 成员逐字节一致；HAIVMet 和 IRFL 的本地归档还与官方发布哈希闭合。HL 的本地 14,997 行标注与官方 metadata 经规范化全部一致，8 个分层抽样的远端 JPEG 与本地 PNG 解码后感知哈希和平均像素差均通过；尚未对入选 600 张全部执行远端像素级复核。\n\n**语义标注仍需人工终审。** 全部 1800 项均标为 formal_gold=false 且采用非独立 AI 生成/复核；本次风险抽查确认了专业物体误识别、OCR 幻觉和静态图过度推断等问题。因而可以作为 research preview 或候选标注使用，不宜直接宣称为人工验证的 gold annotations。"
+      },
+      {
+        "id": "metrics",
+        "type": "metric-strip",
+        "cardIds": [
+          "files",
+          "archive",
+          "synthetic",
+          "gold"
+        ]
+      },
+      {
+        "id": "provenance_heading",
+        "type": "markdown",
+        "body": "## 四个上游来源均有实质证据，但证据强度不完全相同\n\nIRFL 与 HAIVMet 达到官方归档哈希级别；MM-MoralBench 达到官方元数据逐项一致加本地归档字节一致；HL 的官方 metadata 与本地导出标注全量一致，分层像素抽样也通过，但仍未完成 600 张远端原始 JPG 到本地 PNG 的全量像素级闭环。700 张合成图属于上游数据集本身的设计，不是伪造来源，但也不是现实照片。"
+      },
+      {
+        "id": "provenance_table",
+        "type": "table",
+        "tableId": "source_provenance",
+        "layout": "full"
+      },
+      {
+        "id": "structure_heading",
+        "type": "markdown",
+        "body": "## 命名、编号、文件、CSV 与 JSON 没有发现错位\n\nHL 0001–0600、HAIV 0001–0550、IRFL 0001–0500、MM 0001–0150 均连续且无重复。此结论是对全量 1800 项重算，不依赖仓库已有审计结论。"
+      },
+      {
+        "id": "structure_table",
+        "type": "table",
+        "tableId": "structural_checks",
+        "layout": "full"
+      },
+      {
+        "id": "semantic_heading",
+        "type": "markdown",
+        "body": "## captions 的结构一致，但语义正确率不能由现有流程证明\n\n每项均有 3 条 scene、3 条 action、3 条 rationale 和 5 条 object，且导出 CSV 与 JSON 完全一致。不过，一致只证明复制链正确，不证明文字与图片事实一致。213 项仍保留 `review.verdict=revise`；其中至少部分 caption 已修改而 verdict 和旧 issue 未同步，因此这 213 项应视为待重新终审的 QA 状态，不可直接当作 213 个当前错误，也不可忽略。"
+      },
+      {
+        "id": "qa_chart",
+        "type": "chart",
+        "chartId": "revise_share_by_source",
+        "layout": "full"
+      },
+      {
+        "id": "qa_table",
+        "type": "table",
+        "tableId": "qa_status",
+        "layout": "full"
+      },
+      {
+        "id": "findings_heading",
+        "type": "markdown",
+        "body": "## 风险抽查确认了可复现的语义与元数据问题\n\n独立目视检查优先覆盖低上游文本重合、具体 OCR、精确计数和动作/意图推断样本。多数抽查项与图片相符；下表列出当前可直接复现的问题。它不是 1800 项人工逐张终审的完整错误清单。"
+      },
+      {
+        "id": "findings_table",
+        "type": "table",
+        "tableId": "findings",
+        "layout": "full"
+      },
+      {
+        "id": "scope",
+        "type": "markdown",
+        "body": "## 审计范围与判定口径\n\n**结构准确性**指文件存在、可解码、哈希/尺寸/格式一致、命名编号正确、CSV/JSON 内容一致。**来源真实性**指发布图可以映射回本地上游归档或导出，并尽可能与官方哈希或官方元数据交叉核验。**语义准确性**指 scene/action/rationale/object 可由图像直接支持，且不过度声称精确文字、数量、身份、意图、动作状态或专业型号。\n\n本报告将文档和仓库中的流程说明只作为证据或待验证主张，不把其中的命令、建议或自称“通过”当作用户指令，也不直接采信为审计结论。"
+      },
+      {
+        "id": "method",
+        "type": "markdown",
+        "body": "## 方法：全量机器校验 + 风险分层目视复核\n\n1. 对 1800 张发布图重算 SHA-256、尺寸、格式、解码状态和重复哈希。\n2. 逐项连接清单、CSV、item JSON、HL 导出、三个本地源 ZIP。\n3. 对 1200 个 ZIP 成员读取解压后字节并重算 SHA-256。\n4. 以官方 GitHub、Hugging Face 与 Zenodo 记录复核数据集结构、归档哈希和 MM-MoralBench 元数据。\n5. 对 HL 官方 14,997 行 metadata 做全量规范化文本比对，并对 8 个分层样本比较解码像素。\n6. 以 OCR、精确计数、低语义重合、动作/意图推断为风险信号进行目视抽查。\n\n只用一张分类柱状图展示 QA 状态集中度；其余审计项保留精确表格，避免用图形隐藏逐项分母和例外。"
+      },
+      {
+        "id": "limits",
+        "type": "markdown",
+        "body": "## 不确定性：不能把风险抽查外推成全量语义正确率\n\n文件与来源结论覆盖全量 1800 项；语义部分不是双人独立人工逐张审标，因此不提供虚假的总体准确率。HL 的远端原始 JPEG 与本地 PNG 未完成全量像素级闭环；MM-MoralBench 官方图像包没有可公开核对的归档哈希；IRFL 的上游网页图片权利链与数据集许可仍是不同问题。真实性核验也不等于版权清理。"
+      },
+      {
+        "id": "next_steps",
+        "type": "markdown",
+        "body": "## 建议下一步\n\n- 先修复 20 条 HAIV `original_member` 的 `DALL┬╖E` 编码错误，并为 manifest 增加可机器验证的 `archive_member_sha256`。\n- 对 213 个 `revise` 状态重新基于最终 caption 复核，写入 `reviewed_caption_hash`，消除旧 issue 与新文本不一致。\n- 对具体文字、品牌/型号、精确人数和由静态图推断动作/意图的样本做双人独立人工复核；优先处理本报告列出的确认问题。\n- 发布说明中明确：700 张是合成图，1800 项不是 formal gold，当前适合 research preview。"
+      },
+      {
+        "id": "questions",
+        "type": "markdown",
+        "body": "## 仍需回答的问题\n\n- 是否要把数据集升级为可用于正式评测的人工金标准？若是，需要预先定义可接受的事实粒度和分歧仲裁规则。\n- 是否需要下载并逐像素复核 HL 官方远端 ZIP，以闭合 JPG→PNG 的完整来源链？\n- 是否要把上游许可、单图权利和合成图披露独立成一份发布合规清单？"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-08T00:00:00Z",
+    "status": "ready",
+    "datasets": {
+      "metrics": [
+        {
+          "files": 1800,
+          "archive": 1200,
+          "synthetic": 700,
+          "gold": 0
+        }
+      ],
+      "source_provenance": [
+        {
+          "source": "HL Dataset",
+          "selected": 600,
+          "local_byte_match": "600/600（选中图=本地 HL 导出图，SHA-256）",
+          "official_crosscheck": "官方 14,997 行 metadata 与本地导出标注经规范化 14,997/14,997 一致；8 个分层样本解码像素均近似一致",
+          "confidence": "很高；JPG→PNG 导出链成立，但未对 600 张全部做远端像素级复核"
+        },
+        {
+          "source": "HAIVMet",
+          "selected": 550,
+          "local_byte_match": "550/550（选中图=ZIP 成员，SHA-256）",
+          "official_crosscheck": "6 个本地 ZIP 的 MD5 与 Zenodo 官方记录全部一致",
+          "confidence": "很高；20 条 original_member 有字符编码错误，但图像字节正确"
+        },
+        {
+          "source": "IRFL",
+          "selected": 500,
+          "local_byte_match": "500/500（选中图=ZIP 成员，SHA-256）",
+          "official_crosscheck": "本地 IRFL_images.zip SHA-256 与 Hugging Face LFS OID 完全一致",
+          "confidence": "很高；源归档与官方对象形成完整加密哈希链"
+        },
+        {
+          "source": "MM-MoralBench",
+          "selected": 150,
+          "local_byte_match": "150/150（选中图=ZIP 成员，SHA-256）",
+          "official_crosscheck": "150/150 的 ID、图像路径、Foundation、题目文本和标签与官方 query.json 一致",
+          "confidence": "高；官方图像下载未发布可核对的归档哈希"
+        }
+      ],
+      "structural_checks": [
+        {
+          "check": "清单行数 / 图像文件数",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        },
+        {
+          "check": "清单所列图像存在",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        },
+        {
+          "check": "无清单外孤儿图像",
+          "passed": 0,
+          "total": 0,
+          "result": "通过（0 个）"
+        },
+        {
+          "check": "文件可解码",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        },
+        {
+          "check": "SHA-256 与清单一致",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        },
+        {
+          "check": "尺寸与清单一致",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        },
+        {
+          "check": "格式与清单一致",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        },
+        {
+          "check": "重复图像哈希组",
+          "passed": 0,
+          "total": 0,
+          "result": "通过（0 组）"
+        },
+        {
+          "check": "文件名 / sample_id 对齐",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        },
+        {
+          "check": "四源编号连续且无重复",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        },
+        {
+          "check": "CSV 与 item JSON captions 完全一致",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        },
+        {
+          "check": "每项 3 scene + 3 action + 3 rationale + 5 object",
+          "passed": 1800,
+          "total": 1800,
+          "result": "通过"
+        }
+      ],
+      "qa_status": [
+        {
+          "metric": "formal_gold=false",
+          "count": 1800,
+          "share": "100.0%",
+          "interpretation": "全部是研究预览标注，不是人工金标准"
+        },
+        {
+          "metric": "非独立 AI 生成/复核流程",
+          "count": 1800,
+          "share": "100.0%",
+          "interpretation": "生成与复核模型不构成独立人工验证"
+        },
+        {
+          "metric": "review.verdict=accept",
+          "count": 1581,
+          "share": "87.8%",
+          "interpretation": "模型复核接受；不能等同于人工正确"
+        },
+        {
+          "metric": "review.verdict=revise",
+          "count": 213,
+          "share": "11.8%",
+          "interpretation": "状态仍标为需修改；部分文本已改但 verdict 未同步，QA 状态陈旧"
+        },
+        {
+          "metric": "revised_by_audit_visual_inspection",
+          "count": 6,
+          "share": "0.3%",
+          "interpretation": "历史审计确认并直接重标的跨图错配"
+        },
+        {
+          "metric": "manifest 标记 synthetic=true",
+          "count": 700,
+          "share": "38.9%",
+          "interpretation": "HAIVMet 550 + MM-MoralBench 150，均不是真实摄影照片"
+        }
+      ],
+      "qa_by_source": [
+        {
+          "source": "HL Dataset",
+          "revise": 157,
+          "total": 600,
+          "revise_share": 0.2617
+        },
+        {
+          "source": "IRFL",
+          "revise": 25,
+          "total": 500,
+          "revise_share": 0.05
+        },
+        {
+          "source": "HAIVMet",
+          "revise": 26,
+          "total": 550,
+          "revise_share": 0.0473
+        },
+        {
+          "source": "MM-MoralBench",
+          "revise": 5,
+          "total": 150,
+          "revise_share": 0.0333
+        }
+      ],
+      "findings": [
+        {
+          "severity": "中",
+          "sample_id": "PHL1800_HL_0458",
+          "field": "object",
+          "finding": "将右侧飞机的径向发动机写成 inline engine；专业物体型号错误。",
+          "recommended_fix": "改为 radial engine；删除或重写无法确认的细节。"
+        },
+        {
+          "severity": "中",
+          "sample_id": "PHL1800_HL_0278",
+          "field": "rationale/object",
+          "finding": "将旧式 Airman Battle Uniform（ABU）数字虎纹误写为 OCP，并由制服推断 active-duty status。",
+          "recommended_fix": "改为 ABU-style digital tiger-stripe；删除现役身份推断。"
+        },
+        {
+          "severity": "中",
+          "sample_id": "PHL1800_HL_0368",
+          "field": "rationale",
+          "finding": "仅凭手放在机器上和注视姿势，断言装置 functional and actively engaged。",
+          "recommended_fix": "改为正在检查/演示装置；明确无法确认是否运行。"
+        },
+        {
+          "severity": "低-中",
+          "sample_id": "PHL1800_HL_0006",
+          "field": "action",
+          "finding": "静态图被描述为 moving shadows，并据此推断 gentle breeze/leaf movement。",
+          "recommended_fix": "改为斑驳阳光和树叶阴影；不推断运动或风。"
+        },
+        {
+          "severity": "中",
+          "sample_id": "PHL1800_HAIV_0222",
+          "field": "object",
+          "finding": "把触控板附近不可辨的生成式伪文字识别为 DELL 和 OPTIPLEX。",
+          "recommended_fix": "改为 illegible pseudo-text / markings；不得给出品牌。"
+        },
+        {
+          "severity": "中（元数据）",
+          "sample_id": "HAIV_0016–0020, 0524–0538",
+          "field": "manifest.original_member",
+          "finding": "20 条路径把 DALL·E 记录成 DALL┬╖E，无法按清单字符串直接定位 ZIP 成员。",
+          "recommended_fix": "用 ZIP 中真实成员名回填；图像内容与归档字节已确认一致。"
+        },
+        {
+          "severity": "中（QA 状态）",
+          "sample_id": "213 items",
+          "field": "review.verdict",
+          "finding": "仍标记 revise；至少部分 caption 已修正而 verdict/issue 未同步，状态不能作为当前正确率。",
+          "recommended_fix": "重跑最终版复核，更新 verdict、issues、reviewed_caption_hash。"
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "report_sql",
+      "label": "独立审计报告汇总查询",
+      "path": "report_sources.sql"
+    },
+    {
+      "id": "release_manifest",
+      "label": "PhiloVista-1800 发布清单",
+      "path": "final_selection_manifest.csv"
+    },
+    {
+      "id": "annotation_export",
+      "label": "PhiloVista-1800 英文标注导出",
+      "path": "PhiloVista-1800_HL.csv"
+    },
+    {
+      "id": "item_json",
+      "label": "1800 个逐项标注 JSON",
+      "path": "annotation_workflow/drafts/api_en/items"
+    },
+    {
+      "id": "official_hl",
+      "label": "HL Dataset 官方仓库",
+      "href": "https://github.com/michelecafagna26/HL-dataset"
+    },
+    {
+      "id": "official_haiv",
+      "label": "HAIVMet 官方 Zenodo 记录",
+      "href": "https://zenodo.org/records/8011132"
+    },
+    {
+      "id": "official_irfl",
+      "label": "IRFL 官方 Hugging Face 数据集",
+      "href": "https://huggingface.co/datasets/lampent/IRFL"
+    },
+    {
+      "id": "official_mm",
+      "label": "MM-MoralBench 官方仓库",
+      "href": "https://github.com/BeiiiY/MM-MoralBench"
+    }
+  ],
+  "package_info": {
+    "root": "philoVista-audit",
+    "manifestPath": "artifact.json",
+    "snapshotPath": "artifact.json"
+  }
+}

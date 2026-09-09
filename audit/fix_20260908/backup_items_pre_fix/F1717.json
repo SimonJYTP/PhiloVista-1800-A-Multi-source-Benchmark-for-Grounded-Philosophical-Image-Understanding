@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1717",
+  "sample_id": "PHL1800_HL_0278",
+  "file_name": "PHL1800_HL_0278.png",
+  "batch_id": "B035",
+  "position_in_batch": 23,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of six military personnel in camouflage uniforms walking outdoors",
+  "captions": {
+    "scene": [
+      "A paved surface bordered by grass and leafy trees under overcast daylight.",
+      "Multiple individuals in U.S. Air Force-style digital camouflage uniforms and green knit caps move across the frame from left to right.",
+      "Background includes parked vehicles and indistinct buildings partially obscured by foliage."
+    ],
+    "action": [
+      "Three individuals carry rolling luggage with extended handles; one pulls a black suitcase, another carries a camouflage duffel bag, and a third holds a brown soft-sided case.",
+      "Four individuals hold red or maroon folders or binders against their torsos or under arms.",
+      "All visible individuals are upright and in motion, with legs positioned mid-stride, indicating forward locomotion."
+    ],
+    "rationale": [
+      "Uniforms match U.S. Air Force Operational Camouflage Pattern (OCP) with visible rank insignia on collars, suggesting active-duty status.",
+      "Presence of luggage and folders implies transit or administrative movement rather than combat or training activity.",
+      "The group’s synchronized direction and spacing suggest coordinated movement, though no explicit command posture is visible."
+    ],
+    "object": [
+      "A man in center foreground wears a green knit cap, OCP uniform, and carries a red folder in his left hand while pulling a black rolling suitcase with his right hand.",
+      "To his left, a man in similar attire carries a camouflage-patterned duffel bag in his right hand and a red folder in his left hand.",
+      "To the right of the central figure, a man wearing a green knit cap and backpack walks with hands free, mouth slightly open, looking toward the central figure.",
+      "Behind the central figure, at least two additional individuals in identical uniforms and caps are partially visible, holding red folders.",
+      "One individual near the far left edge wears a green jacket over camouflage pants, a camouflage cap, and carries a camouflage duffel bag in his right hand and a red folder in his left hand."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1717_P1",
+      "visual_anchors": [
+        "rolling suitcases",
+        "red folders held close to body",
+        "uniforms with name tapes"
+      ],
+      "symbolic_mapping": [
+        "luggage as embodiment of transition between roles",
+        "folders as repositories of institutional knowledge"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "knowledge_truth"
+      ],
+      "interpretation": "The juxtaposition of personal mobility artifacts (suitcases) with official documentation (folders) under standardized appearance (uniforms) reflects the tension between individual trajectory and institutional continuity.",
+      "alternative_interpretations": [
+        "This may simply depict routine personnel movement between duty stations without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; all interpretation relies on object association alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1717_P2",
+      "visual_anchors": [
+        "six individuals in identical uniforms",
+        "shared direction of motion",
+        "absence of distinguishing insignia beyond rank"
+      ],
+      "symbolic_mapping": [
+        "uniformity as erasure of individual distinction",
+        "collective stride as enactment of social existence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual homogeneity of dress and synchronized movement suggests identity is subsumed within a collective role, illustrating how social existence is materially enacted through shared appearance and coordinated action.",
+      "alternative_interpretations": [
+        "Uniforms are functional requirements for operational cohesion, not philosophical statements about identity."
+      ],
+      "limitations": [
+        "Only partial views of faces and backs prevent assessment of individual differentiation beyond visible insignia."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1717_P3",
+      "visual_anchors": [
+        "green knit caps worn uniformly",
+        "one yellow ribbon pinned to central figure’s chest",
+        "grass and trees in background"
+      ],
+      "symbolic_mapping": [
+        "yellow ribbon as marker of affiliation or remembrance",
+        "natural backdrop contrasting with manufactured uniformity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "freedom_constraint"
+      ],
+      "interpretation": "The small yellow ribbon—visible only on one person—introduces a subtle deviation within enforced uniformity, hinting at personal ethical commitments persisting within institutional constraint.",
+      "alternative_interpretations": [
+        "The ribbon may be a standard-issue morale item with no individual significance."
+      ],
+      "limitations": [
+        "Ribbon size and placement make its origin and meaning ambiguous; no other ribbons are visible for comparison."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (candidate states seven, image shows six visible individuals); object description of 'name tape reading MARTIN' is not clearly visible in the image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:04:59.408079+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bbce8bf7-9af6-9514-bdd2-865021ada28c",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 994,
+        "total_tokens": 1763,
+        "completion_tokens_details": {
+          "text_tokens": 994
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070504368417c6550a1e4c63",
+      "usage": {
+        "completion_tokens": 961,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1925,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2886
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

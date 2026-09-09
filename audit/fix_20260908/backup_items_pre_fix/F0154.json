@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0154",
+  "sample_id": "PHL1800_HL_0508",
+  "file_name": "PHL1800_HL_0508.png",
+  "batch_id": "B005",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "one person skiing on snow",
+  "captions": {
+    "scene": [
+      "A snowy landscape with sparse coniferous saplings and visible tree shadows cast across the snow surface.",
+      "Sunlit snow with distinct parallel ski tracks and a single skier positioned mid-slope.",
+      "Open terrain with undisturbed snow patches, scattered small shrubs, and distant treeline under clear daylight."
+    ],
+    "action": [
+      "The person is actively skiing forward using two poles, body angled slightly leftward, knees bent in motion.",
+      "The skier’s right ski is partially lifted or turning while the left ski remains planted in the snow.",
+      "Shadow of the skier and poles extends sharply to the lower-left, indicating low sun angle and ongoing movement."
+    ],
+    "rationale": [
+      "The presence of parallel grooves and displaced snow behind the skier suggests recent forward motion rather than static posing.",
+      "The skier wears full winter gear including beanie, scarf, gloves, and dark jacket—consistent with cold-weather activity but not definitive proof of temperature.",
+      "No other people are visible in the frame; however, the shadow pattern and track width imply a single individual, though a second person could be outside frame."
+    ],
+    "object": [
+      "A person wearing a black beanie, dark sunglasses, a dark scarf, a black jacket, black pants, and light-colored gloves holds two black ski poles.",
+      "Two narrow ski tracks run diagonally from upper-left toward lower-right across the snowfield, converging near the skier’s position.",
+      "The snow surface shows granular texture with wind-scoured ridges and multiple overlapping shadows from trees and the skier.",
+      "Two small leafless shrubs or young conifers stand upright in the snow at varying distances: one near center-right, one farther right.",
+      "The skier’s left ski is visible beneath the foot, dark-colored with a slight upward tilt; the right ski is mostly obscured but appears to be in contact with snow."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0154_P1",
+      "visual_anchors": [
+        "single skier on wide snowfield",
+        "long shadow stretching ahead",
+        "isolated saplings"
+      ],
+      "symbolic_mapping": [
+        "the solitary figure amid open terrain maps to individual agency within vast natural constraints"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The skier’s path, carved deliberately through unmarked snow, embodies the existential act of choosing direction amid openness and limitation—the journey defined by both self-determination and physical terrain.",
+      "alternative_interpretations": [
+        "This may simply depict recreational skiing without symbolic intent; the shadow and tracks are merely optical effects of sunlight and motion."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the scene could be purely documentary."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0154_P2",
+      "visual_anchors": [
+        "sharp elongated shadow",
+        "low sun angle",
+        "undisturbed snow beyond tracks"
+      ],
+      "symbolic_mapping": [
+        "shadow preceding the body suggests temporal precedence of consequence over action"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The shadow cast ahead of the skier visually enacts the philosophical notion that effects—or awareness of consequences—often precede the full realization of action, echoing concerns about foresight and epistemic limits.",
+      "alternative_interpretations": [
+        "Shadows naturally fall opposite the light source; the orientation here results from sun position, not narrative intention."
+      ],
+      "limitations": [
+        "The shadow direction depends solely on solar geometry, not deliberate composition; no evidence of authorial intent."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0154_P3",
+      "visual_anchors": [
+        "person fully clothed against environment",
+        "ski poles held firmly",
+        "snow deformation underfoot"
+      ],
+      "symbolic_mapping": [
+        "bodily adaptation to hostile medium reflects negotiation between human will and material resistance"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The skier’s posture and equipment manifest embodied labor—using tools to mediate interaction with nature—raising questions about responsibility toward environments we traverse and reshape.",
+      "alternative_interpretations": [
+        "This is standard winter sport attire and technique; no ethical stance is visibly encoded."
+      ],
+      "limitations": [
+        "Clothing and gear serve functional purposes; no moral signage or expressive gesture confirms ethical framing."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object caption 1 incorrectly states the scarf is green; the scarf is dark (likely black or dark gray). Object caption 4 incorrectly counts three shrubs; there are two visible shrubs (one near center-right, one farther right). Rationale caption 3 incorrectly claims 'three small leafless shrubs or young conifers' when only two are visible."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:11:04.373125+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-016ed4c9-1823-9a8a-a739-0f50176e2885",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 999,
+        "total_tokens": 1728,
+        "completion_tokens_details": {
+          "text_tokens": 999
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702103954a6da7fa587427e",
+      "usage": {
+        "completion_tokens": 932,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1887,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2819
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

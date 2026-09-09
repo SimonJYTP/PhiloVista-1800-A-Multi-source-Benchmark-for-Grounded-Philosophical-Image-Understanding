@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1562",
+  "sample_id": "PHL1800_HL_0183",
+  "file_name": "PHL1800_HL_0183.png",
+  "batch_id": "B032",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of approximately 8-10 school-aged boys in uniform, clustered in the foreground and midground",
+  "captions": {
+    "scene": [
+      "An outdoor courtyard with weathered sandstone walls, arched doorways, and a distant elevated walkway occupied by more students.",
+      "The ground is paved with light-colored rectangular stone tiles arranged in a grid pattern.",
+      "A bicycle is parked against the right wall; backpacks are worn by multiple boys."
+    ],
+    "action": [
+      "One boy in the left foreground raises his right hand in a waving gesture while smiling broadly.",
+      "Another boy in the center holds a transparent plastic water bottle with a white cap, tilting it slightly toward the camera.",
+      "The boy in the immediate foreground stands with arms crossed, looking directly at the camera with a neutral expression."
+    ],
+    "rationale": [
+      "The consistent white shirts, red-and-blue striped ties, grey trousers, and belts suggest a standardized school uniform; however, no school name or logo is legible to confirm institutional affiliation.",
+      "Multiple boys wear identical backpacks with black straps and visible blue-and-red trim, indicating shared equipment, but the brand or text on the straps is unreadable.",
+      "The presence of both smiling and neutral expressions suggests varied engagement with the photographer, yet no facial emotion can be definitively classified beyond observable features (e.g., mouth open vs. closed)."
+    ],
+    "object": [
+      "A boy in the left foreground wears a white long-sleeved shirt, red-and-blue diagonally striped tie, grey trousers, red belt with silver buckle, and a black backpack with blue-and-red side panels; his right hand is raised with fingers spread.",
+      "A transparent plastic water bottle with a white screw-on cap is held horizontally in the center boy’s right hand; liquid level is approximately two-thirds full, and no visible labeling is present.",
+      "The boy in the front-center has dark hair, brown eyes, and wears a white long-sleeved shirt, a red-and-blue striped tie, and a backpack with prominent blue shoulder straps and red vertical stripes.",
+      "At least three boys in the background wear identical uniforms and stand near an arched stone doorway; one raises his right hand above his head.",
+      "A black bicycle with thin tires and straight handlebars leans against the right wall, partially obscured by a boy in profile."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1562_P1",
+      "visual_anchors": [
+        "identical uniforms",
+        "varied facial expressions",
+        "shared backpack design"
+      ],
+      "symbolic_mapping": [
+        "uniformity as social conformity",
+        "expressive divergence within structure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image presents a tension between collective identity enforced by dress code and individual affective presence, suggesting that social existence is negotiated through appearance even within homogenizing systems.",
+      "alternative_interpretations": [
+        "The variation in expression may simply reflect momentary reactions to being photographed rather than intentional identity assertion."
+      ],
+      "limitations": [
+        "No textual identifiers (e.g., school name, slogans) are readable to confirm institutional intent behind the uniform."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1562_P2",
+      "visual_anchors": [
+        "raised hand gesture",
+        "direct gaze of foreground boy",
+        "crowded framing"
+      ],
+      "symbolic_mapping": [
+        "gesture as invitation or interruption",
+        "gaze as claim to agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of voluntary gesture and constrained posture implies that freedom is exercised within spatial and social constraints—agency manifests not in escape but in micro-acts within imposed structures.",
+      "alternative_interpretations": [
+        "The raised hand may be a spontaneous reaction to the photographer’s cue, not a symbolic act of choice."
+      ],
+      "limitations": [
+        "The intent behind the hand gesture cannot be verified from visual evidence alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1562_P3",
+      "visual_anchors": [
+        "weathered stone architecture",
+        "modern plastic water bottle",
+        "school uniforms"
+      ],
+      "symbolic_mapping": [
+        "ancient setting vs. contemporary object",
+        "institutional continuity across time"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The coexistence of aged masonry and disposable plastic signifies layered temporalities: institutional knowledge persists while material culture shifts, raising questions about what endures versus what is transient in educational contexts.",
+      "alternative_interpretations": [
+        "The bottle is merely a functional item; its presence does not necessarily imply commentary on temporality."
+      ],
+      "limitations": [
+        "No inscriptions or dates on the architecture or bottle allow dating or attribution of historical layering."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (approximately 12 vs. 8-10 visible); inaccurate description of the boy in the immediate foreground (sleeves rolled up vs. long sleeves); unsupported claim about a boy raising both hands in the background; unclear bottle labeling (faint blue vs. no visible labeling)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:45:56.029852+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-84d873c8-c4d5-934a-a3d2-f4c08cc9d8ae",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1041,
+        "total_tokens": 1810,
+        "completion_tokens_details": {
+          "text_tokens": 1041
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704452641573f2dd6644dc6",
+      "usage": {
+        "completion_tokens": 969,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1970,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2939
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

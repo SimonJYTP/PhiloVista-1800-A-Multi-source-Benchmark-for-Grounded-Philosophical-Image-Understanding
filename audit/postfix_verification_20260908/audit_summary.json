@@ -1,0 +1,183 @@
+{
+  "audit_date": "2026-09-08",
+  "audit_run": "postfix_verification after audit/fix_20260908",
+  "scope": "independent read-only recomputation against current image directory, release manifest, item JSON, CSV, extracted upstream tree, and local source archives",
+  "manifest_rows": 1800,
+  "annotation_rows": 1800,
+  "item_json_files": 1800,
+  "item_json_parse_errors": [],
+  "image_files_total": 1800,
+  "image_extension_counts": {
+    ".png": 1150,
+    ".jpg": 647,
+    ".webp": 3
+  },
+  "orphan_images": [],
+  "missing_images": [],
+  "duplicate_sha256_groups": [],
+  "per_source": {
+    "HL Dataset": {
+      "rows": 600,
+      "image_exists": 600,
+      "hash_matches_manifest": 600,
+      "selected_matches_extracted": 600,
+      "archive_member_found": 0,
+      "archive_member_matches_size_crc": 0,
+      "archive_member_matches_sha256": 0,
+      "annotation_exists": 600,
+      "caption_shape_ok": 600
+    },
+    "HAIVMet": {
+      "rows": 550,
+      "image_exists": 550,
+      "hash_matches_manifest": 550,
+      "selected_matches_extracted": 75,
+      "archive_member_found": 550,
+      "archive_member_matches_size_crc": 550,
+      "archive_member_matches_sha256": 550,
+      "annotation_exists": 550,
+      "caption_shape_ok": 550
+    },
+    "IRFL": {
+      "rows": 500,
+      "image_exists": 500,
+      "hash_matches_manifest": 500,
+      "selected_matches_extracted": 500,
+      "archive_member_found": 500,
+      "archive_member_matches_size_crc": 500,
+      "archive_member_matches_sha256": 500,
+      "annotation_exists": 500,
+      "caption_shape_ok": 500
+    },
+    "MM-MoralBench": {
+      "rows": 150,
+      "image_exists": 150,
+      "hash_matches_manifest": 150,
+      "selected_matches_extracted": 150,
+      "archive_member_found": 150,
+      "archive_member_matches_size_crc": 150,
+      "archive_member_matches_sha256": 150,
+      "annotation_exists": 150,
+      "caption_shape_ok": 150
+    }
+  },
+  "numbering": {
+    "HL Dataset": {
+      "count": 600,
+      "expected_count": 600,
+      "min": 1,
+      "max": 600,
+      "missing_numbers": [],
+      "duplicate_numbers": []
+    },
+    "HAIVMet": {
+      "count": 550,
+      "expected_count": 550,
+      "min": 1,
+      "max": 550,
+      "missing_numbers": [],
+      "duplicate_numbers": []
+    },
+    "IRFL": {
+      "count": 500,
+      "expected_count": 500,
+      "min": 1,
+      "max": 500,
+      "missing_numbers": [],
+      "duplicate_numbers": []
+    },
+    "MM-MoralBench": {
+      "count": 150,
+      "expected_count": 150,
+      "min": 1,
+      "max": 150,
+      "missing_numbers": [],
+      "duplicate_numbers": []
+    }
+  },
+  "checks": {
+    "image_exists": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "annotation_exists": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "item_json_exists": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "filename_pattern_ok": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "sample_id_matches_filename": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "decode_ok": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "sha256_matches_manifest": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "dimensions_match_manifest": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "format_matches_manifest": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "csv_item_json_exact": {
+      "pass": 1800,
+      "fail": 0
+    },
+    "caption_shape_ok": {
+      "pass": 1800,
+      "fail": 0
+    }
+  },
+  "archive_checks": {
+    "applicable_rows": 1200,
+    "member_found": 1200,
+    "member_missing": 0,
+    "size_crc_match": 1200,
+    "size_crc_mismatch": 0,
+    "sha256_match": 1200,
+    "sha256_mismatch": 0,
+    "manifest_name_match_method": {
+      "": 600,
+      "manifest_member_name": 1200
+    },
+    "note": "HL has no local source archive in this workspace; its extracted images and annotation CSV are checked instead."
+  },
+  "hl_annotation_checks": {
+    "row_found": 600,
+    "row_missing": 0,
+    "manifest_annotation_exact": 600,
+    "manifest_annotation_mismatch": 0
+  },
+  "structural_failures": [],
+  "semantic_candidate_counts": {
+    "explicit_visual_uncertainty": 702,
+    "specific_OCR_claim": 142,
+    "very_low_overlap_with_HL_human_captions": 80,
+    "precise_count_claim": 81,
+    "action_contains_intent_inference": 1,
+    "very_low_overlap_with_HAIV_prompt": 97,
+    "low_overlap_with_IRFL_phrase_definition": 276
+  },
+  "review_verdict_counts": {
+    "accept": 1578,
+    "revised_by_audit_visual_inspection": 12,
+    "revised_after_review": 201,
+    "revise": 9
+  },
+  "formal_gold_true": 0,
+  "formal_gold_false": 1800,
+  "semantic_scope_note": "Heuristics prioritize visual review; they do not prove a caption is correct or incorrect."
+}

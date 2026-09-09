@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1331",
+  "sample_id": "PHL1800_HL_0353",
+  "file_name": "PHL1800_HL_0353.png",
+  "batch_id": "B028",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a man sitting on a curb next to a woman standing nearby",
+  "captions": {
+    "scene": [
+      "A narrow street with unpaved ground, concrete sidewalk slabs, and weathered buildings painted yellow, blue, and green.",
+      "A red octagonal stop sign with the word 'PARE' in white uppercase letters mounted on a wooden utility pole.",
+      "A red pickup truck parked in the background behind two people, with foliage visible to the left."
+    ],
+    "action": [
+      "A man wearing a black hat, light blue shirt, and blue jeans sits on a concrete curb with one leg bent and foot on the ground, resting his chin on his right hand.",
+      "A woman in pink pants and a patterned sleeveless top stands facing away, holding a long thin object (possibly a stick or tool) vertically in her right hand.",
+      "No other people are visible in the scene."
+    ],
+    "rationale": [
+      "The man’s posture—elbow on knee, hand supporting head—suggests rest or waiting, not active labor or motion.",
+      "The woman’s orientation and grip on the vertical object imply she is holding it intentionally, though its function is not visually determinable.",
+      "The presence of a 'PARE' sign indicates a traffic control point, but no vehicles are actively stopping or moving at the moment; the scene is static."
+    ],
+    "object": [
+      "A red octagonal sign with white uppercase text 'PARE' is affixed to a wooden utility pole at approximately eye level.",
+      "The man wears a wide-brimmed black hat, a light blue long-sleeve shirt with rolled sleeves, blue denim trousers with cuffs above the ankle, and dark flip-flops.",
+      "The woman wears bright pink trousers, a white-and-red patterned sleeveless top, and pink flip-flops; her hair is pulled back with a pink accessory.",
+      "A red pickup truck with a visible cab and open cargo bed is parked in the background, partially behind the standing figures.",
+      "The building facade to the right features peeling green paint over concrete blocks, with a blue-painted window frame and a small unreadable blue-and-white sign mounted on the yellow wall."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1331_P1",
+      "visual_anchors": [
+        "man sitting with hand on chin",
+        "woman holding vertical object",
+        "PARE sign"
+      ],
+      "symbolic_mapping": [
+        "the 'PARE' sign as a literal command to halt, juxtaposed with human stillness"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image presents a suspended moment where external regulation (the stop sign) coincides with internal pause (the seated man), evoking reflection on how constraint can enable contemplation rather than merely restrict movement.",
+      "alternative_interpretations": [
+        "This may simply depict routine waiting at a street corner, with no symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage beyond 'PARE' confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1331_P2",
+      "visual_anchors": [
+        "peeling green paint on wall",
+        "unpaved street surface",
+        "worn concrete sidewalk"
+      ],
+      "symbolic_mapping": [
+        "material decay as evidence of enduring presence despite neglect"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The worn infrastructure and faded colors suggest a lived environment where identity is shaped not by pristine presentation but by persistent occupation and adaptation over time.",
+      "alternative_interpretations": [
+        "These are ordinary signs of aging infrastructure in a low-resource setting, without deeper meaning."
+      ],
+      "limitations": [
+        "No occupants are shown interacting with the surfaces, so attribution of meaning to decay is speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1331_P3",
+      "visual_anchors": [
+        "woman holding vertical object",
+        "man seated separately",
+        "shared sidewalk space"
+      ],
+      "symbolic_mapping": [
+        "proximity without interaction as a visual metaphor for coexistence without communion"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "Two individuals occupy the same public space yet remain physically and attentionally separate, illustrating how social existence can involve parallel trajectories rather than shared direction.",
+      "alternative_interpretations": [
+        "They may be waiting together silently, with no intended separation; posture does not prove disengagement."
+      ],
+      "limitations": [
+        "Back-facing orientation prevents confirmation of gaze direction or interpersonal dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (candidate claims 'a second person, partially obscured behind the woman' but no such person is visible); 'cross-legged' is inaccurate (man sits with one leg bent, foot on ground); 'rolled-up blue jeans' is inaccurate (jeans are cuffed above ankle, not rolled); 'pink sandals' is inaccurate (woman wears flip-flops); 'partially obscured' is unsupported (no second person exists)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:27:17.578933+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-bb3fdd3f-3599-97df-bc75-346813f1fa59",
+      "usage": {
+        "prompt_tokens": 685,
+        "completion_tokens": 1003,
+        "total_tokens": 1688,
+        "completion_tokens_details": {
+          "text_tokens": 1003
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 178,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907052702f5254f9addb743a4",
+      "usage": {
+        "completion_tokens": 954,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1823,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2777
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

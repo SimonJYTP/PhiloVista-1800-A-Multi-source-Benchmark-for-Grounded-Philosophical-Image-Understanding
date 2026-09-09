@@ -1,82 +1,73 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://philovista-1800.local/schemas/philosophy_record.schema.json",
-  "title": "PhiloVista-1800 philosophy sidecar record",
+  "title": "PhiloVista-1800 adjudicated philosophy record",
+  "description": "Schema for independently annotated or adjudicated records. Legacy thematic axes are not formal PHC concept labels.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["sample_id", "file_name", "interpretations"],
+  "required": ["sample_id", "file_name", "ontology_version", "annotation_source", "formal_gold", "interpretations"],
   "properties": {
     "sample_id": {"type": "string", "minLength": 1},
     "file_name": {"type": "string", "minLength": 1},
-    "interpretations": {
-      "type": "array",
-      "minItems": 3,
-      "maxItems": 3,
-      "items": {"$ref": "#/$defs/interpretation"}
-    }
+    "ontology_version": {"type": "string", "const": "formal-632-20260909"},
+    "annotation_source": {"enum": ["human_independent", "human_reannotation", "adjudicated"]},
+    "formal_gold": {"type": "boolean"},
+    "interpretations": {"type": "array", "minItems": 0, "maxItems": 3, "items": {"$ref": "#/$defs/interpretation"}}
   },
   "$defs": {
     "nonEmptyText": {"type": "string", "minLength": 1},
     "textArray": {"type": "array", "items": {"$ref": "#/$defs/nonEmptyText"}},
+    "legacyAxisId": {
+      "enum": [
+        "choice_journey", "ethics_responsibility", "faith_meaning", "freedom_constraint",
+        "identity_appearance", "knowledge_truth", "labor_technology", "other_abstract_relation",
+        "power_conflict", "social_existence", "time_mortality"
+      ]
+    },
     "interpretation": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "annotation_id",
-        "annotator_id",
-        "method",
-        "visual_anchors",
-        "symbolic_mapping",
-        "concept_ids",
-        "interpretation",
-        "evidence_links",
-        "alternative_interpretations",
-        "limitations",
-        "sufficiency",
-        "text_dependency",
-        "cultural_context_required",
-        "reviewer_scores",
-        "adjudication"
+        "annotation_id", "annotator_id", "method", "visual_anchors", "symbolic_mapping",
+        "legacy_axis_ids", "concept_claims", "interpretation", "alternative_interpretations",
+        "limitations", "sufficiency", "text_dependency", "cultural_context_required",
+        "reviewer_scores", "adjudication"
       ],
       "properties": {
         "annotation_id": {"type": "string", "minLength": 1},
         "annotator_id": {"type": "string", "minLength": 1},
-        "method": {"enum": ["human_independent", "human_reannotation"]},
+        "method": {"enum": ["human_independent", "human_reannotation", "adjudicated"]},
         "visual_anchors": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonEmptyText"}},
         "symbolic_mapping": {"$ref": "#/$defs/textArray"},
-        "concept_ids": {"$ref": "#/$defs/textArray"},
+        "legacy_axis_ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/legacyAxisId"}},
+        "concept_claims": {"type": "array", "items": {"$ref": "#/$defs/conceptClaim"}},
         "interpretation": {"$ref": "#/$defs/nonEmptyText"},
-        "evidence_links": {"$ref": "#/$defs/textArray"},
         "alternative_interpretations": {"$ref": "#/$defs/textArray"},
         "limitations": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonEmptyText"}},
         "sufficiency": {"enum": ["supported", "plausible", "insufficient", "not_applicable"]},
         "text_dependency": {"enum": ["none", "low", "medium", "high"]},
         "cultural_context_required": {"type": "boolean"},
-        "reviewer_scores": {
-          "type": "array",
-          "minItems": 2,
-          "items": {"$ref": "#/$defs/review"}
-        },
-        "adjudication": {
-          "oneOf": [
-            {"type": "null"},
-            {"type": "object"}
-          ]
-        }
+        "reviewer_scores": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/review"}},
+        "adjudication": {"oneOf": [{"type": "null"}, {"type": "object"}]}
+      }
+    },
+    "conceptClaim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["concept_id", "claim", "visual_anchor_indices", "symbolic_mapping_indices", "sufficiency", "limitations"],
+      "properties": {
+        "concept_id": {"type": "string", "pattern": "^PHC-[0-9]{3}$"},
+        "claim": {"$ref": "#/$defs/nonEmptyText"},
+        "visual_anchor_indices": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "integer", "minimum": 0}},
+        "symbolic_mapping_indices": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 0}},
+        "sufficiency": {"enum": ["supported", "plausible", "insufficient"]},
+        "limitations": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonEmptyText"}}
       }
     },
     "review": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "rating_id",
-        "rater_id",
-        "visual_support_1_5",
-        "concept_fit_1_5",
-        "coherence_1_5",
-        "overinterpretation_risk_1_5",
-        "verdict"
-      ],
+      "required": ["rating_id", "rater_id", "visual_support_1_5", "concept_fit_1_5", "coherence_1_5", "overinterpretation_risk_1_5", "verdict"],
       "properties": {
         "rating_id": {"type": "string", "minLength": 1},
         "rater_id": {"type": "string", "minLength": 1},

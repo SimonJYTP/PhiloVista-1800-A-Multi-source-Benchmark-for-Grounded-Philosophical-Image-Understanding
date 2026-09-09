@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0491",
+  "sample_id": "PHL1800_IRFL_0324",
+  "file_name": "PHL1800_IRFL_0324.jpg",
+  "batch_id": "B012",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "dense vehicular and pedestrian traffic on a multi-lane urban road",
+  "captions": {
+    "scene": [
+      "A congested multi-lane roadway flanked by green trees on the left and high-rise buildings in the background, with an elevated concrete flyover spanning above.",
+      "Numerous vehicles—including buses, trucks, auto-rickshaws, cars, and vans—occupy all visible lanes, many stationary or moving slowly; pedestrians walk along the right roadside edge.",
+      "A red-and-white logo reading 'Take One BIG STORY OF THE DAY' appears in the top-right corner, superimposed over the scene."
+    ],
+    "action": [
+      "Vehicles are packed tightly with minimal gaps; several buses and trucks show no forward motion, indicating gridlock.",
+      "At least 5 pedestrians are visible walking along the right shoulder, some wearing helmets and masks.",
+      "Multiple motorbike riders are present near the bottom-right foreground, with one rider partially obscured by foliage and a yellow circular object."
+    ],
+    "rationale": [
+      "The presence of multiple lane markings, directional signage (e.g., blue bus with Hindi script), and uniform vehicle types suggests a regulated urban transport corridor, though exact city cannot be confirmed.",
+      "Pedestrians walking alongside stopped traffic imply that the road lacks dedicated sidewalks or that they are using the verge out of necessity; this is inferred from spatial proximity and posture, not explicit signage.",
+      "The elevated structure overhead appears to be a metro or road overpass due to its concrete construction and support pillars, but no trains or vehicles are visible on it, so function remains uncertain."
+    ],
+    "object": [
+      "A blue-and-white minibus with 'SOMA KUMAR' written on its front grille is positioned mid-frame, facing forward, with side windows showing interior seats.",
+      "A blue truck with a blue tarpaulin cover and a red triangular hazard symbol on its rear door is parked diagonally across two lanes on the left.",
+      "A red-and-white public bus in the foreground displays Hindi text on its destination board, including 'देवरे' (Devare) and 'मुंबई' (Mumbai) partially legible.",
+      "A yellow auto-rickshaw with black trim and visible driver silhouette sits between two cars near the lower-left quadrant.",
+      "A green tree with yellowing leaves occupies the upper-left quadrant, its canopy extending over the road and partially obscuring background buildings."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0491_P1",
+      "visual_anchors": [
+        "pedestrians walking beside immobile buses",
+        "motorbike riders navigating narrow gaps",
+        "overlapping vehicle silhouettes"
+      ],
+      "symbolic_mapping": [
+        "congestion as physical manifestation of infrastructural strain",
+        "motorbikes as adaptive mobility amid collective inertia"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image visualizes the tension between individual mobility and infrastructural saturation, where human movement persists despite systemic blockage, suggesting resilience within imposed limits.",
+      "alternative_interpretations": [
+        "This is simply a routine traffic jam during rush hour, with no deeper meaning—pedestrians and motorbike riders are merely adapting to normal urban conditions."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or directional intent are discernible; thus, attributing agency or resistance is speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0491_P2",
+      "visual_anchors": [
+        "Hindi script on bus destination board",
+        "uniform auto-rickshaw design",
+        "blue tarpaulin-covered truck"
+      ],
+      "symbolic_mapping": [
+        "standardized vehicle forms reflect institutional order",
+        "language markers index localized social coordination"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The coexistence of standardized transport modes and localized linguistic signage illustrates how collective life is scaffolded by both technological infrastructure and culturally embedded communication systems.",
+      "alternative_interpretations": [
+        "These are just common vehicle types and regional language usage in a South Asian city, without philosophical implication."
+      ],
+      "limitations": [
+        "Only partial text is legible; full semantic content of signs cannot be verified, limiting claims about coordination or meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0491_P3",
+      "visual_anchors": [
+        "elevated concrete flyover",
+        "crowded ground-level lanes",
+        "green foliage intruding into frame"
+      ],
+      "symbolic_mapping": [
+        "vertical layering of infrastructure mirrors urban density",
+        "trees as persistent natural counterpoint to engineered space"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of rigid, layered human-made structures against organic foliage evokes the coexistence of human control and natural persistence, suggesting that even dominant systems are subject to ecological balance.",
+      "alternative_interpretations": [
+        "The trees are simply roadside landscaping; the flyover is functional infrastructure; no symbolic contrast is intended."
+      ],
+      "limitations": [
+        "No evidence of decay or intentional design contrast—foliage appears healthy and maintained, not encroaching chaotically."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (at least 12 claimed, but visual count shows fewer distinct individuals); unsubstantiated claim of a person riding a bicycle (no bicycle visible, only motorbikes); inaccurate object descriptions (e.g., 'white truck with blue tarpaulin' is actually a blue truck with a blue tarpaulin; 'maroon-and-cream bus' is a red-and-white bus with Hindi text); overcounting of distinct objects in the 'object' list; unsupported philosophical claims about 'systemic constraint' and 'impermanence' without clear visual anchors."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:51:21.019302+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ab560ebd-536a-9441-9d56-5d50008b6557",
+      "usage": {
+        "prompt_tokens": 984,
+        "completion_tokens": 1138,
+        "total_tokens": 2122,
+        "completion_tokens_details": {
+          "text_tokens": 1138
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 477,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025053500d6a40340e4555",
+      "usage": {
+        "completion_tokens": 1184,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2338,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3522
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

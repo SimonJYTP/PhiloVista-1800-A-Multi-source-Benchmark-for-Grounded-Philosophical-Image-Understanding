@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0374",
+  "sample_id": "PHL1800_HL_0377",
+  "file_name": "PHL1800_HL_0377.png",
+  "batch_id": "B010",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "five people gathered around a wooden table with multiple open laptops and food/drink items",
+  "captions": {
+    "scene": [
+      "An indoor evening setting with warm artificial lighting, large glass doors showing darkness outside, and a stone fireplace on the right wall.",
+      "A long wooden table cluttered with laptops (at least four visible), mugs, red plastic cups, soda cans, notebooks, and plates with food remnants.",
+      "Background includes a kitchen area with wooden cabinets, under-cabinet lighting, a sink, and various bottles and containers on counters."
+    ],
+    "action": [
+      "One person in the foreground left is typing on a laptop while holding a mouse; their left hand rests near a red cup.",
+      "A person standing at the back center holds a camera up to their face, aiming toward the group or viewer.",
+      "A seated person in the middle background has arms crossed and looks forward with a neutral expression; another person on the far right leans over a laptop with hands on the keyboard."
+    ],
+    "rationale": [
+      "The presence of multiple Apple laptops with illuminated screens suggests active digital work or collaboration rather than passive viewing.",
+      "The arrangement of drinks, snacks, and informal seating implies an extended, possibly collaborative session rather than a formal meeting.",
+      "The standing person holding a camera indicates documentation or recording is occurring, though intent (e.g., personal vs. professional) is not determinable from visual evidence alone."
+    ],
+    "object": [
+      "A silver MacBook Pro with a visible Apple logo sits open on the right side of the table, screen displaying lines of text; a red plastic cup and a black soda can are adjacent to it.",
+      "A white ceramic mug with a handle sits beside a second open laptop in the center-left; a black computer mouse rests on a red mousepad nearby.",
+      "A spiral-bound notebook lies open near the bottom-right corner of the table, with a blue pen resting on its pages.",
+      "A clear glass bottle with a metal cap and a label (text unreadable) stands next to a plate containing a partially eaten slice of pizza or flatbread.",
+      "A white ceramic mug with a handle sits near the center of the table, between two laptops."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0374_P1",
+      "visual_anchors": [
+        "multiple open laptops",
+        "shared table space",
+        "person holding camera"
+      ],
+      "symbolic_mapping": [
+        "laptops as interfaces to mediated reality",
+        "shared table as site of co-presence despite digital focus"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "labor_technology"
+      ],
+      "interpretation": "The image captures a moment where physical co-location coexists with distributed attention, suggesting that social existence today is often enacted through parallel engagement with digital tools rather than direct interpersonal exchange.",
+      "alternative_interpretations": [
+        "This may simply be a casual late-night coding session among friends or colleagues, with no deeper sociotechnical commentary intended."
+      ],
+      "limitations": [
+        "No facial expressions or dialogue are visible to confirm intentionality or emotional valence of the interactions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0374_P2",
+      "visual_anchors": [
+        "stone fireplace",
+        "dark exterior visible through glass doors",
+        "warm interior lighting"
+      ],
+      "symbolic_mapping": [
+        "fireplace as traditional hearth vs. laptop screens as modern focal points"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of an old-style stone fireplace—historically a center of domestic life—with multiple glowing screens evokes tension between enduring human rituals and rapidly shifting modes of self-presentation and temporal experience.",
+      "alternative_interpretations": [
+        "The fireplace may be purely decorative and unused; the lighting may simply reflect practical choices for visibility during evening work."
+      ],
+      "limitations": [
+        "No fire is visible in the fireplace, so its functional or symbolic role cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0374_P3",
+      "visual_anchors": [
+        "cluttered table",
+        "mixed drinkware (ceramic, plastic, glass)",
+        "handwritten notebook beside digital devices"
+      ],
+      "symbolic_mapping": [
+        "material heterogeneity as sign of hybrid labor practices",
+        "notebook as analog residue amid digital workflow"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The coexistence of handwritten notes, disposable cups, and high-end computing equipment reflects a pragmatic epistemology where truth claims are constructed across heterogeneous media, privileging utility over medium purity.",
+      "alternative_interpretations": [
+        "The objects reflect convenience and availability rather than deliberate philosophical stance; the notebook may just be for quick reminders."
+      ],
+      "limitations": [
+        "Handwriting content is illegible, so no epistemic purpose can be verified."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (candidate states six, but image shows five); object descriptions include a green glass bottle (no green bottle visible, only a clear bottle with a metal cap); a roll of paper towels is not visible in the image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:40:44.494342+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4326616d-5634-9e0b-ba17-5427ca60b57e",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1053,
+        "total_tokens": 1862,
+        "completion_tokens_details": {
+          "text_tokens": 1053
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024022936922bf199649d3",
+      "usage": {
+        "completion_tokens": 963,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2031,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2994
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

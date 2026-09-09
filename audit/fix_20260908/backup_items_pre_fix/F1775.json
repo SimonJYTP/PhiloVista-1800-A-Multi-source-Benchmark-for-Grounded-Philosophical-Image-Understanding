@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1775",
+  "sample_id": "PHL1800_HL_0481",
+  "file_name": "PHL1800_HL_0481.png",
+  "batch_id": "B036",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "workers handling green banana bunches in a processing facility",
+  "captions": {
+    "scene": [
+      "An indoor industrial facility with metal overhead racks, concrete floors wet with liquid, and long troughs containing water or cleaning solution.",
+      "Multiple workers stand along a raised platform beside troughs; some wear aprons and head coverings, others are partially obscured.",
+      "Green banana bunches hang from hooks on overhead rails, some wrapped in white cloth, others exposed; scattered banana peels and debris lie on the floor."
+    ],
+    "action": [
+      "A worker in a brown apron lifts or adjusts a banana bunch suspended from a rail using both hands.",
+      "Several individuals stand stationary or slightly bent over the troughs, appearing to inspect or handle bananas submerged or resting in the liquid.",
+      "Banana bunches hang vertically in rows, some swaying slightly, indicating recent movement or air current."
+    ],
+    "rationale": [
+      "The presence of uniformed attire (aprons, head coverings) and organized hanging systems suggests standardized processing rather than casual handling.",
+      "Wet floors and troughs filled with liquid imply washing or pre-treatment steps, though the exact fluid composition is not visible.",
+      "The number of visible workers (five distinct figures: two on the left, one central, one on the right, and one partially obscured) indicates coordinated labor, but individual roles cannot be confirmed."
+    ],
+    "object": [
+      "Five distinct green banana bunches hang from overhead rails in the foreground, each with 10–20 individual fruits and intact stems.",
+      "A concrete walkway runs parallel to black troughs; the walkway surface is darkened and reflective due to moisture and organic residue.",
+      "White cloth sacks or wraps drape over some banana bunches, tied near the stem, obscuring part of the fruit cluster.",
+      "Metal support beams painted red and silver form the ceiling structure, with horizontal rails running the length of the facility.",
+      "Scattered green banana peels and small leaf fragments lie on the floor near the trough edges, indicating recent trimming or handling."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1775_P1",
+      "visual_anchors": [
+        "overhead rails with uniformly spaced banana bunches",
+        "workers aligned along a fixed platform",
+        "identical white cloth wraps"
+      ],
+      "symbolic_mapping": [
+        "standardized hanging implies procedural repetition",
+        "linear arrangement suggests temporal sequencing"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The image embodies the tension between human agency and mechanized routine: workers physically intervene within a system designed for uniform throughput, where each banana’s brief green phase is measured against an industrial clock.",
+      "alternative_interpretations": [
+        "This may simply depict efficient agricultural post-harvest handling without symbolic intent."
+      ],
+      "limitations": [
+        "No clocks, labels, or explicit time markers confirm temporal framing; the 'clock' is inferred from spatial order alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1775_P2",
+      "visual_anchors": [
+        "wet floor reflecting overhead lights",
+        "scattered peels near workers’ feet",
+        "uncovered bananas contrasting with cloth-wrapped ones"
+      ],
+      "symbolic_mapping": [
+        "reflection as partial visibility of labor conditions",
+        "peels as discarded remnants of value extraction"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The visible residue and asymmetry between wrapped and unwrapped fruit suggest differential valuation within a shared labor space, raising questions about whose contribution becomes invisible amid production flow.",
+      "alternative_interpretations": [
+        "Wrapping may serve purely functional purposes like protection or ripening control, unrelated to social hierarchy."
+      ],
+      "limitations": [
+        "No signage, facial expressions, or positional hierarchy confirms differential treatment; wrapping could be random or batch-based."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1775_P3",
+      "visual_anchors": [
+        "multiple workers facing same direction",
+        "shared trough infrastructure",
+        "identical posture of central figure leaning forward"
+      ],
+      "symbolic_mapping": [
+        "parallel bodies indicate synchronized action",
+        "shared tools imply interdependence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "Collective presence without individual distinction underscores how labor situates persons within a relational network—identity emerges not from singularity but from participation in a shared material process.",
+      "alternative_interpretations": [
+        "Workers may be independent contractors performing identical tasks without coordination; alignment could be coincidental."
+      ],
+      "limitations": [
+        "No eye contact, communication gestures, or joint task completion is visible; proximity does not prove interaction."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate states 'at least six distinct figures' but image shows five workers; 'left cluster of three' is actually two workers, 'right cluster of two' is one worker, plus central figure."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:12:27.218501+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f788c825-e4fc-9417-802f-c40c650a99d0",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1024,
+        "total_tokens": 1793,
+        "completion_tokens_details": {
+          "text_tokens": 1024
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907051206f0e2a3d0da104a8e",
+      "usage": {
+        "completion_tokens": 931,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1951,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2882
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

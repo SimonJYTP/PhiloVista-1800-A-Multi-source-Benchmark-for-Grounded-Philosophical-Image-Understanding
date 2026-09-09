@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0585",
+  "sample_id": "PHL1800_HL_0033",
+  "file_name": "PHL1800_HL_0033.png",
+  "batch_id": "B014",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "ornate freestanding clock tower on a street corner",
+  "captions": {
+    "scene": [
+      "A black cast-iron clock tower with gold trim stands at a street intersection under a partly cloudy sky.",
+      "The tower is positioned in front of a two-story brick building with white-trimmed sash windows and commercial signage.",
+      "Pedestrians walk on the sidewalk near traffic markings, lampposts, and hanging banners."
+    ],
+    "action": [
+      "The clock face shows approximately 10:10; its hands are stationary in the image.",
+      "Two pedestrians walk leftward along the sidewalk; one carries a bag, another wears a dark coat.",
+      "A third person stands near a pole, facing away from the camera."
+    ],
+    "rationale": [
+      "The clock’s ornamental design and placement suggest civic or commemorative function rather than purely utilitarian use.",
+      "Multiple banners hang from poles and building facades, indicating commercial or community activity in the area.",
+      "The presence of painted road markings and a parking meter implies regulated urban traffic management."
+    ],
+    "object": [
+      "The clock tower has a square base, one visible clock face, a weathervane with directional arms atop a dome, and decorative metalwork including floral motifs and vertical panels.",
+      "The building behind the tower features light-brown brickwork, white-painted window frames, and a ground-floor storefront with partially legible signage reading '...ts Roots'.",
+      "A black wrought-iron fence with pointed finials runs along the right edge of the sidewalk.",
+      "Two vertical banners hang from lampposts: one displays a monochrome portrait; the other shows a white silhouette on black background.",
+      "The street surface includes white dashed lines and a yellow double line marking the curb edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0585_P1",
+      "visual_anchors": [
+        "clock face showing 10:10",
+        "weathervane pointing north",
+        "ornate metalwork"
+      ],
+      "symbolic_mapping": [
+        "the fixed time display symbolizes arrested duration",
+        "the weathervane indicates orientation amid change"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The clock tower embodies a tension between measured continuity and directional uncertainty: time is marked precisely, yet the weathervane suggests contingent forces beyond human control.",
+      "alternative_interpretations": [
+        "It is simply a functional timepiece and landmark with no symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions or contextual plaques confirm intended symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0585_P2",
+      "visual_anchors": [
+        "pedestrians walking past",
+        "hanging banners with portraits",
+        "parking meter"
+      ],
+      "symbolic_mapping": [
+        "anonymous figures moving through shared space reflect social coexistence",
+        "banners assert visibility amid routine"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene captures the layered visibility of individuals within public infrastructure—people move anonymously while curated images (banners) assert presence, highlighting how identity is mediated through urban display.",
+      "alternative_interpretations": [
+        "Banners are merely advertising; pedestrians are incidental to the composition."
+      ],
+      "limitations": [
+        "Facial features and identities are indistinct; banner text is unreadable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0585_P3",
+      "visual_anchors": [
+        "cast-iron structure",
+        "brick building",
+        "wrought-iron fence"
+      ],
+      "symbolic_mapping": [
+        "industrial material contrasts with organic brick",
+        "barrier fence demarcates public/private zones"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of manufactured ironwork against masonry reflects historical labor embedded in urban form, while the fence literalizes spatial constraint—a physical manifestation of regulated access.",
+      "alternative_interpretations": [
+        "Materials were chosen for durability and aesthetics, not philosophical expression."
+      ],
+      "limitations": [
+        "No visible maker marks, dates, or construction records confirm labor context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of clock faces (one visible, not four); inaccurate description of the Coca-Cola sign (not visible); unsupported claim of a blue parking meter; inaccurate color of the fire hydrant (red, not black); mischaracterization of the fence as adjacent to a fire hydrant (fence is separate); inaccurate description of banner text (unreadable, not monochrome portrait with text)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:58:29.232347+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dfb80306-3df4-9ad4-b078-33f726f0fd5e",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 950,
+        "total_tokens": 1719,
+        "completion_tokens_details": {
+          "text_tokens": 950
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025819ee6eab4f8a994244",
+      "usage": {
+        "completion_tokens": 857,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1880,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2737
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

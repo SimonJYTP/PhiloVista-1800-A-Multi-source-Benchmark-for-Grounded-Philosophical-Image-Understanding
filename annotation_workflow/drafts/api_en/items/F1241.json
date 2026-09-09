@@ -29,7 +29,7 @@
       "A large pink brain with gyri and sulci occupies most of the screen; the cerebellum is visible in lighter pink beneath the cerebral hemispheres.",
       "Four external devices are connected by black wires: a blue binocular-like object (top-left), a yellow object with two circular elements (bottom-left), a green box with purple and yellow internal details (top-right), and a blue flower-shaped object with orange center (right side).",
       "The screen bezel is silver-gray and includes a small black circular camera lens above the screen center.",
-      "The trackpad features a green horizontal strip with black markings resembling circuit traces; text above it reads 'DELL' and 'OPTIPLEX', but other characters are illegible."
+      "The trackpad features a green horizontal strip with black markings resembling circuit traces; the small text above it is garbled, illegible pseudo-text typical of generated imagery and does not form readable brand names."
     ]
   },
   "rationale_support": [
@@ -115,9 +115,18 @@
   "needs_independent_human_annotation": true,
   "needs_independent_human_rating": true,
   "review": {
-    "reviewer_model": "glm-4.6v",
-    "verdict": "accept",
-    "issues": []
+    "reviewer_model": "codex_visual_audit",
+    "verdict": "revised_by_audit_visual_inspection",
+    "issues": [
+      "Post-audit fix (2026-09-08): object[4]: removed the unsupported brand reading 'DELL'/'OPTIPLEX'; the marking is illegible generative pseudo-text."
+    ],
+    "resolution": {
+      "status": "captions_corrected_after_visual_reinspection",
+      "checked_by": "codex_post_audit_fix_20260908",
+      "method": "visual_reverification_with_vlm",
+      "checked_at_utc": "2026-09-08T00:00:00Z",
+      "caption_sha256": "edbb3bffff3f0e28aed899f976e2816228116b64c578a4ff7ceed696997805ea"
+    }
   },
   "provenance": {
     "generated_at_utc": "2026-09-06T20:06:54.900166+00:00",

@@ -1,10 +1,18 @@
 {
-  "workflow_version": "1.0.0",
+  "workflow_version": "1.1.0",
+  "framework_version": "2026-09-09",
   "guideline_version": "0.1.0-draft",
   "date": "2026-09-06",
   "dataset": "PhiloVista-1800",
   "dataset_full_name": "PhiloVista-1800: A Multi-source Benchmark for Grounded Philosophical Image Understanding",
   "language": "en",
+  "ontology": {
+    "version": "formal-632-20260909",
+    "concept_count": 632,
+    "resource": "../ontology/philosophical_image_label_system_formal_632.csv",
+    "legacy_axis_crosswalk": "resources/legacy_axis_crosswalk.json",
+    "crosswalk_policy": "candidate_retrieval_only"
+  },
   "source_manifest": "../final_selection_1800/final_selection_manifest.csv",
   "blind_index": "../final_selection_1800/human_review/blind_image_index.csv",
   "total_images": 1800,
@@ -88,6 +96,12 @@
     "dev": 180,
     "test": 1440,
     "assignment_unit": "group_id"
+  },
+  "framework_exports": {
+    "draft_sidecar": "drafts/api_en/exports/PhiloVista-1800_framework.jsonl",
+    "split_manifest": "../splits/benchmark_splits.csv",
+    "formal_record_schema": "schemas/philosophy_record.schema.json",
+    "draft_record_schema": "schemas/framework_draft_record.schema.json"
   },
   "states": [
     "selected",

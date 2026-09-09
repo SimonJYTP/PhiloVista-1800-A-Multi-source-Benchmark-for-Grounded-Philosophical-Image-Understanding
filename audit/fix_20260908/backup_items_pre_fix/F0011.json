@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0011",
+  "sample_id": "PHL1800_HL_0416",
+  "file_name": "PHL1800_HL_0416.png",
+  "batch_id": "B003",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of people flying kites on a grassy field with a tall obelisk in the background",
+  "captions": {
+    "scene": [
+      "A wide grassy lawn under a partly cloudy sky, with a large stone obelisk dominating the left background and cherry blossom trees in partial bloom near the center.",
+      "Multiple colorful kites of varied shapes—including diamond, delta, and serpentine forms—are airborne at different heights across the sky.",
+      "A crowd of adults and children is scattered across the field; some stand, some kneel, and several hold kite strings or gaze upward."
+    ],
+    "action": [
+      "A person in a striped shirt and jeans stands with arm raised, holding a kite string attached to a purple-and-white kite shaped like a fish.",
+      "A child in pink pants and a pink top stands beside an adult woman in a white top, both facing toward the kites.",
+      "A woman in blue crouches on the grass while a small child in pink stands beside her, both looking up."
+    ],
+    "rationale": [
+      "The presence of multiple kites, visible strings, and people holding lines strongly indicates active kite flying rather than passive observation.",
+      "The obelisk’s scale relative to surrounding buildings and people suggests it is a monumental structure, not a standard building or sculpture.",
+      "The density of people and tents in the midground implies an organized public gathering, though no signage confirms its nature."
+    ],
+    "object": [
+      "A tall, light-gray, four-sided obelisk with a pyramidal apex rises vertically from the ground, occupying the left third of the image frame.",
+      "At least 15 distinct individuals are visible: 3 in the foreground (2 children, 1 adult), 1 crouching adult with child, 1 man flying a kite, and ≥10 others in the midground cluster near tents and trees.",
+      "Five clearly distinguishable kites are airborne: one purple-and-white fish-shaped kite with trailing ribbons, one blue-and-green delta kite, one long red-and-white segmented kite, one small dark kite near the obelisk’s apex, and one multicolored diamond kite near the center-left.",
+      "Three white pop-up tents are set up in the midground right, with people seated or standing nearby; one tent has a partially visible red logo but the text is unreadable.",
+      "A flowering tree with white blossoms appears behind the central crowd, positioned between the obelisk and the right-side tents."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0011_P1",
+      "visual_anchors": [
+        "multiple kites flying simultaneously",
+        "crowd gathered around a monument",
+        "children and adults sharing attention upward"
+      ],
+      "symbolic_mapping": [
+        "kites as transient aspirations tethered to earthly control",
+        "obelisk as enduring collective memory"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The scene embodies the tension between individual aspiration (kites ascending freely) and social anchoring (strings held by grounded people), suggesting freedom is always mediated through shared constraints and communal context.",
+      "alternative_interpretations": [
+        "This is simply a recreational day at a park with no deeper meaning—people enjoy weather and open space."
+      ],
+      "limitations": [
+        "No textual labels or explicit ritual gestures confirm symbolic intent; kites may be purely decorative or competitive."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0011_P2",
+      "visual_anchors": [
+        "child in pink standing beside adult",
+        "adult crouching to child’s level",
+        "shared gaze toward sky"
+      ],
+      "symbolic_mapping": [
+        "vertical orientation of obelisk and kites as axis linking earth and sky",
+        "intergenerational posture as transmission of attention"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The vertical alignment of human figures, monument, and kites constructs a visual metaphor for life’s trajectory—where identity is shaped not in isolation but through guided attention toward shared horizons.",
+      "alternative_interpretations": [
+        "The adults are merely supervising children during outdoor play; posture reflects practical need, not symbolic intent."
+      ],
+      "limitations": [
+        "Posture could be ergonomic rather than intentional; no facial expressions confirm shared focus or meaning-making."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0011_P3",
+      "visual_anchors": [
+        "crowd dispersed yet oriented toward common focal points",
+        "kites at varying altitudes",
+        "monument as fixed reference"
+      ],
+      "symbolic_mapping": [
+        "distributed attention as pluralistic engagement",
+        "fixed monument as stable ground for ephemeral activity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "time_mortality"
+      ],
+      "interpretation": "The coexistence of fleeting kite flights against the permanence of the obelisk evokes the human condition: collective life unfolds in transient moments, sustained only by shared landmarks that outlive individual experience.",
+      "alternative_interpretations": [
+        "The monument is just background scenery; people are focused on kites, not on historical resonance."
+      ],
+      "limitations": [
+        "The obelisk’s function or significance is not visually specified; its role as ‘landmark’ is inferred from scale and centrality alone."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for people is inaccurate: the image shows at least 15 distinct individuals, not 14; the candidate undercounts by 1."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:48:16.226459+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5ac30060-a8e5-9a10-881f-c4cffbb26a17",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1148,
+        "total_tokens": 1957,
+        "completion_tokens_details": {
+          "text_tokens": 1148
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701474732fdfa687fed4c62",
+      "usage": {
+        "completion_tokens": 1039,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2124,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3163
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

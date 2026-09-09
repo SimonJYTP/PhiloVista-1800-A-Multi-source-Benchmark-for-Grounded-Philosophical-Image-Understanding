@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1772",
+  "sample_id": "PHL1800_HL_0347",
+  "file_name": "PHL1800_HL_0347.png",
+  "batch_id": "B036",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a blue, white, and orange single-decker bus marked '18B' on a town street",
+  "captions": {
+    "scene": [
+      "A two-lane paved road with yellow dashed center lines runs through a mixed-use town center under overcast skies.",
+      "Traditional brick and timber-framed buildings line both sides of the street, including shops with signage and a church spire visible in the background left.",
+      "Pedestrians walk on sidewalks and cross the street; vehicles including cars and a bus occupy the roadway."
+    ],
+    "action": [
+      "The bus is stationary or moving slowly at an intersection, with its front wheels angled slightly right.",
+      "Two pedestrians are crossing the road mid-block near a white hatchback car; one carries a bag.",
+      "A person in dark clothing stands near the bus’s front-right wheel, possibly boarding or alighting."
+    ],
+    "rationale": [
+      "The bus’s position relative to lane markings and lack of motion blur suggest it is not traveling at high speed; however, no definitive motion indicator (e.g., wheel blur) is visible.",
+      "The presence of multiple parked and moving vehicles implies normal traffic flow, but no traffic signals or signs indicate priority or stop status.",
+      "The 'TO LET' sign on a building indicates commercial vacancy, but no evidence confirms whether the space is currently unoccupied or merely advertised."
+    ],
+    "object": [
+      "A single-decker bus with livery of blue lower body, white middle band, and orange upper stripe displays route number '18B' and destination 'LEAMINGTON' on its front electronic sign; registration plate reads 'XX56 EHW'.",
+      "A white hatchback car is stopped in the left lane with its driver-side door open and a person standing beside it holding a black bag.",
+      "Four pedestrians are visible on sidewalks: one adult in dark coat, one child in light jacket, one adult in beige coat carrying a white bag, and one additional pedestrian in dark clothing near the bus’s front-right wheel.",
+      "A red-painted shopfront with glass windows and a hanging oval sign reading 'BELLA ITALIA' occupies the right foreground.",
+      "A tall stone church spire with a pointed roof rises behind low-rise buildings on the far left side of the image."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1772_P1",
+      "visual_anchors": [
+        "bus route sign 'LEAMINGTON 18B'",
+        "pedestrians crossing mid-street",
+        "empty storefront 'TO LET'"
+      ],
+      "symbolic_mapping": [
+        "the fixed route number symbolizes routine and scheduled existence",
+        "mid-street crossing represents agency outside designated paths"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "social_existence"
+      ],
+      "interpretation": "The bus’s predetermined route contrasts with pedestrians’ spontaneous crossing, illustrating tension between institutional structure and individual autonomy within shared public space.",
+      "alternative_interpretations": [
+        "The scene simply depicts ordinary daily transit without symbolic intent; the crossing may be due to missing crosswalks rather than deliberate choice."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or contextual signage confirm intentional defiance or reflection by pedestrians."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1772_P2",
+      "visual_anchors": [
+        "overcast sky",
+        "worn pavement markings",
+        "mixed architectural styles"
+      ],
+      "symbolic_mapping": [
+        "faded road lines suggest erasure of past decisions",
+        "layered buildings imply accumulated history without consensus"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The weathered infrastructure and heterogeneous architecture evoke impermanence and contested identity—how places retain traces of prior forms while accommodating new functions.",
+      "alternative_interpretations": [
+        "The visual features reflect standard UK town development patterns and routine maintenance cycles, not philosophical themes."
+      ],
+      "limitations": [
+        "No dates, inscriptions, or demolition/construction activity confirm temporal layering or identity conflict."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1772_P3",
+      "visual_anchors": [
+        "'BELLA ITALIA' restaurant sign",
+        "church spire in background",
+        "bus displaying commercial branding"
+      ],
+      "symbolic_mapping": [
+        "commercial signage asserts presence amid tradition",
+        "spire signifies enduring institution alongside transient commerce"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "power_conflict"
+      ],
+      "interpretation": "The coexistence of religious architecture and branded consumer space suggests ongoing negotiation between transcendent meaning and market-driven visibility in civic life.",
+      "alternative_interpretations": [
+        "The arrangement reflects typical British high street zoning with no ideological tension implied."
+      ],
+      "limitations": [
+        "No interaction, juxtapositional framing, or contrasting lighting emphasizes conflict; all elements appear neutrally integrated."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians: candidate states 'three pedestrians on the left sidewalk' but image shows at least four distinct individuals on sidewalks; 'one person in dark clothing near bus' is not clearly visible as a separate entity from other pedestrians."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:12:16.949554+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-36339a19-9cb5-98c3-9b92-b4702313bf80",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 1036,
+        "total_tokens": 1765,
+        "completion_tokens_details": {
+          "text_tokens": 1036
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070511540deb315cd85d4c43",
+      "usage": {
+        "completion_tokens": 955,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1917,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2872
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

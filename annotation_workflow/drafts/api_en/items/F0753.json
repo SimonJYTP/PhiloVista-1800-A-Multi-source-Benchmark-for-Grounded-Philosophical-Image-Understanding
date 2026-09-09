@@ -21,7 +21,7 @@
     ],
     "rationale": [
       "The presence of rain on the windows indicates recent or ongoing precipitation outside",
-      "The apparatus appears functional and actively engaged, given the hand placement and focused attention",
+      "The hand placement on the cylinder and the group's focused attention suggest the apparatus is being inspected or demonstrated; whether it is currently running cannot be determined from the static image",
       "Clothing shows moisture spots (e.g., blue shirt shoulders, green shirt front), suggesting possible exposure to wet conditions"
     ],
     "object": [
@@ -112,9 +112,18 @@
   "needs_independent_human_annotation": true,
   "needs_independent_human_rating": true,
   "review": {
-    "reviewer_model": "glm-4.6v",
-    "verdict": "accept",
-    "issues": []
+    "reviewer_model": "codex_visual_audit",
+    "verdict": "revised_by_audit_visual_inspection",
+    "issues": [
+      "Post-audit fix (2026-09-08): rationale[1]: replaced the unsupported 'functional and actively engaged' claim with an inspection/demonstration framing that flags the static-image limitation."
+    ],
+    "resolution": {
+      "status": "captions_corrected_after_visual_reinspection",
+      "checked_by": "codex_post_audit_fix_20260908",
+      "method": "visual_reverification_with_vlm",
+      "checked_at_utc": "2026-09-08T00:00:00Z",
+      "caption_sha256": "67725be903dc3dcb21f9633a564f8dc129499622b26a4084468a6805c87dbf8a"
+    }
   },
   "provenance": {
     "generated_at_utc": "2026-09-06T19:13:40.488868+00:00",

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0522",
+  "sample_id": "PHL1800_HAIV_0474",
+  "file_name": "PHL1800_HAIV_0474.png",
+  "batch_id": "B012",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "seated figures in tiered wooden desks within an interior space",
+  "captions": {
+    "scene": [
+      "Tiered rows of wooden desks with red upholstered backrests, arranged in a classroom- or lecture-hall-like configuration.",
+      "Upper wall features vertical panels: alternating cream-colored sections and reddish-brown drapes or curtains; two narrow vertical windows visible.",
+      "Figures wear light-blue shirts and dark ties or vests; some have pink rectangular objects (possibly cups or containers) on desks."
+    ],
+    "action": [
+      "Multiple figures lean forward over desks with heads bowed toward surfaces, suggesting reading or writing.",
+      "One figure in the third row, second from left, rests chin on clasped hands while looking slightly upward.",
+      "Several figures display distorted or obscured facial features—some appear mask-like, others are blurred or featureless."
+    ],
+    "rationale": [
+      "The uniform desk arrangement and attire suggest institutional setting, but no signage confirms function.",
+      "Facial distortions are consistent across many figures, indicating stylistic choice rather than accidental artifact alone.",
+      "Pink rectangular objects appear consistently placed on desks but lack legible text or identifiable markings."
+    ],
+    "object": [
+      "There are exactly 18 distinct seated figures visible across four horizontal rows: top row has 4, second row has 4, third row has 5, bottom row has 5.",
+      "Each desk is made of brown wood with a flat top surface and a vertical front panel; red fabric backing is visible behind each occupant.",
+      "Two narrow vertical windows with white panes and dark frames appear in the upper background wall, flanking central cream panels.",
+      "All figures wear light-blue collared shirts; most wear dark neckwear (ties or vest fronts); no figure wears a pink garment under the shirt.",
+      "No legible text appears anywhere in the image; all inscriptions or markings are illegible or absent."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0522_P1",
+      "visual_anchors": [
+        "uniform blue shirts",
+        "identical desk arrangement",
+        "repeated head-down postures"
+      ],
+      "symbolic_mapping": [
+        "standardized attire maps to conformity",
+        "repetition of posture maps to passive engagement"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The visual repetition of identical postures and clothing across individuals suggests a critique of institutional homogenization, where personal agency is constrained by structural routine.",
+      "alternative_interpretations": [
+        "The scene may simply depict a stylized illustration of students in a lecture hall without symbolic intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm institutional purpose; style alone cannot verify intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0522_P2",
+      "visual_anchors": [
+        "distorted/featureless faces",
+        "one figure with visible eyes and expression",
+        "others with blank or smudged visages"
+      ],
+      "symbolic_mapping": [
+        "erased faces map to loss of individual identity",
+        "singular expressive face maps to resistance or anomaly"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The contrast between one clearly rendered face and multiple obscured ones visually interrogates how social roles may suppress or erase personal identity within collective settings.",
+      "alternative_interpretations": [
+        "Facial distortion may result from artistic medium limitations (e.g., ink bleed, digital rendering artifact) rather than intentional symbolism."
+      ],
+      "limitations": [
+        "Artistic technique (e.g., sketchy line work, wash effects) could explain facial ambiguity without symbolic meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0522_P3",
+      "visual_anchors": [
+        "tiered seating",
+        "forward-leaning postures",
+        "absence of visible instructor or focal point"
+      ],
+      "symbolic_mapping": [
+        "vertical hierarchy of desks maps to knowledge stratification",
+        "shared direction of gaze maps to directed attention without source"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The empty focal space ahead of the rows implies knowledge transmission without a visible authority, raising questions about the legitimacy and origin of received truth in structured learning environments.",
+      "alternative_interpretations": [
+        "The absence of a front figure may reflect compositional cropping or perspective choice, not conceptual omission."
+      ],
+      "limitations": [
+        "The image cuts off the front wall entirely; no evidence confirms intentional omission of a speaker or board."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of seated figures (16 vs actual 18); one figure misdescribed as wearing pink garment; inaccurate description of pink objects as books/folders; overstatement of uniformity in attire; unsupported claim about 'one figure with visible eyes and expression' in philosophy interpretation."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:53:39.483775+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-52320ef3-d902-953e-ac3b-a99b5658a7e2",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 985,
+        "total_tokens": 2518,
+        "completion_tokens_details": {
+          "text_tokens": 985
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702532361eebc57c0a4409d",
+      "usage": {
+        "completion_tokens": 975,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2945,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3920
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

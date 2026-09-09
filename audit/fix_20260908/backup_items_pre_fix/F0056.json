@@ -1,0 +1,156 @@
+{
+  "annotation_item_id": "F0056",
+  "sample_id": "PHL1800_HL_0048",
+  "file_name": "PHL1800_HL_0048.png",
+  "batch_id": "B004",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stone clock tower with a conical spire",
+  "captions": {
+    "scene": [
+      "A sunlit urban street with a tall stone clock tower centered against a clear blue sky, flanked by classical-style buildings and palm fronds.",
+      "Street infrastructure including traffic lights, lampposts, and vehicles occupies the foreground; pedestrians are visible near the sidewalk.",
+      "The tower features arched windows, a visible clock face, and a dark conical roof with a finial, set within a built environment of mixed architectural styles."
+    ],
+    "action": [
+      "A white van is moving forward on the road, partially obscured by a lamppost.",
+      "One pedestrian walks on the left sidewalk, wearing orange clothing and carrying a bag.",
+      "A person in dark clothing stands near the base of the tower on the right sidewalk."
+    ],
+    "rationale": [
+      "The clock face shows approximately 10:10, suggesting daytime activity consistent with visible shadows and lighting.",
+      "The presence of multiple traffic signals and street furniture indicates an active, regulated urban thoroughfare.",
+      "The palm frond entering from the top right suggests a warm or Mediterranean climate, though this is not definitively confirmed by architecture alone."
+    ],
+    "object": [
+      "The clock tower is constructed of light-colored stone blocks, with three visible levels: a base with a recessed doorway, a middle section with two arched windows, and an upper belfry section housing a circular clock face beneath a conical spire.",
+      "A black metal traffic signal assembly hangs from a horizontal pole extending from a green lamppost; the signal faces are oriented toward the road and appear inactive or indistinct.",
+      "A white van with a visible front grille and headlights is positioned mid-road, slightly left of center, traveling away from the viewer.",
+      "One pedestrian walks on the left sidewalk, wearing orange pants and carrying a woven bag.",
+      "A single palm frond with long, segmented leaves extends into the frame from the upper right corner, partially obscuring the sky."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0056_P1",
+      "visual_anchors": [
+        "clock face showing time",
+        "tower height relative to street level",
+        "pedestrians in motion"
+      ],
+      "symbolic_mapping": [
+        "the fixed clock contrasts with transient human movement"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The tower’s enduring structure and marked time juxtapose with fleeting pedestrian passage, evoking reflection on temporal permanence versus human transience.",
+      "alternative_interpretations": [
+        "The clock may simply serve utilitarian civic function without symbolic intent."
+      ],
+      "limitations": [
+        "No inscription or contextual signage confirms intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0056_P2",
+      "visual_anchors": [
+        "multiple lampposts and traffic signals",
+        "pedestrians obeying sidewalk boundaries",
+        "vehicles aligned with lane markings"
+      ],
+      "symbolic_mapping": [
+        "regulated infrastructure enforces collective order"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The orderly arrangement of public infrastructure and compliant human behavior visually manifests shared social conventions that enable coexistence in urban space.",
+      "alternative_interpretations": [
+        "The scene may reflect routine traffic management rather than deeper social theory."
+      ],
+      "limitations": [
+        "No visible interaction or conflict prevents definitive inference about social dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0056_P3",
+      "visual_anchors": [
+        "conical spire atop tower",
+        "arched windows",
+        "classical columns on adjacent building"
+      ],
+      "symbolic_mapping": [
+        "vertical aspiration of spire mirrors human striving for meaning"
+      ],
+      "concept_ids": [
+        "faith_meaning"
+      ],
+      "interpretation": "The upward-pointing spire, combined with traditional architectural motifs, may evoke a visual language associated with seeking orientation or transcendence in built form.",
+      "alternative_interpretations": [
+        "The spire is a common vernacular roofing element with no intended spiritual reference."
+      ],
+      "limitations": [
+        "No religious iconography, inscriptions, or ritual activity is present to confirm faith-related intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians: candidate claims two pedestrians on the left sidewalk, but only one is visible; one pedestrian near the tower base is correctly noted."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:53:47.467199+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-2f661f8e-a547-9068-9657-21d75a950bb5",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 931,
+        "total_tokens": 1700,
+        "completion_tokens_details": {
+          "text_tokens": 931
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015337dcff02eb0a034594",
+      "usage": {
+        "completion_tokens": 812,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1864,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2676
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0433",
+  "sample_id": "PHL1800_HL_0395",
+  "file_name": "PHL1800_HL_0395.png",
+  "batch_id": "B011",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a yellow articulated bus in motion on a multi-lane road surrounded by traffic and pedestrians",
+  "captions": {
+    "scene": [
+      "A busy urban street with multiple lanes of vehicular traffic, including taxis, vans, and cars, flanked by dense crowds of people on sidewalks and roadside stalls under colorful umbrellas.",
+      "An elevated concrete overpass spans the background above the road, with blurred high-rise buildings visible beyond green trees.",
+      "The image exhibits a tilt-shift photographic effect: central foreground (yellow bus) is sharp while periphery and background are progressively blurred."
+    ],
+    "action": [
+      "The yellow articulated bus is moving forward in the rightmost lane, its front windshield showing a driver and passenger interior.",
+      "Pedestrians walk along the sidewalk and cross the street; some hold umbrellas, others stand near vendor stalls or wait at the curb.",
+      "Several vehicles—including a pink taxi, white sedan, and white van—are in adjacent lanes, some stationary or moving slowly."
+    ],
+    "rationale": [
+      "The bus’s orientation, wheel position relative to lane markings, and lack of brake lights suggest forward motion rather than stopping.",
+      "Crowd density and presence of market-style stalls imply a routine public gathering or daily street commerce, not an emergency or parade.",
+      "The tilt-shift blur pattern indicates intentional photographic manipulation; however, the exact camera model or post-processing tool cannot be determined from visual evidence alone."
+    ],
+    "object": [
+      "A yellow articulated bus with two connected sections, roof-mounted air vents, and a digital destination display with legible digits but unreadable full route.",
+      "Approximately 30-40 distinct individuals are visible in the crowd on the right sidewalk and roadside area, including adults and children; some carry bags, wear hats, or hold umbrellas of various colors.",
+      "One pink taxi is present in the left lane ahead of the bus; no other pink taxis are visible.",
+      "A white minivan with tinted windows and a silver grille is parked or stopped beside the bus in the adjacent lane; its license plate is illegible.",
+      "A green-and-yellow taxi occupies the lower-left corner, showing its roof sign and front bumper, with no visible passengers inside."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0433_P1",
+      "visual_anchors": [
+        "crowd of pedestrians holding umbrellas",
+        "yellow bus occupying central lane",
+        "vendor stalls lining sidewalk"
+      ],
+      "symbolic_mapping": [
+        "umbrellas as temporary shelters against environmental exposure",
+        "bus as infrastructure enabling collective mobility"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The coexistence of regulated transit and spontaneous street life illustrates how social existence emerges through negotiated constraints—individuals move within shared spatial rules yet assert autonomy via informal economies and personal accessories like umbrellas.",
+      "alternative_interpretations": [
+        "This is simply a typical rush-hour street scene in a tropical city, with no deeper meaning intended."
+      ],
+      "limitations": [
+        "No signage or linguistic context confirms cultural or institutional intent behind the stalls or crowd behavior."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0433_P2",
+      "visual_anchors": [
+        "tilt-shift blur effect",
+        "sharp focus on bus front",
+        "blurred background buildings"
+      ],
+      "symbolic_mapping": [
+        "selective focus as metaphor for attentional hierarchy",
+        "miniaturized appearance suggesting detachment or observation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The photographic technique constructs a perceptual hierarchy where the bus—representing routine labor and public service—is rendered real and immediate, while surrounding human activity and urban structure recede into abstraction, questioning what we deem worthy of epistemic focus.",
+      "alternative_interpretations": [
+        "The blur is purely aesthetic, used to emphasize the bus as the subject without philosophical implication."
+      ],
+      "limitations": [
+        "The photographer’s intent is not visible; the effect could be technical rather than conceptual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0433_P3",
+      "visual_anchors": [
+        "multiple lanes of mixed vehicle types",
+        "pedestrians crossing between cars",
+        "no visible traffic signals or enforcement"
+      ],
+      "symbolic_mapping": [
+        "lane boundaries as fragile social contracts",
+        "pedestrian movement across lanes as embodied negotiation"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "The absence of clear traffic control devices and the simultaneous flow of vehicles and walkers manifest a lived ethics of mutual responsibility, where each agent continuously chooses paths that implicitly acknowledge others’ presence and vulnerability.",
+      "alternative_interpretations": [
+        "The scene reflects inadequate urban planning rather than ethical practice."
+      ],
+      "limitations": [
+        "No visible interactions (e.g., eye contact, yielding gestures) confirm intentional ethical conduct; proximity alone does not prove responsibility."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pink taxis (3 claimed, 1 visible); overestimated crowd size (67 claimed, ~30-40 visible); misidentified bus destination display (\"148.29\" claimed, actual text unclear); unsupported claim of \"three pink taxis\" and \"67 distinct individuals\"; inaccurate object descriptions require correction."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:46:38.366432+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8bf13f7a-4ab1-9bab-8eb6-d5b9ab4fa31e",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1084,
+        "total_tokens": 1853,
+        "completion_tokens_details": {
+          "text_tokens": 1084
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024619df356e92d9b14371",
+      "usage": {
+        "completion_tokens": 990,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2015,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3005
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

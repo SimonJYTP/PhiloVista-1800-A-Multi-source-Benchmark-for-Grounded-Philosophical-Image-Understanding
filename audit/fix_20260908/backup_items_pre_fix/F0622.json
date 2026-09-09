@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0622",
+  "sample_id": "PHL1800_HL_0094",
+  "file_name": "PHL1800_HL_0094.png",
+  "batch_id": "B014",
+  "position_in_batch": 40,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "man in light shirt and cap riding a motorcycle, viewed from behind inside a vehicle",
+  "captions": {
+    "scene": [
+      "Crowded street with multiple motorcycles, a white van, and background buildings under daylight",
+      "Interior view from a shaded vehicle looking out onto traffic; foreground includes a yellow metal bar and dark interior trim",
+      "Group of at least six visible people on or near motorcycles, some wearing helmets or caps, in dense urban traffic"
+    ],
+    "action": [
+      "Man in foreground grips handlebars while seated on a motorcycle, body oriented forward",
+      "Person to his right sits sideways on the same motorcycle, holding onto him or the vehicle",
+      "Multiple riders ahead are stationary or moving slowly in congested traffic"
+    ],
+    "rationale": [
+      "The man’s posture and hand placement indicate active control of the motorcycle, though motion is ambiguous due to static image",
+      "The presence of a face covering (blue cloth) and cap suggests protective or cultural attire, but purpose cannot be confirmed",
+      "Text on the white van includes partially legible Tamil script and 'CNG', indicating fuel type and possible regional context, but full meaning is unreadable"
+    ],
+    "object": [
+      "A white van with blue Tamil text and 'CNG' printed on its side is positioned to the left of the central motorcycle.",
+      "A green rectangular sign with a black pictogram (possibly a helmet symbol) is mounted on the back of a motorcycle ahead.",
+      "The foreground rider wears a beige cap, light-colored long-sleeve shirt with faint grid pattern, brown trousers, and a blue cloth covering lower face.",
+      "A yellow-painted metal bar extends diagonally across the lower foreground, likely part of the interior structure of the observing vehicle.",
+      "At least six individuals are visible: one in foreground, one seated behind him, two on adjacent motorcycle, two more behind them, and one further left near van."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0622_P1",
+      "visual_anchors": [
+        "blue cloth covering lower face",
+        "crowded proximity of riders",
+        "shared motorcycle seating"
+      ],
+      "symbolic_mapping": [
+        "face covering as mediation of identity in public space",
+        "physical closeness as enforced social interdependence"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The image captures how bodily presentation—here, partial concealment—and enforced proximity in transit shape collective existence, suggesting identity is negotiated not in isolation but through constrained shared movement.",
+      "alternative_interpretations": [
+        "The face covering may simply be a dust mask for air quality, and closeness reflects traffic density rather than social intent."
+      ],
+      "limitations": [
+        "No facial expressions or eye contact are visible; intent behind covering and seating arrangement is unverifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0622_P2",
+      "visual_anchors": [
+        "yellow metal bar in foreground",
+        "dark interior framing the view",
+        "multiple motorcycles in line"
+      ],
+      "symbolic_mapping": [
+        "interior frame as boundary between observer and observed",
+        "repetition of motorcycles as rhythm of routine labor"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The framed perspective emphasizes the observer’s separation from the street’s kinetic flow, evoking how technological mediation (vehicle interior) both enables observation and enforces constraint on participation.",
+      "alternative_interpretations": [
+        "The framing is incidental—a passenger’s viewpoint without philosophical implication."
+      ],
+      "limitations": [
+        "The observer’s role (driver, passenger, etc.) is unknown; framing may be purely compositional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0622_P3",
+      "visual_anchors": [
+        "green sign with helmet pictogram",
+        "CNG label on van",
+        "multiple riders without visible helmets"
+      ],
+      "symbolic_mapping": [
+        "regulatory signage versus actual practice as tension between norm and behavior",
+        "CNG as marker of transitional infrastructure"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "choice_journey"
+      ],
+      "interpretation": "Visible safety signage coexists with inconsistent compliance, illustrating how ethical responsibility in public life is distributed unevenly across individuals and systems, revealing a journey where ideals lag behind material conditions.",
+      "alternative_interpretations": [
+        "The sign may be informational rather than regulatory; helmet use may be legally optional in this jurisdiction."
+      ],
+      "limitations": [
+        "Jurisdictional rules, enforcement, and individual awareness are unseen and thus indeterminable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (at least seven vs. actual visible individuals) and misdescription of seating arrangement on the foreground motorcycle; object details like the green sign’s pictogram and van text are partially hallucinated; philosophy interpretations include unsupported symbolic mappings."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:02:07.488100+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-723a4132-5f2b-90fd-8283-c289ec1763d5",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 997,
+        "total_tokens": 1806,
+        "completion_tokens_details": {
+          "text_tokens": 997
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703014995870b9c32ec4ea6",
+      "usage": {
+        "completion_tokens": 901,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1973,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2874
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

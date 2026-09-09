@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1278",
+  "sample_id": "PHL1800_HL_0310",
+  "file_name": "PHL1800_HL_0310.png",
+  "batch_id": "B027",
+  "position_in_batch": 11,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "construction workers and traffic on a temporary road beneath an elevated railway structure",
+  "captions": {
+    "scene": [
+      "A dirt road with ruts and scattered debris runs under a wooden trestle supporting an elevated railway; overhead wires and utility poles line the background.",
+      "A multi-level infrastructure scene: ground-level temporary road, mid-level wooden scaffolding and construction supports, upper-level steel railway bridge with signage.",
+      "People, horses, bicycles, and early automobiles share a narrow unpaved thoroughfare flanked by construction staging and a dark building on the right."
+    ],
+    "action": [
+      "A man rides a bicycle toward the camera while another stands beside his bicycle near a parked automobile.",
+      "Several individuals stand or walk near horse-drawn wagons and construction materials under the trestle; no visible rope or harness handling is apparent.",
+      "Two men stand on the left side of the road observing or conversing; one wears a hat and light shirt, the other darker attire."
+    ],
+    "rationale": [
+      "The presence of exposed timber framing, incomplete decking, and temporary signage suggests active construction rather than routine maintenance.",
+      "The mix of transportation modes—horses, bicycles, and motor vehicles—indicates a transitional urban infrastructure phase, though exact chronology cannot be confirmed from image alone.",
+      "The handwritten caption at bottom identifies date and location, but its legibility is partial; 'NOR.TOR. GRADE SEP. 110 JUNE 12 1913 YONGE ST. SUBWAY TEMPORARY ROAD' is readable except for possible misreading of 'GRADE SEP. 110'."
+    ],
+    "object": [
+      "A wooden trestle structure with diagonal bracing supports an elevated railway track; a crane-like apparatus sits atop the trackbed on the left.",
+      "Two horses are visible: two harnessed to a wagon on the left, one standing near center-right beside a man holding reins.",
+      "Two bicycles are present: one being ridden, one parked upright with rider standing beside it; both have spoked wheels and upright handlebars typical of early 20th century design.",
+      "An open-top automobile with large spoked wheels and a driver seated in front is parked near center-right; a second similar vehicle is partially visible behind it.",
+      "A dark rectangular building with vertical siding and a small overhang occupies the far right edge; a circular metal manhole cover lies in the foreground dirt road."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1278_P1",
+      "visual_anchors": [
+        "exposed timber scaffolding",
+        "temporary road sign",
+        "workers amid machinery"
+      ],
+      "symbolic_mapping": [
+        "unfinished structure → provisional order",
+        "temporary road → negotiated passage"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image embodies labor as embodied negotiation between human effort and technological imposition, where constraint (the temporary road) enables mobility only through collective, provisional arrangement.",
+      "alternative_interpretations": [
+        "This is simply documentation of municipal infrastructure work without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentionality; symbolism relies on external context not visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1278_P2",
+      "visual_anchors": [
+        "multiple transport modes sharing narrow space",
+        "pedestrians standing close to moving vehicles",
+        "uneven dirt surface"
+      ],
+      "symbolic_mapping": [
+        "shared path → contested public space",
+        "dirt road → erasure of prior order"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "Coexistence of horses, bicycles, and cars on a single degraded surface visualizes competing claims to urban space, where social existence is defined by proximity and risk rather than formal rights.",
+      "alternative_interpretations": [
+        "The scene reflects normal traffic flow for the era, with no evidence of conflict or tension."
+      ],
+      "limitations": [
+        "No visible confrontation or avoidance behavior; spatial overlap does not prove conflict."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1278_P3",
+      "visual_anchors": [
+        "handwritten date 'JUNE 12 1913'",
+        "elevated structure spanning across frame",
+        "foreground manhole cover"
+      ],
+      "symbolic_mapping": [
+        "fixed date inscription → historical anchoring",
+        "manhole cover → hidden infrastructure"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The explicit dating inscribes the moment as both fleeting and preserved, while the buried utility access point signifies that truth about urban function resides beneath surface appearances.",
+      "alternative_interpretations": [
+        "The text is purely administrative labeling with no philosophical purpose."
+      ],
+      "limitations": [
+        "The inscription may have been added post-capture; its original intent is not verifiable from image alone."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of horses (3 claimed, 2 visible); incorrect bicycle handlebar type (drop handlebars claimed, upright handlebars visible); unsupported claim of 'handling a rope or harness' (no visual evidence); inaccurate text transcription ('SEP. 110' misread as 'SEP. 110' instead of 'GRADE SEP. 110')"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:11:50.396019+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d91479ab-c893-9931-949c-23b6ad0a4339",
+      "usage": {
+        "prompt_tokens": 849,
+        "completion_tokens": 1072,
+        "total_tokens": 1921,
+        "completion_tokens_details": {
+          "text_tokens": 1072
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 342,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070411310bb7e4ff5d3a4c96",
+      "usage": {
+        "completion_tokens": 995,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2108,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3103
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -17,7 +17,7 @@
     "action": [
       "The person stands still, facing the clock with head tilted upward, indicating visual attention toward it.",
       "The clock hands indicate approximately 6:23; the hour hand points between VI and VII, minute hand near IV.",
-      "Sunlight filters through leaves, casting moving shadows across the ground and objects, implying a daytime scene with gentle breeze or leaf movement."
+      "Sunlight filters through leaves, casting a static pattern of dappled light and shadow across the ground and objects, indicating a daytime scene; any motion of leaves or shadows cannot be determined from a single still image."
     ],
     "rationale": [
       "The person’s posture and orientation strongly suggest they are looking at the clock, though their eyes are not visible.",
@@ -114,9 +114,18 @@
   "needs_independent_human_annotation": true,
   "needs_independent_human_rating": true,
   "review": {
-    "reviewer_model": "glm-4.6v",
-    "verdict": "accept",
-    "issues": []
+    "reviewer_model": "codex_visual_audit",
+    "verdict": "revised_by_audit_visual_inspection",
+    "issues": [
+      "Post-audit fix (2026-09-08): action[2]: removed the unsupported 'moving shadows' / breeze inference from the static image."
+    ],
+    "resolution": {
+      "status": "captions_corrected_after_visual_reinspection",
+      "checked_by": "codex_post_audit_fix_20260908",
+      "method": "visual_reverification_with_vlm",
+      "checked_at_utc": "2026-09-08T00:00:00Z",
+      "caption_sha256": "627591f7e478dcb1c856f688a03ab3607f36759541e4640c5db32558bcc56ba6"
+    }
   },
   "provenance": {
     "generated_at_utc": "2026-09-06T17:42:19.304286+00:00",

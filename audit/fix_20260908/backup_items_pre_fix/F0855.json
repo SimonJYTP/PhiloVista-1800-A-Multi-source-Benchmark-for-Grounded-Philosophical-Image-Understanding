@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0855",
+  "sample_id": "PHL1800_HAIV_0405",
+  "file_name": "PHL1800_HAIV_0405.png",
+  "batch_id": "B019",
+  "position_in_batch": 14,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of stylized human figures gathered before a large tombstone",
+  "captions": {
+    "scene": [
+      "A cracked grey tombstone with 'RIP' inscribed and a globe-like circle above it dominates the center; figures stand or sit in front on brown ground under sparse clouds.",
+      "Multiple silhouetted and partially detailed figures are arranged in rows before the tombstone, some wearing dark robes or head coverings.",
+      "Green patches appear on the tombstone base and as one cloud; a small arched structure sits at the tombstone’s foot."
+    ],
+    "action": [
+      "Several figures are seated in the foreground with backs to viewer; their postures suggest stillness or observation.",
+      "Two figures on the left side stand near the tombstone’s crack, one appearing to gesture toward it.",
+      "On the right, three figures interact: one seated, one standing behind, and one crouching beside a white object."
+    ],
+    "rationale": [
+      "The tombstone’s inscription 'RIP' and its cracked state imply a symbolic or literal memorial context, though no burial event is shown.",
+      "Variation in figure rendering (silhouettes vs. outlined faces) suggests intentional visual hierarchy or grouping, not random drawing error.",
+      "Presence of green elements (cloud, plant-like shapes) contrasts with otherwise monochrome palette, possibly indicating life or anomaly—but no textual explanation is given."
+    ],
+    "object": [
+      "The tombstone is tall, grey, vertically cracked on its left side, and bears the capitalized letters 'RIP' centered below a circular depiction of Earth’s continents.",
+      "Exactly twelve distinct human figures are visible: five in silhouette in the foreground row, two on the left near the crack, three on the right interacting, and two partially obscured behind the right group.",
+      "A small arched doorway-like structure is embedded in the tombstone’s base, flanked by two rectangular blocks, one bearing green leaf-like markings.",
+      "Three clouds float in the background: two beige-grey and one bright green; the green cloud is irregularly shaped and smaller than the others.",
+      "The ground is rendered as uneven brown terrain with scattered small black marks resembling debris or cracks."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0855_P1",
+      "visual_anchors": [
+        "cracked tombstone",
+        "globe inset",
+        "RIP inscription"
+      ],
+      "symbolic_mapping": [
+        "globe represents planetary scale",
+        "crack signifies rupture or fragility"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image may represent collective mourning for a global entity or era, where the cracked tombstone signals irreversible loss and the globe locates that loss at planetary scale.",
+      "alternative_interpretations": [
+        "It could be a literal illustration of a fictional funeral scene in a cartoon, with no intended symbolism beyond narrative setting."
+      ],
+      "limitations": [
+        "No contextual text or labels confirm whether the globe depicts Earth or another sphere; the crack’s cause is unspecified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0855_P2",
+      "visual_anchors": [
+        "silhouetted foreground figures",
+        "detailed figures on sides",
+        "green cloud"
+      ],
+      "symbolic_mapping": [
+        "silhouettes denote anonymity or universality",
+        "green cloud contrasts with somber tones suggesting hope or intrusion"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The contrast between anonymous silhouettes and individuated figures may reflect tensions between collective identity and personal agency within constrained social rituals.",
+      "alternative_interpretations": [
+        "The stylistic variation may simply reflect artistic economy—using silhouettes for background crowd and detail for focal characters."
+      ],
+      "limitations": [
+        "No facial expressions or gestures definitively indicate internal states or roles; grouping is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0855_P3",
+      "visual_anchors": [
+        "small arched structure at tomb base",
+        "green leaf-like marks",
+        "figures seated in rows"
+      ],
+      "symbolic_mapping": [
+        "arched structure evokes portal or threshold",
+        "green marks suggest regrowth amid decay"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "faith_meaning"
+      ],
+      "interpretation": "The scene may evoke a liminal space where mourning coexists with potential renewal, implying that meaning-making persists even after symbolic death.",
+      "alternative_interpretations": [
+        "The arch and green marks could be purely decorative architectural details without symbolic intent."
+      ],
+      "limitations": [
+        "The arched structure lacks doors or openings; green marks resemble generic foliage rather than specific symbols."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of human figures: candidate states 11, but image shows 12 distinct figures; revise object caption to reflect accurate count."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:22:33.760514+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f49ad099-bddb-905d-8e52-3551a0e2c87b",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1019,
+        "total_tokens": 2552,
+        "completion_tokens_details": {
+          "text_tokens": 1019
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907032210840007f9e6f44754",
+      "usage": {
+        "completion_tokens": 909,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2980,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3889
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0439",
+  "sample_id": "PHL1800_HL_0038",
+  "file_name": "PHL1800_HL_0038.png",
+  "batch_id": "B011",
+  "position_in_batch": 15,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "ornate red clock tower on a pedestal with pigeons",
+  "captions": {
+    "scene": [
+      "A red-painted ornamental clock tower stands in front of brick commercial buildings under a partly cloudy sky.",
+      "The clock tower features gold decorative elements, sculpted birds on its roof and base, and Roman numerals on its face.",
+      "Behind the tower, a domed kiosk with arched openings and decorative finials is visible, alongside storefronts with signage."
+    ],
+    "action": [
+      "Two pigeons are perched on the stone base of the clock tower; one appears to be pecking at the surface.",
+      "A partial figure is visible on the far right edge of the frame near a shop entrance, but no clear person in white clothing is present.",
+      "The clock hands indicate approximately 1:50; the second hand is not clearly visible."
+    ],
+    "rationale": [
+      "The clock’s design—vertical column, gilded motifs, and animal sculptures—suggests civic or commemorative function rather than purely utilitarian use.",
+      "The presence of multiple pigeons on the base implies the structure has been stationary long enough for birds to habituate.",
+      "The architectural style of the kiosk and surrounding buildings suggests a mid-to-late 20th-century urban commercial setting, though exact period cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "The clock face is white with black Roman numerals I through XII and two black hands (hour, minute); the hour hand points between I and II, the minute hand near X.",
+      "The tower’s column is cylindrical, painted deep red, with raised gold bands, floral motifs, and two dark relief panels depicting stylized figures or animals near its base.",
+      "Two sculpted birds—likely pigeons or doves—are mounted on the roof corners of the clock housing; two additional live pigeons rest on the stone plinth below.",
+      "The clock housing is rectangular with a sloped roof, decorated with gold scrollwork and finials; the top bears a weather vane-like ornament composed of two curved elements flanking a central figure.",
+      "A domed kiosk behind the tower has a red-and-gold tiled dome, white decorative medallions above each arch, and a small golden bird sculpture atop its central peak."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0439_P1",
+      "visual_anchors": [
+        "clock face with Roman numerals",
+        "pigeons perched on base",
+        "ornate column with relief panels"
+      ],
+      "symbolic_mapping": [
+        "the fixed numerals represent measured, public time; the pigeons embody unregulated natural rhythm"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a formal timepiece—imposing order through standardized numerals—with pigeons, indifferent to human chronometry, evokes tension between institutionalized temporality and organic continuity.",
+      "alternative_interpretations": [
+        "The pigeons may simply be using the structure for shelter or feeding, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual inscription confirms intended symbolism; the birds’ behavior is observable but not interpretable as deliberate commentary."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0439_P2",
+      "visual_anchors": [
+        "gilded decorative motifs",
+        "red paint showing wear",
+        "relief panels with indistinct figures"
+      ],
+      "symbolic_mapping": [
+        "ornamentation signifies communal pride or historical memory; fading paint signals entropy despite preservation efforts"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "time_mortality"
+      ],
+      "interpretation": "The tower’s elaborate appearance asserts collective identity through aesthetic investment, yet visible weathering reveals the inevitable decay that undermines permanence—even commemorative objects succumb to time.",
+      "alternative_interpretations": [
+        "The wear may result from routine maintenance cycles rather than neglect or aging."
+      ],
+      "limitations": [
+        "Surface condition is visible but cannot confirm cause (e.g., pollution, age, material quality)."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0439_P3",
+      "visual_anchors": [
+        "domed kiosk with arches",
+        "shopfronts with glass windows",
+        "partial figure on the right"
+      ],
+      "symbolic_mapping": [
+        "architectural layering reflects coexistence of tradition and commerce; pedestrian movement contrasts static monumentality"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The scene captures social existence as layered spatial practice: the kiosk and clock evoke shared heritage, while the passing pedestrian enacts individual mobility within constrained urban infrastructure.",
+      "alternative_interpretations": [
+        "The partial figure may be entering or exiting a store, engaged in routine transaction—not symbolic traversal."
+      ],
+      "limitations": [
+        "Only one partial figure is visible; posture, direction, and intent are ambiguous."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pigeons (candidate states four sculpted birds but image shows two sculpted birds on the roof); inaccurate clock time (candidate claims 10:10 but image shows ~1:50); unsupported claim of a person in white clothing (no clear person visible, only a partial figure on the far right)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:47:20.329788+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-854f890e-8d44-9a12-b95f-a3c6fcf4bfd5",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 1069,
+        "total_tokens": 1818,
+        "completion_tokens_details": {
+          "text_tokens": 1069
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907024653e5f5292dac444267",
+      "usage": {
+        "completion_tokens": 1085,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1977,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3062
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

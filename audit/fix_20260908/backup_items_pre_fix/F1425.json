@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1425",
+  "sample_id": "PHL1800_HL_0327",
+  "file_name": "PHL1800_HL_0327.png",
+  "batch_id": "B029",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three people (one child, two adults) walking on a sidewalk near a Starbucks",
+  "captions": {
+    "scene": [
+      "A brick-paved street corner with a red-brick building housing a Starbucks Coffee shop, green awnings, and outdoor seating.",
+      "A one-way traffic sign with a left-pointing arrow mounted on a metal pole in the foreground.",
+      "A mix of parked vehicles including a gray sedan, a black sedan, and a white van along the curb under overcast skies."
+    ],
+    "action": [
+      "A child in a red shirt walks ahead of two adults on the sidewalk, all moving toward the camera’s left.",
+      "Two adults walk side by side behind the child; one wears a dark jacket and light pants, the other a beige coat and blue jeans.",
+      "The Starbucks storefront displays its logo and signage; no patrons are visible at the outdoor tables."
+    ],
+    "rationale": [
+      "The group consists of three people (one child, two adults) moving in the same direction, but no explicit relationship (e.g., family) is visually confirmed.",
+      "The one-way sign indicates traffic flow restriction, but no vehicles are actively moving in the frame, so directional enforcement is not observable.",
+      "The presence of multiple green umbrellas suggests an outdoor café area, yet no one is seated there, implying either low occupancy or off-hours."
+    ],
+    "object": [
+      "A gray four-door sedan is parked parallel to the curb, rear facing the viewer, with a visible license plate frame but unreadable characters.",
+      "A black sedan is parked further down the street, front-facing, with headlights and grille clearly visible.",
+      "A yellow fire hydrant stands at the curb near the base of the one-way sign pole.",
+      "Two green fabric umbrellas are open over empty outdoor tables and chairs adjacent to the Starbucks entrance.",
+      "A vertical green sign with white text reads 'STARBUCKS COFFEE' above a circular green-and-white logo featuring a siren figure."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1425_P1",
+      "visual_anchors": [
+        "one-way sign with left arrow",
+        "child walking ahead of adults",
+        "brick sidewalk intersecting paved road"
+      ],
+      "symbolic_mapping": [
+        "the one-way sign symbolizes constrained directionality in daily movement",
+        "the child leading suggests emergent agency within structured guidance"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a moment where individual motion (the child’s forward stride) occurs within socially imposed constraints (the one-way rule), reflecting how personal journey unfolds amid institutional boundaries.",
+      "alternative_interpretations": [
+        "It may simply depict routine pedestrian behavior without symbolic intent—people walking past a coffee shop on a quiet street."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentionality; the child’s lead position could be coincidental rather than deliberate."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1425_P2",
+      "visual_anchors": [
+        "Starbucks logo and signage",
+        "uniform green umbrellas",
+        "standardized outdoor furniture"
+      ],
+      "symbolic_mapping": [
+        "global brand signage represents homogenized commercial space",
+        "repetitive design elements signal standardized social experience"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual uniformity of corporate branding and public seating implies a constructed social environment where identity is partially shaped by consumption contexts and shared spatial norms.",
+      "alternative_interpretations": [
+        "The scene reflects ordinary urban infrastructure; the Starbucks is merely a local business, not necessarily a symbol of globalization."
+      ],
+      "limitations": [
+        "No customers are present, so the social function of the space remains unobserved and inferred."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1425_P3",
+      "visual_anchors": [
+        "overcast sky",
+        "wet-looking pavement",
+        "autumnal trees with partial leaf loss"
+      ],
+      "symbolic_mapping": [
+        "dim lighting and seasonal transition evoke temporal passage",
+        "empty outdoor seating hints at transience of human presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The muted light and seasonal decay juxtaposed with enduring built structures suggest the tension between fleeting human activity and persistent material environments, underscoring impermanence within continuity.",
+      "alternative_interpretations": [
+        "The weather is simply cloudy; the trees are in normal autumn foliage change, not symbolic of decline."
+      ],
+      "limitations": [
+        "No clocks, calendars, or explicit time markers exist; season is inferred from foliage, which varies regionally."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The target subject incorrectly describes the group as a 'family of three'—the image shows three people (one child, two adults) but no explicit family relationship is verifiable; the count is correct but the relationship claim is unsupported."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:30:53.228827+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-df1f85fa-deac-956d-8f14-f32e11091f61",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1006,
+        "total_tokens": 1775,
+        "completion_tokens_details": {
+          "text_tokens": 1006
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704302580c54b6036ab4d2c",
+      "usage": {
+        "completion_tokens": 1011,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1936,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2947
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

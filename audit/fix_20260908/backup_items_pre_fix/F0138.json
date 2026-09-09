@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0138",
+  "sample_id": "PHL1800_HL_0357",
+  "file_name": "PHL1800_HL_0357.png",
+  "batch_id": "B005",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person walking on a sidewalk",
+  "captions": {
+    "scene": [
+      "A sunlit urban sidewalk lined with mature trees, a cream-colored building with black awnings, and parked vehicles.",
+      "A traffic signal pole painted teal supports two vertical traffic lights and a directional sign for a restaurant.",
+      "Fallen leaves scatter the curb and gutter; shadows indicate bright daylight with overhead sun."
+    ],
+    "action": [
+      "The person walks forward with left foot mid-stride, right arm swinging slightly, wearing a dark coat and light shoes.",
+      "The traffic lights show red (top) and amber (middle) illuminated on one signal, and red (top) and green (bottom) on the other.",
+      "Vehicles are parked along the street; one dark SUV is visible behind a tree trunk near the curb."
+    ],
+    "rationale": [
+      "The person’s posture and leg position indicate forward locomotion rather than standing still.",
+      "The traffic lights display non-standard color combinations (red+amber on one, red+green on the other), suggesting malfunction or non-standard configuration.",
+      "The directional sign points left and includes readable text 'LIVE JAZZ' and 'RESTAURANT', with 'DIXON’S' partially visible above it."
+    ],
+    "object": [
+      "A pedestrian wearing a black knee-length coat, black trousers, and white sneakers walks on a concrete sidewalk.",
+      "A teal-painted metal pole holds two vertically aligned traffic signals and a green-and-white arrow-shaped sign.",
+      "The sign displays 'LIVE JAZZ' in large white capital letters and 'RESTAURANT' below it in smaller white capitals; 'DIXON’S' is partially visible above 'LIVE JAZZ'.",
+      "Three mature deciduous trees with green foliage line the sidewalk, casting dappled shadows on the pavement.",
+      "A cream stucco building features black horizontal slatted window shutters and a black fabric awning over a doorway."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0138_P1",
+      "visual_anchors": [
+        "person walking alone",
+        "sidewalk bordered by trees and buildings",
+        "traffic signal showing conflicting colors"
+      ],
+      "symbolic_mapping": [
+        "the contradictory traffic signal may symbolize ambiguous guidance in daily life"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The individual proceeds despite ambiguous signals, suggesting agency amid structural uncertainty.",
+      "alternative_interpretations": [
+        "The signal may simply be defective; the person follows habitual path regardless of signage."
+      ],
+      "limitations": [
+        "No evidence confirms the person noticed or reacted to the signal; their gaze is downward."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0138_P2",
+      "visual_anchors": [
+        "fallen leaves on curb",
+        "sunlit shadows",
+        "person in motion"
+      ],
+      "symbolic_mapping": [
+        "seasonal leaf fall paired with forward movement evokes transience and continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of decaying organic matter and purposeful human motion reflects cyclical impermanence within social routine.",
+      "alternative_interpretations": [
+        "Leaves are merely seasonal debris; the walk is routine commuting with no symbolic intent."
+      ],
+      "limitations": [
+        "Season cannot be definitively confirmed as autumn solely from scattered dry leaves; could be wind-scattered summer foliage."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0138_P3",
+      "visual_anchors": [
+        "restaurant sign pointing left",
+        "person walking straight ahead",
+        "building facade with shuttered windows"
+      ],
+      "symbolic_mapping": [
+        "the sign directs attention elsewhere while the subject moves independently"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The subject’s trajectory diverges from the advertised destination, implying self-determined direction against commercial invitation.",
+      "alternative_interpretations": [
+        "The person may be heading toward the restaurant but not yet turning; the sign is irrelevant to their immediate path."
+      ],
+      "limitations": [
+        "Direction of travel relative to the sign’s intended destination is unknown—no visible entrance or crosswalk confirms alignment."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The action caption incorrectly states all three traffic light colors are illuminated simultaneously; the image shows red and amber lit on one signal and red and green on the other, not all three colors at once.",
+      "The object caption about the sign’s uppermost word being illegible is inaccurate—‘DIXON’S’ is partially visible above ‘LIVE JAZZ’ on the sign."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:06:00.824570+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-06f5d6ef-b22c-93ab-ab4b-0139f44938bb",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 907,
+        "total_tokens": 1716,
+        "completion_tokens_details": {
+          "text_tokens": 907
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020542dd124b61a3e6461a",
+      "usage": {
+        "completion_tokens": 955,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1887,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2842
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

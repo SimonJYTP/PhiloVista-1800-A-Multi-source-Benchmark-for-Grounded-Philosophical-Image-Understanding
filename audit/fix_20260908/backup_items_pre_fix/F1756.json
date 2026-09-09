@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1756",
+  "sample_id": "PHL1800_HL_0493",
+  "file_name": "PHL1800_HL_0493.png",
+  "batch_id": "B036",
+  "position_in_batch": 9,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "passengers seated and standing inside a public transit vehicle at night",
+  "captions": {
+    "scene": [
+      "Interior of a bus or tram with yellow vertical poles, overhead handrails, and patterned upholstered seats under artificial lighting.",
+      "Nighttime exterior visible through windows; reflections and faint graffiti appear on glass surfaces.",
+      "Multiple passengers occupy seats and stand near poles; one person holds a newspaper partially obscuring their face."
+    ],
+    "action": [
+      "A woman in a plaid jacket sits upright, hands clasped in lap, facing forward.",
+      "A man in the foreground looks toward the camera with neutral expression; his head is slightly tilted.",
+      "A passenger behind him holds open a newspaper, covering lower face and chest; eyes are visible above the paper."
+    ],
+    "rationale": [
+      "The presence of yellow grab poles, ceiling-mounted fluorescent lights, and fixed seating suggests a mass-transit vehicle rather than a private vehicle.",
+      "Exterior darkness and interior illumination indicate the vehicle is operating during nighttime hours.",
+      "Graffiti-like markings on window panes are visible but illegible; their presence supports urban setting but does not confirm location."
+    ],
+    "object": [
+      "Four distinct individuals are visible: one woman seated centrally, two men in foreground/midground, and one person partially obscured behind a newspaper.",
+      "Yellow metal poles run vertically from floor to ceiling; horizontal handrails with hanging loops extend across the upper interior.",
+      "Seats have dark fabric with repeating light-colored floral or geometric patterns; seat backs are rigid and uniformly spaced.",
+      "Overhead lighting consists of elongated white fixtures mounted flush to the curved ceiling, casting directional illumination.",
+      "A folded newspaper with black print on white paper is held by a passenger; text is too small and blurred to read."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1756_P1",
+      "visual_anchors": [
+        "yellow vertical poles",
+        "seats arranged in parallel rows",
+        "passengers oriented forward"
+      ],
+      "symbolic_mapping": [
+        "poles as structural constraints",
+        "rows as social ordering"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The rigid geometry of poles and seating enforces bodily alignment and spatial separation, illustrating how infrastructure mediates individual autonomy within collective movement.",
+      "alternative_interpretations": [
+        "This is merely functional design for safety and capacity, with no intentional symbolic layer."
+      ],
+      "limitations": [
+        "No signage, branding, or explicit cultural markers confirm intended meaning of layout."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1756_P2",
+      "visual_anchors": [
+        "woman gazing forward with hands clasped",
+        "man looking directly at viewer",
+        "dark windows reflecting interior light"
+      ],
+      "symbolic_mapping": [
+        "forward gaze as directed temporality",
+        "reflection as self-awareness amid transit"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "Passengers exist simultaneously in motion and stasis—bodies moving through space while faces remain fixed—evoking the tension between lived duration and perceived identity in transient public spaces.",
+      "alternative_interpretations": [
+        "Postures reflect fatigue or routine habit, not philosophical reflection."
+      ],
+      "limitations": [
+        "Facial expressions are ambiguous; no eye contact or micro-expressions can be definitively interpreted."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1756_P3",
+      "visual_anchors": [
+        "newspaper held up",
+        "graffiti on window",
+        "overhead lighting casting shadows"
+      ],
+      "symbolic_mapping": [
+        "newspaper as mediated reality",
+        "graffiti as unauthorized inscription"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of official information (newspaper) and unofficial mark-making (graffiti) within a regulated environment highlights contested domains of truth and authority in shared civic infrastructure.",
+      "alternative_interpretations": [
+        "Graffiti is incidental background; newspaper is personal reading material with no symbolic intent."
+      ],
+      "limitations": [
+        "Graffiti is fragmented and unreadable; newspaper content is entirely obscured."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (candidate states five, but image shows four distinct individuals)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:08:41.578920+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-43b1b4d6-23c9-95b5-803e-9aca17c15799",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 926,
+        "total_tokens": 1695,
+        "completion_tokens_details": {
+          "text_tokens": 926
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907050825fffd4ae5d8314dc8",
+      "usage": {
+        "completion_tokens": 793,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1854,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2647
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

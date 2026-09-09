@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1259",
+  "sample_id": "PHL1800_HL_0065",
+  "file_name": "PHL1800_HL_0065.png",
+  "batch_id": "B026",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a street pole with attached signs and traffic signals in an urban commercial corridor",
+  "captions": {
+    "scene": [
+      "A narrow street lined with brick and painted storefronts, overhead signage, and a utility pole bearing multiple regulatory and commercial signs.",
+      "Pedestrians walk on the sidewalk beneath hanging signs including 'SOCIETY HILL LOAN', 'Walgreens', and various service advertisements.",
+      "A green traffic light is illuminated below a 'ONE WAY' sign and above a 'NO TURN ON RED' sign, with a 'DON'T BLOCK THE BOX' sign mounted lower on the same pole."
+    ],
+    "action": [
+      "Multiple pedestrians are walking on the sidewalk near the center-left, with no clear indication of a single group or specific actions like holding a camera.",
+      "A red car is parked on the street near the intersection beneath the pole; another dark vehicle is partially visible behind it.",
+      "The traffic signal displays green for straight-through movement, while the 'NO TURN ON RED' sign remains static."
+    ],
+    "rationale": [
+      "The presence of multiple layered signs and dense storefronts suggests a high-density commercial zone, though exact city or neighborhood cannot be determined from visual evidence alone.",
+      "The 'DON'T BLOCK THE BOX' sign implies a regulated intersection where gridlock prevention is enforced, but no vehicles are currently blocking the box.",
+      "Text such as '2-7501' and 'RENT STORE' appears on signs, indicating local business activity, yet some text (e.g., parts of 'Handles') is partially obscured or unreadable."
+    ],
+    "object": [
+      "A black metal utility pole supports a yellow rectangular sign reading 'SOCIETY HILL LOAN', 'MUSICAL INSTRUMENTS', 'CASH CASHED', 'MONEY ORDERS • JEWELRY', with two spherical decorative lamps hanging from its left arm.",
+      "A white rectangular sign with black lettering states 'ONE WAY' with a left-pointing arrow, mounted above a second white sign stating 'NO TURN ON RED'.",
+      "A white square sign with black border and bold text reads 'DON'T BLOCK THE BOX', featuring a red grid symbol representing a box junction.",
+      "A vertical red banner with white cursive script reads 'Walgreens', positioned on the right side of the frame, partially behind tree foliage.",
+      "A blue awning with white text includes 'SOUTH STREET' and '9-632', and a green handbag icon is visible on its left edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1259_P1",
+      "visual_anchors": [
+        "'DON'T BLOCK THE BOX' sign",
+        "green traffic light",
+        "crowded sidewalk"
+      ],
+      "symbolic_mapping": [
+        "The box-junction rule symbolizes collective constraint enabling individual flow"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "Regulatory signage like 'DON'T BLOCK THE BOX' embodies a social contract where individual restraint (not occupying the intersection) enables shared mobility—a material instantiation of freedom through constraint.",
+      "alternative_interpretations": [
+        "It is merely a traffic enforcement notice with no deeper meaning, intended solely to reduce congestion."
+      ],
+      "limitations": [
+        "No visible driver behavior or actual blocking event confirms whether the rule is being followed or internalized."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1259_P2",
+      "visual_anchors": [
+        "'SOCIETY HILL LOAN' sign",
+        "cash-for-gold imagery",
+        "pedestrians carrying bags"
+      ],
+      "symbolic_mapping": [
+        "Loan and pawn services represent immediate economic contingency against structural precarity"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The juxtaposition of financial services promising instant cash against a backdrop of everyday pedestrian movement reflects how economic survival is mediated through transactional institutions embedded in daily space.",
+      "alternative_interpretations": [
+        "The sign is purely commercial advertising without philosophical implication."
+      ],
+      "limitations": [
+        "No visible transactions or expressions of need confirm the lived experience behind the service."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1259_P3",
+      "visual_anchors": [
+        "multiple overlapping signs",
+        "unreadable text fragments",
+        "layered signage on buildings"
+      ],
+      "symbolic_mapping": [
+        "Visual noise and partial legibility evoke epistemic fragmentation in urban semiosis"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The accumulation of competing, partially occluded signs—some legible, others blurred or cut off—models how truth and identity in public space are constructed through incomplete, contested, and hierarchically stacked representations.",
+      "alternative_interpretations": [
+        "Sign clutter is a practical consequence of commercial density, not symbolic intent."
+      ],
+      "limitations": [
+        "No evidence that sign placement was deliberate for symbolic effect; readability loss may stem from camera angle or wear."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (described as three walking together, but image shows multiple individuals not clearly grouped as a single trio); 'one holding a camera' is unsupported; 'red car stopped at intersection' is inaccurate (car is parked, not stopped at intersection); 'another dark vehicle partially visible behind it' is vague and may not be distinct; 'three pedestrians' count is not verified; 'camera' action is not visible; 'red car stopped' is incorrect (car is parked, not stopped at intersection)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:09:17.022755+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-1e8b6367-3b46-97d2-998e-ecb4298f004a",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1079,
+        "total_tokens": 1888,
+        "completion_tokens_details": {
+          "text_tokens": 1079
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040905818ffbd876fe4089",
+      "usage": {
+        "completion_tokens": 1138,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2051,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3189
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

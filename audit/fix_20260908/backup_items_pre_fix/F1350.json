@@ -1,0 +1,165 @@
+{
+  "annotation_item_id": "F1350",
+  "sample_id": "PHL1800_HL_0471",
+  "file_name": "PHL1800_HL_0471.png",
+  "batch_id": "B028",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a dim sum preparation counter with chefs and adjacent restaurant entrance",
+  "captions": {
+    "scene": [
+      "A curved, wood-paneled dim sum counter with a transparent glass enclosure housing chefs and bamboo steamers.",
+      "An open doorway labeled 'MAN TONG KITCHEN' with red signage above, leading into a warmly lit interior with shelves of bottles.",
+      "A tiled floor area with stanchions and ropes forming a queue path, and several pedestrians walking past the counter and entrance."
+    ],
+    "action": [
+      "Two chefs in white uniforms and tall hats are visible inside the glass enclosure; one is actively handling food near the counter edge.",
+      "Five pedestrians are walking rightward across the foreground: two women side-by-side, a man behind them, another person partially obscured behind the man, and a fifth person in a floral shirt on the far right.",
+      "Stacks of bamboo steamers are arranged on the counter surface, some upright and others lying horizontally."
+    ],
+    "rationale": [
+      "The presence of multiple bamboo steamers and chefs in uniform suggests a specialized dim sum service station, not a generic kitchen.",
+      "The red sign above the doorway contains Chinese characters followed by 'MAN TONG KITCHEN', indicating a named establishment; however, the Chinese text is partially legible but not fully decipherable due to resolution and angle.",
+      "The curved counter design and glass barrier imply intentional separation between preparation and customer space, likely for hygiene or theatrical effect."
+    ],
+    "object": [
+      "A semi-circular wooden counter with integrated under-counter lighting illuminates its base and the items placed upon it.",
+      "A transparent curved glass wall encloses the preparation area, showing reflections of overhead lights and surrounding architecture.",
+      "Two chefs wearing white chef coats and tall white toques are positioned behind the counter; one stands at the front edge, hands near a plate or tray.",
+      "At least six bamboo steamers are visible on the counter: three stacked vertically, two laid horizontally, and one partially obscured.",
+      "Two gold-colored stanchions with red velvet ropes stand near the entrance, demarcating a pathway or waiting zone."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1350_P1",
+      "visual_anchors": [
+        "curved glass barrier",
+        "chefs working behind transparent enclosure",
+        "bamboo steamers arranged in orderly stacks"
+      ],
+      "symbolic_mapping": [
+        "glass barrier maps to separation between labor and consumption",
+        "orderly steamers map to ritualized repetition in service work"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The transparent enclosure frames culinary labor as both visible performance and contained process, highlighting how service work is simultaneously exposed and insulated within commercial spaces.",
+      "alternative_interpretations": [
+        "It may simply reflect hygiene regulations or aesthetic design without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or direct interaction are visible; thus, worker agency or emotional state cannot be determined."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1350_P2",
+      "visual_anchors": [
+        "pedestrians walking past without stopping",
+        "stanchions guiding movement",
+        "open doorway inviting entry"
+      ],
+      "symbolic_mapping": [
+        "stanchions map to institutional guidance of bodily flow",
+        "open doorway maps to conditional access to social space"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "Movement through the space is subtly choreographed—people follow implied paths while the open entrance remains unoccupied, suggesting freedom of passage coexists with implicit spatial constraints.",
+      "alternative_interpretations": [
+        "The pedestrians may be unrelated shoppers merely transiting a mall corridor, with no intended commentary on access."
+      ],
+      "limitations": [
+        "Direction of pedestrian gaze and destination are unknown; their relationship to the restaurant is not confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1350_P3",
+      "visual_anchors": [
+        "stacked bamboo steamers",
+        "uniformed chefs",
+        "wooden paneling with grain texture"
+      ],
+      "symbolic_mapping": [
+        "repetition of steamers maps to cyclical time in food service",
+        "uniforms map to erasure of individual identity in professional roles"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The rhythmic stacking of steamers and standardized attire evoke a temporality governed by service cycles rather than personal chronology, where identity is subsumed into functional appearance.",
+      "alternative_interpretations": [
+        "The arrangement is purely practical—steamers are stored efficiently, and uniforms ensure cleanliness and brand consistency."
+      ],
+      "limitations": [
+        "No clocks, calendars, or aging indicators are present; temporal symbolism relies on inference from repeated objects."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of chefs (3 vs 2 visible)",
+      "Incorrect count of pedestrians (4 vs 5 visible)",
+      "Incorrect count of bamboo steamers (8 vs 6 visible)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:22:14.493624+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-b7fd059b-944d-916d-be9e-cf8bc2564d83",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1022,
+        "total_tokens": 1831,
+        "completion_tokens_details": {
+          "text_tokens": 1022
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070421443a80524e4f994bef",
+      "usage": {
+        "completion_tokens": 1016,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1998,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3014
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

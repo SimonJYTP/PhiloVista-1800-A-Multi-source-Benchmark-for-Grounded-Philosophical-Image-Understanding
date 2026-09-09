@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1379",
+  "sample_id": "PHL1800_HL_0045",
+  "file_name": "PHL1800_HL_0045.png",
+  "batch_id": "B029",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large neoclassical building with a clock tower and palm trees in front",
+  "captions": {
+    "scene": [
+      "A wide plaza with wet reddish-brown paving reflects an overcast sky, bordered by a row of tall palm trees and a multi-arched building with a central clock tower.",
+      "A grassy strip separates the plaza from the building; a yellow-and-black articulated bus is parked near the building’s left side.",
+      "A circular stepped platform sits in the foreground right, with two people standing near it."
+    ],
+    "action": [
+      "The pavement is visibly wet and reflective, indicating recent or ongoing rain.",
+      "Two individuals stand near the stepped platform, positioned close to each other.",
+      "A yellow-and-black bus remains stationary beside the building’s colonnade."
+    ],
+    "rationale": [
+      "The uniform sheen and puddle-like reflections on the plaza suggest precipitation occurred shortly before or during capture.",
+      "The presence of two figures near the stepped platform is visible, though their specific actions (e.g., holding umbrellas) are not confirmed by the image.",
+      "The building’s architectural symmetry and prominent clock face suggest civic or transit function, though signage is unreadable."
+    ],
+    "object": [
+      "The building features a symmetrical facade with repeating arched windows and columns, topped by a tall square clock tower with two visible clock faces showing approximately 10:10.",
+      "Ten palm trees are aligned in front of the building, each with a slender trunk and a crown of fronds; all appear healthy and upright.",
+      "A yellow-and-black articulated bus is parked parallel to the building, with visible windows and wheels, positioned between two lampposts.",
+      "Two people stand near the circular steps on the right; both wear dark clothing; no facial features are discernible, and no umbrellas are visible.",
+      "The plaza surface is composed of rectangular reddish-brown tiles arranged in a grid, with water pooling in depressions and reflecting surrounding structures."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1379_P1",
+      "visual_anchors": [
+        "clock tower with two visible faces",
+        "wet reflective plaza",
+        "symmetrical architecture"
+      ],
+      "symbolic_mapping": [
+        "the dual clock faces may represent simultaneity of perspectives",
+        "the wet surface mirrors the structure, suggesting self-reflection"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The clock tower’s dual faces and the plaza’s reflection jointly evoke the tension between objective timekeeping and subjective perception—time as measured versus time as experienced through mutable surfaces.",
+      "alternative_interpretations": [
+        "The clocks simply indicate local time; the wet ground is incidental weather, not symbolic."
+      ],
+      "limitations": [
+        "No legible text confirms intended symbolism; reflections could be purely optical, not conceptual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1379_P2",
+      "visual_anchors": [
+        "two umbrella-holding figures",
+        "stepped circular platform",
+        "open plaza space"
+      ],
+      "symbolic_mapping": [
+        "umbrellas denote shelter amid exposure",
+        "circular steps imply gathering or ritual"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The paired figures under umbrellas within an open civic space illustrate social coexistence under shared environmental constraints—protection sought collectively while remaining physically separate and exposed to the same conditions.",
+      "alternative_interpretations": [
+        "They are merely waiting for transport; the platform is functional infrastructure, not symbolic."
+      ],
+      "limitations": [
+        "Posture and distance do not confirm interaction; intent is invisible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1379_P3",
+      "visual_anchors": [
+        "palm trees in rigid alignment",
+        "uniform arches of the building",
+        "repetitive tile pattern"
+      ],
+      "symbolic_mapping": [
+        "ordered nature juxtaposed with built order",
+        "repetition suggests institutional rhythm"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "identity_appearance"
+      ],
+      "interpretation": "The disciplined repetition of palms, arches, and tiles manifests a constructed harmony where natural forms are subordinated to geometric regularity—suggesting identity shaped by institutional design rather than organic growth.",
+      "alternative_interpretations": [
+        "Palm trees were planted for aesthetic consistency; the pattern is standard urban landscaping."
+      ],
+      "limitations": [
+        "No evidence of intentional design philosophy; alignment may result from practical spacing norms."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The candidate incorrectly claims two people hold umbrellas; the image shows two people standing near the steps without umbrellas."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:25:28.108275+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-836bd09f-de5e-9358-94cb-065291d72178",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 977,
+        "total_tokens": 1746,
+        "completion_tokens_details": {
+          "text_tokens": 977
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070425134ef048a77bdf4536",
+      "usage": {
+        "completion_tokens": 866,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1904,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2770
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

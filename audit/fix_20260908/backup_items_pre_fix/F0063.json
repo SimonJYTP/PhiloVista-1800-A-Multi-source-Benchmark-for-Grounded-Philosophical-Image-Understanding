@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0063",
+  "sample_id": "PHL1800_IRFL_0309",
+  "file_name": "PHL1800_IRFL_0309.jpg",
+  "batch_id": "B004",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman with four visible arms seated at a desk",
+  "captions": {
+    "scene": [
+      "A brightly lit office interior with horizontal blinds covering a window in the background, a glass-topped desk in the foreground, and a white shelving unit to the left holding binders.",
+      "Two open laptops sit on the desk—one silver on the left, one black on the right—alongside two tablets (one held, one resting), a calculator, and a landline telephone.",
+      "The subject wears a beige blazer over a dark top, black-rimmed glasses, and has shoulder-length brown hair; her posture is upright and facing forward."
+    ],
+    "action": [
+      "One hand types on the silver laptop keyboard; another holds a black smartphone near the ear; a third holds a black calculator aloft; a fourth holds a black tablet aloft; a fifth hand grips the handset of a black corded landline phone pressed to the right ear; a sixth hand holds a second black tablet horizontally in front of the torso (likely supported by two hands, but the count of distinct arms is four).",
+      "The subject’s head is oriented toward the camera with eyes open and mouth slightly parted; no facial expression is clearly discernible beyond neutral openness.",
+      "All four arms are extended outward or upward from the torso, each manipulating a distinct electronic device or input interface."
+    ],
+    "rationale": [
+      "The presence of four arms attached to one torso strongly suggests digital manipulation rather than biological reality, as human anatomy does not permit this configuration.",
+      "The uniform lighting, consistent shadow direction, and lack of occlusion artifacts between arms imply a single photographic capture with post-production compositing.",
+      "The identical skin tone, sleeve texture, and wrist angles across all arms indicate they originate from the same person’s limbs, digitally duplicated and repositioned."
+    ],
+    "object": [
+      "A silver laptop with a visible keyboard and trackpad sits on the left side of the desk, its screen angled slightly away from the viewer.",
+      "A black laptop with an open lid rests on the right side of the desk, partially obscured by the subject’s right arm and the tablet it holds.",
+      "A black rectangular calculator with a dark display and white numeric keys is held vertically in the subject’s upper-left hand.",
+      "A black corded landline telephone with a coiled black cord and a handset pressed against the subject’s right ear is held in the subject’s lower-right hand.",
+      "Two black tablets are present: one held horizontally in front of the subject’s chest with both hands, and another held vertically aloft in the subject’s upper-right hand."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0063_P1",
+      "visual_anchors": [
+        "four arms",
+        "multiple simultaneous devices",
+        "desk clutter"
+      ],
+      "symbolic_mapping": [
+        "four arms → multiplicity of tasks",
+        "devices → mediation of labor"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually enacts the modern condition where technological tools proliferate agency but also fragment attention, suggesting labor is no longer embodied in singular action but distributed across prosthetic extensions.",
+      "alternative_interpretations": [
+        "It may simply be a humorous stock photo illustrating workplace overload without philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual signage confirm intended meaning; the symbolic mapping relies entirely on external cultural associations."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0063_P2",
+      "visual_anchors": [
+        "glasses",
+        "neutral facial orientation",
+        "symmetrical arm arrangement"
+      ],
+      "symbolic_mapping": [
+        "glasses → mediated perception",
+        "symmetry → constructed order"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The subject’s gaze remains fixed and unflinching despite sensory overload, implying a stable epistemic self amid informational chaos—truth as maintained posture rather than accumulated data.",
+      "alternative_interpretations": [
+        "The pose may be staged for aesthetic balance rather than conceptual statement."
+      ],
+      "limitations": [
+        "Facial expression is ambiguous; 'neutral' is inferred from absence of clear emotion, not positive evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0063_P3",
+      "visual_anchors": [
+        "glass desk surface",
+        "reflections of arms and devices",
+        "transparent barrier"
+      ],
+      "symbolic_mapping": [
+        "reflection → doubled identity",
+        "glass → permeable boundary"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The reflective desk surface mirrors the multiplied limbs, visualizing how social roles are performed and reiterated through visible repetition, where identity emerges from observable replication rather than internal coherence.",
+      "alternative_interpretations": [
+        "Reflections are incidental optical effects of polished glass, not intentional symbolism."
+      ],
+      "limitations": [
+        "Reflections are partial and distorted; no clear correspondence between reflected and real forms confirms deliberate mirroring."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The candidate incorrectly states the subject has six arms; the image shows four arms. The action caption incorrectly lists six arms manipulating devices; the image shows four arms (one typing on a laptop, one holding a smartphone, one holding a calculator, one holding a tablet, and one holding a landline phone—note: the tablet held horizontally in front is likely supported by two hands, but the count of distinct arms is four, not six). The object caption incorrectly describes a black laptop with a closed lid; the image shows an open black laptop."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:54:43.983480+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7f8431d6-b4b5-966c-bc8d-64542ee80e34",
+      "usage": {
+        "prompt_tokens": 756,
+        "completion_tokens": 1067,
+        "total_tokens": 1823,
+        "completion_tokens_details": {
+          "text_tokens": 1067
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 249,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070154215536cefa662b4a10",
+      "usage": {
+        "completion_tokens": 1126,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1986,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3112
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

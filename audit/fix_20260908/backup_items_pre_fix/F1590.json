@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1590",
+  "sample_id": "PHL1800_HL_0496",
+  "file_name": "PHL1800_HL_0496.png",
+  "batch_id": "B033",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a street food vendor operating a hot dog cart",
+  "captions": {
+    "scene": [
+      "A city street with multi-story buildings, parked cars, pedestrians on the sidewalk, and an American flag on a pole above the cart.",
+      "Two large blue-and-yellow umbrellas with visible branding shade two adjacent food carts; steam rises from the cooking surface of the foreground cart.",
+      "The foreground cart displays multiple signs advertising hot dogs, knishes, sausages, beef patties, and sodas; bottled beverages line the back shelf."
+    ],
+    "action": [
+      "A man in a dark shirt stands behind the cart, facing forward, with his hands near the griddle where food is cooking.",
+      "Steam visibly emanates from the metal griddle surface, indicating active heating or cooking.",
+      "Several pedestrians walk on the sidewalk to the left; no clear evidence of a person holding a green object is visible."
+    ],
+    "rationale": [
+      "The presence of multiple branded umbrellas and standardized signage suggests a commercial operation rather than a temporary setup.",
+      "The visible steam and open griddle with food items imply ongoing food preparation, though the exact cooking method (e.g., steaming vs. griddling) cannot be confirmed solely from steam appearance.",
+      "The American flag and English-language signage indicate the setting is likely in the United States, but no specific city or jurisdiction is identifiable from visual evidence alone."
+    ],
+    "object": [
+      "The foreground food cart has a metal frame, a stainless-steel griddle with foil-wrapped items and buns stacked on a tray, and red-and-white signage listing menu items including 'HOT DOG', 'HOT KNISH', 'HOT SAUSAGE', 'CHESTNUT', and 'BEEF PATTY'.",
+      "Two blue-and-yellow umbrellas bear partially legible text: 'WE'RE ON A ROLL!' and 'SABRETT' in yellow lettering; one umbrella also shows 'U.S. HOT DOG CHAMPIONSHIP' in white text on a blue band.",
+      "A man with short dark hair, wearing a dark long-sleeved shirt, stands behind the cart with his arms extended toward the griddle area.",
+      "Behind the cart, a silver sedan is parked on the street, and a second food cart with similar umbrellas and signage is visible to the right.",
+      "On the sidewalk left of the cart, three distinct individuals are visible: two women in light-colored tops walking together and a person in a dark coat further back near a building entrance."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "commonsense_inference"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1590_P1",
+      "visual_anchors": [
+        "steam rising from the griddle",
+        "stacked buns in foil",
+        "man’s hands near hot surface"
+      ],
+      "symbolic_mapping": [
+        "steam as transient material output of labor",
+        "foil-wrapped buns as commodified sustenance"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image captures labor as embodied routine—repetitive, heat-intensive, and publicly visible—where technology (griddle, cart) mediates between individual effort and collective consumption, situating the vendor within a network of urban social dependence.",
+      "alternative_interpretations": [
+        "This is simply a functional depiction of street vending with no deeper meaning; the steam and buns are purely practical elements of food service."
+      ],
+      "limitations": [
+        "No facial expression, dialogue, or transactional interaction is visible, so subjective experience of labor cannot be verified."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1590_P2",
+      "visual_anchors": [
+        "American flag above the cart",
+        "multiple identical umbrellas",
+        "standardized signage"
+      ],
+      "symbolic_mapping": [
+        "flag as national symbol overlaying commercial activity",
+        "repetition of branding as normalization of market presence"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of national symbolism with branded commercial infrastructure suggests a subtle assertion of legitimacy and belonging through participation in capitalist ritual—where identity is performed via uniformity of product and display rather than personal distinction.",
+      "alternative_interpretations": [
+        "The flag is merely part of the urban backdrop and carries no intentional symbolic weight in this context."
+      ],
+      "limitations": [
+        "The flag’s placement relative to the cart is not clearly deliberate; it may be attached to a building or pole independent of the vendor."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1590_P3",
+      "visual_anchors": [
+        "pedestrians walking past without stopping",
+        "vendor looking forward, not at customers",
+        "steam obscuring part of the cart"
+      ],
+      "symbolic_mapping": [
+        "motion of passersby as indifference or anonymity",
+        "steam as partial veil between laborer and public"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The scene evokes the condition of being simultaneously present and overlooked: the vendor exists functionally within public space yet remains visually and socially semi-transparent, constrained by role and environment to a fixed position while others move freely past.",
+      "alternative_interpretations": [
+        "Pedestrians may be heading elsewhere or waiting for a signal; their lack of engagement does not imply indifference."
+      ],
+      "limitations": [
+        "Direction of pedestrian gaze and intent are not discernible; some may be glancing at the cart outside frame bounds."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The object list incorrectly states 'five distinct individuals' on the sidewalk; the image shows fewer pedestrians, and the description of a person holding a green object is not clearly visible."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:49:13.554768+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-341f7b84-3cc3-94c5-85db-44c3a32893ab",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1193,
+        "total_tokens": 2002,
+        "completion_tokens_details": {
+          "text_tokens": 1193
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070448498c8c0e9d4f1e4723",
+      "usage": {
+        "completion_tokens": 1166,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2169,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3335
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

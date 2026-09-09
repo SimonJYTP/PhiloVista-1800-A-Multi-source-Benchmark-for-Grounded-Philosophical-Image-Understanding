@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0616",
+  "sample_id": "PHL1800_HL_0318",
+  "file_name": "PHL1800_HL_0318.png",
+  "batch_id": "B014",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "military-style cargo truck with canvas cover",
+  "captions": {
+    "scene": [
+      "Urban street with multi-lane asphalt road, traffic signals, and classical architecture in background",
+      "Green foliage from trees partially obscures building facade behind vehicles",
+      "Three vehicles in close proximity: olive-green truck, yellow bus-like vehicle, and red double-decker bus visible in background"
+    ],
+    "action": [
+      "Olive-green truck is stationary or moving slowly in traffic, rear wheels aligned with lane markings",
+      "Driver visible inside cab, hands on steering wheel, head turned slightly right",
+      "No passengers visible in open rear section of yellow vehicle; one person wearing white shirt is visible inside the yellow vehicle's cab"
+    ],
+    "rationale": [
+      "Truck appears to be part of a convoy or routine transit due to presence of other large vehicles and lack of emergency indicators",
+      "Canvas cover suggests cargo protection rather than active deployment; no visible weapons or personnel outside",
+      "Yellow vehicle’s open rear and visible occupants suggest non-military public or utility use, contrasting with the truck’s design"
+    ],
+    "object": [
+      "The truck has an olive-green painted metal chassis, six wheels (two front, four rear), and a tarpaulin-covered cargo bed secured with straps and buckles.",
+      "Rear of the truck displays red tail lights, amber side markers, a white license plate with partially legible characters 'M457', and a small red reflector near the bumper.",
+      "The cab features a side-view mirror, a black door handle, and a window through which a driver wearing a dark top is visible.",
+      "A yellow vehicle to the right has a roof-mounted sign reading '020' and a rear panel with 'DAY 772P' and a circular blue-and-white logo; its rear is open with one person visible inside wearing a white shirt.",
+      "A black traffic signal pole stands left of the truck, supporting a vertically oriented signal head with three unlit lamps and a rectangular housing below."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0616_P1",
+      "visual_anchors": [
+        "canvas-covered cargo bed",
+        "straps securing tarp",
+        "no visible contents"
+      ],
+      "symbolic_mapping": [
+        "covered cargo as concealed purpose",
+        "straps as imposed order"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The obscured cargo evokes epistemic limitation—what is carried remains unknown despite clear external structure, suggesting institutional control over information access.",
+      "alternative_interpretations": [
+        "The cover may simply protect goods from weather; no evidence of secrecy or intent to conceal."
+      ],
+      "limitations": [
+        "No signage, markings, or context confirms intentional concealment; tarp is standard for military logistics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0616_P2",
+      "visual_anchors": [
+        "driver visible through window",
+        "passengers in open yellow vehicle",
+        "separation between enclosed cab and open rear"
+      ],
+      "symbolic_mapping": [
+        "cab as bounded agency",
+        "open rear as communal exposure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Spatial segregation of operator (enclosed, focused) versus occupants (exposed, collective) reflects modern divisions between labor roles and social visibility.",
+      "alternative_interpretations": [
+        "Design difference stems from vehicle function: cargo transport vs. passenger shuttle—not symbolic intent."
+      ],
+      "limitations": [
+        "Vehicle types differ fundamentally; comparison assumes equivalence where none is visually justified."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0616_P3",
+      "visual_anchors": [
+        "olive-green military-style truck",
+        "yellow utility vehicle",
+        "red double-decker bus in background"
+      ],
+      "symbolic_mapping": [
+        "color-coded functional domains",
+        "coexistence without interaction"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The juxtaposition of standardized, utilitarian machines operating in shared space illustrates how technological systems enforce routine coexistence while limiting spontaneous human coordination.",
+      "alternative_interpretations": [
+        "Vehicles are simply sharing a city street during normal traffic flow; no systemic constraint is depicted."
+      ],
+      "limitations": [
+        "No visible restriction (e.g., barriers, signals halting movement) proves constraint; motion appears voluntary."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people in yellow vehicle: candidate claims 'at least two people' but only one is visible; 'passenger(s) visible in open rear section' is unsupported as no passengers are clearly visible in the truck's cargo area."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:01:20.487147+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8c12dc68-edf7-9766-ba14-c53971232614",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 955,
+        "total_tokens": 1764,
+        "completion_tokens_details": {
+          "text_tokens": 955
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907030106be156595a3634105",
+      "usage": {
+        "completion_tokens": 869,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1929,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2798
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

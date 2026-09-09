@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0247",
+  "sample_id": "PHL1800_HL_0031",
+  "file_name": "PHL1800_HL_0031.png",
+  "batch_id": "B007",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a tall clock tower adjacent to a Gothic-style building, viewed across a river from a stone bridge",
+  "captions": {
+    "scene": [
+      "A wide river flows beneath a multi-arched stone bridge with pedestrians and vehicles on its deck.",
+      "A large ornate building with pointed spires and mullioned windows stands beside a prominent clock tower under a partly cloudy sky.",
+      "A red double-decker bus and several cars are visible on the bridge, alongside groups of people walking."
+    ],
+    "action": [
+      "People are walking across the bridge in both directions; at least 8 individuals are discernible in small clusters near the right-hand side.",
+      "A red double-decker bus is stationary or moving slowly on the bridge, positioned behind a group of pedestrians.",
+      "The clock face on the tower shows hands pointing approximately to 10:10; no motion blur indicates static capture."
+    ],
+    "rationale": [
+      "The architectural style (pointed arches, pinnacles, vertical emphasis) suggests Gothic Revival design, though exact period cannot be confirmed without external knowledge.",
+      "The presence of a double-decker bus and bridge design implies a major urban setting, but specific city identification requires external knowledge.",
+      "Cloud formations and lighting suggest daytime with partial cloud cover, yet precise time of day cannot be determined solely from shadows due to diffuse illumination."
+    ],
+    "object": [
+      "The clock tower is constructed of light-colored stone, features a steeply pitched roof with a spire, and displays a white circular clock face with black Roman numerals and hands.",
+      "The adjacent building has multiple gables, finials, and tall rectangular windows with stone mullions and transoms, arranged symmetrically along its facade.",
+      "The bridge consists of at least four visible rounded stone arches supporting a flat roadway surface bordered by balustrades and lampposts.",
+      "A red double-decker bus occupies the right lane of the bridge; its upper deck windows are visible and appear unoccupied from this angle.",
+      "At least 8 pedestrians are present on the bridge: four clustered near the bus, two further left near a lamppost, and two more near the far arch—none are identifiable as individuals."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0247_P1",
+      "visual_anchors": [
+        "clock face showing fixed time",
+        "static stone architecture",
+        "flowing river below"
+      ],
+      "symbolic_mapping": [
+        "the fixed clock hand contrasts with the moving water, suggesting tension between measured time and natural flux"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of an immutable architectural monument and a transient river evokes reflection on human attempts to impose permanence against inevitable change.",
+      "alternative_interpretations": [
+        "The scene may simply document infrastructure and daily transit without symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the interpretation relies on visual contrast alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0247_P2",
+      "visual_anchors": [
+        "crowd of pedestrians on bridge",
+        "bus carrying unseen passengers",
+        "separate lanes for foot and vehicle traffic"
+      ],
+      "symbolic_mapping": [
+        "shared public space with regulated movement reflects structured coexistence within urban constraints"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The orderly arrangement of people and vehicles on a shared bridge illustrates how social existence depends on negotiated spatial boundaries and collective adherence to infrastructure norms.",
+      "alternative_interpretations": [
+        "The image captures routine commuting without deeper sociological significance."
+      ],
+      "limitations": [
+        "Individual intentions and interactions are not visible; only aggregate positioning can be observed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0247_P3",
+      "visual_anchors": [
+        "ornate Gothic building",
+        "industrial crane visible behind it",
+        "modern vehicles on bridge"
+      ],
+      "symbolic_mapping": [
+        "coexistence of historic craftsmanship and contemporary construction signals layered temporalities in built environment"
+      ],
+      "concept_ids": [
+        "labor_technology"
+      ],
+      "interpretation": "The simultaneous visibility of pre-industrial architectural labor and modern mechanized construction equipment suggests that technological evolution does not erase prior modes of production but layers them spatially.",
+      "alternative_interpretations": [
+        "The crane may be unrelated to the building and merely part of background development."
+      ],
+      "limitations": [
+        "The crane’s purpose and relationship to the building are not visually verifiable; it could be servicing a different structure."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The count of pedestrians is overstated; the image shows fewer than 12 individuals, and their clustering description is inaccurate."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:24:47.760446+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7bfecfa2-6a4f-9db9-8d8c-c394d31a8c18",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 989,
+        "total_tokens": 1758,
+        "completion_tokens_details": {
+          "text_tokens": 989
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070224195ffc62f530fa4113",
+      "usage": {
+        "completion_tokens": 963,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1918,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2881
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

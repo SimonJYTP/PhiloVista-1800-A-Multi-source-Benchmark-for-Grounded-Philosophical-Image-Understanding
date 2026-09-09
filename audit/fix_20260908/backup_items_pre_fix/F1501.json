@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1501",
+  "sample_id": "PHL1800_HL_0392",
+  "file_name": "PHL1800_HL_0392.png",
+  "batch_id": "B031",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large crowd of people gathered outdoors near a bus shelter and buildings",
+  "captions": {
+    "scene": [
+      "A sunny day with clear blue sky, concrete pavement, low beige institutional-style buildings, and distant green hills.",
+      "A yellow-framed bus shelter with blue translucent panels stands on the right; inside it, one person sits on a bench.",
+      "Multiple groups of people stand or walk in clusters across the foreground and midground, some facing away, others toward the shelter or buildings."
+    ],
+    "action": [
+      "Many individuals are standing still or shifting weight, suggesting waiting or queuing behavior.",
+      "A few people carry backpacks, shoulder bags, or hold small items like phones or papers.",
+      "One person in the shelter is seated with legs crossed."
+    ],
+    "rationale": [
+      "The density and orientation of people suggest they are awaiting transport or an event, though no explicit signage confirms this.",
+      "The presence of backpacks and casual attire implies a student or commuter context, but no uniforms or logos confirm affiliation.",
+      "The shelter’s design resembles public transit infrastructure, yet no bus or timetable is visible to verify function."
+    ],
+    "object": [
+      "There are approximately 50-55 distinct individuals visible: 35-40 in the main central cluster, 10-12 on the left side near the building, 5-7 near the shelter, and 2-3 scattered in the background near the trees and lamppost.",
+      "A tall black lamppost with dual fixtures stands behind the shelter, casting a short shadow consistent with midday sun.",
+      "A white cylindrical ventilation stack protrudes from the roof of the beige building on the left.",
+      "A person in the foreground wears white earbuds and a white t-shirt, facing left with profile visible.",
+      "The bus shelter has a flat metal roof, vertical yellow support posts, and blue polycarbonate side panels."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1501_P1",
+      "visual_anchors": [
+        "crowd of ~50-55 people",
+        "bus shelter with seated individual",
+        "backpacks and casual clothing"
+      ],
+      "symbolic_mapping": [
+        "the shelter as a liminal space between movement and stasis",
+        "the backpacks as markers of provisional identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The image captures a moment where individual agency is suspended within collective routine—people occupy shared space without interaction, embodying Heidegger’s ‘being-with’ as anonymous co-presence rather than communion.",
+      "alternative_interpretations": [
+        "This is simply a snapshot of a school dismissal or transit transfer, with no philosophical significance beyond logistical coordination."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or dialogue are visible to confirm intentional detachment or existential reflection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1501_P2",
+      "visual_anchors": [
+        "person seated alone inside shelter",
+        "others standing outside",
+        "blue translucent panels partially obscuring interior"
+      ],
+      "symbolic_mapping": [
+        "translucent barrier as metaphor for social visibility/invisibility",
+        "solitary posture amid crowd as embodiment of alienation"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The seated figure, partially hidden by the shelter’s panels, illustrates how physical structures mediate social recognition—appearance becomes contingent on architectural framing, echoing Foucault’s analysis of visibility regimes.",
+      "alternative_interpretations": [
+        "The person is merely resting while waiting; the panels are standard shelter material with no symbolic intent."
+      ],
+      "limitations": [
+        "The interior lighting and angle prevent confirmation of the seated person’s gaze direction or engagement level."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1501_P3",
+      "visual_anchors": [
+        "~50-55 individuals counted",
+        "uniform directionality toward shelter/building",
+        "absence of signage or authority figures"
+      ],
+      "symbolic_mapping": [
+        "numerical aggregation as erasure of singularity",
+        "shared orientation without coordination as emergent order"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The crowd’s silent convergence—without overt command or hierarchy—suggests a non-coercive form of social ordering, where collective motion arises from implicit norms rather than explicit power, aligning with Arendt’s concept of ‘power-in-plurality’.",
+      "alternative_interpretations": [
+        "People are simply lining up for a bus; their alignment reflects practical necessity, not political theory."
+      ],
+      "limitations": [
+        "No evidence of decision-making process, leadership cues, or resistance behaviors is present."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (67 vs. actual ~50-55 visible); bus shelter interior description misstates number of people (2 vs. 1 visible); object list includes unsubstantiated claims about unreadable text/graphics on shelter panels."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:39:49.784420+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dd7ffedf-782b-9a08-90d2-fa5eff3cd95b",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 1042,
+        "total_tokens": 1711,
+        "completion_tokens_details": {
+          "text_tokens": 1042
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043920a7c50d72150e4bf7",
+      "usage": {
+        "completion_tokens": 1010,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1839,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2849
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

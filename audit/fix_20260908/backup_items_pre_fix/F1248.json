@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1248",
+  "sample_id": "PHL1800_HL_0550",
+  "file_name": "PHL1800_HL_0550.png",
+  "batch_id": "B026",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two kites flying over a coastal grassy field",
+  "captions": {
+    "scene": [
+      "A wide expanse of partly cloudy sky above a flat horizon line separating land, water, and sky.",
+      "A grassy foreground with parked vehicles and a low fence bordering a calm body of water.",
+      "Two distinct kites—one multicolored rectangular, one purple teardrop-shaped—visible against the sky."
+    ],
+    "action": [
+      "The upper kite is angled diagonally downward, trailing no visible line, suggesting active flight or descent.",
+      "The lower kite flies horizontally with a long thin line extending toward the ground, indicating tethered control.",
+      "No human figures are visible in the image."
+    ],
+    "rationale": [
+      "The presence of parked cars and a fence suggests organized recreational use of the field, though no signage confirms purpose.",
+      "Cloud formations are cumulus with soft edges, implying fair weather, but no direct evidence of wind speed or direction beyond kite orientation.",
+      "The horizon appears level and uninterrupted, supporting a coastal or lakeside setting, yet no landmarks confirm specific geography."
+    ],
+    "object": [
+      "A rectangular kite with black, red, yellow, and white panels is positioned in the upper right quadrant of the image.",
+      "A smaller purple kite with a long thin tether line extends leftward from its tail, located mid-image.",
+      "At least four vehicles—two dark sedans, one light-colored sedan, and one dark SUV—are parked along the grassy edge near the water.",
+      "No human figures are visible in the image.",
+      "The sky contains scattered white cumulus clouds against a pale blue background, with faint wisps near the top center."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1248_P1",
+      "visual_anchors": [
+        "two kites at different altitudes",
+        "long tether line on lower kite",
+        "open sky"
+      ],
+      "symbolic_mapping": [
+        "the tethered kite represents constraint within freedom",
+        "the untethered-looking upper kite suggests autonomy"
+      ],
+      "concept_ids": [
+        "freedom_constraint"
+      ],
+      "interpretation": "The image visually stages a tension between guided movement and unbounded flight, where the lower kite’s visible line anchors it to human agency while the upper kite’s ambiguous connection evokes potential liberation—or risk of loss.",
+      "alternative_interpretations": [
+        "Both kites may be tethered; the upper kite’s line is simply invisible due to angle or distance, making the scene purely recreational without symbolic contrast."
+      ],
+      "limitations": [
+        "No visible line for the upper kite prevents definitive classification as tethered or free."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1248_P2",
+      "visual_anchors": [
+        "small human figures near fence",
+        "parked cars",
+        "kites aloft"
+      ],
+      "symbolic_mapping": [
+        "humans as observers rather than participants",
+        "vehicles as markers of temporary presence"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The minimal human scale relative to sky and kites underscores contingent social presence—people gather briefly in shared space, their roles defined by observation and proximity rather than action, reflecting transient communal moments.",
+      "alternative_interpretations": [
+        "The figures may be actively controlling the kites; their stillness is momentary, not indicative of passive observation."
+      ],
+      "limitations": [
+        "Facial expressions, postures, and gestures are indiscernible due to distance and resolution."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1248_P3",
+      "visual_anchors": [
+        "cumulus clouds",
+        "flat horizon",
+        "kites drifting"
+      ],
+      "symbolic_mapping": [
+        "clouds as impermanent forms",
+        "horizon as boundary between known and unknown"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The slow drift of kites against shifting cloud masses evokes the passage of time as measured by ephemeral phenomena—both kites and clouds exist temporarily in the frame, mirroring the fleeting nature of human-scale events against geological or cosmic scales.",
+      "alternative_interpretations": [
+        "The scene captures a static instant; motion is implied but not directly observed, so temporal interpretation relies on inference."
+      ],
+      "limitations": [
+        "No motion blur or sequential frames confirm actual movement; apparent drift may be compositional rather than dynamic."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The candidate incorrectly claims 'three discernible human figures' when no people are visible in the image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:07:40.186188+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-10675c66-4e1d-9be2-8f75-dbd4766f466e",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 986,
+        "total_tokens": 1795,
+        "completion_tokens_details": {
+          "text_tokens": 986
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040729ea107f01b7cc4338",
+      "usage": {
+        "completion_tokens": 842,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1963,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2805
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

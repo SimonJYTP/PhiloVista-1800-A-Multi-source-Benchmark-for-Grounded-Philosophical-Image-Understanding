@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1158",
+  "sample_id": "PHL1800_HL_0297",
+  "file_name": "PHL1800_HL_0297.png",
+  "batch_id": "B024",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a male skateboarder mid-air performing a trick",
+  "captions": {
+    "scene": [
+      "An outdoor concrete skatepark with ramps, rails, and wooden obstacles surrounded by leafy green trees under overcast daylight.",
+      "A crowd of spectators stands and sits along the perimeter of the skatepark, observing the action.",
+      "A black banner with yellow text reading \"SESSION\" and a white skull logo is visible on the left edge of the frame."
+    ],
+    "action": [
+      "The skateboarder is airborne with both feet off the board, his right hand gripping the board’s underside near the tail while his left arm extends outward for balance.",
+      "The skateboard is tilted diagonally beneath him, wheels visible, with pink trucks and light-colored wheels showing motion blur.",
+      "Spectators are stationary or seated; some hold cameras or phones, others watch intently, with no visible movement toward the skater."
+    ],
+    "rationale": [
+      "The skater’s body orientation and board position suggest an ollie or flip trick, but the exact trick type cannot be confirmed due to motion blur and partial occlusion.",
+      "The presence of multiple ramps and obstacles indicates a purpose-built skatepark rather than a repurposed urban space, though no signage confirms this definitively.",
+      "The banner’s text is legible as \"SESSION\" with a skull motif, but additional characters are unreadable due to angle and resolution."
+    ],
+    "object": [
+      "The skateboarder wears a dark baseball cap worn backward, a maroon short-sleeved t-shirt, faded blue jeans, and dark sneakers with white soles.",
+      "The skateboard has a wooden deck with visible grip tape wear, pink metal trucks, and off-white polyurethane wheels with slight discoloration from use.",
+      "A wooden ramp with a curved transition and a flat top surface lies directly beneath the skater’s projected landing zone.",
+      "A rectangular wooden box obstacle with a sloped front face and a flat top sits to the right of the ramp, unoccupied.",
+      "A crowd of spectators is visible in the background, including children, adults, and one person wearing a red shirt crouching near the foreground left."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1158_P1",
+      "visual_anchors": [
+        "skateboarder suspended mid-air",
+        "crowd watching silently",
+        "concrete park boundaries"
+      ],
+      "symbolic_mapping": [
+        "airborne moment as suspension of ordinary time",
+        "spectator gaze as social validation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The skater’s fleeting levitation embodies a transient defiance of gravity and routine—a moment where individual agency momentarily overrides physical constraint, witnessed and thus socially ratified by the collective gaze.",
+      "alternative_interpretations": [
+        "This is simply a standard skate trick captured at peak height, with no symbolic intent; the crowd is merely attending a public event."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; motion blur obscures precise body language."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1158_P2",
+      "visual_anchors": [
+        "black banner with skull logo",
+        "maroon shirt contrasting green trees",
+        "worn skateboard deck"
+      ],
+      "symbolic_mapping": [
+        "skull as memento mori",
+        "wear on board as record of repeated effort"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of the skull emblem and the visibly used skateboard suggests an awareness of impermanence: each trick is a temporary assertion against decay, mediated through a tool shaped by repeated labor and risk.",
+      "alternative_interpretations": [
+        "The banner is commercial branding; the board wear is functional, not symbolic—no evidence of deliberate aesthetic or philosophical messaging."
+      ],
+      "limitations": [
+        "The banner’s full text is unreadable; the skull may be generic branding rather than existential reference."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1158_P3",
+      "visual_anchors": [
+        "skater’s focused downward gaze",
+        "hand gripping board firmly",
+        "crowd arranged in semi-circle"
+      ],
+      "symbolic_mapping": [
+        "gaze as internal concentration",
+        "grip as control amid uncertainty"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The skater’s directed attention and physical control within a bounded space reflect a microcosm of human agency: freedom exercised precisely within constraints (gravity, park geometry, audience), where choice manifests as embodied navigation rather than abstract decision.",
+      "alternative_interpretations": [
+        "The skater is simply looking where he intends to land—a practical necessity, not a philosophical stance."
+      ],
+      "limitations": [
+        "Eye direction is inferred from head tilt; no iris detail confirms focus; posture could be purely biomechanical."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The object count for the crowd is unsupported; the image shows a crowd but not 42 distinct individuals. The banner text is misdescribed as \"SKATE\"—the visible text is \"SESSION\"."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:57:02.418726+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c4d0e329-d133-97d0-8bfc-d0ba82b4be0d",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1081,
+        "total_tokens": 1850,
+        "completion_tokens_details": {
+          "text_tokens": 1081
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035632edb677b955a04dd8",
+      "usage": {
+        "completion_tokens": 971,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2008,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2979
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

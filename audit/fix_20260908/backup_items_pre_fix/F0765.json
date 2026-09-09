@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0765",
+  "sample_id": "PHL1800_HL_0406",
+  "file_name": "PHL1800_HL_0406.png",
+  "batch_id": "B017",
+  "position_in_batch": 26,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stone church with a clock tower and adjacent bare trees",
+  "captions": {
+    "scene": [
+      "A historic stone church with a tall clock tower stands beside a paved road with residual snow on the curb.",
+      "Leafless deciduous trees frame the left side of the church, their branches silhouetted against a pale overcast sky.",
+      "Pedestrians wait at a traffic signal near a black metal railing and a small trash bin on the sidewalk."
+    ],
+    "action": [
+      "Three people stand grouped near a red traffic light; one wears a pink top, another carries a bag, and a third is partially obscured by a tree trunk.",
+      "A person in dark clothing walks toward the church entrance, partially obscured by the tower’s base.",
+      "Snow remains patchily on the roadside curb and low wall, indicating recent melting."
+    ],
+    "rationale": [
+      "The presence of bare trees and snow suggests a winter or early spring season, though no date or temperature is visible.",
+      "The clock face is visible but its hands are indistinct; therefore, the exact time cannot be determined from visual evidence alone.",
+      "The architectural style—rough-hewn stone, crenellated tower top, arched windows—indicates an older construction, but no inscription or plaque confirms age or origin."
+    ],
+    "object": [
+      "The church tower is constructed of irregularly shaped light-brown and grey stone blocks, with a crenellated parapet and two arched openings near the top.",
+      "A circular clock face with Roman numerals and black hands is embedded in the tower’s midsection, though the numerals and hands lack sharp definition.",
+      "A black metal railing runs along the foreground curb, separating the road from a low stone wall topped with snow.",
+      "Two traffic signals are visible: one red light facing the viewer, and another mounted on a pole to the right, showing an unreadable display.",
+      "Four distinct human figures are present: three clustered near the left signal, one walking toward the church entrance, and one partially hidden behind the tree trunk near the center."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0765_P1",
+      "visual_anchors": [
+        "bare tree branches",
+        "snow on curb",
+        "clock face"
+      ],
+      "symbolic_mapping": [
+        "bare branches suggest seasonal impermanence",
+        "clock face implies measured passage"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of enduring stone architecture with transient natural elements (leafless trees, melting snow) and a timepiece evokes reflection on human attempts to mark and resist temporal decay.",
+      "alternative_interpretations": [
+        "The scene may simply document routine urban life during cold weather, with no symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions, plaques, or contextual signage confirm intentional symbolism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0765_P2",
+      "visual_anchors": [
+        "group of three pedestrians",
+        "individual walking alone toward church",
+        "metal railing separating road from walkway"
+      ],
+      "symbolic_mapping": [
+        "railing as physical boundary between public transit and sacred space",
+        "group vs. solitary movement suggesting social divergence"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The spatial arrangement—people paused at a signal, one approaching the church independently, all separated from the road by a barrier—highlights how built environments structure collective and individual coexistence.",
+      "alternative_interpretations": [
+        "The railing is purely functional for safety; pedestrian positions reflect random timing rather than social pattern."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or interactions confirm social dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0765_P3",
+      "visual_anchors": [
+        "stone tower with arched windows",
+        "weathered stonework",
+        "ivy patches on wall"
+      ],
+      "symbolic_mapping": [
+        "weathering as evidence of endurance through exposure",
+        "ivy as organic reclamation of human artifact"
+      ],
+      "concept_ids": [
+        "faith_meaning"
+      ],
+      "interpretation": "The visible aging of the church—discolored stone, creeping ivy, and structural wear—suggests meaning derived not from pristine form but from continuity amid change, aligning with interpretations of faith as persistence rather than perfection.",
+      "alternative_interpretations": [
+        "The ivy and discoloration are merely biological and environmental effects without theological implication."
+      ],
+      "limitations": [
+        "No religious symbols, icons, or liturgical objects are visible to confirm devotional context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate claims five distinct human figures, but only four are visible (three near the signal, one walking toward the church); no person holds an umbrella."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:14:44.182841+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-dbc5c709-d850-9f59-946d-faccfeffd54b",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 995,
+        "total_tokens": 1764,
+        "completion_tokens_details": {
+          "text_tokens": 995
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070314298f48255213e74d8f",
+      "usage": {
+        "completion_tokens": 899,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1930,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2829
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1593",
+  "sample_id": "PHL1800_MM_0148",
+  "file_name": "PHL1800_MM_0148.jpg",
+  "batch_id": "B033",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of ten people gathered around a table with food under a thatched shelter on a beach",
+  "captions": {
+    "scene": [
+      "A wooden deck under a thatched roof overlooks a sandy beach and turquoise ocean, with palm trees visible in the background.",
+      "A rectangular table covered with a red-and-gold patterned cloth holds multiple dishes including a large white bowl of mixed food, trays of fried items, and smaller plates with garnishes.",
+      "Ten individuals wearing colorful traditional garments—predominantly red, blue, and gold—with layered textiles, necklaces, and headpieces stand or sit around the table."
+    ],
+    "action": [
+      "One person on the left stands facing the group, hands clasped near waist; another person on the right sits partially visible, reaching toward the table.",
+      "Five individuals stand in a line behind the table, holding small bowls or cups at chest level, eyes directed downward or toward the table.",
+      "Three women on the right side stand holding small yellow or red containers, looking toward the center of the group."
+    ],
+    "rationale": [
+      "The presence of ceremonial attire and synchronized postures suggests a formal gathering rather than casual dining.",
+      "The arrangement of people and food implies ritual significance, with individuals holding vessels and standing in formation, indicating structured ceremonial behavior.",
+      "The setting (thatched shelter, beach) and communal food arrangement suggest a cultural or traditional event, though specific intent is not fully knowable from visuals alone."
+    ],
+    "object": [
+      "A large white ceramic bowl containing a mixture of orange-brown pieces, green herbs, and white elements sits centrally on the table.",
+      "Two metal trays hold golden-yellow fried items: one oval-shaped, one rectangular, both placed on the right half of the table.",
+      "A silver-colored ladle rests on the table near the central bowl, alongside small red and green garnish plates.",
+      "The thatched roof consists of dried straw-like material layered horizontally, supported by visible wooden beams.",
+      "Ten distinct individuals are fully or mostly visible; no additional people are partially visible at edges, totaling ten heads or torsos identifiable."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1593_P1",
+      "visual_anchors": [
+        "central food bowl",
+        "people holding small vessels",
+        "synchronized standing formation"
+      ],
+      "symbolic_mapping": [
+        "communal consumption as symbolic continuity",
+        "central bowl as collective offering"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image suggests mortality is framed as ongoing social presence through shared consumption, where identity persists via embodied ritual participation.",
+      "alternative_interpretations": [
+        "The scene may depict a secular feast or cultural performance where the speech bubble (if present) is fictional or metaphorical, unrelated to actual mortuary practice."
+      ],
+      "limitations": [
+        "No burial objects, mourning gestures, or temporal markers confirm death-related intent; interpretation relies on contextual inference rather than direct visual evidence."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1593_P2",
+      "visual_anchors": [
+        "color-coordinated garments",
+        "layered necklaces",
+        "symmetrical standing formation"
+      ],
+      "symbolic_mapping": [
+        "uniformity in dress signifies group cohesion",
+        "vertical alignment reinforces ceremonial order"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "Identity is publicly constructed through appearance and spatial positioning, where belonging is affirmed by visual conformity within a shared ritual frame.",
+      "alternative_interpretations": [
+        "Clothing may reflect regional costume for tourism or festival, with no deeper symbolic intent beyond aesthetic display."
+      ],
+      "limitations": [
+        "Garment styles lack labels or known cultural attribution; similarity could stem from event coordination rather than ideology."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1593_P3",
+      "visual_anchors": [
+        "thatched shelter",
+        "ocean backdrop",
+        "bare feet on wood deck"
+      ],
+      "symbolic_mapping": [
+        "natural materials contrast with ornate textiles, evoking groundedness",
+        "coastal setting situates ritual in liminal space"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "choice_journey"
+      ],
+      "interpretation": "The setting evokes a threshold space where meaning is generated through deliberate placement—between nature and culture—implying faith emerges in situated acts of gathering.",
+      "alternative_interpretations": [
+        "The location is simply a convenient outdoor venue; the ocean and thatch are incidental environmental features with no symbolic role."
+      ],
+      "limitations": [
+        "No iconography, altars, or directional cues confirm intentional liminality; the shelter may be purely functional."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Person count is incorrect: 10 people are visible, not 11; the speech bubble text is not part of the image's visual content and should not be included in captions or rationale; the rationale incorrectly claims 'no explicit ritual actions are visible' when people are holding vessels and standing in formation, which are ritual-like actions."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:49:19.566747+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f7d3283d-1b01-9d3c-a48a-7e163f3e97ad",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1069,
+        "total_tokens": 2602,
+        "completion_tokens_details": {
+          "text_tokens": 1069
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070449065aaa09dc2bc74aa5",
+      "usage": {
+        "completion_tokens": 945,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3022,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3967
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

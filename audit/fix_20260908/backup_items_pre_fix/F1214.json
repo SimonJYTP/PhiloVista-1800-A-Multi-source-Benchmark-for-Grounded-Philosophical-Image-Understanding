@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1214",
+  "sample_id": "PHL1800_IRFL_0062",
+  "file_name": "PHL1800_IRFL_0062.jpg",
+  "batch_id": "B026",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "seven people seated around a table engaged in discussion",
+  "captions": {
+    "scene": [
+      "Indoor setting with large windows showing blurred exterior, potted plant visible in background left",
+      "Wooden table with laptop, notebook, coffee cup, and small container of pens or markers",
+      "People arranged in semi-circle; lighting is even and diffused, suggesting daytime interior illumination"
+    ],
+    "action": [
+      "Man with glasses gestures with right hand while facing woman in red plaid shirt",
+      "Woman in red plaid shirt holds an object in left hand and looks toward man with glasses",
+      "Person on far left holds tablet-like device with both hands, screen facing upward"
+    ],
+    "rationale": [
+      "Group orientation and mutual gaze suggest collaborative interaction rather than parallel individual tasks",
+      "Presence of laptop, notebook, and writing tools implies work- or study-related context, though purpose is not specified",
+      "Clothing style (plaid shirts, casual tops) indicates informal setting, but no definitive evidence of workplace vs. educational vs. social gathering"
+    ],
+    "object": [
+      "A silver laptop is open on the table, screen facing the man with glasses; keyboard and trackpad are visible.",
+      "A black spiral-bound notebook lies flat near the center of the table, partially covered by a hand holding a pen.",
+      "A white ceramic mug with dark liquid sits to the right of the notebook, near the woman in red plaid.",
+      "A small cylindrical container holds multiple writing instruments, including at least two blue-capped pens and one black pen.",
+      "A person on the far right wears a gray long-sleeve shirt and has short dark hair; only their shoulder, arm, and partial profile are visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1214_P1",
+      "visual_anchors": [
+        "laptop screen facing group",
+        "multiple hands reaching toward central objects",
+        "shared gaze direction"
+      ],
+      "symbolic_mapping": [
+        "central table as locus of shared attention",
+        "devices as mediators of collective cognition"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The arrangement suggests epistemic collaboration—truth-seeking through shared visual access and embodied dialogue, where knowledge emerges from intersubjective alignment rather than solitary contemplation.",
+      "alternative_interpretations": [
+        "This may simply depict routine team coordination without philosophical intent, such as planning a project timeline."
+      ],
+      "limitations": [
+        "No legible text on screens or documents prevents confirmation of content focus; interpretation relies on spatial configuration alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1214_P2",
+      "visual_anchors": [
+        "man gesturing with open palm",
+        "woman holding phone while listening",
+        "person holding tablet upright"
+      ],
+      "symbolic_mapping": [
+        "gestural openness as invitation to participation",
+        "device-holding as simultaneous engagement and potential distraction"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The coexistence of active gestural communication and passive device holding reflects tension between intentional presence and technological mediation—choices made in real time that shape relational freedom within constrained attentional economies.",
+      "alternative_interpretations": [
+        "Devices may be used for note-taking or reference, not distraction; gesture may be emphasis, not invitation."
+      ],
+      "limitations": [
+        "Hand posture and screen content are ambiguous; no facial expressions confirm emotional valence or intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1214_P3",
+      "visual_anchors": [
+        "seven distinct individuals",
+        "uneven seating density",
+        "shared table surface"
+      ],
+      "symbolic_mapping": [
+        "physical proximity without touch indicating structured sociality",
+        "table as neutral ground enabling differentiated roles"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "Individual identity is asserted through clothing and posture (e.g., plaid shirt, glasses), yet subsumed under a collective spatial grammar—existence here is relational, constituted through positioning relative to others and shared artifacts.",
+      "alternative_interpretations": [
+        "Clothing choices may reflect climate or habit, not identity performance; seating may be dictated by chair availability."
+      ],
+      "limitations": [
+        "No names, labels, or distinguishing insignia confirm intentional identity signaling; background elements are too blurred for contextual anchoring."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (six vs. seven); object description for 'person on far right' is inaccurate (should describe visible attributes, not just partial profile); 'small cylindrical container' object description lacks detail on visible contents; 'woman in red plaid shirt' action description is ambiguous (holds smartphone vs. holds object); 'man with glasses' action description is incomplete (gestures with right hand while facing woman in red plaid shirt)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:04:21.613696+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-5c9cfb8d-c546-9554-b097-a62f47448fa1",
+      "usage": {
+        "prompt_tokens": 587,
+        "completion_tokens": 953,
+        "total_tokens": 1540,
+        "completion_tokens_details": {
+          "text_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 80,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040357ae1127fbf0264790",
+      "usage": {
+        "completion_tokens": 903,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1601,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2504
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

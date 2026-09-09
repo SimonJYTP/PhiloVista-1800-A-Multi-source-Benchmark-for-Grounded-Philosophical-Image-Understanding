@@ -1,0 +1,164 @@
+{
+  "annotation_item_id": "F0478",
+  "sample_id": "PHL1800_HL_0091",
+  "file_name": "PHL1800_HL_0091.png",
+  "batch_id": "B011",
+  "position_in_batch": 49,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two people playing basketball in front of a two-story building",
+  "captions": {
+    "scene": [
+      "A paved outdoor court in front of a two-story institutional-style building with blue roof trim and green-painted lower walls.",
+      "Clothes hang on a railing across the second-floor balcony; some are white sheets, others are colored garments including pink and dark blue.",
+      "Multiple people are present: two main players in foreground, several others standing or crouching near the building’s base and on the balcony."
+    ],
+    "action": [
+      "A brown basketball is airborne above the hoop, mid-trajectory toward or away from the basket.",
+      "A person in a navy t-shirt and beige shorts stands with back to camera, arms slightly extended, watching the ball.",
+      "A person in a tan long-sleeve shirt and dark pants stands facing the hoop, head tilted upward, observing the ball."
+    ],
+    "rationale": [
+      "The basketball’s position relative to the rim suggests it was recently shot or passed, though direction (inbound/outbound) cannot be confirmed from a single frame.",
+      "The presence of multiple observers and casual attire implies informal recreation rather than an organized game, but no official markings or referees are visible.",
+      "Clothing hung on the balcony appears uniformly spaced and includes large white items resembling bedding, suggesting routine domestic use of the space, though purpose is not stated."
+    ],
+    "object": [
+      "A standard rectangular basketball backboard with black border and white surface, mounted on a metal pole, features a black square target behind the orange rim and net.",
+      "The building has two floors with evenly spaced rectangular windows; upper-floor windows have white frames and open sashes, lower-floor windows have green frames and closed shutters or panels.",
+      "Six distinct individuals are visible: two in foreground playing, one crouching near wall, two near left doorway, one on balcony right side, and one partially visible behind central player.",
+      "A brown basketball with visible black seams is suspended in air approximately 1.5 meters above the rim, aligned horizontally with the backboard center.",
+      "The ground surface is light gray concrete or packed earth, showing faint scuff marks and minor debris near the building’s foundation."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0478_P1",
+      "visual_anchors": [
+        "clothes hanging on balcony railing",
+        "multiple people observing from different levels",
+        "unmarked concrete court"
+      ],
+      "symbolic_mapping": [
+        "hanging laundry as routine domestic labor intersecting with play space",
+        "vertical spatial separation of observers as social stratification or generational layering"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The co-location of domestic maintenance (laundry) and spontaneous play within the same architectural frame suggests a lived-in environment where labor and leisure are not segregated but interwoven, reflecting a pragmatic social existence shaped by shared infrastructure.",
+      "alternative_interpretations": [
+        "The clothes may simply be drying after washing, with no symbolic intent; the scene is ordinary daily life without deeper structure."
+      ],
+      "limitations": [
+        "No signage, labels, or explicit cultural markers confirm intended function of the building or activity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0478_P2",
+      "visual_anchors": [
+        "person watching ball with upward gaze",
+        "ball frozen mid-air",
+        "static building backdrop"
+      ],
+      "symbolic_mapping": [
+        "suspended motion of ball as metaphor for indeterminacy of outcome",
+        "fixed architecture contrasting with transient human action"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The moment captured—ball aloft, players poised—emphasizes the threshold between decision and consequence, where agency is exercised yet outcome remains unresolved, echoing existential themes of choice within bounded temporality.",
+      "alternative_interpretations": [
+        "This is a routine sports snapshot; the ball’s position is coincidental and not philosophically weighted."
+      ],
+      "limitations": [
+        "Single-frame photography inherently freezes motion, which does not prove intentionality or reflection by subjects."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0478_P3",
+      "visual_anchors": [
+        "two people in foreground with dissimilar clothing and posture",
+        "others scattered in background with varied engagement",
+        "uniform balcony railing dividing levels"
+      ],
+      "symbolic_mapping": [
+        "differential attention and positioning as expression of individual identity amid collective setting",
+        "railing as literal and figurative boundary between private and public spheres"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "Divergent stances and attire among participants highlight how self-presentation emerges through contrast—even within shared activity—while the rigid balcony railing visually enforces constraints that shape permissible movement and visibility, illustrating freedom as always mediated by structure.",
+      "alternative_interpretations": [
+        "Clothing differences reflect availability or weather, not identity performance; the railing is purely functional."
+      ],
+      "limitations": [
+        "Facial expressions and body language are partially obscured or distant, limiting inference about internal states or intent."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate states seven distinct individuals but image shows six (two foreground players, one crouching near wall, two near left doorway, one on balcony right side, one partially visible behind central player).",
+      "Incorrect object color: candidate describes a red basketball but image shows a brown basketball."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:50:10.303980+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-18631112-f6c0-9729-a257-3b050ea1476e",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1114,
+        "total_tokens": 1923,
+        "completion_tokens_details": {
+          "text_tokens": 1114
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070249487cacf6b5b46c452d",
+      "usage": {
+        "completion_tokens": 1035,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2094,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3129
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

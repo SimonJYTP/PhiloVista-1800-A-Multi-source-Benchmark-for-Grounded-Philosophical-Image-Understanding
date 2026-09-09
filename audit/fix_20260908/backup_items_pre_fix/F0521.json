@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0521",
+  "sample_id": "PHL1800_HL_0323",
+  "file_name": "PHL1800_HL_0323.png",
+  "batch_id": "B012",
+  "position_in_batch": 41,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a red-and-cream articulated bus stopped at a street intersection",
+  "captions": {
+    "scene": [
+      "A paved urban street with brick sidewalks, flanked by multi-story stone and brick buildings under an overcast sky.",
+      "A historic-style building with arched windows and ornate stonework occupies the right background; a clock tower stands near the curb.",
+      "Commercial signage hangs from building facades on the left, including 'TO LET' and 'AUCTION' notices."
+    ],
+    "action": [
+      "The articulated bus is stationary mid-intersection, with its front wheels turned slightly right.",
+      "Two pedestrians walk on the left sidewalk: one in dark clothing carrying a green bag, another in light clothing ahead of them.",
+      "A white van is parked parallel to the curb on the left, facing away from the camera."
+    ],
+    "rationale": [
+      "The bus’s position across lane markings and lack of motion blur suggest it is stopped rather than moving slowly.",
+      "The presence of multiple commercial signs and a public clock implies this is a town center or main thoroughfare.",
+      "The absence of visible traffic signals or stop lines makes it uncertain whether the bus is obeying a signal or waiting for passengers."
+    ],
+    "object": [
+      "A red-and-cream articulated bus displays partial text 'Chester' and a red circular logo on its side; its rear doors are closed and no passengers are visible entering or exiting.",
+      "A black cast-iron street clock with white face and Roman numerals stands on a pole near the curb, showing approximately 10:10.",
+      "A white van with UK-style rear license plate (partially legible as 'YJ12...') is parked beside a green-framed shopfront with yellow sign reading 'Carpet Design'.",
+      "A blue-and-white 'TO LET' sign lists 'Madison Commercial' and phone number '0161 877 1660'; below it, a green-and-yellow 'AUCTION' sign is mounted on the same pole.",
+      "Two distinct pedestrians are visible on the left sidewalk walking away; no other pedestrians are clearly distinguishable in the scene."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0521_P1",
+      "visual_anchors": [
+        "the bus halted mid-street",
+        "the clock showing 10:10",
+        "the 'TO LET' sign"
+      ],
+      "symbolic_mapping": [
+        "the bus represents suspended movement amid routine",
+        "the clock anchors a moment within institutional timekeeping"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a liminal instant where public transit, commercial vacancy, and measured time coexist—suggesting how social structures impose rhythm on individual passage while leaving spaces temporarily unoccupied and undefined.",
+      "alternative_interpretations": [
+        "This is simply a routine street scene during off-peak hours with no deeper meaning."
+      ],
+      "limitations": [
+        "No visible occupants or facial expressions prevent confirmation of intentionality or emotional state."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0521_P2",
+      "visual_anchors": [
+        "two pedestrians walking together",
+        "the auction sign",
+        "the parked van"
+      ],
+      "symbolic_mapping": [
+        "shared movement contrasts with static commerce",
+        "auction signifies transition of ownership"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "labor_technology"
+      ],
+      "interpretation": "The paired walkers proceed along a path lined with signs of economic transaction and vehicle-based labor, illustrating how daily journeys unfold against a backdrop of commodified space and mechanized transport.",
+      "alternative_interpretations": [
+        "The pedestrians are unrelated individuals coincidentally aligned; the van is merely parked, not symbolizing labor."
+      ],
+      "limitations": [
+        "No visible interaction between the pedestrians confirms shared purpose."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0521_P3",
+      "visual_anchors": [
+        "ornate stone building",
+        "modern bus",
+        "street clock"
+      ],
+      "symbolic_mapping": [
+        "architectural permanence vs. transient transport",
+        "mechanical time regulating ephemeral activity"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The juxtaposition of enduring civic architecture with a standardized bus and regulated timepiece reflects how individual identity and mobility are framed within inherited spatial and temporal constraints.",
+      "alternative_interpretations": [
+        "These elements are standard features of a British town center with no symbolic intent."
+      ],
+      "limitations": [
+        "The building’s function (e.g., council, museum, theater) is unreadable, limiting interpretation of its symbolic weight."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians: candidate claims three distinct pedestrians, but only two are visible on the left sidewalk; the person near the clock tower is not clearly distinguishable as a separate individual."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:53:36.355701+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-52103f3a-a1d0-9c3a-a5a8-d173f138a144",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1031,
+        "total_tokens": 1840,
+        "completion_tokens_details": {
+          "text_tokens": 1031
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025322c2460e54ee28417f",
+      "usage": {
+        "completion_tokens": 911,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2002,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2913
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

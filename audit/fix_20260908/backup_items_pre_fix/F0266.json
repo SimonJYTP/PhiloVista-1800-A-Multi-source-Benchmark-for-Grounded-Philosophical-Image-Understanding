@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0266",
+  "sample_id": "PHL1800_HL_0169",
+  "file_name": "PHL1800_HL_0169.png",
+  "batch_id": "B007",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "large elephant sculpture in foreground",
+  "captions": {
+    "scene": [
+      "Grand interior hall with arched glass ceiling, ornate columns, and multi-level balconies",
+      "Mounted aircraft suspended from ceiling above central staircase",
+      "Display of taxidermied or sculpted animals including giraffe, bison, antelope, and two elephants"
+    ],
+    "action": [
+      "Elephant sculpture stands stationary with trunk lowered and tusks visible",
+      "People are present on lower level near entrance and on upper balcony, some observing exhibits",
+      "Aircraft propeller is fixed; no motion blur indicates static display"
+    ],
+    "rationale": [
+      "The presence of multiple animal specimens and a banner reading 'Life' suggests a natural history exhibit context",
+      "Architectural features such as chandeliers, balustrades, and symmetrical staircases indicate a historic institutional building",
+      "The lighting appears artificial and uniform, suggesting indoor exhibition rather than natural daylight setting"
+    ],
+    "object": [
+      "A large dark gray elephant sculpture with prominent white tusks occupies the right foreground.",
+      "A giraffe specimen stands to the left of center, positioned behind the elephant and in front of a staircase.",
+      "A mounted biplane with black propeller blades and silver nose cone hangs horizontally from the ceiling above the stairs.",
+      "A blue banner with white text 'Life' is affixed to a railing on the second-floor landing.",
+      "At least four people are visible: three on the lower floor near the left entrance, and one near the giraffe’s base."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0266_P1",
+      "visual_anchors": [
+        "elephant sculpture",
+        "mounted aircraft",
+        "staircase leading upward"
+      ],
+      "symbolic_mapping": [
+        "elephant as enduring presence vs. aircraft as transient technology"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of massive organic form (elephant) with engineered flight apparatus (aircraft) evokes tension between biological persistence and human-made impermanence, prompting reflection on how artifacts mediate our relationship with time and mortality.",
+      "alternative_interpretations": [
+        "This may simply reflect curatorial grouping by scale or thematic zone without symbolic intent."
+      ],
+      "limitations": [
+        "No labels or contextual signage confirm intentional symbolism; arrangement could be logistical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0266_P2",
+      "visual_anchors": [
+        "'Life' banner",
+        "multiple animal specimens",
+        "visitors observing"
+      ],
+      "symbolic_mapping": [
+        "display of life forms as curated knowledge"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The organized presentation of diverse organisms under the explicit heading 'Life' frames biological reality as constructed knowledge, raising questions about how collective understanding shapes social existence through institutional curation.",
+      "alternative_interpretations": [
+        "The banner may denote a temporary exhibition title rather than a philosophical statement."
+      ],
+      "limitations": [
+        "The word 'Life' is isolated without accompanying explanatory text; its scope is ambiguous."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0266_P3",
+      "visual_anchors": [
+        "central staircase",
+        "balcony levels",
+        "people at different elevations"
+      ],
+      "symbolic_mapping": [
+        "vertical spatial hierarchy mirroring epistemic or social stratification"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "identity_appearance"
+      ],
+      "interpretation": "Visitors occupy distinct vertical planes—ground floor, landing, balcony—suggesting implicit hierarchies of access or perspective within the institution, where position correlates with visibility and interpretive authority over displayed nature.",
+      "alternative_interpretations": [
+        "Staircase and balconies serve purely functional circulation purposes; elevation differences reflect architecture, not ideology."
+      ],
+      "limitations": [
+        "No directional signage, barriers, or behavioral cues indicate enforced stratification."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for people is incorrect: candidate claims 'at least seven people' but only 4 are visible (3 lower left, 1 near giraffe base)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:26:43.760685+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c67277e9-5833-95a0-9840-419c69f45540",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 888,
+        "total_tokens": 1637,
+        "completion_tokens_details": {
+          "text_tokens": 888
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702262762d6f908c0e343e3",
+      "usage": {
+        "completion_tokens": 765,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1795,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2560
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

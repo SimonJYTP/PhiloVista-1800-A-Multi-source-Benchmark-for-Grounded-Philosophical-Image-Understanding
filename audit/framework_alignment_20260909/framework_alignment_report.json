@@ -1,0 +1,103 @@
+{
+  "framework_version": "2026-09-09",
+  "status": "framework_aligned_ai_preview_pending_human_gold",
+  "ontology": {
+    "ontology_version": "formal-632-20260909",
+    "rows": 632,
+    "sha256": "87f4deb1fb619b4fcc3921c301c46bd1a33562986f83e6f3de9aa782eefa673d",
+    "macro_dimensions": {
+      "Axiology": 342,
+      "Epistemology": 132,
+      "Ontology": 158
+    },
+    "visual_inferability": {
+      "context_heavy": 196,
+      "not_image_decidable": 32,
+      "symbol_mediated": 404
+    },
+    "temporal_requirement": {
+      "longitudinal": 23,
+      "process": 54,
+      "snapshot": 555
+    },
+    "ontology_status": {
+      "candidate": 416,
+      "ontology_only": 216
+    }
+  },
+  "crosswalk_version": "0.1.0-candidate-only",
+  "crosswalk_policy": "candidate_retrieval_only",
+  "split_seed": "philovista-1800-split-v1",
+  "sidecar": {
+    "records": 1800,
+    "interpretations": 5400,
+    "formal_concept_claims": 0,
+    "distinct_legacy_axes": 11,
+    "distinct_formal_candidates": 29,
+    "not_image_decidable_candidate_mentions": 149,
+    "review_verdicts": {
+      "accept": 1578,
+      "revised_after_review": 201,
+      "revised_by_audit_visual_inspection": 21
+    },
+    "framework_visual_repairs": [
+      "F0029",
+      "F0113",
+      "F0202",
+      "F0405",
+      "F0745",
+      "F1445",
+      "F1526",
+      "F1576",
+      "F1701"
+    ]
+  },
+  "splits": {
+    "calibration": {
+      "total": 180,
+      "source:HAIVMet": 51,
+      "source:HL Dataset": 61,
+      "source:IRFL": 53,
+      "source:MM-MoralBench": 15,
+      "track:boundary": 19,
+      "track:positive": 161
+    },
+    "dev": {
+      "total": 180,
+      "source:HAIVMet": 52,
+      "source:HL Dataset": 66,
+      "source:IRFL": 50,
+      "source:MM-MoralBench": 12,
+      "track:boundary": 19,
+      "track:positive": 161
+    },
+    "test": {
+      "total": 1440,
+      "source:HAIVMet": 447,
+      "source:HL Dataset": 473,
+      "source:IRFL": 397,
+      "source:MM-MoralBench": 123,
+      "track:boundary": 142,
+      "track:positive": 1298
+    }
+  },
+  "checks": {
+    "ontology_ids_unique": true,
+    "crosswalk_ids_exist_in_ontology": true,
+    "legacy_axes_separated_from_formal_concepts": true,
+    "formal_claims_not_mechanically_inferred": true,
+    "group_ids_cross_splits": 0,
+    "split_counts_match_targets": true
+  },
+  "artifacts": {
+    "ontology_csv": "ontology/philosophical_image_label_system_formal_632.csv",
+    "ontology_lock": "ontology/formal_632.lock.json",
+    "framework_sidecar": "annotation_workflow/drafts/api_en/exports/PhiloVista-1800_framework.jsonl",
+    "splits": "splits/benchmark_splits.csv"
+  },
+  "limitations": [
+    "All 1,800 records remain AI drafts with formal_gold=false.",
+    "Formal concept candidates are retrieval aids, not PHC labels or gold answers.",
+    "Independent per-image PHC mapping, rating, and adjudication remain required."
+  ]
+}

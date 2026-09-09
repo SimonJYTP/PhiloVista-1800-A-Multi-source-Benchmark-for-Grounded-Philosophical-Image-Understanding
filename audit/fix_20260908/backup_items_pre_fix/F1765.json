@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1765",
+  "sample_id": "PHL1800_HL_0531",
+  "file_name": "PHL1800_HL_0531.png",
+  "batch_id": "B036",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a snowboarder mid-air performing a trick",
+  "captions": {
+    "scene": [
+      "A wide-angle fisheye view of a sunlit snowy mountain slope under a deep blue sky with scattered cirrus clouds",
+      "Evergreen trees line the lower slopes and distant ridgelines; ski trail markers are visible on the right",
+      "Sun glare appears near the left horizon, casting lens flare and illuminating airborne snow particles"
+    ],
+    "action": [
+      "The snowboarder is inverted, with board above head, legs bent, and arms extended outward holding the board's edge",
+      "Snow is being displaced upward from the takeoff point, forming a visible spray behind the rider",
+      "The rider wears full winter gear including helmet, goggles, gloves, and insulated jacket and pants"
+    ],
+    "rationale": [
+      "The rider’s orientation and board position suggest a rotational aerial maneuver (e.g., backflip or cork), though exact trick type cannot be confirmed without motion sequence",
+      "The fisheye distortion implies use of an ultra-wide lens mounted close to the subject, likely on helmet or chest harness",
+      "The presence of distant skiers/snowboarders is not visible; no other individuals are present in the image"
+    ],
+    "object": [
+      "The snowboard has a multicolored graphic design featuring large yellow, blue, red, and black shapes; partial reversed text 'ON' and 'SU' is visible but not fully legible due to rotation and perspective",
+      "The rider’s left glove is bright yellow, contrasting with dark clothing and board colors",
+      "A small orange marker pole stands upright in snow on the right side of the frame, near tree line",
+      "No other individuals are visible in the image; the candidate’s claim of 'at least five other individuals' is incorrect",
+      "The snow surface shows smooth groomed texture in foreground, with subtle undulations and tracked areas further down"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1765_P1",
+      "visual_anchors": [
+        "inverted snowboarder",
+        "sun glare near horizon",
+        "fisheye distortion"
+      ],
+      "symbolic_mapping": [
+        "upside-down orientation maps to inversion of ordinary perception",
+        "lens distortion maps to subjective framing of experience"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where physical orientation is suspended, inviting reflection on how truth and freedom are contingent upon perspective and embodied positioning.",
+      "alternative_interpretations": [
+        "A standard action sports photograph emphasizing athleticism and equipment performance."
+      ],
+      "limitations": [
+        "No textual or cultural context confirms intentional philosophical framing; interpretation relies solely on formal visual properties."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1765_P2",
+      "visual_anchors": [
+        "airborne snow particles",
+        "isolated rider against vast sky",
+        "distant figures on slope"
+      ],
+      "symbolic_mapping": [
+        "dispersed snow maps to fleeting moments of agency",
+        "scale disparity maps to individual vs. collective existence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The transient suspension of the rider amid enduring landscape and distant others evokes the tension between ephemeral personal action and persistent social continuity.",
+      "alternative_interpretations": [
+        "Photographic emphasis on dynamic motion and contrast between foreground subject and background environment."
+      ],
+      "limitations": [
+        "Temporal duration of the jump is unknown; the ‘fleeting’ quality is inferred from static image alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1765_P3",
+      "visual_anchors": [
+        "multicolored board graphics",
+        "helmet and goggles covering face",
+        "uniform winter attire"
+      ],
+      "symbolic_mapping": [
+        "obscured facial features map to depersonalization in extreme sport",
+        "bold board design maps to assertion of identity through artifact"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The rider’s obscured visage juxtaposed with highly stylized equipment suggests identity is performed through chosen tools and actions rather than facial recognition.",
+      "alternative_interpretations": [
+        "Standard protective gear and branded equipment used for safety and sponsorship visibility."
+      ],
+      "limitations": [
+        "Facial coverage is functionally necessary for safety; no evidence of intentional anonymity or symbolic erasure."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate claims 'at least five other individuals' but only one snowboarder is visible; no other people are present in the image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:10:28.935019+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4694a20f-9016-9486-8964-c033ebb4c875",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 975,
+        "total_tokens": 1744,
+        "completion_tokens_details": {
+          "text_tokens": 975
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070510161c0e4435e32742d3",
+      "usage": {
+        "completion_tokens": 848,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1901,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2749
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

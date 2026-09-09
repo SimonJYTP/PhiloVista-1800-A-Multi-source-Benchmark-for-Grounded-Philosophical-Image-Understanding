@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0368",
+  "sample_id": "PHL1800_HL_0119",
+  "file_name": "PHL1800_HL_0119.png",
+  "batch_id": "B009",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of cyclists with body paint, viewed from behind on a street",
+  "captions": {
+    "scene": [
+      "A sunlit urban street with two white-and-yellow buses parked or moving slowly on the left, trees lining both sides, and a brick building on the right.",
+      "Multiple cyclists occupy the road lane; some are standing still or moving slowly, others are pedaling; several wear helmets and minimal clothing.",
+      "The foreground shows a cyclist with green painted text on their back facing away; behind them, another cyclist has orange tiger-stripe body paint and raised arms."
+    ],
+    "action": [
+      "At least 15 distinct individuals are visible: 8 on bicycles (some stationary, some in motion), 4 standing beside bikes, and 3 walking or partially obscured; one person raises both arms overhead.",
+      "A cyclist in tiger-stripe paint faces forward with arms raised; another in red shorts and black helmet holds handlebars while looking ahead.",
+      "Body paint is applied across multiple participants: green text on one back, orange stripes on another, red markings on a third, and partial lettering on others; some text is legible, some not."
+    ],
+    "rationale": [
+      "The presence of buses, traffic lights, and pavement markings indicates an organized public-space event rather than spontaneous traffic disruption.",
+      "The uniformity of helmet use and bike orientation suggests coordination, though no explicit signage confirms official sanction.",
+      "Text such as 'CAN YOU SEEN NOW?' appears painted on bodies; some words are reversed due to camera perspective, implying intentional messaging."
+    ],
+    "object": [
+      "A white bus with yellow stripe and blue advertisement panel is visible on the left, partially occluding a cyclist with red back paint.",
+      "A cyclist wearing a black helmet and red shorts has green capital letters painted on their bare back reading 'CAN YOU SEEN NOW?' with question mark.",
+      "A central figure wears full-body orange tiger-stripe paint with blue handwritten text across the back; arms raised above head.",
+      "A person to the left wears a white helmet and has red paint on their upper back forming abstract shapes; they grip handlebars of a black bicycle.",
+      "A second bus, white with yellow stripe, is visible further down the street behind a cluster of cyclists."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0368_P1",
+      "visual_anchors": [
+        "green text 'CAN YOU SEEN NOW?' on bare back",
+        "tiger-stripe body paint",
+        "raised arms of central figure"
+      ],
+      "symbolic_mapping": [
+        "painted text as demand for visibility",
+        "animal pattern as reclamation of non-human identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The painted query 'CAN YOU SEEN NOW?' coupled with bodily exposure and animal mimicry interrogates societal thresholds of recognition—suggesting that visibility requires both literal sight and symbolic permission.",
+      "alternative_interpretations": [
+        "It may simply be a humorous or ironic slogan without deeper intent, common in street performance art."
+      ],
+      "limitations": [
+        "The phrase contains grammatical irregularity ('SEEN' instead of 'SEE'), which could indicate non-native English usage or deliberate stylization, obscuring intended meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0368_P2",
+      "visual_anchors": [
+        "multiple cyclists with varied body paint",
+        "shared directionality toward street ahead",
+        "buses framing the scene"
+      ],
+      "symbolic_mapping": [
+        "collective movement as assertion of space",
+        "body as temporary canvas against institutional infrastructure"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of painted human bodies occupying a vehicle lane normally reserved for transit implies a temporary suspension of regulatory order, enacting freedom through embodied collective presence.",
+      "alternative_interpretations": [
+        "This may be a permitted parade or demonstration where route allocation was officially granted, negating any subversive claim."
+      ],
+      "limitations": [
+        "No visible permits, banners, or police presence confirm whether the occupation is authorized or contested."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0368_P3",
+      "visual_anchors": [
+        "partial legibility of other phrases",
+        "mix of religious and secular motifs"
+      ],
+      "symbolic_mapping": [
+        "divine attribution of bodily design as critique of human standardization"
+      ],
+      "concept_ids": [
+        "faith_meaning",
+        "identity_appearance"
+      ],
+      "interpretation": "The phrase 'DESIGN JUT-FIT by GOD' inscribed on skin positions the body as divinely authored artifact, resisting normative aesthetic or functional expectations imposed by society.",
+      "alternative_interpretations": [
+        "The text may be nonsensical wordplay or misrendered slogan, with no theological reference intended."
+      ],
+      "limitations": [
+        "Only fragments of surrounding text are visible; full context of the phrase’s origin or intent is absent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (at least 12 vs. actual ~15+ visible individuals); misdescription of text ('DESIGN JUT-FIT by GOD' is not visible, 'TIGERS IN THIS TANK' is not confirmed); inaccurate object details (second bus color/purple roof not clearly visible); unsupported claims about 'partial lettering' and 'reversed text' without visual evidence."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:39:57.674328+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0a8db22a-c540-9912-a8d3-54d9e44d5cc9",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1115,
+        "total_tokens": 1924,
+        "completion_tokens_details": {
+          "text_tokens": 1115
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070239339702307dfdf048ae",
+      "usage": {
+        "completion_tokens": 1106,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2094,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3200
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

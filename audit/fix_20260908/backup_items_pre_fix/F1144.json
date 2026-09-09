@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1144",
+  "sample_id": "PHL1800_HL_0301",
+  "file_name": "PHL1800_HL_0301.png",
+  "batch_id": "B024",
+  "position_in_batch": 34,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two riders on horses in an outdoor arena",
+  "captions": {
+    "scene": [
+      "A sun-drenched dirt riding arena enclosed by a weathered wooden fence, viewed through a curved wooden frame that creates a fisheye distortion.",
+      "Green grass borders the arena; beyond it, a line of deciduous trees under a partly cloudy blue sky with strong lens flare from the sun.",
+      "Spectators sit on the right side outside the fence, near a small white structure and additional fencing in the background."
+    ],
+    "action": [
+      "The foreground rider, wearing a dark helmet and jacket, sits upright on a brown horse moving leftward at a trot or canter.",
+      "The second rider, also helmeted and in dark attire, rides a lighter brown horse slightly behind and to the right, also moving leftward.",
+      "Both horses have visible motion blur in their legs, indicating forward movement across the arena surface."
+    ],
+    "rationale": [
+      "The riders wear helmets and equestrian attire consistent with formal riding practice, suggesting training or competition rather than casual recreation.",
+      "The presence of spectators and structured fencing implies an organized event, though no signage confirms its nature.",
+      "The fisheye lens distortion exaggerates curvature of the fence and horizon, which may misrepresent spatial relationships; thus, relative distances and scale are uncertain."
+    ],
+    "object": [
+      "Two horses are visible: one dark bay in the foreground, one lighter chestnut behind; both have saddles and bridles and are in mid-stride.",
+      "Two riders are seated atop the horses, each wearing a helmet, long-sleeved top, breeches, and tall boots; neither rider’s face is clearly visible.",
+      "A thick, horizontally oriented wooden fence forms a prominent foreground frame, showing grain, knots, and weathering; it curves due to lens distortion.",
+      "The arena floor is compacted brown earth with hoof prints and scattered dust, indicating recent use.",
+      "At least two spectators are discernible on the far right, seated on portable chairs or benches, facing the arena; some wear brightly colored clothing."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1144_P1",
+      "visual_anchors": [
+        "curved wooden fence framing the scene",
+        "lens flare obscuring part of the sky",
+        "riders moving along a defined path"
+      ],
+      "symbolic_mapping": [
+        "the fence as boundary between observer and observed",
+        "lens flare as interference in perception"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The image presents perception as mediated: the viewer sees the riders only through a distorting frame and glare, suggesting that knowledge of action is always constrained by observational apparatus and perspective.",
+      "alternative_interpretations": [
+        "The curved fence is simply a photographic artifact of a wide-angle lens used for compositional effect, not symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm intentional symbolism; the framing may be purely technical."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1144_P2",
+      "visual_anchors": [
+        "two riders maintaining parallel trajectories",
+        "horses in synchronized gait",
+        "shared directionality toward left edge"
+      ],
+      "symbolic_mapping": [
+        "parallel motion as coexistence without direct interaction",
+        "shared path as social coordination within structure"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The riders move in concert yet independently—neither leading nor following—evoking a model of social existence where individuals pursue parallel journeys within shared constraints, affirming autonomy amid collective context.",
+      "alternative_interpretations": [
+        "The riders are simply practicing together in a lesson; their alignment reflects instructor guidance, not philosophical stance."
+      ],
+      "limitations": [
+        "No evidence of intentional choreography or communication between riders; alignment could be coincidental or situational."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1144_P3",
+      "visual_anchors": [
+        "sunlight casting strong shadows",
+        "dust kicked up by hooves",
+        "ephemeral motion blur"
+      ],
+      "symbolic_mapping": [
+        "dust as transient trace of presence",
+        "motion blur as impermanence of action"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The fleeting dust and blurred limbs emphasize the temporality of embodied labor—the rider and horse exert effort that leaves only momentary traces, underscoring how physical action exists only fleetingly in time before dissolving into memory or absence.",
+      "alternative_interpretations": [
+        "Dust and motion blur are standard optical effects in dynamic equestrian photography, not metaphysical commentary."
+      ],
+      "limitations": [
+        "The image captures a single instant; no sequence confirms duration or decay of the depicted state."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for spectators is incorrect; the candidate claims at least six spectators but the image shows fewer discernible individuals."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:55:14.156903+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7568cd80-77ba-944e-af6c-87241a5238a3",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1053,
+        "total_tokens": 1822,
+        "completion_tokens_details": {
+          "text_tokens": 1053
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035453ee31a6fc958f4016",
+      "usage": {
+        "completion_tokens": 938,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1983,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2921
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1372",
+  "sample_id": "PHL1800_HL_0261",
+  "file_name": "PHL1800_HL_0261.png",
+  "batch_id": "B028",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a formation of police motorcycles with activated emergency lights",
+  "captions": {
+    "scene": [
+      "A sunlit urban street lined with trees, parked cars, and commercial buildings under a clear blue sky.",
+      "Orange traffic cones are placed on the left sidewalk edge; pedestrians stand near them observing the procession.",
+      "Multiple motorcycles occupy both lanes of a two-lane road, with yellow double lines visible and green grass verges on either side."
+    ],
+    "action": [
+      "Motorcycle riders in uniform helmets and jackets maintain a tight, forward-moving formation.",
+      "At least 15 motorcycles have their headlights and red/blue emergency lights illuminated simultaneously.",
+      "Two civilians stand on the left curb facing the motorcycles; one wears an orange vest and does not hold a small object."
+    ],
+    "rationale": [
+      "The uniformity of gear, vehicle type, and synchronized lighting strongly suggests an official law enforcement procession rather than a civilian ride.",
+      "The presence of traffic cones and observers positioned at the roadside implies controlled access or a scheduled event, not spontaneous traffic.",
+      "The absence of visible banners, signs, or crowd density makes it uncertain whether this is a parade, escort, or ceremonial duty."
+    ],
+    "object": [
+      "There are at least 15 motorcycle riders visible in the formation, each wearing a helmet and dark uniform jacket.",
+      "One motorcycle in the foreground has a bright white headlight, amber turn signals, and a blue emergency light on the right handlebar.",
+      "No black sedan with flashing lights is visible behind the leftmost motorcycle; only motorcycles are present in the formation.",
+      "Three orange traffic cones are arranged linearly on the left sidewalk, with their bases touching the curb.",
+      "A person in a black jacket and orange safety vest stands beside another person in dark clothing, both facing the motorcycles."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1372_P1",
+      "visual_anchors": [
+        "uniformed riders in identical posture",
+        "synchronized emergency lighting",
+        "double yellow road lines"
+      ],
+      "symbolic_mapping": [
+        "identical posture → collective discipline",
+        "synchronized lights → coordinated authority"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image visualizes social existence as enacted through standardized roles and spatial order: riders embody institutional presence, while road markings enforce shared rules that enable their movement.",
+      "alternative_interpretations": [
+        "This may simply be a routine motorcade without symbolic intent—functional logistics rather than ideological display."
+      ],
+      "limitations": [
+        "No signage, insignia, or context confirms institutional affiliation beyond appearance; uniforms could be generic."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1372_P2",
+      "visual_anchors": [
+        "sunlit shadows cast directly beneath motorcycles",
+        "clear sky with no clouds",
+        "sharp focus on foreground bike"
+      ],
+      "symbolic_mapping": [
+        "direct shadows → immediacy of action",
+        "clarity of light → transparency of purpose"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The stark daylight and precise shadows suggest a moment suspended in present time, where truth is conveyed through observable fact—the motorcycles are here, moving now—without narrative embellishment.",
+      "alternative_interpretations": [
+        "The lighting is typical of midday photography and carries no intentional temporal symbolism."
+      ],
+      "limitations": [
+        "Shadows alone cannot confirm temporal intentionality; lighting conditions are common in outdoor daytime shots."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F1372_P3",
+      "visual_anchors": [
+        "pedestrians observing from sidewalk",
+        "riders facing forward, not engaging observers",
+        "physical separation by road surface"
+      ],
+      "symbolic_mapping": [
+        "sidewalk vs. roadway → social boundary",
+        "non-engagement → role-defined distance"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "identity_appearance"
+      ],
+      "interpretation": "The spatial division between observers and riders illustrates freedom constrained by role: civilians watch from permitted zones while officers operate within prescribed paths, their identities defined by function rather than individuality.",
+      "alternative_interpretations": [
+        "The separation is purely logistical—traffic control—not symbolic of social hierarchy."
+      ],
+      "limitations": [
+        "No facial expressions or gestures indicate intentional distancing; proximity may be dictated by safety protocols."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of motorcycle riders (12 vs. actual ~15+ visible); inaccurate description of the person in the orange vest (holding an object vs. standing without one); unsupported claim of a black sedan with flashing lights behind the leftmost motorcycle (no such vehicle visible)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:24:55.102996+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7b449875-be52-97fe-a756-a4df1c99ffcc",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 945,
+        "total_tokens": 1754,
+        "completion_tokens_details": {
+          "text_tokens": 945
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907042438b246e683a92648d3",
+      "usage": {
+        "completion_tokens": 948,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1921,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2869
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

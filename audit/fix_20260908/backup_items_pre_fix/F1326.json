@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1326",
+  "sample_id": "PHL1800_HL_0379",
+  "file_name": "PHL1800_HL_0379.png",
+  "batch_id": "B028",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "pedestrians and vehicles at a multi-lane urban intersection with a central plaza",
+  "captions": {
+    "scene": [
+      "A wide-angle view of a busy city intersection featuring red double-decker buses, black cabs, cyclists, and pedestrians crossing or waiting at traffic signals under overcast skies.",
+      "A large open plaza with a tall stone column monument, surrounded by classical-style buildings, trees, and scattered groups of people seated or walking.",
+      "Traffic infrastructure includes multiple signal poles, pedestrian crossings marked with white stripes, directional road markings including 'LOOK LEFT', and surveillance cameras mounted on poles."
+    ],
+    "action": [
+      "A red double-decker bus is turning left across the intersection while another red bus is parked on the far side of the plaza.",
+      "Four pedestrians stand together at a crosswalk waiting for the signal; one holds a bag, two wear dark jackets, and one wears light-colored trousers.",
+      "A cyclist in a blue top rides across the intersection from left to right, passing near a black taxi and a group of seated people."
+    ],
+    "rationale": [
+      "The presence of two distinct red double-decker buses and black cabs suggests a location where such vehicles are standard public transport, though exact location cannot be confirmed from visual evidence alone.",
+      "Pedestrians are positioned at curb edges with feet aligned toward the crossing, indicating they are waiting rather than actively crossing; however, no signal state is legible, so intent is inferred only from posture.",
+      "The central plaza contains a tall column with a statue base and surrounding low walls, consistent with a commemorative monument, but inscriptions or plaques are unreadable and thus identity remains unspecified."
+    ],
+    "object": [
+      "A red double-decker bus with visible route number '15' on its front display and advertising panels on its side is mid-turn in the left lane.",
+      "A black London-style taxi (FX4 model) is stopped near the center of the intersection, facing right; the driver is not clearly visible through the windshield.",
+      "Six individuals are seated on the low stone wall encircling the plaza’s central column; three appear to be using mobile devices, one leans forward, and two rest arms on knees.",
+      "A white van with blue markings and a roof-mounted box is parked on the far left side of the intersection, partially behind a tree.",
+      "Two surveillance cameras are mounted on a single black pole in the foreground left, angled toward the intersection; both have cylindrical housings and visible lenses."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1326_P1",
+      "visual_anchors": [
+        "pedestrians waiting at crosswalk",
+        "traffic signals with amber light visible",
+        "white road marking 'LOOK LEFT'"
+      ],
+      "symbolic_mapping": [
+        "the fixed instruction 'LOOK LEFT' maps to imposed procedural order in shared space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The mandated gaze direction ('LOOK LEFT') enacts a collective discipline where individual autonomy is temporarily suspended for systemic safety, illustrating how social coexistence depends on codified constraints.",
+      "alternative_interpretations": [
+        "It is simply a standard road safety instruction with no deeper implication beyond traffic regulation."
+      ],
+      "limitations": [
+        "The phrase 'LOOK LEFT' is partially obscured and may not be fully legible; other directions may also be present but out of frame."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1326_P2",
+      "visual_anchors": [
+        "central column monument",
+        "people seated casually around its base",
+        "tourists taking photos nearby"
+      ],
+      "symbolic_mapping": [
+        "the monument’s verticality contrasts with the horizontal sprawl of daily movement, symbolizing enduring memory amid transient activity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The monument stands as a static anchor of collective memory while individuals pass through the space in fleeting motion, evoking the tension between historical permanence and embodied temporality.",
+      "alternative_interpretations": [
+        "The column is merely architectural background; the seated people are resting, not engaging with its meaning."
+      ],
+      "limitations": [
+        "No inscription or plaque is readable, so the monument’s specific commemorative purpose is unknown."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1326_P3",
+      "visual_anchors": [
+        "cyclist navigating between cars and pedestrians",
+        "multiple signal poles with conflicting orientations",
+        "crowded sidewalk edge"
+      ],
+      "symbolic_mapping": [
+        "the cyclist’s narrow path through heterogeneous flows represents negotiated agency within layered infrastructural control"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "power_conflict"
+      ],
+      "interpretation": "The cyclist’s trajectory—neither fully on road nor sidewalk—exemplifies micro-resistance: a deliberate navigation of contested space where institutional design imposes hierarchy but individuals assert mobility through improvisation.",
+      "alternative_interpretations": [
+        "The cyclist is simply using the most convenient route available given traffic conditions."
+      ],
+      "limitations": [
+        "The cyclist’s facial expression, destination, and awareness of surrounding vehicles cannot be determined."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people in the plaza (5 vs actual 6+), inaccurate description of the cyclist's direction (right to left vs actual left to right), and unsupported claim about the taxi driver being visible."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:18:19.797306+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7a041c4a-fccf-9a7d-83e4-f67105fe9bef",
+      "usage": {
+        "prompt_tokens": 870,
+        "completion_tokens": 1108,
+        "total_tokens": 1978,
+        "completion_tokens_details": {
+          "text_tokens": 1108
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 363,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041741de5be2850dc44322",
+      "usage": {
+        "completion_tokens": 1102,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2177,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3279
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0034",
+  "sample_id": "PHL1800_HL_0363",
+  "file_name": "PHL1800_HL_0363.png",
+  "batch_id": "B003",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "six people standing on cross-country skis in snow near trees and a building",
+  "captions": {
+    "scene": [
+      "Snow-covered ground with scattered pine needles and a large tree trunk on the left; a wooden structure and concrete wall visible in background.",
+      "Overcast daylight illumination; shadows are soft and diffuse, suggesting cloudy weather or indirect sunlight.",
+      "Group clustered loosely in a line, facing generally toward camera or slightly rightward; skis aligned roughly parallel."
+    ],
+    "action": [
+      "One person (leftmost) stands upright holding ski poles, looking forward with mouth slightly open.",
+      "A person in green jacket leans forward, adjusting or inspecting another’s blue ski pants or boots.",
+      "Multiple individuals hold ski poles vertically or angled; some wear gloves, beanies, or patterned hats; one wears a cat-ear hat."
+    ],
+    "rationale": [
+      "The presence of cross-country skis, poles, winter clothing, and snow strongly indicates a skiing activity rather than casual standing.",
+      "The leaning posture and hand placement suggest active assistance or equipment check, though exact intent is not verifiable from static image.",
+      "Text on one person’s pants reads 'CANADIAN' in white uppercase letters; other text (e.g., on green jacket) is partially obscured or unreadable."
+    ],
+    "object": [
+      "Six distinct individuals are visible: all fully or mostly visible, no partial occlusion behind the green-jacketed person.",
+      "All individuals wear winter outerwear including jackets, pants, gloves, and head coverings; colors include black/yellow, olive green, navy, gray, and white.",
+      "Each person has at least one pair of cross-country skis underfoot; ski bases show varied colors: yellow, red, blue, and white patterns.",
+      "Ski poles are held by at least five individuals; pole shafts appear metallic or carbon-fiber with plastic grips and baskets.",
+      "A large coniferous tree trunk occupies left background; behind group, a wooden deck or porch and light-gray concrete wall form part of a structure."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0034_P1",
+      "visual_anchors": [
+        "cat-ear hat",
+        "varied winter attire",
+        "group proximity"
+      ],
+      "symbolic_mapping": [
+        "distinctive headwear as expression of individuality within collective activity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of uniform functional gear (skis, poles, insulated layers) with idiosyncratic accessories (e.g., cat-ear hat) reflects how individuals negotiate personal identity within socially coordinated practices.",
+      "alternative_interpretations": [
+        "The hat may simply be a practical cold-weather item with no expressive intent; variation in clothing could reflect availability rather than choice."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentional self-presentation; accessory function cannot be disentangled from utility."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0034_P2",
+      "visual_anchors": [
+        "person adjusting another’s gear",
+        "shared ski orientation",
+        "clustered formation"
+      ],
+      "symbolic_mapping": [
+        "physical assistance as embodiment of interdependence in shared endeavor"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The act of one skier attending to another’s equipment manifests a tacit ethic of mutual support, where participation in a collective activity entails responsibility for co-participants’ readiness and safety.",
+      "alternative_interpretations": [
+        "The gesture may be incidental—e.g., retrieving a dropped item—or purely instructional without moral implication."
+      ],
+      "limitations": [
+        "Intent behind the touch is ambiguous; no verbal cues or sustained interaction confirm normative commitment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0034_P3",
+      "visual_anchors": [
+        "snow-covered ground",
+        "static postures",
+        "unmoving skis"
+      ],
+      "symbolic_mapping": [
+        "pause before motion as metaphor for deliberation at threshold of action"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The group’s suspended stillness on skis—poised but not gliding—evokes the philosophical moment of decision: a threshold where potential movement (journey) is held in abeyance, highlighting human agency amid environmental constraint.",
+      "alternative_interpretations": [
+        "They are simply waiting for a signal, adjusting stance, or posing for a photo; no evidence of internal deliberation exists."
+      ],
+      "limitations": [
+        "Stillness is common in group photos or pre-activity setup; no temporal sequence confirms intentionality of pause."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (candidate states seven, but image shows six distinct individuals)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:51:51.685737+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-6074fa80-6471-9c58-bc4d-5732d995a84b",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 1027,
+        "total_tokens": 1856,
+        "completion_tokens_details": {
+          "text_tokens": 1027
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701513279873c6ca3b64dfb",
+      "usage": {
+        "completion_tokens": 909,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2054,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2963
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

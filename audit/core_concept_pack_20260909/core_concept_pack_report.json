@@ -1,0 +1,48 @@
+{
+ "pack_version": "core-concept-pack-v1",
+ "date": "20260909",
+ "ontology": {
+  "sha256": "87f4deb1fb619b4fcc3921c301c46bd1a33562986f83e6f3de9aa782eefa673d",
+  "rows": 632
+ },
+ "tier_rules": {
+  "A_core_recommended": "symbol_mediated AND snapshot AND ontology_status=candidate",
+  "B_context_dependent": "candidate status, not excluded, but context_heavy and/or process evidence required",
+  "C_excluded_from_core_v1": "not_image_decidable OR longitudinal OR ontology_status=ontology_only"
+ },
+ "claim_format": "PHC-<id>:supported|plausible|insufficient (semicolon-separated; use 'none:insufficient_evidence' when no philosophical claim is supportable)",
+ "tier_counts": {
+  "A_core_recommended": 14,
+  "C_excluded_from_core_v1": 5,
+  "B_context_dependent": 10
+ },
+ "exclusion_reasons": {
+  "temporal_longitudinal_unsupported": 1,
+  "context_heavy_or_process_evidence_required": 10,
+  "ontology_status_ontology_only": 3,
+  "visual_inferability_not_image_decidable": 1
+ },
+ "candidate_file": "annotation_workflow/resources/core_concept_candidates_v1.csv",
+ "neighbor_file": "annotation_workflow/resources/core_concept_neighbor_pairs_v1.csv",
+ "worksheet_file": "annotation_workflow/calibration/v1/calibration_mapping_worksheet_v1.csv",
+ "worksheet_key_file": "annotation_workflow/calibration/v1/calibration_image_key_v1.csv",
+ "neighbor_pair_count": 164,
+ "concepts_with_neighbors": 24,
+ "calibration": {
+  "rows": 180,
+  "unique_blind_ids": 180,
+  "image_files_verified": 180
+ },
+ "checks": {
+  "ontology_sha_matches_lock": true,
+  "all_crosswalk_ids_exist": true,
+  "all_neighbor_ids_exist": true,
+  "group_ids_cross_splits": 0,
+  "worksheet_free_of_ai_suggestions": true
+ },
+ "limitations": [
+  "Tiers are rule-based worksheets from ontology constraint fields; human calibration must confirm the core set.",
+  "Reachable counts reflect axis-level retrieval, not concept-level evidence; candidates are retrieval aids only.",
+  "Neighbor pairs are retrieved from three signals (same-axis retrieval, same subdomain, lexical overlap); human_discrimination_rule is left empty by design."
+ ]
+}

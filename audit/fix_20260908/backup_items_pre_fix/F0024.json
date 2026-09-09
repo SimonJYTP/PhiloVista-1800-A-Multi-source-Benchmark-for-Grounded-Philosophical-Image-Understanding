@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F0024",
+  "sample_id": "PHL1800_HL_0019",
+  "file_name": "PHL1800_HL_0019.png",
+  "batch_id": "B001",
+  "position_in_batch": 2,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a uniformed police officer on a motorcycle surrounded by a crowd",
+  "captions": {
+    "scene": [
+      "An outdoor daytime gathering with numerous people standing on paved ground, some holding signs and flags.",
+      "A white police motorcycle with 'UNITED STATES CAPITOL' and 'POLICE' markings is parked in the foreground.",
+      "Multiple individuals wear winter clothing including coats, hats, and scarves; one person holds a blue umbrella with a white pattern."
+    ],
+    "action": [
+      "The officer sits upright on the motorcycle, hands on handlebars, wearing a blue helmet and black leather jacket.",
+      "A man to the left holds a document and appears to be gesturing toward the officer (intent not visually knowable).",
+      "Several people are holding cameras or phones pointed toward the officer or crowd."
+    ],
+    "rationale": [
+      "The officer’s posture and gear suggest official duty rather than casual riding, supported by visible insignia and equipment.",
+      "The presence of signs and American flags indicates organized expression, though specific intent is not legible.",
+      "Crowd density and varied attire imply a public assembly, but whether it is protest, rally, or tour is not determinable from visuals alone."
+    ],
+    "object": [
+      "The motorcycle is white with chrome accents, features a windshield, saddlebags, and a rear storage box with an amber light bar.",
+      "The officer wears a light-blue full-face helmet, black leather jacket with utility pouches, black pants, and tall black boots.",
+      "A sign held by a person on the right has partial text visible: 'PHOTO' below unreadable content; other text is unreadable.",
+      "A small American flag is attached to the motorcycle’s rear storage box; another larger flag is held by a person in the background.",
+      "At least 15 distinct individuals are visible in the image, including the officer, with varying headwear, outerwear, and accessories."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0024_P1",
+      "visual_anchors": [
+        "officer in full uniform on motorcycle",
+        "crowd holding signs and cameras",
+        "American flag on motorcycle"
+      ],
+      "symbolic_mapping": [
+        "uniformed authority juxtaposed with civilian documentation suggests surveillance and accountability"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where institutional power (police) is visually framed within a field of civic observation, evoking tensions between state authority and collective scrutiny as constitutive of modern social existence.",
+      "alternative_interpretations": [
+        "This may simply depict routine security presence at a public event without inherent conflict."
+      ],
+      "limitations": [
+        "No facial expressions or speech content are visible; intent and tone cannot be confirmed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0024_P2",
+      "visual_anchors": [
+        "blue helmet obscuring face",
+        "black leather jacket with pouches",
+        "crowd members wearing diverse clothing"
+      ],
+      "symbolic_mapping": [
+        "concealment of individual identity behind role-specific gear reflects institutional anonymity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The officer’s standardized appearance erases personal identity in favor of functional role, raising questions about moral agency when action is mediated through institutional appearance.",
+      "alternative_interpretations": [
+        "The helmet and jacket are standard protective equipment, not symbolic choices."
+      ],
+      "limitations": [
+        "No evidence of the officer’s personal stance or decision-making process is visible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0024_P3",
+      "visual_anchors": [
+        "person holding blue umbrella with white pattern",
+        "multiple cameras pointed at officer",
+        "sign with partial text 'PHOTO' visible"
+      ],
+      "symbolic_mapping": [
+        "umbrella as shelter vs. camera as witness creates dual modes of engagement: protection and exposure"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The coexistence of protective gesture (umbrella) and evidentiary act (photography) illustrates how freedom manifests both as bodily safety and as the pursuit of documented truth under constraint.",
+      "alternative_interpretations": [
+        "The umbrella is merely weather protection; cameras are for personal memory, not activism."
+      ],
+      "limitations": [
+        "Umbrella pattern and camera usage lack contextual confirmation of symbolic intent."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (21 vs. actual ~15-20 visible individuals); sign text misread ('ATW... DISMANTLE POLICE STATE' is not legible, only 'PHOTO' is visible); 'blue-and-white umbrella' is a blue umbrella with white pattern, not blue-and-white; 'large white sheet of paper' is a document, not necessarily large; 'speaking or gesturing' is unsupported as intent is not knowable."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:28:16.158737+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8094a31f-3cc6-9cef-a3a1-71e8f485a20b",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 991,
+        "total_tokens": 1760,
+        "completion_tokens_details": {
+          "text_tokens": 991
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701275411e334a0117447dd",
+      "usage": {
+        "completion_tokens": 924,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1918,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2842
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

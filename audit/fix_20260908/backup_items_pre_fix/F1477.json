@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F1477",
+  "sample_id": "PHL1800_HL_0251",
+  "file_name": "PHL1800_HL_0251.png",
+  "batch_id": "B030",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a police officer on a motorcycle in a crosswalk",
+  "captions": {
+    "scene": [
+      "A wide urban street under clear blue sky with scattered cirrus clouds, flanked by large neoclassical buildings and autumnal trees.",
+      "Pedestrians crossing a marked crosswalk; some are mid-stride, others paused near curb lines.",
+      "A traffic signal showing green light for pedestrians at an intersection with visible double yellow lines and white crosswalk stripes."
+    ],
+    "action": [
+      "The officer on the motorcycle is stationary or moving slowly within the crosswalk, facing away from camera, helmeted and wearing dark uniform.",
+      "A child in red runs across the street ahead of adults; several adults walk in various directions across the intersection.",
+      "Multiple pedestrians stand or walk on sidewalks and in crosswalk zones, including individuals carrying bags or holding hands."
+    ],
+    "rationale": [
+      "The officer’s posture and motorcycle orientation suggest controlled movement rather than high-speed travel, supported by proximity to pedestrians and crosswalk markings.",
+      "The presence of multiple pedestrians in motion across the crosswalk implies pedestrian phase of traffic control, consistent with the visible green pedestrian signal.",
+      "The building architecture and tree foliage suggest late summer or early autumn in a temperate climate zone, though exact season cannot be confirmed without regional context."
+    ],
+    "object": [
+      "A black police motorcycle with chrome rear fender, two red taillights illuminated, and a mounted storage case is positioned in the crosswalk with its rear wheel straddling a white stripe.",
+      "The officer wears a white helmet, dark jacket, and gloves; their back faces the camera and no insignia or badge is legible.",
+      "At least 15 distinct individuals are visible: 7 on left sidewalk/crosswalk edge, 5 in central crosswalk area, 3 on right sidewalk/crosswalk edge; one child in red shirt and dark pants is running forward.",
+      "A multi-story stone building with evenly spaced windows and a flat roof occupies the background center-left; a spire-topped tower appears partially on far left edge.",
+      "A traffic light pole with a circular green pedestrian signal is visible above the crosswalk, approximately 4 meters above ground level."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1477_P1",
+      "visual_anchors": [
+        "officer on motorcycle in crosswalk",
+        "pedestrians crossing simultaneously",
+        "green pedestrian signal"
+      ],
+      "symbolic_mapping": [
+        "the coexistence of authority (motorcycle) and civilian mobility (pedestrians) within shared public space symbolizes negotiated order"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image embodies the tension between institutional presence and individual autonomy in public life: the officer’s regulated movement alongside unscripted pedestrian flow reflects how social order emerges not through domination but through mutual recognition of shared spatial rules.",
+      "alternative_interpretations": [
+        "This is simply routine traffic management during a public gathering, with no symbolic intent—just functional coordination of movement."
+      ],
+      "limitations": [
+        "No signage, uniforms, or contextual markers confirm jurisdiction or event type; thus symbolic readings remain speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1477_P2",
+      "visual_anchors": [
+        "child running ahead of adults",
+        "multiple generations walking together",
+        "sunlit shadows cast sharply on pavement"
+      ],
+      "symbolic_mapping": [
+        "the child’s forward motion amid adult supervision evokes temporal progression and intergenerational continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The child’s energetic stride, contrasted with slower adult paces and fixed architectural backdrop, visualizes the human experience of time as both linear passage and embodied momentum—where each step is a choice within inherited trajectories.",
+      "alternative_interpretations": [
+        "The child is merely crossing the street quickly due to impatience or excitement, with no deeper temporal symbolism intended."
+      ],
+      "limitations": [
+        "Motion blur is absent; the child’s expression and direction are not fully discernible, limiting inference about intentionality."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1477_P3",
+      "visual_anchors": [
+        "crowd dispersed across crosswalk",
+        "no single focal point among pedestrians",
+        "uniform lighting and open sky"
+      ],
+      "symbolic_mapping": [
+        "the lack of hierarchy in crowd arrangement suggests egalitarian presence in civic space"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The undifferentiated mass of pedestrians—varied in age, attire, and direction—highlights identity as contingent upon shared spatial practice rather than fixed appearance, reinforcing that social existence is enacted collectively in transient moments.",
+      "alternative_interpretations": [
+        "The crowd composition reflects random attendance at an event, not deliberate representation of social theory."
+      ],
+      "limitations": [
+        "Clothing details are insufficient to determine socioeconomic or cultural markers; anonymity prevents attribution of identity claims."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count of 27 distinct individuals is unsupported; visible pedestrians are fewer and less clearly distinguishable than claimed."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:37:04.384988+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e7631b40-5ecd-9388-b771-af011358104a",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1089,
+        "total_tokens": 1858,
+        "completion_tokens_details": {
+          "text_tokens": 1089
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090704365027bbc06c3ff04f27",
+      "usage": {
+        "completion_tokens": 975,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2018,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2993
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1711",
+  "sample_id": "PHL1800_HL_0314",
+  "file_name": "PHL1800_HL_0314.png",
+  "batch_id": "B035",
+  "position_in_batch": 17,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "pedestrians crossing a street at an intersection",
+  "captions": {
+    "scene": [
+      "A narrow urban street lined with multi-story commercial buildings, vending machines, and signage in Japanese script.",
+      "Overhead utility wires crisscross above the street; traffic signals hang over the intersection, one showing red.",
+      "A red-and-white striped traffic barrier lies on the road near two red-and-white traffic cones and a parked red-and-white car."
+    ],
+    "action": [
+      "Five pedestrians are mid-crossing on a marked crosswalk: two women walking side-by-side, one man ahead of them, another man behind them, and a fifth person further back.",
+      "A man in a white shirt and dark pants stands beside a red-and-white car on the right sidewalk, facing the street.",
+      "A man in a light blue shirt walks along the left sidewalk, carrying a black bag."
+    ],
+    "rationale": [
+      "The presence of multiple vending machines and Japanese signage suggests a commercial district in Japan, though no explicit geographic marker confirms this.",
+      "The red traffic light and pedestrian positions imply the crossing is legally permitted at this moment, but the signal phase cannot be confirmed solely from the still image.",
+      "The fallen barrier and cones suggest recent or ongoing road work, yet no workers or equipment are visible, leaving the cause uncertain."
+    ],
+    "object": [
+      "A circular blue traffic sign with a white upward arrow is mounted on a pole near the intersection.",
+      "A red building facade hosts three vertically aligned vending machines displaying beverages and snacks, with Japanese text labels.",
+      "A speed limit sign reading '40' in black numerals inside a red circle is affixed to a utility pole.",
+      "Two red-and-white traffic cones with white reflective stripes stand upright on the asphalt near the curb.",
+      "A red-and-white car is parked partially on the crosswalk on the right side of the street."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1711_P1",
+      "visual_anchors": [
+        "pedestrians mid-crosswalk",
+        "red traffic light",
+        "overhead wires"
+      ],
+      "symbolic_mapping": [
+        "the crosswalk as negotiated shared space",
+        "traffic control as imposed order"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures individuals moving through a regulated public space where personal motion is simultaneously enabled and delimited by infrastructure and signage, reflecting the tension between collective coordination and individual agency.",
+      "alternative_interpretations": [
+        "This is simply a routine street scene with no deeper meaning—people crossing because the light permits it."
+      ],
+      "limitations": [
+        "No facial expressions or body language indicate intent or emotional state; interpretation relies on spatial arrangement alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1711_P2",
+      "visual_anchors": [
+        "vending machines",
+        "Japanese signage",
+        "utility poles"
+      ],
+      "symbolic_mapping": [
+        "automated commerce as ambient presence",
+        "wires as invisible systems sustaining daily life"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The coexistence of human pedestrians and automated retail infrastructure under tangled utility lines evokes the embeddedness of labor and technology in everyday social rhythm, where service is always already present but unacknowledged.",
+      "alternative_interpretations": [
+        "The vending machines are merely convenient amenities; their presence reflects local consumer habits, not philosophical themes."
+      ],
+      "limitations": [
+        "The image does not show operation, restocking, or user interaction with the machines, so assumptions about labor are indirect."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1711_P3",
+      "visual_anchors": [
+        "fallen striped barrier",
+        "two cones",
+        "parked red car"
+      ],
+      "symbolic_mapping": [
+        "disrupted barrier as suspended action",
+        "cones as temporary markers of uncertainty"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The displaced barrier and static cones mark a moment of interrupted flow—a pause in transit that visually echoes the fragility of planned movement, suggesting how routine journeys are punctuated by unforeseen constraints that momentarily suspend forward motion.",
+      "alternative_interpretations": [
+        "The barrier was moved for parking access; the scene is mundane and functional, not symbolic."
+      ],
+      "limitations": [
+        "No context confirms whether the barrier was knocked over intentionally, accidentally, or by wind; its status is ambiguous."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians (candidate states four, image shows five); misdescription of a person's action (candidate says 'holding bicycle handlebar' but no bicycle is visible); inaccurate object details (traffic cones are red-and-white, not orange; car is red-and-white, not red sedan with white roof); unsupported claim about road work cause (no evidence of workers/equipment)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T21:04:10.555788+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-309926f6-b36c-999f-910f-fa91bb3a2cfe",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 983,
+        "total_tokens": 1772,
+        "completion_tokens_details": {
+          "text_tokens": 983
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070503523c5eeb29dd4f452d",
+      "usage": {
+        "completion_tokens": 916,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1934,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2850
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

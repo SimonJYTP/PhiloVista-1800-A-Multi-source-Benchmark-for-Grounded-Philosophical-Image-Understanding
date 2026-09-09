@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0908",
+  "sample_id": "PHL1800_HL_0280",
+  "file_name": "PHL1800_HL_0280.png",
+  "batch_id": "B020",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three youths in green shirts presenting sheep to an adult judge at a livestock show",
+  "captions": {
+    "scene": [
+      "An open-air pavilion with metal framing, spectator seating on elevated bleachers, and a dirt floor where three sheep are lined up.",
+      "A green vertical banner hangs from the ceiling with partially legible text including '2009' and 'Sheep', indicating a dated agricultural event.",
+      "In the background, a red pickup truck is parked outside near a white building; spectators wear casual summer clothing."
+    ],
+    "action": [
+      "Three youths (two girls, one boy) stand beside three sheep, each holding or guiding their animal’s head or neck.",
+      "An adult man in a dark shirt and blue jeans faces the youths, extending his right hand toward the central sheep’s head as if inspecting it.",
+      "Other adults and children observe from behind a wire fence and from bleachers; some lean forward attentively."
+    ],
+    "rationale": [
+      "The presence of numbered tags on sheep (e.g., '100111' visible on the central sheep’s back) suggests formal evaluation, not casual handling.",
+      "The uniform green shirts worn by the three youths imply organized participation, possibly a team or club affiliation.",
+      "The spatial arrangement—youths aligned with animals facing an adult in a judging posture—is consistent with livestock exhibition protocols, though no official signage confirms this."
+    ],
+    "object": [
+      "Three white-faced sheep with short wool stand side-by-side, each held by a youth; the central sheep bears a rectangular white tag with black numerals '100111' affixed to its back.",
+      "A green vertical banner hangs from the roof structure; upper text includes '2009' and 'Sheep', lower lines are illegible due to resolution and angle.",
+      "Eleven people are visible: three youths in green shirts, one adult judge in dark shirt and jeans, two adults behind the fence, and five spectators on bleachers (including one in yellow shirt and one in pink tank top).",
+      "A wire mesh fence separates the judging area from the spectator zone; the fence has horizontal support bars and vertical posts.",
+      "A red pickup truck with a white cab is parked outside beyond the pavilion opening, partially obscured by structural posts."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0908_P1",
+      "visual_anchors": [
+        "green shirts worn uniformly by youths",
+        "numbered tag '100111' on sheep",
+        "adult judge extending hand toward animal"
+      ],
+      "symbolic_mapping": [
+        "uniform attire signifies collective identity within institutional framework",
+        "numeric tag reduces individual animal to catalogued object"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The scene embodies the tension between communal belonging (youths as group participants) and individuation through bureaucratic marking (sheep as numbered entries), reflecting how social roles and classification systems co-constitute identity.",
+      "alternative_interpretations": [
+        "This is simply a routine agricultural fair activity with no symbolic intent; the green shirts are just team colors and the tag is for logistical tracking."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues confirm intentional symbolism; the tag number may be arbitrary rather than meaningful."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0908_P2",
+      "visual_anchors": [
+        "spectators seated on bleachers",
+        "wire fence separating participants from observers",
+        "youths positioned front-and-center with animals"
+      ],
+      "symbolic_mapping": [
+        "fence demarcates performer vs. audience roles",
+        "central alignment of youths and sheep suggests ritualized presentation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The spatial hierarchy—judges proximate, participants exposed, spectators distanced—enacts a micro-politics of visibility and authority, where value is assigned through observation and evaluation within a structured social field.",
+      "alternative_interpretations": [
+        "The fence is purely functional for safety and crowd control; positioning reflects standard event layout, not power dynamics."
+      ],
+      "limitations": [
+        "No overt signs of coercion, resistance, or emotional distress; all participants appear calm and engaged."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0908_P3",
+      "visual_anchors": [
+        "dirt floor underfoot",
+        "open-sided pavilion with daylight",
+        "sheep standing still while being handled"
+      ],
+      "symbolic_mapping": [
+        "earth-bound setting contrasts with institutional framing",
+        "stillness of animals amid human activity evokes temporality of care and labor"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of organic life (sheep), manual labor (handling), and temporary shelter (pavilion) underscores the cyclical nature of agricultural practice—where mortality is managed through routine, and time is measured in seasons and exhibitions rather than clocks.",
+      "alternative_interpretations": [
+        "The dirt floor and open structure are practical choices for livestock events; stillness of sheep indicates training, not philosophical resonance."
+      ],
+      "limitations": [
+        "No explicit indicators of seasonal context, death, or temporal reflection; the scene could occur any day of the year."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate states 'at least nine people' but image shows 11 people (3 youths, 1 judge, 2 adults behind fence, 5 spectators on bleachers); 'four spectators on bleachers' is inaccurate."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:27:03.778516+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a584bc6e-1870-9b60-bcc4-51e475ae7ba9",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1156,
+        "total_tokens": 1925,
+        "completion_tokens_details": {
+          "text_tokens": 1156
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703264051456a55c9784880",
+      "usage": {
+        "completion_tokens": 1051,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2074,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3125
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

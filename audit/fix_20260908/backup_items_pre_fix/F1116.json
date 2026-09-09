@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1116",
+  "sample_id": "PHL1800_IRFL_0297",
+  "file_name": "PHL1800_IRFL_0297.jpg",
+  "batch_id": "B024",
+  "position_in_batch": 10,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a white Ford pickup truck in motion on a paved road",
+  "captions": {
+    "scene": [
+      "A rural landscape with rolling hills, sparse snow patches, and a red-roofed barn structure to the left of the road",
+      "A two-lane asphalt road marked with yellow double lines and white edge lines, extending into the distance",
+      "Overcast sky with scattered clouds and visible power lines running parallel to the road"
+    ],
+    "action": [
+      "The truck is moving forward at speed, indicated by motion blur on the road surface and wheels",
+      "Mud is splattered on the lower body panels, wheel wells, and tires, suggesting recent off-road travel",
+      "The driver is visible through the windshield, though specific details like sunglasses or hand position are not clearly discernible"
+    ],
+    "rationale": [
+      "Motion blur on the road and wheels implies high-speed travel; however, exact speed cannot be determined from still image alone",
+      "Mud coverage suggests prior off-road use, but no active off-road driving is visible in the frame",
+      "The presence of snow patches and dry grass indicates a transitional season (e.g., late winter or early spring), though precise timing is uncertain"
+    ],
+    "object": [
+      "The truck features a black honeycomb grille with the word 'FORD' embossed in raised capital letters across its center.",
+      "The front bumper is rugged, with integrated skid plates and auxiliary lighting cutouts, and shows accumulated dirt and mud.",
+      "The vehicle has large off-road tires with visible tread, mounted on matte-finish wheels that appear tan or light gold in color.",
+      "Side mirrors are body-colored with integrated turn signals; the passenger-side mirror housing is partially obscured by mud.",
+      "The cab is a two-door SuperCab configuration with tinted windows; no sunroof is visible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1116_P1",
+      "visual_anchors": [
+        "mud-splattered body",
+        "rugged front bumper",
+        "motion blur on road"
+      ],
+      "symbolic_mapping": [
+        "mud as evidence of prior terrain engagement",
+        "motion blur as representation of temporal passage"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "time_mortality"
+      ],
+      "interpretation": "The truck’s muddy state and forward motion evoke a narrative of deliberate traversal—choosing paths that leave visible traces, while the blur signifies irreversible progression through time.",
+      "alternative_interpretations": [
+        "The mud may simply indicate recent use without symbolic intent; the blur is a photographic artifact of shutter speed, not metaphysical passage."
+      ],
+      "limitations": [
+        "No explicit narrative context or signage confirms intentional symbolism; interpretation relies on viewer projection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1116_P2",
+      "visual_anchors": [
+        "'FORD' lettering on grille",
+        "body-color side mirrors",
+        "clean cabin vs. dirty exterior"
+      ],
+      "symbolic_mapping": [
+        "branding as assertion of identity",
+        "contrast between interior cleanliness and exterior grime as duality of presentation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The prominent branding and curated contrast between protected interior and exposed exterior reflect how identity is both declared and negotiated through appearance in social contexts.",
+      "alternative_interpretations": [
+        "The clean interior may result from recent cleaning; the branding is standard manufacturer placement, not personal expression."
+      ],
+      "limitations": [
+        "No human faces or gestures confirm social signaling; the truck’s appearance could be purely functional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1116_P3",
+      "visual_anchors": [
+        "power lines parallel to road",
+        "distant hills with snow",
+        "asphalt road cutting through natural terrain"
+      ],
+      "symbolic_mapping": [
+        "infrastructure as imposition of order",
+        "road as linear constraint on landscape"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "labor_technology"
+      ],
+      "interpretation": "The engineered road and utility lines impose human-defined pathways across an otherwise undifferentiated landscape, illustrating how technology mediates freedom through structured constraint.",
+      "alternative_interpretations": [
+        "The road and lines are routine infrastructure with no intended philosophical statement; their presence is utilitarian."
+      ],
+      "limitations": [
+        "No visible human labor or construction activity; the scene is static and does not depict agency or intentionality."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The truck is a two-door SuperCab, not a four-door crew cab; the driver is visible but not clearly identifiable as wearing sunglasses or having hands on the steering wheel; the sunroof is not visible."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:53:01.372052+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a24ea826-bb64-9eb3-b5c4-23765d37ce5a",
+      "usage": {
+        "prompt_tokens": 2431,
+        "completion_tokens": 960,
+        "total_tokens": 3391,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1924,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070352086944ec83eb044451",
+      "usage": {
+        "completion_tokens": 862,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 4098,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4960
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

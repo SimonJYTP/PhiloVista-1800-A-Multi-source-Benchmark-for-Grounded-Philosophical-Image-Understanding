@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0309",
+  "sample_id": "PHL1800_HL_0566",
+  "file_name": "PHL1800_HL_0566.png",
+  "batch_id": "B008",
+  "position_in_batch": 39,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two parked motorcycles with riders and helmets visible",
+  "captions": {
+    "scene": [
+      "Black-and-white outdoor urban street scene with parked vehicles, buildings, and utility poles under bright daylight.",
+      "A white SUV with open driver-side door is parked behind two motorcycles on an asphalt surface.",
+      "Two motorcycles are arranged in a row along a curb; one rider stands beside the rear motorcycle wearing full gear."
+    ],
+    "action": [
+      "One person stands upright beside the leftmost motorcycle, wearing a helmet and riding jacket, hands near torso.",
+      "Two helmets rest on the handlebars of the front motorcycle: one black full-face helmet and one lighter-colored modular helmet.",
+      "The front motorcycle is supported by its kickstand; both motorcycles are stationary with no motion blur."
+    ],
+    "rationale": [
+      "The presence of open vehicle doors and standing figures suggests recent arrival or preparation for departure, though no movement is captured.",
+      "Helmets placed on handlebars indicate riders have dismounted but may intend to resume riding shortly.",
+      "The monochrome rendering prevents color-based identification of brands or materials, limiting definitive object classification."
+    ],
+    "object": [
+      "A black full-face helmet sits atop the right handlebar of the foreground motorcycle, partially obscuring the instrument cluster.",
+      "The foreground motorcycle features a silver exhaust pipe, exposed engine block, spoked front wheel with disc brake, and a single-sided swingarm.",
+      "A second motorcycle behind it has a visible rear tire, dual exhausts, and a rider wearing a patterned helmet and dark jacket.",
+      "A white SUV with tinted windows and five-spoke alloy wheels is parked diagonally behind the motorcycles, driver’s door open.",
+      "Two distinct human figures are visible: one standing beside the rear motorcycle, one partially visible inside the SUV driver’s seat."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0309_P1",
+      "visual_anchors": [
+        "open SUV door",
+        "helmets resting on handlebars",
+        "stationary motorcycles"
+      ],
+      "symbolic_mapping": [
+        "open door as threshold between mobility and stasis",
+        "helmets as suspended identity markers"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "identity_appearance"
+      ],
+      "interpretation": "The image captures a liminal moment where tools of motion (motorcycles) and protective identity (helmets) are temporarily set aside, evoking the philosophical tension between enacted agency and deferred action.",
+      "alternative_interpretations": [
+        "A routine pause during a group ride, with no symbolic intent—simply logistical coordination before continuing."
+      ],
+      "limitations": [
+        "No facial expressions or gestures confirm intentionality; all interpretation relies on object placement alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0309_P2",
+      "visual_anchors": [
+        "black-and-white tonality",
+        "sharp shadows",
+        "urban infrastructure background"
+      ],
+      "symbolic_mapping": [
+        "monochrome rendering as abstraction of lived experience",
+        "shadows as temporal markers of fleeting presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The stark contrast and absence of color emphasize impermanence and the constructed nature of social gathering spaces, suggesting that shared presence is always mediated by material constraints and transient light.",
+      "alternative_interpretations": [
+        "The image was converted to grayscale for aesthetic or technical reasons unrelated to meaning."
+      ],
+      "limitations": [
+        "Grayscale is a photographic choice, not intrinsic to the scene; no evidence confirms intentional symbolism."
+      ],
+      "sufficiency": "insufficient"
+    },
+    {
+      "candidate_id": "AI_F0309_P3",
+      "visual_anchors": [
+        "multiple motorcycles aligned parallel",
+        "shared spatial orientation",
+        "uniform rider gear"
+      ],
+      "symbolic_mapping": [
+        "parallel alignment as non-verbal consensus",
+        "standardized gear as negotiated autonomy"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The orderly arrangement of individual machines within a shared public space reflects how freedom is exercised through mutual constraint—each rider’s autonomy is affirmed precisely by adherence to implicit spatial norms.",
+      "alternative_interpretations": [
+        "Motorcycles are parked this way due to limited curb space and practical maneuvering needs."
+      ],
+      "limitations": [
+        "No signage or markings indicate enforced parking rules; alignment could be coincidental."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of human figures: candidate claims three distinct humans but image shows two visible riders and one person near SUV; revise to two riders and one person near SUV."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:30:45.743952+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-7630e899-ab92-9735-b771-524b202f92af",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 949,
+        "total_tokens": 1678,
+        "completion_tokens_details": {
+          "text_tokens": 949
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070230239c487ce5193d4559",
+      "usage": {
+        "completion_tokens": 920,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1838,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2758
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

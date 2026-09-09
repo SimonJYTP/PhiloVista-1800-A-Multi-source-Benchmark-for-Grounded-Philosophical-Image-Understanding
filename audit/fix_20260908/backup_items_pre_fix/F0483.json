@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F0483",
+  "sample_id": "PHL1800_HL_0071",
+  "file_name": "PHL1800_HL_0071.png",
+  "batch_id": "B012",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a stone clock tower with adjacent outdoor café seating and pedestrians",
+  "captions": {
+    "scene": [
+      "A sunlit paved plaza with a tall stone clock tower featuring a red-tiled roof and weathered facade, flanked by historic buildings and an open-air café.",
+      "Outdoor café tables with light-colored chairs are arranged on a stone-paved square; some chairs are occupied, others empty, under partial shade from a colonnaded structure.",
+      "Two women walk leftward across the plaza near a green-vined building entrance; a man stands near the tower’s arched doorway; another person sits at a table."
+    ],
+    "action": [
+      "Two women walk leftward across the plaza: one wearing orange pants and a patterned top, the other in a pink top and white pants.",
+      "A man in a dark shirt stands near the tower’s ground-level archway, facing inward; his posture suggests waiting or observing.",
+      "A seated person at a café table faces forward, hands resting on the table; another figure is partially visible behind them."
+    ],
+    "rationale": [
+      "The clock face shows approximately 10:10, suggesting morning or late morning based on shadow direction and lighting intensity, though exact time cannot be confirmed without knowing hemisphere or season.",
+      "The presence of café furniture and seated individuals implies commercial use of public space, but no signage confirms operation status or ownership.",
+      "Architectural details—such as carved reliefs, columns, and aged stonework—indicate historical construction, yet no inscriptions or dates are legible to verify age or origin."
+    ],
+    "object": [
+      "The clock tower is constructed of light-colored, irregularly cut stone blocks, with a large circular clock face centered on its upper section; the clock has Roman numerals and gold-toned hands.",
+      "A red-tiled pyramidal roof crowns the tower, topped by a metal weathervane with a bell-shaped element and directional arms.",
+      "To the right of the tower, a colonnaded portico features fluted stone columns supporting a wooden-beamed roof with terracotta tiles and a balustrade with vertical slats.",
+      "Approximately twelve café chairs with light wood frames and cream-colored woven seats surround round tables; some chairs are unoccupied, others appear occupied or recently used.",
+      "A green vine climbs the wall of the adjacent building to the left of the tower, covering part of a window and door frame; the building has arched windows with white shutters and a balcony with wrought-iron railing."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0483_P1",
+      "visual_anchors": [
+        "clock face with Roman numerals",
+        "weathered stone surface",
+        "empty chairs among occupied ones"
+      ],
+      "symbolic_mapping": [
+        "the clock signifies measured, linear time; the worn stone evokes endurance beyond individual lifespans"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a functioning clock against visibly aged masonry suggests time as both a precise human construct and an indifferent force that erodes material form, prompting reflection on transience versus persistence.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine daily life in a historic town square, with no intended symbolic contrast."
+      ],
+      "limitations": [
+        "No legible inscriptions or contextual markers confirm intentional symbolism; the clock’s time reading could be coincidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0483_P2",
+      "visual_anchors": [
+        "multiple people moving independently",
+        "seated individuals at separate tables",
+        "shared public space with private seating"
+      ],
+      "symbolic_mapping": [
+        "the spatial arrangement reflects coexistence without interaction—proximity without communion"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The plaza embodies social existence as simultaneous presence and separation: individuals occupy shared space yet remain distinct in posture, direction, and engagement, illustrating the modern condition of being together while apart.",
+      "alternative_interpretations": [
+        "This is a typical urban café layout optimized for capacity and service flow, not a deliberate commentary on social relations."
+      ],
+      "limitations": [
+        "Facial expressions and gaze directions are indistinct; no dialogue or gestures confirm relational intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0483_P3",
+      "visual_anchors": [
+        "carved stone reliefs on tower base",
+        "classical columns",
+        "modern café furniture"
+      ],
+      "symbolic_mapping": [
+        "layered architectural styles represent accumulated cultural strata, where past forms house present activity"
+      ],
+      "concept_ids": [
+        "knowledge_truth"
+      ],
+      "interpretation": "The visible stratification of historical craftsmanship (reliefs, columns) beneath contemporary use (café seating) suggests knowledge as sedimented practice—truth not discovered once but continually re-inhabited through reuse and adaptation.",
+      "alternative_interpretations": [
+        "The building was renovated for tourism or commerce; the reliefs may be decorative rather than meaningful."
+      ],
+      "limitations": [
+        "Relief content is too low-resolution to identify motifs or inscriptions; their original purpose is unverifiable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate states three people walking, but image shows two women walking and one man standing near the tower; seated person count is unclear but not three walking. Incorrect object count: candidate claims fifteen café chairs, but image shows approximately twelve visible chairs. Inaccurate action description: candidate describes a man in a striped shirt standing near the tower’s archway, but the man near the archway wears a dark shirt, not striped. Inaccurate color description: candidate mentions a man in dark clothing walking behind two women, but no such person is visible; the man near the archway is standing, not walking."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:50:28.162909+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-193a17b9-34ae-91cb-995c-c6ad803db577",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1134,
+        "total_tokens": 1903,
+        "completion_tokens_details": {
+          "text_tokens": 1134
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907025002a7fc008b0e1f4117",
+      "usage": {
+        "completion_tokens": 1197,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2064,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3261
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

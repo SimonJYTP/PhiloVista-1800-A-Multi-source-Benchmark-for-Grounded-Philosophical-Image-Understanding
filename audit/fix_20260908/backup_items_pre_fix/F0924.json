@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0924",
+  "sample_id": "PHL1800_HAIV_0207",
+  "file_name": "PHL1800_HAIV_0207.png",
+  "batch_id": "B020",
+  "position_in_batch": 28,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a densely packed crowd of stylized human figures facing an arched opening",
+  "captions": {
+    "scene": [
+      "A large, chaotic assembly of figures in front of a tall arched doorway set in a mustard-yellow wall.",
+      "Inside the archway, a red angular structure with a white rectangular object on top is visible against a turquoise sky.",
+      "Below the arch, a fiery orange-red zone appears beneath the red structure, partially obscured by the crowd."
+    ],
+    "action": [
+      "Numerous arms are raised upward toward the archway, some holding pink or purple fabric-like objects.",
+      "Figures are tightly compressed, with overlapping limbs and torsos suggesting physical proximity and movement toward the opening.",
+      "Some individuals wear distinct headgear (e.g., yellow, green, red caps) and carry small items like bags or boxes."
+    ],
+    "rationale": [
+      "The uniform orientation of bodies and raised arms suggests collective attention directed at the archway’s interior.",
+      "The presence of fire-like coloration inside the arch implies a source of light or heat, though its nature is ambiguous due to abstraction.",
+      "The crowd’s density and lack of clear pathways indicate constrained space, but no explicit barrier is visible."
+    ],
+    "object": [
+      "The wall flanking the arch is painted mustard-yellow with vertical black lines marking its edges.",
+      "The arch itself has a smooth turquoise interior curve and frames a red geometric form with white trim.",
+      "A white rectangular object rests atop the red form; it contains dark markings that are illegible as text.",
+      "Multiple distinct heads or upper torsos are discernible in the crowd, varying in color and shape (exact count indeterminate due to density).",
+      "Multiple figures hold elongated pink or magenta objects aloft, some appearing as strips of cloth or banners."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0924_P1",
+      "visual_anchors": [
+        "crowd facing arch",
+        "raised arms",
+        "illegible markings on white rectangle"
+      ],
+      "symbolic_mapping": [
+        "arch as threshold",
+        "raised arms as aspiration"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The image visualizes collective anticipation at a symbolic threshold, where individual agency (raised arms) converges into shared directionality without guaranteed outcome.",
+      "alternative_interpretations": [
+        "A depiction of a concert or rally where visual distortion emphasizes sensory overload rather than symbolic meaning."
+      ],
+      "limitations": [
+        "No legible text or contextual signage confirms intentional symbolism; abstraction prevents definitive reading of the red structure’s function."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0924_P2",
+      "visual_anchors": [
+        "fire-colored zone below red structure",
+        "dense compression of bodies",
+        "yellow wall framing scene"
+      ],
+      "symbolic_mapping": [
+        "fire as danger or transformation",
+        "compression as constraint"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "power_conflict"
+      ],
+      "interpretation": "The juxtaposition of confined bodies and an incandescent interior suggests tension between collective pressure and external force, possibly representing institutional or environmental coercion.",
+      "alternative_interpretations": [
+        "The fire-coloring may simply be artistic lighting for a stage or installation, not implying threat."
+      ],
+      "limitations": [
+        "Color alone cannot confirm fire; it may represent light, reflection, or decorative pigment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0924_P3",
+      "visual_anchors": [
+        "illegible dark markings on white rectangle",
+        "multicolored headgear",
+        "overlapping limbs"
+      ],
+      "symbolic_mapping": [
+        "unreadable text as obscured knowledge",
+        "diverse attire as fragmented identity"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "identity_appearance"
+      ],
+      "interpretation": "The unreadable inscription atop the central structure, combined with heterogeneous yet indistinct individual forms, evokes epistemic uncertainty amid social multiplicity.",
+      "alternative_interpretations": [
+        "The markings are purely decorative brushwork with no referential intent."
+      ],
+      "limitations": [
+        "The markings are too abstract to verify as text; they could be accidental texture or non-representational paint application."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for crowd heads/torsos is unsupported; 'at least 47' exceeds visible distinct forms in the dense, abstract crowd."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:28:17.838188+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3071edab-c514-913b-a476-2dd4d315b249",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 916,
+        "total_tokens": 2449,
+        "completion_tokens_details": {
+          "text_tokens": 916
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070328042c6ec9f25dc84154",
+      "usage": {
+        "completion_tokens": 811,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2875,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3686
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

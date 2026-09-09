@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1293",
+  "sample_id": "PHL1800_HL_0440",
+  "file_name": "PHL1800_HL_0440.png",
+  "batch_id": "B027",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a silhouetted person standing on a sidewalk holding a bag",
+  "captions": {
+    "scene": [
+      "A nighttime urban street with wet pavement reflecting vehicle headlights and streetlights.",
+      "Multiple vehicles including cars, a white bus, and a red-and-white articulated bus occupy the road lanes.",
+      "Pedestrians are visible on the left sidewalk near a pole and illuminated signage."
+    ],
+    "action": [
+      "The central figure stands still on the sidewalk, facing the street, holding a light-colored bag in their right hand.",
+      "Vehicles move across the frame: one car’s headlights are bright and centered; another car shows motion blur to the right.",
+      "Two people stand together near a storefront sign on the far left."
+    ],
+    "rationale": [
+      "The wet pavement suggests recent rain, supported by reflective surfaces and absence of dry dust.",
+      "Motion blur on the right-side vehicle indicates relative movement during exposure, but direction is ambiguous without reference points.",
+      "The central figure’s posture and orientation suggest waiting or observing traffic, though intent cannot be confirmed visually."
+    ],
+    "object": [
+      "A vertical metal pole stands on the sidewalk directly in front of the central figure, partially obscuring them.",
+      "A white bus with blue and red stripes is visible mid-frame, its side windows dark and unreadable.",
+      "A red-and-white articulated bus occupies the far right lane, with partial text visible but illegible due to motion blur and resolution.",
+      "Three pedestrians are present: two near the left storefront and the central silhouetted figure.",
+      "A black sedan with illuminated brake lights is positioned behind the white bus, showing rear taillights and license plate area (unreadable)."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1293_P1",
+      "visual_anchors": [
+        "silhouetted figure against bright streetlights",
+        "motion-blurred vehicles",
+        "wet reflective pavement"
+      ],
+      "symbolic_mapping": [
+        "silhouette → anonymity in urban space",
+        "motion blur → transience of presence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "time_mortality"
+      ],
+      "interpretation": "The image evokes the tension between individual stillness and collective motion, suggesting how modern urban existence situates persons as fleeting presences within continuous flows of traffic and light.",
+      "alternative_interpretations": [
+        "It may simply document a routine evening commute stop without symbolic intent."
+      ],
+      "limitations": [
+        "No facial features or distinguishing clothing are visible on the central figure, preventing confirmation of identity or intention."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1293_P2",
+      "visual_anchors": [
+        "pedestrian holding a bag",
+        "pole obstructing view",
+        "multiple overlapping light sources"
+      ],
+      "symbolic_mapping": [
+        "bag → burden or necessity",
+        "pole → obstruction or mediation"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The obscured figure, partially hidden by infrastructure, reflects how identity in public space is mediated and constrained by physical and social structures beyond individual control.",
+      "alternative_interpretations": [
+        "The pole is merely a functional street fixture; the bag is ordinary shopping; no deeper meaning is intended."
+      ],
+      "limitations": [
+        "The bag’s contents and purpose are not visible; the pole’s role is purely structural unless context is assumed."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1293_P3",
+      "visual_anchors": [
+        "wet pavement reflecting lights",
+        "headlights piercing darkness",
+        "unlit bus windows"
+      ],
+      "symbolic_mapping": [
+        "reflections → fragmented perception",
+        "light/dark contrast → epistemic limits"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "choice_journey"
+      ],
+      "interpretation": "The interplay of illumination and shadow across the scene mirrors the incompleteness of perception—truth is only partially revealed through transient light, requiring navigation rather than certainty.",
+      "alternative_interpretations": [
+        "The lighting is standard for night photography; reflections result from rain, not metaphor."
+      ],
+      "limitations": [
+        "No textual or symbolic cues confirm intentional epistemic framing; lighting conditions are physically explainable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of pedestrians: candidate claims 'at least four pedestrians' but image shows three distinct figures (central silhouetted person, two on left sidewalk); 'one crouching/sitting' is unsupported as no clear crouching/sitting posture is visible."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:13:19.206541+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-487f0194-e1a9-9f26-b09e-282773cad51b",
+      "usage": {
+        "prompt_tokens": 709,
+        "completion_tokens": 939,
+        "total_tokens": 1648,
+        "completion_tokens_details": {
+          "text_tokens": 939
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 202,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041255a00f7ada99b24e9c",
+      "usage": {
+        "completion_tokens": 915,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1776,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2691
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

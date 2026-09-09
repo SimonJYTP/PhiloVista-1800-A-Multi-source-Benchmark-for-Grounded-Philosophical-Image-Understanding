@@ -1,0 +1,157 @@
+{
+  "annotation_item_id": "F1135",
+  "sample_id": "PHL1800_HL_0041",
+  "file_name": "PHL1800_HL_0041.png",
+  "batch_id": "B024",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a freestanding ornate street clock emitting steam",
+  "captions": {
+    "scene": [
+      "A black-and-white urban street scene with bare trees, parked cars, lampposts, and multi-story buildings.",
+      "Steam or vapor rises around a tall, decorative clock tower positioned on a sidewalk near storefronts.",
+      "A building behind the clock displays a sign reading 'West 1st Cafe' in visible lettering."
+    ],
+    "action": [
+      "Steam actively billows from multiple points on and around the clock structure, especially near its top vents.",
+      "No pedestrians are clearly discernible in the image; the sidewalk appears mostly empty.",
+      "The clock hands indicate approximately 10:10, with the minute hand pointing near the Roman numeral II and the hour hand near X."
+    ],
+    "rationale": [
+      "The steam suggests internal heating or mechanical operation, but the exact source (e.g., steam engine, boiler, or vented pipe) is not visually confirmed.",
+      "The presence of leafless trees and overcast sky implies cool weather, though season cannot be definitively assigned without color or foliage cues.",
+      "The clock’s ornate design and placement suggest public utility or civic decoration, yet no official insignia or municipal markings are legible."
+    ],
+    "object": [
+      "The clock features a white circular face with black Roman numerals I through XII and two black hands indicating time.",
+      "Four vertical columns support the clock housing, each adorned with decorative metalwork including floral motifs and spherical finials.",
+      "Two cylindrical chimneys or vents protrude from the roof of the clock housing, with steam visibly exiting them.",
+      "The base of the clock includes arched openings revealing interior components, possibly gears or lighting fixtures, partially obscured by steam.",
+      "A lamppost with five spherical glass globes stands to the left of the clock, aligned with the sidewalk curb."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1135_P1",
+      "visual_anchors": [
+        "clock face with Roman numerals",
+        "steam rising from vents",
+        "bare tree branches overhead"
+      ],
+      "symbolic_mapping": [
+        "the fixed numerals represent measured time; the transient steam represents fleeting moments"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a precise, enduring timepiece with ephemeral steam evokes the tension between human attempts to quantify time and its inherently transient nature.",
+      "alternative_interpretations": [
+        "The steam may simply result from a functional heating system unrelated to symbolic intent."
+      ],
+      "limitations": [
+        "No textual or contextual markers confirm intentional symbolism; steam could be incidental industrial output."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1135_P2",
+      "visual_anchors": [
+        "pedestrians walking past the clock",
+        "street-level storefronts",
+        "lamppost and curb alignment"
+      ],
+      "symbolic_mapping": [
+        "the clock as a shared reference point amid anonymous movement suggests collective temporal coordination"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The clock functions as a silent regulator of public rhythm, anchoring individual motion within a shared civic temporality despite physical anonymity.",
+      "alternative_interpretations": [
+        "The clock may serve purely aesthetic or historical commemorative purposes with no active social role."
+      ],
+      "limitations": [
+        "No interaction between pedestrians and the clock is visible; their paths do not converge on it."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1135_P3",
+      "visual_anchors": [
+        "ornate metalwork on clock columns",
+        "exposed interior arches",
+        "contrast between craftsmanship and industrial steam"
+      ],
+      "symbolic_mapping": [
+        "decorative form versus functional emission reflects tension between appearance and underlying mechanism"
+      ],
+      "concept_ids": [
+        "identity_appearance"
+      ],
+      "interpretation": "The clock’s elaborate exterior conceals or coexists with utilitarian processes, mirroring how identity often presents curated form while masking operational realities.",
+      "alternative_interpretations": [
+        "The design is traditional architectural ornamentation with no deliberate contrast intended."
+      ],
+      "limitations": [
+        "No evidence confirms designer intent; ornamentation may be standard for such structures."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Candidate incorrectly claims 'at least four individuals are discernible as separate figures' in the action caption; no pedestrians are clearly visible in the image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:54:41.861273+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-940ca6f8-6690-96fa-b410-06f1181df64c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 924,
+        "total_tokens": 1733,
+        "completion_tokens_details": {
+          "text_tokens": 924
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 640
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035423d3eab51dc7944e48",
+      "usage": {
+        "completion_tokens": 814,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1899,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2713
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

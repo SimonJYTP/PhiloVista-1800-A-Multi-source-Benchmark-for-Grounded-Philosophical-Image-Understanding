@@ -20,12 +20,12 @@
       "All visible individuals are upright and in motion, with legs positioned mid-stride, indicating forward locomotion."
     ],
     "rationale": [
-      "Uniforms match U.S. Air Force Operational Camouflage Pattern (OCP) with visible rank insignia on collars, suggesting active-duty status.",
+      "The uniforms match the U.S. Air Force Airman Battle Uniform (ABU) digital tiger-stripe pattern in gray-green tones; no insignia or name tapes are legible, so the wearers' service status cannot be determined from the image alone.",
       "Presence of luggage and folders implies transit or administrative movement rather than combat or training activity.",
       "The group’s synchronized direction and spacing suggest coordinated movement, though no explicit command posture is visible."
     ],
     "object": [
-      "A man in center foreground wears a green knit cap, OCP uniform, and carries a red folder in his left hand while pulling a black rolling suitcase with his right hand.",
+      "A man in center foreground wears a green knit cap, an ABU digital tiger-stripe uniform, and carries a red folder in his left hand while pulling a black rolling suitcase with his right hand.",
       "To his left, a man in similar attire carries a camouflage-patterned duffel bag in his right hand and a red folder in his left hand.",
       "To the right of the central figure, a man wearing a green knit cap and backpack walks with hands free, mouth slightly open, looking toward the central figure.",
       "Behind the central figure, at least two additional individuals in identical uniforms and caps are partially visible, holding red folders.",
@@ -44,7 +44,7 @@
       "visual_anchors": [
         "rolling suitcases",
         "red folders held close to body",
-        "uniforms with name tapes"
+        "uniforms without legible name tapes"
       ],
       "symbolic_mapping": [
         "luggage as embodiment of transition between roles",
@@ -115,11 +115,18 @@
   "needs_independent_human_annotation": true,
   "needs_independent_human_rating": true,
   "review": {
-    "reviewer_model": "glm-4.6v",
-    "verdict": "revise",
+    "reviewer_model": "codex_visual_audit",
+    "verdict": "revised_by_audit_visual_inspection",
     "issues": [
-      "Incorrect count of people (candidate states seven, image shows six visible individuals); object description of 'name tape reading MARTIN' is not clearly visible in the image."
-    ]
+      "Post-audit fix (2026-09-08): rationale[0]: corrected uniform pattern from OCP to ABU digital tiger-stripe and removed the unsupported active-duty status inference. object[0]: corrected uniform pattern reference from OCP to ABU digital tiger-stripe. philosophy P1 visual anchor: name tapes are not legible in the image; anchor reworded accordingly."
+    ],
+    "resolution": {
+      "status": "captions_corrected_after_visual_reinspection",
+      "checked_by": "codex_post_audit_fix_20260908",
+      "method": "visual_reverification_with_vlm",
+      "checked_at_utc": "2026-09-08T00:00:00Z",
+      "caption_sha256": "be5015d1380582993cc91e72bea706574af9ed77bc847677aa2bab1785572428"
+    }
   },
   "provenance": {
     "generated_at_utc": "2026-09-06T21:04:59.408079+00:00",

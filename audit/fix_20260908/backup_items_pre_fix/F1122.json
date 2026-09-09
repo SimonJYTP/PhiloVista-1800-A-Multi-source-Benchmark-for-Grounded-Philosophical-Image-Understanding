@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1122",
+  "sample_id": "PHL1800_HL_0093",
+  "file_name": "PHL1800_HL_0093.png",
+  "batch_id": "B024",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of people gathered around a table under a white canopy tent",
+  "captions": {
+    "scene": [
+      "Outdoor setting at dusk with low sun casting strong backlight through autumn trees and buildings in the background",
+      "White canopy tent shelters a table with electronics, spools of wire, and a Minecraft-style block figure",
+      "Multiple people stand or sit near the table; some wear hoodies and casual attire; a pink tent is visible in the background"
+    ],
+    "action": [
+      "A man in glasses holds a smartphone horizontally while facing a woman with blonde hair",
+      "A person in a black hoodie stands beside a laptop on the table, looking toward the group",
+      "Folding chairs are placed near the table, with one possibly occupied by a person wearing dark pants and sneakers"
+    ],
+    "rationale": [
+      "The presence of spools of colored wire, a laptop, and a blocky figure suggests a technology or maker-themed demonstration or exhibit",
+      "The backlighting and long shadows indicate late afternoon or early evening, not midday",
+      "The grouping and orientation of individuals imply interaction centered on the table, though no explicit teaching or presentation is visible"
+    ],
+    "object": [
+      "A black laptop sits open on a white folding table, with its screen illuminated and keyboard visible",
+      "Three spools of insulated wire—red, green, and black—are stacked on the left side of the table",
+      "A spray can with a white cap rests on the table near the wire spools",
+      "A large green-and-brown pixelated block figure resembling a Minecraft character stands behind the laptop",
+      "At least 11 distinct individuals are visible: five standing near the table, two seated or partially obscured near chairs, and four more in the background under a pink tent"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1122_P1",
+      "visual_anchors": [
+        "pixelated block figure",
+        "laptop on table",
+        "group attention focused on device"
+      ],
+      "symbolic_mapping": [
+        "block figure represents digital abstraction of reality",
+        "laptop mediates shared experience"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of a stylized digital artifact (Minecraft figure) with physical tools and collective attention reflects how knowledge is co-constructed through mediated social engagement.",
+      "alternative_interpretations": [
+        "It is a casual hobbyist meetup where participants are simply examining hardware and software without deeper epistemic intent."
+      ],
+      "limitations": [
+        "No visible text, labels, or explicit instructional materials confirm pedagogical or philosophical purpose."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1122_P2",
+      "visual_anchors": [
+        "backlit silhouettes",
+        "crowded proximity under tent",
+        "casual dress"
+      ],
+      "symbolic_mapping": [
+        "tent as temporary shelter for shared activity",
+        "shared gaze as alignment of attention"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The gathering under a provisional canopy highlights the contingent nature of social belonging—identity emerges not from fixed roles but from momentary participation in a shared space.",
+      "alternative_interpretations": [
+        "People are attending an outdoor market stall or tech fair booth; their proximity is functional rather than existential."
+      ],
+      "limitations": [
+        "Facial expressions and body language are largely obscured by backlighting and angle, limiting inference about interpersonal dynamics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1122_P3",
+      "visual_anchors": [
+        "spools of wire",
+        "laptop",
+        "handheld phone held up"
+      ],
+      "symbolic_mapping": [
+        "wire as material conduit for signal",
+        "phone as extension of perception"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The visible tools suggest labor that bridges manual and digital domains, implying a journey where choice lies not in final product but in iterative assembly and adaptation.",
+      "alternative_interpretations": [
+        "These are standard components for a simple electronics demo; no evidence of iterative process or decision-making is visible."
+      ],
+      "limitations": [
+        "No hands are shown manipulating wires or soldering; only static placement is evident."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count error: at least 11 distinct individuals visible, not 9; pink umbrella is a tent, not an umbrella; spray can label color is not clearly red; some actions (e.g., \"two folding chairs are placed near the table, one occupied\") are not fully supported by visual evidence."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:53:00.793546+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8502e526-4ac8-9e60-a1f2-f3097e85460b",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 929,
+        "total_tokens": 1738,
+        "completion_tokens_details": {
+          "text_tokens": 929
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703525091ccb172cfcc4514",
+      "usage": {
+        "completion_tokens": 919,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1902,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2821
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

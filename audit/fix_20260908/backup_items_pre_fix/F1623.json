@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1623",
+  "sample_id": "PHL1800_HL_0439",
+  "file_name": "PHL1800_HL_0439.png",
+  "batch_id": "B033",
+  "position_in_batch": 32,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a choir and conductor on a stage in a stone-walled hall",
+  "captions": {
+    "scene": [
+      "A large wooden pipe organ stands on the left side of a stage backed by an exposed rock wall with horizontal wooden ceiling beams.",
+      "Rows of wooden pews face the stage; some seats are occupied by spectators, including one person seated in the front row.",
+      "A small evergreen tree stands near the right edge of the stage beside a lectern with a purple cloth and a white banner with unreadable text."
+    ],
+    "action": [
+      "A conductor in dark formal attire stands facing the choir, holding a white sheet of paper and gesturing with his right hand.",
+      "Approximately 20 individuals in matching dark suits and light shirts stand in three staggered rows on the stage, most holding open black folders or books.",
+      "One person in orange sits on a low platform near the organ pedals, possibly operating the instrument."
+    ],
+    "rationale": [
+      "The uniform attire and posture of the group suggest organized choral performance rather than casual gathering, though no sound is visible.",
+      "The presence of sheet music, conductor, and organ implies a musical event, but the exact repertoire or purpose cannot be confirmed from visuals alone.",
+      "The stone wall and integrated organ indicate architectural intentionality, yet whether this is a church, concert hall, or cultural center remains ambiguous without signage."
+    ],
+    "object": [
+      "The pipe organ has two main divisions: a tall vertical section with long pipes on the left and a shorter horizontal section with shorter pipes to its right; both sections feature wood casework with metal pipe mouths.",
+      "The stage floor is light-colored and slightly raised; a black grand piano is positioned at the far right of the stage, partially behind the choir.",
+      "There are approximately 20 visible choir members: 7 in the back row, 7 in the middle row, and 6 in the front row, all standing upright with hands holding black folders.",
+      "A small evergreen tree stands to the right of the choir, next to a white banner whose text is illegible due to resolution and angle.",
+      "The ceiling consists of parallel dark wooden slats running diagonally across the frame, supported by visible structural beams above the organ."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "commonsense_inference",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1623_P1",
+      "visual_anchors": [
+        "choir in uniform formation",
+        "conductor gesturing",
+        "shared black folders"
+      ],
+      "symbolic_mapping": [
+        "uniform formation → collective discipline",
+        "conductor’s gesture → directed agency"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The choir embodies social existence through synchronized participation, where individual voices subsume into a unified expression under intentional direction, reflecting how identity is negotiated within structured communal practice.",
+      "alternative_interpretations": [
+        "This may simply be a rehearsal with no philosophical intent—participants are fulfilling scheduled roles without symbolic awareness."
+      ],
+      "limitations": [
+        "No facial expressions or interaction details confirm internal states or shared meaning; the interpretation assumes intentionality not visually verifiable."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1623_P2",
+      "visual_anchors": [
+        "exposed rock wall",
+        "wooden ceiling slats",
+        "pipe organ integrated into architecture"
+      ],
+      "symbolic_mapping": [
+        "rock wall → enduring materiality",
+        "organ as built artifact → human intervention in natural space"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "faith_meaning"
+      ],
+      "interpretation": "The juxtaposition of raw geology and crafted musical technology suggests a meditation on labor and meaning: human skill transforms inert stone and wood into vessels for transcendent experience, implying faith in art’s capacity to confer significance upon matter.",
+      "alternative_interpretations": [
+        "The design may reflect budget constraints or acoustic requirements rather than symbolic intent; the rock wall could be structural, not aesthetic."
+      ],
+      "limitations": [
+        "No inscriptions, iconography, or ritual objects confirm religious or metaphysical framing; the ‘faith’ reading depends on external assumptions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1623_P3",
+      "visual_anchors": [
+        "empty pews in foreground",
+        "one person seated alone",
+        "others seated sparsely"
+      ],
+      "symbolic_mapping": [
+        "sparseness of audience → temporal contingency",
+        "seated figure → bodily presence within institutional form"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "freedom_constraint"
+      ],
+      "interpretation": "The scattered attendance and solitary seated figure evoke time’s passage and embodied constraint: while the choir enacts disciplined continuity, the audience’s fragmentation hints at mortality’s inevitability and the fragile coexistence of freedom within institutional form.",
+      "alternative_interpretations": [
+        "The hall may be partially filled due to timing (e.g., pre-performance), not philosophical resonance; the seated person may simply be waiting."
+      ],
+      "limitations": [
+        "Posture and seating distribution do not prove existential reflection; the interpretation imposes narrative on static spatial arrangement."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Choir count is incorrect (24 vs actual ~20); reclining person is not visible; Christmas tree description is inaccurate; some object details are exaggerated."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:54:22.190095+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8fd77ff2-6b22-9d06-bb7f-8d1bb5323ac1",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1116,
+        "total_tokens": 1925,
+        "completion_tokens_details": {
+          "text_tokens": 1116
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070453486d9d81fb54e24576",
+      "usage": {
+        "completion_tokens": 1074,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2090,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3164
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

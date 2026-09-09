@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F1281",
+  "sample_id": "PHL1800_HL_0025",
+  "file_name": "PHL1800_HL_0025.png",
+  "batch_id": "B002",
+  "position_in_batch": 18,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "military aircraft parked on an airfield with ground vehicles and personnel",
+  "captions": {
+    "scene": [
+      "A black-and-white photograph showing multiple propeller-driven aircraft aligned on a paved or compacted surface, with vegetation-covered embankments in the foreground and a treeline in the background.",
+      "An open-air airfield with at least six visible aircraft, some with distinctive roundels on wings and fuselages, and a military-style utility truck positioned among them.",
+      "A daytime outdoor scene with scattered personnel near aircraft and vehicles; terrain includes uneven grassy slopes descending toward the tarmac."
+    ],
+    "action": [
+      "Several aircraft are stationary on the ground with propellers not visibly rotating.",
+      "A utility truck is parked beside one aircraft, with at least two individuals standing near its rear cargo area.",
+      "Multiple small human figures are dispersed across the airfield: some near aircraft noses, others near wings or tail sections, suggesting inspection, maintenance, or preparation activities."
+    ],
+    "rationale": [
+      "The presence of roundels and uniform silhouettes suggests military use, but no insignia text is legible to confirm nationality or unit.",
+      "The aircraft appear to be of similar design and era (propeller, low-wing monoplane), implying standardized deployment, though exact model cannot be determined from visual evidence alone.",
+      "The embankment in the foreground shows disturbed earth and possible trench-like features, possibly indicating defensive works or construction activity, but no active digging or tools are visible."
+    ],
+    "object": [
+      "At least six fixed-wing aircraft are visible, each with a single propeller, low-mounted wings, and tail assemblies; three have clearly visible roundels on wing undersides.",
+      "A four-wheel utility truck with open rear bed is parked transversely between two aircraft; two individuals stand beside its rear, facing inward.",
+      "Approximately five distinct human figures are identifiable: two near the truck, two near the leftmost aircraft, and one near the center aircraft’s nose.",
+      "The foreground consists of a sloped, vegetated embankment with exposed soil patches and irregular contours, descending toward the airfield surface.",
+      "In the background, a dense treeline forms a continuous horizon line under a uniformly overcast sky; no buildings or structures are clearly distinguishable beyond the airfield."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1281_P1",
+      "visual_anchors": [
+        "stationary aircraft aligned in rows",
+        "human figures clustered near machines",
+        "embankment separating foreground from operational zone"
+      ],
+      "symbolic_mapping": [
+        "rows of aircraft as repetition of preparedness",
+        "proximity of humans to machines as interdependence"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "power_conflict"
+      ],
+      "interpretation": "The image embodies the dialectic of labor and technology: humans are positioned not as operators in motion but as attendants to inert machines, suggesting that technological readiness depends on sustained human vigilance and maintenance rather than activation alone.",
+      "alternative_interpretations": [
+        "This may simply depict routine pre-flight checks at a forward airbase, with no symbolic intent implied by the photographer."
+      ],
+      "limitations": [
+        "No visible labels, dates, or contextual signage prevent confirmation of operational status or intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1281_P2",
+      "visual_anchors": [
+        "overcast sky",
+        "uniform grayscale tonality",
+        "absence of motion blur"
+      ],
+      "symbolic_mapping": [
+        "static composition as suspension of time",
+        "monochrome rendering as erasure of individuality"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The frozen stillness of the scene—no propellers turning, no figures in stride—evokes a liminal moment where action is suspended, inviting reflection on mortality as the inevitable counterpoint to preparedness: machines await use, humans await command, both poised before irreversible consequence.",
+      "alternative_interpretations": [
+        "The lack of motion may result from photographic exposure constraints rather than intentional staging."
+      ],
+      "limitations": [
+        "Stillness could be due to camera shutter speed, not narrative intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1281_P3",
+      "visual_anchors": [
+        "multiple identical aircraft",
+        "shared roundel markings",
+        "grouped personnel"
+      ],
+      "symbolic_mapping": [
+        "repetition as institutional conformity",
+        "shared symbols as collective identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "choice_journey"
+      ],
+      "interpretation": "The visual repetition of aircraft and standardized markings underscores how social existence is constituted through shared symbols and coordinated roles; individuals are present but subsumed within a system whose logic is expressed through alignment and uniformity, not individual distinction.",
+      "alternative_interpretations": [
+        "The arrangement reflects practical logistics—parking efficiency and maintenance access—not ideological messaging."
+      ],
+      "limitations": [
+        "No facial features or personal gear distinguish individuals, limiting claims about identity suppression."
+      ],
+      "sufficiency": "supported"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of human figures: candidate claims nine, but visual inspection shows fewer distinct individuals; revise to accurate count."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:43:45.420842+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-a3b80586-9ee0-927b-998e-d59981d2aa0d",
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 1097,
+        "total_tokens": 1826,
+        "completion_tokens_details": {
+          "text_tokens": 1097
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 222,
+          "text_tokens": 507,
+          "cached_tokens": 512
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014329a23aacc5f5124992",
+      "usage": {
+        "completion_tokens": 970,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1978,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2948
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

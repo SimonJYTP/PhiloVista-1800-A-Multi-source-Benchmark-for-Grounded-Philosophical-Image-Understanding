@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0243",
+  "sample_id": "PHL1800_HL_0274",
+  "file_name": "PHL1800_HL_0274.png",
+  "batch_id": "B007",
+  "position_in_batch": 27,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a gray military aircraft parked on a tarmac with ground equipment and personnel nearby",
+  "captions": {
+    "scene": [
+      "A paved airfield under a pale blue sky with multiple aircraft lined up in the background.",
+      "Yellow painted lines run across the concrete surface; scattered debris and a small wheeled cart are visible near the foreground aircraft.",
+      "The aircraft features twin tail fins, large cylindrical engine nacelles mounted above the wings, and a tandem cockpit canopy."
+    ],
+    "action": [
+      "Two individuals stand near the right main landing gear of the central aircraft, one appearing to interact with equipment on the ground.",
+      "A wheeled ground support cart with red and white markings is positioned beside the left nose gear.",
+      "The aircraft is stationary with its landing gear fully deployed and no visible motion blur or exhaust."
+    ],
+    "rationale": [
+      "The presence of ground crew and support equipment suggests pre-flight or post-flight servicing rather than active taxiing or takeoff.",
+      "The aircraft’s canopy is closed and no external power unit is visibly connected, indicating it may be powered down.",
+      "Multiple similar aircraft in the background imply a squadron or unit deployment, though exact affiliation cannot be confirmed from visual evidence alone."
+    ],
+    "object": [
+      "The central aircraft has a light gray camouflage finish, two vertical stabilizers with visible stenciled markings including 'DM' and a serial number ending in '6715', and a single-seat or tandem-seat cockpit with a clear canopy.",
+      "Two distinct human figures are visible: both near the right main gear; both wear dark uniforms and appear to be engaged in ground operations.",
+      "A small wheeled cart with a red cylinder (possibly a fire extinguisher) and white labeling sits adjacent to the aircraft’s left front wheel.",
+      "The tarmac surface shows yellow painted lines, minor stains, and scattered small objects including what appears to be a discarded hose or cable segment.",
+      "In the background, at least three additional identical aircraft are parked in a row, each with similar tail markings and configuration, though their text is unreadable due to distance and resolution."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0243_P1",
+      "visual_anchors": [
+        "twin tail fins with stenciled alphanumeric codes",
+        "ground crew positioned symmetrically near landing gear",
+        "yellow line demarcating operational zones on tarmac"
+      ],
+      "symbolic_mapping": [
+        "stenciled codes represent institutional identity within a standardized system",
+        "symmetrical positioning reflects procedural discipline"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The aircraft’s marked identity and the coordinated presence of personnel illustrate how individual units derive meaning through codified roles within a collective structure, where appearance (markings) enforces social function.",
+      "alternative_interpretations": [
+        "The markings may simply serve logistical identification without symbolic intent; the crew positions could reflect routine safety spacing rather than ritualized order."
+      ],
+      "limitations": [
+        "No readable text confirms institutional affiliation; crew postures do not definitively indicate intentionality beyond task execution."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0243_P2",
+      "visual_anchors": [
+        "closed cockpit canopy",
+        "stationary landing gear",
+        "absence of motion indicators"
+      ],
+      "symbolic_mapping": [
+        "stillness contrasts with implied capacity for rapid movement",
+        "readiness held in abeyance"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The grounded aircraft embodies a state of constrained potential—capable of flight yet bound by procedure and infrastructure—suggesting freedom as contingent upon structured choice rather than absolute autonomy.",
+      "alternative_interpretations": [
+        "The aircraft is simply parked between missions; stillness reflects normal operational pause, not philosophical tension."
+      ],
+      "limitations": [
+        "No visual evidence of decision-making process or internal state; stillness is neutral without context."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0243_P3",
+      "visual_anchors": [
+        "wheeled support cart with red cylinder",
+        "scattered debris near nose gear",
+        "uniformed personnel interacting with equipment"
+      ],
+      "symbolic_mapping": [
+        "tools mediate human agency over complex machinery",
+        "imperfection (debris) persists despite order"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The visible labor—handling tools, managing equipment—underscores technology’s dependence on human maintenance, raising questions about responsibility when systems of power rely on routine, often invisible, care work.",
+      "alternative_interpretations": [
+        "The cart and debris are incidental; the scene depicts standard logistics without ethical implication."
+      ],
+      "limitations": [
+        "Intentions behind labor are unseen; debris could be unrelated to operations."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate states 'three distinct human figures' but image shows two; 'one near left nose gear' is not visible, only a cart is present there."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:24:20.430565+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-c2d43f65-0a33-9b94-b77d-0b0dca6c087b",
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 1059,
+        "total_tokens": 1848,
+        "completion_tokens_details": {
+          "text_tokens": 1059
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 282,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702235620291d822c8149e9",
+      "usage": {
+        "completion_tokens": 945,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2014,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2959
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "annotation_item_id": "F0665",
+  "sample_id": "PHL1800_HL_0068",
+  "file_name": "PHL1800_HL_0068.png",
+  "batch_id": "B015",
+  "position_in_batch": 31,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of uniformed personnel in digital camouflage attire, standing outdoors in formation",
+  "captions": {
+    "scene": [
+      "Outdoor setting under a partly cloudy sky with green trees visible on the left edge",
+      "Paved ground surface beneath the group, suggesting a courtyard or parade ground",
+      "Multiple individuals in matching navy-style digital camouflage uniforms and caps, arranged in rows"
+    ],
+    "action": [
+      "At least three individuals are actively holding and looking at mobile phones in their hands",
+      "Several others stand upright with hands clasped or at sides, facing forward or slightly downward",
+      "One person wears glasses and holds a phone with both hands; another wears a black wristband and manipulates a phone with right hand"
+    ],
+    "rationale": [
+      "The uniform pattern and cap style suggest naval affiliation, but no insignia is clearly legible to confirm branch definitively",
+      "Phone use appears simultaneous across multiple individuals, possibly indicating a coordinated activity or permitted downtime",
+      "Postures vary between attentive stance and relaxed engagement with devices, implying a non-combat, non-emergency context"
+    ],
+    "object": [
+      "A person in the foreground wears a digital camouflage short-sleeve shirt with rolled sleeves, a matching cap, and a black wristband on the left wrist.",
+      "Another individual to the left wears glasses, holds a dark smartphone horizontally with both hands, and has 'U.S. NAVY' partially visible in white capital letters on the chest.",
+      "A third person in the center-right holds a smartphone with the right hand while the left hand rests near the waist; the phone screen is illuminated.",
+      "At least twelve distinct individuals are visible: six in the front row (including two phone users), six more in partial view behind them, all wearing similar uniforms and caps.",
+      "One person in the background holds a purple-cased phone; another wears a watch with a black band and silver case."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0665_P1",
+      "visual_anchors": [
+        "multiple individuals simultaneously using smartphones",
+        "uniform conformity",
+        "outdoor formation"
+      ],
+      "symbolic_mapping": [
+        "digital device use amid disciplined attire symbolizes tension between institutional order and personal autonomy"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where standardized collective identity coexists with individuated digital engagement, raising questions about how institutional discipline accommodates or suppresses personal agency in modern service contexts.",
+      "alternative_interpretations": [
+        "This may simply reflect a routine break or administrative task requiring mobile devices, with no deeper symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional juxtaposition; device use could be procedural rather than personal."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0665_P2",
+      "visual_anchors": [
+        "'U.S. NAVY' text on chest",
+        "matching digital camouflage uniforms",
+        "rigid alignment of bodies"
+      ],
+      "symbolic_mapping": [
+        "uniformity of dress and posture reflects enforced social role over individual distinction"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visual erasure of individual variation through identical attire and formation suggests that social existence within this structure prioritizes functional role over personal identity, echoing theories of institutional self-effacement.",
+      "alternative_interpretations": [
+        "Uniforms serve practical purposes (camouflage, identification) and do not necessarily imply identity suppression."
+      ],
+      "limitations": [
+        "Only partial text is readable; full insignia or rank markings are absent, limiting conclusions about hierarchy or role specificity."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0665_P3",
+      "visual_anchors": [
+        "illuminated phone screens",
+        "downcast gazes toward devices",
+        "static outdoor formation"
+      ],
+      "symbolic_mapping": [
+        "glowing screens as focal points amid stillness evoke attentional fragmentation in structured environments"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "labor_technology"
+      ],
+      "interpretation": "The convergence of manual labor (standing in formation) with cognitive labor mediated by technology highlights how truth-seeking or information processing now intrudes into traditionally embodied, non-digital domains of duty.",
+      "alternative_interpretations": [
+        "Phones may be used for official communication or scheduling, making the activity part of formal labor rather than cognitive intrusion."
+      ],
+      "limitations": [
+        "Screen content is invisible; device function cannot be determined from appearance alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of visible individuals (candidate states at least nine, but image shows more than nine distinct people)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:05:43.848496+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-27e6ad53-ac88-9c25-9273-795eb7d9f051",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 980,
+        "total_tokens": 1749,
+        "completion_tokens_details": {
+          "text_tokens": 980
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070305244da69f3d272f42c5",
+      "usage": {
+        "completion_tokens": 863,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1911,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2774
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

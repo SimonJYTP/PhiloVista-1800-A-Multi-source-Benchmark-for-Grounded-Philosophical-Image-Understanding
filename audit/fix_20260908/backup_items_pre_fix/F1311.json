@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1311",
+  "sample_id": "PHL1800_HAIV_0440",
+  "file_name": "PHL1800_HAIV_0440.png",
+  "batch_id": "B027",
+  "position_in_batch": 42,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a large crowd of stylized human figures with one dark red figure and a large fork in the foreground",
+  "captions": {
+    "scene": [
+      "A densely packed group of simplified human figures with brown heads, white torsos, and peach-colored arms, set against a pale teal background.",
+      "A single dark red silhouette of a human figure stands centrally in the lower half, partially overlapped by a large metallic fork extending vertically from bottom to top.",
+      "The figures are arranged in overlapping layers suggesting depth, with no clear ground plane or horizon line."
+    ],
+    "action": [
+      "The crowd appears static; no limbs show motion blur or dynamic posture indicating movement.",
+      "The fork is positioned upright, piercing through the central red figure and extending above the crowd’s heads.",
+      "The red figure is oriented forward, symmetrically aligned with the fork’s tines."
+    ],
+    "rationale": [
+      "The uniformity of head shape and color across the crowd suggests intentional stylization rather than photographic realism.",
+      "The fork’s scale relative to the figures implies symbolic rather than functional use, given its oversized proportions.",
+      "The red figure’s distinct color and central placement suggest visual emphasis, but no facial features or gestures confirm intent or emotion."
+    ],
+    "object": [
+      "There are approximately 70 visible human-like figures identifiable by distinct heads or partial bodies in the image.",
+      "A silver-gray fork with four tines occupies the vertical center, its handle extending below the frame and its tines reaching above the highest figure’s head.",
+      "One figure is rendered in solid dark red with a black circular head and no facial details, positioned directly behind the fork’s shaft.",
+      "All other figures have tan-brown circular heads, white rectangular torsos, and peach-colored arm shapes, some with green accents near the torso base.",
+      "The background consists of two horizontal bands: a pale teal upper band and a white lower band, with no texture or detail."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1311_P1",
+      "visual_anchors": [
+        "dark red figure",
+        "oversized fork",
+        "uniform crowd"
+      ],
+      "symbolic_mapping": [
+        "fork as instrument of selection or division",
+        "red figure as marked individual"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The image may represent the imposition of external control (fork) upon an individual within a homogenized collective, highlighting tension between singularity and conformity.",
+      "alternative_interpretations": [
+        "It could depict a culinary metaphor—e.g., serving or consumption—where the red figure is food and the crowd are diners, without social commentary."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm symbolic intent; color and scale alone do not fix meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1311_P2",
+      "visual_anchors": [
+        "70 identical heads",
+        "lack of facial features",
+        "crowd density"
+      ],
+      "symbolic_mapping": [
+        "uniform figures as loss of individuality",
+        "crowd as mass anonymity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The erasure of distinguishing traits among the crowd suggests a critique of deindividuation in modern society, where personal identity is subsumed by collective presence.",
+      "alternative_interpretations": [
+        "The style may simply reflect artistic economy—minimalist representation—not philosophical statement."
+      ],
+      "limitations": [
+        "Stylization alone does not prove intent to comment on identity; similar forms appear in non-critical decorative art."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1311_P3",
+      "visual_anchors": [
+        "fork piercing red figure",
+        "red figure centered behind fork",
+        "no interaction shown"
+      ],
+      "symbolic_mapping": [
+        "fork as tool of judgment or extraction",
+        "red figure as subject of scrutiny"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "power_conflict"
+      ],
+      "interpretation": "The composition evokes ethical questions about responsibility when one entity is singled out and subjected to an instrument wielded by unseen agency, implicating systemic power structures.",
+      "alternative_interpretations": [
+        "The fork may be purely compositional—a framing device to draw attention to the red figure—without moral implication."
+      ],
+      "limitations": [
+        "The absence of hands, source, or directionality prevents confirmation of agency or intent behind the fork."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The count of 57 human-like figures is incorrect; the image contains a larger crowd with more visible figures."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:16:03.855847+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-94ab7a00-1d54-97ee-a10d-770e1765a682",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 973,
+        "total_tokens": 2506,
+        "completion_tokens_details": {
+          "text_tokens": 973
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907041552ebbbc89f99b0426c",
+      "usage": {
+        "completion_tokens": 855,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2927,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3782
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

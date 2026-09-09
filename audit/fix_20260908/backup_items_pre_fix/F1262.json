@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F1262",
+  "sample_id": "PHL1800_HL_0171",
+  "file_name": "PHL1800_HL_0171.png",
+  "batch_id": "B026",
+  "position_in_batch": 48,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two giraffes and a group of visitors at a feeding platform",
+  "captions": {
+    "scene": [
+      "Two giraffes stand near a wooden railing with large green leafy plants in the foreground; behind them is a thatched-roof structure and dense tropical foliage.",
+      "A group of six adults stand on a raised walkway beside a pavilion with a gray tiled roof and dark support posts.",
+      "One giraffe extends its neck horizontally toward the visitors, who hold out yellow flowers and a bright orange object toward it."
+    ],
+    "action": [
+      "The left giraffe stands upright with its mouth slightly open, head turned rightward, observing or chewing.",
+      "The right giraffe lowers its head and neck toward the crowd, mouth near the offered yellow flowers held by a person.",
+      "Multiple visitors extend arms forward: one holds yellow flowers, another holds an orange object aloft, while others watch or photograph."
+    ],
+    "rationale": [
+      "The giraffe’s lowered neck and proximity to the flowers suggest feeding behavior, but no contact is visibly confirmed; the mouth is near but not clearly touching the flowers.",
+      "The presence of a railing, elevated walkway, and pavilion indicates a managed enclosure, yet no signage confirms zoo or sanctuary status; architecture alone is insufficient for definitive classification.",
+      "Six adults are visible: one with a brown shoulder bag, one in white shirt, one in gray shirt, one in black shirt, one partially obscured, one holding orange object—count based on distinct heads and torsos; no child is present."
+    ],
+    "object": [
+      "Two adult giraffes with typical reticulated coat patterns stand within a vegetated enclosure bordered by a wooden railing and large-leafed plants.",
+      "A gray-tiled pavilion with dark wooden posts and open sides is positioned behind the visitors, partially shaded by palm fronds.",
+      "A person in a white shirt holds a bouquet of yellow flowers extended toward the right giraffe’s mouth.",
+      "A second person holds a bright orange, possibly plastic, object above the crowd, near the giraffe’s head.",
+      "A brown leather shoulder bag with white trim hangs from the right shoulder of a person wearing a gray t-shirt, facing away from the camera."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1262_P1",
+      "visual_anchors": [
+        "giraffe extending neck toward human-held flowers",
+        "visitors leaning over railing",
+        "shared space separated by wooden barrier"
+      ],
+      "symbolic_mapping": [
+        "the railing as physical boundary enabling proximity without fusion",
+        "flower offering as gesture of care across species"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The scene embodies a negotiated coexistence where humans assume stewardship through controlled interaction, revealing ethics not as abstract principle but as embodied practice at the threshold of species difference.",
+      "alternative_interpretations": [
+        "This is routine animal feeding in a tourist attraction, with no intentional symbolic meaning beyond entertainment and education."
+      ],
+      "limitations": [
+        "No visible facial expressions or verbal cues confirm intent; the flower may be part of a scripted feeding protocol rather than spontaneous gift-giving."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1262_P2",
+      "visual_anchors": [
+        "two giraffes in differing postures—one upright, one reaching",
+        "crowd clustered tightly around one point of interaction",
+        "thatched and tiled roofs juxtaposed in background"
+      ],
+      "symbolic_mapping": [
+        "postural divergence as nonverbal expression of individual response",
+        "architectural layering as metaphor for cultural framing of nature"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "freedom_constraint"
+      ],
+      "interpretation": "The giraffes’ contrasting stances—observant versus engaged—highlight how identity emerges not in isolation but through differential positioning within constrained environments shaped by human design.",
+      "alternative_interpretations": [
+        "The giraffes’ postures reflect simple variation in hunger level or attention span, with no deeper significance."
+      ],
+      "limitations": [
+        "Giraffe posture cannot be definitively linked to internal state; environmental factors like wind or prior feeding may explain differences."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1262_P3",
+      "visual_anchors": [
+        "adults holding objects toward giraffe",
+        "dense green foliage surrounding all figures"
+      ],
+      "symbolic_mapping": [
+        "foliage as enveloping context that both obscures and sustains"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The moment—flowers offered, neck extended—underscores the fragility of interspecies connection against biological impermanence, with foliage framing the encounter as a transient, situated interaction.",
+      "alternative_interpretations": [
+        "The foliage is standard landscaping with no symbolic role; the interaction is purely functional."
+      ],
+      "limitations": [
+        "No child is present to represent 'unmediated gaze'; the interpretation relies on abstract symbolism rather than direct visual cues."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate claims 'at least seven people including one child' but image shows six adults and no visible child; 'child seated on railing' is not present."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:09:45.166865+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e64e0988-4d65-94a3-bad9-3dfe980f1a9c",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1140,
+        "total_tokens": 1949,
+        "completion_tokens_details": {
+          "text_tokens": 1140
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907040920bc47c352d72d497a",
+      "usage": {
+        "completion_tokens": 992,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2117,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3109
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

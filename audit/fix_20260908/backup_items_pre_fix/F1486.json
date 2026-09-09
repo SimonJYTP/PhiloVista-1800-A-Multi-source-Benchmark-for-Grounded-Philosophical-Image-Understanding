@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1486",
+  "sample_id": "PHL1800_HL_0287",
+  "file_name": "PHL1800_HL_0287.png",
+  "batch_id": "B031",
+  "position_in_batch": 3,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "people handling sheep in an indoor livestock arena",
+  "captions": {
+    "scene": [
+      "An indoor agricultural exhibition hall with exposed white truss ceiling, fluorescent lighting, and straw-covered floor enclosed by low metal railings.",
+      "Multiple groups of people stand or bend beside sheep; some wear plaid shirts and jeans, others wear casual t-shirts and jeans.",
+      "A blue barrel, a red-orange canopy tent, and a partially legible sign appear in the background."
+    ],
+    "action": [
+      "A person in a green-and-white plaid shirt bends over a white sheep, positioning it while the sheep stands still.",
+      "Another person in a green plaid shirt stands beside a sheep, possibly guiding or holding it.",
+      "Several individuals observe or assist nearby; a child in a yellow shirt stands near two adults holding sheep."
+    ],
+    "rationale": [
+      "The presence of multiple sheep, handlers in similar attire, and arena infrastructure suggests a livestock show or judging event rather than casual farming activity.",
+      "Handlers’ postures—bending, positioning—indicate active presentation or preparation of animals, consistent with competitive showing standards.",
+      "The uniformity of sheep appearance (white, medium-sized, woolly) and lack of visible branding implies they are being evaluated for conformation."
+    ],
+    "object": [
+      "There are approximately 12 visible human figures: 6 adults and 1 child in the left/middle cluster, 3 adults and 1 child near center-right, and 2 adults on the far right (one partially cropped).",
+      "There are approximately 5 visible sheep: one being held by the foreground plaid-shirt person, one beside them, one near the left group, one near the center-right group, and one near the far-right group (one partially obscured).",
+      "The ceiling features white metal trusses with mounted linear fluorescent fixtures and at least four visible light diffusers.",
+      "A blue plastic barrel sits behind the left group of people, near a red-orange fabric canopy supported by poles.",
+      "A white rectangular sign with black text is mounted on a wall in the upper right background; the text is not clearly legible."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1486_P1",
+      "visual_anchors": [
+        "handlers positioning sheep",
+        "sheep standing passively",
+        "uniform posture across multiple handler-animal pairs"
+      ],
+      "symbolic_mapping": [
+        "physical control of animals maps to structured human authority over nature",
+        "repetition of stance suggests ritualized performance of care or evaluation"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The scene embodies a negotiated power relation where human agency is exercised through disciplined physical contact, not coercion alone—revealing how social order in agrarian contexts depends on embodied routines that simultaneously constrain and sustain life.",
+      "alternative_interpretations": [
+        "This is simply standard livestock handling practice with no symbolic layer; the postures reflect ergonomic efficiency and animal compliance training."
+      ],
+      "limitations": [
+        "No facial expressions or verbal cues are visible to confirm intent or emotional valence of handlers."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1486_P2",
+      "visual_anchors": [
+        "identical plaid shirts worn by multiple handlers",
+        "straw-covered floor",
+        "exposed structural beams"
+      ],
+      "symbolic_mapping": [
+        "repetition of clothing signals group affiliation or role conformity",
+        "indoor arena juxtaposes natural material (straw) with industrial framing"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "Clothing functions as a visual marker of occupational identity within a technologically mediated rural space, where tradition (plaid, straw) coexists with modern infrastructure (steel trusses, electric lighting), suggesting identity is performed through material continuity amid change.",
+      "alternative_interpretations": [
+        "Plaid shirts are coincidental fashion choices unrelated to role; the setting is generic and not culturally specific."
+      ],
+      "limitations": [
+        "Brand logos or insignia on shirts are not visible, preventing confirmation of uniformity or affiliation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1486_P3",
+      "visual_anchors": [
+        "child observing beside adult handlers",
+        "sheep positioned for inspection",
+        "multiple generations present"
+      ],
+      "symbolic_mapping": [
+        "proximity of child to task implies transmission of knowledge through participation",
+        "static pose of sheep contrasts with dynamic human movement, highlighting temporality of care"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The image captures a moment of intergenerational epistemic transfer where truth about animal quality is enacted through touch, stance, and shared attention—underscoring how embodied practice sustains knowledge across temporal spans despite the mortality inherent in livestock cycles.",
+      "alternative_interpretations": [
+        "The child is merely accompanying family and not actively learning; the scene reflects routine attendance, not pedagogy."
+      ],
+      "limitations": [
+        "No eye contact, gesture direction, or instructional tools are visible to verify teaching intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (14 vs. actual ~12) and sheep (6 vs. actual ~5); 'Hood River' sign is not clearly legible; some action descriptions misrepresent postures (e.g., 'gripping hindquarters' not visually confirmed); philosophy interpretations include unsupported claims (e.g., 'intergenerational epistemic transfer' without clear evidence)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:38:06.564870+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-57214f18-448d-9f50-a84c-3a4ee26cb221",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1141,
+        "total_tokens": 1910,
+        "completion_tokens_details": {
+          "text_tokens": 1141
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907043737ed9ea3d4cff941a4",
+      "usage": {
+        "completion_tokens": 1127,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2070,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3197
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

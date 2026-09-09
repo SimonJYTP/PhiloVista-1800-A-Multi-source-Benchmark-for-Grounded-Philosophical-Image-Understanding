@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0037",
+  "sample_id": "PHL1800_HL_0443",
+  "file_name": "PHL1800_HL_0443.png",
+  "batch_id": "B003",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a pink elephant-sculpted vehicle with occupants and nearby pedestrians",
+  "captions": {
+    "scene": [
+      "A dusty flat expanse under a partly cloudy blue sky, with a large tiered pyramidal structure in the background.",
+      "A modified van with a large pink elephant sculpture mounted on its roof, parked on open ground.",
+      "Several people standing near or on the vehicle, and others walking in the midground near the pyramid."
+    ],
+    "action": [
+      "Three individuals are visible on the vehicle’s roof platform: one seated under an umbrella, one standing behind them, and one at the rear edge (posture not clearly crouching).",
+      "Two people walk leftward beside the vehicle; one wears orange pants and holds a yellow object, the other wears dark clothing.",
+      "In the background, multiple small figures are scattered across the base of the pyramid and along its steps."
+    ],
+    "rationale": [
+      "The elephant sculpture is affixed to the van and not independently mobile, indicating it is a static installation rather than a living animal.",
+      "The presence of a patterned rug draped over the side panel suggests intentional decoration, though its origin or maker is not visible.",
+      "The pyramid’s construction appears layered and geometric, but no text or signage is legible to confirm its purpose or identity."
+    ],
+    "object": [
+      "A white van with pink-painted body panels and a large sculpted pink elephant extending forward from its roof, trunk raised and curled upward.",
+      "A beige fabric umbrella mounted above the van’s cab, shading two seated or crouched figures.",
+      "A dark patterned textile with red and gold accents, possibly a rug, hanging vertically over the driver-side door of the van.",
+      "Five distinct human figures are visible: three on the vehicle (one under umbrella, one behind, one at rear), two walking beside it, and no additional partially visible figures near the rear wheel.",
+      "A multi-tiered stepped pyramid structure in the background, composed of light-colored material, with numerous small figures on its surface and base."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0037_P1",
+      "visual_anchors": [
+        "pink elephant sculpture",
+        "patterned rug on van",
+        "tiered pyramid"
+      ],
+      "symbolic_mapping": [
+        "elephant as cultural symbol of memory or whimsy",
+        "pyramid as enduring human construct"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "time_mortality"
+      ],
+      "interpretation": "The juxtaposition of a fantastical, temporary vehicle against a monumental, enduring structure evokes tension between ephemeral communal expression and long-term institutional form.",
+      "alternative_interpretations": [
+        "The scene may simply reflect festival artistry without symbolic intent, emphasizing visual spectacle over philosophical meaning."
+      ],
+      "limitations": [
+        "No inscriptions or contextual signage confirm intended symbolism; interpretation relies solely on formal contrast."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0037_P2",
+      "visual_anchors": [
+        "people on elevated platform",
+        "pedestrians at ground level",
+        "shared open space"
+      ],
+      "symbolic_mapping": [
+        "elevated position as visibility or privilege",
+        "shared desert terrain as neutral ground"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial arrangement—some individuals elevated on a decorated vehicle while others move freely on the plain—suggests a non-hierarchical yet differentiated social presence within a shared environment.",
+      "alternative_interpretations": [
+        "The elevation may be purely functional (for viewing) rather than status-based; no gestures or interactions indicate hierarchy."
+      ],
+      "limitations": [
+        "No facial expressions, postures, or directional gaze establish relational dynamics; elevation could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0037_P3",
+      "visual_anchors": [
+        "modified van",
+        "handcrafted elephant",
+        "large-scale pyramid"
+      ],
+      "symbolic_mapping": [
+        "van as repurposed utility",
+        "elephant as imaginative labor"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "choice_journey"
+      ],
+      "interpretation": "The image presents a triad of human intervention: adaptive reuse (van), expressive fabrication (elephant), and monumental assembly (pyramid), reflecting varied modes of intentionality in shaping environment.",
+      "alternative_interpretations": [
+        "All objects may be commercial installations with no personal authorship evident; craftsmanship cannot be verified visually."
+      ],
+      "limitations": [
+        "Material composition, construction methods, and authorship are invisible; assumptions about labor rely on appearance alone."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count: 6 people claimed but 5 visible; action description of 'one crouching at the rear edge' is unsupported; object description of 'dark blue and red patterned textile' misstates color as dark blue (textile is dark with red/gold patterns)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:52:07.885079+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-0d1e2594-baf0-95db-90a5-d76a11c2a404",
+      "usage": {
+        "prompt_tokens": 635,
+        "completion_tokens": 999,
+        "total_tokens": 1634,
+        "completion_tokens_details": {
+          "text_tokens": 999
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 128,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090701511223eb0e276a814fd6",
+      "usage": {
+        "completion_tokens": 1004,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1757,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2761
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

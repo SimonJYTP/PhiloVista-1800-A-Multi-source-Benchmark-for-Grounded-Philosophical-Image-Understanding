@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0210",
+  "sample_id": "PHL1800_IRFL_0205",
+  "file_name": "PHL1800_IRFL_0205.jpg",
+  "batch_id": "B006",
+  "position_in_batch": 46,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a collage of numerous human faces and upper torsos",
+  "captions": {
+    "scene": [
+      "A dense grid-like arrangement of rectangular photographic portraits with varying sizes and orientations",
+      "Multiple overlapping portrait images forming a mosaic with no visible background beyond the photos themselves",
+      "Portraits show diverse skin tones, hair colors and styles, facial features, and clothing; some include partial shoulders or collars"
+    ],
+    "action": [
+      "Individuals are mostly static, facing forward or slightly angled, with neutral to mild expressions",
+      "Some individuals appear to be smiling, others have closed mouths or slight lip parting; no overt motion is visible",
+      "Several portraits show hands near faces (e.g., holding glasses, touching chin), but no dynamic gestures are captured"
+    ],
+    "rationale": [
+      "The uniformity of frontal poses suggests posed photography rather than candid action",
+      "Variation in image quality, lighting, and framing implies compilation from multiple sources rather than a single session",
+      "Absence of shared context (e.g., identical backgrounds, coordinated attire) indicates non-unified origin"
+    ],
+    "object": [
+      "There are numerous distinct human figures visible across all portrait segments, counted by unique head or torso silhouettes (exact count unverifiable due to overlap and resolution).",
+      "Some portraits contain partially visible text overlays, all illegible due to resolution and cropping.",
+      "One portrait in the lower center shows a person wearing a purple head covering.",
+      "A few portraits depict individuals with eyeglasses; frames vary in thickness and shape.",
+      "Two adjacent portraits near the top left show individuals with similar dark haircuts and light-colored shirts, but no evidence confirms relation."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0210_P1",
+      "visual_anchors": [
+        "dense overlapping portraits",
+        "varying image resolutions",
+        "absence of shared background"
+      ],
+      "symbolic_mapping": [
+        "fragmented visual field → dispersed social presence",
+        "inconsistent framing → unstable self-representation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The collage visually enacts the fragmentation of individual identity within collective representation, where each face exists as a discrete unit yet contributes to an overwhelming whole that resists singular interpretation.",
+      "alternative_interpretations": [
+        "It may simply be a technical demonstration of photo stitching or a user-generated social media mosaic without philosophical intent."
+      ],
+      "limitations": [
+        "No contextual metadata (e.g., source, date, creator intent) is visible to confirm symbolic intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0210_P2",
+      "visual_anchors": [
+        "front-facing poses",
+        "neutral expressions"
+      ],
+      "symbolic_mapping": [
+        "uniform gaze direction → shared attention or expectation",
+        "static presentation → suspension of agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The repeated frontal orientation and lack of movement suggest a condition of constrained visibility—individuals presented for observation rather than self-expression, evoking questions about autonomy in mediated representation.",
+      "alternative_interpretations": [
+        "Frontal poses are standard for identification photos or yearbook-style portraits, implying functional rather than ideological purpose."
+      ],
+      "limitations": [
+        "Expression subtleties (e.g., micro-expressions) are lost at this resolution, limiting inference about internal states."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0210_P3",
+      "visual_anchors": [
+        "overlapping edges between portraits",
+        "mismatched lighting conditions",
+        "varying aspect ratios"
+      ],
+      "symbolic_mapping": [
+        "juxtaposition without hierarchy → equality of presence",
+        "technical imperfection → resistance to seamless assimilation"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The deliberate inclusion of visual discontinuities—edges, shadows, scale shifts—underscores ethical responsibility in representation: no single figure dominates, and the collage refuses aesthetic smoothing, honoring difference through structural asymmetry.",
+      "alternative_interpretations": [
+        "These mismatches are artifacts of automated collage software, not intentional aesthetic choices."
+      ],
+      "limitations": [
+        "Software origin cannot be determined from visual evidence alone; intent remains unverifiable."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count of 87 distinct human figures is unsupported; visual inspection suggests a higher count with potential miscounting of overlapping or partial figures. Text overlays are not clearly visible as claimed. The purple head covering is present but description of texture/folds may overinterpret low resolution. Eyeglasses count of three is plausible but not definitively verifiable. The pair with similar haircuts lacks evidence of relation."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:18:13.258202+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-3c120fb6-b58d-97d4-b820-a218007bbe13",
+      "usage": {
+        "prompt_tokens": 573,
+        "completion_tokens": 942,
+        "total_tokens": 1515,
+        "completion_tokens_details": {
+          "text_tokens": 942
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 66,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070217509ceff39bb406413d",
+      "usage": {
+        "completion_tokens": 959,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1589,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2548
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

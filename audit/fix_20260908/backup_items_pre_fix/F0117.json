@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0117",
+  "sample_id": "PHL1800_IRFL_0384",
+  "file_name": "PHL1800_IRFL_0384.jpg",
+  "batch_id": "B005",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a two-tone compact car parked in front of a rusted metal wall",
+  "captions": {
+    "scene": [
+      "A weathered industrial-style metal wall with peeling yellow and green paint and extensive rust patches forms the background.",
+      "The ground is a flat concrete surface with visible seams and minor debris near the wall base.",
+      "Natural daylight illuminates the scene, casting soft shadows beneath the car and on the wall."
+    ],
+    "action": [
+      "The car is stationary with all four wheels in contact with the ground.",
+      "Two people are visible inside the cabin: one in the driver’s seat and one in the passenger seat.",
+      "The vehicle’s headlights are off and no motion blur is present."
+    ],
+    "rationale": [
+      "The car’s static position and lack of tire deformation suggest it is parked rather than moving.",
+      "The presence of two people inside the cabin is visually confirmed through the transparent windshield.",
+      "The rust patterns and paint degradation on the wall indicate prolonged exposure to environmental elements, though exact duration cannot be determined."
+    ],
+    "object": [
+      "The car has a white front body panel and orange rear quarter panels, including side mirrors and A/C pillar trim.",
+      "It features black multi-spoke alloy wheels with a central logo, black lower front grille, and circular headlamps with clear lenses.",
+      "A European-style license plate reading 'S MB 1018' is mounted centrally on the front bumper.",
+      "The windshield is transparent with no visible cracks; interior seats appear orange, matching exterior accents.",
+      "The rear passenger-side window is fully closed, with no visible roll-down or partial opening."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0117_P1",
+      "visual_anchors": [
+        "rusted metal wall",
+        "pristine two-tone car",
+        "concrete ground"
+      ],
+      "symbolic_mapping": [
+        "rust as decay over time",
+        "car as manufactured order"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The juxtaposition of corroded industrial infrastructure against a clean, modern vehicle evokes tension between entropy and human-made durability, suggesting technology’s attempt to resist temporal dissolution.",
+      "alternative_interpretations": [
+        "This is a commercial automotive photoshoot using an aesthetic backdrop for contrast."
+      ],
+      "limitations": [
+        "No explicit temporal markers confirm the wall’s age or the car’s production date; rust could be artificial."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0117_P2",
+      "visual_anchors": [
+        "two-tone color scheme",
+        "closed doors",
+        "symmetrical front view"
+      ],
+      "symbolic_mapping": [
+        "color division as constructed identity",
+        "sealed cabin as social boundary"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The deliberate visual segmentation of the car’s body into contrasting colors reflects how appearance is curated to signal distinction, while its sealed form underscores the mediated nature of social presence in contemporary mobility.",
+      "alternative_interpretations": [
+        "The color split is purely stylistic, intended to highlight design lines and brand identity."
+      ],
+      "limitations": [
+        "No occupants or interaction present; identity inference relies solely on external form."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0117_P3",
+      "visual_anchors": [
+        "license plate 'S MB 1018'",
+        "black alloy wheels",
+        "grille emblem"
+      ],
+      "symbolic_mapping": [
+        "registration as legal subjecthood",
+        "emblem as institutional affiliation"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The visible registration and branding elements situate the vehicle within systems of accountability and collective recognition, implying that even small machines inherit ethical weight through their integration into regulated social frameworks.",
+      "alternative_interpretations": [
+        "These are standard regulatory and branding features with no intended philosophical meaning."
+      ],
+      "limitations": [
+        "Textual content is minimal and functional; no contextual narrative supports deeper attribution."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The action caption incorrectly states 'no occupants are visibly present inside the cabin' when two people are visible in the driver and passenger seats; the object caption incorrectly claims 'rear passenger-side window is partially rolled down' when it is fully closed."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:02:33.524969+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-387db6cb-aac1-988d-8f36-be144d38d8ed",
+      "usage": {
+        "prompt_tokens": 1573,
+        "completion_tokens": 890,
+        "total_tokens": 2463,
+        "completion_tokens_details": {
+          "text_tokens": 890
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1066,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090702020894e035871f144d99",
+      "usage": {
+        "completion_tokens": 792,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2845,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3637
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

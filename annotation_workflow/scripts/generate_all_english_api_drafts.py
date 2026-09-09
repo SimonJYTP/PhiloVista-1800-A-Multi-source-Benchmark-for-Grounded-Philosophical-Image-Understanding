@@ -287,7 +287,7 @@ def process_item(item: dict[str, str], keys: dict[str, str], retries: int, force
             stage = "generate_or_schema" if not (INTERMEDIATE_DIR / f"{item['blind_id']}.candidate.json").is_file() else "glm_or_schema"
             log_failure(item, attempt, stage, error)
             if attempt <= retries:
-                time.sleep(min(20, 2 ** attempt + random.random()))
+                time.sleep(min(20, 2 ** attempt + random.SystemRandom().random()))
     return {"event": "failed", "item": item["blind_id"], "batch": item["batch_id"], "error": str(last_error)}
 
 

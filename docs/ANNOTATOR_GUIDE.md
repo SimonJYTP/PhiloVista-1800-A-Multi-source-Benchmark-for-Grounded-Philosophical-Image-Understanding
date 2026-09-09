@@ -78,7 +78,9 @@ Object 的五条描述允许关注点和粒度不同，但每条都必须单独�
 
 ### 3.3 概念与解释
 
-`concept_ids_json` 使用 `concept_dictionary_v0.1.csv` 中的候选 ID，可多选，也可为空。先导结束后才冻结词典。管理员 manifest 中已有的 `philosophical_axis` 是 AI 预分类，标注者看不到，也不能当作金标准。
+正式概念使用 `ontology/philosophical_image_label_system_formal_632.csv` 中的 `PHC-xxx` ID。旧草稿中的 11 个粗粒度值只写入 `legacy_axis_ids`，不得写入正式 `concept_id`。`legacy_axis_crosswalk.json` 只用于检索候选；标注者必须根据当前图片逐项确认，也可不选任何正式概念。
+
+每个正式概念写成独立的 `concept_claims` 项，并明确：`concept_id`、有限强度的 `claim`、支持它的 `visual_anchor_indices`、需要时的 `symbolic_mapping_indices`、该概念主张自身的 `sufficiency` 与 `limitations`。不得用一段共享解释替代逐概念证据核验。
 
 合格解释应形成“锚点 → 映射/关系 → 有限结论”的链条，并说明不能推出什么。例如：
 
@@ -92,6 +94,8 @@ Object 的五条描述允许关注点和粒度不同，但每条都必须单独�
 - `plausible`：有锚点，但仍依赖常见象征或背景假设。
 - `insufficient`：可见内容不足以支持正向哲学命题；边界样本应说明不足在哪里。
 - `not_applicable`：当前扩展确实不适用，不等于偷懒或“看不懂”。
+
+每张图可保留 0–3 条合格解释。三条是旧 AI 草稿的候选槽位数量，不是正式标注必须凑满的答案数。
 
 ### 3.5 文字与文化依赖
 

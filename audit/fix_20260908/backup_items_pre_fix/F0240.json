@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0240",
+  "sample_id": "PHL1800_HAIV_0096",
+  "file_name": "PHL1800_HAIV_0096.png",
+  "batch_id": "B007",
+  "position_in_batch": 24,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a central brown figure surrounded by fifteen black figures in a circular arrangement",
+  "captions": {
+    "scene": [
+      "A ring of fifteen black silhouette figures holding hands, forming an oval enclosure around a single brown figure.",
+      "The central brown figure stands with arms raised upward and outward, positioned at the geometric center of the oval.",
+      "Each black figure has white patterned markings on torso and head, varying in shape and placement across individuals."
+    ],
+    "action": [
+      "The fifteen black figures are linked hand-to-hand in a continuous loop, maintaining a static circular formation.",
+      "The central brown figure exhibits an open-arm posture with both arms extended above shoulder level.",
+      "All figures are depicted as flat silhouettes with no visible facial features or limb articulation beyond basic limb outlines."
+    ],
+    "rationale": [
+      "The central figure’s distinct color and central placement suggest visual emphasis, though intent cannot be confirmed from appearance alone.",
+      "The hand-holding configuration implies coordinated positioning, but no motion is depicted; the scene is static.",
+      "Variation in white patterns among black figures indicates intentional differentiation, yet no textual labels or context confirm meaning."
+    ],
+    "object": [
+      "There are exactly fifteen black silhouette figures arranged in two arcs: eight on the upper arc and seven on the lower arc, connected hand-to-hand.",
+      "The central figure is a single brown silhouette with a rounded head, two arms raised symmetrically, and two legs spread apart.",
+      "Each black figure has a rounded head with a white band-like marking and a torso decorated with irregular white shapes resembling floral or abstract motifs.",
+      "The white patterns on black figures are non-identical across individuals and appear hand-drawn with variable stroke thickness and opacity.",
+      "The entire composition is rendered in black, brown, and white on a plain white background with no borders or additional elements."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0240_P1",
+      "visual_anchors": [
+        "central brown figure",
+        "surrounding black figures holding hands",
+        "distinct color contrast"
+      ],
+      "symbolic_mapping": [
+        "brown figure as focal point representing individuality",
+        "hand-holding circle as collective unity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image may represent the tension between individual identity (brown figure) and social embeddedness (ring of black figures), where visibility and distinction arise through relational positioning rather than intrinsic properties.",
+      "alternative_interpretations": [
+        "It could simply depict a stylized dance or ritual formation without symbolic intent, emphasizing symmetry and repetition."
+      ],
+      "limitations": [
+        "No textual or contextual cues confirm symbolic intent; color contrast alone does not establish meaning."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0240_P2",
+      "visual_anchors": [
+        "white patterns on black figures",
+        "variation in pattern design",
+        "uniform black base color"
+      ],
+      "symbolic_mapping": [
+        "patterns as markers of differentiated roles within uniformity"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The heterogeneous white motifs on otherwise identical black bodies suggest that shared membership (e.g., community) coexists with individuated contributions or responsibilities, implying distributed ethical agency within a collective structure.",
+      "alternative_interpretations": [
+        "The patterns may be decorative flourishes with no functional or semantic role, reflecting artistic style rather than conceptual design."
+      ],
+      "limitations": [
+        "Patterns are abstract and non-representational; their variation cannot be tied to specific roles without external information."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0240_P3",
+      "visual_anchors": [
+        "raised arms of central figure",
+        "open posture",
+        "encircling ring"
+      ],
+      "symbolic_mapping": [
+        "raised arms as gesture of reception or offering",
+        "circle as boundary or protection"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "choice_journey"
+      ],
+      "interpretation": "The central figure’s open posture within a bounded circle may evoke the philosophical condition of freedom constrained by social structure—agency expressed only within the limits of communal enclosure.",
+      "alternative_interpretations": [
+        "The pose may indicate celebration or leadership in a ceremonial context, with the circle denoting inclusion rather than restriction."
+      ],
+      "limitations": [
+        "Posture is schematic; arm elevation does not uniquely signify reception, offering, or defiance without cultural context."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of surrounding figures (candidate states sixteen, actual count is fifteen)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:23:56.415186+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-fd14a3e1-4080-9f3a-a221-378dd3d77345",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 961,
+        "total_tokens": 2494,
+        "completion_tokens_details": {
+          "text_tokens": 961
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070223310543820b5e5c416a",
+      "usage": {
+        "completion_tokens": 840,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2921,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3761
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

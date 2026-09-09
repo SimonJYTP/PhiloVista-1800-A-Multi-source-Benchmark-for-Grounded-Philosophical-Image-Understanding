@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0968",
+  "sample_id": "PHL1800_HL_0339",
+  "file_name": "PHL1800_HL_0339.png",
+  "batch_id": "B021",
+  "position_in_batch": 16,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "pedestrians and motorcyclists navigating a crowded street market",
+  "captions": {
+    "scene": [
+      "A narrow urban street lined with storefronts displaying Thai script signage, including partially legible characters 'มหา' and 'ห้อง' on a brown awning; a green bus is visible in the background right.",
+      "Multiple open-air food stalls with vendors and customers under umbrellas and awnings; yellow plastic bags and blue containers are placed on the pavement.",
+      "A red vehicle interior (likely a bus) frames the right edge of the image, with its window revealing part of the street scene."
+    ],
+    "action": [
+      "A woman in olive-green clothing walks leftward toward the camera, arms relaxed at her sides.",
+      "A motorcyclist wearing a white helmet with blue/yellow graphics and a black jacket bearing the number '9' rides forward, viewed from behind.",
+      "Several people carry large cardboard boxes on motorcycles or by hand; one rider in a white shirt balances a tall box on the rear rack."
+    ],
+    "rationale": [
+      "The presence of multiple motorbikes, pedestrians, and roadside stalls suggests high pedestrian-motor vehicle coexistence typical of dense Southeast Asian markets; however, exact traffic rules cannot be confirmed from visual evidence alone.",
+      "The visible Thai script on signs indicates a location where Thai is used, but without readable full words or geographic markers, country or city cannot be definitively identified.",
+      "The woman in olive-green appears to be walking independently, but whether she is a vendor, shopper, or passerby is not determinable from posture or context alone."
+    ],
+    "object": [
+      "A dark blue open-back truck is parked on the left side of the street, with visible cargo including stacked items; no person is seated inside.",
+      "A man in a plaid shirt and beige pants stands near yellow plastic bags and a blue cooler on the sidewalk, facing away from the camera.",
+      "A person in a turquoise shirt and jeans walks away from the camera, carrying a yellow bag in their right hand.",
+      "At least five distinct motorcyclists are visible: one in foreground with number '9', one with a cardboard box strapped to rear, one in yellow shirt and black helmet, one in light blue helmet, and one in white helmet with pattern (partially obscured).",
+      "A black umbrella is held over a stall near center-left; beneath it, multiple individuals appear to be interacting with goods or food."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0968_P1",
+      "visual_anchors": [
+        "woman walking alone in foreground",
+        "motorcyclist with number '9' jacket",
+        "crowded shared space"
+      ],
+      "symbolic_mapping": [
+        "the number '9' may denote individual identification within collective movement",
+        "the solitary walker contrasts with clustered riders, suggesting individuation amid flux"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image captures the tension between individual presence—marked by attire, posture, and direction—and the anonymizing density of urban circulation, where identity is both asserted and submerged.",
+      "alternative_interpretations": [
+        "This is simply a snapshot of daily commuting and commerce with no intentional symbolic layering."
+      ],
+      "limitations": [
+        "The number '9' could be sportswear branding rather than personal identifier; no contextual text confirms its significance."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0968_P2",
+      "visual_anchors": [
+        "cardboard boxes carried on motorcycles",
+        "open-air food stalls",
+        "people balancing loads while moving"
+      ],
+      "symbolic_mapping": [
+        "manual transport of goods reflects embodied labor integrated into transit",
+        "street as simultaneous marketplace, thoroughfare, and workspace"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "Movement through this space is neither purely free nor fully constrained—it is negotiated labor, where mobility and subsistence intertwine without clear separation of work and passage.",
+      "alternative_interpretations": [
+        "Boxes are just deliveries; the street is merely congested, not philosophically layered."
+      ],
+      "limitations": [
+        "No visible employer, wage indicators, or explicit labor contracts confirm labor status; some carriers may be shoppers."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0968_P3",
+      "visual_anchors": [
+        "Thai-script signage",
+        "green bus in background",
+        "red bus interior framing right edge"
+      ],
+      "symbolic_mapping": [
+        "multilingual visual environment implies layered temporalities—traditional script alongside modern transport",
+        "framing by bus window introduces mediated observation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "time_mortality"
+      ],
+      "interpretation": "The viewer’s position inside a moving vehicle observing static and dynamic elements suggests epistemic partiality: truth here is perspectival, fleeting, and conditioned by motion and cultural inscription.",
+      "alternative_interpretations": [
+        "The red frame is incidental—a passenger’s viewpoint with no deeper implication."
+      ],
+      "limitations": [
+        "The bus interior is only partially visible; we cannot confirm observer intent or awareness of framing."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of motorcyclists (candidate claims at least seven, but visual inspection shows fewer distinct riders); inaccurate description of the person in turquoise shirt (candidate says they carry a yellow bag over their left shoulder, but the image shows a yellow bag in their right hand); the dark blue truck is described as having a person seated inside, but no such person is visible; the black umbrella is described as being held over a stall with two people interacting, but the image shows a stall with an umbrella and multiple people, not specifically two; the candidate’s philosophy interpretations include unsupported claims about the number ‘9’ and the bus interior framing."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:32:11.426638+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8b624e2e-8714-965b-942f-f702f7b2aac0",
+      "usage": {
+        "prompt_tokens": 669,
+        "completion_tokens": 1116,
+        "total_tokens": 1785,
+        "completion_tokens_details": {
+          "text_tokens": 1116
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 162,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907033146f3b5378ea38e40cf",
+      "usage": {
+        "completion_tokens": 1187,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1924,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3111
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

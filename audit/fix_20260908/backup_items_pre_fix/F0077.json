@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0077",
+  "sample_id": "PHL1800_HL_0405",
+  "file_name": "PHL1800_HL_0405.png",
+  "batch_id": "B004",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "crowd gathered around a large digital Olympic countdown clock",
+  "captions": {
+    "scene": [
+      "A public square with neoclassical stone buildings, including a clock tower with two visible clock faces and a domed structure to the left",
+      "A large angular metallic sculpture displaying a digital countdown timer and red ribbon-like ornamentation with Olympic rings",
+      "A shallow water feature in the foreground with people standing along its edge"
+    ],
+    "action": [
+      "Multiple individuals are holding up smartphones or cameras to photograph or record the countdown clock",
+      "People are standing densely packed, facing the clock, many wearing winter outerwear and backpacks",
+      "A person in a beige jacket and blue jeans stands elevated slightly, raising a camera above their head to capture the scene"
+    ],
+    "rationale": [
+      "The presence of Olympic rings and '100 DAYS' on the display strongly suggests an upcoming Olympic event; however, the specific host city or year is not legible from visible text alone",
+      "The architecture and crowd density suggest a major urban civic space, but no street signs, banners, or landmarks uniquely identify the location",
+      "The digital display shows '7.26.01' beneath '100 DAYS', which appears to be a date format, but without corroborating context it remains ambiguous whether this is a past or symbolic reference (likely a future event given the countdown context)"
+    ],
+    "object": [
+      "A diamond-shaped metallic structure with a black digital display showing red numerals: '100 DAYS' above '7.26.01', and below that 'OMEGA OFFICIAL TIMEKEEPER' in white text",
+      "A red sculptural element resembling a bow with five interlocked Olympic rings affixed near the top of the metallic structure",
+      "A stone building with Corinthian columns, arched windows, and a central pediment featuring relief sculptures, located behind the clock",
+      "A tall clock tower with a white facade, two circular clock faces (both showing approximately 10:10), and a cupola with louvered vents",
+      "Approximately 30-35 distinct individuals are visible in the crowd, including children and adults, many wearing jackets, hats, and carrying bags or cameras"
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0077_P1",
+      "visual_anchors": [
+        "digital countdown display",
+        "crowd facing the clock",
+        "Olympic rings"
+      ],
+      "symbolic_mapping": [
+        "the countdown represents collective anticipation of a shared temporal milestone",
+        "the Olympic rings symbolize international unity under standardized measurement"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image captures a moment where time is publicly quantified and ritualized, transforming abstract duration into a communal experience of waiting—highlighting how societies construct meaning through synchronized temporality.",
+      "alternative_interpretations": [
+        "This may simply document a promotional installation for a sporting event without deeper symbolic intent."
+      ],
+      "limitations": [
+        "No visible facial expressions or contextual signage confirm participants’ subjective engagement; the interpretation assumes intentionality behind the display design."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0077_P2",
+      "visual_anchors": [
+        "person raising camera above head",
+        "multiple phones pointed at clock",
+        "dense crowd orientation"
+      ],
+      "symbolic_mapping": [
+        "mediated observation replaces direct experience",
+        "collective witnessing as performative participation"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "social_existence"
+      ],
+      "interpretation": "The act of recording the clock—not just observing it—suggests truth is constructed through documentation; presence is validated by evidence captured, reflecting a modern epistemic shift toward photographic proof as social currency.",
+      "alternative_interpretations": [
+        "People are merely taking souvenir photos, with no philosophical implication about truth or knowledge."
+      ],
+      "limitations": [
+        "Camera orientation does not prove intent to archive or verify; it could equally indicate casual tourism."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0077_P3",
+      "visual_anchors": [
+        "stone neoclassical architecture",
+        "modern metallic clock sculpture",
+        "water feature in foreground"
+      ],
+      "symbolic_mapping": [
+        "historical institutional authority juxtaposed with technological precision",
+        "public space as stage for temporal governance"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "labor_technology"
+      ],
+      "interpretation": "The coexistence of enduring civic architecture and a transient digital timer embodies tension between tradition and technocratic control—where time itself becomes a managed resource deployed to orchestrate mass behavior.",
+      "alternative_interpretations": [
+        "The architecture and clock are coincidentally adjacent; no intentional contrast is evident."
+      ],
+      "limitations": [
+        "No signage or inscriptions link the buildings to governing bodies; the ‘power’ reading relies on assumed institutional function of such buildings."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for people is inaccurate; the candidate states 'at least 42 distinct individuals' but the image shows approximately 30-35 visible people. The date interpretation 'July 26, 2001' is unsupported; the countdown likely refers to a future Olympic event (e.g., 2012 London Olympics) rather than a past date."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:57:16.520598+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-602b78bb-b103-95c0-9317-ed86d07b627b",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1061,
+        "total_tokens": 1870,
+        "completion_tokens_details": {
+          "text_tokens": 1061
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015641e448b17d5905478c",
+      "usage": {
+        "completion_tokens": 977,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2018,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2995
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

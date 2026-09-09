@@ -1,0 +1,164 @@
+{
+  "annotation_item_id": "F1644",
+  "sample_id": "PHL1800_IRFL_0215",
+  "file_name": "PHL1800_IRFL_0215.jpg",
+  "batch_id": "B034",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a central female figure with reddish hair in a bun, wearing a red top and white collar, smiling with closed eyes",
+  "captions": {
+    "scene": [
+      "A podium scene with the same woman speaking to a seated audience of silhouetted figures",
+      "A one-on-one interaction where the woman places her right hand on a man’s left shoulder; both hold documents",
+      "A three-person seated meeting at a table with laptops and cups, including the woman and two others"
+    ],
+    "action": [
+      "The central figure is smiling with eyes closed and head slightly tilted upward",
+      "Thought bubbles emanate from the central figure toward four circular vignettes",
+      "The woman in the top-right vignette holds a white cup to her mouth with her right hand"
+    ],
+    "rationale": [
+      "The presence of multiple vignettes connected by thought bubbles suggests mental representation of past or imagined scenarios",
+      "Uniform clothing (red top, dark pants, heels) across all depictions of the woman implies identity continuity across contexts",
+      "The logo 'MINDLER' in the upper right corner indicates branding but provides no direct evidence about the depicted activities"
+    ],
+    "object": [
+      "The central figure has reddish hair tied in a bun, wears a red long-sleeved top with a white collar, and displays a wide smile with closed eyes.",
+      "Four circular vignettes surround the central figure: top-left shows two standing people, top-right shows one standing person holding a cup, bottom-left shows a speaker at a podium before an audience, and bottom-right shows three seated people at a table.",
+      "In the bottom-left vignette, there are silhouetted audience members visible as heads and shoulders (exact count not specified).",
+      "In the bottom-right vignette, three individuals sit at a white rectangular table: a man in a dark suit and blue tie on the left, a man in a dark suit and red tie in the center, and the woman in red on the right; two laptops and two cups are on the table.",
+      "The top-right vignette shows the woman alone, holding a white cup to her mouth with her right hand, wearing the same red top, dark pants, and brown heels."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1644_P1",
+      "visual_anchors": [
+        "thought bubbles connecting central figure to vignettes",
+        "identical attire across vignettes",
+        "smiling closed-eyed expression"
+      ],
+      "symbolic_mapping": [
+        "thought bubbles map to internal mental simulation",
+        "uniform attire maps to persistent self-identity across roles"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The image visually constructs the idea that social identity persists across varied relational contexts, mediated through internal representation.",
+      "alternative_interpretations": [
+        "This may simply be a marketing illustration showing a professional in multiple work settings without philosophical intent."
+      ],
+      "limitations": [
+        "No textual explanation confirms intentional symbolism; the thought-bubble motif is conventional in infographics."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1644_P2",
+      "visual_anchors": [
+        "podium with audience",
+        "one-on-one interaction with document exchange",
+        "three-person meeting with laptops"
+      ],
+      "symbolic_mapping": [
+        "podium represents public address",
+        "document exchange represents formal agreement or knowledge transfer"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The triad of communicative settings suggests knowledge dissemination as a structured process involving authority (podium), negotiation (dyad), and collaboration (triad).",
+      "alternative_interpretations": [
+        "These are generic stock scenes for corporate training materials, not necessarily representing epistemic hierarchy."
+      ],
+      "limitations": [
+        "No visible text specifies content of speech, documents, or laptop screens; power dynamics are implied but not evidenced."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1644_P3",
+      "visual_anchors": [
+        "central figure smiling with eyes closed",
+        "four vignettes arranged around her",
+        "MINDLER logo in top right"
+      ],
+      "symbolic_mapping": [
+        "closed eyes map to introspection or satisfaction",
+        "circular vignettes map to encapsulated life episodes"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "other_abstract_relation"
+      ],
+      "interpretation": "The composition frames personal agency as a reflective synthesis of discrete professional moments, suggesting a journey defined by conscious integration rather than linear progression.",
+      "alternative_interpretations": [
+        "The layout follows standard infographic design conventions for showcasing service offerings, with no deeper narrative intended."
+      ],
+      "limitations": [
+        "The figure’s expression is stylized and generic; ‘journey’ is not indicated by arrows, timelines, or sequential ordering."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect audience count in bottom-left vignette (18 vs actual visible silhouettes)",
+      "Inconsistent action description for top-right vignette (drinking vs holding cup to mouth)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:56:55.081601+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-14f5e330-295c-9348-8864-78d0949ee9d4",
+      "usage": {
+        "prompt_tokens": 1269,
+        "completion_tokens": 1036,
+        "total_tokens": 2305,
+        "completion_tokens_details": {
+          "text_tokens": 1036
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 762,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070456439719dac04b474e46",
+      "usage": {
+        "completion_tokens": 932,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2563,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3495
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

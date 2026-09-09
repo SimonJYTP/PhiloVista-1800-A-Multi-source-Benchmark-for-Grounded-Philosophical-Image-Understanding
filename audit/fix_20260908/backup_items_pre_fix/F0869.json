@@ -1,0 +1,161 @@
+{
+  "annotation_item_id": "F0869",
+  "sample_id": "PHL1800_IRFL_0021",
+  "file_name": "PHL1800_IRFL_0021.jpg",
+  "batch_id": "B001",
+  "position_in_batch": 43,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in a red top standing in a courtroom",
+  "captions": {
+    "scene": [
+      "A wood-paneled courtroom with a raised bench, an American flag on the right wall, and wooden furniture throughout.",
+      "Four individuals: one standing woman in the foreground, two seated women (one left foreground, one midground behind the bench), and one seated person behind the bench on the right.",
+      "The setting includes a desk with a microphone, papers, and a computer monitor on the bench."
+    ],
+    "action": [
+      "The standing woman holds papers in both hands and appears to be speaking or presenting, facing left.",
+      "The seated woman on the left has arms crossed and looks downward at a yellow document.",
+      "The person behind the bench on the right observes the standing woman with a neutral expression."
+    ],
+    "rationale": [
+      "The presence of a judge’s bench, American flag, and formal seating arrangement indicates a legal proceeding.",
+      "The standing woman’s posture, paper-holding, and proximity to the microphone suggest she is testifying or presenting, though no audio confirms this.",
+      "The seated individuals’ positions imply roles consistent with legal participants, but their specific functions cannot be confirmed visually."
+    ],
+    "object": [
+      "A woman with dark skin, braided hair styled upward, wearing a red short-sleeved top, black skirt, gold necklace, and red earrings stands holding white papers.",
+      "A wooden desk with a gooseneck microphone is positioned in front of the standing woman.",
+      "An American flag hangs vertically on the right wall behind the bench, fully visible with stars and stripes discernible.",
+      "A black computer monitor sits on the bench surface, next to a small white sign with blue text that is unreadable.",
+      "Four distinct people are visible: one standing woman, two seated women (one left foreground, one midground behind the bench), and one seated person behind the bench on the right (gender not definitively male)."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0869_P1",
+      "visual_anchors": [
+        "standing woman holding papers",
+        "microphone before her",
+        "raised judicial bench"
+      ],
+      "symbolic_mapping": [
+        "papers represent prepared testimony or argument",
+        "microphone signifies mediated voice in institutional space"
+      ],
+      "concept_ids": [
+        "knowledge_truth",
+        "power_conflict"
+      ],
+      "interpretation": "The image captures a moment where individual articulation is formally channeled through institutional apparatus—truth claims are not spoken freely but filtered through procedural constraints and hierarchical authority.",
+      "alternative_interpretations": [
+        "This may simply depict routine courtroom procedure without symbolic weight, such as a clerk reading docket items."
+      ],
+      "limitations": [
+        "No legible text confirms the content of the papers or the nature of the proceeding."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0869_P2",
+      "visual_anchors": [
+        "woman’s upright posture",
+        "distinctive hairstyle and jewelry",
+        "contrast between her vibrant clothing and muted wood surroundings"
+      ],
+      "symbolic_mapping": [
+        "personal adornment asserts identity within standardized institutional setting"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The subject’s visible self-presentation—hairstyle, color choice, accessories—functions as an assertion of individuality against the homogenizing backdrop of legal formality, suggesting identity persists even under procedural constraint.",
+      "alternative_interpretations": [
+        "Her attire may reflect standard professional dress code for court appearances, not intentional identity signaling."
+      ],
+      "limitations": [
+        "Cultural or personal significance of hairstyle or clothing cannot be determined from visual data alone."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0869_P3",
+      "visual_anchors": [
+        "multiple people oriented toward central speaker",
+        "spatial hierarchy of bench vs. floor level",
+        "shared focus direction"
+      ],
+      "symbolic_mapping": [
+        "shared gaze implies collective attention to a singular utterance",
+        "vertical separation mirrors authority gradient"
+      ],
+      "concept_ids": [
+        "ethics_responsibility",
+        "social_existence"
+      ],
+      "interpretation": "The arrangement enacts a social contract wherein responsibility is assigned through spatial positioning: the speaker bears accountability before observers whose passive attention constitutes tacit validation of process legitimacy.",
+      "alternative_interpretations": [
+        "The seated individuals may be disengaged or multitasking; gaze direction does not guarantee active listening."
+      ],
+      "limitations": [
+        "Facial expressions and eye direction are ambiguous; some faces are partially obscured or out of focus."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count error: five people described but only four visible; one person misclassified as male; courtroom elements misidentified."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:39:29.748474+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d9783e15-a999-947f-8779-931fbfd8ed3a",
+      "usage": {
+        "prompt_tokens": 737,
+        "completion_tokens": 1020,
+        "total_tokens": 1757,
+        "completion_tokens_details": {
+          "text_tokens": 1020
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 230,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907013916d7f1a9a82d894b76",
+      "usage": {
+        "completion_tokens": 942,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1901,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2843
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

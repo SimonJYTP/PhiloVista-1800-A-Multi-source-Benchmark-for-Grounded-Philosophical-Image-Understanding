@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0084",
+  "sample_id": "PHL1800_HL_0464",
+  "file_name": "PHL1800_HL_0464.png",
+  "batch_id": "B004",
+  "position_in_batch": 25,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a military-style dump truck unloading material onto a road under construction, with workers and equipment nearby",
+  "captions": {
+    "scene": [
+      "A black-and-white photograph of a paved road under construction in a tropical setting with palm trees and low vegetation on the left side.",
+      "Three men stand near the rear of a large dump truck; two more are visible further down the road near a steamroller.",
+      "The road surface appears freshly laid with dark asphalt or bitumen, and the sky is bright with no visible clouds."
+    ],
+    "action": [
+      "The dump truck’s bed is raised at an angle, suggesting it is actively dumping or has just dumped paving material onto the roadbed.",
+      "One man stands on the truck’s rear platform holding a tool; another stands beside him; a third man stands on the ground beside the truck’s rear wheels.",
+      "Two men stand near the steamroller in the distance, one on the machine and one beside it."
+    ],
+    "rationale": [
+      "The raised dump bed and visible dark material trailing from its rear indicate material discharge, though the exact moment of release is not captured.",
+      "The presence of multiple workers positioned around the truck and roller suggests coordinated labor, but their specific roles cannot be confirmed beyond posture and proximity.",
+      "The text overlay identifies the location as Guam and date as 23 January 1945, but this information is external to the visual scene and thus not used for action inference alone."
+    ],
+    "object": [
+      "A four-wheel-drive military-style dump truck with a high cab, large front grille, and open rear dump bed tilted upward at approximately 45 degrees.",
+      "Five distinct human figures are visible: three clustered near the truck’s rear (one on the platform, two on ground), and two near the steamroller farther down the road.",
+      "A steamroller with a large front drum and smaller rear wheels is positioned on the road surface about 20 meters behind the dump truck.",
+      "Palm trees with fronded canopies appear on the left edge of the frame, partially obscuring background foliage.",
+      "A second truck is visible on the far right edge of the image, showing its front end."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "high",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0084_P1",
+      "visual_anchors": [
+        "dump truck discharging material",
+        "workers standing in formation near machinery",
+        "freshly laid dark pavement"
+      ],
+      "symbolic_mapping": [
+        "the dump truck as instrument of transformation of terrain",
+        "coordinated labor as enactment of collective purpose"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "social_existence"
+      ],
+      "interpretation": "The image embodies the interdependence of human labor and mechanical agency in reshaping environment—a concrete instantiation of how social existence is materially constructed through shared technical effort.",
+      "alternative_interpretations": [
+        "It may simply document routine infrastructure work without symbolic intent, emphasizing utility over meaning."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or signage convey intentionality or ideology; interpretation relies on assumed cultural context of postwar reconstruction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0084_P2",
+      "visual_anchors": [
+        "black-and-white photographic medium",
+        "date stamp '23 JANUARY 1945'",
+        "military-style vehicle design"
+      ],
+      "symbolic_mapping": [
+        "monochrome rendering as temporal distancing",
+        "precise dating as assertion of historical record"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "knowledge_truth"
+      ],
+      "interpretation": "The photograph functions as an epistemic artifact: its dated inscription anchors a transient act of construction within a linear chronology, asserting truth through documentation while simultaneously evoking the mortality of the moment captured.",
+      "alternative_interpretations": [
+        "The date may serve administrative cataloging rather than philosophical reflection; the monochrome is a technical constraint, not aesthetic choice."
+      ],
+      "limitations": [
+        "The photographer’s intent and archival purpose are not visually evident; the date could be added later."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0084_P3",
+      "visual_anchors": [
+        "men positioned asymmetrically around machinery",
+        "no visible hierarchy markers like uniforms or insignia",
+        "shared focus on road surface"
+      ],
+      "symbolic_mapping": [
+        "spatial arrangement implying functional equality",
+        "absence of distinguishing attire suggesting role-based rather than status-based identity"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The visual anonymity of the workers—lacking distinguishing dress or posture—suggests identity here is constituted through task and location rather than personal appearance, framing labor as a shared journey defined by collective movement along the road.",
+      "alternative_interpretations": [
+        "Uniformity may reflect standard issue clothing or practical necessity, not philosophical stance on identity."
+      ],
+      "limitations": [
+        "Clothing details are indistinct due to resolution and distance; no faces are clearly visible to assess individuality."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people near the steamroller: two men are visible near the steamroller, not one standing on it and one walking with a tool; the second man near the steamroller is standing, not walking with a tool. The object description of the second vehicle is inaccurate: it is a truck, not partially visible with only a front wheel and chassis—its front is visible, not just a wheel."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:59:04.044776+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ef7b31d9-6e6b-9f04-81a4-0e803fa2d1e4",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1100,
+        "total_tokens": 1909,
+        "completion_tokens_details": {
+          "text_tokens": 1100
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907015808ee1a8a5dae1746f7",
+      "usage": {
+        "completion_tokens": 1019,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2097,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3116
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

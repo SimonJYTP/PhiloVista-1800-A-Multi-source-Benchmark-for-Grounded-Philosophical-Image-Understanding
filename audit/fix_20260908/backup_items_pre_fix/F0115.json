@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0115",
+  "sample_id": "PHL1800_HL_0120",
+  "file_name": "PHL1800_HL_0120.png",
+  "batch_id": "B005",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a male tennis player in white attire mid-swing",
+  "captions": {
+    "scene": [
+      "A grass tennis court with white boundary lines and a green tarp barrier separating the court from spectators.",
+      "Spectators seated in tiered stadium-style seating behind a low green wall; some wear hats and sunglasses.",
+      "A yellow tennis ball is airborne near the racket head, slightly above the net height."
+    ],
+    "action": [
+      "The player extends his right arm forward holding a tennis racket, making contact or near-contact with the ball.",
+      "His left leg is bent and lifted off the ground while his right foot remains planted, indicating dynamic motion.",
+      "He wears a white headband, wristbands, and a focused gaze directed toward the ball."
+    ],
+    "rationale": [
+      "The player’s body posture and racket orientation suggest a forehand stroke rather than a serve or volley, based on torso rotation and arm extension.",
+      "The presence of a green tarp and grass surface strongly indicates a traditional outdoor grass-court venue, though the specific tournament is not identifiable.",
+      "Spectator attire (hats, light clothing) and visible shadows imply daytime outdoor lighting, but exact time of day cannot be determined from shadows alone."
+    ],
+    "object": [
+      "A male tennis player wears a white short-sleeved shirt, white shorts with side stripes, white socks, and white athletic shoes with green accents.",
+      "The tennis racket has a dark frame with a blue grip and a visible string pattern; the ball is bright yellow and spherical.",
+      "A green vinyl tarp lies folded along the base of the spectator barrier, secured with yellow straps and metal buckles.",
+      "In the background, eight distinct spectators are visible: three in the front row, four behind them, and one partially visible on the far right.",
+      "A wooden structure with painted alphanumeric markings '13' and 'B' appears on the left side behind the barrier; the text is legible but context is unknown."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0115_P1",
+      "visual_anchors": [
+        "player’s focused gaze",
+        "racket-ball proximity",
+        "body tension"
+      ],
+      "symbolic_mapping": [
+        "the instant of contact as a metaphor for decisive action",
+        "physical constraint of the swing path representing bounded agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The image captures a moment where intention converges with physical law—the player’s choice to strike is realized only within the constraints of biomechanics and timing, illustrating how freedom manifests through disciplined limitation.",
+      "alternative_interpretations": [
+        "It is simply a sports photograph documenting a routine stroke during a match, with no deeper meaning intended or required."
+      ],
+      "limitations": [
+        "No facial expression beyond concentration is discernible; emotional or cognitive states are inaccessible."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0115_P2",
+      "visual_anchors": [
+        "green tarp barrier",
+        "spectator separation",
+        "white court lines"
+      ],
+      "symbolic_mapping": [
+        "the barrier as social demarcation between performer and audience",
+        "lines as imposed order on natural grass"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The structured division between athlete and observers—enforced by physical barriers and spatial hierarchy—reflects how social roles are maintained through material arrangements that regulate access and attention.",
+      "alternative_interpretations": [
+        "The tarp is purely functional, protecting equipment or court edges; its presence does not imply social commentary."
+      ],
+      "limitations": [
+        "The tarp’s purpose is not stated; its symbolic role is inferred rather than evidenced."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0115_P3",
+      "visual_anchors": [
+        "yellow tennis ball in motion",
+        "shadow cast on grass",
+        "static spectators"
+      ],
+      "symbolic_mapping": [
+        "the ball’s trajectory as transient event against enduring setting",
+        "shadow as ephemeral trace of presence"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "identity_appearance"
+      ],
+      "interpretation": "The fleeting visibility of the ball mid-flight, contrasted with the stable identities of spectators and court, underscores how individual moments of action dissolve into continuity—highlighting identity as performative and temporally bounded.",
+      "alternative_interpretations": [
+        "The shadow and ball position are standard consequences of sunlight and physics, not symbolic devices."
+      ],
+      "limitations": [
+        "No temporal sequence is shown; the ‘fleeting’ nature is projected from a single frame."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The object caption incorrectly states 'at least nine distinct spectators'—the image shows 8 visible spectators, not 9."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:02:03.897967+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-74f46748-2d3c-93d3-b141-35927b0e9dd7",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1003,
+        "total_tokens": 1772,
+        "completion_tokens_details": {
+          "text_tokens": 1003
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070201500f3c75e55a244be0",
+      "usage": {
+        "completion_tokens": 973,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1936,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2909
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0689",
+  "sample_id": "PHL1800_HAIV_0171",
+  "file_name": "PHL1800_HAIV_0171.png",
+  "batch_id": "B016",
+  "position_in_batch": 4,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "two human figures in a stylized illustration",
+  "captions": {
+    "scene": [
+      "A light teal background with wavy black lines suggesting motion or air currents.",
+      "A raised wooden platform with pink top surface supports the standing figure.",
+      "Multiple yellow dollar signs and currency symbols float in the upper-left quadrant."
+    ],
+    "action": [
+      "The standing figure raises both arms upward, mouth open wide, wearing a crown-like headpiece and a red shirt with purple text.",
+      "The lower figure extends both arms upward toward the floating symbols, head tilted back, wearing a pink striped headwrap and blue sleeves.",
+      "The standing figure’s right arm is raised, with a brown hand visible above the shoulder, palm facing down, fingers spread."
+    ],
+    "rationale": [
+      "The floating symbols are all currency-related (dollar signs, cent signs, peso-like symbols), indicating a financial theme; however, no transaction is depicted.",
+      "The standing figure wears a patch on the left sleeve with illegible text, suggesting institutional or group affiliation, but the text is unreadable.",
+      "The crown-like headpiece and raised posture suggest elevated status, but no explicit hierarchy or authority symbols beyond the crown are present."
+    ],
+    "object": [
+      "The standing figure wears a red long-sleeved shirt with the word 'DANO' in purple capital letters across the chest.",
+      "The standing figure wears yellow-and-black horizontally striped pants and dark brown shoes with orange soles.",
+      "The lower figure wears a pink top over a blue long-sleeved shirt and a pink-and-white vertically striped headwrap around the head.",
+      "A large yellow dollar sign dominates the lower-left midground, with smaller yellow currency symbols scattered above it.",
+      "A yellow arrow points upward in the top-left corner, separate from the currency symbols."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0689_P1",
+      "visual_anchors": [
+        "red shirt with 'DANO'",
+        "crown-like headpiece",
+        "raised arms of standing figure"
+      ],
+      "symbolic_mapping": [
+        "crown → symbolic authority",
+        "raised arms → assertion of dominance or celebration"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The visual contrast between the elevated, crowned figure and the reaching figure suggests a dynamic of social stratification where symbolic power (crown, platform, name-label) mediates access to economic symbols (dollars).",
+      "alternative_interpretations": [
+        "The scene may depict a performance or ritual where both figures participate in a shared symbolic act, not necessarily hierarchical."
+      ],
+      "limitations": [
+        "No facial expressions convey intent; the crown is stylized and could be decorative rather than authoritative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0689_P2",
+      "visual_anchors": [
+        "floating dollar signs",
+        "wavy black lines",
+        "upward-pointing arrow"
+      ],
+      "symbolic_mapping": [
+        "floating money → abstraction of value",
+        "wavy lines → instability or flow"
+      ],
+      "concept_ids": [
+        "freedom_constraint",
+        "knowledge_truth"
+      ],
+      "interpretation": "The unanchored, airborne currency symbols amid undulating lines imply that economic value is perceived as volatile and detached from grounded reality, raising questions about the truth-status of monetary representation.",
+      "alternative_interpretations": [
+        "The symbols may simply represent abundance or windfall without commentary on epistemology or constraint."
+      ],
+      "limitations": [
+        "No scale, origin, or destination is shown for the symbols; their motion is implied but not directional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0689_P3",
+      "visual_anchors": [
+        "lower figure’s outstretched hands",
+        "pink striped headwrap",
+        "shared color palette (yellow, pink, blue)"
+      ],
+      "symbolic_mapping": [
+        "outstretched hands → desire or supplication",
+        "shared colors → potential connection despite positioning"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The lower figure’s appearance (headwrap, posture) contrasts with the standing figure’s attire, yet shared hues suggest interdependence; this visual tension reflects how identity is shaped through relational positioning rather than isolated traits.",
+      "alternative_interpretations": [
+        "The color similarity may be purely aesthetic, with no intended relational meaning."
+      ],
+      "limitations": [
+        "No eye contact, gesture reciprocity, or shared gaze confirms relational intent."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The candidate incorrectly describes a 'crouching figure' (the lower figure is standing, not crouching); the 'small brown hand' is not a separate person but part of the standing figure's raised arm; the 'yellow-and-brown striped pants' should be 'yellow-and-black striped pants'; the 'pink pleated garment' is a pink top, not a pleated garment; the 'pink-and-white vertically striped scarf' is a pink-and-white vertically striped headwrap, not a scarf."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:08:31.658576+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-87f04dbc-8833-9644-9eca-d8996a729ab6",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 976,
+        "total_tokens": 2509,
+        "completion_tokens_details": {
+          "text_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070308001364da8a1bfc4056",
+      "usage": {
+        "completion_tokens": 940,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2937,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3877
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

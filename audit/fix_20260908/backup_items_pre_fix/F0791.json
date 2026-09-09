@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0791",
+  "sample_id": "PHL1800_HL_0246",
+  "file_name": "PHL1800_HL_0246.png",
+  "batch_id": "B018",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "three mounted police officers on horseback in an urban plaza",
+  "captions": {
+    "scene": [
+      "A sunlit city square with a curved multi-story building bearing the sign 'SOKOS' in large capital letters.",
+      "Paved ground with rectangular stone tiles and asphalt patches; bare tree branches overhead; traffic signals and a red-and-blue no-parking sign visible.",
+      "Pedestrians walking in the background near storefronts; a black car partially visible behind the horses."
+    ],
+    "action": [
+      "Three officers sit upright on horses, facing roughly forward-left; all wear high-visibility yellow vests over dark uniforms and helmets.",
+      "The leftmost horse stands still with head lowered; the middle horse has its head raised and ears alert; the rightmost horse lifts its left foreleg mid-step (movement is subtle).",
+      "All three horses have white lower legs (socks) and brown coats; tails are long and flowing; riders hold reins but no visible weapons or equipment beyond standard gear."
+    ],
+    "rationale": [
+      "The officers’ identical vests and posture suggest coordinated public duty rather than casual riding; however, no explicit insignia confirms agency affiliation.",
+      "The horses’ stance—two stationary, one stepping—indicates controlled movement, not alarm or disorder; yet no crowd or incident is visible to confirm context.",
+      "The building’s signage ('SOKOS') identifies a commercial entity, but without external knowledge, its function (hotel, department store, etc.) remains indeterminate."
+    ],
+    "object": [
+      "Three adult humans are seated on horseback, each wearing a fluorescent yellow safety vest with reflective stripes, dark trousers, and a matte black helmet.",
+      "Three horses are present: all chestnut-brown with white distal leg markings; all have manes trimmed short and tails unbraided.",
+      "A circular traffic sign with a red border, blue center, and red diagonal cross is mounted on a pole to the right of the riders.",
+      "The building facade features rows of rectangular windows and a prominent horizontal sign reading 'SOKOS' in sans-serif uppercase letters; smaller text below is unreadable.",
+      "At least three pedestrians are visible in the background: two walking leftward near a lamppost, one near a bus shelter, and others near the far left edge (count is approximate due to distance)."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0791_P1",
+      "visual_anchors": [
+        "three uniformed riders",
+        "identical high-visibility vests",
+        "horses aligned in formation"
+      ],
+      "symbolic_mapping": [
+        "uniformity as institutional presence",
+        "mounted patrol as historical continuity of authority"
+      ],
+      "concept_ids": [
+        "power_conflict",
+        "social_existence"
+      ],
+      "interpretation": "The synchronized appearance of the officers embodies the visible infrastructure of social order—authority made legible through standardized attire and disciplined positioning, suggesting governance as performance rather than mere coercion.",
+      "alternative_interpretations": [
+        "This may simply reflect routine patrol logistics: horses allow mobility in pedestrian zones where vehicles cannot go."
+      ],
+      "limitations": [
+        "No visible interaction with civilians or signs of enforcement activity prevent confirming intent or effect."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0791_P2",
+      "visual_anchors": [
+        "bare tree branches against clear sky",
+        "long shadows cast eastward",
+        "sunlight illuminating only one side of riders"
+      ],
+      "symbolic_mapping": [
+        "shadows as temporal markers",
+        "diurnal light as cyclical inevitability"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The sharp, elongated shadows indicate late afternoon, framing the scene within a finite daily arc—highlighting how institutional routines unfold within natural time, indifferent to human agendas.",
+      "alternative_interpretations": [
+        "The lighting is merely a consequence of the sun’s position at that moment, with no symbolic import intended by the subjects."
+      ],
+      "limitations": [
+        "No clock, calendar, or aging indicators confirm temporal depth beyond immediate daylight conditions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0791_P3",
+      "visual_anchors": [
+        "pedestrians walking independently in background",
+        "riders occupying central pavement space",
+        "no direct eye contact or engagement between groups"
+      ],
+      "symbolic_mapping": [
+        "spatial coexistence without interaction as modern anonymity",
+        "shared public space as neutral ground for parallel lives"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The simultaneous presence of autonomous citizens and regulated authority in shared space illustrates the paradox of liberal public life: freedom manifests as non-interference, while constraint operates invisibly through normalized surveillance and spatial hierarchy.",
+      "alternative_interpretations": [
+        "People ignore each other because they are preoccupied or accustomed to urban density—not due to philosophical tension."
+      ],
+      "limitations": [
+        "Facial expressions and direction of gaze are indistinct; no gestures or proximity data confirm relational dynamics."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count error: six pedestrians miscounted as at least six (actual visible pedestrians are fewer and less distinct); horse color description inaccurate (all horses appear chestnut-brown, not two chestnut-brown and one slightly darker); action description overstates horse movement (rightmost horse’s leg position is not clearly mid-step)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:17:06.127086+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-f4248f50-4ef9-924a-97ac-45d184ba24b9",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1078,
+        "total_tokens": 1887,
+        "completion_tokens_details": {
+          "text_tokens": 1078
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031642260b1acee82544f7",
+      "usage": {
+        "completion_tokens": 1014,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2059,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3073
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

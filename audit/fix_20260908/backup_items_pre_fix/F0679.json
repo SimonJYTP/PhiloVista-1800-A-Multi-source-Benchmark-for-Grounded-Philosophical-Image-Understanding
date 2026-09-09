@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0679",
+  "sample_id": "PHL1800_HAIV_0060",
+  "file_name": "PHL1800_HAIV_0060.png",
+  "batch_id": "B015",
+  "position_in_batch": 45,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a bald figure in light blue shirt and black pants, standing with head bowed in foreground",
+  "captions": {
+    "scene": [
+      "A stylized interior space with a white floor marked by horizontal black lines receding into darkness; multiple indistinct human figures populate the background.",
+      "Figures are rendered in monochrome gray tones except for one central figure with colored clothing (light blue shirt, black pants with blue side stripes, orange shoes) and a bald head.",
+      "The background contains 10 other figures: three on the left (one full-body front-facing silhouette, two rear-facing), one mid-left standing with a knee-length dress and bare feet, two mid-center (one draped, one standing), and four on the right (three rear-facing, one front-facing)."
+    ],
+    "action": [
+      "The foreground figure stands upright but with torso bent forward and head lowered, hands hanging loosely at sides.",
+      "Several background figures stand still with backs turned toward the viewer; one mid-left figure stands with one leg raised (not seated).",
+      "No motion blur or dynamic posture is visible; all figures appear static in pose."
+    ],
+    "rationale": [
+      "The foreground figure’s distinct coloration and central placement suggest visual emphasis, though no explicit hierarchy is depicted.",
+      "Horizontal floor lines imply perspective depth, but their uniform spacing and lack of vanishing point convergence introduce ambiguity about spatial scale.",
+      "Figure outlines are simplified and non-anatomical (e.g., featureless heads, blocky limbs), indicating intentional stylization rather than realism."
+    ],
+    "object": [
+      "The foreground figure has a bald, peach-colored head, a light blue long-sleeved shirt with black vertical seams, black trousers with two vertical light blue stripes down each leg, and orange-brown shoes with black soles.",
+      "The floor consists of evenly spaced horizontal black lines on a white ground plane, extending from foreground to background without distortion.",
+      "The background contains 10 figures: three on the left (one full-body front-facing silhouette, two rear-facing), one mid-left standing with a knee-length dress and bare feet, two mid-center (one draped, one standing), and four on the right (three rear-facing, one front-facing).",
+      "All background figures wear monochrome gray clothing with black outlines and black footwear; none show facial features or discernible accessories.",
+      "One mid-left background figure wears a knee-length dress and stands barefoot, positioned slightly left of center."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0679_P1",
+      "visual_anchors": [
+        "bald foreground figure with lowered head",
+        "monochrome crowd facing away",
+        "horizontal floor lines suggesting directionality"
+      ],
+      "symbolic_mapping": [
+        "lowered head → withdrawal or introspection",
+        "uniform crowd → social anonymity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual contrast between the uniquely colored, introspective individual and the undifferentiated mass suggests a tension between personal identity and collective conformity within shared space.",
+      "alternative_interpretations": [
+        "The image may depict a staged illustration of spatial arrangement or a diagrammatic representation of group dynamics without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions, gestures, or contextual signage confirm intentional symbolism; color differentiation could be purely compositional."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0679_P2",
+      "visual_anchors": [
+        "horizontal floor lines receding into darkness",
+        "static postures of all figures",
+        "absence of horizon or ceiling"
+      ],
+      "symbolic_mapping": [
+        "receding lines → temporal progression or inevitability",
+        "stillness → suspension or waiting"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The linear floor pattern leading into obscurity, combined with uniformly motionless figures, evokes a sense of suspended time or an unresolved passage—suggesting existential waiting without agency.",
+      "alternative_interpretations": [
+        "The lines may simply represent floorboards or a drawing surface, and stillness may reflect artistic convention rather than thematic meaning."
+      ],
+      "limitations": [
+        "Perspective is inconsistent (lines remain horizontal rather than converging), weakening the inference of depth or forward movement."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0679_P3",
+      "visual_anchors": [
+        "featureless gray heads",
+        "black outlines separating figures",
+        "foreground figure’s partial coloration"
+      ],
+      "symbolic_mapping": [
+        "lack of facial detail → erasure of individuality",
+        "outline separation → social boundaries"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The repeated use of blank, identical heads alongside rigid outlines implies enforced uniformity and relational distance, framing social existence as structured by constraint rather than connection.",
+      "alternative_interpretations": [
+        "The style may derive from graphic illustration conventions where minimalism serves clarity, not commentary."
+      ],
+      "limitations": [
+        "No interaction, gaze direction, or proximity variation confirms relational intent; isolation may be compositional rather than conceptual."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of background figures (candidate states 'at least nine' but image shows 10 total background figures including the seated one); 'seated on a low stool or bench' is unsupported (figure is standing with one leg raised); 'one wearing a draped garment' is vague (the figure wears a knee-length dress, not a draped garment); 'parallel floor lines' are horizontal, not parallel in perspective; 'three on left' miscounts (left side has 3 figures: 1 full-body front-facing, 2 rear-facing); 'two mid-center' miscounts (mid-center has 2 figures: 1 draped, 1 standing); 'three right-side rear-facing' miscounts (right side has 3 figures: 2 rear-facing, 1 front-facing)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:07:36.013455+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d05673bd-5854-9c0b-8d6c-4a4cdfb77675",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 1057,
+        "total_tokens": 2590,
+        "completion_tokens_details": {
+          "text_tokens": 1057
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070307000764fa95cbb147f1",
+      "usage": {
+        "completion_tokens": 1214,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 3017,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 4231
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

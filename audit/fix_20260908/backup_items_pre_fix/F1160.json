@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1160",
+  "sample_id": "PHL1800_HL_0129",
+  "file_name": "PHL1800_HL_0129.png",
+  "batch_id": "B024",
+  "position_in_batch": 50,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a woman in an orange high-visibility vest holding a red umbrella",
+  "captions": {
+    "scene": [
+      "A crowd of people outdoors under multiple colorful umbrellas, including red, yellow, blue, and green.",
+      "The background shows blurred green foliage and indistinct figures, suggesting an outdoor public gathering.",
+      "Several individuals wear orange high-visibility vests; one vest displays partial text reading 'LEAGUE OF... DIGNITY ... UK'."
+    ],
+    "action": [
+      "The central woman holds a red umbrella with her right hand and looks downward with a neutral expression.",
+      "A woman to the left gestures with her right hand while wearing an orange vest.",
+      "A man on the right holds a red umbrella and stands facing forward, partially obscured by the central figure."
+    ],
+    "rationale": [
+      "The presence of multiple umbrellas and wet-looking ground suggests recent or ongoing rain, though no raindrops are visible.",
+      "The orange vests and partial text suggest organized participation, possibly in a campaign or demonstration, but the exact nature is not confirmed by visual evidence alone.",
+      "Facial expressions are observable but cannot reliably indicate internal states such as emotion or intent; only posture and gaze direction are directly visible."
+    ],
+    "object": [
+      "A red umbrella with white text reading 'Refugees!' is held by the central woman; additional white text below is partially legible as 'Protect Refugees!'.",
+      "The central woman has reddish-blonde hair pulled back, wears glasses pushed up onto her head, and a dark long-sleeved shirt beneath an orange high-visibility vest.",
+      "To the left, a woman with dark hair and an orange vest is visible from the chest up, gesturing with her right hand.",
+      "To the right, a man with short dark hair, wearing a patterned scarf and a dark jacket with a small logo on the left chest, holds a red umbrella.",
+      "At least five distinct individuals are visible: central woman, left gesturing woman, right man, a person behind her in pink/red jacket, and a person in blue behind left woman."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1160_P1",
+      "visual_anchors": [
+        "orange high-visibility vest",
+        "red umbrella with 'Refugees!' text",
+        "multiple people under shared umbrellas"
+      ],
+      "symbolic_mapping": [
+        "vest as marker of organized civic role",
+        "umbrella as symbol of protection or solidarity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "ethics_responsibility"
+      ],
+      "interpretation": "The image visually enacts a collective stance where visibility (vest) and symbolic shelter (umbrella) co-constitute a public claim to moral responsibility toward displaced persons.",
+      "alternative_interpretations": [
+        "The scene may simply depict routine logistical support at an outdoor event, with text serving only informational or branding purposes."
+      ],
+      "limitations": [
+        "No facial expressions or interactions confirm intentionality or consensus; the text is partial and context-independent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1160_P2",
+      "visual_anchors": [
+        "woman’s downward gaze",
+        "glasses on forehead",
+        "hand gripping umbrella shaft"
+      ],
+      "symbolic_mapping": [
+        "downward gaze as contemplation or fatigue",
+        "gripping as commitment or tension"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "The subject’s appearance—partially formalized by vest and accessory placement—suggests a temporary identity adopted for participation, implying a journey defined by deliberate alignment with a cause rather than fixed status.",
+      "alternative_interpretations": [
+        "The posture and object handling may reflect practical concerns like wind resistance or umbrella stability, not symbolic meaning."
+      ],
+      "limitations": [
+        "Gaze direction alone does not establish introspection; accessory placement could be incidental."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1160_P3",
+      "visual_anchors": [
+        "crowd under overlapping umbrellas",
+        "color variation among umbrellas",
+        "shared spatial proximity"
+      ],
+      "symbolic_mapping": [
+        "umbrella overlap as interdependence",
+        "color diversity as pluralism within unity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The spatial arrangement implies constrained freedom—individuals choose to gather under shared cover, yet remain physically bounded by weather and collective formation—highlighting how social existence mediates autonomy through mutual accommodation.",
+      "alternative_interpretations": [
+        "Umbrella colors and positions may result from random distribution or vendor availability, not intentional symbolism."
+      ],
+      "limitations": [
+        "No evidence confirms coordinated positioning; overlap may be accidental due to crowd density."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people: candidate states 'at least six distinct individuals' but only five are visually distinguishable (central woman, left gesturing woman, right man, person behind her in pink/red jacket, person in blue behind left woman); yellow umbrella far left is held by the left gesturing woman, not a separate individual."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:56:54.263561+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-cf0ecf81-81be-949c-a130-b5a7b8505a6c",
+      "usage": {
+        "prompt_tokens": 689,
+        "completion_tokens": 1041,
+        "total_tokens": 1730,
+        "completion_tokens_details": {
+          "text_tokens": 1041
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 182,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907035636ca70f987ddac40ca",
+      "usage": {
+        "completion_tokens": 960,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1880,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2840
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

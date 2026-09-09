@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F1491",
+  "sample_id": "PHL1800_HL_0441",
+  "file_name": "PHL1800_HL_0441.png",
+  "batch_id": "B031",
+  "position_in_batch": 7,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a group of formally dressed adolescents standing in rows behind empty blue chairs",
+  "captions": {
+    "scene": [
+      "An outdoor gathering under leafy trees with numerous people, many in dark suits and ties, arranged in loose rows behind rows of empty blue plastic chairs.",
+      "A wooded area with dappled sunlight; foreground dominated by orderly rows of unoccupied blue chairs, midground occupied by standing youths in formal attire.",
+      "A mixed-age assembly outdoors: adolescents in front wearing matching dark jackets and patterned ties, adults visible in background among trees."
+    ],
+    "action": [
+      "Adolescents stand upright and still, facing forward, with hands mostly at sides or clasped in front.",
+      "Some individuals look slightly away from the camera; none are seated, speaking, or gesturing actively.",
+      "Adults in the background appear to be observing or conversing quietly."
+    ],
+    "rationale": [
+      "The uniformity of dress (dark jackets, light shirts, ties) and posture suggests a coordinated event such as a graduation, ceremony, or formal school assembly.",
+      "The presence of empty chairs in the foreground implies the group is awaiting seating or has just risen for a ritual moment.",
+      "The outdoor setting with mature trees and natural lighting indicates the event is not indoors, though no signage confirms purpose."
+    ],
+    "object": [
+      "There are approximately 40 visible individuals in the image: 25 adolescents in the central and front clusters, and 15 adults or older teens in the background and periphery.",
+      "All blue chairs in the foreground are identical plastic models with curved backs and metal frames; 15 are fully or partially visible in neat rows.",
+      "Most adolescents wear dark single-breasted jackets, white or light-colored collared shirts, and neckties with diagonal stripes, solid colors, or small patterns; tie colors include red, navy, yellow, and green.",
+      "One adolescent in the center wears a bright yellow bowtie instead of a necktie, distinguishing him visually from peers.",
+      "No folding chairs made of light wood and canvas are visible on the right side; all chairs are blue plastic."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1491_P1",
+      "visual_anchors": [
+        "identical blue chairs",
+        "uniform jackets",
+        "standing posture"
+      ],
+      "symbolic_mapping": [
+        "empty chairs represent potential roles awaiting assignment",
+        "uniform attire signifies subsumption of individuality into collective identity"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The alignment of bodies behind vacant seats evokes the tension between institutional expectation and individual agency—each person occupies a designated place yet remains physically unseated, poised between conformity and self-determination.",
+      "alternative_interpretations": [
+        "This may simply reflect logistical staging before a photo or speech, with no symbolic intent."
+      ],
+      "limitations": [
+        "No textual context or facial expressions confirm intentional symbolism; posture could be dictated by photographer instructions."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1491_P2",
+      "visual_anchors": [
+        "one yellow bowtie amid striped ties",
+        "slight head turns away from camera",
+        "varied tie patterns"
+      ],
+      "symbolic_mapping": [
+        "the bowtie marks deviation within enforced uniformity",
+        "divergent gazes suggest internal divergence despite external sameness"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "choice_journey"
+      ],
+      "interpretation": "Within a structure demanding visual homogeneity, minor deviations—like a bowtie or an off-axis gaze—signal nascent assertion of selfhood, illustrating how identity emerges through subtle resistance to prescribed appearance.",
+      "alternative_interpretations": [
+        "The bowtie may be a requirement for a specific role (e.g., valedictorian), not personal choice."
+      ],
+      "limitations": [
+        "The wearer’s expression is neutral and frontal; no evidence confirms intentionality behind the bowtie or gaze direction."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1491_P3",
+      "visual_anchors": [
+        "rows of empty chairs",
+        "standing adolescents",
+        "background adults observing"
+      ],
+      "symbolic_mapping": [
+        "chairs as placeholders for future social positions",
+        "standing as liminal state between preparation and participation"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The scene captures a threshold moment where youth occupy space without yet occupying roles—the empty chairs embody futures not yet lived, underscoring the temporality of social becoming and the fragility of assumed continuity.",
+      "alternative_interpretations": [
+        "The chairs are merely arranged for seating order; their emptiness reflects timing, not metaphor."
+      ],
+      "limitations": [
+        "No clocks, calendars, or aging indicators confirm temporal themes; the event could be routine rather than transitional."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of visible individuals (32 vs. actual ~40+); inaccurate description of chair types (light wood/canvas folding chairs vs. blue plastic); unsupported claim of adults holding cameras/bags; overcounted blue chairs (19 vs. actual ~15)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T20:38:42.749793+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8f1adbb8-ce04-9fe9-8694-8fc07289446b",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 1055,
+        "total_tokens": 1824,
+        "completion_tokens_details": {
+          "text_tokens": 1055
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070438074c857f6c644f4106",
+      "usage": {
+        "completion_tokens": 1045,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1983,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3028
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

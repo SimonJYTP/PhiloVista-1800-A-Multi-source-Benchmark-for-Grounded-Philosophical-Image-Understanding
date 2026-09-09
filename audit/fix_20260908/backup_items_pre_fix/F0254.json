@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0254",
+  "sample_id": "PHL1800_HAIV_0512",
+  "file_name": "PHL1800_HAIV_0512.png",
+  "batch_id": "B007",
+  "position_in_batch": 36,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a central figure surrounded by eight other stylized human faces",
+  "captions": {
+    "scene": [
+      "A black-and-white ink drawing with heavy crosshatching and bold outlines, enclosed within an irregular oval border.",
+      "Nine distinct human heads are densely packed; one large head dominates the foreground, while eight smaller heads cluster behind and around it.",
+      "All figures exhibit exaggerated facial features—large eyes, distorted noses, and varied expressions—including some wearing round spectacles."
+    ],
+    "action": [
+      "The central figure’s mouth is open wide, with lines radiating outward suggesting vocalization or exhalation.",
+      "Multiple surrounding figures gaze toward the central figure, with eyes directed inward and mouths slightly open or smiling.",
+      "No figure is shown holding a hand near its mouth; all hands are not visible or not engaged in such an action."
+    ],
+    "rationale": [
+      "The central figure’s oversized head and forward placement suggest visual hierarchy, though no explicit narrative context confirms dominance.",
+      "The uniform monochrome medium and sketchy texture indicate intentional stylistic choice rather than photographic realism.",
+      "Facial distortions (e.g., elongated noses, mismatched eye sizes) imply caricature or expressive abstraction, not anatomical accuracy."
+    ],
+    "object": [
+      "The central figure has a large circular left eye, a small right eye partially obscured, a prominent ear, and a long curved nose ending in a dark dot.",
+      "Eight surrounding heads are individually distinguishable by hairline, eyewear, facial shape, or expression; none share identical features.",
+      "Two of the surrounding figures wear round-framed spectacles: one in upper center-right and one in lower right.",
+      "The figure at lower left has a wide-open mouth, visible teeth, and a sharply pointed nose; shading suggests depth but no background detail.",
+      "The oval boundary is uneven and hand-drawn, with thicker line weight at top and thinner at bottom, enclosing all figures without overlap beyond its edge."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "visual_support"
+  ],
+  "text_dependency": "none",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0254_P1",
+      "visual_anchors": [
+        "central figure’s oversized head",
+        "eight surrounding gazes",
+        "radiating lines from mouth"
+      ],
+      "symbolic_mapping": [
+        "central figure as locus of speech or authority",
+        "surrounding faces as audience or collective perception"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "knowledge_truth"
+      ],
+      "interpretation": "The composition visually enacts the idea that truth or meaning emerges through collective attention to a speaker, where social recognition sustains the speaker’s epistemic presence.",
+      "alternative_interpretations": [
+        "It may simply depict a crowded conversation or comic ensemble without philosophical intent."
+      ],
+      "limitations": [
+        "No textual labels or contextual cues confirm intended symbolism; facial expressions are ambiguous and non-normative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0254_P2",
+      "visual_anchors": [
+        "exaggerated eyes across multiple figures",
+        "lack of pupils in some eyes",
+        "varied gaze directions"
+      ],
+      "symbolic_mapping": [
+        "eyes as sites of observation",
+        "inconsistent focus suggesting fragmented perception"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "knowledge_truth"
+      ],
+      "interpretation": "The inconsistent rendering of eyes implies that identity and truth are unstable when mediated through multiple subjective appearances, each distorting reality differently.",
+      "alternative_interpretations": [
+        "The eye variations may reflect artistic license for comedic effect or stylistic unity rather than conceptual critique."
+      ],
+      "limitations": [
+        "Eye differences could stem from drawing technique rather than deliberate semiotic variation."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0254_P3",
+      "visual_anchors": [
+        "dense clustering of heads",
+        "shared oval frame",
+        "no individual space between figures"
+      ],
+      "symbolic_mapping": [
+        "physical proximity as metaphor for social entanglement",
+        "frame as boundary of shared discourse"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "freedom_constraint"
+      ],
+      "interpretation": "The lack of negative space between figures visually embodies the constraint inherent in social existence, where individual autonomy is compressed within collective presence.",
+      "alternative_interpretations": [
+        "The crowding may represent a literal group portrait or theatrical scene without normative implications."
+      ],
+      "limitations": [
+        "The oval frame is decorative and does not clearly signify enclosure or limitation; spacing may be dictated by compositional balance."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "The target subject incorrectly states nine surrounding figures; there are eight. The object caption incorrectly claims three figures wear spectacles; there are two. The action caption incorrectly describes a figure holding a hand near its mouth; no such action is visible."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:26:02.262011+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-10f3f88e-63bc-9afa-9dbc-8863c00bf23f",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 960,
+        "total_tokens": 2493,
+        "completion_tokens_details": {
+          "text_tokens": 960
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1026,
+          "text_tokens": 507,
+          "cached_tokens": 1280
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907022541fe16f87f491346fc",
+      "usage": {
+        "completion_tokens": 867,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2919,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3786
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

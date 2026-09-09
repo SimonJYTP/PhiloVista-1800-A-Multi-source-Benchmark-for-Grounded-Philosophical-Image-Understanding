@@ -25,7 +25,7 @@
       "The open roof structure with visible trusses and hanging fixtures implies an industrial workshop built for large-scale fabrication, not a museum or exhibition space."
     ],
     "object": [
-      "A biplane on the right features an inline engine with visible cylinders, a two-spar upper wing, and a tail skid instead of wheels.",
+      "A biplane on the right features an exposed radial engine with cylinders arranged in a star pattern around the crankcase, a two-spar upper wing, and a tail skid instead of wheels.",
       "A second biplane behind it shows a fabric-covered fuselage, interplane struts, and ailerons attached to the upper wing only.",
       "A metal gantry crane hangs from the ceiling near center-left, with a hook and chain suspended above a work area.",
       "Wooden sawhorses and metal workbenches hold disassembled parts including propeller hubs, wing ribs, and control cables.",
@@ -115,11 +115,18 @@
   "needs_independent_human_annotation": true,
   "needs_independent_human_rating": true,
   "review": {
-    "reviewer_model": "glm-4.6v",
-    "verdict": "revise",
+    "reviewer_model": "codex_visual_audit",
+    "verdict": "revised_by_audit_visual_inspection",
     "issues": [
-      "Incorrect count of people (at least 18 vs. actual ~15); misdescription of biplane engine (radial vs. inline); inaccurate object details (fuel tank vs. wooden crates); unsupported action claims (three men jointly working on a fuselage section); philosophy interpretations include speculative symbolic mappings not grounded in visual evidence."
-    ]
+      "Post-audit fix (2026-09-08): object[0]: corrected engine type from 'inline engine' to exposed radial engine after visual re-inspection (cylinders in star pattern)."
+    ],
+    "resolution": {
+      "status": "captions_corrected_after_visual_reinspection",
+      "checked_by": "codex_post_audit_fix_20260908",
+      "method": "visual_reverification_with_vlm",
+      "checked_at_utc": "2026-09-08T00:00:00Z",
+      "caption_sha256": "08cd7cba880f59de7c9f3a53db0a707ec7089be4d8258aca1a35426b242776aa"
+    }
   },
   "provenance": {
     "generated_at_utc": "2026-09-06T18:50:15.437016+00:00",

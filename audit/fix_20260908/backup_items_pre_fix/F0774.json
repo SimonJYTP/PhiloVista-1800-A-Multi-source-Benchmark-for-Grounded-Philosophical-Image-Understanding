@@ -1,0 +1,163 @@
+{
+  "annotation_item_id": "F0774",
+  "sample_id": "PHL1800_HL_0267",
+  "file_name": "PHL1800_HL_0267.png",
+  "batch_id": "B017",
+  "position_in_batch": 35,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a formal procession with horse-drawn carriage and uniformed personnel",
+  "captions": {
+    "scene": [
+      "A black-and-white outdoor scene showing a ceremonial procession on a paved road lined with spectators behind metal barriers.",
+      "A large enclosed carriage pulled by two white horses is central, flanked by mounted guards in ceremonial uniforms and a Union Jack flag.",
+      "Three uniformed officers stand at attention in the foreground near a barrier; two wear peaked caps with insignia and white gloves."
+    ],
+    "action": [
+      "Two white horses are harnessed in tandem and moving forward, their legs captured mid-stride.",
+      "Two mounted figures in light-colored uniforms ride alongside the carriage, holding reins and maintaining formation.",
+      "At least six individuals in dark formal uniforms stand or walk near the procession: three in foreground, one near carriage rear, two on horseback left of carriage."
+    ],
+    "rationale": [
+      "The presence of a Union Jack flag, ceremonial uniforms, and a state-style carriage suggests an official or royal event, though no text confirms this.",
+      "The black-and-white medium and clothing style suggest mid-to-late 20th century, but exact date cannot be determined from visual evidence alone.",
+      "Spectators are visible behind barriers, indicating public access to the event, yet their expressions and identities are indistinct due to distance and resolution."
+    ],
+    "object": [
+      "A four-wheeled enclosed carriage with ornate metalwork, dark body, and glass windows is being drawn by two white horses in harness.",
+      "A large Union Jack flag hangs vertically from a pole attached to the left side of the carriage; its pattern is fully visible.",
+      "Three standing officers wear dark double-breasted jackets, peaked caps with badges, white gloves (two pairs visible), and trousers with stripes or piping.",
+      "Two riders on dark horses appear to the left of the carriage; both wear helmets with plumes and light-colored tunics with sashes.",
+      "A metal crowd-control barrier with horizontal rails runs across the lower third of the image, separating observers from the procession."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0774_P1",
+      "visual_anchors": [
+        "uniformed officers standing rigidly at attention",
+        "metal barrier separating them from spectators",
+        "identical posture across three officers"
+      ],
+      "symbolic_mapping": [
+        "rigid posture → institutional discipline",
+        "barrier → social demarcation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The enforced spatial separation and synchronized stillness of officers evoke the tension between collective order and individual agency within hierarchical structures.",
+      "alternative_interpretations": [
+        "The officers may simply be performing standard ceremonial protocol without symbolic intent."
+      ],
+      "limitations": [
+        "No facial expressions or contextual signage confirm intentional symbolism; posture could reflect routine training only."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0774_P2",
+      "visual_anchors": [
+        "white horses in precise harness formation",
+        "carriage wheels aligned parallel to road",
+        "riders maintaining fixed distances"
+      ],
+      "symbolic_mapping": [
+        "mechanical coordination of animals and vehicle → engineered continuity",
+        "repetition of motion → cyclical tradition"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "labor_technology"
+      ],
+      "interpretation": "The synchronized movement of living animals harnessed to a mechanical conveyance reflects humanity’s attempt to impose linear continuity upon biological impermanence.",
+      "alternative_interpretations": [
+        "This is purely functional equine transport for ceremony, with no philosophical implication intended."
+      ],
+      "limitations": [
+        "Horse gait and harness tension are not measurable; ‘precision’ is subjective interpretation of alignment."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0774_P3",
+      "visual_anchors": [
+        "Union Jack flag prominently displayed",
+        "officers wearing insignia-covered caps",
+        "spectators observing from behind barriers"
+      ],
+      "symbolic_mapping": [
+        "flag as visual signifier of collective identity",
+        "uniforms as erasure of individual appearance"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The visual dominance of national symbol and standardized attire suggests identity is subsumed into role, raising questions about selfhood within institutional representation.",
+      "alternative_interpretations": [
+        "Uniforms and flags serve practical identification and protocol purposes in state ceremonies."
+      ],
+      "limitations": [
+        "Insignia details are too small to read; no individual faces are clear enough to assess personal expression."
+      ],
+      "sufficiency": "plausible"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of horses pulling the central carriage (candidate states four, image shows two); inaccurate description of carriage type (candidate says open-top, image shows enclosed); mischaracterization of officer actions (candidate says one holds gloves, image shows two officers with gloves); overstatement of rider count near carriage rear (candidate says two, image shows one visible rider)"
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:15:42.198845+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-ca7ecc8c-5833-9eaa-89a5-0b45469f3fd3",
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 997,
+        "total_tokens": 1766,
+        "completion_tokens_details": {
+          "text_tokens": 997
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 262,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "2026090703151830e6902e92394d4e",
+      "usage": {
+        "completion_tokens": 1011,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1930,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2941
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

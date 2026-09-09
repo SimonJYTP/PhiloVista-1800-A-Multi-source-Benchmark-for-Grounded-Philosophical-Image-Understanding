@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F1202",
+  "sample_id": "PHL1800_HL_0022",
+  "file_name": "PHL1800_HL_0022.png",
+  "batch_id": "B002",
+  "position_in_batch": 12,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "soldiers and covered cargo on open freight wagons",
+  "captions": {
+    "scene": [
+      "A muddy, uneven railway track with displaced sleepers and scattered debris beside a line of open-top freight wagons.",
+      "Multiple soldiers in uniform stand or sit atop and alongside a train of freight wagons loaded with tarp-covered bundles.",
+      "An overcast sky above a flat, sparsely vegetated landscape with distant low structures."
+    ],
+    "action": [
+      "Several soldiers are standing upright on the wagon edges or sitting on cargo; one appears to be adjusting a tarp.",
+      "At least 10 distinct individuals are visible: eight on or near the wagons, two further back near the locomotive area.",
+      "The train is stationary, evidenced by lack of motion blur, fixed wheel positions, and men standing freely on wagons."
+    ],
+    "rationale": [
+      "The presence of military-style helmets and uniforms suggests organized personnel rather than civilians, though no insignia is legible.",
+      "The cargo is uniformly covered with heavy fabric, implying protection from weather or concealment, but content remains indeterminate.",
+      "The track damage (displaced sleepers, broken rails) indicates recent disruption or ongoing repair, but causation is not visible."
+    ],
+    "object": [
+      "At least 10 visible soldiers wear similar helmets and coats; eight are positioned along the right side of the train, two sit near the locomotive at left rear.",
+      "Multiple open-top freight wagons are coupled in a row, each bearing metal side panels with rivets and visible markings including 'LP.3045' and a 'V' symbol.",
+      "Tarp-covered loads rest on each wagon bed; the tarps appear coarse, dark, and loosely secured, with some folds revealing underlying bulk.",
+      "Railway sleepers lie askew and broken beside the track; no sleeper is propped vertically against a wagon wheel.",
+      "The locomotive front is partially visible behind the first wagon, showing a rounded cab roof and smokebox outline."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1202_P1",
+      "visual_anchors": [
+        "tarp-covered cargo",
+        "uniformed soldiers",
+        "damaged track"
+      ],
+      "symbolic_mapping": [
+        "covered cargo → obscured purpose or fate",
+        "damaged track → disrupted continuity"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "social_existence"
+      ],
+      "interpretation": "The image evokes the fragility of ordered systems—rail infrastructure and human coordination—against entropy, where covered loads suggest pending transition amid visible decay.",
+      "alternative_interpretations": [
+        "This may simply document logistical transport during routine operations, with track damage incidental and tarps purely functional."
+      ],
+      "limitations": [
+        "No labels identify cargo type, destination, or unit affiliation; thus symbolic readings remain speculative."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1202_P2",
+      "visual_anchors": [
+        "soldiers standing on wagons",
+        "shared physical proximity",
+        "identical helmets"
+      ],
+      "symbolic_mapping": [
+        "uniformity of attire → collective identity",
+        "shared platform → interdependence"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "identity_appearance"
+      ],
+      "interpretation": "The visual alignment of figures in standardized gear on a shared mobile platform underscores how social roles are materially enacted through coordinated presence and appearance.",
+      "alternative_interpretations": [
+        "The grouping may reflect practical necessity (e.g., limited space) rather than intentional symbolism of unity."
+      ],
+      "limitations": [
+        "Facial features and individual postures are indistinct; no gestures indicate interaction or hierarchy."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1202_P3",
+      "visual_anchors": [
+        "exposed rail joints",
+        "broken sleepers",
+        "stationary train"
+      ],
+      "symbolic_mapping": [
+        "disrupted rails → interrupted progress",
+        "stillness amid labor → suspended agency"
+      ],
+      "concept_ids": [
+        "choice_journey",
+        "freedom_constraint"
+      ],
+      "interpretation": "The halted train on compromised track visually embodies constraint—not merely physical obstruction, but the suspension of intended movement within a larger system of obligation.",
+      "alternative_interpretations": [
+        "The train may be paused for loading/unloading; the track damage could be unrelated to current activity."
+      ],
+      "limitations": [
+        "No evidence confirms intent to move or delay; the scene could represent completion rather than interruption."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of soldiers: candidate states 'eight visible soldiers' but image shows at least 10 distinct individuals; 'five open-top freight wagons' is inaccurate as the train extends beyond visible wagons; 'one sleeper is propped vertically against a wagon wheel' is not visible in the image."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:42:40.358957+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-e8e16b9d-8d7f-950b-bd1b-b6591f3b61c9",
+      "usage": {
+        "prompt_tokens": 756,
+        "completion_tokens": 962,
+        "total_tokens": 1718,
+        "completion_tokens_details": {
+          "text_tokens": 962
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 249,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "202609070142301c70436490764a26",
+      "usage": {
+        "completion_tokens": 887,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1858,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2745
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

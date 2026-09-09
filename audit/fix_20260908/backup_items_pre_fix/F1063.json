@@ -1,0 +1,159 @@
+{
+  "annotation_item_id": "F1063",
+  "sample_id": "PHL1800_HL_0006",
+  "file_name": "PHL1800_HL_0006.png",
+  "batch_id": "B002",
+  "position_in_batch": 5,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a person wearing a white-and-blue baseball cap observing a large outdoor clock",
+  "captions": {
+    "scene": [
+      "A sun-dappled outdoor setting with dense green foliage overhead and assorted decorative objects including statues, lanterns, and potted plants.",
+      "A large, round, weathered analog clock mounted on a metal pole stands prominently in the foreground, partially shaded by trees.",
+      "The background contains wooden fencing, stacked items, and indistinct structures suggesting a yard, garden, or antique display area."
+    ],
+    "action": [
+      "The person stands still, facing the clock with head tilted upward, indicating visual attention toward it.",
+      "The clock hands indicate approximately 6:23; the hour hand points between VI and VII, minute hand near IV.",
+      "Sunlight filters through leaves, casting moving shadows across the ground and objects, implying a daytime scene with gentle breeze or leaf movement."
+    ],
+    "rationale": [
+      "The person’s posture and orientation strongly suggest they are looking at the clock, though their eyes are not visible.",
+      "The clock face shows reversed Roman numerals (e.g., 'VII' appears as 'IIV'), which may indicate it is a mirrored or decorative piece rather than functional; this is supported by its ornamental mounting and context.",
+      "Multiple decorative items (statue, lanterns, planters) are arranged without clear functional purpose, suggesting curated display rather than daily utility."
+    ],
+    "object": [
+      "A large circular clock with a white face, black reversed Roman numerals, and two black hands mounted on a dark metal frame and pole.",
+      "A person viewed from behind wearing a black short-sleeved shirt and a white baseball cap with blue brim and visible text 'HORNETS' in blue script.",
+      "A dark metallic statue of a stylized creature with prominent teeth and textured surface, positioned to the lower left of the clock.",
+      "Two black ornate lanterns with glass panels stand behind the clock, one partially obscured by foliage.",
+      "Green leafy plants in pots and containers occupy the mid-ground, interspersed among wooden and metal objects."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F1063_P1",
+      "visual_anchors": [
+        "reversed Roman numerals on clock face",
+        "person observing the clock",
+        "dappled sunlight through leaves"
+      ],
+      "symbolic_mapping": [
+        "reversed numerals suggest temporal disorientation or artifice",
+        "observation implies reflection on time’s passage"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The reversed numerals disrupt conventional timekeeping, evoking a meditation on time as subjective or illusory—highlighting human vulnerability to temporal perception rather than objective chronology.",
+      "alternative_interpretations": [
+        "The clock may simply be a decorative artifact with mirrored lettering due to manufacturing or installation error, with no intentional symbolism."
+      ],
+      "limitations": [
+        "No visible inscription confirms intentional reversal; the effect could result from camera angle or reflection."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1063_P2",
+      "visual_anchors": [
+        "person wearing branded cap",
+        "cluttered outdoor display",
+        "statue with exaggerated features"
+      ],
+      "symbolic_mapping": [
+        "cap signifies affiliation or identity performance",
+        "clutter suggests accumulation of meaning or memory"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "social_existence"
+      ],
+      "interpretation": "The juxtaposition of personal attire (branded cap) against eclectic, non-functional objects reflects how identity is constructed amid cultural debris—appearance becomes a site of negotiation between individual choice and inherited symbols.",
+      "alternative_interpretations": [
+        "The cap is casual wear with no symbolic intent; the setting is merely a junkyard or flea market stall."
+      ],
+      "limitations": [
+        "Brand text is partially legible but not fully verifiable; no interaction confirms intentional contrast."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F1063_P3",
+      "visual_anchors": [
+        "clock mounted on rustic pole",
+        "surrounding decorative artifacts",
+        "dense overhead canopy"
+      ],
+      "symbolic_mapping": [
+        "clock as obsolete technology amidst nature",
+        "canopy as natural constraint on visibility"
+      ],
+      "concept_ids": [
+        "labor_technology",
+        "freedom_constraint"
+      ],
+      "interpretation": "The static, ornamental clock amid living foliage and handmade objects suggests technology repurposed from utility to ornament—raising questions about whether tools liberate or constrain when divorced from function and embedded in aesthetic tradition.",
+      "alternative_interpretations": [
+        "The clock is functional and used for timekeeping; the setting is a private garden with practical items."
+      ],
+      "limitations": [
+        "No evidence confirms the clock is non-functional; hands appear aligned with standard time positions despite reversed numerals."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "accept",
+    "issues": []
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T17:42:19.304286+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-8fbd711e-31fb-9571-8ab4-bfc956a33f07",
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 1043,
+        "total_tokens": 1872,
+        "completion_tokens_details": {
+          "text_tokens": 1043
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 322,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907014144439a80e4a152456a",
+      "usage": {
+        "completion_tokens": 903,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2037,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2940
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

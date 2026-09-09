@@ -1,0 +1,162 @@
+{
+  "annotation_item_id": "F0740",
+  "sample_id": "PHL1800_HL_0466",
+  "file_name": "PHL1800_HL_0466.png",
+  "batch_id": "B017",
+  "position_in_batch": 1,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a street fruit vendor cart with two visible people and hanging bananas",
+  "captions": {
+    "scene": [
+      "A two-wheeled metal cart with a striped fabric canopy shelters produce under daylight, adjacent to brick buildings with Nepali-script signage.",
+      "The cart displays cardboard boxes labeled with apples and a tiger, plastic-wrapped round fruits, and bunches of green and yellow bananas suspended from the canopy frame.",
+      "Behind the cart, blue metal fencing, stacked crates, and a partially visible red umbrella suggest an urban market setting."
+    ],
+    "action": [
+      "A person in a red top stands behind the cart facing away, near a child in a white shirt who looks rightward.",
+      "A child in a light-colored shirt sits or crouches beside the cart, gazing toward the right edge of the frame.",
+      "Multiple banana bunches hang from ropes attached to the canopy’s support poles, some green, some ripening yellow."
+    ],
+    "rationale": [
+      "The presence of Nepali script on signs and the style of the cart suggest a South Asian urban street market context, though exact location is not verifiable from image alone.",
+      "The child in white appears to be observing something outside the frame due to head orientation and eye direction; however, no object is visible in that direction, so intent is unconfirmed.",
+      "The cardboard box features a printed apple logo and tiger illustration, indicating commercial branding, but the brand name is unreadable and cannot be identified."
+    ],
+    "object": [
+      "A two-wheeled metal pushcart holds produce including green and yellow bananas hanging from its canopy frame, plastic-wrapped spherical fruits in open boxes, and at least two cardboard boxes—one with a red apple and black tiger graphic.",
+      "Two individuals are visible: one adult-sized figure in red with dark hair facing away, one child in white seated or crouching near the cart’s right side.",
+      "A red umbrella with patterned fabric is partially visible behind the vendor, covering part of the background area.",
+      "Two signs with Devanagari script are mounted above the scene: one red sign with white text (partially legible as 'संगीत साधन केन्द्र'), and one yellow sign with black text (largely illegible).",
+      "Blue plastic crates are stacked beneath the cart’s surface, and yellow cloth or sacks lie on the ground near the front wheel."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "insufficient_evidence",
+    "visual_support"
+  ],
+  "text_dependency": "medium",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0740_P1",
+      "visual_anchors": [
+        "hanging bananas in varying ripeness",
+        "child gazing outward",
+        "striped canopy sheltering goods"
+      ],
+      "symbolic_mapping": [
+        "green bananas → potentiality; yellow bananas → realization",
+        "gaze toward unseen → anticipation or uncertainty"
+      ],
+      "concept_ids": [
+        "time_mortality",
+        "choice_journey"
+      ],
+      "interpretation": "The coexistence of unripe and ripe bananas under a temporary shelter evokes the passage of time and the inevitability of change, while the child’s outward gaze suggests a nascent awareness of paths not yet taken.",
+      "alternative_interpretations": [
+        "This may simply reflect standard fruit inventory management—selling bananas at different stages—and the child looking at a passing vehicle or person."
+      ],
+      "limitations": [
+        "No temporal markers confirm ripening progression; the child’s gaze direction lacks a target object in frame."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0740_P2",
+      "visual_anchors": [
+        "two people clustered around a mobile stall",
+        "blue metal fence separating vendor from background",
+        "commercial branding on box"
+      ],
+      "symbolic_mapping": [
+        "cart as mobile livelihood → precarious social positioning",
+        "fence as boundary → structural separation"
+      ],
+      "concept_ids": [
+        "social_existence",
+        "power_conflict"
+      ],
+      "interpretation": "The spatial arrangement—vendor and child enclosed by fence and cart—materializes how economic activity is embedded within socially demarcated zones, revealing subtle hierarchies of access and visibility.",
+      "alternative_interpretations": [
+        "The fence may serve only practical crowd control or property delineation, unrelated to social stratification."
+      ],
+      "limitations": [
+        "Fence purpose is not specified; no signage indicates ownership or restriction intent."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0740_P3",
+      "visual_anchors": [
+        "tiger illustration on apple box",
+        "Nepali-script signage",
+        "mixed produce display"
+      ],
+      "symbolic_mapping": [
+        "tiger as cultural symbol juxtaposed with imported fruit imagery → hybrid identity expression"
+      ],
+      "concept_ids": [
+        "identity_appearance",
+        "labor_technology"
+      ],
+      "interpretation": "The tiger—a national and mythic emblem in Nepal—printed alongside apples (non-native fruit) on a vendor’s packaging signals a negotiated identity where local symbolism coexists with globalized commerce, mediated through manual labor.",
+      "alternative_interpretations": [
+        "The tiger may be a generic decorative motif or trademark unrelated to national symbolism; the box could be reused packaging."
+      ],
+      "limitations": [
+        "No contextual text confirms the tiger’s intended meaning; origin of box is unknown."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Incorrect count of people (three vs. two visible); inaccurate description of the red umbrella (partially visible vs. positioned behind vendor); unsupported claim of a second child in light clothing partially obscured behind the first child."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T19:13:26.100881+00:00",
+    "generator": "qwen",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-d764010d-df30-9583-9c17-8493a419a8cf",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 1129,
+        "total_tokens": 2038,
+        "completion_tokens_details": {
+          "text_tokens": 1129
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 402,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907031259bc7f1caca6134352",
+      "usage": {
+        "completion_tokens": 1022,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 2223,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 3245
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}

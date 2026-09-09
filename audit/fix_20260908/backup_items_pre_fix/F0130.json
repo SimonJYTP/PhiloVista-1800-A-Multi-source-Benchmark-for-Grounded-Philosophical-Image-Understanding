@@ -1,0 +1,156 @@
+{
+  "annotation_item_id": "F0130",
+  "sample_id": "PHL1800_HL_0051",
+  "file_name": "PHL1800_HL_0051.png",
+  "batch_id": "B005",
+  "position_in_batch": 19,
+  "language": "en",
+  "method": "dual_api_qwen_generate_glm_visual_review_non_independent",
+  "formal_gold": false,
+  "target_subject": "a white clock tower with a blue-framed analog clock, situated on a roadside median amidst traffic and foliage",
+  "captions": {
+    "scene": [
+      "An overcast urban street scene with a central white clock tower mounted on a green pole, flanked by leafy trees and shrubs.",
+      "Motorcycles and vehicles move along a multi-lane road; a blue utility truck with a tarp-covered load is visible on the right.",
+      "A paved median with low green bushes separates opposing traffic flows; a large tree trunk occupies the right foreground."
+    ],
+    "action": [
+      "Multiple motorcyclists are riding in both directions, some wearing helmets and dark clothing.",
+      "A white car and a silver SUV are stopped or moving slowly near the center-left of the frame.",
+      "The analog clock face shows approximately 10:15, with hour and minute hands clearly visible."
+    ],
+    "rationale": [
+      "The clock’s hands indicate a specific time, suggesting functional operation rather than decoration alone.",
+      "The presence of multiple riders and vehicles implies active traffic flow during daylight hours.",
+      "The dense foliage and overcast sky suggest a humid or tropical climate, though no explicit geographic markers confirm this."
+    ],
+    "object": [
+      "A tall white rectangular structure with a blue horizontal stripe near the top houses a square analog clock with a white face, black numerals, and black hands.",
+      "A dark green metal pole supports the white clock structure and extends above it, partially obscured by leaves.",
+      "Five distinct motorcyclists are visible: two on the left lane (one in black jacket, one in dark helmet), two in the center-right lane (both wearing helmets, one with yellow jacket), and one partially visible behind them.",
+      "A blue utility truck with a black tarp covering its cargo bed is parked or moving slowly on the far right lane.",
+      "A large tree trunk with rough bark occupies the extreme right edge of the image, partially obscuring the background."
+    ]
+  },
+  "rationale_support": [
+    "visual_support",
+    "visual_support",
+    "insufficient_evidence"
+  ],
+  "text_dependency": "low",
+  "philosophy_interpretations": [
+    {
+      "candidate_id": "AI_F0130_P1",
+      "visual_anchors": [
+        "analog clock showing 10:15",
+        "green pole supporting the clock",
+        "motorcyclists in motion"
+      ],
+      "symbolic_mapping": [
+        "the fixed clock contrasts with transient movement, evoking temporal permanence versus human flux"
+      ],
+      "concept_ids": [
+        "time_mortality"
+      ],
+      "interpretation": "The clock stands as an immutable marker amid the ceaseless motion of riders, prompting reflection on how human activity unfolds against the indifferent passage of measured time.",
+      "alternative_interpretations": [
+        "It is simply a functional public timepiece for traffic coordination, with no symbolic intent."
+      ],
+      "limitations": [
+        "No inscriptions or contextual signage confirm intentional symbolism; the clock may serve purely utilitarian purposes."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0130_P2",
+      "visual_anchors": [
+        "multiple motorcyclists wearing helmets",
+        "shared road space with cars and trucks",
+        "median vegetation separating lanes"
+      ],
+      "symbolic_mapping": [
+        "individual riders coexist within regulated infrastructure, illustrating negotiated cohabitation"
+      ],
+      "concept_ids": [
+        "social_existence"
+      ],
+      "interpretation": "The orderly yet diverse traffic flow reflects a tacit social contract where individuals navigate shared space through implicit rules, embodying collective existence in urban mobility.",
+      "alternative_interpretations": [
+        "This is routine traffic without any implied social agreement; riders merely follow traffic signals unseen."
+      ],
+      "limitations": [
+        "No visible traffic signs, signals, or enforcement agents confirm rule-following; behavior could be habitual rather than contractual."
+      ],
+      "sufficiency": "plausible"
+    },
+    {
+      "candidate_id": "AI_F0130_P3",
+      "visual_anchors": [
+        "white clock tower rising above foliage",
+        "tree trunk framing right side",
+        "overcast sky"
+      ],
+      "symbolic_mapping": [
+        "the vertical tower asserts human order against organic chaos and atmospheric ambiguity"
+      ],
+      "concept_ids": [
+        "power_conflict"
+      ],
+      "interpretation": "The engineered clock tower pierces the natural canopy and muted sky, symbolizing humanity’s persistent imposition of structure and measurement upon environments that resist definition.",
+      "alternative_interpretations": [
+        "The tower is standard municipal infrastructure; its placement is pragmatic, not ideological."
+      ],
+      "limitations": [
+        "No evidence of deliberate contrast or tension—trees and tower may coexist neutrally without symbolic opposition."
+      ],
+      "sufficiency": "insufficient"
+    }
+  ],
+  "needs_independent_human_annotation": true,
+  "needs_independent_human_rating": true,
+  "review": {
+    "reviewer_model": "glm-4.6v",
+    "verdict": "revise",
+    "issues": [
+      "Object count for motorcyclists is inaccurate; the candidate claims 'at least seven distinct motorcyclists' but only five are clearly visible. The clock time is misstated as 'approximately 10:10'—the hands appear closer to 10:15. The blue truck is described as 'pickup-style' but is a larger utility truck with a covered bed."
+    ]
+  },
+  "provenance": {
+    "generated_at_utc": "2026-09-06T18:05:01.519442+00:00",
+    "primary": {
+      "provider": "qwen",
+      "model": "qwen3-vl-plus",
+      "request_id": "chatcmpl-4992038b-b1e4-9a93-b185-aae69302dbf8",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 964,
+        "total_tokens": 1773,
+        "completion_tokens_details": {
+          "text_tokens": 964
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 302,
+          "text_tokens": 507,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-4.6v",
+      "request_id": "20260907020424e4fd8ddddab0466a",
+      "usage": {
+        "completion_tokens": 895,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1935,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        },
+        "total_tokens": 2830
+      }
+    },
+    "image_input": "base64_from_local_selected_image"
+  }
+}
